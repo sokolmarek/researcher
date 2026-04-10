@@ -1,0 +1,188 @@
+---
+name: visualization
+description: "Generate publication-quality data visualizations with matplotlib, seaborn, ggplot2, pgfplots. Triggers: plot data, create chart, visualize results, make figure, bar chart, scatter plot, heatmap, publication plot, statistical plot, data visualization."
+---
+
+# Visualization
+
+Publication-quality data visualization with multiple plotting libraries. Generates actual runnable code that produces journal-ready figures.
+
+## IMPORTANT: This skill routes code generation to Sonnet subagent to conserve Opus tokens.
+
+## Supported Libraries
+
+### matplotlib (Python)
+General-purpose plotting. Use for maximum control over every visual element.
+- Line plots, bar charts, scatter plots, histograms
+- Heatmaps, contour plots, 3D surface plots
+- Error bars, annotations, inset axes
+- Multi-panel figures with `plt.subplots()`
+
+### seaborn (Python)
+Statistical visualization built on matplotlib. Use for statistical plots with minimal code.
+- Distribution plots: KDE, violin, box, swarm, strip
+- Relationship plots: pair plots, joint plots, regression plots
+- Categorical plots: bar with CI, count, point
+- Heatmaps with clustering (clustermap)
+
+### ggplot2 (R)
+Grammar of graphics. Use when the user works in R or wants faceted figures.
+- All standard geoms: `geom_point`, `geom_line`, `geom_bar`, `geom_boxplot`
+- Faceting: `facet_wrap`, `facet_grid`
+- Themes: `theme_minimal`, `theme_classic`, `theme_bw`
+- Scale customization: colors, axes, legends
+
+### ggpubr (R)
+Publication-ready statistical plots with annotations. Use for figures requiring significance brackets.
+- `ggboxplot`, `ggbarplot`, `ggscatter`, `ggviolin` with stat comparisons
+- Automatic p-value brackets (`stat_compare_means`)
+- `ggarrange` for multi-panel layouts
+- Ready-made publication themes
+
+### plotly (Python / R)
+Interactive HTML plots. Use for supplementary materials or web-based presentations.
+- Interactive hover, zoom, pan
+- 3D scatter and surface plots
+- Animated transitions
+- Export as self-contained HTML
+
+### pgfplots (LaTeX)
+Native LaTeX plotting. Use when figures must compile within the manuscript `.tex` file.
+- Integrates directly with LaTeX math notation
+- Consistent fonts with document body
+- `addplot` from data files or inline tables
+- Grouped bar charts, error bars, fill between
+
+## Smart Chart Selection
+
+When the user provides data without specifying chart type, select based on data characteristics:
+
+| Data Type | Recommended Chart |
+|-----------|-------------------|
+| One numeric variable | Histogram, KDE, box plot |
+| Two numeric variables | Scatter plot, line plot (if ordered) |
+| One categorical + one numeric | Bar chart, box plot, violin plot |
+| Two categorical | Heatmap, grouped bar chart |
+| Time series | Line plot with date axis |
+| Correlation matrix | Heatmap with annotations |
+| Distribution comparison | Violin plot, ridge plot, overlaid KDE |
+| Part-of-whole | Stacked bar chart (avoid pie charts in academic work) |
+| Spatial data | Contour plot, 2D density, map |
+| Model performance across conditions | Grouped bar chart with error bars |
+
+## Publication Styling
+
+### Journal Requirements
+Apply journal-specific figure standards:
+- **DPI:** 300 minimum for raster (PNG), vector preferred (PDF/SVG/EPS)
+- **Width:** Single column (3.3 in / 84 mm) or double column (6.7 in / 170 mm)
+- **Fonts:** Match manuscript font, minimum 6pt for labels
+- **Color:** Use colorblind-safe palettes by default
+
+### Colorblind-Safe Palettes
+Default to these palettes unless the user specifies otherwise:
+- **Categorical:** Wong palette (`#E69F00`, `#56B4E9`, `#009E73`, `#F0E442`, `#0072B2`, `#D55E00`, `#CC79A7`)
+- **Sequential:** Viridis, Inferno, Plasma
+- **Diverging:** Coolwarm, RdBu (reversed if needed)
+- Always verify grayscale legibility for print journals
+
+### Standard Style Template (matplotlib)
+```python
+import matplotlib.pyplot as plt
+plt.rcParams.update({
+    'font.family': 'serif',
+    'font.size': 10,
+    'axes.labelsize': 11,
+    'axes.titlesize': 12,
+    'xtick.labelsize': 9,
+    'ytick.labelsize': 9,
+    'legend.fontsize': 9,
+    'figure.dpi': 300,
+    'savefig.dpi': 300,
+    'savefig.bbox': 'tight',
+    'axes.spines.top': False,
+    'axes.spines.right': False,
+})
+```
+
+## Statistical Annotations
+
+- **Significance brackets:** p-value brackets between groups (*, **, ***, ns)
+- **Correlation coefficients:** Pearson r or Spearman rho on scatter plots
+- **Regression lines:** With confidence bands (95% CI shading)
+- **Error bars:** Standard error (SE), standard deviation (SD), or confidence interval (CI) — always label which
+- **Effect sizes:** Cohen's d or eta-squared annotations where appropriate
+
+## Data Input
+
+### From CSV
+```python
+import pandas as pd
+df = pd.read_csv('data/results.csv')
+```
+
+### From JSON
+```python
+df = pd.read_json('data/results.json')
+```
+
+### Inline Specification
+User provides data directly in the prompt. Parse into a DataFrame or table structure.
+
+### From manuscript tables
+Extract data from existing LaTeX tables in `manuscript/tables/` and visualize.
+
+## Multi-Panel Figures
+
+### matplotlib/seaborn
+```python
+fig, axes = plt.subplots(2, 2, figsize=(6.7, 5))
+# Label panels: (a), (b), (c), (d)
+for ax, label in zip(axes.flat, 'abcd'):
+    ax.set_title(f'({label})', loc='left', fontweight='bold')
+```
+
+### ggplot2/ggpubr
+```r
+library(ggpubr)
+ggarrange(p1, p2, p3, p4, labels = c("a", "b", "c", "d"), ncol = 2, nrow = 2)
+```
+
+Panel labels follow journal convention: lowercase letters in parentheses, bold, top-left.
+
+## Export Formats
+
+| Format | Use Case | Command (matplotlib) |
+|--------|----------|---------------------|
+| PDF | Vector, LaTeX inclusion | `plt.savefig('fig.pdf')` |
+| PNG | Raster, Word inclusion | `plt.savefig('fig.png', dpi=300)` |
+| SVG | Web, scalable | `plt.savefig('fig.svg')` |
+| EPS | Legacy journal requirement | `plt.savefig('fig.eps')` |
+
+## Workflow
+
+1. **Determine data source:** CSV, JSON, inline, or existing manuscript table
+2. **Select chart type:** Based on data characteristics or user request
+3. **Choose library:** Based on user preference, language, or best fit
+4. **Generate code:** Route to Sonnet subagent for code generation
+5. **Apply publication styling:** DPI, fonts, colors, dimensions per journal requirements
+6. **Add statistical annotations** if applicable
+7. **Generate caption** following journal conventions
+8. **Save to `figures/`** in appropriate format
+9. **Generate manuscript inclusion snippet** (`\includegraphics{}` or Word embedding)
+
+## Caption Generation
+
+Generate figure captions following academic conventions:
+- First sentence: what the figure shows (descriptive)
+- Subsequent sentences: key observations, statistical details, panel descriptions
+- Example: "Figure 3. Comparison of model accuracy across datasets. (a) Performance on CIFAR-10. (b) Performance on ImageNet. Error bars indicate 95% confidence intervals. The proposed method (blue) significantly outperforms the baseline (orange) on both datasets (p < 0.01)."
+
+## Integration Points
+
+- **figure-suggestions:** Suggests what to plot; visualization generates the actual code
+- **latex-tables:** Data from tables can be visualized; visualizations can be tabulated
+- **journal-formatting:** Provides figure dimension and style requirements
+- **tikz-diagrams:** For schematic/conceptual figures use tikz-diagrams; for data-driven plots use visualization
+- **word-output:** PNG exports embedded in DOCX; PDF exports for LaTeX
+- **implementation:** Visualization code may be part of experiment pipeline
