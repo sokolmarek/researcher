@@ -6,7 +6,7 @@
 | Command | /draft-section |
 | Trigger phrase | "Draft the introduction for my SSL-for-ECG methods paper" |
 | Connectors used | none (cites the library.bib produced by the literature-search example) |
-| Generated | 2026-07-12; all \cite keys resolve to `examples/research-verification/citation-audit.md` |
+| Generated | 2026-07-12; all \cite keys resolve to the shared `references/library.bib` built from the literature-search example's included set (`examples/research-verification/literature-search-prisma.md`); the citation-audit example verifies a representative subset |
 
 ## Invocation
 

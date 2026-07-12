@@ -11,8 +11,8 @@ Tie the skills into a staged pipeline with a mandatory integrity gate, make the 
 ## Prerequisites
 
 - Phase 3 delivered 33 skills and 14 commands, with core-powered evidence capabilities (OA full-text extraction, four-state verification, calibrated thresholds) passing their acceptance.
-- `core/researcher_core/` is a runnable, offline-tested package (Phase 2, D-D) with the `researcher-core` console script.
-- `core/schemas/provenance-event.schema.json` exists and already carries the `retrieval` / `record_lineage` / `dedup_decision` (Phase 2) and `screening_decision` (Phase 3) event types.
+- `core/researcher_core/` is a runnable, offline-tested package (Phase 2, D3) with the `researcher-core` console script.
+- `core/schemas/provenance-event.schema.json` exists and defines all seven event types (D10); Phases 2 and 3 emit `retrieval` / `record_lineage` / `dedup_decision` (Phase 2) and `screening_decision` (Phase 3), and Phase 4 emits the remaining `review` / `gate` / `artifact_hash` against the already-complete schema (no schema change needed here).
 - `references/integrity-constraints.md` exists (Phase 1) as the canonical refusal-grade constraint source.
 
 ## Tasks
@@ -35,7 +35,7 @@ Gate contents (mandatory, non-skippable):
 
 A failed gate returns the pipeline to Draft or Review with the findings.
 
-The SKILL.md body inlines the load-bearing refusal constraints and points to `references/integrity-constraints.md` (per D-F, references load only when read, so refusal-grade text is also inlined).
+The SKILL.md body inlines the load-bearing refusal constraints and points to `references/integrity-constraints.md` (per D12, references load only when read, so refusal-grade text is also inlined).
 
 Every stage appends events to the passport (P4.2): Review appends `review` events, the gate appends a `gate` event (pass/fail plus findings), and draft/figure/table outputs append `artifact_hash` events. Stages never rewrite prior records.
 
@@ -72,7 +72,7 @@ Target paths:
 - `evals/run_triggers.py`
 - `evals/verification-gold.yaml`
 - `evals/run_verification.py`
-- `evals/example-freshness.py`
+- `evals/example-freshness.py` (extended from Phase 1, not newly created)
 
 Contents:
 - `evals/README.md`: what each eval measures, how to run it, and the thresholds (per-skill recall floor, aggregate recall, false-trigger rate, FNR/FPR with confidence intervals).
@@ -93,14 +93,14 @@ Target paths:
 - `.claude-plugin/plugin.json`
 
 Contents:
-- `README.md` rewrite: architecture section (the hybrid diagram from the master plan), install (plugin via `/plugin install researcher@researcher-marketplace`, `uv` / `pip install researcher-core`, MCP servers, env vars), a pipeline walkthrough with the examples topic, an eval results table (recall floors, false-trigger rate, FNR/FPR with CIs), a note that the PyPI package and thin MCP server are the scheduled interoperability surface (D-H), and a credits section acknowledging idea provenance (ARS integrity-gate and passport concepts, PaperQA2 retrieval patterns, STORM synthesis, Elicit extraction; no code copied).
+- `README.md` rewrite: architecture section (the hybrid diagram from the master plan), install (plugin via `/plugin install researcher@researcher-marketplace`, `uv` / `pip install researcher-core`, MCP servers, env vars), a pipeline walkthrough with the examples topic, an eval results table (recall floors, false-trigger rate, FNR/FPR with CIs), a note that the PyPI package and thin MCP server are the scheduled interoperability surface (D13), and a credits section acknowledging idea provenance (ARS integrity-gate and passport concepts, PaperQA2 retrieval patterns, STORM synthesis, Elicit extraction; no code copied).
 - `CHANGELOG.md`: Keep a Changelog format, backfilled 0.2.0 through 0.5.0.
 - `CLAUDE.md`: final structure update (core/, evals/, plans/, examples/, 34 skills, 15 commands), bumping the stated skill count from 28 to 34 across the phases.
 - Version 0.5.0 in `plugin.json`.
 
 Acceptance: a newcomer can install and run the pipeline from `README.md` alone; `CHANGELOG.md` matches git history; `CLAUDE.md` states 34 skills and 15 commands.
 
-### P4.5 Interoperability surface: PyPI package and thin stable-core MCP server (D-H) plus release CI (D-L)
+### P4.5 Interoperability surface: PyPI package and thin stable-core MCP server (D13) plus release CI (D14)
 
 Scheduled into Phase 4 now that the core stabilized in Phase 2. Phase 5 keeps ONLY the heavy semantic layer (GROBID, embeddings, vector store, RCS retrieval, reranking, and LiteLLM multi-provider routing).
 
@@ -111,7 +111,7 @@ Target paths:
 - `.github/workflows/release.yml`
 
 Contents:
-- PyPI packaging of `researcher-core`: `core/pyproject.toml` gains PyPI-ready metadata (distribution name `researcher-core`, license, classifiers, project URLs, long description from `README.md`), building on the hatchling backend from Phase 2.
+- PyPI packaging of `researcher-core`: `core/pyproject.toml` gains PyPI-ready metadata (distribution name `researcher-core`, license, classifiers, project URLs, long description from `README.md`), building on the hatchling backend from Phase 2. Bump the package version from the Phase 2 `0.1.0` to `0.5.0` so it tracks the plugin release; `release.yml` reads the package version from `pyproject.toml` (the git tag triggers the run but does not itself set the version), so a later plugin tag with an unchanged core version does not attempt a duplicate PyPI upload.
 - Thin FastMCP server `core/researcher_core/mcp_server.py` exposing ONLY the STABLE core subset: `search_papers`, `get_paper`, `verify_citations`, `export_bibliography`, `download_oa`. Each tool is a thin re-export of an existing core function (no new logic). Add `[project.optional-dependencies] mcp = [fastmcp]` and `[project.scripts] researcher-mcp = "researcher_core.mcp_server:main"`. Register the stdio server in `.mcp.json` so plugin users get it too.
 - `.github/workflows/release.yml`: on a version tag, build the sdist and wheel, publish to PyPI via OIDC trusted publishing (no stored token), then create a GitHub Release with notes drawn from `CHANGELOG.md`.
 
@@ -120,13 +120,14 @@ Acceptance: `pip install researcher-core` exposes both the `researcher-core` and
 ## Files created
 
 - `commands/research-pipeline.md`, `skills/research-pipeline/SKILL.md`
-- `evals/README.md`, `evals/triggers.yaml`, `evals/run_triggers.py`, `evals/verification-gold.yaml`, `evals/run_verification.py`, `evals/example-freshness.py`
+- `evals/README.md`, `evals/triggers.yaml`, `evals/run_triggers.py`, `evals/verification-gold.yaml`, `evals/run_verification.py`
 - `CHANGELOG.md`
 - `core/researcher_core/mcp_server.py`
 - `.github/workflows/release.yml`
 
 ## Files modified
 
+- `evals/example-freshness.py` (created in Phase 1; extended here with URL re-resolution and full eval integration)
 - `commands/submit-ready.md` (reads the DERIVED gate state from the event ledger)
 - `README.md`, `CLAUDE.md` (34 skills, 15 commands), `.claude-plugin/plugin.json` (version 0.5.0)
 - `hooks/hooks.json` and hook scripts (append `gate` and `artifact_hash` events to the passport)

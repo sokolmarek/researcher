@@ -22,7 +22,7 @@ core/
 │                             # [project.scripts]
 │                             #   researcher-core = "researcher_core.cli:main"
 │                             # [project.optional-dependencies]
-│                             #   dev      = [pytest, jsonschema, respx (or vcrpy)]
+│                             #   dev      = [pytest, jsonschema, ruff, mypy, respx (or vcrpy)]
 │                             #   fulltext = [pymupdf, selectolax]
 ├── README.md                 # dev setup (uv sync, uv run), env vars, cache location,
 │                             # and the no-uv fallback: pip install -e "core/[fulltext]"
@@ -85,7 +85,7 @@ core/
 - `[build-system]` uses `hatchling`.
 - `[project.scripts]` exposes `researcher-core = "researcher_core.cli:main"`, so an installed environment has a `researcher-core` console command; `researcher_core/__main__.py` delegates to `cli.main` so `python -m researcher_core` works too.
 - Base runtime dependencies are only `httpx`, `rapidfuzz`, `platformdirs`. Nothing else is required to run the CLI.
-- `[project.optional-dependencies]` defines `dev = [pytest, jsonschema, respx (or vcrpy)]` and `fulltext = [pymupdf, selectolax]`.
+- `[project.optional-dependencies]` defines `dev = [pytest, jsonschema, ruff, mypy, respx (or vcrpy)]` and `fulltext = [pymupdf, selectolax]`. `ruff` and `mypy` are in `dev` so the `core.yml` lint and type gate (P2.12) is reproducible from the documented dev install.
 
 Schema-validation strategy: `jsonschema` is a DEV dependency, not a runtime one. Every `--json` CLI output is validated against `core/schemas/*.json` inside the test suite. The runtime does NOT hard-depend on `jsonschema`, keeping the base install minimal. Contributors without `uv` install via `pip install -e "core/[fulltext]"` (or `pip install -e core/` for the base runtime).
 

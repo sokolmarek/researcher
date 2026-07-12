@@ -6,7 +6,7 @@ Architectural change: none. This phase makes the existing plugin correct, comple
 
 ## Goal
 
-Fix every known defect in the current plugin and make it honestly shippable as 0.2.1. Concretely: correct the manifest to supported fields only and add a marketplace entry (D-E); move the runtime integrity constraints out of the non-loaded CLAUDE.md into skills and agents (D-F); name the hooks honestly as Claude tool guards and add a real git pre-commit for full commit coverage (D-G); make the LaTeX acceptance compile a generated populated manuscript fixture instead of the bare template (D-J); add basic CI (D-L); and finish the placeholder and em-dash sweep, agent frontmatter, connector docs, cross-platform compile twin, doc reconciliation, examples verification, and a smoke trigger test.
+Fix every known defect in the current plugin and make it honestly shippable as 0.2.1. Concretely: correct the manifest to supported fields only and add a marketplace entry (D14); move the runtime integrity constraints out of the non-loaded CLAUDE.md into skills and agents (D12); name the hooks honestly as Claude tool guards and add a real git pre-commit for full commit coverage; make the LaTeX acceptance compile a generated populated manuscript fixture instead of the bare template; add basic CI (D14); and finish the placeholder and em-dash sweep, agent frontmatter, connector docs, cross-platform compile twin, doc reconciliation, examples verification, and a smoke trigger test.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ Fix every known defect in the current plugin and make it honestly shippable as 0
 
 ## Tasks
 
-### P1.1 Manifest and marketplace correctness (D-E)
+### P1.1 Manifest and marketplace correctness (D14)
 
 Confirmed against the plugin docs (code.claude.com/docs/en/plugins, plugins-reference, plugin-marketplaces): `connectors` is NOT a supported `plugin.json` field, and the `commands` and `agents` arrays REPLACE the default convention scan when present (a partial or stale array silently drops components). `skills/`, `commands/`, `agents/`, `hooks/hooks.json`, and `.mcp.json` are all auto-discovered by convention with no manifest entry needed.
 
@@ -50,7 +50,7 @@ Confirmed against the plugin docs (code.claude.com/docs/en/plugins, plugins-refe
 
 Acceptance (shippable install is the pass criterion): `/plugin install researcher@researcher-marketplace` from a clean profile completes with no warnings; local-dev path `claude --plugin-dir .` loads the plugin; both `plugin.json` and `marketplace.json` parse as valid JSON with no unsupported top-level keys; `grep -ri "yourname\|Your Name" .` (excluding `.git`) returns nothing.
 
-### P1.2 Runtime integrity constraints in skills and agents (D-F)
+### P1.2 Runtime integrity constraints in skills and agents (D12)
 
 The plugin root `CLAUDE.md` is contributor context and is explicitly NOT loaded at plugin runtime (docs: "A CLAUDE.md file at the plugin root is not loaded as project context ... To ship instructions that load into Claude's context, put them in a skill"). The critical constraints must therefore live where they load at runtime. References under `references/*.md` load only when a skill actually reads them, so the refusal-grade constraints must be inlined, not only linked.
 
@@ -62,7 +62,7 @@ Phase 4's pipeline integrity gate restates the refusal classes inline (tracked i
 
 Acceptance: `references/integrity-constraints.md` exists; every applicable skill and agent both links the file and inlines the refusal-grade constraints; a grep confirms no applicable skill or agent depends on `CLAUDE.md` for a runtime constraint.
 
-### P1.3 Claude tool guards and real git hook (D-G)
+### P1.3 Claude tool guards and real git hook
 
 Hooks in `hooks.json` fire ONLY inside Claude's agentic loop: a PreToolUse-on-Bash matcher sees only Claude-run commands and a PostToolUse-on-Write|Edit matcher sees only Claude edits. They cannot cover a commit made from the terminal or an IDE. Name them honestly and add a real git hook for full coverage.
 
@@ -75,7 +75,7 @@ Hooks in `hooks.json` fire ONLY inside Claude's agentic loop: a PreToolUse-on-Ba
 
 Acceptance: on Windows, the Claude guard blocks a Claude-run commit with a dangling `\cite`; the installed `.git/hooks/pre-commit` blocks the same dangling `\cite` on a terminal `git commit`; editing a `.tex` file prints the integrity report.
 
-### P1.4 Cross-platform LaTeX compile and generated fixture (D-J)
+### P1.4 Cross-platform LaTeX compile and generated fixture
 
 1. Create `scripts/latex-compile.py`: Python twin of `scripts/latex-compile.sh` (locate tectonic on PATH, compile a given `.tex`, forward diagnostics, nonzero exit on failure). Keep the `.sh` for POSIX users. Update skills referencing the `.sh` (journal-formatting, manuscript-setup, latex-tables, tikz-diagrams, plotneuralnet) to prefer the `.py` invocation.
 2. Generate the Phase 1 LaTeX acceptance fixture at `evals/fixtures/manuscript-min/`: run the manuscript-setup skill to produce a `manuscript/` with real section stubs and a small `library.bib`, then use that populated tree as the fixture. Do NOT compile the bare `templates/latex/article-imrad.tex`: it `\input{}`s section files that are absent standalone, so it cannot compile alone.
@@ -83,7 +83,7 @@ Acceptance: on Windows, the Claude guard blocks a Claude-run commit with a dangl
 
 Acceptance: `python scripts/latex-compile.py evals/fixtures/manuscript-min/main.tex` succeeds on Windows and produces a PDF; the bare template is never used as the compile target.
 
-### P1.5 Basic CI (D-L)
+### P1.5 Basic CI (D14)
 
 Create `.github/workflows/validate.yml` running on push and pull_request, mirroring the checks run manually during authoring:
 
@@ -95,7 +95,7 @@ Create `.github/workflows/validate.yml` running on push and pull_request, mirror
 
 Acceptance: `validate.yml` is green on a clean checkout; each of the five checks runs and can fail independently.
 
-### P1.6 Placeholder and em-dash sweep (D-J)
+### P1.6 Placeholder and em-dash sweep
 
 - `commands/new-manuscript.md` line 14: "Routes to  skill" becomes "Routes to **manuscript-setup** skill".
 - `hooks/pre-commit-citation-check.md` line 4: "files in the  directory" becomes "files in the **manuscript/** directory".
@@ -175,6 +175,7 @@ Acceptance: at least 90 percent of prompts trigger the intended skill; installat
 - `scripts/latex-compile.py`
 - `.mcp.json`
 - `evals/fixtures/manuscript-min/` (generated fixture: `main.tex`, section stubs, `library.bib`)
+- `evals/example-freshness.py` (initial version: DOI resolution, standalone-versus-fragment classification, harness wrap, tectonic compile; Phase 4 P4.3 extends it with URL re-resolution and full eval integration)
 - `.github/workflows/validate.yml`
 
 ## Files modified

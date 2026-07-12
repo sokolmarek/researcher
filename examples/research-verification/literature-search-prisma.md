@@ -5,7 +5,7 @@
 | Skill | literature-search |
 | Command | n/a (skill triggered by phrasing) |
 | Trigger phrase | "Do a systematic literature search on self-supervised learning for ECG arrhythmia classification" |
-| Connectors used | OpenAlex, Crossref, arXiv (direct API); Scite MCP for citation tallies |
+| Connectors used | OpenAlex, Crossref, arXiv (direct API); Scite MCP for citation tallies (rate-limited at authoring, so the tallies shown are illustrative placeholders) |
 | Generated | 2026-07-12, all DOIs verified against Crossref/OpenAlex on this date |
 
 ## Invocation
@@ -57,9 +57,9 @@ Included
 
 ### Ranked included set (top 12 shown)
 
-Ranking is a composite of query relevance, citation count, and recency. Scite tallies are supporting / contrasting / mentioning where retrieved.
+Ranking is a composite of query relevance, citation count, and recency. The Scite column shows supporting / contrasting / mentioning tallies. The Scite MCP was rate-limited during authoring, so the values below are illustrative placeholders that show where those tallies appear; they are not retrieved figures and are excluded from the verified citation record (every DOI, by contrast, is real and resolves). When the Scite connector is available, this skill populates the column from actual Smart Citations and records them in the provenance JSON.
 
-| # | Paper | Year | Venue | DOI / arXiv | Scite (S/C/M) | Why included |
+| # | Paper | Year | Venue | DOI / arXiv | Scite (S/C/M, illustrative) | Why included |
 |---|---|---|---|---|---|---|
 | 1 | Mehari & Strodthoff, Self-supervised representation learning from 12-lead ECG data | 2022 | Computers in Biology and Medicine | 10.1016/j.compbiomed.2021.105114 | 41 / 2 / 96 | First comprehensive SSL assessment on clinical 12-lead ECG; direct methods baseline |
 | 2 | Kiyasseh, Zhu & Clifton, CLOCS: Contrastive Learning of Cardiac Signals | 2021 | ICML (PMLR 139) | arXiv:2005.13249 | 33 / 1 / 71 | Patient/space/time contrastive objective; foundational augmentation design |

@@ -39,7 +39,7 @@ Impact factors and article processing charges change and are not fabricated here
 
 **3. npj Digital Medicine (Nature Portfolio): high impact, broader framing needed**
 
-- **Why:** Published SSL-at-scale ECG work (Lai et al., 2023) and generalization-in-medical-AI work (Ong Ly et al., 2024). Prestigious and fully open access. Caveat: favors clinical impact and validation over pure methods, so the manuscript would need a stronger deployment or external-validation angle to fit.
+- **Why:** Its sibling Nature Portfolio journals publish SSL-at-scale ECG work (Lai et al., 2023, in *Nature Communications*), and npj Digital Medicine itself published generalization-in-medical-AI work (Ong Ly et al., 2024). Prestigious and fully open access. Caveat: favors clinical impact and validation over pure methods, so the manuscript would need a stronger deployment or external-validation angle to fit.
 - **Format:** Nature-family style, numbered superscript citations, ~3000-word main text with Methods after references, mandatory Data and Code Availability.
 - **Access / cost:** gold open access, APC required. **[confirm current APC at nature.com/npjdigitalmed, as of 2026-07-12]**
 
@@ -63,7 +63,8 @@ Submit to **IEEE JBHI** first: the benchmark match, the receptive audience, and 
 
 - Strodthoff, N., et al. (2021). *IEEE JBHI, 25*(5), 1519-1528. https://doi.org/10.1109/jbhi.2020.3022989
 - Mehari, T., & Strodthoff, N. (2022). *Computers in Biology and Medicine, 141*, 105114. https://doi.org/10.1016/j.compbiomed.2021.105114
-- Lai, J., et al. (2023). *Nature Communications, 14*, 3741. https://doi.org/10.1038/s41467-023-39472-8 (authors' related npj work referenced for scope)
+- Lai, J., et al. (2023). *Nature Communications, 14*, 3741. https://doi.org/10.1038/s41467-023-39472-8
+- Ong Ly, C., et al. (2024). *npj Digital Medicine, 7*, 124. https://doi.org/10.1038/s41746-024-01118-4
 - Format details: `references/journal-database.md`
 
 ## What this demonstrates
