@@ -80,6 +80,12 @@ Standalone `.tex`, compiles with `tectonic tikz-architecture.tex` to a cropped P
 \end{document}
 ```
 
+## Rendered output
+
+The `.tex` above compiles to this figure (rasterized here for preview):
+
+![Two-stage pipeline: self-supervised contrastive pretraining on unlabeled 12-lead ECG, then fine-tuning on PTB-XL](../../assets/img/examples/tikz-architecture.png)
+
 ## What this demonstrates
 
 - The skill selects a system-architecture layout (boxes, cylinders for data stores, dashed weight-transfer arrow) appropriate to a two-stage training pipeline, and groups the stages with labeled background boxes using the `backgrounds` and `fit` libraries.

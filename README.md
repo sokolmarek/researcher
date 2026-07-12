@@ -1,20 +1,24 @@
 # Researcher
 
-**Your AI co-author for the entire academic research pipeline.**
+![A lone researcher hunched over a glowing laptop, long past midnight](assets/img/header.png)
 
-> Built by a doctoral student, for doctoral students (and anyone else drowning in LaTeX errors at 3 AM).
+**A tireless research assistant for the entire academic pipeline. It does not sleep, so you finally can.**
+
+> Built by a doctoral student, for doctoral students (and anyone else drowning in research and manuscripts at 3 AM).
 
 ---
 
 *The academic writing workflow is too long, too fragmented, and too lonely. You have a research question on Monday, a literature review due on Friday, a methods section that won't write itself, reviewer comments that question your existence, and a formatting guide that was clearly written by someone who hates you.*
 
-*Researcher is the partner who actually understands what you're going through.*
+*Researcher is the assistant that absolutely does not understand what you're going through (it is, after all, just an AI that has never once cried in the library stacks), but it will still help you claw your way out.*
 
-**But let's be real:** this tool is not going to do your research for you. It's not going to write your paper while you sleep (though you might finally *get* some sleep). It won't fabricate citations, invent data, or pretend to understand your domain better than you do. What it *will* do is handle the brutal, fragmented, soul-crushing logistics of academic publishing so you can focus on the part that actually matters: **your ideas**.
+**But let's be real:** this tool is not going to do your research for you. It's not going to write your paper while you sleep (though, and this is rather the entire point, you might finally *get* some sleep). It won't fabricate citations, invent data, or pretend to understand your domain better than you do. What it *will* do is handle the brutal, fragmented, soul-crushing logistics of academic publishing so you can focus on the part that actually matters: **your ideas**.
 
-Think of it as a very capable research partner who never sleeps, never forgets a citation format, and never judges you for restructuring your introduction for the ninth time.
+Think of it as a very capable assistant that never sleeps, never forgets a citation format, never sighs when you restructure your introduction for the ninth time, and, crucially, does not need you to stay awake to keep it company.
 
 ---
+
+> **Full documentation and a step-by-step cookbook live at [sokolmarek.github.io/researcher](https://sokolmarek.github.io/researcher).** Prefer to read the source? Worked examples with real, DOI-verified output (and rendered figures) are in [`examples/`](examples/).
 
 ## What This Is
 
@@ -131,24 +135,24 @@ Nine specialized agents orchestrate skills for complex workflows:
 
 ## Installation
 
-### Claude Code (Plugin)
+### Claude Code (plugin)
 
 ```bash
-/plugin install researcher
+/plugin marketplace add sokolmarek/researcher
+/plugin install researcher@researcher-marketplace
 ```
 
 ### Claude Cowork (Desktop)
 
-1. Clone this repo: `git clone https://github.com/yourname/researcher.git`
+1. Clone this repo: `git clone https://github.com/sokolmarek/researcher.git`
 2. Open Claude Desktop -> Cowork tab
 3. Customize -> Browse plugins -> Upload plugin folder
 
-### Standalone (just Claude Code)
+### Local development (against a clone)
 
 ```bash
-git clone https://github.com/yourname/researcher.git
-cd researcher
-claude
+git clone https://github.com/sokolmarek/researcher.git
+claude --plugin-dir researcher
 ```
 
 ---
@@ -238,24 +242,26 @@ For multi-model peer review, configure:
 
 ```
 researcher/
-├── .claude-plugin/plugin.json    # Plugin manifest
+├── .claude-plugin/               # Plugin manifest + marketplace catalog
 ├── skills/                       # 28 specialized skills
 ├── agents/                       # 9 orchestration agents
 ├── commands/                     # 11 slash commands
-├── connectors/                   # 8 MCP connector configs
+├── connectors/                   # 8 MCP connector docs
 ├── hooks/                        # Pre-commit & post-draft checks
 ├── references/                   # Citation guides, journal DB, TikZ patterns
 ├── templates/                    # LaTeX & Word templates
 ├── scripts/                      # Python/bash utilities
-├── CLAUDE.md                     # Build instructions
-└── TODO.md                       # Development task list
+├── examples/                     # Worked examples with real, verified output
+├── docs/                         # Astro (Starlight) documentation site
+├── assets/                       # Header image and rendered figures
+└── CLAUDE.md                     # Build instructions
 ```
 
 ---
 
 ## Philosophy
 
-1. **Co-author, not ghostwriter.** This tool guides, assists, and handles logistics. It does not replace your expertise, your thinking, or your judgment. Every claim needs your verification. Every citation must be real.
+1. **Assistant, not author.** This tool guides, assists, and handles logistics. It does not replace your expertise, your thinking, or your judgment (it has none of its own). Every claim needs your verification. Every citation must be real.
 
 2. **Integrity first.** The plugin will never fabricate citations, invent data, or make unsupported claims. It has integrity gates at every step: citation validation, fact-checking, reference verification.
 
@@ -279,10 +285,24 @@ Issues and PRs welcome. If you're a PhD student and this saved you even one hour
 
 ---
 
+## Credits & Acknowledgments
+
+Researcher stands on the shoulders of the open academic-tooling community. It was inspired by, and re-implements ideas from, several excellent projects. No code was copied; ideas are credited here and in [`CREDITS.md`](CREDITS.md).
+
+- [academic-research-skills](https://github.com/Imbad0202/academic-research-skills), the prompt-driven skill suite that showed the shape of an integrity-first research assistant.
+- [PaperQA2](https://github.com/Future-House/paper-qa), verified retrieval-augmented answering over scientific PDFs.
+- [STORM / Co-STORM](https://github.com/stanford-oval/storm), multi-perspective grounded long-form synthesis.
+- [Elicit](https://elicit.com), [Consensus](https://consensus.app), and [Scite](https://scite.ai), for structured extraction, evidence synthesis, and Smart Citations.
+- [FutureHouse](https://www.futurehouse.org), multi-agent research over real scientific databases.
+
+Documentation is built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build). See [`CREDITS.md`](CREDITS.md) for the full list.
+
+---
+
 ## License
 
 MIT
 
 ---
 
-*"The best time to start writing was yesterday. The second best time is right now, with a really good AI co-author."*
+*"The best time to start writing was yesterday. The second best time is right now, ideally after a full night of sleep that your tireless assistant quietly made possible."*

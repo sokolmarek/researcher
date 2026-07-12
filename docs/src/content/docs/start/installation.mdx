@@ -1,0 +1,81 @@
+---
+title: Installation
+description: Install the Researcher plugin in Claude Code or Cowork.
+sidebar:
+  order: 2
+---
+
+import { Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Requirements
+
+- **Claude Code** or **Claude Cowork** on a paid plan.
+- **LaTeX compilation:** [`tectonic`](https://tectonic-typesetting.github.io) (a single binary that auto-installs the packages it needs).
+- **Word output:** `node` and `npm` (for `docx-js`).
+
+## Install
+
+<Tabs>
+  <TabItem label="Claude Code">
+    <Steps>
+
+    1. Add the marketplace:
+
+       ```bash
+       /plugin marketplace add sokolmarek/researcher
+       ```
+
+    2. Install the plugin:
+
+       ```bash
+       /plugin install researcher@researcher-marketplace
+       ```
+
+    </Steps>
+  </TabItem>
+  <TabItem label="Cowork (Desktop)">
+    <Steps>
+
+    1. Clone the repository:
+
+       ```bash
+       git clone https://github.com/sokolmarek/researcher.git
+       ```
+
+    2. Open Claude Desktop and go to the **Cowork** tab.
+
+    3. Choose **Customize -> Browse plugins -> Upload plugin folder**, and pick the cloned folder.
+
+    </Steps>
+  </TabItem>
+  <TabItem label="Local dev">
+    Run Claude Code against a local clone without a marketplace:
+
+    ```bash
+    git clone https://github.com/sokolmarek/researcher.git
+    claude --plugin-dir researcher
+    ```
+  </TabItem>
+</Tabs>
+
+## Optional connectors
+
+Some skills are richer when a connector is available. Configure the ones you use:
+
+| Connector | How | Notes |
+|---|---|---|
+| Scite (Smart Citations) | MCP server | Scite account |
+| Zotero (library sync) | `uvx zotero-mcp` | `ZOTERO_API_KEY`, library id |
+| Paper search (arXiv, PubMed, S2, and more) | `uvx paper-search-mcp` | keyless, free-first |
+
+Google Scholar and Mendeley are documentation-only (no stable free API); the relevant skills fall back to web search and manual export.
+
+## Verify
+
+Ask Claude something small and see the right skill fire:
+
+```
+Find recent papers on self-supervised learning for ECG classification
+```
+
+If a literature search kicks off, you are ready. Next: the [Quick Start](/researcher/start/quick-start/).

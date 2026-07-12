@@ -16,3 +16,13 @@ __pycache__/
 *.pyc
 .env
 config.local.yaml
+
+# Internal working files, kept local (not part of the published plugin)
+research/
+plans/
+TODO.md
+
+# Docs build artifacts (see docs/.gitignore for the rest)
+docs/node_modules/
+docs/dist/
+docs/.astro/

@@ -1,10 +1,23 @@
 {
   "name": "researcher",
-  "version": "0.2.0",
-  "description": "Academic research co-author for Claude Cowork. Full pipeline from brainstorming to publication: literature search, experiment design, statistical analysis, manuscript drafting, visualization, citation management, peer review, revision handling, journal/conference finding, and formatting. 28 skills, 9 agents, 11 commands. Supports LaTeX and Word output.",
-  "author": "Your Name",
+  "version": "0.2.1",
+  "description": "A tireless academic research assistant for Claude Code and Cowork. Full pipeline from brainstorming to publication: literature search, experiment design, statistical analysis, manuscript drafting, visualization, citation management, peer review, revision handling, journal/conference finding, and formatting. 28 skills, 9 agents, 11 commands. Supports LaTeX and Word output.",
+  "author": {
+    "name": "Marek Sokol",
+    "email": "mareksokol98@gmail.com"
+  },
   "license": "MIT",
-  "homepage": "https://github.com/yourname/researcher",
+  "homepage": "https://github.com/sokolmarek/researcher",
+  "repository": "https://github.com/sokolmarek/researcher",
+  "keywords": [
+    "research",
+    "academic",
+    "latex",
+    "citations",
+    "peer-review",
+    "manuscript",
+    "literature-search"
+  ],
   "skills": [
     "skills/manuscript-setup",
     "skills/literature-search",
@@ -58,15 +71,5 @@
     "commands/fact-check.md",
     "commands/sota.md",
     "commands/design-experiment.md"
-  ],
-  "connectors": [
-    "connectors/scite.md",
-    "connectors/zotero.md",
-    "connectors/pubmed.md",
-    "connectors/semantic-scholar.md",
-    "connectors/arxiv.md",
-    "connectors/crossref.md",
-    "connectors/google-scholar.md",
-    "connectors/mendeley.md"
   ]
 }

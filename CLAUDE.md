@@ -6,11 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Researcher** is a Claude Code / Cowork plugin for academic research workflows. It covers the full pipeline from brainstorming and literature search through experiment design, manuscript drafting, peer review, revision handling, journal selection, and publication formatting. Supports both LaTeX and Word (DOCX) output.
 
-Architecture follows `.claude-plugin/` conventions (same structure as `obra/superpowers`). The plugin manifest is `.claude-plugin/plugin.json`.
+Architecture follows `.claude-plugin/` conventions (same structure as `obra/superpowers`). The plugin manifest is `.claude-plugin/plugin.json`, and the marketplace catalog is `.claude-plugin/marketplace.json` (so it installs via `/plugin install researcher@researcher-marketplace`).
 
 ## Build Status
 
-This plugin is under active development. Check `TODO.md` for the current task list. The build follows a phased order.
+This plugin is under active development. Worked examples with real, DOI-verified output live in `examples/`, and the documentation site is in `docs/` (Astro plus Starlight, deployed to GitHub Pages). Internal planning notes (`plans/`, `TODO.md`) are kept local and are not tracked in git.
 
 ## Key Architecture
 
@@ -25,6 +25,10 @@ This plugin is under active development. Check `TODO.md` for the current task li
 - **References** (`references/*.md`): Citation style guides, journal database, TikZ patterns, PlotNeuralNet layers, table patterns, search strategies. Loaded on demand by skills.
 - **Templates** (`templates/`): LaTeX templates (IMRaD, review, conference, response-to-reviewers, cover letter) and Word DOCX generation specs.
 - **Scripts** (`scripts/`): Python/bash utilities for bib validation, LaTeX compilation, scholar scraping, codebase analysis, journal lookup.
+- **Examples** (`examples/*.md`): worked examples of selected skills with real, DOI-verified output and rendered figures. Grouped into research-verification, writing-review, visualization-latex, and publishing.
+- **Docs** (`docs/`): Astro (Starlight) documentation site with a full cookbook and showcases; deployed to GitHub Pages via `.github/workflows/docs-deploy.yml`.
+- **Assets** (`assets/img/`): the README header image and rendered example figures (diagrams, tables, charts).
+- **Workflows** (`.github/workflows/`): `validate.yml` (manifest and house-style checks), `docs-deploy.yml` (GitHub Pages), `release.yml` (GitHub Release on tags).
 
 ## Skill Categories (28 total)
 

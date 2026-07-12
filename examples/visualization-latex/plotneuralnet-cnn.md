@@ -88,6 +88,12 @@ Self-contained `.tex` (all layer macros inlined, no `import` of external PlotNeu
 \end{document}
 ```
 
+## Rendered output
+
+The self-contained `.tex` compiles to this 3D block diagram (rasterized here for preview):
+
+![1D-CNN ECG encoder: input 12x1000, three conv blocks with pooling, global average pooling, dense layer, 5-class softmax](../../assets/img/examples/plotneuralnet-cnn.png)
+
 ## What this demonstrates
 
 - A PlotNeuralNet-style 3D block diagram produced as a single self-contained file: the `\nnlayer` macro and color definitions are inlined, so no clone of the PlotNeuralNet repository is required, matching the self-contained-`.tex` decision in CLAUDE.md.

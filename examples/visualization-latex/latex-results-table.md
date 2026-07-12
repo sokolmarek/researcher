@@ -67,6 +67,12 @@ consistent with self-supervised pretraining acting mainly as a label-efficiency 
 
 For Word output the same table is emitted by `build-docx.js` as a `Table` with a two-level header (a merged "Labeled fraction" cell spanning three columns above the 1/10/100 columns), bold runs on the best cell per column, and the significance legend as a caption paragraph below. The booktabs rules become top/mid/bottom borders since Word has no `\toprule`.
 
+## Rendered output
+
+The table above compiles to (rasterized here for preview):
+
+![Label-efficiency comparison table: supervised vs self-supervised macro-AUROC at 1%, 10%, and 100% labeled fractions](../../assets/img/examples/latex-results-table.png)
+
 ## What this demonstrates
 
 - CSV to booktabs conversion following every rule in `references/table-patterns.md`: `\toprule`/`\midrule`/`\bottomrule` (no vertical rules), `@{}` outer padding removed, numbers centered, best-in-column bolded, `\multirow` category groups, a `\cmidrule` under the spanning header, and significance markers explained in `threeparttable` notes.

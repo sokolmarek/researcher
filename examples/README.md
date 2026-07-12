@@ -19,13 +19,14 @@ The normative specification for this directory is `plans/06-examples-spec.md`.
 | [tikz-architecture-diagram](visualization-latex/tikz-architecture-diagram.md) | tikz-diagrams | Visualization and LaTeX |
 | [plotneuralnet-cnn](visualization-latex/plotneuralnet-cnn.md) | plotneuralnet | Visualization and LaTeX |
 | [latex-results-table](visualization-latex/latex-results-table.md) | latex-tables | Visualization and LaTeX |
+| [visualization-plot](visualization-latex/visualization-plot.md) | visualization | Visualization and LaTeX |
 | [journal-finder-report](publishing/journal-finder-report.md) | journal-finder | Publishing and discovery |
 | [conference-finder-cfp](publishing/conference-finder-cfp.md) | conference-finder | Publishing and discovery |
 | [cover-letter](publishing/cover-letter.md) | cover-letter | Publishing and discovery |
 
 ## Running scenario
 
-All fourteen examples share one research scenario: **self-supervised contrastive pretraining for ECG arrhythmia classification**, evaluated on the PTB-XL benchmark. The set is internally consistent: the systematic search produces the bibliography; the drafted introduction cites it; the peer review critiques the draft; the response answers the review; the journal chosen by the finder receives the cover letter; and the CNN in the diagrams is the manuscript's model.
+All examples share one research scenario: **self-supervised contrastive pretraining for ECG arrhythmia classification**, evaluated on the PTB-XL benchmark. The visualization examples include rendered figures (diagrams, a results table, and a chart) alongside their source. The set is internally consistent: the systematic search produces the bibliography; the drafted introduction cites it; the peer review critiques the draft; the response answers the review; the journal chosen by the finder receives the cover letter; and the CNN in the diagrams is the manuscript's model.
 
 ## Common format
 

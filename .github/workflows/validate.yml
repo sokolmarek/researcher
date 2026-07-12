@@ -1,0 +1,50 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON manifests
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          for path in (".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"):
+              with open(path, encoding="utf-8") as f:
+                  json.load(f)
+              print(f"OK  {path}")
+          # plugin.json must not carry unsupported keys
+          with open(".claude-plugin/plugin.json", encoding="utf-8") as f:
+              man = json.load(f)
+          bad = [k for k in ("connectors",) if k in man]
+          if bad:
+              print(f"Unsupported manifest key(s): {bad}"); sys.exit(1)
+          PY
+
+      - name: Em-dash guard (authored content)
+        run: |
+          matches=$(grep -RnP $'—' README.md CREDITS.md CHANGELOG.md examples docs/src 2>/dev/null || true)
+          if [ -n "$matches" ]; then
+            echo "$matches"
+            echo "Em dash found. House style forbids em dashes in authored content."
+            exit 1
+          fi
+          echo "No em dashes in authored content."
+
+      - name: Check for leftover placeholders
+        run: |
+          matches=$(grep -RniE "yourname|your name" README.md CREDITS.md .claude-plugin 2>/dev/null || true)
+          if [ -n "$matches" ]; then
+            echo "$matches"
+            echo "Leftover placeholder found."
+            exit 1
+          fi
+          echo "No placeholders."

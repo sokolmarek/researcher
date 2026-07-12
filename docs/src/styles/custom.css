@@ -1,0 +1,64 @@
+/* Researcher docs: late-night, blue-black theme to match the header. */
+
+:root {
+  /* Accent: the soft blue glow of a laptop screen at 3 AM. */
+  --sl-color-accent-low: #10233b;
+  --sl-color-accent: #4f83c2;
+  --sl-color-accent-high: #bcd6f2;
+}
+
+:root[data-theme='dark'] {
+  /* Deep blue-black background, cooler than Starlight's default gray. */
+  --sl-color-bg: #0a0f18;
+  --sl-color-bg-nav: #0c1220;
+  --sl-color-bg-sidebar: #0b1120;
+  --sl-color-bg-inline-code: #16203180;
+  --sl-color-hairline-shade: #1b2740;
+  --sl-color-gray-1: #eaf0f8;
+  --sl-color-gray-2: #c2cddd;
+  --sl-color-gray-3: #93a2ba;
+  --sl-color-gray-4: #5f6f89;
+  --sl-color-gray-5: #38445c;
+  --sl-color-gray-6: #1c2740;
+  --sl-color-text-accent: #85b1e4;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d6e4f5;
+  --sl-color-accent: #2f5c96;
+  --sl-color-accent-high: #17304f;
+}
+
+/* Hero: let the night header image bleed a little, with a subtle overlay. */
+.hero img {
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Tighten the big landing title. */
+.hero h1 {
+  letter-spacing: -0.02em;
+}
+
+/* Example figures: framed, centered, never overflowing. */
+.sl-markdown-content img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.sl-markdown-content figure {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.sl-markdown-content figcaption {
+  font-size: var(--sl-text-sm);
+  color: var(--sl-color-gray-3);
+  margin-top: 0.4rem;
+}
+
+/* A touch more air in cards. */
+.card {
+  border-color: var(--sl-color-hairline-shade);
+}
