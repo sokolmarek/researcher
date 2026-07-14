@@ -9,11 +9,11 @@ Analyze manuscript content and recommend appropriate figures, chart types, panel
 
 ## Workflow
 
-1. **Read manuscript state** — load all current section files from `manuscript/`
-2. **Identify visualization opportunities** — scan each section for data, processes, comparisons, and relationships that benefit from visual presentation
-3. **Recommend figure type** — match content to the most effective visualization
-4. **Specify details** — caption, placement, panel layout, data requirements
-5. **Link to generation** — hand off to tikz-diagrams or note external tool requirements
+1. **Read manuscript state**: load all current section files from `manuscript/`
+2. **Identify visualization opportunities**: scan each section for data, processes, comparisons, and relationships that benefit from visual presentation
+3. **Recommend figure type**: match content to the most effective visualization
+4. **Specify details**: caption, placement, panel layout, data requirements
+5. **Link to generation**: hand off to tikz-diagrams or note external tool requirements
 
 ## Section-Specific Recommendations
 
@@ -65,6 +65,7 @@ Figure N: [Descriptive Title]
   Caption:    "Proposed caption text following target journal style."
   Placement:  After paragraph discussing [topic] in [section]
   Generation: TikZ (hand off to tikz-diagrams) / matplotlib / external tool
+  Style:      default / nature / ieee (recommended preset, see references/figure-styles.md)
 ```
 
 ## Panel Layout Recommendations
@@ -96,13 +97,14 @@ Generate captions that follow these academic conventions:
 ## Priority Ranking
 
 Rank all suggestions by impact:
-1. **Essential** — the paper is incomplete without this figure (e.g., architecture diagram, main results)
-2. **Recommended** — significantly improves clarity or persuasiveness
-3. **Optional** — nice to have, could move to supplementary material
+1. **Essential**: the paper is incomplete without this figure (e.g., architecture diagram, main results)
+2. **Recommended**: significantly improves clarity or persuasiveness
+3. **Optional**: nice to have, could move to supplementary material
 
 ## Related Skills
 
-- **tikz-diagrams** — generates TikZ/PGF code for suggested diagrams and charts
-- **latex-tables** — alternative when tabular format is more appropriate than a figure
-- **paper-drafting** — consumes figure references and integrates placement into section drafts
-- **journal-formatting** — provides figure format requirements (DPI, file type, color mode, size limits)
+- **tikz-diagrams**: generates TikZ/PGF code for suggested diagrams and charts
+- **latex-tables**: alternative when tabular format is more appropriate than a figure
+- **paper-drafting**: consumes figure references and integrates placement into section drafts
+- **journal-formatting**: provides figure format requirements (DPI, file type, color mode, size limits)
+- **image-prompt-crafting**: hand off conceptual illustrations and graphical abstracts to this skill for prompt crafting. Boundary: it never produces data or results figures; those stay with visualization, tikz-diagrams, plotneuralnet, and latex-tables.

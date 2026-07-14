@@ -177,6 +177,8 @@ Loaded by tikz-diagrams skill. Reusable patterns for common academic diagrams.
 
 ## Color Palette (publication-friendly)
 
+Named style-preset variants (default, nature, ieee) live in `references/figure-styles.md`; this file documents the default preset.
+
 ```latex
 % Colorblind-safe palette
 \definecolor{cb-blue}{HTML}{0072B2}
@@ -194,4 +196,4 @@ Loaded by tikz-diagrams skill. Reusable patterns for common academic diagrams.
 - Set `\pgfplotsset{compat=1.18}` to avoid warnings
 - Use `standalone` document class for individual figure compilation
 - Export to PDF for vector quality; use `tectonic` for compilation
-- Keep diagrams simple — academic figures prioritize clarity over aesthetics
+- Keep diagrams simple: academic figures prioritize clarity over aesthetics

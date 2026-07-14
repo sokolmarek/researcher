@@ -6,7 +6,7 @@ Loaded by journal-formatting skill. Use `scripts/journal-lookup.py` for journals
 
 ### Generic Elsevier
 - **Class:** `elsarticle` (options: `1p`, `3p`, `5p`, `review`, `authoryear`/`number`)
-- **Citation:** Varies by journal — check specific journal. Default: numbered.
+- **Citation:** Varies by journal (check specific journal). Default: numbered.
 - **Figures:** EPS, PDF, TIFF (300 DPI min for photos, 600 DPI for line art)
 - **Highlights:** Required. 3-5 bullet points, max 85 characters each.
 - **Required sections:** Data Availability Statement, CRediT author contributions
@@ -26,7 +26,7 @@ Loaded by journal-formatting skill. Use `scripts/journal-lookup.py` for journals
 
 ### Generic Springer
 - **Class:** `svjour3` (options: `smallextended`, `twocolumn`)
-- **Citation:** Varies — numbered or author-year depending on journal
+- **Citation:** Varies: numbered or author-year depending on journal
 - **Figures:** EPS, PDF, TIFF (300 DPI min). Max width: 84mm (single column), 174mm (double column)
 - **Required sections:** Declarations (Funding, COI, Ethics, Consent, Data Availability, Author Contributions)
 

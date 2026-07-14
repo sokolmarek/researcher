@@ -1,4 +1,4 @@
-# Vancouver Citation Style — Quick Reference
+# Vancouver Citation Style: Quick Reference
 
 Loaded by citation-management and journal-formatting skills. Standard for biomedical journals (ICMJE recommendations).
 

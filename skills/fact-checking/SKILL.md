@@ -9,37 +9,37 @@ Verify scientific claims and statements against published literature with eviden
 
 ## CRITICAL INTEGRITY RULE
 
-**NEVER mark a claim as "Supported" without actual retrieved evidence.** If no evidence is found, classify as "Unsupported" — not "Supported" with fabricated sources. Absence of evidence is reported honestly.
+**NEVER mark a claim as "Supported" without actual retrieved evidence.** If no evidence is found, classify as "Unsupported", not "Supported" with fabricated sources. Absence of evidence is reported honestly.
 
 ## Workflow
 
 ### Single Claim Verification
 
-1. **Parse the claim** — extract the core factual assertion, entities, and relationships
-2. **Identify searchable components** — key terms, concepts, named entities
-3. **Search for evidence** — query multiple sources with varied search strategies
-4. **Evaluate retrieved evidence** — assess relevance, quality, and stance toward the claim
-5. **Classify the claim** — assign evidence category and confidence level
-6. **Report findings** — structured output with sources and reasoning
+1. **Parse the claim**: extract the core factual assertion, entities, and relationships
+2. **Identify searchable components**: key terms, concepts, named entities
+3. **Search for evidence**: query multiple sources with varied search strategies
+4. **Evaluate retrieved evidence**: assess relevance, quality, and stance toward the claim
+5. **Classify the claim**: assign evidence category and confidence level
+6. **Report findings**: structured output with sources and reasoning
 
 ### Manuscript Section Scan
 
-1. **Extract claims** — identify all factual assertions in the provided text
-2. **Categorize claims** — empirical facts, statistical claims, causal claims, definitional claims
-3. **Prioritize** — check empirical and causal claims first (highest risk of error)
-4. **Verify each** — run single claim workflow for each extracted claim
-5. **Produce report** — consolidated fact-check report for the section
+1. **Extract claims**: identify all factual assertions in the provided text
+2. **Categorize claims**: empirical facts, statistical claims, causal claims, definitional claims
+3. **Prioritize**: check empirical and causal claims first (highest risk of error)
+4. **Verify each**: run single claim workflow for each extracted claim
+5. **Produce report**: consolidated fact-check report for the section
 
 ## Evidence Sources
 
 Search in priority order:
 
-1. **Scite MCP** (if available) — smart citation context with supporting/contrasting/mentioning classifications. Preferred source because it provides citation statement context.
-2. **Semantic Scholar** — broad coverage, citation counts, abstracts
-3. **PubMed** — biomedical claims
-4. **CrossRef** — DOI resolution and metadata verification
-5. **arXiv** — preprints for recent claims
-6. **Google Scholar** (via web search) — broadest fallback
+1. **Scite MCP** (if available): smart citation context with supporting/contrasting/mentioning classifications. Preferred source because it provides citation statement context.
+2. **Semantic Scholar**: broad coverage, citation counts, abstracts
+3. **PubMed**: biomedical claims
+4. **CrossRef**: DOI resolution and metadata verification
+5. **arXiv**: preprints for recent claims
+6. **Google Scholar** (via web search): broadest fallback
 
 Use at least 2 sources per claim for triangulation. If Scite is available, always include it.
 
@@ -113,14 +113,14 @@ Always check `editorialNotices` for retractions or corrections before using any 
 ### Evidence
 
 **For (supporting):**
-1. [Author et al. (Year)] — "[relevant excerpt or finding]"
+1. [Author et al. (Year)]: "[relevant excerpt or finding]"
    Source: [journal], DOI: [doi]
    Citation context: [supporting/mentioning]
 
 2. ...
 
 **Against (contradicting):**
-1. [Author et al. (Year)] — "[relevant excerpt or finding]"
+1. [Author et al. (Year)]: "[relevant excerpt or finding]"
    Source: [journal], DOI: [doi]
    Citation context: [contrasting]
 
@@ -172,3 +172,11 @@ Detect when a paper is cited to support a claim but the paper actually says some
 - Feeds into **post-draft-integrity** hook (automated claim checking)
 - Results inform **revision-management** skill (fixing unsupported claims)
 - Works with **citation-management** to verify bibliography entries
+
+## Integrity constraints
+
+1. Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it, never invent a DOI, author list, venue, or year.
+2. Never invent data: only user-provided or actually computed numbers appear as results. Anything illustrative is labeled "(synthetic, for demonstration)".
+3. Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+
+Canonical copy: `references/integrity-constraints.md`.

@@ -123,3 +123,12 @@ Before delivering any DOCX:
 6. Add comments if review annotations are present
 7. Validate output integrity
 8. Save to `manuscript/output/<filename>.docx`
+
+## Integrity constraints
+
+- Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it; never invent a DOI, author list, venue, or year.
+- Never invent data: only user-provided or actually computed numbers may appear as results. Anything illustrative must be labeled "(synthetic, for demonstration)".
+- Validate the generated DOCX (generation script exits cleanly, file opens) before delivery.
+- Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+
+Canonical copy: `references/integrity-constraints.md`.

@@ -32,7 +32,7 @@ Parse reviewer comments and orchestrate manuscript revisions with full traceabil
 4. **Create revision roadmap** in `manuscript/revisions/roadmap-R{N}.md`:
 
 ```markdown
-# Revision Roadmap — Round {N}
+# Revision Roadmap: Round {N}
 
 ## Reviewer 1
 | ID | Comment Summary | Category | Target Section | Action |
@@ -66,7 +66,7 @@ Parse reviewer comments and orchestrate manuscript revisions with full traceabil
 Maintain `manuscript/revisions/log-R{N}.md` linking every change to its source:
 
 ```markdown
-# Revision Log — Round {N}
+# Revision Log: Round {N}
 
 | Comment ID | File Changed | Lines | Change Description |
 |-----------|-------------|-------|-------------------|
@@ -95,6 +95,6 @@ When a reviewer comment is categorized as out-of-scope or appears unfair:
 ## After Revision
 
 - Run post-draft-integrity hook to validate cross-references and citations
-- Suggest running `/review-paper` in re-review mode to self-check
+- Suggest running `/researcher:review-paper` in re-review mode to self-check
 - Remind user to prepare response-to-reviewers document next
 - Report summary: number of comments addressed, deferred, and out-of-scope

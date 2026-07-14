@@ -1,14 +1,14 @@
-# MLA 9th Edition — Quick Reference
+# MLA 9th Edition: Quick Reference
 
 Loaded by citation-management and journal-formatting skills. Standard for humanities (literature, languages, arts).
 
 ## In-Text Citations
 
-- Parenthetical: (Smith 45) — author + page, no comma
+- Parenthetical: (Smith 45), author + page, no comma
 - Two authors: (Smith and Jones 112)
 - Three+ authors: (Smith et al. 78)
 - Narrative: Smith argues that "quoted text" (45).
-- No page: (Smith) — for web sources or entire works
+- No page: (Smith), for web sources or entire works
 - Multiple works: (Smith 45; Jones 78)
 - Corporate author: (United Nations 12)
 

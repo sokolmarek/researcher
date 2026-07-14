@@ -1,6 +1,6 @@
 ---
 name: citation-context
-description: "Analyze how citations are used — supportive, contrastive, or mentioning. Triggers: citation context, how is this cited, citation framing, analyze citations, citation roles, supporting vs contrasting, citation audit, check citation framing."
+description: "Analyze how citations are used: supportive, contrastive, or mentioning. Triggers: citation context, how is this cited, citation framing, analyze citations, citation roles, supporting vs contrasting, citation audit, check citation framing."
 ---
 
 # Citation Context
@@ -59,10 +59,10 @@ Role Distribution:
   Methodological:  6 (13%)
 
 Detailed Analysis:
-  introduction.tex:14 — \cite{smith2023} — Supporting
+  introduction.tex:14, \cite{smith2023}: Supporting
     Context: "As shown by Smith et al. (2023), transformers outperform..."
     
-  methods.tex:31 — \cite{jones2022benchmark} — Methodological
+  methods.tex:31, \cite{jones2022benchmark}: Methodological
     Context: "We evaluate on the benchmark introduced by Jones (2022)..."
 ```
 
@@ -84,12 +84,12 @@ Citation Framing Audit
 ======================
 Potential issues found: 3
 
-WARNING: introduction.tex:22 — \cite{smith2023} framed as Supporting
+WARNING: introduction.tex:22, \cite{smith2023} framed as Supporting
   Your text: "Smith et al. (2023) confirmed that X improves Y"
   Actual finding: Smith et al. found X improves Y only under condition Z
-  Suggestion: Add qualifier — "under condition Z"
+  Suggestion: Add qualifier: "under condition Z"
 
-WARNING: discussion.tex:45 — \cite{jones2022} framed as Contrasting
+WARNING: discussion.tex:45, \cite{jones2022} framed as Contrasting
   Your text: "Unlike Jones (2022), we found..."
   Actual finding: Jones reported mixed results, not a clear contradiction
   Suggestion: Reframe as "Extending the mixed findings of Jones (2022)..."
@@ -139,19 +139,19 @@ Argument Support Map
 
 Claim: "Method X outperforms baselines"
   Supporting: smith2023, jones2024, chen2023  (3 citations)
-  Contrasting: wang2022  (1 citation — addressed in discussion)
+  Contrasting: wang2022  (1 citation, addressed in discussion)
   Status: Well-supported
 
 Claim: "Training is more efficient than prior approaches"
   Supporting: smith2023  (1 citation)
   Contrasting: none found
-  Status: Under-supported — consider additional evidence
+  Status: Under-supported: consider additional evidence
 ```
 
 ## Scite MCP Integration
 
 When the Scite MCP connector is available, use it for enhanced citation context analysis:
-- Retrieve "smart citations" — actual excerpts showing how papers cite each other
+- Retrieve "smart citations": actual excerpts showing how papers cite each other
 - Access citation statement classifications (supporting, contrasting, mentioning)
 - Cross-reference citation contexts across the literature, not just the user's manuscript
 - Check editorial notices for retractions or corrections
@@ -169,3 +169,11 @@ When Scite is unavailable, fall back to:
 - **paper-drafting:** Citation context analysis guides how to frame references during drafting
 - **peer-review:** Reviewers check whether citation framing is accurate and fair
 - **post-draft-integrity hook:** Can trigger citation framing audit after drafting completes
+
+## Integrity constraints
+
+- Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it; never invent a DOI, author list, venue, or year.
+- Never invent data: only user-provided or actually computed numbers may appear as results. Anything illustrative must be labeled "(synthetic, for demonstration)".
+- Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+
+Canonical copy: `references/integrity-constraints.md`.

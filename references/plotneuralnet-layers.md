@@ -7,6 +7,9 @@ so no external dependencies are needed beyond standard TikZ.
 Based on the PlotNeuralNet project (github.com/HarisIqbal88/PlotNeuralNet), adapted for
 single-file standalone compilation.
 
+Named style-preset variants (default, nature, ieee) live in `references/figure-styles.md`;
+this file documents the default preset's color definitions.
+
 ## Preamble (include in every generated file)
 
 ```latex

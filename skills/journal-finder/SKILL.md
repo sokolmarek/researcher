@@ -12,17 +12,17 @@ Journal recommendation engine that analyzes paper content and returns a ranked l
 
 ## Workflow
 
-1. **Analyze paper profile** — read title, abstract, keywords from `manuscript/config.yaml` or user input
-2. **Extract dimensions** — determine field, subfield, methodology type, scope (theoretical/empirical/applied), interdisciplinarity level
-3. **Query journal sources** — search across available connectors and databases:
-   - `references/journal-database.md` — local curated journal list
-   - SCImago Journal Rank (via web search) — quartile rankings, SJR scores
-   - Clarivate / Journal Citation Reports (via web search) — impact factors
-   - DOAJ (via API or web search) — open access journal directory
-   - Scite (if MCP connector available) — journal-level citation context
-   - CrossRef (via API) — journal metadata, ISSN resolution
-4. **Apply user filters** — respect constraints on quartile, OA status, indexing, IF threshold, APC budget
-5. **Score and rank** — weight scope match highest, then prestige, then practical factors
+1. **Analyze paper profile**: read title, abstract, keywords from `manuscript/config.yaml` or user input
+2. **Extract dimensions**: determine field, subfield, methodology type, scope (theoretical/empirical/applied), interdisciplinarity level
+3. **Query journal sources**: search across available connectors and databases:
+   - `references/journal-database.md`: local curated journal list
+   - SCImago Journal Rank (via web search): quartile rankings, SJR scores
+   - Clarivate / Journal Citation Reports (via web search): impact factors
+   - DOAJ (via API or web search): open access journal directory
+   - Scite (if MCP connector available): journal-level citation context
+   - CrossRef (via API): journal metadata, ISSN resolution
+4. **Apply user filters**: respect constraints on quartile, OA status, indexing, IF threshold, APC budget
+5. **Score and rank**: weight scope match highest, then prestige, then practical factors
 6. **Present recommendations** with reasoning for each
 
 ## Input Modes
@@ -49,13 +49,13 @@ Return 5-10 journals, ranked by overall fit:
 [1] Journal of Machine Learning Research (JMLR)
     Publisher:      MIT Press
     Impact Factor:  6.8 (2025) | CiteScore: 12.4
-    Quartile:       Q1 (Computer Science — AI)
+    Quartile:       Q1 (Computer Science, AI)
     Indexing:       Scopus, Web of Science, DBLP
     Open Access:    Yes (Gold OA, no APC)
     APC:            None
     Acceptance Rate: ~25%
     Avg Review Time: 3-6 months
-    Scope Match:    HIGH — publishes theoretical and empirical ML work;
+    Scope Match:    HIGH: publishes theoretical and empirical ML work;
                     strong fit for papers on novel learning algorithms
                     with convergence analysis.
     Notes:          Requires reproducible experiments with public code.
@@ -76,13 +76,13 @@ Return 5-10 journals, ranked by overall fit:
 
 Support these filter parameters, applied as hard constraints before ranking:
 
-- `--quartile Q1` or `--quartile Q1,Q2` — restrict to specific quartiles
-- `--oa-only` — only open access journals
-- `--indexed-in scopus,wos` — require specific indexing
-- `--if-min 3.0` — minimum impact factor threshold
-- `--apc-max 2000` — maximum APC in USD
-- `--field "computer science"` — override auto-detected field
-- `--exclude predatory` — cross-check against Beall's list and known predatory indicators
+- `--quartile Q1` or `--quartile Q1,Q2`: restrict to specific quartiles
+- `--oa-only`: only open access journals
+- `--indexed-in scopus,wos`: require specific indexing
+- `--if-min 3.0`: minimum impact factor threshold
+- `--apc-max 2000`: maximum APC in USD
+- `--field "computer science"`: override auto-detected field
+- `--exclude predatory`: cross-check against Beall's list and known predatory indicators
 
 ## Predatory Journal Detection
 
@@ -114,10 +114,10 @@ When the user is choosing between specific journals, provide a side-by-side comp
 
 ## Integration with Other Skills
 
-- **journal-formatting** — once a journal is selected, hand off to apply its formatting requirements
-- **cover-letter** — uses journal metadata to tailor the cover letter
-- **literature-search** — journals publishing the most cited related work score higher
-- **citation-management** — analyzes `library.bib` to identify the author's publication community
+- **journal-formatting**: once a journal is selected, hand off to apply its formatting requirements
+- **cover-letter**: uses journal metadata to tailor the cover letter
+- **literature-search**: journals publishing the most cited related work score higher
+- **citation-management**: analyzes `library.bib` to identify the author's publication community
 
 ## References
 

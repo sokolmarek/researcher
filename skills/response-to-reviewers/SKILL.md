@@ -57,11 +57,11 @@ and why.]
 ## Point-by-Point Entry Rules
 
 Each response entry must contain:
-1. **Comment ID** — consistent with roadmap numbering (R1.C1, R1.C2, etc.)
-2. **Verbatim quote** — the reviewer's original comment in bold
-3. **Response** — what was done, written in professional academic tone
-4. **Revised text** — the actual new/changed text from the manuscript, color-coded
-5. **Location reference** — section, page, and line numbers where the change appears
+1. **Comment ID**: consistent with roadmap numbering (R1.C1, R1.C2, etc.)
+2. **Verbatim quote**: the reviewer's original comment in bold
+3. **Response**: what was done, written in professional academic tone
+4. **Revised text**: the actual new/changed text from the manuscript, color-coded
+5. **Location reference**: section, page, and line numbers where the change appears
 
 ## Tone Guidelines
 

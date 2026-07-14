@@ -5,7 +5,7 @@ description: "Generate publication-quality neural network architecture diagrams 
 
 # PlotNeuralNet
 
-Generate publication-quality neural network architecture diagrams as self-contained TikZ `.tex` files. Based on the PlotNeuralNet approach (github.com/HarisIqbal88/PlotNeuralNet) but fully self-contained — no external dependency files needed.
+Generate publication-quality neural network architecture diagrams as self-contained TikZ `.tex` files. Based on the PlotNeuralNet approach (github.com/HarisIqbal88/PlotNeuralNet), but fully self-contained: no external dependency files needed.
 
 ## Key Principle
 
@@ -122,7 +122,7 @@ Triggered by: "autoencoder diagram", "VAE diagram"
 \definecolor{SoftmaxColor}{RGB}{0,180,180}
 
 % === Layer Macros ===
-% (all macros defined inline — no external files)
+% (all macros defined inline, no external files)
 \newcommand{\ConvBlock}[5]{...}   % name, width, height, depth, offset
 \newcommand{\PoolBlock}[4]{...}   % name, width, height, offset
 \newcommand{\FcBlock}[3]{...}     % name, width, offset
@@ -174,10 +174,11 @@ User provides PyTorch/TensorFlow/Keras model code. Parse layer definitions and g
 1. **Parse architecture** from natural language, layer list, or model code
 2. **Select preset** if architecture matches a known type, otherwise build custom
 3. **Calculate box dimensions** from feature map sizes using auto-sizing
-4. **Generate TikZ code** with all macros and definitions inline
-5. **Save** to `figures/<architecture-name>.tex`
-6. **Compile** to PDF via tectonic and verify rendering
-7. **Generate manuscript inclusion** snippet:
+4. **Load `references/figure-styles.md` and apply the style preset**: determine the preset from trigger phrases in the request or, failing that, from the target journal in `manuscript/config.yaml`; state which preset was applied and why (e.g., "applied `nature` preset: target journal in config.yaml is Nature Communications")
+5. **Generate TikZ code** with all macros and definitions inline
+6. **Save** to `figures/<architecture-name>.tex`
+7. **Compile** to PDF via tectonic and verify rendering
+8. **Generate manuscript inclusion** snippet:
    ```latex
    \begin{figure}[htbp]
      \centering
@@ -197,9 +198,22 @@ Users can override defaults:
 - **Spacing:** Adjust gap between layers
 - **Highlight:** Emphasize specific layers (thicker border, distinct color) to show novel components
 
+## Style presets
+
+Named presets (`default`, `nature`, `ieee`) are defined once in `references/figure-styles.md`. This skill does not duplicate those definitions; it consumes them. Only colors, fonts, and line weights change between presets: the geometry macros (box sizing, spacing, auto-sizing scale factors) are preset-independent and stay identical across all three.
+
+Trigger phrases that select a non-default preset: "nature style", "in Nature format", "for submission to <journal>", "IEEE format". If no style is mentioned, the `default` preset applies, which is exactly the current behavior described above (zero change).
+
+Journal inference: if a target journal is set in `manuscript/config.yaml`, map it to a preset family automatically:
+- Nature portfolio journals -> `nature`
+- IEEE journals/transactions -> `ieee`
+- Anything else, or no target journal set -> `default`
+
+Presets restyle only. They never alter data, values, layer dimensions, or the "(synthetic, for demonstration)" labeling on placeholder figures.
+
 ## References
 
-Consult `references/plotneuralnet-layers.md` for the complete TikZ layer macro definitions and additional style patterns.
+Consult `references/plotneuralnet-layers.md` for the complete TikZ layer macro definitions and additional style patterns. Consult `references/figure-styles.md` for the style preset definitions.
 
 ## Integration Points
 

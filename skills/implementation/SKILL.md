@@ -1,22 +1,23 @@
 ---
 name: implementation
-description: "Code implementation using Sonnet model. Triggers: implement this, write the code, code this algorithm, run experiment. Routes to Sonnet to conserve Opus tokens."
+description: "Code implementation for research projects. Triggers: implement this, write the code, code this algorithm, run experiment. Runs in the code-agent subagent (Sonnet)."
+context: fork
+agent: code-agent
 ---
 
 # Implementation
 
-Handle code implementation tasks for research projects. **This skill routes work to the Sonnet model** to conserve Opus tokens for research thinking, writing, and review.
+Handle code implementation tasks for research projects.
 
 ## Model Routing
 
-- All code generation, debugging, and refactoring tasks use **Sonnet** as a subagent
-- Opus remains available for high-level architectural decisions and research reasoning
-- If the user explicitly requests Opus for a code task, honor that request
-- The code-agent (defined in `agents/code-agent.md`) manages this routing
+- This skill executes inside the code-agent subagent (frontmatter `context: fork`, `agent: code-agent`), which is pinned to Sonnet, so code generation does not consume the main session's higher-tier budget
+- Tradeoff: because the skill forks, it receives the task description and the repository, not the full conversation, so pass any needed context explicitly in the task (file paths, config values, framework or language choice, constraints such as target manuscript or reproducibility requirements)
+- The code-agent definition lives in `agents/code-agent.md`
 
 ## Workflow
 
-1. **Understand the task** — clarify with the user what needs to be implemented:
+1. **Understand the task**: clarify with the user what needs to be implemented:
    - Experiment script (training, evaluation, ablation)
    - Data processing pipeline (cleaning, transformation, feature extraction)
    - Evaluation code (metrics computation, statistical tests)
@@ -36,7 +37,7 @@ Handle code implementation tasks for research projects. **This skill routes work
    - Execute tests if test framework is present
    - Verify the code runs without import errors
 
-5. **Connect to manuscript** — offer to update the paper:
+5. **Connect to manuscript**: offer to update the paper:
    - Suggest running code-analysis skill to generate a methods section
    - Note any hyperparameters or configuration that should be documented
 
@@ -56,10 +57,10 @@ Every implementation must enforce reproducibility:
 
 ### Environment Specifications
 Generate as appropriate for the project:
-- `requirements.txt` — pinned versions (`package==X.Y.Z`)
-- `environment.yml` — Conda environment with pinned versions
-- `Dockerfile` — reproducible container with exact base image tag
-- `pyproject.toml` — if the project uses modern Python packaging
+- `requirements.txt`: pinned versions (`package==X.Y.Z`)
+- `environment.yml`: Conda environment with pinned versions
+- `Dockerfile`: reproducible container with exact base image tag
+- `pyproject.toml`: if the project uses modern Python packaging
 
 ### Logging and Experiment Tracking
 - Log all hyperparameters at experiment start

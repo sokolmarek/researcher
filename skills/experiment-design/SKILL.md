@@ -9,13 +9,13 @@ Comprehensive experiment and study design from research questions to execution p
 
 ## Workflow
 
-1. **Gather inputs** — research question, hypotheses, available resources, constraints
-2. **Recommend study type** — match question to appropriate research design
-3. **Specify variables** — identify all variables and their roles
-4. **Plan sampling** — determine sample size, selection, and randomization
-5. **Define protocol** — step-by-step data collection and analysis plan
-6. **Check feasibility** — resource estimation and timeline
-7. **Output design document** — structured experiment plan
+1. **Gather inputs**: research question, hypotheses, available resources, constraints
+2. **Recommend study type**: match question to appropriate research design
+3. **Specify variables**: identify all variables and their roles
+4. **Plan sampling**: determine sample size, selection, and randomization
+5. **Define protocol**: step-by-step data collection and analysis plan
+6. **Check feasibility**: resource estimation and timeline
+7. **Output design document**: structured experiment plan
 
 ## Study Type Selection
 

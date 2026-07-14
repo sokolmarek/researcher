@@ -6,7 +6,7 @@ Loaded by literature-search skill. Best practices for academic literature discov
 
 ### From Research Question to Search Terms
 
-1. **Identify key concepts** — break the question into 2-4 core concepts
+1. **Identify key concepts**: break the question into 2-4 core concepts
 2. **Find synonyms and variants** for each concept (e.g., "machine learning" → "deep learning", "neural network", "artificial intelligence")
 3. **Add MeSH terms** (PubMed) or domain-specific keywords
 4. **Combine with Boolean operators:**

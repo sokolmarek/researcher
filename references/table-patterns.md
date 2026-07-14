@@ -2,6 +2,9 @@
 
 Loaded by latex-tables skill. Reusable patterns for publication-quality tables.
 
+Named style-preset variants (default, nature, ieee) live in references/figure-styles.md.
+This file documents the default preset.
+
 ## Pattern 1: Results Comparison Table
 
 ```latex
@@ -149,8 +152,8 @@ Reference & Year & Key Contribution \\
 
 ## Formatting Rules
 
-- Always use `booktabs` (`\toprule`, `\midrule`, `\bottomrule`) — never `\hline`
-- No vertical rules (`|`) — use column spacing instead
+- Always use `booktabs` (`\toprule`, `\midrule`, `\bottomrule`), never `\hline`
+- No vertical rules (`|`): use column spacing instead
 - Use `@{}` to remove outer padding in column specs
 - Right-align numbers, left-align text
 - Use `\cmidrule(lr)` for partial horizontal rules under multi-column headers

@@ -1,6 +1,6 @@
 ---
 name: peer-review
-description: "Multi-perspective academic peer review with scoring rubrics. Triggers when user says: 'review this paper', 'peer review', 'critique manuscript', 'assess quality', 'evaluate paper', 'quick assessment', 'check methodology', 'is this paper ready'. Runs 5 expert reviewer personas within Claude, optionally integrates ChatGPT/Gemini/Ollama as additional reviewers. Use this skill whenever the user wants feedback on academic writing quality."
+description: "Multi-perspective academic peer review with scoring rubrics. Triggers when user says: 'review this paper', 'peer review', 'critique manuscript', 'assess quality', 'evaluate paper', 'quick assessment', 'check methodology', 'is this paper ready'. Runs 5 expert reviewer personas within Claude; integration of ChatGPT/Gemini/Ollama as additional reviewers is planned but not yet implemented. Use this skill whenever the user wants feedback on academic writing quality."
 ---
 
 # Peer Review
@@ -16,7 +16,7 @@ Simulated multi-perspective peer review system with quantitative scoring.
 - Suggested reviewers (which personas to emphasize based on paper type)
 - Identifies whether the paper belongs in this journal or should be redirected
 
-### R1 — Methodology Reviewer
+### R1: Methodology Reviewer
 - Research design appropriateness and justification
 - Statistical methods: validity, power analysis, effect sizes, multiple comparison corrections
 - Reproducibility assessment: are methods described in sufficient detail to replicate?
@@ -24,14 +24,14 @@ Simulated multi-perspective peer review system with quantitative scoring.
 - Threats to validity: internal, external, construct, and statistical conclusion validity
 - Identifies methodological assumptions that are unstated or unjustified
 
-### R2 — Domain Expert
+### R2: Domain Expert
 - Literature coverage completeness: are seminal and recent key works cited?
 - Theoretical framework strength and coherence
 - Positioning within field: how does this advance the state of the art?
 - Missed references: specific papers the authors should cite and engage with
 - Identifies claims that contradict established findings without acknowledgment
 
-### R3 — Cross-disciplinary Reviewer
+### R3: Cross-disciplinary Reviewer
 - Broader implications: what does this mean beyond the immediate subfield?
 - Practical impact: can practitioners or other researchers use these findings?
 - Accessibility to non-specialists: is the paper readable outside its niche?
@@ -76,9 +76,11 @@ Simulated multi-perspective peer review system with quantitative scoring.
 - **50-64:** Significant concerns. Fundamental issues with methodology, framing, or analysis.
 - **<50:** Critical flaws. Unsupported claims, invalid methodology, or insufficient contribution.
 
-## External Model Review (Optional)
+## External model review (planned, not implemented)
 
-If configured, dispatch review prompts to external models for independent perspectives:
+No dispatch implementation ships today: this section specifies the intended integration, and reviews today are Claude's multi-persona panel only.
+
+When implemented, the skill would dispatch review prompts to external models for independent perspectives:
 
 ### ChatGPT Integration
 - Requires: `OPENAI_API_KEY` environment variable
@@ -106,7 +108,7 @@ When external reviews are available:
 ## Review Modes
 
 ### Full Review
-Default. All 5 personas + external models if configured. Comprehensive report.
+Default. All 5 personas (external models are planned, not yet available). Comprehensive report.
 
 ### Quick Assessment
 Triggered by: "quick review", "quick assessment"
@@ -159,10 +161,10 @@ After a full review is complete, this mode simulates the paper's authors defendi
 
 1. **For each reviewer comment**, generate a plausible author response:
    - Accept and address: the criticism is valid, here is how we would fix it
-   - Partially accept: the reviewer has a point, but the concern is overstated — here is why
-   - Respectfully disagree: the criticism is based on a misunderstanding or different assumptions — here is the evidence
+   - Partially accept: the reviewer has a point, but the concern is overstated (explain why)
+   - Respectfully disagree: the criticism is based on a misunderstanding or different assumptions (present the evidence)
 2. **Rank criticisms by defensibility**: identify which reviewer comments are hardest to rebut (these are the strongest criticisms)
-3. **Identify fatal weaknesses**: criticisms where no reasonable defense exists — these MUST be addressed before submission
+3. **Identify fatal weaknesses**: criticisms where no reasonable defense exists. These MUST be addressed before submission
 4. **Output format**: table with columns: Reviewer, Comment Summary, Simulated Response, Defensibility Score (1-5), Priority
 
 This mode helps authors:
@@ -185,11 +187,19 @@ A focused mode specifically designed to predict what real reviewers will attack.
 3. **Journal-specific predictions**: if a target journal is set in `manuscript/config.yaml`, tailor predictions to that journal's known reviewer pool tendencies and editorial standards
 4. **Output a "Vulnerability Map"**: prioritized list of weak points with recommended preemptive actions
 
-The stress test is designed to be run BEFORE the full review — fix the obvious vulnerabilities first, then run a proper multi-persona review on the strengthened manuscript.
+The stress test is designed to be run BEFORE the full review: fix the obvious vulnerabilities first, then run a proper multi-persona review on the strengthened manuscript.
 
 ## Review History
 
 Track reviews across rounds in `manuscript/reviews/`:
-- `review-R1.md` — first round review
-- `review-R2.md` — re-review after revision
+- `review-R1.md`: first round review
+- `review-R2.md`: re-review after revision
 - Compare scores across rounds to show improvement
+
+## Integrity constraints
+
+1. Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it; never invent a DOI, author list, venue, or year.
+2. Never invent data: only user-provided or actually computed numbers may appear as results. Anything illustrative must be labeled "(synthetic, for demonstration)".
+3. Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+
+Canonical copy: `references/integrity-constraints.md`.

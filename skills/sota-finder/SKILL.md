@@ -12,17 +12,17 @@ Discover, compare, and track state-of-the-art results across benchmarks and rese
 
 ## Workflow
 
-1. **Parse task definition** — identify the benchmark, dataset, task, and metrics from user input or manuscript context
+1. **Parse task definition**: identify the benchmark, dataset, task, and metrics from user input or manuscript context
 2. **Search SOTA sources** via web search and available connectors:
-   - Papers with Code (paperswithcode.com) — benchmark leaderboards
-   - Semantic Scholar (via API) — recent papers with results on the task
-   - arXiv (via API) — latest preprints claiming new SOTA
-   - Conference proceedings (NeurIPS, ICML, ACL, CVPR, etc.) — peer-reviewed results
-   - Scite (if MCP connector available) — citation context around benchmark papers
-3. **Extract results** — for each method, pull metric scores, datasets, and paper details
-4. **Build comparison table** — structured ranking across methods and metrics
-5. **Analyze trends** — how has performance evolved over time
-6. **Assess competitiveness** — if user provides their own results, compare against the field
+   - Papers with Code (paperswithcode.com), for benchmark leaderboards
+   - Semantic Scholar (via API), for recent papers with results on the task
+   - arXiv (via API), for latest preprints claiming new SOTA
+   - Conference proceedings (NeurIPS, ICML, ACL, CVPR, etc.), for peer-reviewed results
+   - Scite (if MCP connector available), for citation context around benchmark papers
+3. **Extract results**: for each method, pull metric scores, datasets, and paper details
+4. **Build comparison table**: structured ranking across methods and metrics
+5. **Analyze trends**: how has performance evolved over time
+6. **Assess competitiveness**: if user provides their own results, compare against the field
 
 ## Input Modes
 
@@ -101,10 +101,10 @@ Also identify leading research groups driving progress on the task (by number of
 
 When the user provides their own results:
 
-1. **Rank placement** — where their results would fall on the leaderboard
-2. **Gap analysis** — how far from current SOTA (absolute and relative)
-3. **Competitive window** — which methods they outperform
-4. **Novelty angle** — if not SOTA, suggest positioning strategies: efficiency advantage, simplicity, domain-specific strengths, or theoretical contribution
+1. **Rank placement**: where their results would fall on the leaderboard
+2. **Gap analysis**: how far from current SOTA (absolute and relative)
+3. **Competitive window**: which methods they outperform
+4. **Novelty angle**: if not SOTA, suggest positioning strategies: efficiency advantage, simplicity, domain-specific strengths, or theoretical contribution
 
 ## LaTeX Output
 
@@ -142,11 +142,11 @@ When the user evaluates on multiple benchmarks, generate a unified view:
 
 ## Integration with Other Skills
 
-- **literature-search** — retrieves papers reporting benchmark results
-- **latex-tables** — generates formatted comparison tables for the manuscript
-- **research-gaps** — SOTA analysis reveals which approaches are unexplored
-- **paper-drafting** — SOTA tables integrate directly into Related Work and Results sections
-- **citation-management** — auto-adds cited SOTA papers to `library.bib`
+- **literature-search**: retrieves papers reporting benchmark results
+- **latex-tables**: generates formatted comparison tables for the manuscript
+- **research-gaps**: SOTA analysis reveals which approaches are unexplored
+- **paper-drafting**: SOTA tables integrate directly into Related Work and Results sections
+- **citation-management**: auto-adds cited SOTA papers to `library.bib`
 
 ## References
 

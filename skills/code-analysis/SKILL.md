@@ -1,22 +1,24 @@
 ---
 name: code-analysis
-description: "Analyze source code to generate methods section. Triggers: analyze codebase, describe implementation, methods from code, document algorithm. Routes to Sonnet subagent."
+description: "Analyze source code to generate methods section. Triggers: analyze codebase, describe implementation, methods from code, document algorithm. Runs in the code-agent subagent (Sonnet)."
+context: fork
+agent: code-agent
 ---
 
 # Code Analysis
 
 Analyze a project's source code to produce a publication-ready methods section, algorithm pseudocode, and reproducibility documentation.
 
-## IMPORTANT: Model Routing
+## Model Routing
 
-**Route all code-reading and parsing tasks to the Sonnet subagent** to preserve Opus tokens for research reasoning. Only use Opus for final methods prose synthesis and integration into the manuscript.
+This skill executes inside the **code-agent** subagent via its frontmatter (`context: fork`, `agent: code-agent`), which is pinned to Sonnet. The fork receives only the task description and the repository, not the whole conversation, so name the codebase paths to analyze and the target manuscript section explicitly in the task.
 
 ## Workflow
 
-1. **Identify scope** — ask user which directories/files to analyze, or default to the project root (excluding `manuscript/`, `node_modules/`, `.git/`, `venv/`)
-2. **Run codebase analyzer** — execute `scripts/codebase-analyzer.py` on the target directory to extract structure metadata
-3. **Map code to paper sections** — identify which code components correspond to which manuscript sections
-4. **Generate outputs** — methods text, pseudocode blocks, complexity analysis, dependency documentation
+1. **Identify scope**: ask user which directories/files to analyze, or default to the project root (excluding `manuscript/`, `node_modules/`, `.git/`, `venv/`)
+2. **Run codebase analyzer**: execute `scripts/codebase-analyzer.py` on the target directory to extract structure metadata
+3. **Map code to paper sections**: identify which code components correspond to which manuscript sections
+4. **Generate outputs**: methods text, pseudocode blocks, complexity analysis, dependency documentation
 
 ## Code-to-Paper Mapping
 
@@ -137,7 +139,7 @@ After analysis, verify and report:
 
 ## Related Skills
 
-- **implementation** — generates code from research specifications (inverse of this skill)
-- **paper-drafting** — consumes the methods section output
-- **latex-tables** — formats hyperparameter and results tables
-- **figure-suggestions** — suggests architecture diagrams based on code structure
+- **implementation**: generates code from research specifications (inverse of this skill)
+- **paper-drafting**: consumes the methods section output
+- **latex-tables**: formats hyperparameter and results tables
+- **figure-suggestions**: suggests architecture diagrams based on code structure

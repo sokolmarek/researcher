@@ -39,9 +39,9 @@ Determine based on the data:
 | 3+ independent groups | One-way ANOVA | Kruskal-Wallis |
 | 3+ paired groups | Repeated measures ANOVA | Friedman test |
 | 2 continuous variables | Pearson correlation | Spearman correlation |
-| Predict continuous outcome | Linear regression | — |
-| Predict binary outcome | Logistic regression | — |
-| 2 categorical variables | — | Chi-square / Fisher's exact |
+| Predict continuous outcome | Linear regression | N/A |
+| Predict binary outcome | Logistic regression | N/A |
+| 2 categorical variables | N/A | Chi-square / Fisher's exact |
 | Time-to-event | Cox proportional hazards | Log-rank test |
 
 ### Effect Size for Each Test
@@ -138,7 +138,7 @@ Calculate required sample size or achieved power:
 - Tools: G*Power formulas, or generate code using `statsmodels.stats.power` (Python) / `pwr` package (R)
 - Always report the assumptions behind the calculation
 
-## Common Pitfalls — Actively Warn
+## Common Pitfalls: Actively Warn
 
 - **p-hacking:** running many tests and reporting only significant ones
 - **HARKing:** hypothesizing after results are known
@@ -154,3 +154,11 @@ Calculate required sample size or achieved power:
 - Feeds APA-formatted results into **paper-drafting** skill (results section)
 - Implementation code integrates with **implementation** skill
 - Power analysis feeds back into **experiment-design** for sample sizing
+
+## Integrity constraints
+
+- Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it; never invent a DOI, author list, venue, or year.
+- Never invent data: only user-provided or actually computed numbers may appear as results. Anything illustrative must be labeled "(synthetic, for demonstration)".
+- Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+
+Canonical copy: `references/integrity-constraints.md`.

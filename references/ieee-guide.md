@@ -1,4 +1,4 @@
-# IEEE Citation Style — Quick Reference
+# IEEE Citation Style: Quick Reference
 
 Loaded by citation-management and journal-formatting skills.
 

@@ -12,20 +12,20 @@ Systematically analyze a body of literature to identify research gaps, contradic
 
 ## Workflow
 
-1. **Gather corpus** — collect papers from one or more sources:
-   - `manuscript/references/library.bib` — papers already in the bibliography
-   - Recent literature-search results — from prior search sessions
-   - User-provided papers — PDFs or citations the user shares directly
-2. **Extract claims and methods** — for each paper, identify:
+1. **Gather corpus**: collect papers from one or more sources:
+   - `manuscript/references/library.bib` (papers already in the bibliography)
+   - Recent literature-search results (from prior search sessions)
+   - User-provided papers (PDFs or citations the user shares directly)
+2. **Extract claims and methods**: for each paper, identify:
    - Research questions addressed
    - Methodology and techniques used
    - Datasets and populations studied
    - Key findings and conclusions
    - Stated limitations and future work suggestions
-3. **Cross-reference and map** — build a coverage matrix across the corpus
-4. **Identify gaps** — systematically check each gap category
-5. **Validate gaps** — run targeted follow-up searches via literature-search to confirm the gap is real (not just missing from the current corpus)
-6. **Rank and present** — prioritize gaps by significance and feasibility
+3. **Cross-reference and map**: build a coverage matrix across the corpus
+4. **Identify gaps**: systematically check each gap category
+5. **Validate gaps**: run targeted follow-up searches via literature-search to confirm the gap is real (not just missing from the current corpus)
+6. **Rank and present**: prioritize gaps by significance and feasibility
 
 ## Gap Categories
 
@@ -82,16 +82,16 @@ Analysis date: 2026-04-09
                despite their success in NLP anomaly tasks (Chen et al., 2024).
      Suggested RQ: "Can vision-transformer-inspired architectures improve
                     anomaly detection in multivariate sensor streams?"
-     Impact: HIGH — transformers show 15-20% gains in adjacent domains.
-     Feasibility: MEDIUM — requires adaptation for streaming data.
+     Impact: HIGH (transformers show 15-20% gains in adjacent domains).
+     Feasibility: MEDIUM (requires adaptation for streaming data).
 
 [M2] No federated learning approaches despite privacy-sensitive data
      Evidence: All 8 empirical papers use centralized datasets. Li et al.
                (2023) note privacy as a limitation but do not address it.
      Suggested RQ: "How does federated anomaly detection perform compared
                     to centralized approaches on distributed IoT networks?"
-     Impact: MEDIUM — addresses a real deployment constraint.
-     Feasibility: HIGH — federated frameworks are mature.
+     Impact: MEDIUM (addresses a real deployment constraint).
+     Feasibility: HIGH (federated frameworks are mature).
 ```
 
 ## Coverage Matrix
@@ -106,7 +106,7 @@ Dataset Gamma       |  [5]     |  [3]     |  [1]     |  [0]     |
 Real-world deploy   |  [1]     |  [0]     |  [0]     |  [0]     |
 
 [N] = number of papers covering this combination
-[0] = GAP — no papers cover this combination
+[0] = GAP: no papers cover this combination
 ```
 
 ## Contradiction Detection
@@ -132,10 +132,10 @@ Prioritize gaps that are HIGH impact + HIGH feasibility. For each identified gap
 
 ## Integration with Other Skills
 
-- **literature-search** — provides the corpus and runs validation searches
-- **paper-drafting** — gaps inform the Introduction (gap statement) and Discussion (future work)
-- **citation-management** — ensures all evidence citations are tracked in `library.bib`
-- **sota-finder** — complements gap analysis with current performance benchmarks
+- **literature-search**: provides the corpus and runs validation searches
+- **paper-drafting**: gaps inform the Introduction (gap statement) and Discussion (future work)
+- **citation-management**: ensures all evidence citations are tracked in `library.bib`
+- **sota-finder**: complements gap analysis with current performance benchmarks
 
 ## References
 

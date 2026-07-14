@@ -1,4 +1,4 @@
-# APA 7th Edition — Quick Reference
+# APA 7th Edition: Quick Reference
 
 Loaded by citation-management and journal-formatting skills.
 
@@ -8,7 +8,7 @@ Loaded by citation-management and journal-formatting skills.
 - One author: (Smith, 2023)
 - Two authors: (Smith & Jones, 2023)
 - Three+ authors: (Smith et al., 2023)
-- Multiple works: (Jones, 2022; Smith, 2023) — alphabetical order
+- Multiple works: (Jones, 2022; Smith, 2023), listed in alphabetical order
 - Same author, same year: (Smith, 2023a, 2023b)
 - Direct quote: (Smith, 2023, p. 45)
 - Organization first use: (World Health Organization [WHO], 2023), then (WHO, 2023)

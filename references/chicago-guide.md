@@ -1,4 +1,4 @@
-# Chicago Manual of Style — Quick Reference
+# Chicago Manual of Style: Quick Reference
 
 Loaded by citation-management and journal-formatting skills. Covers both Notes-Bibliography (NB) and Author-Date (AD) systems.
 
@@ -6,9 +6,9 @@ Loaded by citation-management and journal-formatting skills. Covers both Notes-B
 
 ### In-Text
 - (Smith 2023)
-- (Smith 2023, 45) — with page
+- (Smith 2023, 45), with page
 - (Smith and Jones 2023)
-- (Smith et al. 2023) — 4+ authors
+- (Smith et al. 2023), for 4+ authors
 - Smith (2023) argues...
 
 ### Reference List

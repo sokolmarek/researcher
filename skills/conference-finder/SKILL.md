@@ -12,14 +12,14 @@ Discover and evaluate academic conferences and workshops that match a paper's to
 
 ## Workflow
 
-1. **Analyze paper profile** — read title, abstract, keywords from `manuscript/config.yaml` or user input to determine field and subfield
+1. **Analyze paper profile**: read title, abstract, keywords from `manuscript/config.yaml` or user input to determine field and subfield
 2. **Search conference sources** via web search:
-   - WikiCFP (wikicfp.com) — call for papers aggregator
-   - CORE Conference Rankings (portal.core.edu.au) — A*/A/B/C rankings
-   - Conference websites directly — official deadlines and topics
-   - DBLP (dblp.org) — past proceedings and conference history
-   - Publisher portals (IEEE Xplore, ACM DL, Springer LNCS) — series metadata
-3. **Filter by constraints** — deadline feasibility, ranking, location, format
+   - WikiCFP (wikicfp.com): call for papers aggregator
+   - CORE Conference Rankings (portal.core.edu.au): A*/A/B/C rankings
+   - Conference websites directly: official deadlines and topics
+   - DBLP (dblp.org): past proceedings and conference history
+   - Publisher portals (IEEE Xplore, ACM DL, Springer LNCS): series metadata
+3. **Filter by constraints**: deadline feasibility, ranking, location, format
 4. **Rank conferences** by topic match, prestige, and practical fit
 5. **Present results** with all actionable details
 
@@ -41,7 +41,7 @@ User provides topic description and optionally:
 Return 5-10 conferences, ranked by overall fit:
 
 ```
-[1] NeurIPS 2026 — Conference on Neural Information Processing Systems
+[1] NeurIPS 2026: Conference on Neural Information Processing Systems
     Dates:          Dec 7-13, 2026 | Vancouver, Canada
     Format:         In-person + virtual
     Submission:     May 15, 2026 (abstracts) | May 22, 2026 (full papers)
@@ -51,8 +51,8 @@ Return 5-10 conferences, ranked by overall fit:
     Publisher:      Curran Associates (proceedings on NeurIPS.cc)
     Topics:         Deep learning, optimization, generative models,
                     reinforcement learning, theory, applications
-    Scope Match:    HIGH — flagship venue for machine learning research;
-                    strong fit for novel learning algorithm papers.
+    Scope Match:    HIGH (flagship venue for machine learning research;
+                    strong fit for novel learning algorithm papers)
     Related Events: Workshop submission deadline: Sep 25, 2026
     Website:        https://neurips.cc
 ```
@@ -71,13 +71,13 @@ Return 5-10 conferences, ranked by overall fit:
 
 Support these filter parameters as hard constraints:
 
-- `--ranking A*,A` — restrict to specific CORE rankings
-- `--deadline-before 2026-06-01` — only conferences with submission before date
-- `--deadline-after 2026-04-01` — only conferences with submission after date
-- `--location europe` — restrict by region or country
-- `--virtual` — only conferences with virtual attendance option
-- `--field "natural language processing"` — override auto-detected field
-- `--publisher IEEE,ACM` — restrict to specific publishers
+- `--ranking A*,A`: restrict to specific CORE rankings
+- `--deadline-before 2026-06-01`: only conferences with submission before date
+- `--deadline-after 2026-04-01`: only conferences with submission after date
+- `--location europe`: restrict by region or country
+- `--virtual`: only conferences with virtual attendance option
+- `--field "natural language processing"`: override auto-detected field
+- `--publisher IEEE,ACM`: restrict to specific publishers
 
 ## Deadline Tracking
 
@@ -123,10 +123,10 @@ For side-by-side evaluation of specific conferences:
 
 ## Integration with Other Skills
 
-- **journal-formatting** — apply conference template requirements (page limits, formatting)
-- **cover-letter** — adapt for conference submissions (shorter, focused on contribution)
-- **literature-search** — papers from recent editions of a conference indicate topical fit
-- **journal-finder** — if no suitable conference is found, suggest journal alternatives and vice versa
+- **journal-formatting**: apply conference template requirements (page limits, formatting)
+- **cover-letter**: adapt for conference submissions (shorter, focused on contribution)
+- **literature-search**: papers from recent editions of a conference indicate topical fit
+- **journal-finder**: if no suitable conference is found, suggest journal alternatives and vice versa
 
 ## References
 

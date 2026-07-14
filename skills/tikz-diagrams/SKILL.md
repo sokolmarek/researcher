@@ -80,13 +80,13 @@ Generate publication-ready TikZ/PGF diagrams for academic papers.
 | `tikz-timing` | Timing diagrams |
 
 ### Common TikZ Libraries
-- `arrows.meta` — modern arrow tips
-- `positioning` — relative node placement
-- `shapes.geometric` — diamonds, ellipses, trapezoids
-- `calc` — coordinate arithmetic
-- `fit` — bounding boxes around node groups
-- `backgrounds` — shaded regions behind nodes
-- `decorations.pathreplacing` — braces and brackets
+- `arrows.meta`: modern arrow tips
+- `positioning`: relative node placement
+- `shapes.geometric`: diamonds, ellipses, trapezoids
+- `calc`: coordinate arithmetic
+- `fit`: bounding boxes around node groups
+- `backgrounds`: shaded regions behind nodes
+- `decorations.pathreplacing`: braces and brackets
 
 ## Style Conventions
 
@@ -98,6 +98,20 @@ Reference `references/tikz-patterns.md` for reusable patterns. Follow these defa
 - **Arrow tips:** Use `arrows.meta` style: `-{Stealth[length=3mm]}` or `-{Latex[length=2.5mm]}`.
 - **Node spacing:** Minimum 1.5cm between nodes for readability.
 - **Grayscale fallback:** Every diagram must remain legible in grayscale (use patterns or dashes alongside color).
+
+## Style presets
+
+This skill consumes TikZ style macros (colors, fonts, line widths, arrowheads) that replace the defaults in `references/tikz-patterns.md`. Named presets are defined once in `references/figure-styles.md`: do not duplicate those definitions here, load that file when a preset is needed.
+
+- **default**: the current behavior described above (Style Conventions). Used when no style is mentioned; zero change from prior output.
+- **nature**: preset for Nature-portfolio submissions.
+- **ieee**: preset for IEEE submissions.
+
+**Trigger phrases:** "nature style", "in Nature format", "for submission to <journal>", "IEEE format".
+
+**Journal inference:** if a target journal is set in `manuscript/config.yaml`, map it to a preset family: Nature portfolio titles map to `nature`, IEEE titles map to `ieee`, anything else (or no target journal) maps to `default`.
+
+**Scope of presets:** presets restyle only, they change colors, fonts, line widths, and arrowheads. They never alter data, values, or the "(synthetic, for demonstration)" labeling used elsewhere in generated figures.
 
 ## Output Format
 
@@ -139,8 +153,9 @@ Generate an `\input{}` or `\includegraphics{}` reference for `main.tex`:
 1. Identify diagram type from user description
 2. Determine required packages and TikZ libraries
 3. Consult `references/tikz-patterns.md` for matching patterns
-4. Generate TikZ code with named styles and coordinates
-5. Save standalone `.tex` to `figures/<diagram-name>.tex`
-6. Compile to PDF via tectonic and verify output
-7. Generate `\input{}` snippet for manuscript integration
-8. If Word output is needed, export PDF and embed as image in DOCX
+4. Load `references/figure-styles.md` and apply the matching preset (default, nature, or ieee), determined from trigger phrases or from the target journal in `manuscript/config.yaml`; state which preset was applied and why
+5. Generate TikZ code with named styles and coordinates
+6. Save standalone `.tex` to `figures/<diagram-name>.tex`
+7. Compile to PDF via tectonic and verify output
+8. Generate `\input{}` snippet for manuscript integration
+9. If Word output is needed, export PDF and embed as image in DOCX

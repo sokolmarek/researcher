@@ -12,7 +12,7 @@ Creates a structured manuscript project in the working directory.
 1. **Elicit project details** from user (or accept defaults):
    - Title (required)
    - Author list with affiliations (required)
-   - Target journal (optional — affects template, word limits, required sections)
+   - Target journal (optional: affects template, word limits, required sections)
    - Output format: `latex` (default), `word`, or `both`
    - Citation style: `apa7` (default), `ieee`, `chicago`, `vancouver`, `mla`
    - Paper type: `imrad` (default), `review`, `case-study`, `conference`, `theoretical`
@@ -53,9 +53,18 @@ manuscript/
 │   └── library.bib
 ├── figures/
 ├── tables/
-├── build-docx.js               # Script to compile DOCX from sections
 └── config.yaml
 ```
+
+Compile the DOCX with the shipped script, `templates/word/build-docx.js`:
+
+```
+node templates/word/build-docx.js --manuscript <dir> --out paper.docx
+```
+
+Today this generates headings, paragraphs, and lists from `sections/*.md`. Tables, tracked changes,
+and comments are specified in `templates/word/article-imrad.md` but not implemented yet, so do not
+tell the user those are working.
 
 4. **If "both" mode**, create both structures side by side.
 
@@ -110,16 +119,16 @@ Example `introduction.tex`:
 
 % TODO: Specific problem statement and existing approaches (1-2 paragraphs)
 
-% TODO: Research gap — what is missing or unsolved (1 paragraph)
+% TODO: Research gap: what is missing or unsolved (1 paragraph)
 
-% TODO: Your contribution — what this paper does (1 paragraph)
+% TODO: Your contribution: what this paper does (1 paragraph)
 % State contributions as a numbered or bulleted list if appropriate.
 
-% TODO: Paper overview — brief roadmap of remaining sections (1 paragraph)
+% TODO: Paper overview: brief roadmap of remaining sections (1 paragraph)
 ```
 
 ## After Creation
 
 - Inform user of created structure
-- Suggest next steps: "You can now `/draft-section introduction` to start writing, or search literature first"
+- Suggest next steps: "You can now `/researcher:draft-section introduction` to start writing, or search literature first"
 - If journal specified, mention any journal-specific requirements detected

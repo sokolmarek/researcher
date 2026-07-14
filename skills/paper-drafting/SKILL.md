@@ -177,3 +177,12 @@ After every drafting operation, verify:
 4. **Word count compliance.** Warn if the section exceeds its allocated word budget.
 
 Report the integrity check results to the user after each section is drafted.
+
+## Integrity constraints
+
+1. Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source); if a citation cannot be verified, flag it, do not invent a DOI, author list, venue, or year.
+2. Never invent data: only user-provided or actually computed numbers appear as results; anything illustrative is labeled "(synthetic, for demonstration)".
+3. Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+4. Compile-check all LaTeX with tectonic (`scripts/latex-compile.py`, or `latex-compile.sh` on POSIX) before delivery.
+
+Canonical copy: `references/integrity-constraints.md`.

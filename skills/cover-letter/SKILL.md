@@ -42,26 +42,26 @@ Generate a professional journal submission cover letter tailored to the target j
 
 Dear [Editor Name / Editor-in-Chief],
 
-PARAGRAPH 1 — SUBMISSION STATEMENT
+PARAGRAPH 1: SUBMISSION STATEMENT
 We are pleased to submit our manuscript entitled "[Title]" for consideration
 as a [article type] in [Journal Name]. This manuscript has not been published
 elsewhere and is not under consideration by another journal.
 
-PARAGRAPH 2 — CONTRIBUTION SUMMARY
+PARAGRAPH 2: CONTRIBUTION SUMMARY
 [2-3 sentences summarizing the key contribution, main finding, and its
 significance. Draw from the abstract but do not copy it verbatim. Emphasize
 novelty and impact.]
 
-PARAGRAPH 3 — JOURNAL FIT
+PARAGRAPH 3: JOURNAL FIT
 [Why this journal is the right venue. Reference the journal's scope, recent
-relevant publications, or readership. Be specific — generic statements like
+relevant publications, or readership. Be specific: generic statements like
 "your prestigious journal" are insufficient.]
 
-PARAGRAPH 4 — ADDITIONAL STATEMENTS
+PARAGRAPH 4: ADDITIONAL STATEMENTS
 [Any combination of: funding acknowledgment, COI declaration, data/code
 availability, ethics approval, author contributions summary.]
 
-PARAGRAPH 5 — CLOSING
+PARAGRAPH 5: CLOSING
 We believe this work will be of interest to the readers of [Journal Name]
 and look forward to your consideration.
 
@@ -105,11 +105,11 @@ If the user provides reviewer suggestions, append after the closing:
 
 ```
 Suggested Reviewers:
-1. Dr. [Name], [Affiliation] — [email] (expertise in [area])
+1. Dr. [Name], [Affiliation], [email] (expertise in [area])
 2. ...
 
 Excluded Reviewers:
-1. Dr. [Name], [Affiliation] — [brief reason, e.g., "recent collaborator"]
+1. Dr. [Name], [Affiliation] (brief reason, e.g., "recent collaborator")
 ```
 
 ## Output Files

@@ -1,11 +1,11 @@
 ---
 name: journal-formatting
-description: "Apply journal-specific formatting requirements. Triggers: format for journal, journal requirements, submission format, style guide. Supports 50+ journals."
+description: "Apply journal-specific formatting requirements. Triggers: format for journal, journal requirements, submission format, style guide. Local database covers 16 publisher and journal profiles; other journals are looked up via web search."
 ---
 
 # Journal Formatting
 
-Look up and apply journal-specific formatting requirements to manuscripts.
+Look up and apply journal-specific formatting requirements to manuscripts. `references/journal-database.md` carries 16 publisher and journal profiles (Elsevier, Springer, Nature family, IEEE, ACM, Wiley, Taylor and Francis, PLOS ONE, Science, MDPI, and more); anything not in it is looked up from the publisher's author guidelines via web search.
 
 ## Supported Publishers and Document Classes
 
@@ -46,6 +46,16 @@ Look up and apply journal-specific formatting requirements to manuscripts.
 - Figure width specifications (single-column: 84mm, double-column: 174mm)
 - Naming convention (e.g., `Fig1.eps`, `Figure_1.tiff`)
 
+### Figure Style Presets
+
+Map the target journal's publisher family to a figure style preset before generating figures:
+
+- Nature portfolio (Nature, Nature Communications, Scientific Reports, and sibling journals): use the `nature` preset
+- IEEE (journal or conference `IEEEtran` targets): use the `ieee` preset
+- Everything else (Elsevier, Springer, ACM, Wiley, Taylor and Francis, PLOS, Science, MDPI, and any journal not otherwise matched): use the `default` preset
+
+Presets (fonts, color palettes, line weights, sizing) are defined in `references/figure-styles.md`.
+
 ### Reference Format
 - Citation style (APA, IEEE, Vancouver, Chicago, numbered, author-year)
 - BibTeX style file (`.bst`) to use
@@ -63,8 +73,8 @@ Look up and apply journal-specific formatting requirements to manuscripts.
 
 1. User specifies target journal name
 2. Check `references/journal-database.md` for cached requirements
-3. If not found, run `scripts/journal-lookup.py` to search publisher websites
-4. If still not found, use web search to locate author guidelines
+3. If not found, run `scripts/journal-lookup.py` to search the local database; on a miss it prints the closest matches and suggests consulting the publisher's author guidelines (the script performs no web requests itself)
+4. If still not found, use web search to locate the author guidelines
 5. Parse and structure requirements into standard format
 6. Cache results in `references/journal-database.md` for future use
 
@@ -108,7 +118,7 @@ Run a pre-submission checklist that verifies:
 ### Validation Output
 
 ```markdown
-# Submission Compliance Report — [Journal Name]
+# Submission Compliance Report: [Journal Name]
 
 ## Status: PASS / FAIL (N issues)
 
@@ -137,3 +147,12 @@ Run a pre-submission checklist that verifies:
 5. Run compliance validation
 6. Report pass/fail with specific issues to fix
 7. Re-validate after user addresses issues
+
+## Integrity constraints
+
+- Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it: never invent a DOI, author list, venue, or year.
+- Never invent data: only user-provided or actually computed numbers may appear as results. Anything illustrative must be labeled "(synthetic, for demonstration)".
+- Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+- Compile-check all LaTeX with tectonic (`scripts/latex-compile.py`, or `latex-compile.sh` on POSIX) before delivery.
+
+Canonical copy: `references/integrity-constraints.md`.

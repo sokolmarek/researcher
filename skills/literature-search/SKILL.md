@@ -15,12 +15,12 @@ Multi-source academic literature search with deduplication and ranking.
 1. **Parse research question** → extract key concepts, synonyms, MeSH terms
 2. **Construct queries** → adapt syntax per source (Boolean for PubMed, keywords for Semantic Scholar)
 3. **Dispatch searches** to available sources (in priority order):
-   - **Scite (PRIMARY when MCP connected)** — smart citation context, citation tallies, full-text snippets
-   - PubMed (via NCBI E-utilities) — biomedical focus
-   - Semantic Scholar (via S2 API) — broad CS/science coverage, citation graphs
-   - arXiv (via API) — preprints, CS/physics/math
-   - Google Scholar (via web search) — broadest coverage
-   - CrossRef (via API) — DOI resolution, metadata
+   - **Scite (PRIMARY when MCP connected)**: smart citation context, citation tallies, full-text snippets
+   - PubMed (via NCBI E-utilities): biomedical focus
+   - Semantic Scholar (via S2 API): broad CS/science coverage, citation graphs
+   - arXiv (via API): preprints, CS/physics/math
+   - Google Scholar (via web search): broadest coverage
+   - CrossRef (via API): DOI resolution, metadata
 4. **Deduplicate** results by DOI, then by title similarity (>0.9 Jaccard)
 5. **Rank** by: relevance to query > recency > citation count
 6. **Present** results in structured format
@@ -138,3 +138,11 @@ When user selects papers, generate BibTeX entries and append to `manuscript/refe
 ## References
 
 For advanced search strategies, read `references/search-strategies.md`.
+
+## Integrity constraints
+
+1. Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it; never invent a DOI, author list, venue, or year.
+2. Never invent data: only user-provided or actually computed numbers may appear as results. Anything illustrative must be labeled "(synthetic, for demonstration)".
+3. Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+
+Canonical copy: `references/integrity-constraints.md`.

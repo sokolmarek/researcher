@@ -7,7 +7,9 @@ description: "Generate publication-quality data visualizations with matplotlib, 
 
 Publication-quality data visualization with multiple plotting libraries. Generates actual runnable code that produces journal-ready figures.
 
-## IMPORTANT: This skill routes code generation to Sonnet subagent to conserve Opus tokens.
+## Model Routing
+
+This skill runs in the main session: it needs the conversation's data context. For heavy plotting code, you may launch the `visualization-agent` subagent (pinned to Sonnet in its frontmatter) via the Task/Agent tool; the skill itself does not switch models.
 
 ## Supported Libraries
 
@@ -105,12 +107,30 @@ plt.rcParams.update({
 })
 ```
 
+## Style Presets
+
+Named figure style presets: `default`, `nature`, `ieee`. Each preset's rcParams and sizing rules are defined once in `references/figure-styles.md`; load that file rather than duplicating values here.
+
+### Trigger phrases
+Apply a preset when the user asks for it, for example:
+- "nature style", "in Nature format", "for submission to Nature" -> `nature`
+- "IEEE two-column figure" -> `ieee`
+
+### Journal inference
+If the user names no style but `manuscript/config.yaml` specifies a target journal, map that journal to its preset (Nature-family journals -> `nature`, IEEE venues -> `ieee`).
+
+### Default rule
+If no style is mentioned and no journal maps to a preset, use the `default` preset. This is the current behavior, unchanged.
+
+### Integrity
+Presets restyle only: fonts, sizes, colors, dimensions, DPI. They never change data values or synthetic-data labels.
+
 ## Statistical Annotations
 
 - **Significance brackets:** p-value brackets between groups (*, **, ***, ns)
 - **Correlation coefficients:** Pearson r or Spearman rho on scatter plots
 - **Regression lines:** With confidence bands (95% CI shading)
-- **Error bars:** Standard error (SE), standard deviation (SD), or confidence interval (CI) — always label which
+- **Error bars:** Standard error (SE), standard deviation (SD), or confidence interval (CI): always label which
 - **Effect sizes:** Cohen's d or eta-squared annotations where appropriate
 
 ## Data Input
@@ -164,12 +184,13 @@ Panel labels follow journal convention: lowercase letters in parentheses, bold, 
 1. **Determine data source:** CSV, JSON, inline, or existing manuscript table
 2. **Select chart type:** Based on data characteristics or user request
 3. **Choose library:** Based on user preference, language, or best fit
-4. **Generate code:** Route to Sonnet subagent for code generation
-5. **Apply publication styling:** DPI, fonts, colors, dimensions per journal requirements
-6. **Add statistical annotations** if applicable
-7. **Generate caption** following journal conventions
-8. **Save to `figures/`** in appropriate format
-9. **Generate manuscript inclusion snippet** (`\includegraphics{}` or Word embedding)
+4. **Generate code:** Write the plotting code in-session; for heavy plotting code, optionally launch the `visualization-agent` subagent (Sonnet) via the Task/Agent tool
+5. **Apply style preset:** Load `references/figure-styles.md`, select the preset (user phrase, journal inference from `manuscript/config.yaml`, or `default`), apply its rcParams and sizing, and tell the user which preset was applied
+6. **Apply publication styling:** DPI, fonts, colors, dimensions per journal requirements
+7. **Add statistical annotations** if applicable
+8. **Generate caption** following journal conventions
+9. **Save to `figures/`** in appropriate format
+10. **Generate manuscript inclusion snippet** (`\includegraphics{}` or Word embedding)
 
 ## Caption Generation
 

@@ -5,7 +5,7 @@ description: "Deep research that converges on arguments and thesis construction.
 
 # Research Convergence
 
-Not just finding papers — converging on arguments. Deep research that builds toward a thesis through structured argumentation.
+Not just finding papers: converging on arguments. Deep research that builds toward a thesis through structured argumentation.
 
 ## CRITICAL INTEGRITY RULE
 **NEVER fabricate claims or evidence chains.** Every claim in the argument map must trace back to a real citation from an actual search. If evidence is thin, say so. Gaps are findings too.
@@ -37,10 +37,10 @@ Triggered by: "full research", "deep dive", "comprehensive argument", "build the
 Comprehensive multi-round investigation that builds an argument map from the literature.
 
 **Workflow:**
-1. **Round 1 — Broad scan:** Search across all available connectors for the core research question. Identify major themes, key authors, seminal papers (15-30 papers).
-2. **Round 2 — Targeted deepening:** For each major theme, conduct focused follow-up searches. Chase citations forward and backward on the most relevant papers (20-40 additional papers).
-3. **Round 3 — Counter-evidence hunt:** Explicitly search for papers that contradict or complicate the emerging thesis. Search for failed replications, negative results, critical commentaries (10-20 papers).
-4. **Round 4 — Synthesis:** Organize all findings into an argument map. Identify the strongest line of argumentation. Note where evidence is strong vs weak.
+1. **Round 1 (Broad scan):** Search across all available connectors for the core research question. Identify major themes, key authors, seminal papers (15-30 papers).
+2. **Round 2 (Targeted deepening):** For each major theme, conduct focused follow-up searches. Chase citations forward and backward on the most relevant papers (20-40 additional papers).
+3. **Round 3 (Counter-evidence hunt):** Explicitly search for papers that contradict or complicate the emerging thesis. Search for failed replications, negative results, critical commentaries (10-20 papers).
+4. **Round 4 (Synthesis):** Organize all findings into an argument map. Identify the strongest line of argumentation. Note where evidence is strong vs weak.
 
 **Output:** `argument-map.md` (see Output Format below)
 
@@ -98,10 +98,10 @@ The core output of Full Research Mode is `argument-map.md`:
 [Citations organized by argument thread, not alphabetically]
 
 ### Supporting [Claim 1]
-- **smith2024**: Smith et al. (2024). "Title." Journal. — [2-sentence annotation]
+- **smith2024**: Smith et al. (2024). "Title." Journal. ([2-sentence annotation])
 
 ### Challenging [Claim 1]
-- **jones2023**: Jones et al. (2023). "Title." Journal. — [2-sentence annotation]
+- **jones2023**: Jones et al. (2023). "Title." Journal. ([2-sentence annotation])
 ```
 
 ## Progressive Narrowing Strategy
@@ -110,7 +110,7 @@ Each search round builds on prior results:
 - **Round 1 queries:** Broad terms from the research question
 - **Round 2 queries:** Specific terms extracted from Round 1 abstracts, key author names, cited references
 - **Round 3 queries:** Negation queries ("failure of X", "limitations of X", "critique of X"), replication studies, meta-analyses
-- **Round 4:** No new searches — synthesis of accumulated evidence
+- **Round 4:** No new searches, only synthesis of accumulated evidence
 
 Track all queries and result counts for reproducibility.
 

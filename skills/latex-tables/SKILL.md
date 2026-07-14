@@ -116,12 +116,22 @@ Create publication-quality tables using `booktabs` conventions for academic manu
 - Respect maximum table count limits if specified
 - Use `tabular*` or `tabularx` for full-width tables when journal requires it
 
+## Style Presets
+
+- Named presets (`default`, `nature`, `ieee`) are defined once in `references/figure-styles.md`. This skill does not duplicate those definitions; it reads that file for the concrete values.
+- This skill consumes the preset's booktabs conventions, font size, rule weights, and caption placement, applying them to the tabular output generated here.
+- Trigger phrases that select a non-default preset: "nature style", "in Nature format", "for submission to <journal>", "IEEE format".
+- Journal inference: if the user names a journal instead of a preset, check `manuscript/config.yaml` for the target journal and map it to a preset family (Nature portfolio titles map to `nature`, IEEE titles map to `ieee`, anything else falls back to `default`).
+- No style mentioned means the `default` preset, which is exactly the current behavior described above (zero change).
+- Presets restyle only: they never alter data, values, or the "(synthetic, for demonstration)" labeling on placeholder data.
+
 ## Workflow
 
 1. Determine table type from user request
 2. Collect data (CSV, JSON, inline, or user description)
 3. Confirm column headers, alignment, and grouping with user
-4. Generate LaTeX code with all required packages noted
-5. Save to `tables/table-<name>.tex`
-6. Validate compilation via tectonic
-7. If Word output requested, generate docx-js equivalent
+4. Load `references/figure-styles.md` and resolve the style preset (explicit trigger phrase, or journal named/read from `manuscript/config.yaml`, or `default`); state which preset was applied and why
+5. Generate LaTeX code with all required packages noted, styled per the resolved preset
+6. Save to `tables/table-<name>.tex`
+7. Validate compilation via tectonic
+8. If Word output requested, generate docx-js equivalent

@@ -5,7 +5,7 @@ description: "Socratic research design refinement through guided questioning. Tr
 
 # Brainstorming
 
-Socratic research design refinement — from vague idea to actionable research question.
+Socratic research design refinement: from vague idea to actionable research question.
 
 ## Core Philosophy
 
@@ -20,7 +20,7 @@ Establish what the user actually means. Remove ambiguity.
 - "What exactly do you mean by [term]?"
 - "Can you give a concrete example of what you're describing?"
 - "When you say [X], are you referring to [A] or [B]?"
-- "What is the scope — a specific population, domain, time period?"
+- "What is the scope: a specific population, domain, time period?"
 
 ### Phase 2: Assumptions
 Surface hidden assumptions that constrain or bias the inquiry.

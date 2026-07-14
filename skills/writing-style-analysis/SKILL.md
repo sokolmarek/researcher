@@ -1,6 +1,6 @@
 ---
 name: writing-style-analysis
-description: "Analyze and emulate academic writing style. Triggers: analyze my writing style, match my style, emulate writing, learn my voice, writing profile, style analysis. Reads past papers from local folder or Google Scholar profile."
+description: "Analyze and emulate academic writing style. Triggers: analyze my writing style, match my style, emulate writing, learn my voice, writing profile, style analysis. Reads past papers from local folder; can pull publication metadata and abstracts from a scholar profile."
 ---
 
 # Writing Style Analysis
@@ -15,9 +15,9 @@ Read the author's past papers from the `author-papers/` folder in the project ro
 ### Google Scholar Profile
 Triggered by: "from Google Scholar", "my scholar profile", or when user provides a URL or author name.
 - Accept a Google Scholar profile URL or an author name string
-- Run `scripts/scholar-scraper.py` to fetch available paper texts
-- Fall back to Semantic Scholar API if scraping fails
-- Store fetched papers in `author-papers/` for future reuse
+- Run `scripts/scholar-scraper.py`: it queries the Semantic Scholar author API and saves publication metadata (title, year, venue, citation count, DOI) and abstracts to `author-publications.json` and `abstracts.txt`
+- Abstracts are useful for citation-density and vocabulary signals at the abstract level; the script downloads no PDFs and computes no style metrics
+- Full-text style metrics (sentence length, hedging, passive voice, Flesch-Kincaid, and so on) require the papers themselves: the user places them in `author-papers/` as `.tex`, `.pdf`, `.md`, `.txt`, or `.docx`, and the Analysis Dimensions below are computed from those local files
 
 ## Analysis Dimensions
 
@@ -119,8 +119,8 @@ Beyond the standard metrics in Analysis Dimensions, the calibration pipeline cap
 - Specificity: vague acknowledgments vs detailed discussion of impact on findings
 
 #### Citation Integration Style
-- **Parenthetical heavy**: most citations are parenthetical — (Smith et al., 2024)
-- **Narrative heavy**: most citations use the author as subject — "Smith et al. (2024) demonstrated..."
+- **Parenthetical heavy**: most citations are parenthetical, e.g. (Smith et al., 2024)
+- **Narrative heavy**: most citations use the author as subject, e.g. "Smith et al. (2024) demonstrated..."
 - **Mixed pattern**: specific ratio and context rules (e.g., narrative in Introduction, parenthetical in Discussion)
 - Citation clustering behavior: single citations per claim vs citation strings
 
@@ -194,6 +194,6 @@ When `manuscript/style-profile.yaml` exists, the paper-drafting skill must:
 
 ## Related Skills
 
-- **paper-drafting** — consumes the style profile during all drafting operations
-- **journal-formatting** — provides target journal context for comparison mode
-- **literature-search** — can fetch author papers for analysis via Semantic Scholar author endpoint
+- **paper-drafting**: consumes the style profile during all drafting operations
+- **journal-formatting**: provides target journal context for comparison mode
+- **literature-search**: can fetch author papers for analysis via Semantic Scholar author endpoint
