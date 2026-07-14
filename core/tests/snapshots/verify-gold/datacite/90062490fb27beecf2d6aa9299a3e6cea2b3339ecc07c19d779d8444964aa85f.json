@@ -1,0 +1,268 @@
+{
+  "endpoint": "dois/10.48550/arxiv.1703.06870",
+  "request_key": "90062490fb27beecf2d6aa9299a3e6cea2b3339ecc07c19d779d8444964aa85f",
+  "request_params": {},
+  "response_body": {
+    "data": {
+      "attributes": {
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifier": "1703.06870",
+            "alternateIdentifierType": "arXiv"
+          }
+        ],
+        "citationCount": 7,
+        "citationsOverTime": [
+          {
+            "total": 2,
+            "year": "2022"
+          },
+          {
+            "total": 2,
+            "year": "2024"
+          },
+          {
+            "total": 3,
+            "year": "2026"
+          }
+        ],
+        "container": {},
+        "contentUrl": null,
+        "contributors": [],
+        "created": "2022-03-05T03:01:38.000Z",
+        "creators": [
+          {
+            "affiliation": [],
+            "familyName": "He",
+            "givenName": "Kaiming",
+            "name": "He, Kaiming",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [],
+            "familyName": "Gkioxari",
+            "givenName": "Georgia",
+            "name": "Gkioxari, Georgia",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [],
+            "familyName": "Dollár",
+            "givenName": "Piotr",
+            "name": "Dollár, Piotr",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [],
+            "familyName": "Girshick",
+            "givenName": "Ross",
+            "name": "Girshick, Ross",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2017-03-20T17:53:38Z",
+            "dateInformation": "v1",
+            "dateType": "Submitted"
+          },
+          {
+            "date": "2017-03-21T00:14:38Z",
+            "dateInformation": "v1",
+            "dateType": "Updated"
+          },
+          {
+            "date": "2017-04-05T20:14:55Z",
+            "dateInformation": "v2",
+            "dateType": "Submitted"
+          },
+          {
+            "date": "2017-04-07T00:01:11Z",
+            "dateInformation": "v2",
+            "dateType": "Updated"
+          },
+          {
+            "date": "2018-01-24T07:54:08Z",
+            "dateInformation": "v3",
+            "dateType": "Submitted"
+          },
+          {
+            "date": "2018-01-25T01:04:45Z",
+            "dateInformation": "v3",
+            "dateType": "Updated"
+          },
+          {
+            "date": "2017-03",
+            "dateInformation": "v1",
+            "dateType": "Available"
+          },
+          {
+            "date": "2017",
+            "dateType": "Issued"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "We present a conceptually simple, flexible, and general framework for object instance segmentation. Our approach efficiently detects objects in an image while simultaneously generating a high-quality segmentation mask for each instance. The method, called Mask R-CNN, extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. Mask R-CNN is simple to train and adds only a small overhead to Faster R-CNN, running at 5 fps. Moreover, Mask R-CNN is easy to generalize to other tasks, e.g., allowing us to estimate human poses in the same framework. We show top results in all three tracks of the COCO suite of challenges, including instance segmentation, bounding-box object detection, and person keypoint detection. Without bells and whistles, Mask R-CNN outperforms all existing, single-model entries on every task, including the COCO 2016 challenge winners. We hope our simple and effective approach will serve as a solid baseline and help ease future research in instance-level recognition. Code has been made available at: https://github.com/facebookresearch/Detectron",
+            "descriptionType": "Abstract"
+          },
+          {
+            "description": "open source; appendix on more results",
+            "descriptionType": "Other"
+          }
+        ],
+        "doi": "10.48550/arxiv.1703.06870",
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "formats": [],
+        "fundingReferences": [],
+        "geoLocations": [],
+        "identifiers": [
+          {
+            "identifier": "1703.06870",
+            "identifierType": "arXiv"
+          }
+        ],
+        "isActive": true,
+        "language": null,
+        "metadataVersion": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "prefix": "10.48550",
+        "publicationYear": 2017,
+        "published": "2017",
+        "publisher": "arXiv",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2022-03-05T03:01:39.000Z",
+        "relatedIdentifiers": [],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rights": "arXiv.org perpetual, non-exclusive license",
+            "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [],
+        "source": "mds",
+        "state": "findable",
+        "subjects": [
+          {
+            "lang": "en",
+            "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+            "subjectScheme": "arXiv"
+          },
+          {
+            "subject": "FOS: Computer and information sciences",
+            "subjectScheme": "Fields of Science and Technology (FOS)"
+          },
+          {
+            "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+            "subject": "FOS: Computer and information sciences",
+            "subjectScheme": "Fields of Science and Technology (FOS)"
+          }
+        ],
+        "suffix": "arxiv.1703.06870",
+        "titles": [
+          {
+            "title": "Mask R-CNN"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "article",
+          "resourceType": "Article",
+          "resourceTypeGeneral": "Preprint",
+          "ris": "GEN",
+          "schemaOrg": "CreativeWork"
+        },
+        "updated": "2024-08-16T08:39:32.000Z",
+        "url": "https://arxiv.org/abs/1703.06870",
+        "version": "3",
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4xNzAzLjA2ODcwPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MTcwMy4wNjg3MDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5IZSwgS2FpbWluZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+S2FpbWluZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5IZTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Ha2lveGFyaSwgR2VvcmdpYTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+R2VvcmdpYTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Ha2lveGFyaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Eb2xsw6FyLCBQaW90cjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+UGlvdHI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+RG9sbMOhcjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5HaXJzaGljaywgUm9zczwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Um9zczwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5HaXJzaGljazwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+TWFzayBSLUNOTjwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGVyIFZpc2lvbiBhbmQgUGF0dGVybiBSZWNvZ25pdGlvbiAoY3MuQ1YpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxNy0wMy0yMFQxNzo1MzozOFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxNy0wMy0yMVQwMDoxNDozOFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDE3LTA0LTA1VDIwOjE0OjU1WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDE3LTA0LTA3VDAwOjAxOjExWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjMiPjIwMTgtMDEtMjRUMDc6NTQ6MDhaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjMiPjIwMTgtMDEtMjVUMDE6MDQ6NDVaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxNy0wMzwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4zPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+V2UgcHJlc2VudCBhIGNvbmNlcHR1YWxseSBzaW1wbGUsIGZsZXhpYmxlLCBhbmQgZ2VuZXJhbCBmcmFtZXdvcmsgZm9yIG9iamVjdCBpbnN0YW5jZSBzZWdtZW50YXRpb24uIE91ciBhcHByb2FjaCBlZmZpY2llbnRseSBkZXRlY3RzIG9iamVjdHMgaW4gYW4gaW1hZ2Ugd2hpbGUgc2ltdWx0YW5lb3VzbHkgZ2VuZXJhdGluZyBhIGhpZ2gtcXVhbGl0eSBzZWdtZW50YXRpb24gbWFzayBmb3IgZWFjaCBpbnN0YW5jZS4gVGhlIG1ldGhvZCwgY2FsbGVkIE1hc2sgUi1DTk4sIGV4dGVuZHMgRmFzdGVyIFItQ05OIGJ5IGFkZGluZyBhIGJyYW5jaCBmb3IgcHJlZGljdGluZyBhbiBvYmplY3QgbWFzayBpbiBwYXJhbGxlbCB3aXRoIHRoZSBleGlzdGluZyBicmFuY2ggZm9yIGJvdW5kaW5nIGJveCByZWNvZ25pdGlvbi4gTWFzayBSLUNOTiBpcyBzaW1wbGUgdG8gdHJhaW4gYW5kIGFkZHMgb25seSBhIHNtYWxsIG92ZXJoZWFkIHRvIEZhc3RlciBSLUNOTiwgcnVubmluZyBhdCA1IGZwcy4gTW9yZW92ZXIsIE1hc2sgUi1DTk4gaXMgZWFzeSB0byBnZW5lcmFsaXplIHRvIG90aGVyIHRhc2tzLCBlLmcuLCBhbGxvd2luZyB1cyB0byBlc3RpbWF0ZSBodW1hbiBwb3NlcyBpbiB0aGUgc2FtZSBmcmFtZXdvcmsuIFdlIHNob3cgdG9wIHJlc3VsdHMgaW4gYWxsIHRocmVlIHRyYWNrcyBvZiB0aGUgQ09DTyBzdWl0ZSBvZiBjaGFsbGVuZ2VzLCBpbmNsdWRpbmcgaW5zdGFuY2Ugc2VnbWVudGF0aW9uLCBib3VuZGluZy1ib3ggb2JqZWN0IGRldGVjdGlvbiwgYW5kIHBlcnNvbiBrZXlwb2ludCBkZXRlY3Rpb24uIFdpdGhvdXQgYmVsbHMgYW5kIHdoaXN0bGVzLCBNYXNrIFItQ05OIG91dHBlcmZvcm1zIGFsbCBleGlzdGluZywgc2luZ2xlLW1vZGVsIGVudHJpZXMgb24gZXZlcnkgdGFzaywgaW5jbHVkaW5nIHRoZSBDT0NPIDIwMTYgY2hhbGxlbmdlIHdpbm5lcnMuIFdlIGhvcGUgb3VyIHNpbXBsZSBhbmQgZWZmZWN0aXZlIGFwcHJvYWNoIHdpbGwgc2VydmUgYXMgYSBzb2xpZCBiYXNlbGluZSBhbmQgaGVscCBlYXNlIGZ1dHVyZSByZXNlYXJjaCBpbiBpbnN0YW5jZS1sZXZlbCByZWNvZ25pdGlvbi4gQ29kZSBoYXMgYmVlbiBtYWRlIGF2YWlsYWJsZSBhdDogaHR0cHM6Ly9naXRodWIuY29tL2ZhY2Vib29rcmVzZWFyY2gvRGV0ZWN0cm9uPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik90aGVyIj5vcGVuIHNvdXJjZTsgYXBwZW5kaXggb24gbW9yZSByZXN1bHRzPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4="
+      },
+      "id": "10.48550/arxiv.1703.06870",
+      "relationships": {
+        "citations": {
+          "data": [
+            {
+              "id": "10.5334/jors.178",
+              "type": "dois"
+            },
+            {
+              "id": "10.3390/s22083044",
+              "type": "dois"
+            },
+            {
+              "id": "10.6084/m9.figshare.26627725",
+              "type": "dois"
+            },
+            {
+              "id": "10.6084/m9.figshare.26627725.v1",
+              "type": "dois"
+            },
+            {
+              "id": "10.6084/m9.figshare.21746195",
+              "type": "dois"
+            },
+            {
+              "id": "10.25418/crick.21552006",
+              "type": "dois"
+            },
+            {
+              "id": "10.25418/crick.21552006.v1",
+              "type": "dois"
+            }
+          ]
+        },
+        "client": {
+          "data": {
+            "id": "arxiv.content",
+            "type": "clients"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.48550/arxiv.1703.06870",
+            "type": "media"
+          }
+        },
+        "partOf": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "provider": {
+          "data": {
+            "id": "arxiv",
+            "type": "providers"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        }
+      },
+      "type": "dois"
+    }
+  },
+  "response_hash": "8ca422192d437bee6ef8f4bc7a41dcfcddb0d9eb0098d00b3daf763f3ef16672",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

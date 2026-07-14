@@ -1,0 +1,3550 @@
+{
+  "endpoint": "works",
+  "request_key": "91e58a777c6bf951cbd8bc6f4aa67b1b74ee867acd758ed93b9a5d63bcbe25cc",
+  "request_params": {
+    "per-page": 5,
+    "search": "Deep Residual Learning for Image Recognition",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 273369,
+      "db_response_time_ms": 229,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (Deep Residual Learning for Image Recognition)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Deep Residual Learning for Image Recognition"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Deep Residual Learning for Image Recognition&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "&": [
+            177
+          ],
+          "-": [
+            86
+          ],
+          "100": [
+            131
+          ],
+          "1000": [
+            133
+          ],
+          "152": [
+            84
+          ],
+          "1st": [
+            116,
+            186
+          ],
+          "2015": [
+            121,
+            179
+          ],
+          "28%": [
+            158
+          ],
+          "3.57%": [
+            105
+          ],
+          "8×": [
+            87
+          ],
+          "An": [
+            98
+          ],
+          "CIFAR-10": [
+            129
+          ],
+          "COCO": [
+            163,
+            178,
+            196,
+            199
+          ],
+          "Deep": [
+            167
+          ],
+          "Deeper": [
+            0
+          ],
+          "ILSVRC": [
+            120,
+            176
+          ],
+          "ImageNet": [
+            72,
+            109,
+            192,
+            194
+          ],
+          "On": [
+            70
+          ],
+          "Solely": [
+            148
+          ],
+          "The": [
+            135
+          ],
+          "This": [
+            112
+          ],
+          "VGG": [
+            90
+          ],
+          "We": [
+            8,
+            28,
+            48,
+            124
+          ],
+          "[40]": [
+            92
+          ],
+          "a": [
+            10,
+            79,
+            157
+          ],
+          "accuracy": [
+            65
+          ],
+          "achieves": [
+            104
+          ],
+          "also": [
+            125,
+            183
+          ],
+          "analysis": [
+            127
+          ],
+          "and": [
+            62,
+            132,
+            198
+          ],
+          "are": [
+            3,
+            21,
+            58,
+            170
+          ],
+          "as": [
+            33
+          ],
+          "but": [
+            93
+          ],
+          "can": [
+            63
+          ],
+          "central": [
+            141
+          ],
+          "classification": [
+            122
+          ],
+          "competitions1,": [
+            180
+          ],
+          "complexity.": [
+            97
+          ],
+          "comprehensive": [
+            50
+          ],
+          "considerably": [
+            67
+          ],
+          "dataset": [
+            73
+          ],
+          "dataset.": [
+            166
+          ],
+          "deep": [
+            153
+          ],
+          "deeper": [
+            23,
+            88
+          ],
+          "depth": [
+            80,
+            136
+          ],
+          "depth.": [
+            69
+          ],
+          "detection": [
+            165
+          ],
+          "detection,": [
+            193,
+            197
+          ],
+          "difficult": [
+            5
+          ],
+          "due": [
+            149
+          ],
+          "ease": [
+            15
+          ],
+          "easier": [
+            59
+          ],
+          "empirical": [
+            51
+          ],
+          "ensemble": [
+            99
+          ],
+          "error": [
+            106
+          ],
+          "evaluate": [
+            75
+          ],
+          "evidence": [
+            52
+          ],
+          "explicitly": [
+            29
+          ],
+          "extremely": [
+            152
+          ],
+          "for": [
+            143
+          ],
+          "foundations": [
+            171
+          ],
+          "framework": [
+            13
+          ],
+          "from": [
+            66
+          ],
+          "functions": [
+            36
+          ],
+          "functions.": [
+            47
+          ],
+          "gain": [
+            64
+          ],
+          "having": [
+            95
+          ],
+          "importance": [
+            142
+          ],
+          "improvement": [
+            160
+          ],
+          "increased": [
+            68
+          ],
+          "inputs,": [
+            42
+          ],
+          "instead": [
+            43
+          ],
+          "is": [
+            139
+          ],
+          "layer": [
+            41
+          ],
+          "layers": [
+            32,
+            85
+          ],
+          "layers.": [
+            134
+          ],
+          "learning": [
+            12,
+            34,
+            45
+          ],
+          "localization,": [
+            195
+          ],
+          "lower": [
+            96
+          ],
+          "many": [
+            144
+          ],
+          "more": [
+            4
+          ],
+          "nets": [
+            77,
+            91,
+            103,
+            169
+          ],
+          "networks": [
+            2,
+            19,
+            57
+          ],
+          "neural": [
+            1
+          ],
+          "object": [
+            164
+          ],
+          "obtain": [
+            156
+          ],
+          "of": [
+            18,
+            44,
+            81,
+            100,
+            137,
+            140,
+            172,
+            191
+          ],
+          "on": [
+            107,
+            118,
+            128,
+            161,
+            188
+          ],
+          "optimize,": [
+            61
+          ],
+          "our": [
+            151,
+            173
+          ],
+          "place": [
+            117
+          ],
+          "places": [
+            187
+          ],
+          "present": [
+            9,
+            126
+          ],
+          "previously.": [
+            27
+          ],
+          "provide": [
+            49
+          ],
+          "recognition": [
+            146
+          ],
+          "reference": [
+            38
+          ],
+          "reformulate": [
+            30
+          ],
+          "relative": [
+            159
+          ],
+          "representations": [
+            138
+          ],
+          "representations,": [
+            154
+          ],
+          "residual": [
+            11,
+            35,
+            56,
+            76,
+            102,
+            168
+          ],
+          "result": [
+            113
+          ],
+          "segmentation.": [
+            200
+          ],
+          "set.": [
+            111
+          ],
+          "showing": [
+            53
+          ],
+          "still": [
+            94
+          ],
+          "submissions": [
+            174
+          ],
+          "substantially": [
+            22
+          ],
+          "task.": [
+            123
+          ],
+          "tasks": [
+            190
+          ],
+          "tasks.": [
+            147
+          ],
+          "test": [
+            110
+          ],
+          "than": [
+            24,
+            89
+          ],
+          "that": [
+            20,
+            54
+          ],
+          "the": [
+            16,
+            31,
+            40,
+            71,
+            108,
+            115,
+            119,
+            162,
+            185,
+            189
+          ],
+          "these": [
+            55,
+            101
+          ],
+          "those": [
+            25
+          ],
+          "to": [
+            6,
+            14,
+            39,
+            60,
+            83,
+            150,
+            175
+          ],
+          "train.": [
+            7
+          ],
+          "training": [
+            17
+          ],
+          "unreferenced": [
+            46
+          ],
+          "up": [
+            82
+          ],
+          "used": [
+            26
+          ],
+          "visual": [
+            145
+          ],
+          "we": [
+            74,
+            155,
+            182
+          ],
+          "where": [
+            181
+          ],
+          "with": [
+            37,
+            78,
+            130
+          ],
+          "won": [
+            114,
+            184
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft Research"
+              }
+            ],
+            "author": {
+              "display_name": "Kaiming He",
+              "id": "https://openalex.org/A5100700361",
+              "orcid": "https://orcid.org/0000-0001-7318-9658"
+            },
+            "author_position": "first",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft Research"
+            ],
+            "raw_author_name": "Kaiming He",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft Research"
+              }
+            ],
+            "author": {
+              "display_name": "Xiangyu Zhang",
+              "id": "https://openalex.org/A5100362465",
+              "orcid": "https://orcid.org/0000-0003-2138-4608"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft Research"
+            ],
+            "raw_author_name": "Xiangyu Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft Research"
+              }
+            ],
+            "author": {
+              "display_name": "Shaoqing Ren",
+              "id": "https://openalex.org/A5100824251",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft Research"
+            ],
+            "raw_author_name": "Shaoqing Ren",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft Research"
+              }
+            ],
+            "author": {
+              "display_name": "Jian Sun",
+              "id": "https://openalex.org/A5100785015",
+              "orcid": "https://orcid.org/0000-0002-6178-4166"
+            },
+            "author_position": "last",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft Research"
+            ],
+            "raw_author_name": "Jian Sun",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:repositorio.unal.edu.co:unal/81443",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://repositorio.unal.edu.co/handle/unal/81443",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": "reponame:Repositorio UN",
+          "raw_type": "info:eu-repo/semantics/masterThesis",
+          "source": {
+            "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+            "host_organization": "https://openalex.org/I4383465926",
+            "host_organization_lineage": [
+              "https://openalex.org/I4383465926"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "LA Referencia",
+            "id": "https://openalex.org/S4306402641",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": "770",
+          "issue": null,
+          "last_page": "778",
+          "volume": null
+        },
+        "cited_by_count": 222829,
+        "display_name": "Deep Residual Learning for Image Recognition",
+        "doi": "https://doi.org/10.1109/cvpr.2016.90",
+        "id": "https://openalex.org/W2194775991",
+        "ids": {
+          "doi": "https://doi.org/10.1109/cvpr.2016.90",
+          "mag": "2194775991",
+          "openalex": "https://openalex.org/W2194775991"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://repositorio.unal.edu.co/handle/unal/81443"
+        },
+        "primary_location": {
+          "id": "doi:10.1109/cvpr.2016.90",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1109/cvpr.2016.90",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+          "raw_type": "proceedings-article",
+          "source": null,
+          "version": "publishedVersion"
+        },
+        "publication_date": "2016-06-01",
+        "publication_year": 2016,
+        "referenced_works": [
+          "https://openalex.org/W194249466",
+          "https://openalex.org/W639708223",
+          "https://openalex.org/W1530872699",
+          "https://openalex.org/W1533861849",
+          "https://openalex.org/W1536680647",
+          "https://openalex.org/W1554663460",
+          "https://openalex.org/W1665214252",
+          "https://openalex.org/W1677182931",
+          "https://openalex.org/W1686810756",
+          "https://openalex.org/W1690739335",
+          "https://openalex.org/W1799366690",
+          "https://openalex.org/W1811843574",
+          "https://openalex.org/W1836465849",
+          "https://openalex.org/W1861492603",
+          "https://openalex.org/W1903029394",
+          "https://openalex.org/W1904365287",
+          "https://openalex.org/W1932624639",
+          "https://openalex.org/W1932847118",
+          "https://openalex.org/W1976921161",
+          "https://openalex.org/W1984309565",
+          "https://openalex.org/W1997542937",
+          "https://openalex.org/W2022532533",
+          "https://openalex.org/W2025357764",
+          "https://openalex.org/W2031489346",
+          "https://openalex.org/W2064675550",
+          "https://openalex.org/W2066941820",
+          "https://openalex.org/W2097117768",
+          "https://openalex.org/W2102605133",
+          "https://openalex.org/W2107878631",
+          "https://openalex.org/W2117539524",
+          "https://openalex.org/W2117812871",
+          "https://openalex.org/W2124509324",
+          "https://openalex.org/W2125930537",
+          "https://openalex.org/W2139398462",
+          "https://openalex.org/W2147238549",
+          "https://openalex.org/W2147800946",
+          "https://openalex.org/W2152424459",
+          "https://openalex.org/W2155893237",
+          "https://openalex.org/W2159979951",
+          "https://openalex.org/W2161388792",
+          "https://openalex.org/W2163605009",
+          "https://openalex.org/W2168894214",
+          "https://openalex.org/W2179352600",
+          "https://openalex.org/W2206858481",
+          "https://openalex.org/W2328425223",
+          "https://openalex.org/W2613718673",
+          "https://openalex.org/W2914484425",
+          "https://openalex.org/W2950094539",
+          "https://openalex.org/W2950621961",
+          "https://openalex.org/W2951603627",
+          "https://openalex.org/W2952009708",
+          "https://openalex.org/W2962835968",
+          "https://openalex.org/W2963504252",
+          "https://openalex.org/W2963542991",
+          "https://openalex.org/W2964103341",
+          "https://openalex.org/W2964118293",
+          "https://openalex.org/W3037950864",
+          "https://openalex.org/W3038058348",
+          "https://openalex.org/W3118608800",
+          "https://openalex.org/W4212915314",
+          "https://openalex.org/W4231990273",
+          "https://openalex.org/W4238404964",
+          "https://openalex.org/W4242212377",
+          "https://openalex.org/W4285719527",
+          "https://openalex.org/W4388297464",
+          "https://openalex.org/W6620707391",
+          "https://openalex.org/W6626481562",
+          "https://openalex.org/W6629368666",
+          "https://openalex.org/W6631943919",
+          "https://openalex.org/W6637242042",
+          "https://openalex.org/W6637373629",
+          "https://openalex.org/W6637551013",
+          "https://openalex.org/W6638667902",
+          "https://openalex.org/W6639102338",
+          "https://openalex.org/W6640036494",
+          "https://openalex.org/W6676338569",
+          "https://openalex.org/W6680555419",
+          "https://openalex.org/W6682359208",
+          "https://openalex.org/W6684191040",
+          "https://openalex.org/W6688059459",
+          "https://openalex.org/W6787972765"
+        ],
+        "referenced_works_count": 81,
+        "title": "Deep Residual Learning for Image Recognition",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(news.ycombinator.com/item?id=48822131).": [
+            22
+          ],
+          "(titles": [
+            30
+          ],
+          "A": [
+            0
+          ],
+          "Compiled": [
+            13
+          ],
+          "Hacker": [
+            16
+          ],
+          "News": [
+            17
+          ],
+          "This": [
+            23
+          ],
+          "a": [
+            15,
+            26
+          ],
+          "and": [
+            10,
+            31
+          ],
+          "bibliographic": [
+            27
+          ],
+          "blog": [
+            8
+          ],
+          "by": [
+            19
+          ],
+          "comment": [
+            18
+          ],
+          "course": [
+            11
+          ],
+          "curated": [
+            1
+          ],
+          "cute_boi": [
+            21
+          ],
+          "does": [
+            34
+          ],
+          "foundational": [
+            5
+          ],
+          "from": [
+            14
+          ],
+          "is": [
+            25
+          ],
+          "it": [
+            33
+          ],
+          "links);": [
+            32
+          ],
+          "list": [
+            3,
+            28
+          ],
+          "machine-learning": [
+            6
+          ],
+          "not": [
+            35
+          ],
+          "notes.": [
+            12
+          ],
+          "of": [
+            4
+          ],
+          "only": [
+            29
+          ],
+          "papers,": [
+            7
+          ],
+          "posts,": [
+            9
+          ],
+          "reading": [
+            2
+          ],
+          "record": [
+            24
+          ],
+          "redistribute": [
+            36
+          ],
+          "referenced": [
+            38
+          ],
+          "the": [
+            37
+          ],
+          "user": [
+            20
+          ],
+          "works.": [
+            39
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Broad Institute of MIT and Harvard"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft Research#TAB#"
+              }
+            ],
+            "author": {
+              "display_name": "Kaiming He",
+              "id": "https://openalex.org/A5100700361",
+              "orcid": "https://orcid.org/0000-0001-7318-9658"
+            },
+            "author_position": "first",
+            "countries": [
+              "GB",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Broad Institute of MIT and Harvard",
+              "Microsoft Research#TAB#"
+            ],
+            "raw_author_name": "Muñoz, Alán F.",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:1512.03385",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/1512.03385",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/1512.03385",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 4735,
+        "display_name": "Deep Residual Learning for Image Recognition",
+        "doi": "https://doi.org/10.48550/arxiv.1512.03385",
+        "id": "https://openalex.org/W2949650786",
+        "ids": {
+          "doi": "https://doi.org/10.48550/arxiv.1512.03385",
+          "mag": "2949650786",
+          "openalex": "https://openalex.org/W2949650786"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/1512.03385"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:1512.03385",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/1512.03385",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/1512.03385",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2015-12-10",
+        "publication_year": 2015,
+        "referenced_works": [
+          "https://openalex.org/W1530872699",
+          "https://openalex.org/W1533861849",
+          "https://openalex.org/W1536680647",
+          "https://openalex.org/W1554663460",
+          "https://openalex.org/W1665214252",
+          "https://openalex.org/W1677182931",
+          "https://openalex.org/W1799366690",
+          "https://openalex.org/W1811843574",
+          "https://openalex.org/W1836465849",
+          "https://openalex.org/W1861492603",
+          "https://openalex.org/W1903029394",
+          "https://openalex.org/W1904365287",
+          "https://openalex.org/W1932624639",
+          "https://openalex.org/W1932847118",
+          "https://openalex.org/W1976921161",
+          "https://openalex.org/W1984309565",
+          "https://openalex.org/W2022532533",
+          "https://openalex.org/W2031489346",
+          "https://openalex.org/W2064675550",
+          "https://openalex.org/W2066941820",
+          "https://openalex.org/W2097117768",
+          "https://openalex.org/W2102605133",
+          "https://openalex.org/W2107878631",
+          "https://openalex.org/W2117812871",
+          "https://openalex.org/W2124509324",
+          "https://openalex.org/W2125930537",
+          "https://openalex.org/W2139398462",
+          "https://openalex.org/W2147238549",
+          "https://openalex.org/W2147800946",
+          "https://openalex.org/W2152424459",
+          "https://openalex.org/W2159979951",
+          "https://openalex.org/W2161388792",
+          "https://openalex.org/W2163605009",
+          "https://openalex.org/W2168894214",
+          "https://openalex.org/W2179352600",
+          "https://openalex.org/W2206858481",
+          "https://openalex.org/W2328425223",
+          "https://openalex.org/W2613718673",
+          "https://openalex.org/W2914484425",
+          "https://openalex.org/W2950094539",
+          "https://openalex.org/W2950621961",
+          "https://openalex.org/W2952009708",
+          "https://openalex.org/W2952020226",
+          "https://openalex.org/W2962835968",
+          "https://openalex.org/W2963542991",
+          "https://openalex.org/W2964103341",
+          "https://openalex.org/W2964118293",
+          "https://openalex.org/W3037950864",
+          "https://openalex.org/W3038058348",
+          "https://openalex.org/W3118608800"
+        ],
+        "referenced_works_count": 50,
+        "title": "Deep Residual Learning for Image Recognition",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "Deep": [
+            0,
+            62,
+            102
+          ],
+          "Finally,": [
+            107
+          ],
+          "However,": [
+            35
+          ],
+          "ImageNet,": [
+            17
+          ],
+          "ImageNet.": [
+            106
+          ],
+          "In": [
+            53
+          ],
+          "Networks": [
+            2,
+            64,
+            104
+          ],
+          "Residual": [
+            1,
+            63,
+            103
+          ],
+          "We": [
+            86
+          ],
+          "a": [
+            80
+          ],
+          "achieve": [
+            68
+          ],
+          "advance": [
+            82
+          ],
+          "all": [
+            21
+          ],
+          "also": [
+            87
+          ],
+          "and": [
+            42,
+            72
+          ],
+          "applications": [
+            100
+          ],
+          "applied": [
+            124
+          ],
+          "are": [
+            48
+          ],
+          "are,": [
+            65
+          ],
+          "as": [
+            96,
+            98
+          ],
+          "be": [
+            116,
+            123
+          ],
+          "beating": [
+            20
+          ],
+          "been": [
+            5
+          ],
+          "before": [
+            118
+          ],
+          "beyond": [
+            105
+          ],
+          "by": [
+            27
+          ],
+          "can": [
+            122
+          ],
+          "classification": [
+            33
+          ],
+          "complex": [
+            127
+          ],
+          "dataset": [
+            26
+          ],
+          "deep": [
+            119
+          ],
+          "discuss": [
+            88,
+            109
+          ],
+          "excellent": [
+            70
+          ],
+          "existing": [
+            84
+          ],
+          "explain": [
+            60
+          ],
+          "for": [
+            45
+          ],
+          "fully": [
+            50
+          ],
+          "future": [
+            46
+          ],
+          "have": [
+            3
+          ],
+          "how": [
+            66
+          ],
+          "image": [
+            32
+          ],
+          "implementation": [
+            76
+          ],
+          "implications": [
+            44
+          ],
+          "impressive": [
+            40
+          ],
+          "improve": [
+            9
+          ],
+          "in": [
+            30,
+            77
+          ],
+          "issues": [
+            111
+          ],
+          "large": [
+            28
+          ],
+          "learning": [
+            95,
+            121
+          ],
+          "margins": [
+            29
+          ],
+          "meaning": [
+            37
+          ],
+          "methods": [
+            23
+          ],
+          "more": [
+            126
+          ],
+          "need": [
+            114
+          ],
+          "networks": [
+            14
+          ],
+          "neural": [
+            13
+          ],
+          "not": [
+            49
+          ],
+          "numbers": [
+            41
+          ],
+          "of": [
+            12,
+            38,
+            101
+          ],
+          "on": [
+            16,
+            24,
+            125
+          ],
+          "open": [
+            90
+          ],
+          "over": [
+            83
+          ],
+          "performance": [
+            11
+          ],
+          "possible": [
+            99
+          ],
+          "practice": [
+            78
+          ],
+          "previous": [
+            22
+          ],
+          "problems.": [
+            128
+          ],
+          "questions": [
+            91
+          ],
+          "recently": [
+            4
+          ],
+          "related": [
+            92
+          ],
+          "represents": [
+            79
+          ],
+          "research": [
+            47
+          ],
+          "residual": [
+            94,
+            120
+          ],
+          "resolved": [
+            117
+          ],
+          "results": [
+            19
+          ],
+          "results,": [
+            71
+          ],
+          "shown": [
+            6
+          ],
+          "significant": [
+            81
+          ],
+          "significantly": [
+            8
+          ],
+          "some": [
+            89,
+            110
+          ],
+          "still": [
+            113
+          ],
+          "successful": [
+            75
+          ],
+          "survey,": [
+            55
+          ],
+          "task.": [
+            34
+          ],
+          "techniques.": [
+            85
+          ],
+          "that": [
+            112
+          ],
+          "the": [
+            10,
+            31,
+            36
+          ],
+          "their": [
+            43,
+            69,
+            74
+          ],
+          "these": [
+            39
+          ],
+          "they": [
+            67
+          ],
+          "this": [
+            25,
+            54
+          ],
+          "to": [
+            7,
+            59,
+            93,
+            115
+          ],
+          "trained": [
+            15
+          ],
+          "try": [
+            58
+          ],
+          "understood": [
+            51
+          ],
+          "we": [
+            56,
+            108
+          ],
+          "well": [
+            97
+          ],
+          "what": [
+            61
+          ],
+          "why": [
+            73
+          ],
+          "will": [
+            57
+          ],
+          "with": [
+            18
+          ],
+          "yet.": [
+            52
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I37987034"
+                ],
+                "raw_affiliation_string": "Cyberspace Institute of Advanced Technology, Guangzhou University, Guangzhou 510006, China"
+              }
+            ],
+            "author": {
+              "display_name": "Muhammad Shafiq",
+              "id": "https://openalex.org/A5100771200",
+              "orcid": "https://orcid.org/0000-0003-1909-9373"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Guangzhou University",
+                "id": "https://openalex.org/I37987034",
+                "lineage": [
+                  "https://openalex.org/I37987034"
+                ],
+                "ror": "https://ror.org/05ar8rn06",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Cyberspace Institute of Advanced Technology, Guangzhou University, Guangzhou 510006, China"
+            ],
+            "raw_author_name": "Muhammad Shafiq",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I204983213"
+                ],
+                "raw_affiliation_string": "Department of Computer Science and Technology, Harbin Institute of Technology, Shenzhen 518055, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210136793"
+                ],
+                "raw_affiliation_string": "Department of New Networks, Peng Cheng Laboratory, Shenzhen 518055, China"
+              }
+            ],
+            "author": {
+              "display_name": "Zhaoquan Gu",
+              "id": "https://openalex.org/A5070856186",
+              "orcid": "https://orcid.org/0000-0001-7546-852X"
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Harbin Institute of Technology",
+                "id": "https://openalex.org/I204983213",
+                "lineage": [
+                  "https://openalex.org/I204983213"
+                ],
+                "ror": "https://ror.org/01yqg2h08",
+                "type": "education"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Peng Cheng Laboratory",
+                "id": "https://openalex.org/I4210136793",
+                "lineage": [
+                  "https://openalex.org/I4210136793"
+                ],
+                "ror": "https://ror.org/03qdqbt06",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Computer Science and Technology, Harbin Institute of Technology, Shenzhen 518055, China",
+              "Department of New Networks, Peng Cheng Laboratory, Shenzhen 518055, China"
+            ],
+            "raw_author_name": "Zhaoquan Gu",
+            "raw_orcid": "https://orcid.org/0000-0001-7546-852X"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3390/app12188972",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/app12188972",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2076-3417/12/18/8972/pdf?version=1662547655",
+          "raw_source_name": "Applied Sciences",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Applied Sciences",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S4210205812",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2076-3417"
+            ],
+            "issn_l": "2076-3417",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "8972",
+          "issue": "18",
+          "last_page": "8972",
+          "volume": "12"
+        },
+        "cited_by_count": 940,
+        "display_name": "Deep Residual Learning for Image Recognition: A Survey",
+        "doi": "https://doi.org/10.3390/app12188972",
+        "id": "https://openalex.org/W4295122555",
+        "ids": {
+          "doi": "https://doi.org/10.3390/app12188972",
+          "openalex": "https://openalex.org/W4295122555"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.mdpi.com/2076-3417/12/18/8972/pdf?version=1662547655"
+        },
+        "primary_location": {
+          "id": "doi:10.3390/app12188972",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/app12188972",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2076-3417/12/18/8972/pdf?version=1662547655",
+          "raw_source_name": "Applied Sciences",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Applied Sciences",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S4210205812",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2076-3417"
+            ],
+            "issn_l": "2076-3417",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2022-09-07",
+        "publication_year": 2022,
+        "referenced_works": [
+          "https://openalex.org/W2137632784",
+          "https://openalex.org/W2194775991",
+          "https://openalex.org/W2331143823",
+          "https://openalex.org/W2515239931",
+          "https://openalex.org/W2515753980",
+          "https://openalex.org/W2531409750",
+          "https://openalex.org/W2578475560",
+          "https://openalex.org/W2588463901",
+          "https://openalex.org/W2605976347",
+          "https://openalex.org/W2672260599",
+          "https://openalex.org/W2734739919",
+          "https://openalex.org/W2747898905",
+          "https://openalex.org/W2750506686",
+          "https://openalex.org/W2767360138",
+          "https://openalex.org/W2768726319",
+          "https://openalex.org/W2779862145",
+          "https://openalex.org/W2788481061",
+          "https://openalex.org/W2792166771",
+          "https://openalex.org/W2793888044",
+          "https://openalex.org/W2805702212",
+          "https://openalex.org/W2808861903",
+          "https://openalex.org/W2907492528",
+          "https://openalex.org/W2908647473",
+          "https://openalex.org/W2924962435",
+          "https://openalex.org/W2940194197",
+          "https://openalex.org/W2951041154",
+          "https://openalex.org/W2954032607",
+          "https://openalex.org/W2962925443",
+          "https://openalex.org/W2962949934",
+          "https://openalex.org/W2963677215",
+          "https://openalex.org/W2963833733",
+          "https://openalex.org/W2964887566",
+          "https://openalex.org/W2966050092",
+          "https://openalex.org/W2966974040",
+          "https://openalex.org/W2969534524",
+          "https://openalex.org/W2971710819",
+          "https://openalex.org/W2981129109",
+          "https://openalex.org/W3004500412",
+          "https://openalex.org/W3013466528",
+          "https://openalex.org/W3016181583",
+          "https://openalex.org/W3022550689",
+          "https://openalex.org/W3025804100",
+          "https://openalex.org/W3027764902",
+          "https://openalex.org/W3028187169",
+          "https://openalex.org/W3035366542",
+          "https://openalex.org/W3047703493",
+          "https://openalex.org/W3068512351",
+          "https://openalex.org/W3082297285",
+          "https://openalex.org/W3082603384",
+          "https://openalex.org/W3083565887",
+          "https://openalex.org/W3087275632",
+          "https://openalex.org/W3089733734",
+          "https://openalex.org/W3090907207",
+          "https://openalex.org/W3094117827",
+          "https://openalex.org/W3109797611",
+          "https://openalex.org/W3111133646",
+          "https://openalex.org/W3120253959",
+          "https://openalex.org/W3129489936",
+          "https://openalex.org/W3130107790",
+          "https://openalex.org/W3134605529",
+          "https://openalex.org/W3135079895",
+          "https://openalex.org/W3138415272",
+          "https://openalex.org/W3138537816",
+          "https://openalex.org/W3138881480",
+          "https://openalex.org/W3141835154",
+          "https://openalex.org/W3142516134",
+          "https://openalex.org/W3157429286",
+          "https://openalex.org/W3166382720",
+          "https://openalex.org/W3166437030",
+          "https://openalex.org/W3167224217",
+          "https://openalex.org/W3167568784",
+          "https://openalex.org/W3172986704",
+          "https://openalex.org/W3188954649",
+          "https://openalex.org/W3196842521",
+          "https://openalex.org/W3197793211",
+          "https://openalex.org/W3198610423",
+          "https://openalex.org/W3198733547",
+          "https://openalex.org/W3203403300",
+          "https://openalex.org/W3206483970",
+          "https://openalex.org/W3210787901",
+          "https://openalex.org/W4205238992",
+          "https://openalex.org/W4210805261",
+          "https://openalex.org/W4238732474",
+          "https://openalex.org/W4239025696",
+          "https://openalex.org/W4239415968",
+          "https://openalex.org/W6739651123",
+          "https://openalex.org/W6774119771",
+          "https://openalex.org/W6783490546",
+          "https://openalex.org/W6791480543",
+          "https://openalex.org/W6797026828",
+          "https://openalex.org/W6973559833"
+        ],
+        "referenced_works_count": 91,
+        "title": "Deep Residual Learning for Image Recognition: A Survey",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "\"dropout\"": [
+            117
+          ],
+          "1.2": [
+            11
+          ],
+          "1000": [
+            22
+          ],
+          "1000-way": [
+            81
+          ],
+          "15.3%,": [
+            145
+          ],
+          "17.0%,": [
+            39
+          ],
+          "26.2%": [
+            148
+          ],
+          "37.5%": [
+            37
+          ],
+          "60": [
+            54
+          ],
+          "650,000": [
+            58
+          ],
+          "GPU": [
+            95
+          ],
+          "ILSVRC-2012": [
+            134
+          ],
+          "ImageNet": [
+            17
+          ],
+          "LSVRC-2010": [
+            18
+          ],
+          "On": [
+            25
+          ],
+          "The": [
+            49
+          ],
+          "To": [
+            83,
+            101
+          ],
+          "We": [
+            0,
+            124
+          ],
+          "a": [
+            2,
+            79,
+            92,
+            111,
+            127,
+            138
+          ],
+          "achieved": [
+            30,
+            137,
+            149
+          ],
+          "also": [
+            125
+          ],
+          "and": [
+            32,
+            38,
+            57,
+            73,
+            91,
+            136
+          ],
+          "are": [
+            68
+          ],
+          "be": [
+            121
+          ],
+          "better": [
+            44
+          ],
+          "by": [
+            70,
+            150
+          ],
+          "called": [
+            116
+          ],
+          "classes.": [
+            24
+          ],
+          "classify": [
+            9
+          ],
+          "compared": [
+            146
+          ],
+          "competition": [
+            135
+          ],
+          "connected": [
+            76,
+            107
+          ],
+          "considerably": [
+            43
+          ],
+          "consists": [
+            60
+          ],
+          "contest": [
+            19
+          ],
+          "convolution": [
+            99
+          ],
+          "convolutional": [
+            5,
+            63
+          ],
+          "data,": [
+            28
+          ],
+          "deep": [
+            4
+          ],
+          "developed": [
+            113
+          ],
+          "different": [
+            23
+          ],
+          "effective.": [
+            123
+          ],
+          "efficient": [
+            94
+          ],
+          "employed": [
+            110
+          ],
+          "entered": [
+            126
+          ],
+          "entry.": [
+            153
+          ],
+          "error": [
+            34,
+            142
+          ],
+          "faster,": [
+            86
+          ],
+          "final": [
+            80
+          ],
+          "five": [
+            62
+          ],
+          "followed": [
+            69
+          ],
+          "fully": [
+            75,
+            106
+          ],
+          "has": [
+            53
+          ],
+          "high-resolution": [
+            13
+          ],
+          "images": [
+            14
+          ],
+          "implementation": [
+            96
+          ],
+          "in": [
+            15,
+            104,
+            132
+          ],
+          "into": [
+            20
+          ],
+          "is": [
+            42
+          ],
+          "large,": [
+            3
+          ],
+          "layers": [
+            77,
+            108
+          ],
+          "layers,": [
+            64,
+            72
+          ],
+          "make": [
+            84
+          ],
+          "max-pooling": [
+            71
+          ],
+          "method": [
+            115
+          ],
+          "million": [
+            12,
+            55
+          ],
+          "model": [
+            131
+          ],
+          "network": [
+            7
+          ],
+          "network,": [
+            51
+          ],
+          "neural": [
+            6,
+            50
+          ],
+          "neurons": [
+            90
+          ],
+          "neurons,": [
+            59
+          ],
+          "non-saturating": [
+            89
+          ],
+          "of": [
+            36,
+            61,
+            66,
+            97,
+            129,
+            144
+          ],
+          "operation.": [
+            100
+          ],
+          "overfitting": [
+            103
+          ],
+          "parameters": [
+            56
+          ],
+          "previous": [
+            47
+          ],
+          "proved": [
+            119
+          ],
+          "rate": [
+            143
+          ],
+          "rates": [
+            35
+          ],
+          "recently": [
+            112
+          ],
+          "reduce": [
+            102
+          ],
+          "regularization": [
+            114
+          ],
+          "respectively,": [
+            40
+          ],
+          "second-best": [
+            152
+          ],
+          "softmax.": [
+            82
+          ],
+          "some": [
+            65
+          ],
+          "state-of-the-art.": [
+            48
+          ],
+          "test": [
+            27,
+            141
+          ],
+          "than": [
+            45
+          ],
+          "that": [
+            118
+          ],
+          "the": [
+            10,
+            16,
+            21,
+            26,
+            46,
+            98,
+            105,
+            133,
+            151
+          ],
+          "this": [
+            130
+          ],
+          "three": [
+            74
+          ],
+          "to": [
+            8,
+            120,
+            147
+          ],
+          "top-1": [
+            31
+          ],
+          "top-5": [
+            33,
+            140
+          ],
+          "trained": [
+            1
+          ],
+          "training": [
+            85
+          ],
+          "used": [
+            88
+          ],
+          "variant": [
+            128
+          ],
+          "very": [
+            93,
+            122
+          ],
+          "we": [
+            29,
+            87,
+            109
+          ],
+          "which": [
+            41,
+            52,
+            67
+          ],
+          "winning": [
+            139
+          ],
+          "with": [
+            78
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1291425158"
+                ],
+                "raw_affiliation_string": "Google Inc"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I185261750"
+                ],
+                "raw_affiliation_string": "University of Toronto"
+              }
+            ],
+            "author": {
+              "display_name": "Alex Krizhevsky",
+              "id": "https://openalex.org/A5031152245",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "CA",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Google (United States)",
+                "id": "https://openalex.org/I1291425158",
+                "lineage": [
+                  "https://openalex.org/I1291425158",
+                  "https://openalex.org/I4210128969"
+                ],
+                "ror": "https://ror.org/00njsd438",
+                "type": "company"
+              },
+              {
+                "country_code": "CA",
+                "display_name": "University of Toronto",
+                "id": "https://openalex.org/I185261750",
+                "lineage": [
+                  "https://openalex.org/I185261750"
+                ],
+                "ror": "https://ror.org/03dbr7087",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Google Inc",
+              "University of Toronto"
+            ],
+            "raw_author_name": "Alex Krizhevsky",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1291425158"
+                ],
+                "raw_affiliation_string": "Google Inc"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I185261750"
+                ],
+                "raw_affiliation_string": "University of Toronto"
+              }
+            ],
+            "author": {
+              "display_name": "Ilya Sutskever",
+              "id": "https://openalex.org/A5006446297",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "CA",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Google (United States)",
+                "id": "https://openalex.org/I1291425158",
+                "lineage": [
+                  "https://openalex.org/I1291425158",
+                  "https://openalex.org/I4210128969"
+                ],
+                "ror": "https://ror.org/00njsd438",
+                "type": "company"
+              },
+              {
+                "country_code": "CA",
+                "display_name": "University of Toronto",
+                "id": "https://openalex.org/I185261750",
+                "lineage": [
+                  "https://openalex.org/I185261750"
+                ],
+                "ror": "https://ror.org/03dbr7087",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Google Inc",
+              "University of Toronto"
+            ],
+            "raw_author_name": "Ilya Sutskever",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210161460"
+                ],
+                "raw_affiliation_string": "OpenAI"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I185261750"
+                ],
+                "raw_affiliation_string": "University of Toronto"
+              }
+            ],
+            "author": {
+              "display_name": "Geoffrey E. Hinton",
+              "id": "https://openalex.org/A5108093963",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "CA",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "University of Toronto",
+                "id": "https://openalex.org/I185261750",
+                "lineage": [
+                  "https://openalex.org/I185261750"
+                ],
+                "ror": "https://ror.org/03dbr7087",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "OpenAI (United States)",
+                "id": "https://openalex.org/I4210161460",
+                "lineage": [
+                  "https://openalex.org/I4210161460"
+                ],
+                "ror": "https://ror.org/05wx9n238",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "OpenAI",
+              "University of Toronto"
+            ],
+            "raw_author_name": "Geoffrey E. Hinton",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1145/3065386",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1145/3065386",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "http://dl.acm.org/ft_gateway.cfm?id=3065386&type=pdf",
+          "raw_source_name": "Communications of the ACM",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Communications of the ACM",
+            "host_organization": "https://openalex.org/P4310319798",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319798"
+            ],
+            "host_organization_lineage_names": [
+              "Association for Computing Machinery"
+            ],
+            "host_organization_name": "Association for Computing Machinery",
+            "id": "https://openalex.org/S103482838",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0001-0782",
+              "1557-7317"
+            ],
+            "issn_l": "0001-0782",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "84",
+          "issue": "6",
+          "last_page": "90",
+          "volume": "60"
+        },
+        "cited_by_count": 75710,
+        "display_name": "ImageNet classification with deep convolutional neural networks",
+        "doi": "https://doi.org/10.1145/3065386",
+        "id": "https://openalex.org/W2163605009",
+        "ids": {
+          "doi": "https://doi.org/10.1145/3065386",
+          "mag": "2163605009",
+          "openalex": "https://openalex.org/W2163605009"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "http://dl.acm.org/ft_gateway.cfm?id=3065386&type=pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1145/3065386",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1145/3065386",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "http://dl.acm.org/ft_gateway.cfm?id=3065386&type=pdf",
+          "raw_source_name": "Communications of the ACM",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Communications of the ACM",
+            "host_organization": "https://openalex.org/P4310319798",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319798"
+            ],
+            "host_organization_lineage_names": [
+              "Association for Computing Machinery"
+            ],
+            "host_organization_name": "Association for Computing Machinery",
+            "id": "https://openalex.org/S103482838",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0001-0782",
+              "1557-7317"
+            ],
+            "issn_l": "0001-0782",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2017-05-24",
+        "publication_year": 2017,
+        "referenced_works": [
+          "https://openalex.org/W1499991161",
+          "https://openalex.org/W1576445103",
+          "https://openalex.org/W1665214252",
+          "https://openalex.org/W1904365287",
+          "https://openalex.org/W2015861736",
+          "https://openalex.org/W2018435387",
+          "https://openalex.org/W2026942141",
+          "https://openalex.org/W2053229256",
+          "https://openalex.org/W2061212083",
+          "https://openalex.org/W2097117768",
+          "https://openalex.org/W2097356275",
+          "https://openalex.org/W2101926813",
+          "https://openalex.org/W2108069432",
+          "https://openalex.org/W2108598243",
+          "https://openalex.org/W2110764733",
+          "https://openalex.org/W2130325614",
+          "https://openalex.org/W2134557905",
+          "https://openalex.org/W2144161366",
+          "https://openalex.org/W2154579312",
+          "https://openalex.org/W2156163116",
+          "https://openalex.org/W2166049352",
+          "https://openalex.org/W2169805405",
+          "https://openalex.org/W2396976214",
+          "https://openalex.org/W2546302380",
+          "https://openalex.org/W2911964244",
+          "https://openalex.org/W3118608800"
+        ],
+        "referenced_works_count": 26,
+        "title": "ImageNet classification with deep convolutional neural networks",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": null,
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands. Electronic address: geert.litjens@radboudumc.nl"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Geert Litjens",
+              "id": "https://openalex.org/A5055697525",
+              "orcid": "https://orcid.org/0000-0003-1554-1291"
+            },
+            "author_position": "first",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands. Electronic address: geert.litjens@radboudumc.nl",
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Geert Litjens",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Thijs Kooi",
+              "id": "https://openalex.org/A5057937692",
+              "orcid": "https://orcid.org/0000-0001-5565-5029"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Thijs Kooi",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Babak Ehteshami Bejnordi",
+              "id": "https://openalex.org/A5055531734",
+              "orcid": "https://orcid.org/0000-0002-6258-5687"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Babak Ehteshami Bejnordi",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Arnaud A. A. Setio",
+              "id": "https://openalex.org/A5083631804",
+              "orcid": "https://orcid.org/0000-0002-5447-4434"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Arnaud Arindra Adiyoso Setio",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Francesco Ciompi",
+              "id": "https://openalex.org/A5002905948",
+              "orcid": "https://orcid.org/0000-0001-8327-9606"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Francesco Ciompi",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Mohsen Ghafoorian",
+              "id": "https://openalex.org/A5083441393",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Mohsen Ghafoorian",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Jeroen van der Laak",
+              "id": "https://openalex.org/A5081003438",
+              "orcid": "https://orcid.org/0000-0001-7982-0754"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Jeroen A.W.M. van der Laak",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Bram van Ginneken",
+              "id": "https://openalex.org/A5042982766",
+              "orcid": "https://orcid.org/0000-0003-2028-8972"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Bram van Ginneken",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949"
+                ],
+                "raw_affiliation_string": "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Clara I. Sá‎nchez",
+              "id": "https://openalex.org/A5081715147",
+              "orcid": "https://orcid.org/0000-0001-9787-8319"
+            },
+            "author_position": "last",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Diagnostic Image Analysis Group, Radboud University Medical Center, Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Clara I. Sánchez",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1016/j.media.2017.07.005",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.media.2017.07.005",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1361841517301135-fx1_lrg.jpg",
+          "raw_source_name": "Medical Image Analysis",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Medical Image Analysis",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S116571295",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1361-8415",
+              "1361-8423",
+              "1361-8431"
+            ],
+            "issn_l": "1361-8415",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "60",
+          "issue": null,
+          "last_page": "88",
+          "volume": "42"
+        },
+        "cited_by_count": 14465,
+        "display_name": "A survey on deep learning in medical image analysis",
+        "doi": "https://doi.org/10.1016/j.media.2017.07.005",
+        "id": "https://openalex.org/W2592929672",
+        "ids": {
+          "doi": "https://doi.org/10.1016/j.media.2017.07.005",
+          "mag": "2592929672",
+          "openalex": "https://openalex.org/W2592929672",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/28778026"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1361841517301135-fx1_lrg.jpg"
+        },
+        "primary_location": {
+          "id": "doi:10.1016/j.media.2017.07.005",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.media.2017.07.005",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1361841517301135-fx1_lrg.jpg",
+          "raw_source_name": "Medical Image Analysis",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Medical Image Analysis",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S116571295",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1361-8415",
+              "1361-8423",
+              "1361-8431"
+            ],
+            "issn_l": "1361-8415",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2017-07-26",
+        "publication_year": 2017,
+        "referenced_works": [
+          "https://openalex.org/W22040386",
+          "https://openalex.org/W44815768",
+          "https://openalex.org/W66427752",
+          "https://openalex.org/W308431700",
+          "https://openalex.org/W317170363",
+          "https://openalex.org/W346782365",
+          "https://openalex.org/W377632744",
+          "https://openalex.org/W753012316",
+          "https://openalex.org/W855255571",
+          "https://openalex.org/W855272188",
+          "https://openalex.org/W948663339",
+          "https://openalex.org/W1422227952",
+          "https://openalex.org/W1457602677",
+          "https://openalex.org/W1504543387",
+          "https://openalex.org/W1516595210",
+          "https://openalex.org/W1533375280",
+          "https://openalex.org/W1553719179",
+          "https://openalex.org/W1576278180",
+          "https://openalex.org/W1582640985",
+          "https://openalex.org/W1604552233",
+          "https://openalex.org/W1606347560",
+          "https://openalex.org/W1686810756",
+          "https://openalex.org/W1799366690",
+          "https://openalex.org/W1806891645",
+          "https://openalex.org/W1849277567",
+          "https://openalex.org/W1865800230",
+          "https://openalex.org/W1871050032",
+          "https://openalex.org/W1884191083",
+          "https://openalex.org/W1897657709",
+          "https://openalex.org/W1901129140",
+          "https://openalex.org/W1903029394",
+          "https://openalex.org/W1905882502",
+          "https://openalex.org/W1908634864",
+          "https://openalex.org/W1908709347",
+          "https://openalex.org/W1910109443",
+          "https://openalex.org/W1915761309",
+          "https://openalex.org/W1932469787",
+          "https://openalex.org/W1948745668",
+          "https://openalex.org/W1959608418",
+          "https://openalex.org/W1972498024",
+          "https://openalex.org/W1974874858",
+          "https://openalex.org/W1986649315",
+          "https://openalex.org/W1988452762",
+          "https://openalex.org/W1993168950",
+          "https://openalex.org/W1993850091",
+          "https://openalex.org/W1995460724",
+          "https://openalex.org/W2003103143",
+          "https://openalex.org/W2022508996",
+          "https://openalex.org/W2023667179",
+          "https://openalex.org/W2036109700",
+          "https://openalex.org/W2050418754",
+          "https://openalex.org/W2059272842",
+          "https://openalex.org/W2061715187",
+          "https://openalex.org/W2062177968",
+          "https://openalex.org/W2064675550",
+          "https://openalex.org/W2082526668",
+          "https://openalex.org/W2084220915",
+          "https://openalex.org/W2084369411",
+          "https://openalex.org/W2084783417",
+          "https://openalex.org/W2093400823",
+          "https://openalex.org/W2097117768",
+          "https://openalex.org/W2097998348",
+          "https://openalex.org/W2099471712",
+          "https://openalex.org/W2100495367",
+          "https://openalex.org/W2101926813",
+          "https://openalex.org/W2103061399",
+          "https://openalex.org/W2107878631",
+          "https://openalex.org/W2110798204",
+          "https://openalex.org/W2112467442",
+          "https://openalex.org/W2112796928",
+          "https://openalex.org/W2117539524",
+          "https://openalex.org/W2123045220",
+          "https://openalex.org/W2126598020",
+          "https://openalex.org/W2131241448",
+          "https://openalex.org/W2132587081",
+          "https://openalex.org/W2136922672",
+          "https://openalex.org/W2145094598",
+          "https://openalex.org/W2145283323",
+          "https://openalex.org/W2155893237",
+          "https://openalex.org/W2157331557",
+          "https://openalex.org/W2161113826",
+          "https://openalex.org/W2163605009",
+          "https://openalex.org/W2163922914",
+          "https://openalex.org/W2167510172",
+          "https://openalex.org/W2169624977",
+          "https://openalex.org/W2175951243",
+          "https://openalex.org/W2177341437",
+          "https://openalex.org/W2180648740",
+          "https://openalex.org/W2186222003",
+          "https://openalex.org/W2194775991",
+          "https://openalex.org/W2195388612",
+          "https://openalex.org/W2200374509",
+          "https://openalex.org/W2211483859",
+          "https://openalex.org/W2223737960",
+          "https://openalex.org/W2224416104",
+          "https://openalex.org/W2238108400",
+          "https://openalex.org/W2248620004",
+          "https://openalex.org/W2253429366",
+          "https://openalex.org/W2255967141",
+          "https://openalex.org/W2264887978",
+          "https://openalex.org/W2266464013",
+          "https://openalex.org/W2271840356",
+          "https://openalex.org/W2273897973",
+          "https://openalex.org/W2274227799",
+          "https://openalex.org/W2274542523",
+          "https://openalex.org/W2280351290",
+          "https://openalex.org/W2282915343",
+          "https://openalex.org/W2284198383",
+          "https://openalex.org/W2284539364",
+          "https://openalex.org/W2292862470",
+          "https://openalex.org/W2293063104",
+          "https://openalex.org/W2293295816",
+          "https://openalex.org/W2293652202",
+          "https://openalex.org/W2293993509",
+          "https://openalex.org/W2294318823",
+          "https://openalex.org/W2294643827",
+          "https://openalex.org/W2295070120",
+          "https://openalex.org/W2295740502",
+          "https://openalex.org/W2295802084",
+          "https://openalex.org/W2301358467",
+          "https://openalex.org/W2302255633",
+          "https://openalex.org/W2302541206",
+          "https://openalex.org/W2303706856",
+          "https://openalex.org/W2303853551",
+          "https://openalex.org/W2305410628",
+          "https://openalex.org/W2306541384",
+          "https://openalex.org/W2307539472",
+          "https://openalex.org/W2310042802",
+          "https://openalex.org/W2310750198",
+          "https://openalex.org/W2310992461",
+          "https://openalex.org/W2311532826",
+          "https://openalex.org/W2311781576",
+          "https://openalex.org/W2311857205",
+          "https://openalex.org/W2312404985",
+          "https://openalex.org/W2316116400",
+          "https://openalex.org/W2316200131",
+          "https://openalex.org/W2316952584",
+          "https://openalex.org/W2317417577",
+          "https://openalex.org/W2317789088",
+          "https://openalex.org/W2318872361",
+          "https://openalex.org/W2321283863",
+          "https://openalex.org/W2322371438",
+          "https://openalex.org/W2323200062",
+          "https://openalex.org/W2323929895",
+          "https://openalex.org/W2326062726",
+          "https://openalex.org/W2327598497",
+          "https://openalex.org/W2328247767",
+          "https://openalex.org/W2332066482",
+          "https://openalex.org/W2333683836",
+          "https://openalex.org/W2334328509",
+          "https://openalex.org/W2334763311",
+          "https://openalex.org/W2335197832",
+          "https://openalex.org/W2337438617",
+          "https://openalex.org/W2338271170",
+          "https://openalex.org/W2338289743",
+          "https://openalex.org/W2339885376",
+          "https://openalex.org/W2341106171",
+          "https://openalex.org/W2342591535",
+          "https://openalex.org/W2342985385",
+          "https://openalex.org/W2343172899",
+          "https://openalex.org/W2343861259",
+          "https://openalex.org/W2343973580",
+          "https://openalex.org/W2344328023",
+          "https://openalex.org/W2344858100",
+          "https://openalex.org/W2344912502",
+          "https://openalex.org/W2345003174",
+          "https://openalex.org/W2345010043",
+          "https://openalex.org/W2345106543",
+          "https://openalex.org/W2346062110",
+          "https://openalex.org/W2347064614",
+          "https://openalex.org/W2357815549",
+          "https://openalex.org/W2378154190",
+          "https://openalex.org/W2383601426",
+          "https://openalex.org/W2396013981",
+          "https://openalex.org/W2396197374",
+          "https://openalex.org/W2396622801",
+          "https://openalex.org/W2398921440",
+          "https://openalex.org/W2399244897",
+          "https://openalex.org/W2401520370",
+          "https://openalex.org/W2402907716",
+          "https://openalex.org/W2404091643",
+          "https://openalex.org/W2404618390",
+          "https://openalex.org/W2406638278",
+          "https://openalex.org/W2406842765",
+          "https://openalex.org/W2408733084",
+          "https://openalex.org/W2410446362",
+          "https://openalex.org/W2413582275",
+          "https://openalex.org/W2415796710",
+          "https://openalex.org/W2419518659",
+          "https://openalex.org/W2420447137",
+          "https://openalex.org/W2420541247",
+          "https://openalex.org/W2422852360",
+          "https://openalex.org/W2422982059",
+          "https://openalex.org/W2423526167",
+          "https://openalex.org/W2425730056",
+          "https://openalex.org/W2426274714",
+          "https://openalex.org/W2426398770",
+          "https://openalex.org/W2426942631",
+          "https://openalex.org/W2427373474",
+          "https://openalex.org/W2429143165",
+          "https://openalex.org/W2430237232",
+          "https://openalex.org/W2430776200",
+          "https://openalex.org/W2431732335",
+          "https://openalex.org/W2432020924",
+          "https://openalex.org/W2432555109",
+          "https://openalex.org/W2433259561",
+          "https://openalex.org/W2438635651",
+          "https://openalex.org/W2439961231",
+          "https://openalex.org/W2441649867",
+          "https://openalex.org/W2443266644",
+          "https://openalex.org/W2444070604",
+          "https://openalex.org/W2444555039",
+          "https://openalex.org/W2460515352",
+          "https://openalex.org/W2462651598",
+          "https://openalex.org/W2462784004",
+          "https://openalex.org/W2463320487",
+          "https://openalex.org/W2464708700",
+          "https://openalex.org/W2467126091",
+          "https://openalex.org/W2469107318",
+          "https://openalex.org/W2470130773",
+          "https://openalex.org/W2472642282",
+          "https://openalex.org/W2473108490",
+          "https://openalex.org/W2473282638",
+          "https://openalex.org/W2473830868",
+          "https://openalex.org/W2474421929",
+          "https://openalex.org/W2476370993",
+          "https://openalex.org/W2476575773",
+          "https://openalex.org/W2482922118",
+          "https://openalex.org/W2484874824",
+          "https://openalex.org/W2493683088",
+          "https://openalex.org/W2502805798",
+          "https://openalex.org/W2504150216",
+          "https://openalex.org/W2504220184",
+          "https://openalex.org/W2508829638",
+          "https://openalex.org/W2509685700",
+          "https://openalex.org/W2510224130",
+          "https://openalex.org/W2510834677",
+          "https://openalex.org/W2512138407",
+          "https://openalex.org/W2513367050",
+          "https://openalex.org/W2515708490",
+          "https://openalex.org/W2515717359",
+          "https://openalex.org/W2515788890",
+          "https://openalex.org/W2516903654",
+          "https://openalex.org/W2517898202",
+          "https://openalex.org/W2517954747",
+          "https://openalex.org/W2518214538",
+          "https://openalex.org/W2518674481",
+          "https://openalex.org/W2520016695",
+          "https://openalex.org/W2521048164",
+          "https://openalex.org/W2521068627",
+          "https://openalex.org/W2521464619",
+          "https://openalex.org/W2521537533",
+          "https://openalex.org/W2521625023",
+          "https://openalex.org/W2521732732",
+          "https://openalex.org/W2522083379",
+          "https://openalex.org/W2522186216",
+          "https://openalex.org/W2522203259",
+          "https://openalex.org/W2522300708",
+          "https://openalex.org/W2522416408",
+          "https://openalex.org/W2522520884",
+          "https://openalex.org/W2522528264",
+          "https://openalex.org/W2522648674",
+          "https://openalex.org/W2522761331",
+          "https://openalex.org/W2522861252",
+          "https://openalex.org/W2522924304",
+          "https://openalex.org/W2523005792",
+          "https://openalex.org/W2523058522",
+          "https://openalex.org/W2523204776",
+          "https://openalex.org/W2523213734",
+          "https://openalex.org/W2523382659",
+          "https://openalex.org/W2523425190",
+          "https://openalex.org/W2523468284",
+          "https://openalex.org/W2523517564",
+          "https://openalex.org/W2523825372",
+          "https://openalex.org/W2523856253",
+          "https://openalex.org/W2524254723",
+          "https://openalex.org/W2524308422",
+          "https://openalex.org/W2524399695",
+          "https://openalex.org/W2524608787",
+          "https://openalex.org/W2524644797",
+          "https://openalex.org/W2524650042",
+          "https://openalex.org/W2524916860",
+          "https://openalex.org/W2524965620",
+          "https://openalex.org/W2525036370",
+          "https://openalex.org/W2525106365",
+          "https://openalex.org/W2525157777",
+          "https://openalex.org/W2525205678",
+          "https://openalex.org/W2525235915",
+          "https://openalex.org/W2525606708",
+          "https://openalex.org/W2525724907",
+          "https://openalex.org/W2525974879",
+          "https://openalex.org/W2526009326",
+          "https://openalex.org/W2526019331",
+          "https://openalex.org/W2526259914",
+          "https://openalex.org/W2526279161",
+          "https://openalex.org/W2526330004",
+          "https://openalex.org/W2526421605",
+          "https://openalex.org/W2526499595",
+          "https://openalex.org/W2526511911",
+          "https://openalex.org/W2526529994",
+          "https://openalex.org/W2526558307",
+          "https://openalex.org/W2526558436",
+          "https://openalex.org/W2526653212",
+          "https://openalex.org/W2526712471",
+          "https://openalex.org/W2526832219",
+          "https://openalex.org/W2526958461",
+          "https://openalex.org/W2527333635",
+          "https://openalex.org/W2527341761",
+          "https://openalex.org/W2527654160",
+          "https://openalex.org/W2527671145",
+          "https://openalex.org/W2529153069",
+          "https://openalex.org/W2529609428",
+          "https://openalex.org/W2530279937",
+          "https://openalex.org/W2531444579",
+          "https://openalex.org/W2532750509",
+          "https://openalex.org/W2533800772",
+          "https://openalex.org/W2538673204",
+          "https://openalex.org/W2542911914",
+          "https://openalex.org/W2546410677",
+          "https://openalex.org/W2547055581",
+          "https://openalex.org/W2547496647",
+          "https://openalex.org/W2547944663",
+          "https://openalex.org/W2550380503",
+          "https://openalex.org/W2550409828",
+          "https://openalex.org/W2551562422",
+          "https://openalex.org/W2551596518",
+          "https://openalex.org/W2552029945",
+          "https://openalex.org/W2553191729",
+          "https://openalex.org/W2555096873",
+          "https://openalex.org/W2556177465",
+          "https://openalex.org/W2556470218",
+          "https://openalex.org/W2557738935",
+          "https://openalex.org/W2559553341",
+          "https://openalex.org/W2559794190",
+          "https://openalex.org/W2559881210",
+          "https://openalex.org/W2560014990",
+          "https://openalex.org/W2560476520",
+          "https://openalex.org/W2561022822",
+          "https://openalex.org/W2561981131",
+          "https://openalex.org/W2563780449",
+          "https://openalex.org/W2564782580",
+          "https://openalex.org/W2566613935",
+          "https://openalex.org/W2566620708",
+          "https://openalex.org/W2572512422",
+          "https://openalex.org/W2574038793",
+          "https://openalex.org/W2575657035",
+          "https://openalex.org/W2577893174",
+          "https://openalex.org/W2578452911",
+          "https://openalex.org/W2581082771",
+          "https://openalex.org/W2581851997",
+          "https://openalex.org/W2582220857",
+          "https://openalex.org/W2593134963",
+          "https://openalex.org/W2593345132",
+          "https://openalex.org/W2600383743",
+          "https://openalex.org/W2604790786",
+          "https://openalex.org/W2750983821",
+          "https://openalex.org/W2811126861",
+          "https://openalex.org/W2919115771",
+          "https://openalex.org/W2949314557",
+          "https://openalex.org/W2949340657",
+          "https://openalex.org/W2949650786",
+          "https://openalex.org/W2950094539",
+          "https://openalex.org/W2950179405",
+          "https://openalex.org/W2950182411",
+          "https://openalex.org/W2950395616",
+          "https://openalex.org/W2950489286",
+          "https://openalex.org/W2950517871",
+          "https://openalex.org/W2950635152",
+          "https://openalex.org/W2950906573",
+          "https://openalex.org/W2951004968",
+          "https://openalex.org/W2951123255",
+          "https://openalex.org/W2951226906",
+          "https://openalex.org/W2951319200",
+          "https://openalex.org/W2951650375",
+          "https://openalex.org/W2952036906",
+          "https://openalex.org/W2952584647",
+          "https://openalex.org/W2953087250",
+          "https://openalex.org/W2962807789",
+          "https://openalex.org/W2962914239",
+          "https://openalex.org/W2963200485",
+          "https://openalex.org/W2963565427",
+          "https://openalex.org/W2963691855",
+          "https://openalex.org/W2963803174",
+          "https://openalex.org/W2963830389",
+          "https://openalex.org/W2997574889",
+          "https://openalex.org/W3023609596",
+          "https://openalex.org/W3098547059",
+          "https://openalex.org/W3098977020",
+          "https://openalex.org/W3100175985",
+          "https://openalex.org/W3104085283",
+          "https://openalex.org/W3104258355",
+          "https://openalex.org/W3106033385",
+          "https://openalex.org/W3143835353",
+          "https://openalex.org/W3147600416",
+          "https://openalex.org/W4237538835",
+          "https://openalex.org/W4242623661",
+          "https://openalex.org/W4295093036",
+          "https://openalex.org/W4297785730",
+          "https://openalex.org/W4298131645",
+          "https://openalex.org/W4299297331",
+          "https://openalex.org/W4299655445",
+          "https://openalex.org/W4300558691",
+          "https://openalex.org/W4301419481",
+          "https://openalex.org/W4308909683",
+          "https://openalex.org/W4320013936",
+          "https://openalex.org/W4394651114",
+          "https://openalex.org/W4394672403",
+          "https://openalex.org/W6601785968",
+          "https://openalex.org/W6602702783",
+          "https://openalex.org/W6610821467",
+          "https://openalex.org/W6611025721",
+          "https://openalex.org/W6611829260",
+          "https://openalex.org/W6622239757",
+          "https://openalex.org/W6623445213",
+          "https://openalex.org/W6623831209",
+          "https://openalex.org/W6625035492",
+          "https://openalex.org/W6628286612",
+          "https://openalex.org/W6630203139",
+          "https://openalex.org/W6636240926",
+          "https://openalex.org/W6636358008",
+          "https://openalex.org/W6638520917",
+          "https://openalex.org/W6639203730",
+          "https://openalex.org/W6639204139",
+          "https://openalex.org/W6639809013",
+          "https://openalex.org/W6639824700",
+          "https://openalex.org/W6639904065",
+          "https://openalex.org/W6640102224",
+          "https://openalex.org/W6640665451",
+          "https://openalex.org/W6640764873",
+          "https://openalex.org/W6648627098",
+          "https://openalex.org/W6656568047",
+          "https://openalex.org/W6663145691",
+          "https://openalex.org/W6666332967",
+          "https://openalex.org/W6671158236",
+          "https://openalex.org/W6674012025",
+          "https://openalex.org/W6674385629",
+          "https://openalex.org/W6676481782",
+          "https://openalex.org/W6677651945",
+          "https://openalex.org/W6678911119",
+          "https://openalex.org/W6681096077",
+          "https://openalex.org/W6684191040",
+          "https://openalex.org/W6684372118",
+          "https://openalex.org/W6686022023",
+          "https://openalex.org/W6688219683",
+          "https://openalex.org/W6689152095",
+          "https://openalex.org/W6692615649",
+          "https://openalex.org/W6694321815",
+          "https://openalex.org/W6696750621",
+          "https://openalex.org/W6696871519",
+          "https://openalex.org/W6696947198",
+          "https://openalex.org/W6697019681",
+          "https://openalex.org/W6697045672",
+          "https://openalex.org/W6697049793",
+          "https://openalex.org/W6697175316",
+          "https://openalex.org/W6697477371",
+          "https://openalex.org/W6697511373",
+          "https://openalex.org/W6697517608",
+          "https://openalex.org/W6697648365",
+          "https://openalex.org/W6698079635",
+          "https://openalex.org/W6698420066",
+          "https://openalex.org/W6698434557",
+          "https://openalex.org/W6698491756",
+          "https://openalex.org/W6698500090",
+          "https://openalex.org/W6698677363",
+          "https://openalex.org/W6698957090",
+          "https://openalex.org/W6699381026",
+          "https://openalex.org/W6699464186",
+          "https://openalex.org/W6701744982",
+          "https://openalex.org/W6702813868",
+          "https://openalex.org/W6703505331",
+          "https://openalex.org/W6704368386",
+          "https://openalex.org/W6704379556",
+          "https://openalex.org/W6704438240",
+          "https://openalex.org/W6705012245",
+          "https://openalex.org/W6712168990",
+          "https://openalex.org/W6712205131",
+          "https://openalex.org/W6712450407",
+          "https://openalex.org/W6713418720",
+          "https://openalex.org/W6713723668",
+          "https://openalex.org/W6717147586",
+          "https://openalex.org/W6717349672",
+          "https://openalex.org/W6717406863",
+          "https://openalex.org/W6717454907",
+          "https://openalex.org/W6717513565",
+          "https://openalex.org/W6717710328",
+          "https://openalex.org/W6717800350",
+          "https://openalex.org/W6717893659",
+          "https://openalex.org/W6717914749",
+          "https://openalex.org/W6717945732",
+          "https://openalex.org/W6717953565",
+          "https://openalex.org/W6718004153",
+          "https://openalex.org/W6718008178",
+          "https://openalex.org/W6718054610",
+          "https://openalex.org/W6718062954",
+          "https://openalex.org/W6718304163",
+          "https://openalex.org/W6718405885",
+          "https://openalex.org/W6718495225",
+          "https://openalex.org/W6718505333",
+          "https://openalex.org/W6718654735",
+          "https://openalex.org/W6718932870",
+          "https://openalex.org/W6718933344",
+          "https://openalex.org/W6718986003",
+          "https://openalex.org/W6719422696",
+          "https://openalex.org/W6719891271",
+          "https://openalex.org/W6720301174",
+          "https://openalex.org/W6720378592",
+          "https://openalex.org/W6720725770",
+          "https://openalex.org/W6720740046",
+          "https://openalex.org/W6721466424",
+          "https://openalex.org/W6721573436",
+          "https://openalex.org/W6724422434",
+          "https://openalex.org/W6726029915",
+          "https://openalex.org/W6726362721",
+          "https://openalex.org/W6726560382",
+          "https://openalex.org/W6726628354",
+          "https://openalex.org/W6726758648",
+          "https://openalex.org/W6726760486",
+          "https://openalex.org/W6726831670",
+          "https://openalex.org/W6726944457",
+          "https://openalex.org/W6727033397",
+          "https://openalex.org/W6727119795",
+          "https://openalex.org/W6727134898",
+          "https://openalex.org/W6727156337",
+          "https://openalex.org/W6727200977",
+          "https://openalex.org/W6727201300",
+          "https://openalex.org/W6727236562",
+          "https://openalex.org/W6727244432",
+          "https://openalex.org/W6727269865",
+          "https://openalex.org/W6727271637",
+          "https://openalex.org/W6727283235",
+          "https://openalex.org/W6727312156",
+          "https://openalex.org/W6727333255",
+          "https://openalex.org/W6727376102",
+          "https://openalex.org/W6727390783",
+          "https://openalex.org/W6727408574",
+          "https://openalex.org/W6727418998",
+          "https://openalex.org/W6727428261",
+          "https://openalex.org/W6727469359",
+          "https://openalex.org/W6727473928",
+          "https://openalex.org/W6727483512",
+          "https://openalex.org/W6727490693",
+          "https://openalex.org/W6727515462",
+          "https://openalex.org/W6727576312",
+          "https://openalex.org/W6727596319",
+          "https://openalex.org/W6727611162",
+          "https://openalex.org/W6727621003",
+          "https://openalex.org/W6727630481",
+          "https://openalex.org/W6727662038",
+          "https://openalex.org/W6727704182",
+          "https://openalex.org/W6727709126",
+          "https://openalex.org/W6727713167",
+          "https://openalex.org/W6727723405",
+          "https://openalex.org/W6727752207",
+          "https://openalex.org/W6727753214",
+          "https://openalex.org/W6727807870",
+          "https://openalex.org/W6727865059",
+          "https://openalex.org/W6727867562",
+          "https://openalex.org/W6727893972",
+          "https://openalex.org/W6727911400",
+          "https://openalex.org/W6727976320",
+          "https://openalex.org/W6727998137",
+          "https://openalex.org/W6728000857",
+          "https://openalex.org/W6728125053",
+          "https://openalex.org/W6728356311",
+          "https://openalex.org/W6729204975",
+          "https://openalex.org/W6729331376",
+          "https://openalex.org/W6729856087",
+          "https://openalex.org/W6730265324",
+          "https://openalex.org/W6730438457",
+          "https://openalex.org/W6731380424",
+          "https://openalex.org/W6731588477",
+          "https://openalex.org/W6732409871",
+          "https://openalex.org/W6736302784",
+          "https://openalex.org/W6764076272",
+          "https://openalex.org/W6784765554",
+          "https://openalex.org/W6784971133",
+          "https://openalex.org/W6819177151",
+          "https://openalex.org/W6824239050"
+        ],
+        "referenced_works_count": 578,
+        "title": "A survey on deep learning in medical image analysis",
+        "type": "review"
+      }
+    ]
+  },
+  "response_hash": "299b809deb7c3dc1fdb646a7a6c6afb3c336dfd6e9c4bfdc087e24b75e67802a",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

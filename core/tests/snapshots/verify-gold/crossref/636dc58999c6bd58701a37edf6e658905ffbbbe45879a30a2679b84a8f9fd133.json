@@ -1,0 +1,601 @@
+{
+  "endpoint": "works/10.1038/s41597-020-0495-6",
+  "request_key": "636dc58999c6bd58701a37edf6e658905ffbbbe45879a30a2679b84a8f9fd133",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1038/s41597-020-0495-6",
+      "ISSN": [
+        "2052-4463"
+      ],
+      "URL": "https://doi.org/10.1038/s41597-020-0495-6",
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Electrocardiography (ECG) is a key non-invasive diagnostic tool for cardiovascular diseases which is increasingly supported by algorithms based on machine learning. Major obstacles for the development of automatic ECG interpretation algorithms are both the lack of public datasets and well-defined benchmarking procedures to allow comparison s of different algorithms. To address these issues, we put forward\n                    <jats:italic>PTB-XL</jats:italic>\n                    , the to-date largest freely accessible clinical 12-lead ECG-waveform dataset comprising 21837 records from 18885 patients of 10 seconds length. The ECG-waveform data was annotated by up to two cardiologists as a multi-label dataset, where diagnostic labels were further aggregated into super and subclasses. The dataset covers a broad range of diagnostic classes including, in particular, a large fraction of healthy records. The combination with additional metadata on demographics, additional diagnostic statements, diagnosis likelihoods, manually annotated signal properties as well as suggested folds for splitting training and test sets turns the dataset into a rich resource for the development and the evaluation of automatic ECG interpretation algorithms.\n                  </jats:p>",
+      "alternative-id": [
+        "495"
+      ],
+      "article-number": "154",
+      "assertion": [
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Received",
+          "name": "received",
+          "order": 1,
+          "value": "5 February 2020"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Accepted",
+          "name": "accepted",
+          "order": 2,
+          "value": "17 April 2020"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "First Online",
+          "name": "first_online",
+          "order": 3,
+          "value": "25 May 2020"
+        },
+        {
+          "group": {
+            "label": "Competing interests",
+            "name": "EthicsHeading"
+          },
+          "name": "Ethics",
+          "order": 1,
+          "value": "The authors declare no competing interests."
+        }
+      ],
+      "author": [
+        {
+          "affiliation": [],
+          "family": "Wagner",
+          "given": "Patrick",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4447-0162",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Strodthoff",
+          "given": "Nils",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Bousseljot",
+          "given": "Ralf-Dieter",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Kreiseler",
+          "given": "Dieter",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Lunze",
+          "given": "Fatima I.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6283-3265",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Samek",
+          "given": "Wojciech",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1310-2631",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Schaeffter",
+          "given": "Tobias",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Scientific Data"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": [
+          "link.springer.com"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            25
+          ]
+        ],
+        "date-time": "2020-05-25T06:02:44Z",
+        "timestamp": 1590386564000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            5
+          ]
+        ],
+        "date-time": "2022-12-05T23:54:47Z",
+        "timestamp": 1670284487000
+      },
+      "funder": [
+        {
+          "DOI": "10.13039/501100002347",
+          "award": [
+            "01IS18037I"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "01IS18037I"
+              ]
+            }
+          ],
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/501100002347",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "Bundesministerium für Bildung und Forschung"
+        },
+        {
+          "name": "EMPIR project 18HLT07 MedalCare"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            13
+          ]
+        ],
+        "date-time": "2026-07-13T17:10:06Z",
+        "timestamp": 1783962606169,
+        "version": "3.55.0"
+      },
+      "is-referenced-by-count": 1074,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2052-4463"
+        }
+      ],
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            25
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              12
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0",
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                25
+              ]
+            ],
+            "date-time": "2020-05-25T00:00:00Z",
+            "timestamp": 1590364800000
+          }
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                25
+              ]
+            ],
+            "date-time": "2020-05-25T00:00:00Z",
+            "timestamp": 1590364800000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41597-020-0495-6.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41597-020-0495-6",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41597-020-0495-6.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "297",
+      "original-title": [],
+      "prefix": "10.1038",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            25
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            25
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "reference": [
+        {
+          "key": "495_CR1",
+          "unstructured": "Dagenais, G. R. et al. Variations in common diseases, hospital admissions, and deaths in middle-aged adults in 21 countries from five continents (PURE): a prospective cohort study. The Lancet (2019)."
+        },
+        {
+          "DOI": "10.1038/s41591-018-0268-3",
+          "author": "AY Hannun",
+          "doi-asserted-by": "publisher",
+          "first-page": "65",
+          "journal-title": "Nature Medicine",
+          "key": "495_CR2",
+          "unstructured": "Hannun, A. Y. et al. Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network. Nature Medicine 25, 65–69 (2019).",
+          "volume": "25",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/S0140-6736(19)31721-0",
+          "author": "ZI Attia",
+          "doi-asserted-by": "publisher",
+          "first-page": "861",
+          "journal-title": "The Lancet",
+          "key": "495_CR3",
+          "unstructured": "Attia, Z. I. et al. An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction. The Lancet 394, 861–867 (2019).",
+          "volume": "394",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/j.jacc.2017.07.723",
+          "author": "J Schläpfer",
+          "doi-asserted-by": "publisher",
+          "first-page": "1183",
+          "journal-title": "Journal of the American College of Cardiology",
+          "key": "495_CR4",
+          "unstructured": "Schläpfer, J. & Wellens, H. J. Computer-Interpreted Electrocardiograms. Journal of the American College of Cardiology 70, 1183–1192 (2017).",
+          "volume": "70",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.13026/6sec-a640",
+          "author": "P Wagner",
+          "doi-asserted-by": "publisher",
+          "key": "495_CR5",
+          "unstructured": "Wagner, P., Strodthoff, N., Bousseljot, R., Samek, W. & Schaeffter, T. PTB-XL, a large publicly available electrocardiography dataset. PhysioNet. https://doi.org/10.13026/6sec-a640 (2020).",
+          "year": "2020"
+        },
+        {
+          "author": "R Bousseljot",
+          "first-page": "317",
+          "journal-title": "Biomedizinische Technik/Biomedical Engineering",
+          "key": "495_CR6",
+          "unstructured": "Bousseljot, R., Kreiseler, D. & Schnabel, A. Nutzung der EKG-Signaldatenbank CARDIODAT der PTB über das Internet. Biomedizinische Technik/Biomedical Engineering 40, 317–318 (1995).",
+          "volume": "40",
+          "year": "1995"
+        },
+        {
+          "DOI": "10.1007/s003990070017",
+          "author": "R Bousseljot",
+          "doi-asserted-by": "publisher",
+          "first-page": "197",
+          "journal-title": "Herzschrittmachertherapie + Elektrophysiologie",
+          "key": "495_CR7",
+          "unstructured": "Bousseljot, R. & Kreiseler, D. Ergebnisse der EKG-Interpretation mittels Signalmustererkennung. Herzschrittmachertherapie + Elektrophysiologie 11, 197–206 (2000).",
+          "volume": "11",
+          "year": "2000"
+        },
+        {
+          "author": "R Bousseljot",
+          "first-page": "331",
+          "journal-title": "Computers in Cardiology",
+          "key": "495_CR8",
+          "unstructured": "Bousseljot, R. & Kreiseler, D. Waveform recognition with 10,000 ECGs. Computers in Cardiology 27, 331–334 (2000).",
+          "volume": "27",
+          "year": "2000"
+        },
+        {
+          "author": "R Bousseljot",
+          "first-page": "577",
+          "journal-title": "Computers in Cardiology",
+          "key": "495_CR9",
+          "unstructured": "Bousseljot, R. & Kreiseler, D. ECG signal pattern comparison via Internet. Computers in Cardiology 28, 577–580 (2001).",
+          "volume": "28",
+          "year": "2001"
+        },
+        {
+          "author": "R Bousseljot",
+          "first-page": "121",
+          "journal-title": "Computers in Cardiology",
+          "key": "495_CR10",
+          "unstructured": "Bousseljot, R. et al. Telemetric ECG diagnosis follow-up. Computers in Cardiology 30, 121–124 (2003).",
+          "volume": "30",
+          "year": "2003"
+        },
+        {
+          "author": "R Bousseljot",
+          "first-page": "217",
+          "journal-title": "Computers in Cardiology",
+          "key": "495_CR11",
+          "unstructured": "Bousseljot, R., Kreiseler, D., Mensing, S. & Safer, A. Two probabilistic methods to characterize and link drug related ECG changes to diagnoses from the PTB database: Results with Moxifloxacin. Computers in Cardiology 35, 217–220 (2008).",
+          "volume": "35",
+          "year": "2008"
+        },
+        {
+          "key": "495_CR12",
+          "unstructured": "ISO Central Secretary. Health informatics – Standard communication protocol – Part 91064: Computer-assisted electrocardiography. Standard ISO 11073-91064:2009, International Organization for Standardization, Geneva, CH (2009)."
+        },
+        {
+          "author": "AL Goldberger",
+          "first-page": "e215",
+          "journal-title": "Circulation",
+          "key": "495_CR13",
+          "unstructured": "Goldberger, A. L. et al. PhysioBank, PhysioToolkit, and PhysioNet. Circulation 101, e215–e220 (2000).",
+          "volume": "101",
+          "year": "2000"
+        },
+        {
+          "DOI": "10.22489/CinC.2017.065-469",
+          "doi-asserted-by": "crossref",
+          "key": "495_CR14",
+          "unstructured": "Clifford, G. et al. AF Classification from a Short Single Lead ECG Recording: the Physionet Computing in Cardiology Challenge 2017. In 2017 Computing in Cardiology Conference, vol. 44, 1–4 (Computing in Cardiology, 2017)."
+        },
+        {
+          "DOI": "10.1166/jmihi.2018.2442",
+          "author": "F Liu",
+          "doi-asserted-by": "publisher",
+          "first-page": "1368",
+          "journal-title": "Journal of Medical Imaging and Health Informatics",
+          "key": "495_CR15",
+          "unstructured": "Liu, F. et al. An Open Access Database for Evaluating the Algorithms of Electrocardiogram Rhythm and Morphology Abnormality Detection. Journal of Medical Imaging and Health Informatics 8, 1368–1373 (2018).",
+          "volume": "8",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1055/s-0038-1634793",
+          "author": "P Arnaud",
+          "doi-asserted-by": "publisher",
+          "first-page": "263",
+          "journal-title": "Methods of Information in Medicine",
+          "key": "495_CR16",
+          "unstructured": "Arnaud, P. et al. Common Standards for Quantitative Electrocardiography: Goals and Main Results. Methods of Information in Medicine 29, 263–271 (1990).",
+          "volume": "29",
+          "year": "1990"
+        },
+        {
+          "key": "495_CR17",
+          "unstructured": "Kohavi, R. A study of cross-validation and bootstrap for accuracy estimation and model selection. In 14th International Joint Conference on Artificial Intelligence (IJCAI), vol. 2, 1137–1143 (1995)."
+        },
+        {
+          "DOI": "10.1007/978-3-642-23808-6_10",
+          "doi-asserted-by": "crossref",
+          "key": "495_CR18",
+          "unstructured": "Sechidis, K., Tsoumakas, G. & Vlahavas, I. On the Stratification of Multi-label Data. In Gunopulos, D., Hofmann, T., Malerba, D. & Vazirgiannis, M. (eds) Machine Learning and Knowledge Discovery in Databases, 145–158 (Springer Berlin Heidelberg, 2011)."
+        },
+        {
+          "DOI": "10.1016/j.jacc.2007.01.025",
+          "author": "JW Mason",
+          "doi-asserted-by": "publisher",
+          "first-page": "1128",
+          "journal-title": "Journal of the American College of Cardiology",
+          "key": "495_CR19",
+          "unstructured": "Mason, J. W., Hancock, E. W. & Gettes, L. S. Recommendations for the standardization and interpretation of the electrocardiogram. Journal of the American College of Cardiology 49, 1128–1135 (2007).",
+          "volume": "49",
+          "year": "2007"
+        },
+        {
+          "author": "GB Moody",
+          "first-page": "39",
+          "journal-title": "Computers in Cardiology",
+          "key": "495_CR20",
+          "unstructured": "Moody, G. B. & Mark, R. G. Development and evaluation of a 2-lead ecg analysis program. Computers in Cardiology 9, 39–44 (1982).",
+          "volume": "9",
+          "year": "1982"
+        },
+        {
+          "DOI": "10.1109/BIBE.2010.19",
+          "doi-asserted-by": "crossref",
+          "key": "495_CR21",
+          "unstructured": "Zhang, J., Wang, L., Liu, X., Zhu, H. & Dong, J. Chinese Cardiovascular Disease Database (CCDD) and Its Management Tool. In 2010 IEEE International Conference on BioInformatics and BioEngineering, 66–72 (2010)."
+        },
+        {
+          "DOI": "10.1109/IEMBS.2010.5628067",
+          "doi-asserted-by": "crossref",
+          "key": "495_CR22",
+          "unstructured": "Couderc, J.-P. The telemetric and holter ECG warehouse initiative (THEW): A data repository for the design, implementation and validation of ECG-related technologies. In 2010 Annual International Conference of the IEEE Engineering in Medicine and Biology, 6252–6255 (IEEE, 2010)."
+        },
+        {
+          "author": "GB Moody",
+          "first-page": "381",
+          "journal-title": "Computers in Cardiology",
+          "key": "495_CR23",
+          "unstructured": "Moody, G. B., Muldrow, W. & Mark, R. G. A noise stress test for arrhythmia detectors. Computers in Cardiology 11, 381–384 (1984).",
+          "volume": "11",
+          "year": "1984"
+        },
+        {
+          "DOI": "10.1109/51.932724",
+          "author": "G Moody",
+          "doi-asserted-by": "publisher",
+          "first-page": "45",
+          "journal-title": "IEEE Engineering in Medicine and Biology Magazine",
+          "key": "495_CR24",
+          "unstructured": "Moody, G. & Mark, R. The impact of the MIT-BIH Arrhythmia Database. IEEE Engineering in Medicine and Biology Magazine 20, 45–50 (2001).",
+          "volume": "20",
+          "year": "2001"
+        },
+        {
+          "key": "495_CR25",
+          "unstructured": "Greenwald, S. D. The development and analysis of a ventricular fibrillation detector. Master’s thesis, Massachusetts Institute of Technology (1986)."
+        },
+        {
+          "author": "F Nolle",
+          "first-page": "515",
+          "journal-title": "Computers in Cardiology",
+          "key": "495_CR26",
+          "unstructured": "Nolle, F., Badura, F., Catlett, J., Bowser, R. & Sketch, M. CREI-GARD, a new concept in computerized arrhythmia monitoring systems. Computers in Cardiology 13, 515–518 (1986).",
+          "volume": "13",
+          "year": "1986"
+        },
+        {
+          "DOI": "10.1093/oxfordjournals.eurheartj.a060332",
+          "author": "A Taddei",
+          "doi-asserted-by": "publisher",
+          "first-page": "1164",
+          "journal-title": "European Heart Journal",
+          "key": "495_CR27",
+          "unstructured": "Taddei, A. et al. The European ST-T database: standard for evaluating systems for the analysis of ST-T changes in ambulatory electrocardiography. European Heart Journal 13, 1164–1172 (1992).",
+          "volume": "13",
+          "year": "1992"
+        }
+      ],
+      "reference-count": 27,
+      "references-count": 27,
+      "relation": {
+        "is-referenced-by": [
+          {
+            "asserted-by": "object",
+            "id": "10.1038/s41598-025-20470-3",
+            "id-type": "doi"
+          }
+        ],
+        "references": [
+          {
+            "asserted-by": "subject",
+            "id": "10.13026/6sec-a640",
+            "id-type": "doi"
+          }
+        ]
+      },
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s41597-020-0495-6"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "Sci Data"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "PTB-XL, a large publicly available electrocardiography dataset"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "volume": "7"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "92e244affd092ec3894db8a6f7ce1425dbfa411c23b6f0bb36116b3649b3d9f7",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

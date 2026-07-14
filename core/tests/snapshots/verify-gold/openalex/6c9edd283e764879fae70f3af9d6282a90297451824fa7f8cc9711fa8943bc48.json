@@ -1,0 +1,2969 @@
+{
+  "endpoint": "works",
+  "request_key": "6c9edd283e764879fae70f3af9d6282a90297451824fa7f8cc9711fa8943bc48",
+  "request_params": {
+    "per-page": 5,
+    "search": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 126751,
+      "db_response_time_ms": 216,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (Sharing Detailed Research Data Is Associated with Increased Citation Rate)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Sharing Detailed Research Data Is Associated with Increased Citation Rate"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Sharing Detailed Research Data Is Associated with Increased Citation Rate&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(p": [
+            69
+          ],
+          "0.006)": [
+            71
+          ],
+          "48%": [
+            50
+          ],
+          "69%": [
+            75
+          ],
+          "85": [
+            35
+          ],
+          "85%": [
+            59
+          ],
+          "=": [
+            70
+          ],
+          "BACKGROUND:": [
+            0
+          ],
+          "FINDINGS:": [
+            28
+          ],
+          "PRINCIPAL": [
+            27
+          ],
+          "Publicly": [
+            64
+          ],
+          "SIGNIFICANCE:": [
+            95
+          ],
+          "Sharing": [
+            1
+          ],
+          "The": [
+            49
+          ],
+          "This": [
+            96
+          ],
+          "We": [
+            29
+          ],
+          "a": [
+            74
+          ],
+          "aggregate": [
+            62
+          ],
+          "and": [
+            87,
+            102
+          ],
+          "associated": [
+            72
+          ],
+          "author": [
+            88
+          ],
+          "availability": [
+            45
+          ],
+          "available": [
+            55,
+            65,
+            100
+          ],
+          "available.": [
+            26
+          ],
+          "benefit": [
+            5,
+            13
+          ],
+          "between": [
+            98
+          ],
+          "but": [
+            11
+          ],
+          "cancer": [
+            36
+          ],
+          "citation": [
+            32
+          ],
+          "citations,": [
+            78
+          ],
+          "citations.": [
+            63
+          ],
+          "clinical": [
+            38
+          ],
+          "community,": [
+            10
+          ],
+          "correlation": [
+            97
+          ],
+          "country": [
+            89
+          ],
+          "data": [
+            3,
+            25,
+            57,
+            66,
+            101
+          ],
+          "data.": [
+            48,
+            115
+          ],
+          "date": [
+            84
+          ],
+          "detailed": [
+            113
+          ],
+          "examined": [
+            30
+          ],
+          "factor,": [
+            83
+          ],
+          "for": [
+            17
+          ],
+          "further": [
+            107
+          ],
+          "general": [
+            8
+          ],
+          "her": [
+            24
+          ],
+          "his": [
+            22
+          ],
+          "history": [
+            33
+          ],
+          "impact": [
+            82,
+            105
+          ],
+          "in": [
+            77
+          ],
+          "increase": [
+            76
+          ],
+          "increased": [
+            103
+          ],
+          "independently": [
+            79
+          ],
+          "investigator": [
+            19
+          ],
+          "investigators": [
+            109
+          ],
+          "is": [
+            14
+          ],
+          "journal": [
+            81
+          ],
+          "less": [
+            15
+          ],
+          "linear": [
+            93
+          ],
+          "literature": [
+            104
+          ],
+          "makes": [
+            21
+          ],
+          "may": [
+            106
+          ],
+          "microarray": [
+            37,
+            56
+          ],
+          "motivate": [
+            108
+          ],
+          "obvious": [
+            16
+          ],
+          "of": [
+            34,
+            46,
+            51,
+            60,
+            80,
+            85,
+            90
+          ],
+          "or": [
+            23
+          ],
+          "origin": [
+            91
+          ],
+          "provides": [
+            4
+          ],
+          "publication,": [
+            86
+          ],
+          "publications": [
+            40
+          ],
+          "publicly": [
+            54,
+            99
+          ],
+          "received": [
+            58
+          ],
+          "regression.": [
+            94
+          ],
+          "research": [
+            2,
+            114
+          ],
+          "respect": [
+            42
+          ],
+          "scientific": [
+            9
+          ],
+          "share": [
+            111
+          ],
+          "significantly": [
+            68
+          ],
+          "the": [
+            7,
+            12,
+            18,
+            31,
+            44,
+            61
+          ],
+          "their": [
+            47,
+            112
+          ],
+          "to": [
+            6,
+            43,
+            110
+          ],
+          "trial": [
+            39
+          ],
+          "trials": [
+            52
+          ],
+          "using": [
+            92
+          ],
+          "was": [
+            67
+          ],
+          "who": [
+            20
+          ],
+          "with": [
+            41,
+            53,
+            73
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America. hpiwowar@cbmi.pitt.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America"
+              }
+            ],
+            "author": {
+              "display_name": "Heather Piwowar",
+              "id": "https://openalex.org/A5048491430",
+              "orcid": "https://orcid.org/0000-0003-1613-5981"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Pittsburgh",
+                "id": "https://openalex.org/I170201317",
+                "lineage": [
+                  "https://openalex.org/I170201317"
+                ],
+                "ror": "https://ror.org/01an3r305",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America. hpiwowar@cbmi.pitt.edu",
+              "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America"
+            ],
+            "raw_author_name": "Heather A. Piwowar",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America"
+              }
+            ],
+            "author": {
+              "display_name": "Roger Day",
+              "id": "https://openalex.org/A5109883106",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Pittsburgh",
+                "id": "https://openalex.org/I170201317",
+                "lineage": [
+                  "https://openalex.org/I170201317"
+                ],
+                "ror": "https://ror.org/01an3r305",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America"
+            ],
+            "raw_author_name": "Roger S. Day",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America"
+              }
+            ],
+            "author": {
+              "display_name": "Douglas B. Fridsma",
+              "id": "https://openalex.org/A5032027675",
+              "orcid": "https://orcid.org/0009-0009-1767-3264"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Pittsburgh",
+                "id": "https://openalex.org/I170201317",
+                "lineage": [
+                  "https://openalex.org/I170201317"
+                ],
+                "ror": "https://ror.org/01an3r305",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biomedical Informatics, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania, United States of America"
+            ],
+            "raw_author_name": "Douglas B. Fridsma",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1371/journal.pone.0000308",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1371/journal.pone.0000308",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0000308&type=printable",
+          "raw_source_name": "PLoS ONE",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "PLoS ONE",
+            "host_organization": "https://openalex.org/P4310315706",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315706"
+            ],
+            "host_organization_lineage_names": [
+              "Public Library of Science"
+            ],
+            "host_organization_name": "Public Library of Science",
+            "id": "https://openalex.org/S202381698",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1932-6203"
+            ],
+            "issn_l": "1932-6203",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "e308",
+          "issue": "3",
+          "last_page": "e308",
+          "volume": "2"
+        },
+        "cited_by_count": 908,
+        "display_name": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "doi": "https://doi.org/10.1371/journal.pone.0000308",
+        "id": "https://openalex.org/W2046766973",
+        "ids": {
+          "doi": "https://doi.org/10.1371/journal.pone.0000308",
+          "mag": "2046766973",
+          "openalex": "https://openalex.org/W2046766973",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/17375194"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0000308&type=printable"
+        },
+        "primary_location": {
+          "id": "doi:10.1371/journal.pone.0000308",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1371/journal.pone.0000308",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0000308&type=printable",
+          "raw_source_name": "PLoS ONE",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "PLoS ONE",
+            "host_organization": "https://openalex.org/P4310315706",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315706"
+            ],
+            "host_organization_lineage_names": [
+              "Public Library of Science"
+            ],
+            "host_organization_name": "Public Library of Science",
+            "id": "https://openalex.org/S202381698",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1932-6203"
+            ],
+            "issn_l": "1932-6203",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2007-03-20",
+        "publication_year": 2007,
+        "referenced_works": [
+          "https://openalex.org/W1486283310",
+          "https://openalex.org/W1540815740",
+          "https://openalex.org/W1544923801",
+          "https://openalex.org/W1680359239",
+          "https://openalex.org/W1969232170",
+          "https://openalex.org/W1971559865",
+          "https://openalex.org/W1977918192",
+          "https://openalex.org/W1978694357",
+          "https://openalex.org/W1996647803",
+          "https://openalex.org/W2003634050",
+          "https://openalex.org/W2020541351",
+          "https://openalex.org/W2021107090",
+          "https://openalex.org/W2023223848",
+          "https://openalex.org/W2040127549",
+          "https://openalex.org/W2043213524",
+          "https://openalex.org/W2052432047",
+          "https://openalex.org/W2077523260",
+          "https://openalex.org/W2083737836",
+          "https://openalex.org/W2086496065",
+          "https://openalex.org/W2087434485",
+          "https://openalex.org/W2089604928",
+          "https://openalex.org/W2096910745",
+          "https://openalex.org/W2100471807",
+          "https://openalex.org/W2131837970",
+          "https://openalex.org/W2132722663",
+          "https://openalex.org/W2133362931",
+          "https://openalex.org/W2135336774",
+          "https://openalex.org/W2137970956",
+          "https://openalex.org/W2140283616",
+          "https://openalex.org/W2153709794",
+          "https://openalex.org/W2161227357",
+          "https://openalex.org/W2171088586",
+          "https://openalex.org/W2172300766",
+          "https://openalex.org/W2418056748",
+          "https://openalex.org/W2582743722",
+          "https://openalex.org/W3022065164",
+          "https://openalex.org/W4230722969",
+          "https://openalex.org/W4234271032",
+          "https://openalex.org/W4301206697",
+          "https://openalex.org/W6651280379"
+        ],
+        "referenced_works_count": 40,
+        "title": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(2007)": [
+            11
+          ],
+          "(p": [
+            91
+          ],
+          "0.006)": [
+            93
+          ],
+          "2(3):": [
+            24
+          ],
+          "48%": [
+            72
+          ],
+          "69%": [
+            97
+          ],
+          "85": [
+            57
+          ],
+          "85%": [
+            81
+          ],
+          "=": [
+            92
+          ],
+          "Associated": [
+            17
+          ],
+          "Citation": [
+            20
+          ],
+          "DB": [
+            10
+          ],
+          "Data": [
+            15
+          ],
+          "Day": [
+            7
+          ],
+          "Detailed": [
+            13
+          ],
+          "Fridsma": [
+            9
+          ],
+          "HA,": [
+            6
+          ],
+          "Increased": [
+            19
+          ],
+          "Is": [
+            16
+          ],
+          "ONE": [
+            23
+          ],
+          "PLoS": [
+            22
+          ],
+          "Presentation": [
+            0
+          ],
+          "Publicly": [
+            86
+          ],
+          "RS,": [
+            8
+          ],
+          "Rate.": [
+            21
+          ],
+          "Research": [
+            14
+          ],
+          "Sharing": [
+            12
+          ],
+          "The": [
+            71
+          ],
+          "a": [
+            96
+          ],
+          "aggregate": [
+            84
+          ],
+          "and": [
+            109,
+            122
+          ],
+          "associated": [
+            94
+          ],
+          "author": [
+            110
+          ],
+          "availability": [
+            67
+          ],
+          "available": [
+            77,
+            87,
+            120
+          ],
+          "available.We": [
+            51
+          ],
+          "based": [
+            1
+          ],
+          "benefit": [
+            30,
+            38
+          ],
+          "between": [
+            118
+          ],
+          "but": [
+            36
+          ],
+          "cancer": [
+            58
+          ],
+          "citation": [
+            54
+          ],
+          "citations,": [
+            100
+          ],
+          "citations.": [
+            85
+          ],
+          "clinical": [
+            60
+          ],
+          "community,": [
+            35
+          ],
+          "correlation": [
+            117
+          ],
+          "country": [
+            111
+          ],
+          "data": [
+            28,
+            50,
+            79,
+            88,
+            121
+          ],
+          "data.": [
+            70,
+            135
+          ],
+          "date": [
+            106
+          ],
+          "detailed": [
+            133
+          ],
+          "doi:10.1371/journal.pone.0000308Sharing": [
+            26
+          ],
+          "e308.": [
+            25
+          ],
+          "examined": [
+            52
+          ],
+          "factor,": [
+            105
+          ],
+          "for": [
+            42
+          ],
+          "further": [
+            127
+          ],
+          "general": [
+            33
+          ],
+          "her": [
+            49
+          ],
+          "here:Piwowar": [
+            5
+          ],
+          "his": [
+            47
+          ],
+          "history": [
+            55
+          ],
+          "impact": [
+            104,
+            125
+          ],
+          "in": [
+            99
+          ],
+          "increase": [
+            98
+          ],
+          "increased": [
+            123
+          ],
+          "independently": [
+            101
+          ],
+          "investigator": [
+            44
+          ],
+          "investigators": [
+            129
+          ],
+          "is": [
+            39
+          ],
+          "journal": [
+            103
+          ],
+          "less": [
+            40
+          ],
+          "linear": [
+            115
+          ],
+          "literature": [
+            124
+          ],
+          "makes": [
+            46
+          ],
+          "may": [
+            126
+          ],
+          "microarray": [
+            59,
+            78
+          ],
+          "motivate": [
+            128
+          ],
+          "obvious": [
+            41
+          ],
+          "of": [
+            56,
+            68,
+            73,
+            82,
+            102,
+            107,
+            112
+          ],
+          "on": [
+            2
+          ],
+          "or": [
+            48
+          ],
+          "origin": [
+            113
+          ],
+          "provides": [
+            29
+          ],
+          "publication": [
+            4
+          ],
+          "publication,": [
+            108
+          ],
+          "publications": [
+            62
+          ],
+          "publicly": [
+            76,
+            119
+          ],
+          "received": [
+            80
+          ],
+          "regression.This": [
+            116
+          ],
+          "research": [
+            27,
+            134
+          ],
+          "respect": [
+            64
+          ],
+          "scientific": [
+            34
+          ],
+          "share": [
+            131
+          ],
+          "significantly": [
+            90
+          ],
+          "the": [
+            3,
+            32,
+            37,
+            43,
+            53,
+            66,
+            83
+          ],
+          "their": [
+            69,
+            132
+          ],
+          "to": [
+            31,
+            65,
+            130
+          ],
+          "trial": [
+            61
+          ],
+          "trials": [
+            74
+          ],
+          "using": [
+            114
+          ],
+          "was": [
+            89
+          ],
+          "who": [
+            45
+          ],
+          "with": [
+            18,
+            63,
+            75,
+            95
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "University of Pittsburgh"
+              }
+            ],
+            "author": {
+              "display_name": "Heather Piwowar",
+              "id": "https://openalex.org/A5048491430",
+              "orcid": "https://orcid.org/0000-0003-1613-5981"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Pittsburgh",
+                "id": "https://openalex.org/I170201317",
+                "lineage": [
+                  "https://openalex.org/I170201317"
+                ],
+                "ror": "https://ror.org/01an3r305",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "University of Pittsburgh"
+            ],
+            "raw_author_name": "Heather Piwowar",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "University of Pittsburgh"
+              }
+            ],
+            "author": {
+              "display_name": "Heather Piwowar",
+              "id": "https://openalex.org/A5048491430",
+              "orcid": "https://orcid.org/0000-0003-1613-5981"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Pittsburgh",
+                "id": "https://openalex.org/I170201317",
+                "lineage": [
+                  "https://openalex.org/I170201317"
+                ],
+                "ror": "https://ror.org/01an3r305",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "University of Pittsburgh"
+            ],
+            "raw_author_name": "Heather Piwowar",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/npre.2007.361",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/npre.2007.361",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/npre.2007.361.1.pdf",
+          "raw_source_name": "Nature Precedings",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Precedings",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S48744551",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "1756-0357"
+            ],
+            "issn_l": "1756-0357",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 105,
+        "display_name": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "doi": "https://doi.org/10.1038/npre.2007.361",
+        "id": "https://openalex.org/W4237614390",
+        "ids": {
+          "doi": "https://doi.org/10.1038/npre.2007.361",
+          "openalex": "https://openalex.org/W4237614390"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://www.nature.com/articles/npre.2007.361.1.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/npre.2007.361",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/npre.2007.361",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/npre.2007.361.1.pdf",
+          "raw_source_name": "Nature Precedings",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Precedings",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S48744551",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "1756-0357"
+            ],
+            "issn_l": "1756-0357",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2007-07-05",
+        "publication_year": 2007,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "(2007)": [
+            12
+          ],
+          "(p": [
+            92
+          ],
+          "0.006)": [
+            94
+          ],
+          "2(3):": [
+            25
+          ],
+          "48%": [
+            73
+          ],
+          "69%": [
+            98
+          ],
+          "85": [
+            58
+          ],
+          "85%": [
+            82
+          ],
+          "=": [
+            93
+          ],
+          "Abstract": [
+            0
+          ],
+          "Associated": [
+            18
+          ],
+          "Citation": [
+            21
+          ],
+          "DB": [
+            11
+          ],
+          "Data": [
+            16
+          ],
+          "Day": [
+            8
+          ],
+          "Detailed": [
+            14
+          ],
+          "Fridsma": [
+            10
+          ],
+          "HA,": [
+            7
+          ],
+          "Increased": [
+            20
+          ],
+          "Is": [
+            17
+          ],
+          "ONE": [
+            24
+          ],
+          "PLoS": [
+            23
+          ],
+          "Presentation": [
+            1
+          ],
+          "Publicly": [
+            87
+          ],
+          "RS,": [
+            9
+          ],
+          "Rate.": [
+            22
+          ],
+          "Research": [
+            15
+          ],
+          "Sharing": [
+            13
+          ],
+          "The": [
+            72
+          ],
+          "a": [
+            97
+          ],
+          "aggregate": [
+            85
+          ],
+          "and": [
+            110,
+            123
+          ],
+          "associated": [
+            95
+          ],
+          "author": [
+            111
+          ],
+          "availability": [
+            68
+          ],
+          "available": [
+            78,
+            88,
+            121
+          ],
+          "available.We": [
+            52
+          ],
+          "based": [
+            2
+          ],
+          "benefit": [
+            31,
+            39
+          ],
+          "between": [
+            119
+          ],
+          "but": [
+            37
+          ],
+          "cancer": [
+            59
+          ],
+          "citation": [
+            55
+          ],
+          "citations,": [
+            101
+          ],
+          "citations.": [
+            86
+          ],
+          "clinical": [
+            61
+          ],
+          "community,": [
+            36
+          ],
+          "correlation": [
+            118
+          ],
+          "country": [
+            112
+          ],
+          "data": [
+            29,
+            51,
+            80,
+            89,
+            122
+          ],
+          "data.": [
+            71,
+            136
+          ],
+          "date": [
+            107
+          ],
+          "detailed": [
+            134
+          ],
+          "doi:10.1371/journal.pone.0000308Sharing": [
+            27
+          ],
+          "e308.": [
+            26
+          ],
+          "examined": [
+            53
+          ],
+          "factor,": [
+            106
+          ],
+          "for": [
+            43
+          ],
+          "further": [
+            128
+          ],
+          "general": [
+            34
+          ],
+          "her": [
+            50
+          ],
+          "here:Piwowar": [
+            6
+          ],
+          "his": [
+            48
+          ],
+          "history": [
+            56
+          ],
+          "impact": [
+            105,
+            126
+          ],
+          "in": [
+            100
+          ],
+          "increase": [
+            99
+          ],
+          "increased": [
+            124
+          ],
+          "independently": [
+            102
+          ],
+          "investigator": [
+            45
+          ],
+          "investigators": [
+            130
+          ],
+          "is": [
+            40
+          ],
+          "journal": [
+            104
+          ],
+          "less": [
+            41
+          ],
+          "linear": [
+            116
+          ],
+          "literature": [
+            125
+          ],
+          "makes": [
+            47
+          ],
+          "may": [
+            127
+          ],
+          "microarray": [
+            60,
+            79
+          ],
+          "motivate": [
+            129
+          ],
+          "obvious": [
+            42
+          ],
+          "of": [
+            57,
+            69,
+            74,
+            83,
+            103,
+            108,
+            113
+          ],
+          "on": [
+            3
+          ],
+          "or": [
+            49
+          ],
+          "origin": [
+            114
+          ],
+          "provides": [
+            30
+          ],
+          "publication": [
+            5
+          ],
+          "publication,": [
+            109
+          ],
+          "publications": [
+            63
+          ],
+          "publicly": [
+            77,
+            120
+          ],
+          "received": [
+            81
+          ],
+          "regression.This": [
+            117
+          ],
+          "research": [
+            28,
+            135
+          ],
+          "respect": [
+            65
+          ],
+          "scientific": [
+            35
+          ],
+          "share": [
+            132
+          ],
+          "significantly": [
+            91
+          ],
+          "the": [
+            4,
+            33,
+            38,
+            44,
+            54,
+            67,
+            84
+          ],
+          "their": [
+            70,
+            133
+          ],
+          "to": [
+            32,
+            66,
+            131
+          ],
+          "trial": [
+            62
+          ],
+          "trials": [
+            75
+          ],
+          "using": [
+            115
+          ],
+          "was": [
+            90
+          ],
+          "who": [
+            46
+          ],
+          "with": [
+            19,
+            64,
+            76,
+            96
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "University of Pittsburgh https://www.nature.com/nature"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "University of Pittsburgh"
+              }
+            ],
+            "author": {
+              "display_name": "Heather Piwowar",
+              "id": "https://openalex.org/A5048491430",
+              "orcid": "https://orcid.org/0000-0003-1613-5981"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Pittsburgh",
+                "id": "https://openalex.org/I170201317",
+                "lineage": [
+                  "https://openalex.org/I170201317"
+                ],
+                "ror": "https://ror.org/01an3r305",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "University of Pittsburgh https://www.nature.com/nature",
+              "University of Pittsburgh"
+            ],
+            "raw_author_name": "Heather Piwowar",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/npre.2007.361.1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/npre.2007.361.1",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": "Nature Precedings",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Precedings",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S48744551",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "1756-0357"
+            ],
+            "issn_l": "1756-0357",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 8,
+        "display_name": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "doi": "https://doi.org/10.1038/npre.2007.361.1",
+        "id": "https://openalex.org/W3021154342",
+        "ids": {
+          "doi": "https://doi.org/10.1038/npre.2007.361.1",
+          "mag": "3021154342",
+          "openalex": "https://openalex.org/W3021154342"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://doi.org/10.1038/npre.2007.361.1"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/npre.2007.361.1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/npre.2007.361.1",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": "Nature Precedings",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Precedings",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S48744551",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "1756-0357"
+            ],
+            "issn_l": "1756-0357",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2007-07-05",
+        "publication_year": 2007,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "\"generality\",": [
+            60
+          ],
+          "\"originality\"": [
+            58
+          ],
+          "(comprising": [
+            80
+          ],
+          "16": [
+            111
+          ],
+          "3": [
+            107
+          ],
+          "30": [
+            37
+          ],
+          "Chemical,": [
+            90
+          ],
+          "Communications,": [
+            83
+          ],
+          "Computers": [
+            81
+          ],
+          "Drugs": [
+            84
+          ],
+          "Electrical": [
+            87
+          ],
+          "Electronics,": [
+            89
+          ],
+          "In": [
+            139
+          ],
+          "Many": [
+            63
+          ],
+          "Mechanical": [
+            91
+          ],
+          "Medical,": [
+            86
+          ],
+          "NBER": [
+            118
+          ],
+          "Others),": [
+            93
+          ],
+          "S.": [
+            32
+          ],
+          "This": [
+            0
+          ],
+          "To": [
+            100,
+            186
+          ],
+          "U.": [
+            31
+          ],
+          "U.S.": [
+            6
+          ],
+          "We": [
+            26,
+            120
+          ],
+          "a": [
+            40,
+            183,
+            207
+          ],
+          "accessible": [
+            23
+          ],
+          "across": [
+            70
+          ],
+          "addressing": [
+            137
+          ],
+          "alternative": [
+            193
+          ],
+          "and": [
+            52,
+            59,
+            82,
+            85,
+            88,
+            92,
+            110,
+            133,
+            150
+          ],
+          "approach": [
+            197,
+            220
+          ],
+          "approaches:": [
+            194
+          ],
+          "arise": [
+            125
+          ],
+          "as": [
+            50,
+            157,
+            159
+          ],
+          "attempts": [
+            221
+          ],
+          "available": [
+            115
+          ],
+          "average": [
+            203
+          ],
+          "backward": [
+            51
+          ],
+          "belongs;": [
+            217
+          ],
+          "by": [
+            178,
+            201
+          ],
+          "call": [
+            96
+          ],
+          "categories": [
+            75
+          ],
+          "changes": [
+            142
+          ],
+          "citation": [
+            47,
+            54,
+            204,
+            228
+          ],
+          "citations": [
+            131,
+            155,
+            176,
+            200
+          ],
+          "citations-is": [
+            113
+          ],
+          "constructed": [
+            45
+          ],
+          "count": [
+            205
+          ],
+          "data,": [
+            48,
+            132,
+            165
+          ],
+          "database": [
+            4
+          ],
+          "database-about": [
+            106
+          ],
+          "decade,": [
+            15
+          ],
+          "describes": [
+            2
+          ],
+          "developed": [
+            11,
+            79
+          ],
+          "differences": [
+            69,
+            94
+          ],
+          "different": [
+            179
+          ],
+          "directly": [
+            181
+          ],
+          "discuss": [
+            121
+          ],
+          "distinguish": [
+            223
+          ],
+          "econometric": [
+            231
+          ],
+          "effects": [
+            226
+          ],
+          "entire": [
+            105
+          ],
+          "estimation.": [
+            232
+          ],
+          "etc.": [
+            62
+          ],
+          "exhibit": [
+            67
+          ],
+          "fixed-effects": [
+            196
+          ],
+          "for": [
+            24,
+            97,
+            206
+          ],
+          "forward": [
+            53
+          ],
+          "further": [
+            98
+          ],
+          "goal": [
+            18
+          ],
+          "group": [
+            208
+          ],
+          "hard": [
+            169
+          ],
+          "have": [
+            10,
+            78
+          ],
+          "in": [
+            30,
+            126,
+            145,
+            151,
+            182
+          ],
+          "including": [
+            39
+          ],
+          "indices": [
+            56
+          ],
+          "inevitable": [
+            161
+          ],
+          "interest": [
+            216
+          ],
+          "interesting": [
+            68
+          ],
+          "involves": [
+            198
+          ],
+          "issues": [
+            123
+          ],
+          "it": [
+            21,
+            167
+          ],
+          "key": [
+            122
+          ],
+          "lags,": [
+            55
+          ],
+          "last": [
+            36
+          ],
+          "made,": [
+            156
+          ],
+          "main": [
+            28,
+            73
+          ],
+          "make": [
+            166
+          ],
+          "making": [
+            20
+          ],
+          "meaningful": [
+            184
+          ],
+          "measures": [
+            44,
+            66
+          ],
+          "million": [
+            108,
+            112
+          ],
+          "multiple": [
+            225
+          ],
+          "now": [
+            114
+          ],
+          "number": [
+            153,
+            174
+          ],
+          "of": [
+            19,
+            42,
+            57,
+            64,
+            129,
+            136,
+            148,
+            154,
+            163,
+            175,
+            209,
+            215
+          ],
+          "on": [
+            5,
+            116,
+            227
+          ],
+          "original": [
+            43
+          ],
+          "over": [
+            12,
+            34,
+            143
+          ],
+          "paper": [
+            1
+          ],
+          "particular,": [
+            140
+          ],
+          "past": [
+            14
+          ],
+          "patent": [
+            130,
+            214
+          ],
+          "patenting": [
+            33,
+            149
+          ],
+          "patents": [
+            7,
+            109,
+            180,
+            210
+          ],
+          "present": [
+            27
+          ],
+          "problem": [
+            189
+          ],
+          "quasi-structural": [
+            219
+          ],
+          "rate": [
+            147
+          ],
+          "rates": [
+            229
+          ],
+          "raw": [
+            173
+          ],
+          "received": [
+            177
+          ],
+          "remedy": [
+            187
+          ],
+          "research,": [
+            103
+          ],
+          "research.": [
+            25,
+            99
+          ],
+          "scaling": [
+            199
+          ],
+          "self-citations,": [
+            61
+          ],
+          "significant": [
+            141
+          ],
+          "six": [
+            72
+          ],
+          "stimulate": [
+            101
+          ],
+          "such": [
+            49,
+            102
+          ],
+          "suggest": [
+            134,
+            191
+          ],
+          "technological": [
+            74
+          ],
+          "that": [
+            8,
+            76,
+            95,
+            124
+          ],
+          "the": [
+            3,
+            13,
+            17,
+            35,
+            71,
+            104,
+            117,
+            127,
+            146,
+            152,
+            160,
+            164,
+            172,
+            195,
+            202,
+            213,
+            218,
+            224
+          ],
+          "them.": [
+            138
+          ],
+          "these": [
+            65
+          ],
+          "this": [
+            188
+          ],
+          "time": [
+            144
+          ],
+          "to": [
+            170,
+            211,
+            222
+          ],
+          "trends": [
+            29
+          ],
+          "truncation": [
+            162
+          ],
+          "two": [
+            192
+          ],
+          "use": [
+            128,
+            171
+          ],
+          "variety": [
+            41
+          ],
+          "very": [
+            168
+          ],
+          "via": [
+            230
+          ],
+          "way.": [
+            185
+          ],
+          "ways": [
+            135
+          ],
+          "we": [
+            9,
+            77,
+            190
+          ],
+          "website.": [
+            119
+          ],
+          "well": [
+            158
+          ],
+          "which": [
+            212
+          ],
+          "widely": [
+            22
+          ],
+          "with": [
+            16,
+            46
+          ],
+          "years,": [
+            38
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1321305853"
+                ],
+                "raw_affiliation_string": "NATIONAL BUREAU OF ECONOMIC RESEARCH 1050 Massachusetts Avenue Cambridge, MA 02138"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Department of Economics MS 021, Department of Economics University of California at Berkeley"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I6902469"
+                ],
+                "raw_affiliation_string": "Brandeis University Berkeley, CA 94720-3880 Waltham, MA 02454-9110"
+              }
+            ],
+            "author": {
+              "display_name": "Bronwyn H. Hall",
+              "id": "https://openalex.org/A5012935802",
+              "orcid": "https://orcid.org/0000-0002-3802-5567"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "National Bureau of Economic Research",
+                "id": "https://openalex.org/I1321305853",
+                "lineage": [
+                  "https://openalex.org/I1321305853"
+                ],
+                "ror": "https://ror.org/04grmx538",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Brandeis University",
+                "id": "https://openalex.org/I6902469",
+                "lineage": [
+                  "https://openalex.org/I6902469"
+                ],
+                "ror": "https://ror.org/05abbep66",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Berkeley",
+                "id": "https://openalex.org/I95457486",
+                "lineage": [
+                  "https://openalex.org/I95457486"
+                ],
+                "ror": "https://ror.org/01an7q238",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "NATIONAL BUREAU OF ECONOMIC RESEARCH 1050 Massachusetts Avenue Cambridge, MA 02138",
+              "Department of Economics MS 021, Department of Economics University of California at Berkeley",
+              "Brandeis University Berkeley, CA 94720-3880 Waltham, MA 02454-9110"
+            ],
+            "raw_author_name": "Bronwyn Hall",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Department of Economics MS 021, Department of Economics University of California at Berkeley"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1321305853"
+                ],
+                "raw_affiliation_string": "NATIONAL BUREAU OF ECONOMIC RESEARCH 1050 Massachusetts Avenue Cambridge, MA 02138"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I6902469"
+                ],
+                "raw_affiliation_string": "Brandeis University Berkeley, CA 94720-3880 Waltham, MA 02454-9110"
+              }
+            ],
+            "author": {
+              "display_name": "Adam B. Jaffe",
+              "id": "https://openalex.org/A5022731487",
+              "orcid": "https://orcid.org/0000-0003-1337-1751"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "National Bureau of Economic Research",
+                "id": "https://openalex.org/I1321305853",
+                "lineage": [
+                  "https://openalex.org/I1321305853"
+                ],
+                "ror": "https://ror.org/04grmx538",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Brandeis University",
+                "id": "https://openalex.org/I6902469",
+                "lineage": [
+                  "https://openalex.org/I6902469"
+                ],
+                "ror": "https://ror.org/05abbep66",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Berkeley",
+                "id": "https://openalex.org/I95457486",
+                "lineage": [
+                  "https://openalex.org/I95457486"
+                ],
+                "ror": "https://ror.org/01an7q238",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Economics MS 021, Department of Economics University of California at Berkeley",
+              "NATIONAL BUREAU OF ECONOMIC RESEARCH 1050 Massachusetts Avenue Cambridge, MA 02138",
+              "Brandeis University Berkeley, CA 94720-3880 Waltham, MA 02454-9110"
+            ],
+            "raw_author_name": "Adam Jaffe",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1321305853"
+                ],
+                "raw_affiliation_string": "NATIONAL BUREAU OF ECONOMIC RESEARCH 1050 Massachusetts Avenue Cambridge, MA 02138"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Department of Economics MS 021, Department of Economics University of California at Berkeley"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I16391192"
+                ],
+                "raw_affiliation_string": "School of Economics Tel-Aviv University Tel-Aviv 69978 Israel"
+              }
+            ],
+            "author": {
+              "display_name": "Manuel Trajtenberg",
+              "id": "https://openalex.org/A5070546728",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "IL",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "National Bureau of Economic Research",
+                "id": "https://openalex.org/I1321305853",
+                "lineage": [
+                  "https://openalex.org/I1321305853"
+                ],
+                "ror": "https://ror.org/04grmx538",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "IL",
+                "display_name": "Tel Aviv University",
+                "id": "https://openalex.org/I16391192",
+                "lineage": [
+                  "https://openalex.org/I16391192"
+                ],
+                "ror": "https://ror.org/04mhzgx49",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Berkeley",
+                "id": "https://openalex.org/I95457486",
+                "lineage": [
+                  "https://openalex.org/I95457486"
+                ],
+                "ror": "https://ror.org/01an7q238",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "NATIONAL BUREAU OF ECONOMIC RESEARCH 1050 Massachusetts Avenue Cambridge, MA 02138",
+              "Department of Economics MS 021, Department of Economics University of California at Berkeley",
+              "School of Economics Tel-Aviv University Tel-Aviv 69978 Israel"
+            ],
+            "raw_author_name": "Manuel Trajtenberg",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3386/w8498",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3386/w8498",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://doi.org/10.3386/w8498",
+          "raw_source_name": "National Bureau of Economic Research",
+          "raw_type": "report",
+          "source": {
+            "display_name": "National Bureau of Economic Research",
+            "host_organization": null,
+            "host_organization_lineage": [
+              "https://openalex.org/P4322614461"
+            ],
+            "host_organization_lineage_names": [
+              "National Bureau of Economic Research"
+            ],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S2809516038",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 3625,
+        "display_name": "The NBER Patent Citation Data File: Lessons, Insights and Methodological Tools",
+        "doi": "https://doi.org/10.3386/w8498",
+        "id": "https://openalex.org/W2124298085",
+        "ids": {
+          "doi": "https://doi.org/10.3386/w8498",
+          "mag": "2124298085",
+          "openalex": "https://openalex.org/W2124298085"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://doi.org/10.3386/w8498"
+        },
+        "primary_location": {
+          "id": "doi:10.3386/w8498",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3386/w8498",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://doi.org/10.3386/w8498",
+          "raw_source_name": "National Bureau of Economic Research",
+          "raw_type": "report",
+          "source": {
+            "display_name": "National Bureau of Economic Research",
+            "host_organization": null,
+            "host_organization_lineage": [
+              "https://openalex.org/P4322614461"
+            ],
+            "host_organization_lineage_names": [
+              "National Bureau of Economic Research"
+            ],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S2809516038",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2001-10-01",
+        "publication_year": 2001,
+        "referenced_works": [
+          "https://openalex.org/W1480130531",
+          "https://openalex.org/W1492894936",
+          "https://openalex.org/W1511430906",
+          "https://openalex.org/W1561438477",
+          "https://openalex.org/W1967412017",
+          "https://openalex.org/W1967629308",
+          "https://openalex.org/W1976395435",
+          "https://openalex.org/W1986871488",
+          "https://openalex.org/W2033912020",
+          "https://openalex.org/W2034482953",
+          "https://openalex.org/W2080403696",
+          "https://openalex.org/W2080476054",
+          "https://openalex.org/W2083860273",
+          "https://openalex.org/W2148280884",
+          "https://openalex.org/W2165429918",
+          "https://openalex.org/W2322865823",
+          "https://openalex.org/W3022125541",
+          "https://openalex.org/W3121669807",
+          "https://openalex.org/W3122799428",
+          "https://openalex.org/W3123415698",
+          "https://openalex.org/W3124243998",
+          "https://openalex.org/W3124629433",
+          "https://openalex.org/W3125010103",
+          "https://openalex.org/W3125090905",
+          "https://openalex.org/W3125296625",
+          "https://openalex.org/W4229487566",
+          "https://openalex.org/W6677451633"
+        ],
+        "referenced_works_count": 27,
+        "title": "The NBER Patent Citation Data File: Lessons, Insights and Methodological Tools",
+        "type": "report"
+      },
+      {
+        "abstract_inverted_index": {
+          "\"importance\"": [
+            12
+          ],
+          "\"unpredictable\"": [
+            81
+          ],
+          "1963-1995,": [
+            36
+          ],
+          "3%.": [
+            76
+          ],
+          "Further": [
+            77
+          ],
+          "R&amp;D": [
+            46
+          ],
+          "R&amp;D,": [
+            52
+          ],
+          "Tobin's": [
+            39
+          ],
+          "Using": [
+            31
+          ],
+          "We": [
+            0,
+            57
+          ],
+          "a": [
+            8,
+            14,
+            84
+          ],
+          "affects": [
+            63
+          ],
+          "an": [
+            67
+          ],
+          "and": [
+            33,
+            53,
+            91
+          ],
+          "are": [
+            94
+          ],
+          "as": [
+            7,
+            17
+          ],
+          "assets": [
+            48
+          ],
+          "boosting": [
+            72
+          ],
+          "by": [
+            19,
+            75
+          ],
+          "citation": [
+            69
+          ],
+          "citations": [
+            6,
+            34,
+            54,
+            82
+          ],
+          "citations.": [
+            99
+          ],
+          "each": [
+            60
+          ],
+          "effect": [
+            86
+          ],
+          "equations": [
+            41
+          ],
+          "estimate": [
+            38
+          ],
+          "explore": [
+            1
+          ],
+          "external": [
+            98
+          ],
+          "extra": [
+            68
+          ],
+          "find": [
+            58
+          ],
+          "findings": [
+            78
+          ],
+          "firm's": [
+            15,
+            26
+          ],
+          "for": [
+            35
+          ],
+          "have": [
+            83
+          ],
+          "indicate": [
+            79
+          ],
+          "indicated": [
+            18
+          ],
+          "intangible": [
+            27
+          ],
+          "knowledge.": [
+            30
+          ],
+          "market": [
+            22,
+            64,
+            73
+          ],
+          "measure": [
+            9
+          ],
+          "more": [
+            95
+          ],
+          "of": [
+            4,
+            10,
+            13,
+            24,
+            29,
+            45
+          ],
+          "on": [
+            42
+          ],
+          "patent": [
+            5,
+            71
+          ],
+          "patents": [
+            32,
+            50
+          ],
+          "patents,": [
+            16
+          ],
+          "patents.": [
+            56
+          ],
+          "per": [
+            70
+          ],
+          "portion,": [
+            90
+          ],
+          "predictable": [
+            89
+          ],
+          "q": [
+            40
+          ],
+          "ratio": [
+            61
+          ],
+          "ratios": [
+            44
+          ],
+          "self-citations": [
+            93
+          ],
+          "significantly": [
+            62
+          ],
+          "stock": [
+            21,
+            28
+          ],
+          "stocks,": [
+            49
+          ],
+          "stronger": [
+            85
+          ],
+          "than": [
+            87,
+            97
+          ],
+          "that": [
+            59,
+            80,
+            92
+          ],
+          "the": [
+            2,
+            11,
+            20,
+            25,
+            43,
+            88
+          ],
+          "to": [
+            47,
+            51,
+            55
+          ],
+          "usefulness": [
+            3
+          ],
+          "valuable": [
+            96
+          ],
+          "valuation": [
+            23
+          ],
+          "value": [
+            74
+          ],
+          "value,": [
+            65
+          ],
+          "we": [
+            37
+          ],
+          "with": [
+            66
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "University of California, Berkeley"
+              }
+            ],
+            "author": {
+              "display_name": "Bronwyn H. Hall",
+              "id": "https://openalex.org/A5012935802",
+              "orcid": "https://orcid.org/0000-0002-3802-5567"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of California, Berkeley",
+                "id": "https://openalex.org/I95457486",
+                "lineage": [
+                  "https://openalex.org/I95457486"
+                ],
+                "ror": "https://ror.org/01an7q238",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "University of California, Berkeley"
+            ],
+            "raw_author_name": "Bronwyn H. Hall",
+            "raw_orcid": "https://orcid.org/0000-0002-3802-5567"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I6902469"
+                ],
+                "raw_affiliation_string": "Brandeis University"
+              }
+            ],
+            "author": {
+              "display_name": "Adam B. Jaffe",
+              "id": "https://openalex.org/A5022731487",
+              "orcid": "https://orcid.org/0000-0003-1337-1751"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Brandeis University",
+                "id": "https://openalex.org/I6902469",
+                "lineage": [
+                  "https://openalex.org/I6902469"
+                ],
+                "ror": "https://ror.org/05abbep66",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Brandeis University"
+            ],
+            "raw_author_name": "Adam B. Jaffe",
+            "raw_orcid": "https://orcid.org/0000-0003-1337-1751"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I16391192"
+                ],
+                "raw_affiliation_string": "Tel-Aviv  University"
+              }
+            ],
+            "author": {
+              "display_name": "Manuel Trajtenberg",
+              "id": "https://openalex.org/A5070546728",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "IL"
+            ],
+            "institutions": [
+              {
+                "country_code": "IL",
+                "display_name": "Tel Aviv University",
+                "id": "https://openalex.org/I16391192",
+                "lineage": [
+                  "https://openalex.org/I16391192"
+                ],
+                "ror": "https://ror.org/04mhzgx49",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Tel-Aviv  University"
+            ],
+            "raw_author_name": "Manuel Trajtenberg",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:escholarship.org/ark:/13030/qt0cs6v2w7",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://escholarship.org/uc/item/0cs6v2w7",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://escholarship.org/uc/item/0cs6v2w7",
+          "raw_source_name": "Rand Journal of Economics, vol 36, iss 1",
+          "raw_type": "article",
+          "source": {
+            "display_name": "eScholarship (California Digital Library)",
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "California Digital Library",
+            "id": "https://openalex.org/S4306400115",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": "16",
+          "issue": "1",
+          "last_page": "38",
+          "volume": "36"
+        },
+        "cited_by_count": 3331,
+        "display_name": "Market value and patent citations",
+        "doi": null,
+        "id": "https://openalex.org/W1497789111",
+        "ids": {
+          "mag": "1497789111",
+          "openalex": "https://openalex.org/W1497789111"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://escholarship.org/uc/item/0cs6v2w7"
+        },
+        "primary_location": {
+          "id": "pmh:oai:cris.maastrichtuniversity.nl:openaire_cris_publications/008f55c3-80bd-4dac-9571-2eca1b60bf21",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://cris.maastrichtuniversity.nl/en/publications/008f55c3-80bd-4dac-9571-2eca1b60bf21",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Hall, B H, Jaffe, A & Trajtenberg, M 2005, 'Market Value and Patent Citations', Rand Journal of Economics, vol. 36, pp. 16-38.",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "Research Publications (Maastricht University)",
+            "host_organization": "https://openalex.org/I34352273",
+            "host_organization_lineage": [
+              "https://openalex.org/I34352273"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Maastricht University",
+            "id": "https://openalex.org/S4306402616",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2005-01-01",
+        "publication_year": 2005,
+        "referenced_works": [
+          "https://openalex.org/W1487491014",
+          "https://openalex.org/W1495063011",
+          "https://openalex.org/W1513759518",
+          "https://openalex.org/W1539917801",
+          "https://openalex.org/W1967629308",
+          "https://openalex.org/W1976395435",
+          "https://openalex.org/W1991898766",
+          "https://openalex.org/W2010635808",
+          "https://openalex.org/W2023662948",
+          "https://openalex.org/W2057770688",
+          "https://openalex.org/W2075964238",
+          "https://openalex.org/W2080476054",
+          "https://openalex.org/W2096067571",
+          "https://openalex.org/W2104115831",
+          "https://openalex.org/W2116023181",
+          "https://openalex.org/W2118258539",
+          "https://openalex.org/W2124298085",
+          "https://openalex.org/W2125863022",
+          "https://openalex.org/W2136976558",
+          "https://openalex.org/W2145324776",
+          "https://openalex.org/W2165429918",
+          "https://openalex.org/W3121537542",
+          "https://openalex.org/W3122290476",
+          "https://openalex.org/W3124111936",
+          "https://openalex.org/W3124243998",
+          "https://openalex.org/W3125296625",
+          "https://openalex.org/W3143716751"
+        ],
+        "referenced_works_count": 27,
+        "title": "Market value and patent citations",
+        "type": "article"
+      }
+    ]
+  },
+  "response_hash": "88a4d768b3d76b44e8af271a6964ecdccae8a1cfda8725c62253ffd51919876e",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

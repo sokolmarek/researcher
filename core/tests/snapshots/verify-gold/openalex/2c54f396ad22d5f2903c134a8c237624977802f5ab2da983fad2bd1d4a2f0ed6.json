@@ -1,0 +1,716 @@
+{
+  "endpoint": "works/doi:10.1038/s41467-022-28487-2",
+  "request_key": "2c54f396ad22d5f2903c134a8c237624977802f5ab2da983fad2bd1d4a2f0ed6",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "-": [
+        63,
+        69
+      ],
+      "Neuromorphic": [
+        33
+      ],
+      "The": [
+        0
+      ],
+      "We": [
+        55,
+        85
+      ],
+      "a": [
+        45,
+        71
+      ],
+      "act": [
+        29
+      ],
+      "actions": [
+        97
+      ],
+      "an": [
+        15
+      ],
+      "and": [
+        10,
+        51,
+        95
+      ],
+      "approach": [
+        73
+      ],
+      "attempts": [
+        88
+      ],
+      "autonomously": [
+        6
+      ],
+      "behaviours": [
+        13
+      ],
+      "beings": [
+        26
+      ],
+      "benefit": [
+        20
+      ],
+      "building": [
+        49
+      ],
+      "can": [
+        19,
+        43,
+        80
+      ],
+      "challenge": [
+        17
+      ],
+      "challenges,": [
+        94
+      ],
+      "compact": [
+        50
+      ],
+      "complex": [
+        12
+      ],
+      "computational": [
+        37
+      ],
+      "computing": [
+        46
+      ],
+      "control": [
+        68
+      ],
+      "creation": [
+        76
+      ],
+      "current": [
+        101
+      ],
+      "design": [
+        1
+      ],
+      "develop": [
+        40
+      ],
+      "direction,": [
+        91
+      ],
+      "discuss": [
+        56
+      ],
+      "endowing": [
+        58
+      ],
+      "engineering": [
+        34
+      ],
+      "environment": [
+        9
+      ],
+      "exhibit": [
+        11
+      ],
+      "fit": [
+        27
+      ],
+      "for": [
+        48,
+        74
+      ],
+      "from": [
+        21,
+        64
+      ],
+      "highlight": [
+        92
+      ],
+      "in": [
+        30,
+        83,
+        89
+      ],
+      "initial": [
+        87
+      ],
+      "integrate": [
+        82
+      ],
+      "interact": [
+        5
+      ],
+      "is": [
+        14
+      ],
+      "limitations.": [
+        102
+      ],
+      "living": [
+        25
+      ],
+      "low-power": [
+        52
+      ],
+      "makes": [
+        24
+      ],
+      "motor": [
+        67
+      ],
+      "neural": [
+        36
+      ],
+      "neuromorphic": [
+        61
+      ],
+      "of": [
+        2,
+        77
+      ],
+      "open": [
+        16,
+        93
+      ],
+      "overcome": [
+        100
+      ],
+      "perception": [
+        65
+      ],
+      "present": [
+        86
+      ],
+      "principles": [
+        38
+      ],
+      "processing": [
+        53
+      ],
+      "promising": [
+        72
+      ],
+      "propose": [
+        96
+      ],
+      "provide": [
+        44
+      ],
+      "represents": [
+        70
+      ],
+      "required": [
+        98
+      ],
+      "robots": [
+        3,
+        59,
+        78
+      ],
+      "seamlessly": [
+        81
+      ],
+      "society.": [
+        84
+      ],
+      "studies": [
+        35
+      ],
+      "substrate": [
+        47
+      ],
+      "systems.": [
+        54
+      ],
+      "technologies": [
+        41,
+        62
+      ],
+      "that": [
+        4,
+        18,
+        42
+      ],
+      "the": [
+        8,
+        31,
+        75
+      ],
+      "this": [
+        90
+      ],
+      "to": [
+        28,
+        39,
+        66,
+        99
+      ],
+      "understanding": [
+        22
+      ],
+      "what": [
+        23
+      ],
+      "which": [
+        79
+      ],
+      "why": [
+        57
+      ],
+      "with": [
+        7,
+        60
+      ],
+      "world.": [
+        32
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I30771326"
+            ],
+            "raw_affiliation_string": "Event-Driven Perception for Robotics, Istituto Italiano di Tecnologia, via San Quirico 19D, 16163, Genova, Italy. chiara.bartolozzi@iit.it"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I30771326"
+            ],
+            "raw_affiliation_string": "Event-Driven Perception for Robotics, Istituto Italiano di Tecnologia, via San Quirico 19D, 16163, Genova, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Chiara Bartolozzi",
+          "id": "https://openalex.org/A5019257524",
+          "orcid": "https://orcid.org/0000-0003-3465-6449"
+        },
+        "author_position": "first",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "Italian Institute of Technology",
+            "id": "https://openalex.org/I30771326",
+            "lineage": [
+              "https://openalex.org/I30771326"
+            ],
+            "ror": "https://ror.org/042t93s57",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Event-Driven Perception for Robotics, Istituto Italiano di Tecnologia, via San Quirico 19D, 16163, Genova, Italy. chiara.bartolozzi@iit.it",
+          "Event-Driven Perception for Robotics, Istituto Italiano di Tecnologia, via San Quirico 19D, 16163, Genova, Italy"
+        ],
+        "raw_author_name": "Chiara Bartolozzi",
+        "raw_orcid": "https://orcid.org/0000-0003-3465-6449"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I202697423",
+              "https://openalex.org/I35440088"
+            ],
+            "raw_affiliation_string": "Institute of Neuroinformatics, University of Zurich and ETH Zurich, Winterthurerstr. 190, 8057, Zurich, Switzerland"
+          }
+        ],
+        "author": {
+          "display_name": "Giacomo Indiveri",
+          "id": "https://openalex.org/A5060241952",
+          "orcid": "https://orcid.org/0000-0002-7109-1689"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CH"
+        ],
+        "institutions": [
+          {
+            "country_code": "CH",
+            "display_name": "University of Zurich",
+            "id": "https://openalex.org/I202697423",
+            "lineage": [
+              "https://openalex.org/I202697423"
+            ],
+            "ror": "https://ror.org/02crff812",
+            "type": "education"
+          },
+          {
+            "country_code": "CH",
+            "display_name": "ETH Zurich",
+            "id": "https://openalex.org/I35440088",
+            "lineage": [
+              "https://openalex.org/I2799323385",
+              "https://openalex.org/I35440088"
+            ],
+            "ror": "https://ror.org/05a28rw58",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Institute of Neuroinformatics, University of Zurich and ETH Zurich, Winterthurerstr. 190, 8057, Zurich, Switzerland"
+        ],
+        "raw_author_name": "Giacomo Indiveri",
+        "raw_orcid": "https://orcid.org/0000-0002-7109-1689"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I202697423",
+              "https://openalex.org/I35440088"
+            ],
+            "raw_affiliation_string": "Institute of Neuroinformatics, University of Zurich and ETH Zurich, Winterthurerstr. 190, 8057, Zurich, Switzerland"
+          }
+        ],
+        "author": {
+          "display_name": "Elisa Donati",
+          "id": "https://openalex.org/A5022283618",
+          "orcid": "https://orcid.org/0000-0002-8091-1298"
+        },
+        "author_position": "last",
+        "countries": [
+          "CH"
+        ],
+        "institutions": [
+          {
+            "country_code": "CH",
+            "display_name": "University of Zurich",
+            "id": "https://openalex.org/I202697423",
+            "lineage": [
+              "https://openalex.org/I202697423"
+            ],
+            "ror": "https://ror.org/02crff812",
+            "type": "education"
+          },
+          {
+            "country_code": "CH",
+            "display_name": "ETH Zurich",
+            "id": "https://openalex.org/I35440088",
+            "lineage": [
+              "https://openalex.org/I2799323385",
+              "https://openalex.org/I35440088"
+            ],
+            "ror": "https://ror.org/05a28rw58",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Institute of Neuroinformatics, University of Zurich and ETH Zurich, Winterthurerstr. 190, 8057, Zurich, Switzerland"
+        ],
+        "raw_author_name": "Elisa Donati",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1038/s41467-022-28487-2",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1038/s41467-022-28487-2",
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "pdf_url": "https://www.nature.com/articles/s41467-022-28487-2.pdf",
+      "raw_source_name": "Nature Communications",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Nature Communications",
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Nature Portfolio",
+        "id": "https://openalex.org/S64187185",
+        "is_core": true,
+        "is_in_doaj": true,
+        "is_oa": true,
+        "issn": [
+          "2041-1723"
+        ],
+        "issn_l": "2041-1723",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "1024",
+      "issue": "1",
+      "last_page": "1024",
+      "volume": "13"
+    },
+    "cited_by_count": 211,
+    "display_name": "Embodied neuromorphic intelligence",
+    "doi": "https://doi.org/10.1038/s41467-022-28487-2",
+    "id": "https://openalex.org/W4214734943",
+    "ids": {
+      "doi": "https://doi.org/10.1038/s41467-022-28487-2",
+      "openalex": "https://openalex.org/W4214734943",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/35197450"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://www.nature.com/articles/s41467-022-28487-2.pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1038/s41467-022-28487-2",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1038/s41467-022-28487-2",
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "pdf_url": "https://www.nature.com/articles/s41467-022-28487-2.pdf",
+      "raw_source_name": "Nature Communications",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Nature Communications",
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Nature Portfolio",
+        "id": "https://openalex.org/S64187185",
+        "is_core": true,
+        "is_in_doaj": true,
+        "is_oa": true,
+        "issn": [
+          "2041-1723"
+        ],
+        "issn_l": "2041-1723",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2022-02-23",
+    "publication_year": 2022,
+    "referenced_works": [
+      "https://openalex.org/W206948248",
+      "https://openalex.org/W1015471063",
+      "https://openalex.org/W1514853588",
+      "https://openalex.org/W1528492376",
+      "https://openalex.org/W1560391863",
+      "https://openalex.org/W1572694392",
+      "https://openalex.org/W1695065985",
+      "https://openalex.org/W1855112655",
+      "https://openalex.org/W1878230505",
+      "https://openalex.org/W1967232841",
+      "https://openalex.org/W1969233644",
+      "https://openalex.org/W1969599049",
+      "https://openalex.org/W1971963245",
+      "https://openalex.org/W1975072631",
+      "https://openalex.org/W1975398991",
+      "https://openalex.org/W1976027761",
+      "https://openalex.org/W1977503502",
+      "https://openalex.org/W1978213773",
+      "https://openalex.org/W1980178290",
+      "https://openalex.org/W1985940938",
+      "https://openalex.org/W1986616756",
+      "https://openalex.org/W1989512479",
+      "https://openalex.org/W1991233288",
+      "https://openalex.org/W1992884208",
+      "https://openalex.org/W1995839907",
+      "https://openalex.org/W1998339166",
+      "https://openalex.org/W2006286609",
+      "https://openalex.org/W2010459589",
+      "https://openalex.org/W2014673260",
+      "https://openalex.org/W2016574277",
+      "https://openalex.org/W2018904782",
+      "https://openalex.org/W2020096355",
+      "https://openalex.org/W2022995207",
+      "https://openalex.org/W2032416253",
+      "https://openalex.org/W2034602202",
+      "https://openalex.org/W2041959877",
+      "https://openalex.org/W2046644792",
+      "https://openalex.org/W2047125104",
+      "https://openalex.org/W2048963734",
+      "https://openalex.org/W2053790717",
+      "https://openalex.org/W2055563654",
+      "https://openalex.org/W2058390599",
+      "https://openalex.org/W2058849624",
+      "https://openalex.org/W2062074945",
+      "https://openalex.org/W2064971633",
+      "https://openalex.org/W2070183720",
+      "https://openalex.org/W2074795279",
+      "https://openalex.org/W2076063813",
+      "https://openalex.org/W2080538756",
+      "https://openalex.org/W2086898522",
+      "https://openalex.org/W2086963583",
+      "https://openalex.org/W2089809945",
+      "https://openalex.org/W2099821308",
+      "https://openalex.org/W2103507131",
+      "https://openalex.org/W2110119072",
+      "https://openalex.org/W2112721140",
+      "https://openalex.org/W2113064032",
+      "https://openalex.org/W2118247481",
+      "https://openalex.org/W2121917196",
+      "https://openalex.org/W2123538082",
+      "https://openalex.org/W2123997046",
+      "https://openalex.org/W2128447713",
+      "https://openalex.org/W2128644883",
+      "https://openalex.org/W2132356521",
+      "https://openalex.org/W2138405701",
+      "https://openalex.org/W2143045663",
+      "https://openalex.org/W2143614307",
+      "https://openalex.org/W2143763555",
+      "https://openalex.org/W2145998852",
+      "https://openalex.org/W2150447451",
+      "https://openalex.org/W2151718948",
+      "https://openalex.org/W2154496072",
+      "https://openalex.org/W2155724011",
+      "https://openalex.org/W2156640153",
+      "https://openalex.org/W2159951683",
+      "https://openalex.org/W2164653071",
+      "https://openalex.org/W2165944199",
+      "https://openalex.org/W2167148127",
+      "https://openalex.org/W2172083436",
+      "https://openalex.org/W2172307690",
+      "https://openalex.org/W2207801947",
+      "https://openalex.org/W2257979135",
+      "https://openalex.org/W2290632375",
+      "https://openalex.org/W2296682098",
+      "https://openalex.org/W2305807619",
+      "https://openalex.org/W2408153095",
+      "https://openalex.org/W2408499362",
+      "https://openalex.org/W2480004694",
+      "https://openalex.org/W2532666972",
+      "https://openalex.org/W2550144136",
+      "https://openalex.org/W2558597819",
+      "https://openalex.org/W2566395279",
+      "https://openalex.org/W2567239141",
+      "https://openalex.org/W2567921710",
+      "https://openalex.org/W2573443546",
+      "https://openalex.org/W2575148670",
+      "https://openalex.org/W2580767461",
+      "https://openalex.org/W2581251857",
+      "https://openalex.org/W2587049423",
+      "https://openalex.org/W2592137880",
+      "https://openalex.org/W2619788215",
+      "https://openalex.org/W2729725437",
+      "https://openalex.org/W2735562682",
+      "https://openalex.org/W2736555159",
+      "https://openalex.org/W2745933219",
+      "https://openalex.org/W2749476078",
+      "https://openalex.org/W2757300554",
+      "https://openalex.org/W2757539224",
+      "https://openalex.org/W2758316581",
+      "https://openalex.org/W2758998438",
+      "https://openalex.org/W2765218414",
+      "https://openalex.org/W2765971924",
+      "https://openalex.org/W2769049661",
+      "https://openalex.org/W2774859337",
+      "https://openalex.org/W2783185291",
+      "https://openalex.org/W2783525259",
+      "https://openalex.org/W2790615739",
+      "https://openalex.org/W2793812709",
+      "https://openalex.org/W2794596435",
+      "https://openalex.org/W2796368857",
+      "https://openalex.org/W2798763859",
+      "https://openalex.org/W2800262387",
+      "https://openalex.org/W2806904536",
+      "https://openalex.org/W2807422449",
+      "https://openalex.org/W2854632500",
+      "https://openalex.org/W2883593518",
+      "https://openalex.org/W2890236183",
+      "https://openalex.org/W2898350988",
+      "https://openalex.org/W2901404362",
+      "https://openalex.org/W2904275768",
+      "https://openalex.org/W2906277232",
+      "https://openalex.org/W2907149254",
+      "https://openalex.org/W2908544477",
+      "https://openalex.org/W2909240409",
+      "https://openalex.org/W2911132217",
+      "https://openalex.org/W2918495130",
+      "https://openalex.org/W2919115771",
+      "https://openalex.org/W2923010225",
+      "https://openalex.org/W2931077460",
+      "https://openalex.org/W2939871899",
+      "https://openalex.org/W2942970772",
+      "https://openalex.org/W2943535966",
+      "https://openalex.org/W2944546415",
+      "https://openalex.org/W2950302787",
+      "https://openalex.org/W2953448538",
+      "https://openalex.org/W2963127485",
+      "https://openalex.org/W2964010909",
+      "https://openalex.org/W2964529391",
+      "https://openalex.org/W2966180366",
+      "https://openalex.org/W2969020366",
+      "https://openalex.org/W2969950293",
+      "https://openalex.org/W2971211335",
+      "https://openalex.org/W2971511484",
+      "https://openalex.org/W2973017734",
+      "https://openalex.org/W2982651937",
+      "https://openalex.org/W2985853352",
+      "https://openalex.org/W2994164165",
+      "https://openalex.org/W2998026442",
+      "https://openalex.org/W2998864310",
+      "https://openalex.org/W3003820562",
+      "https://openalex.org/W3004368638",
+      "https://openalex.org/W3010556452",
+      "https://openalex.org/W3013121589",
+      "https://openalex.org/W3014160975",
+      "https://openalex.org/W3019859608",
+      "https://openalex.org/W3032462766",
+      "https://openalex.org/W3034963685",
+      "https://openalex.org/W3036078768",
+      "https://openalex.org/W3040838455",
+      "https://openalex.org/W3048761050",
+      "https://openalex.org/W3083311324",
+      "https://openalex.org/W3087184661",
+      "https://openalex.org/W3097816393",
+      "https://openalex.org/W3097980825",
+      "https://openalex.org/W3098629276",
+      "https://openalex.org/W3099406461",
+      "https://openalex.org/W3104133773",
+      "https://openalex.org/W3105922581",
+      "https://openalex.org/W3107590884",
+      "https://openalex.org/W3109070866",
+      "https://openalex.org/W3122190729",
+      "https://openalex.org/W3128276166",
+      "https://openalex.org/W3133213258",
+      "https://openalex.org/W3133896992",
+      "https://openalex.org/W3138783654",
+      "https://openalex.org/W3144939529",
+      "https://openalex.org/W3151328790",
+      "https://openalex.org/W3166720055",
+      "https://openalex.org/W3171268822",
+      "https://openalex.org/W3197788851",
+      "https://openalex.org/W3206549115",
+      "https://openalex.org/W4205700176",
+      "https://openalex.org/W4221002518",
+      "https://openalex.org/W4225552392",
+      "https://openalex.org/W4226051885",
+      "https://openalex.org/W4254027637"
+    ],
+    "referenced_works_count": 196,
+    "title": "Embodied neuromorphic intelligence",
+    "type": "review"
+  },
+  "response_hash": "df6a2d451cfd06c08665255aac98b759e665e2a7f81805e3c7a81fdbe6fef332",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

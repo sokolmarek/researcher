@@ -1,0 +1,85 @@
+{
+  "description": "Snapshot-backed subset of the axis (b) gold set (evals/gold/status.yaml, 120 DOIs: 25 retracted / 25 corrected / 25 expression-of-concern / 45 current). Twelve of those DOIs, three per class, are recorded here so test_status.py can assert the classification offline. Two extra rows carry the trap that axis (b) exists to survive: the Lancet Surgisphere paper (retracted) and the Lancet RETRACTION NOTICE for that same paper, which is itself a perfectly current document. Both carry Crossref `update-to: [{type: retraction}]`, and reading that array naively would classify the notice as retracted.",
+  "recorded_at": "2026-07-14T12:00:00Z",
+  "gold_set": "evals/gold/status.yaml",
+  "sources": ["crossref", "openalex"],
+  "cases": [
+    {
+      "doi": "10.1016/j.micpro.2020.103768",
+      "expected": "retracted",
+      "class": "retracted",
+      "notes": "Elsevier deposits update-to on the retracted article, pointing at itself."
+    },
+    {
+      "doi": "10.1016/j.ijhydene.2022.01.206",
+      "expected": "retracted",
+      "class": "retracted",
+      "notes": "A WITHDRAWN article. Withdrawal maps to the retracted verdict."
+    },
+    {
+      "doi": "10.1016/j.jddst.2019.101360",
+      "expected": "retracted",
+      "class": "retracted",
+      "notes": "The notice DOI differs from the article DOI, so the update-to entry points elsewhere and must still be counted: this work is not a notice document."
+    },
+    {
+      "doi": "10.1016/s0140-6736(20)31180-6",
+      "expected": "retracted",
+      "class": "retracted",
+      "notes": "Mehra et al. 2020, the Surgisphere hydroxychloroquine paper. Its update graph carries a retraction, a correction, and an expression of concern; the strongest wins."
+    },
+    {
+      "doi": "10.1016/s0140-6736(20)31324-6",
+      "expected": "current",
+      "class": "notice-document",
+      "notes": "THE TRAP. This is the RETRACTION NOTICE for the paper above. It carries update-to: [{type: retraction, DOI: <that paper>}] while being a current document itself. Classifying it as retracted would be exactly backwards, and a naive reader of the update-to array does precisely that."
+    },
+    {
+      "doi": "10.1016/j.cellsig.2012.01.015",
+      "expected": "corrected",
+      "class": "corrected"
+    },
+    {
+      "doi": "10.1038/s41467-022-28487-2",
+      "expected": "corrected",
+      "class": "corrected"
+    },
+    {
+      "doi": "10.3390/polym14091782",
+      "expected": "corrected",
+      "class": "corrected"
+    },
+    {
+      "doi": "10.1016/j.chemosphere.2022.133829",
+      "expected": "expression-of-concern",
+      "class": "expression-of-concern"
+    },
+    {
+      "doi": "10.1371/journal.pone.0317237",
+      "expected": "expression-of-concern",
+      "class": "expression-of-concern"
+    },
+    {
+      "doi": "10.1016/s1474-4422(22)00030-8",
+      "expected": "expression-of-concern",
+      "class": "expression-of-concern",
+      "notes": "The hardest row in the set, and it was found by running the classifier against the gold labels rather than by reasoning. This DOI is itself an expression-of-concern NOTICE (about 10.1016/s1474-4422(19)30140-1), and a separate expression of concern was later issued against the notice by a third DOI. So it is a notice document that acquired a status of its own. A rule that drops the whole update graph of a notice document classifies it 'current' and loses a real editorial notice; the pairing filter in _crossref_notices exists to keep it. An expression of concern is also a weaker signal than a retraction and is reported as its own verdict, never collapsed into retracted."
+    },
+    {
+      "doi": "10.1038/s41597-020-0495-6",
+      "expected": "current",
+      "class": "current"
+    },
+    {
+      "doi": "10.1056/nejmoa0907589",
+      "expected": "current",
+      "class": "current"
+    },
+    {
+      "doi": "10.1109/tbme.1973.324169",
+      "expected": "current",
+      "class": "current",
+      "notes": "A 1973 paper: old enough that the absence of update metadata is the norm, and the verdict still has to be current rather than unchecked."
+    }
+  ]
+}

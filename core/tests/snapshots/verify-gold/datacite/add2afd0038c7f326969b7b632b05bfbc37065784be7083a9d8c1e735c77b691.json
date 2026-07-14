@@ -1,0 +1,225 @@
+{
+  "endpoint": "dois/10.57760/sciencedb.psych.01086",
+  "request_key": "add2afd0038c7f326969b7b632b05bfbc37065784be7083a9d8c1e735c77b691",
+  "request_params": {},
+  "response_body": {
+    "data": {
+      "attributes": {
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifier": "31253.11.sciencedb.psych.01086",
+            "alternateIdentifierType": "CSTR"
+          }
+        ],
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "container": {},
+        "contentUrl": null,
+        "contributors": [],
+        "created": "2026-07-14T03:15:04.000Z",
+        "creators": [
+          {
+            "affiliation": [
+              "Shanghai Jiao Tong University"
+            ],
+            "name": "Yu Tengfei",
+            "nameIdentifiers": []
+          },
+          {
+            "affiliation": [
+              "Fudan University"
+            ],
+            "name": "zheng qi jian",
+            "nameIdentifiers": []
+          },
+          {
+            "affiliation": [
+              "East China Normal University"
+            ],
+            "name": "Gu Junhan",
+            "nameIdentifiers": []
+          },
+          {
+            "affiliation": [
+              "Shanghai Jiao Tong University"
+            ],
+            "name": "Liu Feng",
+            "nameIdentifiers": []
+          },
+          {
+            "affiliation": [
+              "Shanghai Jiao Tong University"
+            ],
+            "name": "Fu Xiaolan",
+            "nameIdentifiers": []
+          }
+        ],
+        "dates": [
+          {
+            "date": "2026-07-14",
+            "dateType": "Issued"
+          },
+          {
+            "date": "2026-07-14",
+            "dateType": "Created"
+          },
+          {
+            "date": "2026-07-14",
+            "dateType": "Updated"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This dataset was developed to compare human participants and large language model (LLM) simulated participants in cardiac interoceptive prediction, prediction-error learning, and dynamic belief updating. It contains two related components: human experimental data and LLM-generated experimental data.The human component initially included 40 healthy participants aged 19–24 years (mean age = 21.88, SD = 1.81). Two participants were excluded because motion artifacts affected more than 50% of their ECG recordings, resulting in a final valid sample of 38 participants. Participants completed the Chinese version of the Multidimensional Assessment of Interoceptive Awareness, Version 2 (MAIA-2C), the State–Trait Anxiety Inventory, and a 90-trial heartbeat expectation-violation task. The task consisted of three 30-trial phases representing learning, probabilistic change, and probability reversal, with cue–outcome contingencies of 100/0, 80/20, and 20/80. Square and triangle cues predicted either a serial-subtraction-by-seven task or a subtraction-by-zero control task. Recorded variables include heartbeat predictions, prediction confidence, subjective heartbeat sensations, anxiety ratings, response times, arithmetic responses, and calculation accuracy. ECG signals were collected concurrently, allowing the derivation of heart rate, inter-beat interval, R-R interval, and root mean square of successive differences (RMSSD).The LLM component contains 1,000 independently generated simulated participants constructed through a role-playing paradigm. Gemma-3-27B-IT was used as the primary model, while Qwen-3-32B-AWQ and GLM-4-32B were included in supplementary experiments. Each simulated participant was identified by a unique participant ID and random seed and was assigned demographic, personality, interoceptive, and affective characteristics. These included age, gender, education, occupation, sleep duration, current mood, anxiety, worry tendency, interoceptive awareness, bodily vigilance, baseline arousal, and Big Five personality traits.Each simulated participant completed a text-based version of the same 90-trial task. Trial-level variables include cue identity, probability environment, task outcome, heartbeat prediction, task prediction, confidence, simulated cardiac sensation, anxiety rating, arithmetic performance, and quality-control fields such as formatting errors, role leakage, invalid-response reasons, and retry counts. These simulated reports were generated through textual reasoning and do not contain genuine physiological signals.",
+            "descriptionType": "Abstract"
+          },
+          {
+            "description": "This dataset was developed to compare human participants and large language model (LLM) simulated participants in cardiac interoceptive prediction, prediction-error learning, and dynamic belief updating. It contains two related components: human experimental data and LLM-generated experimental data.The human component initially included 40 healthy participants aged 19–24 years (mean age = 21.88, SD = 1.81). Two participants were excluded because motion artifacts affected more than 50% of their ECG recordings, resulting in a final valid sample of 38 participants. Participants completed the Chinese version of the Multidimensional Assessment of Interoceptive Awareness, Version 2 (MAIA-2C), the State–Trait Anxiety Inventory, and a 90-trial heartbeat expectation-violation task. The task consisted of three 30-trial phases representing learning, probabilistic change, and probability reversal, with cue–outcome contingencies of 100/0, 80/20, and 20/80. Square and triangle cues predicted either a serial-subtraction-by-seven task or a subtraction-by-zero control task. Recorded variables include heartbeat predictions, prediction confidence, subjective heartbeat sensations, anxiety ratings, response times, arithmetic responses, and calculation accuracy. ECG signals were collected concurrently, allowing the derivation of heart rate, inter-beat interval, R-R interval, and root mean square of successive differences (RMSSD).The LLM component contains 1,000 independently generated simulated participants constructed through a role-playing paradigm. Gemma-3-27B-IT was used as the primary model, while Qwen-3-32B-AWQ and GLM-4-32B were included in supplementary experiments. Each simulated participant was identified by a unique participant ID and random seed and was assigned demographic, personality, interoceptive, and affective characteristics. These included age, gender, education, occupation, sleep duration, current mood, anxiety, worry tendency, interoceptive awareness, bodily vigilance, baseline arousal, and Big Five personality traits.Each simulated participant completed a text-based version of the same 90-trial task. Trial-level variables include cue identity, probability environment, task outcome, heartbeat prediction, task prediction, confidence, simulated cardiac sensation, anxiety rating, arithmetic performance, and quality-control fields such as formatting errors, role leakage, invalid-response reasons, and retry counts. These simulated reports were generated through textual reasoning and do not contain genuine physiological signals.",
+            "descriptionType": "Abstract",
+            "lang": "zh"
+          }
+        ],
+        "doi": "10.57760/sciencedb.psych.01086",
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "formats": [],
+        "fundingReferences": [],
+        "geoLocations": [],
+        "identifiers": [
+          {
+            "identifier": "31253.11.sciencedb.psych.01086",
+            "identifierType": "CSTR"
+          }
+        ],
+        "isActive": true,
+        "language": "zh",
+        "metadataVersion": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "prefix": "10.57760",
+        "publicationYear": 2026,
+        "published": "2026",
+        "publisher": "Science Data Bank",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2026-07-14T03:15:04.000Z",
+        "relatedIdentifiers": [],
+        "relatedItems": [],
+        "rightsList": [],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [
+          "12826746 bytes",
+          "1 files"
+        ],
+        "source": "api",
+        "state": "findable",
+        "subjects": [
+          {
+            "classificationCode": "520",
+            "subject": "Computer science and technology",
+            "subjectScheme": "GB/T 13745-2009"
+          },
+          {
+            "classificationCode": "190",
+            "subject": "Psychology",
+            "subjectScheme": "GB/T 13745-2009"
+          },
+          {
+            "subject": "Cardiac interoception"
+          },
+          {
+            "subject": "large language models"
+          },
+          {
+            "subject": "simulated participants"
+          },
+          {
+            "subject": "heartbeat expectation violation"
+          },
+          {
+            "subject": "predictive coding"
+          },
+          {
+            "subject": "electrocardiography"
+          },
+          {
+            "subject": "human–AI comparison"
+          },
+          {
+            "subject": "computational modeling"
+          }
+        ],
+        "suffix": "sciencedb.psych.01086",
+        "titles": [
+          {
+            "title": "Cardiac Interoceptive Prediction in Humans and Large Language Models: Behavioral, ECG, and Simulated Data from a Heartbeat Expectation-Violation Task"
+          },
+          {
+            "lang": "zh",
+            "title": "人类与大语言模型的心脏内感受预测：心跳预期违背任务的行为、心电与模拟实验数据"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceType": "Dataset",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2026-07-14T03:15:04.000Z",
+        "url": "https://www.scidb.cn/detail?dataSetId=c1d2ae6b35b74e009d6b7eaca06c9db1",
+        "version": "V1",
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwczovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtNC40L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTc3NjAvU0NJRU5DRURCLlBTWUNILjAxMDg2PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJDU1RSIj4zMTI1My4xMS5zY2llbmNlZGIucHN5Y2guMDEwODY8L2FsdGVybmF0ZUlkZW50aWZpZXI+CiAgPC9hbHRlcm5hdGVJZGVudGlmaWVycz4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPll1IFRlbmdmZWk8L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDIyMHF2azA0IiBhZmZpbGljYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiIHNjaGVtZVVSST0iaHR0cHM6Ly9yb3Iub3JnIj5TaGFuZ2hhaSBKaWFvIFRvbmcgVW5pdmVyc2l0eTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPnpoZW5nIHFpIGppYW48L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDEzcTFlcTA4IiBhZmZpbGljYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiIHNjaGVtZVVSST0iaHR0cHM6Ly9yb3Iub3JnIj5GdWRhbiBVbml2ZXJzaXR5PC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+R3UgSnVuaGFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAybjk2ZXA2NyIgYWZmaWxpY2F0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZyI+RWFzdCBDaGluYSBOb3JtYWwgVW5pdmVyc2l0eTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkxpdSBGZW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAyMjBxdmswNCIgYWZmaWxpY2F0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZyI+U2hhbmdoYWkgSmlhbyBUb25nIFVuaXZlcnNpdHk8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5GdSBYaWFvbGFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAyMjBxdmswNCIgYWZmaWxpY2F0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZyI+U2hhbmdoYWkgSmlhbyBUb25nIFVuaXZlcnNpdHk8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5DYXJkaWFjIEludGVyb2NlcHRpdmUgUHJlZGljdGlvbiBpbiBIdW1hbnMgYW5kIExhcmdlIExhbmd1YWdlIE1vZGVsczogQmVoYXZpb3JhbCwgRUNHLCBhbmQgU2ltdWxhdGVkIERhdGEgZnJvbSBhIEhlYXJ0YmVhdCBFeHBlY3RhdGlvbi1WaW9sYXRpb24gVGFzazwvdGl0bGU+CiAgICA8dGl0bGUgeG1sOmxhbmc9InpoIj7kurrnsbvkuI7lpKfor63oqIDmqKHlnovnmoTlv4PohI/lhoXmhJ/lj5fpooTmtYvvvJrlv4Pot7PpooTmnJ/ov53og4zku7vliqHnmoTooYzkuLrjgIHlv4PnlLXkuI7mqKHmi5/lrp7pqozmlbDmja48L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+U2NpZW5jZSBEYXRhIEJhbms8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCBjbGFzc2lmaWNhdGlvbkNvZGU9IjUyMCIgc3ViamVjdFNjaGVtZT0iR0IvVCAxMzc0NS0yMDA5Ij5Db21wdXRlciBzY2llbmNlIGFuZCB0ZWNobm9sb2d5PC9zdWJqZWN0PgogICAgPHN1YmplY3QgY2xhc3NpZmljYXRpb25Db2RlPSIxOTAiIHN1YmplY3RTY2hlbWU9IkdCL1QgMTM3NDUtMjAwOSI+UHN5Y2hvbG9neTwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkNhcmRpYWMgaW50ZXJvY2VwdGlvbjwvc3ViamVjdD4KICAgIDxzdWJqZWN0PmxhcmdlIGxhbmd1YWdlIG1vZGVsczwvc3ViamVjdD4KICAgIDxzdWJqZWN0PnNpbXVsYXRlZCBwYXJ0aWNpcGFudHM8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5oZWFydGJlYXQgZXhwZWN0YXRpb24gdmlvbGF0aW9uPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+cHJlZGljdGl2ZSBjb2Rpbmc8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5lbGVjdHJvY2FyZGlvZ3JhcGh5PC9zdWJqZWN0PgogICAgPHN1YmplY3Q+aHVtYW7igJNBSSBjb21wYXJpc29uPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+Y29tcHV0YXRpb25hbCBtb2RlbGluZzwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjYtMDctMTQ8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQ3JlYXRlZCI+MjAyNi0wNy0xNDwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIj4yMDI2LTA3LTE0PC9kYXRlPgogIDwvZGF0ZXM+CiAgPGxhbmd1YWdlPnpoPC9sYW5ndWFnZT4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj5WMTwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMvPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoaXMgZGF0YXNldCB3YXMgZGV2ZWxvcGVkIHRvIGNvbXBhcmUgaHVtYW4gcGFydGljaXBhbnRzIGFuZCBsYXJnZSBsYW5ndWFnZSBtb2RlbCAoTExNKSBzaW11bGF0ZWQgcGFydGljaXBhbnRzIGluIGNhcmRpYWMgaW50ZXJvY2VwdGl2ZSBwcmVkaWN0aW9uLCBwcmVkaWN0aW9uLWVycm9yIGxlYXJuaW5nLCBhbmQgZHluYW1pYyBiZWxpZWYgdXBkYXRpbmcuIEl0IGNvbnRhaW5zIHR3byByZWxhdGVkIGNvbXBvbmVudHM6IGh1bWFuIGV4cGVyaW1lbnRhbCBkYXRhIGFuZCBMTE0tZ2VuZXJhdGVkIGV4cGVyaW1lbnRhbCBkYXRhLlRoZSBodW1hbiBjb21wb25lbnQgaW5pdGlhbGx5IGluY2x1ZGVkIDQwIGhlYWx0aHkgcGFydGljaXBhbnRzIGFnZWQgMTkmYW1wO25kYXNoOzI0IHllYXJzIChtZWFuIGFnZSA9IDIxLjg4LCBTRCA9IDEuODEpLiBUd28gcGFydGljaXBhbnRzIHdlcmUgZXhjbHVkZWQgYmVjYXVzZSBtb3Rpb24gYXJ0aWZhY3RzIGFmZmVjdGVkIG1vcmUgdGhhbiA1MCUgb2YgdGhlaXIgRUNHIHJlY29yZGluZ3MsIHJlc3VsdGluZyBpbiBhIGZpbmFsIHZhbGlkIHNhbXBsZSBvZiAzOCBwYXJ0aWNpcGFudHMuIFBhcnRpY2lwYW50cyBjb21wbGV0ZWQgdGhlIENoaW5lc2UgdmVyc2lvbiBvZiB0aGUgTXVsdGlkaW1lbnNpb25hbCBBc3Nlc3NtZW50IG9mIEludGVyb2NlcHRpdmUgQXdhcmVuZXNzLCBWZXJzaW9uIDIgKE1BSUEtMkMpLCB0aGUgU3RhdGUmYW1wO25kYXNoO1RyYWl0IEFueGlldHkgSW52ZW50b3J5LCBhbmQgYSA5MC10cmlhbCBoZWFydGJlYXQgZXhwZWN0YXRpb24tdmlvbGF0aW9uIHRhc2suIFRoZSB0YXNrIGNvbnNpc3RlZCBvZiB0aHJlZSAzMC10cmlhbCBwaGFzZXMgcmVwcmVzZW50aW5nIGxlYXJuaW5nLCBwcm9iYWJpbGlzdGljIGNoYW5nZSwgYW5kIHByb2JhYmlsaXR5IHJldmVyc2FsLCB3aXRoIGN1ZSZhbXA7bmRhc2g7b3V0Y29tZSBjb250aW5nZW5jaWVzIG9mIDEwMC8wLCA4MC8yMCwgYW5kIDIwLzgwLiBTcXVhcmUgYW5kIHRyaWFuZ2xlIGN1ZXMgcHJlZGljdGVkIGVpdGhlciBhIHNlcmlhbC1zdWJ0cmFjdGlvbi1ieS1zZXZlbiB0YXNrIG9yIGEgc3VidHJhY3Rpb24tYnktemVybyBjb250cm9sIHRhc2suIFJlY29yZGVkIHZhcmlhYmxlcyBpbmNsdWRlIGhlYXJ0YmVhdCBwcmVkaWN0aW9ucywgcHJlZGljdGlvbiBjb25maWRlbmNlLCBzdWJqZWN0aXZlIGhlYXJ0YmVhdCBzZW5zYXRpb25zLCBhbnhpZXR5IHJhdGluZ3MsIHJlc3BvbnNlIHRpbWVzLCBhcml0aG1ldGljIHJlc3BvbnNlcywgYW5kIGNhbGN1bGF0aW9uIGFjY3VyYWN5LiBFQ0cgc2lnbmFscyB3ZXJlIGNvbGxlY3RlZCBjb25jdXJyZW50bHksIGFsbG93aW5nIHRoZSBkZXJpdmF0aW9uIG9mIGhlYXJ0IHJhdGUsIGludGVyLWJlYXQgaW50ZXJ2YWwsIFItUiBpbnRlcnZhbCwgYW5kIHJvb3QgbWVhbiBzcXVhcmUgb2Ygc3VjY2Vzc2l2ZSBkaWZmZXJlbmNlcyAoUk1TU0QpLlRoZSBMTE0gY29tcG9uZW50IGNvbnRhaW5zIDEsMDAwIGluZGVwZW5kZW50bHkgZ2VuZXJhdGVkIHNpbXVsYXRlZCBwYXJ0aWNpcGFudHMgY29uc3RydWN0ZWQgdGhyb3VnaCBhIHJvbGUtcGxheWluZyBwYXJhZGlnbS4gR2VtbWEtMy0yN0ItSVQgd2FzIHVzZWQgYXMgdGhlIHByaW1hcnkgbW9kZWwsIHdoaWxlIFF3ZW4tMy0zMkItQVdRIGFuZCBHTE0tNC0zMkIgd2VyZSBpbmNsdWRlZCBpbiBzdXBwbGVtZW50YXJ5IGV4cGVyaW1lbnRzLiBFYWNoIHNpbXVsYXRlZCBwYXJ0aWNpcGFudCB3YXMgaWRlbnRpZmllZCBieSBhIHVuaXF1ZSBwYXJ0aWNpcGFudCBJRCBhbmQgcmFuZG9tIHNlZWQgYW5kIHdhcyBhc3NpZ25lZCBkZW1vZ3JhcGhpYywgcGVyc29uYWxpdHksIGludGVyb2NlcHRpdmUsIGFuZCBhZmZlY3RpdmUgY2hhcmFjdGVyaXN0aWNzLiBUaGVzZSBpbmNsdWRlZCBhZ2UsIGdlbmRlciwgZWR1Y2F0aW9uLCBvY2N1cGF0aW9uLCBzbGVlcCBkdXJhdGlvbiwgY3VycmVudCBtb29kLCBhbnhpZXR5LCB3b3JyeSB0ZW5kZW5jeSwgaW50ZXJvY2VwdGl2ZSBhd2FyZW5lc3MsIGJvZGlseSB2aWdpbGFuY2UsIGJhc2VsaW5lIGFyb3VzYWwsIGFuZCBCaWcgRml2ZSBwZXJzb25hbGl0eSB0cmFpdHMuRWFjaCBzaW11bGF0ZWQgcGFydGljaXBhbnQgY29tcGxldGVkIGEgdGV4dC1iYXNlZCB2ZXJzaW9uIG9mIHRoZSBzYW1lIDkwLXRyaWFsIHRhc2suIFRyaWFsLWxldmVsIHZhcmlhYmxlcyBpbmNsdWRlIGN1ZSBpZGVudGl0eSwgcHJvYmFiaWxpdHkgZW52aXJvbm1lbnQsIHRhc2sgb3V0Y29tZSwgaGVhcnRiZWF0IHByZWRpY3Rpb24sIHRhc2sgcHJlZGljdGlvbiwgY29uZmlkZW5jZSwgc2ltdWxhdGVkIGNhcmRpYWMgc2Vuc2F0aW9uLCBhbnhpZXR5IHJhdGluZywgYXJpdGhtZXRpYyBwZXJmb3JtYW5jZSwgYW5kIHF1YWxpdHktY29udHJvbCBmaWVsZHMgc3VjaCBhcyBmb3JtYXR0aW5nIGVycm9ycywgcm9sZSBsZWFrYWdlLCBpbnZhbGlkLXJlc3BvbnNlIHJlYXNvbnMsIGFuZCByZXRyeSBjb3VudHMuIFRoZXNlIHNpbXVsYXRlZCByZXBvcnRzIHdlcmUgZ2VuZXJhdGVkIHRocm91Z2ggdGV4dHVhbCByZWFzb25pbmcgYW5kIGRvIG5vdCBjb250YWluIGdlbnVpbmUgcGh5c2lvbG9naWNhbCBzaWduYWxzLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCIgeG1sOmxhbmc9InpoIj5UaGlzIGRhdGFzZXQgd2FzIGRldmVsb3BlZCB0byBjb21wYXJlIGh1bWFuIHBhcnRpY2lwYW50cyBhbmQgbGFyZ2UgbGFuZ3VhZ2UgbW9kZWwgKExMTSkgc2ltdWxhdGVkIHBhcnRpY2lwYW50cyBpbiBjYXJkaWFjIGludGVyb2NlcHRpdmUgcHJlZGljdGlvbiwgcHJlZGljdGlvbi1lcnJvciBsZWFybmluZywgYW5kIGR5bmFtaWMgYmVsaWVmIHVwZGF0aW5nLiBJdCBjb250YWlucyB0d28gcmVsYXRlZCBjb21wb25lbnRzOiBodW1hbiBleHBlcmltZW50YWwgZGF0YSBhbmQgTExNLWdlbmVyYXRlZCBleHBlcmltZW50YWwgZGF0YS5UaGUgaHVtYW4gY29tcG9uZW50IGluaXRpYWxseSBpbmNsdWRlZCA0MCBoZWFsdGh5IHBhcnRpY2lwYW50cyBhZ2VkIDE5JmFtcDtuZGFzaDsyNCB5ZWFycyAobWVhbiBhZ2UgPSAyMS44OCwgU0QgPSAxLjgxKS4gVHdvIHBhcnRpY2lwYW50cyB3ZXJlIGV4Y2x1ZGVkIGJlY2F1c2UgbW90aW9uIGFydGlmYWN0cyBhZmZlY3RlZCBtb3JlIHRoYW4gNTAlIG9mIHRoZWlyIEVDRyByZWNvcmRpbmdzLCByZXN1bHRpbmcgaW4gYSBmaW5hbCB2YWxpZCBzYW1wbGUgb2YgMzggcGFydGljaXBhbnRzLiBQYXJ0aWNpcGFudHMgY29tcGxldGVkIHRoZSBDaGluZXNlIHZlcnNpb24gb2YgdGhlIE11bHRpZGltZW5zaW9uYWwgQXNzZXNzbWVudCBvZiBJbnRlcm9jZXB0aXZlIEF3YXJlbmVzcywgVmVyc2lvbiAyIChNQUlBLTJDKSwgdGhlIFN0YXRlJmFtcDtuZGFzaDtUcmFpdCBBbnhpZXR5IEludmVudG9yeSwgYW5kIGEgOTAtdHJpYWwgaGVhcnRiZWF0IGV4cGVjdGF0aW9uLXZpb2xhdGlvbiB0YXNrLiBUaGUgdGFzayBjb25zaXN0ZWQgb2YgdGhyZWUgMzAtdHJpYWwgcGhhc2VzIHJlcHJlc2VudGluZyBsZWFybmluZywgcHJvYmFiaWxpc3RpYyBjaGFuZ2UsIGFuZCBwcm9iYWJpbGl0eSByZXZlcnNhbCwgd2l0aCBjdWUmYW1wO25kYXNoO291dGNvbWUgY29udGluZ2VuY2llcyBvZiAxMDAvMCwgODAvMjAsIGFuZCAyMC84MC4gU3F1YXJlIGFuZCB0cmlhbmdsZSBjdWVzIHByZWRpY3RlZCBlaXRoZXIgYSBzZXJpYWwtc3VidHJhY3Rpb24tYnktc2V2ZW4gdGFzayBvciBhIHN1YnRyYWN0aW9uLWJ5LXplcm8gY29udHJvbCB0YXNrLiBSZWNvcmRlZCB2YXJpYWJsZXMgaW5jbHVkZSBoZWFydGJlYXQgcHJlZGljdGlvbnMsIHByZWRpY3Rpb24gY29uZmlkZW5jZSwgc3ViamVjdGl2ZSBoZWFydGJlYXQgc2Vuc2F0aW9ucywgYW54aWV0eSByYXRpbmdzLCByZXNwb25zZSB0aW1lcywgYXJpdGhtZXRpYyByZXNwb25zZXMsIGFuZCBjYWxjdWxhdGlvbiBhY2N1cmFjeS4gRUNHIHNpZ25hbHMgd2VyZSBjb2xsZWN0ZWQgY29uY3VycmVudGx5LCBhbGxvd2luZyB0aGUgZGVyaXZhdGlvbiBvZiBoZWFydCByYXRlLCBpbnRlci1iZWF0IGludGVydmFsLCBSLVIgaW50ZXJ2YWwsIGFuZCByb290IG1lYW4gc3F1YXJlIG9mIHN1Y2Nlc3NpdmUgZGlmZmVyZW5jZXMgKFJNU1NEKS5UaGUgTExNIGNvbXBvbmVudCBjb250YWlucyAxLDAwMCBpbmRlcGVuZGVudGx5IGdlbmVyYXRlZCBzaW11bGF0ZWQgcGFydGljaXBhbnRzIGNvbnN0cnVjdGVkIHRocm91Z2ggYSByb2xlLXBsYXlpbmcgcGFyYWRpZ20uIEdlbW1hLTMtMjdCLUlUIHdhcyB1c2VkIGFzIHRoZSBwcmltYXJ5IG1vZGVsLCB3aGlsZSBRd2VuLTMtMzJCLUFXUSBhbmQgR0xNLTQtMzJCIHdlcmUgaW5jbHVkZWQgaW4gc3VwcGxlbWVudGFyeSBleHBlcmltZW50cy4gRWFjaCBzaW11bGF0ZWQgcGFydGljaXBhbnQgd2FzIGlkZW50aWZpZWQgYnkgYSB1bmlxdWUgcGFydGljaXBhbnQgSUQgYW5kIHJhbmRvbSBzZWVkIGFuZCB3YXMgYXNzaWduZWQgZGVtb2dyYXBoaWMsIHBlcnNvbmFsaXR5LCBpbnRlcm9jZXB0aXZlLCBhbmQgYWZmZWN0aXZlIGNoYXJhY3RlcmlzdGljcy4gVGhlc2UgaW5jbHVkZWQgYWdlLCBnZW5kZXIsIGVkdWNhdGlvbiwgb2NjdXBhdGlvbiwgc2xlZXAgZHVyYXRpb24sIGN1cnJlbnQgbW9vZCwgYW54aWV0eSwgd29ycnkgdGVuZGVuY3ksIGludGVyb2NlcHRpdmUgYXdhcmVuZXNzLCBib2RpbHkgdmlnaWxhbmNlLCBiYXNlbGluZSBhcm91c2FsLCBhbmQgQmlnIEZpdmUgcGVyc29uYWxpdHkgdHJhaXRzLkVhY2ggc2ltdWxhdGVkIHBhcnRpY2lwYW50IGNvbXBsZXRlZCBhIHRleHQtYmFzZWQgdmVyc2lvbiBvZiB0aGUgc2FtZSA5MC10cmlhbCB0YXNrLiBUcmlhbC1sZXZlbCB2YXJpYWJsZXMgaW5jbHVkZSBjdWUgaWRlbnRpdHksIHByb2JhYmlsaXR5IGVudmlyb25tZW50LCB0YXNrIG91dGNvbWUsIGhlYXJ0YmVhdCBwcmVkaWN0aW9uLCB0YXNrIHByZWRpY3Rpb24sIGNvbmZpZGVuY2UsIHNpbXVsYXRlZCBjYXJkaWFjIHNlbnNhdGlvbiwgYW54aWV0eSByYXRpbmcsIGFyaXRobWV0aWMgcGVyZm9ybWFuY2UsIGFuZCBxdWFsaXR5LWNvbnRyb2wgZmllbGRzIHN1Y2ggYXMgZm9ybWF0dGluZyBlcnJvcnMsIHJvbGUgbGVha2FnZSwgaW52YWxpZC1yZXNwb25zZSByZWFzb25zLCBhbmQgcmV0cnkgY291bnRzLiBUaGVzZSBzaW11bGF0ZWQgcmVwb3J0cyB3ZXJlIGdlbmVyYXRlZCB0aHJvdWdoIHRleHR1YWwgcmVhc29uaW5nIGFuZCBkbyBub3QgY29udGFpbiBnZW51aW5lIHBoeXNpb2xvZ2ljYWwgc2lnbmFscy48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgogIDxzaXplcz4KICAgIDxzaXplPjEyODI2NzQ2IGJ5dGVzPC9zaXplPgogICAgPHNpemU+MSBmaWxlczwvc2l6ZT4KICA8L3NpemVzPgo8L3Jlc291cmNlPg=="
+      },
+      "id": "10.57760/sciencedb.psych.01086",
+      "relationships": {
+        "citations": {
+          "data": []
+        },
+        "client": {
+          "data": {
+            "id": "cnic.sciencedb",
+            "type": "clients"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.57760/sciencedb.psych.01086",
+            "type": "media"
+          }
+        },
+        "partOf": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "provider": {
+          "data": {
+            "id": "cnic",
+            "type": "providers"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        }
+      },
+      "type": "dois"
+    }
+  },
+  "response_hash": "94ca5a2b9e389bd5d41a16fff093bd5371341058528f29423db2c16a740b0b3b",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

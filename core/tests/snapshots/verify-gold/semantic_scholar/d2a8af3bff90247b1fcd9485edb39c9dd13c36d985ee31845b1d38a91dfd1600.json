@@ -1,0 +1,26 @@
+{
+  "endpoint": "paper/DOI:10.1109/tpami.2018.2844175",
+  "request_key": "d2a8af3bff90247b1fcd9485edb39c9dd13c36d985ee31845b1d38a91dfd1600",
+  "request_params": {
+    "fields": "paperId,externalIds,isOpenAccess,openAccessPdf"
+  },
+  "response_body": {
+    "externalIds": {
+      "CorpusId": 264031695,
+      "DOI": "10.1109/TPAMI.2018.2844175",
+      "MAG": "2806070179",
+      "PubMed": "29994331"
+    },
+    "isOpenAccess": false,
+    "openAccessPdf": {
+      "license": null,
+      "status": "CLOSED",
+      "url": ""
+    },
+    "paperId": "3a0130cfab8192a397d79fc1c7c398470157cf48"
+  },
+  "response_hash": "480cf8d592491e37c187dfa608612dfc3b90dc172399f565a8cb3367f684ad82",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "semantic_scholar"
+}

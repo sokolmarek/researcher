@@ -1,0 +1,152 @@
+{
+  "endpoint": "works/doi:10.1016/s1474-4422(22)00030-8",
+  "request_key": "0f95a762990a0ee75f74ca1e640fd780bad20637aff8f6a4e7561505cfe591f2",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210107347"
+            ],
+            "raw_affiliation_string": "The Lancet Neurology, London EC2Y 5AS, UK"
+          }
+        ],
+        "author": {
+          "display_name": "The Lancet Neurology Editors",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "ZA"
+        ],
+        "institutions": [
+          {
+            "country_code": "ZA",
+            "display_name": "Lancet Laboratories",
+            "id": "https://openalex.org/I4210107347",
+            "lineage": [
+              "https://openalex.org/I4210107347"
+            ],
+            "ror": "https://ror.org/01dak5k93",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "The Lancet Neurology, London EC2Y 5AS, UK"
+        ],
+        "raw_author_name": "The Lancet Neurology Editors",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1016/s1474-4422(22)00030-8",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/s1474-4422(22)00030-8",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "http://www.thelancet.com/article/S1474442222000308/pdf",
+      "raw_source_name": "The Lancet Neurology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "The Lancet Neurology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S70053155",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1474-4422",
+          "1474-4465"
+        ],
+        "issn_l": "1474-4422",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "210",
+      "issue": "3",
+      "last_page": "210",
+      "volume": "21"
+    },
+    "cited_by_count": 1,
+    "display_name": "Expression of concern—Serotonergic pathology and disease burden in the premotor and motor phase of A53T α-synuclein parkinsonism: a cross-sectional study",
+    "doi": "https://doi.org/10.1016/s1474-4422(22)00030-8",
+    "id": "https://openalex.org/W4206139918",
+    "ids": {
+      "doi": "https://doi.org/10.1016/s1474-4422(22)00030-8",
+      "openalex": "https://openalex.org/W4206139918",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/35063117"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": true,
+      "oa_status": "bronze",
+      "oa_url": "http://www.thelancet.com/article/S1474442222000308/pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1016/s1474-4422(22)00030-8",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/s1474-4422(22)00030-8",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "http://www.thelancet.com/article/S1474442222000308/pdf",
+      "raw_source_name": "The Lancet Neurology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "The Lancet Neurology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S70053155",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1474-4422",
+          "1474-4465"
+        ],
+        "issn_l": "1474-4422",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2022-01-18",
+    "publication_year": 2022,
+    "referenced_works": [
+      "https://openalex.org/W2950773490"
+    ],
+    "referenced_works_count": 1,
+    "title": "Expression of concern—Serotonergic pathology and disease burden in the premotor and motor phase of A53T α-synuclein parkinsonism: a cross-sectional study",
+    "type": "article"
+  },
+  "response_hash": "918a7114d88d66327e611e5b930307c9f00b44da8ccd8f808d27aa9034970c69",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

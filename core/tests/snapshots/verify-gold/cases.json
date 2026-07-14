@@ -1,0 +1,187 @@
+{
+  "description": "Stratified gold subset for axis (a) threshold calibration (M2.6). Every case is backed by snapshots in this directory, recorded from the live OpenAlex, Crossref, DataCite, and Semantic Scholar APIs on 2026-07-14 by `record.py`. Nothing here is invented except the one entry that is SUPPOSED to be invented (`invented_reference`), which is the seeded fake from examples/research-verification/citation-audit.md and must keep failing to resolve (D8). The `expected` verdict of each case is what verify.py must produce; test_verify.py asserts exactly that, and CALIBRATION.md reports the per-class outcomes.",
+  "recorded_at": "2026-07-14T12:00:00Z",
+  "cases": [
+    {
+      "name": "clean_two_index",
+      "expected": "verified",
+      "expected_refusal_grade": false,
+      "stratum": "verified/plain",
+      "notes": "A real, well-indexed paper. OpenAlex and Crossref both confirm; DataCite mints no DOI for it and returns a clean negative, which does not weaken the two-confirmation majority.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "piwowar2007sharing",
+        "title": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "doi": "10.1371/journal.pone.0000308",
+        "year": 2007,
+        "authors": ["Piwowar, Heather A.", "Day, Roger S.", "Fridsma, Douglas B."],
+        "container_title": "PLoS ONE",
+        "entry_type": "article"
+      }
+    },
+    {
+      "name": "title_truncated",
+      "expected": "verified",
+      "expected_refusal_grade": false,
+      "stratum": "verified/edge: title truncation",
+      "notes": "The citation manager cut the title mid-sentence. A flat token_sort_ratio scores this around 0.75; the prefix rule lifts it to 1.0. Either way it must verify, and it must never be read as a different work.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "piwowar2007truncated",
+        "title": "Sharing Detailed Research Data Is Associated",
+        "doi": "10.1371/journal.pone.0000308",
+        "year": 2007,
+        "authors": ["Piwowar, Heather A."],
+        "entry_type": "article"
+      }
+    },
+    {
+      "name": "author_initials_only",
+      "expected": "verified",
+      "expected_refusal_grade": false,
+      "stratum": "verified/edge: author initials only",
+      "notes": "The bib entry carries initials, the indexes carry full given names. Surname overlap is the only author check, precisely so this case cannot fail.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "piwowar2007initials",
+        "title": "Sharing detailed research data is associated with increased citation rate",
+        "doi": "10.1371/journal.pone.0000308",
+        "year": 2007,
+        "authors": ["Piwowar, H. A.", "Day, R. S.", "Fridsma, D. B."],
+        "entry_type": "article"
+      }
+    },
+    {
+      "name": "preprint_later_published",
+      "expected": "verified",
+      "expected_refusal_grade": false,
+      "stratum": "verified/edge: preprint later published (same work, two DOIs, different years)",
+      "notes": "Mask R-CNN: the arXiv preprint DOI (2017) cited with the journal version's year (TPAMI, 2020). Year delta is -3. Under a flat +/-1 rule OpenAlex and DataCite would BOTH disagree and the D9 precedence would return `mismatch`, which is refusal-grade: a real, honest reference accused of being wrong. The preprint year relaxation exists for exactly this row.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "he2020maskrcnn_preprint",
+        "title": "Mask R-CNN",
+        "doi": "10.48550/arxiv.1703.06870",
+        "year": 2020,
+        "authors": ["He, Kaiming", "Gkioxari, Georgia", "Dollar, Piotr", "Girshick, Ross"],
+        "entry_type": "article"
+      }
+    },
+    {
+      "name": "lone_disagreeing_index",
+      "expected": "verified",
+      "expected_refusal_grade": false,
+      "expected_disagreements": ["openalex"],
+      "stratum": "verified/edge: one index disagrees, two confirm",
+      "notes": "Mask R-CNN in TPAMI. Crossref and Semantic Scholar both date it 2020 (the issue date); OpenAlex dates it 2018 (the online-first date), a delta of -2 against the claimed year. D9 rule 1 outranks the lone disagreement, logs it, and returns verified. A lone bad index must never produce a refusal-grade verdict.",
+      "sources": ["openalex", "crossref", "datacite", "semantic_scholar"],
+      "claim": {
+        "key": "he2020maskrcnn_tpami",
+        "title": "Mask R-CNN",
+        "doi": "10.1109/tpami.2018.2844175",
+        "year": 2020,
+        "authors": ["He, Kaiming", "Gkioxari, Georgia", "Dollar, Piotr", "Girshick, Ross"],
+        "container_title": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "entry_type": "article"
+      }
+    },
+    {
+      "name": "title_only_reference",
+      "expected": "verified",
+      "expected_refusal_grade": false,
+      "stratum": "verified/edge: no identifier at all",
+      "notes": "What `verify-ref \"<title>\"` gets: a reference with no DOI. Both indexes find the work by title search and confirm it. A title-only reference is a legitimate reference, and it must be verifiable without an identifier.",
+      "sources": ["openalex", "crossref"],
+      "claim": {
+        "key": "piwowar2007titleonly",
+        "title": "Sharing Detailed Research Data Is Associated with Increased Citation Rate",
+        "year": 2007,
+        "authors": ["Piwowar, Heather A."],
+        "entry_type": "article"
+      }
+    },
+    {
+      "name": "valid_doi_wrong_metadata",
+      "expected": "mismatch",
+      "expected_refusal_grade": true,
+      "stratum": "mismatch: valid DOI, wrong metadata",
+      "notes": "A real DOI (Piwowar 2007) carrying the title, year, and author of a completely different paper. OpenAlex and Crossref both resolve the DOI and both disagree beyond thresholds, which is the two-resolving-disagreement branch of D9 rule 2.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "vaswani2017attention_wrongdoi",
+        "title": "Attention Is All You Need",
+        "doi": "10.1371/journal.pone.0000308",
+        "year": 2017,
+        "authors": ["Vaswani, Ashish", "Shazeer, Noam"],
+        "entry_type": "inproceedings"
+      }
+    },
+    {
+      "name": "wrong_doi_real_paper",
+      "expected": "mismatch",
+      "expected_refusal_grade": true,
+      "stratum": "mismatch: mistyped DOI on a real paper",
+      "notes": "ResNet, with a DOI that resolves nowhere. The title search finds the real paper in OpenAlex and Crossref, so both sources resolve the reference by title and disagree on the identifier (doi_mismatch). The paper is real; the entry is wrong. That is a mismatch, not an unresolvable.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "he2016resnet_baddoi",
+        "title": "Deep Residual Learning for Image Recognition",
+        "doi": "10.1109/CVPR.2016.9999999",
+        "year": 2016,
+        "authors": ["He, Kaiming", "Zhang, Xiangyu", "Ren, Shaoqing", "Sun, Jian"],
+        "entry_type": "inproceedings"
+      }
+    },
+    {
+      "name": "single_index_only",
+      "expected": "inconclusive",
+      "expected_refusal_grade": false,
+      "stratum": "inconclusive: legitimate single-index work",
+      "notes": "A ScienceDB dataset that only DataCite holds. OpenAlex and Crossref both return clean negatives on the DOI and find nothing by title. One confirmation is below the two-confirmation bar, so the verdict is inconclusive. It must NOT be unresolvable: this dataset exists, and calling a real record fabricated is the failure this class exists to prevent.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "yu2026cardiac",
+        "title": "Cardiac Interoceptive Prediction in Humans and Large Language Models: Behavioral, ECG, and Simulated Data from a Heartbeat Expectation-Violation Task",
+        "doi": "10.57760/sciencedb.psych.01086",
+        "year": 2026,
+        "authors": ["Yu Tengfei", "zheng qi jian"],
+        "entry_type": "misc"
+      }
+    },
+    {
+      "name": "invented_reference",
+      "expected": "unresolvable",
+      "expected_refusal_grade": true,
+      "stratum": "unresolvable: fabricated entry",
+      "notes": "The seeded fake from the citation-audit example (D8). The DOI 404s in all three indexes and the title search returns only unrelated work, so every queried source returns a CLEAN negative. This is the only refusal-grade 'likely fabricated' state, and it is reachable only when nothing errored.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "kessler2021cmae",
+        "title": "Contrastive masked autoencoders for single-lead ECG anomaly detection",
+        "doi": "10.1109/TBME.2021.3098765",
+        "year": 2021,
+        "authors": ["Kessler, Marta", "Vaughan, Thomas"],
+        "container_title": "IEEE Transactions on Biomedical Engineering",
+        "entry_type": "article"
+      }
+    },
+    {
+      "name": "invented_reference_with_source_error",
+      "expected": "inconclusive",
+      "expected_refusal_grade": false,
+      "stratum": "inconclusive: dirty evidence (a source errored)",
+      "inject_source_error": "openalex",
+      "notes": "The same fabricated entry, but OpenAlex times out. The clean sweep is broken, so a clean negative cannot be asserted and the verdict degrades from unresolvable to inconclusive. This row is the guard on the worst failure mode in the system: a downed index must never be counted as evidence of fabrication. The error is injected at test time (an outage cannot be snapshotted), over the same recorded Crossref and DataCite responses.",
+      "sources": ["openalex", "crossref", "datacite"],
+      "claim": {
+        "key": "kessler2021cmae",
+        "title": "Contrastive masked autoencoders for single-lead ECG anomaly detection",
+        "doi": "10.1109/TBME.2021.3098765",
+        "year": 2021,
+        "authors": ["Kessler, Marta", "Vaughan, Thomas"],
+        "container_title": "IEEE Transactions on Biomedical Engineering",
+        "entry_type": "article"
+      }
+    }
+  ]
+}

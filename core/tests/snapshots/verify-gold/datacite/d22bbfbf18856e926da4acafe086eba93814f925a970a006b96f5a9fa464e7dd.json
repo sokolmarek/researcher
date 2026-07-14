@@ -1,0 +1,1158 @@
+{
+  "endpoint": "dois",
+  "request_key": "d22bbfbf18856e926da4acafe086eba93814f925a970a006b96f5a9fa464e7dd",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Sharing Detailed Research Data Is Associated"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 3,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "contributorType": "ProjectMember",
+              "familyName": "Goncalves",
+              "givenName": "Joel",
+              "name": "Goncalves, Joel",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0009-0009-0945-3544",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Pease",
+              "givenName": "Brent",
+              "name": "Pease, Brent",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-1528-6075",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Gilbert",
+              "givenName": "Neil",
+              "name": "Gilbert, Neil",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-0949-5612",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "created": "2026-06-28T09:17:20Z",
+          "creators": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Winter",
+              "givenName": "Henry",
+              "name": "Winter, Henry",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-6678-590X",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Severino",
+              "givenName": "MaryKay",
+              "name": "Severino, MaryKay",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-2363-7421",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Cuyahoga Valley National Park"
+              ],
+              "name": "Volunteer Scientist",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-06-28",
+              "dateType": "Issued"
+            },
+            {
+              "date": "2024-02-08/2024-04-08",
+              "dateInformation": "Recording period",
+              "dateType": "Collected"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "These are audio recordings taken by an Eclipse Soundscapes (ES) Data Collector during the week of the April 08, 2024 Total Solar Eclipse. \n\n\n\nThis June 2026 audio data record (ES ID 002) is an accidental duplicate of the ES ID 002 audio files that were uploaded in Feb 2025. The audio files in this record are the same as the Feb 2025 record. Additional project and data management information is located in this record. Because both records have been viewed and used, we will not delete either. The duplicate record is:\n\nWinter, H., Severino, M.& Volunteer Scientist. (2025). 2024-04-08 Total Solar Eclipse ESID#002 (Version 2024.1.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.14888401\n\n\nIt was decided to include only raw, unprocessed audio data files in each site-specific ZIP archive and in each Zenodo record. This decision was so that any researcher can independently verify, reproduce, and extend the analysis performed. As a result, some sites have WAV files with 0 bytes of data or timestamps outside the range of probable recording times. Procedures used by the Eclipse Soundscapes team to process audio data for its purposes are outlined in the Data Management reports located in the Eclipse Soundscapes Zenodo community. Data with 0 bytes of data were included for completeness.\n\nData Site location information:\n\n\n\nLatitude: 41.2124 \n\nLongitude:  -81.5759\n\nLocal Eclipse Type: Total Solar Eclipse Solar Eclipse\n\nEclipse Percent (%): 100\n\nWAV files Time & Date Settings: Set with Automated AudioMoth Time Chime (More information on TimeStamp Setting below)\n\nData Collector Start Time Notes: N/A\n\n\nIncluded Data:\n\n\n\n\n\nAudio files in WAV format with the date and time in UTC within the file name: YYYYMMDD_HHMMSS meaning YearMonthDay_HourMinuteSecondFor example, 20240411_141600.WAV means that this audio file starts on April 11, 2024 at 14:16:00 Coordinated Universal Time (UTC)\n\n\n\n\nCONFIG Text file: Includes AudioMoth device setting information, such as sample rate in Hertz (Hz), gain, firmware, etc. \n\n\n\n\nREADME.md:  Markdown formatted file with information about the recording and recording site.\n\n\n\n\nfile_list.csv:  A machine and human file that gives the following information on each file in the record: File Name, File Type, Description, File Size in kilobytes, Name of Associated Data Dictionary with the file, calculated SHA-512 Hash of the file as a unique identifier to insure data integrity during transfer and compression.\n\n\n\n\ntotal_eclipse_data.csv:  A machine and human readable file that gives the following information about the site where the audio data recording was taken: ESID#, Latitude, Longitude, Eclipse_type, CoveragePercent, Eclipse Start UTC (1st contact), Totality Start UTC (2nd contact), Totality End UTC (3rd Contact), Eclipse End UTC (4th Contact), Max Eclipse Time UTC\n\n\n\n\nLicense.txt:  A human readable file that explains the terms and conditions under which the data can be used.\n\n\n\n\nAudioMoth_Operation_Manual.pdf:  A human readable document that explains the use of an AudioMoth device. The document is current up to the time of the AudioMoth's use in the Eclipse Soundscapes project.\n\n\n\n\nfile_list_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the file_list.csv file.\n\n\n\n\nCONFIG_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the CONFIG.TXT file.\n\n\n\n\neclipse_data_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the total_eclipse_data.csv file.\n\n\n\n\nWAV_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the *.WAV files.\n\n\n\n\nES_Data_Management_Pre-Eclipse_Data_Infrastructure_Stage_0.pdf:  PDF document that describes Stage 0 (Pre-Eclipse Infrastructure and Data Stewardship Planning) of the Eclipse Soundscapes (ES) data lifecycle.\n\n\n\n\nES_Data_Management_Receipt_Sorting_and_Metadata_Organization_Stage_1.pdf:  PDF document that describes Stage 1 (Receipt, Sorting, and Metadata Organization) of the Eclipse Soundscapes (ES) data lifecycle.\n\n\n\n\nES_Data_Management_Data_Processing_Stage_2.pdf:  PDF document that describes Stage 2 (Data Processing) of the Eclipse Soundscapes (ES) data Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio datalifecycle.\n\n\n\n\nES_Data_Management_Data_Sharing_Stage_3.pdf:  PDF document that describes Stage 3 (Public Data Sharing) of the Eclipse Soundscapes (ES) data lifecycle.\n\n\n\nEclipse Information for this location:\n\n\n\nEclipse Date: April 08, 2024\n\nEclipse Start Time (UTC) (1st Contact): 17:59:07\n\nTotality Start Time (UTC) (2nd Contact): [N/A if partial eclipse] 19:13:53\n\nEclipse Maximum Time [when the most possible amount of the Sun in blocked] (UTC): 19:15:32\n\nTotality End Time (UTC) (3rd Contact): [N/A if partial eclipse] 19:17:12\n\nEclipse End Time (UTC) (4th Contact): [N/A if partial eclipse] 20:28:57\n\n\nAudio Data Collection During Eclipse Week\n\nES Data Collectors used AudioMoth devices to record audio data, known as soundscapes, over a 5-day period during the eclipse week: 2 days before the eclipse, the day of the eclipse, and 2 days after. The complete raw audio data collected by the Data Collector at the location mentioned above is provided here. This data may or may not cover the entire requested timeframe due to factors such as availability, technical issues, or other unforeseen circumstances. \n\nES ID# Information:\n\nEach AudioMoth recording device was assigned a unique Eclipse Soundscapes Identification Number (ES ID#). This identifier connects the audio data, submitted via a MicroSD card, with the latitude and longitude information provided by the data collector through an online form. The ES team used the ES ID# to link the audio data with its corresponding location information and then uploaded this raw audio data and location details to Zenodo. This process ensures the anonymity of the ES Data Collectors while allowing them to easily search for and access their audio data on Zenodo. \n\nTimeStamp Information:\n\nThe ES team and the Data Collectors took care to set the date and time on the AudioMoth recording devices using an AudioMoth time chime before deployment, ensuring that the recordings would have an automatic timestamp. However, participants also manually noted the date and start time as a backup in case the time chime setup failed. The notes above indicate whether the WAV audio files for this site were timestamped manually or with the automated AudioMoth time chime.  \n\nCommon Timestamp Error:\n\nSome AudioMoth devices experienced a malfunction where the timestamp on audio files reverted to a date in 1970 or before, even after initially recording correctly. Despite this issue, the affected data was still included in this ES site's collected raw audio dataset.\n\nLatitude & Longitude Information:\n\nThe latitude and longitude for each site was taken manually by data collectors and submitted to the ES team, either via a web form or on paper. It is shared in Decimal Degrees format.\n\nGeneral Project Information:\n\nThe Eclipse Soundscapes Project is a NASA Volunteer Science project funded by NASA Science Activation that is studying how eclipses affect life on Earth during the October 14, 2023 annular solar eclipse and the April 8, 2024 total solar eclipse. Eclipse Soundscapes revisits an eclipse study from almost 100 years ago that showed that animals and insects are affected by solar eclipses! Like this study from 100 years ago, ES asked for the public's help. ES uses modern technology to continue to study how solar eclipses affect life on Earth! \n\nEclipse Soundscapes is an enterprise of ARISA Lab, LLC and is supported by NASA award No. 80NSSC21M0008. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.  \n\nEclipse map/figure/table/predictions courtesy of Fred Espenak, NASA/Goddard Space Flight Center, from eclipse.gsfc.nasa.gov.  \n\nEclipse Data Version Definitions\n\n{1st digit = year, 2nd digit = Eclipse type (1=Total Solar Eclipse, 9=Annular Solar Eclipse, 0=Partial Solar Eclipse), 3rd digit is unused and in place for future use}\n\n2023.9.0 = Week of October 14, 2023 Annular Eclipse Audio Data, Path of Annularity (Annular Eclipse)\n\n2023.0.0 = Week of October 14, 2023 Annular Eclipse Audio Data, OFF the Path of Annularity (Partial Eclipse)\n\n2024.1.0 = Week of April 8, 2024 Total Solar Eclipse Audio Data, Path of Totality (Total Solar Eclipse)\n\n2024.0.0 =  Week of April 8, 2024 Total Solar Eclipse Audio Data , OFF the Path of Totality (Partial Solar Eclipse)\n\n*Please note that this dataset's version number is listed below.\n\nEclipse Soundscapes Data Collector Role Training and Implementation Resources Manual (2023-2024) (Archival Copy)\n\nThis site-level record includes the Eclipse Soundscapes Data Collector Role Training and Implementation Resources Manual (2023-2024). The manual documents the participant training, device setup procedures, metadata submission requirements, ES ID system, timestamp protocols, data return workflow, and public archiving processes used during the October 14, 2023 annular solar eclipse and the April 8, 2024 total solar eclipse. The manual is preserved for transparency and reproducibility and reflects the procedures under which this dataset was collected and processed. (DOI 10.5281/zenodo.18623442)\n\nData Receipt, Processing, and Analysis Methods\n\nAll programs supporting Stages 1–3 are openly available in the:\n\n\n\nEclipse Soundscapes GitHub repository:https://github.com/ARISA-Lab-LLC/ESCSP\n\n\nData Management Lifecycle\n\nThe following section documents the relationship of this record to the full Eclipse Soundscapes (ES) data lifecycle, a multi-stage workflow designed to support large-scale participatory science, long-term data stewardship, open science, and scientific reuse. Each stage addressed a different operational need, beginning before eclipse deployment and continuing through validation, public archiving, and scientific analysis. Together, these stages transformed distributed volunteer-submitted audio recordings into structured, documented, publicly accessible NASA-funded research assets.\n\nStage 0: Pre-Eclipse Infrastructure and Deployment Preparation\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Pre-Eclipse Infrastructure and Deployment Preparation (Stage 0). Zenodo.  https://doi.org/10.5281/zenodo.20413370\n\nStage 0 focused on building the operational foundation required to support geographically distributed eclipse data collection at national scale. This stage included AudioMoth device preparation, accessibility modifications, ES ID # assignment systems, metadata collection workflows, participant training materials, deployment logistics, and planning for downstream data stewardship and archival workflows. The 2023 annular eclipse served as both a scientific investigation and a large-scale operational beta test that informed improvements for the 2024 total solar eclipse campaign.\n\nRelated Citations and Resources:\n\n\n\nSeverino, M., & Kline, T. (2025, November 24). Eclipse Soundscapes Apprentice Role Curriculum: Solar Eclipses and Multi-Sensory Observing (Informal Education). Zenodo. https://doi.org/10.5281/zenodo.17703003\n\nSeverino, M., & Bauer, D. J. (2026). Eclipse Soundscapes Observer Role Training and Resources Manual (2023–2024). Zenodo. https://doi.org/10.5281/zenodo.18633602</li>\n\nSeverino, M., Winter, H., & Bauer, D. J. (2026). Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023–2024). Zenodo. https://doi.org/10.5281/zenodo.18623443\n\n\nStage 1: Receipt, Sorting, and Metadata Organization\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Receipt, Sorting, and Metadata Organization (Stage 1). Zenodo.  https://doi.org/10.5281/zenodo.19471425\n\nStage 1 transformed returned participant materials into organized, traceable site-level records. This included receiving mailed microSD cards, consolidating participant-submitted metadata, reconciling handwritten and online records, organizing physical audio media by ES ID #, and deriving eclipse timing and coverage information using NASA eclipse prediction datasets. The outputs of Stage 1 established the structured metadata relationships required for downstream validation, processing, archiving, and analysis workflows.\n\nRelated Citations and Resources:\n\n\n\nWinter, H., & Goncalves, J. (2026). EPTT (Eclipse Phase Timing Tool) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/ESCSP-Eclipse-Phase-Timing-Tool/li>\n\nEspenak, F. (n.d.). Eclipse predictions by Fred Espenak, NASA's GSFC Eclipse Web Site. NASA Goddard Space Flight Center.  http://eclipse.gsfc.nasa.gov/eclipse.html\n\n\nStage 2: Data Processing and Validation\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Data Processing (Stage 2). Zenodo. https://doi.org/10.5281/zenodo.18683402\n\nStage 2 focused on centralized audio ingestion, validation, timestamp verification, metadata reconciliation, and preparation of datasets for analysis and public sharing. During this stage, returned audio recordings were processed using custom open-source tools developed by the ES team, including ES WAVES and ES AMES. The project implemented scalable infrastructure capable of processing large volumes of participant-submitted microSD cards while preserving all raw audio data without modification. Stage 2 established the validated dataset structure required for long-term preservation and scientific analysis.\n\nRelated Citations and Resources:\n\n\n\nWinter, H., & Goncalves, J. (2026). ES WAVES (Eclipse Soundscapes WAV Audio Validation & Extraction Suite) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/ESCSP-ES-WAV-Audio-Validation-Extraction-Suite \n\nWinter, H., & Goncalves, J. (2026). ES AMES (Eclipse Soundscapes AudioMoth Metadata Extractor Suite) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/ESCSP-ES-AMES-AudioMoth-Metadata-Extractor-Suite\n\n\nStage 3: Public Data Sharing and Open Archiving\n\n \n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Public Audio Data Sharing (Stage 3). Zenodo.https://doi.org/10.5281/zenodo.18683437\n\n \n\nStage 3 transformed validated site-level datasets into publicly archived, DOI-assigned research records published through the Eclipse Soundscapes Zenodo Community. This stage included dataset packaging, metadata standardization, README generation, integrity verification, DOI assignment, and automated repository upload workflows using the Automated Zenodo Upload Software (AZUS). These workflows established the project's long-term open-science infrastructure and ensured that datasets remained findable, accessible, interoperable, reusable, and citable for future scientific and educational use.\n\nRelated Citations and Resources:\n\n\n\nWinter, H., & Goncalves, J. (2026). AZUS (Automated Zenodo Upload Software) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/AZUS-Automated-Zenodo-Upload-Software\n\n\nStage 4: Scientific Analysis and Research Use\n\nStage 4 involves the scientific analysis and interpretation of validated eclipse soundscape datasets. Analysis workflows utilized datasets verified during earlier stages to investigate eclipse-related environmental and animal vocalization changes across hundreds of recording sites. This stage also includes broader scientific interpretation, publication development, and continued reuse of Eclipse Soundscapes datasets and infrastructure for future research, education, and open-science applications.\n\nRelated Citations and Resources:\n\n\n\nPease, B., Gilbert, N., & Severino, M. (2026). Eclipse Soundscapes Preliminary Findings – How Eclipses Affect Nature as determined by Sound (Recorded Webinar). Zenodo.https://doi.org/10.5281/zenodo.18613979\n\nGilbert, N. A., Pease, B. S., Severino, M., & Winter, H. III. (2026). Photic niche explains avian behavioral responses to solar eclipses. Ecology and Evolution, 16(2), e73090. https://doi.org/10.1002/ece3.73090\n\nAnalysis code repository:  https://github.com/BrentPease1/eclipse-traits\n\nCompanion Zenodo record archiving structured analysis scripts and derived outputs: https://doi.org/10.5281/zenodo.15790879[r]\n\n\nPublic Archiving, Privacy, and Data Transparency\n\nThe Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023-2024) includes a detailed explanation of how Eclipse Soundscapes audio data are publicly archived on Zenodo, how participant privacy is protected through the ES ID system, and how transparency and traceability are maintained. It also outlines the criteria for determining which recordings are included in the public archive, as well as the distinction between publicly shared archival data and datasets used for ES-led scientific analyses. Participants and data users can consult this section for full documentation of the project's open science and privacy practices.\n\n\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023–2024). Zenodo.  https://doi.org/10.5281/zenodo.18623443\n\n\nCitations\n\nIndividual Site Citation: APA Citation (7th edition)\n\nWinter, H., Severino, M., & Volunteer Scientist. (2026). 2024 solar eclipse soundscapes audio data [Audio dataset, ES ID# 002]. Zenodo.{Insert DOI}\n\nCollected by volunteer scientists as part of the Eclipse Soundscapes Project.This project is supported by NASA award No. 80NSSC21M0008.\n\nEclipse Community Citation\n\nWinter, H., Severino, M., & Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio data [Collection of audio datasets]. Eclipse Soundscapes Community, Zenodo. https://zenodo.org/communities/eclipsesoundscapes/\n\nCollected by volunteer scientists as part of the Eclipse Soundscapes ProjectThis project is supported by NASA award No. 80NSSC21M0008.\n\n \n\n ",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5281/zenodo.20990630",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [
+            {
+              "awardNumber": "80NSSC21M0008",
+              "awardTitle": "Eclipse Soundscapes: Citizen Science Project",
+              "funderIdentifier": "10.13039/100000104",
+              "funderIdentifierType": "Crossref Funder ID",
+              "funderName": "National Aeronautics and Space Administration"
+            }
+          ],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 3,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 6,
+          "registered": "2026-06-28T09:17:20Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.5281/zenodo.18622776",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Audiovisual"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18623443",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.19471425",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683402",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683437",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20413370",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.1002/ece3.73090",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.15790879",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18613979",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20990630",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "2024 Total Solar Eclipse"
+            },
+            {
+              "subject": "NPS Collection Site"
+            },
+            {
+              "subject": "ES Data Analysis Site"
+            }
+          ],
+          "titles": [
+            {
+              "title": "2024-04-08 Total Solar Eclipse ESID#002"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceType": "",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-13T15:49:34Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.20990630",
+          "version": "2024.1.0",
+          "versionCount": 2,
+          "versionOfCount": 1,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.20990630",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 3,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "contributorType": "ProjectMember",
+              "familyName": "Goncalves",
+              "givenName": "Joel",
+              "name": "Goncalves, Joel",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0009-0009-0945-3544",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Pease",
+              "givenName": "Brent",
+              "name": "Pease, Brent",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-1528-6075",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Gilbert",
+              "givenName": "Neil",
+              "name": "Gilbert, Neil",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-0949-5612",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "created": "2026-06-28T09:17:20Z",
+          "creators": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Winter",
+              "givenName": "Henry",
+              "name": "Winter, Henry",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-6678-590X",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Severino",
+              "givenName": "MaryKay",
+              "name": "Severino, MaryKay",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-2363-7421",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Cuyahoga Valley National Park"
+              ],
+              "name": "Volunteer Scientist",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-06-28",
+              "dateType": "Issued"
+            },
+            {
+              "date": "2024-02-08/2024-04-08",
+              "dateInformation": "Recording period",
+              "dateType": "Collected"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "These are audio recordings taken by an Eclipse Soundscapes (ES) Data Collector during the week of the April 08, 2024 Total Solar Eclipse. \n\n\n\nThis June 2026 audio data record (ES ID 002) is an accidental duplicate of the ES ID 002 audio files that were uploaded in Feb 2025. The audio files in this record are the same as the Feb 2025 record. Additional project and data management information is located in this record. Because both records have been viewed and used, we will not delete either. The duplicate record is:\n\nWinter, H., Severino, M.& Volunteer Scientist. (2025). 2024-04-08 Total Solar Eclipse ESID#002 (Version 2024.1.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.14888401\n\n\nIt was decided to include only raw, unprocessed audio data files in each site-specific ZIP archive and in each Zenodo record. This decision was so that any researcher can independently verify, reproduce, and extend the analysis performed. As a result, some sites have WAV files with 0 bytes of data or timestamps outside the range of probable recording times. Procedures used by the Eclipse Soundscapes team to process audio data for its purposes are outlined in the Data Management reports located in the Eclipse Soundscapes Zenodo community. Data with 0 bytes of data were included for completeness.\n\nData Site location information:\n\n\n\nLatitude: 41.2124 \n\nLongitude:  -81.5759\n\nLocal Eclipse Type: Total Solar Eclipse Solar Eclipse\n\nEclipse Percent (%): 100\n\nWAV files Time & Date Settings: Set with Automated AudioMoth Time Chime (More information on TimeStamp Setting below)\n\nData Collector Start Time Notes: N/A\n\n\nIncluded Data:\n\n\n\n\n\nAudio files in WAV format with the date and time in UTC within the file name: YYYYMMDD_HHMMSS meaning YearMonthDay_HourMinuteSecondFor example, 20240411_141600.WAV means that this audio file starts on April 11, 2024 at 14:16:00 Coordinated Universal Time (UTC)\n\n\n\n\nCONFIG Text file: Includes AudioMoth device setting information, such as sample rate in Hertz (Hz), gain, firmware, etc. \n\n\n\n\nREADME.md:  Markdown formatted file with information about the recording and recording site.\n\n\n\n\nfile_list.csv:  A machine and human file that gives the following information on each file in the record: File Name, File Type, Description, File Size in kilobytes, Name of Associated Data Dictionary with the file, calculated SHA-512 Hash of the file as a unique identifier to insure data integrity during transfer and compression.\n\n\n\n\ntotal_eclipse_data.csv:  A machine and human readable file that gives the following information about the site where the audio data recording was taken: ESID#, Latitude, Longitude, Eclipse_type, CoveragePercent, Eclipse Start UTC (1st contact), Totality Start UTC (2nd contact), Totality End UTC (3rd Contact), Eclipse End UTC (4th Contact), Max Eclipse Time UTC\n\n\n\n\nLicense.txt:  A human readable file that explains the terms and conditions under which the data can be used.\n\n\n\n\nAudioMoth_Operation_Manual.pdf:  A human readable document that explains the use of an AudioMoth device. The document is current up to the time of the AudioMoth's use in the Eclipse Soundscapes project.\n\n\n\n\nfile_list_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the file_list.csv file.\n\n\n\n\nCONFIG_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the CONFIG.TXT file.\n\n\n\n\neclipse_data_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the total_eclipse_data.csv file.\n\n\n\n\nWAV_data_dict.csv:  A machine and human data dictionary file that gives information on the variables contained within the *.WAV files.\n\n\n\n\nES_Data_Management_Pre-Eclipse_Data_Infrastructure_Stage_0.pdf:  PDF document that describes Stage 0 (Pre-Eclipse Infrastructure and Data Stewardship Planning) of the Eclipse Soundscapes (ES) data lifecycle.\n\n\n\n\nES_Data_Management_Receipt_Sorting_and_Metadata_Organization_Stage_1.pdf:  PDF document that describes Stage 1 (Receipt, Sorting, and Metadata Organization) of the Eclipse Soundscapes (ES) data lifecycle.\n\n\n\n\nES_Data_Management_Data_Processing_Stage_2.pdf:  PDF document that describes Stage 2 (Data Processing) of the Eclipse Soundscapes (ES) data Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio datalifecycle.\n\n\n\n\nES_Data_Management_Data_Sharing_Stage_3.pdf:  PDF document that describes Stage 3 (Public Data Sharing) of the Eclipse Soundscapes (ES) data lifecycle.\n\n\n\nEclipse Information for this location:\n\n\n\nEclipse Date: April 08, 2024\n\nEclipse Start Time (UTC) (1st Contact): 17:59:07\n\nTotality Start Time (UTC) (2nd Contact): [N/A if partial eclipse] 19:13:53\n\nEclipse Maximum Time [when the most possible amount of the Sun in blocked] (UTC): 19:15:32\n\nTotality End Time (UTC) (3rd Contact): [N/A if partial eclipse] 19:17:12\n\nEclipse End Time (UTC) (4th Contact): [N/A if partial eclipse] 20:28:57\n\n\nAudio Data Collection During Eclipse Week\n\nES Data Collectors used AudioMoth devices to record audio data, known as soundscapes, over a 5-day period during the eclipse week: 2 days before the eclipse, the day of the eclipse, and 2 days after. The complete raw audio data collected by the Data Collector at the location mentioned above is provided here. This data may or may not cover the entire requested timeframe due to factors such as availability, technical issues, or other unforeseen circumstances. \n\nES ID# Information:\n\nEach AudioMoth recording device was assigned a unique Eclipse Soundscapes Identification Number (ES ID#). This identifier connects the audio data, submitted via a MicroSD card, with the latitude and longitude information provided by the data collector through an online form. The ES team used the ES ID# to link the audio data with its corresponding location information and then uploaded this raw audio data and location details to Zenodo. This process ensures the anonymity of the ES Data Collectors while allowing them to easily search for and access their audio data on Zenodo. \n\nTimeStamp Information:\n\nThe ES team and the Data Collectors took care to set the date and time on the AudioMoth recording devices using an AudioMoth time chime before deployment, ensuring that the recordings would have an automatic timestamp. However, participants also manually noted the date and start time as a backup in case the time chime setup failed. The notes above indicate whether the WAV audio files for this site were timestamped manually or with the automated AudioMoth time chime.  \n\nCommon Timestamp Error:\n\nSome AudioMoth devices experienced a malfunction where the timestamp on audio files reverted to a date in 1970 or before, even after initially recording correctly. Despite this issue, the affected data was still included in this ES site's collected raw audio dataset.\n\nLatitude & Longitude Information:\n\nThe latitude and longitude for each site was taken manually by data collectors and submitted to the ES team, either via a web form or on paper. It is shared in Decimal Degrees format.\n\nGeneral Project Information:\n\nThe Eclipse Soundscapes Project is a NASA Volunteer Science project funded by NASA Science Activation that is studying how eclipses affect life on Earth during the October 14, 2023 annular solar eclipse and the April 8, 2024 total solar eclipse. Eclipse Soundscapes revisits an eclipse study from almost 100 years ago that showed that animals and insects are affected by solar eclipses! Like this study from 100 years ago, ES asked for the public's help. ES uses modern technology to continue to study how solar eclipses affect life on Earth! \n\nEclipse Soundscapes is an enterprise of ARISA Lab, LLC and is supported by NASA award No. 80NSSC21M0008. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.  \n\nEclipse map/figure/table/predictions courtesy of Fred Espenak, NASA/Goddard Space Flight Center, from eclipse.gsfc.nasa.gov.  \n\nEclipse Data Version Definitions\n\n{1st digit = year, 2nd digit = Eclipse type (1=Total Solar Eclipse, 9=Annular Solar Eclipse, 0=Partial Solar Eclipse), 3rd digit is unused and in place for future use}\n\n2023.9.0 = Week of October 14, 2023 Annular Eclipse Audio Data, Path of Annularity (Annular Eclipse)\n\n2023.0.0 = Week of October 14, 2023 Annular Eclipse Audio Data, OFF the Path of Annularity (Partial Eclipse)\n\n2024.1.0 = Week of April 8, 2024 Total Solar Eclipse Audio Data, Path of Totality (Total Solar Eclipse)\n\n2024.0.0 =  Week of April 8, 2024 Total Solar Eclipse Audio Data , OFF the Path of Totality (Partial Solar Eclipse)\n\n*Please note that this dataset's version number is listed below.\n\nEclipse Soundscapes Data Collector Role Training and Implementation Resources Manual (2023-2024) (Archival Copy)\n\nThis site-level record includes the Eclipse Soundscapes Data Collector Role Training and Implementation Resources Manual (2023-2024). The manual documents the participant training, device setup procedures, metadata submission requirements, ES ID system, timestamp protocols, data return workflow, and public archiving processes used during the October 14, 2023 annular solar eclipse and the April 8, 2024 total solar eclipse. The manual is preserved for transparency and reproducibility and reflects the procedures under which this dataset was collected and processed. (DOI 10.5281/zenodo.18623442)\n\nData Receipt, Processing, and Analysis Methods\n\nAll programs supporting Stages 1–3 are openly available in the:\n\n\n\nEclipse Soundscapes GitHub repository:https://github.com/ARISA-Lab-LLC/ESCSP\n\n\nData Management Lifecycle\n\nThe following section documents the relationship of this record to the full Eclipse Soundscapes (ES) data lifecycle, a multi-stage workflow designed to support large-scale participatory science, long-term data stewardship, open science, and scientific reuse. Each stage addressed a different operational need, beginning before eclipse deployment and continuing through validation, public archiving, and scientific analysis. Together, these stages transformed distributed volunteer-submitted audio recordings into structured, documented, publicly accessible NASA-funded research assets.\n\nStage 0: Pre-Eclipse Infrastructure and Deployment Preparation\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Pre-Eclipse Infrastructure and Deployment Preparation (Stage 0). Zenodo.  https://doi.org/10.5281/zenodo.20413370\n\nStage 0 focused on building the operational foundation required to support geographically distributed eclipse data collection at national scale. This stage included AudioMoth device preparation, accessibility modifications, ES ID # assignment systems, metadata collection workflows, participant training materials, deployment logistics, and planning for downstream data stewardship and archival workflows. The 2023 annular eclipse served as both a scientific investigation and a large-scale operational beta test that informed improvements for the 2024 total solar eclipse campaign.\n\nRelated Citations and Resources:\n\n\n\nSeverino, M., & Kline, T. (2025, November 24). Eclipse Soundscapes Apprentice Role Curriculum: Solar Eclipses and Multi-Sensory Observing (Informal Education). Zenodo. https://doi.org/10.5281/zenodo.17703003\n\nSeverino, M., & Bauer, D. J. (2026). Eclipse Soundscapes Observer Role Training and Resources Manual (2023–2024). Zenodo. https://doi.org/10.5281/zenodo.18633602</li>\n\nSeverino, M., Winter, H., & Bauer, D. J. (2026). Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023–2024). Zenodo. https://doi.org/10.5281/zenodo.18623443\n\n\nStage 1: Receipt, Sorting, and Metadata Organization\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Receipt, Sorting, and Metadata Organization (Stage 1). Zenodo.  https://doi.org/10.5281/zenodo.19471425\n\nStage 1 transformed returned participant materials into organized, traceable site-level records. This included receiving mailed microSD cards, consolidating participant-submitted metadata, reconciling handwritten and online records, organizing physical audio media by ES ID #, and deriving eclipse timing and coverage information using NASA eclipse prediction datasets. The outputs of Stage 1 established the structured metadata relationships required for downstream validation, processing, archiving, and analysis workflows.\n\nRelated Citations and Resources:\n\n\n\nWinter, H., & Goncalves, J. (2026). EPTT (Eclipse Phase Timing Tool) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/ESCSP-Eclipse-Phase-Timing-Tool/li>\n\nEspenak, F. (n.d.). Eclipse predictions by Fred Espenak, NASA's GSFC Eclipse Web Site. NASA Goddard Space Flight Center.  http://eclipse.gsfc.nasa.gov/eclipse.html\n\n\nStage 2: Data Processing and Validation\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Data Processing (Stage 2). Zenodo. https://doi.org/10.5281/zenodo.18683402\n\nStage 2 focused on centralized audio ingestion, validation, timestamp verification, metadata reconciliation, and preparation of datasets for analysis and public sharing. During this stage, returned audio recordings were processed using custom open-source tools developed by the ES team, including ES WAVES and ES AMES. The project implemented scalable infrastructure capable of processing large volumes of participant-submitted microSD cards while preserving all raw audio data without modification. Stage 2 established the validated dataset structure required for long-term preservation and scientific analysis.\n\nRelated Citations and Resources:\n\n\n\nWinter, H., & Goncalves, J. (2026). ES WAVES (Eclipse Soundscapes WAV Audio Validation & Extraction Suite) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/ESCSP-ES-WAV-Audio-Validation-Extraction-Suite \n\nWinter, H., & Goncalves, J. (2026). ES AMES (Eclipse Soundscapes AudioMoth Metadata Extractor Suite) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/ESCSP-ES-AMES-AudioMoth-Metadata-Extractor-Suite\n\n\nStage 3: Public Data Sharing and Open Archiving\n\n \n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Public Audio Data Sharing (Stage 3). Zenodo.https://doi.org/10.5281/zenodo.18683437\n\n \n\nStage 3 transformed validated site-level datasets into publicly archived, DOI-assigned research records published through the Eclipse Soundscapes Zenodo Community. This stage included dataset packaging, metadata standardization, README generation, integrity verification, DOI assignment, and automated repository upload workflows using the Automated Zenodo Upload Software (AZUS). These workflows established the project's long-term open-science infrastructure and ensured that datasets remained findable, accessible, interoperable, reusable, and citable for future scientific and educational use.\n\nRelated Citations and Resources:\n\n\n\nWinter, H., & Goncalves, J. (2026). AZUS (Automated Zenodo Upload Software) [Computer software]. GitHub.  https://github.com/ARISA-Lab-LLC/AZUS-Automated-Zenodo-Upload-Software\n\n\nStage 4: Scientific Analysis and Research Use\n\nStage 4 involves the scientific analysis and interpretation of validated eclipse soundscape datasets. Analysis workflows utilized datasets verified during earlier stages to investigate eclipse-related environmental and animal vocalization changes across hundreds of recording sites. This stage also includes broader scientific interpretation, publication development, and continued reuse of Eclipse Soundscapes datasets and infrastructure for future research, education, and open-science applications.\n\nRelated Citations and Resources:\n\n\n\nPease, B., Gilbert, N., & Severino, M. (2026). Eclipse Soundscapes Preliminary Findings – How Eclipses Affect Nature as determined by Sound (Recorded Webinar). Zenodo.https://doi.org/10.5281/zenodo.18613979\n\nGilbert, N. A., Pease, B. S., Severino, M., & Winter, H. III. (2026). Photic niche explains avian behavioral responses to solar eclipses. Ecology and Evolution, 16(2), e73090. https://doi.org/10.1002/ece3.73090\n\nAnalysis code repository:  https://github.com/BrentPease1/eclipse-traits\n\nCompanion Zenodo record archiving structured analysis scripts and derived outputs: https://doi.org/10.5281/zenodo.15790879[r]\n\n\nPublic Archiving, Privacy, and Data Transparency\n\nThe Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023-2024) includes a detailed explanation of how Eclipse Soundscapes audio data are publicly archived on Zenodo, how participant privacy is protected through the ES ID system, and how transparency and traceability are maintained. It also outlines the criteria for determining which recordings are included in the public archive, as well as the distinction between publicly shared archival data and datasets used for ES-led scientific analyses. Participants and data users can consult this section for full documentation of the project's open science and privacy practices.\n\n\n\nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023–2024). Zenodo.  https://doi.org/10.5281/zenodo.18623443\n\n\nCitations\n\nIndividual Site Citation: APA Citation (7th edition)\n\nWinter, H., Severino, M., & Volunteer Scientist. (2026). 2024 solar eclipse soundscapes audio data [Audio dataset, ES ID# 002]. Zenodo.{Insert DOI}\n\nCollected by volunteer scientists as part of the Eclipse Soundscapes Project.This project is supported by NASA award No. 80NSSC21M0008.\n\nEclipse Community Citation\n\nWinter, H., Severino, M., & Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio data [Collection of audio datasets]. Eclipse Soundscapes Community, Zenodo. https://zenodo.org/communities/eclipsesoundscapes/\n\nCollected by volunteer scientists as part of the Eclipse Soundscapes ProjectThis project is supported by NASA award No. 80NSSC21M0008.\n\n \n\n ",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5281/zenodo.20990631",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [
+            {
+              "awardNumber": "80NSSC21M0008",
+              "awardTitle": "Eclipse Soundscapes: Citizen Science Project",
+              "funderIdentifier": "10.13039/100000104",
+              "funderIdentifierType": "Crossref Funder ID",
+              "funderName": "National Aeronautics and Space Administration"
+            }
+          ],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:20990631",
+              "identifierType": "oai"
+            }
+          ],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 3,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 6,
+          "registered": "2026-06-28T09:17:20Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.5281/zenodo.18622776",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Audiovisual"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18623443",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.19471425",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683402",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683437",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20413370",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.1002/ece3.73090",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.15790879",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18613979",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20990630",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "2024 Total Solar Eclipse"
+            },
+            {
+              "subject": "NPS Collection Site"
+            },
+            {
+              "subject": "ES Data Analysis Site"
+            }
+          ],
+          "titles": [
+            {
+              "title": "2024-04-08 Total Solar Eclipse ESID#002"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceType": "",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-13T15:49:34Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.20990631",
+          "version": "2024.1.0",
+          "versionCount": 0,
+          "versionOfCount": 1,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.20990631",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "contributorType": "ProjectMember",
+              "familyName": "Goncalves",
+              "givenName": "Joel",
+              "name": "Goncalves, Joel",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0009-0009-0945-3544",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Pease",
+              "givenName": "Brent",
+              "name": "Pease, Brent",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-1528-6075",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Gilbert",
+              "givenName": "Neil",
+              "name": "Gilbert, Neil",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-0949-5612",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "created": "2026-07-12T13:52:39Z",
+          "creators": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Winter",
+              "givenName": "Henry",
+              "name": "Winter, Henry",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-6678-590X",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Severino",
+              "givenName": "MaryKay",
+              "name": "Severino, MaryKay",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-2363-7421",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Alcorn State University"
+              ],
+              "name": "Volunteer Scientist",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-02",
+              "dateType": "Issued"
+            },
+            {
+              "date": "2024-01-17/2024-04-10",
+              "dateInformation": "Recording period",
+              "dateType": "Collected"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "These are audio recordings taken by an Eclipse Soundscapes (ES) Data Collector during the week of the April 08, 2024 Partial Solar Eclipse. \n\nIt was decided to include only raw, unprocessed audio data files in each site-specific ZIP archive and in each Zenodo record.  \nThis decision was so that any researcher can independently verify, reproduce, and extend the analysis performed.  As a result, some \nsites have WAV files with 0 bytes of data or timestamps outside the range of probable recording times.  Procedures used by the Eclipse \nSoundscapes team to process audio data for its purposes are outlined in the Data Management reports located in the Eclipse Soundscapes \nZenodo community. Data with 0 bytes of data were included for completeness.\n\n        \nData Site location information:\n        \n\n        \nLatitude: 31.88207 \n        \nLongitude:  -91.14704\n        \nLocal Eclipse Type: Partial Solar Eclipse Solar Eclipse \n        \nEclipse Percent (%): 90.38\n        \nWAV files Time & Date Settings: Set with Automated AudioMoth Time Chime (More information on TimeStamp Setting below)\n        \nData Collector Start Time Notes: N/A\n        \n        \nIncluded Data:\n        \n\n        \n\n        \nAudio files in WAV format with the date and time in UTC within the file name: YYYYMMDD_HHMMSS meaning \n                YearMonthDay_HourMinuteSecondFor example, 20240411_141600.WAV means that this audio file starts on April 11, 2024 \n                at 14:16:00 Coordinated Universal Time (UTC)\n        \n        \n\n        \nCONFIG Text file: Includes AudioMoth device setting information, such as sample rate in Hertz (Hz), \n                gain, firmware, etc. \n        \n        \n\n        \nREADME.md:  Markdown formatted file with information about the recording and recording site.\n        \n        \n\n        \nfile_list.csv:  A machine and human file that gives the following information on each file in the \n                record: File Name, File Type, Description, File Size in kilobytes, Name of Associated Data Dictionary with the file, \n                calculated SHA-512 Hash of the file as a unique identifier to insure data integrity during transfer and compression.\n        \n        \n\n        \ntotal_eclipse_data.csv:  A machine and human readable file that gives the following information about \n                the site where the audio data recording was taken: ESID#, Latitude, Longitude, Eclipse_type, CoveragePercent, \n                Eclipse Start UTC (1st contact), Totality Start UTC (2nd contact), Totality End UTC (3rd Contact), \n                Eclipse End UTC (4th Contact), Max Eclipse Time UTC\n        \n        \n\n        \nLicense.txt:  A human readable file that explains the terms and conditions under which the data \n                can be used.\n        \n        \n\n        \nAudioMoth_Operation_Manual.pdf:  A human readable document that explains the use of an AudioMoth device.\n                  The document is current up to the time of the AudioMoth's use in the Eclipse Soundscapes project.\n        \n        \n\n        \nfile_list_data_dict.csv:  A machine and human data dictionary file that gives information on the \n                variables contained within the file_list.csv file.\n        \n        \n\n        \nCONFIG_data_dict.csv:  A machine and human data dictionary file that gives information on the \n                variables contained within the CONFIG.TXT file.\n        \n        \n\n        \neclipse_data_data_dict.csv:  A machine and human data dictionary file that gives information on the \n                variables contained within the total_eclipse_data.csv file.\n        \n        \n\n        \nWAV_data_dict.csv:  A machine and human data dictionary file that gives information on the variables \n                contained within the *.WAV files.\n        \n        \n\n        \nES_Data_Management_Pre-Eclipse_Data_Infrastructure_Stage_0.pdf:  PDF document that describes Stage 0 \n                (Pre-Eclipse Infrastructure and Data Stewardship Planning) of the Eclipse Soundscapes (ES) data lifecycle.\n        \n        \n\n        \nES_Data_Management_Receipt_Sorting_and_Metadata_Organization_Stage_1.pdf:  PDF document that \n                describes Stage 1 (Receipt, Sorting, and Metadata Organization) of the Eclipse Soundscapes (ES) data lifecycle. \n        \n        \n\n        \nES_Data_Management_Data_Processing_Stage_2.pdf:  PDF document that describes Stage 2 \n                (Data Processing) of the Eclipse Soundscapes (ES) data Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio datalifecycle.\n        \n        \n\n        \nES_Data_Management_Data_Sharing_Stage_3.pdf:  PDF document that describes Stage 3 (Public Data Sharing) \n                of the Eclipse Soundscapes (ES) data lifecycle. \n        \n              \n        \n\n\n        \nEclipse Information for this location:\n        \n         \n        \nEclipse Date: April 08, 2024\n        \nEclipse Start Time (UTC) (1st Contact): 17:30:38\n        \nTotality Start Time (UTC) (2nd Contact):  [N/A if partial eclipse] N/A\n        \nEclipse Maximum Time [when the most possible amount of the Sun in blocked] (UTC): 18:50:38 \n        \nTotality End Time (UTC) (3rd Contact): [N/A if partial eclipse] N/A\n        \nEclipse End Time (UTC) (4th Contact): [N/A if partial eclipse] 20:10:01\n        \n\n        \nAudio Data Collection During Eclipse Week\n        \nES Data Collectors used AudioMoth devices to record audio data, known as soundscapes, over a 5-day period during the eclipse week: 2 days before the eclipse, the day of the eclipse, and 2 days after. The complete raw audio data collected by the Data Collector at the location mentioned above is provided here. This data may or may not cover the entire requested timeframe due to factors such as availability, technical issues, or other unforeseen circumstances. \n        \nES ID# Information:\n        \nEach AudioMoth recording device was assigned a unique Eclipse Soundscapes Identification Number (ES ID#). This identifier connects the audio data, submitted via a MicroSD card, with the latitude and longitude information provided by the data collector through an online form. The ES team used the ES ID# to link the audio data with its corresponding location information and then uploaded this raw audio data and location details to Zenodo. This process ensures the anonymity of the ES Data Collectors while allowing them to easily search for and access their audio data on Zenodo. \n        \nTimeStamp Information:\n        \nThe ES team and the Data Collectors took care to set the date and time on the AudioMoth recording devices using an AudioMoth time chime before deployment, ensuring that the recordings would have an automatic timestamp. However, participants also manually noted the date and start time as a backup in case the time chime setup failed. The notes above indicate whether the WAV audio files for this site were timestamped manually or with the automated AudioMoth time chime.  \n        \nCommon Timestamp Error:\n        \nSome AudioMoth devices experienced a malfunction where the timestamp on audio files reverted to a date in 1970 or before, even after initially recording correctly. Despite this issue, the affected data was still included in this ES site's collected raw audio dataset.\n        \nLatitude & Longitude Information:\n        \nThe latitude and longitude for each site was taken manually by data collectors and submitted to the ES team, either via a web form or on paper. It is shared in Decimal Degrees format.\n        \n        \nGeneral Project Information:\n        \nThe Eclipse Soundscapes Project is a NASA Volunteer Science project funded by NASA Science Activation that is studying how eclipses affect life on Earth during the October 14, 2023 annular solar eclipse and the April 8, 2024 total solar eclipse. Eclipse Soundscapes revisits an eclipse study from almost 100 years ago that showed that animals and insects are affected by solar eclipses! Like this study from 100 years ago, ES asked for the public's help. ES uses modern technology to continue to study how solar eclipses affect life on Earth! \n        \nEclipse Soundscapes is an enterprise of ARISA Lab, LLC and is supported by NASA award No. 80NSSC21M0008. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.  \n        \nEclipse map/figure/table/predictions courtesy of Fred Espenak, NASA/Goddard Space Flight Center, from eclipse.gsfc.nasa.gov.  \n        \n        \nEclipse Data Version Definitions\n        \n{1st digit = year, 2nd digit = Eclipse type (1=Total Solar Eclipse, 9=Annular Solar Eclipse, 0=Partial Solar Eclipse), 3rd digit is unused and in place for future use}\n        \n2023.9.0 = Week of October 14, 2023 Annular Eclipse Audio Data, Path of Annularity (Annular Eclipse)\n        \n2023.0.0 = Week of October 14, 2023 Annular Eclipse Audio Data, OFF the Path of Annularity (Partial Eclipse)\n        \n2024.1.0 = Week of April 8, 2024 Total Solar Eclipse Audio Data, Path of Totality (Total Solar Eclipse)\n        \n2024.0.0 =  Week of April 8, 2024 Total Solar Eclipse Audio Data , OFF the Path of Totality (Partial Solar Eclipse)\n        \n*Please note that this dataset's version number is listed below.\n        \n        \nEclipse Soundscapes Data Collector Role Training and Implementation Resources Manual (2023-2024) (Archival Copy)\n\n        \nThis site-level record includes the Eclipse Soundscapes Data Collector Role Training and Implementation \n                Resources Manual (2023-2024). The manual documents the participant training, device \n                setup procedures, metadata submission requirements, ES ID system, timestamp protocols, \n                data return workflow, and public archiving processes used during the October 14, 2023\n                 annular solar eclipse and the April 8, 2024 total solar eclipse. The manual is \n                 preserved for transparency and reproducibility and reflects the procedures under \n                 which this dataset was collected and processed. (DOI 10.5281/zenodo.18623442)\n\n        \nData Receipt, Processing, and Analysis Methods      \n        \n        All programs supporting Stages 1–3 are openly available in the:\n        \n\n                \nEclipse Soundscapes GitHub repository:\n                https://github.com/ARISA-Lab-LLC/ESCSP\n                \n        \n\n                \nData Management Lifecycle\n\n                The following section documents the relationship of this record to the full Eclipse Soundscapes (ES) data lifecycle, a multi-stage workflow designed to support large-scale participatory science, long-term data stewardship, open science, and scientific reuse. Each stage addressed a different operational need, beginning before eclipse deployment and continuing through validation, public archiving, and scientific analysis. Together, these stages transformed distributed volunteer-submitted audio recordings into structured, documented, publicly accessible NASA-funded research assets.\n\n                \nStage 0: Pre-Eclipse Infrastructure and Deployment Preparation\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Pre-Eclipse Infrastructure and \n                Deployment Preparation (Stage 0). Zenodo. \n                        https://doi.org/10.5281/zenodo.20413370\n\n                \nStage 0 focused on building the operational foundation required to support geographically distributed eclipse data collection at national scale. This stage included AudioMoth device preparation, accessibility modifications, ES ID # assignment systems, metadata collection workflows, participant training materials, deployment logistics, and planning for downstream data stewardship and archival workflows. The 2023 annular eclipse served as both a scientific investigation and a large-scale operational beta test that informed improvements for the 2024 total solar eclipse campaign.\n\n                Related Citations and Resources:\n                \n\n                        \nSeverino, M., & Kline, T. (2025, November 24). Eclipse Soundscapes Apprentice Role Curriculum: \n                                Solar Eclipses and Multi-Sensory Observing (Informal Education). \n                                Zenodo. https://doi.org/10.5281/zenodo.17703003\n                        \nSeverino, M., & Bauer, D. J. (2026). Eclipse Soundscapes Observer Role Training and Resources Manual (2023–2024). \n                                Zenodo. https://doi.org/10.5281/zenodo.18633602</li>\n                        \nSeverino, M., Winter, H., & Bauer, D. J. (2026). Eclipse Soundscapes Data Collector Role Training and Implementation Manual \n                                (2023–2024). \n                                Zenodo. https://doi.org/10.5281/zenodo.18623443\n                \n\n                \nStage 1: Receipt, Sorting, and Metadata Organization\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Receipt, Sorting, \n                and Metadata Organization (Stage 1). Zenodo. \n                        https://doi.org/10.5281/zenodo.19471425\n\n                \nStage 1 transformed returned participant materials into organized, traceable site-level records. \n                This included receiving mailed microSD cards, consolidating participant-submitted metadata, reconciling handwritten \n                and online records, organizing physical audio media by ES ID #, and deriving eclipse timing and coverage information \n                using NASA eclipse prediction datasets. The outputs of Stage 1 established the structured metadata relationships \n                required for downstream validation, processing, archiving, and analysis workflows.\n\n                Related Citations and Resources:\n                \n\n                        \nWinter, H., & Goncalves, J. (2026). EPTT (Eclipse Phase Timing Tool) [Computer software]. GitHub. \n                                \n                                        https://github.com/ARISA-Lab-LLC/ESCSP-Eclipse-Phase-Timing-Tool/li>\n                        \nEspenak, F. (n.d.). Eclipse predictions by Fred Espenak, NASA's GSFC Eclipse Web Site. NASA Goddard Space \n                                Flight Center.  \n                                        http://eclipse.gsfc.nasa.gov/eclipse.html\n                                \n\n                      \n                \nStage 2: Data Processing and Validation\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Data Processing (Stage 2). \n                Zenodo. https://doi.org/10.5281/zenodo.18683402\n\n                \nStage 2 focused on centralized audio ingestion, validation, timestamp verification, metadata reconciliation, \n                        and preparation of datasets for analysis and public sharing. During this stage, returned audio recordings \n                        were processed using custom open-source tools developed by the ES team, including ES WAVES and ES AMES. \n                        The project implemented scalable infrastructure capable of processing large volumes of participant-submitted \n                        microSD cards while preserving all raw audio data without modification. Stage 2 established the validated \n                        dataset structure required for long-term preservation and scientific analysis.\n\n                Related Citations and Resources:\n                \n\n                        \nWinter, H., & Goncalves, J. (2026). ES WAVES (Eclipse Soundscapes WAV Audio Validation & Extraction Suite) \n                                [Computer software]. GitHub. \n                                \n                                        https://github.com/ARISA-Lab-LLC/ESCSP-ES-WAV-Audio-Validation-Extraction-Suite\n                                \n                        \nWinter, H., & Goncalves, J. (2026). ES AMES (Eclipse Soundscapes AudioMoth Metadata Extractor Suite) \n                                [Computer software]. GitHub. \n                                \n                                        https://github.com/ARISA-Lab-LLC/ESCSP-ES-AMES-AudioMoth-Metadata-Extractor-Suite\n\n                \n\n                \nStage 3: Public Data Sharing and Open Archiving\n\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Public Audio Data Sharing (Stage 3).\n                 Zenodo.https://doi.org/10.5281/zenodo.18683437 \n\n\n\n                \nStage 3 transformed validated site-level datasets into publicly archived, DOI-assigned research records published \n                        through the Eclipse Soundscapes Zenodo Community. This stage included dataset packaging, metadata \n                        standardization, README generation, integrity verification, DOI assignment, and automated repository upload \n                        workflows using the Automated Zenodo Upload Software (AZUS). These workflows established the project's long-term \n                        open-science infrastructure and ensured that datasets remained findable, accessible, interoperable, reusable, \n                        and citable for future scientific and educational use.\n\n\n                Related Citations and Resources:\n                \n\n                        \nWinter, H., & Goncalves, J. (2026). AZUS (Automated Zenodo Upload Software) [Computer software]. \n                                GitHub.\n                                \n                                        https://github.com/ARISA-Lab-LLC/AZUS-Automated-Zenodo-Upload-Software\n                                \n                        \n\n                \nStage 4: Scientific Analysis and Research Use\n\n\n                \nStage 4 involves the scientific analysis and interpretation of validated eclipse soundscape datasets. \n                        Analysis workflows utilized datasets verified during earlier stages to investigate eclipse-related \n                        environmental and animal vocalization changes across hundreds of recording sites. This stage also includes \n                        broader scientific interpretation, publication development, and continued reuse of Eclipse Soundscapes datasets \n                        and infrastructure for future research, education, and open-science applications.\n\n\n                Related Citations and Resources:\n                \n\n                        \nPease, B., Gilbert, N., & Severino, M. (2026). Eclipse Soundscapes Preliminary Findings \n                                – How Eclipses Affect Nature as determined by Sound (Recorded Webinar). \n                                Zenodo.https://doi.org/10.5281/zenodo.18613979 \n                        \n                        \nGilbert, N. A., Pease, B. S., Severino, M., & Winter, H. III. (2026). \n                                Photic niche explains avian behavioral responses to solar eclipses. \n                                Ecology and Evolution, 16(2), e73090.\n                                https://doi.org/10.1002/ece3.73090\n                        \n                        \nAnalysis code repository: \n                                https://github.com/BrentPease1/eclipse-traits\n                        \n                        \nCompanion Zenodo record archiving structured analysis scripts and derived outputs: \n                               https://doi.org/10.5281/zenodo.15790879[r] \n\n                        \n                   \n\n\n        \nPublic Archiving, Privacy, and Data Transparency\n        The Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023-2024) includes a detailed explanation of how Eclipse Soundscapes audio data are publicly archived on Zenodo, how participant privacy is protected through the ES ID system, and how transparency and traceability are maintained. It also outlines the criteria for determining which recordings are included in the public archive, as well as the distinction between publicly shared archival data and datasets used for ES-led scientific analyses. Participants and data users can consult this section for full documentation of the project's open science and privacy practices.\n        \n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Collector Role Training and \n                        Implementation Manual (2023–2024). Zenodo. \n                        \n                                https://doi.org/10.5281/zenodo.18623443\n        \n        \nCitations\n        \nIndividual Site Citation: APA Citation (7th edition)\n        \nWinter, H., Severino, M., & Volunteer Scientist. (2026). 2024 solar eclipse soundscapes audio data [Audio dataset, ES ID# 343]. Zenodo.{Insert DOI}\n        \n\n                Collected by volunteer scientists as part of the Eclipse Soundscapes Project.\n                This project is supported by NASA award No. 80NSSC21M0008.\n        \n        \nEclipse Community Citation\n        \nWinter, H., Severino, M., & Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio data [Collection of audio datasets]. Eclipse Soundscapes Community, Zenodo. https://zenodo.org/communities/eclipsesoundscapes/\n        \n\n                Collected by volunteer scientists as part of the Eclipse Soundscapes Project\n                This project is supported by NASA award No. 80NSSC21M0008.\n        \n        \n ",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5281/zenodo.21135159",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [
+            {
+              "awardNumber": "80NSSC21M0008",
+              "awardTitle": "Eclipse Soundscapes: Citizen Science Project",
+              "funderIdentifier": "10.13039/100000104",
+              "funderIdentifierType": "Crossref Funder ID",
+              "funderName": "National Aeronautics and Space Administration"
+            }
+          ],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-12T13:52:40Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.5281/zenodo.18622776",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Audiovisual"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18623443",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.19471425",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683402",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683437",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20413370",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.1002/ece3.73090",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.15790879",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18613979",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.21135159",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "2024 Total Solar Eclipse"
+            },
+            {
+              "subject": "ES Data Analysis Site"
+            }
+          ],
+          "titles": [
+            {
+              "title": "2024-04-08 Partial Solar Eclipse ESID#343"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceType": "",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-12T13:52:40Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.21135159",
+          "version": "2024.0.0",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.21135159",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "contributorType": "ProjectMember",
+              "familyName": "Goncalves",
+              "givenName": "Joel",
+              "name": "Goncalves, Joel",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0009-0009-0945-3544",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Pease",
+              "givenName": "Brent",
+              "name": "Pease, Brent",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-1528-6075",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Oklahoma State University (OSU), Stillwater, United States"
+              ],
+              "contributorType": "Researcher",
+              "familyName": "Gilbert",
+              "givenName": "Neil",
+              "name": "Gilbert, Neil",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-0949-5612",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "created": "2026-07-12T13:52:39Z",
+          "creators": [
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Winter",
+              "givenName": "Henry",
+              "name": "Winter, Henry",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-6678-590X",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "ARISA Lab, L.L.C."
+              ],
+              "familyName": "Severino",
+              "givenName": "MaryKay",
+              "name": "Severino, MaryKay",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-2363-7421",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Alcorn State University"
+              ],
+              "name": "Volunteer Scientist",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-02",
+              "dateType": "Issued"
+            },
+            {
+              "date": "2024-01-17/2024-04-10",
+              "dateInformation": "Recording period",
+              "dateType": "Collected"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "These are audio recordings taken by an Eclipse Soundscapes (ES) Data Collector during the week of the April 08, 2024 Partial Solar Eclipse. \n\nIt was decided to include only raw, unprocessed audio data files in each site-specific ZIP archive and in each Zenodo record.  \nThis decision was so that any researcher can independently verify, reproduce, and extend the analysis performed.  As a result, some \nsites have WAV files with 0 bytes of data or timestamps outside the range of probable recording times.  Procedures used by the Eclipse \nSoundscapes team to process audio data for its purposes are outlined in the Data Management reports located in the Eclipse Soundscapes \nZenodo community. Data with 0 bytes of data were included for completeness.\n\n        \nData Site location information:\n        \n\n        \nLatitude: 31.88207 \n        \nLongitude:  -91.14704\n        \nLocal Eclipse Type: Partial Solar Eclipse Solar Eclipse \n        \nEclipse Percent (%): 90.38\n        \nWAV files Time & Date Settings: Set with Automated AudioMoth Time Chime (More information on TimeStamp Setting below)\n        \nData Collector Start Time Notes: N/A\n        \n        \nIncluded Data:\n        \n\n        \n\n        \nAudio files in WAV format with the date and time in UTC within the file name: YYYYMMDD_HHMMSS meaning \n                YearMonthDay_HourMinuteSecondFor example, 20240411_141600.WAV means that this audio file starts on April 11, 2024 \n                at 14:16:00 Coordinated Universal Time (UTC)\n        \n        \n\n        \nCONFIG Text file: Includes AudioMoth device setting information, such as sample rate in Hertz (Hz), \n                gain, firmware, etc. \n        \n        \n\n        \nREADME.md:  Markdown formatted file with information about the recording and recording site.\n        \n        \n\n        \nfile_list.csv:  A machine and human file that gives the following information on each file in the \n                record: File Name, File Type, Description, File Size in kilobytes, Name of Associated Data Dictionary with the file, \n                calculated SHA-512 Hash of the file as a unique identifier to insure data integrity during transfer and compression.\n        \n        \n\n        \ntotal_eclipse_data.csv:  A machine and human readable file that gives the following information about \n                the site where the audio data recording was taken: ESID#, Latitude, Longitude, Eclipse_type, CoveragePercent, \n                Eclipse Start UTC (1st contact), Totality Start UTC (2nd contact), Totality End UTC (3rd Contact), \n                Eclipse End UTC (4th Contact), Max Eclipse Time UTC\n        \n        \n\n        \nLicense.txt:  A human readable file that explains the terms and conditions under which the data \n                can be used.\n        \n        \n\n        \nAudioMoth_Operation_Manual.pdf:  A human readable document that explains the use of an AudioMoth device.\n                  The document is current up to the time of the AudioMoth's use in the Eclipse Soundscapes project.\n        \n        \n\n        \nfile_list_data_dict.csv:  A machine and human data dictionary file that gives information on the \n                variables contained within the file_list.csv file.\n        \n        \n\n        \nCONFIG_data_dict.csv:  A machine and human data dictionary file that gives information on the \n                variables contained within the CONFIG.TXT file.\n        \n        \n\n        \neclipse_data_data_dict.csv:  A machine and human data dictionary file that gives information on the \n                variables contained within the total_eclipse_data.csv file.\n        \n        \n\n        \nWAV_data_dict.csv:  A machine and human data dictionary file that gives information on the variables \n                contained within the *.WAV files.\n        \n        \n\n        \nES_Data_Management_Pre-Eclipse_Data_Infrastructure_Stage_0.pdf:  PDF document that describes Stage 0 \n                (Pre-Eclipse Infrastructure and Data Stewardship Planning) of the Eclipse Soundscapes (ES) data lifecycle.\n        \n        \n\n        \nES_Data_Management_Receipt_Sorting_and_Metadata_Organization_Stage_1.pdf:  PDF document that \n                describes Stage 1 (Receipt, Sorting, and Metadata Organization) of the Eclipse Soundscapes (ES) data lifecycle. \n        \n        \n\n        \nES_Data_Management_Data_Processing_Stage_2.pdf:  PDF document that describes Stage 2 \n                (Data Processing) of the Eclipse Soundscapes (ES) data Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio datalifecycle.\n        \n        \n\n        \nES_Data_Management_Data_Sharing_Stage_3.pdf:  PDF document that describes Stage 3 (Public Data Sharing) \n                of the Eclipse Soundscapes (ES) data lifecycle. \n        \n              \n        \n\n\n        \nEclipse Information for this location:\n        \n         \n        \nEclipse Date: April 08, 2024\n        \nEclipse Start Time (UTC) (1st Contact): 17:30:38\n        \nTotality Start Time (UTC) (2nd Contact):  [N/A if partial eclipse] N/A\n        \nEclipse Maximum Time [when the most possible amount of the Sun in blocked] (UTC): 18:50:38 \n        \nTotality End Time (UTC) (3rd Contact): [N/A if partial eclipse] N/A\n        \nEclipse End Time (UTC) (4th Contact): [N/A if partial eclipse] 20:10:01\n        \n\n        \nAudio Data Collection During Eclipse Week\n        \nES Data Collectors used AudioMoth devices to record audio data, known as soundscapes, over a 5-day period during the eclipse week: 2 days before the eclipse, the day of the eclipse, and 2 days after. The complete raw audio data collected by the Data Collector at the location mentioned above is provided here. This data may or may not cover the entire requested timeframe due to factors such as availability, technical issues, or other unforeseen circumstances. \n        \nES ID# Information:\n        \nEach AudioMoth recording device was assigned a unique Eclipse Soundscapes Identification Number (ES ID#). This identifier connects the audio data, submitted via a MicroSD card, with the latitude and longitude information provided by the data collector through an online form. The ES team used the ES ID# to link the audio data with its corresponding location information and then uploaded this raw audio data and location details to Zenodo. This process ensures the anonymity of the ES Data Collectors while allowing them to easily search for and access their audio data on Zenodo. \n        \nTimeStamp Information:\n        \nThe ES team and the Data Collectors took care to set the date and time on the AudioMoth recording devices using an AudioMoth time chime before deployment, ensuring that the recordings would have an automatic timestamp. However, participants also manually noted the date and start time as a backup in case the time chime setup failed. The notes above indicate whether the WAV audio files for this site were timestamped manually or with the automated AudioMoth time chime.  \n        \nCommon Timestamp Error:\n        \nSome AudioMoth devices experienced a malfunction where the timestamp on audio files reverted to a date in 1970 or before, even after initially recording correctly. Despite this issue, the affected data was still included in this ES site's collected raw audio dataset.\n        \nLatitude & Longitude Information:\n        \nThe latitude and longitude for each site was taken manually by data collectors and submitted to the ES team, either via a web form or on paper. It is shared in Decimal Degrees format.\n        \n        \nGeneral Project Information:\n        \nThe Eclipse Soundscapes Project is a NASA Volunteer Science project funded by NASA Science Activation that is studying how eclipses affect life on Earth during the October 14, 2023 annular solar eclipse and the April 8, 2024 total solar eclipse. Eclipse Soundscapes revisits an eclipse study from almost 100 years ago that showed that animals and insects are affected by solar eclipses! Like this study from 100 years ago, ES asked for the public's help. ES uses modern technology to continue to study how solar eclipses affect life on Earth! \n        \nEclipse Soundscapes is an enterprise of ARISA Lab, LLC and is supported by NASA award No. 80NSSC21M0008. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.  \n        \nEclipse map/figure/table/predictions courtesy of Fred Espenak, NASA/Goddard Space Flight Center, from eclipse.gsfc.nasa.gov.  \n        \n        \nEclipse Data Version Definitions\n        \n{1st digit = year, 2nd digit = Eclipse type (1=Total Solar Eclipse, 9=Annular Solar Eclipse, 0=Partial Solar Eclipse), 3rd digit is unused and in place for future use}\n        \n2023.9.0 = Week of October 14, 2023 Annular Eclipse Audio Data, Path of Annularity (Annular Eclipse)\n        \n2023.0.0 = Week of October 14, 2023 Annular Eclipse Audio Data, OFF the Path of Annularity (Partial Eclipse)\n        \n2024.1.0 = Week of April 8, 2024 Total Solar Eclipse Audio Data, Path of Totality (Total Solar Eclipse)\n        \n2024.0.0 =  Week of April 8, 2024 Total Solar Eclipse Audio Data , OFF the Path of Totality (Partial Solar Eclipse)\n        \n*Please note that this dataset's version number is listed below.\n        \n        \nEclipse Soundscapes Data Collector Role Training and Implementation Resources Manual (2023-2024) (Archival Copy)\n\n        \nThis site-level record includes the Eclipse Soundscapes Data Collector Role Training and Implementation \n                Resources Manual (2023-2024). The manual documents the participant training, device \n                setup procedures, metadata submission requirements, ES ID system, timestamp protocols, \n                data return workflow, and public archiving processes used during the October 14, 2023\n                 annular solar eclipse and the April 8, 2024 total solar eclipse. The manual is \n                 preserved for transparency and reproducibility and reflects the procedures under \n                 which this dataset was collected and processed. (DOI 10.5281/zenodo.18623442)\n\n        \nData Receipt, Processing, and Analysis Methods      \n        \n        All programs supporting Stages 1–3 are openly available in the:\n        \n\n                \nEclipse Soundscapes GitHub repository:\n                https://github.com/ARISA-Lab-LLC/ESCSP\n                \n        \n\n                \nData Management Lifecycle\n\n                The following section documents the relationship of this record to the full Eclipse Soundscapes (ES) data lifecycle, a multi-stage workflow designed to support large-scale participatory science, long-term data stewardship, open science, and scientific reuse. Each stage addressed a different operational need, beginning before eclipse deployment and continuing through validation, public archiving, and scientific analysis. Together, these stages transformed distributed volunteer-submitted audio recordings into structured, documented, publicly accessible NASA-funded research assets.\n\n                \nStage 0: Pre-Eclipse Infrastructure and Deployment Preparation\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Pre-Eclipse Infrastructure and \n                Deployment Preparation (Stage 0). Zenodo. \n                        https://doi.org/10.5281/zenodo.20413370\n\n                \nStage 0 focused on building the operational foundation required to support geographically distributed eclipse data collection at national scale. This stage included AudioMoth device preparation, accessibility modifications, ES ID # assignment systems, metadata collection workflows, participant training materials, deployment logistics, and planning for downstream data stewardship and archival workflows. The 2023 annular eclipse served as both a scientific investigation and a large-scale operational beta test that informed improvements for the 2024 total solar eclipse campaign.\n\n                Related Citations and Resources:\n                \n\n                        \nSeverino, M., & Kline, T. (2025, November 24). Eclipse Soundscapes Apprentice Role Curriculum: \n                                Solar Eclipses and Multi-Sensory Observing (Informal Education). \n                                Zenodo. https://doi.org/10.5281/zenodo.17703003\n                        \nSeverino, M., & Bauer, D. J. (2026). Eclipse Soundscapes Observer Role Training and Resources Manual (2023–2024). \n                                Zenodo. https://doi.org/10.5281/zenodo.18633602</li>\n                        \nSeverino, M., Winter, H., & Bauer, D. J. (2026). Eclipse Soundscapes Data Collector Role Training and Implementation Manual \n                                (2023–2024). \n                                Zenodo. https://doi.org/10.5281/zenodo.18623443\n                \n\n                \nStage 1: Receipt, Sorting, and Metadata Organization\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Receipt, Sorting, \n                and Metadata Organization (Stage 1). Zenodo. \n                        https://doi.org/10.5281/zenodo.19471425\n\n                \nStage 1 transformed returned participant materials into organized, traceable site-level records. \n                This included receiving mailed microSD cards, consolidating participant-submitted metadata, reconciling handwritten \n                and online records, organizing physical audio media by ES ID #, and deriving eclipse timing and coverage information \n                using NASA eclipse prediction datasets. The outputs of Stage 1 established the structured metadata relationships \n                required for downstream validation, processing, archiving, and analysis workflows.\n\n                Related Citations and Resources:\n                \n\n                        \nWinter, H., & Goncalves, J. (2026). EPTT (Eclipse Phase Timing Tool) [Computer software]. GitHub. \n                                \n                                        https://github.com/ARISA-Lab-LLC/ESCSP-Eclipse-Phase-Timing-Tool/li>\n                        \nEspenak, F. (n.d.). Eclipse predictions by Fred Espenak, NASA's GSFC Eclipse Web Site. NASA Goddard Space \n                                Flight Center.  \n                                        http://eclipse.gsfc.nasa.gov/eclipse.html\n                                \n\n                      \n                \nStage 2: Data Processing and Validation\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Data Processing (Stage 2). \n                Zenodo. https://doi.org/10.5281/zenodo.18683402\n\n                \nStage 2 focused on centralized audio ingestion, validation, timestamp verification, metadata reconciliation, \n                        and preparation of datasets for analysis and public sharing. During this stage, returned audio recordings \n                        were processed using custom open-source tools developed by the ES team, including ES WAVES and ES AMES. \n                        The project implemented scalable infrastructure capable of processing large volumes of participant-submitted \n                        microSD cards while preserving all raw audio data without modification. Stage 2 established the validated \n                        dataset structure required for long-term preservation and scientific analysis.\n\n                Related Citations and Resources:\n                \n\n                        \nWinter, H., & Goncalves, J. (2026). ES WAVES (Eclipse Soundscapes WAV Audio Validation & Extraction Suite) \n                                [Computer software]. GitHub. \n                                \n                                        https://github.com/ARISA-Lab-LLC/ESCSP-ES-WAV-Audio-Validation-Extraction-Suite\n                                \n                        \nWinter, H., & Goncalves, J. (2026). ES AMES (Eclipse Soundscapes AudioMoth Metadata Extractor Suite) \n                                [Computer software]. GitHub. \n                                \n                                        https://github.com/ARISA-Lab-LLC/ESCSP-ES-AMES-AudioMoth-Metadata-Extractor-Suite\n\n                \n\n                \nStage 3: Public Data Sharing and Open Archiving\n\n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Management: Public Audio Data Sharing (Stage 3).\n                 Zenodo.https://doi.org/10.5281/zenodo.18683437 \n\n\n\n                \nStage 3 transformed validated site-level datasets into publicly archived, DOI-assigned research records published \n                        through the Eclipse Soundscapes Zenodo Community. This stage included dataset packaging, metadata \n                        standardization, README generation, integrity verification, DOI assignment, and automated repository upload \n                        workflows using the Automated Zenodo Upload Software (AZUS). These workflows established the project's long-term \n                        open-science infrastructure and ensured that datasets remained findable, accessible, interoperable, reusable, \n                        and citable for future scientific and educational use.\n\n\n                Related Citations and Resources:\n                \n\n                        \nWinter, H., & Goncalves, J. (2026). AZUS (Automated Zenodo Upload Software) [Computer software]. \n                                GitHub.\n                                \n                                        https://github.com/ARISA-Lab-LLC/AZUS-Automated-Zenodo-Upload-Software\n                                \n                        \n\n                \nStage 4: Scientific Analysis and Research Use\n\n\n                \nStage 4 involves the scientific analysis and interpretation of validated eclipse soundscape datasets. \n                        Analysis workflows utilized datasets verified during earlier stages to investigate eclipse-related \n                        environmental and animal vocalization changes across hundreds of recording sites. This stage also includes \n                        broader scientific interpretation, publication development, and continued reuse of Eclipse Soundscapes datasets \n                        and infrastructure for future research, education, and open-science applications.\n\n\n                Related Citations and Resources:\n                \n\n                        \nPease, B., Gilbert, N., & Severino, M. (2026). Eclipse Soundscapes Preliminary Findings \n                                – How Eclipses Affect Nature as determined by Sound (Recorded Webinar). \n                                Zenodo.https://doi.org/10.5281/zenodo.18613979 \n                        \n                        \nGilbert, N. A., Pease, B. S., Severino, M., & Winter, H. III. (2026). \n                                Photic niche explains avian behavioral responses to solar eclipses. \n                                Ecology and Evolution, 16(2), e73090.\n                                https://doi.org/10.1002/ece3.73090\n                        \n                        \nAnalysis code repository: \n                                https://github.com/BrentPease1/eclipse-traits\n                        \n                        \nCompanion Zenodo record archiving structured analysis scripts and derived outputs: \n                               https://doi.org/10.5281/zenodo.15790879[r] \n\n                        \n                   \n\n\n        \nPublic Archiving, Privacy, and Data Transparency\n        The Eclipse Soundscapes Data Collector Role Training and Implementation Manual (2023-2024) includes a detailed explanation of how Eclipse Soundscapes audio data are publicly archived on Zenodo, how participant privacy is protected through the ES ID system, and how transparency and traceability are maintained. It also outlines the criteria for determining which recordings are included in the public archive, as well as the distinction between publicly shared archival data and datasets used for ES-led scientific analyses. Participants and data users can consult this section for full documentation of the project's open science and privacy practices.\n        \n\n                \nSeverino, M., & Winter, H. (2026). Eclipse Soundscapes Data Collector Role Training and \n                        Implementation Manual (2023–2024). Zenodo. \n                        \n                                https://doi.org/10.5281/zenodo.18623443\n        \n        \nCitations\n        \nIndividual Site Citation: APA Citation (7th edition)\n        \nWinter, H., Severino, M., & Volunteer Scientist. (2026). 2024 solar eclipse soundscapes audio data [Audio dataset, ES ID# 343]. Zenodo.{Insert DOI}\n        \n\n                Collected by volunteer scientists as part of the Eclipse Soundscapes Project.\n                This project is supported by NASA award No. 80NSSC21M0008.\n        \n        \nEclipse Community Citation\n        \nWinter, H., Severino, M., & Volunteer Scientists. 2023 and 2024 solar eclipse soundscapes audio data [Collection of audio datasets]. Eclipse Soundscapes Community, Zenodo. https://zenodo.org/communities/eclipsesoundscapes/\n        \n\n                Collected by volunteer scientists as part of the Eclipse Soundscapes Project\n                This project is supported by NASA award No. 80NSSC21M0008.\n        \n        \n ",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5281/zenodo.21135160",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [
+            {
+              "awardNumber": "80NSSC21M0008",
+              "awardTitle": "Eclipse Soundscapes: Citizen Science Project",
+              "funderIdentifier": "10.13039/100000104",
+              "funderIdentifierType": "Crossref Funder ID",
+              "funderName": "National Aeronautics and Space Administration"
+            }
+          ],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:21135160",
+              "identifierType": "oai"
+            }
+          ],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-12T13:52:39Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.5281/zenodo.18622776",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Audiovisual"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18623443",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.19471425",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683402",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18683437",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20413370",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsSupplementedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.1002/ece3.73090",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.15790879",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.18613979",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsReferencedBy",
+              "resourceTypeGeneral": "Report"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.21135159",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "2024 Total Solar Eclipse"
+            },
+            {
+              "subject": "ES Data Analysis Site"
+            }
+          ],
+          "titles": [
+            {
+              "title": "2024-04-08 Partial Solar Eclipse ESID#343"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceType": "",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-12T13:52:39Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.21135160",
+          "version": "2024.0.0",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.21135160",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "UNSW Sydney",
+                "UNSW Sydney"
+              ],
+              "contributorType": "HostingInstitution",
+              "name": "UNSW Sydney",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            }
+          ],
+          "created": "2022-03-16T02:03:57Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Sharmelly",
+              "givenName": "Rifat",
+              "name": "Sharmelly, Rifat",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [],
+          "descriptions": [
+            {
+              "description": "This study examines what capabilities are required by firms to create appropriate innovations for mass markets in emerging economies (EEs) focusing on the Indian automotive industry. Although prior research emphasizes the critical role of capabilities for innovation, the focus of these studies are on the needs of customers from developed country markets. However, EEs are often characterised by multilevel pyramid structures reflecting large income disparities and highly discerning price–performance conscious customers demanding affordable and functional products. The meagre purchasing power of mass customers implies firms attempting to serve these markets need to be driven by a frugal approach and deliberate restraint on resources. Hence, it is important to determine what should be the approach to orchestrate resources to cater to the underserved masses. The research has utilised a mixed method approach combining qualitative and quantitative methodology. The qualitative part used comprehensive empirical case studies of two emerging market firms (EMFs) and two auto MNCs coupled with a cross case analysis and validated the detailed processes of capability development for mass market innovations. The quantitative part entailed a multivariate analysis using 12 years of panel data from the Indian automotive industry to statistically validate the qualitative findings across industry population. The findings revealed the salience of linkage formation capabilities to leverage existing blocks of local resources, sharing costs and risks associated with developing products/technologies for untested mass markets with very thin profit margins. The study also observed the significance of combinative capabilities to reconfigure an established system in new ways and frugally recombine existing core technologies rather reinventing the wheel to achieve an altered price-performance package. Lastly, the study identified the significance of capability to modularize to achieve low cost level, flexibility in product development and also to serve multi-tiered market segments in EEs. The scientific and evidence – based findings from systematic case studies, cross case validation combined with statistical analysis makes a new contribution to knowledge on the capabilities required to create innovations for the masses. The results challenge the traditional view of innovation based on the assumptions of affluence and abundance of resources.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.26190/unsworks/2889",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "EN",
+          "metadataVersion": 2,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2016,
+          "published": null,
+          "publisher": "UNSW Sydney",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-03-16T05:55:57Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rightsIdentifier": "cc by-nc-nd 3.0",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc-nd/3.0/au/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "Emerging market firms (EMFs)"
+            },
+            {
+              "subject": "Emerging economies (EEs)"
+            },
+            {
+              "subject": "Indian automotive industry."
+            },
+            {
+              "subject": "Auto MNCs"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Capabilities for Mass Market Innovations in Emerging Economies"
+            }
+          ],
+          "types": {
+            "bibtex": "phdthesis",
+            "citeproc": "thesis",
+            "resourceType": "doctoral thesis",
+            "resourceTypeGeneral": "Dissertation",
+            "ris": "THES",
+            "schemaOrg": "Thesis"
+          },
+          "updated": "2026-07-12T03:02:21Z",
+          "url": "http://hdl.handle.net/1959.4/55403",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.26190/unsworks/2889",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "unsw.repo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=5&query=Sharing+Detailed+Research+Data+Is+Associated",
+      "self": "https://api.datacite.org/dois?query=Sharing+Detailed+Research+Data+Is+Associated&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 694,
+      "totalPages": 139
+    }
+  },
+  "response_hash": "3ae610d93fe7eb3adcbb708c635158a23c33471eccba9a6820dee0fd758d3ee4",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

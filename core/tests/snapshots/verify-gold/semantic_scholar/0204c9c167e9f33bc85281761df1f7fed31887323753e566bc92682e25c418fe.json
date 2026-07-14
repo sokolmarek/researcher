@@ -1,0 +1,75 @@
+{
+  "endpoint": "paper/DOI:10.1109/tpami.2018.2844175",
+  "request_key": "0204c9c167e9f33bc85281761df1f7fed31887323753e566bc92682e25c418fe",
+  "request_params": {
+    "fields": "paperId,externalIds,url,title,abstract,venue,publicationVenue,year,publicationDate,journal,authors,citationCount,referenceCount,isOpenAccess,openAccessPdf,publicationTypes"
+  },
+  "response_body": {
+    "abstract": "We present a conceptually simple, flexible, and general framework for object instance segmentation. Our approach efficiently detects objects in an image while simultaneously generating a high-quality segmentation mask for each instance. The method, called Mask R-CNN, extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. Mask R-CNN is simple to train and adds only a small overhead to Faster R-CNN, running at 5 fps. Moreover, Mask R-CNN is easy to generalize to other tasks, e.g., allowing us to estimate human poses in the same framework. We show top results in all three tracks of the COCO suite of challenges, including instance segmentation, bounding-box object detection, and person keypoint detection. Without bells and whistles, Mask R-CNN outperforms all existing, single-model entries on every task, including the COCO 2016 challenge winners. We hope our simple and effective approach will serve as a solid baseline and help ease future research in instance-level recognition. Code has been made available at: https://github.com/facebookresearch/Detectron.",
+    "authors": [
+      {
+        "authorId": "2257170899",
+        "name": "Kaiming He"
+      },
+      {
+        "authorId": "2082991",
+        "name": "Georgia Gkioxari"
+      },
+      {
+        "authorId": "2257254817",
+        "name": "Piotr Dollár"
+      },
+      {
+        "authorId": "2258055550",
+        "name": "R. Girshick"
+      }
+    ],
+    "citationCount": 718,
+    "externalIds": {
+      "CorpusId": 264031695,
+      "DOI": "10.1109/TPAMI.2018.2844175",
+      "MAG": "2806070179",
+      "PubMed": "29994331"
+    },
+    "isOpenAccess": false,
+    "journal": {
+      "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "pages": "386-397",
+      "volume": "42"
+    },
+    "openAccessPdf": {
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TPAMI.2018.2844175?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TPAMI.2018.2844175, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+      "license": null,
+      "status": "CLOSED",
+      "url": ""
+    },
+    "paperId": "3a0130cfab8192a397d79fc1c7c398470157cf48",
+    "publicationDate": "2020-02-01",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "publicationVenue": {
+      "alternate_names": [
+        "IEEE Trans Pattern Anal Mach Intell"
+      ],
+      "alternate_urls": [
+        "http://www.computer.org/portal/web/tpami",
+        "http://ieeexplore.ieee.org/servlet/opac?punumber=34"
+      ],
+      "id": "25248f80-fe99-48e5-9b8e-9baef3b8e23b",
+      "issn": "0162-8828",
+      "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "type": "journal",
+      "url": "http://www.computer.org/tpami/"
+    },
+    "referenceCount": 45,
+    "title": "Mask R-CNN",
+    "url": "https://www.semanticscholar.org/paper/3a0130cfab8192a397d79fc1c7c398470157cf48",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2020
+  },
+  "response_hash": "a20ba2c7b39d9fc6a7f3e990b1446e67f5afa11114c54828e9c7879707654742",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "semantic_scholar"
+}

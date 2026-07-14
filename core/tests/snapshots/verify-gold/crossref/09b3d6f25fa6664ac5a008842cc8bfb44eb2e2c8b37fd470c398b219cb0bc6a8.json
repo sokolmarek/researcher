@@ -1,0 +1,2483 @@
+{
+  "endpoint": "works",
+  "request_key": "09b3d6f25fa6664ac5a008842cc8bfb44eb2e2c8b37fd470c398b219cb0bc6a8",
+  "request_params": {
+    "query.bibliographic": "Deep Residual Learning for Image Recognition",
+    "rows": 5
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.22541/au.170666177.72403547/v1",
+          "URL": "https://doi.org/10.22541/au.170666177.72403547/v1",
+          "abstract": "<jats:p>1 Insects recognition is crucial for taxonomy. It helps researchers to\nprocess tremendous and various ecology data. Most studies focus on\nfine-tuning the deep learning network or altering the algorithm to\nenhance the identification accuracy, and some useful tools have been\ngenerated with these methods. 2 This study focuses on the influence of\nimage data on the recognition model. The data set source of the existing\nautomated identification tools is relatively single, and the\ncompetition-based data set was released only focus on evaluating the\nmodel at present. For the first time, this article integrates butterfly\nimage data sets from multiple sources, covered illustrated books, and\nbutterfly popular science websites. The image types include standard\nspecimen images, illustrated book scan images and camera shots. In\naddition, these images concluded not only fixed poses, but also various\nother images of butterflies in natural poses. The size of these images\nis also various. Testing data set is new data that is not belongs to the\ntraining set, which also verifies the generalizability of the model,\nindicating that in practical applications, this model can identify new\nimages. 3 We designed different data sets using the ResNet18 network to\ntrain a classifier, which achieves a validation accuracy of 86 % in the\nend of analyze. By adjusting the data sets, the accuracy changes as\nwell. This study provides a method to recognize hundreds of butterfly\nspecies and analyzes the testing progress from the point of view of\ndata. 4 It is the first to combine butterflies from multiple countries\nin the world to a single data set, with a recognition accuracy that\noutperforms previous experiments, to the best of our knowledge. We\nfurther analyze the testing results of butterfly recognition at the\nfamily and genus level.</jats:p>",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-9619-3721",
+              "affiliation": [
+                {
+                  "name": "University of the Chinese Academy of Sciences"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Xi",
+              "given": "Tianyu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Institute of Zoology, Chinese Academy of Sciences"
+                }
+              ],
+              "family": "Wang",
+              "given": "Jiangning",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Institute of Zoology Chinese Academy of Sciences"
+                }
+              ],
+              "family": "Han",
+              "given": "Yan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-4979-7618",
+              "affiliation": [
+                {
+                  "name": "Institute of Zoology Chinese Academy of Sciences"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Lin",
+              "given": "Congtian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Institute of Zoology, Chinese Academy of Sciences"
+                }
+              ],
+              "family": "Ji",
+              "given": "Liqiang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2024-01-30T19:42:55Z",
+            "timestamp": 1706643775000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                18
+              ]
+            ],
+            "date-time": "2026-05-18T11:09:52Z",
+            "timestamp": 1779102592000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                18
+              ]
+            ],
+            "date-time": "2026-05-18T12:07:42Z",
+            "timestamp": 1779106062360,
+            "version": "3.51.4"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                31
+              ]
+            ]
+          },
+          "link": [
+            {
+              "URL": "https://www.authorea.com/doi/pdf/10.22541/au.170666177.72403547/v1",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "311",
+          "posted": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                31
+              ]
+            ]
+          },
+          "prefix": "10.22541",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                31
+              ]
+            ]
+          },
+          "publisher": "Wiley",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.authorea.com/doi/full/10.22541/au.170666177.72403547/v1"
+            }
+          },
+          "score": 32.0334,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Multiple butterflies recognition based on deep residual learning and image analyze"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.3390/app12188972",
+          "ISSN": [
+            "2076-3417"
+          ],
+          "URL": "https://doi.org/10.3390/app12188972",
+          "abstract": "<jats:p>Deep Residual Networks have recently been shown to significantly improve the performance of neural networks trained on ImageNet, with results beating all previous methods on this dataset by large margins in the image classification task. However, the meaning of these impressive numbers and their implications for future research are not fully understood yet. In this survey, we will try to explain what Deep Residual Networks are, how they achieve their excellent results, and why their successful implementation in practice represents a significant advance over existing techniques. We also discuss some open questions related to residual learning as well as possible applications of Deep Residual Networks beyond ImageNet. Finally, we discuss some issues that still need to be resolved before deep residual learning can be applied on more complex problems.</jats:p>",
+          "alternative-id": [
+            "app12188972"
+          ],
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Cyberspace Institute of Advanced Technology, Guangzhou University, Guangzhou 510006, China"
+                }
+              ],
+              "family": "Shafiq",
+              "given": "Muhammad",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-7546-852X",
+              "affiliation": [
+                {
+                  "name": "Department of New Networks, Peng Cheng Laboratory, Shenzhen 518055, China"
+                },
+                {
+                  "name": "Department of Computer Science and Technology, Harbin Institute of Technology, Shenzhen 518055, China"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Gu",
+              "given": "Zhaoquan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Applied Sciences"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                9,
+                7
+              ]
+            ],
+            "date-time": "2022-09-07T20:52:03Z",
+            "timestamp": 1662583923000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                11
+              ]
+            ],
+            "date-time": "2025-10-11T00:24:56Z",
+            "timestamp": 1760142296000
+          },
+          "funder": [
+            {
+              "award": [
+                "PCL2022A03"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "PCL2022A03"
+                  ]
+                }
+              ],
+              "name": "Major Key Project of PCL"
+            },
+            {
+              "award": [
+                "61902082"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "61902082"
+                  ]
+                }
+              ],
+              "name": "Major Key Project of PCL"
+            },
+            {
+              "award": [
+                "202102010507"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202102010507"
+                  ]
+                }
+              ],
+              "name": "Major Key Project of PCL"
+            },
+            {
+              "award": [
+                "2020KCXTD007"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2020KCXTD007"
+                  ]
+                }
+              ],
+              "name": "Major Key Project of PCL"
+            },
+            {
+              "award": [
+                "202032854"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202032854"
+                  ]
+                }
+              ],
+              "name": "Major Key Project of PCL"
+            },
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "PCL2022A03"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "PCL2022A03"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            },
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "61902082"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "61902082"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            },
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "202102010507"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202102010507"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            },
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "2020KCXTD007"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2020KCXTD007"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            },
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "202032854"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202032854"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            },
+            {
+              "award": [
+                "PCL2022A03"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "PCL2022A03"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Science and technology planning project"
+            },
+            {
+              "award": [
+                "61902082"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "61902082"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Science and technology planning project"
+            },
+            {
+              "award": [
+                "202102010507"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202102010507"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Science and technology planning project"
+            },
+            {
+              "award": [
+                "2020KCXTD007"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2020KCXTD007"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Science and technology planning project"
+            },
+            {
+              "award": [
+                "202032854"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202032854"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Science and technology planning project"
+            },
+            {
+              "award": [
+                "PCL2022A03"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "PCL2022A03"
+                  ]
+                }
+              ],
+              "name": "Guangdong Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "61902082"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "61902082"
+                  ]
+                }
+              ],
+              "name": "Guangdong Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "202102010507"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202102010507"
+                  ]
+                }
+              ],
+              "name": "Guangdong Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "2020KCXTD007"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2020KCXTD007"
+                  ]
+                }
+              ],
+              "name": "Guangdong Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "202032854"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202032854"
+                  ]
+                }
+              ],
+              "name": "Guangdong Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "PCL2022A03"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "PCL2022A03"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "61902082"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "61902082"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "202102010507"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202102010507"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "2020KCXTD007"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2020KCXTD007"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Higher Education Innovation Group"
+            },
+            {
+              "award": [
+                "202032854"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "202032854"
+                  ]
+                }
+              ],
+              "name": "Guangzhou Higher Education Innovation Group"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                13
+              ]
+            ],
+            "date-time": "2026-07-13T15:13:43Z",
+            "timestamp": 1783955623086,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 916,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2076-3417"
+            }
+          ],
+          "issue": "18",
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                9,
+                7
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "18",
+            "published-online": {
+              "date-parts": [
+                [
+                  2022,
+                  9
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    9,
+                    7
+                  ]
+                ],
+                "date-time": "2022-09-07T00:00:00Z",
+                "timestamp": 1662508800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.mdpi.com/2076-3417/12/18/8972/pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "1968",
+          "page": "8972",
+          "prefix": "10.3390",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                9,
+                7
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2022,
+                9,
+                7
+              ]
+            ]
+          },
+          "publisher": "MDPI AG",
+          "reference": [
+            {
+              "DOI": "10.1109/CVPR.2016.90",
+              "doi-asserted-by": "crossref",
+              "key": "ref_1",
+              "unstructured": "He, K., Zhang, X., Ren, S., and Sun, J. (2016, January 27–30). Deep residual learning for image recognition. Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA."
+            },
+            {
+              "DOI": "10.1016/j.ijar.2017.10.030",
+              "article-title": "A general framework for maximizing likelihood under incomplete data",
+              "author": "Couso",
+              "doi-asserted-by": "crossref",
+              "first-page": "238",
+              "journal-title": "Int. J. Approx. Reason.",
+              "key": "ref_2",
+              "volume": "93",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/j.neunet.2021.05.028",
+              "article-title": "A hybrid quantum–classical neural network with deep residual learning",
+              "author": "Liang",
+              "doi-asserted-by": "crossref",
+              "first-page": "133",
+              "journal-title": "Neural Netw.",
+              "key": "ref_3",
+              "volume": "143",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/ISBI.2018.8363713",
+              "doi-asserted-by": "crossref",
+              "key": "ref_4",
+              "unstructured": "Feng, Z., Nie, D., Wang, L., and Shen, D. (2018, January 4–7). Semi-supervised learning for pelvic MR image segmentation based on multi-task residual fully convolutional networks. Proceedings of the 2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018), Washington, DC, USA."
+            },
+            {
+              "DOI": "10.1007/s10489-021-02769-6",
+              "article-title": "Few-shot contrastive learning for image classification and its application to insulator identification",
+              "author": "Li",
+              "doi-asserted-by": "crossref",
+              "first-page": "6148",
+              "journal-title": "Appl. Intell.",
+              "key": "ref_5",
+              "volume": "52",
+              "year": "2021"
+            },
+            {
+              "article-title": "Classification of Trash for Recyclability Status",
+              "author": "Yang",
+              "first-page": "3",
+              "journal-title": "CS229Project Rep.",
+              "key": "ref_6",
+              "volume": "2016",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1007/s40747-020-00199-4",
+              "article-title": "Cascaded deep learning classifiers for computer-aided diagnosis of COVID-19 and pneumonia diseases in X-ray scans",
+              "author": "Karar",
+              "doi-asserted-by": "crossref",
+              "first-page": "235",
+              "journal-title": "Complex Intell. Syst.",
+              "key": "ref_7",
+              "volume": "7",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2020.2971064",
+              "article-title": "A Hybrid CNN–LSTM Network for the Classification of Human Activities Based on Micro-Doppler Radar",
+              "author": "Zhu",
+              "doi-asserted-by": "crossref",
+              "first-page": "24713",
+              "journal-title": "IEEE Access",
+              "key": "ref_8",
+              "volume": "8",
+              "year": "2020"
+            },
+            {
+              "key": "ref_9",
+              "unstructured": "(2017). FPGA Acceleration of Convolutional Neural Networks, Nallatech."
+            },
+            {
+              "DOI": "10.33096/ilkom.v13i3.861.226-234",
+              "article-title": "Classification model of ‘Toraja’ arabica coffee fruit ripeness levels using convolution neural network approach",
+              "author": "Michael",
+              "doi-asserted-by": "crossref",
+              "first-page": "226",
+              "journal-title": "ILKOM J. Ilm.",
+              "key": "ref_10",
+              "volume": "13",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2020.3019937",
+              "article-title": "Automated System for Chromosome Karyotyping to Recognize the Most Common Numerical Abnormalities Using Deep Learning",
+              "author": "Elrefaei",
+              "doi-asserted-by": "crossref",
+              "first-page": "157727",
+              "journal-title": "IEEE Access",
+              "key": "ref_11",
+              "volume": "8",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.3390/resources8030136",
+              "doi-asserted-by": "crossref",
+              "key": "ref_12",
+              "unstructured": "Avtar, R., Tripathi, S., Aggarwal, A.K., and Kumar, P. (2019). Population–Urbanization–Energy Nexus: A Review. Resources, 8."
+            },
+            {
+              "article-title": "Visual Camera Re-Localization from RGB and RGB-D Images Using DSAC",
+              "author": "Brachmann",
+              "first-page": "5847",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+              "key": "ref_13",
+              "volume": "44",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.3390/electronics10091036",
+              "doi-asserted-by": "crossref",
+              "key": "ref_14",
+              "unstructured": "Akhand, M., Roy, S., Siddique, N., Kamal, A.S., and Shimamura, T. (2021). Facial Emotion Recognition Using Transfer Learning in the Deep CNN. Electronics, 10."
+            },
+            {
+              "DOI": "10.1049/bme2.12027",
+              "article-title": "Effects of image compression on face image manipulation detection: A case study on facial retouching",
+              "author": "Rathgeb",
+              "doi-asserted-by": "crossref",
+              "first-page": "342",
+              "journal-title": "IET Biom.",
+              "key": "ref_15",
+              "volume": "10",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/ITSC.2017.8317714",
+              "doi-asserted-by": "crossref",
+              "key": "ref_16",
+              "unstructured": "Siam, M., Elkerdawy, S., Jagersand, M., and Yogamani, S. (2017, January 16–19). Deep semantic segmentation for automated driving: Taxonomy, roadmap and challenges. Proceedings of the 2017 IEEE 20th International Conference on Intelligent Transportation Systems (ITSC), Yokohama, Japan."
+            },
+            {
+              "DOI": "10.1109/TPAMI.2021.3088914",
+              "doi-asserted-by": "crossref",
+              "key": "ref_17",
+              "unstructured": "Zhang, K., Li, Y., Zuo, W., Zhang, L., Van Gool, L., and Timofte, R. (IEEE Trans. Pattern Anal. Mach. Intell., 2021). Plug-and-Play Image Restoration with Deep Denoiser Prior, IEEE Trans. Pattern Anal. Mach. Intell., early access."
+            },
+            {
+              "key": "ref_18",
+              "unstructured": "Sangeetha, V., and Prasad, K.J.R. (2006). Deep Residual Learning for Image Recognition Kaiming. Indian J. Chem.-Sect. B Org. Med. Chem."
+            },
+            {
+              "DOI": "10.1109/ACCESS.2019.2922738",
+              "article-title": "An Adaptive and Asymmetric Residual Hash for Fast Image Retrieval",
+              "author": "Cheng",
+              "doi-asserted-by": "crossref",
+              "first-page": "78942",
+              "journal-title": "IEEE Access",
+              "key": "ref_19",
+              "volume": "7",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.2991/ijndc.k.190710.002",
+              "article-title": "“Never fry carrots without chopping” Generating Cooking Recipes from Cooking Videos Using Deep Learning Considering Previous Process",
+              "author": "Fujii",
+              "doi-asserted-by": "crossref",
+              "first-page": "107",
+              "journal-title": "Int. J. Netw. Distrib. Comput.",
+              "key": "ref_20",
+              "volume": "7",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.3390/resources8030149",
+              "doi-asserted-by": "crossref",
+              "key": "ref_21",
+              "unstructured": "Avtar, R., Sahu, N., Aggarwal, A.K., Chakraborty, S., Kharrazi, A., Yunus, A.P., Dou, J., and Kurniawan, T.A. (2019). Exploring Renewable Energy Resources Using Remote Sensing and GIS—A Review. Resources, 8."
+            },
+            {
+              "article-title": "Assessing sustainable development prospects through remote sensing: A review",
+              "author": "Avtar",
+              "first-page": "100402",
+              "journal-title": "Remote Sens. Appl. Soc. Environ.",
+              "key": "ref_22",
+              "volume": "20",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1038/s41598-020-77923-0",
+              "article-title": "A residual dense network assisted sparse view reconstruction for breast computed tomography",
+              "author": "Fu",
+              "doi-asserted-by": "crossref",
+              "first-page": "21111",
+              "journal-title": "Sci. Rep.",
+              "key": "ref_23",
+              "volume": "10",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1016/j.neunet.2021.08.026",
+              "article-title": "Deep learning based spectral CT imaging",
+              "author": "Wu",
+              "doi-asserted-by": "crossref",
+              "first-page": "342",
+              "journal-title": "Neural Netw.",
+              "key": "ref_24",
+              "volume": "144",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.3390/s21010268",
+              "doi-asserted-by": "crossref",
+              "key": "ref_25",
+              "unstructured": "Jalali, Y., Fateh, M., Rezvani, M., Abolghasemi, V., and Anisi, M.H. (2021). ResBCDU-Net: A Deep Learning Framework for Lung CT Image Segmentation. Sensors, 21."
+            },
+            {
+              "DOI": "10.30534/ijeter/2020/113872020",
+              "article-title": "Lung CT Image Recognition using Deep Learning Techniques to Detect Lung Cancer",
+              "author": "Chalasani",
+              "doi-asserted-by": "crossref",
+              "first-page": "3575",
+              "journal-title": "Int. J. Emerg. Trends Eng. Res.",
+              "key": "ref_26",
+              "volume": "8",
+              "year": "2020"
+            },
+            {
+              "article-title": "LiteDepthwiseNet: A Lightweight Network for Hyperspectral Image Classification",
+              "author": "Cui",
+              "first-page": "1",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_27",
+              "volume": "60",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/ACSOS-C51401.2020.00024",
+              "doi-asserted-by": "crossref",
+              "key": "ref_28",
+              "unstructured": "Jafar, A., and Myungho, L. (2020, January 17–21). Hyperparameter Optimization for Deep Residual Learning in Image Classification. Proceedings of the 2020 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Washington, DC, USA."
+            },
+            {
+              "DOI": "10.1109/TASLP.2016.2602884",
+              "article-title": "Very Deep Convolutional Neural Networks for Noise Robust Speech Recognition",
+              "author": "Qian",
+              "doi-asserted-by": "crossref",
+              "first-page": "2263",
+              "journal-title": "IEEE/ACM Trans. Audio Speech Lang. Process.",
+              "key": "ref_29",
+              "volume": "24",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/TIP.2018.2815084",
+              "article-title": "Training Very Deep CNNs for General Non-Blind Deconvolution",
+              "author": "Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "2897",
+              "journal-title": "IEEE Trans. Image Process.",
+              "key": "ref_30",
+              "volume": "27",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.298",
+              "doi-asserted-by": "crossref",
+              "key": "ref_31",
+              "unstructured": "Tai, Y., Yang, J., and Liu, X. (2017, January 21–26). Image super-resolution via deep recursive residual network. Proceedings of the 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, USA."
+            },
+            {
+              "DOI": "10.1109/TIFS.2017.2788002",
+              "article-title": "Matching Software-Generated Sketches to Face Photographs With a Very Deep CNN, Morphed Faces, and Transfer Learning",
+              "author": "Galea",
+              "doi-asserted-by": "crossref",
+              "first-page": "1421",
+              "journal-title": "IEEE Trans. Inf. Forensics Secur.",
+              "key": "ref_32",
+              "volume": "13",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/COMPSAC.2018.10220",
+              "doi-asserted-by": "crossref",
+              "key": "ref_33",
+              "unstructured": "Moriya, S., and Shibata, C. (2018, January 23–27). Transfer Learning Method for Very Deep CNN for Text Classification and Methods for its Evaluation. Proceedings of the 2018 IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC), Tokyo, Japan."
+            },
+            {
+              "DOI": "10.1109/ICDAR.2017.149",
+              "doi-asserted-by": "crossref",
+              "key": "ref_34",
+              "unstructured": "Afzal, M.Z., Kolsch, A., Ahmed, S., and Liwicki, M. (2017, January 9–15). Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification. Proceedings of the 2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR), Kyoto, Japan."
+            },
+            {
+              "DOI": "10.7717/peerj-cs.621",
+              "article-title": "A comprehensive review of deep learning-based single image super-resolution",
+              "author": "Bashir",
+              "doi-asserted-by": "crossref",
+              "first-page": "e621",
+              "journal-title": "PeerJ Comput. Sci.",
+              "key": "ref_35",
+              "volume": "7",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2020.2995330",
+              "article-title": "A Power-Efficient Optimizing Framework FPGA Accelerator Based on Winograd for YOLO",
+              "author": "Bao",
+              "doi-asserted-by": "crossref",
+              "first-page": "94307",
+              "journal-title": "IEEE Access",
+              "key": "ref_36",
+              "volume": "8",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/ICAIIC.2019.8669045",
+              "doi-asserted-by": "crossref",
+              "key": "ref_37",
+              "unstructured": "Lim, H.K., Kim, J.B., Heo, J.S., Kim, K., Hong, Y.G., and Han, Y.H. (2019, January 11–13). Packet-based network traffic classification using deep learning. Proceedings of the 2019 International Conference on Artificial Intelligence in Information and Communication (ICAIIC), Okinawa, Japan."
+            },
+            {
+              "key": "ref_38",
+              "unstructured": "(2022, September 02). Available online: https://cyberleninka.ru/article/n/reshenie-zadach-vychislitelnoy-gidrodinamiki-s-primeneniem-tehnologii-nvidia-cuda-articlehead-tehnologiya-nvidia-cuda-v-zadachah/viewer."
+            },
+            {
+              "key": "ref_39",
+              "unstructured": "NVIDIA (2015). Cuda C Best Practices Guide, Nvidia Corp."
+            },
+            {
+              "DOI": "10.3390/s21206933",
+              "doi-asserted-by": "crossref",
+              "key": "ref_40",
+              "unstructured": "Yasin, S., Iqbal, N., Ali, T., Draz, U., Alqahtani, A., Irfan, M., Rehman, A., Glowacz, A., Alqhtani, S., and Proniewska, K. (2021). Severity Grading and Early Retinopathy Lesion Detection through Hybrid Inception-ResNet Architecture. Sensors, 21."
+            },
+            {
+              "DOI": "10.1007/s11227-019-02835-4",
+              "article-title": "VBSF: A new storage format for SIMD sparse matrix–vector multiplication on modern processors",
+              "author": "Li",
+              "doi-asserted-by": "crossref",
+              "first-page": "2063",
+              "journal-title": "J. Supercomput.",
+              "key": "ref_41",
+              "volume": "76",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/TPDS.2019.2947511",
+              "article-title": "Quantum Supremacy Circuit Simulation on Sunway TaihuLight",
+              "author": "Li",
+              "doi-asserted-by": "crossref",
+              "first-page": "805",
+              "journal-title": "IEEE Trans. Parallel Distrib. Syst.",
+              "key": "ref_42",
+              "volume": "31",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/MIE.2017.2694578",
+              "article-title": "Trailblazers in Electromechanical Computing [Historical]",
+              "author": "Guarnieri",
+              "doi-asserted-by": "crossref",
+              "first-page": "58",
+              "journal-title": "IEEE Ind. Electron. Mag.",
+              "key": "ref_43",
+              "volume": "11",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/AIEA53260.2021.00077",
+              "doi-asserted-by": "crossref",
+              "key": "ref_44",
+              "unstructured": "Li, Y., and Chen, H. (2021, January 14–16). Image recognition based on deep residual shrinkage Network. Proceedings of the 2021 International Conference on Artificial Intelligence and Electromechanical Automation (AIEA), Guangzhou, China."
+            },
+            {
+              "DOI": "10.2139/ssrn.4013383",
+              "doi-asserted-by": "crossref",
+              "key": "ref_45",
+              "unstructured": "Yang, Z., Wu, B., Wang, Z., Li, Y., and Feng, H. (SSRN Electron. J., 2022). Image Recognition Based on an Improved Deep Residual Shrinkage Network, SSRN Electron. J., in press."
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.195",
+              "doi-asserted-by": "crossref",
+              "key": "ref_46",
+              "unstructured": "Chollet, F. (2017, January 21–26). Xception: Deep learning with depthwise separable convolutions. Proceedings of the 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, USA."
+            },
+            {
+              "DOI": "10.1109/TITS.2020.3025875",
+              "article-title": "Anomaly Detection in Automated Vehicles Using Multistage Attention-Based Convolutional Neural Network",
+              "author": "Javed",
+              "doi-asserted-by": "crossref",
+              "first-page": "4291",
+              "journal-title": "IEEE Trans. Intell. Transp. Syst.",
+              "key": "ref_47",
+              "volume": "22",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/TIP.2019.2937724",
+              "article-title": "EleAtt-RNN: Adding Attentiveness to Neurons in Recurrent Neural Networks",
+              "author": "Zhang",
+              "doi-asserted-by": "crossref",
+              "first-page": "1061",
+              "journal-title": "IEEE Trans. Image Process.",
+              "key": "ref_48",
+              "volume": "29",
+              "year": "2019"
+            },
+            {
+              "key": "ref_49",
+              "unstructured": "Krizhevsky, A., Nair, V., and Hinton, G. (2022, August 08). CIFAR-10 and CIFAR-100 Datasets. Available online: https://www.cs.toronto.edu/~kriz/cifar.html."
+            },
+            {
+              "DOI": "10.1016/j.csbj.2021.02.016",
+              "article-title": "Deep learning for COVID-19 chest CT (computed tomography) image analysis: A lesson from lung cancer",
+              "author": "Jiang",
+              "doi-asserted-by": "crossref",
+              "first-page": "1391",
+              "journal-title": "Comput. Struct. Biotechnol. J.",
+              "key": "ref_50",
+              "volume": "19",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2021.3110842",
+              "article-title": "Remote Sensing Data Augmentation through Adversarial Training",
+              "author": "Lv",
+              "doi-asserted-by": "crossref",
+              "first-page": "9318",
+              "journal-title": "IEEE J. Sel. Top. Appl. Earth Obs. Remote Sens.",
+              "key": "ref_51",
+              "volume": "14",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1016/j.energy.2020.118617",
+              "article-title": "Efficient clustering for aggregate loads: An unsupervised pretraining based method",
+              "author": "Ruhang",
+              "doi-asserted-by": "crossref",
+              "first-page": "118617",
+              "journal-title": "Energy",
+              "key": "ref_52",
+              "volume": "210",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/ICASSP40776.2020.9054548",
+              "doi-asserted-by": "crossref",
+              "key": "ref_53",
+              "unstructured": "Riviere, M., Joulin, A., Mazare, P.-E., and Dupoux, E. (2020, January 4–8). Unsupervised Pretraining Transfers Well Across Languages. Proceedings of the ICASSP 2020—2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain."
+            },
+            {
+              "DOI": "10.1109/ACCESS.2020.2982538",
+              "article-title": "A Novel Hybrid Deep Learning Model for Sentiment Classification",
+              "author": "Salur",
+              "doi-asserted-by": "crossref",
+              "first-page": "58080",
+              "journal-title": "IEEE Access",
+              "key": "ref_54",
+              "volume": "8",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1155/2020/8863617",
+              "article-title": "Android Malware Detection Based on a Hybrid Deep Learning Model",
+              "author": "Lu",
+              "doi-asserted-by": "crossref",
+              "first-page": "8863617",
+              "journal-title": "Secur. Commun. Netw.",
+              "key": "ref_55",
+              "volume": "2020",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1007/s11235-020-00733-2",
+              "article-title": "A comprehensive survey of AI-enabled phishing attacks detection techniques",
+              "author": "Basit",
+              "doi-asserted-by": "crossref",
+              "first-page": "139",
+              "journal-title": "Telecommun. Syst.",
+              "key": "ref_56",
+              "volume": "76",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2020.3044416",
+              "article-title": "FNA++: Fast Network Adaptation via Parameter Remapping and Architecture Search",
+              "author": "Fang",
+              "doi-asserted-by": "crossref",
+              "first-page": "2990",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+              "key": "ref_57",
+              "volume": "43",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/TNNLS.2020.2978386",
+              "article-title": "A Comprehensive Survey on Graph Neural Networks",
+              "author": "Wu",
+              "doi-asserted-by": "crossref",
+              "first-page": "4",
+              "journal-title": "IEEE Trans. Neural Netw. Learn. Syst.",
+              "key": "ref_58",
+              "volume": "32",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46493-0_39",
+              "doi-asserted-by": "crossref",
+              "key": "ref_59",
+              "unstructured": "Huang, G., Sun, Y., Liu, Z., Sedra, D., and Weinberger, K.Q. (2016). Deep networks with stochastic depth. Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics), Springer."
+            },
+            {
+              "DOI": "10.1109/APSIPA.2016.7820692",
+              "doi-asserted-by": "crossref",
+              "key": "ref_60",
+              "unstructured": "Chen, D., Zhang, W., Xu, X., and Xing, X. (2016, January 13–16). Deep networks with stochastic depth for acoustic modelling. Proceedings of the 2016 Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA), Jeju, Korea."
+            },
+            {
+              "DOI": "10.1007/978-1-4842-6168-2",
+              "doi-asserted-by": "crossref",
+              "key": "ref_61",
+              "unstructured": "Koonce, B. (2021). SqueezeNet. Convolutional Neural Networks with Swift for Tensorflow, Apress."
+            },
+            {
+              "DOI": "10.1007/978-3-030-81847-0_8",
+              "doi-asserted-by": "crossref",
+              "key": "ref_62",
+              "unstructured": "Bobenko, A.I., Lutz, C.O.R., Pottmann, H., and Techter, J. (2021). Checkerboard Incircular Nets. SpringerBriefs in Mathematics, Springer."
+            },
+            {
+              "DOI": "10.1183/13993003.00775-2020",
+              "article-title": "A fully automatic deep learning system for COVID-19 diagnostic and prognostic analysis",
+              "author": "Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "2000775",
+              "journal-title": "Eur. Respir. J.",
+              "key": "ref_63",
+              "volume": "56",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.15353/vsnl.v3i1.166",
+              "doi-asserted-by": "crossref",
+              "key": "ref_64",
+              "unstructured": "Kumar, D., Taylor, G.W., and Wong, A. (2017). Opening the Black Box of Financial AI with CLEAR-Trade: A CLass-Enhanced Attentive Response Approach for Explaining and Visualizing Deep Learning-Driven Stock Market Prediction. J. Comput. Vis. Imaging Syst., 3."
+            },
+            {
+              "DOI": "10.1016/j.compag.2017.08.005",
+              "article-title": "Pest identification via deep residual learning in complex background",
+              "author": "Cheng",
+              "doi-asserted-by": "crossref",
+              "first-page": "351",
+              "journal-title": "Comput. Electron. Agric.",
+              "key": "ref_65",
+              "volume": "141",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.2514/6.2019-0697",
+              "doi-asserted-by": "crossref",
+              "key": "ref_66",
+              "unstructured": "He, S., Jonsson, E., Mader, C.A., and Martins, J.R.R.A. (2019, January 7–11). Aerodynamic Shape Optimization with Time Spectral Flutter Adjoint. Proceedings of the AIAA Scitech 2019 Forum, San Diego, CA, USA."
+            },
+            {
+              "DOI": "10.1007/s11042-017-4440-4",
+              "article-title": "Deep residual learning for image steganalysis",
+              "author": "Wu",
+              "doi-asserted-by": "crossref",
+              "first-page": "10437",
+              "journal-title": "Multimed. Tools Appl.",
+              "key": "ref_67",
+              "volume": "77",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2021.3089698",
+              "article-title": "Bearing Fault Detection Using Scalogram and Switchable Normalization-Based CNN (SN-CNN)",
+              "author": "Neupane",
+              "doi-asserted-by": "crossref",
+              "first-page": "88151",
+              "journal-title": "IEEE Access",
+              "key": "ref_68",
+              "volume": "9",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.3390/cancers14030606",
+              "doi-asserted-by": "crossref",
+              "key": "ref_69",
+              "unstructured": "Allegra, A., Tonacci, A., Sciaccotta, R., Genovese, S., Musolino, C., Pioggia, G., and Gangemi, S. (2022). Machine Learning and Deep Learning Applications in Multiple Myeloma Diagnosis, Prognosis, and Treatment Selection. Cancers, 14."
+            },
+            {
+              "DOI": "10.1093/mnras/stw2672",
+              "article-title": "Star–galaxy classification using deep convolutional neural networks",
+              "author": "Kim",
+              "doi-asserted-by": "crossref",
+              "first-page": "4463",
+              "journal-title": "Mon. Not. R. Astron. Soc.",
+              "key": "ref_70",
+              "volume": "464",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1186/s40537-017-0084-5",
+              "article-title": "Large-scale distributed L-BFGS",
+              "author": "Najafabadi",
+              "doi-asserted-by": "crossref",
+              "first-page": "22",
+              "journal-title": "J. Big Data",
+              "key": "ref_71",
+              "volume": "4",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1017/S1351324916000334",
+              "article-title": "Word2Vec",
+              "author": "Church",
+              "doi-asserted-by": "crossref",
+              "first-page": "155",
+              "journal-title": "Nat. Lang. Eng.",
+              "key": "ref_72",
+              "volume": "23",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1016/j.scs.2020.102177",
+              "article-title": "Data mining and machine learning methods for sustainable smart cities traffic classification: A survey",
+              "author": "Shafiq",
+              "doi-asserted-by": "crossref",
+              "first-page": "102177",
+              "journal-title": "Sustain. Cities Soc.",
+              "key": "ref_73",
+              "volume": "60",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1016/j.cose.2020.101863",
+              "article-title": "IoT malicious traffic identification using wrapper-based feature selection mechanisms",
+              "author": "Shafiq",
+              "doi-asserted-by": "crossref",
+              "first-page": "101863",
+              "journal-title": "Comput. Secur.",
+              "key": "ref_74",
+              "volume": "94",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/JIOT.2020.3002255",
+              "article-title": "CorrAUC: A Malicious Bot-IoT Traffic Detection Method in IoT Network Using Machine-Learning Techniques",
+              "author": "Shafiq",
+              "doi-asserted-by": "crossref",
+              "first-page": "3242",
+              "journal-title": "IEEE Internet Things J.",
+              "key": "ref_75",
+              "volume": "8",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1302/0301-620X.101B7.BJJ-2018-1420.R1",
+              "article-title": "A prospective randomized trial examining the use of a closed suction drain shows no influence on strength or function in primary total knee arthroplasty",
+              "author": "Jennings",
+              "doi-asserted-by": "crossref",
+              "first-page": "84",
+              "journal-title": "Bone Jt. J.",
+              "key": "ref_76",
+              "volume": "101 B",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2019.2937139",
+              "article-title": "Adaptive Weight Decay for Deep Neural Networks",
+              "author": "Nakamura",
+              "doi-asserted-by": "crossref",
+              "first-page": "118857",
+              "journal-title": "IEEE Access",
+              "key": "ref_77",
+              "volume": "7",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1155/2021/6694281",
+              "article-title": "Blockchain-Based Automated System for Identification and Storage of Networks",
+              "author": "Prashar",
+              "doi-asserted-by": "crossref",
+              "first-page": "6694281",
+              "journal-title": "Secur. Commun. Netw.",
+              "key": "ref_78",
+              "volume": "2021",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2017.10.013",
+              "article-title": "Recent advances in convolutional neural networks",
+              "author": "Gu",
+              "doi-asserted-by": "crossref",
+              "first-page": "354",
+              "journal-title": "Pattern Recognit.",
+              "key": "ref_79",
+              "volume": "77",
+              "year": "2018"
+            },
+            {
+              "key": "ref_80",
+              "unstructured": "Buolamwini, J., and Gebru, T. (2018, January 23–24). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. Proceedings of the Conference on Fairness, Accountability and Transparency, PMLR, New York, NY, USA."
+            },
+            {
+              "DOI": "10.5220/0010877400003116",
+              "doi-asserted-by": "crossref",
+              "key": "ref_81",
+              "unstructured": "Datta, A., and Swamidass, S. (2022, January 3–5). Fair-Net: A Network Architecture for Reducing Performance Disparity between Identifiable Sub-populations. Proceedings of the 14th International Conference on Agents and Artificial Intelligence, Online."
+            },
+            {
+              "DOI": "10.1145/3306618.3314287",
+              "doi-asserted-by": "crossref",
+              "key": "ref_82",
+              "unstructured": "Kim, M.P., Ghorbani, A., and Zou, J. (2019, January 27–28). Multiaccuracy: Black-box post-processing for fairness in classification. Proceedings of the AIES 2019—2019 AAAI/ACM Conference on AI, Ethics, and Society, Honolulu, HI, USA."
+            },
+            {
+              "key": "ref_83",
+              "unstructured": "Guo, C., Pleiss, G., Sun, Y., and Weinberger, K.Q. (2017, January 6–11). On calibration of modern neural networks. Proceedings of the 34th International Conference on Machine Learning, ICML 2017, Sydney, Australia."
+            },
+            {
+              "DOI": "10.1109/IJCNN52387.2021.9534411",
+              "doi-asserted-by": "crossref",
+              "key": "ref_84",
+              "unstructured": "Datta, A., Flynn, N.R., and Swamidass, S.J. (2021, January 18–22). Cal-Net: Jointly Learning Classification and Calibration on Imbalanced Binary Classification Tasks. Proceedings of the 2021 International Joint Conference on Neural Networks (IJCNN), Shenzhen, China."
+            },
+            {
+              "DOI": "10.1016/j.patcog.2018.03.005",
+              "article-title": "Adaptive Batch Normalization for practical domain adaptation",
+              "author": "Li",
+              "doi-asserted-by": "crossref",
+              "first-page": "109",
+              "journal-title": "Pattern Recognit.",
+              "key": "ref_85",
+              "volume": "80",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1007/s12559-021-09848-3",
+              "doi-asserted-by": "crossref",
+              "key": "ref_86",
+              "unstructured": "Singh, A.K., Kumar, A., Mahmud, M., Kaiser, M.S., and Kishore, A. (2021). COVID-19 Infection Detection from Chest X-Ray Images Using Hybrid Social Group Optimization and Support Vector Classifier. Cogn. Comput."
+            },
+            {
+              "key": "ref_87",
+              "unstructured": "Sik-Ho, T. (Medium Note, 2018). Review: AlexNet, CaffeNet—Winner of ILSVRC 2012 (Image Classification), Medium Note."
+            },
+            {
+              "DOI": "10.1007/s42452-021-04485-9",
+              "article-title": "Classification of lymphocytes, monocytes, eosinophils, and neutrophils on white blood cells using hybrid Alexnet-GoogleNet-SVM",
+              "author": "Tuncer",
+              "doi-asserted-by": "crossref",
+              "first-page": "503",
+              "journal-title": "SN Appl. Sci.",
+              "key": "ref_88",
+              "volume": "3",
+              "year": "2021"
+            },
+            {
+              "article-title": "Multi-level residual network VGGNet for fish species classification",
+              "author": "Prasetyo",
+              "first-page": "5286",
+              "journal-title": "J. King Saud Univ.-Comput. Inf. Sci.",
+              "key": "ref_89",
+              "volume": "34",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1109/SLT48900.2021.9383531",
+              "doi-asserted-by": "crossref",
+              "key": "ref_90",
+              "unstructured": "Zhou, T., Zhao, Y., and Wu, J. (2021, January 19–22). ResNeXt and Res2Net Structures for Speaker Verification. Proceedings of the 2021 IEEE Spoken Language Technology Workshop (SLT), Shenzhen, China."
+            },
+            {
+              "DOI": "10.1109/MNET.2011.5772055",
+              "article-title": "Experiences of Internet traffic monitoring with tstat",
+              "author": "Finamore",
+              "doi-asserted-by": "crossref",
+              "first-page": "8",
+              "journal-title": "IEEE Netw.",
+              "key": "ref_91",
+              "volume": "25",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1016/j.jnca.2017.11.007",
+              "article-title": "Multi-classification approaches for classifying mobile app traffic",
+              "author": "Aceto",
+              "doi-asserted-by": "crossref",
+              "first-page": "131",
+              "journal-title": "J. Netw. Comput. Appl.",
+              "key": "ref_92",
+              "volume": "103",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1145/1269899.1254906",
+              "doi-asserted-by": "crossref",
+              "key": "ref_93",
+              "unstructured": "Feng, H., Misra, V., and Rubenstein, D. (2007). The CIFAR-10 dataset. Electr. Eng., 35."
+            },
+            {
+              "key": "ref_94",
+              "unstructured": "Stanford Vision Lab. (2016). ImageNet Dataset, Stanford Vision Lab, Stanford University."
+            }
+          ],
+          "reference-count": 94,
+          "references-count": 94,
+          "resource": {
+            "primary": {
+              "URL": "https://www.mdpi.com/2076-3417/12/18/8972"
+            }
+          },
+          "score": 32.004173,
+          "short-container-title": [
+            "Applied Sciences"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Deep Residual Learning for Image Recognition: A Survey"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+          "volume": "12"
+        },
+        {
+          "DOI": "10.1109/cvpr.2016.90",
+          "URL": "https://doi.org/10.1109/cvpr.2016.90",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "He",
+              "given": "Kaiming",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Xiangyu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Ren",
+              "given": "Shaoqing",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Sun",
+              "given": "Jian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2016,
+                12,
+                13
+              ]
+            ],
+            "date-time": "2016-12-13T01:38:49Z",
+            "timestamp": 1481593129000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                13
+              ]
+            ],
+            "date-time": "2025-06-13T14:31:40Z",
+            "timestamp": 1749825100000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2016,
+                  6,
+                  30
+                ]
+              ]
+            },
+            "location": "Las Vegas, NV, USA",
+            "name": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "start": {
+              "date-parts": [
+                [
+                  2016,
+                  6,
+                  27
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T09:36:06Z",
+            "timestamp": 1784021766764,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 168815,
+          "issued": {
+            "date-parts": [
+              [
+                2016,
+                6
+              ]
+            ]
+          },
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/7776647/7780329/07780459.pdf?arnumber=7780459",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "770-778",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                6
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2016,
+                6
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "article-title": "Overfeat: Integrated recognition, localization and detection using convolutional networks",
+              "author": "sermanet",
+              "journal-title": "ICLRE",
+              "key": "ref39",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1007/3-540-49430-8_11",
+              "doi-asserted-by": "publisher",
+              "key": "ref38"
+            },
+            {
+              "DOI": "10.1017/CBO9780511812651",
+              "doi-asserted-by": "publisher",
+              "key": "ref33"
+            },
+            {
+              "article-title": "Faster R-CNN: Towards real-time object detection with region proposal networks",
+              "author": "ren",
+              "journal-title": "NIPS",
+              "key": "ref32",
+              "year": "2015"
+            },
+            {
+              "article-title": "Deep learning made easier by linear transformations in perceptrons",
+              "author": "raiko",
+              "journal-title": "AISTATS",
+              "key": "ref31",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1109/CVPR.2007.383266",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "article-title": "Accelerated gradient descent by factor-centering decomposition",
+              "author": "schraudolph",
+              "journal-title": "Technical Report",
+              "key": "ref37",
+              "year": "1998"
+            },
+            {
+              "author": "saxe",
+              "journal-title": "Exact solutions to the nonlinear dynamics of learning in deep linear neural networks",
+              "key": "ref36",
+              "year": "2013"
+            },
+            {
+              "author": "russakovsky",
+              "journal-title": "Imagenet Large Scale Visual Recognition Challenge",
+              "key": "ref35",
+              "year": "2014"
+            },
+            {
+              "article-title": "Fitnets: Hints for thin deep nets",
+              "author": "romero",
+              "journal-title": "ICLRE",
+              "key": "ref34",
+              "year": "2015"
+            },
+            {
+              "article-title": "On the number of linear regions of deep neural networks",
+              "author": "montúfar",
+              "journal-title": "NIPS",
+              "key": "ref28",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1109/CVPR.2015.7298965",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "article-title": "Rectified linear units improve restricted boltzmann machines",
+              "author": "nair",
+              "journal-title": "ICML",
+              "key": "ref29",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1093/oso/9780198538493.001.0001",
+              "author": "bishop",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Neural Networks for Pattern Recognition",
+              "key": "ref2",
+              "year": "1995"
+            },
+            {
+              "DOI": "10.1109/72.279181",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "article-title": "Learning multiple layers of features from tiny images",
+              "author": "krizhevsky",
+              "journal-title": "Tech Report",
+              "key": "ref20",
+              "year": "2009"
+            },
+            {
+              "DOI": "10.1162/neco.1989.1.4.541",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "article-title": "Imagenet classification with deep convolutional neural networks",
+              "author": "krizhevsky",
+              "journal-title": "NIPS",
+              "key": "ref21",
+              "year": "2012"
+            },
+            {
+              "author": "lee",
+              "journal-title": "Deeply-supervised nets",
+              "key": "ref24",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1007/3-540-49430-8_2",
+              "article-title": "Efficient backprop",
+              "author": "lecun",
+              "doi-asserted-by": "crossref",
+              "first-page": "9",
+              "journal-title": "Neural Networks Tricks of the Trade",
+              "key": "ref23",
+              "year": "1998"
+            },
+            {
+              "article-title": "Microsoft COCO: Common objects in context",
+              "author": "lin",
+              "journal-title": "ECCV",
+              "key": "ref26",
+              "year": "2014"
+            },
+            {
+              "author": "lin",
+              "journal-title": "Network in Network",
+              "key": "ref25",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1109/CVPR.2015.7299173",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "article-title": "Spatial pyramid pooling in deep convolutional networks for visual recognition",
+              "author": "he",
+              "journal-title": "ECCV",
+              "key": "ref11",
+              "year": "2014"
+            },
+            {
+              "article-title": "Very deep convolutional networks for large-scale image recognition",
+              "author": "simonyan",
+              "journal-title": "ICLRE",
+              "key": "ref40",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/ICCV.2015.123",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "article-title": "Improving neural networks by preventing coadaptation of feature detectors",
+              "author": "hinton",
+              "key": "ref13",
+              "year": "2012"
+            },
+            {
+              "author": "hochreiter",
+              "journal-title": "Untersuchungen zu dynamischen neuronalen Netzen",
+              "key": "ref14",
+              "year": "1991"
+            },
+            {
+              "DOI": "10.1162/neco.1997.9.8.1735",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "article-title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+              "author": "ioffe",
+              "journal-title": "ICML",
+              "key": "ref16",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2010.57",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2011.235",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "author": "jia",
+              "journal-title": "Caffe Convolutional Architecture for Fast Feature Embedding",
+              "key": "ref19",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.5244/C.25.76",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1137/1.9780898719505",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "DOI": "10.1109/ICCV.2015.169",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.1007/s11263-009-0275-4",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "article-title": "Understanding the difficulty of training deep feedforward neural networks",
+              "author": "glorot",
+              "journal-title": "AISTATS",
+              "key": "ref8",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1109/CVPR.2014.81",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "article-title": "Visualizing and understanding convolutional neural networks",
+              "author": "zeiler",
+              "journal-title": "ECCV",
+              "key": "ref49",
+              "year": "2014"
+            },
+            {
+              "author": "goodfellow",
+              "journal-title": "Maxout Networks",
+              "key": "ref9",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1007/978-3-642-42054-2_55",
+              "doi-asserted-by": "publisher",
+              "key": "ref46"
+            },
+            {
+              "DOI": "10.1145/1179352.1142005",
+              "doi-asserted-by": "publisher",
+              "key": "ref45"
+            },
+            {
+              "DOI": "10.1007/978-1-4757-3121-7",
+              "doi-asserted-by": "publisher",
+              "key": "ref48"
+            },
+            {
+              "author": "vedaldi",
+              "journal-title": "Vlfeat An Open and Portable Library of Computer Vision Algorithms",
+              "key": "ref47",
+              "year": "2008"
+            },
+            {
+              "article-title": "Training very deep networks",
+              "author": "srivastava",
+              "journal-title": "1507 06228",
+              "key": "ref42",
+              "year": "2015"
+            },
+            {
+              "author": "srivastava",
+              "journal-title": "Highway networks",
+              "key": "ref41",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/34.56188",
+              "doi-asserted-by": "publisher",
+              "key": "ref44"
+            },
+            {
+              "DOI": "10.1109/CVPR.2015.7298594",
+              "doi-asserted-by": "publisher",
+              "key": "ref43"
+            }
+          ],
+          "reference-count": 49,
+          "references-count": 49,
+          "resource": {
+            "primary": {
+              "URL": "http://ieeexplore.ieee.org/document/7780459/"
+            }
+          },
+          "score": 31.935455,
+          "source": "Crossref",
+          "title": [
+            "Deep Residual Learning for Image Recognition"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.5220/0011270400003277",
+          "URL": "https://doi.org/10.5220/0011270400003277",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Faculty of Computing, Bahir Dar Institute of Technology, Bahir Dar, Ethiopia, --- Select a Country ---"
+                }
+              ],
+              "family": "Mengiste",
+              "given": "Tadele",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Faculty of Computing, Bahir Dar Institute of Technology, Bahir Dar, Ethiopia, --- Select a Country ---"
+                }
+              ],
+              "family": "Belay",
+              "given": "Birhanu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Faculty of Computing, Bahir Dar Institute of Technology, Bahir Dar, Ethiopia, --- Select a Country ---"
+                }
+              ],
+              "family": "Tilahun",
+              "given": "Bezawork",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Faculty of Computing, Bahir Dar Institute of Technology, Bahir Dar, Ethiopia, --- Select a Country ---"
+                }
+              ],
+              "family": "Worku",
+              "given": "Tsiyon",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Faculty of Computing, Bahir Dar Institute of Technology, Bahir Dar, Ethiopia, --- Select a Country ---"
+                },
+                {
+                  "name": "ICT4D Research Center, Bahir Dar Institute of Technology, Bahir Dar, Ethiopia, --- Select a Country ---"
+                }
+              ],
+              "family": "Tegegne",
+              "given": "Tesfa",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Proceedings of the 3rd International Conference on Deep Learning Theory and Applications"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2022-07-14T20:19:02Z",
+            "timestamp": 1657829942000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2022-07-14T20:19:12Z",
+            "timestamp": 1657829952000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2022,
+                  7,
+                  14
+                ]
+              ]
+            },
+            "location": "Lisbon, Portugal",
+            "name": "3rd International Conference on Deep Learning Theory and Applications",
+            "start": {
+              "date-parts": [
+                [
+                  2022,
+                  7,
+                  12
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2024-09-06T03:03:41Z",
+            "timestamp": 1725591821340
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "member": "3171",
+          "original-title": [
+            "RRConvNet: Recursive-residual Network for Real-life Character Image Recognition"
+          ],
+          "page": "110-116",
+          "prefix": "10.5220",
+          "published": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "publisher": "SCITEPRESS - Science and Technology Publications",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0011270400003277"
+            }
+          },
+          "score": 31.120953,
+          "source": "Crossref",
+          "subtitle": [
+            ""
+          ],
+          "title": [
+            "RRConvNet: Recursive-residual Network for Real-life Character Image Recognition"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.1109/cvidl58838.2023.10167244",
+          "URL": "https://doi.org/10.1109/cvidl58838.2023.10167244",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "City University of Macau,Faculty of Data Science,Taipa,Macau,China"
+                }
+              ],
+              "family": "Lu",
+              "given": "Wei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "City University of Macau,Faculty of Data Science,Taipa,Macau,China"
+                }
+              ],
+              "family": "Liu",
+              "given": "Wenjian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2023 4th International Conference on Computer Vision, Image and Deep Learning (CVIDL)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                10
+              ]
+            ],
+            "date-time": "2023-07-10T18:02:20Z",
+            "timestamp": 1689012140000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2023-08-01T17:49:49Z",
+            "timestamp": 1690912189000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2023,
+                  5,
+                  14
+                ]
+              ]
+            },
+            "location": "Zhuhai, China",
+            "name": "2023 4th International Conference on Computer Vision, Image and Deep Learning (CVIDL)",
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  5,
+                  12
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                10
+              ]
+            ],
+            "date-time": "2025-04-10T08:34:43Z",
+            "timestamp": 1744274083373
+          },
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                12
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    5,
+                    12
+                  ]
+                ],
+                "date-time": "2023-05-12T00:00:00Z",
+                "timestamp": 1683849600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    5,
+                    12
+                  ]
+                ],
+                "date-time": "2023-05-12T00:00:00Z",
+                "timestamp": 1683849600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/10164835/10164844/10167244.pdf?arnumber=10167244",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "300-304",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                12
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                12
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1109/WACV.2016.7477715",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.3390/app13031512",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1109/IVWorkshops54471.2021.9669234",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1109/JBHI.2016.2532354",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.14569/IJACSA.2020.0110173",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "article-title": "Drowsiness detection using electroencephalography signals: A deep learning based model",
+              "author": "guarda",
+              "first-page": "16",
+              "journal-title": "Proceedings of the Probabilistic Safety Assessment and Management PSAM",
+              "key": "ref6",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1007/s11063-022-10858-x",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1007/s00521-020-05467-5",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1007/s00521-020-05467-5",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.3390/electronics11142169",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "DOI": "10.1109/IICAIET49801.2020.9257867",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            }
+          ],
+          "reference-count": 11,
+          "references-count": 11,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/10167244/"
+            }
+          },
+          "score": 29.962337,
+          "source": "Crossref",
+          "title": [
+            "EEG-based Drowsiness and Alertness Recognition Using Feature Fusion and Deep Residual Networks"
+          ],
+          "type": "proceedings-article"
+        }
+      ],
+      "items-per-page": 5,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 4496257
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "f5c68bdac8e37585fdea601f6977acd4f30cbf162dd390ea76f1e08fad28a069",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

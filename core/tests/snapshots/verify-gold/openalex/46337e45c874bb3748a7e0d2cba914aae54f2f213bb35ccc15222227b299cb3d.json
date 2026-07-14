@@ -1,0 +1,62 @@
+{
+  "endpoint": "works",
+  "request_key": "46337e45c874bb3748a7e0d2cba914aae54f2f213bb35ccc15222227b299cb3d",
+  "request_params": {
+    "per-page": 5,
+    "search": "Cardiac Interoceptive Prediction in Humans and Large Language Models: Behavioral, ECG, and Simulated Data from a Heartbeat Expectation-Violation Task",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 0,
+      "db_response_time_ms": 136,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (Cardiac Interoceptive Prediction in Humans \"and\" Large Language Models: Behavioral ECG \"and\" Simulated Data from a Heartbeat Expectation-Violation Task)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Cardiac Interoceptive Prediction in Humans and Large Language Models: Behavioral, ECG, and Simulated Data from a Heartbeat Expectation-Violation Task"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Cardiac Interoceptive Prediction in Humans and Large Language Models: Behavioral, ECG, and Simulated Data from a Heartbeat Expectation-Violation Task&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": []
+  },
+  "response_hash": "ecfd8ea8ef6bbf8953e44de18bea0bde59019429bd08dd65acd216c43afbebba",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}
