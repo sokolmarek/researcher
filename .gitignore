@@ -33,3 +33,9 @@ templates/word/*.docx
 
 # Test and eval artifacts
 .pytest_cache/
+
+# core/ (M2 evidence kernel) build and tool caches
+core/.venv/
+core/.pytest_cache/
+core/.ruff_cache/
+core/.mypy_cache/

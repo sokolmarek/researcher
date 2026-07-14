@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sokolmarek.github.io/researcher/schemas/provenance-event.schema.json",
+  "title": "ProvenanceEvent",
+  "description": "One record in the hardened append-only provenance ledger, per D19. The shape is exactly {schema_version, run_id, protocol_version, event_id, ts, type, payload, source_response_hashes, versions}; all nine are required and no other top-level field is permitted. SQLite transactions are the primary store (Windows-friendly, safe under concurrent writers); JSONL is an export format, not the write path. The ledger is append-only: no update or delete path exists, and PRISMA flow counts are DERIVED by aggregating events (`provenance prisma`), never stored as a mutable shape (D10). 'ts' is caller-supplied and never self-generated, so a replay reproduces the ledger byte for byte (D15).",
+  "type": "object",
+  "required": ["schema_version", "run_id", "protocol_version", "event_id", "ts", "type", "payload", "source_response_hashes", "versions"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "description": "Version of this event schema, so a ledger written by an older core stays readable.",
+      "$ref": "#/$defs/versionString"
+    },
+    "run_id": {
+      "description": "Groups every event of one logical run. The join key for aggregation, PRISMA derivation, and lineage queries.",
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol_version": {
+      "description": "Pins the decision rules in force when the event was written (the D9 precedence, the axis thresholds), so a verdict is never read under rules it was not produced by.",
+      "$ref": "#/$defs/versionString"
+    },
+    "event_id": {
+      "description": "Unique identifier of this event within the ledger. Any collision-resistant string (UUID or content hash); uniqueness is enforced by the store.",
+      "type": "string",
+      "minLength": 1
+    },
+    "ts": {
+      "description": "RFC 3339 event timestamp, CALLER-SUPPLIED and never self-generated. Self-generated timestamps would make replays non-deterministic, which D15 forbids.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "type": { "$ref": "#/$defs/eventType" },
+    "payload": {
+      "description": "Type-specific event body. Deliberately open: each event type carries its own fields (a retrieval carries the query and the source; a dedup_decision carries the winner, the losers, and the similarity that drove the merge; a record_lineage carries the derived artifact and the records it came from). Payload keys are canonically ordered on write so JSONL export is byte-stable.",
+      "type": "object"
+    },
+    "source_response_hashes": {
+      "description": "Hashes of the snapshots this event consumed, joining the ledger to the snapshot store (snapshot.schema.json response_hash). Required, and empty ONLY for events that consumed no source response at all (for example a gate decision over already-derived artifacts). This is the tie that makes an event auditable back to raw bytes.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/contentHash" }
+    },
+    "versions": {
+      "description": "The component versions in force. With the snapshot and the configuration, these are the three things D15 requires for a byte-identical replay.",
+      "type": "object",
+      "required": ["core", "parser"],
+      "additionalProperties": false,
+      "properties": {
+        "core": {
+          "description": "researcher_core version.",
+          "$ref": "#/$defs/versionString"
+        },
+        "parser": {
+          "description": "Parser version; an input to every passage ID, so it must be recorded alongside any event that touches extracted text.",
+          "$ref": "#/$defs/versionString"
+        },
+        "model": {
+          "description": "Model identifier, present only when a model was involved in producing the event. Absent for purely deterministic events.",
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "$defs": {
+    "eventType": {
+      "description": "Closed event vocabulary per D10 and D19. M2 emits retrieval, record_lineage, and dedup_decision; M3 adds the compile-gate events (artifact_hash, gate, review); M4 adds screening_decision.",
+      "type": "string",
+      "enum": [
+        "retrieval",
+        "record_lineage",
+        "dedup_decision",
+        "screening_decision",
+        "artifact_hash",
+        "review",
+        "gate"
+      ]
+    },
+    "contentHash": {
+      "description": "SHA-256 content hash, hex encoded, optionally prefixed with 'sha256:'.",
+      "type": "string",
+      "pattern": "^(sha256:)?[0-9a-f]{64}$"
+    },
+    "versionString": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?([-+.][0-9A-Za-z.-]+)?$"
+    }
+  }
+}

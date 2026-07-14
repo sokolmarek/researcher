@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sokolmarek.github.io/researcher/schemas/passage.schema.json",
+  "title": "Passage",
+  "description": "One passage from the D21 minimal passage index: the unit that axis (c) faithfulness verdicts anchor on. This schema describes a SINGLE passage record; commands that emit lists (`passages search`, `passages index`) validate each element against it. The passage_id is hash(document content hash + section path + character offsets + parser version), so it is stable across machines and across re-extraction as long as the document bytes and the parser version are unchanged, and it intentionally CHANGES on a parser upgrade, which is what makes verdicts replayable per D15. The field set mirrors the FTS5 passages table: passage_id, doc_hash, section_path, char_start, char_end, page_coords, passage_hash, text.",
+  "type": "object",
+  "required": ["passage_id", "doc_hash", "section_path", "char_start", "char_end", "page_coords", "passage_hash", "text"],
+  "additionalProperties": false,
+  "properties": {
+    "passage_id": {
+      "description": "Stable passage identifier: hash(doc_hash + section_path + char_start + char_end + parser_version) per D21.",
+      "$ref": "#/$defs/contentHash"
+    },
+    "doc_hash": {
+      "description": "Content hash of the extracted canonical text of the whole document. Stored per passage so the M3 compiler can detect stale evidence when a source PDF is re-fetched and differs.",
+      "$ref": "#/$defs/contentHash"
+    },
+    "passage_hash": {
+      "description": "Content hash of this passage's text alone. Lets a consumer detect that a passage changed even when the document hash is unavailable.",
+      "$ref": "#/$defs/contentHash"
+    },
+    "section_path": {
+      "description": "Hierarchical section path from the heuristic section split, most general first, joined with '/' (for example 'Methods/Participants'). The empty string is permitted for text that falls outside any detected heading, since it must still hash to a stable ID.",
+      "type": "string"
+    },
+    "char_start": {
+      "description": "Inclusive character offset of the passage in the document's canonical extracted text.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "char_end": {
+      "description": "Exclusive character offset of the passage in the document's canonical extracted text. Always greater than char_start.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "page_coords": {
+      "description": "Page rectangles this passage occupies in the source PDF, in PDF user-space points. Null (or an empty array) for HTML sources, which have no pagination; extraction never invents coordinates it does not have.",
+      "$ref": "#/$defs/pageCoords"
+    },
+    "text": {
+      "description": "The passage text, exactly as extracted and indexed. This is what BM25 ranks over.",
+      "type": "string",
+      "minLength": 1
+    },
+    "doc_id": {
+      "description": "Identifier of the indexed document, canonically the lowercased DOI. Not part of the passage ID hash.",
+      "type": "string"
+    },
+    "parser_version": {
+      "description": "Parser version that produced this passage. Recorded because it is an input to passage_id: the same bytes under a different parser version yield a different ID by design.",
+      "$ref": "#/$defs/versionString"
+    },
+    "ordinal": {
+      "description": "Zero-based position of the passage within the document, in reading order.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "bm25_score": {
+      "description": "BM25 rank score for the query, present only in `passages search` output. Lower is better under SQLite FTS5 bm25(), which returns a negated score; the CLI reports the raw FTS5 value. Comparable only within one query.",
+      "type": ["number", "null"]
+    }
+  },
+  "$defs": {
+    "contentHash": {
+      "description": "SHA-256 content hash, hex encoded, optionally prefixed with 'sha256:'.",
+      "type": "string",
+      "pattern": "^(sha256:)?[0-9a-f]{64}$"
+    },
+    "versionString": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?([-+.][0-9A-Za-z.-]+)?$"
+    },
+    "pageCoords": {
+      "description": "Page rectangles, origin at the top left of the page, coordinates in points.",
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["page", "x0", "y0", "x1", "y1"],
+        "additionalProperties": false,
+        "properties": {
+          "page": {
+            "description": "One-based page number in the source PDF.",
+            "type": "integer",
+            "minimum": 1
+          },
+          "x0": { "type": "number" },
+          "y0": { "type": "number" },
+          "x1": { "type": "number" },
+          "y1": { "type": "number" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sokolmarek.github.io/researcher/schemas/snapshot.schema.json",
+  "title": "Snapshot",
+  "description": "A content-addressed record of one raw API response, per D15. The record shape is exactly {source, request_params, response_body, response_hash, retrieved_at}; those five fields are required and everything else is optional context. Snapshots are the substrate of determinism: identical inputs under (1) a snapshot, (2) a configuration, and (3) a parser version produce byte-identical --json output, and determinism is never claimed for live calls. Eval snapshots live in core/tests/snapshots/ and are the only thing offline tests and benchmark runs read; the runtime cache in the platformdirs user cache dir is a separate store and never feeds evals. Replay of a missing snapshot fails loudly rather than silently going live.",
+  "type": "object",
+  "required": ["source", "request_params", "response_body", "response_hash", "retrieved_at"],
+  "additionalProperties": false,
+  "properties": {
+    "source": {
+      "description": "Connector that produced the response. Known values: openalex, crossref, datacite, semantic_scholar, arxiv, pubmed, unpaywall, opencitations.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "request_params": {
+      "description": "Canonicalized request parameters (keys sorted, values normalized). Together with source and endpoint these form the request key the store is looked up by. Polite-pool identifiers such as mailto values are normalized out so a snapshot does not depend on whose email made the call.",
+      "type": "object",
+      "additionalProperties": {
+        "type": ["string", "number", "boolean", "null", "array"]
+      }
+    },
+    "response_body": {
+      "description": "The raw response body as returned by the source: a decoded JSON value for JSON APIs, or a string for text formats such as the arXiv Atom feed. Stored verbatim so a re-parse under a new parser version replays from the same bytes.",
+      "type": ["object", "array", "string", "number", "boolean", "null"]
+    },
+    "response_hash": {
+      "description": "SHA-256 of the canonicalized response body, hex encoded, optionally prefixed with 'sha256:'. This is the content address: it identifies the snapshot, joins it to record provenance (custom.source_response_hashes) and to provenance events (source_response_hashes), and is what `snapshot diff` compares.",
+      "$ref": "#/$defs/contentHash"
+    },
+    "retrieved_at": {
+      "description": "RFC 3339 timestamp of the live retrieval that produced this snapshot. Recorded for staleness and drift reporting; it is NOT an input to any hash, so it can never perturb replay determinism.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "endpoint": {
+      "description": "The endpoint path or full URL that was called, for example '/works/10.1038/nature14539'.",
+      "type": "string"
+    },
+    "request_key": {
+      "description": "Store lookup key derived from (source, endpoint, canonicalized request_params).",
+      "type": "string"
+    },
+    "http_status": {
+      "description": "HTTP status code of the recorded response. A recorded 404 is a legitimate snapshot: it is what makes a clean negative replayable.",
+      "type": "integer",
+      "minimum": 100,
+      "maximum": 599
+    },
+    "media_type": {
+      "description": "Response media type, for example 'application/json' or 'application/atom+xml'.",
+      "type": "string"
+    },
+    "schema_version": { "$ref": "#/$defs/versionString" }
+  },
+  "$defs": {
+    "contentHash": {
+      "type": "string",
+      "pattern": "^(sha256:)?[0-9a-f]{64}$"
+    },
+    "versionString": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?([-+.][0-9A-Za-z.-]+)?$"
+    }
+  }
+}

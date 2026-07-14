@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sokolmarek.github.io/researcher/schemas/faithfulness-report.schema.json",
+  "title": "FaithfulnessReport",
+  "description": "Output of the `faithfulness` command: the axis (c) claim-faithfulness report (D11, D16, D21). Verdicts are exactly supported, partial, contradicted, insufficient-passage. 'insufficient-passage' is the renamed 'unverified_no_fulltext'; the old string is retired and must not appear in code, output, or docs. Every non-abstaining verdict is anchored on at least one stable passage ID from the D21 index, so a claim can always be traced to the exact passage (with page coordinates) that justified it. When the document is not 'full-text' on axis (d), the claim degrades to abstract level with verdict 'insufficient-passage' and MUST NOT be emitted as clean. 'insufficient-passage' is abstention, and the eval reports it on a risk-coverage curve so abstaining is priced rather than hidden inside accuracy.",
+  "type": "object",
+  "required": ["schema_version", "protocol_version", "versions", "document", "claims", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "$ref": "#/$defs/versionString" },
+    "protocol_version": {
+      "description": "Version of the axis (c) decision rules in force for this report.",
+      "$ref": "#/$defs/versionString"
+    },
+    "versions": { "$ref": "#/$defs/versions" },
+    "run_id": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "method": {
+      "description": "Which faithfulness method produced the verdicts. M2 ships 'lexical-bm25' only (BM25 retrieval plus overlap heuristics); M3 layers richer claim anchoring on the same verdict vocabulary.",
+      "type": "string",
+      "enum": ["lexical-bm25"]
+    },
+    "document": { "$ref": "#/$defs/document" },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/claimVerdict" }
+    },
+    "summary": { "$ref": "#/$defs/summary" }
+  },
+  "$defs": {
+    "document": {
+      "description": "The document the claims were checked against, and how deep the available evidence went.",
+      "type": "object",
+      "required": ["doc_id", "doc_hash", "accessibility", "parser_version"],
+      "additionalProperties": false,
+      "properties": {
+        "doc_id": {
+          "description": "Identifier of the indexed document, canonically the lowercased DOI.",
+          "type": "string",
+          "minLength": 1
+        },
+        "doi": { "type": ["string", "null"] },
+        "doc_hash": {
+          "description": "Content hash of the extracted canonical text. Part of every passage ID, so a re-fetched and changed source produces new IDs and stale evidence is detectable.",
+          "$ref": "#/$defs/contentHash"
+        },
+        "accessibility": {
+          "description": "Axis (d) verdict for this document. Anything other than 'full-text' forces every claim to 'insufficient-passage'.",
+          "$ref": "#/$defs/accessibilityVerdict"
+        },
+        "parser_version": {
+          "description": "Parser version that produced the passages. Changing it intentionally changes passage IDs (D21) and therefore invalidates cached verdicts.",
+          "$ref": "#/$defs/versionString"
+        },
+        "passage_count": { "type": "integer", "minimum": 0 },
+        "source_response_hashes": {
+          "description": "Snapshots the document text was derived from.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/contentHash" }
+        }
+      }
+    },
+    "claimVerdict": {
+      "type": "object",
+      "required": ["claim_id", "claim", "verdict", "reason", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "description": "Stable identifier of the claim within the run.",
+          "type": "string",
+          "minLength": 1
+        },
+        "claim": {
+          "description": "The claim text as submitted, verbatim.",
+          "type": "string",
+          "minLength": 1
+        },
+        "verdict": { "$ref": "#/$defs/faithfulnessVerdict" },
+        "clean": {
+          "description": "True only when the verdict rests on retrieved full-text passages. Always false for 'insufficient-passage': an abstention is never emitted as a clean result (D11).",
+          "type": "boolean"
+        },
+        "score": {
+          "description": "Method-specific support score, 0.0 to 1.0. For the M2 lexical baseline this is the normalized overlap score of the best supporting passage.",
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "reason": {
+          "description": "Human-readable justification naming the rule that fired, for example 'no full text: axis (d) accessibility is abstract-only'.",
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "description": "Passage anchors backing the verdict. Required non-empty for supported, partial, and contradicted: every such verdict is anchored on a stable passage ID. May be empty ONLY for 'insufficient-passage', which is precisely the case where no adequate passage exists.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/passageAnchor" }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "verdict": { "enum": ["supported", "partial", "contradicted"] }
+            },
+            "required": ["verdict"]
+          },
+          "then": {
+            "properties": {
+              "evidence": { "minItems": 1 }
+            }
+          }
+        }
+      ]
+    },
+    "passageAnchor": {
+      "description": "A pointer into the D21 passage index. The full passage shape lives in passage.schema.json; this anchor carries the fields needed to locate and re-verify the passage without re-reading the document.",
+      "type": "object",
+      "required": ["passage_id", "passage_hash", "doc_hash", "section_path", "char_start", "char_end"],
+      "additionalProperties": false,
+      "properties": {
+        "passage_id": { "$ref": "#/$defs/passageId" },
+        "passage_hash": { "$ref": "#/$defs/contentHash" },
+        "doc_hash": { "$ref": "#/$defs/contentHash" },
+        "section_path": { "type": "string" },
+        "char_start": { "type": "integer", "minimum": 0 },
+        "char_end": { "type": "integer", "minimum": 0 },
+        "page_coords": { "$ref": "#/$defs/pageCoords" },
+        "bm25_score": {
+          "description": "BM25 rank score of this passage for the claim query. Comparable only within one document and one query.",
+          "type": ["number", "null"]
+        },
+        "text": {
+          "description": "The passage text, echoed for human review. Never the anchor: the passage_id is.",
+          "type": ["string", "null"]
+        },
+        "relation": {
+          "description": "How this passage relates to the claim: it may support it or contradict it. A 'contradicted' verdict must carry at least one anchor with relation 'contradicting'.",
+          "type": "string",
+          "enum": ["supporting", "contradicting"]
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total", "verdicts", "coverage", "abstention_rate"],
+      "additionalProperties": false,
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "verdicts": {
+          "type": "object",
+          "required": ["supported", "partial", "contradicted", "insufficient-passage"],
+          "additionalProperties": false,
+          "properties": {
+            "supported": { "type": "integer", "minimum": 0 },
+            "partial": { "type": "integer", "minimum": 0 },
+            "contradicted": { "type": "integer", "minimum": 0 },
+            "insufficient-passage": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "coverage": {
+          "description": "Fraction of claims that received a non-abstaining verdict, 0.0 to 1.0. The complement of abstention_rate.",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "abstention_rate": {
+          "description": "Fraction of claims answered 'insufficient-passage', 0.0 to 1.0. Reported alongside accuracy so abstention is visible and priced (the risk-coverage curve in evals/run_axes.py).",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "faithfulnessVerdict": {
+      "description": "Axis (c) verdict, exactly four states. 'supported': the passages entail the claim. 'partial': the passages support part of the claim, or support it with weaker qualifiers than claimed. 'contradicted': at least one passage states the opposite. 'insufficient-passage': no passage adequate to decide, including every case where full text was unavailable (the renamed 'unverified_no_fulltext'). This is abstention and is never clean.",
+      "type": "string",
+      "enum": ["supported", "partial", "contradicted", "insufficient-passage"]
+    },
+    "accessibilityVerdict": {
+      "description": "Axis (d) verdict, exactly three states.",
+      "type": "string",
+      "enum": ["full-text", "abstract-only", "unavailable"]
+    },
+    "passageId": {
+      "description": "Stable passage identifier per D21: hash(document content hash + section path + character offsets + parser version), hex encoded, optionally prefixed with 'sha256:'.",
+      "type": "string",
+      "pattern": "^(sha256:)?[0-9a-f]{64}$"
+    },
+    "pageCoords": {
+      "description": "Page rectangles the passage occupies in the source PDF, in PDF user-space points with the origin at the top left. Empty or null for HTML sources, which have no pagination.",
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["page", "x0", "y0", "x1", "y1"],
+        "additionalProperties": false,
+        "properties": {
+          "page": { "type": "integer", "minimum": 1 },
+          "x0": { "type": "number" },
+          "y0": { "type": "number" },
+          "x1": { "type": "number" },
+          "y1": { "type": "number" }
+        }
+      }
+    },
+    "contentHash": {
+      "type": "string",
+      "pattern": "^(sha256:)?[0-9a-f]{64}$"
+    },
+    "versionString": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?([-+.][0-9A-Za-z.-]+)?$"
+    },
+    "versions": {
+      "type": "object",
+      "required": ["core", "parser"],
+      "additionalProperties": false,
+      "properties": {
+        "core": { "$ref": "#/$defs/versionString" },
+        "parser": { "$ref": "#/$defs/versionString" },
+        "model": { "type": "string" }
+      }
+    }
+  }
+}

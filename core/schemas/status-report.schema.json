@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sokolmarek.github.io/researcher/schemas/status-report.schema.json",
+  "title": "StatusReport",
+  "description": "Output of the `status` command: the axis (b) publication-status report (D16). Verdicts are exactly current, corrected, retracted, expression-of-concern, derived from Crossref update-to metadata cross-checked against the OpenAlex is_retracted flag. Axis (b) is independent of axis (a): a reference can be perfectly 'verified' on identity and still be 'retracted' here, and the two axes are reported side by side rather than folded into one verdict. Per-source outcomes reuse the axis (a) vocabulary (confirmed, negative, source_error) so a status that could not be checked is visibly unchecked instead of silently passing as 'current'.",
+  "type": "object",
+  "required": ["schema_version", "protocol_version", "versions", "entries", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "$ref": "#/$defs/versionString" },
+    "protocol_version": {
+      "description": "Version of the axis (b) decision rules in force for this report.",
+      "$ref": "#/$defs/versionString"
+    },
+    "versions": { "$ref": "#/$defs/versions" },
+    "run_id": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "input": {
+      "type": "object",
+      "required": ["kind"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "type": "string", "enum": ["doi", "bib"] },
+        "path": { "type": "string" },
+        "doi": { "type": "string" }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entry" }
+    },
+    "summary": { "$ref": "#/$defs/summary" }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": ["id", "verdict", "checked", "sources", "notices"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "Identifier the status was checked for: a lowercased DOI, or a BibTeX key when the entry came from a bib file and carried no DOI.",
+          "type": "string",
+          "minLength": 1
+        },
+        "doi": { "type": ["string", "null"] },
+        "key": {
+          "description": "BibTeX citation key when the input was a bib file.",
+          "type": ["string", "null"]
+        },
+        "title": { "type": ["string", "null"] },
+        "verdict": { "$ref": "#/$defs/statusVerdict" },
+        "checked": {
+          "description": "True only when at least one status source returned a clean answer. When every source returned source_error this is false, and the verdict MUST NOT be presented as a clean 'current': an unchecked status is an absence of evidence, not evidence of currency.",
+          "type": "boolean"
+        },
+        "reason": {
+          "description": "Human-readable justification naming which notice or flag drove the verdict.",
+          "type": "string"
+        },
+        "conflict": {
+          "description": "True when the status sources disagreed (for example OpenAlex reports is_retracted while Crossref carries no retraction update-to). The conflict is reported, never silently resolved away.",
+          "type": "boolean"
+        },
+        "notices": {
+          "description": "Every editorial notice found, across sources. An empty array with checked true is what justifies 'current'.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/notice" }
+        },
+        "sources": {
+          "description": "One outcome per queried status source. Mandatory: the confirmed / negative / source_error split is what distinguishes 'no notices found' from 'could not ask'.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/sourceOutcome" }
+        }
+      }
+    },
+    "notice": {
+      "description": "An editorial notice attached to the work by a source.",
+      "type": "object",
+      "required": ["type", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "$ref": "#/$defs/noticeType" },
+        "doi": {
+          "description": "DOI of the notice document itself (the retraction notice, the correction), not of the work it applies to.",
+          "type": ["string", "null"]
+        },
+        "label": {
+          "description": "Source-supplied label, for example the Crossref update-to label.",
+          "type": ["string", "null"]
+        },
+        "date": {
+          "description": "Notice date, RFC 3339 date or date-time, as reported by the source.",
+          "type": ["string", "null"]
+        },
+        "url": { "type": ["string", "null"] },
+        "source": { "$ref": "#/$defs/sourceName" },
+        "response_hash": { "$ref": "#/$defs/contentHash" }
+      }
+    },
+    "sourceOutcome": {
+      "type": "object",
+      "required": ["source", "outcome"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "$ref": "#/$defs/sourceName" },
+        "outcome": {
+          "description": "'confirmed': the source answered and reported at least one notice or flag. 'negative': the source answered cleanly and reported none. 'source_error': the source could not be consulted, so nothing may be inferred from its silence.",
+          "$ref": "#/$defs/sourceOutcomeVerdict"
+        },
+        "is_retracted": {
+          "description": "Raw OpenAlex is_retracted flag, when the source supplies one.",
+          "type": ["boolean", "null"]
+        },
+        "notice_count": { "type": "integer", "minimum": 0 },
+        "error": {
+          "description": "Required when outcome is 'source_error', forbidden otherwise.",
+          "$ref": "#/$defs/sourceError"
+        },
+        "response_hash": { "$ref": "#/$defs/contentHash" },
+        "queried_at": { "type": "string", "format": "date-time" }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "outcome": { "const": "source_error" } },
+            "required": ["outcome"]
+          },
+          "then": { "required": ["error"] },
+          "else": { "not": { "required": ["error"] } }
+        }
+      ]
+    },
+    "sourceError": {
+      "type": "object",
+      "required": ["type", "message"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["timeout", "rate_limit", "http_error", "network", "parse_error", "snapshot_missing", "auth_error"]
+        },
+        "message": { "type": "string", "minLength": 1 },
+        "http_status": { "type": ["integer", "null"], "minimum": 100, "maximum": 599 }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total", "status", "unchecked"],
+      "additionalProperties": false,
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "status": {
+          "type": "object",
+          "required": ["current", "corrected", "retracted", "expression-of-concern"],
+          "additionalProperties": false,
+          "properties": {
+            "current": { "type": "integer", "minimum": 0 },
+            "corrected": { "type": "integer", "minimum": 0 },
+            "retracted": { "type": "integer", "minimum": 0 },
+            "expression-of-concern": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "unchecked": {
+          "description": "Entries where every status source errored, so the verdict rests on no clean answer.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "conflicts": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "statusVerdict": {
+      "description": "Axis (b) verdict, exactly four states. 'corrected' covers corrections, errata, and addenda; 'retracted' covers retractions, withdrawals, and removals; 'expression-of-concern' is reported separately because it is a weaker signal than retraction and must not be collapsed into it.",
+      "type": "string",
+      "enum": ["current", "corrected", "retracted", "expression-of-concern"]
+    },
+    "noticeType": {
+      "type": "string",
+      "enum": ["retraction", "correction", "erratum", "expression-of-concern", "withdrawal", "addendum", "removal"]
+    },
+    "sourceOutcomeVerdict": {
+      "type": "string",
+      "enum": ["confirmed", "negative", "source_error"]
+    },
+    "sourceName": {
+      "description": "Connector name. Status sources are normally crossref and openalex.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "contentHash": {
+      "type": "string",
+      "pattern": "^(sha256:)?[0-9a-f]{64}$"
+    },
+    "versionString": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?([-+.][0-9A-Za-z.-]+)?$"
+    },
+    "versions": {
+      "type": "object",
+      "required": ["core", "parser"],
+      "additionalProperties": false,
+      "properties": {
+        "core": { "$ref": "#/$defs/versionString" },
+        "parser": { "$ref": "#/$defs/versionString" },
+        "model": { "type": "string" }
+      }
+    }
+  }
+}
