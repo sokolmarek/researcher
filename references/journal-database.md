@@ -1,6 +1,6 @@
 # Journal Requirements Database
 
-Loaded by journal-formatting skill. Use `scripts/journal-lookup.py` for journals not listed here.
+Loaded by the journal-formatting skill. `scripts/journal-lookup.py` searches this file and nothing else: it makes no web requests, so it cannot find a journal that is not listed below. For a journal not listed here, consult the publisher's author guidelines (via web search), then add the profile to this file.
 
 ## Elsevier Journals
 

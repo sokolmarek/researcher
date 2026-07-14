@@ -73,10 +73,11 @@ Presets (fonts, color palettes, line weights, sizing) are defined in `references
 
 1. User specifies target journal name
 2. Check `references/journal-database.md` for cached requirements
-3. If not found, run `scripts/journal-lookup.py` to search the local database; on a miss it prints the closest matches and suggests consulting the publisher's author guidelines (the script performs no web requests itself)
-4. If still not found, use web search to locate the author guidelines
-5. Parse and structure requirements into standard format
-6. Cache results in `references/journal-database.md` for future use
+3. Or search that same file from the command line with `scripts/journal-lookup.py "<journal name>"`. The database is its only data source and it makes no web requests, so it can only return a journal already listed there
+4. Read the result honestly. The script exits 0 only on a real hit: an exact profile name, or a query and a profile name that contain one another. A profile that merely shares words with the query is a guess, not a hit, and is never presented as one: text output lists such profiles by name under `Closest matches (not exact database entries)`, `--format json` puts them under a separate `suggestions` key (real hits go under `matches`), and a query with no real hit exits 1. Never apply a suggested profile's requirements to the queried journal
+5. If there is no hit, use web search to locate the journal's author guidelines
+6. Parse and structure requirements into standard format
+7. Cache results in `references/journal-database.md` for future use
 
 ## Formatting Application
 

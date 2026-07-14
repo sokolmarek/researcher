@@ -2,19 +2,29 @@
 """Look up journal formatting requirements in the local database.
 
 Usage:
-    python journal-lookup.py "Nature Machine Intelligence"
-    python journal-lookup.py "IEEE Transactions on Neural Networks" --format json
+    python journal-lookup.py "PLOS ONE"
+    python journal-lookup.py "IEEE Transactions" --format json
     python journal-lookup.py --list
 
-Reads references/journal-database.md. Journal profiles live either under an H3
-heading (### Generic IEEE) or under a leaf H2 heading that directly carries
-field bullets (## PLOS ONE); H2 headings that only group H3 children (## IEEE
+Reads references/journal-database.md, which is the script's only data source: it
+performs no web requests. Journal profiles live either under an H3 heading
+(### Generic IEEE) or under a leaf H2 heading that directly carries field
+bullets (## PLOS ONE); H2 headings that only group H3 children (## IEEE
 Journals) are not profiles. Field bullets accept both bold-colon forms:
 "- **Field:** value" and "- **Field**: value".
 
-When a journal is not in the database, the script prints the closest matches
-and a suggestion to consult the publisher's author guidelines; it performs no
-web requests itself.
+A query resolves into two disjoint groups:
+
+  matches      the query equals a profile name, or one is a substring of the
+               other. These are real database entries.
+  suggestions  the query merely shares two or more words with a profile name.
+               These are guesses, NOT the journal that was asked for, and are
+               always printed under a "Closest matches (not exact database
+               entries)" heading (text) or a separate "suggestions" key (JSON).
+
+Exit status is 0 only when there is at least one match. A query with no match
+exits 1, whether it produced suggestions or nothing at all, and points the user
+at the publisher's author guidelines.
 """
 
 import argparse
@@ -71,18 +81,26 @@ def load_journal_database(db_path=None) -> dict:
     return journals
 
 
-def search_journals(query: str, db: dict) -> list:
+def search_journals(query: str, db: dict) -> tuple:
+    """Split the database into (matches, suggestions) for a query.
+
+    matches      exact name, or query/name substring of the other: real hits.
+    suggestions  two or more shared words only: guesses, never a real hit.
+
+    Both lists hold (key, info) pairs. Exact matches sort ahead of substring
+    matches so the best hit is always first.
+    """
     query_lower = query.lower()
-    results = []
+    query_words = set(query_lower.split())
+    exact, substring, suggestions = [], [], []
     for key, info in db.items():
         if query_lower == key:
-            results.insert(0, (key, info))
+            exact.append((key, info))
         elif query_lower in key or key in query_lower:
-            results.append((key, info))
-        else:
-            if len(set(query_lower.split()) & set(key.split())) >= 2:
-                results.append((key, info))
-    return results
+            substring.append((key, info))
+        elif len(query_words & set(key.split())) >= 2:
+            suggestions.append((key, info))
+    return exact + substring, suggestions
 
 
 FIELD_LABELS = {
@@ -122,6 +140,48 @@ def format_result(name: str, info: dict) -> str:
     return "\n".join(lines)
 
 
+SUGGESTION_HEADING = "Closest matches (not exact database entries)"
+
+
+def print_text(query: str, matches: list, suggestions: list, db_size: int) -> None:
+    """Print matches as full profiles; print suggestions as a labeled name list."""
+    for name, info in matches:
+        print(format_result(name, info))
+
+    if not matches:
+        print(f"Journal '{query}' not found in the local database.")
+        print(f"\nDatabase contains {db_size} profiles. Run with --list to see all.")
+
+    if suggestions:
+        print(f"\n{SUGGESTION_HEADING}:")
+        for name, info in suggestions:
+            print(f"  - {info.get('name', name)}")
+        print("\nThese share words with the query but are different journals. Re-run with")
+        print("the exact name above to see one of these profiles.")
+
+    if not matches:
+        print("\nSuggestion: consult the journal's author guidelines on the publisher")
+        print("website, or ask Claude to look the requirements up via web search.")
+
+
+def print_json(query: str, matches: list, suggestions: list) -> None:
+    """Emit matches and suggestions under separate keys so they cannot be confused."""
+    import json
+
+    payload = {
+        "query": query,
+        "matches": {name: info for name, info in matches},
+        "suggestions": {name: info for name, info in suggestions},
+    }
+    if not matches:
+        payload["note"] = (
+            f"'{query}' is not in the local database. Any entries under 'suggestions' "
+            "are different journals that share words with the query, not this journal. "
+            "Consult the publisher's author guidelines."
+        )
+    print(json.dumps(payload, indent=2))
+
+
 def main():
     parser = argparse.ArgumentParser(description="Look up journal formatting requirements")
     parser.add_argument("journal", nargs="?", help="Journal name to search for")
@@ -142,20 +202,15 @@ def main():
     if not args.journal:
         parser.error("a journal name is required unless --list is given")
 
-    results = search_journals(args.journal, db)
-    if not results:
-        print(f"Journal '{args.journal}' not found in the local database.")
-        print(f"\nDatabase contains {len(db)} profiles. Run with --list to see all.")
-        print("\nSuggestion: consult the journal's author guidelines on the publisher")
-        print("website, or ask Claude to look the requirements up via web search.")
-        sys.exit(1)
+    matches, suggestions = search_journals(args.journal, db)
 
     if args.format == "json":
-        import json
-        print(json.dumps({name: info for name, info in results}, indent=2))
+        print_json(args.journal, matches, suggestions)
     else:
-        for name, info in results:
-            print(format_result(name, info))
+        print_text(args.journal, matches, suggestions, len(db))
+
+    if not matches:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
