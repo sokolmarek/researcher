@@ -15,8 +15,16 @@ Two vocabularies, and they must never be conflated.
 
 A ``negative`` splits further, and the split is load-bearing. ``resolved=False`` means the
 source cleanly found nothing. ``resolved=True`` with ``mismatch_reasons`` means the source
-DID resolve the identifier but the metadata disagrees beyond thresholds: that is evidence
-for ``mismatch``, not for ``unresolvable``.
+found a record and it disagrees beyond thresholds. HOW the source found that record then
+decides what the disagreement is worth (:attr:`SourceOutcome.matched_by`):
+
+* ``identifier``   the source looked up the claimed DOI or arXiv ID and got a record back.
+  Only such a source has an opinion ABOUT THE IDENTIFIER, so only such a source can produce
+  a resolving disagreement, which is evidence for ``mismatch``.
+* ``title_search`` the identifier did not resolve there and the source found a similar work
+  by title. That is a record about a WORK, not about the identifier: an index that does not
+  hold a DOI has no opinion about it, and "I do not have this DOI" is a clean negative, never
+  "this DOI belongs to a different paper".
 
 **Reference-level verdict** (what the report says), exactly four states:
 
@@ -51,6 +59,8 @@ from .snapshots import SnapshotSession
 from .status import StatusEntry, check_status_async
 
 __all__ = [
+    "BY_IDENTIFIER",
+    "BY_TITLE_SEARCH",
     "DEFAULT_SOURCES",
     "DEFAULT_THRESHOLDS",
     "IDENTITY_PROTOCOL_VERSION",
@@ -76,7 +86,12 @@ REPORT_SCHEMA_VERSION = "1.0"
 #: Version of the D9 decision rules implemented in :func:`decide` and :func:`assess_match`.
 #: Bump it whenever a threshold or a precedence rule changes, because a stored verdict is
 #: only interpretable against the rulebook that produced it.
-IDENTITY_PROTOCOL_VERSION = "1.0"
+#:
+#: 1.1: a ``doi_mismatch`` from a source that never resolved the identifier is no longer a
+#: resolving disagreement (rule 2b of :func:`decide`), and an exact title prefix of at least
+#: ``truncated_prefix_min_chars`` is read as truncation. Both fix refusal-grade false
+#: positives measured on the axis (a) gold set; see ``core/CALIBRATION.md``.
+IDENTITY_PROTOCOL_VERSION = "1.1"
 
 #: The sources queried when a caller names none. OpenAlex and Crossref alone satisfy the D9
 #: two-confirmation gate for journal literature; DataCite covers the DOIs Crossref does not
@@ -143,6 +158,13 @@ class Thresholds:
     * ``truncation_min_chars``: a bib entry whose title was cut short is still the same work.
       Prefix truncation is detected explicitly rather than by a generic partial ratio, which
       would inflate the similarity of unrelated titles that happen to share a phrase.
+    * ``truncated_prefix_min_chars``: the length at which an EXACT character-for-character
+      prefix is accepted as truncation on its own, without the 40%-of-the-longer guard that
+      ``truncation_min_chars`` carries. Reference managers and harvesters really do cut titles
+      to a fixed width, and a dataset title can run four times that width, so the ratio guard
+      refuses exactly the case it exists to serve. An exact 60-character prefix is roughly ten
+      words of a title reproduced verbatim; it is truncation, not a different paper. The rule
+      lifts the TITLE score only: the year and first-author checks still stand behind it.
     """
 
     title_similarity: float = 0.70
@@ -152,6 +174,7 @@ class Thresholds:
     strong_title_similarity: float = 0.90
     preprint_year_tolerance: int = 3
     truncation_min_chars: int = 20
+    truncated_prefix_min_chars: int = 60
 
     def to_json_dict(self) -> dict[str, Any]:
         """Only the four D9 knobs; the report schema pins these and forbids extras."""
@@ -265,20 +288,38 @@ def _surname_of(name: str) -> str:
 # ---------------------------------------------------------------------------
 
 
-def title_similarity(claimed: str, found: str, *, truncation_min_chars: int = 20) -> float | None:
+def title_similarity(
+    claimed: str,
+    found: str,
+    *,
+    truncation_min_chars: int = 20,
+    truncated_prefix_min_chars: int = 60,
+) -> float | None:
     """Similarity of two titles, 0.0 to 1.0. ``None`` when either side has no title.
 
     Base score is rapidfuzz ``token_sort_ratio`` over the title fingerprints (lowercased,
     punctuation stripped, whitespace collapsed), so word order and punctuation do not matter.
 
-    Truncation is then handled explicitly: when the shorter fingerprint is a plausible prefix
-    of the longer one, the shorter is compared against the longer's leading window of the same
-    length. A bib entry whose title was cut short by a citation manager is the same work, and
-    the base ratio punishes it purely for the words that were dropped. A generic
-    ``partial_ratio`` would fix that case but would also lift unrelated titles that merely
-    share a phrase, so the relaxation is restricted to a leading window and requires the
-    shorter title to be substantial (``truncation_min_chars``) and to be at least 40% of the
-    longer one.
+    Truncation is then handled explicitly, in two tiers, because a bib entry whose title was
+    cut short by a citation manager is the same work and the base ratio punishes it purely for
+    the words that were dropped.
+
+    1. **Exact prefix containment.** The shorter fingerprint is character-for-character the
+       opening of the longer one, and is at least ``truncated_prefix_min_chars`` long. That is
+       truncation, and it is scored 1.0. This tier exists for the case the second tier cannot
+       reach: a harvester or a reference manager that cuts every title to a fixed width, against
+       a dataset or report title that runs several times that width. There the shorter title is
+       a small FRACTION of the longer one, so the ratio guard below refuses it, and the base
+       token_sort_ratio collapses (0.539 on the DANS archaeology dataset that this rule was
+       added for), which on a resolving source is a refusal-grade ``mismatch`` against an honest
+       reference. The tier is deliberately narrow: an exact prefix, not a fuzzy one, and long
+       enough (roughly ten words) that two different papers sharing it is not a real risk. It
+       lifts the TITLE score only, and the year and first-author checks still stand behind it.
+    2. **Fuzzy leading window.** The shorter fingerprint is at least ``truncation_min_chars``
+       long AND at least 40% of the longer one, so it is compared against the longer's leading
+       window of the same length. This absorbs a truncation that also mangled a character. A
+       generic ``partial_ratio`` would cover both tiers but would also lift unrelated titles
+       that merely share a phrase ANYWHERE, so the relaxation stays anchored to the head.
     """
     a = title_fingerprint(claimed)
     b = title_fingerprint(found)
@@ -286,8 +327,10 @@ def title_similarity(claimed: str, found: str, *, truncation_min_chars: int = 20
         return None
     score = fuzz.token_sort_ratio(a, b) / 100.0
     short, long = (a, b) if len(a) <= len(b) else (b, a)
-    if len(short) >= truncation_min_chars and len(short) < len(long):
-        if len(short) >= 0.4 * len(long):
+    if len(short) < len(long):
+        if len(short) >= truncated_prefix_min_chars and long.startswith(short):
+            score = 1.0
+        elif len(short) >= truncation_min_chars and len(short) >= 0.4 * len(long):
             prefix = fuzz.ratio(short, long[: len(short)]) / 100.0
             score = max(score, prefix)
     return round(min(1.0, score), 4)
@@ -340,7 +383,10 @@ def assess_match(
     reasons: list[str] = []
 
     similarity = title_similarity(
-        claim.title, record.title, truncation_min_chars=thresholds.truncation_min_chars
+        claim.title,
+        record.title,
+        truncation_min_chars=thresholds.truncation_min_chars,
+        truncated_prefix_min_chars=thresholds.truncated_prefix_min_chars,
     )
     if similarity is not None and similarity < thresholds.title_similarity:
         reasons.append("title_similarity")
@@ -405,6 +451,14 @@ def _surnames_overlap(claimed: Sequence[str], found: Sequence[str]) -> bool:
 # ---------------------------------------------------------------------------
 
 
+#: How a source came to hold the record it reports. ``BY_IDENTIFIER`` means it looked up the
+#: claimed DOI or arXiv ID and got a record back, so it HAS an opinion about that identifier.
+#: ``BY_TITLE_SEARCH`` means the identifier did not resolve there and the record was found by
+#: title, so the source has an opinion about the WORK and none at all about the identifier.
+BY_IDENTIFIER = "identifier"
+BY_TITLE_SEARCH = "title_search"
+
+
 @dataclass
 class SourceOutcome:
     """What one queried source returned about one reference."""
@@ -418,11 +472,44 @@ class SourceOutcome:
     resolved: bool = False
     mismatch_reasons: tuple[str, ...] = ()
     error: dict[str, Any] | None = None
+    #: ``identifier``, ``title_search``, or "" when the source matched nothing. Not emitted in
+    #: the report JSON, which already carries the same fact: a ``doi_mismatch`` reason is
+    #: produced by the title-search path and by nothing else.
+    matched_by: str = ""
+
+    @property
+    def resolved_identifier(self) -> bool:
+        """Did this source look up the claimed identifier and get a record back for it?"""
+        return self.resolved and self.matched_by == BY_IDENTIFIER
 
     @property
     def disagrees(self) -> bool:
-        """A source that resolved the reference and then disagreed beyond thresholds."""
-        return self.outcome == NEGATIVE and self.resolved and bool(self.mismatch_reasons)
+        """A RESOLVING disagreement: the source held the identifier and the metadata differs.
+
+        The ``resolved_identifier`` half is the whole point, and a future refactor must not
+        drop it as redundant. A source that never resolved the identifier, and merely found a
+        similar-titled work, has NO opinion about the identifier: it cannot disagree about one.
+        See :func:`decide`.
+        """
+        return (
+            self.outcome == NEGATIVE
+            and self.resolved_identifier
+            and bool(self.mismatch_reasons)
+        )
+
+    @property
+    def found_work_under_another_id(self) -> bool:
+        """The source did not hold the claimed identifier but did find the claimed WORK.
+
+        Evidence that the work is real. Evidence about the identifier ONLY when no source
+        anywhere resolved it; see rule (2b) of :func:`decide`.
+        """
+        return (
+            self.outcome == NEGATIVE
+            and self.resolved
+            and self.matched_by == BY_TITLE_SEARCH
+            and "doi_mismatch" in self.mismatch_reasons
+        )
 
     @property
     def clean_negative(self) -> bool:
@@ -490,11 +577,26 @@ def decide(
     honest researcher of fabricating a real citation. So a ``source_error`` can never produce
     ``unresolvable``, and a lone disagreeing index can never overturn a two-source
     confirmation. Both properties are enforced below, in this order, top-down.
+
+    THE SECOND LINE THAT MATTERS, and the one a refactor will want to delete as redundant:
+    ``disagreeing`` counts only sources that RESOLVED THE IDENTIFIER THEMSELVES. A source that
+    does not hold a DOI has no opinion about it. Ask DataCite about a Crossref-minted DOI and
+    the honest answer is "I do not have this", which is a CLEAN NEGATIVE. It is emphatically
+    not "this DOI belongs to a different paper", and it must not become that just because a
+    title search then turned up a similar-looking record. Manufacturing a disagreement out of
+    an absence is the same class of error as reading a rate limit as evidence of fabrication,
+    and it is what D9 exists to forbid. Measured: two non-holding indexes doing exactly that
+    outvoted one genuine confirmation and produced refusal-grade false positives on real
+    references (``10.1109/taffc.2020.3014842``, ``10.5281/zenodo.21358727``); see
+    ``evals/BENCHMARKS.md``. A title-search hit can therefore SUPPORT a confirmation, and it
+    can convict a claimed identifier only in rule (2b), where NO source resolved it at all.
     """
     confirmed = [o for o in outcomes if o.outcome == CONFIRMED]
     errors = [o for o in outcomes if o.outcome == SOURCE_ERROR]
     disagreeing = [o for o in outcomes if o.disagrees]
     clean_negatives = [o for o in outcomes if o.clean_negative]
+    work_found_elsewhere = [o for o in outcomes if o.found_work_under_another_id]
+    identifier_resolved_somewhere = any(o.resolved_identifier for o in outcomes)
 
     # (1) verified. A two-confirmation majority OUTRANKS any single disagreeing or erroring
     # source: one bad index must never drag a corroborated reference into a refusal-grade
@@ -530,6 +632,31 @@ def decide(
             (only.source,),
         )
 
+    # (2b) mismatch, the wrong-DOI-on-a-real-paper case, and the ONLY route by which a
+    # title-search hit may convict an identifier. It requires that NOT ONE source resolved the
+    # claimed identifier (so the identifier is held nowhere, not merely absent from the index
+    # that happened to answer), that nothing errored (so that absence is a clean finding rather
+    # than an outage), and that the work itself was found under a different identifier by at
+    # least `min_confirmations` sources (so one index's fuzzy title hit cannot do it alone).
+    # A mistyped DOI on a real paper lands here. A Zenodo DOI that Crossref does not mint does
+    # NOT, because DataCite resolved it, and one source resolving the identifier is enough to
+    # prove it exists and to strip every non-holding index of any say in the matter.
+    if (
+        work_found_elsewhere
+        and not identifier_resolved_somewhere
+        and not errors
+        and not confirmed
+        and len(work_found_elsewhere) >= thresholds.min_confirmations
+    ):
+        names = tuple(o.source for o in work_found_elsewhere)
+        return Decision(
+            MISMATCH,
+            f"the claimed identifier resolved at no queried source, while {len(names)} sources "
+            f"({', '.join(names)}) found the claimed work under a different identifier by title "
+            "search; the work is real and the identifier in the entry is not its own",
+            names,
+        )
+
     # (3) unresolvable. Every queried source answered cleanly, and every one of them found
     # nothing. This is the only "likely fabricated" state, and it requires a full sweep of
     # CLEAN negatives: a single source_error below would make it unreachable, by design.
@@ -561,6 +688,12 @@ def decide(
     if disagreeing and not parts:
         parts.append(
             f"{disagreeing[0].source} disagreed, but the evidence is too thin to call a mismatch"
+        )
+    if work_found_elsewhere:
+        others = ", ".join(o.source for o in work_found_elsewhere)
+        parts.append(
+            f"{others} do not hold the claimed identifier and found the work by title search, "
+            "which is no opinion about the identifier and cannot support a mismatch"
         )
     if not parts:
         parts.append("the evidence is too thin to decide")
@@ -601,6 +734,7 @@ async def query_source(
                     year_delta=assessment.year_delta,
                     surname_overlap=assessment.surname_overlap,
                     resolved=True,
+                    matched_by=BY_IDENTIFIER,
                 )
             return SourceOutcome(
                 source=name,
@@ -611,6 +745,7 @@ async def query_source(
                 surname_overlap=assessment.surname_overlap,
                 resolved=True,
                 mismatch_reasons=assessment.reasons,
+                matched_by=BY_IDENTIFIER,
             )
 
         return await _search_fallback(connector, claim, thresholds, search_limit)
@@ -637,7 +772,7 @@ async def _search_fallback(
     thresholds: Thresholds,
     search_limit: int,
 ) -> SourceOutcome:
-    """The identifier did not resolve. Try the title, and read the result carefully.
+    """The identifier did not resolve HERE. Try the title, and read the result carefully.
 
     Three outcomes, and the middle one is the subtle one:
 
@@ -645,9 +780,11 @@ async def _search_fallback(
       search hit never manufactures a mismatch; it is simply not this work.
     * a match found and the claim carried no DOI -> ``confirmed``. Title-only references are
       legitimate, and this is how they are verified.
-    * a match found and the claim DID carry a DOI -> the work exists but the claimed DOI does
-      not resolve to it. That is a resolving disagreement (``doi_mismatch``), which is exactly
-      the "wrong DOI on a real paper" case D9 wants classed as evidence for ``mismatch``.
+    * a match found and the claim DID carry a DOI -> this source has the WORK, under some other
+      identifier, and does not have the claimed one. It is tagged ``doi_mismatch`` /
+      ``BY_TITLE_SEARCH``, and that tag is NOT a resolving disagreement: this source never
+      looked the claimed DOI up successfully, so it has no opinion about it. Whether the
+      claimed DOI is wrong is decided in :func:`decide`, from whether ANY source resolved it.
     """
     name = connector.name
     if not claim.title or not connector.supports("search"):
@@ -678,6 +815,7 @@ async def _search_fallback(
             year_delta=best_assessment.year_delta,
             surname_overlap=best_assessment.surname_overlap,
             resolved=True,
+            matched_by=BY_TITLE_SEARCH,
         )
 
     return SourceOutcome(
@@ -689,6 +827,7 @@ async def _search_fallback(
         surname_overlap=best_assessment.surname_overlap,
         resolved=True,
         mismatch_reasons=("doi_mismatch",),
+        matched_by=BY_TITLE_SEARCH,
     )
 
 

@@ -27,11 +27,33 @@ about it; otherwise it is only counted when the queried work does not itself loo
 notice document. Skipping that check would mark every retraction notice in the literature as
 retracted.
 
-**OpenAlex** carries ``is_retracted`` on the work object, which is a straight cross-check of
-the Crossref retraction signal. When the two disagree, the disagreement is REPORTED
-(``conflict: true``) and the stronger verdict is taken. Under-reporting a retraction is the
-dangerous error on this axis, and unlike axis (a) the verdict is not refusal-grade on its
-own: it surfaces at a human checkpoint.
+**OpenAlex** carries ``is_retracted`` on the work object. It is a COARSE signal: one boolean
+that lumps every kind of editorial notice together, and in practice OpenAlex sets it on works
+whose only Crossref notice is an expression of concern, and on retraction notices themselves.
+Crossref's ``update-type`` is a SPECIFIC signal: a typed notice, with the notice's DOI and its
+date.
+
+Precedence, and it is deliberate (see :func:`_openalex_outcome`):
+
+1. **A specific signal outranks a coarse one.** When Crossref carries ANY status-changing
+   update-type for the work, that notice set alone decides the verdict. OpenAlex's boolean
+   mints no notice of its own, so it can never promote a Crossref ``expression_of_concern``
+   into a ``retracted`` verdict. An expression of concern is an unresolved question about a
+   paper, not a withdrawal of it, and reporting it as a retraction defames the authors of work
+   that still stands.
+2. **A coarse signal is still a signal.** When Crossref carries NO notice of any kind (a clean
+   negative, a DOI it does not hold, or a source error), OpenAlex's ``is_retracted`` is the
+   only opinion in the room, it is a real one, and it produces a ``retracted`` verdict.
+3. **Disagreement is recorded, never resolved away.** Whenever OpenAlex's boolean and
+   Crossref's notice set contradict each other the entry carries ``conflict: true``, the
+   OpenAlex claim is retained verbatim on its source outcome (``is_retracted``), and the reason
+   string says so. A reader must be able to see that the two sources do not agree, exactly as
+   axis (a) retains every per-source outcome behind its verdict.
+
+Under-reporting a retraction is a dangerous error on this axis, and the verdict is not
+refusal-grade on its own: it surfaces at a human checkpoint. Over-reporting one is an
+accusation, so the conflict is surfaced rather than settled by taking the strongest claim any
+source makes.
 
 The connector layer's clean-negative / source-error split carries through unchanged. If
 every status source errors, the entry is ``checked: false`` and its ``current`` verdict must
@@ -69,8 +91,10 @@ __all__ = [
 #: Version of the report shape (``core/schemas/status-report.schema.json``).
 STATUS_SCHEMA_VERSION = "1.0"
 
-#: Version of the axis (b) decision rules implemented here.
-STATUS_PROTOCOL_VERSION = "1.0"
+#: Version of the axis (b) decision rules implemented here. Bumped to 1.1 when the precedence
+#: between Crossref's specific update-type and OpenAlex's coarse ``is_retracted`` boolean was
+#: made explicit (a stored verdict is only interpretable against the rulebook that produced it).
+STATUS_PROTOCOL_VERSION = "1.1"
 
 #: The two sources that carry publication-status metadata. Crossref is the authority (it
 #: holds the update graph); OpenAlex is the cross-check.
@@ -382,25 +406,45 @@ def _crossref_outcome(
 
 
 def _openalex_outcome(
-    record: CSLRecord, doi: str, *, is_notice: bool
+    record: CSLRecord,
+    doi: str,
+    *,
+    is_notice: bool,
+    crossref_specific: bool,
 ) -> tuple[StatusSourceOutcome, list[Notice]]:
-    """OpenAlex's ``is_retracted``, with one carve-out that the data forces.
+    """OpenAlex's coarse ``is_retracted``, and the two carve-outs the data forces.
 
-    OpenAlex sets ``is_retracted`` on retraction NOTICES as well as on the papers they
-    retract (it does so for the Lancet Surgisphere notice, for one). Taken at face value that
-    would report the notice itself as retracted. So when the work is an editorial notice, the
-    flag is recorded verbatim on the source outcome but produces no notice of its own; the
-    disagreement with Crossref then surfaces as ``conflict: true`` rather than being silently
-    resolved either way.
+    ``is_retracted`` is ONE BOOLEAN over several distinct editorial states. OpenAlex sets it on
+    works whose only Crossref update-type is ``expression_of_concern``, and it sets it on
+    retraction NOTICES as well as on the papers they retract (the Lancet Surgisphere notice,
+    for one). Minting a ``retraction`` notice from it unconditionally, as this function once
+    did, means a vague signal silently overrides a precise one.
+
+    So the flag produces a notice, and therefore a ``retracted`` verdict, only when nothing more
+    specific is available:
+
+    * ``crossref_specific``: Crossref named a typed notice for this work. Its update-type wins,
+      whatever it is. If Crossref says expression of concern, the verdict is
+      ``expression-of-concern``, not ``retracted``.
+    * ``is_notice``: the work IS an editorial notice about another work, so the flag is about
+      the work it retracts, not about the notice, which is a current document.
+
+    In both carve-outs the flag is still RECORDED (``is_retracted`` on the source outcome, and
+    the source counts as ``confirmed``, since it did answer with a flag), so nothing is thrown
+    away. If it contradicts Crossref, :func:`_conflicted` raises ``conflict: true`` and the
+    disagreement is reported rather than resolved away.
     """
     retracted = record.is_retracted
-    if retracted and not is_notice:
-        notice = Notice(type="retraction", source="openalex", doi=normalize_doi(doi))
-        return (
-            StatusSourceOutcome("openalex", CONFIRMED, is_retracted=True, notice_count=1),
-            [notice],
-        )
-    return StatusSourceOutcome("openalex", NEGATIVE, is_retracted=retracted), []
+    if not retracted:
+        return StatusSourceOutcome("openalex", NEGATIVE, is_retracted=retracted), []
+    if is_notice or crossref_specific:
+        # Flagged, outranked. The claim survives on the outcome; it just does not set a verdict.
+        return StatusSourceOutcome("openalex", CONFIRMED, is_retracted=True, notice_count=0), []
+    notice = Notice(type="retraction", source="openalex", doi=normalize_doi(doi))
+    return (
+        StatusSourceOutcome("openalex", CONFIRMED, is_retracted=True, notice_count=1),
+        [notice],
+    )
 
 
 def _error_dict(exc: SourceError) -> dict[str, Any]:
@@ -440,7 +484,18 @@ async def check_status_async(
 
     is_notice = _notice_document(resolved)
 
-    # Pass 2: classify, in the order the sources were queried.
+    # Pass 2: Crossref is settled FIRST, whatever order the connectors were handed to us in,
+    # because whether it has a specific opinion decides how OpenAlex's coarse is_retracted may
+    # be read (module docstring, precedence rule 1). A Crossref that errored or that does not
+    # hold the DOI has no opinion, so `crossref_specific` stays False and OpenAlex's flag is
+    # free to stand on its own (rule 2).
+    crossref: tuple[StatusSourceOutcome, list[Notice]] | None = None
+    for name, record, error in resolved:
+        if name == "crossref" and error is None and record is not None:
+            crossref = _crossref_outcome(record, normalized, is_notice=is_notice)
+    crossref_specific = bool(crossref and crossref[1])
+
+    # Pass 3: classify, in the order the sources were queried.
     outcomes: list[StatusSourceOutcome] = []
     notices: list[Notice] = []
     for name, record, error in resolved:
@@ -453,9 +508,15 @@ async def check_status_async(
             outcomes.append(StatusSourceOutcome(name, NEGATIVE))
             continue
         if name == "crossref":
-            outcome, found = _crossref_outcome(record, normalized, is_notice=is_notice)
+            assert crossref is not None  # resolved cleanly above, so it was classified above
+            outcome, found = crossref
         else:
-            outcome, found = _openalex_outcome(record, normalized, is_notice=is_notice)
+            outcome, found = _openalex_outcome(
+                record,
+                normalized,
+                is_notice=is_notice,
+                crossref_specific=crossref_specific,
+            )
         outcomes.append(outcome)
         notices.extend(found)
 
@@ -483,7 +544,7 @@ async def check_status_async(
         sources = ", ".join(sorted({n.source for n in notices}))
         reason = f"{kinds} notice reported by {sources}"
     if conflict:
-        reason += "; status sources disagree, and the disagreement is reported, not resolved away"
+        reason += "; " + _conflict_reason(outcomes)
 
     return StatusEntry(
         id=normalized or key or "unknown",
@@ -518,11 +579,31 @@ def _notice_document(
     return bool(_partner_dois(crossref))
 
 
+def _conflict_reason(outcomes: Sequence[StatusSourceOutcome]) -> str:
+    """Name the disagreement in the reason string, so a reader sees WHICH source said what.
+
+    The verdict follows the specific signal; the coarse one is carried, not hidden.
+    """
+    openalex = next((o for o in outcomes if o.source == "openalex"), None)
+    flag = "true" if openalex is not None and openalex.is_retracted else "false"
+    return (
+        f"status sources disagree: OpenAlex reports is_retracted={flag}, which is a coarse flag "
+        "over several kinds of editorial notice, and the verdict above follows Crossref's more "
+        "specific update-type. The disagreement is reported, not resolved away"
+    )
+
+
 def _conflicted(outcomes: Sequence[StatusSourceOutcome], notices: Sequence[Notice]) -> bool:
     """Do the sources disagree about retraction?
 
     Only a genuine contradiction counts. OpenAlex not holding the DOI at all (a clean
     negative with ``is_retracted`` unset) is silence, not disagreement.
+
+    This fires in both directions, and the interesting one is OpenAlex ``is_retracted: true``
+    against a Crossref update graph that carries an ``expression_of_concern`` and no retraction.
+    Before the precedence in :func:`_openalex_outcome` existed, that case was resolved silently
+    in OpenAlex's favour: the entry came out ``retracted`` and nothing in the report said that
+    the only source with a specific opinion had said otherwise.
     """
     openalex = next((o for o in outcomes if o.source == "openalex"), None)
     crossref = next((o for o in outcomes if o.source == "crossref"), None)

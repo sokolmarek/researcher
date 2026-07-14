@@ -1,0 +1,664 @@
+{
+  "endpoint": "dois",
+  "request_key": "567679ca1c4b3ab343dbbc8e70ef386749967f5f854e30400b7778fdeaa40328",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Mask R\\-CNN"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": [],
+          "contributors": [],
+          "created": "2022-01-04T19:02:49Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "IEEE Robotics and Automation Society 2021",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            },
+            {
+              "affiliation": [
+                "University of Stuttgart"
+              ],
+              "familyName": "Bauer",
+              "givenName": "Ruben",
+              "name": "Bauer, Ruben",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "University of Stuttgart"
+              ],
+              "familyName": "Hager",
+              "givenName": "Janik",
+              "name": "Hager, Janik",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "University of Stuttgart"
+              ],
+              "familyName": "Mainprice",
+              "givenName": "Jim",
+              "name": "Mainprice, Jim",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Technische Universität Berlin"
+              ],
+              "familyName": "Toussaint",
+              "givenName": "Marc",
+              "name": "Toussaint, Marc",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2021-07-27T14:00:00Z",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "We introduce a Grasp Manifold Estimator (GraspME) to find object's grasp affordances directly in camera images. Predicting grasp manifolds has the advantage of generalizing to continuously infinitely many grasps, which is not the case when using other grasp representations. We approximate grasp manifolds via a set of keypoints and locate them in images using Mask R-CNN as a backbone. We rely on simulation data only and perform experiments on simple and complex objects, including unseen ones and real data.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48448/afn4-ke60",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2021,
+          "published": null,
+          "publisher": "Underline Science Inc.",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-01-04T19:02:49Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "Robotics"
+            },
+            {
+              "subject": "Artificial Intelligence"
+            },
+            {
+              "subject": "Computer vision"
+            },
+            {
+              "subject": "Machine Learning"
+            }
+          ],
+          "titles": [
+            {
+              "title": "GraspME - Grasp Manifold Estimator"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Conference talk",
+            "resourceTypeGeneral": "Audiovisual",
+            "ris": "MPCT",
+            "schemaOrg": "MediaObject"
+          },
+          "updated": "2026-07-13T14:58:13Z",
+          "url": "https://underline.io/lecture/30282-graspme-grasp-manifold-estimator",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48448/afn4-ke60",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "undsci.oopmau",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-07-12T13:42:05Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Hyodo",
+              "givenName": "Katsuya",
+              "name": "Hyodo, Katsuya",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-6163-6251",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-12",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "2.6.1\n\nSummary\n\nThis pull request continues the flatbuffer_direct refactoring after #945. It focuses on making the TensorFlow-free ONNX-to-TFLite path more reliable, easier to reason about, and less expensive to maintain while preserving the existing CLI, Python API, artifact naming, report schemas, and conversion behavior.\n\nThe branch contains 51 commits and changes 76 files. The work is intentionally incremental: it improves the current conversion pipeline and records the remaining architectural work, but it does not claim that the full long-term refactoring plan is complete.\n\nMain improvements\n\n1. Quantized lowering is split into focused operation families\n\nThe former combined op_builders/quantized.py implementation has been removed. Quantized lowering is now organized into dedicated modules:\n\n\n\ndynamic_quantize.py\n\nquantize_linear.py\n\nqlinear_binary.py\n\nqlinear_activation.py\n\nqlinear_concat.py\n\nqlinear_conv.py\n\nqlinear_fc.py\n\nqlinear_pool.py\n\nconv_integer.py\n\nquantized_common.py for shared quantization, shape/signature, padding, and requantization primitives\n\n\nquantized_common.py contains no build_* entry point. Public builder imports and registry dispatch remain compatible.\n\nEach mechanical extraction is guarded by a normalized ModelIR fingerprint covering operators, tensors, constant buffers, options, versions, shapes, shape signatures, dtypes, and quantization metadata. The fingerprint serializer is shared across the family tests instead of being duplicated in each test module.\n\n2. Correct ONNX quantization semantics\n\nDynamicQuantizeLinear now uses nearest-even rounding and performs ROUND(x / scale) before adding the integer zero point. This avoids both the previous half-up behavior and FLOAT32 precision loss when a large zero point was added before rounding.\n\nQLinearAdd, QLinearSoftmax, QLinearConv, and related Q/DQ paths retain explicit ONNX-compatible requantization where LiteRT fixed-point tie handling could otherwise differ by one quantum and become amplified downstream.\n\nThe direct MatMulInteger/QLinearMatMul implementation continues to follow portable INT32 ONNX semantics. Host-specific ONNX Runtime U8S8 saturation behavior is documented rather than emulated in the converter.\n\n3. Layout, shape, and high-rank robustness\n\nThis branch adds or strengthens generic handling for:\n\n\n\nquantized pooling output-shape planning;\n\ntwo-input mixed-layout concatenation;\n\nchannel-last ConvInteger input repair;\n\ndynamic Unsqueeze shape preservation;\n\nstale rank/shape hints without overriding valid producer semantics;\n\nstatic high-rank binary and BatchMatMul compression;\n\nhigh-rank ScatterND normalization;\n\nzero-safe dynamic ScatterElements;\n\nsequence LSTM reshape reconciliation;\n\ndynamic arange Loop scan lowering;\n\nfixed-shape detector input contracts;\n\nzero-batch-safe paths used by Mask R-CNN.\n\n\nThe changes use semantic graph properties rather than model-name-specific rules.\n\n4. Dynamic GridSample without TensorFlow or custom operators\n\nDynamic rank-4 GridSample is lowered with builtin LiteRT operators. The implementation supports bilinear/linear and nearest interpolation, zeros and border padding, both align-corners modes, runtime spatial dimensions, and ONNX Runtime-compatible NaN coordinate handling.\n\nThis recovered the large encoder.onnx path while keeping all 24 GridSample nodes builtin and avoiding a TensorFlow dependency or unresolved custom op.\n\n5. Large-model memory and evaluation improvements\n\nThe direct branch now releases the unused legacy GraphSurgeon graph before ModelIR lowering, avoids unnecessary lifetime extension of large serialization objects, and passes a managed ONNX model path to the isolated evaluator instead of pickling a complete protobuf through a multiprocessing pipe.\n\nEvaluation remains sequential. At most one isolated inference subprocess is active at a time; no ProcessPool or parallel model worker was introduced.\n\nStatic-input evaluation may use the standard LiteRT delegate. If delegate preparation fails, the evaluator retries once with the builtin interpreter, still sequentially. Dynamic-input crash isolation remains delegate-free.\n\n6. Model recoveries and explicit failure classification\n\nThe changes recover or promote multiple Tier 0-4 models, including:\n\n\n\nMask R-CNN;\n\ndynamic GridSample encoder models;\n\nonnx_dense_optimized.onnx and its byte-identical counterpart;\n\nmodnet_old.onnx;\n\nrf-detr-nano.onnx;\n\nLibreRFDETRn.onnx;\n\nfixed-shape YOLOv9 variants;\n\na fixed-batch YOLO11 OBB model;\n\nadditional quantized pooling, sequence, and detector paths.\n\n\nRemaining active non-passes have normalized causes instead of unexplained skips. These include invalid source geometry/ranks, documented ONNX Runtime U8S8 kernel divergence, quantization-boundary amplification, and discontinuous TopK/GridSample sensitivity. The two DEIM variants are recorded as accepted successes per explicit project direction.\n\nNo global tolerance relaxation, model-name lowering rule, or forced index ordering was added.\n\n7. TensorFlow-free direct boundary\n\nThe default flatbuffer_direct conversion path and direct accuracy evaluation remain TensorFlow-free. Architecture tests cover the new operation-family and shared quantization modules. TensorFlow remains optional and is required only for explicitly requested TensorFlow/SavedModel/Keras-style outputs or the tf_converter backend.\n\nNo new dependency was added. All implementation and verification work uses the existing uv environment.\n\n8. Tier policy clarification\n\nThe number 2,000 is an ONNX graph node/operation threshold, not a source-file line limit:\n\n\n\nTier 4 ends at 1,999 ONNX nodes.\n\nTier 5 starts at 2,000 ONNX nodes.\n\n\nThere is no 2,000-line acceptance gate for production or test modules. Modules are split according to ownership, coupling, and reviewability.\n\nCompatibility\n\n\n\nExisting CLI and Python entry points are retained.\n\nExisting builder imports and registry dispatch are retained.\n\nArtifact names and report formats are retained.\n\nThe default backend remains unchanged.\n\nNo new package dependency is introduced.\n\nDirect TFLite conversion does not import TensorFlow.\n\nInference validation remains single-process and sequential.\n\n\nManaged corpus state\n\nThe managed Tier 0-4 profile currently records:\n\n\n\n368 passes;\n\n6 missing_tflite_report entries;\n\n20 tflite_fail entries;\n\n26 excluded historical timeouts.\n\n\nAll 26 active non-passes have an explicit normalized cause or expected invalid/custom-runtime classification.\n\nTier 5 is retained as historical/final-phase coverage and is not used as an early refactoring gate.\n\nVerification\n\nThe latest full core-environment regression was executed with one pytest process and no parallel workers:\n\n985 passed, 5 deselected, 2 warnings in 121.63s\n\n\nAdditional focused verification includes:\n\n\n\nquantized family fingerprint and architecture suite: 26 passed;\n\nfocused QLinearConv/ConvInteger suite: 12 passed, 760 deselected;\n\nQLinearConcat and QuantizeLinear/DequantizeLinear focused suite: 12 passed, 761 deselected;\n\nQLinear activation family suite and runtime checks;\n\nQLinear binary rounding and chain runtime checks;\n\nsequential corpus -cotof runs for recovered and diagnosed models;\n\nuv lock --check and an import-time version assertion for the 2.6.1 version update.\n\n\nThe five deselected tests require optional environments unavailable in the core uv setup:\n\n\n\nfour TensorFlow converter tests requiring the TensorFlow extra;\n\none Torch GroupNorm integration test affected by an incompatible system Python 3.10 Torch binary under Python 3.12.\n\n\nThe two warnings are expected FLOAT16 overflow warnings in existing edge-case tests.\n\nDocumentation and handoff\n\nThe architecture and handoff documents record:\n\n\n\ncompleted work;\n\nremaining work;\n\nmanaged corpus state;\n\nexact test commands/results;\n\nknown failures and normalized reasons;\n\nthe next safe refactoring boundary.\n\n\nThe next planned implementation step is to extract coverage/correspondence reporting from lower_from_onnx2tf.py, followed by staged ownership of its large layout-pass collection. That work is deliberately not partially included in this PR.\n\nVersion\n\nThe package, lockfile, and Docker examples are updated consistently from 2.6.0 to 2.6.1.\n\nWhat's Changed\n\n\n\nContinue flatbuffer_direct reliability and quantized-family refactoring by @PINTO0309 in https://github.com/PINTO0309/onnx2tf/pull/947\n\n\nFull Changelog: https://github.com/PINTO0309/onnx2tf/compare/2.6.0...2.6.1",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "If you use onnx2tf in your research, please cite it using these metadata.",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.5281/zenodo.21323023",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:21323023",
+              "identifierType": "oai"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-12T13:42:05Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "https://github.com/PINTO0309/onnx2tf/tree/2.6.1",
+              "relatedIdentifierType": "URL",
+              "relationType": "IsSupplementTo",
+              "resourceTypeGeneral": "Software"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.7230085",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "MIT License",
+              "rightsIdentifier": "mit",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://opensource.org/licenses/MIT",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [],
+          "titles": [
+            {
+              "title": "Tools to convert ONNX files (NCHW) to TensorFlow format (NHWC)"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "",
+            "resourceTypeGeneral": "Software",
+            "ris": "COMP",
+            "schemaOrg": "SoftwareSourceCode"
+          },
+          "updated": "2026-07-12T13:42:05Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.21323023",
+          "version": "2.6.1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.21323023",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "UNSW Sydney",
+                "UNSW Sydney"
+              ],
+              "contributorType": "HostingInstitution",
+              "name": "UNSW Sydney",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            }
+          ],
+          "created": "2025-11-04T10:08:34Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Shen",
+              "givenName": "Xiaohan",
+              "name": "Shen, Xiaohan",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "https://orcid.org/0000-0002-7776-2260",
+                  "nameIdentifierScheme": "ORCID",
+                  "schemeUri": "https://orcid.org"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [],
+          "descriptions": [
+            {
+              "description": "Amid increasing demands for efficiency, safety, and digitalisation in the construction industry, vision based technologies such as site cameras and object detection algorithms are being widely adopted. However, current approaches lack a robust framework for integrating this unstructured visual data with Building Information Modelling (BIM), limiting their utility in Digital Twin (DT) systems. This research addresses this gap by proposing a novel Semantic-driven Prefabricated Digital Twin (SPCDT) tailored for prefabricated construction. The novelty of this work lies in the development of a Vision-based Ontology for Construction (VOC) and a Comprehensive Construction Knowledge Graph (Con-KG), which enable the transformation of visual data into machine-readable, queryable, and semantically enriched representations. Machine Learning (ML) models (Mask R-CNN, You Only Look Once, version 8 (YOLOv8)) are used to detect and track prefabricated components on construction sites, and their outputs are semantically integrated with BIM data using Resource Description Framework (RDF) and SPARQL Protocol and RDF Query Language (SPARQL) technologies. The value of this research is demonstrated through a real-world case study, where the system enables automated progress monitoring, and data dimension transformation. The proposed approach advances construction informatics by improving data coherence, usability, and interoperability in DT. It offers a scalable foundation for future integration of Virtual Reality (VR) / Augmented Reality (AR) interfaces, Artificial Intelligence (AI)-driven reasoning, and real-time feedback mechanisms, contributing to smarter and more adaptive construction workflows.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.26190/unsworks/31753",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "UNSW Sydney",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-11-04T10:09:06Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "construction Kowledge Graph"
+            },
+            {
+              "subject": "Ontology"
+            },
+            {
+              "subject": "Digital Twin"
+            },
+            {
+              "subject": "Construction management"
+            },
+            {
+              "subject": "Information management"
+            },
+            {
+              "subject": "Prefabricated construction"
+            },
+            {
+              "schemeUri": "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc",
+              "subject": "330201 Automation and technology in building and construction",
+              "subjectScheme": "anzsrc-for"
+            },
+            {
+              "schemeUri": "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc",
+              "subject": "330202 Building construction management and project planning",
+              "subjectScheme": "anzsrc-for"
+            },
+            {
+              "schemeUri": "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc",
+              "subject": "330204 Building information modelling and management",
+              "subjectScheme": "anzsrc-for"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Vision-based Information Management using Digital Construction Knowledge Graphs to Integrate Data in Digital Twins for Prefabricated Construction"
+            }
+          ],
+          "types": {
+            "bibtex": "phdthesis",
+            "citeproc": "thesis",
+            "resourceType": "doctoral thesis",
+            "resourceTypeGeneral": "Dissertation",
+            "ris": "THES",
+            "schemaOrg": "Thesis"
+          },
+          "updated": "2026-07-12T03:38:35Z",
+          "url": "http://hdl.handle.net/1959.4/106270",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.26190/unsworks/31753",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "unsw.repo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "UNSW Sydney",
+                "UNSW Sydney"
+              ],
+              "contributorType": "HostingInstitution",
+              "name": "UNSW Sydney",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            }
+          ],
+          "created": "2022-06-14T10:05:47Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Al-zubaidi",
+              "givenName": "Fatimah",
+              "name": "Al-zubaidi, Fatimah",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "https://orcid.org/0000-0002-4155-5286",
+                  "nameIdentifierScheme": "ORCID",
+                  "schemeUri": "https://orcid.org"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [],
+          "descriptions": [
+            {
+              "description": "Drill cores provide geological and geotechnical information essential for mineral and hydrocarbon exploration. Modern core scanners can automatically produce a large number of high-resolution core-tray images or unwrapped-core images, which encode important rock properties, such as lithology and geological structures. Current core-image analysis methods, however, are based on outdated algorithms that lack generalization and robustness. In addition, current methods focus on using log data while core images often provide more reliable information about the subsurface formations. With the new era of technology and the evolution of big data and artificial intelligence, core images will be an important asset for subsurface characterization. The future of core analysis, driven by the digital archiving of cores, needs to be considered since the manual core description and its extensive time and labor requirements are outdated. This dissertation aims to lay the foundation of a ‘Digital Geologist’ using advanced machine learning algorithms. It develops and evaluates intelligent workflows using Convolutional Neural Networks (CNNs) to automate core-image analysis, and thus facilitate the evaluation of natural resources. It explores the feasibility of extracting different rock features from core images. First, advanced CNNs are utilized to predict major lithologies of rocks from core-tray images and an overall workflow is optimized for lithology prediction. Second, a CNN is created to assess the physical condition of cores and determine intact core sections to calculate the rock quality designation (RQD) index, which is essential in many geotechnical applications. Third, an innovative approach is developed to extract fractures from unwrapped-core images and determine fracture depth and orientation. The workflow is based on using a state-of-the-art CNN model for instance segmentation, the Mask Region-based Convolutional Neural Network (Mask R-CNN). Lastly, fracture analysis from unwrapped-core images is further studied to obtain more detailed characteristics represented by fracture apertures. Overall, the thesis proposes a transformed workflow of core-image analysis that can be a platform for future studies with potential application in the mining and petroleum industries.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.26190/unsworks/24102",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 3,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2022,
+          "published": null,
+          "publisher": "UNSW Sydney",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-06-14T10:06:48Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "core analysis"
+            },
+            {
+              "subject": "image processing"
+            },
+            {
+              "subject": "image segmentation"
+            },
+            {
+              "subject": "machine learning"
+            },
+            {
+              "subject": "lithology classification"
+            },
+            {
+              "subject": "fracture analysis"
+            },
+            {
+              "schemeUri": "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc",
+              "subject": "401907 Petroleum and reservoir engineering",
+              "subjectScheme": "anzsrc-for"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Automated Analysis of Drill-Core Images Using Convolutional Neural Network"
+            }
+          ],
+          "types": {
+            "bibtex": "phdthesis",
+            "citeproc": "thesis",
+            "resourceType": "doctoral thesis",
+            "resourceTypeGeneral": "Dissertation",
+            "ris": "THES",
+            "schemaOrg": "Thesis"
+          },
+          "updated": "2026-07-12T02:40:05Z",
+          "url": "http://hdl.handle.net/1959.4/100395",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.26190/unsworks/24102",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "unsw.repo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-07-11T06:31:15Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "sepas1609",
+              "name": "sepas1609",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "B. Rajendra Reddy",
+              "name": "B. Rajendra Reddy",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-11",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "This repository contains a comprehensive pipeline for the segmentation, preprocessing, solidification, and classification of biofilm images. By combining classical mathematical optimization techniques like the Alternating Direction Method of Multipliers (ADMM) with state-of-the-art Deep Learning models (EfficientNetB0, U-Net, Mask R-CNN), this project provides a robust workflow for analyzing biofilm datasets.\n\nIncluded in this repository is the biofilm_effecientnet_model_dataset.zip archive, which bundles the primary dataset, pre-trained model weights, and the core classification model code needed to reproduce our results.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5281/zenodo.21305854",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:21305854",
+              "identifierType": "oai"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-11T06:31:15Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "https://github.com/Runtime-Slayers/biofilm-segmentation-admm/tree/v1.0.0",
+              "relatedIdentifierType": "URL",
+              "relationType": "IsSupplementTo",
+              "resourceTypeGeneral": "Software"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.21305853",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "MIT License",
+              "rightsIdentifier": "mit",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://opensource.org/licenses/MIT",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [],
+          "titles": [
+            {
+              "title": "Runtime-Slayers/biofilm-segmentation-admm: Biofilm Image Analysis: Segmentation using ADMM & Deep Learning Classifier"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "",
+            "resourceTypeGeneral": "Software",
+            "ris": "COMP",
+            "schemaOrg": "SoftwareSourceCode"
+          },
+          "updated": "2026-07-11T06:31:15Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.21305854",
+          "version": "v1.0.0",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.21305854",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=5&query=Mask+R%5C-CNN",
+      "self": "https://api.datacite.org/dois?query=Mask+R%5C-CNN&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1450,
+      "totalPages": 290
+    }
+  },
+  "response_hash": "4370422d0e0a8e929f6605dc578416c8934ffe45c0a7812f16982f932e875783",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

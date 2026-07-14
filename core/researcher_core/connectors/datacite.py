@@ -37,7 +37,7 @@ from typing import Any, ClassVar
 
 from ..model import CSLDate, CSLName, CSLRecord, normalize_doi
 from . import register
-from .base import BaseConnector, SourceError, SourceErrorKind
+from .base import BaseConnector, SourceError, SourceErrorKind, escape_lucene
 
 __all__ = ["DataCiteConnector"]
 
@@ -125,6 +125,34 @@ class DataCiteConnector(BaseConnector):
             headers["User-Agent"] = f"{self.user_agent} (mailto:{self.mailto})"
         return headers
 
+    # -- queries -----------------------------------------------------------
+
+    def sanitize_query(self, query: str) -> str:
+        """The common repair, then a Lucene escape on top, then the slash.
+
+        DataCite's ``query`` parameter is an Elasticsearch ``query_string``, so it is the
+        one source here that reads punctuation as grammar. Unescaped, it answers HTTP 400
+        for a title carrying a stray brace, quote, or backslash, and it answers HTTP 200
+        with ZERO HITS for a title carrying a colon ("Attention: Is All You Need" parses as
+        a query for the term "Is" in a field named "Attention", which does not exist). The
+        silent one is the more dangerous: it is a source error dressed up as a clean
+        negative, and under D9 a clean negative is the only thing that can build toward a
+        refusal. Escaping every reserved character turns the title back into the bag of
+        words it always was, and DataCite finds the same 2371 records it finds for the
+        colon-free spelling.
+
+        The slash is the exception, and it has to be handled by substitution rather than by
+        escaping, because Elasticsearch will not accept the escape. ``CRISPR\\/Cas9`` is a
+        400 (``token_mgr_error``); ``CRISPR/Cas9`` is a clean 200. But a bare slash is not
+        safe to leave either, because a SECOND one turns the pair into a Lucene regex
+        (``/pattern/``) and the query silently stops meaning what it says. Replacing the
+        slash with a space escapes that dilemma: DataCite tokenizes "CRISPR/Cas9" on the
+        slash anyway, so "CRISPR Cas9" is the same query to it (both return 3213 records),
+        and no regex delimiter survives to be paired up.
+        """
+        text = super().sanitize_query(query).replace("/", " ")
+        return escape_lucene(" ".join(text.split()))
+
     # -- operations --------------------------------------------------------
 
     async def search(
@@ -145,8 +173,12 @@ class DataCiteConnector(BaseConnector):
 
         An empty list means the search ran and matched nothing. A dead API raises
         :class:`SourceError`.
+
+        The query is escaped by :meth:`sanitize_query` BEFORE the ``since`` clause is
+        wrapped around it, never after: the parentheses and the ``publicationYear:[...]``
+        range below are our own Lucene syntax and must reach DataCite unescaped.
         """
-        text = (query or "").strip()
+        text = self.sanitize_query(query)
         if not text:
             return []
         size = max(1, min(int(limit), self.max_page_size))

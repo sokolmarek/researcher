@@ -19,12 +19,15 @@ from typing import Any
 
 import pytest
 from jsonschema import Draft202012Validator
+from rapidfuzz import fuzz
 
 from researcher_core.connectors import create_connector
 from researcher_core.connectors.base import BaseConnector, SourceError, SourceErrorKind
-from researcher_core.model import CSLName, CSLRecord, canonical_json
+from researcher_core.model import CSLName, CSLRecord, canonical_json, title_fingerprint
 from researcher_core.snapshots import SnapshotMode, SnapshotSession, SnapshotStore
 from researcher_core.verify import (
+    BY_IDENTIFIER,
+    BY_TITLE_SEARCH,
     CONFIRMED,
     DEFAULT_THRESHOLDS,
     INCONCLUSIVE,
@@ -155,6 +158,7 @@ def test_two_confirmations_outrank_a_lone_disagreeing_source() -> None:
                 "datacite",
                 NEGATIVE,
                 resolved=True,
+                matched_by=BY_IDENTIFIER,
                 mismatch_reasons=("year",),
                 matched_record=record(year=2019),
             ),
@@ -180,8 +184,20 @@ def test_two_confirmations_outrank_an_erroring_source() -> None:
 def test_two_resolving_disagreements_are_a_mismatch() -> None:
     decision = decide(
         [
-            outcome("openalex", NEGATIVE, resolved=True, mismatch_reasons=("title_similarity",)),
-            outcome("crossref", NEGATIVE, resolved=True, mismatch_reasons=("title_similarity",)),
+            outcome(
+                "openalex",
+                NEGATIVE,
+                resolved=True,
+                matched_by=BY_IDENTIFIER,
+                mismatch_reasons=("title_similarity",),
+            ),
+            outcome(
+                "crossref",
+                NEGATIVE,
+                resolved=True,
+                matched_by=BY_IDENTIFIER,
+                mismatch_reasons=("title_similarity",),
+            ),
         ]
     )
     assert decision.verdict == MISMATCH
@@ -191,7 +207,13 @@ def test_two_resolving_disagreements_are_a_mismatch() -> None:
 def test_one_clean_disagreement_with_no_confirmation_is_a_mismatch() -> None:
     decision = decide(
         [
-            outcome("openalex", NEGATIVE, resolved=True, mismatch_reasons=("year",)),
+            outcome(
+                "openalex",
+                NEGATIVE,
+                resolved=True,
+                matched_by=BY_IDENTIFIER,
+                mismatch_reasons=("year",),
+            ),
             outcome("crossref", NEGATIVE, resolved=False),
         ]
     )
@@ -202,7 +224,13 @@ def test_one_disagreement_alongside_an_error_is_not_a_mismatch() -> None:
     """D9 rule 2 requires the single-disagreement case to be clean. An error makes it dirty."""
     decision = decide(
         [
-            outcome("openalex", NEGATIVE, resolved=True, mismatch_reasons=("year",)),
+            outcome(
+                "openalex",
+                NEGATIVE,
+                resolved=True,
+                matched_by=BY_IDENTIFIER,
+                mismatch_reasons=("year",),
+            ),
             outcome("crossref", SOURCE_ERROR, error={"type": "timeout", "message": "timed out"}),
         ]
     )
@@ -214,7 +242,13 @@ def test_one_disagreement_alongside_a_confirmation_is_not_a_mismatch() -> None:
     decision = decide(
         [
             outcome("openalex", CONFIRMED),
-            outcome("crossref", NEGATIVE, resolved=True, mismatch_reasons=("year",)),
+            outcome(
+                "crossref",
+                NEGATIVE,
+                resolved=True,
+                matched_by=BY_IDENTIFIER,
+                mismatch_reasons=("year",),
+            ),
         ]
     )
     assert decision.verdict == INCONCLUSIVE
@@ -468,6 +502,183 @@ def test_gold_valid_doi_with_wrong_metadata_is_a_mismatch() -> None:
     resolving = [o for o in entry["source_outcomes"] if o["resolved"]]
     assert len(resolving) >= 2
     assert all("title_similarity" in o["mismatch_reasons"] for o in resolving)
+
+
+# ---------------------------------------------------------------------------
+# A source that does not hold a DOI has no opinion about it
+#
+# The refusal-grade false positives measured in evals/BENCHMARKS.md (3/99, of which these
+# rules kill all three). An index that does not mint or hold a DOI, asked about it, must
+# return a CLEAN NEGATIVE. It must not fall back to a title search, find a similar-looking
+# record, and report `doi_mismatch`, because it never had an opinion about the identifier at
+# all. Two such non-holding indexes were outvoting one genuine confirmation and producing a
+# refusal-grade `mismatch` on real, correctly cited references.
+# ---------------------------------------------------------------------------
+
+
+def title_hit(source: str) -> SourceOutcome:
+    """A source that does NOT hold the claimed DOI and found the work by title search."""
+    return outcome(
+        source,
+        NEGATIVE,
+        resolved=True,
+        matched_by=BY_TITLE_SEARCH,
+        mismatch_reasons=("doi_mismatch",),
+        matched_record=record(doi="10.5555/some.other.id"),
+    )
+
+
+def test_a_title_search_hit_is_not_a_resolving_disagreement() -> None:
+    hit = title_hit("datacite")
+    assert hit.disagrees is False  # it never resolved the identifier: it cannot disagree
+    assert hit.resolved_identifier is False
+    assert hit.found_work_under_another_id is True
+
+
+def test_two_non_holding_indexes_cannot_outvote_one_confirmation() -> None:
+    """10.5281/zenodo.21358727, measured: DataCite confirms, the other two do not hold it.
+
+    Under the old rule the two title-search hits were counted as resolving disagreements and
+    D9 rule 2 fired: refusal-grade `mismatch` on a real Zenodo dataset. It must be
+    `inconclusive` (one confirmation, below the bar), which is never refusal-grade.
+    """
+    decision = decide(
+        [outcome("datacite", CONFIRMED), title_hit("openalex"), title_hit("crossref")]
+    )
+    assert decision.verdict == INCONCLUSIVE
+    assert decision.refusal_grade is False
+
+
+def test_a_non_holding_index_cannot_disagree_with_a_resolving_one() -> None:
+    """10.1109/taffc.2020.3014842, measured: OpenAlex confirms, Crossref resolves with a year
+    two off (IEEE early access versus issue), DataCite does not mint the DOI at all.
+
+    One resolving disagreement plus one confirmation is thin evidence, not a refusal.
+    """
+    decision = decide(
+        [
+            outcome("openalex", CONFIRMED),
+            outcome(
+                "crossref",
+                NEGATIVE,
+                resolved=True,
+                matched_by=BY_IDENTIFIER,
+                mismatch_reasons=("year",),
+            ),
+            title_hit("datacite"),
+        ]
+    )
+    assert decision.verdict == INCONCLUSIVE
+    assert decision.refusal_grade is False
+
+
+def test_wrong_doi_on_a_real_paper_is_still_a_mismatch() -> None:
+    """Rule 2b, the ONLY route by which a title-search hit may convict an identifier.
+
+    Nobody resolved the DOI, nobody errored, and two indexes hold the work under a different
+    identifier. The work is real and the identifier in the entry is not its own.
+    """
+    decision = decide([title_hit("openalex"), title_hit("crossref"), outcome("datacite", NEGATIVE)])
+    assert decision.verdict == MISMATCH
+    assert decision.refusal_grade is True
+    assert decision.disagreements == ("openalex", "crossref")
+
+
+def test_rule_2b_needs_two_sources_not_one() -> None:
+    """One index's fuzzy title hit is never enough to call an identifier wrong."""
+    decision = decide([title_hit("openalex"), outcome("crossref", NEGATIVE)])
+    assert decision.verdict == INCONCLUSIVE
+    assert decision.refusal_grade is False
+
+
+def test_rule_2b_is_unreachable_once_any_source_errored() -> None:
+    """A downed index might have been the one holding the DOI. Same law as `unresolvable`."""
+    decision = decide(
+        [
+            title_hit("openalex"),
+            title_hit("crossref"),
+            outcome("datacite", SOURCE_ERROR, error={"type": "timeout", "message": "down"}),
+        ]
+    )
+    assert decision.verdict == INCONCLUSIVE
+    assert decision.refusal_grade is False
+
+
+def test_one_source_resolving_the_doi_strips_the_non_holding_indexes_of_a_say() -> None:
+    """The DOI exists. Whatever the indexes that do not hold it found by title is irrelevant."""
+    decision = decide(
+        [
+            outcome("datacite", CONFIRMED),
+            outcome("semantic_scholar", CONFIRMED),
+            title_hit("openalex"),
+            title_hit("crossref"),
+        ]
+    )
+    assert decision.verdict == VERIFIED
+    assert decision.refusal_grade is False
+
+
+# ---------------------------------------------------------------------------
+# Truncated titles: an exact prefix is truncation, not a different paper
+# ---------------------------------------------------------------------------
+
+DANS_TITLE = (
+    "DO Beatrixstraat 2-12 Zetten Vondsten van laat-middeleeuwse en nieuwetijdse dorpsbewoning "
+    "in plangebied Beatrixstraat 2-12 te Zetten, gemeente Overbetuwe. Een inventariserend "
+    "veldonderzoek door middel van proefsleuven (IVO-P) en een opgraving (DO)"
+)
+DANS_TITLE_TRUNCATED = (
+    "DO Beatrixstraat 2-12 Zetten Vondsten van laat-middeleeuwse en nieuwetijdse dorpsbewoning"
+)
+
+
+def test_a_long_exact_prefix_is_read_as_truncation() -> None:
+    """10.17026/ar/sraj8f, measured: a real DANS dataset whose title a harvester cut at 88
+    characters. DataCite resolves the DOI, token_sort_ratio scores 0.539 against the full
+    title (the real one runs nearly three times as long, so the 40%-of-the-longer guard also
+    refuses to fire), and the verdict was refusal-grade `mismatch` on an honest reference.
+    """
+    base = fuzz.token_sort_ratio(
+        title_fingerprint(DANS_TITLE_TRUNCATED), title_fingerprint(DANS_TITLE)
+    ) / 100.0
+    assert base < DEFAULT_THRESHOLDS.title_similarity  # what the base ratio alone scores
+    assert title_similarity(DANS_TITLE_TRUNCATED, DANS_TITLE) == 1.0
+
+
+def test_the_prefix_rule_does_not_fire_on_a_short_prefix() -> None:
+    """The guard against the rule's own risk: a short shared opening is NOT identity.
+
+    Two different papers routinely open with the same handful of words. The rule requires an
+    exact prefix of at least `truncated_prefix_min_chars`, which no such opening reaches.
+    """
+    short = "Deep learning for medical"  # 25 chars: a real, common title opening
+    longer = "Deep learning for medical image segmentation: a comprehensive survey"
+    assert len(title_fingerprint(short)) < DEFAULT_THRESHOLDS.truncated_prefix_min_chars
+    score = title_similarity(short, longer)
+    assert score is not None and score < 1.0
+
+
+def test_the_prefix_rule_is_exact_not_fuzzy() -> None:
+    """A title that DIVERGES from the longer one is not a truncation of it, however early."""
+    claimed = "Cardiologist-level arrhythmia detection using support vector machines in ambulatory"
+    found = (
+        "Cardiologist-level arrhythmia detection and classification in ambulatory "
+        "electrocardiograms using a deep neural network"
+    )
+    score = title_similarity(claimed, found)
+    assert score is not None and score < 1.0
+
+
+def test_the_prefix_rule_lifts_the_title_only_and_the_author_check_still_stands() -> None:
+    """It cannot confirm a different work: year and first author are still checked."""
+    claim = ReferenceClaim(
+        title=DANS_TITLE_TRUNCATED, year=2026, authors=["Someone, Entirely Different"]
+    )
+    assessment = assess_match(claim, record(title=DANS_TITLE, year=2026, surname="Bakker"))
+    assert assessment.similarity == 1.0
+    assert not assessment.matched
+    assert "first_author_surname" in assessment.reasons
+    assert assessment.identity_broken is True
 
 
 # ---------------------------------------------------------------------------

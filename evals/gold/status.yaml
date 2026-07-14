@@ -1,7 +1,35 @@
 # Axis (b) publication status gold set.
 #
 # Vocabulary (D16): current | corrected | retracted | expression-of-concern
-# Size (D17): >= 120 DOIs, >= 20 per class. This file has 120, with 25/25/25/45.
+# Size (D17): >= 120 DOIs, >= 20 per class. This file has 120, with 31 retracted / 25 corrected
+# / 19 expression-of-concern / 45 current.
+#
+# WARNING, D17 sizing: the expression-of-concern class is at 19, one BELOW the >= 20/class floor,
+# because six of its members turned out to be retracted (below). The class needs at least 6 more
+# genuinely EoC-only DOIs, plus their Crossref and OpenAlex snapshots, before axis (b) meets its
+# size gate again. This is recorded rather than papered over by leaving six wrong labels in place.
+#
+# ---------------------------------------------------------------------------------------------
+# Six escalated labels, relabeled 2026-07-14 from expression-of-concern to retracted
+# ---------------------------------------------------------------------------------------------
+# 10.1042/bsr20160523, 10.1042/bsr20181289, 10.1161/circresaha.111.250423,
+# 10.2119/molmed.2014.00183, 10.1371/journal.pgen.1004792, 10.1155/2022/3802603
+#
+# Every one of them received an expression of concern and was LATER RETRACTED. The harvest below
+# filtered Crossref on update-type:expression_of_concern, which matches any work that has EVER had
+# one, including one since withdrawn, so the original labels captured the FIRST notice rather than
+# the CURRENT status. That is the stale side of the disagreement, and it is the labels that were
+# wrong, not the kernel.
+#
+# The evidence, re-checked against the LIVE Crossref API on 2026-07-14 and not against a scan of
+# notice documents: each paper's own `updated-by` array carries a retraction entry, deposited
+# INDEPENDENTLY by the publisher and by Retraction Watch, dated AFTER its expression of concern,
+# and each named retraction notice resolves as a real work whose `update-to` points back at the
+# paper. Note in particular that the four Portland Press / Hindawi / Molecular Medicine notices
+# (bsr-20160523_ret, bsr-2018-1289_ret, 10.1155/2022/9758123, 10.1186/s10020-020-00263-2) DO
+# exist: a scan of Crossref notice documents that misses them is a gap in the scan, not evidence
+# that the paper still stands. Each item below carries its eoc_date and retraction_date so a
+# future reader can re-verify in one request instead of re-litigating this.
 #
 # Provenance: harvested from the live Crossref API on 2026-07-14 by filtering
 # update-type:{retraction,correction,expression_of_concern}. Crossref's filter returns the
@@ -19,7 +47,8 @@
 axis: status
 vocabulary: [current, corrected, retracted, expression-of-concern]
 items:
-  # ---- retracted (25) ----
+  # ---- retracted (25 harvested as retracted; 6 more, escalated from the
+  # expression-of-concern block below, bring the class to 31) ----
   - doi: "10.1016/j.micpro.2020.103768"
     expected: retracted
     title: "RETRACTED: Cross-Cultural communication of language learning social so"
@@ -271,7 +300,8 @@ items:
     title: "Chronic IL-1β-induced inflammation regulates epithelial-to-mesenchymal"
     notice_doi: "10.1038/s41598-020-61341-3"
     openalex_is_retracted: false
-  # ---- expression-of-concern (25) ----
+  # ---- expression-of-concern (19; 6 of the 25 harvested here escalated to retracted,
+  # and are labeled `expected: retracted` in place, each with its own note) ----
   - doi: "10.1016/j.chemosphere.2022.133829"
     expected: expression-of-concern
     title: "Zinc fortification and alleviation of cadmium stress by application of"
@@ -316,16 +346,28 @@ items:
     title: "Green tea polyphenols ameliorate metabolic abnormalities and insulin r"
     notice_doi: "10.1042/cs-20200107_eoc"
     openalex_is_retracted: false
+  # ESCALATED, relabeled 2026-07-14: expression of concern first, RETRACTED later. See the
+  # "Six escalated labels" note at the top of this file. Both the notice DOI and the date come
+  # from the paper's own Crossref `updated-by` array, verified live, and both the publisher and
+  # Retraction Watch deposited the retraction.
   - doi: "10.1042/bsr20160523"
-    expected: expression-of-concern
+    expected: retracted
     title: "TET1 exerts its tumour suppressor function by regulating autophagy in"
-    notice_doi: "10.1042/bsr-20160523_eoc"
+    notice_doi: "10.1042/bsr-20160523_ret"
+    eoc_doi: "10.1042/bsr-20160523_eoc"
+    eoc_date: "2020-07-02"
+    retraction_date: "2021-05-14"
     openalex_is_retracted: true
+    note: "Expression of concern 2020-07-02, retraction 2021-05-14. Crossref carries BOTH update-types; the retraction notice 10.1042/bsr-20160523_ret exists as a work titled Retraction: TET1 exerts its tumor suppressor function ... and its update-to points back here. The current status is retracted. Do not fix this back to expression-of-concern."
   - doi: "10.1042/bsr20181289"
-    expected: expression-of-concern
+    expected: retracted
     title: "Long non-coding RNA linc-ITGB1 promotes cell proliferation, migration,"
-    notice_doi: "10.1042/bsr-20181289_eoc"
+    notice_doi: "10.1042/bsr-2018-1289_ret"
+    eoc_doi: "10.1042/bsr-20181289_eoc"
+    eoc_date: "2021-04-19"
+    retraction_date: "2023-03-02"
     openalex_is_retracted: true
+    note: "Expression of concern 2021-04-19, retraction 2023-03-02. Retraction notice 10.1042/bsr-2018-1289_ret (Retraction: Long non-coding RNA linc-ITGB1 ...) resolves and its update-to points back here. The current status is retracted."
   - doi: "10.1158/1541-7786.mcr-08-0052"
     expected: expression-of-concern
     title: "Focal Adhesion Kinase Controls Aggressive Phenotype of Androgen-Indepe"
@@ -336,21 +378,34 @@ items:
     title: "Long Non-Coding RNA NEAT1 Regulates Pyroptosis in Diabetic Nephropathy"
     notice_doi: "10.1159/000520739"
     openalex_is_retracted: false
+  # ESCALATED, relabeled 2026-07-14 (see the top of this file).
   - doi: "10.1161/circresaha.111.250423"
-    expected: expression-of-concern
+    expected: retracted
     title: "AMPKα2 Deletion Exacerbates Neointima Formation by Upregulating Skp2 i"
-    notice_doi: "10.1161/res.0000000000000439"
+    notice_doi: "10.1161/res.0000000000000502"
+    eoc_doi: "10.1161/res.0000000000000439"
+    eoc_date: "2020-09-25"
+    retraction_date: "2021-09-03"
     openalex_is_retracted: true
+    note: "Expression of concern 2020-09-25, retraction 2021-09-03 (notice 10.1161/res.0000000000000502). The current status is retracted."
   - doi: "10.2119/molmed.2014.00183"
-    expected: expression-of-concern
+    expected: retracted
     title: "High Systemic Levels of the Cytokine-Inducing HMGB1 Isoform Secreted i"
-    notice_doi: "10.1186/s10020-020-0142-x"
+    notice_doi: "10.1186/s10020-020-00263-2"
+    eoc_doi: "10.1186/s10020-020-0142-x"
+    eoc_date: "2020-02-03"
+    retraction_date: "2020-12-30"
     openalex_is_retracted: true
+    note: "Expression of concern 2020-02-03, retraction 2020-12-30. Retraction notice 10.1186/s10020-020-00263-2 (Retraction Note to: High systemic levels of the cytokine-inducing HMGB1 isoform ...) resolves and points back here. Status: retracted."
   - doi: "10.1371/journal.pgen.1004792"
-    expected: expression-of-concern
+    expected: retracted
     title: "24-Hour Rhythms of DNA Methylation and Their Relation with Rhythms of"
-    notice_doi: "10.1371/journal.pgen.1009470"
+    notice_doi: "10.1371/journal.pgen.1009895"
+    eoc_doi: "10.1371/journal.pgen.1009470"
+    eoc_date: "2021-03-19"
+    retraction_date: "2021-11-04"
     openalex_is_retracted: true
+    note: "Expression of concern 2021-03-19, retraction 2021-11-04 (notice 10.1371/journal.pgen.1009895). The current status is retracted."
   - doi: "10.1371/journal.pntd.0006934"
     expected: expression-of-concern
     title: "Antivirus effectiveness of ivermectin on dengue virus type 2 in Aedes"
@@ -381,11 +436,16 @@ items:
     title: "EXPRESSION OF CONCERN: Nitropravastatin stimulates reparative neovascu"
     notice_doi: "10.1111/bph.70199"
     openalex_is_retracted: false
+  # ESCALATED, relabeled 2026-07-14 (see the top of this file).
   - doi: "10.1155/2022/3802603"
-    expected: expression-of-concern
+    expected: retracted
     title: "Monitoring of Sports Health Indicators Based on Wearable Nanobiosensor"
-    notice_doi: "10.1155/2022/9757014"
+    notice_doi: "10.1155/2022/9758123"
+    eoc_doi: "10.1155/2022/9757014"
+    eoc_date: "2022-12-01"
+    retraction_date: "2022-12-19"
     openalex_is_retracted: true
+    note: "Expression of concern 2022-12-01, retraction 2022-12-19. Retraction notice 10.1155/2022/9758123 (Retracted: Monitoring of Sports Health Indicators ...) resolves and its update-to points back here. The current status is retracted."
   - doi: "10.1016/j.nmni.2017.04.003"
     expected: expression-of-concern
     title: "‘Phoenicibacter massiliensis’ gen. nov., sp. nov., a new bacterium iso"

@@ -22,11 +22,35 @@ base class, rather than trusted to eight separate implementations:
 
    Never raise :class:`SourceError` to mean "not found", and never return an empty result
    to mean "the API fell over".
+
+3. **A malformed query is our bug, not the index's.** Free-text queries reaching this
+   kernel come from BibTeX entries written by citation managers, and citation managers
+   truncate. A title cut mid-token ("... to prevent stroke (The LOOP Stu") carries an
+   unbalanced parenthesis; others carry a stray quote, a lone backslash, or a bare AND.
+   Sent raw, those are lexical errors to a query parser, and the two failure modes they
+   produce are both ours, not the source's. Measured against the live APIs:
+
+   * **Loud:** DataCite answers HTTP 400 (``parse_exception``) for an unbalanced paren,
+     quote, or brace, for a trailing backslash, and for a dangling AND. arXiv answers HTTP
+     400 for a trailing backslash, which escapes the closing quote of the ``all:"..."``
+     wrapper it builds. Both surface as :class:`SourceError`, which callers map to
+     ``inconclusive``: safe, per D9, but it blames the index for our own broken request and
+     tells the user nothing.
+   * **Quiet, and worse:** DataCite answers HTTP 200 with ZERO HITS for a title containing
+     a colon, because Lucene reads "Attention:" as a field name. arXiv returns zero entries
+     for an unbalanced brace. A zero-hit answer is a CLEAN NEGATIVE, and a clean negative is
+     the only outcome D9 lets build toward a refusal. A malformed query must never be able
+     to manufacture one.
+
+   So every :meth:`~BaseConnector.search` normalizes its query through
+   :func:`sanitize_query` first. See that function for what it fixes and, just as
+   importantly, for what it refuses to touch.
 """
 
 from __future__ import annotations
 
 import asyncio
+import re
 import time
 from abc import ABC, abstractmethod
 from collections.abc import Mapping
@@ -51,10 +75,132 @@ __all__ = [
     "SourceError",
     "SourceErrorKind",
     "UnsupportedOperation",
+    "escape_lucene",
+    "sanitize_query",
 ]
 
 DEFAULT_TIMEOUT = 30.0
 DEFAULT_USER_AGENT = "researcher-core/0.1.0 (https://github.com/marek-sokol/researcher)"
+
+
+#: Every character Lucene's query-string grammar reserves AND accepts a backslash escape
+#: for. ``&`` and ``|`` are listed singly, which covers the two-character ``&&`` and ``||``
+#: operators as a side effect.
+#:
+#: ``/`` is deliberately NOT here, though Lucene does reserve it (as the regex delimiter in
+#: ``/pattern/``). Elasticsearch's query_string lexer REJECTS the escaped form: sending
+#: ``CRISPR\/Cas9`` to DataCite is HTTP 400 (``token_mgr_error``), while the raw
+#: ``CRISPR/Cas9`` is a perfectly good 200. Escaping it would therefore break the ordinary
+#: titles ("CRISPR/Cas9", "AND/OR gates", "km/h") that it was meant to protect. The regex
+#: hazard a bare ``/`` still carries is dealt with where it belongs, in the DataCite
+#: connector, by replacing the slash with a space rather than by escaping it.
+LUCENE_SPECIALS: str = '+-=&|><!(){}[]^"~*?:\\'
+
+#: Bracket pairs balanced by :func:`sanitize_query`. Angle brackets are deliberately absent:
+#: "<10 mg" is ordinary title text, not a grouping construct, in every grammar we speak.
+_BRACKETS: dict[str, str] = {"(": ")", "[": "]", "{": "}"}
+_CLOSERS: dict[str, str] = {close: open_ for open_, close in _BRACKETS.items()}
+
+#: Uppercase-only, and only as a whole word. "Android" and "Nothing" keep their letters;
+#: a lowercase "and" is already a plain term to every parser and is left alone.
+_BOOLEAN_RE = re.compile(r"\b(?:AND|OR|NOT)\b")
+
+
+def sanitize_query(query: str) -> str:
+    """Make a free-text query safe for a query parser without changing what it asks for.
+
+    The input is a title lifted out of a ``.bib`` file, so it can be truncated, quoted,
+    escaped, or otherwise mangled by whatever citation manager wrote it. This repairs the
+    four things that are lexical errors rather than words:
+
+    * **Backslashes** are dropped. A backslash is the escape character in every grammar
+      here, so a trailing one ("Attention Is All You Need \\") is an unterminated escape.
+      No title means anything by a literal backslash.
+    * **Unbalanced brackets** are dropped, and only the unbalanced ones. A truncated title
+      ending "(The LOOP Stu" loses its orphan "(" and keeps every other character; a title
+      that legitimately contains "(2nd edition)" keeps both parentheses.
+    * **An unpaired double quote** is dropped. Quotes come in pairs, so an odd count means
+      exactly one is stray, and it is the last one that has no partner.
+    * **Bare boolean operators** are lowercased. Uppercase ``AND`` / ``OR`` / ``NOT`` is
+      what makes them operators in Lucene, in PubMed's Entrez grammar, and in the arXiv
+      API; a dangling one ("Attention Is All You Need AND") is a parse error. Lowercasing
+      neutralizes the operator while keeping the token, which is the point: every index
+      lowercases at analysis time anyway, so "NOT gates in DNA computing" still searches
+      for the same words it always did.
+
+    What this deliberately does NOT do is just as load-bearing. A colon, a slash, a hyphen,
+    an apostrophe, a balanced quote, or a balanced bracket is left exactly as written,
+    because those are ordinary punctuation in ordinary titles and this function runs on
+    every query, not just the broken ones. A clean title comes out byte-for-byte identical.
+    Where such a character really is reserved for one source and not the others (a colon is
+    a field separator to Lucene, which is why DataCite quietly returns zero hits for
+    "Attention: Is All You Need"), that source escapes it itself with :func:`escape_lucene`.
+
+    Returns the cleaned query, which may be the empty string when the input was nothing but
+    junk. An empty query is a clean negative: callers return ``[]`` and send no request.
+    """
+    text = str(query or "")
+    # C0/C1 control characters, including the newline a wrapped .bib field can smuggle in.
+    text = "".join(" " if ch < " " or ch == "\x7f" else ch for ch in text)
+    text = text.replace("\\", " ")
+    text = _drop_unbalanced_brackets(text)
+    text = _drop_unpaired_quote(text)
+    text = _BOOLEAN_RE.sub(lambda match: match.group(0).lower(), text)
+    text = " ".join(text.split())
+    if not any(char.isalnum() for char in text):
+        # Punctuation with no word in it ("()", '""', "-") is not a search: there is
+        # nothing in it to match on. Balancing alone would let it through, since "()" is
+        # perfectly balanced, and it would go out as a real request that can only earn a
+        # 400 or a meaningless zero. It asks nothing, so it gets the empty query, and the
+        # caller turns that into a clean negative without troubling the source at all.
+        return ""
+    return text
+
+
+def escape_lucene(text: str) -> str:
+    """Backslash-escape every reserved character in :data:`LUCENE_SPECIALS`.
+
+    Opt-in, per source, and applied on top of :func:`sanitize_query` rather than instead of
+    it: only the sources whose ``query`` parameter really is a Lucene expression (DataCite)
+    want this. It is the difference between DataCite answering HTTP 400 for a title with a
+    stray brace, or zero hits for a title with a colon in it, and DataCite answering the
+    question that was asked.
+
+    Note what is NOT escaped, and why it is not a shortcut: ``/`` is reserved by Lucene but
+    its escaped form is rejected outright by Elasticsearch. See :data:`LUCENE_SPECIALS`.
+
+    It must never be applied to a query the caller composed, only to the user's free text.
+    A source that wraps the text in its own operators (``(<text>) AND publicationYear:[...]``)
+    escapes the text first and adds the operators after, or it would escape its own syntax.
+    """
+    return "".join(f"\\{ch}" if ch in LUCENE_SPECIALS else ch for ch in text)
+
+
+def _drop_unbalanced_brackets(text: str) -> str:
+    """Remove only the brackets with no partner. Balanced ones survive untouched."""
+    stack: list[int] = []
+    orphans: set[int] = set()
+    for index, char in enumerate(text):
+        if char in _BRACKETS:
+            stack.append(index)
+        elif char in _CLOSERS and not (stack and text[stack[-1]] == _CLOSERS[char]):
+            # A closer with no opener of its kind waiting for it, e.g. the "]" in "(a]".
+            orphans.add(index)
+        elif char in _CLOSERS:
+            stack.pop()
+    orphans.update(stack)  # Openers still waiting when the string ran out.
+    if not orphans:
+        return text
+    return "".join(char for index, char in enumerate(text) if index not in orphans)
+
+
+def _drop_unpaired_quote(text: str) -> str:
+    """An odd number of double quotes means the last one is stray. Drop that one only."""
+    positions = [index for index, char in enumerate(text) if char == '"']
+    if len(positions) % 2 == 0:
+        return text
+    stray = positions[-1]
+    return text[:stray] + text[stray + 1 :]
 
 
 class ConnectorError(Exception):
@@ -383,6 +529,24 @@ class BaseConnector(ABC):
 
     # -- the contract ------------------------------------------------------
 
+    def sanitize_query(self, query: str) -> str:
+        """Normalize free text into something this source's query parser can read.
+
+        The one place a query is cleaned, so a new connector inherits the repair for free
+        and cannot forget it. Every :meth:`search` implementation must run its query
+        through this and treat an empty result as a clean negative (return ``[]`` and send
+        no request), rather than shipping a malformed query and blaming the index for the
+        400 that comes back.
+
+        The common normalization is :func:`sanitize_query`. A source whose query parameter
+        has its own reserved grammar overrides this to layer its own escaping on top,
+        calling ``super().sanitize_query(query)`` first (DataCite adds
+        :func:`escape_lucene`). Sources whose search endpoint takes plain relevance text
+        (Semantic Scholar, Crossref) must NOT escape: a backslash would go into the index
+        as a literal character to match on.
+        """
+        return sanitize_query(query)
+
     @abstractmethod
     async def search(
         self,
@@ -392,6 +556,9 @@ class BaseConnector(ABC):
         since: int | None = None,
     ) -> list[CSLRecord]:
         """Free-text search. Returns at most ``limit`` records, best match first.
+
+        Implementations start by passing ``query`` through :meth:`sanitize_query`, and
+        return ``[]`` without a request when nothing survives.
 
         An empty list is a clean negative. A dead API raises :class:`SourceError`.
         ``since`` filters to works published in that year or later.

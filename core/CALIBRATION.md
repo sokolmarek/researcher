@@ -50,9 +50,10 @@ dirty, the verdict falls to `inconclusive` rather than to a refusal.
 | `min_confirmations` | **2** | D9. Two independent indexes must agree before a reference is `verified`. |
 | `strong_title_similarity` | **0.90** | Calibrated. The bar a title must clear before ANY relaxation applies. |
 | `preprint_year_tolerance` | **3** | Calibrated. The year window when, and only when, the resolved record is a preprint and title plus first author already match strongly. |
-| `truncation_min_chars` | **20** | Calibrated. Minimum length of a truncated title before the prefix rule may fire. |
+| `truncation_min_chars` | **20** | Calibrated. Minimum length of a truncated title before the fuzzy leading-window rule may fire (which also requires the short title to be at least 40% of the long one). |
+| `truncated_prefix_min_chars` | **60** | Calibrated (M2.13, below). Minimum length of an EXACT character-for-character title prefix accepted as truncation on its own, without the 40% guard. |
 
-The last three only ever RELAX a check, and only when identity is already established by title
+The last four only ever RELAX a check, and only when identity is already established by title
 and author. None of them can turn a non-matching record into a confirmation. Both directions were
 measured; see the sweep.
 
@@ -101,7 +102,7 @@ Each row turns exactly one knob off and re-runs the same 11 cases from the same 
 | no preprint year relaxation | 10/11 | **1/8** (Wilson 0.022-0.471) | `preprint_later_published` becomes **`mismatch`**: refusal-grade, on an honest citation |
 | no truncation rule | 11/11 | 0/8 | no verdict changes on this subset (see note) |
 | title bar raised to 0.90 | 11/11 | 0/8 | no verdict changes on this subset (see note) |
-| first-author surname check off | 10/11 | 0/8 | `invented_reference` degrades from `unresolvable` to `mismatch`: still flagged, but for the wrong reason |
+| first-author surname check off | 10/11 | 0/8 | `invented_reference` degrades from `unresolvable` to **`inconclusive`**: a MISSED CATCH (refusal-grade FN 1/3) |
 | `min_confirmations` = 1 | 10/11 | 0/8 | `single_index_only` becomes **`verified`** on the word of one index |
 
 **The preprint relaxation earns its keep, and it is the reason it exists.** Without it, Mask R-CNN
@@ -123,11 +124,12 @@ title_similarity("Contrastive masked autoencoders for single-lead ECG anomaly de
 The FABRICATED title scores **0.746** against a real and completely unrelated paper: above the 0.70
 bar. Title similarity alone would confirm a fabricated reference against the wrong work. The claimed
 year (2021) is also within tolerance of that paper's. It is the first-author surname check, and only
-that, which rejects the pair. With the surname check off, `invented_reference` stops being
-`unresolvable` (all sources cleanly negative) and becomes `mismatch` (a source "resolved" it by
-title). Still refusal-grade, so the FP rate does not move, but the verdict is wrong, and on a real
-reference with a coincidentally similar title the same mechanism would manufacture a false
-`mismatch`. `require_first_author_surname` stays true.
+that, which rejects the pair. With the surname check off, that unrelated paper becomes a title-search
+hit, `invented_reference` stops being `unresolvable`, and (since a title-search hit is no longer a
+resolving disagreement, see M2.13 below) it lands in `inconclusive`: **a fabricated reference the
+kernel no longer flags at all**, a refusal-grade false negative. Under the pre-M2.13 precedence the
+same setting produced a `mismatch`, which was still refusal-grade and so hid the cost. The cost was
+always there; the sweep now shows it. `require_first_author_surname` stays true.
 
 **The title bar stays at 0.70, and the direction of the risk is why.** A 0.90 bar also scores 11/11
 here, because the truncation rule lifts the truncated title from 0.752 to 1.0. But a stricter title
@@ -141,7 +143,8 @@ say so: at a 0.70 bar the truncated title already passes on `token_sort_ratio` a
 the rule buys is headroom (a harsher truncation, or a title bar someone later raises) and an
 explicitly prefix-anchored notion of truncation, rather than a generic `partial_ratio` that would
 also lift unrelated titles sharing a phrase. It is guarded (20 characters minimum, and the shorter
-title must be at least 40% of the longer) so it cannot fire on a fragment.
+title must be at least 40% of the longer) so it cannot fire on a fragment. The 40% guard is exactly
+what the harsher truncation of M2.13 below then ran into, and the second tier there is the answer.
 
 **Two confirmations, not one.** With `min_confirmations` at 1, the ScienceDB dataset that only
 DataCite holds is reported `verified` on the word of a single index. It is a real dataset, so this
@@ -157,6 +160,108 @@ OpenAlex timing out. The verdict MUST move from `unresolvable` (refusal-grade) t
 threshold setting in the sweep: the precedence in `decide()` makes `unresolvable` unreachable
 whenever any source errored, so no threshold choice can reintroduce the failure. A rate-limited
 index must never accuse a researcher of fabricating a real citation.
+
+## M2.13: the three refusal-grade false positives the 150-item gold set found
+
+The 11-case subset above measured 0/8 refusal-grade false positives and could not see further:
+at n = 8 it certifies nothing. The full axis (a) gold set (`evals/gold/identity.yaml`, 150 items,
+99 scored negatives) measured **3/99** and named the three. Both defects behind them are fixed
+here, and both fixes are in the precedence and the title matcher, not in the gold labels.
+
+Reproduce with `uv run --project core python evals/run_axes.py --axis identity`.
+
+### Measured, on the 149 scored gold items, before and after
+
+```
+                            BEFORE          AFTER
+refusal-grade FP            3/99  0.030     0/99   0.000   95% Wilson [0.000, 0.037]
+refusal-grade FN            0/50  0.000     0/50   0.000   95% Wilson [0.000, 0.071]
+accuracy                  133/149 0.893   135/149  0.906   95% Wilson [0.848, 0.943]
+
+mismatch      recall       1.000           1.000    precision 0.893 -> 1.000
+unresolvable  recall       1.000           1.000    precision 1.000 -> 1.000
+verified      recall       0.878           0.878    precision 0.929 -> 0.929
+inconclusive  recall       0.720           0.800    precision 0.692 -> 0.690
+```
+
+Confusion matrix after:
+
+```
+gold \ predicted  verified  mismatch  unresolvable  inconclusive
+verified                65         0             0             9
+mismatch                 0        25             0             0
+unresolvable             0         0            25             0
+inconclusive             5         0             0            20
+```
+
+**Every refusal-grade error is now gone in BOTH directions, and neither refusal-grade recall
+moved.** All 25 invented references are still caught and all 25 wrong-DOI entries are still
+caught, which is the property the commit hook and the M3 compile gate stand on. The one
+`verified` item that used to be called `mismatch` now lands in `inconclusive` instead of
+`verified` (its year disagrees at Crossref by 2: IEEE early access versus issue year), so it
+still costs recall. It costs nobody a false accusation, and that is the trade D9 asks for.
+
+### Fix 1: a source that does not hold a DOI has no opinion about it
+
+Two of the three (`10.1109/taffc.2020.3014842`, `10.5281/zenodo.21358727`) had the same cause.
+When a source failed to resolve a DOI it fell back to a title search, found a similar-titled
+record, and reported `doi_mismatch` as though it had RESOLVED the DOI and disagreed. Two indexes
+that do not mint the DOI at all (DataCite asked about a Crossref DOI; Crossref and OpenAlex asked
+about a Zenodo DOI) then outvoted one genuine confirmation, and D9 rule 2 fired: refusal-grade
+`mismatch` on a real, correctly cited reference.
+
+That is wrong semantically, not merely numerically. "I do not have this DOI" is a CLEAN NEGATIVE.
+It is not "this DOI belongs to a different paper". Manufacturing a disagreement out of an absence
+is the same class of error as reading a rate limit as evidence of fabrication, which is the error
+D9 exists to forbid.
+
+The per-source outcome now records HOW the record was found (`matched_by`: `identifier` or
+`title_search`), and:
+
+- a `doi_mismatch` may be reported ONLY by a source that resolved the identifier itself;
+- a title-search hit may still SUPPORT a confirmation (that is how a title-only reference with no
+  DOI is verified at all);
+- a title-search hit may convict an identifier through exactly one route, rule 2b: NO source
+  resolved the identifier anywhere, NO source errored, and at least `min_confirmations` sources
+  hold the WORK under a different identifier. That is the mistyped-DOI-on-a-real-paper case
+  (`wrong_doi_real_paper` in the subset above), and it stays a `mismatch`. One index resolving the
+  identifier is enough to prove it exists and to strip every non-holding index of any say.
+
+### Fix 2: an exact title prefix is truncation, not a different paper
+
+The third (`10.17026/ar/sraj8f`, a real DANS archaeology dataset) is a genuine kernel weakness and
+not a gold artifact, and it is worth being precise about why. The gold title is truncated at 88
+characters while the real title runs 243, so `token_sort_ratio` scores **0.539**, under the 0.70
+bar, and DataCite (which DOES resolve the DOI) produced a real resolving disagreement. The
+existing truncation rule could not help: it requires the short title to be at least 40% of the long
+one, and 88/243 is 36%. Reference managers, harvesters, and `.bib` files really do cut titles to a
+fixed width, and dataset and report titles really do run several times that width, so the guard was
+refusing exactly the case the rule exists for.
+
+A second tier now handles it: when the shorter title fingerprint is an EXACT character-for-character
+prefix of the longer one and is at least `truncated_prefix_min_chars` (60) long, the title scores
+1.0. It is an exact prefix, not a fuzzy one, and 60 characters is roughly ten words of a title
+reproduced verbatim. It lifts the TITLE score only: the year and the first-author checks still stand
+behind it, so it cannot confirm a different work on its own (`test_the_prefix_rule_lifts_the_title_only_and_the_author_check_still_stands`).
+
+Swept on the same 149 scored gold items, one knob, both directions:
+
+| `truncated_prefix_min_chars` | refusal-grade FP | mismatch recall | unresolvable recall | accuracy |
+|---|---|---|---|---|
+| rule off | 1/99 | 1.000 | 1.000 | 134/149 |
+| 40 | **0/99** | 1.000 | 1.000 | 135/149 |
+| 50 | **0/99** | 1.000 | 1.000 | 135/149 |
+| **60 (committed)** | **0/99** | **1.000** | **1.000** | **135/149** |
+| 80 | **0/99** | 1.000 | 1.000 | 135/149 |
+| 100 | 1/99 | 1.000 | 1.000 | 134/149 |
+
+The rule is not near a cliff in either direction: nothing else in the set moves anywhere in
+[40, 80], and **the mismatch class does not lose a single catch at any setting**, which is the
+number this rule could plausibly have destroyed. It stops firing at 100 because the truncated title
+is only 88 characters long. 60 is committed rather than 40 because a shorter exact prefix is a
+weaker fingerprint (two different papers sharing a 40-character opening is a real thing, and the
+rule scores 1.0, so the margin should be paid for), and because the 40% rule already covers the
+milder truncations that a 40-character bar would add.
 
 ## Axis (b): publication status, all 120 gold DOIs
 
@@ -215,7 +320,8 @@ set (`status-cases.json`).
 
 ## Protocol version
 
-These rules are `IDENTITY_PROTOCOL_VERSION = "1.0"` (axis a) and `STATUS_PROTOCOL_VERSION = "1.0"`
+These rules are `IDENTITY_PROTOCOL_VERSION = "1.1"` (axis a; bumped from 1.0 by the two M2.13
+fixes, which changed both the precedence and the thresholds) and `STATUS_PROTOCOL_VERSION = "1.0"`
 (axis b), emitted on every report. Any change to a threshold or to the precedence bumps them,
 because a stored verdict is only interpretable against the rulebook that produced it, and this
 file must be re-measured before the bump ships.

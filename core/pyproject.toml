@@ -70,6 +70,7 @@ dev = [
     "ruff>=0.6",
     "mypy>=1.11",
     "respx>=0.21",
+    "pyyaml>=6.0.3",
 ]
 
 [tool.hatch.build.targets.wheel]

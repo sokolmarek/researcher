@@ -214,7 +214,23 @@ class PubMedConnector(BaseConnector):
         limit: int = 25,
         since: int | None = None,
     ) -> list[CSLRecord]:
-        term = str(query or "").strip()
+        """Free-text search over PubMed. An empty list is a clean negative.
+
+        Entrez turned out to be the most forgiving parser of the six: measured against the
+        live API, an orphan "(", a stray quote, a trailing backslash, a bare trailing AND,
+        and a colon all return exactly the hit count the clean title returns. So the
+        sanitizer is not fixing a known PubMed break here; it is applied because every
+        source must be asked the same normalized question, and because tolerance today is
+        not a contract tomorrow.
+
+        Worth stating plainly, since it is the honest limit of this repair: PubMed ANDs the
+        terms of a free-text query, so a title truncated mid-word ("... The LOOP Stu")
+        still returns zero, because "Stu" is a required term that matches nothing. That is
+        PubMed correctly answering the question as asked, not a malformed request, and a
+        query sanitizer is the wrong layer to paper over it. It stays a clean negative, and
+        under D9 a clean negative from one source cannot on its own refuse a citation.
+        """
+        term = self.sanitize_query(query)
         if not term:
             return []
         pmids = await self._esearch(term, limit=limit, since=since)

@@ -24,6 +24,7 @@ from jsonschema import Draft202012Validator
 
 from researcher_core.connectors import create_connector
 from researcher_core.connectors.base import BaseConnector, SourceError, SourceErrorKind
+from researcher_core.connectors.crossref import UPDATED_BY_KEY
 from researcher_core.model import CSLRecord, canonical_json
 from researcher_core.snapshots import SnapshotMode, SnapshotSession, SnapshotStore
 from researcher_core.status import (
@@ -223,6 +224,110 @@ def test_an_openalex_only_retraction_flag_is_reported_as_a_conflict() -> None:
     notices = [Notice(type="retraction", source="openalex")]
     assert _conflicted(outcomes, notices) is True
     assert classify(notices) == RETRACTED  # the stronger verdict is taken, and flagged
+
+
+# ---------------------------------------------------------------------------
+# Precedence: a specific signal outranks a coarse one
+# ---------------------------------------------------------------------------
+#
+# OpenAlex's `is_retracted` is ONE boolean over several kinds of editorial notice, and OpenAlex
+# sets it on works whose only Crossref update-type is `expression_of_concern`. The kernel used to
+# mint a `retraction` notice from that flag unconditionally, so the coarse boolean silently
+# overrode Crossref's specific update-type and the work came out `retracted`. An expression of
+# concern is an unresolved question about a paper, not a withdrawal of it: reporting it as a
+# retraction accuses the authors of work that still stands.
+#
+# These are SYNTHETIC records, deliberately. Every real DOI in the gold set on which OpenAlex
+# reports is_retracted also carries a Crossref RETRACTION (checked live on 2026-07-14, including
+# the six that were relabeled), so no live snapshot exercises this path. It is one OpenAlex
+# over-flag away from firing on a real paper, and it is what these tests pin.
+
+
+SYNTHETIC_DOI = "10.1234/eoc-only"
+EOC_UPDATE = {"DOI": "10.1234/eoc-notice", "type": "expression_of_concern", "label": "EoC"}
+RETRACTION_UPDATE = {"DOI": "10.1234/ret-notice", "type": "retraction", "label": "Retraction"}
+
+
+def _crossref_record(*updated_by: dict[str, Any]) -> CSLRecord:
+    return CSLRecord(
+        title="A paper under an expression of concern",
+        DOI=SYNTHETIC_DOI,
+        extra={UPDATED_BY_KEY: list(updated_by)},
+    )
+
+
+def _flagged_record() -> CSLRecord:
+    """What OpenAlex returns for such a paper: is_retracted, and no notice detail at all."""
+    return CSLRecord(
+        title="A paper under an expression of concern",
+        DOI=SYNTHETIC_DOI,
+        is_retracted=True,
+    )
+
+
+def _canned(connector: BaseConnector, record: CSLRecord | None) -> None:
+    async def resolve(*_args: Any, **_kwargs: Any) -> CSLRecord | None:
+        return record
+
+    connector.resolve_doi = resolve  # type: ignore[method-assign]
+
+
+def _entry_for(crossref: CSLRecord | None, openalex: CSLRecord | None) -> Any:
+    connectors = gold_connectors(["crossref", "openalex"])
+    _canned(connectors[0], crossref)
+    _canned(connectors[1], openalex)
+    return check(SYNTHETIC_DOI, connectors)
+
+
+def test_crossrefs_expression_of_concern_outranks_openalexs_coarse_retracted_flag() -> None:
+    """THE fix. Crossref: expression_of_concern. OpenAlex: is_retracted. Verdict: EoC."""
+    entry = _entry_for(_crossref_record(EOC_UPDATE), _flagged_record())
+    assert entry.verdict == EXPRESSION_OF_CONCERN
+    assert entry.verdict != RETRACTED  # the coarse boolean does not get to say "retracted"
+    assert [n.type for n in entry.notices] == ["expression-of-concern"]
+
+
+def test_the_outranked_openalex_claim_is_still_carried_in_the_report() -> None:
+    """Outranked is not discarded. A reader must see that OpenAlex disagrees."""
+    entry = _entry_for(_crossref_record(EOC_UPDATE), _flagged_record())
+    assert entry.verdict == EXPRESSION_OF_CONCERN
+    assert entry.conflict is True
+    openalex = next(s for s in entry.sources if s.source == "openalex")
+    assert openalex.is_retracted is True  # the disagreeing claim, retained verbatim
+    assert openalex.outcome == "confirmed"  # the source answered with a flag; it just lost
+    assert openalex.notice_count == 0  # and it minted no notice
+    assert "OpenAlex reports is_retracted=true" in entry.reason
+    assert "not resolved away" in entry.reason
+
+
+def test_openalex_alone_still_surfaces_a_retraction_when_crossref_is_silent() -> None:
+    """The other direction, and the fix must not swing into it. With no Crossref opinion of any
+    kind, OpenAlex is the only source with one, it is a real one, and it stands."""
+    entry = _entry_for(_crossref_record(), _flagged_record())
+    assert entry.verdict == RETRACTED
+    assert [n.source for n in entry.notices] == ["openalex"]
+    assert entry.conflict is True  # Crossref does not corroborate it, and that is reported
+
+    # Same, when Crossref does not hold the DOI at all.
+    entry = _entry_for(None, _flagged_record())
+    assert entry.verdict == RETRACTED
+
+
+def test_a_crossref_retraction_and_an_openalex_flag_agree_and_raise_no_conflict() -> None:
+    entry = _entry_for(_crossref_record(RETRACTION_UPDATE), _flagged_record())
+    assert entry.verdict == RETRACTED
+    assert entry.conflict is False
+    assert [n.source for n in entry.notices] == ["crossref"]
+
+
+def test_an_escalated_paper_is_retracted_on_crossrefs_own_evidence() -> None:
+    """The six gold papers relabeled on 2026-07-14: an expression of concern FIRST, a retraction
+    LATER. Crossref carries both update-types on the paper itself, so the verdict is `retracted`
+    on the SPECIFIC signal, not on OpenAlex's boolean, and it survives the precedence above."""
+    entry = _entry_for(_crossref_record(EOC_UPDATE, RETRACTION_UPDATE), _flagged_record())
+    assert entry.verdict == RETRACTED
+    assert {n.type for n in entry.notices} == {"expression-of-concern", "retraction"}
+    assert entry.conflict is False
 
 
 def test_a_source_error_is_never_a_conflict() -> None:

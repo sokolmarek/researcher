@@ -165,8 +165,15 @@ class CrossrefConnector(BaseConnector):
         limit: int = 25,
         since: int | None = None,
     ) -> list[CSLRecord]:
-        """Bibliographic free-text search. An empty list is a clean negative."""
-        text = str(query or "").strip()
+        """Bibliographic free-text search. An empty list is a clean negative.
+
+        ``query.bibliographic`` is plain relevance text, not an expression, so Crossref is
+        the most forgiving source here and survives a truncated title unaided. It is still
+        normalized, for one reason: the query must be the SAME string every source is
+        asked, or the same reference would carry a different fingerprint per source. No
+        escaping is applied; a backslash sent to Crossref is a character to match on.
+        """
+        text = self.sanitize_query(query)
         if not text:
             return []
         params: dict[str, Any] = {

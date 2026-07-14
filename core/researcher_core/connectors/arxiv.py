@@ -213,8 +213,14 @@ class ArxivConnector(BaseConnector):
         limit: int = 25,
         since: int | None = None,
     ) -> list[CSLRecord]:
-        """Free-text search over the arXiv corpus. An empty list is a clean negative."""
-        text = (query or "").strip()
+        """Free-text search over the arXiv corpus. An empty list is a clean negative.
+
+        arXiv wraps a bare phrase in ``all:"..."``, so its own quoting is the thing a stray
+        character breaks: a trailing backslash escapes arXiv's closing quote and the whole
+        expression becomes unterminated. :meth:`~BaseConnector.sanitize_query` removes it
+        before ``_build_search_query`` ever sees it.
+        """
+        text = self.sanitize_query(query)
         if not text:
             return []
         capped = max(1, min(int(limit), self.MAX_RESULTS))

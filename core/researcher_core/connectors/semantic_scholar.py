@@ -159,8 +159,16 @@ class SemanticScholarConnector(BaseConnector):
         limit: int = 25,
         since: int | None = None,
     ) -> list[CSLRecord]:
-        """Relevance search over ``/paper/search``. An empty list is a clean negative."""
-        text = (query or "").strip()
+        """Relevance search over ``/paper/search``. An empty list is a clean negative.
+
+        S2's ``query`` on this endpoint is plain relevance text (the Lucene-ish boolean
+        grammar lives on ``/paper/search/bulk``, which the kernel does not call), so it is
+        NOT Lucene-escaped: a backslash here would become a character S2 tries to match.
+        The common repair still applies, and it earns its keep. A trailing backslash out of
+        a .bib title measurably changes what S2 returns, and dropping it restores the
+        result set the clean title gets.
+        """
+        text = self.sanitize_query(query)
         if not text:
             return []
         params: dict[str, Any] = {

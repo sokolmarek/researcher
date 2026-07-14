@@ -181,8 +181,13 @@ class OpenAlexConnector(BaseConnector):
         limit: int = 25,
         since: int | None = None,
     ) -> list[CSLRecord]:
-        """Free-text search over OpenAlex works. Empty list is a clean negative."""
-        text = str(query or "").strip()
+        """Free-text search over OpenAlex works. Empty list is a clean negative.
+
+        OpenAlex's ``search`` parameter understands quoted phrases and uppercase AND / OR /
+        NOT, so an unbalanced quote or a dangling operator out of a truncated .bib title is
+        a malformed query here too. :meth:`~BaseConnector.sanitize_query` repairs it.
+        """
+        text = self.sanitize_query(query)
         if not text:
             return []
         params: dict[str, Any] = {
