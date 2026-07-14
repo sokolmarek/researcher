@@ -26,3 +26,10 @@ TODO.md
 docs/node_modules/
 docs/dist/
 docs/.astro/
+
+# Word template build artifacts
+templates/word/node_modules/
+templates/word/*.docx
+
+# Test and eval artifacts
+.pytest_cache/

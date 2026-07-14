@@ -6,45 +6,159 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  # Pinned toolchains: an unpinned `npm install -g` or `curl | sh` makes CI
+  # non-reproducible and widens the supply-chain surface.
+  CLAUDE_CLI_VERSION: "2.1.209"
+  TECTONIC_VERSION: "0.16.9"
+
 jobs:
-  validate:
+  plugin-validate:
+    name: Official plugin validation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate JSON manifests
-        run: |
-          python3 - <<'PY'
-          import json, sys
-          for path in (".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"):
-              with open(path, encoding="utf-8") as f:
-                  json.load(f)
-              print(f"OK  {path}")
-          # plugin.json must not carry unsupported keys
-          with open(".claude-plugin/plugin.json", encoding="utf-8") as f:
-              man = json.load(f)
-          bad = [k for k in ("connectors",) if k in man]
-          if bad:
-              print(f"Unsupported manifest key(s): {bad}"); sys.exit(1)
-          PY
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      - name: Em-dash guard (authored content)
+      - name: Install Claude Code CLI (pinned)
+        run: npm install -g "@anthropic-ai/claude-code@${CLAUDE_CLI_VERSION}"
+
+      - name: Validate plugin manifest and components
+        run: claude plugin validate .claude-plugin/plugin.json
+
+      - name: Validate marketplace manifest
+        run: claude plugin validate .claude-plugin/marketplace.json
+
+  style-and-json:
+    name: JSON parse, em-dash, placeholder and namespacing guards
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: All tracked JSON files parse
         run: |
-          matches=$(grep -RnP $'—' README.md CREDITS.md CHANGELOG.md examples docs/src 2>/dev/null || true)
+          set -e
+          git ls-files '*.json' | while read -r f; do
+            python3 -c "import json,sys; json.load(open(sys.argv[1], encoding='utf-8'))" "$f"
+            echo "OK  $f"
+          done
+
+      - name: Em-dash guard (all tracked .md, .tex, .json)
+        run: |
+          matches=$(git ls-files '*.md' '*.tex' '*.json' | xargs grep -ln $'—' 2>/dev/null || true)
           if [ -n "$matches" ]; then
             echo "$matches"
-            echo "Em dash found. House style forbids em dashes in authored content."
+            echo "Em dash found. House style forbids em dashes anywhere in tracked content."
             exit 1
           fi
-          echo "No em dashes in authored content."
+          echo "No em dashes in tracked content."
 
-      - name: Check for leftover placeholders
+      - name: Placeholder guard
         run: |
+          bad=0
           matches=$(grep -RniE "yourname|your name" README.md CREDITS.md .claude-plugin 2>/dev/null || true)
-          if [ -n "$matches" ]; then
-            echo "$matches"
-            echo "Leftover placeholder found."
+          if [ -n "$matches" ]; then echo "$matches"; bad=1; fi
+          blanks=$(grep -RnE "Routes to  |in the  directory| the  skill" commands hooks skills agents 2>/dev/null || true)
+          if [ -n "$blanks" ]; then echo "$blanks"; bad=1; fi
+          if [ "$bad" -ne 0 ]; then
+            echo "Leftover placeholder or blank found."
             exit 1
           fi
           echo "No placeholders."
+
+      - name: Command namespacing guard
+        run: |
+          # Installed plugin commands are namespaced (/researcher:<cmd>). A bare
+          # /<cmd> in user-facing docs would not work when typed.
+          cmds="new-manuscript|draft-section|review-paper|submit-ready|revise|brainstorm|find-journal|find-conference|fact-check|sota|design-experiment"
+          matches=$(git ls-files '*.md' '*.mdx' \
+            | grep -vE '^(plans/|research/)' \
+            | xargs grep -nE "(^|[^:a-zA-Z0-9_-])/($cmds)\b" 2>/dev/null || true)
+          if [ -n "$matches" ]; then
+            echo "$matches"
+            echo "Un-namespaced command form found. Use /researcher:<command> in user-facing docs."
+            exit 1
+          fi
+          echo "All command references are namespaced."
+
+      - name: Fake form-field guard
+        run: |
+          matches=$(grep -rnE "\((select|toggle):" commands 2>/dev/null || true)
+          if [ -n "$matches" ]; then
+            echo "$matches"
+            echo "Commands have no typed form UI: do not document select/toggle fields."
+            exit 1
+          fi
+          echo "No fake form fields."
+
+  unit-tests:
+    name: Script unit tests
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pytest
+        run: python -m pip install --quiet pytest
+
+      - name: Run script tests
+        run: python -m pytest scripts/tests -q
+
+  docx-build:
+    name: Word output (build-docx.js)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install and test
+        working-directory: templates/word
+        run: |
+          npm install --no-audit --no-fund
+          npm test
+
+  examples-freshness:
+    name: Example DOIs and LaTeX freshness
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install tectonic (pinned release, checksum verified)
+        run: |
+          set -euo pipefail
+          base="https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40${TECTONIC_VERSION}"
+          asset="tectonic-${TECTONIC_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          curl --proto '=https' --tlsv1.2 -fsSL -o tectonic.tar.gz "${base}/${asset}"
+          curl --proto '=https' --tlsv1.2 -fsSL -o sha256sums "${base}/SHA256SUMS" || true
+          if [ -s sha256sums ]; then
+            grep " ${asset}\$" sha256sums | sed "s|${asset}|tectonic.tar.gz|" | sha256sum -c -
+          else
+            echo "SHA256SUMS not published for this release; recording the digest we downloaded:"
+            sha256sum tectonic.tar.gz
+          fi
+          tar xzf tectonic.tar.gz
+          echo "TECTONIC=$PWD/tectonic" >> "$GITHUB_ENV"
+
+      - name: Run freshness eval (DOI resolution + LaTeX compile)
+        run: python3 evals/example-freshness.py

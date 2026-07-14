@@ -1,8 +1,12 @@
-name: Deploy Docs
+name: Docs
 
 on:
   push:
     branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/docs-deploy.yml'
+  pull_request:
     paths:
       - 'docs/**'
       - '.github/workflows/docs-deploy.yml'
@@ -19,7 +23,32 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Pull requests get a build plus type check, so a broken docs change cannot be
+  # merged and only discovered on the deploy to main.
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: docs/package-lock.json
+      - name: Install
+        working-directory: docs
+        run: npm ci
+      - name: Type check
+        working-directory: docs
+        run: npm run check
+      - name: Build
+        working-directory: docs
+        run: npm run build
+
   build:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,6 +61,7 @@ jobs:
           package-manager: npm
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
