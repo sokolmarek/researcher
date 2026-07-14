@@ -118,10 +118,12 @@ Excluded Reviewers:
 - Use the template at `templates/latex/cover-letter.tex` as the document base
 - Generate `manuscript/cover-letter.tex` and compile-check by running `scripts/latex-compile.py` (or `latex-compile.sh` on POSIX), which uses whichever TeX engine is installed (tectonic recommended, or latexmk / pdflatex from TeX Live, MiKTeX, or MacTeX)
 
-### Word Output
-- Generate `manuscript/cover-letter.docx` using `docx-js`
-- Match the structure defined in `templates/word/cover-letter.md`
-- Use professional letter formatting (block style, single-spaced)
+### Word Output (planned, not implemented)
+No cover-letter DOCX generator ships today. `templates/word/build-docx.js` builds an IMRaD article
+from `sections/*.md` only; it has no letter mode. The layout (block style, single-spaced, A4) is
+specified in `templates/word/cover-letter.md`, and that spec is what a future generator will
+implement. If the user needs Word, deliver the letter text as Markdown for them to paste into Word,
+and say plainly that DOCX generation for cover letters is not implemented.
 
 ## Validation
 

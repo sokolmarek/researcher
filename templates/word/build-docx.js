@@ -26,9 +26,27 @@
 
 const fs = require("fs");
 const path = require("path");
+
+let docx;
+try {
+  docx = require("docx");
+} catch (err) {
+  if (err.code !== "MODULE_NOT_FOUND") throw err;
+  console.error(
+    "build-docx: the 'docx' library is not installed.\n" +
+    "Install it once, then re-run this script:\n" +
+    "\n" +
+    "  cd templates/word\n" +
+    "  npm ci\n" +
+    "\n" +
+    "(npm install also works; package-lock.json is tracked, so npm ci is preferred.)"
+  );
+  process.exit(1);
+}
+
 const {
   AlignmentType, Document, Footer, HeadingLevel, PageNumber, Packer, Paragraph, TextRun,
-} = require("docx");
+} = docx;
 
 const SECTION_ORDER = [
   "abstract", "introduction", "methods", "results", "discussion",

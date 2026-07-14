@@ -82,11 +82,13 @@ Each response entry must contain:
 - Use the template at `templates/latex/response-to-reviewers.tex` as the document base
 - Compile-check by running `scripts/latex-compile.py` (or `latex-compile.sh` on POSIX), which uses whichever TeX engine is installed (tectonic, or latexmk / pdflatex from TeX Live, MiKTeX, or MacTeX), to produce the PDF
 
-### Word Output
-- New text: blue font color
-- Removed text: red font color with strikethrough
-- Generate DOCX using `docx-js` with proper formatting runs
-- Match the structure defined in `templates/word/response-to-reviewers.md`
+### Word Output (planned, not implemented)
+No response-to-reviewers DOCX generator ships today. `templates/word/build-docx.js` builds an IMRaD
+article from `sections/*.md` only; it has no response-document mode, and its Markdown subset carries
+no font colors or strikethrough. The layout (blue for new text, red strikethrough for removed text)
+is specified in `templates/word/response-to-reviewers.md`, and that spec is what a future generator
+will implement. If the user needs Word, deliver the response as Markdown for them to paste into Word,
+and say plainly that DOCX generation for response documents is not implemented.
 
 ## Cross-Referencing
 
@@ -108,8 +110,8 @@ Each response entry must contain:
 ## Output Files
 
 - LaTeX: `manuscript/response-to-reviewers-R{N}.tex` and compiled PDF
-- Word: `manuscript/response-to-reviewers-R{N}.docx`
-- Both outputs contain identical content in their respective formats
+- Word: not implemented (see above). Deliver `manuscript/response-to-reviewers-R{N}.md` for the user
+  to paste into Word, and tell them the DOCX generator is planned rather than shipping.
 
 ## After Generation
 

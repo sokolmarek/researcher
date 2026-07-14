@@ -1,128 +1,119 @@
 ---
 name: word-output
-description: "Generate Microsoft Word DOCX output. Triggers: word format, docx output, Microsoft Word, not latex, convert to word. Full DOCX with tracked changes and comments."
+description: "Generate Microsoft Word DOCX output from a manuscript folder. Triggers: word format, docx output, Microsoft Word, not latex, convert to word, build docx, submit as .docx. Ships a title page, numbered headings, paragraphs, and bullet lists via templates/word/build-docx.js; tables, figures, tracked changes, and comments are planned, not implemented."
 ---
 
 # Word Output
 
-Convert manuscript outputs to professional Microsoft Word DOCX format using `docx-js` (Node.js).
+Generate a Microsoft Word DOCX with `templates/word/build-docx.js`, a Node script built on the `docx`
+library. It is the only DOCX generator in this plugin. Pandoc is not used anywhere in this repo, so
+there is no LaTeX-to-DOCX conversion path: Word output is built natively from Markdown sections.
 
-## Conversion Modes
+## What ships today
 
-### LaTeX to DOCX (pandoc + post-processing)
-1. Run `pandoc` to convert `.tex` source to `.docx` baseline
-2. Post-process with `docx-js` to fix formatting pandoc mishandles:
-   - Table borders and shading
-   - Figure sizing and placement
-   - Heading numbering and styles
-   - Citation formatting
-   - Page headers and footers
-3. Validate final output
+`build-docx.js` assembles an IMRaD article from a manuscript directory and writes a single `.docx`:
 
-### Native DOCX Creation
-For manuscripts authored in Word mode from the start:
-1. Read section `.md` files from `manuscript/`
-2. Build DOCX programmatically via `docx-js`
-3. Apply all formatting directly without pandoc intermediary
+- **Title page:** title, author list, and `Prepared for: <journal>` when a journal is set
+- **Numbered headings:** Heading 1-3 with automatic numbering (`1.`, `1.1`, `1.1.1`). Abstract,
+  Acknowledgments, References, and Appendix stay unnumbered.
+- **Body text:** Times New Roman 12pt, double spaced, A4 page, 1 inch margins
+- **Bullet lists**
+- **Page numbers:** centered in the footer, starting on page 2 (the title page carries none)
+- **Section order:** abstract, introduction, methods, results, discussion, conclusion,
+  acknowledgments, references, then any remaining section files alphabetically
 
-## Document Structure
+## Input contract
 
-### Headings
-- Title: custom title style (centered, bold, 16pt)
-- Section headings: Heading 1 (bold, 14pt, numbered)
-- Subsection headings: Heading 2 (bold, 12pt, numbered)
-- Sub-subsection: Heading 3 (italic, 12pt, numbered)
-- Maintain automatic heading numbering via Word outline levels
+The script reads two things from the manuscript directory passed to `--manuscript <dir>`:
 
-### Body Text
-- Font: Times New Roman 12pt (default) or journal-specified font
-- Line spacing: double (default) or as journal requires
-- Paragraph spacing: 0pt before, 6pt after
-- First-line indent: 0.5in (or as journal requires)
-- Justified alignment
+- **`<dir>/config.yaml`** for document metadata. A small line-based YAML subset is parsed (no YAML
+  dependency): top-level `key: value` pairs plus an `authors:` block list, written either as
+  `- name: Ada Lovelace` maps or as plain `- Ada Lovelace` strings. The keys used are `title`,
+  `authors`, and `journal`; everything else is read but ignored. A missing `config.yaml` falls back
+  to "Untitled Manuscript" with no authors.
+- **`<dir>/sections/*.md`**, one Markdown file per section. This is `sections/`, not the manuscript
+  root: LaTeX mode keeps `.tex` files at the root, Word mode keeps `.md` files under `sections/`.
+  The filename (lowercased, minus `.md`) is both the section key used for ordering and the title of
+  the generated Heading 1. A missing `sections/` directory is a hard error (exit 2).
 
-### Page Setup
-- Page numbers: bottom center or top right (journal-dependent)
-- Running header: short title on left, page number on right
-- Margins: 1 inch all sides (default) or journal-specified
-- Paper size: Letter (default) or A4
+## Invocation
 
-## Table Formatting
+Install the dependency once. `package-lock.json` is tracked, so `npm ci` is the correct command:
 
-- Map `booktabs` rules to Word border styles:
-  - `\toprule` and `\bottomrule` → thick top/bottom borders (1.5pt)
-  - `\midrule` → thin border (0.5pt)
-  - No vertical borders
-- Preserve cell alignment (left, center, right, decimal)
-- Bold best results carry over from LaTeX source
-- Table captions placed above the table
-- Auto-number tables (Table 1, Table 2, ...)
+```bash
+cd templates/word
+npm ci
+```
 
-## Figure Handling
+Then build from the repo root:
 
-- Embed figures as inline images (PNG or PDF-to-PNG conversion)
-- Center figures with caption below
-- Auto-number figures (Figure 1, Figure 2, ...)
-- Maintain aspect ratio; scale to column width
-- Alt text for accessibility
+```bash
+node templates/word/build-docx.js --manuscript <dir> --out paper.docx
+```
 
-## Tracked Changes (Revisions)
+`--manuscript` is required. `--out` is optional and defaults to `paper.docx` in the current working
+directory. The file is written exactly where `--out` points; there is no `manuscript/output/`
+convention and the script creates no directories.
 
-For revision rounds, generate DOCX with actual Word tracked changes:
-- **Insertions:** shown in blue underlined text with author tag
-- **Deletions:** shown in red strikethrough text with author tag
-- **Moved text:** tracked as delete + insert pair
-- Compare original and revised section files to generate change markup
-- Each change tagged with revision round (R1, R2, R3)
+## Supported Markdown subset
 
-## Comment Annotations
+Inside each `sections/*.md` file, the script understands:
 
-- Attach Word comments to specific text ranges
-- Used for: reviewer comment references, editorial notes, integrity flags
-- Format: `[Reviewer X, Comment Y]: original comment text`
-- Comments appear in the review pane and print in margin
+| Syntax | Result |
+|--------|--------|
+| `# Heading` | Skipped: the section title is already emitted from the filename |
+| `## Heading`, `### Heading` | Heading 2 / Heading 3, numbered unless the section is unnumbered |
+| Blank-line separated text | Body paragraph (consecutive lines are joined) |
+| `**bold**` | Bold run |
+| `*italic*` | Italic run |
+| `` `code` `` | Courier New 11pt run |
+| `- item` or `* item` | Bullet list item (single level) |
+| `<!-- comment -->` | Stripped |
 
-## Cross-References
+Anything else (tables, images, links, block quotes, numbered lists, nested lists, math) passes
+through as literal text. Write section files inside this subset, or the DOCX will contain raw
+Markdown syntax.
 
-- Figure references: `Figure 1`, `Figure 2` as Word cross-reference fields
-- Table references: `Table 1`, `Table 2` as cross-reference fields
-- Equation references: `Equation (1)` with field codes
-- Section references: link to heading bookmarks
-- All references are updateable fields (right-click > Update Field)
-
-## Bibliography
-
-- Generate bibliography section from `library.bib`
-- Format citations according to `config.yaml` citation style
-- In-text citations as formatted text (Word native bibliography is unreliable)
-- Alternatively, generate Zotero-compatible citation fields if user prefers
-
-## Journal Template Support
-
-- Download and apply journal-provided `.dotx` or `.docx` templates
-- Map heading styles to template-defined styles
-- Respect template margins, fonts, and spacing
-- If no template available, use sensible defaults matching journal specs
-
-## Output Validation
+## Output validation
 
 Before delivering any DOCX:
-1. Verify file opens without corruption (valid ZIP/OOXML structure)
-2. Check all images are embedded (no broken links)
-3. Confirm heading numbering is sequential
-4. Verify page numbers are present and correct
-5. Check tracked changes render properly if revision mode
+
+1. Confirm the script exited 0 and printed `Wrote <path> (<n> sections, <bytes> bytes)`
+2. Confirm the section count matches the number of `sections/*.md` files you expected
+3. Open the file (or unzip it) to confirm a valid ZIP/OOXML structure, not a truncated write
+4. Confirm heading numbering is sequential and that Abstract and References stayed unnumbered
+5. Confirm page numbers appear from page 2 onward
 
 ## Workflow
 
-1. Determine source format (LaTeX sections or Markdown sections)
-2. Choose conversion path (pandoc + post-process or native docx-js)
-3. Read `manuscript/config.yaml` for journal and formatting preferences
-4. Build DOCX with all structural elements
-5. Apply tracked changes if this is a revision round
-6. Add comments if review annotations are present
-7. Validate output integrity
-8. Save to `manuscript/output/<filename>.docx`
+1. Confirm the manuscript is in Word mode: `output_format: word` (or `both`) in `config.yaml`
+2. Confirm `<dir>/sections/*.md` exists; if the manuscript is LaTeX-only, there is no supported
+   conversion path, so tell the user rather than improvising one
+3. Read `<dir>/config.yaml` for the title, authors, and journal
+4. Rewrite any section content that falls outside the supported Markdown subset above
+5. Run `npm ci` in `templates/word/` if `node_modules/` is absent
+6. Run `build-docx.js` with `--manuscript` and `--out`
+7. Validate the output as above and report the real path written
+
+## Planned, not implemented
+
+The following are specified in `templates/word/article-imrad.md` (and, for the two letter documents,
+in `templates/word/cover-letter.md` and `templates/word/response-to-reviewers.md`), but
+`build-docx.js` does not generate them today. Never present them to the user as working. If the user
+needs one, say plainly that it is not implemented and offer the LaTeX path, which does support all of
+them.
+
+- **Table formatting:** mapping `booktabs` rules to Word border styles, cell alignment, captions,
+  auto-numbering
+- **Figures:** embedded images, captions, auto-numbering, alt text
+- **Tracked changes:** real Word revision marks for insertions, deletions, and moves
+- **Comment annotations:** Word comments anchored to text ranges
+- **Cross-references:** updateable Word fields for figures, tables, equations, and sections
+- **Bibliography:** a references list generated from `library.bib` and formatted to the
+  `citation_style` in `config.yaml`
+- **Journal templates:** applying a journal-provided `.dotx` or `.docx` template
+- **Cover letters and response-to-reviewers documents:** `build-docx.js` builds an IMRaD article from
+  `sections/*.md` only; it has no other document mode
 
 ## Integrity constraints
 

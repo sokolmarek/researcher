@@ -1,6 +1,6 @@
 ---
 name: revision-management
-description: "Handle paper revisions from reviewer comments. Triggers: revise paper, address comments, reviewer asked, revision round, tracked changes. Generates tracked changes in LaTeX and Word."
+description: "Handle paper revisions from reviewer comments. Triggers: revise paper, address comments, reviewer asked, revision round, tracked changes. Generates tracked changes in LaTeX (changes package or latexdiff); Word tracked changes are planned, not implemented."
 ---
 
 # Revision Management
@@ -56,10 +56,12 @@ Parse reviewer comments and orchestrate manuscript revisions with full traceabil
 - Color scheme: blue for additions, red with strikethrough for deletions
 - Compile-check both clean and tracked-changes PDFs by running `scripts/latex-compile.py` (or `latex-compile.sh` on POSIX), which uses whichever TeX engine is installed (tectonic recommended, or latexmk / pdflatex from TeX Live, MiKTeX, or MacTeX)
 
-### Word Tracked Changes
-- Generate DOCX with actual Word revision marks (insertions, deletions)
-- Use `docx-js` revision tracking API for proper change markers
-- Include comment annotations linking back to reviewer comment IDs
+### Word Tracked Changes (planned, not implemented)
+Word revision marks (insertions, deletions, moves) and comment annotations linking back to reviewer
+comment IDs are specified in `templates/word/article-imrad.md`, but `templates/word/build-docx.js`
+does not generate them. It builds a clean IMRaD article from `sections/*.md` and nothing more. Never
+tell the user a tracked-changes DOCX is available; offer the LaTeX tracked-changes path above, or a
+clean DOCX plus the revision log as the record of what changed.
 
 ## Revision Log
 

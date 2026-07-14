@@ -10,7 +10,7 @@ Community zotero-mcp MCP server, user-installed (for example: uvx zotero-mcp; en
 Not installed by this plugin. The user installs the community zotero-mcp server themselves (for example via uvx or pip) and configures it in their own MCP client settings, setting ZOTERO_API_KEY, ZOTERO_LIBRARY_ID, and ZOTERO_LIBRARY_TYPE (or the equivalent names documented by that server). Consult the zotero-mcp README for current variable names and setup steps.
 
 **Used by**
-word-output, citation-management
+citation-management
 
 **Fallback when absent**
-citation-management and word-output fall back to manual BibTeX entry and CrossRef API validation instead of pulling items directly from a Zotero library.
+citation-management falls back to manual BibTeX entry and CrossRef API validation instead of pulling items directly from a Zotero library.

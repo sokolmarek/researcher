@@ -56,15 +56,18 @@ manuscript/
 └── config.yaml
 ```
 
-Compile the DOCX with the shipped script, `templates/word/build-docx.js`:
+Compile the DOCX with the shipped script, `templates/word/build-docx.js`. Install its one dependency
+first (`package-lock.json` is tracked, so `npm ci` is the right command); a clean checkout has no
+`node_modules/` and the script will refuse to run without it:
 
 ```
+cd templates/word && npm ci && cd -
 node templates/word/build-docx.js --manuscript <dir> --out paper.docx
 ```
 
-Today this generates headings, paragraphs, and lists from `sections/*.md`. Tables, tracked changes,
-and comments are specified in `templates/word/article-imrad.md` but not implemented yet, so do not
-tell the user those are working.
+Today this generates a title page, numbered headings, paragraphs, and bullet lists from
+`sections/*.md`. Tables, figures, tracked changes, and comments are specified in
+`templates/word/article-imrad.md` but not implemented yet, so do not tell the user those are working.
 
 4. **If "both" mode**, create both structures side by side.
 
