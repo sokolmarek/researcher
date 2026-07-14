@@ -1,6 +1,5 @@
 ---
-description: Create a new manuscript project, routing form inputs to the manuscript-setup skill
-
+description: Create a new manuscript project, routing the gathered inputs to the manuscript-setup skill
 ---
 
 # /researcher:new-manuscript

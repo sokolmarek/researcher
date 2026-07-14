@@ -7,8 +7,8 @@ argument-hint: "<section>"
 
 Draft a specific manuscript section.
 
-## Parameters
-- **section**: One of: abstract, introduction, methods, results, discussion, conclusion. State it in your message or Claude asks.
+## Inputs (gathered conversationally)
+- Section: one of abstract, introduction, methods, results, discussion, or conclusion. State it in your message or Claude asks.
 
 ## Behavior
 1. Loads manuscript/config.yaml for context

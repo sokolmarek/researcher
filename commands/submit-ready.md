@@ -1,11 +1,14 @@
 ---
 description: Run a pre-submission compliance checklist and report pass or fail with fix instructions
-
 ---
 
 # /researcher:submit-ready
 
 Pre-submission compliance check.
+
+## Inputs (gathered conversationally)
+Takes no arguments. Claude reads manuscript/config.yaml for the manuscript path and the target journal.
+- Target journal: only asked for if config.yaml does not declare one, since the formatting and word count checks need it.
 
 ## Behavior
 Runs checklist:

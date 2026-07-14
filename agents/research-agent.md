@@ -2,6 +2,9 @@
 name: research-agent
 description: Orchestrates literature search, citation management, gap identification, and annotated bibliography building for a research session
 model: inherit
+skills:
+  - literature-search
+  - citation-management
 ---
 
 # Research Agent

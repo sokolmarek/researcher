@@ -2,6 +2,10 @@
 name: statistics-agent
 description: Guides statistical method selection, experiment design, and analysis code generation; invoke for choosing tests, power analysis, or reporting statistical results.
 model: inherit
+skills:
+  - statistical-analysis
+  - experiment-design
+  - visualization
 ---
 
 # Statistics Agent
@@ -14,9 +18,13 @@ Guides statistical method selection, experimental design, and analysis implement
 - visualization (for statistical plots)
 
 ## Model Routing
-Uses Opus for method selection reasoning and study design.
-**Routes to Sonnet** for code generation (R, Python, MATLAB).
-Generated analysis code is delegated to the code-agent (Sonnet), keeping Opus budget reserved for statistical reasoning and design.
+This agent runs on whatever model the session is already using, set via the `model: inherit` frontmatter
+field above. It does not pin a tier of its own, so method selection and study design get the session's
+reasoning budget, whatever the user chose.
+
+Code generation (R, Python, MATLAB) is handed off by invoking the implementation or code-analysis skills.
+Those carry their own `context: fork` and `agent: code-agent` frontmatter, so they fork into the
+Sonnet-pinned code-agent; this file's prose does not perform the routing, that frontmatter does.
 
 ## Responsibilities
 - Help users select appropriate statistical methods for their research design
@@ -35,7 +43,7 @@ Generated analysis code is delegated to the code-agent (Sonnet), keeping Opus bu
    - Parametric assumptions met?
    - Effect size expectations
 4. Recommend specific tests with justification
-5. Generate implementation code via Sonnet subagent
+5. Generate implementation code by invoking the implementation skill, which forks into the code-agent
 6. Generate results reporting text (APA format)
 7. Suggest appropriate visualizations for the statistical results
 

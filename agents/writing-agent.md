@@ -2,6 +2,10 @@
 name: writing-agent
 description: Orchestrates paper drafting, style analysis, and figure suggestions; invoke when drafting or coherence-checking manuscript sections.
 model: inherit
+skills:
+  - paper-drafting
+  - writing-style-analysis
+  - figure-suggestions
 ---
 
 # Writing Agent
