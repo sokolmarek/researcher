@@ -1,10 +1,15 @@
-# /find-conference
+---
+description: Find and filter relevant academic conferences for paper submission by topic, deadline, ranking, and location
+argument-hint: "[topic or field]"
+---
+
+# /researcher:find-conference
 
 Find relevant academic conferences for paper submission.
 
-## Form Fields
-- **topic** (text, required): Paper topic or research area
-- **filters** (text, optional): Constraints like "deadline after June 2026", "CORE A*", "in Europe", "IEEE only"
+## Inputs (gathered conversationally)
+- Topic: paper topic or research area. State it in your message or Claude asks.
+- Filters (optional): constraints like "deadline after June 2026", "CORE A*", "in Europe", "IEEE only"
 
 ## Behavior
 1. Routes to conference-finder skill

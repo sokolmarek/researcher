@@ -1,13 +1,15 @@
-# /fact-check
+---
+description: Verify a claim, section, or manuscript against scientific literature and report confidence levels
+argument-hint: "<claim>"
+---
+
+# /researcher:fact-check
 
 Verify claims against scientific literature.
 
-## Parameters
-- **scope** (select: claim/section/manuscript, default: claim): What to check
-
-## Form Fields
-- **claim** (text, optional): A specific claim to verify. If omitted, scans the current manuscript section or full manuscript.
-- **scope** (select: claim/section/manuscript, default: claim): Scope of fact-checking
+## Inputs (gathered conversationally)
+- Claim: a specific claim to verify. If omitted, Claude scans the current manuscript section or full manuscript.
+- Scope: claim, section, or manuscript (default: claim). State it in your message or Claude asks.
 
 ## Behavior
 1. Routes to fact-checking skill

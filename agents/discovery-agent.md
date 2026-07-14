@@ -1,3 +1,9 @@
+---
+name: discovery-agent
+description: Orchestrates journal and conference discovery, literature gap analysis, and SOTA tracking; invoke when the user needs venue recommendations, publishable research gaps, or benchmark comparisons.
+model: inherit
+---
+
 # Discovery Agent
 
 Finds the best venues, identifies research gaps, and tracks state of the art.

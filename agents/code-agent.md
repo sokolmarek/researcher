@@ -1,3 +1,10 @@
+---
+name: code-agent
+description: Orchestrates the implementation and code-analysis skills to read source code, generate pseudocode, and write reproducible experiment scripts; invoke for code-to-paper tasks.
+model: sonnet
+skills: [implementation, code-analysis]
+---
+
 # Code Agent
 
 Handles code analysis and implementation tasks.
@@ -6,10 +13,11 @@ Handles code analysis and implementation tasks.
 - implementation
 - code-analysis
 
-## IMPORTANT: Model Routing
-**This agent runs on Sonnet model** to conserve Opus tokens for research thinking.
-When dispatching tasks to this agent, use the Sonnet subagent configuration.
-Opus should be reserved for research reasoning, writing, and review tasks.
+## Model Routing
+This agent runs on Sonnet, set via the `model: sonnet` frontmatter field above. The implementation
+and code-analysis skills fork into this agent automatically, each carrying its own `context: fork` and
+`agent: code-agent` frontmatter; there is no markdown-level enforcement here. Opus-tier reasoning stays
+in the main session for research, writing, and review tasks.
 
 ## Responsibilities
 - Read and analyze source code for methods section generation

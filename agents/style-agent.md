@@ -1,3 +1,9 @@
+---
+name: style-agent
+description: Builds and maintains an author's style profile, applies it during drafting, and compares it against target journal style; invoke for style analysis or style-consistent drafting.
+model: inherit
+---
+
 # Style Agent
 
 Analyzes and applies academic writing style.

@@ -1,3 +1,14 @@
+---
+name: formatting-agent
+description: Orchestrates LaTeX and Word output formatting, compilation, journal compliance, and figure/table numbering; invoke when preparing a manuscript for submission or converting between formats.
+model: sonnet
+skills:
+  - journal-formatting
+  - latex-tables
+  - tikz-diagrams
+  - word-output
+---
+
 # Formatting Agent
 
 Orchestrates output formatting for LaTeX and Word.
@@ -21,7 +32,7 @@ Orchestrates output formatting for LaTeX and Word.
 3. If success: report page count and any warnings
 
 ## Compilation Workflow (Word)
-1. Run build-docx.js
+1. Run `templates/word/build-docx.js` (Node, built on the docx library). It generates headings, paragraphs, and lists from `sections/*.md`. Tracked changes, comments, and tables are specified in `templates/word/article-imrad.md` but not yet implemented.
 2. Validate output with docx validation
 3. If errors: fix and retry
 

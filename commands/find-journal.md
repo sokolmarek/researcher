@@ -1,10 +1,15 @@
-# /find-journal
+---
+description: Recommend ranked journals matching a paper's topic, applying optional filters like quartile or open access
+argument-hint: "[filters]"
+---
+
+# /researcher:find-journal
 
 Find the best journal for your paper.
 
-## Form Fields
-- **topic** (text, required): Paper topic, title, or paste your abstract
-- **filters** (text, optional): Constraints like "Q1 only", "open access", "impact > 3", "indexed in Scopus"
+## Inputs (gathered conversationally)
+- Topic: paper topic, title, or paste your abstract. Required; Claude asks if it is missing.
+- Filters: constraints like "Q1 only", "open access", "impact > 3", "indexed in Scopus" (optional). State it in your message or Claude asks.
 
 ## Behavior
 1. Routes to journal-finder skill

@@ -1,13 +1,15 @@
-# /brainstorm
+---
+description: Run a Socratic research design refinement session on a topic, question, or idea
+argument-hint: "[topic]"
+---
+
+# /researcher:brainstorm
 
 Socratic research design refinement.
 
-## Parameters
-- **mode** (select: quick/deep/devils-advocate, default: deep): Brainstorming intensity
-
-## Form Fields
-- **idea** (text, required): Your research idea, question, or topic -- even if vague
-- **mode** (select: quick/deep/devils-advocate, default: deep): How thorough
+## Inputs (gathered conversationally)
+- Idea: your research idea, question, or topic, even if vague. State it in your message.
+- Mode: quick, deep, or devils-advocate (default: deep). State it in your message or Claude asks.
 
 ## Behavior
 1. Routes to brainstorming skill with the provided idea and mode

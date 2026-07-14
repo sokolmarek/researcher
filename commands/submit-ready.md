@@ -1,4 +1,9 @@
-# /submit-ready
+---
+description: Run a pre-submission compliance checklist and report pass or fail with fix instructions
+
+---
+
+# /researcher:submit-ready
 
 Pre-submission compliance check.
 
