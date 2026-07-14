@@ -9,11 +9,43 @@ demonstration)" labeling of example data. See the integrity note at the end of t
 
 ## Choosing a Preset
 
-| User says (or context implies) | Preset |
-|--------------------------------|--------|
-| No style mentioned | `default` (zero behavior change from current skill output) |
-| "nature style", "in Nature format", "for submission to Nature", "Nature Communications", "npj ..." | `nature` |
-| "IEEE format", "two-column IEEE figure", "for IEEE Transactions", "for an IEEE conference" | `ieee` |
+Presets resolve in one fixed precedence order, highest first:
+
+**explicit `Style:` line > trigger phrase > journal inference from `manuscript/config.yaml` > `default`**
+
+| Precedence | Selector | Preset |
+|---|---|---|
+| 1 (highest) | `Style: nature` in the invocation | `nature` |
+| 1 | `Style: ieee` in the invocation | `ieee` |
+| 1 | `Style: default` in the invocation | `default` (explicit no-op) |
+| 2 | "nature style", "in Nature format", "for submission to Nature", "Nature Communications", "npj ..." | `nature` |
+| 2 | "IEEE format", "two-column IEEE figure", "for IEEE Transactions", "for an IEEE conference" | `ieee` |
+| 3 | Target journal in `manuscript/config.yaml` (see Journal inference below) | `nature` or `ieee` |
+| 4 (lowest) | Nothing above matched: no `Style:` line, no trigger phrase, no mapped target journal | `default` (zero behavior change from current skill output) |
+
+A higher-precedence selector wins outright. `Style: ieee` on a manuscript whose `config.yaml` targets
+Nature Communications produces the `ieee` preset; the journal is not consulted at all.
+
+### The `Style:` invocation line
+
+The visualization, tikz-diagrams, plotneuralnet, latex-tables, and figure-suggestions skills accept an
+optional `Style:` line in the invocation. It is the only way to pin a preset unambiguously:
+
+```
+Plot macro-AUROC against labeled fraction, one line per method.
+Style: nature
+```
+
+- `Style: nature` or `Style: ieee`: apply that preset.
+- `Style: default`, or no `Style:` line at all: the no-op path, exactly the output the skills produce
+  today. An omitted `Style:` line is never an error.
+- Any other value (for example `Style: science`): do not guess and do not improvise a preset. Say the
+  requested preset is not defined here, list the ones that are (`default`, `nature`, `ieee`), and ask
+  which to use.
+
+In figure-suggestions the same `Style:` token appears in two roles: as this accepted input line, and as
+the `Style:` field of each figure recommendation the skill emits. When the input line is present, it is
+also the value that skill recommends onward.
 
 ### Journal inference
 
@@ -436,8 +468,9 @@ all of them:
 5. **Table conventions:** body font size, booktabs rule widths, caption position.
 6. **Panel labels:** letter case, parentheses or not, size, and position.
 
-Then add one row to the "Choosing a preset" table with the trigger phrases, and extend the
-journal inference mapping if the preset corresponds to a journal family.
+Then add rows to the "Choosing a Preset" table for its `Style:` value (precedence 1) and its trigger
+phrases (precedence 2), and extend the journal inference mapping if the preset corresponds to a journal
+family. A preset with no `Style:` value is not selectable explicitly, so it is not finished.
 
 Requirements for any new palette: colorblind-safe (start from Wong or a desaturation of it)
 and grayscale-legible (stagger lightness, then check a grayscale export). Keep this file's

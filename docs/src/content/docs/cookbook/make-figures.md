@@ -42,7 +42,7 @@ The `visualization` skill chooses a line plot on a log axis (a trend, not a comp
 
 ## Journal style presets
 
-Named presets restyle a figure for a target journal without touching the data. Three ship today, defined in [`references/figure-styles.md`](https://github.com/sokolmarek/researcher/blob/main/references/figure-styles.md): `default`, `nature`, and `ieee`. Ask for one by name ("restyle this for Nature") or let the skill pick it up from your manuscript's target journal.
+Named presets restyle a figure for a target journal without touching the data. Three ship today, defined in [`references/figure-styles.md`](https://github.com/sokolmarek/researcher/blob/main/references/figure-styles.md): `default`, `nature`, and `ieee`. Pin one explicitly with a `Style:` line in your request (`Style: nature`, `Style: ieee`), ask for it by name ("restyle this for Nature"), or let the skill pick it up from your manuscript's target journal. Those three selectors resolve in that order of precedence, and no `Style:` line at all (or `Style: default`) is the no-op path.
 
 Here is the same label-efficiency plot under the `default` and `nature` presets:
 
@@ -51,6 +51,14 @@ Here is the same label-efficiency plot under the `default` and `nature` presets:
 | ![Label-efficiency plot, default preset](../../../assets/examples/label-efficiency-plot.png) | ![Label-efficiency plot, Nature preset: 89 mm single column, sans-serif, hairline axes](../../../assets/examples/label-efficiency-plot-nature.png) |
 
 The Nature variant applies 89 mm single-column sizing, sans-serif type, hairline axes, a muted palette, and a bold lowercase panel letter. Every plotted value is identical: only the styling changes.
+
+Presets are not a matplotlib-only feature. The same two presets restyle the TikZ architecture diagram:
+
+| `default` preset | `nature` preset |
+| --- | --- |
+| ![Two-stage pipeline diagram, default preset](../../../assets/examples/tikz-architecture.png) | ![Two-stage pipeline diagram, Nature preset: sans-serif labels, hairline strokes, muted fills, bold panel letter](../../../assets/examples/tikz-architecture-nature.png) |
+
+Here the preset swaps typography, stroke weights, arrowheads, and fills, and adds the bold lowercase panel letter. The topology (nodes, edges, labels, meaning) is untouched. Both palettes are the shipped ones: each variant copies its hexes straight out of the reference file rather than hand-picking them, so what you see here is what the preset produces.
 
 ## Conceptual art via external generators
 

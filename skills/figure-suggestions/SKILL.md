@@ -68,6 +68,34 @@ Figure N: [Descriptive Title]
   Style:      default / nature / ieee (recommended preset, see references/figure-styles.md)
 ```
 
+## Style Presets
+
+The `Style:` token has two distinct roles in this skill. Do not conflate them.
+
+- **Output field** (the line in the specification format above): the preset this skill *recommends* for each figure, carried downstream to visualization, tikz-diagrams, plotneuralnet, and latex-tables.
+- **Accepted input**: the invocation may carry an explicit `Style:` line, which pins the preset for every suggestion in the run.
+
+Presets (`default`, `nature`, `ieee`) are defined once in `references/figure-styles.md`. This skill does not duplicate those definitions; load that file when a preset is needed.
+
+### `Style:` line (accepted input)
+
+An explicit `Style:` line in the invocation outranks every other selector:
+
+```
+Suggest figures for my Results section.
+Style: nature
+```
+
+- `Style: nature`, `Style: ieee`: recommend that preset on every figure in the run.
+- `Style: default`, or no `Style:` line at all: the no-op path, exactly the current behavior. An omitted `Style:` line is never an error.
+- Any other value: do not guess and do not improvise a preset. Say it is not defined, list the presets that are (`default`, `nature`, `ieee`), and ask which to use.
+
+### Resolution order
+
+Presets resolve in one precedence order, highest first: **explicit `Style:` line > trigger phrase ("nature style", "IEEE format") > journal inference from `manuscript/config.yaml` (Nature portfolio titles map to `nature`, IEEE titles map to `ieee`) > `default`**. Whatever resolves becomes the `Style:` output field on every suggestion; state which preset was applied and why.
+
+Presets restyle only. A preset never changes which figure is suggested, what it plots, or its data.
+
 ## Panel Layout Recommendations
 
 For multi-panel figures, suggest logical groupings:

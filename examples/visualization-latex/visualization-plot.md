@@ -6,7 +6,7 @@
 | Command | n/a |
 | Trigger phrase | "Plot the label-efficiency results: macro-AUROC vs labeled fraction for each method" |
 | Connectors used | none |
-| Generated | 2026-07-12; rendered with matplotlib on this date |
+| Generated | 2026-07-12; rendered with matplotlib on this date. Nature variant moved onto the shipped `nature` preset palette and re-rendered 2026-07-14 (data unchanged) |
 
 ## Invocation
 
@@ -73,18 +73,36 @@ width, a sans-serif stack, 5 to 7 pt type, hairline axes with no top or right sp
 that still separates in grayscale, and no in-axes title (Nature figures carry their title in the
 caption). Every number is identical to the default variant above.
 
+The colors below are the preset's `NATURE_COLORS`, verbatim. Nothing here is hand-picked:
+`references/figure-styles.md` is the single source of truth for the palette, so copying this block
+reproduces the shipped preset rather than an approximation of it.
+
 ```python
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 MM = 1 / 25.4
+
+# NATURE_COLORS, copied verbatim from references/figure-styles.md (nature preset).
+NATURE_COLORS = [
+    "#2E6E8E",  # muted blue
+    "#C08A28",  # muted orange
+    "#3B8C6E",  # muted green
+    "#A65D33",  # muted vermilion
+    "#A87C9F",  # muted purple
+    "#7FAECC",  # muted sky blue
+    "#CFC964",  # muted yellow
+]
+blue, green, vermilion, purple = (NATURE_COLORS[0], NATURE_COLORS[2],
+                                  NATURE_COLORS[3], NATURE_COLORS[4])
+
 fracs = [1, 10, 100]
 series = {
-    "CNN (from scratch)":       ([0.712, 0.848, 0.921], "#9a9a9a", "o", (0, (3, 1.5))),
-    "CNN + augmentation":       ([0.741, 0.863, 0.924], "#6f6f6f", "s", (0, (3, 1.5))),
-    "Contrastive (baseline)":   ([0.803, 0.881, 0.926], "#3b6ea5", "^", "-"),
-    "+ physio. augment (ours)": ([0.821, 0.889, 0.929], "#c1671a", "D", "-"),
+    "CNN (from scratch)":       ([0.712, 0.848, 0.921], purple, "o", (0, (3, 1.5))),
+    "CNN + augmentation":       ([0.741, 0.863, 0.924], green, "s", (0, (3, 1.5))),
+    "Contrastive (baseline)":   ([0.803, 0.881, 0.926], blue, "^", "-"),
+    "+ physio. augment (ours)": ([0.821, 0.889, 0.929], vermilion, "D", "-"),
 }
 plt.rcParams.update({
     "font.family": "sans-serif",
@@ -123,3 +141,4 @@ fig.savefig("label-efficiency-plot-nature.png", bbox_inches="tight", facecolor="
 - The chart reuses the exact numbers from the `latex-results-table` example, so the table and the figure are consistent, and the synthetic-data caveat rides along in the corner.
 - The story the plot makes visible: the self-supervised advantage is largest in the low-label regime (1%) and narrows toward parity at 100%, which is the label-efficiency claim the manuscript makes.
 - Style presets restyle, they never re-plot: the Nature variant changes sizing, type, spines, palette, and panel lettering, while every plotted value stays identical. Asking for a journal style never changes your results.
+- The Nature variant draws its hexes from `NATURE_COLORS` in `references/figure-styles.md` rather than picking its own, so the showcase and the shipped preset cannot drift apart: copy the block and you get the preset. The same request can be pinned explicitly with a `Style: nature` line in the invocation, which outranks trigger phrases and the target journal in `manuscript/config.yaml`.

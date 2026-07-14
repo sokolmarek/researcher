@@ -6,7 +6,7 @@
 | Command | n/a |
 | Trigger phrase | "Make a TikZ diagram of my two-stage SSL pretraining and fine-tuning pipeline" |
 | Connectors used | none |
-| Generated | 2026-07-12; compiles with any TeX engine (tectonic, TeX Live, MiKTeX, MacTeX), verified with tectonic on this date |
+| Generated | 2026-07-12; compiles with any TeX engine (tectonic, TeX Live, MiKTeX, MacTeX), verified with tectonic on this date. Nature variant moved onto the shipped `nature` preset palette and re-compiled with latexmk (MiKTeX) on 2026-07-14 |
 
 ## Invocation
 
@@ -96,6 +96,10 @@ The `nature` preset in `references/figure-styles.md` swaps the typography and we
 sans-serif node text, hairline 0.5 pt strokes, smaller arrowheads, muted fills, and a bold lowercase
 panel letter. The topology, the node text, and the pipeline are unchanged.
 
+The `cb-*` block below is the preset's own TikZ palette, copied verbatim from
+`references/figure-styles.md`. Nothing is hand-picked: that file is the single source of truth, so
+this diagram is what the preset produces, not a look-alike.
+
 ```latex
 \documentclass[border=6pt]{standalone}
 \usepackage[T1]{fontenc}
@@ -106,37 +110,39 @@ panel letter. The topology, the node text, and the pipeline are unchanged.
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc, fit, backgrounds}
 
-\definecolor{nat-blue}{HTML}{3B6EA5}
-\definecolor{nat-orange}{HTML}{C1671A}
-\definecolor{nat-green}{HTML}{4C8C6B}
-\definecolor{nat-red}{HTML}{A54A2A}
-\definecolor{nat-grey}{HTML}{6F6F6F}
+% Muted palette, verbatim from the nature preset in references/figure-styles.md
+\definecolor{cb-blue}{HTML}{2E6E8E}
+\definecolor{cb-orange}{HTML}{C08A28}
+\definecolor{cb-green}{HTML}{3B8C6E}
+\definecolor{cb-red}{HTML}{A65D33}
 
 \begin{document}
 \begin{tikzpicture}[
     node distance=0.9cm and 1.2cm,
-    stage/.style={rectangle, rounded corners=1.5pt, draw=nat-grey, line width=0.5pt,
+    % Preset line weights: 0.5pt primary, 0.3pt secondary, never "thick".
+    stage/.style={rectangle, rounded corners=1.5pt, draw, line width=0.5pt,
                   align=center, minimum height=2.2em, minimum width=5.8em,
                   font=\sffamily\footnotesize},
-    data/.style={cylinder, shape border rotate=90, draw=nat-grey, line width=0.5pt,
-                 fill=nat-green!10, aspect=0.35, minimum height=2.4em, minimum width=2.8em,
+    data/.style={cylinder, shape border rotate=90, draw, line width=0.5pt,
+                 fill=cb-green!15, aspect=0.35, minimum height=2.4em, minimum width=2.8em,
                  align=center, font=\sffamily\scriptsize},
-    arrow/.style={-{Stealth[length=2mm]}, line width=0.5pt, draw=nat-grey},
+    arrow/.style={-{Stealth[length=2mm]}, line width=0.5pt},
+    secondary/.style={line width=0.3pt},
     phaselabel/.style={font=\sffamily\scriptsize\bfseries}
 ]
 
 \node[data] (unlabeled) {Unlabelled\\12-lead ECG};
 \node[data, below=1.7cm of unlabeled] (labeled) {PTB-XL\\labelled};
 
-\node[stage, fill=nat-blue!10, right=of unlabeled] (aug) {Physio.\\augment};
-\node[stage, fill=nat-blue!10, right=of aug] (encoder1) {Encoder\\$f_\theta$};
-\node[stage, fill=nat-orange!12, right=of encoder1] (contrast) {Contrastive\\loss};
+\node[stage, fill=cb-blue!15, right=of unlabeled] (aug) {Physio.\\augment};
+\node[stage, fill=cb-blue!15, right=of aug] (encoder1) {Encoder\\$f_\theta$};
+\node[stage, fill=cb-orange!15, right=of encoder1] (contrast) {Contrastive\\loss};
 
-\node[stage, fill=nat-blue!10, right=of labeled] (encoder2) {Encoder\\$f_\theta$ (init)};
-\node[stage, fill=nat-red!10, right=of encoder2] (head) {Linear\\head};
-\node[stage, fill=nat-red!10, right=of head] (eval) {Macro-\\AUROC};
+\node[stage, fill=cb-blue!15, right=of labeled] (encoder2) {Encoder\\$f_\theta$ (init)};
+\node[stage, fill=cb-red!15, right=of encoder2] (head) {Linear\\head};
+\node[stage, fill=cb-red!15, right=of head] (eval) {Macro-\\AUROC};
 
-\draw[arrow, dashed, draw=nat-blue] (encoder1.south) --
+\draw[arrow, dashed, draw=cb-blue] (encoder1.south) --
       node[right, font=\sffamily\scriptsize] {pretrained $\theta$} (encoder2.north);
 
 \draw[arrow] (unlabeled) -- (aug);
@@ -148,12 +154,12 @@ panel letter. The topology, the node text, and the pipeline are unchanged.
 \draw[arrow] (head) -- (eval);
 
 \begin{scope}[on background layer]
-    \node[fit=(aug)(contrast), draw=nat-blue, dashed, line width=0.3pt, rounded corners,
+    \node[fit=(aug)(contrast), draw=cb-blue, dashed, secondary, rounded corners,
           inner sep=5pt,
-          label={[phaselabel, nat-blue]above:Stage 1: self-supervised pretraining}] {};
-    \node[fit=(encoder2)(eval), draw=nat-red, dashed, line width=0.3pt, rounded corners,
+          label={[phaselabel, cb-blue]above:Stage 1: self-supervised pretraining}] {};
+    \node[fit=(encoder2)(eval), draw=cb-red, dashed, secondary, rounded corners,
           inner sep=5pt,
-          label={[phaselabel, nat-red]below:Stage 2: fine-tuning and evaluation}] {};
+          label={[phaselabel, cb-red]below:Stage 2: fine-tuning and evaluation}] {};
 \end{scope}
 
 \node[anchor=south west, font=\sffamily\small\bfseries]
@@ -171,4 +177,5 @@ panel letter. The topology, the node text, and the pipeline are unchanged.
 - Colors come from the colorblind-safe palette in `references/tikz-patterns.md`, not arbitrary choices.
 - The output is a `standalone` document so it compiles on its own to a cropped figure with any TeX engine (tectonic, TeX Live, MiKTeX, MacTeX), and it was compile-verified with tectonic before being included here.
 - The diagram depicts the same model as the `plotneuralnet-cnn` example and the manuscript in the writing examples, keeping the set consistent.
-- The Nature variant shows what a style preset does and does not touch: typography, stroke weights, arrowheads, fills, and panel lettering change, while the pipeline itself (nodes, edges, labels, meaning) is untouched. Both variants compile with any TeX engine (tectonic, TeX Live, MiKTeX, MacTeX); both were verified with tectonic.
+- The Nature variant shows what a style preset does and does not touch: typography, stroke weights, arrowheads, fills, and panel lettering change, while the pipeline itself (nodes, edges, labels, meaning) is untouched. Both variants compile with any TeX engine (tectonic, TeX Live, MiKTeX, MacTeX).
+- Both palettes are the shipped ones: the default variant's `cb-*` hexes come from `references/tikz-patterns.md`, the Nature variant's from the `nature` preset in `references/figure-styles.md`. Neither is hand-picked, so copying either block reproduces the preset instead of drifting from it. The preset can also be pinned explicitly with a `Style: nature` line in the invocation, which outranks trigger phrases and the target journal in `manuscript/config.yaml`.

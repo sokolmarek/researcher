@@ -111,16 +111,30 @@ plt.rcParams.update({
 
 Named figure style presets: `default`, `nature`, `ieee`. Each preset's rcParams and sizing rules are defined once in `references/figure-styles.md`; load that file rather than duplicating values here.
 
+Presets resolve in one precedence order, highest first: **explicit `Style:` line > trigger phrase > journal inference from `manuscript/config.yaml` > `default`**.
+
+### `Style:` line (accepted input)
+The invocation may carry an explicit `Style:` line, which outranks every other selector:
+
+```
+Plot macro-AUROC against labeled fraction, one line per method.
+Style: nature
+```
+
+- `Style: nature`, `Style: ieee`: apply that preset.
+- `Style: default`, or no `Style:` line at all: the no-op path, exactly the output this skill produces today. An omitted `Style:` line is never an error.
+- Any other value: do not guess and do not improvise a preset. Say it is not defined, list the presets that are (`default`, `nature`, `ieee`), and ask which to use.
+
 ### Trigger phrases
-Apply a preset when the user asks for it, for example:
+With no `Style:` line, apply a preset when the user asks for it in prose, for example:
 - "nature style", "in Nature format", "for submission to Nature" -> `nature`
 - "IEEE two-column figure" -> `ieee`
 
 ### Journal inference
-If the user names no style but `manuscript/config.yaml` specifies a target journal, map that journal to its preset (Nature-family journals -> `nature`, IEEE venues -> `ieee`).
+If the user gives neither a `Style:` line nor a trigger phrase, but `manuscript/config.yaml` specifies a target journal, map that journal to its preset (Nature-family journals -> `nature`, IEEE venues -> `ieee`).
 
 ### Default rule
-If no style is mentioned and no journal maps to a preset, use the `default` preset. This is the current behavior, unchanged.
+If nothing above resolves, use the `default` preset. This is the current behavior, unchanged. Always state which preset was applied and why.
 
 ### Integrity
 Presets restyle only: fonts, sizes, colors, dimensions, DPI. They never change data values or synthetic-data labels.
@@ -185,7 +199,7 @@ Panel labels follow journal convention: lowercase letters in parentheses, bold, 
 2. **Select chart type:** Based on data characteristics or user request
 3. **Choose library:** Based on user preference, language, or best fit
 4. **Generate code:** Write the plotting code in-session; for heavy plotting code, optionally launch the `visualization-agent` subagent (Sonnet) via the Task/Agent tool
-5. **Apply style preset:** Load `references/figure-styles.md`, select the preset (user phrase, journal inference from `manuscript/config.yaml`, or `default`), apply its rcParams and sizing, and tell the user which preset was applied
+5. **Apply style preset:** Load `references/figure-styles.md`, resolve the preset by precedence (explicit `Style:` line, then trigger phrase, then journal inference from `manuscript/config.yaml`, then `default`), apply its rcParams and sizing, and tell the user which preset was applied
 6. **Apply publication styling:** DPI, fonts, colors, dimensions per journal requirements
 7. **Add statistical annotations** if applicable
 8. **Generate caption** following journal conventions
@@ -205,5 +219,5 @@ Generate figure captions following academic conventions:
 - **latex-tables:** Data from tables can be visualized; visualizations can be tabulated
 - **journal-formatting:** Provides figure dimension and style requirements
 - **tikz-diagrams:** For schematic/conceptual figures use tikz-diagrams; for data-driven plots use visualization
-- **word-output:** PNG exports embedded in DOCX; PDF exports for LaTeX
+- **word-output:** PDF exports for LaTeX; PNG exports for Word, which the user places in the document by hand (automated image embedding is planned, not implemented: `templates/word/build-docx.js` generates headings, paragraphs, and lists only)
 - **implementation:** Visualization code may be part of experiment pipeline

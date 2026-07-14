@@ -102,11 +102,21 @@ Create publication-quality tables using `booktabs` conventions for academic manu
 \end{table}
 ```
 
-### Word-Compatible Output
-- Generate equivalent table structure for `docx-js`
-- Map booktabs rules to border styles (top/bottom thick, mid thin)
+### Word-Compatible Output (planned, not implemented)
+
+DOCX table emission is **planned, not implemented**. The shipped generator,
+`templates/word/build-docx.js`, produces a title page, numbered headings, paragraphs, and lists from
+`sections/*.md`; it emits no tables. The mapping below is the specification for that work, not a
+description of what runs today. Never tell a user a table was written into their DOCX.
+
+- Generate the equivalent table structure with the `docx` library's `Table`
+- Map booktabs rules to border styles (top/bottom thick, mid thin; Word has no `\toprule`)
 - Preserve bold best results and alignment
 - Include table caption and notes as separate paragraphs
+
+Until that ships, deliver the LaTeX table and hand the user this mapping so they can place the table
+in Word themselves. `examples/visualization-latex/latex-results-table.md` shows the expected shape of
+that hand-off.
 
 ## Journal Adaptation
 
@@ -120,10 +130,27 @@ Create publication-quality tables using `booktabs` conventions for academic manu
 
 - Named presets (`default`, `nature`, `ieee`) are defined once in `references/figure-styles.md`. This skill does not duplicate those definitions; it reads that file for the concrete values.
 - This skill consumes the preset's booktabs conventions, font size, rule weights, and caption placement, applying them to the tabular output generated here.
-- Trigger phrases that select a non-default preset: "nature style", "in Nature format", "for submission to <journal>", "IEEE format".
-- Journal inference: if the user names a journal instead of a preset, check `manuscript/config.yaml` for the target journal and map it to a preset family (Nature portfolio titles map to `nature`, IEEE titles map to `ieee`, anything else falls back to `default`).
-- No style mentioned means the `default` preset, which is exactly the current behavior described above (zero change).
+- Presets resolve in one precedence order, highest first: **explicit `Style:` line > trigger phrase > journal inference from `manuscript/config.yaml` > `default`**.
 - Presets restyle only: they never alter data, values, or the "(synthetic, for demonstration)" labeling on placeholder data.
+
+### `Style:` line (accepted input)
+
+The invocation may carry an explicit `Style:` line, which outranks every other selector:
+
+```
+Turn results.csv into a results table, bold the best per column.
+Style: nature
+```
+
+- `Style: nature`, `Style: ieee`: apply that preset.
+- `Style: default`, or no `Style:` line at all: the no-op path, exactly the current behavior described above (zero change). An omitted `Style:` line is never an error.
+- Any other value: do not guess and do not improvise a preset. Say it is not defined, list the presets that are (`default`, `nature`, `ieee`), and ask which to use.
+
+### Trigger phrases and journal inference
+
+- Trigger phrases that select a non-default preset when no `Style:` line is given: "nature style", "in Nature format", "for submission to <journal>", "IEEE format".
+- Journal inference: with neither a `Style:` line nor a trigger phrase, check `manuscript/config.yaml` for the target journal and map it to a preset family (Nature portfolio titles map to `nature`, IEEE titles map to `ieee`, anything else falls back to `default`).
+- State which preset was applied and why.
 
 ## Workflow
 
@@ -134,4 +161,4 @@ Create publication-quality tables using `booktabs` conventions for academic manu
 5. Generate LaTeX code with all required packages noted, styled per the resolved preset
 6. Save to `tables/table-<name>.tex`
 7. Validate compilation by running `scripts/latex-compile.py` (or `latex-compile.sh` on POSIX), which uses whichever TeX engine is installed (tectonic recommended, or latexmk/pdflatex from TeX Live, MiKTeX, or MacTeX)
-8. If Word output requested, generate docx-js equivalent
+8. If Word output is requested, say that DOCX table emission is planned and not implemented (see "Word-Compatible Output" above), then deliver the LaTeX table plus the `docx`-library mapping for the user to apply by hand

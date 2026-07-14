@@ -107,9 +107,20 @@ This skill consumes TikZ style macros (colors, fonts, line widths, arrowheads) t
 - **nature**: preset for Nature-portfolio submissions.
 - **ieee**: preset for IEEE submissions.
 
-**Trigger phrases:** "nature style", "in Nature format", "for submission to <journal>", "IEEE format".
+Presets resolve in one precedence order, highest first: **explicit `Style:` line > trigger phrase > journal inference from `manuscript/config.yaml` > `default`**.
 
-**Journal inference:** if a target journal is set in `manuscript/config.yaml`, map it to a preset family: Nature portfolio titles map to `nature`, IEEE titles map to `ieee`, anything else (or no target journal) maps to `default`.
+**`Style:` line (accepted input):** the invocation may carry an explicit `Style:` line, which outranks every other selector:
+
+```
+Draw my two-stage pretraining and fine-tuning pipeline as a standalone TikZ figure.
+Style: nature
+```
+
+`Style: nature` and `Style: ieee` apply that preset. `Style: default`, or no `Style:` line at all, is the no-op path: exactly the output this skill produces today, and an omitted `Style:` line is never an error. For any other value, do not guess and do not improvise a preset: say it is not defined, list the presets that are (`default`, `nature`, `ieee`), and ask which to use.
+
+**Trigger phrases:** with no `Style:` line, prose selects a preset: "nature style", "in Nature format", "for submission to <journal>", "IEEE format".
+
+**Journal inference:** with neither a `Style:` line nor a trigger phrase, if a target journal is set in `manuscript/config.yaml`, map it to a preset family: Nature portfolio titles map to `nature`, IEEE titles map to `ieee`, anything else (or no target journal) maps to `default`.
 
 **Scope of presets:** presets restyle only, they change colors, fonts, line widths, and arrowheads. They never alter data, values, or the "(synthetic, for demonstration)" labeling used elsewhere in generated figures.
 
@@ -153,9 +164,9 @@ Generate an `\input{}` or `\includegraphics{}` reference for `main.tex`:
 1. Identify diagram type from user description
 2. Determine required packages and TikZ libraries
 3. Consult `references/tikz-patterns.md` for matching patterns
-4. Load `references/figure-styles.md` and apply the matching preset (default, nature, or ieee), determined from trigger phrases or from the target journal in `manuscript/config.yaml`; state which preset was applied and why
+4. Load `references/figure-styles.md` and apply the matching preset (default, nature, or ieee), resolved by precedence (explicit `Style:` line, then trigger phrase, then the target journal in `manuscript/config.yaml`, then `default`); state which preset was applied and why
 5. Generate TikZ code with named styles and coordinates
 6. Save standalone `.tex` to `figures/<diagram-name>.tex`
 7. Compile-check via `scripts/latex-compile.py` (uses tectonic if available, otherwise latexmk/pdflatex from TeX Live, MiKTeX, or MacTeX) and verify output
 8. Generate `\input{}` snippet for manuscript integration
-9. If Word output is needed, export PDF and embed as image in DOCX
+9. If Word output is needed, export the compiled figure to PDF and PNG and tell the user to place it in the document. Automated image embedding is planned, not implemented: `templates/word/build-docx.js` generates headings, paragraphs, and lists only, so do not claim a figure was written into their DOCX

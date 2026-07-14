@@ -174,7 +174,7 @@ User provides PyTorch/TensorFlow/Keras model code. Parse layer definitions and g
 1. **Parse architecture** from natural language, layer list, or model code
 2. **Select preset** if architecture matches a known type, otherwise build custom
 3. **Calculate box dimensions** from feature map sizes using auto-sizing
-4. **Load `references/figure-styles.md` and apply the style preset**: determine the preset from trigger phrases in the request or, failing that, from the target journal in `manuscript/config.yaml`; state which preset was applied and why (e.g., "applied `nature` preset: target journal in config.yaml is Nature Communications")
+4. **Load `references/figure-styles.md` and apply the style preset**: resolve the preset by precedence (an explicit `Style:` line in the request, then trigger phrases, then the target journal in `manuscript/config.yaml`, then `default`); state which preset was applied and why (e.g., "applied `nature` preset: target journal in config.yaml is Nature Communications")
 5. **Generate TikZ code** with all macros and definitions inline
 6. **Save** to `figures/<architecture-name>.tex`
 7. **Compile-check** by running `scripts/latex-compile.py` (or `latex-compile.sh` on POSIX), which uses whichever TeX engine is installed (tectonic recommended, or latexmk / pdflatex from TeX Live, MiKTeX, or MacTeX), and verify rendering
@@ -202,9 +202,20 @@ Users can override defaults:
 
 Named presets (`default`, `nature`, `ieee`) are defined once in `references/figure-styles.md`. This skill does not duplicate those definitions; it consumes them. Only colors, fonts, and line weights change between presets: the geometry macros (box sizing, spacing, auto-sizing scale factors) are preset-independent and stay identical across all three.
 
-Trigger phrases that select a non-default preset: "nature style", "in Nature format", "for submission to <journal>", "IEEE format". If no style is mentioned, the `default` preset applies, which is exactly the current behavior described above (zero change).
+Presets resolve in one precedence order, highest first: **explicit `Style:` line > trigger phrase > journal inference from `manuscript/config.yaml` > `default`**.
 
-Journal inference: if a target journal is set in `manuscript/config.yaml`, map it to a preset family automatically:
+`Style:` line (accepted input): the invocation may carry an explicit `Style:` line, which outranks every other selector:
+
+```
+Draw my 1D-CNN ECG encoder as a PlotNeuralNet-style diagram.
+Style: nature
+```
+
+`Style: nature` and `Style: ieee` apply that preset. `Style: default`, or no `Style:` line at all, is the no-op path: exactly the current behavior described above (zero change), and an omitted `Style:` line is never an error. For any other value, do not guess and do not improvise a preset: say it is not defined, list the presets that are (`default`, `nature`, `ieee`), and ask which to use.
+
+Trigger phrases that select a non-default preset when no `Style:` line is given: "nature style", "in Nature format", "for submission to <journal>", "IEEE format".
+
+Journal inference: with neither a `Style:` line nor a trigger phrase, if a target journal is set in `manuscript/config.yaml`, map it to a preset family automatically:
 - Nature portfolio journals -> `nature`
 - IEEE journals/transactions -> `ieee`
 - Anything else, or no target journal set -> `default`
