@@ -9,24 +9,31 @@ The normative specification for this directory is `plans/06-examples-spec.md`.
 | Example | Skill | Category |
 |---|---|---|
 | [literature-search-prisma](research-verification/literature-search-prisma.md) | literature-search | Research and verification |
-| [fact-checking-report](research-verification/fact-checking-report.md) | fact-checking | Research and verification |
-| [sota-benchmark-table](research-verification/sota-benchmark-table.md) | sota-finder | Research and verification |
+| [fact-checking-report](research-verification/fact-checking-report.md) | fact-checking (`/researcher:fact-check`) | Research and verification |
+| [sota-benchmark-table](research-verification/sota-benchmark-table.md) | sota-finder (`/researcher:sota`) | Research and verification |
 | [citation-audit](research-verification/citation-audit.md) | citation-management / citation-audit | Research and verification |
-| [manuscript-setup](writing-review/manuscript-setup.md) | manuscript-setup | Writing and review |
-| [paper-drafting-introduction](writing-review/paper-drafting-introduction.md) | paper-drafting | Writing and review |
-| [peer-review-report](writing-review/peer-review-report.md) | peer-review | Writing and review |
-| [response-to-reviewers](writing-review/response-to-reviewers.md) | response-to-reviewers | Writing and review |
+| [manuscript-setup](writing-review/manuscript-setup.md) | manuscript-setup (`/researcher:new-manuscript`) | Writing and review |
+| [paper-drafting-introduction](writing-review/paper-drafting-introduction.md) | paper-drafting (`/researcher:draft-section`) | Writing and review |
+| [peer-review-report](writing-review/peer-review-report.md) | peer-review (`/researcher:review-paper`) | Writing and review |
+| [response-to-reviewers](writing-review/response-to-reviewers.md) | response-to-reviewers (`/researcher:revise`) | Writing and review |
 | [tikz-architecture-diagram](visualization-latex/tikz-architecture-diagram.md) | tikz-diagrams | Visualization and LaTeX |
 | [plotneuralnet-cnn](visualization-latex/plotneuralnet-cnn.md) | plotneuralnet | Visualization and LaTeX |
 | [latex-results-table](visualization-latex/latex-results-table.md) | latex-tables | Visualization and LaTeX |
 | [visualization-plot](visualization-latex/visualization-plot.md) | visualization | Visualization and LaTeX |
-| [journal-finder-report](publishing/journal-finder-report.md) | journal-finder | Publishing and discovery |
-| [conference-finder-cfp](publishing/conference-finder-cfp.md) | conference-finder | Publishing and discovery |
+| [journal-finder-report](publishing/journal-finder-report.md) | journal-finder (`/researcher:find-journal`) | Publishing and discovery |
+| [conference-finder-cfp](publishing/conference-finder-cfp.md) | conference-finder (`/researcher:find-conference`) | Publishing and discovery |
 | [cover-letter](publishing/cover-letter.md) | cover-letter | Publishing and discovery |
 
 ## Running scenario
 
 All examples share one research scenario: **self-supervised contrastive pretraining for ECG arrhythmia classification**, evaluated on the PTB-XL benchmark. The visualization examples include rendered figures (diagrams, a results table, and a chart) alongside their source. The set is internally consistent: the systematic search produces the bibliography; the drafted introduction cites it; the peer review critiques the draft; the response answers the review; the journal chosen by the finder receives the cover letter; and the CNN in the diagrams is the manuscript's model.
+
+## Style variants
+
+Two visualization examples, `visualization-plot` and `tikz-architecture-diagram`, each show a default
+variant and a Nature-preset variant of the same figure, both rendered, with identical underlying data.
+The presets (`references/figure-styles.md`) restyle typography, sizing, and color, never the plotted
+values or the diagram topology: asking for a journal style changes presentation, not results.
 
 ## Common format
 

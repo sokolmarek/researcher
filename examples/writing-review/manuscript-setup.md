@@ -3,14 +3,14 @@
 | Field | Value |
 |---|---|
 | Skill | manuscript-setup |
-| Command | /new-manuscript |
-| Trigger phrase | "Start a new manuscript" (via the /new-manuscript form) |
+| Command | /researcher:new-manuscript |
+| Trigger phrase | "Start a new manuscript" (via the /researcher:new-manuscript form) |
 | Connectors used | none |
 | Generated | 2026-07-12 |
 
 ## Invocation
 
-> /new-manuscript
+> /researcher:new-manuscript
 
 Form fields submitted:
 

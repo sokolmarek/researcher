@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Skill | fact-checking |
-| Command | /fact-check |
+| Command | /researcher:fact-check |
 | Trigger phrase | "Fact-check these four claims about self-supervised ECG models against the literature" |
 | Connectors used | Scite MCP (Smart Citations), OpenAlex, Crossref |
 | Generated | 2026-07-12, all cited DOIs verified on this date |
@@ -30,7 +30,7 @@ Four claims (above). No manuscript attached; claims checked against retrieved li
 | 1 | SSL reaches within ~1% of supervised | **Supported** | High |
 | 2 | Contrastive SSL consistently beats supervised on ECG | **Contested** | High |
 | 3 | DNNs match cardiologist-level arrhythmia detection | **Partially Supported** | Medium |
-| 4 | SSL removes need for any labeled data for clinical diagnosis | **Unsupported** | High |
+| 4 | SSL removes need for any labeled data for clinical diagnosis | **Contradicted** | High |
 
 ---
 
@@ -72,15 +72,15 @@ Four claims (above). No manuscript attached; claims checked against retrieved li
 
 ---
 
-### Claim 4: Unsupported
+### Claim 4: Contradicted
 
 > Self-supervised ECG models remove the need for any labeled data to achieve clinical-grade arrhythmia diagnosis.
 
-**Assessment.** No retrieved source supports zero-label clinical-grade diagnosis. Every self-supervised ECG method examined still relies on a labeled fine-tuning or linear-evaluation stage to reach reported performance: Mehari and Strodthoff evaluate via linear probing and fine-tuning on labeled data (Mehari & Strodthoff, 2022); Diamant et al. train linear models on labeled tasks atop frozen representations (Diamant et al., 2022); Lai et al., operating at large scale, annotate 164,538 of their ECGs and report their diagnostic performance on that labeled evaluation (Lai et al., 2023). Self-supervision reduces the *quantity* of labels needed, not the need for labels.
+**Contrasting evidence.** Every self-supervised ECG method retrieved still relies on a labeled fine-tuning or linear-evaluation stage to reach its reported performance, so the evidence base directly opposes the claim rather than merely failing to address it: Mehari and Strodthoff evaluate via linear probing and fine-tuning on labeled data (Mehari & Strodthoff, 2022); Diamant et al. train linear models on labeled tasks atop frozen representations (Diamant et al., 2022); Lai et al., operating at large scale, annotate 164,538 of their ECGs and report diagnostic performance on that labeled evaluation (Lai et al., 2023). Self-supervision reduces the *quantity* of labels needed, not the need for labels.
 
-**Reasoning.** The claim is not merely unproven; it is contradicted by the design of every study in the evidence base. No source is cited *for* the claim because none exists in the retrieved literature, and none is invented to fill the gap.
+**Reasoning.** This is a Contradicted verdict, not an Unsupported one: Unsupported means the search returned no evidence either way, whereas here multiple retrieved sources provide counter-evidence through their own experimental design. No source is cited *for* the claim, because none exists in the retrieved literature, and none is invented to fill the gap.
 
-**Confidence: High** that the claim is unsupported as stated.
+**Confidence: High** that the claim as stated is contradicted by the evidence base.
 
 ---
 
@@ -95,7 +95,7 @@ Four claims (above). No manuscript attached; claims checked against retrieved li
 
 ## What this demonstrates
 
-- Four claims resolve to four different verdicts, including an honest **Unsupported** where no source is invented to prop up a false statement.
+- Four claims resolve to four different verdicts, including an honest **Contradicted** where the retrieved evidence opposes the claim and no source is invented to prop up a false statement. The verdict labels follow the fact-checking skill's definitions exactly: Contradicted means counter-evidence exists, whereas Unsupported is reserved for claims where the search returned nothing either way.
 - Each verdict separates supporting from contrasting evidence and quotes the actual reported numbers (0.5% linear-eval gap, "three out of four tasks", F1 > 80%) rather than paraphrasing from memory.
 - The distinction between a scoped true claim and an overreaching blanket claim (Claim 3) is made explicit, which is the common failure mode in related-work sections.
 - Every cited DOI resolves; the reference list uses APA and matches the shared example bibliography.

@@ -5,7 +5,7 @@
 | Skill | literature-search |
 | Command | n/a (skill triggered by phrasing) |
 | Trigger phrase | "Do a systematic literature search on self-supervised learning for ECG arrhythmia classification" |
-| Connectors used | OpenAlex, Crossref, arXiv (direct API); Scite MCP for citation tallies (rate-limited at authoring, so the tallies shown are illustrative placeholders) |
+| Connectors used | Search sources: OpenAlex, Crossref, Semantic Scholar, arXiv, PubMed (direct APIs). Scite MCP for citation tallies (rate-limited at authoring, so the tallies shown are illustrative placeholders) |
 | Generated | 2026-07-12, all DOIs verified against Crossref/OpenAlex on this date |
 
 ## Invocation
@@ -70,13 +70,21 @@ Ranking is a composite of query relevance, citation count, and recency. The Scit
 | 7 | Lai et al., Practical SSL diagnostic algorithm for wearable 12-lead ECG | 2023 | Nature Communications | 10.1038/s41467-023-39472-8 | 18 / 1 / 33 | SSL at scale (658k ECGs, 60 diagnostic terms); deployment evidence |
 | 8 | Liu et al., Self-Supervised Contrastive Learning for Medical Time Series (review) | 2023 | Sensors | 10.3390/s23094221 | 12 / 0 / 45 | PRISMA review of the subfield; scoping reference |
 | 9 | Strodthoff et al., Deep Learning for ECG Analysis: Benchmarks from PTB-XL | 2021 | IEEE J. Biomedical and Health Informatics | 10.1109/jbhi.2020.3022989 | 88 / 4 / 210 | Defines the PTB-XL supervised benchmark our SSL models are measured against |
-| 10 | Wagner et al., PTB-XL, a large publicly available ECG dataset | 2020 | Scientific Data | 10.1038/s41597-020-0495-6 | 140 / 1 / 380 | The dataset (21,837 records, 18,885 patients) all included works evaluate on |
+| 10 | Wagner et al., PTB-XL, a large publicly available ECG dataset | 2020 | Scientific Data | 10.1038/s41597-020-0495-6 | 140 / 1 / 380 | The dataset (21,837 records, 18,885 patients) this manuscript evaluates on, and the most common benchmark in the included set. Several included works evaluate elsewhere (CODE, private cohorts, single-lead ambulatory data), which is exactly why the SOTA example flags cross-dataset comparisons as not directly comparable |
 | 11 | Ribeiro et al., Automatic diagnosis of the 12-lead ECG using a DNN | 2020 | Nature Communications | 10.1038/s41467-020-15432-4 | 96 / 5 / 190 | Supervised 12-lead ceiling; F1 > 0.80, specificity > 0.99 |
 | 12 | Hannun et al., Cardiologist-level arrhythmia detection | 2019 | Nature Medicine | 10.1038/s41591-018-0268-3 | 210 / 8 / 640 | Single-lead cardiologist-level benchmark; motivates label efficiency |
 
 Full included set adds: Hu et al. 2022 (transformer arrhythmia detection, 10.1016/j.compbiomed.2022.105325), Weimann & Conrad 2021 (transfer learning for ECG, 10.1038/s41598-021-84374-8), Petmezas et al. 2022 (deep-learning-on-ECG systematic review, 10.2196/38454), Hicks et al. 2021 (explainability, 10.1038/s41598-021-90285-5), Ong Ly et al. 2024 (shortcut learning and generalization, 10.1038/s41746-024-01118-4).
 
 ### Search-provenance record (written to `manuscript/provenance.json`)
+
+What follows is an **illustrative aggregate summary**: it records the counts and the dedup method for
+this run, which is enough to redraw the PRISMA flow, but it is not yet a reproducible record. It
+holds no raw record identifiers, no pagination state, no response snapshots, no deduplication
+clusters, and no per-record screening decisions, so a reader cannot replay the search from it. The
+append-only per-record event ledger that makes a run replayable (retrieval, record_lineage,
+dedup_decision, and screening_decision events, with response hashes and PRISMA counts derived by
+aggregation) is planned work; when it lands, this block is regenerated from it.
 
 ```json
 {
@@ -96,11 +104,11 @@ Full included set adds: Hu et al. 2022 (transformer arrhythmia detection, 10.101
 }
 ```
 
-This record is what the systematic-review skill and the PRISMA flow diagram read from later, and what `/submit-ready` inspects to confirm the search was reproducible.
+This record is what the systematic-review skill and the PRISMA flow diagram read from today. Note the honest limitation stated above: it summarizes the run, it does not make it replayable.
 
 ## What this demonstrates
 
 - Multi-source dispatch with per-source query strings, followed by deduplication (DOI first, then normalized-title similarity) rather than a single opaque web search.
-- A complete PRISMA flow (identification, screening, eligibility, inclusion) with counts that reconcile, and a machine-readable provenance record that makes the search reproducible.
+- A complete PRISMA flow (identification, screening, eligibility, inclusion) with counts that reconcile, plus a machine-readable provenance record that is explicit about what it does and does not capture (aggregate counts today; a per-record event ledger is planned).
 - Every included paper carries a real, resolvable identifier (DOI or arXiv ID); the included set becomes the shared bibliography for the writing examples in `examples/writing-review/`.
 - Volatile counts are labeled as run-specific; the exact numbers live in the provenance record, not in prose that would silently go stale.

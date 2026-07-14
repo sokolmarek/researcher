@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Skill | response-to-reviewers |
-| Command | /revise |
+| Command | /researcher:revise |
 | Trigger phrase | "Draft a point-by-point response to these reviewer comments" |
 | Connectors used | OpenAlex, Crossref (to verify any paper cited in a rebuttal) |
 | Generated | 2026-07-12 |
@@ -26,7 +26,7 @@ We thank the editor and reviewers for their careful reading. Reviewer comments a
 
 > *Comment 1.1: The augmentation ablation reports relative improvements but does not specify random-seed handling, number of runs, or confidence intervals.*
 
-**Response.** We agree. We re-ran the full ablation over five random seeds and now report mean and standard deviation with 95% confidence intervals for every entry. Two of the three augmentation effects that previously appeared positive are within the confidence interval of the baseline and are now described as inconclusive rather than as improvements. **Changes: Section IV-C, Table 3 (now with mean ± SD), and the last paragraph of Section IV-C.**
+**Response.** We agree. We re-ran the full ablation over five random seeds and now report, for each augmentation, the 95% confidence interval of the *paired* difference against the matched baseline (the difference computed seed by seed, not the overlap of two marginal error bars). By this test our physiological augmentation improves over the contrastive baseline at the 1% labeled fraction (paired difference +0.018, 95% CI [+0.001, +0.035]), but the differences at 10% and 100% include zero (+0.008, 95% CI [-0.012, +0.028] and +0.003, 95% CI [-0.006, +0.012]) and are now described as inconclusive rather than as improvements. **Changes: Section IV-C, Table 3 (now with mean ± SD), and the last paragraph of Section IV-C.**
 
 > *Comment 1.2: The supervised baseline must use the same backbone and training budget as the fine-tuned SSL model.*
 
@@ -68,7 +68,7 @@ We thank the editor and reviewers for their careful reading. Reviewer comments a
 
 ### Summary of major changes
 
-1. Five-seed ablation with confidence intervals; two prior "improvements" reclassified as inconclusive.
+1. Five-seed ablation with paired-difference confidence intervals; the 10% and 100% effects reclassified as inconclusive, the 1% effect retained.
 2. Matched supervised baseline; revised, smaller SSL margin.
 3. Scoped clinical claims and a new external-validation limitations paragraph.
 4. Added qualitative comparison to lead-agnostic pretraining with a stated rationale for not reproducing it.
@@ -86,6 +86,6 @@ We thank the editor and reviewers for their careful reading. Reviewer comments a
 ## What this demonstrates
 
 - Every reviewer comment is quoted, answered, and tied to a specific manuscript location, matching the response-to-reviewers template.
-- The response includes a candid outcome (two effects reclassified as inconclusive after proper statistics) rather than defending the original claims, which is what an honest revision looks like.
+- The response includes a candid outcome (effects reclassified as inconclusive after proper statistics) rather than defending the original claims, which is what an honest revision looks like. The statistics reason from the paired-difference interval, matching the paired t-test in the results-table example, not from the overlap of marginal error bars.
 - Comment 2.3 shows a respectful, evidence-backed disagreement: the authors decline a request and cite a real paper (Liu et al., 2023) to justify why, instead of either capitulating or hand-waving.
 - Answers thread directly from the peer-review example's action list, keeping the writing-review example set internally consistent.

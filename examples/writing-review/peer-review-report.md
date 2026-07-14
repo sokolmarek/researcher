@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Skill | peer-review |
-| Command | /review-paper |
+| Command | /researcher:review-paper |
 | Trigger phrase | "Review my manuscript with a full reviewer panel and give me scores" |
 | Connectors used | OpenAlex, Crossref (to verify any literature a reviewer invokes) |
 | Generated | 2026-07-12 |
@@ -18,18 +18,23 @@ The manuscript from the writing examples (introduction drafted, methods and resu
 
 ## Output
 
-### Rubric scores (0-100 per dimension)
+### Rubric scores (0-100 per dimension, canonical peer-review rubric)
 
-| Dimension | EIC | Methodology | Domain Expert | Writing | Weight |
-|---|---|---|---|---|---|
-| Novelty | 62 | 58 | 65 | - | 0.25 |
-| Technical soundness | - | 55 | 60 | - | 0.30 |
-| Clarity | 74 | - | - | 78 | 0.15 |
-| Reproducibility | - | 48 | - | - | 0.15 |
-| Significance | 68 | - | 70 | - | 0.15 |
-| **Weighted overall** | | | | | **59 / 100** |
+| Dimension | EIC | Methodology | Domain Expert | Writing | Mean | Weight |
+|---|---|---|---|---|---|---|
+| Novelty & Significance | 64 | 58 | 66 | - | 62.7 | 20% |
+| Methodology | - | 55 | 60 | - | 57.5 | 25% |
+| Results & Analysis | - | 52 | 58 | - | 55.0 | 20% |
+| Writing Quality | 74 | - | - | 78 | 76.0 | 15% |
+| Literature & Context | 70 | - | 66 | - | 68.0 | 10% |
+| Reproducibility | - | 48 | - | - | 48.0 | 10% |
+| **Weighted overall** | | | | | **60.9 / 100** | |
 
-Decision mapping: 70+ minor revision, 50-69 major revision, below 50 reject. **Overall 59 maps to Major Revision.**
+The overall is the weight-averaged dimension means computed at full precision before rounding:
+62.67(0.20) + 57.5(0.25) + 55(0.20) + 76(0.15) + 68(0.10) + 48(0.10) = 60.9.
+
+Decision mapping (from the peer-review skill rubric): 80+ accept, 65-79 minor revision, 50-64 major
+revision, below 50 reject. **Overall 60.9 maps to Major Revision.**
 
 ---
 
@@ -49,7 +54,7 @@ The manuscript proposes a contrastive pretraining scheme with physiologically gr
 2. **Baseline fairness (major).** The supervised baseline must use the same backbone and training budget as the fine-tuned SSL model, following the benchmarking protocol of Strodthoff et al. (2021). As written, it is unclear the comparison is matched.
 3. **Missing detail (minor).** Specify the linear-evaluation protocol (frozen encoder, linear head) versus fine-tuning, since the two give different conclusions.
 
-Score: technical soundness 55, reproducibility 48.
+Score: novelty and significance 58, methodology 55, results and analysis 52, reproducibility 48.
 
 ---
 
@@ -61,7 +66,7 @@ Score: technical soundness 55, reproducibility 48.
 2. **Generalization (moderate).** The paper evaluates only on PTB-XL. Shortcut learning and cross-cohort failure are documented risks for ECG models (Ong Ly et al., 2024). At minimum, discuss external-validation limitations.
 3. **Related work (minor).** The lead-agnostic pretraining approach of Oh et al. (2022) is closely related to the proposed augmentations and should be compared, not just cited.
 
-Score: novelty 65, significance 70.
+Score: novelty and significance 66, methodology 60, results and analysis 58, literature and context 66.
 
 ---
 
@@ -71,7 +76,7 @@ Score: novelty 65, significance 70.
 
 The manuscript is clearly written and well organized. The funnel introduction is effective. Two issues: (1) several figures are referenced before they are introduced; fix the ordering. (2) The contributions list mixes method and evaluation contributions; consider separating them. No concerns about language or structure otherwise.
 
-Score: clarity 78.
+Score: writing quality 78.
 
 ---
 
@@ -107,6 +112,6 @@ The strongest case against acceptance: the central result may be a protocol arti
 ## What this demonstrates
 
 - Five distinct personas (Editor-in-Chief, Methodology, Domain Expert, Writing, Devil's Advocate) produce non-overlapping, dimension-specific critiques rather than one generic review.
-- Rubric scores per dimension aggregate to a weighted overall that maps deterministically to a decision (59 to Major Revision).
+- Rubric scores follow the peer-review skill's canonical six dimensions and weights, aggregate to an arithmetically checkable weighted overall, and map deterministically to a decision (60.9 to Major Revision under the 50-64 band).
 - Reviewer opinions are synthetic and labeled, but every paper a reviewer cites as relevant literature is a real, resolvable reference, so the "you should compare to X" comments are actionable and checkable.
 - The consolidated action list is what the response-to-reviewers example answers point by point.

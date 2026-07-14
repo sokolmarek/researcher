@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Skill | journal-finder |
-| Command | /find-journal |
+| Command | /researcher:find-journal |
 | Trigger phrase | "Recommend target journals for my SSL-for-ECG methods paper" |
 | Connectors used | `references/journal-database.md`; journal scope pages |
 | Generated | 2026-07-12 |

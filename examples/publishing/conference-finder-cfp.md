@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Skill | conference-finder |
-| Command | /find-conference |
+| Command | /researcher:find-conference |
 | Trigger phrase | "Find conferences and workshops where I could submit my SSL-for-ECG work" |
 | Connectors used | venue homepages (for scope and typical timing) |
 | Generated | 2026-07-12 |

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Skill | citation-management (existence gate); citation-audit after Phase 3 |
-| Command | /verify-citations (after Phase 3) |
+| Command | /researcher:verify-citations (planned command; the audit runs today via the citation-management skill) |
 | Trigger phrase | "Verify every reference in my bibliography actually exists and check for retractions" |
 | Connectors used | OpenAlex, Crossref, Semantic Scholar, arXiv (existence gate); OpenAlex is_retracted + Crossref update-to (retraction sweep) |
 | Generated | 2026-07-12, all real entries verified on this date |
@@ -78,6 +78,8 @@ A 10-entry `library.bib`. Nine entries are the real papers from the shared examp
   journal={IEEE Transactions on Biomedical Engineering}, volume={68}, number={9}, pages={2811--2820}, year={2021},
   doi={10.1109/TBME.2021.3098765}}
 ```
+
+<!-- freshness: expect-unresolvable 10.1109/TBME.2021.3098765 -->
 
 ## Output
 

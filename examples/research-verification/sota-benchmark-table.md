@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Skill | sota-finder |
-| Command | /sota |
+| Command | /researcher:sota |
 | Trigger phrase | "What's the state of the art for deep learning on the PTB-XL ECG benchmark and related SSL results?" |
 | Connectors used | OpenAlex, Crossref, arXiv; Scite MCP for verification |
 | Generated | 2026-07-12, every numeric entry traced to the source paper's own reporting |
