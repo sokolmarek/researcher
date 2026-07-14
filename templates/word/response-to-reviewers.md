@@ -1,4 +1,4 @@
-# Response to Reviewers — DOCX Generation Spec
+# Response to Reviewers: DOCX Generation Spec
 
 Specification for generating a point-by-point response document in DOCX format.
 
@@ -11,9 +11,9 @@ Specification for generating a point-by-point response document in DOCX format.
 
 ## Title Section
 
-- Title: "Response to Reviewers" — centered, 14pt bold
-- Subtitle: "Manuscript: [TITLE]" — centered, 12pt
-- Subtitle: "Manuscript ID: [ID]" — centered, 12pt italic
+- Title: "Response to Reviewers", centered, 14pt bold
+- Subtitle: "Manuscript: [TITLE]", centered, 12pt
+- Subtitle: "Manuscript ID: [ID]", centered, 12pt italic
 - Date: centered, 11pt
 
 ## Cover Paragraph

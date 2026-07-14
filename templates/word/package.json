@@ -1,0 +1,12 @@
+{
+  "name": "researcher-word-templates",
+  "private": true,
+  "version": "0.2.2",
+  "description": "DOCX generation for the Researcher plugin (build-docx.js, built on the docx library)",
+  "scripts": {
+    "test": "node --test test/build-docx.test.mjs"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}

@@ -1,4 +1,4 @@
-# Article IMRaD — DOCX Generation Spec
+# Article IMRaD: DOCX Generation Spec
 
 Specification for generating an IMRaD research article in DOCX format using `docx-js`.
 
@@ -28,15 +28,15 @@ Specification for generating an IMRaD research article in DOCX format using `doc
 
 ## Sections (in order)
 
-1. **Abstract** — Heading 1 (unnumbered), followed by body text, then Keywords line in italic
-2. **Introduction** — Heading 1, numbered
-3. **Methods / Materials and Methods** — Heading 1, numbered
-4. **Results** — Heading 1, numbered
-5. **Discussion** — Heading 1, numbered
-6. **Conclusion** — Heading 1, numbered
-7. **Acknowledgments** — Heading 1 (unnumbered)
-8. **References** — Heading 1 (unnumbered), formatted per citation style
-9. **Appendix** — Heading 1 (unnumbered, optional)
+1. **Abstract** (Heading 1, unnumbered), followed by body text, then Keywords line in italic
+2. **Introduction** (Heading 1, numbered)
+3. **Methods / Materials and Methods** (Heading 1, numbered)
+4. **Results** (Heading 1, numbered)
+5. **Discussion** (Heading 1, numbered)
+6. **Conclusion** (Heading 1, numbered)
+7. **Acknowledgments** (Heading 1, unnumbered)
+8. **References** (Heading 1, unnumbered), formatted per citation style
+9. **Appendix** (Heading 1, unnumbered, optional)
 
 ## Table Formatting
 

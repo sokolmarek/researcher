@@ -1,4 +1,4 @@
-# Cover Letter — DOCX Generation Spec
+# Cover Letter: DOCX Generation Spec
 
 Specification for generating a journal submission cover letter in DOCX format.
 
