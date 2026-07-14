@@ -1,0 +1,54 @@
+---
+title: Researcher
+description: A tireless research assistant for the whole academic pipeline. It does not sleep, so you can.
+template: splash
+hero:
+  tagline: A tireless assistant for the entire academic research pipeline. It does not sleep, so you finally can.
+  image:
+    file: ../../assets/header.png
+    alt: A lone researcher hunched over a glowing laptop, long past midnight.
+  actions:
+    - text: Get started
+      link: /researcher/start/installation/
+      icon: right-arrow
+    - text: Open the cookbook
+      link: /researcher/cookbook/write-a-paper/
+      icon: open-book
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/sokolmarek/researcher
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+Researcher is a Claude Code and Cowork plugin with **29 specialized skills**, **9 agents**, and **11 slash commands** covering the whole research pipeline: from a vague Monday hunch to a submission-ready manuscript. It will not do your research for you, and it will not fabricate a single citation. It will handle the brutal logistics so you can sleep.
+
+<CardGrid stagger>
+  <Card title="Discover" icon="magnifier">
+    Multi-source literature search, gap analysis, SOTA tracking, and fact-checking, grounded in real, resolvable citations.
+  </Card>
+  <Card title="Write" icon="pencil">
+    Scaffold a manuscript, draft sections in your own voice, and keep every claim tied to a source you can verify.
+  </Card>
+  <Card title="Review" icon="approve-check">
+    A five-persona peer-review panel, revision handling, and point-by-point response-to-reviewers documents.
+  </Card>
+  <Card title="Publish" icon="rocket">
+    Figures in TikZ and matplotlib, journal-grade tables, journal and conference finding, and LaTeX or Word output.
+  </Card>
+</CardGrid>
+
+## Where to go next
+
+<CardGrid>
+  <LinkCard title="Installation" href="/researcher/start/installation/" description="Add the marketplace and install the plugin in two lines." />
+  <LinkCard title="Quick Start" href="/researcher/start/quick-start/" description="Go from a research idea to a scaffolded manuscript." />
+  <LinkCard title="Cookbook" href="/researcher/cookbook/write-a-paper/" description="End-to-end recipes with real, worked output." />
+  <LinkCard title="Make figures" href="/researcher/cookbook/make-figures/" description="TikZ, PlotNeuralNet, tables, and charts, with rendered previews." />
+</CardGrid>
+
+:::note[Honest about what this is]
+Researcher is an assistant, not an author. It has no judgment of its own, so every claim it drafts is yours to verify. What it guarantees is the opposite of most late-night writing sessions: no invented data, no fabricated references, and no em dashes.
+:::

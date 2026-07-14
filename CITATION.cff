@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Researcher: an academic research assistant for Claude Code and Codex"
+message: "If you use this software in work that you publish, please cite it."
+type: software
+authors:
+  - family-names: Sokol
+    given-names: Marek
+    email: mareksokol98@gmail.com
+repository-code: "https://github.com/sokolmarek/researcher"
+url: "https://sokolmarek.github.io/researcher"
+abstract: >-
+  A plugin for Claude Code and Codex covering the academic research pipeline:
+  literature search, experiment design, statistical analysis, manuscript
+  drafting, visualization, citation management, peer review, revision handling,
+  journal and conference selection, and LaTeX or Word publication formatting.
+  It is built around integrity constraints: it never fabricates citations and
+  never invents data, and it ships mechanical checks (a citation commit guard,
+  BibTeX validation against CrossRef with retraction flags, and LaTeX compile
+  checks) rather than only asking a model to behave.
+keywords:
+  - academic writing
+  - literature search
+  - citation management
+  - reproducibility
+  - LaTeX
+  - large language models
+license: MIT
+version: 0.1.0
+date-released: "2026-07-14"

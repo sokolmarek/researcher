@@ -1,0 +1,34 @@
+{
+  "name": "researcher-marketplace",
+  "description": "Marketplace for the Researcher plugin: an academic research assistant covering literature search, experiment design, manuscript drafting, peer review, revision handling, and LaTeX/Word publication formatting.",
+  "owner": {
+    "name": "Marek Sokol",
+    "email": "mareksokol98@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "researcher",
+      "displayName": "Researcher",
+      "source": "./",
+      "description": "A tireless academic research assistant: literature search, experiment design, drafting, peer review, revision, and LaTeX/Word publication formatting. Never fabricates citations, never invents data.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Marek Sokol",
+        "email": "mareksokol98@gmail.com"
+      },
+      "homepage": "https://sokolmarek.github.io/researcher",
+      "repository": "https://github.com/sokolmarek/researcher",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "research",
+        "academic",
+        "latex",
+        "citations",
+        "peer-review",
+        "manuscript",
+        "literature-search"
+      ]
+    }
+  ]
+}

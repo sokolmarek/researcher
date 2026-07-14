@@ -1,0 +1,122 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to release (e.g. v0.1.0)'
+        required: true
+
+permissions:
+  contents: write
+
+env:
+  CLAUDE_CLI_VERSION: "2.1.209"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.ver.outputs.tag }}
+      version: ${{ steps.ver.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve version
+        id: ver
+        run: |
+          REF="${{ github.event.inputs.tag || github.ref_name }}"
+          echo "tag=$REF" >> "$GITHUB_OUTPUT"
+          echo "version=${REF#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Tag must match plugin.json and CHANGELOG
+        run: |
+          set -e
+          VERSION="${{ steps.ver.outputs.version }}"
+          MANIFEST=$(python3 -c "import json;print(json.load(open('.claude-plugin/plugin.json'))['version'])")
+          if [ "$VERSION" != "$MANIFEST" ]; then
+            echo "Tag version ($VERSION) does not match .claude-plugin/plugin.json ($MANIFEST)."
+            exit 1
+          fi
+          if ! grep -q "^## \[$VERSION\]" CHANGELOG.md; then
+            echo "CHANGELOG.md has no '## [$VERSION]' section."
+            exit 1
+          fi
+          echo "Tag, manifest, and changelog agree on $VERSION."
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Claude Code CLI (pinned)
+        run: npm install -g "@anthropic-ai/claude-code@${CLAUDE_CLI_VERSION}"
+
+      - name: Validate plugin manifest and components
+        run: claude plugin validate .claude-plugin/plugin.json
+
+      - name: Validate marketplace manifest
+        run: claude plugin validate .claude-plugin/marketplace.json
+
+  release:
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Package the plugin
+        run: |
+          zip -r "researcher-${{ needs.validate.outputs.tag }}.zip" . \
+            -x '.git/*' -x 'docs/*' -x 'assets/*' -x '.github/*' -x '*.zip' \
+            -x 'templates/word/node_modules/*'
+
+      - name: Runtime files must be inside the package
+        run: |
+          set -e
+          ZIP="researcher-${{ needs.validate.outputs.tag }}.zip"
+          for path in \
+            hooks/hooks.json \
+            references/integrity-constraints.md \
+            references/figure-styles.md \
+            scripts/citation-check-hook.py \
+            scripts/draft-integrity-hook.py \
+            scripts/install-git-hooks.py \
+            scripts/install-codex-skills.py \
+            scripts/latex-compile.py \
+            scripts/latex_engine.py \
+            evals/example-freshness.py \
+            templates/word/build-docx.js
+          do
+            if ! unzip -l "$ZIP" | grep -q " $path\$"; then
+              echo "Missing from the release package: $path"
+              exit 1
+            fi
+          done
+          echo "All runtime files are packaged."
+
+      - name: Extract changelog notes
+        run: |
+          VERSION="${{ needs.validate.outputs.version }}"
+          awk -v v="$VERSION" '
+            $0 ~ "^## \\[" v "\\]" {f=1; next}
+            f && /^## \[/ {exit}
+            f {print}
+          ' CHANGELOG.md > RELEASE_NOTES.md
+          if [ ! -s RELEASE_NOTES.md ]; then
+            echo "Release ${{ needs.validate.outputs.tag }}." > RELEASE_NOTES.md
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ needs.validate.outputs.tag }}
+          name: ${{ needs.validate.outputs.tag }}
+          body_path: RELEASE_NOTES.md
+          files: researcher-${{ needs.validate.outputs.tag }}.zip
+          draft: false
+          prerelease: false

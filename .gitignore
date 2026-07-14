@@ -1,0 +1,35 @@
+node_modules/
+*.aux
+*.log
+*.synctex.gz
+*.bbl
+*.blg
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.pdf
+.DS_Store
+__pycache__/
+*.pyc
+.env
+config.local.yaml
+
+# Internal working files, kept local (not part of the published plugin)
+research/
+plans/
+TODO.md
+
+# Docs build artifacts (see docs/.gitignore for the rest)
+docs/node_modules/
+docs/dist/
+docs/.astro/
+
+# Word template build artifacts
+templates/word/node_modules/
+templates/word/*.docx
+
+# Test and eval artifacts
+.pytest_cache/

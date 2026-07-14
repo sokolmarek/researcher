@@ -1,0 +1,124 @@
+---
+title: Installation
+description: Install the Researcher plugin in Claude Code or Cowork.
+sidebar:
+  order: 2
+---
+
+import { Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Requirements
+
+- **Claude Code** or **Claude Cowork** on a paid plan.
+- **LaTeX compilation:** any TeX installation (see [LaTeX engine](#latex-engine) below).
+- **Word output:** `node` (for `templates/word/build-docx.js`, built on the `docx` library).
+
+## LaTeX engine
+
+To compile-check LaTeX you need a TeX installation. Any of these works, and if you
+already have a TeX distribution you do not need to install anything else.
+
+**Tectonic (recommended).** A single binary that fetches the packages it needs on
+demand, which keeps builds small and reproducible. It is also what CI uses.
+
+<Tabs syncKey="os">
+  <TabItem label="macOS">
+    ```bash
+    brew install tectonic
+    ```
+  </TabItem>
+  <TabItem label="Linux">
+    ```bash
+    curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+    ```
+  </TabItem>
+  <TabItem label="Windows">
+    ```powershell
+    winget install TectonicProject.Tectonic
+    ```
+  </TabItem>
+</Tabs>
+
+**A full TeX distribution.** [TeX Live](https://tug.org/texlive/) (Linux, Windows, macOS),
+[MiKTeX](https://miktex.org) (Windows first, also macOS and Linux), and
+[MacTeX](https://tug.org/mactex/) (macOS) all ship `latexmk`, which the plugin drives
+automatically, including the rerun and bibliography passes.
+
+The compile scripts autodetect whichever engine you have. To override the choice, set the
+`LATEX_ENGINE` environment variable or pass `--engine`:
+
+```bash
+LATEX_ENGINE=latexmk python scripts/latex-compile.py manuscript/main.tex
+python scripts/latex-compile.py --engine xelatex manuscript/main.tex
+```
+
+## Install
+
+<Tabs>
+  <TabItem label="Claude Code">
+    <Steps>
+
+    1. Add the marketplace:
+
+       ```bash
+       /plugin marketplace add sokolmarek/researcher
+       ```
+
+    2. Install the plugin:
+
+       ```bash
+       /plugin install researcher@researcher-marketplace
+       ```
+
+    </Steps>
+  </TabItem>
+  <TabItem label="Cowork (Desktop)">
+    <Steps>
+
+    1. Clone the repository:
+
+       ```bash
+       git clone https://github.com/sokolmarek/researcher.git
+       ```
+
+    2. Open Claude Desktop and go to the **Cowork** tab.
+
+    3. Choose **Customize -> Browse plugins -> Upload plugin folder**, and pick the cloned folder.
+
+    </Steps>
+  </TabItem>
+  <TabItem label="Local dev">
+    Run Claude Code against a local clone without a marketplace:
+
+    ```bash
+    git clone https://github.com/sokolmarek/researcher.git
+    claude --plugin-dir researcher
+    ```
+  </TabItem>
+</Tabs>
+
+## Optional connectors
+
+Some skills are richer when a connector is available. Configure the ones you use:
+
+| Connector | How | Notes |
+|---|---|---|
+| Scite (Smart Citations) | MCP server | Scite account |
+| Zotero (library sync) | `uvx zotero-mcp` | `ZOTERO_API_KEY`, library id |
+| Paper search (arXiv, PubMed, S2, and more) | `uvx paper-search-mcp` | keyless, free-first |
+
+Google Scholar and Mendeley are documentation-only (no stable free API); the relevant skills fall back to web search and manual export.
+
+## Verify
+
+Ask Claude something small and see the right skill fire:
+
+```
+Find recent papers on self-supervised learning for ECG classification
+```
+
+If a literature search kicks off, you are ready.
+
+For terminal and IDE commits (outside Claude Code), run `python scripts/install-git-hooks.py` once per manuscript repository so the citation guard also covers terminal and IDE commits.
+
+Next: the [Quick Start](/researcher/start/quick-start/).
