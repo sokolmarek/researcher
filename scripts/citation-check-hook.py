@@ -15,10 +15,6 @@ Two complementary entry points:
    Same check; exit 1 blocks the commit.
 
 What "prospective commit tree" means here:
-- The check runs only when the commit touches .tex or .bib files, but it then
-  validates EVERY .tex file in the index against the state being committed, so
-  a bibliography-only deletion that strands already-committed citations is
-  caught.
 - File content comes from the index (git show :path). For `git commit -a`,
   worktree content of tracked files is used instead, because -a stages tracked
   modifications at commit time (a file deleted from the worktree counts as
@@ -31,11 +27,33 @@ manuscript actually declares. Any directory containing a .tex file with a
 \\bibliography{...} or \\addbibresource{...} declaration is a manuscript root;
 every .tex under that root validates against the union of the root's declared
 bibliographies. A .tex outside any root falls back to all declared bibs, then
-to every .bib in the index. When the repository has no .bib at all the guard
-warns instead of blocking (conservative by design), and any internal error
-exits 0 (fail-open) so a guard bug can never lock the user out of committing.
+to every .bib in the index.
+
+Scan scoping: the check runs only when the commit touches .tex or .bib files,
+and it then scans every .tex under the MANUSCRIPT ROOTS the commit touched, not
+just the changed files themselves. Scanning whole roots is deliberate: a
+bibliography-only deletion strands citations in .tex files the commit never
+touched, and a changed-files-only scan would miss them (the deleted bib lives
+under the same root as the .tex files citing it, so root scoping still catches
+it). Scoping to roots rather than to the whole index is equally deliberate: a
+dangling key in an UNRELATED manuscript must not block a commit that only edits
+this one. If a touched file belongs to no declared root, the scan widens to
+every .tex in the index, which is the conservative fallback.
+
+Bib keys come from parse_bib() in scripts/bib-validator.py, the one brace-aware
+BibTeX parser in this repo, so the guard and the validator agree on what an
+entry is. A regex would find keys inside @comment{...} blocks and inside
+%-commented-out entries, and those phantom keys would silently satisfy \\cite
+keys that real BibTeX would reject.
+
+When the repository has no .bib at all the guard warns instead of blocking
+(conservative by design), and any internal error exits 0 (fail-open) so a guard
+bug can never lock the user out of committing. Fail-open cuts both ways: a bug
+here stops guarding silently rather than erroring loudly, so every behavior
+below is covered by a test that asserts a BLOCK.
 """
 
+import importlib.util
 import json
 import posixpath
 import re
@@ -48,11 +66,42 @@ CITE_RE = re.compile(
     r"|footcite|smartcite|citeauthor|citeyearpar|citeyear|nocite)"
     r"\*?(?:\[[^\]]*\]){0,2}\{([^}]+)\}"
 )
-BIB_KEY_RE = re.compile(r"@\w+\s*\{\s*([^,\s{}]+)\s*,")
 BIB_DECL_RE = re.compile(r"\\(?:bibliography|addbibresource)\{([^}]+)\}")
 COMMENT_RE = re.compile(r"(?<!\\)%.*")
 
 MAX_TEX_FILES = 500
+
+_PARSE_BIB = None
+
+
+def load_parse_bib():
+    """Return parse_bib() from scripts/bib-validator.py.
+
+    The filename has a hyphen, so it cannot be imported normally. Loading is lazy
+    so that a missing or broken validator surfaces inside check_commit(), where the
+    fail-open handler turns it into "not blocking" rather than a hard traceback.
+    """
+    global _PARSE_BIB
+    if _PARSE_BIB is None:
+        script = Path(__file__).resolve().parent / "bib-validator.py"
+        spec = importlib.util.spec_from_file_location("researcher_bib_validator", script)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        _PARSE_BIB = module.parse_bib
+    return _PARSE_BIB
+
+
+def bib_keys(text):
+    """Citation keys a real BibTeX run would see in this .bib content.
+
+    %-commented lines are stripped first, and @comment/@preamble/@string blocks are
+    skipped by the parser, so neither can supply a key that satisfies a \\cite.
+    """
+    text = COMMENT_RE.sub("", text)
+    # The trailing newline keeps parse_bib()'s "is this a path or is this content?"
+    # test on the content branch for single-line .bib files.
+    entries = load_parse_bib()(text + "\n")
+    return {entry["key"] for entry in entries if entry.get("key")}
 
 
 def run_git(args, cwd):
@@ -80,11 +129,12 @@ def git_lines(args, cwd):
     return [line.strip() for line in out.splitlines() if line.strip()]
 
 
-def commit_touches_bibliography(cwd, include_unstaged):
+def changed_paths(cwd, include_unstaged):
+    """Paths the prospective commit adds, changes, deletes, or renames."""
     changed = set(git_lines(["diff", "--cached", "--name-only", "--diff-filter=ACMDR"], cwd))
     if include_unstaged:
         changed |= set(git_lines(["diff", "--name-only", "--diff-filter=ACMDR"], cwd))
-    return any(p.lower().endswith((".tex", ".bib")) for p in changed)
+    return {normalize(p) for p in changed}
 
 
 def prospective_content(path, cwd, include_unstaged):
@@ -135,9 +185,26 @@ def resolve_declaration(decl, tex_path, index_bibs):
     return resolved
 
 
+def is_under(path, root):
+    """True when `path` sits in directory `root` or below it (root "" is the repo root)."""
+    directory = posixpath.dirname(path)
+    return root == "" or directory == root or directory.startswith(root + "/")
+
+
+def root_of(path, roots):
+    """The longest declared manuscript root containing `path`, or None if there is none."""
+    best, best_len = None, -1
+    for root in roots:
+        if is_under(path, root) and len(root) > best_len:
+            best, best_len = root, len(root)
+    return best
+
+
 def check_commit(cwd, include_unstaged=False):
     """Return (dangling: {key: example_tex}, bib_count, tex_count, declared_missing)."""
-    if not commit_touches_bibliography(cwd, include_unstaged):
+    changed = changed_paths(cwd, include_unstaged)
+    touched = {p for p in changed if p.lower().endswith((".tex", ".bib"))}
+    if not touched:
         return {}, 0, 0, False
 
     tex_paths = [normalize(p) for p in git_lines(["ls-files", "--cached", "--", "*.tex"], cwd)]
@@ -175,27 +242,43 @@ def check_commit(cwd, include_unstaged=False):
     all_declared = set().union(*roots.values()) if roots else set()
 
     def bibs_for(tex_path):
-        tex_dir = posixpath.dirname(tex_path)
-        best_root, best_len = None, -1
-        for root in roots:
-            if (tex_dir == root or tex_dir.startswith(root + "/") or root == "") and len(root) > best_len:
-                best_root, best_len = root, len(root)
-        if best_root is not None:
-            return roots[best_root]
+        root = root_of(tex_path, roots)
+        if root is not None:
+            return roots[root]
         if all_declared:
             return all_declared
         return index_bibs
+
+    # Scan scope: every .tex under a manuscript root this commit touched. A .bib
+    # deletion still maps to the root of the .tex files it stranded, so whole-root
+    # scanning keeps that case working while an unrelated manuscript stays out of
+    # scope. A touched file under no declared root widens the scan to everything.
+    touched_roots, unscoped = set(), False
+    for path in touched:
+        root = root_of(path, roots)
+        if root is None:
+            unscoped = True
+        else:
+            touched_roots.add(root)
+
+    if unscoped or not touched_roots:
+        in_scope = tex_content
+    else:
+        in_scope = {
+            path: text for path, text in tex_content.items()
+            if any(is_under(path, root) for root in touched_roots)
+        }
 
     bib_keys_cache = {}
 
     def keys_of(bib_path):
         if bib_path not in bib_keys_cache:
             text = prospective_content(bib_path, cwd, include_unstaged) or ""
-            bib_keys_cache[bib_path] = set(BIB_KEY_RE.findall(text))
+            bib_keys_cache[bib_path] = bib_keys(text)
         return bib_keys_cache[bib_path]
 
     dangling = {}
-    for path, text in tex_content.items():
+    for path, text in in_scope.items():
         cited = set()
         for match in CITE_RE.finditer(text):
             cited |= split_keys(match.group(1))
@@ -207,7 +290,7 @@ def check_commit(cwd, include_unstaged=False):
         for key in cited - known:
             dangling.setdefault(key, path)
 
-    return dangling, len(index_bibs), len(tex_content), declared_missing
+    return dangling, len(index_bibs), len(in_scope), declared_missing
 
 
 def report_and_exit(dangling, bib_count, tex_count, block_code):

@@ -166,6 +166,88 @@ def test_non_commit_command_passes_through(tmp_path):
     assert result.stderr == ""
 
 
+def test_staged_only_dangling_cite_with_clean_worktree(tmp_path):
+    """The index, not the worktree, is what ships: a dangling cite that exists ONLY in
+    the staged version must block even though the worktree file is clean."""
+    repo = make_repo(tmp_path)
+    write(repo, "manuscript/main.tex", MAIN_TEX)
+    write(repo, "manuscript/introduction.tex", "Good \\cite{good2020}.")
+    write(repo, "manuscript/references/library.bib",
+          "@article{good2020, title={A}, year={2020}}")
+    git(repo, "add", "-A")
+    git(repo, "commit", "-q", "-m", "initial")
+
+    # Stage a bad version, then restore the worktree copy to the clean text.
+    write(repo, "manuscript/introduction.tex", "Good \\cite{good2020}. New \\cite{stagedonly2099}.")
+    git(repo, "add", "manuscript/introduction.tex")
+    write(repo, "manuscript/introduction.tex", "Good \\cite{good2020}.")
+
+    result = run_guard(repo)
+    assert result.returncode == 2, result.stderr
+    assert "stagedonly2099" in result.stderr
+
+
+def test_unrelated_manuscript_dangling_cite_does_not_block(tmp_path):
+    """Scoping is by manuscript root: a pre-existing dangling key in manuscript-b must
+    not block a commit that only touches manuscript-a."""
+    repo = make_repo(tmp_path)
+    for name in ("manuscript-a", "manuscript-b"):
+        write(repo, f"{name}/main.tex", MAIN_TEX)
+    write(repo, "manuscript-a/introduction.tex", "Fine \\cite{alpha2020}.")
+    write(repo, "manuscript-a/references/library.bib",
+          "@article{alpha2020, title={A}, year={2020}}")
+    # manuscript-b ships a dangling citation of its own.
+    write(repo, "manuscript-b/introduction.tex", "Broken \\cite{betaghost2099}.")
+    write(repo, "manuscript-b/references/library.bib",
+          "@article{beta2021, title={B}, year={2021}}")
+    git(repo, "add", "-A")
+    git(repo, "commit", "-q", "-m", "initial")
+
+    # Touch manuscript-a only. manuscript-b is not in scope, so its rot is not ours.
+    write(repo, "manuscript-a/introduction.tex", "Fine \\cite{alpha2020}. Still fine.")
+    git(repo, "add", "manuscript-a/introduction.tex")
+
+    result = run_guard(repo)
+    assert result.returncode == 0, result.stderr
+    assert "betaghost2099" not in result.stderr
+
+    # Sanity check the other direction: touching manuscript-b DOES surface its key.
+    write(repo, "manuscript-b/introduction.tex", "Broken \\cite{betaghost2099}. Edited.")
+    git(repo, "add", "manuscript-b/introduction.tex")
+    result = run_guard(repo)
+    assert result.returncode == 2
+    assert "betaghost2099" in result.stderr
+
+
+def test_commented_out_bib_entry_does_not_satisfy_cite(tmp_path):
+    """A %-commented-out entry is invisible to BibTeX, so it must not satisfy a cite."""
+    repo = make_repo(tmp_path)
+    write(repo, "manuscript/main.tex", MAIN_TEX)
+    write(repo, "manuscript/introduction.tex", "Stale \\cite{old2020}.")
+    write(repo, "manuscript/references/library.bib",
+          "% @article{old2020, title={Retired}, year={2020}}\n"
+          "@article{new2021, title={Current}, year={2021}}\n")
+    git(repo, "add", "-A")
+    result = run_guard(repo)
+    assert result.returncode == 2, result.stderr
+    assert "old2020" in result.stderr
+
+
+def test_comment_block_key_does_not_satisfy_cite(tmp_path):
+    """@comment{foo, bar} is a skipped block, not an entry named foo: a regex key
+    scanner would let the phantom key satisfy \\cite{foo}."""
+    repo = make_repo(tmp_path)
+    write(repo, "manuscript/main.tex", MAIN_TEX)
+    write(repo, "manuscript/introduction.tex", "Phantom \\cite{foo}.")
+    write(repo, "manuscript/references/library.bib",
+          "@comment{foo, bar}\n"
+          "@article{real2021, title={Real}, year={2021}}\n")
+    git(repo, "add", "-A")
+    result = run_guard(repo)
+    assert result.returncode == 2, result.stderr
+    assert "foo" in result.stderr
+
+
 def test_git_hook_mode_blocks_with_exit_1(tmp_path):
     repo = make_repo(tmp_path)
     write(repo, "manuscript/main.tex", MAIN_TEX)

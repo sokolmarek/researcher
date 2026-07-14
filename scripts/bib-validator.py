@@ -4,20 +4,32 @@
 Usage:
     python bib-validator.py <path-to-library.bib>
     python bib-validator.py library.bib --check-doi --check-retracted --check-fields
+    python bib-validator.py library.bib --check-duplicates
     python bib-validator.py library.bib --verbose
 
 Checks (all enabled by default; pass one or more --check-* flags to run a subset):
-    --check-doi        DOI presence, CrossRef resolution (404 vs network errors are
-                       reported differently), title similarity (difflib >= 0.70),
-                       first-author surname match, year match
-    --check-retracted  Retraction flags via CrossRef update-to metadata
-    --check-fields     Required fields per entry type
-    (always)           Duplicate citation keys and duplicate DOIs
+    --check-doi         DOI presence, CrossRef resolution (404 vs network errors are
+                        reported differently), title similarity (difflib >= 0.70),
+                        first-author surname match, year match
+    --check-retracted   Retraction flags via CrossRef update-to metadata
+    --check-fields      Required fields per entry type
+    --check-duplicates  Duplicate citation keys and duplicate DOIs
 
 Parsing: a brace-aware tokenizer, not a regex. Handles nested braces in values
 ({A {Nested} Title}), quoted values ("..."), bare numeric values, compact entries
 whose closing brace sits on the last field line (...}}), string concatenation
 with #, and skips @comment/@preamble/@string blocks.
+
+DOI resolution is tri-state and every entry gets a NAMED verdict, printed in the
+DOI VERDICTS block, so a pass is stated rather than inferred from silence:
+    confirmed          the DOI resolved against CrossRef
+    no-doi             the entry carries no DOI, so nothing could be verified
+    resolution-failed  the lookup could not complete (network error or timeout)
+    not-found          CrossRef returned 404: the DOI does not exist (an ERROR)
+    retracted          the DOI resolved but CrossRef flags a retraction (an ERROR)
+    not-checked        no network check was requested for this run
+A failed resolution is never laundered into a pass: resolution-failed is its own
+verdict, distinct from confirmed.
 
 Exit code 1 when errors are found, 0 otherwise. Network problems never count as
 entry errors; they are reported as warnings so offline runs stay useful.
@@ -35,6 +47,25 @@ from collections import Counter
 from pathlib import Path
 
 TITLE_SIMILARITY_THRESHOLD = 0.70
+
+# Per-entry DOI verdicts. Tri-state resolution (confirmed / no-doi /
+# resolution-failed) plus the two states that are outright errors and the
+# "you did not ask for a network check" state.
+VERDICT_CONFIRMED = "confirmed"
+VERDICT_NO_DOI = "no-doi"
+VERDICT_RESOLUTION_FAILED = "resolution-failed"
+VERDICT_NOT_FOUND = "not-found"
+VERDICT_RETRACTED = "retracted"
+VERDICT_NOT_CHECKED = "not-checked"
+
+VERDICT_ORDER = [
+    VERDICT_CONFIRMED,
+    VERDICT_NO_DOI,
+    VERDICT_RESOLUTION_FAILED,
+    VERDICT_NOT_FOUND,
+    VERDICT_RETRACTED,
+    VERDICT_NOT_CHECKED,
+]
 
 
 # ---------------------------------------------------------------------------
@@ -291,10 +322,31 @@ def check_required_fields(entry: dict) -> list:
 # Validation driver
 # ---------------------------------------------------------------------------
 
+def print_verdicts(verdicts):
+    """Print the named per-entry DOI verdict block.
+
+    Every entry appears here, so a resolved DOI is STATED as confirmed rather than
+    passing silently, and a failed lookup is visibly resolution-failed rather than
+    being mistaken for a pass.
+    """
+    if not verdicts:
+        return
+    width = max(len(v) for _, v, _ in verdicts)
+    print("DOI VERDICTS (per entry; see ERRORS/WARNINGS above for detail):")
+    for key, verdict, doi in verdicts:
+        suffix = f" {doi}" if doi else ""
+        print(f"  {verdict.ljust(width)}  [{key}]{suffix}")
+    tally = Counter(v for _, v, _ in verdicts)
+    summary = ", ".join(
+        f"{tally[name]} {name}" for name in VERDICT_ORDER if tally.get(name)
+    )
+    print(f"  {summary}\n")
+
+
 def validate(bib_path, check_doi=True, check_retracted=True, check_fields=True,
-             verbose=False) -> int:
+             check_duplicates=True, verbose=False) -> int:
     entries = parse_bib(bib_path)
-    errors, warnings = [], []
+    errors, warnings, verdicts = [], [], []
 
     if not entries:
         print(f"No entries found in {bib_path}")
@@ -302,12 +354,13 @@ def validate(bib_path, check_doi=True, check_retracted=True, check_fields=True,
 
     print(f"Validating {len(entries)} entries in {bib_path}...\n")
 
-    for key, count in Counter(e["key"] for e in entries).items():
-        if count > 1:
-            errors.append(f"Duplicate citation key: {key} (appears {count} times)")
-    for doi, count in Counter(e["doi"] for e in entries if e.get("doi")).items():
-        if count > 1:
-            errors.append(f"Duplicate DOI: {doi} (appears {count} times)")
+    if check_duplicates:
+        for key, count in Counter(e["key"] for e in entries).items():
+            if count > 1:
+                errors.append(f"Duplicate citation key: {key} (appears {count} times)")
+        for doi, count in Counter(e["doi"] for e in entries if e.get("doi")).items():
+            if count > 1:
+                errors.append(f"Duplicate DOI: {doi} (appears {count} times)")
 
     need_network = check_doi or check_retracted
     for entry in entries:
@@ -315,8 +368,10 @@ def validate(bib_path, check_doi=True, check_retracted=True, check_fields=True,
             warnings.extend(check_required_fields(entry))
 
         if not need_network:
+            verdicts.append((entry["key"], VERDICT_NOT_CHECKED, entry.get("doi", "")))
             continue
         if not entry.get("doi"):
+            verdicts.append((entry["key"], VERDICT_NO_DOI, ""))
             if check_doi:
                 warnings.append(f"[{entry['key']}] No DOI, cannot verify against CrossRef")
             continue
@@ -325,19 +380,24 @@ def validate(bib_path, check_doi=True, check_retracted=True, check_fields=True,
             print(f"  Checking {entry['key']} (DOI: {entry['doi']})...")
         status, metadata = resolve_doi(entry["doi"])
         if status == "not_found":
+            verdicts.append((entry["key"], VERDICT_NOT_FOUND, entry["doi"]))
             errors.append(f"[{entry['key']}] DOI does not resolve (404, not in CrossRef): {entry['doi']}")
             continue
         if status == "error":
+            verdicts.append((entry["key"], VERDICT_RESOLUTION_FAILED, entry["doi"]))
             warnings.append(
                 f"[{entry['key']}] DOI check could not complete (network error), "
                 f"not counted against the entry: {entry['doi']}"
             )
             continue
 
+        verdict = VERDICT_CONFIRMED
         if check_retracted:
             for update in metadata.get("update-to", []):
                 if update.get("label", "").lower() == "retraction":
+                    verdict = VERDICT_RETRACTED
                     errors.append(f"[{entry['key']}] RETRACTED: {entry.get('title', 'Unknown title')}")
+        verdicts.append((entry["key"], verdict, entry["doi"]))
 
         if check_doi:
             similarity = title_similarity(entry.get("title", ""), metadata.get("title") or [])
@@ -370,6 +430,8 @@ def validate(bib_path, check_doi=True, check_retracted=True, check_fields=True,
             print(f"  WARN  {w}")
         print()
 
+    print_verdicts(verdicts)
+
     if not errors and not warnings:
         print("All entries valid.")
     else:
@@ -386,6 +448,8 @@ def main():
                         help="Retraction flags via CrossRef update-to")
     parser.add_argument("--check-fields", action="store_true",
                         help="Required fields per entry type")
+    parser.add_argument("--check-duplicates", action="store_true",
+                        help="Duplicate citation keys and duplicate DOIs")
     parser.add_argument("--verbose", "-v", action="store_true",
                         help="Show progress for each entry")
     args = parser.parse_args()
@@ -395,12 +459,15 @@ def main():
         sys.exit(1)
 
     # No --check-* flag means: run everything (back-compatible default).
-    any_flag = args.check_doi or args.check_retracted or args.check_fields
+    any_flag = (
+        args.check_doi or args.check_retracted or args.check_fields or args.check_duplicates
+    )
     error_count = validate(
         args.bib_file,
         check_doi=args.check_doi or not any_flag,
         check_retracted=args.check_retracted or not any_flag,
         check_fields=args.check_fields or not any_flag,
+        check_duplicates=args.check_duplicates or not any_flag,
         verbose=args.verbose,
     )
     sys.exit(1 if error_count > 0 else 0)

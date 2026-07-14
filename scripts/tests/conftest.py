@@ -35,3 +35,8 @@ def journal_lookup():
 @pytest.fixture(scope="session")
 def repo_root():
     return REPO_ROOT
+
+
+@pytest.fixture(scope="session")
+def fixtures_dir():
+    return Path(__file__).resolve().parent / "fixtures"

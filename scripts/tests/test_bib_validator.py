@@ -78,6 +78,70 @@ def test_comment_preamble_string_skipped(bib_validator):
     assert [e["key"] for e in entries] == ["real1"]
 
 
+def test_torture_fixture_file_parses(bib_validator, fixtures_dir):
+    """The torture fixture FILE: every hard case in one .bib, nothing truncated."""
+    entries = bib_validator.parse_bib(fixtures_dir / "torture.bib")
+
+    assert len(entries) == 5, "the @comment/@preamble/@string blocks must yield no entries"
+    assert [e["key"] for e in entries] == [
+        "nested2020", "quoted2021", "bare2022", "compact2023", "trailing2024",
+    ]
+
+    by_key = {e["key"]: e for e in entries}
+
+    # Nested braces, and a comma inside a braced value, survive whole.
+    assert by_key["nested2020"]["title"] == "A {Nested {Deep}} Title, with comma"
+    assert by_key["nested2020"]["journal"] == "Journal of Balanced Braces"
+
+    # A quoted value carrying BOTH a comma and braces is not cut at either.
+    assert by_key["quoted2021"]["title"] == "Commas, {Braces}, and Quotes All in One Value"
+    assert by_key["quoted2021"]["author"] == "van der Berg, Hans"
+    assert by_key["quoted2021"]["year"] == "2021"  # bare numeric
+
+    # Bare numeric and bare macro values.
+    assert by_key["bare2022"]["volume"] == "26"
+    assert by_key["bare2022"]["journal"] == "jbhi"  # unexpanded @string macro name
+
+    # Compact entry closed by }} on its last field line.
+    assert by_key["compact2023"]["type"] == "inproceedings"
+    assert by_key["compact2023"]["booktitle"] == "Proceedings of Compactness"
+    assert by_key["compact2023"]["doi"] == "10.1234/compact"
+
+    # Trailing comma before the closing brace.
+    assert by_key["trailing2024"]["publisher"] == "Addison-Wesley"
+    assert by_key["trailing2024"]["doi"] == "10.1234/trailing"
+
+    # No field value truncated: every entry keeps a full title, year and DOI, and
+    # no value ends on a dangling separator.
+    for entry in entries:
+        for field in ("title", "author", "year", "doi"):
+            assert entry.get(field), f"{entry['key']} lost its {field}"
+        for name, value in entry.items():
+            assert not value.endswith(("{", ",", "\\")), f"{entry['key']}.{name} looks truncated"
+
+    # The skipped blocks leaked nothing: no entry inherited @comment/@preamble text.
+    blob = " ".join(v for e in entries for v in e.values())
+    assert "noopsort" not in blob
+    assert "Not an entry" not in blob
+
+
+def test_check_duplicates_can_be_deselected(bib_validator, tmp_path, capsys):
+    """Duplicates are a selectable check like its siblings, not an unconditional one."""
+    bib = tmp_path / "dupes.bib"
+    bib.write_text(
+        "@article{dup, title={A}, year={2020}, doi={10.1/x}}\n"
+        "@article{dup, title={B}, year={2021}, doi={10.1/x}}\n",
+        encoding="utf-8",
+    )
+    errors = bib_validator.validate(
+        str(bib), check_doi=False, check_retracted=False, check_fields=False,
+        check_duplicates=False,
+    )
+    out = capsys.readouterr().out
+    assert errors == 0
+    assert "Duplicate" not in out
+
+
 def test_duplicates_reported(bib_validator, tmp_path, capsys):
     bib = tmp_path / "dupes.bib"
     bib.write_text(
@@ -165,6 +229,65 @@ def test_retraction_flagged(bib_validator, tmp_path, capsys, monkeypatch):
     out = capsys.readouterr().out
     assert errors == 1
     assert "RETRACTED" in out
+
+
+def test_doi_verdicts_are_tri_state_and_named(bib_validator, tmp_path, capsys, monkeypatch):
+    """A resolved DOI is STATED as confirmed, not inferred from silence, and a failed
+    lookup is its own verdict rather than being laundered into a pass."""
+    bib = tmp_path / "three.bib"
+    bib.write_text(
+        "@article{good2020, title={A Fine Paper}, author={Doe, Jane},\n"
+        "  journal={Journal of Tests}, year={2020}, doi={10.1234/fine}}\n"
+        "@article{nodoi2021, title={No Identifier}, author={Roe, Rick},\n"
+        "  journal={Journal of Tests}, year={2021}}\n"
+        "@article{offline2022, title={Unreachable}, author={Poe, Pat},\n"
+        "  journal={Journal of Tests}, year={2022}, doi={10.1234/unreachable}}\n",
+        encoding="utf-8",
+    )
+    metadata = {
+        "title": ["A Fine Paper"],
+        "author": [{"family": "Doe", "sequence": "first"}],
+        "issued": {"date-parts": [[2020]]},
+    }
+
+    def fake_resolve(doi):
+        return ("ok", metadata) if doi == "10.1234/fine" else ("error", None)
+
+    monkeypatch.setattr(bib_validator, "resolve_doi", fake_resolve)
+    errors = bib_validator.validate(str(bib), check_fields=False)
+    out = capsys.readouterr().out
+
+    assert errors == 0  # a resolution failure is a warning, never an entry error
+    assert "DOI VERDICTS" in out
+    assert "confirmed" in out
+    assert "no-doi" in out
+    assert "resolution-failed" in out
+    # Each verdict lands on the right entry.
+    lines = [line.strip() for line in out.splitlines()]
+    assert any(l.startswith("confirmed") and "[good2020]" in l for l in lines)
+    assert any(l.startswith("no-doi") and "[nodoi2021]" in l for l in lines)
+    assert any(l.startswith("resolution-failed") and "[offline2022]" in l for l in lines)
+    assert "1 confirmed, 1 no-doi, 1 resolution-failed" in out
+
+
+def test_not_found_and_retracted_have_their_own_verdicts(bib_validator, tmp_path, capsys,
+                                                         monkeypatch):
+    monkeypatch.setattr(bib_validator, "resolve_doi", lambda doi: ("not_found", None))
+    bib_validator.validate(str(_one_entry_bib(tmp_path)), check_fields=False)
+    out = capsys.readouterr().out
+    assert "not-found" in out
+    assert "confirmed" not in out  # a 404 is never reported as a pass
+
+    metadata = {
+        "title": ["A Fine Paper"],
+        "author": [{"family": "Doe", "sequence": "first"}],
+        "issued": {"date-parts": [[2020]]},
+        "update-to": [{"label": "Retraction"}],
+    }
+    monkeypatch.setattr(bib_validator, "resolve_doi", lambda doi: ("ok", metadata))
+    bib_validator.validate(str(_one_entry_bib(tmp_path)), check_fields=False)
+    out = capsys.readouterr().out
+    assert "retracted  [sample2020]" in out.lower()
 
 
 def test_first_author_surname_forms(bib_validator):

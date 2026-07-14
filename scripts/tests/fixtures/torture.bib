@@ -1,0 +1,51 @@
+% Torture fixture for the brace-aware tokenizer in scripts/bib-validator.py.
+% Every hard case lives in this one file: nested braces, a quoted value carrying
+% both a comma and braces, bare numeric and bare macro values, a compact entry
+% terminated by }} on its last field line, a trailing-comma entry, and the three
+% skipped block types (@comment with a comma AND braces, @preamble with
+% backslashes, @string). Five real entries; the skipped blocks must yield none.
+%
+% Consumed by scripts/tests/test_bib_validator.py::test_torture_fixture_file_parses.
+
+@comment{Not an entry: it holds a comma, plus {nested {braces}} that a regex parser
+         would happily mistake for a citation key.}
+
+@preamble{"\newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}"}
+
+@string{jbhi = {IEEE Journal of Biomedical and Health Informatics}}
+
+@article{nested2020,
+  title={A {Nested {Deep}} Title, with comma},
+  author={Doe, Jane and Roe, Richard},
+  journal={Journal of Balanced Braces},
+  year={2020},
+  doi={10.1234/nested}
+}
+
+@article{quoted2021,
+  title = "Commas, {Braces}, and Quotes All in One Value",
+  author = "van der Berg, Hans",
+  journal = "Journal of Quoted Values",
+  year = 2021,
+  doi = "10.1234/quoted"
+}
+
+@article{bare2022,
+  title = {Bare Numeric and Bare Macro Values},
+  author = {Solo, Han},
+  journal = jbhi,
+  volume = 26,
+  pages = {1--10},
+  year = 2022,
+  doi = {10.1234/bare}
+}
+
+@inproceedings{compact2023, title={A Compact Entry Closed On Its Last Field Line}, author={Ng, Andrew}, booktitle={Proceedings of Compactness}, year={2023}, doi={10.1234/compact}}
+
+@book{trailing2024,
+  title={A Trailing Comma Before The Closing Brace},
+  author={Knuth, Donald E.},
+  publisher={Addison-Wesley},
+  year={2024},
+  doi={10.1234/trailing},
+}
