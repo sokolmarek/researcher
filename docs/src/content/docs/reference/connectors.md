@@ -45,12 +45,8 @@ Google Scholar and Mendeley are documentation-only. There is no stable, sanction
 
 If either of these ever grows a usable API, the fallback path is already in place to be swapped for it.
 
-## Optional external reviewer models
+## External reviewer models (documented, not yet implemented)
 
-For multi-model peer review, Researcher can optionally call external reviewer models in addition to its own Claude-based personas. These are configured by environment variable and stay off unless you set them:
+The peer-review skill documents an integration point for external reviewer models (OpenAI, Google Gemini, and Ollama) that would sit alongside its Claude-based personas. The skill specifies the environment variables and the intended behavior, but no dispatch code exists yet: setting those variables today has no effect.
 
-- **OpenAI** (set the relevant API key env var)
-- **Google Gemini** (set the relevant API key env var)
-- **Ollama** (point the env var at your local server for a fully offline reviewer)
-
-These add extra perspectives during peer review. They are strictly optional: with none configured, the peer-review skill runs its default Claude-only multi-persona panel. See [Commands](/researcher/reference/commands/) for how `/review-paper` picks up these settings.
+What the plugin actually ships is the Claude-only multi-persona review panel, and that is what `/researcher:review-paper` runs. When the external dispatch is built, the documented env vars are the interface it will pick up, and reviewers will stay off unless you set them. Until then, treat this section as a specification, not a capability.

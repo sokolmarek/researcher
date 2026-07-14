@@ -40,6 +40,22 @@ The `visualization` skill chooses a line plot on a log axis (a trend, not a comp
 
 ![Label-efficiency line plot: self-supervised curves above supervised, gap largest at 1% labels](../../../assets/examples/label-efficiency-plot.png)
 
+## Journal style presets
+
+Named presets restyle a figure for a target journal without touching the data. Three ship today, defined in [`references/figure-styles.md`](https://github.com/sokolmarek/researcher/blob/main/references/figure-styles.md): `default`, `nature`, and `ieee`. Ask for one by name ("restyle this for Nature") or let the skill pick it up from your manuscript's target journal.
+
+Here is the same label-efficiency plot under the `default` and `nature` presets:
+
+| `default` preset | `nature` preset |
+| --- | --- |
+| ![Label-efficiency plot, default preset](../../../assets/examples/label-efficiency-plot.png) | ![Label-efficiency plot, Nature preset: 89 mm single column, sans-serif, hairline axes](../../../assets/examples/label-efficiency-plot-nature.png) |
+
+The Nature variant applies 89 mm single-column sizing, sans-serif type, hairline axes, a muted palette, and a bold lowercase panel letter. Every plotted value is identical: only the styling changes.
+
+## Conceptual art via external generators
+
+For visuals that are not data, the `image-prompt-crafting` skill crafts prompts for external image generators (ChatGPT/DALL-E, Gemini, Midjourney). It covers conceptual illustrations, graphical abstracts, and cover art only, never data or results figures, and it always requires an AI-disclosure caption on the resulting image.
+
 :::tip[Every figure is compile-checked]
 Diagrams and tables are compiled with `tectonic` before you ever see them, and charts are rendered from the code shown. If it appears in your docs, it built.
 :::

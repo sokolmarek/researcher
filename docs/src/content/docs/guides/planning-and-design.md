@@ -16,7 +16,7 @@ Socratic refinement, not a brainstorm dump. It takes a vague hunch ("maybe contr
 
 For the running example, "SSL is good for ECG" becomes something testable: does contrastive pretraining on unlabeled ECG improve macro-AUC for multi-label arrhythmia classification on PTB-XL under a limited-label regime, compared to fully supervised training from scratch?
 
-**Trigger it:** "Help me turn this idea into a research question", "`/brainstorm`".
+**Trigger it:** "Help me turn this idea into a research question", "`/researcher:brainstorm`".
 
 ## experiment-design
 
@@ -24,7 +24,7 @@ Turns the question into a protocol before you burn a week of GPU time. It works 
 
 For the ECG example, that means fixing the PTB-XL train/test folds, defining the supervised-from-scratch baseline as the control, planning label-fraction sweeps (1 percent, 10 percent, 100 percent), and listing the ablations (augmentation choice, projection-head depth, pretraining corpus) so a reviewer cannot ask "but did you check..." about something you skipped.
 
-**Trigger it:** "`/design-experiment`", "Design the experiment for this study".
+**Trigger it:** "`/researcher:design-experiment`", "Design the experiment for this study".
 
 ## statistical-analysis
 
@@ -36,11 +36,11 @@ For comparing macro-AUC across seeds and label fractions, it will steer you towa
 
 ## manuscript-setup
 
-Scaffolds the whole project so you are not fighting your directory structure at submission time. It builds a `manuscript/` folder with `main.tex` and per-section files for LaTeX, or `sections/*.md` plus a `build-docx.js` for Word, along with `config.yaml` (title, authors, journal, citation style), `terminology.yaml` for consistent naming, and a `references/library.bib`.
+Scaffolds the whole project so you are not fighting your directory structure at submission time. It builds a `manuscript/` folder with `main.tex` and per-section files for LaTeX, or `sections/*.md` plus `templates/word/build-docx.js` for Word, along with `config.yaml` (title, authors, journal, citation style), `terminology.yaml` for consistent naming, and a `references/library.bib`. The Word build script generates headings, paragraphs, and lists from the section files today; tracked changes, comments, and table emission are planned, not yet implemented.
 
 Point it at PTB-XL work and you get an IMRaD skeleton with the sections stubbed, the bibliography wired up, and figure and table folders waiting, so drafting starts on prose instead of boilerplate.
 
-**Trigger it:** "`/new-manuscript`", "Set up the manuscript project".
+**Trigger it:** "`/researcher:new-manuscript`", "Set up the manuscript project".
 
 ## See it in action
 

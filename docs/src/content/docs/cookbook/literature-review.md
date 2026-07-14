@@ -36,12 +36,12 @@ Included
   Studies included in synthesis ..................... 17
 ```
 
-- A machine-readable provenance record written to `manuscript/provenance.json` storing every count, so the search is reproducible and `/submit-ready` can confirm it later. Volatile hit counts live there, not in prose that would silently go stale.
+- A machine-readable provenance record written to `manuscript/provenance.json` storing every count, so the search is reproducible and `/researcher:submit-ready` can confirm it later. Volatile hit counts live there, not in prose that would silently go stale.
 
 A couple of the top real papers from the ranked included set:
 
 - Mehari and Strodthoff (2022), *Self-supervised representation learning from 12-lead ECG data*, Computers in Biology and Medicine, [10.1016/j.compbiomed.2021.105114](https://doi.org/10.1016/j.compbiomed.2021.105114). The first comprehensive SSL assessment on clinical 12-lead ECG, and the direct methods baseline for our scenario.
-- Wagner et al. (2020), *PTB-XL, a large publicly available ECG dataset*, Scientific Data, [10.1038/s41597-020-0495-6](https://doi.org/10.1038/s41597-020-0495-6). The dataset (21,837 records, 18,885 patients) that every included work evaluates on.
+- Wagner et al. (2020), *PTB-XL, a large publicly available ECG dataset*, Scientific Data, [10.1038/s41597-020-0495-6](https://doi.org/10.1038/s41597-020-0495-6). The dataset (21,837 records, 18,885 patients) that this manuscript evaluates on, and the most common benchmark in the included set. It is not universal: several included works report on CODE, on private clinical cohorts, or on single-lead ambulatory data instead.
 - Kiyasseh, Zhu and Clifton (2021), *CLOCS: Contrastive Learning of Cardiac Signals*, ICML, [arXiv:2005.13249](https://arxiv.org/abs/2005.13249). Foundational patient, space, and time contrastive objective.
 
 Every included paper carries a resolvable identifier, and the included set becomes the shared bibliography for the writing steps later in the pipeline.
@@ -50,7 +50,7 @@ Every included paper carries a resolvable identifier, and the included set becom
 
 Now stress-test the claims you are tempted to write. Type:
 
-> /fact-check these four claims about self-supervised ECG models against the literature. For each, give a verdict, the evidence, and your confidence.
+> /researcher:fact-check these four claims about self-supervised ECG models against the literature. For each, give a verdict, the evidence, and your confidence.
 >
 > 1. Self-supervised pretraining on unlabeled ECG can reach classification performance within about one percent of fully supervised training.
 > 2. Contrastive self-supervised pretraining consistently outperforms supervised training across ECG tasks.
@@ -65,7 +65,7 @@ The point of four claims is that they resolve to four different verdicts. The sk
 
 **Partially Supported (Claim 3, confidence Medium).** Hannun et al. report cardiologist-level detection of 12 rhythm classes from single-lead ambulatory ECG (Hannun et al., 2019, [10.1038/s41591-018-0268-3](https://doi.org/10.1038/s41591-018-0268-3)), and Ribeiro et al. report a 12-lead DNN with F1 above 80% and specificity over 99% (Ribeiro et al., 2020, [10.1038/s41467-020-15432-4](https://doi.org/10.1038/s41467-020-15432-4)). Both are scoped to specific classes, acquisition settings, and comparison groups, so the unqualified blanket version overreaches.
 
-**Unsupported (Claim 4, confidence High).** No retrieved source supports zero-label clinical-grade diagnosis. Every method examined still relies on a labeled fine-tuning or linear-evaluation stage: Lai et al., operating at large scale, annotate 164,538 of their ECGs and report performance on that labeled evaluation (Lai et al., 2023, [10.1038/s41467-023-39472-8](https://doi.org/10.1038/s41467-023-39472-8)). Self-supervision reduces the quantity of labels needed, not the need for labels. The claim is not merely unproven, it is contradicted by the design of every study in the evidence base, and no citation is invented to fill the gap.
+**Contradicted (Claim 4, confidence High).** The retrieved evidence directly opposes the claim rather than merely failing to speak to it. Every self-supervised ECG method examined still relies on a labeled fine-tuning or linear-evaluation stage: Lai et al., operating at large scale, annotate 164,538 of their ECGs and report performance on that labeled evaluation (Lai et al., 2023, [10.1038/s41467-023-39472-8](https://doi.org/10.1038/s41467-023-39472-8)). Self-supervision reduces the quantity of labels needed, not the need for labels. Note the verdict boundary the skill holds to: Unsupported is reserved for claims where the search returns no evidence either way, whereas this one is Contradicted because the evidence base actively points the other direction. Either way, no citation is invented to prop up the claim or to fill a gap.
 
 ## Next steps
 

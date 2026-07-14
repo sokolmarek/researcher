@@ -1,7 +1,7 @@
 {
   "name": "researcher",
-  "version": "0.2.1",
-  "description": "A tireless academic research assistant for Claude Code and Cowork. Full pipeline from brainstorming to publication: literature search, experiment design, statistical analysis, manuscript drafting, visualization, citation management, peer review, revision handling, journal/conference finding, and formatting. 28 skills, 9 agents, 11 commands. Supports LaTeX and Word output.",
+  "version": "0.2.2",
+  "description": "A tireless academic research assistant for Claude Code and Cowork. Full pipeline from brainstorming to publication: literature search, experiment design, statistical analysis, manuscript drafting, visualization, citation management, peer review, revision handling, journal/conference finding, and formatting. 29 skills, 9 agents, 11 commands. Supports LaTeX and Word output.",
   "author": {
     "name": "Marek Sokol",
     "email": "mareksokol98@gmail.com"
@@ -17,59 +17,5 @@
     "peer-review",
     "manuscript",
     "literature-search"
-  ],
-  "skills": [
-    "skills/manuscript-setup",
-    "skills/literature-search",
-    "skills/citation-management",
-    "skills/paper-drafting",
-    "skills/writing-style-analysis",
-    "skills/tikz-diagrams",
-    "skills/figure-suggestions",
-    "skills/latex-tables",
-    "skills/code-analysis",
-    "skills/peer-review",
-    "skills/journal-formatting",
-    "skills/revision-management",
-    "skills/response-to-reviewers",
-    "skills/cover-letter",
-    "skills/word-output",
-    "skills/implementation",
-    "skills/brainstorming",
-    "skills/journal-finder",
-    "skills/conference-finder",
-    "skills/fact-checking",
-    "skills/sota-finder",
-    "skills/research-gaps",
-    "skills/experiment-design",
-    "skills/statistical-analysis",
-    "skills/visualization",
-    "skills/plotneuralnet",
-    "skills/citation-context",
-    "skills/research-convergence"
-  ],
-  "agents": [
-    "agents/research-agent.md",
-    "agents/writing-agent.md",
-    "agents/review-agent.md",
-    "agents/formatting-agent.md",
-    "agents/code-agent.md",
-    "agents/style-agent.md",
-    "agents/visualization-agent.md",
-    "agents/statistics-agent.md",
-    "agents/discovery-agent.md"
-  ],
-  "commands": [
-    "commands/new-manuscript.md",
-    "commands/draft-section.md",
-    "commands/review-paper.md",
-    "commands/submit-ready.md",
-    "commands/revise.md",
-    "commands/brainstorm.md",
-    "commands/find-journal.md",
-    "commands/find-conference.md",
-    "commands/fact-check.md",
-    "commands/sota.md",
-    "commands/design-experiment.md"
   ]
 }

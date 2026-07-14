@@ -12,7 +12,7 @@ Once the literature is in and the experiments are done, the work becomes prose: 
 
 Builds an outline, then drafts sections one at a time. Introductions follow a funnel (broad progress, then the specific gap, then explicit contributions), and every factual claim carries a `\cite` key that resolves to your verified `library.bib`. It maintains a claim-to-citation mapping so the post-draft integrity hook and the citation-context audit can check that each sentence is actually supported by its source, and it keeps terms consistent against `terminology.yaml`. Numbers that appear in prose (PTB-XL's 21,837 records from 18,885 patients, per Wagner et al., 2020) are the source-verified figures, not approximations.
 
-**Trigger it:** "`/draft-section introduction`", "Draft the methods for my SSL-for-ECG paper".
+**Trigger it:** "`/researcher:draft-section introduction`", "Draft the methods for my SSL-for-ECG paper".
 
 ## writing-style-analysis
 
@@ -24,13 +24,13 @@ Calibrates the drafting voice to yours. Point it at an `author-papers/` folder (
 
 Runs a five-persona panel over your manuscript: Editor-in-Chief, Methodology, Domain Expert, Writing, and a Devil's Advocate, each producing dimension-specific critiques rather than one generic pass. Rubric scores (novelty, technical soundness, clarity, reproducibility, significance) aggregate to a weighted overall that maps deterministically to a decision. Reviewer opinions are labeled synthetic, but any paper a reviewer says you "should compare to" is a real, resolvable reference, so the critique is checkable.
 
-**Trigger it:** "`/review-paper`", "Review my manuscript with a full panel and give me scores".
+**Trigger it:** "`/researcher:review-paper`", "Review my manuscript with a full panel and give me scores".
 
 ## revision-management
 
-Parses reviewer comments from any format (pasted text, a PDF report, Word inline comments, or peer-review output), numbers every discrete point (`R1.C1`, `R2.C3`), and sorts each into must-address, should-address, optional, or out-of-scope. It then generates tracked changes in LaTeX or Word so the editor can see exactly what moved and where.
+Parses reviewer comments from any format (pasted text, a PDF report, Word inline comments, or peer-review output), numbers every discrete point (`R1.C1`, `R2.C3`), and sorts each into must-address, should-address, optional, or out-of-scope. For LaTeX manuscripts it produces a `latexdiff` comparison against the prior revision so the editor can see exactly what moved and where; DOCX tracked changes are specified but not yet implemented (`templates/word/build-docx.js` generates headings, paragraphs, and lists from `sections/*.md` today, not revision marks).
 
-**Trigger it:** "`/revise`", "Address these reviewer comments and produce tracked changes".
+**Trigger it:** "`/researcher:revise`", "Address these reviewer comments and produce tracked changes".
 
 ## response-to-reviewers
 

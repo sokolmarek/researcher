@@ -19,8 +19,8 @@ The plugin scaffolds a `manuscript/` folder (per-section `.tex` files, `config.y
 
 ```
 Do a systematic literature search on self-supervised learning for ECG classification.
-/fact-check Self-supervised pretraining can match supervised ECG performance within one percent.
-/sota PTB-XL arrhythmia classification
+/researcher:fact-check Self-supervised pretraining can match supervised ECG performance within one percent.
+/researcher:sota PTB-XL arrhythmia classification
 ```
 
 Every result carries a real, resolvable citation. The fact-check comes back with a verdict (Supported, Contested, Partially Supported, or Unsupported) and the evidence behind it.
@@ -28,8 +28,8 @@ Every result carries a real, resolvable citation. The fact-check comes back with
 ## 3. Design and draft
 
 ```
-/design-experiment Does contrastive pretraining improve label efficiency on PTB-XL?
-/draft-section introduction
+/researcher:design-experiment Does contrastive pretraining improve label efficiency on PTB-XL?
+/researcher:draft-section introduction
 Create a diagram of my two-stage pretraining and fine-tuning pipeline.
 Turn this results CSV into a booktabs table with the best result in bold.
 ```
@@ -37,17 +37,17 @@ Turn this results CSV into a booktabs table with the best result in bold.
 ## 4. Review and submit
 
 ```
-/review-paper
-/find-journal --filters Q1, open access
-/submit-ready
+/researcher:review-paper
+/researcher:find-journal --filters Q1, open access
+/researcher:submit-ready
 ```
 
-The review runs a five-persona panel with rubric scores. `/submit-ready` refuses to bless a manuscript whose integrity checks have not run.
+The review runs a five-persona panel with rubric scores. `/researcher:submit-ready` runs a reporting checklist (citations resolve, formatting, word counts, required sections) and reports pass or fail with fix instructions. It does not block anything yet; a compile gate that can refuse is planned.
 
 ## 5. Handle revisions
 
 ```
-/revise R1
+/researcher:revise R1
 Here are the reviewer comments: [paste]
 Generate the response to reviewers document.
 ```

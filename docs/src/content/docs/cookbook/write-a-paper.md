@@ -15,10 +15,10 @@ One honesty note up front, because it matters for how you read the output. The r
 Start with the folder, not the prose. Run the command:
 
 ```
-/new-manuscript
+/researcher:new-manuscript
 ```
 
-It shows a short form. For the running scenario, the fields are:
+The command starts a short conversation and asks for the details it needs: title, authors, target journal, format, citation style, and paper type. For the running scenario, the answers look like this:
 
 | Field | Value |
 |---|---|
@@ -93,7 +93,7 @@ Numbers that appear in the prose (21,837 records; within one percent of supervis
 Now hand the manuscript to the panel you would rather avoid. Run:
 
 ```
-/review-paper
+/researcher:review-paper
 ```
 
 or, more explicitly:
@@ -112,18 +112,19 @@ You get five distinct personas, each critiquing a different axis rather than fiv
 - **Reviewer 3, Writing**: figure ordering, contribution-list structure.
 - **Devil's Advocate**: the strongest case for rejection, that the headline result may be a protocol artifact rather than a method advance.
 
-Each persona scores the dimensions it is qualified to judge on a 0 to 100 rubric, and those aggregate to a weighted overall that maps deterministically to a decision:
+Each persona scores the dimensions it is qualified to judge on the canonical six-dimension, 0 to 100 rubric, and those aggregate to a weighted overall that maps deterministically to a decision:
 
-| Dimension | Weight | Overall |
+| Dimension | Weight | Mean score |
 |---|---|---|
-| Novelty | 0.25 | |
-| Technical soundness | 0.30 | |
-| Clarity | 0.15 | |
-| Reproducibility | 0.15 | |
-| Significance | 0.15 | |
-| **Weighted overall** | | **59 / 100 → Major Revision** |
+| Novelty & Significance | 0.20 | 62.7 |
+| Methodology | 0.25 | 57.5 |
+| Results & Analysis | 0.20 | 55.0 |
+| Writing Quality | 0.15 | 76.0 |
+| Literature & Context | 0.10 | 68.0 |
+| Reproducibility | 0.10 | 48.0 |
+| **Weighted overall** | | **60.9 / 100 → Major Revision** |
 
-The decision mapping is fixed (70+ minor revision, 50 to 69 major revision, below 50 reject), so the 59 is not a vibe, it is a computation. The reviewer text is synthetic and labeled `(synthetic reviewer content)`, but when the Domain Expert says to compare directly to lead-agnostic pretraining (Oh et al., 2022) or the Methodology reviewer invokes the roughly one percent margin from Mehari and Strodthoff (2022), those are real, resolvable references verified against OpenAlex and Crossref. The panel closes with a consolidated, prioritized action list, which is the input to the final step.
+The decision mapping is fixed (80+ accept, 65 to 79 minor revision, 50 to 64 major revision, below 50 reject), so the 60.9 is not a vibe, it is a computation that lands in the 50 to 64 band. The reviewer text is synthetic and labeled `(synthetic reviewer content)`, but when the Domain Expert says to compare directly to lead-agnostic pretraining (Oh et al., 2022) or the Methodology reviewer invokes the roughly one percent margin from Mehari and Strodthoff (2022), those are real, resolvable references verified against OpenAlex and Crossref. The panel closes with a consolidated, prioritized action list, which is the input to the final step.
 
 ## Step 4: Answer point by point
 

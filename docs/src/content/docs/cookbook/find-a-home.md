@@ -12,7 +12,7 @@ One rule threads all three steps. Volatile facts (impact factors, article proces
 
 ## Step 1: Rank the journals
 
-Run `/find-journal` and describe the contribution, not just the topic. Fit is argued from evidence, meaning which venue actually published your predecessors and your benchmark, rather than from raw prestige.
+Run `/researcher:find-journal` and describe the contribution, not just the topic. Fit is argued from evidence, meaning which venue actually published your predecessors and your benchmark, rather than from raw prestige.
 
 > Recommend target journals for my methods paper on self-supervised contrastive pretraining for ECG arrhythmia classification, evaluated on PTB-XL. I want fit rationale and format notes. Rank them.
 
@@ -34,7 +34,7 @@ Notice every impact factor and APC carries a date and a source. Scope and format
 
 ## Step 2: Scout the conferences
 
-Maybe you want peer-reviewed exposure before the journal cycle finishes, or an archival proceedings paper alongside it. Run `/find-conference`.
+Maybe you want peer-reviewed exposure before the journal cycle finishes, or an archival proceedings paper alongside it. Run `/researcher:find-conference`.
 
 > Find conferences and workshops where I could submit my SSL-for-ECG arrhythmia work. Give me deadlines and format, and flag anything time-sensitive.
 

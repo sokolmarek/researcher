@@ -22,7 +22,7 @@ Think of it as a very capable assistant that never sleeps, never forgets a citat
 
 ## What This Is
 
-A Claude Code / Cowork plugin with **28 specialized skills**, **9 agents**, **11 slash commands**, and integrations with every major academic database. It covers the full research pipeline:
+A Claude Code / Cowork plugin with **29 specialized skills**, **9 agents**, and **11 slash commands** covering the full research pipeline:
 
 ```
 Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
@@ -32,6 +32,32 @@ Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
 ```
 
 LaTeX-first, Word-compatible. Every output works in both worlds.
+
+## What works today, what is planned
+
+| Capability | Status |
+|---|---|
+| 29 skills, 9 agents, 11 commands (prompt-driven workflows) | Works today |
+| Marketplace install (`/plugin install researcher@researcher-marketplace`) | Works today |
+| Citation commit guard (blocks a commit whose `\cite` keys have no bib entry, including bibliography-only deletions) | Works today; run `python scripts/install-git-hooks.py` once per repo to also cover terminal and IDE commits |
+| BibTeX validation: brace-aware parser, CrossRef DOI resolution, title and first-author matching, retraction flags (`scripts/bib-validator.py`) | Works today (network required) |
+| LaTeX compile checks via tectonic (`scripts/latex-compile.py` / `.sh`) | Works today (tectonic required) |
+| Figure style presets (default, Nature, IEEE) across the visualization skills | Works today (`references/figure-styles.md`) |
+| Word/DOCX output (`templates/word/build-docx.js`, built on the `docx` library): title page, numbered headings, paragraphs, lists | Works today (node required) |
+| DOCX tracked changes, comments, and table emission | Specified in `templates/word/article-imrad.md`, not implemented yet |
+| Scite Smart Citations, Zotero library access | Works when you connect those MCP servers yourself; not bundled yet |
+| External model reviewers (OpenAI, Gemini, Ollama) | Documented integration point, not implemented |
+| Multi-index citation verification (verified / mismatch / unresolvable / inconclusive), retraction and faithfulness axes, PRISMA provenance ledger | Planned (M2, next minor release) |
+| Evidence-lineage compiler: every claim and number compiles from a source span or an experiment run, with a research passport export | Planned (M3) |
+| Bundled `.mcp.json` (Scite, Zotero, paper-search) | Planned |
+| Google Scholar / Mendeley APIs | Not planned (no stable free API); fallbacks documented in `connectors/` |
+
+The integrity rules (never fabricate citations, never invent data) are enforced today in two ways: as
+refusal-grade constraints inlined in every skill and agent that produces cited content
+(`references/integrity-constraints.md`), and as the mechanical checks listed above (commit guard, DOI
+resolution and retraction flags, compile checks). A deterministic engine that verifies every reference
+against multiple indexes is the next planned milestone. Until it lands, verification is a shared job
+between you and the plugin, and the plugin's job is to make your half easy.
 
 ---
 
@@ -77,6 +103,9 @@ LaTeX-first, Word-compatible. Every output works in both worlds.
 | **PlotNeuralNet** | Neural network architecture diagrams with 3D layered boxes. Self-contained single-file .tex. Presets for VGG, ResNet, U-Net, Transformer. |
 | **Figure Suggestions** | Analyzes your manuscript and recommends what figures you need, what type, and where to place them. |
 | **LaTeX Tables** | Booktabs-style tables. Significance markers, bold best results, multi-column, landscape, longtable. CSV/JSON ingestion. |
+| **Image Prompt Crafting** | Prompts for external image generators (ChatGPT/DALL-E, Gemini, Midjourney) for conceptual illustrations, graphical abstracts, and cover art. Never for data or results figures, and always with an AI-disclosure caption. |
+
+All five figure-producing skills share named style presets (default, Nature, IEEE) defined in [`references/figure-styles.md`](references/figure-styles.md). Ask for "Nature style" and the sizing, typography, and palette change; your data never does.
 
 ### Publishing & Formatting
 
@@ -84,34 +113,38 @@ LaTeX-first, Word-compatible. Every output works in both worlds.
 |-------|-------------|
 | **Journal Finder** | Recommend best-fit journals. Filter by impact factor, quartile, indexing, open access, APC. Detailed reasoning for each. |
 | **Conference Finder** | Find relevant conferences with deadlines, rankings, acceptance rates, locations. |
-| **Journal Formatting** | Auto-apply requirements for Elsevier, Springer, IEEE, ACM, Nature, Science, PLOS, MDPI, and 50+ more. Compliance validation. |
-| **Word Output** | Full DOCX support. Tracked changes, comments, journal templates. Not just pandoc -- proper formatting via docx-js. |
-| **Citation Management** | Maintain .bib files, validate DOIs, detect retractions, flag predatory journals, convert formats. Zotero/Mendeley sync. Citation integrity audit. |
+| **Journal Formatting** | Apply journal requirements from a local database of 16 publisher and journal profiles (Elsevier, Springer, IEEE, ACM, Nature, Science, PLOS, MDPI, Wiley, and more); anything else is looked up from the publisher's author guidelines. Compliance validation. |
+| **Word Output** | DOCX generation via `templates/word/build-docx.js` (built on the `docx` library, requires node): title page, numbered headings, paragraphs, lists. Tracked changes, comments, and tables are specified but not yet implemented. |
+| **Citation Management** | Maintain .bib files, validate DOIs, detect retractions, flag predatory journals, convert formats. Zotero access via the user-installed zotero-mcp server; Mendeley via manual export. Citation integrity audit. |
 
 ### Code & Implementation
 
 | Skill | What it does |
 |-------|-------------|
-| **Implementation** | Experiment scripts, data pipelines, evaluation code. Reproducibility enforced. Routes to Sonnet to save your Opus budget. |
-| **Code Analysis** | Analyze your codebase and generate methods section with pseudocode, complexity analysis, and algorithm environments. |
+| **Implementation** | Experiment scripts, data pipelines, evaluation code. Reproducibility enforced. Forks into the Sonnet-pinned code agent, so codegen does not spend your Opus budget. |
+| **Code Analysis** | Analyze your codebase and generate a methods section with pseudocode, complexity analysis, and algorithm environments. Also forks into the code agent. |
 
 ---
 
 ## Slash Commands
 
+Plugin commands are namespaced by the plugin name, so they never collide with another plugin's:
+
 | Command | What it does |
 |---------|-------------|
-| `/new-manuscript` | Create a new manuscript project with full folder structure |
-| `/draft-section <section>` | Draft a specific section (abstract, introduction, methods, results, discussion, conclusion) |
-| `/review-paper` | Run simulated multi-perspective peer review |
-| `/submit-ready` | Pre-submission checklist: citations, formatting, word count, required sections |
-| `/revise <round>` | Handle revision round (R1, R2, R3) with reviewer comment parsing |
-| `/brainstorm` | Socratic research design refinement |
-| `/find-journal` | Find best-fit journals for your paper |
-| `/find-conference` | Find relevant conferences with deadlines |
-| `/fact-check` | Verify claims against scientific literature |
-| `/sota` | Find state-of-the-art results for a benchmark |
-| `/design-experiment` | Design an experiment for your research question |
+| `/researcher:new-manuscript` | Create a new manuscript project with full folder structure |
+| `/researcher:draft-section <section>` | Draft a specific section (abstract, introduction, methods, results, discussion, conclusion) |
+| `/researcher:review-paper` | Run simulated multi-perspective peer review |
+| `/researcher:submit-ready` | Pre-submission checklist: citations, formatting, word count, required sections |
+| `/researcher:revise <round>` | Handle revision round (R1, R2, R3) with reviewer comment parsing |
+| `/researcher:brainstorm` | Socratic research design refinement |
+| `/researcher:find-journal` | Find best-fit journals for your paper |
+| `/researcher:find-conference` | Find relevant conferences with deadlines |
+| `/researcher:fact-check <claim>` | Verify claims against scientific literature |
+| `/researcher:sota <benchmark>` | Find state-of-the-art results for a benchmark |
+| `/researcher:design-experiment <question>` | Design an experiment for your research question |
+
+Commands take free-text arguments; Claude asks for anything it still needs.
 
 ---
 
@@ -155,6 +188,15 @@ git clone https://github.com/sokolmarek/researcher.git
 claude --plugin-dir researcher
 ```
 
+### Recommended: full commit coverage for the citation guard
+
+The plugin's built-in guard only sees commits that Claude itself runs. To also block dangling
+`\cite` keys on terminal and IDE commits, install the git hook once per manuscript repository:
+
+```bash
+python scripts/install-git-hooks.py            # idempotent; --uninstall to remove
+```
+
 ---
 
 ## Quick Start
@@ -168,34 +210,35 @@ The plugin scaffolds your manuscript folder, asks for details, and you're ready 
 ### Research your topic
 ```
 You: "Search for recent papers on differential privacy in healthcare AI"
-You: "/fact-check Federated learning always preserves patient privacy"
-You: "/sota Federated learning medical image segmentation"
+You: "/researcher:fact-check Federated learning always preserves patient privacy"
+You: "/researcher:sota Federated learning medical image segmentation"
 ```
 
 ### Design your experiment
 ```
-You: "/design-experiment Does our federated approach maintain model accuracy within 2% of centralized training?"
+You: "/researcher:design-experiment Does our federated approach maintain model accuracy within 2% of centralized training?"
 You: "What statistical test should I use to compare accuracy across 5 hospital sites?"
 ```
 
 ### Draft and refine
 ```
-You: "/draft-section introduction"
+You: "/researcher:draft-section introduction"
 You: "Analyze my writing style from the papers in author-papers/"
 You: "Create a system architecture diagram"
 You: "Generate a results comparison table from this CSV data"
+You: "Now give me that figure in Nature single-column style"
 ```
 
 ### Review before submission
 ```
-You: "/review-paper"
-You: "/find-journal --filters Q1, open access, indexed in Scopus"
-You: "/submit-ready"
+You: "/researcher:review-paper"
+You: "/researcher:find-journal Q1, open access, indexed in Scopus"
+You: "/researcher:submit-ready"
 ```
 
 ### Handle revisions
 ```
-You: "/revise R1"
+You: "/researcher:revise R1"
 You: "Here are the reviewer comments: [paste]"
 You: "Generate the response to reviewers document"
 ```
@@ -204,37 +247,38 @@ You: "Generate the response to reviewers document"
 
 ## Connectors
 
-The plugin integrates with external academic services via MCP connectors:
+Connector docs under [`connectors/`](connectors/) describe how each external service is reached today.
+Public APIs are called directly by skills at runtime. MCP servers work once you connect them yourself;
+the plugin does not bundle an `.mcp.json` yet (planned). Google Scholar and Mendeley are docs-only, with
+their fallbacks documented:
 
-| Service | Protocol | What it provides |
-|---------|----------|-----------------|
-| **Scite** | MCP | Smart citation context, supporting/contrasting classification |
-| **PubMed** | NCBI API | Biomedical literature (20M+ articles) |
-| **Semantic Scholar** | S2 API | CS/science papers, citation graphs, author data |
-| **arXiv** | API | Preprints in CS, physics, math, biology |
-| **CrossRef** | REST API | DOI resolution, metadata validation |
-| **Google Scholar** | Web search | Broadest coverage |
-| **Zotero** | API/MCP | Reference library sync |
-| **Mendeley** | REST API | Reference library sync |
+| Service | Mechanism today | What it provides |
+|---------|-----------------|-----------------|
+| **Scite** | MCP server, user-connected | Smart citation context, supporting/contrasting classification |
+| **PubMed** | NCBI public API, called by skills | Biomedical literature (20M+ articles) |
+| **Semantic Scholar** | S2 public API, called by skills | CS/science papers, citation graphs, author data |
+| **arXiv** | Public API, called by skills | Preprints in CS, physics, math, biology |
+| **CrossRef** | Public REST API, called by skills and scripts | DOI resolution, metadata validation |
+| **Google Scholar** | Docs-only (web-search fallback) | Broadest coverage |
+| **Zotero** | zotero-mcp MCP server, user-installed | Reference library access |
+| **Mendeley** | Docs-only (manual export fallback) | Reference library sync |
 
-### Optional External Reviewers
+### External reviewer models (planned, not implemented)
 
-For multi-model peer review, configure:
-
-| Service | Environment Variable |
-|---------|---------------------|
-| OpenAI (ChatGPT) | `OPENAI_API_KEY` |
-| Google (Gemini) | `GOOGLE_AI_API_KEY` |
-| Local (Ollama) | `OLLAMA_ENDPOINT` |
+The peer-review skill specifies an integration for external reviewer models (OpenAI `OPENAI_API_KEY`,
+Google `GOOGLE_AI_API_KEY`, local Ollama `OLLAMA_ENDPOINT`), but no dispatch code ships today. Peer
+review currently runs Claude's multi-persona panel only. The specification stays in the skill as the
+design for a later release.
 
 ---
 
 ## Requirements
 
 - **Claude Code** or **Claude Cowork** (paid plan)
-- **Recommended model:** Claude Opus 4.6 (the plugin routes code tasks to Sonnet automatically)
+- **Model:** any current Claude model. Code-heavy skills fork into a Sonnet-pinned agent, so a higher-tier session model is spent on research, writing, and review rather than codegen.
 - **LaTeX compilation:** `tectonic` (auto-installs packages, single binary)
-- **Word output:** `node` + `npm` (for docx-js)
+- **Word output:** `node` (the `docx` library; run `npm install` in `templates/word/`)
+- **Scripts and tests:** Python 3.10+ (standard library only; `pytest` to run the test suite)
 
 ---
 
@@ -243,18 +287,19 @@ For multi-model peer review, configure:
 ```
 researcher/
 ├── .claude-plugin/               # Plugin manifest + marketplace catalog
-├── skills/                       # 28 specialized skills
+├── skills/                       # 29 specialized skills
 ├── agents/                       # 9 orchestration agents
 ├── commands/                     # 11 slash commands
-├── connectors/                   # 8 MCP connector docs
-├── hooks/                        # Pre-commit & post-draft checks
-├── references/                   # Citation guides, journal DB, TikZ patterns
-├── templates/                    # LaTeX & Word templates
-├── scripts/                      # Python/bash utilities
+├── connectors/                   # 8 connector docs (mechanism, env vars, fallbacks)
+├── hooks/                        # Claude tool guards (hooks.json) + docs
+├── references/                   # Citation guides, journal DB, TikZ patterns, figure styles, integrity constraints
+├── templates/                    # LaTeX templates + Word (build-docx.js) generation
+├── scripts/                      # Python utilities (compile, validate, hooks, render) + tests
 ├── examples/                     # Worked examples with real, verified output
+├── evals/                        # Freshness eval (DOIs + LaTeX) and compile fixture
 ├── docs/                         # Astro (Starlight) documentation site
 ├── assets/                       # Header image and rendered figures
-└── CLAUDE.md                     # Build instructions
+└── CLAUDE.md                     # Contributor notes (not loaded at plugin runtime)
 ```
 
 ---
@@ -263,13 +308,15 @@ researcher/
 
 1. **Assistant, not author.** This tool guides, assists, and handles logistics. It does not replace your expertise, your thinking, or your judgment (it has none of its own). Every claim needs your verification. Every citation must be real.
 
-2. **Integrity first.** The plugin will never fabricate citations, invent data, or make unsupported claims. It has integrity gates at every step: citation validation, fact-checking, reference verification.
+2. **Integrity first.** Refusal-grade rules (never fabricate citations, never invent data, flag what cannot be verified) are inlined in every skill and agent that produces cited content (`references/integrity-constraints.md`), and a mechanical commit guard blocks dangling citation keys. Today these are prompt-level safeguards plus targeted mechanical checks, not a full verification engine; deterministic multi-index reference verification is the next planned milestone. Until then, verify every claim yourself, and the plugin will keep making that easy.
 
 3. **Your voice, amplified.** Style Calibration learns how *you* write. The goal is to sound like a better version of you, not like a robot.
 
 4. **LaTeX-first, Word-compatible.** Because some of us chose suffering and some of us had suffering chosen for us by our collaborators.
 
-5. **Token-smart.** Code and formatting tasks route to Sonnet. Research thinking, writing, and review use Opus. Your budget goes further.
+5. **Token-smart.** The implementation and code-analysis skills fork into a Sonnet-pinned code agent (via `context: fork` in their frontmatter), so your session's higher-tier budget goes to research thinking, writing, and review rather than to generating boilerplate.
+
+6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The next milestone is a deterministic evidence kernel with published benchmarks; the one after that is an evidence-lineage compiler where every claim and number in your manuscript traces back to a source span or an experiment run. The goal is a core you can trust, not a bigger feature list.
 
 ---
 

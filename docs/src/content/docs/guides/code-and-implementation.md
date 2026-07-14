@@ -6,7 +6,7 @@ sidebar:
   order: 6
 ---
 
-Two skills sit at the boundary between the paper and the code that produced it. One writes the experiments; the other reads them back into prose. Both route to the smaller Sonnet model through the [Code Agent](/researcher/reference/agents/), which keeps the larger model's budget for the reasoning-heavy work of writing and reviewing. Code generation is a place where a faster, cheaper model does the job well, so there is no reason to spend Opus tokens on boilerplate.
+Two skills sit at the boundary between the paper and the code that produced it. One writes the experiments; the other reads them back into prose. Both carry `context: fork` and `agent: code-agent` in their frontmatter, so they execute inside the [Code Agent](/researcher/reference/agents/) subagent, which is pinned to Sonnet in its own frontmatter. That keeps the larger model's budget for the reasoning-heavy work of writing and reviewing. Code generation is a place where a faster, cheaper model does the job well, so there is no reason to spend Opus tokens on boilerplate.
 
 ## implementation
 
@@ -26,7 +26,9 @@ Given the ECG pretraining repository, it would read the augmentation and contras
 
 ## Why Sonnet, and what stays on Opus
 
-Both skills are registered to the Code Agent with the Sonnet model, per the [agents reference](/researcher/reference/agents/). Writing a data loader or transcribing a loss function into pseudocode is well-scoped, verifiable work where Sonnet is fast and accurate. The judgment calls (deciding what the methods section should emphasize, checking that the generated code matches the experiment you actually intend to run) are yours, and the writing and review skills that lean on them stay on the larger model. The split is a budget decision, not a quality compromise.
+The routing is mechanical, not prose. Each skill's SKILL.md frontmatter declares `context: fork` and `agent: code-agent`, and the Code Agent's own frontmatter sets `model: sonnet`, per the [agents reference](/researcher/reference/agents/). Frontmatter is the only thing that switches models; instructions written in a skill's body cannot. Writing a data loader or transcribing a loss function into pseudocode is well-scoped, verifiable work where Sonnet is fast and accurate. The judgment calls (deciding what the methods section should emphasize, checking that the generated code matches the experiment you actually intend to run) are yours, and the writing and review skills that lean on them stay on the larger model. The split is a budget decision, not a quality compromise.
+
+The fork has one honest tradeoff. A forked skill receives your task and the repository, not the whole conversation, so anything the subagent needs (file paths, the config file it should read, seeds or constraints you settled on earlier in the chat) must be named explicitly in the request. It will not see the discussion that produced them.
 
 ## See it in action
 

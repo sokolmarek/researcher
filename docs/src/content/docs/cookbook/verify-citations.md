@@ -10,13 +10,22 @@ A fabricated citation is the one mistake that turns a good paper into a retracti
 
 Everything below comes from the worked examples in [`examples/research-verification/`](https://github.com/sokolmarek/researcher/tree/main/examples/research-verification).
 
+## What runs today, and what is planned
+
+Two mechanical checks ship right now:
+
+- **`python scripts/bib-validator.py references/library.bib`** resolves each entry's DOI against Crossref, compares the title (similarity threshold 0.70), first-author surname, and year against the Crossref record, flags retractions via Crossref `update-to` metadata, and reports duplicate keys, duplicate DOIs, and missing required fields. It exits nonzero when errors are found; network failures are warnings, never entry errors.
+- **The citation commit guard** blocks any Claude-run `git commit` whose `\cite` keys have no matching entry in the bibliography (`scripts/citation-check-hook.py`; `scripts/install-git-hooks.py` installs the same check as a real git pre-commit for terminal commits).
+
+The fuller gate walked through below is **planned, not shipped**: multi-index verification against up to four independent indexes (OpenAlex, Crossref, Semantic Scholar, arXiv) with a four-state verdict, `verified` / `mismatch` / `unresolvable` / `inconclusive`. In the planned semantics, `unresolvable` and `mismatch` are refusal-grade, and `inconclusive` never is (an index timeout should stall the gate, not fail your bibliography). The worked example in [`citation-audit.md`](https://github.com/sokolmarek/researcher/blob/main/examples/research-verification/citation-audit.md) shows the shape of that gate: what its report will look like once the deterministic core exists.
+
 ## Audit the bibliography for existence
 
 > Verify every reference in `references/library.bib` actually exists in the literature, flag anything that cannot be resolved, and check for retractions.
 
 The input is a 10-entry `library.bib`. Nine are the real papers from the shared example. One, `kessler2021cmae`, is a synthetic entry planted deliberately so the gate has something to reject. It is labeled `(synthetic, for demonstration)` in the source and is the only invented reference anywhere in the examples.
 
-Each reference is checked against up to four independent indexes (OpenAlex, Crossref, Semantic Scholar, arXiv). A verdict of `verified` requires confirmation by at least two of them, with title similarity of 0.70 or better and a matching year and first author.
+In the **planned** gate, each reference is checked against up to four independent indexes (OpenAlex, Crossref, Semantic Scholar, arXiv), and a verdict of `verified` requires confirmation by at least two of them, with title similarity of 0.70 or better and a matching year and first author. The table below is the worked example's report and shows that planned shape. **Today**, `bib-validator.py` runs the Crossref column of this table: DOI resolution plus title, first-author, and year comparison against a single index.
 
 | Key | Verdict | Confirmed by |
 |---|---|---|
@@ -31,17 +40,17 @@ Each reference is checked against up to four independent indexes (OpenAlex, Cros
 | sarkar2022ssl | verified | OpenAlex, Crossref |
 | **kessler2021cmae** | **unresolvable** | none |
 
-The nine real entries clear the gate cleanly. The planted fake does not: its DOI `10.1109/TBME.2021.3098765` does not resolve in Crossref, and no title match appears in any index. Verdict, `unresolvable`, likely fabricated.
+The nine real entries clear the gate cleanly. The planted fake does not: its DOI `10.1109/TBME.2021.3098765` does not resolve in Crossref, and no title match appears in any index. Verdict, `unresolvable`, likely fabricated. This particular failure is already caught **today**: `bib-validator.py` reports the Crossref 404 as an error and exits nonzero.
 
-**Gate result: 9 verified, 0 mismatch, 1 unresolvable.**
+**Gate result (planned report format): 9 verified, 0 mismatch, 1 unresolvable.**
 
-:::caution[An unresolvable reference is refusal-grade]
-The audit will not certify this bibliography as clean while `kessler2021cmae` remains. A real run stops here and asks you to supply a genuine source or delete the citation. This is the human-in-the-loop stop, and it is deliberately not overridable by a confident-sounding model.
+:::caution[Unresolvable and mismatch are refusal-grade (planned semantics)]
+In the planned four-state verdict, the audit will not certify this bibliography as clean while `kessler2021cmae` remains: it stops and asks you to supply a genuine source or delete the citation. `mismatch` (the DOI resolves, but to a different paper) refuses in the same way; `inconclusive` (an index could not be reached) never does. This human-in-the-loop stop is deliberately not overridable by a confident-sounding model. Today the stop exists in simpler form: `bib-validator.py` exits nonzero on the unresolvable DOI, and the commit guard blocks a commit whose `\cite` keys have no matching bib entry.
 :::
 
 ## Sweep for retractions and corrections
 
-The same pass checks OpenAlex `is_retracted` and Crossref `update-to` metadata on the verified entries. The point here is to tell a genuine retraction apart from the routine post-publication housekeeping that panics people who conflate the two.
+Retraction checking runs **today**: `bib-validator.py --check-retracted` reads Crossref `update-to` metadata for every entry with a DOI. The **planned** multi-index pass adds OpenAlex `is_retracted` as a second signal. Either way, the point is to tell a genuine retraction apart from the routine post-publication housekeeping that panics people who conflate the two.
 
 | Key | Retracted? | On record |
 |---|---|---|
@@ -55,7 +64,7 @@ Two of the real papers carry corrections. `hannun2019cardiologist` has a Publish
 
 > **NOT CLEAN.** 1 of 10 references is unresolvable (`kessler2021cmae`) and must be resolved or removed before this bibliography can be certified. No retractions found. Two corrections noted.
 
-That single verdict line is the whole product. A green checkmark you cannot trust is worse than no checkmark, so the tool would rather say "not clean" than launder a fake into your reference list.
+That single verdict line, in the planned gate's report format, is the whole product. A green checkmark you cannot trust is worse than no checkmark, so the design would rather say "not clean" than launder a fake into your reference list. Today's `bib-validator.py` reaches the same conclusion on this bibliography (one error, exit code 1), just from Crossref alone.
 
 ## Verify the SOTA numbers before you cite them
 
@@ -81,8 +90,9 @@ Verified rows were read back from the source this session. The unverified row co
 
 ## What you get
 
-- A bibliography audit that confirms real references across multiple independent indexes and refuses to certify the set while any entry is unresolvable.
-- A retraction sweep that separates genuine retractions (none here) from routine corrections and errata (present, noted calmly).
+- **Today:** a DOI audit (`scripts/bib-validator.py`) that resolves every entry against Crossref, compares title, first author, and year, reports duplicates and missing fields, and exits nonzero on failures; plus a commit guard that blocks dangling `\cite` keys.
+- **Today:** a retraction sweep via Crossref `update-to` that separates genuine retractions (none here) from routine corrections and errata (present, noted calmly).
+- **Planned:** the multi-index audit with the four-state verdict shown above, where `unresolvable` and `mismatch` refuse certification and `inconclusive` never does.
 - A SOTA table where each figure is attributed to the paper that reported it, cross-dataset non-comparability is stated up front, and untraceable claims are flagged rather than included.
 
 ## Keep going

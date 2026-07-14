@@ -22,13 +22,13 @@ Not just finding papers, but converging on an argument. Three modes: Socratic (i
 
 Verifies a claim against the literature and returns a verdict (Supported, Contested, Partially Supported, or Unsupported) with the evidence behind it. It will return **Unsupported** rather than invent a source.
 
-**Trigger it:** "`/fact-check <claim>`".
+**Trigger it:** "`/researcher:fact-check <claim>`".
 
 ## sota-finder
 
 Tracks state-of-the-art results for a benchmark. Every number in the table is traced to the paper that reported it; leaderboard claims that cannot be traced are marked unverified.
 
-**Trigger it:** "`/sota <benchmark>`".
+**Trigger it:** "`/researcher:sota <benchmark>`".
 
 ## research-gaps
 
