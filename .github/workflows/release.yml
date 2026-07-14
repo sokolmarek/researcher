@@ -15,9 +15,18 @@ permissions:
 
 env:
   CLAUDE_CLI_VERSION: "2.1.209"
+  PYTHON_VERSION: "3.12"
 
 jobs:
+  # The full PR suite (plugin validation, guards, pytest on Linux and Windows,
+  # the Codex install, the DOCX build, both LaTeX engines) is the release gate.
+  # Calling it here rather than restating a subset of it means a tag can never
+  # ship a red test suite or a tripped guard, and the two can never drift apart.
+  full-validation:
+    uses: ./.github/workflows/validate.yml
+
   validate:
+    name: Tag, manifest and changelog agree
     runs-on: ubuntu-latest
     outputs:
       tag: ${{ steps.ver.outputs.tag }}
@@ -25,6 +34,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Resolve version
         id: ver
@@ -63,7 +77,7 @@ jobs:
         run: claude plugin validate .claude-plugin/marketplace.json
 
   release:
-    needs: validate
+    needs: [validate, full-validation]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -75,10 +89,35 @@ jobs:
             -x '.git/*' -x 'docs/*' -x 'assets/*' -x '.github/*' -x '*.zip' \
             -x 'templates/word/node_modules/*'
 
-      - name: Runtime files must be inside the package
+      - name: The package must contain a working plugin
+        # A file-by-file check alone is not enough: an -x exclude pattern that
+        # over-matched could drop skills/ or .claude-plugin/ wholesale and still
+        # pass it, shipping an empty, unusable plugin. So this asserts the
+        # manifests, the runtime files, every runtime directory, and the skill
+        # count.
+        #
+        # Matching is exact, on full entry names from `unzip -Z1`. Info-ZIP stores
+        # `zip -r <zip> .` entries as 'skills/foo/SKILL.md' with no './' prefix
+        # (verified against Info-ZIP 3.x), so the old ' path$' grep, anchored on a
+        # leading space, was an unnecessary assumption about column layout.
         run: |
-          set -e
+          set -euo pipefail
           ZIP="researcher-${{ needs.validate.outputs.tag }}.zip"
+          unzip -Z1 "$ZIP" > entries.txt
+          bad=0
+
+          # The manifests the entire install depends on.
+          for path in \
+            .claude-plugin/plugin.json \
+            .claude-plugin/marketplace.json
+          do
+            if ! grep -qxF "$path" entries.txt; then
+              echo "Missing manifest: $path"
+              bad=1
+            fi
+          done
+
+          # Runtime files.
           for path in \
             hooks/hooks.json \
             references/integrity-constraints.md \
@@ -92,12 +131,47 @@ jobs:
             evals/example-freshness.py \
             templates/word/build-docx.js
           do
-            if ! unzip -l "$ZIP" | grep -q " $path\$"; then
+            if ! grep -qxF "$path" entries.txt; then
               echo "Missing from the release package: $path"
-              exit 1
+              bad=1
             fi
           done
-          echo "All runtime files are packaged."
+
+          # Every runtime directory must be present and non-empty.
+          for dir in \
+            .claude-plugin \
+            skills \
+            agents \
+            commands \
+            connectors \
+            references \
+            templates \
+            scripts \
+            hooks \
+            evals \
+            examples
+          do
+            n=$(grep -cE "^${dir}/.*[^/]$" entries.txt || true)
+            if [ "$n" -eq 0 ]; then
+              echo "Release package has no files under ${dir}/"
+              bad=1
+            else
+              echo "  ${dir}/: ${n} files"
+            fi
+          done
+
+          # All 29 skills, not just some of them.
+          skills=$(grep -cE '^skills/[^/]+/SKILL\.md$' entries.txt || true)
+          if [ "$skills" -ne 29 ]; then
+            echo "Expected 29 skills/*/SKILL.md in the package, found ${skills}."
+            bad=1
+          fi
+
+          if [ "$bad" -ne 0 ]; then
+            echo "The release package is incomplete. Not shipping it."
+            exit 1
+          fi
+          echo "Package holds both manifests, all runtime files, ${skills} skills, and every runtime directory."
 
       - name: Extract changelog notes
         run: |

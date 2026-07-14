@@ -5,12 +5,23 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  # release.yml calls this workflow as the release gate, so a tag can never ship
+  # a red test suite or a tripped guard.
+  workflow_call:
 
 env:
   # Pinned toolchains: an unpinned `npm install -g` or `curl | sh` makes CI
   # non-reproducible and widens the supply-chain surface.
   CLAUDE_CLI_VERSION: "2.1.209"
+  PYTHON_VERSION: "3.12"
   TECTONIC_VERSION: "0.16.9"
+  # sha256 of tectonic-${TECTONIC_VERSION}-x86_64-unknown-linux-gnu.tar.gz.
+  # The tectonic project publishes no SHA256SUMS asset, so this digest is pinned
+  # by hand and MUST be re-pinned whenever TECTONIC_VERSION is bumped:
+  #   curl -fsSL -o t.tar.gz \
+  #     "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40<VER>/tectonic-<VER>-x86_64-unknown-linux-gnu.tar.gz"
+  #   sha256sum t.tar.gz
+  TECTONIC_SHA256: "f3c825128095dc3399ea11c08c18035b33050a216930c295c79e8eb11bd21de4"
 
 jobs:
   plugin-validate:
@@ -35,11 +46,18 @@ jobs:
         run: claude plugin validate .claude-plugin/marketplace.json
 
   style-and-json:
-    name: JSON parse, em-dash, placeholder and namespacing guards
+    name: JSON parse, em-dash, placeholder, namespacing and capability guards
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+
+      - name: Setup Python
+        # The guards below shell out to python3; pin it rather than inheriting
+        # whatever interpreter the runner image happens to ship.
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: All tracked JSON files parse
         run: |
@@ -77,12 +95,14 @@ jobs:
           # Installed plugin commands are namespaced (/researcher:<cmd>). A bare
           # /<cmd> in user-facing docs would not work when typed.
           #
-          # .github/ is excluded: those files are contributor-facing, not user-facing,
-          # and the PR template has to quote the forbidden bare form in order to
-          # forbid it. Without this exclusion the guard fails on its own rulebook.
+          # Only PULL_REQUEST_TEMPLATE.md is exempt: it has to quote the forbidden
+          # bare form in order to forbid it, so without the exemption the guard
+          # fails on its own rulebook. Everything else under .github/ is scanned,
+          # including the issue forms, which users read. yml/yaml are scanned too.
           cmds="new-manuscript|draft-section|review-paper|submit-ready|revise|brainstorm|find-journal|find-conference|fact-check|sota|design-experiment"
-          matches=$(git ls-files '*.md' '*.mdx' \
-            | grep -vE '^(plans/|research/|\.github/)' \
+          matches=$(git ls-files '*.md' '*.mdx' '*.yml' '*.yaml' \
+            | grep -vE '^(plans/|research/)' \
+            | grep -vxF '.github/PULL_REQUEST_TEMPLATE.md' \
             | xargs grep -nE "(^|[^:a-zA-Z0-9_-])/($cmds)\b" 2>/dev/null || true)
           if [ -n "$matches" ]; then
             echo "$matches"
@@ -91,15 +111,112 @@ jobs:
           fi
           echo "All command references are namespaced."
 
-      - name: Fake form-field guard
+      - name: Command input contract guard
         run: |
-          matches=$(grep -rnE "\((select|toggle):" commands 2>/dev/null || true)
-          if [ -n "$matches" ]; then
-            echo "$matches"
-            echo "Commands have no typed form UI: do not document select/toggle fields."
+          # Commands take free text plus an argument-hint. There is no typed form
+          # UI, so a "Form Fields" or "Parameters" heading advertises an interface
+          # that does not exist. Every command documents its inputs under one exact
+          # heading, and the old guard (a grep for "(select:" / "(toggle:") could
+          # not detect a missing or mis-titled section at all.
+          bad=0
+          for f in $(git ls-files 'commands/*.md'); do
+            hdr=$(grep -niE '^##+ *(Form Fields|Parameters)' "$f" || true)
+            if [ -n "$hdr" ]; then
+              echo "$f: $hdr"
+              echo "  -> commands have no typed form UI; use '## Inputs (gathered conversationally)'."
+              bad=1
+            fi
+            if ! grep -qxF '## Inputs (gathered conversationally)' "$f"; then
+              echo "$f: missing the exact line '## Inputs (gathered conversationally)'."
+              bad=1
+            fi
+          done
+          fields=$(grep -rnE "\((select|toggle):" commands 2>/dev/null || true)
+          if [ -n "$fields" ]; then
+            echo "$fields"
+            echo "  -> do not document select/toggle form fields; they do not exist."
+            bad=1
+          fi
+          if [ "$bad" -ne 0 ]; then
+            echo "Command input contract violated."
             exit 1
           fi
-          echo "No fake form fields."
+          echo "All commands document inputs under the conversational heading."
+
+      - name: Capability-claim guard (pandoc, docx-js)
+        run: |
+          # Word output is Node plus the `docx` library (templates/word/build-docx.js).
+          # No pandoc path has ever shipped, and there is no package called
+          # "docx-js". Instructing the model to run either is a capability claim
+          # the repo cannot back (constraint 8), which is exactly how the
+          # word-output skill came to tell the model to run pandoc.
+          #
+          # A mention is allowed only where the same line negates it or marks it
+          # planned, so a skill can still state "pandoc is not used in this repo".
+          allow='planned|not implemented|not yet implemented|not used|never|does not|do not|is not|are not|rather than|instead of'
+          hits=$(git ls-files 'skills/**' 'agents/**' 'commands/**' 'README.md' 'docs/src/**' \
+            | xargs grep -niE 'pandoc|docx-js' 2>/dev/null \
+            | grep -viE "$allow" \
+            || true)
+          if [ -n "$hits" ]; then
+            echo "$hits"
+            echo "Unbacked capability claim. Word output uses the Node 'docx' library;"
+            echo "pandoc is not shipped and 'docx-js' is not a real dependency."
+            echo "Remove the claim, or mark it explicitly planned / not implemented."
+            exit 1
+          fi
+          echo "No unbacked pandoc or docx-js claims."
+
+      - name: Agent frontmatter guard
+        run: |
+          # Every agent must declare the skills it orchestrates, and each named
+          # skill must exist. A dangling name routes the agent at nothing.
+          python3 - <<'PY'
+          import pathlib
+          import re
+          import sys
+
+          skills = {p.parent.name for p in pathlib.Path("skills").glob("*/SKILL.md")}
+          agents = sorted(pathlib.Path("agents").glob("*.md"))
+          bad = []
+
+          for agent in agents:
+              text = agent.read_text(encoding="utf-8")
+              block = re.match(r"---\r?\n(.*?)\r?\n---\r?\n", text, re.S)
+              if not block:
+                  bad.append(f"{agent}: no YAML frontmatter block")
+                  continue
+              lines = block.group(1).splitlines()
+              listed, found = [], False
+              for i, line in enumerate(lines):
+                  if not line.startswith("skills:"):
+                      continue
+                  found = True
+                  inline = line.split(":", 1)[1].strip().strip("[]")
+                  if inline:
+                      listed = [s.strip().strip("'\"") for s in inline.split(",") if s.strip()]
+                  else:
+                      for nxt in lines[i + 1:]:
+                          item = re.match(r"\s+-\s*(.+?)\s*$", nxt)
+                          if not item:
+                              break
+                          listed.append(item.group(1).strip("'\""))
+                  break
+              if not found:
+                  bad.append(f"{agent}: frontmatter has no 'skills:' key")
+              elif not listed:
+                  bad.append(f"{agent}: 'skills:' key is empty")
+              else:
+                  for name in listed:
+                      if name not in skills:
+                          bad.append(f"{agent}: lists '{name}', but skills/{name}/SKILL.md does not exist")
+
+          if bad:
+              print("\n".join(bad))
+              print("Every agent must carry a 'skills:' key naming real skills.")
+              sys.exit(1)
+          print(f"All {len(agents)} agents declare skills that resolve.")
+          PY
 
   unit-tests:
     name: Script unit tests
@@ -115,7 +232,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install pytest
         run: python -m pip install --quiet pytest
@@ -152,8 +269,11 @@ jobs:
 
       - name: Install and test
         working-directory: templates/word
+        # `npm ci` installs exactly what package-lock.json pins. `npm install`
+        # ignores the committed lock and lets `"docx": "^9.0.0"` float across any
+        # 9.x, so CI would silently test a dependency the repo never committed.
         run: |
-          npm install --no-audit --no-fund
+          npm ci
           npm test
 
   examples-freshness:
@@ -163,19 +283,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
       - name: Install tectonic (pinned release, checksum verified)
+        # Hard verify: a digest mismatch fails the job. There is no fallback and
+        # no `|| true` anywhere in this step. tectonic ships no SHA256SUMS asset,
+        # so the expected digest lives in TECTONIC_SHA256 above and has to be
+        # re-pinned whenever TECTONIC_VERSION changes.
         run: |
           set -euo pipefail
           base="https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40${TECTONIC_VERSION}"
           asset="tectonic-${TECTONIC_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
           curl --proto '=https' --tlsv1.2 -fsSL -o tectonic.tar.gz "${base}/${asset}"
-          curl --proto '=https' --tlsv1.2 -fsSL -o sha256sums "${base}/SHA256SUMS" || true
-          if [ -s sha256sums ]; then
-            grep " ${asset}\$" sha256sums | sed "s|${asset}|tectonic.tar.gz|" | sha256sum -c -
-          else
-            echo "SHA256SUMS not published for this release; recording the digest we downloaded:"
-            sha256sum tectonic.tar.gz
-          fi
+          echo "${TECTONIC_SHA256}  tectonic.tar.gz" | sha256sum -c -
           tar xzf tectonic.tar.gz
           echo "TECTONIC=$PWD/tectonic" >> "$GITHUB_ENV"
 
@@ -191,6 +314,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install TeX Live
         # lmodern is listed explicitly: it is only a Recommends of the texlive
