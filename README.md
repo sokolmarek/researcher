@@ -4,6 +4,10 @@
 
 **A tireless research assistant for the entire academic pipeline, for Claude Code, Cowork, and OpenAI Codex. It does not sleep, so you finally can.**
 
+[![Listed on ClaudePluginHub](https://www.claudepluginhub.com/badge/sokolmarek-researcher)](https://www.claudepluginhub.com/plugins/sokolmarek-researcher?ref=badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/sokolmarek/researcher)](https://github.com/sokolmarek/researcher/releases)
+
 > Built by a doctoral student, for doctoral students (and anyone else drowning in research and manuscripts at 3 AM).
 
 ---
