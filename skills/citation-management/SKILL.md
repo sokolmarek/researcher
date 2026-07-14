@@ -45,7 +45,7 @@ When a key collision is detected, append a disambiguating keyword from the title
 1. User provides title, authors, year, and optionally journal/conference
 2. Search CrossRef by title to find DOI: `https://api.crossref.org/works?query.bibliographic={title}&rows=3`
 3. If match found (title similarity > 0.85), use resolved metadata and DOI
-4. If no match, create entry from user-provided data and flag as `% UNVERIFIED — no DOI resolved`
+4. If no match, create entry from user-provided data and flag as `% UNVERIFIED: no DOI resolved`
 5. Append to `library.bib`
 
 ### Zotero Import
@@ -97,12 +97,12 @@ Check journal name against known predatory journal indicators:
 - Beall's List patterns (if available)
 - Suspiciously broad scope titles ("International Journal of All Sciences")
 - Missing ISSN or unresolvable ISSN
-- Flag with: `% WARNING: Potential predatory journal — verify manually`
+- Flag with: `% WARNING: Potential predatory journal, verify manually`
 
 ### Retraction Check
 For entries with DOIs:
 - Check against Retraction Watch database (via CrossRef metadata `update-to` field)
-- If retracted, flag prominently: `% RETRACTED — do not cite without disclosure`
+- If retracted, flag prominently: `% RETRACTED: do not cite without disclosure`
 - Report retraction reason if available
 
 ### Batch Validation
@@ -145,7 +145,7 @@ Compare all keys defined in `library.bib` against all keys referenced across `.t
 - Do not auto-remove; list them and let user decide
 
 ### Unsupported Claims
-Scan manuscript text for factual statements (sentences containing quantitative claims, comparisons, or assertions about prior work) that lack a nearby `\cite{}` command. Flag these as potentially unsupported. This is a heuristic check — present results as suggestions, not errors.
+Scan manuscript text for factual statements (sentences containing quantitative claims, comparisons, or assertions about prior work) that lack a nearby `\cite{}` command. Flag these as potentially unsupported. This is a heuristic check: present results as suggestions, not errors.
 
 ### Audit Report Format
 ```
@@ -169,8 +169,8 @@ Validation issues: 2
   - globalJournal2023: Potential predatory journal
 
 Potentially unsupported claims: 4
-  - introduction.tex:22 — "Transformers have achieved state-of-the-art..."
-  - discussion.tex:15 — "Previous studies show a 30% improvement..."
+  - introduction.tex:22: "Transformers have achieved state-of-the-art..."
+  - discussion.tex:15: "Previous studies show a 30% improvement..."
   - ...
 ```
 
@@ -178,7 +178,7 @@ Potentially unsupported claims: 4
 
 Triggered by: "citation integrity", "verify citations", "check citation accuracy", "are my citations correct"
 
-Goes beyond checking whether citations exist — verifies whether each citation is used honestly and accurately in the manuscript.
+Goes beyond checking whether citations exist: it verifies whether each citation is used honestly and accurately in the manuscript.
 
 ### Verification Process
 
@@ -219,14 +219,14 @@ Detailed Findings:
 
 [HIGH CONFIDENCE] \cite{smith2024} in introduction.tex:15
   Claim: "Transformers outperform RNNs on long-range dependencies"
-  Source says: Confirmed — paper's main finding
+  Source says: Confirmed, paper's main finding
   Confidence: 95%
 
 [FLAGGED] \cite{jones2023} in discussion.tex:42
   Claim: "Previous work confirms our approach is optimal"
   Source says: Paper actually presents a competing approach with better results
   Confidence: 82%
-  Action: Review this citation — may be misrepresenting the source
+  Action: Review this citation, may be misrepresenting the source
 
 [UNCERTAIN] \cite{chen2022} in methods.tex:28
   Claim: "Standard preprocessing pipeline (Chen et al., 2022)"
@@ -260,7 +260,7 @@ When the Scite MCP server is connected, the integrity audit is significantly mor
 
 ### Sorting
 On request, sort `library.bib` entries by:
-- Citation key (alphabetical) — default
+- Citation key (alphabetical): default
 - Year (ascending or descending)
 - Author last name (alphabetical)
 
@@ -288,3 +288,11 @@ Use Zotero MCP connector tools to list collections and fetch items. Convert Zote
 
 ### Mendeley MCP
 Use Mendeley MCP connector tools to authenticate, list folders, and fetch documents. Convert Mendeley JSON to BibTeX fields.
+
+## Integrity constraints
+
+1. Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it: never invent a DOI, author list, venue, or year.
+2. Never invent data: only user-provided or actually computed numbers may appear as results; anything illustrative must be labeled "(synthetic, for demonstration)".
+3. Refuse to present as valid output any of the following: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+
+Canonical copy: `references/integrity-constraints.md`.
