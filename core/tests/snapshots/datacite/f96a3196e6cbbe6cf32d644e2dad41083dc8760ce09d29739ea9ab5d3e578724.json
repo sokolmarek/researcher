@@ -1,0 +1,1183 @@
+{
+  "endpoint": "dois/10.5061/dryad.q447c",
+  "request_key": "f96a3196e6cbbe6cf32d644e2dad41083dc8760ce09d29739ea9ab5d3e578724",
+  "request_params": {},
+  "response_body": {
+    "data": {
+      "attributes": {
+        "alternateIdentifiers": [],
+        "citationCount": 4,
+        "citationsOverTime": [
+          {
+            "total": 1,
+            "year": "2017"
+          },
+          {
+            "total": 1,
+            "year": "2019"
+          },
+          {
+            "total": 1,
+            "year": "2024"
+          },
+          {
+            "total": 1,
+            "year": "2025"
+          }
+        ],
+        "container": {},
+        "contentUrl": null,
+        "contributors": [],
+        "created": "2016-04-22T14:56:59.000Z",
+        "creators": [
+          {
+            "affiliation": [
+              ","
+            ],
+            "familyName": "Elbakyan",
+            "givenName": "Alexandra",
+            "name": "Elbakyan, Alexandra",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0003-1247-7941",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              ","
+            ],
+            "familyName": "Bohannon",
+            "givenName": "John",
+            "name": "Bohannon, John",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2016-04-21T17:57:04Z",
+            "dateType": "Submitted"
+          },
+          {
+            "date": "2017-04-22T00:00:00Z",
+            "dateType": "Issued"
+          },
+          {
+            "date": "2017-04-22T00:00:00Z",
+            "dateType": "Available"
+          },
+          {
+            "date": "2021-08-16T00:00:00Z",
+            "dateType": "Updated"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "In increasing numbers, researchers around the world are turning to\n Sci-Hub, the controversial website that hosts 50 million pirated papers\n and counting. Now, with server log data from Alexandra Elbakyan, the\n neuroscientist who created Sci-Hub in 2011 as a 22-year-old graduate\n student in Kazakhstan, Science addresses some basic questions: Who are\n Sci-Hub's users, where are they, and what are they reading? The\n Sci-Hub data provide the first detailed view of what is becoming the\n world's de facto open-access research library. Among the revelations\n that may surprise both fans and foes alike: Sci-Hub users are not limited\n to the developing world. Some critics of Sci-Hub have complained that many\n users can access the same papers through their libraries but turn to\n Sci-Hub instead—for convenience rather than necessity. The data provide\n some support for that claim. Over the 6 months leading up to March,\n Sci-Hub served up 28 million documents, with Iran, China, India, Russia,\n and the United States the leading requestors.",
+            "descriptionType": "Abstract"
+          },
+          {
+            "description": "Sci-Hub download\n dataThese data include 28\n million download request events from the server logs of Sci-Hub from 1\n September 2015 through 29 February 2016. The uncompressed 2.7 gigabytes of\n data are separated into 6 data files, one for each month, in tab-delimited\n text format.scihub_data.zipIPython Notebook for Sci-Hub raw dataIPython Notebook used to process the raw server log data (processing the GIS files into CSV, scraping DOI metadata, etc.).Sci-Hub.htmlSci-Hub.ipynbSci-Hub publisher DOI prefixesData scraped from the CrossRef website which can be used to replicate the analysis of downloads by publisher.publisher_DOI_prefixes.csv",
+            "descriptionType": "Other"
+          }
+        ],
+        "doi": "10.5061/dryad.q447c",
+        "downloadCount": 9910,
+        "downloadsOverTime": [
+          {
+            "total": 871,
+            "yearMonth": "2016-04"
+          },
+          {
+            "total": 1262,
+            "yearMonth": "2016-05"
+          },
+          {
+            "total": 205,
+            "yearMonth": "2016-06"
+          },
+          {
+            "total": 109,
+            "yearMonth": "2016-07"
+          },
+          {
+            "total": 135,
+            "yearMonth": "2016-08"
+          },
+          {
+            "total": 172,
+            "yearMonth": "2016-09"
+          },
+          {
+            "total": 109,
+            "yearMonth": "2016-10"
+          },
+          {
+            "total": 98,
+            "yearMonth": "2016-11"
+          },
+          {
+            "total": 113,
+            "yearMonth": "2016-12"
+          },
+          {
+            "total": 102,
+            "yearMonth": "2017-01"
+          },
+          {
+            "total": 175,
+            "yearMonth": "2017-02"
+          },
+          {
+            "total": 106,
+            "yearMonth": "2017-03"
+          },
+          {
+            "total": 125,
+            "yearMonth": "2017-04"
+          },
+          {
+            "total": 128,
+            "yearMonth": "2017-05"
+          },
+          {
+            "total": 171,
+            "yearMonth": "2017-06"
+          },
+          {
+            "total": 128,
+            "yearMonth": "2017-07"
+          },
+          {
+            "total": 127,
+            "yearMonth": "2017-08"
+          },
+          {
+            "total": 123,
+            "yearMonth": "2017-09"
+          },
+          {
+            "total": 123,
+            "yearMonth": "2017-10"
+          },
+          {
+            "total": 245,
+            "yearMonth": "2017-11"
+          },
+          {
+            "total": 344,
+            "yearMonth": "2017-12"
+          },
+          {
+            "total": 127,
+            "yearMonth": "2018-01"
+          },
+          {
+            "total": 95,
+            "yearMonth": "2018-02"
+          },
+          {
+            "total": 97,
+            "yearMonth": "2018-03"
+          },
+          {
+            "total": 73,
+            "yearMonth": "2018-04"
+          },
+          {
+            "total": 60,
+            "yearMonth": "2018-05"
+          },
+          {
+            "total": 4,
+            "yearMonth": "2018-06"
+          },
+          {
+            "total": 82,
+            "yearMonth": "2018-09"
+          },
+          {
+            "total": 166,
+            "yearMonth": "2018-10"
+          },
+          {
+            "total": 212,
+            "yearMonth": "2018-11"
+          },
+          {
+            "total": 107,
+            "yearMonth": "2018-12"
+          },
+          {
+            "total": 103,
+            "yearMonth": "2019-01"
+          },
+          {
+            "total": 119,
+            "yearMonth": "2019-02"
+          },
+          {
+            "total": 113,
+            "yearMonth": "2019-03"
+          },
+          {
+            "total": 91,
+            "yearMonth": "2019-04"
+          },
+          {
+            "total": 83,
+            "yearMonth": "2019-05"
+          },
+          {
+            "total": 84,
+            "yearMonth": "2019-06"
+          },
+          {
+            "total": 92,
+            "yearMonth": "2019-07"
+          },
+          {
+            "total": 76,
+            "yearMonth": "2019-08"
+          },
+          {
+            "total": 19,
+            "yearMonth": "2019-09"
+          },
+          {
+            "total": 42,
+            "yearMonth": "2019-10"
+          },
+          {
+            "total": 41,
+            "yearMonth": "2019-11"
+          },
+          {
+            "total": 37,
+            "yearMonth": "2019-12"
+          },
+          {
+            "total": 39,
+            "yearMonth": "2020-01"
+          },
+          {
+            "total": 23,
+            "yearMonth": "2020-02"
+          },
+          {
+            "total": 17,
+            "yearMonth": "2020-03"
+          },
+          {
+            "total": 209,
+            "yearMonth": "2020-04"
+          },
+          {
+            "total": 298,
+            "yearMonth": "2020-05"
+          },
+          {
+            "total": 18,
+            "yearMonth": "2020-06"
+          },
+          {
+            "total": 25,
+            "yearMonth": "2020-07"
+          },
+          {
+            "total": 1,
+            "yearMonth": "2020-08"
+          },
+          {
+            "total": 20,
+            "yearMonth": "2020-09"
+          },
+          {
+            "total": 49,
+            "yearMonth": "2020-10"
+          },
+          {
+            "total": 37,
+            "yearMonth": "2020-11"
+          },
+          {
+            "total": 38,
+            "yearMonth": "2020-12"
+          },
+          {
+            "total": 22,
+            "yearMonth": "2021-01"
+          },
+          {
+            "total": 19,
+            "yearMonth": "2021-02"
+          },
+          {
+            "total": 32,
+            "yearMonth": "2021-03"
+          },
+          {
+            "total": 24,
+            "yearMonth": "2021-04"
+          },
+          {
+            "total": 21,
+            "yearMonth": "2021-05"
+          },
+          {
+            "total": 36,
+            "yearMonth": "2021-06"
+          },
+          {
+            "total": 37,
+            "yearMonth": "2021-07"
+          },
+          {
+            "total": 34,
+            "yearMonth": "2021-08"
+          },
+          {
+            "total": 46,
+            "yearMonth": "2021-09"
+          },
+          {
+            "total": 38,
+            "yearMonth": "2021-10"
+          },
+          {
+            "total": 26,
+            "yearMonth": "2021-11"
+          },
+          {
+            "total": 32,
+            "yearMonth": "2021-12"
+          },
+          {
+            "total": 24,
+            "yearMonth": "2022-01"
+          },
+          {
+            "total": 112,
+            "yearMonth": "2022-02"
+          },
+          {
+            "total": 95,
+            "yearMonth": "2022-03"
+          },
+          {
+            "total": 99,
+            "yearMonth": "2022-04"
+          },
+          {
+            "total": 36,
+            "yearMonth": "2022-05"
+          },
+          {
+            "total": 33,
+            "yearMonth": "2022-06"
+          },
+          {
+            "total": 44,
+            "yearMonth": "2022-07"
+          },
+          {
+            "total": 75,
+            "yearMonth": "2022-08"
+          },
+          {
+            "total": 37,
+            "yearMonth": "2022-09"
+          },
+          {
+            "total": 45,
+            "yearMonth": "2022-10"
+          },
+          {
+            "total": 51,
+            "yearMonth": "2022-11"
+          },
+          {
+            "total": 38,
+            "yearMonth": "2022-12"
+          },
+          {
+            "total": 44,
+            "yearMonth": "2023-01"
+          },
+          {
+            "total": 51,
+            "yearMonth": "2023-02"
+          },
+          {
+            "total": 63,
+            "yearMonth": "2023-03"
+          },
+          {
+            "total": 71,
+            "yearMonth": "2023-04"
+          },
+          {
+            "total": 40,
+            "yearMonth": "2023-05"
+          },
+          {
+            "total": 32,
+            "yearMonth": "2023-06"
+          },
+          {
+            "total": 43,
+            "yearMonth": "2023-07"
+          },
+          {
+            "total": 58,
+            "yearMonth": "2023-08"
+          },
+          {
+            "total": 51,
+            "yearMonth": "2023-09"
+          },
+          {
+            "total": 32,
+            "yearMonth": "2023-10"
+          },
+          {
+            "total": 36,
+            "yearMonth": "2023-11"
+          },
+          {
+            "total": 6,
+            "yearMonth": "2023-12"
+          },
+          {
+            "total": 24,
+            "yearMonth": "2024-01"
+          },
+          {
+            "total": 29,
+            "yearMonth": "2024-02"
+          },
+          {
+            "total": 27,
+            "yearMonth": "2024-03"
+          },
+          {
+            "total": 34,
+            "yearMonth": "2024-04"
+          },
+          {
+            "total": 25,
+            "yearMonth": "2024-05"
+          },
+          {
+            "total": 25,
+            "yearMonth": "2024-06"
+          },
+          {
+            "total": 23,
+            "yearMonth": "2024-07"
+          },
+          {
+            "total": 14,
+            "yearMonth": "2024-08"
+          },
+          {
+            "total": 40,
+            "yearMonth": "2024-09"
+          },
+          {
+            "total": 46,
+            "yearMonth": "2024-10"
+          },
+          {
+            "total": 52,
+            "yearMonth": "2024-11"
+          },
+          {
+            "total": 33,
+            "yearMonth": "2025-02"
+          },
+          {
+            "total": 36,
+            "yearMonth": "2025-04"
+          },
+          {
+            "total": 40,
+            "yearMonth": "2025-05"
+          },
+          {
+            "total": 23,
+            "yearMonth": "2025-06"
+          },
+          {
+            "total": 40,
+            "yearMonth": "2025-07"
+          },
+          {
+            "total": 39,
+            "yearMonth": "2025-08"
+          },
+          {
+            "total": 24,
+            "yearMonth": "2025-09"
+          },
+          {
+            "total": 13,
+            "yearMonth": "2025-10"
+          },
+          {
+            "total": 13,
+            "yearMonth": "2025-12"
+          },
+          {
+            "total": 21,
+            "yearMonth": "2026-01"
+          },
+          {
+            "total": 9,
+            "yearMonth": "2026-02"
+          },
+          {
+            "total": 15,
+            "yearMonth": "2026-03"
+          },
+          {
+            "total": 14,
+            "yearMonth": "2026-05"
+          }
+        ],
+        "formats": [],
+        "fundingReferences": [],
+        "geoLocations": [
+          {
+            "geoLocationPlace": "global"
+          },
+          {
+            "geoLocationPlace": "Global"
+          }
+        ],
+        "identifiers": [],
+        "isActive": true,
+        "language": "en",
+        "metadataVersion": 31,
+        "partCount": 3,
+        "partOfCount": 0,
+        "prefix": "10.5061",
+        "publicationYear": 2021,
+        "published": "2021",
+        "publisher": "Dryad",
+        "reason": null,
+        "referenceCount": 4,
+        "registered": "2016-04-22T14:57:00.000Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.1126/science.352.6285.508",
+            "relatedIdentifierType": "DOI",
+            "relationType": "IsCitedBy"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rights": "Creative Commons Zero v1.0 Universal",
+            "rightsIdentifier": "cc0-1.0",
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [
+          "686192584 bytes"
+        ],
+        "source": "mds",
+        "state": "findable",
+        "subjects": [
+          {
+            "subject": "open access"
+          },
+          {
+            "subject": "scientific communication"
+          }
+        ],
+        "suffix": "dryad.q447c",
+        "titles": [
+          {
+            "title": "Data from: Who's downloading pirated papers? Everyone"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceType": "dataset",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2026-01-26T19:34:36.000Z",
+        "url": "https://datadryad.org/dataset/doi:10.5061/dryad.q447c",
+        "version": "2",
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "viewCount": 70277,
+        "viewsOverTime": [
+          {
+            "total": 1,
+            "yearMonth": "2014-11"
+          },
+          {
+            "total": 5607,
+            "yearMonth": "2016-04"
+          },
+          {
+            "total": 7244,
+            "yearMonth": "2016-05"
+          },
+          {
+            "total": 1127,
+            "yearMonth": "2016-06"
+          },
+          {
+            "total": 885,
+            "yearMonth": "2016-07"
+          },
+          {
+            "total": 899,
+            "yearMonth": "2016-08"
+          },
+          {
+            "total": 943,
+            "yearMonth": "2016-09"
+          },
+          {
+            "total": 501,
+            "yearMonth": "2016-10"
+          },
+          {
+            "total": 679,
+            "yearMonth": "2016-11"
+          },
+          {
+            "total": 824,
+            "yearMonth": "2016-12"
+          },
+          {
+            "total": 634,
+            "yearMonth": "2017-01"
+          },
+          {
+            "total": 974,
+            "yearMonth": "2017-02"
+          },
+          {
+            "total": 798,
+            "yearMonth": "2017-03"
+          },
+          {
+            "total": 870,
+            "yearMonth": "2017-04"
+          },
+          {
+            "total": 665,
+            "yearMonth": "2017-05"
+          },
+          {
+            "total": 928,
+            "yearMonth": "2017-06"
+          },
+          {
+            "total": 875,
+            "yearMonth": "2017-07"
+          },
+          {
+            "total": 926,
+            "yearMonth": "2017-08"
+          },
+          {
+            "total": 646,
+            "yearMonth": "2017-09"
+          },
+          {
+            "total": 574,
+            "yearMonth": "2017-10"
+          },
+          {
+            "total": 906,
+            "yearMonth": "2017-11"
+          },
+          {
+            "total": 1419,
+            "yearMonth": "2017-12"
+          },
+          {
+            "total": 733,
+            "yearMonth": "2018-01"
+          },
+          {
+            "total": 610,
+            "yearMonth": "2018-02"
+          },
+          {
+            "total": 541,
+            "yearMonth": "2018-03"
+          },
+          {
+            "total": 470,
+            "yearMonth": "2018-04"
+          },
+          {
+            "total": 501,
+            "yearMonth": "2018-05"
+          },
+          {
+            "total": 22,
+            "yearMonth": "2018-06"
+          },
+          {
+            "total": 275,
+            "yearMonth": "2018-09"
+          },
+          {
+            "total": 533,
+            "yearMonth": "2018-10"
+          },
+          {
+            "total": 707,
+            "yearMonth": "2018-11"
+          },
+          {
+            "total": 445,
+            "yearMonth": "2018-12"
+          },
+          {
+            "total": 509,
+            "yearMonth": "2019-01"
+          },
+          {
+            "total": 458,
+            "yearMonth": "2019-02"
+          },
+          {
+            "total": 536,
+            "yearMonth": "2019-03"
+          },
+          {
+            "total": 477,
+            "yearMonth": "2019-04"
+          },
+          {
+            "total": 438,
+            "yearMonth": "2019-05"
+          },
+          {
+            "total": 350,
+            "yearMonth": "2019-06"
+          },
+          {
+            "total": 372,
+            "yearMonth": "2019-07"
+          },
+          {
+            "total": 406,
+            "yearMonth": "2019-08"
+          },
+          {
+            "total": 406,
+            "yearMonth": "2019-09"
+          },
+          {
+            "total": 565,
+            "yearMonth": "2019-10"
+          },
+          {
+            "total": 450,
+            "yearMonth": "2019-12"
+          },
+          {
+            "total": 612,
+            "yearMonth": "2020-01"
+          },
+          {
+            "total": 406,
+            "yearMonth": "2020-02"
+          },
+          {
+            "total": 386,
+            "yearMonth": "2020-03"
+          },
+          {
+            "total": 803,
+            "yearMonth": "2020-04"
+          },
+          {
+            "total": 982,
+            "yearMonth": "2020-05"
+          },
+          {
+            "total": 430,
+            "yearMonth": "2020-06"
+          },
+          {
+            "total": 502,
+            "yearMonth": "2020-07"
+          },
+          {
+            "total": 163,
+            "yearMonth": "2020-08"
+          },
+          {
+            "total": 508,
+            "yearMonth": "2020-09"
+          },
+          {
+            "total": 598,
+            "yearMonth": "2020-10"
+          },
+          {
+            "total": 471,
+            "yearMonth": "2020-11"
+          },
+          {
+            "total": 566,
+            "yearMonth": "2020-12"
+          },
+          {
+            "total": 459,
+            "yearMonth": "2021-01"
+          },
+          {
+            "total": 300,
+            "yearMonth": "2021-02"
+          },
+          {
+            "total": 460,
+            "yearMonth": "2021-03"
+          },
+          {
+            "total": 405,
+            "yearMonth": "2021-04"
+          },
+          {
+            "total": 378,
+            "yearMonth": "2021-05"
+          },
+          {
+            "total": 371,
+            "yearMonth": "2021-06"
+          },
+          {
+            "total": 405,
+            "yearMonth": "2021-07"
+          },
+          {
+            "total": 1072,
+            "yearMonth": "2021-08"
+          },
+          {
+            "total": 909,
+            "yearMonth": "2021-09"
+          },
+          {
+            "total": 437,
+            "yearMonth": "2021-10"
+          },
+          {
+            "total": 520,
+            "yearMonth": "2021-11"
+          },
+          {
+            "total": 618,
+            "yearMonth": "2021-12"
+          },
+          {
+            "total": 474,
+            "yearMonth": "2022-01"
+          },
+          {
+            "total": 819,
+            "yearMonth": "2022-02"
+          },
+          {
+            "total": 749,
+            "yearMonth": "2022-03"
+          },
+          {
+            "total": 864,
+            "yearMonth": "2022-04"
+          },
+          {
+            "total": 629,
+            "yearMonth": "2022-05"
+          },
+          {
+            "total": 554,
+            "yearMonth": "2022-06"
+          },
+          {
+            "total": 550,
+            "yearMonth": "2022-07"
+          },
+          {
+            "total": 565,
+            "yearMonth": "2022-08"
+          },
+          {
+            "total": 519,
+            "yearMonth": "2022-09"
+          },
+          {
+            "total": 685,
+            "yearMonth": "2022-10"
+          },
+          {
+            "total": 723,
+            "yearMonth": "2022-11"
+          },
+          {
+            "total": 623,
+            "yearMonth": "2022-12"
+          },
+          {
+            "total": 665,
+            "yearMonth": "2023-01"
+          },
+          {
+            "total": 714,
+            "yearMonth": "2023-02"
+          },
+          {
+            "total": 731,
+            "yearMonth": "2023-03"
+          },
+          {
+            "total": 750,
+            "yearMonth": "2023-04"
+          },
+          {
+            "total": 616,
+            "yearMonth": "2023-05"
+          },
+          {
+            "total": 607,
+            "yearMonth": "2023-06"
+          },
+          {
+            "total": 604,
+            "yearMonth": "2023-07"
+          },
+          {
+            "total": 662,
+            "yearMonth": "2023-08"
+          },
+          {
+            "total": 663,
+            "yearMonth": "2023-09"
+          },
+          {
+            "total": 586,
+            "yearMonth": "2023-10"
+          },
+          {
+            "total": 533,
+            "yearMonth": "2023-11"
+          },
+          {
+            "total": 144,
+            "yearMonth": "2023-12"
+          },
+          {
+            "total": 188,
+            "yearMonth": "2024-01"
+          },
+          {
+            "total": 190,
+            "yearMonth": "2024-02"
+          },
+          {
+            "total": 184,
+            "yearMonth": "2024-03"
+          },
+          {
+            "total": 213,
+            "yearMonth": "2024-04"
+          },
+          {
+            "total": 225,
+            "yearMonth": "2024-05"
+          },
+          {
+            "total": 173,
+            "yearMonth": "2024-06"
+          },
+          {
+            "total": 168,
+            "yearMonth": "2024-07"
+          },
+          {
+            "total": 159,
+            "yearMonth": "2024-08"
+          },
+          {
+            "total": 275,
+            "yearMonth": "2024-09"
+          },
+          {
+            "total": 246,
+            "yearMonth": "2024-10"
+          },
+          {
+            "total": 196,
+            "yearMonth": "2024-11"
+          },
+          {
+            "total": 157,
+            "yearMonth": "2025-02"
+          },
+          {
+            "total": 171,
+            "yearMonth": "2025-04"
+          },
+          {
+            "total": 173,
+            "yearMonth": "2025-05"
+          },
+          {
+            "total": 135,
+            "yearMonth": "2025-06"
+          },
+          {
+            "total": 173,
+            "yearMonth": "2025-07"
+          },
+          {
+            "total": 138,
+            "yearMonth": "2025-08"
+          },
+          {
+            "total": 118,
+            "yearMonth": "2025-09"
+          },
+          {
+            "total": 79,
+            "yearMonth": "2025-10"
+          },
+          {
+            "total": 67,
+            "yearMonth": "2025-12"
+          },
+          {
+            "total": 96,
+            "yearMonth": "2026-01"
+          },
+          {
+            "total": 80,
+            "yearMonth": "2026-02"
+          },
+          {
+            "total": 81,
+            "yearMonth": "2026-03"
+          },
+          {
+            "total": 73,
+            "yearMonth": "2026-05"
+          }
+        ],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTA2MS9EUllBRC5RNDQ3QzwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+RWxiYWt5YW4sIEFsZXhhbmRyYTwvY3JlYXRvck5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iaHR0cDovL29yY2lkLm9yZy8iPjAwMDAtMDAwMy0xMjQ3LTc5NDE8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+LDwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+Qm9oYW5ub24sIEpvaG48L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24+LDwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRhdGEgZnJvbTogV2hvJ3MgZG93bmxvYWRpbmcgcGlyYXRlZCBwYXBlcnM/IEV2ZXJ5b25lPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyIHB1Ymxpc2hlcklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMHg2aDVuOTUiIHB1Ymxpc2hlcklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmcvIj5EcnlhZDwvcHVibGlzaGVyPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+ZGF0YXNldDwvcmVzb3VyY2VUeXBlPgogIDxwdWJsaWNhdGlvblllYXI+MjAyMTwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0Pm9wZW4gYWNjZXNzPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+c2NpZW50aWZpYyBjb21tdW5pY2F0aW9uPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCI+MjAxNi0wNC0yMVQxNzo1NzowNFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iSXNzdWVkIj4yMDE3LTA0LTIyVDAwOjAwOjAwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMTctMDQtMjJUMDA6MDA6MDBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMjEtMDgtMTZUMDA6MDA6MDBaPC9kYXRlPgogIDwvZGF0ZXM+CiAgPGxhbmd1YWdlPmVuPC9sYW5ndWFnZT4KICA8cmVsYXRlZElkZW50aWZpZXJzPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0aW9uVHlwZT0iSXNDaXRlZEJ5IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSI+aHR0cHM6Ly9kb2kub3JnLzEwLjExMjYvc2NpZW5jZS4zNTIuNjI4NS41MDg8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxzaXplcz4KICAgIDxzaXplPjY4NjE5MjU4NCBieXRlczwvc2l6ZT4KICA8L3NpemVzPgogIDx2ZXJzaW9uPjI8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9zcGR4Lm9yZy9saWNlbnNlcy9DQzAtMS4wLmh0bWwiPkNyZWF0aXZlIENvbW1vbnMgWmVybyB2MS4wIFVuaXZlcnNhbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPgogICAgICBJbiBpbmNyZWFzaW5nIG51bWJlcnMsIHJlc2VhcmNoZXJzIGFyb3VuZCB0aGUgd29ybGQgYXJlIHR1cm5pbmcgdG8KICAgICAgU2NpLUh1YiwgdGhlIGNvbnRyb3ZlcnNpYWwgd2Vic2l0ZSB0aGF0IGhvc3RzIDUwIG1pbGxpb24gcGlyYXRlZCBwYXBlcnMKICAgICAgYW5kIGNvdW50aW5nLiBOb3csIHdpdGggc2VydmVyIGxvZyBkYXRhIGZyb20gQWxleGFuZHJhIEVsYmFreWFuLCB0aGUKICAgICAgbmV1cm9zY2llbnRpc3Qgd2hvIGNyZWF0ZWQgU2NpLUh1YiBpbiAyMDExIGFzIGEgMjIteWVhci1vbGQgZ3JhZHVhdGUKICAgICAgc3R1ZGVudCBpbiBLYXpha2hzdGFuLCBTY2llbmNlIGFkZHJlc3NlcyBzb21lIGJhc2ljIHF1ZXN0aW9uczogV2hvIGFyZQogICAgICBTY2ktSHViJ3MgdXNlcnMsIHdoZXJlIGFyZSB0aGV5LCBhbmQgd2hhdCBhcmUgdGhleSByZWFkaW5nPyBUaGUKICAgICAgU2NpLUh1YiBkYXRhIHByb3ZpZGUgdGhlIGZpcnN0IGRldGFpbGVkIHZpZXcgb2Ygd2hhdCBpcyBiZWNvbWluZyB0aGUKICAgICAgd29ybGQncyBkZSBmYWN0byBvcGVuLWFjY2VzcyByZXNlYXJjaCBsaWJyYXJ5LiBBbW9uZyB0aGUgcmV2ZWxhdGlvbnMKICAgICAgdGhhdCBtYXkgc3VycHJpc2UgYm90aCBmYW5zIGFuZCBmb2VzIGFsaWtlOiBTY2ktSHViIHVzZXJzIGFyZSBub3QgbGltaXRlZAogICAgICB0byB0aGUgZGV2ZWxvcGluZyB3b3JsZC4gU29tZSBjcml0aWNzIG9mIFNjaS1IdWIgaGF2ZSBjb21wbGFpbmVkIHRoYXQgbWFueQogICAgICB1c2VycyBjYW4gYWNjZXNzIHRoZSBzYW1lIHBhcGVycyB0aHJvdWdoIHRoZWlyIGxpYnJhcmllcyBidXQgdHVybiB0bwogICAgICBTY2ktSHViIGluc3RlYWTigJRmb3IgY29udmVuaWVuY2UgcmF0aGVyIHRoYW4gbmVjZXNzaXR5LiBUaGUgZGF0YSBwcm92aWRlCiAgICAgIHNvbWUgc3VwcG9ydCBmb3IgdGhhdCBjbGFpbS4gT3ZlciB0aGUgNiBtb250aHMgbGVhZGluZyB1cCB0byBNYXJjaCwKICAgICAgU2NpLUh1YiBzZXJ2ZWQgdXAgMjggbWlsbGlvbiBkb2N1bWVudHMsIHdpdGggSXJhbiwgQ2hpbmEsIEluZGlhLCBSdXNzaWEsCiAgICAgIGFuZCB0aGUgVW5pdGVkIFN0YXRlcyB0aGUgbGVhZGluZyByZXF1ZXN0b3JzLgogICAgPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik90aGVyIj4KICAgICAgJmx0O2RpdiBjbGFzcz0iby1tZXRhZGF0YV9fZmlsZS11c2FnZS1lbnRyeSImZ3Q7Jmx0O2g0CiAgICAgIGNsYXNzPSJvLWhlYWRpbmdfX2xldmVsMy1maWxlLXRpdGxlIiZndDtTY2ktSHViIGRvd25sb2FkCiAgICAgIGRhdGEmbHQ7L2g0Jmd0OyZsdDtkaXYKICAgICAgY2xhc3M9Im8tbWV0YWRhdGFfX2ZpbGUtZGVzY3JpcHRpb24iJmd0O1RoZXNlIGRhdGEgaW5jbHVkZSAyOAogICAgICBtaWxsaW9uIGRvd25sb2FkIHJlcXVlc3QgZXZlbnRzIGZyb20gdGhlIHNlcnZlciBsb2dzIG9mIFNjaS1IdWIgZnJvbSAxCiAgICAgIFNlcHRlbWJlciAyMDE1IHRocm91Z2ggMjkgRmVicnVhcnkgMjAxNi4gVGhlIHVuY29tcHJlc3NlZCAyLjcgZ2lnYWJ5dGVzIG9mCiAgICAgIGRhdGEgYXJlIHNlcGFyYXRlZCBpbnRvIDYgZGF0YSBmaWxlcywgb25lIGZvciBlYWNoIG1vbnRoLCBpbiB0YWItZGVsaW1pdGVkCiAgICAgIHRleHQgZm9ybWF0LiZsdDsvZGl2Jmd0OyZsdDtkaXYKICAgICAgY2xhc3M9Im8tbWV0YWRhdGFfX2ZpbGUtbmFtZSImZ3Q7c2NpaHViX2RhdGEuemlwJmx0Oy9iciZndDsmbHQ7L2RpdiZndDsmbHQ7L2RpdiZndDsmbHQ7ZGl2IGNsYXNzPSJvLW1ldGFkYXRhX19maWxlLXVzYWdlLWVudHJ5IiZndDsmbHQ7aDQgY2xhc3M9Im8taGVhZGluZ19fbGV2ZWwzLWZpbGUtdGl0bGUiJmd0O0lQeXRob24gTm90ZWJvb2sgZm9yIFNjaS1IdWIgcmF3IGRhdGEmbHQ7L2g0Jmd0OyZsdDtkaXYgY2xhc3M9Im8tbWV0YWRhdGFfX2ZpbGUtZGVzY3JpcHRpb24iJmd0O0lQeXRob24gTm90ZWJvb2sgdXNlZCB0byBwcm9jZXNzIHRoZSByYXcgc2VydmVyIGxvZyBkYXRhIChwcm9jZXNzaW5nIHRoZSBHSVMgZmlsZXMgaW50byBDU1YsIHNjcmFwaW5nIERPSSBtZXRhZGF0YSwgZXRjLikuJmx0Oy9kaXYmZ3Q7Jmx0O2RpdiBjbGFzcz0iby1tZXRhZGF0YV9fZmlsZS1uYW1lIiZndDtTY2ktSHViLmh0bWwmbHQ7L2JyJmd0OyZsdDsvZGl2Jmd0OyZsdDtkaXYgY2xhc3M9Im8tbWV0YWRhdGFfX2ZpbGUtbmFtZSImZ3Q7U2NpLUh1Yi5pcHluYiZsdDsvYnImZ3Q7Jmx0Oy9kaXYmZ3Q7Jmx0Oy9kaXYmZ3Q7Jmx0O2RpdiBjbGFzcz0iby1tZXRhZGF0YV9fZmlsZS11c2FnZS1lbnRyeSImZ3Q7Jmx0O2g0IGNsYXNzPSJvLWhlYWRpbmdfX2xldmVsMy1maWxlLXRpdGxlIiZndDtTY2ktSHViIHB1Ymxpc2hlciBET0kgcHJlZml4ZXMmbHQ7L2g0Jmd0OyZsdDtkaXYgY2xhc3M9Im8tbWV0YWRhdGFfX2ZpbGUtZGVzY3JpcHRpb24iJmd0O0RhdGEgc2NyYXBlZCBmcm9tIHRoZSBDcm9zc1JlZiB3ZWJzaXRlIHdoaWNoIGNhbiBiZSB1c2VkIHRvIHJlcGxpY2F0ZSB0aGUgYW5hbHlzaXMgb2YgZG93bmxvYWRzIGJ5IHB1Ymxpc2hlci4mbHQ7L2RpdiZndDsmbHQ7ZGl2IGNsYXNzPSJvLW1ldGFkYXRhX19maWxlLW5hbWUiJmd0O3B1Ymxpc2hlcl9ET0lfcHJlZml4ZXMuY3N2Jmx0Oy9iciZndDsmbHQ7L2RpdiZndDsmbHQ7L2RpdiZndDsKICAgIDwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CiAgPGdlb0xvY2F0aW9ucz4KICAgIDxnZW9Mb2NhdGlvbj4KICAgICAgPGdlb0xvY2F0aW9uUGxhY2U+Z2xvYmFsPC9nZW9Mb2NhdGlvblBsYWNlPgogICAgPC9nZW9Mb2NhdGlvbj4KICAgIDxnZW9Mb2NhdGlvbj4KICAgICAgPGdlb0xvY2F0aW9uUGxhY2U+R2xvYmFsPC9nZW9Mb2NhdGlvblBsYWNlPgogICAgPC9nZW9Mb2NhdGlvbj4KICA8L2dlb0xvY2F0aW9ucz4KPC9yZXNvdXJjZT4="
+      },
+      "id": "10.5061/dryad.q447c",
+      "relationships": {
+        "citations": {
+          "data": [
+            {
+              "id": "10.1126/science.352.6285.508",
+              "type": "dois"
+            },
+            {
+              "id": "10.12688/f1000research.11366.1",
+              "type": "dois"
+            },
+            {
+              "id": "10.1101/124495",
+              "type": "dois"
+            },
+            {
+              "id": "10.1080/24701475.2025.2482459",
+              "type": "dois"
+            }
+          ]
+        },
+        "client": {
+          "data": {
+            "id": "dryad.dryad",
+            "type": "clients"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5061/dryad.q447c",
+            "type": "media"
+          }
+        },
+        "partOf": {
+          "data": []
+        },
+        "parts": {
+          "data": [
+            {
+              "id": "10.5061/dryad.q447c/1",
+              "type": "dois"
+            },
+            {
+              "id": "10.5061/dryad.q447c/2",
+              "type": "dois"
+            },
+            {
+              "id": "10.5061/dryad.q447c/3",
+              "type": "dois"
+            }
+          ]
+        },
+        "provider": {
+          "data": {
+            "id": "dryad",
+            "type": "providers"
+          }
+        },
+        "references": {
+          "data": [
+            {
+              "id": "10.1126/science.352.6285.508",
+              "type": "dois"
+            },
+            {
+              "id": "10.5281/zenodo.1236236",
+              "type": "dois"
+            },
+            {
+              "id": "10.5281/zenodo.1286284",
+              "type": "dois"
+            },
+            {
+              "id": "10.5281/zenodo.1236237",
+              "type": "dois"
+            }
+          ]
+        },
+        "versionOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        }
+      },
+      "type": "dois"
+    }
+  },
+  "response_hash": "22d5cb9e56e3189f0898fb5a0fd0432d43d1b20da0a3b81659b8e0c65f0d1b96",
+  "retrieved_at": "2026-07-14T12:55:34Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

@@ -1,0 +1,21 @@
+{
+  "endpoint": "query",
+  "request_key": "412e66a2060fc33871d32a08ccc6cba6cd5aab44299702e4cf5a26ac0f23e84b",
+  "request_params": {
+    "id_list": "not-an-id"
+  },
+  "response_body": {
+    "entries": [],
+    "error": {
+      "id": "https://arxiv.org/api/errors#incorrect_id_format_for_not-an-id",
+      "summary": "incorrect id format for not-an-id"
+    },
+    "items_per_page": 1,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "9c46c452f2c2e1a793177118b910a57c5c1156820228309239fd23394ad4fdac",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

@@ -1,0 +1,390 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "62354ce07a0e071865f543a66024239c0ed1459d0172469d164d0b85ee13c743",
+  "request_params": {
+    "db": "pubmed",
+    "id": "37948139,41446031,37961713,40093248,41337234",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "This paper presents a systematic investigation into the effectiveness of Self-Supervised Learning (SSL) methods for Electrocardiogram (ECG) arrhythmia detection. We begin by conducting a novel analysis of the data distributions on three popular ECG-based arrhythmia datasets: PTB-XL, Chapman, and Ribeiro. To the best of our knowledge, our study is the first to quantitatively explore and characterize these distributions in the area. We then perform a comprehensive set of experiments using different augmentations and parameters to evaluate the effectiveness of various SSL methods, namely SimCRL, BYOL, and SwAV, for ECG representation learning, where we observe the best performance achieved by SwAV. Furthermore, our analysis shows that SSL methods achieve highly competitive results to those achieved by supervised state-of-the-art methods. To further assess the performance of these methods on both In-Distribution (ID) and Out-of-Distribution (OOD) ECG data, we conduct cross-dataset training and testing experiments. Our comprehensive experiments show almost identical results when comparing ID and OOD schemes, indicating that SSL techniques can learn highly effective representations that generalize well across different OOD datasets. This finding can have major implications for ECG-based arrhythmia detection. Lastly, to further analyze our results, we perform detailed per-disease studies on the performance of the SSL methods on the three datasets.",
+        "authors": [
+          {
+            "family": "Soltanieh",
+            "given": "Sahar"
+          },
+          {
+            "family": "Hashemi",
+            "given": "Javad"
+          },
+          {
+            "family": "Etemad",
+            "given": "Ali"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1109/JBHI.2023.3331626",
+        "issn": [
+          "2168-2208"
+        ],
+        "issue": "2",
+        "journal": "IEEE journal of biomedical and health informatics",
+        "journal_abbreviation": "IEEE J Biomed Health Inform",
+        "keywords": [],
+        "language": "eng",
+        "month": 2,
+        "page": "789-800",
+        "pmcid": "",
+        "pmid": "37948139",
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "record_type": "article",
+        "title": "In-Distribution and Out-of-Distribution Self-Supervised ECG Representation Learning for Arrhythmia Detection.",
+        "volume": "28",
+        "year": 2024
+      },
+      {
+        "abstract": "BACKGROUND: The wide availability of labeled electrocardiogram (ECG) data has driven major advances in artificial intelligence (AI)-based detection of structural and functional cardiac abnormalities and thus ECG-based diagnosis. However, many critical, high value clinical diagnostic applications, such as assessing myocardial ischemia and coronary microvascular dysfunction, remain underserved due to the limited availability of labeled datasets. We developed a self-supervised ECG foundation model and demonstrate how this approach can overcome this limitation. METHODS: A modified vision transformer model was pretrained using a large database of unlabeled ECG waveforms (MIMIC-IV-ECG, N=800,035). The model was then fine-tuned using smaller databases that included high-quality labels derived from positron emission tomography (N=3,126) and clinical reports (N=13,704) for 12 clinical, demographic, and traditional ECG prediction tasks. Diagnostic accuracy and model generalizability were evaluated across five additional cohorts including the publicly available PTB-XL and UK Biobank databases and labels from cardiac magnetic resonance imaging (MRI) and single photon emission computed tomography (SPECT). RESULTS: Diagnostic performance varied across tasks with area under the receiver operating characteristic curve (AUROC) ranging from 0.763 for detection of impaired myocardial flow reserve (MFR < 2) to 0.955 for impaired left ventricular ejection fraction (LVEF < 35%). Self-supervised learning (SSL) pretraining greatly improved diagnostic accuracy in 11 of the 12 prediction tasks compared to conventional de novo supervised training. The model retained strong performance across three external and two internal cross-modality databases, with AUROC ranging from 0.771 for impaired MFR to 0.949 for impaired LVEF. CONCLUSION: This versatile ECG foundation model demonstrates that SSL pretraining enhances diagnostic accuracy and generalizability across diverse cardiac diagnostic applications. By enabling effective learning from limited labeled data, this approach supports AI development for complex but clinically critical tasks, such as detecting myocardial ischemia and coronary microvascular dysfunction, where high-quality labels are costly and scarce.",
+        "authors": [
+          {
+            "family": "Moody",
+            "given": "Jonathan B"
+          },
+          {
+            "family": "Poitrasson-Rivière",
+            "given": "Alexis"
+          },
+          {
+            "family": "Renaud",
+            "given": "Jennifer M"
+          },
+          {
+            "family": "Hagio",
+            "given": "Tomoe"
+          },
+          {
+            "family": "Alahdab",
+            "given": "Fares"
+          },
+          {
+            "family": "Al-Mallah",
+            "given": "Mouaz H"
+          },
+          {
+            "family": "Vanderver",
+            "given": "Michael D"
+          },
+          {
+            "family": "Goonewardena",
+            "given": "Sascha N"
+          },
+          {
+            "family": "Ficaro",
+            "given": "Edward P"
+          },
+          {
+            "family": "Murthy",
+            "given": "Venkatesh L"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1056/aioa2500164",
+        "issn": [
+          "2836-9386"
+        ],
+        "issue": "12",
+        "journal": "NEJM AI",
+        "journal_abbreviation": "NEJM AI",
+        "keywords": [],
+        "language": "eng",
+        "month": 12,
+        "page": "",
+        "pmcid": "PMC12724683",
+        "pmid": "41446031",
+        "publication_types": [
+          "Journal Article"
+        ],
+        "record_type": "article",
+        "title": "A foundation transformer model with self-supervised learning for ECG-based assessment of cardiac and coronary function.",
+        "volume": "2",
+        "year": 2025
+      },
+      {
+        "abstract": "Background: Although deep learning methods have shown great promise for identification of structural and functional cardiac abnormalities using electrocardiographic data, these methods are data hungry, posing a challenge for critically important tasks where ground truth labels are relatively scarce. Impaired coronary microvascular and vasomotor function is difficult to identify with standard clinical methods of cardiovascular testing such as coronary angiography and noninvasive single photon emission tomography (SPECT) myocardial perfusion imaging (MPI). Gold standard data from positron emission tomography (PET) are gaining emphasis in clinical guidelines but are expensive and only available in relatively limited centers. We hypothesized that signals embedded within resting and stress electrocardiograms (ECGs) identify individuals with microvascular and vasomotor dysfunction. Methods: We developed and pretrained a self-supervised foundation vision transformer model using a large database of unlabeled ECG waveforms (N=800,035). We then fine-tuned the foundation model for two clinical tasks: the difficult problem of identifying patients with impaired myocardial flow reserve (AI-MFR), and the relatively easier problem of detecting impaired LVEF (AI-LVEF). A second ECG database was labeled with task-specific annotations derived from quantitative PET MPI (N=4167). Diagnostic accuracy of AI predictions was tested in a holdout set of patients undergoing PET MPI (N=1031). Prognostic evaluation was performed in the PET holdout cohort, as well as independent cohorts of patients undergoing pharmacologic or exercise stress SPECT MPI (N=6635). Results: The diagnostic accuracy of AI-MFR with SSL pretraining increased significantly compared to de novo supervised training (AUROC, sensitivity, specificity: 0.758, 70.1%, 69.4% vs. 0.632, 66.1%, 57.3%, p < 0.0001). SSL pretraining also produced a smaller increase in AI-LVEF accuracy (AUROC, sensitivity, specificity: 0.946, 89.4%, 85.9% vs. 0.918, 87.6%, 82.5%, p < 0.02). Abnormal AI-MFR was found to be significantly associated with mortality risk in all three test cohorts (Hazard Ratio (HR) 2.61 [95% CI 1.83, 3.71], p < 0.0001, PET cohort; HR 2.30 [2.03, 2.61], p < 0.0001, pharmacologic stress SPECT cohort; HR 3.76 [2.36, 5.99], p < 0.0001, exercise stress SPECT cohort). Conclusion: SSL pretraining of a vision transformer foundation model enabled identification of signals predictive of impaired MFR, a hallmark of microvascular and vasomotor dysfunction, and impaired LV function in resting and stress ECG waveforms. These signals are powerful predictors of prognosis in patients undergoing routine noninvasive stress testing and could enable more efficient diagnosis and management of these common conditions.",
+        "authors": [
+          {
+            "family": "Moody",
+            "given": "Jonathan B"
+          },
+          {
+            "family": "Poitrasson-Rivière",
+            "given": "Alexis"
+          },
+          {
+            "family": "Renaud",
+            "given": "Jennifer M"
+          },
+          {
+            "family": "Hagio",
+            "given": "Tomoe"
+          },
+          {
+            "family": "Alahdab",
+            "given": "Fares"
+          },
+          {
+            "family": "Al-Mallah",
+            "given": "Mouaz H"
+          },
+          {
+            "family": "Vanderver",
+            "given": "Michael D"
+          },
+          {
+            "family": "Ficaro",
+            "given": "Edward P"
+          },
+          {
+            "family": "Murthy",
+            "given": "Venkatesh L"
+          }
+        ],
+        "date_raw": "",
+        "day": 21,
+        "doi": "10.1101/2023.10.25.23297552",
+        "issn": [],
+        "issue": "",
+        "journal": "medRxiv : the preprint server for health sciences",
+        "journal_abbreviation": "medRxiv",
+        "keywords": [],
+        "language": "eng",
+        "month": 5,
+        "page": "2023.10.25.23297552",
+        "pmcid": "PMC10635192",
+        "pmid": "37961713",
+        "publication_types": [
+          "Journal Article",
+          "Preprint"
+        ],
+        "record_type": "article",
+        "title": "Self-supervised deep representation learning of a foundation transformer model enabling efficient ECG-based assessment of cardiac and coronary function with limited labels.",
+        "volume": "",
+        "year": 2024
+      },
+      {
+        "abstract": "BACKGROUND: The 12-lead electrocardiogram (ECG) remains a cornerstone of cardiac diagnostics, yet existing artificial intelligence (AI) solutions for automated interpretation often lack generalizability, remain closed-source, and are primarily trained using supervised learning, limiting their adaptability across diverse clinical settings. To address these challenges, we developed and compared two open-source foundational ECG models: DeepECG-SSL, a self-supervised learning model, and DeepECG-SL, a supervised learning model. METHODS: Both models were trained on over 1 million ECGs using a standardized preprocessing pipeline and automated free-text extraction from ECG reports to predict 77 cardiac conditions. DeepECG-SSL was pretrained using self-supervised contrastive learning and masked lead modeling. The models were evaluated on six multilingual private healthcare systems and four public datasets for ECG interpretation across 77 diagnostic categories. Fairness analyses assessed disparities in performance across age and sex groups, while also investigating fairness and resource utilization. RESULTS: DeepECG-SSL achieved AUROCs of 0.990 (95%CI 0.990, 0.990) on internal dataset, 0.981 (95%CI 0.981, 0.981) on external public datasets, and 0.983 (95%CI 0.983, 0.983) on external private datasets, while DeepECG-SL demonstrated AUROCs of 0.992 (95%CI 0.992, 0.992), 0.980 (95%CI 0.980, 0.980) and 0.983 (95%CI 0.983, 0.983) respectively. Fairness analyses revealed minimal disparities (true positive rate & false positive rate difference<0.010) across age and sex groups. Digital biomarker prediction (Long QT syndrome (LQTS) classification, 5-year atrial fibrillation prediction and left ventricular ejection fraction (LVEF) classification) with limited labeled data, DeepECG-SSL outperformed DeepECG-SL in predicting 5-year atrial fibrillation risk (N=132,050; AUROC 0.742 vs. 0.720; Δ=0.022; P<0.001), identifying reduced LVEF ≤40% (N=25,252; 0.928 vs. 0.900; Δ=0.028; P<0.001), and classifying LQTS syndrome subtypes (N=127; 0.931 vs. 0.853; Δ=0.078; P=0.026). CONCLUSION: By releasing model weights, preprocessing tools, and validation code, we aim to support robust, data-efficient AI diagnostics across diverse clinical environments. This study establishes self-supervised learning as a promising paradigm for ECG analysis, particularly in settings with limited annotated data, enhancing accessibility, generalizability, and fairness in AI-driven cardiac diagnostics.",
+        "authors": [
+          {
+            "family": "Nolin-Lapalme",
+            "given": "Alexis"
+          },
+          {
+            "family": "Sowa",
+            "given": "Achille"
+          },
+          {
+            "family": "Delfrate",
+            "given": "Jacques"
+          },
+          {
+            "family": "Tastet",
+            "given": "Olivier"
+          },
+          {
+            "family": "Corbin",
+            "given": "Denis"
+          },
+          {
+            "family": "Kulbay",
+            "given": "Merve"
+          },
+          {
+            "family": "Ozdemir",
+            "given": "Derman"
+          },
+          {
+            "family": "Noël",
+            "given": "Marie-Jeanne"
+          },
+          {
+            "family": "Marois-Blanchet",
+            "given": "François-Christophe"
+          },
+          {
+            "family": "Harvey",
+            "given": "François"
+          },
+          {
+            "family": "Sharma",
+            "given": "Surbhi"
+          },
+          {
+            "family": "Ansari",
+            "given": "Minhaj"
+          },
+          {
+            "family": "Chiu",
+            "given": "I-Min"
+          },
+          {
+            "family": "Dsouza",
+            "given": "Valentina"
+          },
+          {
+            "family": "Friedman",
+            "given": "Sam F"
+          },
+          {
+            "family": "Chassé",
+            "given": "Michaël"
+          },
+          {
+            "family": "Potter",
+            "given": "Brian J"
+          },
+          {
+            "family": "Afilalo",
+            "given": "Jonathan"
+          },
+          {
+            "family": "Elias",
+            "given": "Pierre Adil"
+          },
+          {
+            "family": "Jabbour",
+            "given": "Gilbert"
+          },
+          {
+            "family": "Bahani",
+            "given": "Mourad"
+          },
+          {
+            "family": "Dubé",
+            "given": "Marie-Pierre"
+          },
+          {
+            "family": "Boyle",
+            "given": "Patrick M"
+          },
+          {
+            "family": "Chatterjee",
+            "given": "Neal A"
+          },
+          {
+            "family": "Barrios",
+            "given": "Joshua"
+          },
+          {
+            "family": "Tison",
+            "given": "Geoffrey H"
+          },
+          {
+            "family": "Ouyang",
+            "given": "David"
+          },
+          {
+            "family": "Maddah",
+            "given": "Mahnaz"
+          },
+          {
+            "family": "Khurshid",
+            "given": "Shaan"
+          },
+          {
+            "family": "Cadrin-Tourigny",
+            "given": "Julia"
+          },
+          {
+            "family": "Tadros",
+            "given": "Rafik"
+          },
+          {
+            "family": "Hussin",
+            "given": "Julie"
+          },
+          {
+            "family": "Avram",
+            "given": "Robert"
+          }
+        ],
+        "date_raw": "",
+        "day": 5,
+        "doi": "10.1101/2025.03.02.25322575",
+        "issn": [],
+        "issue": "",
+        "journal": "medRxiv : the preprint server for health sciences",
+        "journal_abbreviation": "medRxiv",
+        "keywords": [
+          "Artificial intelligence",
+          "Electrocardiogram",
+          "Fairness",
+          "Foundation model",
+          "Generalizability",
+          "Privacy"
+        ],
+        "language": "eng",
+        "month": 3,
+        "page": "2025.03.02.25322575",
+        "pmcid": "PMC11908279",
+        "pmid": "40093248",
+        "publication_types": [
+          "Journal Article",
+          "Preprint"
+        ],
+        "record_type": "article",
+        "title": "Foundation models for generalizable electrocardiogram interpretation: comparison of supervised and self-supervised electrocardiogram foundation models.",
+        "volume": "",
+        "year": 2025
+      },
+      {
+        "abstract": "Electrocardiograms (ECG) offer a quick and noninvasive method to analyze heart disorders. However, analysis of ECGs under non-ideal or noisy situations presents challenges, even for experts. Recently, automated analysis of biosignals using machine learning has gained popularity. However, approaches require large amounts of data, and the scarcity of large public datasets can result in poor generalization and increased sensitivity to noise. This study proposes the self-supervised pre-training of a Mamba-based model to denoise ECG data, and use the resulting latent representation for downstream ECG classification tasks. Our results shows that pretraining a self-supervised Mamba-based model increases robustness to noise, increasing classification performance in noisy situations. Furthermore, we evaluate optimal noise parameters to pre-train the model, and show that the proposed approach offers better performance with reduced computational cost compared to an equivalent transformer-based approach.",
+        "authors": [
+          {
+            "family": "Parmonangan",
+            "given": "Ivan Halim"
+          },
+          {
+            "family": "Fernando",
+            "given": "Tharindu"
+          },
+          {
+            "family": "Denman",
+            "given": "Simon"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1109/EMBC58623.2025.11253901",
+        "issn": [
+          "2694-0604"
+        ],
+        "issue": "",
+        "journal": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
+        "journal_abbreviation": "Annu Int Conf IEEE Eng Med Biol Soc",
+        "keywords": [],
+        "language": "eng",
+        "month": 7,
+        "page": "1-7",
+        "pmcid": "",
+        "pmid": "41337234",
+        "publication_types": [
+          "Journal Article"
+        ],
+        "record_type": "article",
+        "title": "Robust ECG Classification using Mamba and Self-Supervised Representation Learning.",
+        "volume": "2025",
+        "year": 2025
+      }
+    ]
+  },
+  "response_hash": "5ac7e4a819fd04c50b365b0ad5295c317bf034187ea1a9659d9191c1bc72ecc6",
+  "retrieved_at": "2026-07-14T12:58:14Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

@@ -1,0 +1,47 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "58f1c1c5361d74e0507e94c34001241d985b37643d3193dbbfd1c99e78f002f2",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 25,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "zzzqqxxvv nonexistent phrase 12345 qqq"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "0",
+      "errorlist": {
+        "fieldsnotfound": [],
+        "phrasesnotfound": [
+          "zzzqqxxvv"
+        ]
+      },
+      "idlist": [],
+      "querytranslation": "\"nonexistent\"[All Fields] AND (\"phrase\"[All Fields] OR \"phrase s\"[All Fields] OR \"phrased\"[All Fields] OR \"phrases\"[All Fields] OR \"phrasing\"[All Fields] OR \"phrasings\"[All Fields]) AND \"12345\"[All Fields] AND \"qqq\"[All Fields]",
+      "retmax": "0",
+      "retstart": "0",
+      "translationset": [
+        {
+          "from": "phrase",
+          "to": "\"phrase\"[All Fields] OR \"phrase's\"[All Fields] OR \"phrased\"[All Fields] OR \"phrases\"[All Fields] OR \"phrasing\"[All Fields] OR \"phrasings\"[All Fields]"
+        }
+      ],
+      "warninglist": {
+        "outputmessages": [
+          "No items found."
+        ],
+        "phrasesignored": [],
+        "quotedphrasesnotfound": []
+      }
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "f0dc6ae396ed232d59d35299a70b1d824e9c55e7e2a70be4a9ffa5b0bdc8d047",
+  "retrieved_at": "2026-07-14T12:58:18Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

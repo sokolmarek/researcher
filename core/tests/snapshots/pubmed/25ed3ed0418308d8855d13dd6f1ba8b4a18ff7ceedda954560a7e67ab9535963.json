@@ -1,0 +1,31 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "25ed3ed0418308d8855d13dd6f1ba8b4a18ff7ceedda954560a7e67ab9535963",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "PMC8371605[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "34265844"
+      ],
+      "querytranslation": "\"PMC8371605\"[Publisher ID]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": []
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "61dc6e22ba4f600ba2aed64700aef14162d0b56272b0da0ba257a0b1485435eb",
+  "retrieved_at": "2026-07-14T12:58:15Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

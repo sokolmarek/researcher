@@ -1,0 +1,526 @@
+{
+  "endpoint": "works",
+  "request_key": "5a5216b23d7b3cf7560ae7ed0b39c2dd3549276f8cfdeba4434db232d6dad03b",
+  "request_params": {
+    "query.bibliographic": "self-supervised ECG",
+    "rows": 3
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.32920/22734386",
+          "URL": "https://doi.org/10.32920/22734386",
+          "abstract": "<jats:p>&lt;p&gt;In recent literature, ECG-based stress assessment has become popular due to its proven correlation to stress and increased accessibility of ECG data through commodity hardware. However, most ECG-based stress assessment models use supervised learning, relying on manually-annotated data. Limited research is done in the area of self-supervised learning (SSL) approaches that leverage unlabelled data and none that utilize contrastive SSL. However, with the dominance of contrastive SSL in domains such as computer vision, it is essential to see if the same excellence in performance can be obtained on an ECG-based stress assessment dataset. In this paper, we propose a contrastive SSL model for stress assessment using ECG signals based on the SimCLR framework. We test our model on two ECG-based stress assessment datasets. We show that our proposed solution results in a 9% improvement in accuracy on the WESAD dataset and 3.7% on the RML dataset when compared with SOTA ECG-based SSL models for stress assessment. The development of more accurate stress assessment models, particularly those that employ non-invasive data such as ECG for assessment, leads to developments in wearable technology and the creation of better health monitoring applications in areas such as stress management and relaxation therapy.&lt;/p&gt;</jats:p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Rabbani",
+              "given": "Suha",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Khan",
+              "given": "Naimul",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ],
+            "date-time": "2023-05-03T15:59:35Z",
+            "timestamp": 1683129575000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ],
+            "date-time": "2023-05-03T15:59:35Z",
+            "timestamp": 1683129575000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                4
+              ]
+            ],
+            "date-time": "2024-03-04T02:14:06Z",
+            "timestamp": 1709518446332
+          },
+          "institution": [
+            {
+              "name": "Toronto Metropolitan University"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    5,
+                    3
+                  ]
+                ],
+                "date-time": "2023-05-03T00:00:00Z",
+                "timestamp": 1683072000000
+              }
+            }
+          ],
+          "member": "18300",
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "prefix": "10.32920",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "publisher": "Ryerson University Library and Archives",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-preprint-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.3390/bioengineering9080374",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://rshare.library.torontomu.ca/articles/journal_contribution/Contrastive_Self-Supervised_Learning_for_Stress_Detection_from_ECG_Data/22734386"
+            }
+          },
+          "score": 27.181723,
+          "source": "Crossref",
+          "subtype": "other",
+          "title": [
+            "Contrastive Self-Supervised Learning for Stress Detection from ECG Data"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.32920/22734386.v1",
+          "URL": "https://doi.org/10.32920/22734386.v1",
+          "abstract": "<jats:p>&lt;p&gt;In recent literature, ECG-based stress assessment has become popular due to its proven correlation to stress and increased accessibility of ECG data through commodity hardware. However, most ECG-based stress assessment models use supervised learning, relying on manually-annotated data. Limited research is done in the area of self-supervised learning (SSL) approaches that leverage unlabelled data and none that utilize contrastive SSL. However, with the dominance of contrastive SSL in domains such as computer vision, it is essential to see if the same excellence in performance can be obtained on an ECG-based stress assessment dataset. In this paper, we propose a contrastive SSL model for stress assessment using ECG signals based on the SimCLR framework. We test our model on two ECG-based stress assessment datasets. We show that our proposed solution results in a 9% improvement in accuracy on the WESAD dataset and 3.7% on the RML dataset when compared with SOTA ECG-based SSL models for stress assessment. The development of more accurate stress assessment models, particularly those that employ non-invasive data such as ECG for assessment, leads to developments in wearable technology and the creation of better health monitoring applications in areas such as stress management and relaxation therapy.&lt;/p&gt;</jats:p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Rabbani",
+              "given": "Suha",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Khan",
+              "given": "Naimul",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ],
+            "date-time": "2023-05-03T15:59:39Z",
+            "timestamp": 1683129579000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ],
+            "date-time": "2023-05-03T15:59:39Z",
+            "timestamp": 1683129579000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                4
+              ]
+            ],
+            "date-time": "2024-03-04T02:14:07Z",
+            "timestamp": 1709518447041
+          },
+          "institution": [
+            {
+              "name": "Toronto Metropolitan University"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    5,
+                    3
+                  ]
+                ],
+                "date-time": "2023-05-03T00:00:00Z",
+                "timestamp": 1683072000000
+              }
+            }
+          ],
+          "member": "18300",
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "prefix": "10.32920",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "publisher": "Ryerson University Library and Archives",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-preprint-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.3390/bioengineering9080374",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://rshare.library.torontomu.ca/articles/journal_contribution/Contrastive_Self-Supervised_Learning_for_Stress_Detection_from_ECG_Data/22734386/1"
+            }
+          },
+          "score": 27.007954,
+          "source": "Crossref",
+          "subtype": "other",
+          "title": [
+            "Contrastive Self-Supervised Learning for Stress Detection from ECG Data"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.1016/j.jelectrocard.2025.153947",
+          "ISSN": [
+            "0022-0736"
+          ],
+          "URL": "https://doi.org/10.1016/j.jelectrocard.2025.153947",
+          "alternative-id": [
+            "S0022073625000755"
+          ],
+          "article-number": "153947",
+          "assertion": [
+            {
+              "label": "This article is maintained by",
+              "name": "publisher",
+              "value": "Elsevier"
+            },
+            {
+              "label": "Article Title",
+              "name": "articletitle",
+              "value": "Comparison of supervised and self-supervised ECG foundation models"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journaltitle",
+              "value": "Journal of Electrocardiology"
+            },
+            {
+              "label": "CrossRef DOI link to publisher maintained version",
+              "name": "articlelink",
+              "value": "https://doi.org/10.1016/j.jelectrocard.2025.153947"
+            },
+            {
+              "label": "Content Type",
+              "name": "content_type",
+              "value": "simple-article"
+            },
+            {
+              "label": "Copyright",
+              "name": "copyright"
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Avram",
+              "given": "Robert",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "container-title": [
+            "Journal of Electrocardiology"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "clinicalkey.com",
+              "clinicalkey.com.au",
+              "clinicalkey.es",
+              "clinicalkey.fr",
+              "clinicalkey.jp",
+              "elsevier.com",
+              "sciencedirect.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                13
+              ]
+            ],
+            "date-time": "2025-08-13T07:58:25Z",
+            "timestamp": 1755071905000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2026-02-01T20:50:43Z",
+            "timestamp": 1769979043000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                2
+              ]
+            ],
+            "date-time": "2026-02-02T07:02:37Z",
+            "timestamp": 1770015757030,
+            "version": "3.49.0"
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0022-0736"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                7
+              ]
+            ]
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2025-07-01T00:00:00Z",
+                "timestamp": 1751328000000
+              }
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2025-07-01T00:00:00Z",
+                "timestamp": 1751328000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0022073625000755?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0022073625000755?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "member": "78",
+          "page": "153947",
+          "prefix": "10.1016",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                7
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                7
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0022073625000755"
+            }
+          },
+          "score": 26.814629,
+          "short-container-title": [
+            "Journal of Electrocardiology"
+          ],
+          "source": "Crossref",
+          "special_numbering": "C",
+          "title": [
+            "Comparison of supervised and self-supervised ECG foundation models"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "volume": "91"
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 1323418
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "b1fd6711baa1c9e353e2db65b7ff064feafa93c75939577b9a31883c7c4768b5",
+  "retrieved_at": "2026-07-14T12:55:56Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

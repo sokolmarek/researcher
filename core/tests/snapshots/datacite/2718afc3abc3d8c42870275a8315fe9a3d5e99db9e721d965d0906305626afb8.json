@@ -1,0 +1,745 @@
+{
+  "endpoint": "dois",
+  "request_key": "2718afc3abc3d8c42870275a8315fe9a3d5e99db9e721d965d0906305626afb8",
+  "request_params": {
+    "page[size]": 5,
+    "query": "ECG",
+    "resource-type-id": "dataset"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-07-14T03:15:04Z",
+          "creators": [
+            {
+              "affiliation": [
+                "Shanghai Jiao Tong University"
+              ],
+              "name": "Yu Tengfei",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [
+                "Fudan University"
+              ],
+              "name": "zheng qi jian",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [
+                "East China Normal University"
+              ],
+              "name": "Gu Junhan",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [
+                "Shanghai Jiao Tong University"
+              ],
+              "name": "Liu Feng",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [
+                "Shanghai Jiao Tong University"
+              ],
+              "name": "Fu Xiaolan",
+              "nameIdentifiers": []
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-14",
+              "dateType": "Issued"
+            },
+            {
+              "date": "2026-07-14",
+              "dateType": "Created"
+            },
+            {
+              "date": "2026-07-14",
+              "dateType": "Updated"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "This dataset was developed to compare human participants and large language model (LLM) simulated participants in cardiac interoceptive prediction, prediction-error learning, and dynamic belief updating. It contains two related components: human experimental data and LLM-generated experimental data.The human component initially included 40 healthy participants aged 19–24 years (mean age = 21.88, SD = 1.81). Two participants were excluded because motion artifacts affected more than 50% of their ECG recordings, resulting in a final valid sample of 38 participants. Participants completed the Chinese version of the Multidimensional Assessment of Interoceptive Awareness, Version 2 (MAIA-2C), the State–Trait Anxiety Inventory, and a 90-trial heartbeat expectation-violation task. The task consisted of three 30-trial phases representing learning, probabilistic change, and probability reversal, with cue–outcome contingencies of 100/0, 80/20, and 20/80. Square and triangle cues predicted either a serial-subtraction-by-seven task or a subtraction-by-zero control task. Recorded variables include heartbeat predictions, prediction confidence, subjective heartbeat sensations, anxiety ratings, response times, arithmetic responses, and calculation accuracy. ECG signals were collected concurrently, allowing the derivation of heart rate, inter-beat interval, R-R interval, and root mean square of successive differences (RMSSD).The LLM component contains 1,000 independently generated simulated participants constructed through a role-playing paradigm. Gemma-3-27B-IT was used as the primary model, while Qwen-3-32B-AWQ and GLM-4-32B were included in supplementary experiments. Each simulated participant was identified by a unique participant ID and random seed and was assigned demographic, personality, interoceptive, and affective characteristics. These included age, gender, education, occupation, sleep duration, current mood, anxiety, worry tendency, interoceptive awareness, bodily vigilance, baseline arousal, and Big Five personality traits.Each simulated participant completed a text-based version of the same 90-trial task. Trial-level variables include cue identity, probability environment, task outcome, heartbeat prediction, task prediction, confidence, simulated cardiac sensation, anxiety rating, arithmetic performance, and quality-control fields such as formatting errors, role leakage, invalid-response reasons, and retry counts. These simulated reports were generated through textual reasoning and do not contain genuine physiological signals.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "This dataset was developed to compare human participants and large language model (LLM) simulated participants in cardiac interoceptive prediction, prediction-error learning, and dynamic belief updating. It contains two related components: human experimental data and LLM-generated experimental data.The human component initially included 40 healthy participants aged 19–24 years (mean age = 21.88, SD = 1.81). Two participants were excluded because motion artifacts affected more than 50% of their ECG recordings, resulting in a final valid sample of 38 participants. Participants completed the Chinese version of the Multidimensional Assessment of Interoceptive Awareness, Version 2 (MAIA-2C), the State–Trait Anxiety Inventory, and a 90-trial heartbeat expectation-violation task. The task consisted of three 30-trial phases representing learning, probabilistic change, and probability reversal, with cue–outcome contingencies of 100/0, 80/20, and 20/80. Square and triangle cues predicted either a serial-subtraction-by-seven task or a subtraction-by-zero control task. Recorded variables include heartbeat predictions, prediction confidence, subjective heartbeat sensations, anxiety ratings, response times, arithmetic responses, and calculation accuracy. ECG signals were collected concurrently, allowing the derivation of heart rate, inter-beat interval, R-R interval, and root mean square of successive differences (RMSSD).The LLM component contains 1,000 independently generated simulated participants constructed through a role-playing paradigm. Gemma-3-27B-IT was used as the primary model, while Qwen-3-32B-AWQ and GLM-4-32B were included in supplementary experiments. Each simulated participant was identified by a unique participant ID and random seed and was assigned demographic, personality, interoceptive, and affective characteristics. These included age, gender, education, occupation, sleep duration, current mood, anxiety, worry tendency, interoceptive awareness, bodily vigilance, baseline arousal, and Big Five personality traits.Each simulated participant completed a text-based version of the same 90-trial task. Trial-level variables include cue identity, probability environment, task outcome, heartbeat prediction, task prediction, confidence, simulated cardiac sensation, anxiety rating, arithmetic performance, and quality-control fields such as formatting errors, role leakage, invalid-response reasons, and retry counts. These simulated reports were generated through textual reasoning and do not contain genuine physiological signals.",
+              "descriptionType": "Abstract",
+              "lang": "zh"
+            }
+          ],
+          "doi": "10.57760/sciencedb.psych.01086",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "31253.11.sciencedb.psych.01086",
+              "identifierType": "CSTR"
+            }
+          ],
+          "isActive": true,
+          "language": "zh",
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Science Data Bank",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-14T03:15:04Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [
+            "12826746 bytes",
+            "1 files"
+          ],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "classificationCode": "520",
+              "subject": "Computer science and technology",
+              "subjectScheme": "GB/T 13745-2009"
+            },
+            {
+              "classificationCode": "190",
+              "subject": "Psychology",
+              "subjectScheme": "GB/T 13745-2009"
+            },
+            {
+              "subject": "Cardiac interoception"
+            },
+            {
+              "subject": "large language models"
+            },
+            {
+              "subject": "simulated participants"
+            },
+            {
+              "subject": "heartbeat expectation violation"
+            },
+            {
+              "subject": "predictive coding"
+            },
+            {
+              "subject": "electrocardiography"
+            },
+            {
+              "subject": "human–AI comparison"
+            },
+            {
+              "subject": "computational modeling"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Cardiac Interoceptive Prediction in Humans and Large Language Models: Behavioral, ECG, and Simulated Data from a Heartbeat Expectation-Violation Task"
+            },
+            {
+              "lang": "zh",
+              "title": "人类与大语言模型的心脏内感受预测：心跳预期违背任务的行为、心电与模拟实验数据"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-14T03:15:04Z",
+          "url": "https://www.scidb.cn/detail?dataSetId=c1d2ae6b35b74e009d6b7eaca06c9db1",
+          "version": "V1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.57760/sciencedb.psych.01086",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cnic.sciencedb",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 1,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [],
+              "contributorType": "Other",
+              "name": "[f624808f-b3dd-4b15-a8ce-02d76e932a23] SIMS - Social Intelligence and Multi-Sensing",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "contributorType": "Other",
+              "name": "Chanel, Guillaume",
+              "nameIdentifiers": []
+            }
+          ],
+          "created": "2025-06-26T22:30:01Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "Fanourakis, Marios Aristogenis",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "name": "Chanel, Guillaume",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "This dataset consists of data collected from 245 participants. It was recorded at four large LAN events in Switzerland which took place between October 2020 and April 2022. Physiological and behavioural data was recorded from groups of 2 or 4 participants playing a round of team deathmatch in the game CounterStrike: Global Offensive. The gameplay was then continuously self-annotated according to either valence or arousal.\n\n***\nTo gain access to this dataset please follow this procedure:\n1. request access using the corresponding button;\n2. you need a switch-edu account to register, anyone is entitled to create such an account;\n3. download, sign and attach the EULA to the request form;\n4. we will then accept your demand upon verification.\n***",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.26037/yareta:wqmr4bkmrvhc3jkqcscluehjyi",
+          "downloadCount": 0,
+          "formats": [
+            "text/csv",
+            "video/mp4",
+            "video/x-matroska",
+            "text/plain",
+            "text/markdown",
+            "application/pdf",
+            "text/xml"
+          ],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "Université de Genève, Yareta",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-06-26T22:30:02Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "multimodal"
+            },
+            {
+              "subject": "affective computing"
+            },
+            {
+              "subject": "video game"
+            },
+            {
+              "subject": "physiological signals"
+            },
+            {
+              "subject": "electrodermal activity"
+            },
+            {
+              "subject": "multiplayer"
+            },
+            {
+              "subject": "arousal"
+            },
+            {
+              "subject": "valence"
+            },
+            {
+              "subject": "ECG"
+            },
+            {
+              "subject": "EDA"
+            },
+            {
+              "subject": "eyetracking"
+            },
+            {
+              "subject": "gameplay"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Affective Multimodal Counter-Strike video game dataset (AMuCS) - Public"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-13T22:55:41Z",
+          "url": "https://yareta.unige.ch/archives/8563a0e8-0242-4c67-98fe-8b929b5a403a",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.26037/yareta:wqmr4bkmrvhc3jkqcscluehjyi",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "ethz.genfyareta",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [],
+              "contributorType": "Other",
+              "name": "[f624808f-b3dd-4b15-a8ce-02d76e932a23] SIMS - Social Intelligence and Multi-Sensing",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "contributorType": "Other",
+              "name": "Chanel, Guillaume",
+              "nameIdentifiers": []
+            }
+          ],
+          "created": "2024-02-04T23:30:01Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "Fanourakis, Marios Aristogenis",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "name": "Chanel, Guillaume",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2022",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "This dataset is complementary to the main AMuCS dataset, and consists of data from 5 participants who did not give consent for sharing their data with other universities.\n\nAccess is limited to researchers at the University of Geneva, Switzerland. If you a UNIGE researcher and want access please login with your Switch UNIGE account and press the request access button.\n\nTogether with the main AMuCS dataset, the total number of participants is 250.",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.26037/yareta:24lzzbry3varbe5nrty7virtfu",
+          "downloadCount": 0,
+          "formats": [
+            "text/csv",
+            "text/markdown",
+            "video/mp4",
+            "video/x-matroska",
+            "text/xml",
+            "application/pdf"
+          ],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2022,
+          "published": null,
+          "publisher": "Université de Genève, Yareta",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2024-02-04T23:30:01Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "multimodal"
+            },
+            {
+              "subject": "affective computing"
+            },
+            {
+              "subject": "video game"
+            },
+            {
+              "subject": "electrodermal activity"
+            },
+            {
+              "subject": "multiplayer"
+            },
+            {
+              "subject": "arousal"
+            },
+            {
+              "subject": "valence"
+            },
+            {
+              "subject": "ECG"
+            },
+            {
+              "subject": "EDA"
+            },
+            {
+              "subject": "eyetracking"
+            },
+            {
+              "subject": "gameplay"
+            },
+            {
+              "subject": "physiological signals"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Affective Multimodal Counter-Strike video game dataset (AMuCS) - UniGe"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-13T22:54:43Z",
+          "url": "https://yareta.unige.ch/archives/c2b2aa9a-9063-42b7-9978-b29c8e502d93",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.26037/yareta:24lzzbry3varbe5nrty7virtfu",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "ethz.genfyareta",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [],
+              "contributorType": "Other",
+              "name": "[f624808f-b3dd-4b15-a8ce-02d76e932a23] SIMS - Social Intelligence and Multi-Sensing",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "contributorType": "Other",
+              "name": "Chanel, Guillaume",
+              "nameIdentifiers": []
+            }
+          ],
+          "created": "2024-02-01T23:30:01Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "Fanourakis, Marios Aristogenis",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "name": "Chanel, Guillaume",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2022",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "This dataset is obsolete, please use the updated dataset here: 10.26037/yareta:wqmr4bkmrvhc3jkqcscluehjyi \n\n***\nThis dataset consists of data collected from 245 participants. It was recorded at four large LAN events in Switzerland which took place between October 2020 and April 2022. Physiological and behavioural data was recorded from groups of 2 or 4 participants playing a round of team deathmatch in the game CounterStrike: Global Offensive. The gameplay was then continuously self-annotated according to either valence or arousal.\n\n***\nTo gain access to this dataset please follow this procedure:\n1. request access using the corresponding button;\n2. you need a switch-edu account to register, anyone is entitled to create such an account;\n3. download, sign and attach the EULA to the request form;\n4. we will then accept your demand upon verification.\n***",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.26037/yareta:gvvoc4wfsfhupm4ygge26wupnm",
+          "downloadCount": 0,
+          "formats": [
+            "text/csv",
+            "video/mp4",
+            "video/x-matroska",
+            "text/xml",
+            "application/pdf",
+            "text/markdown",
+            "text/plain"
+          ],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2022,
+          "published": null,
+          "publisher": "Université de Genève, Yareta",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2024-02-01T23:30:01Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "multimodal"
+            },
+            {
+              "subject": "affective computing"
+            },
+            {
+              "subject": "video game"
+            },
+            {
+              "subject": "physiological signals"
+            },
+            {
+              "subject": "electrodermal activity"
+            },
+            {
+              "subject": "multiplayer"
+            },
+            {
+              "subject": "arousal"
+            },
+            {
+              "subject": "valence"
+            },
+            {
+              "subject": "ECG"
+            },
+            {
+              "subject": "EDA"
+            },
+            {
+              "subject": "eyetracking"
+            },
+            {
+              "subject": "gameplay"
+            }
+          ],
+          "titles": [
+            {
+              "title": "OBSOLETE - Affective Multimodal Counter-Strike video game dataset (AMuCS) - Public"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-13T22:54:43Z",
+          "url": "https://yareta.unige.ch/archives/ea0e3a50-bca8-4f0e-9d4f-06f807af2cfd",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.26037/yareta:gvvoc4wfsfhupm4ygge26wupnm",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "ethz.genfyareta",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2020-09-30T05:45:08Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "BURRI, Haran",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "name": "Zweerink, Alwin",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "name": "Stettler, Carine",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "name": "Bakelants, Elise ",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2020",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "To compare electrical synchrony of His bundle pacing with His-Optimized CRT and Biventricular pacing using ECG imaging. Study funded by the SNF.",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.26037/yareta:dwwwwsy64za3nfvg3pgweh6o54",
+          "downloadCount": 0,
+          "formats": [
+            "text/csv",
+            "text/xml"
+          ],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 22,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2020,
+          "published": null,
+          "publisher": "Université de Genève, Yareta",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2020-09-30T05:45:09Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "RESTRICTED"
+            },
+            {
+              "rights": "https://www.dlcm.ch/access-level/final"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [],
+          "titles": [
+            {
+              "title": "HOT-CRT ECG imaging study"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "resourceTypeGeneral": "Dataset",
+            "ris": "DATA",
+            "schemaOrg": "Dataset"
+          },
+          "updated": "2026-07-13T22:54:17Z",
+          "url": "https://yareta.unige.ch/archives/e5cc2fa6-302e-4909-a1c6-d0f5a7e2f951",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.26037/yareta:dwwwwsy64za3nfvg3pgweh6o54",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "ethz.genfyareta",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=5&query=ECG&resource-type-id=dataset",
+      "self": "https://api.datacite.org/dois?query=ECG&page%5Bsize%5D=5&resource-type-id=dataset"
+    },
+    "meta": {
+      "page": 1,
+      "total": 3177,
+      "totalPages": 636
+    }
+  },
+  "response_hash": "7ed48626960e7a7fb68ac23a87d4ce0c227393a76088d84b24e988292f6da031",
+  "retrieved_at": "2026-07-14T12:55:34Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

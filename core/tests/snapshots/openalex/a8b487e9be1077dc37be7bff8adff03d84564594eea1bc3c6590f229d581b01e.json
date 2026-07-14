@@ -1,0 +1,2687 @@
+{
+  "endpoint": "works",
+  "request_key": "a8b487e9be1077dc37be7bff8adff03d84564594eea1bc3c6590f229d581b01e",
+  "request_params": {
+    "per-page": 5,
+    "search": "self-supervised ECG",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 32158,
+      "db_response_time_ms": 62,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (self-supervised ECG)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "self-supervised ECG"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:self-supervised ECG&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(ECG)": [
+            10
+          ],
+          "-based": [
+            11
+          ],
+          "<italic": [
+            23,
+            30
+          ],
+          "ECG": [
+            27,
+            37,
+            55,
+            65,
+            125
+          ],
+          "Extensive": [
+            164
+          ],
+          "New": [
+            145
+          ],
+          "Six": [
+            57
+          ],
+          "The": [
+            14,
+            47
+          ],
+          "Training": [
+            75
+          ],
+          "We": [
+            0,
+            97,
+            127
+          ],
+          "a": [
+            2,
+            42,
+            139,
+            176,
+            182
+          ],
+          "abstract": [
+            51
+          ],
+          "across": [
+            90
+          ],
+          "affective": [
+            155
+          ],
+          "an": [
+            106
+          ],
+          "and": [
+            29,
+            67,
+            93,
+            117,
+            157
+          ],
+          "applied": [
+            62
+          ],
+          "are": [
+            39,
+            61,
+            114,
+            121,
+            148,
+            166
+          ],
+          "arousal,": [
+            153
+          ],
+          "as": [
+            72,
+            185,
+            187
+          ],
+          "by": [
+            41
+          ],
+          "categories.": [
+            96
+          ],
+          "classification": [
+            151
+          ],
+          "classify": [
+            35
+          ],
+          "compared": [
+            137
+          ],
+          "considerably": [
+            133
+          ],
+          "consists": [
+            17
+          ],
+          "convolutional": [
+            112
+          ],
+          "data.": [
+            56,
+            126
+          ],
+          "datasets": [
+            92
+          ],
+          "datasets.": [
+            163
+          ],
+          "deep": [
+            4
+          ],
+          "dense": [
+            119
+          ],
+          "different": [
+            58,
+            91,
+            94
+          ],
+          "difficulty": [
+            192
+          ],
+          "electrocardiogram": [
+            9
+          ],
+          "emotion": [
+            12,
+            95,
+            107
+          ],
+          "emotions.": [
+            36
+          ],
+          "experiments": [
+            165
+          ],
+          "exploit": [
+            1
+          ],
+          "for": [
+            8,
+            159,
+            194
+          ],
+          "four": [
+            161
+          ],
+          "framework": [
+            7
+          ],
+          "from": [
+            53
+          ],
+          "frozen": [
+            116
+          ],
+          "fully-supervised": [
+            143
+          ],
+          "generalize": [
+            88
+          ],
+          "helps": [
+            81
+          ],
+          "high-level": [
+            50
+          ],
+          "impact": [
+            173
+          ],
+          "improves": [
+            134
+          ],
+          "in": [
+            150
+          ],
+          "insights": [
+            170
+          ],
+          "instead": [
+            180
+          ],
+          "interesting": [
+            169
+          ],
+          "into": [
+            171
+          ],
+          "is": [
+            70
+          ],
+          "kept": [
+            115
+          ],
+          "labelled": [
+            124
+          ],
+          "layers": [
+            113,
+            120
+          ],
+          "learn": [
+            84
+          ],
+          "learned": [
+            40
+          ],
+          "learning": [
+            6,
+            22,
+            26,
+            33
+          ],
+          "learning.": [
+            144
+          ],
+          "learns": [
+            49
+          ],
+          "level": [
+            190
+          ],
+          "model": [
+            77
+          ],
+          "model,": [
+            184
+          ],
+          "multi-task": [
+            5,
+            177
+          ],
+          "network": [
+            48,
+            83,
+            104,
+            140
+          ],
+          "network,": [
+            109
+          ],
+          "network.": [
+            46
+          ],
+          "of": [
+            18,
+            21,
+            101,
+            152,
+            174,
+            181,
+            191
+          ],
+          "on": [
+            78
+          ],
+          "optimum": [
+            189
+          ],
+          "performance": [
+            136
+          ],
+          "performed": [
+            71
+          ],
+          "performed,": [
+            167
+          ],
+          "pretext": [
+            73,
+            79,
+            196
+          ],
+          "proposed": [
+            15,
+            131
+          ],
+          "providing": [
+            168
+          ],
+          "recognition": [
+            45,
+            69,
+            108
+          ],
+          "recognition.": [
+            13
+          ],
+          "representations": [
+            28,
+            38,
+            52,
+            86
+          ],
+          "required": [
+            193
+          ],
+          "results": [
+            147
+          ],
+          "self-supervised": [
+            3,
+            103,
+            178,
+            197
+          ],
+          "set": [
+            149
+          ],
+          "show": [
+            128
+          ],
+          "signal": [
+            43,
+            59
+          ],
+          "signals,": [
+            66
+          ],
+          "single-task": [
+            183
+          ],
+          "solution": [
+            16,
+            132
+          ],
+          "spatiotemporal": [
+            85
+          ],
+          "stages": [
+            20
+          ],
+          "state-of-the-art": [
+            146
+          ],
+          "states,": [
+            156
+          ],
+          "stress": [
+            158
+          ],
+          "structure": [
+            179
+          ],
+          "tasks": [
+            80
+          ],
+          "tasks.": [
+            74,
+            198
+          ],
+          "that": [
+            87,
+            129
+          ],
+          "the": [
+            64,
+            76,
+            82,
+            99,
+            102,
+            111,
+            118,
+            130,
+            135,
+            160,
+            172,
+            188,
+            195
+          ],
+          "to": [
+            34,
+            63,
+            105,
+            138
+          ],
+          "trained": [
+            122,
+            141
+          ],
+          "transfer": [
+            98
+          ],
+          "transformation": [
+            44,
+            68
+          ],
+          "transformations": [
+            60
+          ],
+          "two": [
+            19
+          ],
+          "unlabeled": [
+            54
+          ],
+          "using": [
+            142,
+            175
+          ],
+          "utilized": [
+            162
+          ],
+          "valence,": [
+            154
+          ],
+          "weights": [
+            100
+          ],
+          "well": [
+            89,
+            186
+          ],
+          "where": [
+            110
+          ],
+          "with": [
+            123
+          ],
+          "xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"": [
+            24,
+            31
+          ],
+          "xmlns:xlink=\"http://www.w3.org/1999/xlink\">a)</i>": [
+            25
+          ],
+          "xmlns:xlink=\"http://www.w3.org/1999/xlink\">b)</i>": [
+            32
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I204722609"
+                ],
+                "raw_affiliation_string": "Department of Electrical and Computer Engineering, Queen&#x0027;s University, Kingston, ON, Canada"
+              }
+            ],
+            "author": {
+              "display_name": "Pritam Sarkar",
+              "id": "https://openalex.org/A5101861367",
+              "orcid": "https://orcid.org/0000-0003-4000-3604"
+            },
+            "author_position": "first",
+            "countries": [
+              "CA"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "Queen's University",
+                "id": "https://openalex.org/I204722609",
+                "lineage": [
+                  "https://openalex.org/I204722609"
+                ],
+                "ror": "https://ror.org/02y72wh86",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Electrical and Computer Engineering, Queen&#x0027;s University, Kingston, ON, Canada"
+            ],
+            "raw_author_name": "Pritam Sarkar",
+            "raw_orcid": "https://orcid.org/0000-0003-4000-3604"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I204722609"
+                ],
+                "raw_affiliation_string": "Department of Electrical and Computer Engineering, Queen&#x0027;s University, Kingston, ON, Canada"
+              }
+            ],
+            "author": {
+              "display_name": "Ali Etemad",
+              "id": "https://openalex.org/A5039812985",
+              "orcid": "https://orcid.org/0000-0001-7128-0220"
+            },
+            "author_position": "last",
+            "countries": [
+              "CA"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "Queen's University",
+                "id": "https://openalex.org/I204722609",
+                "lineage": [
+                  "https://openalex.org/I204722609"
+                ],
+                "ror": "https://ror.org/02y72wh86",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Electrical and Computer Engineering, Queen&#x0027;s University, Kingston, ON, Canada"
+            ],
+            "raw_author_name": "Ali Etemad",
+            "raw_orcid": "https://orcid.org/0000-0001-7128-0220"
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2002.03898",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2002.03898",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2002.03898",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": "1541",
+          "issue": "3",
+          "last_page": "1554",
+          "volume": "13"
+        },
+        "cited_by_count": 370,
+        "display_name": "Self-Supervised ECG Representation Learning for Emotion Recognition",
+        "doi": "https://doi.org/10.1109/taffc.2020.3014842",
+        "id": "https://openalex.org/W3005055041",
+        "ids": {
+          "doi": "https://doi.org/10.1109/taffc.2020.3014842",
+          "mag": "3005055041",
+          "openalex": "https://openalex.org/W3005055041"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2002.03898"
+        },
+        "primary_location": {
+          "id": "doi:10.1109/taffc.2020.3014842",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1109/taffc.2020.3014842",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "IEEE Transactions on Affective Computing",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "IEEE Transactions on Affective Computing",
+            "host_organization": "https://openalex.org/P4310319808",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319808"
+            ],
+            "host_organization_lineage_names": [
+              "Institute of Electrical and Electronics Engineers"
+            ],
+            "host_organization_name": "Institute of Electrical and Electronics Engineers",
+            "id": "https://openalex.org/S104780363",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1949-3045",
+              "2371-9850"
+            ],
+            "issn_l": "1949-3045",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2020-08-06",
+        "publication_year": 2020,
+        "referenced_works": [
+          "https://openalex.org/W1510429593",
+          "https://openalex.org/W1522301498",
+          "https://openalex.org/W1573342376",
+          "https://openalex.org/W1994458317",
+          "https://openalex.org/W2002055708",
+          "https://openalex.org/W2026891775",
+          "https://openalex.org/W2028000151",
+          "https://openalex.org/W2036309320",
+          "https://openalex.org/W2091053870",
+          "https://openalex.org/W2120945046",
+          "https://openalex.org/W2122922389",
+          "https://openalex.org/W2148905283",
+          "https://openalex.org/W2161494021",
+          "https://openalex.org/W2167557160",
+          "https://openalex.org/W2171801645",
+          "https://openalex.org/W2177486042",
+          "https://openalex.org/W2186843572",
+          "https://openalex.org/W2253429366",
+          "https://openalex.org/W2339343773",
+          "https://openalex.org/W2484354419",
+          "https://openalex.org/W2522453581",
+          "https://openalex.org/W2547146855",
+          "https://openalex.org/W2599124244",
+          "https://openalex.org/W2606856422",
+          "https://openalex.org/W2620664872",
+          "https://openalex.org/W2731964405",
+          "https://openalex.org/W2762019301",
+          "https://openalex.org/W2767018745",
+          "https://openalex.org/W2778978785",
+          "https://openalex.org/W2779582454",
+          "https://openalex.org/W2803107794",
+          "https://openalex.org/W2886485182",
+          "https://openalex.org/W2894771803",
+          "https://openalex.org/W2901027086",
+          "https://openalex.org/W2902644322",
+          "https://openalex.org/W2919066845",
+          "https://openalex.org/W2919854899",
+          "https://openalex.org/W2926645869",
+          "https://openalex.org/W2945616044",
+          "https://openalex.org/W2947454875",
+          "https://openalex.org/W2963102968",
+          "https://openalex.org/W2963441822",
+          "https://openalex.org/W2963631366",
+          "https://openalex.org/W2963749571",
+          "https://openalex.org/W2964814532",
+          "https://openalex.org/W2968088593",
+          "https://openalex.org/W2978697615",
+          "https://openalex.org/W2980927909",
+          "https://openalex.org/W2984017204",
+          "https://openalex.org/W2996033780",
+          "https://openalex.org/W2996311341",
+          "https://openalex.org/W3015213852",
+          "https://openalex.org/W3099025572",
+          "https://openalex.org/W3101667008",
+          "https://openalex.org/W3102840080",
+          "https://openalex.org/W3172153656",
+          "https://openalex.org/W4230277160",
+          "https://openalex.org/W4288348042",
+          "https://openalex.org/W4292994367",
+          "https://openalex.org/W6631190155",
+          "https://openalex.org/W6683761811",
+          "https://openalex.org/W6760653604",
+          "https://openalex.org/W6767252517",
+          "https://openalex.org/W6840487619"
+        ],
+        "referenced_works_count": 64,
+        "title": "Self-Supervised ECG Representation Learning for Emotion Recognition",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": null,
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210149928"
+                ],
+                "raw_affiliation_string": "Department of Neurology, Jiulongpo District People’s Hospital, Chongqing, 400050, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I191996457",
+                  "https://openalex.org/I87780372",
+                  "https://openalex.org/I4210097509"
+                ],
+                "raw_affiliation_string": "Department of Cardiology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, 400010, China"
+              }
+            ],
+            "author": {
+              "display_name": "Han Liu",
+              "id": "https://openalex.org/A5100448105",
+              "orcid": "https://orcid.org/0000-0002-6618-1380"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Dalian Medical University",
+                "id": "https://openalex.org/I191996457",
+                "lineage": [
+                  "https://openalex.org/I191996457"
+                ],
+                "ror": "https://ror.org/04c8eg608",
+                "type": "education"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Second Affiliated Hospital of Chongqing Medical University",
+                "id": "https://openalex.org/I4210097509",
+                "lineage": [
+                  "https://openalex.org/I4210097509"
+                ],
+                "ror": "https://ror.org/00r67fz39",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Chongqing Jiulongpo People's Hospital",
+                "id": "https://openalex.org/I4210149928",
+                "lineage": [
+                  "https://openalex.org/I4210149928"
+                ],
+                "ror": "https://ror.org/057skcn66",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Chongqing Medical University",
+                "id": "https://openalex.org/I87780372",
+                "lineage": [
+                  "https://openalex.org/I87780372"
+                ],
+                "ror": "https://ror.org/017z00e58",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Neurology, Jiulongpo District People’s Hospital, Chongqing, 400050, China",
+              "Department of Cardiology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, 400010, China"
+            ],
+            "raw_author_name": "Han Liu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I191996457",
+                  "https://openalex.org/I87780372",
+                  "https://openalex.org/I4210097509"
+                ],
+                "raw_affiliation_string": "Department of Cardiology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, 400010, China"
+              }
+            ],
+            "author": {
+              "display_name": "Zhenbo Zhao",
+              "id": "https://openalex.org/A5100549176",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Dalian Medical University",
+                "id": "https://openalex.org/I191996457",
+                "lineage": [
+                  "https://openalex.org/I191996457"
+                ],
+                "ror": "https://ror.org/04c8eg608",
+                "type": "education"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Second Affiliated Hospital of Chongqing Medical University",
+                "id": "https://openalex.org/I4210097509",
+                "lineage": [
+                  "https://openalex.org/I4210097509"
+                ],
+                "ror": "https://ror.org/00r67fz39",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Chongqing Medical University",
+                "id": "https://openalex.org/I87780372",
+                "lineage": [
+                  "https://openalex.org/I87780372"
+                ],
+                "ror": "https://ror.org/017z00e58",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Cardiology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, 400010, China"
+            ],
+            "raw_author_name": "Zhenbo Zhao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I191996457",
+                  "https://openalex.org/I87780372",
+                  "https://openalex.org/I4210097509"
+                ],
+                "raw_affiliation_string": "Department of Cardiology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, 400010, China"
+              }
+            ],
+            "author": {
+              "display_name": "Qiang She",
+              "id": "https://openalex.org/A5100779431",
+              "orcid": "https://orcid.org/0000-0001-5049-1264"
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Dalian Medical University",
+                "id": "https://openalex.org/I191996457",
+                "lineage": [
+                  "https://openalex.org/I191996457"
+                ],
+                "ror": "https://ror.org/04c8eg608",
+                "type": "education"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Second Affiliated Hospital of Chongqing Medical University",
+                "id": "https://openalex.org/I4210097509",
+                "lineage": [
+                  "https://openalex.org/I4210097509"
+                ],
+                "ror": "https://ror.org/00r67fz39",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Chongqing Medical University",
+                "id": "https://openalex.org/I87780372",
+                "lineage": [
+                  "https://openalex.org/I87780372"
+                ],
+                "ror": "https://ror.org/017z00e58",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Cardiology, The Second Affiliated Hospital of Chongqing Medical University, Chongqing, 400010, China"
+            ],
+            "raw_author_name": "Qiang She",
+            "raw_orcid": "https://orcid.org/0000-0001-5049-1264"
+          }
+        ],
+        "best_oa_location": null,
+        "biblio": {
+          "first_page": "103010",
+          "issue": null,
+          "last_page": "103010",
+          "volume": "70"
+        },
+        "cited_by_count": 36,
+        "display_name": "Self-supervised ECG pre-training",
+        "doi": "https://doi.org/10.1016/j.bspc.2021.103010",
+        "id": "https://openalex.org/W3186495029",
+        "ids": {
+          "doi": "https://doi.org/10.1016/j.bspc.2021.103010",
+          "mag": "3186495029",
+          "openalex": "https://openalex.org/W3186495029"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null
+        },
+        "primary_location": {
+          "id": "doi:10.1016/j.bspc.2021.103010",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.bspc.2021.103010",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Biomedical Signal Processing and Control",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Biomedical Signal Processing and Control",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S8427965",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1746-8094",
+              "1746-8108"
+            ],
+            "issn_l": "1746-8094",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2021-07-27",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W343636949",
+          "https://openalex.org/W569478347",
+          "https://openalex.org/W1583837637",
+          "https://openalex.org/W2114315281",
+          "https://openalex.org/W2117539524",
+          "https://openalex.org/W2118978333",
+          "https://openalex.org/W2148143831",
+          "https://openalex.org/W2194775991",
+          "https://openalex.org/W2321533354",
+          "https://openalex.org/W2326925005",
+          "https://openalex.org/W2609380335",
+          "https://openalex.org/W2767106145",
+          "https://openalex.org/W2785325870",
+          "https://openalex.org/W2810417023",
+          "https://openalex.org/W2842511635",
+          "https://openalex.org/W2913939497",
+          "https://openalex.org/W2947706148",
+          "https://openalex.org/W2948012107",
+          "https://openalex.org/W2949517790",
+          "https://openalex.org/W2962895364",
+          "https://openalex.org/W2962933664",
+          "https://openalex.org/W2963212406",
+          "https://openalex.org/W2963351448",
+          "https://openalex.org/W2963691377",
+          "https://openalex.org/W2970971581",
+          "https://openalex.org/W2978329087",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3023742835",
+          "https://openalex.org/W3035058308",
+          "https://openalex.org/W3035060554",
+          "https://openalex.org/W3035524453",
+          "https://openalex.org/W3035724871",
+          "https://openalex.org/W3036224891",
+          "https://openalex.org/W3107668149",
+          "https://openalex.org/W3108655343",
+          "https://openalex.org/W3171007011",
+          "https://openalex.org/W4212774754",
+          "https://openalex.org/W4230100295",
+          "https://openalex.org/W4245551996",
+          "https://openalex.org/W4251247712",
+          "https://openalex.org/W4286696412",
+          "https://openalex.org/W4297808394",
+          "https://openalex.org/W4301045096",
+          "https://openalex.org/W6611801654",
+          "https://openalex.org/W6687483927",
+          "https://openalex.org/W6700872662",
+          "https://openalex.org/W6701655646",
+          "https://openalex.org/W6736981488",
+          "https://openalex.org/W6742348326",
+          "https://openalex.org/W6747899497",
+          "https://openalex.org/W6753127729",
+          "https://openalex.org/W6758313303",
+          "https://openalex.org/W6759370263",
+          "https://openalex.org/W6761909851",
+          "https://openalex.org/W6762573206",
+          "https://openalex.org/W6763301180",
+          "https://openalex.org/W6763416564",
+          "https://openalex.org/W6766382133",
+          "https://openalex.org/W6766978945",
+          "https://openalex.org/W6770717842",
+          "https://openalex.org/W6774314701",
+          "https://openalex.org/W6779997284"
+        ],
+        "referenced_works_count": 62,
+        "title": "Self-supervised ECG pre-training",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(ECG)": [
+            3
+          ],
+          "0.5%": [
+            174
+          ],
+          "1%": [
+            190
+          ],
+          "12-lead": [
+            1,
+            88
+          ],
+          "As": [
+            237
+          ],
+          "Clinical": [
+            0
+          ],
+          "Despite": [
+            14
+          ],
+          "ECG": [
+            20,
+            89,
+            108,
+            133,
+            149,
+            215,
+            246
+          ],
+          "For": [
+            157,
+            178
+          ],
+          "In": [
+            72,
+            110,
+            136
+          ],
+          "Self-supervised": [
+            31
+          ],
+          "This": [
+            41,
+            204
+          ],
+          "To": [
+            91
+          ],
+          "a": [
+            25,
+            34,
+            111,
+            128,
+            137,
+            169,
+            259
+          ],
+          "about": [
+            62
+          ],
+          "adapt": [
+            95
+          ],
+          "adaptation": [
+            162
+          ],
+          "advantages": [
+            223
+          ],
+          "against": [
+            201
+          ],
+          "alleviate": [
+            38
+          ],
+          "allow": [
+            43
+          ],
+          "amount": [
+            52
+          ],
+          "an": [
+            161
+          ],
+          "analyze": [
+            141
+          ],
+          "and": [
+            56,
+            103,
+            118,
+            220
+          ],
+          "are": [
+            69
+          ],
+          "as": [
+            151,
+            197,
+            199,
+            231
+          ],
+          "assessment": [
+            81,
+            240
+          ],
+          "availability": [
+            17
+          ],
+          "available": [
+            253
+          ],
+          "based": [
+            99,
+            122
+          ],
+          "below": [
+            175
+          ],
+          "best-performing": [
+            159
+          ],
+          "biosignals.": [
+            13,
+            274
+          ],
+          "carried": [
+            248
+          ],
+          "central": [
+            26
+          ],
+          "challenge": [
+            27
+          ],
+          "classification": [
+            134
+          ],
+          "classifiers": [
+            150
+          ],
+          "clearly": [
+            206
+          ],
+          "clinical": [
+            87,
+            132
+          ],
+          "coding,": [
+            166
+          ],
+          "compared": [
+            152,
+            191,
+            232
+          ],
+          "comprehensive": [
+            80,
+            239
+          ],
+          "comprehensive,": [
+            131
+          ],
+          "contrastive": [
+            116,
+            164
+          ],
+          "data": [
+            55,
+            216
+          ],
+          "data.": [
+            90
+          ],
+          "datasets": [
+            68
+          ],
+          "datasets,": [
+            21,
+            254
+          ],
+          "discrimination": [
+            102
+          ],
+          "discriminative": [
+            212
+          ],
+          "diseases,": [
+            64
+          ],
+          "domain": [
+            247
+          ],
+          "domain.": [
+            109
+          ],
+          "downstream": [
+            186,
+            229
+          ],
+          "efficiency,": [
+            196
+          ],
+          "electrocardiography": [
+            2
+          ],
+          "encountered": [
+            10
+          ],
+          "end,": [
+            93
+          ],
+          "establish": [
+            258
+          ],
+          "established,": [
+            130
+          ],
+          "establishes": [
+            207
+          ],
+          "evaluate": [
+            119
+          ],
+          "evaluation": [
+            125,
+            171
+          ],
+          "evolving": [
+            268
+          ],
+          "exclusively": [
+            250
+          ],
+          "extracting": [
+            211
+          ],
+          "feasibility": [
+            209
+          ],
+          "field": [
+            269
+          ],
+          "field.": [
+            30
+          ],
+          "find": [
+            168,
+            183
+          ],
+          "finetuned": [
+            148,
+            180
+          ],
+          "finetuning": [
+            225
+          ],
+          "first": [
+            79,
+            112,
+            238,
+            260
+          ],
+          "for": [
+            65,
+            273
+          ],
+          "forecasting": [
+            105
+          ],
+          "forward": [
+            77
+          ],
+          "from": [
+            86,
+            214
+          ],
+          "given": [
+            49
+          ],
+          "hope": [
+            256
+          ],
+          "impact": [
+            143
+          ],
+          "improve": [
+            60
+          ],
+          "improvements": [
+            184
+          ],
+          "in": [
+            28,
+            185,
+            244,
+            265
+          ],
+          "incorporate": [
+            58
+          ],
+          "increased": [
+            16
+          ],
+          "inherently": [
+            70
+          ],
+          "instance": [
+            101
+          ],
+          "is": [
+            4
+          ],
+          "issue.": [
+            40
+          ],
+          "its": [
+            242
+          ],
+          "kind": [
+            243
+          ],
+          "kinds": [
+            11
+          ],
+          "label": [
+            22,
+            195
+          ],
+          "labeled": [
+            54
+          ],
+          "latent": [
+            104
+          ],
+          "learn": [
+            115
+          ],
+          "learning": [
+            32,
+            85,
+            219,
+            272
+          ],
+          "limited.": [
+            71
+          ],
+          "linear": [
+            124,
+            170
+          ],
+          "method,": [
+            160
+          ],
+          "methods": [
+            98
+          ],
+          "models": [
+            48
+          ],
+          "models,": [
+            181
+          ],
+          "more": [
+            46
+          ],
+          "most": [
+            8
+          ],
+          "noise.": [
+            203
+          ],
+          "numerous": [
+            222
+          ],
+          "of": [
+            6,
+            12,
+            18,
+            53,
+            82,
+            144,
+            163,
+            188,
+            210,
+            241,
+            270
+          ],
+          "on": [
+            100,
+            123,
+            127,
+            147,
+            228,
+            251
+          ],
+          "one": [
+            5
+          ],
+          "only": [
+            173
+          ],
+          "or": [
+            59
+          ],
+          "out": [
+            249
+          ],
+          "performance": [
+            126,
+            172,
+            187
+          ],
+          "performance,": [
+            194
+          ],
+          "performance.": [
+            156,
+            177
+          ],
+          "physiological": [
+            202
+          ],
+          "powerful": [
+            47
+          ],
+          "predictions": [
+            61
+          ],
+          "predictive": [
+            165
+          ],
+          "pretraining": [
+            146
+          ],
+          "progress": [
+            264
+          ],
+          "promising": [
+            35
+          ],
+          "public": [
+            19
+          ],
+          "publicly": [
+            252
+          ],
+          "purely": [
+            154,
+            234
+          ],
+          "put": [
+            76
+          ],
+          "quality": [
+            121
+          ],
+          "rapidly": [
+            267
+          ],
+          "rare": [
+            63
+          ],
+          "recently": [
+            129
+          ],
+          "remains": [
+            24
+          ],
+          "representation": [
+            84,
+            271
+          ],
+          "representations": [
+            117,
+            213,
+            227
+          ],
+          "represents": [
+            33
+          ],
+          "reproducible": [
+            263
+          ],
+          "robustness": [
+            200
+          ],
+          "roughly": [
+            189
+          ],
+          "same": [
+            51
+          ],
+          "scarcity": [
+            23
+          ],
+          "second": [
+            138
+          ],
+          "self-supervised": [
+            83,
+            97,
+            145,
+            218
+          ],
+          "state-of-the-art": [
+            96
+          ],
+          "step": [
+            261
+          ],
+          "step,": [
+            113,
+            139
+          ],
+          "such": [
+            226
+          ],
+          "supervised": [
+            155,
+            176,
+            193,
+            235
+          ],
+          "task.": [
+            135
+          ],
+          "tasks": [
+            230
+          ],
+          "the": [
+            7,
+            15,
+            29,
+            50,
+            78,
+            107,
+            142,
+            158,
+            179,
+            208,
+            221,
+            245,
+            266
+          ],
+          "their": [
+            120
+          ],
+          "this": [
+            39,
+            73,
+            92
+          ],
+          "to": [
+            37,
+            44,
+            57,
+            106,
+            153,
+            192,
+            233,
+            257
+          ],
+          "towards": [
+            262
+          ],
+          "train": [
+            45
+          ],
+          "training": [
+            67
+          ],
+          "training.": [
+            236
+          ],
+          "via": [
+            217
+          ],
+          "way": [
+            36
+          ],
+          "we": [
+            75,
+            94,
+            114,
+            140,
+            167,
+            182,
+            255
+          ],
+          "well": [
+            198
+          ],
+          "when": [
+            224
+          ],
+          "which": [
+            66
+          ],
+          "widely": [
+            9
+          ],
+          "work": [
+            205
+          ],
+          "work,": [
+            74
+          ],
+          "would": [
+            42
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Physikalisch Technische Bundesanstalt, Berlin, Germany; Fraunhofer Heinrich Hertz Institute, Berlin, Germany. Electronic address: temesgen.mehari@ptb.de"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1285933455"
+                ],
+                "raw_affiliation_string": "Physikalisch Technische Bundesanstalt, Berlin, Germany"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2800274787"
+                ],
+                "raw_affiliation_string": "Fraunhofer Heinrich Hertz Institute, Berlin, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Temesgen Mehari",
+              "id": "https://openalex.org/A5056798849",
+              "orcid": "https://orcid.org/0000-0002-1714-5631"
+            },
+            "author_position": "first",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Fraunhofer Institute for Telecommunications, Heinrich Hertz Institute",
+                "id": "https://openalex.org/I2800274787",
+                "lineage": [
+                  "https://openalex.org/I2800274787",
+                  "https://openalex.org/I4923324"
+                ],
+                "ror": "https://ror.org/02tbr6331",
+                "type": "facility"
+              },
+              {
+                "country_code": "DE",
+                "display_name": "Physikalisch-Technische Bundesanstalt",
+                "id": "https://openalex.org/I1285933455",
+                "lineage": [
+                  "https://openalex.org/I1285933455",
+                  "https://openalex.org/I4210136623"
+                ],
+                "ror": "https://ror.org/05r3f7h03",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Physikalisch Technische Bundesanstalt, Berlin, Germany; Fraunhofer Heinrich Hertz Institute, Berlin, Germany. Electronic address: temesgen.mehari@ptb.de",
+              "Physikalisch Technische Bundesanstalt, Berlin, Germany",
+              "Fraunhofer Heinrich Hertz Institute, Berlin, Germany"
+            ],
+            "raw_author_name": "Temesgen Mehari",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Fraunhofer Heinrich Hertz Institute, Berlin, Germany. Electronic address: nils.strodthoff@uol.de"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2800274787"
+                ],
+                "raw_affiliation_string": "Fraunhofer Heinrich Hertz Institute, Berlin, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Nils Strodthoff",
+              "id": "https://openalex.org/A5034797797",
+              "orcid": "https://orcid.org/0000-0003-4447-0162"
+            },
+            "author_position": "last",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Fraunhofer Institute for Telecommunications, Heinrich Hertz Institute",
+                "id": "https://openalex.org/I2800274787",
+                "lineage": [
+                  "https://openalex.org/I2800274787",
+                  "https://openalex.org/I4923324"
+                ],
+                "ror": "https://ror.org/02tbr6331",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Fraunhofer Heinrich Hertz Institute, Berlin, Germany. Electronic address: nils.strodthoff@uol.de",
+              "Fraunhofer Heinrich Hertz Institute, Berlin, Germany"
+            ],
+            "raw_author_name": "Nils Strodthoff",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1016/j.compbiomed.2021.105114",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.compbiomed.2021.105114",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": "Computers in Biology and Medicine",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Computers in Biology and Medicine",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S44278595",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0010-4825",
+              "1879-0534"
+            ],
+            "issn_l": "0010-4825",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "105114",
+          "issue": null,
+          "last_page": "105114",
+          "volume": "141"
+        },
+        "cited_by_count": 172,
+        "display_name": "Self-supervised representation learning from 12-lead ECG data",
+        "doi": "https://doi.org/10.1016/j.compbiomed.2021.105114",
+        "id": "https://openalex.org/W3138270768",
+        "ids": {
+          "doi": "https://doi.org/10.1016/j.compbiomed.2021.105114",
+          "mag": "3138270768",
+          "openalex": "https://openalex.org/W3138270768",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/34973584"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://doi.org/10.1016/j.compbiomed.2021.105114"
+        },
+        "primary_location": {
+          "id": "doi:10.1016/j.compbiomed.2021.105114",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.compbiomed.2021.105114",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": "Computers in Biology and Medicine",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Computers in Biology and Medicine",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S44278595",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0010-4825",
+              "1879-0534"
+            ],
+            "issn_l": "0010-4825",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2021-12-18",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W141766886",
+          "https://openalex.org/W1993269018",
+          "https://openalex.org/W2064675550",
+          "https://openalex.org/W2104563593",
+          "https://openalex.org/W2130056877",
+          "https://openalex.org/W2162800060",
+          "https://openalex.org/W2594692578",
+          "https://openalex.org/W2613408503",
+          "https://openalex.org/W2804025582",
+          "https://openalex.org/W2842511635",
+          "https://openalex.org/W2896457183",
+          "https://openalex.org/W2902644322",
+          "https://openalex.org/W2903973636",
+          "https://openalex.org/W2908510526",
+          "https://openalex.org/W2963026768",
+          "https://openalex.org/W2963341956",
+          "https://openalex.org/W2963855133",
+          "https://openalex.org/W2972943112",
+          "https://openalex.org/W2973049979",
+          "https://openalex.org/W2994411342",
+          "https://openalex.org/W2996959172",
+          "https://openalex.org/W3005055041",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3009561768",
+          "https://openalex.org/W3012063106",
+          "https://openalex.org/W3027572331",
+          "https://openalex.org/W3033523981",
+          "https://openalex.org/W3034978746",
+          "https://openalex.org/W3035060554",
+          "https://openalex.org/W3035524453",
+          "https://openalex.org/W3036224891",
+          "https://openalex.org/W3036601975",
+          "https://openalex.org/W3040854424",
+          "https://openalex.org/W3040997499",
+          "https://openalex.org/W3082701951",
+          "https://openalex.org/W3084949122",
+          "https://openalex.org/W3098699929",
+          "https://openalex.org/W3099085560",
+          "https://openalex.org/W3099782249",
+          "https://openalex.org/W3101658985",
+          "https://openalex.org/W3107490265",
+          "https://openalex.org/W3111682954",
+          "https://openalex.org/W3119282903",
+          "https://openalex.org/W3120430728",
+          "https://openalex.org/W3150635893",
+          "https://openalex.org/W4212774754",
+          "https://openalex.org/W4236965008",
+          "https://openalex.org/W4249367553",
+          "https://openalex.org/W4252531498",
+          "https://openalex.org/W4287775015",
+          "https://openalex.org/W4288024360",
+          "https://openalex.org/W4297808394",
+          "https://openalex.org/W6684937600",
+          "https://openalex.org/W6750253784",
+          "https://openalex.org/W6755207826",
+          "https://openalex.org/W6756284689",
+          "https://openalex.org/W6757817989",
+          "https://openalex.org/W6760822226",
+          "https://openalex.org/W6761176036",
+          "https://openalex.org/W6770717842",
+          "https://openalex.org/W6773713467",
+          "https://openalex.org/W6774314701",
+          "https://openalex.org/W6779326418",
+          "https://openalex.org/W6779997284",
+          "https://openalex.org/W6780218876",
+          "https://openalex.org/W6785390073"
+        ],
+        "referenced_works_count": 66,
+        "title": "Self-supervised representation learning from 12-lead ECG data",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(ECG)": [
+            4
+          ],
+          "-based": [
+            5
+          ],
+          "AMIGOS.": [
+            129
+          ],
+          "ECG": [
+            94
+          ],
+          "ECG-based": [
+            119
+          ],
+          "First,": [
+            30
+          ],
+          "Further": [
+            130
+          ],
+          "Next,": [
+            52
+          ],
+          "Our": [
+            12,
+            112
+          ],
+          "SWELL": [
+            127
+          ],
+          "We": [
+            0,
+            83
+          ],
+          "a": [
+            20
+          ],
+          "acceptable": [
+            146
+          ],
+          "achieve": [
+            145
+          ],
+          "advantage": [
+            134
+          ],
+          "an": [
+            2,
+            26
+          ],
+          "analysis": [
+            131
+          ],
+          "and": [
+            25,
+            69,
+            80,
+            128
+          ],
+          "approach": [
+            88,
+            138
+          ],
+          "architecture": [
+            14
+          ],
+          "are": [
+            33,
+            62,
+            73
+          ],
+          "arousal": [
+            79
+          ],
+          "available": [
+            125
+          ],
+          "better": [
+            104
+          ],
+          "classify": [
+            78
+          ],
+          "consists": [
+            15
+          ],
+          "convolutional": [
+            57
+          ],
+          "data": [
+            32,
+            143
+          ],
+          "datasets,": [
+            126
+          ],
+          "dense": [
+            71
+          ],
+          "detect": [
+            42
+          ],
+          "electrocardiogram": [
+            3
+          ],
+          "emotion": [
+            6,
+            27,
+            66,
+            99,
+            120
+          ],
+          "equal": [
+            102
+          ],
+          "feature": [
+            95
+          ],
+          "for": [
+            98
+          ],
+          "former": [
+            39
+          ],
+          "fully-supervised": [
+            107
+          ],
+          "helps": [
+            89
+          ],
+          "highlights": [
+            132
+          ],
+          "in": [
+            47,
+            75,
+            118,
+            139
+          ],
+          "layers": [
+            58,
+            72
+          ],
+          "learn": [
+            92
+          ],
+          "learning": [
+            50
+          ],
+          "learning.": [
+            11
+          ],
+          "less": [
+            142
+          ],
+          "main": [
+            18
+          ],
+          "manifold": [
+            96
+          ],
+          "method": [
+            114
+          ],
+          "model": [
+            91
+          ],
+          "model.": [
+            111
+          ],
+          "network": [
+            24,
+            40,
+            61
+          ],
+          "network,": [
+            68
+          ],
+          "network.": [
+            29
+          ],
+          "networks,": [
+            19
+          ],
+          "of": [
+            16,
+            55,
+            59,
+            109,
+            135
+          ],
+          "or": [
+            103
+          ],
+          "order": [
+            76
+          ],
+          "our": [
+            86,
+            136
+          ],
+          "outperforms": [
+            115
+          ],
+          "performing": [
+            101
+          ],
+          "pre-determined": [
+            44
+          ],
+          "present": [
+            1
+          ],
+          "proposed": [
+            13,
+            113
+          ],
+          "publicly": [
+            124
+          ],
+          "recognition": [
+            7,
+            23,
+            28,
+            67,
+            121
+          ],
+          "recognition,": [
+            100
+          ],
+          "required": [
+            97
+          ],
+          "requiring": [
+            140
+          ],
+          "results.": [
+            147
+          ],
+          "scores.": [
+            82
+          ],
+          "self-supervised": [
+            10,
+            49,
+            87,
+            137
+          ],
+          "show": [
+            84
+          ],
+          "signal": [
+            21,
+            45
+          ],
+          "significantly": [
+            141
+          ],
+          "specific": [
+            43
+          ],
+          "state-of-the-art": [
+            117
+          ],
+          "step.": [
+            51
+          ],
+          "successfully": [
+            36
+          ],
+          "system": [
+            8
+          ],
+          "than": [
+            105
+          ],
+          "that": [
+            85
+          ],
+          "the": [
+            38,
+            48,
+            53,
+            56,
+            65,
+            90,
+            93,
+            106,
+            110,
+            116,
+            133
+          ],
+          "this": [
+            60
+          ],
+          "to": [
+            35,
+            41,
+            64,
+            77,
+            144
+          ],
+          "train": [
+            37
+          ],
+          "trained": [
+            74
+          ],
+          "transferred": [
+            63
+          ],
+          "transformation": [
+            22
+          ],
+          "transformations": [
+            46
+          ],
+          "two": [
+            17,
+            70,
+            123
+          ],
+          "unlabelled": [
+            31
+          ],
+          "used": [
+            34
+          ],
+          "using": [
+            9
+          ],
+          "valence": [
+            81
+          ],
+          "version": [
+            108
+          ],
+          "weights": [
+            54
+          ],
+          "with": [
+            122
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I204722609"
+                ],
+                "raw_affiliation_string": "Department of Electrical and Computer Engineering, Queen’s University, Canada"
+              }
+            ],
+            "author": {
+              "display_name": "Pritam Sarkar",
+              "id": "https://openalex.org/A5101861367",
+              "orcid": "https://orcid.org/0000-0003-4000-3604"
+            },
+            "author_position": "first",
+            "countries": [
+              "CA"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "Queen's University",
+                "id": "https://openalex.org/I204722609",
+                "lineage": [
+                  "https://openalex.org/I204722609"
+                ],
+                "ror": "https://ror.org/02y72wh86",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Electrical and Computer Engineering, Queen’s University, Canada"
+            ],
+            "raw_author_name": "Pritam Sarkar",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I204722609"
+                ],
+                "raw_affiliation_string": "Department of Electrical and Computer Engineering, Queen’s University, Canada"
+              }
+            ],
+            "author": {
+              "display_name": "Ali Etemad",
+              "id": "https://openalex.org/A5039812985",
+              "orcid": "https://orcid.org/0000-0001-7128-0220"
+            },
+            "author_position": "last",
+            "countries": [
+              "CA"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "Queen's University",
+                "id": "https://openalex.org/I204722609",
+                "lineage": [
+                  "https://openalex.org/I204722609"
+                ],
+                "ror": "https://ror.org/02y72wh86",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Electrical and Computer Engineering, Queen’s University, Canada"
+            ],
+            "raw_author_name": "Ali Etemad",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:1910.07497",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/1910.07497",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/1910.07497",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": "3217",
+          "issue": null,
+          "last_page": "3221",
+          "volume": null
+        },
+        "cited_by_count": 136,
+        "display_name": "Self-Supervised Learning for ECG-Based Emotion Recognition",
+        "doi": "https://doi.org/10.1109/icassp40776.2020.9053985",
+        "id": "https://openalex.org/W2980927909",
+        "ids": {
+          "doi": "https://doi.org/10.1109/icassp40776.2020.9053985",
+          "mag": "2980927909",
+          "openalex": "https://openalex.org/W2980927909"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/1910.07497"
+        },
+        "primary_location": {
+          "id": "doi:10.1109/icassp40776.2020.9053985",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1109/icassp40776.2020.9053985",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+          "raw_type": "proceedings-article",
+          "source": null,
+          "version": "publishedVersion"
+        },
+        "publication_date": "2020-04-09",
+        "publication_year": 2020,
+        "referenced_works": [
+          "https://openalex.org/W1522301498",
+          "https://openalex.org/W1913253923",
+          "https://openalex.org/W2005451131",
+          "https://openalex.org/W2026891775",
+          "https://openalex.org/W2120945046",
+          "https://openalex.org/W2122922389",
+          "https://openalex.org/W2161494021",
+          "https://openalex.org/W2171801645",
+          "https://openalex.org/W2177486042",
+          "https://openalex.org/W2522453581",
+          "https://openalex.org/W2731964405",
+          "https://openalex.org/W2767018745",
+          "https://openalex.org/W2803107794",
+          "https://openalex.org/W2886485182",
+          "https://openalex.org/W2901027086",
+          "https://openalex.org/W2919854899",
+          "https://openalex.org/W2947454875",
+          "https://openalex.org/W2948242301",
+          "https://openalex.org/W2963441822",
+          "https://openalex.org/W2963749571",
+          "https://openalex.org/W2964814532",
+          "https://openalex.org/W2978697615",
+          "https://openalex.org/W3099025572",
+          "https://openalex.org/W3101667008",
+          "https://openalex.org/W3102840080",
+          "https://openalex.org/W4288348042",
+          "https://openalex.org/W6631190155",
+          "https://openalex.org/W6683761811",
+          "https://openalex.org/W6759836712",
+          "https://openalex.org/W6840487619"
+        ],
+        "referenced_works_count": 30,
+        "title": "Self-Supervised Learning for ECG-Based Emotion Recognition",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": null,
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I165932596"
+                ],
+                "raw_affiliation_string": "Department of Mathematics, National University of Singapore, Singapore, 119077, Singapore"
+              }
+            ],
+            "author": {
+              "display_name": "Wenrui Zhang",
+              "id": "https://openalex.org/A5100773209",
+              "orcid": "https://orcid.org/0000-0001-6972-7038"
+            },
+            "author_position": "first",
+            "countries": [
+              "SG"
+            ],
+            "institutions": [
+              {
+                "country_code": "SG",
+                "display_name": "National University of Singapore",
+                "id": "https://openalex.org/I165932596",
+                "lineage": [
+                  "https://openalex.org/I165932596"
+                ],
+                "ror": "https://ror.org/01tgyzw49",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Mathematics, National University of Singapore, Singapore, 119077, Singapore"
+            ],
+            "raw_author_name": "Wenrui Zhang",
+            "raw_orcid": "https://orcid.org/0000-0001-6972-7038"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "HeartVoice Medical Technology, Hefei, 230027, China"
+              }
+            ],
+            "author": {
+              "display_name": "Shijia Geng",
+              "id": "https://openalex.org/A5038223569",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "HeartVoice Medical Technology, Hefei, 230027, China"
+            ],
+            "raw_author_name": "Shijia Geng",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I20231570"
+                ],
+                "raw_affiliation_string": "Institute of Medical Technology, Health Science Center of Peking University, Beijing, 100191, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I20231570"
+                ],
+                "raw_affiliation_string": "National Institute of Health Data Science, Peking University, Beijing, 100191, China"
+              }
+            ],
+            "author": {
+              "display_name": "Shenda Hong",
+              "id": "https://openalex.org/A5080648149",
+              "orcid": "https://orcid.org/0000-0001-7521-5127"
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Peking University",
+                "id": "https://openalex.org/I20231570",
+                "lineage": [
+                  "https://openalex.org/I20231570"
+                ],
+                "ror": "https://ror.org/02v51f717",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Institute of Medical Technology, Health Science Center of Peking University, Beijing, 100191, China",
+              "National Institute of Health Data Science, Peking University, Beijing, 100191, China"
+            ],
+            "raw_author_name": "Shenda Hong",
+            "raw_orcid": "https://orcid.org/0000-0001-7521-5127"
+          }
+        ],
+        "best_oa_location": null,
+        "biblio": {
+          "first_page": "104194",
+          "issue": null,
+          "last_page": "104194",
+          "volume": "79"
+        },
+        "cited_by_count": 44,
+        "display_name": "A simple self-supervised ECG representation learning method via manipulated temporal–spatial reverse detection",
+        "doi": "https://doi.org/10.1016/j.bspc.2022.104194",
+        "id": "https://openalex.org/W4296836839",
+        "ids": {
+          "doi": "https://doi.org/10.1016/j.bspc.2022.104194",
+          "openalex": "https://openalex.org/W4296836839"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null
+        },
+        "primary_location": {
+          "id": "doi:10.1016/j.bspc.2022.104194",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.bspc.2022.104194",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Biomedical Signal Processing and Control",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Biomedical Signal Processing and Control",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S8427965",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1746-8094",
+              "1746-8108"
+            ],
+            "issn_l": "1746-8094",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2022-09-23",
+        "publication_year": 2022,
+        "referenced_works": [
+          "https://openalex.org/W1588282782",
+          "https://openalex.org/W1787224781",
+          "https://openalex.org/W2017257315",
+          "https://openalex.org/W2089468765",
+          "https://openalex.org/W2158698691",
+          "https://openalex.org/W2896457183",
+          "https://openalex.org/W2932995131",
+          "https://openalex.org/W2963287333",
+          "https://openalex.org/W2977904701",
+          "https://openalex.org/W3033523981",
+          "https://openalex.org/W3034429256",
+          "https://openalex.org/W3037788879",
+          "https://openalex.org/W3048144875",
+          "https://openalex.org/W3081360282",
+          "https://openalex.org/W3090421573",
+          "https://openalex.org/W3092746907",
+          "https://openalex.org/W3101149558",
+          "https://openalex.org/W3128225840",
+          "https://openalex.org/W3149464195",
+          "https://openalex.org/W3158013980",
+          "https://openalex.org/W3158971538",
+          "https://openalex.org/W3186495029",
+          "https://openalex.org/W3199098260",
+          "https://openalex.org/W3209983819",
+          "https://openalex.org/W3210612208",
+          "https://openalex.org/W3212305060",
+          "https://openalex.org/W4230284066",
+          "https://openalex.org/W4249142012",
+          "https://openalex.org/W6687483927",
+          "https://openalex.org/W6729342207",
+          "https://openalex.org/W6749634845",
+          "https://openalex.org/W6769352634",
+          "https://openalex.org/W6774314701",
+          "https://openalex.org/W6785791622",
+          "https://openalex.org/W6785972966"
+        ],
+        "referenced_works_count": 35,
+        "title": "A simple self-supervised ECG representation learning method via manipulated temporal–spatial reverse detection",
+        "type": "article"
+      }
+    ]
+  },
+  "response_hash": "746bf35bcada8180582a34c92e487cc5467347189eb5237fab3d04a918d55d00",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

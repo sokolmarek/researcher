@@ -1,0 +1,208 @@
+{
+  "endpoint": "query",
+  "request_key": "33ffabb53516d9af91120479f97602eae7a03431f22b2c47206a12376eb384c5",
+  "request_params": {
+    "max_results": 5,
+    "search_query": "all:\"self-supervised ECG\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Sahar Soltanieh",
+          "Javad Hashemi",
+          "Ali Etemad"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "eess.SP"
+        ],
+        "comment": "This paper has been published in the IEEE Journal of Biomedical and Health Informatics (JBHI). Copyright IEEE. Please cite as: S. Soltanieh, J. Hashemi and A. Etemad, \"In-Distribution and Out-of-Distribution Self-Supervised ECG Representation Learning for Arrhythmia Detection,\" in IEEE Journal of Biomedical and Health Informatics, vol. 28, no. 2, pp. 789-800, Feb. 2024",
+        "doi": "10.1109/JBHI.2023.3331626",
+        "id": "http://arxiv.org/abs/2304.06427v2",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2304.06427v2",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2304.06427v2",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1109/JBHI.2023.3331626",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2023-04-13T11:46:32Z",
+        "summary": "This paper presents a systematic investigation into the effectiveness of Self-Supervised Learning (SSL) methods for Electrocardiogram (ECG) arrhythmia detection. We begin by conducting a novel analysis of the data distributions on three popular ECG-based arrhythmia datasets: PTB-XL, Chapman, and Ribeiro. To the best of our knowledge, our study is the first to quantitatively explore and characterize these distributions in the area. We then perform a comprehensive set of experiments using different augmentations and parameters to evaluate the effectiveness of various SSL methods, namely SimCRL, BYOL, and SwAV, for ECG representation learning, where we observe the best performance achieved by SwAV. Furthermore, our analysis shows that SSL methods achieve highly competitive results to those achieved by supervised state-of-the-art methods. To further assess the performance of these methods on both In-Distribution (ID) and Out-of-Distribution (OOD) ECG data, we conduct cross-dataset training and testing experiments. Our comprehensive experiments show almost identical results when comparing ID and OOD schemes, indicating that SSL techniques can learn highly effective representations that generalize well across different OOD datasets. This finding can have major implications for ECG-based arrhythmia detection. Lastly, to further analyze our results, we perform detailed per-disease studies on the performance of the SSL methods on the three datasets.",
+        "title": "In-Distribution and Out-of-Distribution Self-supervised ECG Representation Learning for Arrhythmia Detection",
+        "updated": "2024-03-27T02:58:26Z"
+      },
+      {
+        "authors": [
+          "Pritam Sarkar",
+          "Ali Etemad"
+        ],
+        "categories": [
+          "eess.SP",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "comment": "Accepted in IEEE Transactions of Affective Computing",
+        "doi": "10.1109/TAFFC.2020.3014842",
+        "id": "http://arxiv.org/abs/2002.03898v2",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2002.03898v2",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2002.03898v2",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1109/TAFFC.2020.3014842",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "eess.SP",
+        "published": "2020-02-04T17:15:37Z",
+        "summary": "We exploit a self-supervised deep multi-task learning framework for electrocardiogram (ECG) -based emotion recognition. The proposed solution consists of two stages of learning a) learning ECG representations and b) learning to classify emotions. ECG representations are learned by a signal transformation recognition network. The network learns high-level abstract representations from unlabeled ECG data. Six different signal transformations are applied to the ECG signals, and transformation recognition is performed as pretext tasks. Training the model on pretext tasks helps the network learn spatiotemporal representations that generalize well across different datasets and different emotion categories. We transfer the weights of the self-supervised network to an emotion recognition network, where the convolutional layers are kept frozen and the dense layers are trained with labelled ECG data. We show that the proposed solution considerably improves the performance compared to a network trained using fully-supervised learning. New state-of-the-art results are set in classification of arousal, valence, affective states, and stress for the four utilized datasets. Extensive experiments are performed, providing interesting insights into the impact of using a multi-task self-supervised structure instead of a single-task model, as well as the optimum level of difficulty required for the pretext self-supervised tasks.",
+        "title": "Self-supervised ECG Representation Learning for Emotion Recognition",
+        "updated": "2020-08-10T07:09:41Z"
+      },
+      {
+        "authors": [
+          "Saedeh Tahery",
+          "Fatemeh Hamid Akhlaghi",
+          "Termeh Amirsoleimani"
+        ],
+        "categories": [
+          "eess.SP",
+          "cs.LG"
+        ],
+        "comment": "23 pages, 8 Figures, 7 Tables",
+        "doi": "10.1016/j.compbiomed.2026.111712",
+        "id": "http://arxiv.org/abs/2411.11896v3",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2411.11896v3",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2411.11896v3",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1016/j.compbiomed.2026.111712",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "eess.SP",
+        "published": "2024-11-08T14:25:00Z",
+        "summary": "The HeartBert model is introduced with three primary objectives: reducing the need for labeled data, minimizing computational resources, and simultaneously improving performance in machine learning systems that analyze Electrocardiogram (ECG) signals. Inspired by Bidirectional Encoder Representations from Transformers (BERT) in natural language processing and enhanced with a self-supervised learning approach, the HeartBert model-built on the RoBERTa architecture-generates sophisticated embeddings tailored for ECG-based projects in the medical domain. To demonstrate the versatility, generalizability, and efficiency of the proposed model, two key downstream tasks have been selected: sleep stage detection and heartbeat classification. HeartBERT-based systems, utilizing bidirectional LSTM heads, are designed to address complex challenges. A series of practical experiments have been conducted to demonstrate the superiority and advancements of HeartBERT, particularly in terms of its ability to perform well with smaller training datasets, reduced learning parameters, and effective performance compared to rival models. The code and data are publicly available at https://github.com/ecgResearch/HeartBert.",
+        "title": "HeartBERT: A Self-Supervised ECG Embedding Model for Efficient and Effective Medical Signal Analysis",
+        "updated": "2025-04-04T13:53:30Z"
+      },
+      {
+        "authors": [
+          "Wenrui Zhang",
+          "Shijia Geng",
+          "Shenda Hong"
+        ],
+        "categories": [
+          "cs.LG",
+          "eess.SP"
+        ],
+        "id": "http://arxiv.org/abs/2202.12458v2",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2202.12458v2",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2202.12458v2",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2022-02-25T02:01:09Z",
+        "summary": "Learning representations from electrocardiogram (ECG) signals can serve as a fundamental step for different machine learning-based ECG tasks. In order to extract general ECG representations that can be adapted to various downstream tasks, the learning process needs to be based on a general ECG-related task which can be achieved through self-supervised learning (SSL). However, existing SSL approaches either fail to provide satisfactory ECG representations or require too much effort to construct the learning data. In this paper, we propose the T-S reverse detection, a simple yet effective self-supervised approach to learn ECG representations. Inspired by the temporal and spatial characteristics of ECG signals, we flip the original signals horizontally (temporal reverse), vertically (spatial reverse), and both horizontally and vertically (temporal-spatial reverse). Learning is then done by classifying four types of signals including the original one. To verify the effectiveness of the proposed method, we perform a downstream task to detect atrial fibrillation (AF) which is one of the most common ECG tasks. The results show that the ECG representations learned with our method achieve remarkable performance. Furthermore, after exploring the representation feature space and investigating salient ECG locations, we conclude that the temporal reverse is more effective for learning ECG representations than the spatial reverse.",
+        "title": "A Simple Self-Supervised ECG Representation Learning Method via Manipulated Temporal-Spatial Reverse Detection",
+        "updated": "2022-09-21T13:31:37Z"
+      },
+      {
+        "authors": [
+          "Youssef Ghallab",
+          "Omar Iraqy",
+          "Mohamed Kandil",
+          "Mohamed Ashraf",
+          "Saadeldine Eletter",
+          "Morougue Ghazal",
+          "Ayman Khalafallah",
+          "Nagwa El-Makky"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "comment": "Published at NeurIPS 2025 Workshop on Foundation Models for the Brain and Body",
+        "id": "http://arxiv.org/abs/2512.15250v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2512.15250v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2512.15250v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2025-12-17T09:49:06Z",
+        "summary": "Physiological signals such as electrocardiograms (ECG) and electroencephalograms (EEG) provide complementary insights into human health and cognition, yet multi-modal integration is challenging due to limited multi-modal labeled data, and modality-specific differences . In this work, we adapt the CBraMod encoder for large-scale self-supervised ECG pretraining, introducing a dual-masking strategy to capture intra- and inter-lead dependencies. To overcome the above challenges, we utilize a pre-trained CBraMod encoder for EEG and pre-train a symmetric ECG encoder, equipping each modality with a rich foundational representation. These representations are then fused via simple embedding concatenation, allowing the classification head to learn cross-modal interactions, together enabling effective downstream learning despite limited multi-modal supervision. Evaluated on emotion recognition, our approach achieves near state-of-the-art performance, demonstrating that carefully designed physiological encoders, even with straightforward fusion, substantially improve downstream performance. These results highlight the potential of foundation-model approaches to harness the holistic nature of physiological signals, enabling scalable, label-efficient, and generalizable solutions for healthcare and affective computing.",
+        "title": "Leveraging Foundational Models and Simple Fusion for Multi-modal Physiological Signal Analysis",
+        "updated": "2025-12-17T09:49:06Z"
+      }
+    ],
+    "items_per_page": 5,
+    "start_index": 0,
+    "total_results": 6
+  },
+  "response_hash": "beeea8a91ad4e0cc2728f8577025d7fc4b956b00970e9e0e7796f2cf8ff11372",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

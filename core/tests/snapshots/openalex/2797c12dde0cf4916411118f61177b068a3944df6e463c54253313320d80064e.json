@@ -1,0 +1,787 @@
+{
+  "endpoint": "works/doi:10.1038/nature00870",
+  "request_key": "2797c12dde0cf4916411118f61177b068a3944df6e463c54253313320d80064e",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota 55455, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Yuehua Jiang",
+          "id": "https://openalex.org/A5081721128",
+          "orcid": "https://orcid.org/0000-0003-0156-0715"
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          },
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota 55455, USA",
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Yuehua Jiang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Division of Hematology, Oncology and Transplantation, Department of Medicine, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Balkrishna Jahagirdar",
+          "id": "https://openalex.org/A5111619539",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          },
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Hematology, Oncology and Transplantation, Department of Medicine, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA",
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Balkrishna N. Jahagirdar",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Department of Microbiology, Center for Immunology, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "R. Lee Reinhardt",
+          "id": "https://openalex.org/A5010448332",
+          "orcid": "https://orcid.org/0000-0001-7798-9732"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Microbiology, Center for Immunology, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "R. Lee Reinhardt",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Robert E. Schwartz",
+          "id": "https://openalex.org/A5047735728",
+          "orcid": "https://orcid.org/0000-0002-5417-5995"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Robert E. Schwartz",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Department of Neurosurgery, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "C. Dirk Keene",
+          "id": "https://openalex.org/A5031692016",
+          "orcid": "https://orcid.org/0000-0002-5291-1469"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Neurosurgery, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "C. Dirk Keene",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Department of Neurosurgery, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Xilma R. Ortiz‐González",
+          "id": "https://openalex.org/A5062097018",
+          "orcid": "https://orcid.org/0000-0002-1710-4696"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Neurosurgery, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Xilma R. Ortiz-Gonzalez",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Morayma Reyes",
+          "id": "https://openalex.org/A5111638218",
+          "orcid": "https://orcid.org/0009-0003-0762-6735"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Morayma Reyes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Todd Lenvik",
+          "id": "https://openalex.org/A5108463981",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Todd Lenvik",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Troy C. Lund",
+          "id": "https://openalex.org/A5033661466",
+          "orcid": "https://orcid.org/0000-0001-9174-8919"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Troy Lund",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Mark Blackstad",
+          "id": "https://openalex.org/A5029546865",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Mark Blackstad",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Jingbo Du",
+          "id": "https://openalex.org/A5110969547",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Jingbo Du",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Sara Aldrich",
+          "id": "https://openalex.org/A5087328604",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Sara Aldrich",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Aaron Lisberg",
+          "id": "https://openalex.org/A5078435189",
+          "orcid": "https://orcid.org/0000-0003-3048-4352"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Aaron Lisberg",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Department of Neurosurgery, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Walter C. Low",
+          "id": "https://openalex.org/A5016845827",
+          "orcid": "https://orcid.org/0000-0001-8593-0175"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Neurosurgery, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Walter C. Low",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Department of Genetics, Cell Biology and Development, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "David A. Largaespada",
+          "id": "https://openalex.org/A5005626540",
+          "orcid": "https://orcid.org/0000-0002-3183-0491"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Genetics, Cell Biology and Development, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "David A. Largaespada",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210135252"
+            ],
+            "raw_affiliation_string": "Division of Hematology, Oncology and Transplantation, Department of Medicine, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Catherine M. Verfaillie",
+          "id": "https://openalex.org/A5030197044",
+          "orcid": "https://orcid.org/0000-0001-7564-4079"
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          },
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota Medical Center",
+            "id": "https://openalex.org/I4210135252",
+            "lineage": [
+              "https://openalex.org/I1309104334",
+              "https://openalex.org/I4210135252"
+            ],
+            "ror": "https://ror.org/03e1ayz78",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Hematology, Oncology and Transplantation, Department of Medicine, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA",
+          "Stem Cell Institute, University of Minnesota Medical School, Minneapolis, Minnesota, 55455, USA"
+        ],
+        "raw_author_name": "Catherine M. Verfaillie",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "41",
+      "issue": "6893",
+      "last_page": "49",
+      "volume": "418"
+    },
+    "cited_by_count": 5532,
+    "display_name": "RETRACTED ARTICLE: Pluripotency of mesenchymal stem cells derived from adult marrow",
+    "doi": "https://doi.org/10.1038/nature00870",
+    "id": "https://openalex.org/W2158048826",
+    "ids": {
+      "doi": "https://doi.org/10.1038/nature00870",
+      "mag": "2158048826",
+      "openalex": "https://openalex.org/W2158048826",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/12077603"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1038/nature00870",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1038/nature00870",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Nature",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Nature",
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Nature Portfolio",
+        "id": "https://openalex.org/S137773608",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "issn_l": "0028-0836",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2002-06-20",
+    "publication_year": 2002,
+    "referenced_works": [
+      "https://openalex.org/W1520290955",
+      "https://openalex.org/W1542326554",
+      "https://openalex.org/W1602183952",
+      "https://openalex.org/W1610017743",
+      "https://openalex.org/W1621991227",
+      "https://openalex.org/W1631250427",
+      "https://openalex.org/W1646455040",
+      "https://openalex.org/W1905836649",
+      "https://openalex.org/W1964720896",
+      "https://openalex.org/W1965406709",
+      "https://openalex.org/W1970590929",
+      "https://openalex.org/W1970895440",
+      "https://openalex.org/W1975497198",
+      "https://openalex.org/W1981940883",
+      "https://openalex.org/W1982022033",
+      "https://openalex.org/W1982561969",
+      "https://openalex.org/W1983274440",
+      "https://openalex.org/W1989787051",
+      "https://openalex.org/W1991248271",
+      "https://openalex.org/W1991374176",
+      "https://openalex.org/W1992396018",
+      "https://openalex.org/W1992525863",
+      "https://openalex.org/W1996884864",
+      "https://openalex.org/W2001675896",
+      "https://openalex.org/W2004421565",
+      "https://openalex.org/W2009040628",
+      "https://openalex.org/W2009482935",
+      "https://openalex.org/W2018855387",
+      "https://openalex.org/W2022825464",
+      "https://openalex.org/W2031585313",
+      "https://openalex.org/W2049363541",
+      "https://openalex.org/W2049466721",
+      "https://openalex.org/W2059066863",
+      "https://openalex.org/W2073723117",
+      "https://openalex.org/W2084652820",
+      "https://openalex.org/W2084936584",
+      "https://openalex.org/W2086943348",
+      "https://openalex.org/W2098015360",
+      "https://openalex.org/W2104898886",
+      "https://openalex.org/W2105695958",
+      "https://openalex.org/W2108143410",
+      "https://openalex.org/W2109191124",
+      "https://openalex.org/W2109538121",
+      "https://openalex.org/W2109794889",
+      "https://openalex.org/W2122441400",
+      "https://openalex.org/W2145639716",
+      "https://openalex.org/W2149423925",
+      "https://openalex.org/W2159999899",
+      "https://openalex.org/W2163513779",
+      "https://openalex.org/W2165135585",
+      "https://openalex.org/W4232584760",
+      "https://openalex.org/W4243820570"
+    ],
+    "referenced_works_count": 52,
+    "title": "RETRACTED ARTICLE: Pluripotency of mesenchymal stem cells derived from adult marrow",
+    "type": "article"
+  },
+  "response_hash": "4e4cbbd67756ebb747c7075973aefff09a067e212ff7907f15c81e31017c1f24",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

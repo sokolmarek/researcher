@@ -1,0 +1,87 @@
+{
+  "endpoint": "paper/ARXIV:1706.03762",
+  "request_key": "28502c42813793399faec98a71be201aebf392a52e1f7fe0b9ee76792883d798",
+  "request_params": {
+    "fields": "paperId,externalIds,url,title,abstract,venue,publicationVenue,year,publicationDate,journal,authors,citationCount,referenceCount,isOpenAccess,openAccessPdf,publicationTypes"
+  },
+  "response_body": {
+    "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+    "authors": [
+      {
+        "authorId": "40348417",
+        "name": "Ashish Vaswani"
+      },
+      {
+        "authorId": "1846258",
+        "name": "Noam Shazeer"
+      },
+      {
+        "authorId": "3877127",
+        "name": "Niki Parmar"
+      },
+      {
+        "authorId": "39328010",
+        "name": "Jakob Uszkoreit"
+      },
+      {
+        "authorId": "145024664",
+        "name": "Llion Jones"
+      },
+      {
+        "authorId": "19177000",
+        "name": "Aidan N. Gomez"
+      },
+      {
+        "authorId": "40527594",
+        "name": "Lukasz Kaiser"
+      },
+      {
+        "authorId": "3443442",
+        "name": "I. Polosukhin"
+      }
+    ],
+    "citationCount": 184103,
+    "externalIds": {
+      "ArXiv": "1706.03762",
+      "CorpusId": 13756489,
+      "DBLP": "journals/corr/VaswaniSPUJGKP17",
+      "MAG": "2963403868"
+    },
+    "isOpenAccess": false,
+    "journal": {
+      "pages": "5998-6008"
+    },
+    "openAccessPdf": {
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1706.03762, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+      "license": null,
+      "status": null,
+      "url": ""
+    },
+    "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+    "publicationDate": "2017-06-12",
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "publicationVenue": {
+      "alternate_names": [
+        "Neural Inf Process Syst",
+        "NeurIPS",
+        "NIPS"
+      ],
+      "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+      "name": "Neural Information Processing Systems",
+      "type": "conference",
+      "url": "http://neurips.cc/"
+    },
+    "referenceCount": 41,
+    "title": "Attention is All you Need",
+    "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+    "venue": "Neural Information Processing Systems",
+    "year": 2017
+  },
+  "response_hash": "d0e48c77d82fc8902545ee6cd3e0f90fe13ee6b87199d646a65ce4060d9f1026",
+  "retrieved_at": "2026-07-14T12:56:29Z",
+  "schema_version": "1.0",
+  "source": "semantic_scholar"
+}

@@ -1,0 +1,579 @@
+# Axis (b) publication status gold set.
+#
+# Vocabulary (D16): current | corrected | retracted | expression-of-concern
+# Size (D17): >= 120 DOIs, >= 20 per class. This file has 120, with 25/25/25/45.
+#
+# Provenance: harvested from the live Crossref API on 2026-07-14 by filtering
+# update-type:{retraction,correction,expression_of_concern}. Crossref's filter returns the
+# NOTICE document; the DOI labeled here is the notice's update-to target, which is the paper
+# that was actually retracted, corrected, or flagged. Every DOI was then re-fetched and
+# confirmed to resolve. The 25 retracted entries were independently cross-checked against
+# OpenAlex is_retracted, which agreed on 25 of 25.
+#
+# The 'current' class is sampled across several fields (cardiology, machine learning) rather
+# than one, so a classifier cannot pass by learning a single venue's house style. Each was
+# confirmed to carry no update-to notice in Crossref and is_retracted false in OpenAlex.
+#
+# Nothing here is invented. Every DOI is real and resolvable.
+
+axis: status
+vocabulary: [current, corrected, retracted, expression-of-concern]
+items:
+  # ---- retracted (25) ----
+  - doi: "10.1016/j.micpro.2020.103768"
+    expected: retracted
+    title: "RETRACTED: Cross-Cultural communication of language learning social so"
+    notice_doi: "10.1016/j.micpro.2020.103768"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.micpro.2020.103708"
+    expected: retracted
+    title: "RETRACTED: Development of financial option pricing system based on fpg"
+    notice_doi: "10.1016/j.micpro.2020.103708"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.micpro.2021.104006"
+    expected: retracted
+    title: "RETRACTED: Microprocessor in vitro simulation system applied to the se"
+    notice_doi: "10.1016/j.micpro.2021.104006"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.ijhydene.2022.01.206"
+    expected: retracted
+    title: "WITHDRAWN: The role of cobalt on cathode material for intermediate tem"
+    notice_doi: "10.1016/j.ijhydene.2022.01.206"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.jddst.2019.101360"
+    expected: retracted
+    title: "RETRACTED: Development of curcumin-loaded silk fibroin nanoparticles a"
+    notice_doi: "10.1016/j.jddst.2020.102187"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.athoracsur.2014.07.053"
+    expected: retracted
+    title: "WITHDRAWN: Evolving Practice Trends of Aortic Root Surgery in North Am"
+    notice_doi: "10.1016/j.athoracsur.2014.07.053"
+    openalex_is_retracted: true
+  - doi: "10.3892/or.2018.6836"
+    expected: retracted
+    title: "SMAD specific E3 ubiquitin protein ligase�1 promotes ovarian cancer ce"
+    notice_doi: "10.3892/or.2025.8938"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.fuel.2017.11.147"
+    expected: retracted
+    title: "RETRACTED: Experimental investigations of oxidation stability of biodi"
+    notice_doi: "10.1016/j.fuel.2017.11.147"
+    openalex_is_retracted: true
+  - doi: "10.3892/ijo.2015.2981"
+    expected: retracted
+    title: "Fbxw7 regulates hepatocellular carcinoma migration and invasion via No"
+    notice_doi: "10.3892/ijo.2025.5763"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.firesaf.2020.103145"
+    expected: retracted
+    title: "WITHDRAWN: Evaluation of safety distance for blast of hybrid rocket pr"
+    notice_doi: "10.1016/j.firesaf.2020.103145"
+    openalex_is_retracted: true
+  - doi: "10.1016/s0003-4975(02)04903-2"
+    expected: retracted
+    title: "RETRACTED: Influence of prolonged cardiopulmonary bypass times on spla"
+    notice_doi: "10.1016/s0003-4975(02)04903-2"
+    openalex_is_retracted: true
+  - doi: "10.1021/am300292v"
+    expected: retracted
+    title: "Flexible and Microporous Chitosan Hydrogel/Nano ZnO Composite Bandages"
+    notice_doi: "10.1021/acsami.9b11759"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.matpr.2020.11.057"
+    expected: retracted
+    title: "WITHDRAWN: Control and stability of micro grids during transient state"
+    notice_doi: "10.1016/j.matpr.2020.11.057"
+    openalex_is_retracted: true
+  - doi: "10.1080/01969722.2022.2145649"
+    expected: retracted
+    title: "RETRACTED: Hybrid MQTTNet: An Intrusion Detection System Using Heurist"
+    notice_doi: "10.1080/01969722.2025.2608458"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.sbspro.2012.11.026"
+    expected: retracted
+    title: "RETRACTED: Investigating the Factors Affecting Information and Communi"
+    notice_doi: "10.1016/j.sbspro.2012.11.026"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.micpro.2020.103363"
+    expected: retracted
+    title: "RETRACTED: Sports and health big data system based on 5G network and I"
+    notice_doi: "10.1016/j.micpro.2020.103363"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.ccr.2009.10.014"
+    expected: retracted
+    title: "RETRACTED: miR-221&amp;222 Regulate TRAIL Resistance and Enhance Tumor"
+    notice_doi: "10.1016/j.ccr.2009.10.014"
+    openalex_is_retracted: true
+  - doi: "10.1007/s10479-022-04961-4"
+    expected: retracted
+    title: "RETRACTED ARTICLE: Periapical dental X-ray image classification using"
+    notice_doi: "10.1007/s10479-022-04961-4"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.heliyon.2021.e07635"
+    expected: retracted
+    title: "RETRACTED: SBracing NK cell based therapy to relegate pulmonary inflam"
+    notice_doi: "10.1016/j.heliyon.2026.e44773"
+    openalex_is_retracted: true
+  - doi: "10.1109/access.2020.3012688"
+    expected: retracted
+    title: "Notice of Violation of IEEE Publication Principles: Construction of GC"
+    notice_doi: "10.1109/access.2020.3012688"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.econmod.2013.01.008"
+    expected: retracted
+    title: "RETRACTED: The relationship between audit committees, compensation inc"
+    notice_doi: "10.1016/j.econmod.2013.01.008"
+    openalex_is_retracted: true
+  - doi: "10.1155/2014/260210"
+    expected: retracted
+    title: "Effects of Crude Extracts from Medicinal Herbs<i>Rhazya stricta</i>and"
+    notice_doi: "10.1155/bmri/9807398"
+    openalex_is_retracted: true
+  - doi: "10.1109/ifita.2009.204"
+    expected: retracted
+    title: "Notice of Retraction: Prediction and Analysis of Chinese CPI Based on"
+    notice_doi: "10.1109/ifita.2009.204"
+    openalex_is_retracted: true
+  - doi: "10.1134/s1070328418090087"
+    expected: retracted
+    title: "RETRACTED ARTICLE: Crystal Structure and Biological Activity of Two No"
+    notice_doi: "10.1134/s1070328424030023"
+    openalex_is_retracted: true
+  - doi: "10.1134/s1070328420080072"
+    expected: retracted
+    title: "RETRACTED ARTICLE: 5-Fluorouracil Trapping in a Porous Ba(II)-organic"
+    notice_doi: "10.1134/s1070328424030059"
+    openalex_is_retracted: true
+  # ---- corrected (25) ----
+  - doi: "10.1016/j.cellsig.2012.01.015"
+    expected: corrected
+    title: "AMP-activated protein kinase mediates T cell activation-induced expres"
+    notice_doi: "10.1016/j.cellsig.2018.09.015"
+    openalex_is_retracted: false
+  - doi: "10.1097/aln.0000000000005224"
+    expected: corrected
+    title: "Effects of Serratus Anterior Plane Block on Early Recovery from Thorac"
+    notice_doi: "10.1097/aln.0000000000005352"
+    openalex_is_retracted: false
+  - doi: "10.1038/s41467-022-28487-2"
+    expected: corrected
+    title: "Embodied neuromorphic intelligence"
+    notice_doi: "10.1038/s41467-022-29119-5"
+    openalex_is_retracted: false
+  - doi: "10.3390/polym14091782"
+    expected: corrected
+    title: "Development and Characterization of Chitosan and Porphyran Based Compo"
+    notice_doi: "10.3390/polym14132518"
+    openalex_is_retracted: false
+  - doi: "10.1149/1945-7111/ab6c5b"
+    expected: corrected
+    title: "An Analysis of Solid-State Electrodeposition-Induced Metal Plastic Flo"
+    notice_doi: "10.1149/1945-7111/ab904d"
+    openalex_is_retracted: false
+  - doi: "10.1186/s13073-025-01428-6"
+    expected: corrected
+    title: "Intricate interplay of CRISPR-Cas systems, anti-CRISPR proteins, and a"
+    notice_doi: "10.1186/s13073-025-01436-6"
+    openalex_is_retracted: false
+  - doi: "10.1149/2.0181701jss"
+    expected: corrected
+    title: "Galvanic Corrosion Inhibitors for Cu/Ru Couple during Chemical Mechani"
+    notice_doi: "10.1149/2162-8777/ab8f1a"
+    openalex_is_retracted: false
+  - doi: "10.1371/journal.pone.0231147"
+    expected: corrected
+    title: "Synthesis, characterization, quantum chemical calculations and antican"
+    notice_doi: "10.1371/journal.pone.0249437"
+    openalex_is_retracted: false
+  - doi: "10.1002/smll.202200622"
+    expected: corrected
+    title: "Impact of Atomic Rearrangement and Single Atom Stabilization on MoSe<s"
+    notice_doi: "10.1002/smll.202207410"
+    openalex_is_retracted: false
+  - doi: "10.1038/s41467-019-11777-7"
+    expected: corrected
+    title: "Circular RNA CircFndc3b modulates cardiac repair after myocardial infa"
+    notice_doi: "10.1038/s41467-020-15382-x"
+    openalex_is_retracted: false
+  - doi: "10.1371/journal.pone.0080661"
+    expected: corrected
+    title: "Predicting Survival after Liver Transplantation Based on Pre-Transplan"
+    notice_doi: "10.1371/annotation/d01fbea0-579a-4ebd-bd03-e76df82b757e"
+    openalex_is_retracted: false
+  - doi: "10.1002/1878-0261.12878"
+    expected: corrected
+    title: "SPT6 recruits SND1 to co‐activate human telomerase reverse transcripta"
+    notice_doi: "10.1002/1878-0261.13823"
+    openalex_is_retracted: false
+  - doi: "10.1038/nbt.3811"
+    expected: corrected
+    title: "Precise base editing in rice, wheat and maize with a Cas9-cytidine dea"
+    notice_doi: "10.1038/s41587-025-02671-3"
+    openalex_is_retracted: false
+  - doi: "10.1007/s00530-021-00845-y"
+    expected: corrected
+    title: "STASiamRPN: visual tracking based on spatiotemporal and attention"
+    notice_doi: "10.1007/s00530-022-00924-8"
+    openalex_is_retracted: false
+  - doi: "10.1007/s10456-024-09922-y"
+    expected: corrected
+    title: "CCL4 contributes to aging related angiogenic insufficiency through act"
+    notice_doi: "10.1007/s10456-024-09964-2"
+    openalex_is_retracted: false
+  - doi: "10.1007/s13346-023-01342-7"
+    expected: corrected
+    title: "Self-nanoemulsifying drug delivery system (SNEDDS) of docetaxel and ca"
+    notice_doi: "10.1007/s13346-023-01356-1"
+    openalex_is_retracted: false
+  - doi: "10.1186/s13054-025-05671-6"
+    expected: corrected
+    title: "Volatile sedation in critically ill adults undergoing mechanical venti"
+    notice_doi: "10.1186/s13054-025-05797-7"
+    openalex_is_retracted: false
+  - doi: "10.1037/emo0001463"
+    expected: corrected
+    title: "The need for a unified language framework in extrinsic interpersonal e"
+    notice_doi: "10.1037/emo0001597"
+    openalex_is_retracted: false
+  - doi: "10.1136/bmjsem-2024-001993"
+    expected: corrected
+    title: "Obesity is associated with muscle atrophy in rotator cuff tear"
+    notice_doi: "10.1136/bmjsem-2024-001993corr1"
+    openalex_is_retracted: false
+  - doi: "10.1038/s41598-024-83221-w"
+    expected: corrected
+    title: "Genome-wide identification, characterization, and functional analysis"
+    notice_doi: "10.1038/s41598-026-36169-y"
+    openalex_is_retracted: false
+  - doi: "10.1007/s12630-016-0802-z"
+    expected: corrected
+    title: "The effectiveness of apneic oxygenation during tracheal intubation in"
+    notice_doi: "10.1007/s12630-017-0835-y"
+    openalex_is_retracted: false
+  - doi: "10.1007/s10661-022-10763-9"
+    expected: corrected
+    title: "The wild plant Gnaphalium lavandulifolium as a sentinel for biomonitor"
+    notice_doi: "10.1007/s10661-025-14859-w"
+    openalex_is_retracted: false
+  - doi: "10.1038/nature22336"
+    expected: corrected
+    title: "New fossils from Jebel Irhoud, Morocco and the pan-African origin of H"
+    notice_doi: "10.1038/s41586-018-0166-3"
+    openalex_is_retracted: false
+  - doi: "10.1038/nature23460"
+    expected: corrected
+    title: "Roads towards fault-tolerant universal quantum computation"
+    notice_doi: "10.1038/s41586-018-0116-0"
+    openalex_is_retracted: false
+  - doi: "10.1038/s41598-019-57285-y"
+    expected: corrected
+    title: "Chronic IL-1β-induced inflammation regulates epithelial-to-mesenchymal"
+    notice_doi: "10.1038/s41598-020-61341-3"
+    openalex_is_retracted: false
+  # ---- expression-of-concern (25) ----
+  - doi: "10.1016/j.chemosphere.2022.133829"
+    expected: expression-of-concern
+    title: "Zinc fortification and alleviation of cadmium stress by application of"
+    notice_doi: "10.1016/j.chemosphere.2024.141619"
+    openalex_is_retracted: false
+  - doi: "10.1016/j.heliyon.2023.e14183"
+    expected: expression-of-concern
+    title: "Sex differences in the prevalence and clinical correlates of diabetes"
+    notice_doi: "10.1016/j.heliyon.2026.e44694"
+    openalex_is_retracted: false
+  - doi: "10.1371/journal.pone.0317237"
+    expected: expression-of-concern
+    title: "Shifting temporal trends and disparities in sarcoidosis mortality in t"
+    notice_doi: "10.1371/journal.pone.0346409"
+    openalex_is_retracted: false
+  - doi: "10.1016/s1474-4422(22)00030-8"
+    expected: expression-of-concern
+    title: "Expression of concern, Serotonergic pathology and disease burden in the"
+    notice_doi: "10.1016/s1474-4422(26)00052-9"
+    openalex_is_retracted: false
+  - doi: "10.1016/s1474-4422(26)00046-3"
+    expected: expression-of-concern
+    title: "Correction to Lancet Neurol 2019; 18: 748-59"
+    notice_doi: "10.1016/s1474-4422(26)00052-9"
+  - doi: "10.1016/s1474-4422(19)30140-1"
+    expected: expression-of-concern
+    title: "Serotonergic pathology and disease burden in the premotor and motor ph"
+    notice_doi: "10.1016/s1474-4422(26)00052-9"
+    openalex_is_retracted: false
+  - doi: "10.1016/j.jnn.2022.06.001"
+    expected: expression-of-concern
+    title: "A case report of neonatal congenital heart block due to undiagnosed ma"
+    notice_doi: "10.1016/j.jnn.2025.101702"
+    openalex_is_retracted: false
+  - doi: "10.1042/cs20070250"
+    expected: expression-of-concern
+    title: "Angiopoietin-1 gene transfer improves impaired wound healing in geneti"
+    notice_doi: "10.1042/cs-2007-0250_eoc"
+    openalex_is_retracted: false
+  - doi: "10.1042/cs20200107"
+    expected: expression-of-concern
+    title: "Green tea polyphenols ameliorate metabolic abnormalities and insulin r"
+    notice_doi: "10.1042/cs-20200107_eoc"
+    openalex_is_retracted: false
+  - doi: "10.1042/bsr20160523"
+    expected: expression-of-concern
+    title: "TET1 exerts its tumour suppressor function by regulating autophagy in"
+    notice_doi: "10.1042/bsr-20160523_eoc"
+    openalex_is_retracted: true
+  - doi: "10.1042/bsr20181289"
+    expected: expression-of-concern
+    title: "Long non-coding RNA linc-ITGB1 promotes cell proliferation, migration,"
+    notice_doi: "10.1042/bsr-20181289_eoc"
+    openalex_is_retracted: true
+  - doi: "10.1158/1541-7786.mcr-08-0052"
+    expected: expression-of-concern
+    title: "Focal Adhesion Kinase Controls Aggressive Phenotype of Androgen-Indepe"
+    notice_doi: "10.1158/1541-7786.mcr-21-0318"
+    openalex_is_retracted: false
+  - doi: "10.1159/000508372"
+    expected: expression-of-concern
+    title: "Long Non-Coding RNA NEAT1 Regulates Pyroptosis in Diabetic Nephropathy"
+    notice_doi: "10.1159/000520739"
+    openalex_is_retracted: false
+  - doi: "10.1161/circresaha.111.250423"
+    expected: expression-of-concern
+    title: "AMPKα2 Deletion Exacerbates Neointima Formation by Upregulating Skp2 i"
+    notice_doi: "10.1161/res.0000000000000439"
+    openalex_is_retracted: true
+  - doi: "10.2119/molmed.2014.00183"
+    expected: expression-of-concern
+    title: "High Systemic Levels of the Cytokine-Inducing HMGB1 Isoform Secreted i"
+    notice_doi: "10.1186/s10020-020-0142-x"
+    openalex_is_retracted: true
+  - doi: "10.1371/journal.pgen.1004792"
+    expected: expression-of-concern
+    title: "24-Hour Rhythms of DNA Methylation and Their Relation with Rhythms of"
+    notice_doi: "10.1371/journal.pgen.1009470"
+    openalex_is_retracted: true
+  - doi: "10.1371/journal.pntd.0006934"
+    expected: expression-of-concern
+    title: "Antivirus effectiveness of ivermectin on dengue virus type 2 in Aedes"
+    notice_doi: "10.1371/journal.pntd.0010117"
+    openalex_is_retracted: false
+  - doi: "10.1371/journal.pone.0064723"
+    expected: expression-of-concern
+    title: "Adult Bone Marrow Neural Crest Stem Cells and Mesenchymal Stem Cells A"
+    notice_doi: "10.1371/journal.pone.0256488"
+    openalex_is_retracted: false
+  - doi: "10.1371/journal.pone.0263395"
+    expected: expression-of-concern
+    title: "Characterization of intracellular calcium mobilization induced by remi"
+    notice_doi: "10.1371/journal.pone.0280440"
+    openalex_is_retracted: false
+  - doi: "10.1371/journal.pone.0260713"
+    expected: expression-of-concern
+    title: "l-Menthol increases extracellular dopamine and c-Fos-like immunoreacti"
+    notice_doi: "10.1371/journal.pone.0280125"
+    openalex_is_retracted: false
+  - doi: "10.1371/journal.pone.0306294"
+    expected: expression-of-concern
+    title: "An Improved Migratory Birds Optimization Algorithm for Closed- Loop Su"
+    notice_doi: "10.1371/journal.pone.0329803"
+    openalex_is_retracted: false
+  - doi: "10.1038/sj.bjp.0707142"
+    expected: expression-of-concern
+    title: "EXPRESSION OF CONCERN: Nitropravastatin stimulates reparative neovascu"
+    notice_doi: "10.1111/bph.70199"
+    openalex_is_retracted: false
+  - doi: "10.1155/2022/3802603"
+    expected: expression-of-concern
+    title: "Monitoring of Sports Health Indicators Based on Wearable Nanobiosensor"
+    notice_doi: "10.1155/2022/9757014"
+    openalex_is_retracted: true
+  - doi: "10.1016/j.nmni.2017.04.003"
+    expected: expression-of-concern
+    title: "‘Phoenicibacter massiliensis’ gen. nov., sp. nov., a new bacterium iso"
+    notice_doi: "10.1016/j.nmni.2019.100553"
+    openalex_is_retracted: false
+  - doi: "10.1016/j.nmni.2016.05.006"
+    expected: expression-of-concern
+    title: "“Bacillus mediterraneensis,” a new bacterial species isolated from hum"
+    notice_doi: "10.1016/j.nmni.2024.101261"
+    openalex_is_retracted: false
+  # ---- current (45) ----
+  - doi: "10.1038/s41597-020-0495-6"
+    expected: current
+    title: "PTB-XL, a large publicly available electrocardiography dataset"
+    openalex_is_retracted: false
+  - doi: "10.1056/nejmoa0907589"
+    expected: current
+    title: "Long-Term Outcome Associated with Early Repolarization on Electrocardi"
+    openalex_is_retracted: false
+  - doi: "10.1109/tbme.1973.324169"
+    expected: current
+    title: "60-Hz Interference in Electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1001/jama.1956.02970330079036"
+    expected: current
+    title: "New Bases of Electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1001/jama.1957.02970400078033"
+    expected: current
+    title: "Principles of Clinical Electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1016/0002-8703(66)90182-7"
+    expected: current
+    title: "A new system of multiple-lead exercise electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1016/0002-9343(84)90437-6"
+    expected: current
+    title: "Factors affecting sensitivity and specificity of exercise electrocardi"
+    openalex_is_retracted: false
+  - doi: "10.7326/0003-4819-37-1-210_1"
+    expected: current
+    title: "Modern Electrocardiography."
+    openalex_is_retracted: false
+  - doi: "10.1016/0002-8703(61)90475-6"
+    expected: current
+    title: "Clinical vectorcardiography and electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1016/s0002-8703(42)90899-8"
+    expected: current
+    title: "Essentials of electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.7326/0003-4819-152-5-201003020-00004"
+    expected: current
+    title: "Cardiovascular Screening in College Athletes With and Without Electroc"
+    openalex_is_retracted: false
+  - doi: "10.1161/01.cir.36.4.517"
+    expected: current
+    title: "Multiple-Lead Exercise Electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1161/01.cir.83.6.1888"
+    expected: current
+    title: "QTc prolongation measured by standard 12-lead electrocardiography is a"
+    openalex_is_retracted: false
+  - doi: "10.1080/00325481.1967.11693064"
+    expected: current
+    title: "Electrocardiography and Vectorcardiography"
+    openalex_is_retracted: false
+  - doi: "10.1016/s0735-1097(99)00354-x"
+    expected: current
+    title: "ACC/AHA guidelines for ambulatory electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1161/01.cir.72.5.1015"
+    expected: current
+    title: "Intraoperative detection of myocardial ischemia in high-risk patients:"
+    openalex_is_retracted: false
+  - doi: "10.1016/0002-8703(62)90323-x"
+    expected: current
+    title: "Differentiation between normal and abnormal in electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1109/mmul.2018.2873472"
+    expected: current
+    title: "Cryptanalyzing an Image Encryption Algorithm Based on Autoblocking and"
+    openalex_is_retracted: false
+  - doi: "10.1016/0002-9149(94)90135-x"
+    expected: current
+    title: "A History of the origin, evolution, and impact of electrocardiography"
+    openalex_is_retracted: false
+  - doi: "10.1001/archinte.1955.00250160016002"
+    expected: current
+    title: "SYMPOSIUM ON ELECTROCARDIOGRAPHY AND VECTORCARDIOGRAPHY"
+    openalex_is_retracted: false
+  - doi: "10.1161/circ.104.25.3169"
+    expected: current
+    title: "ACC/AHA Clinical Competence Statement on Electrocardiography and Ambul"
+    openalex_is_retracted: false
+  - doi: "10.1016/0002-8703(71)90182-7"
+    expected: current
+    title: "Diagnostic electrocardiography and vectorcardiography"
+    openalex_is_retracted: false
+  - doi: "10.1021/acsenergylett.7b01237"
+    expected: current
+    title: "Self-Powered Wearable Electrocardiography Using a Wearable Thermoelect"
+    openalex_is_retracted: false
+  - doi: "10.1016/0002-9149(85)90317-0"
+    expected: current
+    title: "Arrhythmias in ischemic and nonischemic dilated cardiomyopathy: Predic"
+    openalex_is_retracted: false
+  - doi: "10.7326/0003-4819-47-6-1287"
+    expected: current
+    title: "Clinical Electrocardiography."
+    openalex_is_retracted: false
+  - doi: "10.3390/technologies9010002"
+    expected: current
+    title: "A Survey on Contrastive Self-Supervised Learning"
+    openalex_is_retracted: false
+  - doi: "10.1109/tpami.2021.3095381"
+    expected: current
+    title: "ProtTrans: Toward Understanding the Language of Life Through Self-Supe"
+    openalex_is_retracted: false
+  - doi: "10.1109/tkde.2021.3090866"
+    expected: current
+    title: "Self-supervised Learning: Generative or Contrastive"
+    openalex_is_retracted: false
+  - doi: "10.1109/cvpr46437.2021.00954"
+    expected: current
+    title: "CutPaste: Self-Supervised Learning for Anomaly Detection and Localizat"
+    openalex_is_retracted: false
+  - doi: "10.1109/tkde.2022.3172903"
+    expected: current
+    title: "Graph Self-Supervised Learning: A Survey"
+    openalex_is_retracted: false
+  - doi: "10.1109/icra.2016.7487517"
+    expected: current
+    title: "Supersizing self-supervision: Learning to grasp from 50K tries and 700"
+    openalex_is_retracted: false
+  - doi: "10.1109/tpami.2020.2992393"
+    expected: current
+    title: "Self-Supervised Visual Feature Learning With Deep Neural Networks: A S"
+    openalex_is_retracted: false
+  - doi: "10.1016/j.media.2019.101539"
+    expected: current
+    title: "Self-supervised learning for medical image analysis using image contex"
+    openalex_is_retracted: false
+  - doi: "10.1109/icra.2018.8462891"
+    expected: current
+    title: "Time-Contrastive Networks: Self-Supervised Learning from Video"
+    openalex_is_retracted: false
+  - doi: "10.1145/3340531.3411954"
+    expected: current
+    title: "S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mu"
+    openalex_is_retracted: false
+  - doi: "10.1109/tnnls.2022.3190448"
+    expected: current
+    title: "Self-Supervised Learning for Electroencephalography"
+    openalex_is_retracted: false
+  - doi: "10.1109/tpami.2024.3415112"
+    expected: current
+    title: "A Survey on Self-Supervised Learning: Algorithms, Applications, and Fu"
+    openalex_is_retracted: false
+  - doi: "10.1109/tkde.2023.3282907"
+    expected: current
+    title: "Self-Supervised Learning for Recommender Systems: A Survey"
+    openalex_is_retracted: false
+  - doi: "10.1109/cvpr52688.2022.01567"
+    expected: current
+    title: "Scaling Vision Transformers to Gigapixel Images via Hierarchical Self-"
+    openalex_is_retracted: false
+  - doi: "10.1109/cvpr.2019.00470"
+    expected: current
+    title: "SelFlow: Self-Supervised Learning of Optical Flow"
+    openalex_is_retracted: false
+  - doi: "10.1109/tnnls.2021.3068344"
+    expected: current
+    title: "Anomaly Detection on Attributed Networks via Contrastive Self-Supervis"
+    openalex_is_retracted: false
+  - doi: "10.1109/tmm.2022.3187556"
+    expected: current
+    title: "Self-Supervised Learning for Multimedia Recommendation"
+    openalex_is_retracted: false
+  - doi: "10.1109/tkde.2021.3131584"
+    expected: current
+    title: "Self-Supervised Learning on Graphs: Contrastive, Generative, or Predic"
+    openalex_is_retracted: false
+  - doi: "10.1145/3328932"
+    expected: current
+    title: "Multi-task Self-Supervised Learning for Human Activity Detection"
+    openalex_is_retracted: false
+  - doi: "10.1145/3404835.3462862"
+    expected: current
+    title: "Self-supervised Graph Learning for Recommendation"
+    openalex_is_retracted: false

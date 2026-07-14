@@ -1,0 +1,51 @@
+{
+  "endpoint": "query",
+  "request_key": "0637ab679b926643ae56c8bb7be8beb580f15a7a24e235a40b303a4439e7bd68",
+  "request_params": {
+    "id_list": "2005.13249"
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Dani Kiyasseh",
+          "Tingting Zhu",
+          "David A. Clifton"
+        ],
+        "categories": [
+          "cs.LG",
+          "eess.SP",
+          "stat.ML"
+        ],
+        "comment": "Accepted to ICML 2021",
+        "id": "http://arxiv.org/abs/2005.13249v3",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2005.13249v3",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2005.13249v3",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2020-05-27T09:25:41Z",
+        "summary": "The healthcare industry generates troves of unlabelled physiological data. This data can be exploited via contrastive learning, a self-supervised pre-training method that encourages representations of instances to be similar to one another. We propose a family of contrastive learning methods, CLOCS, that encourages representations across space, time, \\textit{and} patients to be similar to one another. We show that CLOCS consistently outperforms the state-of-the-art methods, BYOL and SimCLR, when performing a linear evaluation of, and fine-tuning on, downstream tasks. We also show that CLOCS achieves strong generalization performance with only 25\\% of labelled training data. Furthermore, our training procedure naturally generates patient-specific representations that can be used to quantify patient-similarity.",
+        "title": "CLOCS: Contrastive Learning of Cardiac Signals Across Space, Time, and Patients",
+        "updated": "2021-05-16T13:12:14Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "ea8d6407358bdf19258b9264cc910b774d5a6c4c65943f9bcb10580877949f71",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

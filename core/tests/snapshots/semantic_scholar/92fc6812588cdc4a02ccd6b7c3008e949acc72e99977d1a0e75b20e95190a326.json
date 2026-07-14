@@ -1,0 +1,339 @@
+{
+  "endpoint": "paper/DOI:10.7717/peerj.4375/references",
+  "request_key": "92fc6812588cdc4a02ccd6b7c3008e949acc72e99977d1a0e75b20e95190a326",
+  "request_params": {
+    "fields": "paperId,externalIds,url,title,venue,publicationVenue,year,publicationDate,journal,authors,citationCount,referenceCount,isOpenAccess,openAccessPdf,publicationTypes",
+    "limit": 5
+  },
+  "response_body": {
+    "citingPaperInfo": {
+      "authors": [
+        {
+          "authorId": "1872896",
+          "name": "Heather A. Piwowar"
+        },
+        {
+          "authorId": "34564102",
+          "name": "Jason Priem"
+        },
+        {
+          "authorId": "1784327",
+          "name": "V. Larivière"
+        },
+        {
+          "authorId": "38798234",
+          "name": "Juan Pablo Alperin"
+        },
+        {
+          "authorId": "143659991",
+          "name": "Lisa Matthias"
+        },
+        {
+          "authorId": "49128100",
+          "name": "B. Norlander"
+        },
+        {
+          "authorId": "2288436995",
+          "name": "A. Farley"
+        },
+        {
+          "authorId": "38906978",
+          "name": "Jevin D. West"
+        },
+        {
+          "authorId": "143602360",
+          "name": "S. Haustein"
+        }
+      ],
+      "openAccessPdf": {
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5815332, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+        "license": "CCBY",
+        "status": "GOLD",
+        "url": "https://www.neiconjournal.com/jour/article/download/71/53"
+      },
+      "title": "The state of OA: a large-scale analysis of the prevalence and impact of Open Access articles"
+    },
+    "data": [
+      {
+        "citedPaper": {
+          "authors": [
+            {
+              "authorId": "1868440",
+              "name": "Daniel S. Himmelstein"
+            },
+            {
+              "authorId": "2422498265",
+              "name": "A. Romero"
+            },
+            {
+              "authorId": "36064503",
+              "name": "Jacob G Levernier"
+            },
+            {
+              "authorId": "6552533",
+              "name": "Thomas A. Munro"
+            },
+            {
+              "authorId": "145858116",
+              "name": "S. McLaughlin"
+            },
+            {
+              "authorId": "41226291",
+              "name": "Bastian Greshake Tzovaras"
+            },
+            {
+              "authorId": "2104940",
+              "name": "C. Greene"
+            }
+          ],
+          "citationCount": 165,
+          "externalIds": {
+            "CorpusId": 3740830,
+            "DOI": "10.7554/eLife.32822",
+            "MAG": "2785823074",
+            "PubMed": "29424689",
+            "PubMedCentral": "5832410"
+          },
+          "isOpenAccess": true,
+          "journal": {
+            "name": "eLife",
+            "volume": "7"
+          },
+          "openAccessPdf": {
+            "license": "CCBY",
+            "status": "GOLD",
+            "url": "https://peerj.com/preprints/3100.pdf"
+          },
+          "paperId": "06a9684d39b445cdfeda48ef845415bac2a27c5f",
+          "publicationDate": "2018-02-09",
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationVenue": {
+            "alternate_urls": [
+              "https://elifesciences.org/",
+              "https://elife.elifesciences.org/",
+              "http://elifesciences.org/"
+            ],
+            "id": "07365b9a-c0ce-4dd3-b93b-a02e1c81e0c6",
+            "issn": "2050-084X",
+            "name": "eLife",
+            "type": "journal",
+            "url": "https://epub.uni-regensburg.de/40444/"
+          },
+          "referenceCount": 130,
+          "title": "Sci-Hub provides access to nearly all scholarly literature",
+          "url": "https://www.semanticscholar.org/paper/06a9684d39b445cdfeda48ef845415bac2a27c5f",
+          "venue": "eLife",
+          "year": 2018
+        }
+      },
+      {
+        "citedPaper": {
+          "authors": [
+            {
+              "authorId": "40830135",
+              "name": "D. Chawla"
+            }
+          ],
+          "citationCount": 24,
+          "externalIds": {
+            "CorpusId": 159609406,
+            "DOI": "10.1126/SCIENCE.AAQ1560",
+            "MAG": "2762597540"
+          },
+          "isOpenAccess": false,
+          "journal": {
+            "name": "Science",
+            "volume": ""
+          },
+          "openAccessPdf": {
+            "license": null,
+            "status": "CLOSED",
+            "url": ""
+          },
+          "paperId": "4d269e72a254d4693111e583108512acb77283db",
+          "publicationDate": "2017-10-06",
+          "publicationTypes": null,
+          "publicationVenue": null,
+          "referenceCount": 0,
+          "title": "Publishers take ResearchGate to court, alleging massive copyright infringement",
+          "url": "https://www.semanticscholar.org/paper/4d269e72a254d4693111e583108512acb77283db",
+          "venue": "",
+          "year": 2017
+        }
+      },
+      {
+        "citedPaper": {
+          "authors": [
+            {
+              "authorId": "144169093",
+              "name": "Elise M R Smith"
+            },
+            {
+              "authorId": "143602360",
+              "name": "S. Haustein"
+            },
+            {
+              "authorId": "2307010",
+              "name": "P. Mongeon"
+            },
+            {
+              "authorId": "15861940",
+              "name": "Fei Shu"
+            },
+            {
+              "authorId": "4569669",
+              "name": "V. Ridde"
+            },
+            {
+              "authorId": "1784327",
+              "name": "V. Larivière"
+            }
+          ],
+          "citationCount": 112,
+          "externalIds": {
+            "CorpusId": 4729062,
+            "DOI": "10.1186/s12961-017-0235-3",
+            "MAG": "2753353163",
+            "PubMed": "28851401",
+            "PubMedCentral": "5576373"
+          },
+          "isOpenAccess": true,
+          "journal": {
+            "name": "Health Research Policy and Systems",
+            "volume": "15"
+          },
+          "openAccessPdf": {
+            "license": "CCBY",
+            "status": "GOLD",
+            "url": "https://doi.org/10.1186/s12961-017-0235-3"
+          },
+          "paperId": "238396f17ea904187370cfbfff8217dd5cb2e404",
+          "publicationDate": "2017-08-29",
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationVenue": {
+            "alternate_names": [
+              "Health Res Policy Syst"
+            ],
+            "alternate_urls": [
+              "https://link.springer.com/journal/12961"
+            ],
+            "id": "a17b92d7-40c2-4a94-afdb-8a10e144c701",
+            "issn": "1478-4505",
+            "name": "Health Research Policy and Systems",
+            "type": "journal",
+            "url": "http://www.health-policy-systems.com/"
+          },
+          "referenceCount": 53,
+          "title": "Knowledge sharing in global health research – the impact, uptake and cost of open access to scholarly literature",
+          "url": "https://www.semanticscholar.org/paper/238396f17ea904187370cfbfff8217dd5cb2e404",
+          "venue": "Health Research Policy and Systems",
+          "year": 2017
+        }
+      },
+      {
+        "citedPaper": {
+          "authors": [
+            {
+              "authorId": "1401718525",
+              "name": "Hamid R. Jamali"
+            }
+          ],
+          "citationCount": 126,
+          "externalIds": {
+            "CorpusId": 27138477,
+            "DBLP": "journals/scientometrics/Jamali17",
+            "DOI": "10.1007/s11192-017-2291-4",
+            "MAG": "2588027260"
+          },
+          "isOpenAccess": false,
+          "journal": {
+            "name": "Scientometrics",
+            "pages": "241-254",
+            "volume": "112"
+          },
+          "openAccessPdf": {
+            "license": null,
+            "status": "CLOSED",
+            "url": ""
+          },
+          "paperId": "ea6d8029474591f791d53a2353a3de46b3f43148",
+          "publicationDate": "2017-07-01",
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationVenue": {
+            "alternate_urls": [
+              "http://www.springer.com/computer/database+management+%26+information+retrieval/journal/11192",
+              "https://link.springer.com/journal/11192"
+            ],
+            "id": "96c1b36d-3833-4ec5-8806-48b8a93f901d",
+            "issn": "0138-9130",
+            "name": "Scientometrics",
+            "type": "journal",
+            "url": "https://www.springer.com/computer/database+management+&+information+retrieval/journal/11192"
+          },
+          "referenceCount": 35,
+          "title": "Copyright compliance and infringement in ResearchGate full-text journal articles",
+          "url": "https://www.semanticscholar.org/paper/ea6d8029474591f791d53a2353a3de46b3f43148",
+          "venue": "Scientometrics",
+          "year": 2017
+        }
+      },
+      {
+        "citedPaper": {
+          "authors": [
+            {
+              "authorId": "2782636",
+              "name": "B. Greshake"
+            }
+          ],
+          "citationCount": 54,
+          "externalIds": {
+            "CorpusId": 11959298,
+            "DBLP": "journals/f1000research/Greshake17",
+            "DOI": "10.1101/124495",
+            "MAG": "2926586471",
+            "PubMed": "28529712",
+            "PubMedCentral": "5428489"
+          },
+          "isOpenAccess": true,
+          "journal": {
+            "name": "F1000Research",
+            "volume": "6"
+          },
+          "openAccessPdf": {
+            "license": "CCBY",
+            "status": "GOLD",
+            "url": "https://f1000research.com/articles/6-541/v1/pdf"
+          },
+          "paperId": "d0603bdff1ca90b17c4e9fd60d5cf4ff7410dc6c",
+          "publicationDate": "2017-04-10",
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationVenue": {
+            "id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+            "name": "bioRxiv",
+            "type": "journal",
+            "url": "http://biorxiv.org/"
+          },
+          "referenceCount": 35,
+          "title": "Looking into Pandora's Box: The Content of Sci-Hub and its Usage",
+          "url": "https://www.semanticscholar.org/paper/d0603bdff1ca90b17c4e9fd60d5cf4ff7410dc6c",
+          "venue": "bioRxiv",
+          "year": 2017
+        }
+      }
+    ],
+    "next": 5,
+    "offset": 0
+  },
+  "response_hash": "4b9441ff484043a21f7a49d07281a83d97444083eeca64a62cc727a4f3951bdc",
+  "retrieved_at": "2026-07-14T12:56:32Z",
+  "schema_version": "1.0",
+  "source": "semantic_scholar"
+}

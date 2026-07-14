@@ -1,0 +1,50 @@
+{
+  "endpoint": "query",
+  "request_key": "15c560d8c1a68b4a89cd0691a0f58b675c5c5aaf8a1d6afd6e1c29fb68eb85ef",
+  "request_params": {
+    "id_list": "2005.13249v1"
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Dani Kiyasseh",
+          "Tingting Zhu",
+          "David A. Clifton"
+        ],
+        "categories": [
+          "cs.LG",
+          "eess.SP",
+          "stat.ML"
+        ],
+        "id": "http://arxiv.org/abs/2005.13249v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2005.13249v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2005.13249v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2020-05-27T09:25:41Z",
+        "summary": "The healthcare industry generates troves of unlabelled physiological data. This data can be exploited via contrastive learning, a self-supervised pre-training mechanism that encourages representations of instances to be similar to one another. We propose a family of contrastive learning methods, CLOCS, that encourages representations across time, leads, and patients to be similar to one another. We show that CLOCS consistently outperforms the state-of-the-art approach, SimCLR, on both linear evaluation and fine-tuning downstream tasks. We also show that CLOCS achieves strong generalization performance with only 25% of labelled training data. Furthermore, our training procedure naturally generates patient-specific representations that can be used to quantify patient-similarity.",
+        "title": "CLOCS: Contrastive Learning of Cardiac Signals",
+        "updated": "2020-05-27T09:25:41Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "be37eee8752dbabbb6d382c906cab0fd0d18a8770fab21447aa76743db150b63",
+  "retrieved_at": "2026-07-14T12:00:00Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

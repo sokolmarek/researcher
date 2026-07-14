@@ -1,0 +1,88 @@
+{
+  "endpoint": "paper/DOI:10.7717/peerj.4375",
+  "request_key": "db754dfa9dcffa310c534130c8e1eec83f412c4b52d195199119b0e5210840fb",
+  "request_params": {
+    "fields": "paperId,externalIds,url,title,abstract,venue,publicationVenue,year,publicationDate,journal,authors,citationCount,referenceCount,isOpenAccess,openAccessPdf,publicationTypes"
+  },
+  "response_body": {
+    "abstract": "Despite growing interest in Open Access (OA) to scholarly literature, there is an unmet need for large-scale, up-to-date, and reproducible studies assessing the prevalence and characteristics of OA. We address this need using oaDOI, an open online service that determines OA status for 67 million articles. We use three samples, each of 100,000 articles, to investigate OA in three populations: (1) all journal articles assigned a Crossref DOI, (2) recent journal articles indexed in Web of Science, and (3) articles viewed by users of Unpaywall, an open-source browser extension that lets users find OA articles using oaDOI. We estimate that at least 28% of the scholarly literature is OA (19M in total) and that this proportion is growing, driven particularly by growth in Gold and Hybrid. The most recent year analyzed (2015) also has the highest percentage of OA (45%). Because of this growth, and the fact that readers disproportionately access newer articles, we find that Unpaywall users encounter OA quite frequently: 47% of articles they view are OA. Notably, the most common mechanism for OA is not Gold, Green, or Hybrid OA, but rather an under-discussed category we dub Bronze: articles made free-to-read on the publisher website, without an explicit Open license. We also examine the citation impact of OA articles, corroborating the so-called open-access citation advantage: accounting for age and discipline, OA articles receive 18% more citations than average, an effect driven primarily by Green and Hybrid OA. We encourage further research using the free oaDOI service, as a way to inform OA policy and practice.",
+    "authors": [
+      {
+        "authorId": "1872896",
+        "name": "Heather A. Piwowar"
+      },
+      {
+        "authorId": "34564102",
+        "name": "Jason Priem"
+      },
+      {
+        "authorId": "1784327",
+        "name": "V. Larivière"
+      },
+      {
+        "authorId": "38798234",
+        "name": "Juan Pablo Alperin"
+      },
+      {
+        "authorId": "143659991",
+        "name": "Lisa Matthias"
+      },
+      {
+        "authorId": "49128100",
+        "name": "B. Norlander"
+      },
+      {
+        "authorId": "2288436995",
+        "name": "A. Farley"
+      },
+      {
+        "authorId": "38906978",
+        "name": "Jevin D. West"
+      },
+      {
+        "authorId": "143602360",
+        "name": "S. Haustein"
+      }
+    ],
+    "citationCount": 1106,
+    "externalIds": {
+      "CorpusId": 79563844,
+      "DOI": "10.7717/peerj.4375",
+      "MAG": "3003267280",
+      "PubMed": "29456894",
+      "PubMedCentral": "5815332"
+    },
+    "isOpenAccess": true,
+    "journal": {
+      "name": "PeerJ",
+      "volume": "6"
+    },
+    "openAccessPdf": {
+      "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5815332, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+      "license": "CCBY",
+      "status": "GOLD",
+      "url": "https://www.neiconjournal.com/jour/article/download/71/53"
+    },
+    "paperId": "c2fccee04fd91439096a80972659dd764e9c0e2d",
+    "publicationDate": "2018-02-13",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "publicationVenue": {
+      "id": "558a3215-8ffd-4b31-be7f-f653ca3b600d",
+      "issn": "2167-8359",
+      "name": "PeerJ",
+      "type": "journal",
+      "url": "http://www.peerj.com/"
+    },
+    "referenceCount": 64,
+    "title": "The state of OA: a large-scale analysis of the prevalence and impact of Open Access articles",
+    "url": "https://www.semanticscholar.org/paper/c2fccee04fd91439096a80972659dd764e9c0e2d",
+    "venue": "PeerJ",
+    "year": 2018
+  },
+  "response_hash": "357b5918b058c63d0384740f58498078307cf2003b3d11cb86e0b417bdaedc82",
+  "retrieved_at": "2026-07-14T12:56:18Z",
+  "schema_version": "1.0",
+  "source": "semantic_scholar"
+}
