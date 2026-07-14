@@ -96,8 +96,8 @@ between you and the plugin, and the plugin's job is to make your half easy.
 |-------|-------------|
 | **Paper Drafting** | Outline mode and section-by-section drafting. Funnel introductions, reproducible methods, data-driven results. Terminology tracking. |
 | **Writing Style Analysis** | Calibrate to your voice from past papers. Sentence patterns, hedging, citation density, vocabulary -- all captured in a style profile. |
-| **Peer Review** | Simulated multi-reviewer system: Editor-in-Chief, R1 (Methodology), R2 (Domain Expert), R3 (Cross-disciplinary), Devil's Advocate, Writing Reviewer. Optional external model reviewers. |
-| **Revision Management** | Parse reviewer comments, create revision roadmap, generate tracked changes in LaTeX and Word. |
+| **Peer Review** | Simulated multi-reviewer system: Editor-in-Chief, R1 (Methodology), R2 (Domain Expert), R3 (Cross-disciplinary), Devil's Advocate, Writing Reviewer. External model reviewers (OpenAI, Gemini, Ollama) are a documented integration point, planned and not implemented. |
+| **Revision Management** | Parse reviewer comments, create revision roadmap, generate tracked changes in LaTeX (the `changes` package or latexdiff). Word tracked changes are planned, not implemented. |
 | **Response to Reviewers** | Point-by-point response documents. Color-coded changes. Diplomatic disagreements with evidence. |
 | **Cover Letter** | Journal-appropriate cover letters. Adapts tone to journal tier. |
 
@@ -163,7 +163,7 @@ Nine specialized agents orchestrate skills for complex workflows:
 |-------|------|-----------|
 | **Research Agent** | Literature search & synthesis | literature-search, citation-management |
 | **Writing Agent** | Section drafting & coherence | paper-drafting, writing-style-analysis, figure-suggestions |
-| **Review Agent** | Multi-perspective peer review | peer-review (+ optional ChatGPT/Gemini/Ollama) |
+| **Review Agent** | Multi-perspective peer review | peer-review |
 | **Formatting Agent** | LaTeX/Word formatting & compliance | journal-formatting, latex-tables, tikz-diagrams, word-output |
 | **Code Agent** | Code analysis & implementation (Sonnet) | implementation, code-analysis |
 | **Style Agent** | Writing voice calibration | writing-style-analysis |

@@ -6,7 +6,7 @@ sidebar:
   order: 1
 ---
 
-Two moves make up most of a related-work section: find the papers, then check that what you are about to write about them is actually true. This recipe does both, back to back, on the running scenario of self-supervised learning for ECG arrhythmia classification evaluated on PTB-XL. Everything below reproduces real output: real DOIs, real PRISMA-style counts, and four fact-check verdicts that genuinely disagree with each other.
+Two moves make up most of a related-work section: find the papers, then check that what you are about to write about them is actually true. This recipe does both, back to back, on the running scenario of self-supervised learning for ECG arrhythmia classification evaluated on PTB-XL. The papers, DOIs, quotes, and four (genuinely disagreeing) fact-check verdicts below are all real and were retrieved. The hit counts and PRISMA counts are illustrative, not retrieved, and are labeled as such where they appear.
 
 ## 1. Search
 
@@ -18,9 +18,9 @@ During elicitation the skill agrees on a scope before it dispatches anything: th
 
 What the multi-source flow produces:
 
-- Per-source query strings and raw hit counts, not one opaque web search. A single run turned up 214 hits on OpenAlex, 88 on Semantic Scholar, 63 on arXiv, 57 on Crossref, and 41 on PubMed.
+- Per-source query strings and raw hit counts, not one opaque web search. The illustrative counts here sit on the order of 214 hits on OpenAlex, 88 on Semantic Scholar, 63 on arXiv, 57 on Crossref, and 41 on PubMed.
 - Deduplication by DOI first, then by normalized-title similarity at or above 0.90, so the same paper indexed three ways collapses to one record.
-- A PRISMA flow whose counts reconcile end to end:
+- A PRISMA flow whose counts reconcile end to end, identification through inclusion (illustrative counts, not retrieved):
 
 ```
 Identification
@@ -36,7 +36,11 @@ Included
   Studies included in synthesis ..................... 17
 ```
 
-- A machine-readable provenance record written to `manuscript/provenance.json` storing every count, so the search is reproducible and `/researcher:submit-ready` can confirm it later. Volatile hit counts live there, not in prose that would silently go stale.
+- A machine-readable provenance record written to `manuscript/provenance.json` storing every count and the dedup method, which is enough to redraw the PRISMA flow and enough for `/researcher:submit-ready` to check it later. Volatile hit counts live there, not in prose that would silently go stale. It is an aggregate summary and not yet a replayable record: it holds no record identifiers, no response snapshots, and no per-record screening decisions, so a reader cannot reproduce the search from it. The per-record event ledger that would make a run replayable is planned, not implemented (see the [roadmap](/researcher/reference/roadmap/)).
+
+:::caution[Provenance: those counts are illustrative]
+The per-source hit counts and the PRISMA counts above were **not retrieved**. They show the shape of the flow and the arithmetic it has to satisfy (each stage reconciles with the one before it), at a plausible scale. Your own run produces its own numbers, and index churn makes them drift between runs. Everything else on this page, every paper, DOI, quote, and reported figure, was retrieved and verified. The [worked example](https://github.com/sokolmarek/researcher/blob/main/examples/research-verification/literature-search-prisma.md) labels each number the same way.
+:::
 
 A couple of the top real papers from the ranked included set:
 

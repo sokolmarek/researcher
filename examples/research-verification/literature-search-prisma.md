@@ -5,7 +5,7 @@
 | Skill | literature-search |
 | Command | n/a (skill triggered by phrasing) |
 | Trigger phrase | "Do a systematic literature search on self-supervised learning for ECG arrhythmia classification" |
-| Connectors used | Search sources: OpenAlex, Crossref, Semantic Scholar, arXiv, PubMed (direct APIs). Scite MCP for citation tallies (rate-limited at authoring, so the tallies shown are illustrative placeholders) |
+| Connectors used | Search sources: OpenAlex, Crossref, Semantic Scholar, arXiv, PubMed (direct APIs). Scite MCP for citation tallies (rate-limited at authoring, so the tallies shown are illustrative, not retrieved) |
 | Generated | 2026-07-12, all DOIs verified against Crossref/OpenAlex on this date |
 
 ## Invocation
@@ -24,6 +24,15 @@ None (the skill runs the searches itself). Search scope agreed during elicitatio
 
 ## Output
 
+### Provenance key (read this before the numbers)
+
+This example uses exactly two provenance labels, and each means one thing only:
+
+- **Verified.** Retrieved while authoring and checked against the index named. Every paper, year, venue, DOI, and arXiv ID in the ranked set below is verified, and every identifier resolves.
+- **Illustrative.** Not retrieved. The value is there to show the shape of the field and what a real run puts in it. Illustrative values are excluded from the verified citation record, and an executed search overwrites them.
+
+Illustrative in this example: the per-source raw hit counts, the PRISMA counts computed from them, and the Scite supporting/contrasting/mentioning tallies (the Scite MCP was rate-limited at authoring). Everything else is verified.
+
 ### Search strategy (per source)
 
 | Source | Query string | Raw hits |
@@ -34,9 +43,13 @@ None (the skill runs the searches itself). Search scope agreed during elicitatio
 | Semantic Scholar | `self-supervised contrastive ECG representation learning` | 88 |
 | Crossref | `self-supervised electrocardiogram representation learning` | 57 |
 
-Raw hit counts are illustrative of a single run; rerun counts drift as indexes update. The provenance record (below) stores the exact numbers for the run that produced this report.
+**Provenance: illustrative.** The query strings are the ones this skill builds for the agreed scope, but the raw hit counts were not retrieved. They stand in for what a run of this scope returns, at a plausible scale. On a real run the skill writes its own counts here and into the provenance record below, and those counts drift between runs as the indexes update.
 
-### PRISMA flow
+### PRISMA flow (counts illustrative, not retrieved)
+
+The block below is the PRISMA flow the skill emits: it traces every record from identification across the five sources, through deduplication, title-and-abstract screening, and eligibility assessment, down to the studies included in the synthesis.
+
+**Provenance: illustrative.** These counts were not retrieved. They show the shape of a PRISMA flow and the arithmetic it must satisfy, namely that each stage reconciles with the one before it (214 + 63 + 41 + 88 + 57 = 463 identified; 463 - 171 duplicates = 292 screened; 292 - 241 excluded = 51 assessed; 51 - 34 excluded = 17 included). An executed search produces its own counts, which must reconcile the same way.
 
 ```
 Identification
@@ -57,7 +70,9 @@ Included
 
 ### Ranked included set (top 12 shown)
 
-Ranking is a composite of query relevance, citation count, and recency. The Scite column shows supporting / contrasting / mentioning tallies. The Scite MCP was rate-limited during authoring, so the values below are illustrative placeholders that show where those tallies appear; they are not retrieved figures and are excluded from the verified citation record (every DOI, by contrast, is real and resolves). When the Scite connector is available, this skill populates the column from actual Smart Citations and records them in the provenance JSON.
+Ranking is a composite of query relevance, citation count, and recency. Every paper, year, venue, and identifier in this table is **verified**: the DOIs and arXiv IDs were resolved against Crossref and OpenAlex on 2026-07-12 and all of them resolve.
+
+The one exception is the Scite column, which shows supporting / contrasting / mentioning tallies. The Scite MCP was rate-limited during authoring, so those values are **illustrative**: they mark where the tallies appear, they were not retrieved, and they are excluded from the verified citation record. When the Scite connector is available, this skill populates the column from actual Smart Citations and records them in the provenance JSON.
 
 | # | Paper | Year | Venue | DOI / arXiv | Scite (S/C/M, illustrative) | Why included |
 |---|---|---|---|---|---|---|
@@ -78,13 +93,19 @@ Full included set adds: Hu et al. 2022 (transformer arrhythmia detection, 10.101
 
 ### Search-provenance record (written to `manuscript/provenance.json`)
 
-What follows is an **illustrative aggregate summary**: it records the counts and the dedup method for
-this run, which is enough to redraw the PRISMA flow, but it is not yet a reproducible record. It
-holds no raw record identifiers, no pagination state, no response snapshots, no deduplication
-clusters, and no per-record screening decisions, so a reader cannot replay the search from it. The
-append-only per-record event ledger that makes a run replayable (retrieval, record_lineage,
-dedup_decision, and screening_decision events, with response hashes and PRISMA counts derived by
-aggregation) is planned work; when it lands, this block is regenerated from it.
+This is the record the skill writes next to the manuscript. Two separate caveats apply to it, and it
+is worth keeping them apart.
+
+**Provenance: illustrative.** The numbers below are the illustrative ones from the tables above, so
+the record shown here is illustrative too. An executed search writes its own counts in this shape.
+
+**Shape: aggregate-only.** Even on a real run, this record holds counts and the dedup method, which
+is enough to redraw the PRISMA flow but not enough to reproduce the search. It carries no raw record
+identifiers, no pagination state, no response snapshots, no deduplication clusters, and no per-record
+screening decisions, so a reader cannot replay the run from it. The append-only per-record event
+ledger that makes a run replayable (retrieval, record_lineage, dedup_decision, and
+screening_decision events, with response hashes and PRISMA counts derived by aggregation) is planned,
+not implemented; when it lands, this block is regenerated from it.
 
 ```json
 {
@@ -104,11 +125,12 @@ aggregation) is planned work; when it lands, this block is regenerated from it.
 }
 ```
 
-This record is what the systematic-review skill and the PRISMA flow diagram read from today. Note the honest limitation stated above: it summarizes the run, it does not make it replayable.
+This record is what the systematic-review skill and the PRISMA flow diagram read from today. Both
+caveats above hold: it summarizes a run, it does not make one replayable.
 
 ## What this demonstrates
 
 - Multi-source dispatch with per-source query strings, followed by deduplication (DOI first, then normalized-title similarity) rather than a single opaque web search.
-- A complete PRISMA flow (identification, screening, eligibility, inclusion) with counts that reconcile, plus a machine-readable provenance record that is explicit about what it does and does not capture (aggregate counts today; a per-record event ledger is planned).
+- A complete PRISMA flow (identification, screening, eligibility, inclusion) whose counts reconcile stage by stage, plus a machine-readable provenance record that is explicit about what it does and does not capture (aggregate counts today; a per-record event ledger is planned, not implemented).
 - Every included paper carries a real, resolvable identifier (DOI or arXiv ID); the included set becomes the shared bibliography for the writing examples in `examples/writing-review/`.
-- Volatile counts are labeled as run-specific; the exact numbers live in the provenance record, not in prose that would silently go stale.
+- One provenance vocabulary applied consistently: every number is labeled either verified (retrieved and checked) or illustrative (not retrieved). The counts and the Scite tallies here are illustrative and say so at each point of use, so no reader mistakes them for retrieved figures.
