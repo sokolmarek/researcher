@@ -1,0 +1,62 @@
+name: Integrity failure (fabricated citation or invented data)
+description: The plugin produced a citation that does not exist, invented data, or presented an unverifiable claim as fact. This is the most serious bug class in this project.
+title: "[integrity] "
+labels: ["integrity", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this. The plugin exists to make research more honest, so a fabricated
+        citation or an invented number is not a normal bug: it is a failure of the thing the project is
+        for. These get triaged first.
+
+        Please do not delete the output. The exact text is the most useful evidence.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What happened
+      options:
+        - A citation that does not exist (fabricated reference)
+        - A real paper, but the citation misrepresents what it says
+        - Invented data, numbers, or results
+        - Statistics asserted without the underlying observations (significance stars, for example)
+        - A retracted source cited without disclosure
+        - Something else that undermines the integrity rules
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: The output, verbatim
+      description: Paste the fabricated citation, the invented numbers, or the offending passage exactly as produced. Please do not paraphrase.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What you asked for
+      description: The prompt or command that produced it, and which skill you think was running.
+    validations:
+      required: true
+
+  - type: textarea
+    id: guards
+    attributes:
+      label: Did any check catch it
+      description: |
+        If you have them installed, what did these say?
+        `python scripts/bib-validator.py <your library.bib>`, and did the commit guard block anything?
+      render: text
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Agent (Claude Code, Cowork, or Codex), plugin version, and the model if you know it.
+      placeholder: "Claude Code, researcher 0.1.0, Opus"
+    validations:
+      required: true

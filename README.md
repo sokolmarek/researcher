@@ -373,6 +373,15 @@ This plugin does not use em dashes in generated academic text. Sentences are res
 
 Issues and PRs welcome. If you're a PhD student and this saved you even one hour of formatting hell, that's a win.
 
+Start with [`CONTRIBUTING.md`](CONTRIBUTING.md): it covers the development setup, the checks CI will
+run on your PR, and the house conventions. By taking part you agree to the
+[Code of Conduct](CODE_OF_CONDUCT.md).
+
+One kind of bug matters more than the rest. If the plugin ever fabricates a citation or invents data,
+please report it with the
+[integrity template](https://github.com/sokolmarek/researcher/issues/new?template=integrity-failure.yml).
+That is a failure of the thing this project exists for, and it gets triaged first.
+
 ---
 
 ## Credits & Acknowledgments

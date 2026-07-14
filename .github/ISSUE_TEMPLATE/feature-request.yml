@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest a skill, a workflow, or an improvement.
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: Describe the research task, not the solution. What part of publishing is wasting your time?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you think would help
+      description: A new skill, a change to an existing one, another journal style, another output format, and so on.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: verifiable
+    attributes:
+      label: Could the result be checked
+      description: |
+        The project's bar is that a capability must be demonstrable, not just plausible. If a feature
+        produces claims, citations, or numbers, there has to be a way to tell when it is wrong.
+      options:
+        - "Yes: the output can be verified against a source, a computation, or a compile check"
+        - "Partly: some of it can be checked, some is judgment"
+        - "No: it is purely a matter of taste or convenience"
+        - "Not applicable"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Prior art, a journal's requirements, a paper describing the method, or an example of the output you want.
