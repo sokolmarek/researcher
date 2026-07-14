@@ -1,0 +1,447 @@
+{
+  "endpoint": "works/doi:10.1016/j.media.2019.101539",
+  "request_key": "9f433e5812b2473381cbc770d3a4945cd8c85c0f3961e7b917194e13bc830dfc",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I47508984"
+            ],
+            "raw_affiliation_string": "BioMedIA Group, Department of Computing, Imperial College London, 180 Queen's Gate, London, SW7 2AZ, UK; Division of Brain Sciences, Department of Medicine, Imperial College London, UK. Electronic address: liang.chen12@imperial.ac.uk"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I47508984"
+            ],
+            "raw_affiliation_string": "Division of Brain Sciences, Department of Medicine, Imperial College London, UK"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I47508984"
+            ],
+            "raw_affiliation_string": "BioMedIA Group, Department of Computing, Imperial College London, 180 Queen's Gate, London, SW7 2AZ, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Liang Chen",
+          "id": "https://openalex.org/A5100334649",
+          "orcid": "https://orcid.org/0000-0003-1453-1091"
+        },
+        "author_position": "first",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "Imperial College London",
+            "id": "https://openalex.org/I47508984",
+            "lineage": [
+              "https://openalex.org/I47508984"
+            ],
+            "ror": "https://ror.org/041kmwe10",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "BioMedIA Group, Department of Computing, Imperial College London, 180 Queen's Gate, London, SW7 2AZ, UK; Division of Brain Sciences, Department of Medicine, Imperial College London, UK. Electronic address: liang.chen12@imperial.ac.uk",
+          "Division of Brain Sciences, Department of Medicine, Imperial College London, UK",
+          "BioMedIA Group, Department of Computing, Imperial College London, 180 Queen's Gate, London, SW7 2AZ, UK"
+        ],
+        "raw_author_name": "Liang Chen",
+        "raw_orcid": "https://orcid.org/0000-0003-1453-1091"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I47508984"
+            ],
+            "raw_affiliation_string": "Division of Brain Sciences, Department of Medicine, Imperial College London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Paul Bentley",
+          "id": "https://openalex.org/A5061918237",
+          "orcid": "https://orcid.org/0000-0001-8036-7010"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "Imperial College London",
+            "id": "https://openalex.org/I47508984",
+            "lineage": [
+              "https://openalex.org/I47508984"
+            ],
+            "ror": "https://ror.org/041kmwe10",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Brain Sciences, Department of Medicine, Imperial College London, UK"
+        ],
+        "raw_author_name": "Paul Bentley",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I60134161"
+            ],
+            "raw_affiliation_string": "Graduate School of Informatics, Nagoya University, Japan"
+          }
+        ],
+        "author": {
+          "display_name": "Kensaku Mori",
+          "id": "https://openalex.org/A5032527419",
+          "orcid": "https://orcid.org/0000-0002-0100-4797"
+        },
+        "author_position": "middle",
+        "countries": [
+          "JP"
+        ],
+        "institutions": [
+          {
+            "country_code": "JP",
+            "display_name": "Nagoya University",
+            "id": "https://openalex.org/I60134161",
+            "lineage": [
+              "https://openalex.org/I60134161"
+            ],
+            "ror": "https://ror.org/04chrp450",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Graduate School of Informatics, Nagoya University, Japan"
+        ],
+        "raw_author_name": "Kensaku Mori",
+        "raw_orcid": "https://orcid.org/0000-0002-0100-4797"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210133851"
+            ],
+            "raw_affiliation_string": "Aichi Cancer Centre, Japan"
+          }
+        ],
+        "author": {
+          "display_name": "Kazunari Misawa",
+          "id": "https://openalex.org/A5005597709",
+          "orcid": "https://orcid.org/0000-0002-2047-3919"
+        },
+        "author_position": "middle",
+        "countries": [
+          "JP"
+        ],
+        "institutions": [
+          {
+            "country_code": "JP",
+            "display_name": "Aichi Cancer Center",
+            "id": "https://openalex.org/I4210133851",
+            "lineage": [
+              "https://openalex.org/I4210133851"
+            ],
+            "ror": "https://ror.org/03kfmm080",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Aichi Cancer Centre, Japan"
+        ],
+        "raw_author_name": "Kazunari Misawa",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210090647"
+            ],
+            "raw_affiliation_string": "Nagoya University Hospital, Japan"
+          }
+        ],
+        "author": {
+          "display_name": "Michitaka Fujiwara",
+          "id": "https://openalex.org/A5087008478",
+          "orcid": "https://orcid.org/0000-0002-7189-5580"
+        },
+        "author_position": "middle",
+        "countries": [
+          "JP"
+        ],
+        "institutions": [
+          {
+            "country_code": "JP",
+            "display_name": "Nagoya University Hospital",
+            "id": "https://openalex.org/I4210090647",
+            "lineage": [
+              "https://openalex.org/I4210090647"
+            ],
+            "ror": "https://ror.org/008zz8m46",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Nagoya University Hospital, Japan"
+        ],
+        "raw_author_name": "Michitaka Fujiwara",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I47508984"
+            ],
+            "raw_affiliation_string": "BioMedIA Group, Department of Computing, Imperial College London, 180 Queen's Gate, London, SW7 2AZ, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Daniel Rueckert",
+          "id": "https://openalex.org/A5006461848",
+          "orcid": "https://orcid.org/0000-0002-5683-5889"
+        },
+        "author_position": "last",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "Imperial College London",
+            "id": "https://openalex.org/I47508984",
+            "lineage": [
+              "https://openalex.org/I47508984"
+            ],
+            "ror": "https://ror.org/041kmwe10",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "BioMedIA Group, Department of Computing, Imperial College London, 180 Queen's Gate, London, SW7 2AZ, UK"
+        ],
+        "raw_author_name": "Daniel Rueckert",
+        "raw_orcid": "https://orcid.org/0000-0002-5683-5889"
+      }
+    ],
+    "best_oa_location": {
+      "id": "pmh:oai:pubmedcentral.nih.gov:7613987",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7613987",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Med Image Anal",
+      "raw_type": "Text",
+      "source": {
+        "display_name": "PubMed Central",
+        "host_organization": "https://openalex.org/I1299303238",
+        "host_organization_lineage": [
+          "https://openalex.org/I1299303238"
+        ],
+        "host_organization_lineage_names": [],
+        "host_organization_name": "National Institutes of Health",
+        "id": "https://openalex.org/S2764455111",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": true,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": "submittedVersion"
+    },
+    "biblio": {
+      "first_page": "101539",
+      "issue": null,
+      "last_page": "101539",
+      "volume": "58"
+    },
+    "cited_by_count": 586,
+    "display_name": "Self-supervised learning for medical image analysis using image context restoration",
+    "doi": "https://doi.org/10.1016/j.media.2019.101539",
+    "id": "https://openalex.org/W2964744899",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.media.2019.101539",
+      "mag": "2964744899",
+      "openalex": "https://openalex.org/W2964744899",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/31374449"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7613987"
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.media.2019.101539",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.media.2019.101539",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Medical Image Analysis",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Medical Image Analysis",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S116571295",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1361-8415",
+          "1361-8423",
+          "1361-8431"
+        ],
+        "issn_l": "1361-8415",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2019-07-25",
+    "publication_year": 2019,
+    "referenced_works": [
+      "https://openalex.org/W639708223",
+      "https://openalex.org/W1544547617",
+      "https://openalex.org/W1641498739",
+      "https://openalex.org/W1686810756",
+      "https://openalex.org/W1901129140",
+      "https://openalex.org/W1903029394",
+      "https://openalex.org/W2097117768",
+      "https://openalex.org/W2110798204",
+      "https://openalex.org/W2117539524",
+      "https://openalex.org/W2126598020",
+      "https://openalex.org/W2144796873",
+      "https://openalex.org/W2145038566",
+      "https://openalex.org/W2153431772",
+      "https://openalex.org/W2161236525",
+      "https://openalex.org/W2163605009",
+      "https://openalex.org/W2183341477",
+      "https://openalex.org/W2186222003",
+      "https://openalex.org/W2194775991",
+      "https://openalex.org/W2198618282",
+      "https://openalex.org/W2274287116",
+      "https://openalex.org/W2301358467",
+      "https://openalex.org/W2321533354",
+      "https://openalex.org/W2326925005",
+      "https://openalex.org/W2342877626",
+      "https://openalex.org/W2395611524",
+      "https://openalex.org/W2412782625",
+      "https://openalex.org/W2464708700",
+      "https://openalex.org/W2511428026",
+      "https://openalex.org/W2511730936",
+      "https://openalex.org/W2550462002",
+      "https://openalex.org/W2558661413",
+      "https://openalex.org/W2559655401",
+      "https://openalex.org/W2575671312",
+      "https://openalex.org/W2590651460",
+      "https://openalex.org/W2596164567",
+      "https://openalex.org/W2604272474",
+      "https://openalex.org/W2609990452",
+      "https://openalex.org/W2626711511",
+      "https://openalex.org/W2735582614",
+      "https://openalex.org/W2750912449",
+      "https://openalex.org/W2751069891",
+      "https://openalex.org/W2893436174",
+      "https://openalex.org/W2914649379",
+      "https://openalex.org/W2949095067",
+      "https://openalex.org/W2949117887",
+      "https://openalex.org/W2949891561",
+      "https://openalex.org/W2950061832",
+      "https://openalex.org/W2950187998",
+      "https://openalex.org/W2951437882",
+      "https://openalex.org/W2951548327",
+      "https://openalex.org/W2951590555",
+      "https://openalex.org/W2951839332",
+      "https://openalex.org/W2953106684",
+      "https://openalex.org/W2953259386",
+      "https://openalex.org/W2962728572",
+      "https://openalex.org/W2964121744",
+      "https://openalex.org/W2990138404",
+      "https://openalex.org/W3101156210",
+      "https://openalex.org/W3102109558",
+      "https://openalex.org/W3104370314",
+      "https://openalex.org/W4236965008",
+      "https://openalex.org/W4300577530",
+      "https://openalex.org/W4301409532",
+      "https://openalex.org/W6608742787",
+      "https://openalex.org/W6611801654",
+      "https://openalex.org/W6620707391",
+      "https://openalex.org/W6631190155",
+      "https://openalex.org/W6631237622",
+      "https://openalex.org/W6631782140",
+      "https://openalex.org/W6638667902",
+      "https://openalex.org/W6639824700",
+      "https://openalex.org/W6640054144",
+      "https://openalex.org/W6640224507",
+      "https://openalex.org/W6674914833",
+      "https://openalex.org/W6676481782",
+      "https://openalex.org/W6681293778",
+      "https://openalex.org/W6684191040",
+      "https://openalex.org/W6686164453",
+      "https://openalex.org/W6687483927",
+      "https://openalex.org/W6687725749",
+      "https://openalex.org/W6694260854",
+      "https://openalex.org/W6695876544",
+      "https://openalex.org/W6700872662",
+      "https://openalex.org/W6701655646",
+      "https://openalex.org/W6704369950",
+      "https://openalex.org/W6715287400",
+      "https://openalex.org/W6722416126",
+      "https://openalex.org/W6725104640",
+      "https://openalex.org/W6725739302",
+      "https://openalex.org/W6729812090",
+      "https://openalex.org/W6730018477",
+      "https://openalex.org/W6731843396",
+      "https://openalex.org/W6734660512",
+      "https://openalex.org/W6735738663",
+      "https://openalex.org/W6742312384",
+      "https://openalex.org/W6743292961",
+      "https://openalex.org/W6759339810",
+      "https://openalex.org/W6768888876",
+      "https://openalex.org/W6973769828",
+      "https://openalex.org/W7011482893"
+    ],
+    "referenced_works_count": 100,
+    "title": "Self-supervised learning for medical image analysis using image context restoration",
+    "type": "article"
+  },
+  "response_hash": "2ee9f4b0e752ed9e136864589900d4389b3b1843d2e50542cbe49a202d04ca4a",
+  "retrieved_at": "2026-07-14T13:49:35Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

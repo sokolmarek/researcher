@@ -1,0 +1,462 @@
+# Pooled trigger eval set (M2.13, sized per D17).
+#
+# 29 skills x (5 positive + 3 negative) = 232 prompts: 145 positives, 87 negatives.
+# D17 requires exactly these sizes. evals/run_triggers.py FAILS if any skill carries
+# fewer than 5 positives or fewer than 3 negatives, so the set cannot be quietly shrunk.
+#
+# What a POSITIVE is: a realistic user utterance that SHOULD route to that skill.
+#   The first two positives of every skill are verbatim from the M1 smoke-test table
+#   (plans/01-M1-release-correctness.md, appendix), so the M1 seeds are preserved
+#   unchanged and are traceable. The remaining three are written against the skill's
+#   own SKILL.md frontmatter description.
+#
+# What a NEGATIVE is: a prompt that PLAUSIBLY LOOKS like it belongs to that skill
+#   (it reuses the skill's own trigger vocabulary) but must NOT route to it. Negatives
+#   are the false-trigger measurement, so they are adversarial by construction, not
+#   off-topic filler. Most of them are legitimate requests for a NEIGHBOURING skill,
+#   which is exactly where a description collision would show up.
+#
+#   `route` records where the prompt SHOULD go instead ("none" = no skill in this
+#   plugin should claim it). `route` is a diagnostic aid only: the false-trigger metric
+#   is computed purely as "did the baited skill come out on top", independent of it.
+#
+# GATE (pooled, per D17): pooled recall over 145 positives, pooled false-trigger rate
+# over 87 negatives, both with 95% Wilson CIs. PER-SKILL n=5 IS NOT A GATE AND NEVER
+# WILL BE: 4/5 = 0.80 carries a 95% Wilson interval of roughly 0.38 to 0.96. The runner
+# refuses to certify per-skill numbers.
+
+skills:
+  - name: literature-search
+    positive:
+      - "Find recent papers on self-supervised learning for ECG classification"
+      - "Do a systematic literature search on transformer models for arrhythmia detection"
+      - "What does the research say about intermittent fasting and insulin sensitivity?"
+      - "Find related work on graph neural networks for molecular property prediction"
+      - "Search PubMed and arXiv for prior work on federated learning across hospitals"
+    negative:
+      - prompt: "Search my codebase for where the retry logic in the download client lives"
+        route: none
+      - prompt: "Go through my Zotero library and remove the duplicate entries from library.bib"
+        route: citation-management
+      - prompt: "Find a venue with a submission deadline before June where I could present this"
+        route: conference-finder
+
+  - name: research-convergence
+    positive:
+      - "Cross-check these three papers' findings against each other"
+      - "Where do these sources agree and disagree on treatment efficacy?"
+      - "Help me converge on a thesis from the twelve sources I collected"
+      - "Build me an argument map for and against this position"
+      - "Challenge my argument that scaling laws hold for ECG foundation models"
+    negative:
+      - prompt: "Brainstorm three new research directions for my dissertation"
+        route: brainstorming
+      - prompt: "Verify whether this sentence is actually supported by the paper it cites"
+        route: fact-checking
+      - prompt: "Resolve the merge conflicts so these two branches finally converge"
+        route: none
+
+  - name: fact-checking
+    positive:
+      - "Verify the claims in this results section against the cited sources"
+      - "Fact-check this paragraph before I submit it"
+      - "Is this statement about vaccine efficacy actually supported by the literature?"
+      - "Check my claims in the discussion for evidence and flag the unsupported ones"
+      - "Find evidence for or against the claim that transformers beat CNNs on ECG"
+    negative:
+      - prompt: "Validate every entry in my .bib file against CrossRef and fix broken DOIs"
+        route: citation-management
+      - prompt: "Check whether my training code matches the method the paper describes"
+        route: code-analysis
+      - prompt: "Assess this manuscript's methodology and tell me if it is publishable"
+        route: peer-review
+
+  - name: sota-finder
+    positive:
+      - "What's the current state of the art for ECG arrhythmia classification?"
+      - "Build me a SOTA comparison table for this task"
+      - "Which method currently tops the leaderboard on this benchmark?"
+      - "What are the best reported results on PhysioNet 2021 so far?"
+      - "Show me the leading methods for protein structure prediction and their scores"
+    negative:
+      - prompt: "Typeset this comparison of results as a booktabs table for the paper"
+        route: latex-tables
+      - prompt: "Plot the performance comparison of these two methods as a grouped bar chart"
+        route: visualization
+      - prompt: "Run the benchmark suite over my repository and report the timings"
+        route: implementation
+
+  - name: research-gaps
+    positive:
+      - "What gaps exist in the self-supervised ECG literature?"
+      - "Help me find an underexplored angle for this topic"
+      - "What hasn't been studied yet in continual learning for time series?"
+      - "Do a gap analysis over the forty papers I collected"
+      - "Where are the open problems and research opportunities in this field?"
+    negative:
+      - prompt: "Fix the awkward gap between paragraphs three and four in my related work"
+        route: paper-drafting
+      - prompt: "Which required sections are still missing from my manuscript folder?"
+        route: manuscript-setup
+      - prompt: "List the open issues in my GitHub tracker that nobody has picked up"
+        route: none
+
+  - name: citation-context
+    positive:
+      - "How has this paper been cited, supporting or contrasting?"
+      - "Show me the citation context for this reference"
+      - "Are the papers citing this one endorsing it or disputing it?"
+      - "Analyze how my citations are framed in the introduction"
+      - "Does my citation framing match the actual relationship between the papers?"
+    negative:
+      - prompt: "Check my bibliography for dangling citation keys before I commit"
+        route: citation-management
+      - prompt: "Find newer papers that cite this one so I can extend my related work"
+        route: literature-search
+      - prompt: "Count how many times each reference appears in the compiled PDF"
+        route: none
+
+  - name: brainstorming
+    positive:
+      - "Help me brainstorm research directions for this dataset"
+      - "I need ideas for a follow-up study"
+      - "My research question is too broad, help me narrow my focus"
+      - "Play devil's advocate on my hypothesis"
+      - "I have a vague idea about sleep and memory, help me think it through"
+    negative:
+      - prompt: "Design the ablation study that would actually test this hypothesis"
+        route: experiment-design
+      - prompt: "Brainstorm better variable names for the config parser in this module"
+        route: none
+      - prompt: "Explore this topic in the literature and give me the twenty key papers"
+        route: literature-search
+
+  - name: experiment-design
+    positive:
+      - "Design an experiment to test this hypothesis"
+      - "What's a good ablation study design here?"
+      - "How many participants do I need to detect an effect this size?"
+      - "Draft the protocol for a pilot study of this intervention"
+      - "Plan the baseline comparisons and controls for my evaluation"
+    negative:
+      - prompt: "Draw the experimental pipeline as a diagram for the methods section"
+        route: tikz-diagrams
+      - prompt: "Which test should I run on the data I already collected, and is it powered?"
+        route: statistical-analysis
+      - prompt: "Set up the folder structure and config for my new study's paper"
+        route: manuscript-setup
+
+  - name: statistical-analysis
+    positive:
+      - "What statistical test should I use for this comparison?"
+      - "Help me analyze these paired results"
+      - "Is this p-value corrected for multiple comparisons?"
+      - "Run an ANOVA across these three groups and report it in APA format"
+      - "Check the normality assumption before I use a t-test"
+    negative:
+      - prompt: "Analyze this codebase and describe the training algorithm it implements"
+        route: code-analysis
+      - prompt: "Analyze my writing style across my past three papers"
+        route: writing-style-analysis
+      - prompt: "Draw the regression line over my scatter plot and shade the CI band"
+        route: visualization
+
+  - name: manuscript-setup
+    positive:
+      - "Set up a new manuscript for this project"
+      - "Initialize an IMRaD paper structure"
+      - "Start a new paper on this topic in LaTeX with a bibliography folder"
+      - "Create the project scaffold for a Word-based manuscript"
+      - "I want to begin writing a paper for my thesis chapter, set the project up"
+    negative:
+      - prompt: "Write the introduction section of the paper we already set up"
+        route: paper-drafting
+      - prompt: "Set up a new Python project with a pyproject.toml and a tests folder"
+        route: none
+      - prompt: "Restructure my existing manuscript to the Elsevier article template"
+        route: journal-formatting
+
+  - name: paper-drafting
+    positive:
+      - "Draft the introduction section"
+      - "Write the methods section based on this experiment design"
+      - "Give me a full outline for the paper before I start writing"
+      - "Write the abstract from these results"
+      - "Draft the discussion and tie it back to the three hypotheses"
+    negative:
+      - prompt: "Write the cover letter to the editor for this submission"
+        route: cover-letter
+      - prompt: "Write the code for the training loop described in the methods"
+        route: implementation
+      - prompt: "Write a point-by-point rebuttal to reviewer two"
+        route: response-to-reviewers
+
+  - name: writing-style-analysis
+    positive:
+      - "Check this draft's writing style against journal norms"
+      - "Is this section's tone consistent with the rest of the paper?"
+      - "Learn my voice from the three papers in my publications folder"
+      - "Build a style profile from my previous publications"
+      - "Rewrite this paragraph so it matches my usual academic writing style"
+    negative:
+      - prompt: "Analyze the statistics in my results section and check the assumptions"
+        route: statistical-analysis
+      - prompt: "Apply the journal's style guide and reference style to my manuscript"
+        route: journal-formatting
+      - prompt: "Score the quality of my argument the way a reviewer would"
+        route: peer-review
+
+  - name: peer-review
+    positive:
+      - "Review this manuscript as a reviewer would"
+      - "Give me a peer review report for this draft"
+      - "Critique my methodology section harshly before I submit"
+      - "Is this paper ready for submission, or will it be desk rejected?"
+      - "Score this manuscript against a review rubric and list major concerns"
+    negative:
+      - prompt: "Review my Python module and tell me if the implementation is reproducible"
+        route: code-analysis
+      - prompt: "Draft my reply to the three reviewer comments we received"
+        route: response-to-reviewers
+      - prompt: "Assess which journal is the best quality match for this paper"
+        route: journal-finder
+
+  - name: revision-management
+    positive:
+      - "Track the changes needed after this review round"
+      - "Help me manage revisions across sections"
+      - "Reviewer two asked for a new experiment, plan the revision work"
+      - "Generate a latexdiff between the submitted and revised manuscript"
+      - "Show tracked changes for the edits I made in the methods section"
+    negative:
+      - prompt: "Write the actual response letter answering each reviewer point by point"
+        route: response-to-reviewers
+      - prompt: "Revise my training script to use the new dataloader API"
+        route: implementation
+      - prompt: "Read this draft and give me the reviewer comments it would receive"
+        route: peer-review
+
+  - name: response-to-reviewers
+    positive:
+      - "Draft a response to these reviewer comments"
+      - "Write a rebuttal letter for reviewer 2"
+      - "Turn my revision notes into a point-by-point response document"
+      - "How should I reply to the editor's decision letter?"
+      - "Address every reviewer comment one by one in a formal response"
+    negative:
+      - prompt: "Make the manuscript edits the reviewers asked for and track them"
+        route: revision-management
+      - prompt: "Write the cover letter that accompanies the resubmission"
+        route: cover-letter
+      - prompt: "Draft a polite reply to this email from my co-author"
+        route: none
+
+  - name: cover-letter
+    positive:
+      - "Write a cover letter for this journal submission"
+      - "Draft a cover letter addressed to the editor"
+      - "I need a submission letter for Nature Communications"
+      - "Write the letter to the editor explaining why this fits their scope"
+      - "Draft the cover letter and lead with the novelty claim"
+    negative:
+      - prompt: "Write a rebuttal letter answering reviewer one's statistical objection"
+        route: response-to-reviewers
+      - prompt: "Write me a job application cover letter for a postdoc position"
+        route: none
+      - prompt: "Apply the publisher's LaTeX class to the submission package"
+        route: journal-formatting
+
+  - name: visualization
+    positive:
+      - "Plot these results as a bar chart"
+      - "Make a figure comparing these two methods"
+      - "Create a heatmap of the correlation matrix in seaborn"
+      - "Give me publication-quality matplotlib code for this scatter plot"
+      - "Visualize the accuracy curves of the three models over training epochs"
+    negative:
+      - prompt: "Which chart type would best show this trend, and what should the caption say?"
+        route: figure-suggestions
+      - prompt: "Draw the model architecture as a diagram for the methods section"
+        route: tikz-diagrams
+      - prompt: "Format these numbers as a results table for the paper"
+        route: latex-tables
+
+  - name: tikz-diagrams
+    positive:
+      - "Draw a TikZ diagram of this pipeline"
+      - "I need a system architecture diagram in LaTeX"
+      - "Make a flowchart of the participant screening process"
+      - "Create a TikZ figure of the data processing pipeline"
+      - "Draw a block diagram of the system components for the paper"
+    negative:
+      - prompt: "Draw the CNN with its conv and pooling feature-map blocks"
+        route: plotneuralnet
+      - prompt: "Plot the training loss curve for the two runs"
+        route: visualization
+      - prompt: "Lay out the ablation results as a booktabs table"
+        route: latex-tables
+
+  - name: plotneuralnet
+    positive:
+      - "Draw the CNN architecture for this model"
+      - "Visualize this neural network's layers"
+      - "Make a U-Net architecture diagram for the paper"
+      - "I need a deep learning architecture figure with conv and pooling blocks"
+      - "Generate a PlotNeuralNet-style diagram of my encoder-decoder"
+    negative:
+      - prompt: "Draw a flowchart of my data collection protocol"
+        route: tikz-diagrams
+      - prompt: "Plot the layer-wise activation statistics as a bar chart"
+        route: visualization
+      - prompt: "Implement the U-Net in PyTorch with the layer sizes from the paper"
+        route: implementation
+
+  - name: figure-suggestions
+    positive:
+      - "What figure would best show this trend?"
+      - "Suggest a visualization for this dataset"
+      - "What figures should I include in the results section?"
+      - "Give me figure ideas for the discussion"
+      - "How many panels should figure 2 have, and what goes in each?"
+    negative:
+      - prompt: "Make the grouped bar chart I described, three models by four metrics"
+        route: visualization
+      - prompt: "Suggest a journal that fits this paper"
+        route: journal-finder
+      - prompt: "Suggest better wording for the caption of figure 3"
+        route: paper-drafting
+
+  - name: latex-tables
+    positive:
+      - "Format these results as a LaTeX table"
+      - "Make a publication-ready table from this CSV"
+      - "Bold the best result in each column of this table"
+      - "Build a booktabs comparison table with significance markers"
+      - "Turn these numbers into a multicolumn table for the paper"
+    negative:
+      - prompt: "Decide whether these results deserve a table or a figure"
+        route: figure-suggestions
+      - prompt: "Create a markdown table of the CLI flags in my README"
+        route: none
+      - prompt: "Switch my manuscript to the journal's two-column layout"
+        route: journal-formatting
+
+  - name: journal-finder
+    positive:
+      - "Find a journal that fits this manuscript"
+      - "Where should I submit this paper?"
+      - "Recommend three journals with a decent impact factor for this work"
+      - "Which journal is the best match for my scope and results?"
+      - "Suggest a target journal with a fast review turnaround and a low APC"
+    negative:
+      - prompt: "Find the journal's template files and apply them to my draft"
+        route: journal-formatting
+      - prompt: "Find a conference where I could present this work before June"
+        route: conference-finder
+      - prompt: "Find the papers this journal published on my topic last year"
+        route: literature-search
+
+  - name: conference-finder
+    positive:
+      - "Find a conference CFP that matches this work"
+      - "What are upcoming deadlines for ML conferences in this area?"
+      - "Which workshop should I send this short paper to?"
+      - "When does the next NeurIPS submission window close?"
+      - "Find a CORE A* venue where I could present this"
+    negative:
+      - prompt: "Find a journal for the extended version of my conference paper"
+        route: journal-finder
+      - prompt: "Apply the IEEE conference LaTeX template to my paper"
+        route: journal-formatting
+      - prompt: "Add the conference talk and travel dates to my calendar"
+        route: none
+
+  - name: journal-formatting
+    positive:
+      - "Format this manuscript for the target journal's template"
+      - "Convert this draft to the journal's LaTeX class"
+      - "What are Elsevier's submission requirements for this article type?"
+      - "Apply the IEEE two-column style guide to my paper"
+      - "Reformat my reference list to the journal's required citation style"
+    negative:
+      - prompt: "Which journal should I target with this paper?"
+        route: journal-finder
+      - prompt: "Format these ablation results as a LaTeX table"
+        route: latex-tables
+      - prompt: "Run black over my Python files to fix the code formatting"
+        route: none
+
+  - name: implementation
+    positive:
+      - "Implement the baseline model described in this paper"
+      - "Write the code for this experiment"
+      - "Code this algorithm from the paper's pseudocode"
+      - "Run the training experiment with these hyperparameters and log the metrics"
+      - "Implement the data loader for the MIT-BIH dataset"
+    negative:
+      - prompt: "Describe the implementation in my methods section from the source"
+        route: code-analysis
+      - prompt: "Design the experiment properly before I write any code"
+        route: experiment-design
+      - prompt: "Explain conceptually how the paper's algorithm works"
+        route: none
+
+  - name: code-analysis
+    positive:
+      - "Review this codebase for reproducibility issues"
+      - "Check whether this code matches the described method"
+      - "Write the methods section from my source code"
+      - "Document the algorithm in train.py as publication-ready pseudocode"
+      - "Analyze my repository and describe the implementation for the paper"
+    negative:
+      - prompt: "Implement the missing evaluation function in this repository"
+        route: implementation
+      - prompt: "Analyze my results with a paired t-test and report the effect size"
+        route: statistical-analysis
+      - prompt: "Review the methods section of my manuscript for clarity"
+        route: peer-review
+
+  - name: word-output
+    positive:
+      - "Export this manuscript to Word format"
+      - "Give me a DOCX version of the draft"
+      - "The journal wants .docx and not LaTeX, build it"
+      - "Build the Word file from my sections folder"
+      - "Convert my manuscript to Microsoft Word for my co-author"
+    negative:
+      - prompt: "Turn the Word document my co-author sent into a LaTeX manuscript project"
+        route: manuscript-setup
+      - prompt: "Export figure 2 as a PNG so I can drop it into my slides"
+        route: none
+      - prompt: "Handle the tracked changes the reviewer left in the Word file"
+        route: revision-management
+
+  - name: citation-management
+    positive:
+      - "Check this bibliography for dangling or duplicate citations"
+      - "Validate my .bib file against CrossRef"
+      - "Sync my Zotero library into the project's library.bib"
+      - "Add this DOI to my references as a BibTeX entry"
+      - "Convert my reference list from APA into BibTeX"
+    negative:
+      - prompt: "Find papers on this topic that I should add to my bibliography"
+        route: literature-search
+      - prompt: "Check that the sources I cite actually say what I claim they say"
+        route: fact-checking
+      - prompt: "Reformat the reference list to the journal's numeric citation style"
+        route: journal-formatting
+
+  - name: image-prompt-crafting
+    positive:
+      - "Write an image-generation prompt for a graphical abstract"
+      - "Help me craft cover art for this issue"
+      - "Give me a Midjourney prompt for a conceptual illustration of this mechanism"
+      - "I need a DALL-E prompt for the journal cover competition"
+      - "Illustrate this concept as conceptual art for the graphical abstract"
+    negative:
+      - prompt: "Generate the results figure from my measured data"
+        route: visualization
+      - prompt: "Write the caption text for figure 3"
+        route: paper-drafting
+      - prompt: "Draw the model architecture diagram for the methods section"
+        route: tikz-diagrams

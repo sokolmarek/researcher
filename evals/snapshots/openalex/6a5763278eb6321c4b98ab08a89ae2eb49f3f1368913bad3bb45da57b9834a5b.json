@@ -1,0 +1,62 @@
+{
+  "endpoint": "works",
+  "request_key": "6a5763278eb6321c4b98ab08a89ae2eb49f3f1368913bad3bb45da57b9834a5b",
+  "request_params": {
+    "per-page": 10,
+    "search": "Automatic multilabel electrocardiogram diagnosis of heart rhythm or conduction abnormaliti",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 0,
+      "db_response_time_ms": 52,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 10,
+      "x_query": {
+        "oql": "works where full text has (Automatic multilabel electrocardiogram diagnosis of heart rhythm \"or\" conduction abnormaliti)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Automatic multilabel electrocardiogram diagnosis of heart rhythm or conduction abnormaliti"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 10,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Automatic multilabel electrocardiogram diagnosis of heart rhythm or conduction abnormaliti&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=10"
+      }
+    },
+    "results": []
+  },
+  "response_hash": "b0eacefff78db3ab8af81cd786aca2c4a4825615fec2cbbf4ffe5ea68496a5ab",
+  "retrieved_at": "2026-07-14T13:50:48Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

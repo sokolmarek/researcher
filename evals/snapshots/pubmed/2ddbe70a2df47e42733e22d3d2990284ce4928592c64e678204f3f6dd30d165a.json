@@ -1,0 +1,42 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "2ddbe70a2df47e42733e22d3d2990284ce4928592c64e678204f3f6dd30d165a",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.5281/zenodo.21358279[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "0",
+      "errorlist": {
+        "fieldsnotfound": [],
+        "phrasesnotfound": [
+          "zenodo.21358279"
+        ]
+      },
+      "idlist": [],
+      "querytranslation": "10.5281/zenodo.21358279[AID]",
+      "retmax": "0",
+      "retstart": "0",
+      "translationset": [],
+      "warninglist": {
+        "outputmessages": [
+          "No items found."
+        ],
+        "phrasesignored": [],
+        "quotedphrasesnotfound": []
+      }
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "af86d44a65ff8dc8389fcda16b036b05e96d6f9d440e63f1c976643143c1c0a4",
+  "retrieved_at": "2026-07-14T13:50:22Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

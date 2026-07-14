@@ -1,0 +1,1219 @@
+{
+  "endpoint": "works",
+  "request_key": "c198377e14d03c7a130c043957d52972a051ff49e573bac8436d48705cc2dd5b",
+  "request_params": {
+    "query.bibliographic": "PharMeBINet V3",
+    "rows": 5
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1038/s41597-022-01510-3",
+          "ISSN": [
+            "2052-4463"
+          ],
+          "URL": "https://doi.org/10.1038/s41597-022-01510-3",
+          "abstract": "<jats:title>Abstract</jats:title><jats:p>Heterogeneous biomedical pharmacological databases are important for multiple fields in bioinformatics. Hetionet is a freely available database combining diverse entities and relationships from 29 public resources. Therefore, it is used as the basis for this project. 19 additional pharmacological medical and biological databases such as CTD, DrugBank, and ClinVar are parsed and integrated into Neo4j. Afterwards, the information is merged into the Hetionet structure. Different mapping methods are used such as external identification systems or name mapping. The resulting open-source Neo4j database PharMeBINet has 2,869,407 different nodes with 66 labels and 15,883,653 relationships with 208 edge types. It is a heterogeneous database containing interconnected information on ADRs, diseases, drugs, genes, gene variations, proteins, and more. Relationships between these entities represent drug-drug interactions or drug-causes-ADR relations, to name a few. It has much potential for developing further data analyses including machine learning applications. A web application for accessing the database is free to use for everyone and available at <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://pharmebi.net\">https://pharmebi.net</jats:ext-link>. Additionally, the database is deposited on Zenodo at <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"doi\" xlink:href=\"10.5281/zenodo.6578218\">https://doi.org/10.5281/zenodo.6578218</jats:ext-link>.</jats:p>",
+          "alternative-id": [
+            "1510"
+          ],
+          "article-number": "393",
+          "assertion": [
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Received",
+              "name": "received",
+              "order": 1,
+              "value": "14 January 2022"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Accepted",
+              "name": "accepted",
+              "order": 2,
+              "value": "22 June 2022"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "First Online",
+              "name": "first_online",
+              "order": 3,
+              "value": "11 July 2022"
+            },
+            {
+              "group": {
+                "label": "Competing interests",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 1,
+              "value": "The authors declare no competing interests."
+            }
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-8991-9272",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Königs",
+              "given": "Cassandra",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-9846-7212",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Friedrichs",
+              "given": "Marcel",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Dietrich",
+              "given": "Theresa",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Scientific Data"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "link.springer.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                12
+              ]
+            ],
+            "date-time": "2022-07-12T06:06:45Z",
+            "timestamp": 1657606005000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                24
+              ]
+            ],
+            "date-time": "2022-11-24T19:40:29Z",
+            "timestamp": 1669318829000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                1
+              ]
+            ],
+            "date-time": "2026-07-01T16:53:00Z",
+            "timestamp": 1782924780939,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 21,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2052-4463"
+            }
+          ],
+          "issue": "1",
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                11
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "1",
+            "published-online": {
+              "date-parts": [
+                [
+                  2022,
+                  12
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    11
+                  ]
+                ],
+                "date-time": "2022-07-11T00:00:00Z",
+                "timestamp": 1657497600000
+              }
+            },
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    11
+                  ]
+                ],
+                "date-time": "2022-07-11T00:00:00Z",
+                "timestamp": 1657497600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.nature.com/articles/s41597-022-01510-3.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.nature.com/articles/s41597-022-01510-3",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.nature.com/articles/s41597-022-01510-3.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "prefix": "10.1038",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                11
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                11
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference": [
+            {
+              "DOI": "10.1038/clpt.2012.96",
+              "author": "M Whirl-Carrillo",
+              "doi-asserted-by": "publisher",
+              "first-page": "414",
+              "journal-title": "Clinical Pharmacology & Therapeutics",
+              "key": "1510_CR1",
+              "unstructured": "Whirl-Carrillo, M. et al. Pharmacogenomics knowledge for personalized medicine. Clinical Pharmacology & Therapeutics 92, 414–417, https://doi.org/10.1038/clpt.2012.96 (2012).",
+              "volume": "92",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1093/nar/gkx1037",
+              "author": "DS Wishart",
+              "doi-asserted-by": "publisher",
+              "first-page": "D1074",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR2",
+              "unstructured": "Wishart, D. S. et al. DrugBank 5.0: a major update to the DrugBank database for 2018. Nucleic Acids Research 46, D1074–D1082, https://doi.org/10.1093/nar/gkx1037 (2017).",
+              "volume": "46",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1093/nar/gkaa891",
+              "author": "AP Davis",
+              "doi-asserted-by": "publisher",
+              "first-page": "D1138",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR3",
+              "unstructured": "Davis, A. P. et al. Comparative toxicogenomics database (CTD): update 2021. Nucleic Acids Research 49, D1138–D1143, https://doi.org/10.1093/nar/gkaa891 (2020).",
+              "volume": "49",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1145/3331184.3331417",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR4",
+              "unstructured": "Deshpande, P. Biomedical heterogeneous data integration and rank retrieval using data bridges. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR’19, 1449, https://doi.org/10.1145/3331184.3331417 (Association for Computing Machinery, New York, NY, USA, 2019)."
+            },
+            {
+              "DOI": "10.1371/journal.pcbi.1004920",
+              "author": "LM Breckels",
+              "doi-asserted-by": "publisher",
+              "first-page": "e1004920",
+              "journal-title": "PLOS Computational Biology",
+              "key": "1510_CR5",
+              "unstructured": "Breckels, L. M. et al. Learning from heterogeneous data sources: An application in spatial proteomics. PLOS Computational Biology 12, e1004920, https://doi.org/10.1371/journal.pcbi.1004920 (2016).",
+              "volume": "12",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1093/bib/bbz091",
+              "author": "P Ding",
+              "doi-asserted-by": "publisher",
+              "first-page": "1327",
+              "journal-title": "Briefings in Bioinformatics",
+              "key": "1510_CR6",
+              "unstructured": "Ding, P., Ouyang, W., Luo, J. & Kwoh, C.-K. Heterogeneous information network and its application to human health and disease. Briefings in Bioinformatics 21, 1327–1346, https://doi.org/10.1093/bib/bbz091 (2019).",
+              "volume": "21",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1093/bib/bbaa344",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR7",
+              "unstructured": "Zheng, S. et al. PharmKG: a dedicated knowledge graph benchmark for bomedical data mining. Briefings in Bioinformatics https://doi.org/10.1093/bib/bbaa344 (2020)."
+            },
+            {
+              "DOI": "10.1101/087619",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR8",
+              "unstructured": "Himmelstein, D. S. et al. Systematic integration of biomedical knowledge prioritizes drugs for repurposing. bioRxiv https://doi.org/10.1101/087619 (2016)."
+            },
+            {
+              "DOI": "10.1016/j.artmed.2019.03.003",
+              "author": "CC Yang",
+              "doi-asserted-by": "publisher",
+              "first-page": "80",
+              "journal-title": "Artificial Intelligence in Medicine",
+              "key": "1510_CR9",
+              "unstructured": "Yang, C. C. & Zhao, M. Mining heterogeneous network for drug repositioning using phenotypic information extracted from social media and pharmaceutical databases. Artificial Intelligence in Medicine 96, 80–92, https://doi.org/10.1016/j.artmed.2019.03.003 (2019).",
+              "volume": "96",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1038/75556",
+              "author": "M Ashburner",
+              "doi-asserted-by": "publisher",
+              "first-page": "25",
+              "journal-title": "Nature Genetics",
+              "key": "1510_CR10",
+              "unstructured": "Ashburner, M. et al. Gene ontology: tool for the unification of biology. Nature Genetics 25, 25–29, https://doi.org/10.1038/75556 (2000).",
+              "volume": "25",
+              "year": "2000"
+            },
+            {
+              "DOI": "10.1093/nar/gkaa1113",
+              "author": "The Gene Ontology Consortium",
+              "doi-asserted-by": "publisher",
+              "first-page": "D325",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR11",
+              "unstructured": "The Gene Ontology Consortium. The gene ontology resource: enriching a GOld mine. Nucleic Acids Research 49, D325–D334, https://doi.org/10.1093/nar/gkaa1113 (2020).",
+              "volume": "49",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.7861/clinmedicine.16-5-481",
+              "author": "JJ Coleman",
+              "doi-asserted-by": "publisher",
+              "first-page": "481",
+              "journal-title": "Clinical Medicine",
+              "key": "1510_CR12",
+              "unstructured": "Coleman, J. J. & Pontefract, S. K. Adverse drug reactions. Clinical Medicine 16, 481–485, https://doi.org/10.7861/clinmedicine.16-5-481 (2016).",
+              "volume": "16",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1111/anae.14143",
+              "author": "K Patton",
+              "doi-asserted-by": "publisher",
+              "first-page": "76",
+              "journal-title": "Anaesthesia",
+              "key": "1510_CR13",
+              "unstructured": "Patton, K. & Borshoff, D. C. Adverse drug reactions. Anaesthesia 73, 76–84, https://doi.org/10.1111/anae.14143 (2018).",
+              "volume": "73",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1155/2020/1573543",
+              "author": "H Liang",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "journal-title": "Computational and Mathematical Methods in Medicine",
+              "key": "1510_CR14",
+              "unstructured": "Liang, H., Chen, L., Zhao, X. & Zhang, X. Prediction of drug side effects with a refined negative sample selection strategy. Computational and Mathematical Methods in Medicine 2020, 1–16, https://doi.org/10.1155/2020/1573543 (2020).",
+              "volume": "2020",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1016/j.ebiom.2020.102837",
+              "author": "R Ietswaart",
+              "doi-asserted-by": "publisher",
+              "first-page": "102837",
+              "journal-title": "EBioMedicine",
+              "key": "1510_CR15",
+              "unstructured": "Ietswaart, R. et al. Machine learning guided association of adverse drug reactions with in vitro target-based pharmacology. EBioMedicine 57, 102837, https://doi.org/10.1016/j.ebiom.2020.102837 (2020).",
+              "volume": "57",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1093/qjmed/hcp052",
+              "author": "J Aronson",
+              "doi-asserted-by": "publisher",
+              "first-page": "513",
+              "journal-title": "QJM",
+              "key": "1510_CR16",
+              "unstructured": "Aronson, J. Medication errors: what they are, how they happen, and how to avoid them. QJM 102, 513–521, https://doi.org/10.1093/qjmed/hcp052 (2009).",
+              "volume": "102",
+              "year": "2009"
+            },
+            {
+              "DOI": "10.1080/15563650.2017.1337908",
+              "author": "NL Hodges",
+              "doi-asserted-by": "publisher",
+              "first-page": "43",
+              "journal-title": "Clinical Toxicology",
+              "key": "1510_CR17",
+              "unstructured": "Hodges, N. L., Spiller, H. A., Casavant, M. J., Chounthirath, T. & Smith, G. A. Non-health care facility medication errors resulting in serious medical outcomes. Clinical Toxicology 56, 43–50, https://doi.org/10.1080/15563650.2017.1337908 (2017).",
+              "volume": "56",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.3238/arztebl.2018.0393",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR18",
+              "unstructured": "Dubrall, D. et al. Frequent adverse drug reactions, and medication groups under suspicion. Deutsches Ärzteblatt international https://doi.org/10.3238/arztebl.2018.0393 (2018)."
+            },
+            {
+              "DOI": "10.1186/s40360-020-0392-9",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR19",
+              "unstructured": "Dubrall, D., Just, K. S., Schmid, M., Stingl, J. C. & Sachs, B. Adverse drug reactions in older adults: a retrospective comparative analysis of spontaneous reports to the german federal institute for drugs and medical devices. BMC Pharmacology and Toxicology 21, https://doi.org/10.1186/s40360-020-0392-9 (2020)."
+            },
+            {
+              "DOI": "10.1001/jama.1997.03540280050033",
+              "author": "TS Lesar",
+              "doi-asserted-by": "publisher",
+              "first-page": "312",
+              "journal-title": "JAMA",
+              "key": "1510_CR20",
+              "unstructured": "Lesar, T. S., Briceland, L. & Stein, D. S. Factors related to errors in medication prescribing. JAMA 277, 312, https://doi.org/10.1001/jama.1997.03540280050033 (1997).",
+              "volume": "277",
+              "year": "1997"
+            },
+            {
+              "DOI": "10.1007/s40264-015-0281-0",
+              "author": "JC Bouvy",
+              "doi-asserted-by": "publisher",
+              "first-page": "437",
+              "journal-title": "Drug Safety",
+              "key": "1510_CR21",
+              "unstructured": "Bouvy, J. C., Bruin, M. L. D. & Koopmanschap, M. A. Epidemiology of adverse drug reactions in europe: A review of recent observational studies. Drug Safety 38, 437–453, https://doi.org/10.1007/s40264-015-0281-0 (2015).",
+              "volume": "38",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.3389/fphar.2018.00350",
+              "author": "C Giardina",
+              "doi-asserted-by": "publisher",
+              "first-page": "350",
+              "journal-title": "Frontiers in Pharmacology",
+              "key": "1510_CR22",
+              "unstructured": "Giardina, C. et al. Adverse drug reactions in hospitalized patients: Results of the FORWARD (facilitation of reporting in hospital ward) study. Frontiers in Pharmacology 9, 350, https://doi.org/10.3389/fphar.2018.00350 (2018).",
+              "volume": "9",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1093/nar/gkx899",
+              "author": "L-H Huang",
+              "doi-asserted-by": "publisher",
+              "first-page": "D911",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR23",
+              "unstructured": "Huang, L.-H. et al. ADReCS-target: target profiles for aiding drug safety research and application. Nucleic Acids Research 46, D911–D917, https://doi.org/10.1093/nar/gkx899 (2017).",
+              "volume": "46",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1016/S0165-6147(00)01717-X",
+              "author": "M Pirmohamed",
+              "doi-asserted-by": "publisher",
+              "first-page": "298",
+              "journal-title": "Trends in Pharmacological Sciences",
+              "key": "1510_CR24",
+              "unstructured": "Pirmohamed, M. & Park, B. K. Genetic susceptibility to adverse drug reactions. Trends in Pharmacological Sciences 22, 298–305, https://doi.org/10.1016/S0165-6147(00)01717-X (2001).",
+              "volume": "22",
+              "year": "2001"
+            },
+            {
+              "DOI": "10.2165/00002018-199309010-00005",
+              "author": "CA Jankel",
+              "doi-asserted-by": "publisher",
+              "first-page": "51",
+              "journal-title": "Drug Safety",
+              "key": "1510_CR25",
+              "unstructured": "Jankel, C. A. & Fitterman, L. K. Epidemiology of drug-drug interactions as a cause of hospital admissions. Drug Safety 9, 51–59, https://doi.org/10.2165/00002018-199309010-00005 (1993).",
+              "volume": "9",
+              "year": "1993"
+            },
+            {
+              "DOI": "10.1001/archinte.161.19.2317",
+              "author": "J Ebbesen",
+              "doi-asserted-by": "publisher",
+              "first-page": "2317",
+              "journal-title": "Archives of Internal Medicine",
+              "key": "1510_CR26",
+              "unstructured": "Ebbesen, J. et al. Drug-related deaths in a department of internal medicine. Archives of Internal Medicine 161, 2317, https://doi.org/10.1001/archinte.161.19.2317 (2001).",
+              "volume": "161",
+              "year": "2001"
+            },
+            {
+              "DOI": "10.1186/s12911-015-0139-5",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR27",
+              "unstructured": "Shoshi, A., Hoppe, T., Kormeier, B., Ogultarhan, V. & Hofestädt, R. GraphSAW: A web-based system for graphical analysis of drug interactions and side effects using pharmaceutical and molecular data. BMC Medical Informatics and Decision Making 15, https://doi.org/10.1186/s12911-015-0139-5 (2015)."
+            },
+            {
+              "DOI": "10.1093/nar/gkz972",
+              "author": "MJ Landrum",
+              "doi-asserted-by": "publisher",
+              "first-page": "D835",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR28",
+              "unstructured": "Landrum, M. J. et al. ClinVar: improvements to accessing data. Nucleic Acids Research 48, D835–D844, https://doi.org/10.1093/nar/gkz972 (2019).",
+              "volume": "48",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1016/B978-0-12-416044-6.00019-3",
+              "doi-asserted-by": "crossref",
+              "key": "1510_CR29",
+              "unstructured": "Doan, A., Halevy, A. & Ives, Z. G. Principles of data integration (Elsevier, 2012)."
+            },
+            {
+              "DOI": "10.1186/s13321-015-0102-6",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR30",
+              "unstructured": "Akhondi, S. A., Muresan, S., Williams, A. J. & Kors, J. A. Ambiguity of non-systematic chemical identifiers within and between small-molecule databases. Journal of Cheminformatics 7, https://doi.org/10.1186/s13321-015-0102-6 (2015)."
+            },
+            {
+              "key": "1510_CR31",
+              "unstructured": "Hassanzadeh, O., Zhu, Q., Freimuth, R. R. & Boyce, R. D. Extending the “web of drug identity” with knowledge extracted from united states product labels. In Proceedings of the 2013 AMIA Summit on Translational Bioinformatics (2013)."
+            },
+            {
+              "DOI": "10.1093/nar/gkaa1043",
+              "author": "S Köhler",
+              "doi-asserted-by": "publisher",
+              "first-page": "D1207",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR32",
+              "unstructured": "Köhler, S. et al. The human phenotype ontology in 2021. Nucleic Acids Research 49, D1207–D1217, https://doi.org/10.1093/nar/gkaa1043 (2020).",
+              "volume": "49",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1093/nar/gkw1128",
+              "author": "CJ Mungall",
+              "doi-asserted-by": "publisher",
+              "first-page": "D712",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR33",
+              "unstructured": "Mungall, C. J. et al. The monarch initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species. Nucleic Acids Research 45, D712–D722, https://doi.org/10.1093/nar/gkw1128 (2016).",
+              "volume": "45",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1093/nar/gky1032",
+              "author": "LM Schriml",
+              "doi-asserted-by": "publisher",
+              "first-page": "D955",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR34",
+              "unstructured": "Schriml, L. M. et al. Human disease ontology 2018 update: classification, content and workflow expansion. Nucleic Acids Research 47, D955–D962, https://doi.org/10.1093/nar/gky1032 (2018).",
+              "volume": "47",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1093/nar/gkq1237",
+              "author": "D Maglott",
+              "doi-asserted-by": "publisher",
+              "first-page": "D52",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR35",
+              "unstructured": "Maglott, D., Ostell, J., Pruitt, K. D. & Tatusova, T. Entrez gene: gene-centered information at NCBI. Nucleic Acids Research 39, D52–D57, https://doi.org/10.1093/nar/gkq1237 (2010).",
+              "volume": "39",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1093/nar/gky1037",
+              "author": "M Kotlyar",
+              "doi-asserted-by": "publisher",
+              "first-page": "D581",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR36",
+              "unstructured": "Kotlyar, M., Pastrello, C., Malik, Z. & Jurisica, I. IID 2018 update: context-specific physical protein–protein interactions in human, model organisms and domesticated species. Nucleic Acids Research 47, D581–D589, https://doi.org/10.1093/nar/gky1037 (2018).",
+              "volume": "47",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1093/nar/gkaa1100",
+              "author": "The UniProt Consortium",
+              "doi-asserted-by": "publisher",
+              "first-page": "D480",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR37",
+              "unstructured": "The UniProt Consortium. UniProt: the universal protein knowledgebase in 2021. Nucleic Acids Research 49, D480–D489, https://doi.org/10.1093/nar/gkaa1100 (2020).",
+              "volume": "49",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1093/nar/gku1205",
+              "author": "JS Amberger",
+              "doi-asserted-by": "publisher",
+              "first-page": "D789",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR38",
+              "unstructured": "Amberger, J. S., Bocchini, C. A., Schiettecatte, F., Scott, A. F. & Hamosh, A. OMIM.org: Online mendelian inheritance in man (OMIM), an online catalog of human genes and genetic disorders. Nucleic Acids Research 43, D789–D798, https://doi.org/10.1093/nar/gku1205 (2014).",
+              "volume": "43",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1515/jib-2020-0033",
+              "author": "M Friedrichs",
+              "doi-asserted-by": "publisher",
+              "first-page": "167",
+              "journal-title": "Journal of Integrative Bioinformatics",
+              "key": "1510_CR39",
+              "unstructured": "Friedrichs, M. BioDWH2: an automated graph-based data warehouse and mapping tool. Journal of Integrative Bioinformatics 18, 167–176, https://doi.org/10.1515/jib-2020-0033 (2021).",
+              "volume": "18",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1093/nar/gkz1031",
+              "author": "B Jassal",
+              "doi-asserted-by": "publisher",
+              "first-page": "D498",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR40",
+              "unstructured": "Jassal, B. et al. The reactome pathway knowledgebase. Nucleic Acids Research 48, D498–D503, https://doi.org/10.1093/nar/gkz1031 (2019).",
+              "volume": "48",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1093/nar/gkv1075",
+              "author": "M Kuhn",
+              "doi-asserted-by": "publisher",
+              "first-page": "D1075",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR41",
+              "unstructured": "Kuhn, M., Letunic, I., Jensen, L. J. & Bork, P. The SIDER database of drugs and side effects. Nucleic Acids Research 44, D1075–D1079, https://doi.org/10.1093/nar/gkv1075 (2015).",
+              "volume": "44",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.5061/dryad.8q0s4",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR42",
+              "unstructured": "Banda, J. M. et al. A curated and standardized adverse drug event resource to accelerate drug safety research, https://doi.org/10.5061/dryad.8q0s4 (2016)."
+            },
+            {
+              "DOI": "10.1093/nar/gkz946",
+              "author": "I Rodchenkov",
+              "doi-asserted-by": "publisher",
+              "first-page": "D489",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR43",
+              "unstructured": "Rodchenkov, I. et al. Pathway commons 2019 update: integration, analysis and exploration of pathway data. Nucleic Acids Research 48, D489–D497, https://doi.org/10.1093/nar/gkz946 (2019).",
+              "volume": "48",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1093/nar/gkaa1024",
+              "author": "M Martens",
+              "doi-asserted-by": "publisher",
+              "first-page": "D613",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR44",
+              "unstructured": "Martens, M. et al. WikiPathways: connecting communities. Nucleic Acids Research 49, D613–D621, https://doi.org/10.1093/nar/gkaa1024 (2020).",
+              "volume": "49",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1093/nar/29.1.308",
+              "author": "ST Sherry",
+              "doi-asserted-by": "publisher",
+              "first-page": "308",
+              "journal-title": "Nucleic Acids Research",
+              "key": "1510_CR45",
+              "unstructured": "Sherry, S. T. et al. dbSNP: the NCBI database of genetic variation. Nucleic Acids Research 29, 308–311, https://doi.org/10.1093/nar/29.1.308 (2001).",
+              "volume": "29",
+              "year": "2001"
+            },
+            {
+              "DOI": "10.1007/978-1-61779-965-5_8",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR46",
+              "unstructured": "Muresan, S., Sitzmann, M. & Southan, C. Mapping between databases of compounds and protein targets. In Methods in Molecular Biology, 145–164, https://doi.org/10.1007/978-1-61779-965-5_8 (Humana Press, 2012)."
+            },
+            {
+              "DOI": "10.1186/1758-2946-3-33",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR47",
+              "unstructured": "OBoyle, N. M. et al. Open babel: An open chemical toolbox. Journal of Cheminformatics 3, https://doi.org/10.1186/1758-2946-3-33 (2011)."
+            },
+            {
+              "DOI": "10.1186/1752-153x-2-5",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR48",
+              "unstructured": "OBoyle, N. M., Morley, C. & Hutchison, G. R. Pybel: a python wrapper for the OpenBabel cheminformatics toolkit. Chemistry Central Journal 2, https://doi.org/10.1186/1752-153x-2-5 (2008)."
+            },
+            {
+              "DOI": "10.5281/zenodo.6578218",
+              "author": "C Königs",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR49",
+              "unstructured": "Königs, C. PharMeBINet. Zenodo https://doi.org/10.5281/zenodo.6578218 (2022).",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.4103/1735-5362.235165",
+              "author": "K Mansouri",
+              "doi-asserted-by": "publisher",
+              "first-page": "377",
+              "journal-title": "Research in Pharmaceutical Sciences",
+              "key": "1510_CR50",
+              "unstructured": "Mansouri, K. et al. The effect of CYP2C9*2, CYP2C9*3, and VKORC1-1639 G > A polymorphism in patients under warfarin therapy in city of kermanshah. Research in Pharmaceutical Sciences 13, 377, https://doi.org/10.4103/1735-5362.235165 (2018).",
+              "volume": "13",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1038/s41397-019-0146-5",
+              "author": "MJS Banavandi",
+              "doi-asserted-by": "publisher",
+              "first-page": "574",
+              "journal-title": "The Pharmacogenomics Journal",
+              "key": "1510_CR51",
+              "unstructured": "Banavandi, M. J. S. & Satarzadeh, N. Association between VKORC1 gene polymorphism and warfarin dose requirement and frequency of VKORC1 gene polymorphism in patients from kerman province. The Pharmacogenomics Journal 20, 574–578, https://doi.org/10.1038/s41397-019-0146-5 (2020).",
+              "volume": "20",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.5281/zenodo.6637770",
+              "author": "C Königs",
+              "doi-asserted-by": "publisher",
+              "key": "1510_CR52",
+              "unstructured": "Königs, C. PharMeBINet database generation code. Zenodo https://doi.org/10.5281/zenodo.6637770 (2022).",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.3233/978-1-60750-949-3-477",
+              "author": "S Brown",
+              "doi-asserted-by": "publisher",
+              "first-page": "477",
+              "journal-title": "IOS Press",
+              "key": "1510_CR53",
+              "unstructured": "Brown, S. et al. Va national drug file reference terminology: a cross-institutional content coverage study. IOS Press 107, 477–81, https://doi.org/10.3233/978-1-60750-949-3-477 (2004).",
+              "volume": "107",
+              "year": "2004"
+            }
+          ],
+          "reference-count": 53,
+          "references-count": 53,
+          "relation": {
+            "references": [
+              {
+                "asserted-by": "subject",
+                "id": "10.5281/zenodo.6578218",
+                "id-type": "doi"
+              },
+              {
+                "asserted-by": "subject",
+                "id": "10.5281/zenodo.6637770",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.nature.com/articles/s41597-022-01510-3"
+            }
+          },
+          "score": 17.28535,
+          "short-container-title": [
+            "Sci Data"
+          ],
+          "source": "Crossref",
+          "title": [
+            "The heterogeneous pharmacological medical biochemical network PharMeBINet"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "volume": "9"
+        },
+        {
+          "DOI": "10.3320/1.2753461",
+          "URL": "https://doi.org/10.3320/1.2753461",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "null",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "container-title": [
+            "AIHce 2006"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2009,
+                6,
+                10
+              ]
+            ],
+            "date-time": "2009-06-10T07:36:57Z",
+            "timestamp": 1244619417000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2009,
+                6,
+                10
+              ]
+            ],
+            "date-time": "2009-06-10T07:41:40Z",
+            "timestamp": 1244619700000
+          },
+          "event": {
+            "name": "AIHce 2006"
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                5
+              ]
+            ],
+            "date-time": "2024-09-05T00:23:08Z",
+            "timestamp": 1725495788028
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2006
+              ]
+            ]
+          },
+          "member": "1847",
+          "page": "V3-V3",
+          "prefix": "10.3320",
+          "published": {
+            "date-parts": [
+              [
+                2006
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2006
+              ]
+            ]
+          },
+          "publisher": "AIHA",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "http://link.aip.org/link/AIHPRO/v2006/i1/pV3/s1&Agg=doi"
+            }
+          },
+          "score": 17.223444,
+          "source": "Crossref",
+          "title": [
+            "3. Withdrawn"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.17504/protocols.io.bp2l6n26rgqe/v3",
+          "URL": "https://doi.org/10.17504/protocols.io.bp2l6n26rgqe/v3",
+          "abstract": "<p>Amplicon sequencing protocol for SARS-CoV-2 v3 (LoCost)  We thank the ARTIC network, Oxford Nanopore Technologies, New England Biolabs, BCCDC, COG-UK, CanCOGen and protocols.io commenters for their assistance developing this protocol.  Changes in this version:  -Up to 95 samples per run with EXP-NBD196 native barcode kit -Substitution of SuperScript IV for LunaScript RT SuperMix and reaction volume reduced to 10 uL. -Substitution of Ultra II Ligation Module for Blunt/TA Ligase Master Mix and reaction volume reduced to 10 µL. -Native barcode ligation reaction volume reduced to 10 uL. -SFB wash volume reduced.</p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Quick",
+              "given": "Josh",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                15
+              ]
+            ],
+            "date-time": "2023-07-15T12:09:42Z",
+            "timestamp": 1689422982000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                30
+              ]
+            ],
+            "date-time": "2024-12-30T11:12:07Z",
+            "timestamp": 1735557127000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                10
+              ]
+            ],
+            "date-time": "2026-07-10T09:29:23Z",
+            "timestamp": 1783675763718,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 116,
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                1
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2020-07-01T00:00:00Z",
+                "timestamp": 1593561600000
+              }
+            }
+          ],
+          "member": "297",
+          "posted": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                1
+              ]
+            ]
+          },
+          "prefix": "10.17504",
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                7,
+                1
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "has-version": [
+              {
+                "asserted-by": "subject",
+                "id": "10.17504/protocols.io.bp2l6n26rgqe/v4",
+                "id-type": "doi"
+              },
+              {
+                "asserted-by": "object",
+                "id": "10.17504/protocols.io.bp2l6n26rgqe/v4",
+                "id-type": "doi"
+              }
+            ],
+            "is-version-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.17504/protocols.io.bdp7i5rn",
+                "id-type": "doi"
+              },
+              {
+                "asserted-by": "object",
+                "id": "10.17504/protocols.io.bp2l6n26rgqe/v4",
+                "id-type": "doi"
+              },
+              {
+                "asserted-by": "object",
+                "id": "10.17504/protocols.io.bdp7i5rn",
+                "id-type": "doi"
+              },
+              {
+                "asserted-by": "object",
+                "id": "10.17504/protocols.io.bbmuik6w",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.protocols.io/view/ncov-2019-sequencing-protocol-v3-locost-bh42j8ye"
+            }
+          },
+          "score": 17.211391,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "nCoV-2019 sequencing protocol v3 (LoCost) v3"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.7717/peerj-cs.1702/fig-11",
+          "URL": "https://doi.org/10.7717/peerj-cs.1702/fig-11",
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                27
+              ]
+            ],
+            "date-time": "2023-11-27T02:58:10Z",
+            "timestamp": 1701053890000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                27
+              ]
+            ],
+            "date-time": "2023-11-27T02:58:14Z",
+            "timestamp": 1701053894000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                28
+              ]
+            ],
+            "date-time": "2026-02-28T09:30:45Z",
+            "timestamp": 1772271045699,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "4443",
+          "prefix": "10.7717",
+          "publisher": "PeerJ",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.7717/peerj-cs.1702",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://peerj.com/articles/cs-1702/fig-11"
+            }
+          },
+          "score": 17.124233,
+          "source": "Crossref",
+          "title": [
+            "Figure 11: Accuracy of optimized MobileNet V3 and MobileNet V3."
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.7717/peerj-cs.1702/fig-12",
+          "URL": "https://doi.org/10.7717/peerj-cs.1702/fig-12",
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                27
+              ]
+            ],
+            "date-time": "2023-11-27T02:58:10Z",
+            "timestamp": 1701053890000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                27
+              ]
+            ],
+            "date-time": "2023-11-27T02:58:14Z",
+            "timestamp": 1701053894000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                28
+              ]
+            ],
+            "date-time": "2026-02-28T09:30:45Z",
+            "timestamp": 1772271045717,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "4443",
+          "prefix": "10.7717",
+          "publisher": "PeerJ",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.7717/peerj-cs.1702",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://peerj.com/articles/cs-1702/fig-12"
+            }
+          },
+          "score": 16.81906,
+          "source": "Crossref",
+          "title": [
+            "Figure 12: Running time of optimized MobileNet V3 and MobileNet V3."
+          ],
+          "type": "component"
+        }
+      ],
+      "items-per-page": 5,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 8014
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "c0a3e73cb4eec1af7f8180bb76b788edfdb9b0852603bc43c835e9a648147035",
+  "retrieved_at": "2026-07-14T13:48:37Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

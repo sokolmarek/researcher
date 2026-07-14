@@ -1,0 +1,60 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "aa364cfb9a8d3dd7c31e597d8863fe6cb7c328d11989473c7446f2fbc3fb6e65",
+  "request_params": {
+    "db": "pubmed",
+    "id": "19533358",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "Atrial fibrillation (AF) is the most common sustained arrhythmia and is associated with significant morbidity and mortality. Timely diagnosis of the arrhythmia, particularly transient episodes, can be difficult since patients may be asymptomatic. In this study, we describe a robust algorithm for automatic detection of AF based on the randomness, variability and complexity of the heart beat interval (RR) time series. Specifically, we employ a new statistic, the Turning Points Ratio, in combination with the Root Mean Square of Successive RR Differences and Shannon Entropy to characterize this arrhythmia. The detection algorithm was tested on two databases, namely the MIT-BIH Atrial Fibrillation Database and the MIT-BIH Arrhythmia Database. These databases contain several long RR interval series from a multitude of patients with and without AF and some of the data contain various forms of ectopic beats. Using thresholds and data segment lengths determined by Receiver Operating Characteristic (ROC) curves we achieved a high sensitivity and specificity (94.4% and 95.1%, respectively, for the MIT-BIH Atrial Fibrillation Database). The algorithm performed well even when tested against AF mixed with several other potentially confounding arrhythmias in the MIT-BIH Arrhythmia Database (Sensitivity = 90.2%, Specificity = 91.2%).",
+        "authors": [
+          {
+            "family": "Dash",
+            "given": "S"
+          },
+          {
+            "family": "Chon",
+            "given": "K H"
+          },
+          {
+            "family": "Lu",
+            "given": "S"
+          },
+          {
+            "family": "Raeder",
+            "given": "E A"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1007/s10439-009-9740-z",
+        "issn": [
+          "1573-9686"
+        ],
+        "issue": "9",
+        "journal": "Annals of biomedical engineering",
+        "journal_abbreviation": "Ann Biomed Eng",
+        "keywords": [],
+        "language": "eng",
+        "month": 9,
+        "page": "1701-9",
+        "pmcid": "",
+        "pmid": "19533358",
+        "publication_types": [
+          "Journal Article"
+        ],
+        "record_type": "article",
+        "title": "Automatic real time detection of atrial fibrillation.",
+        "volume": "37",
+        "year": 2009
+      }
+    ]
+  },
+  "response_hash": "a6f04e74659e5cae09603632c62feb9c7bb15f4d0ec4e9eb14541872cd226a17",
+  "retrieved_at": "2026-07-14T13:50:14Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

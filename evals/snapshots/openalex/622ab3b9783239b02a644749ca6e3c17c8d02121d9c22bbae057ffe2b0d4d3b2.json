@@ -1,0 +1,62 @@
+{
+  "endpoint": "works",
+  "request_key": "622ab3b9783239b02a644749ca6e3c17c8d02121d9c22bbae057ffe2b0d4d3b2",
+  "request_params": {
+    "per-page": 5,
+    "search": "ҲОСИЛ БЕРУВЧИ МАНЗАРАЛИ ОЛМА КЎЧАТЛАРИНИ ПАЙВАНДЛАШ ВА ЕТИШТИРИШ АГРОТЕХНОЛОГИЯСИ",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 0,
+      "db_response_time_ms": 28,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (ҲОСИЛ БЕРУВЧИ МАНЗАРАЛИ ОЛМА КЎЧАТЛАРИНИ ПАЙВАНДЛАШ ВА ЕТИШТИРИШ АГРОТЕХНОЛОГИЯСИ)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "ҲОСИЛ БЕРУВЧИ МАНЗАРАЛИ ОЛМА КЎЧАТЛАРИНИ ПАЙВАНДЛАШ ВА ЕТИШТИРИШ АГРОТЕХНОЛОГИЯСИ"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:%D2%B2%D0%9E%D0%A1%D0%98%D0%9B %D0%91%D0%95%D0%A0%D0%A3%D0%92%D0%A7%D0%98 %D0%9C%D0%90%D0%9D%D0%97%D0%90%D0%A0%D0%90%D0%9B%D0%98 %D0%9E%D0%9B%D0%9C%D0%90 %D0%9A%D0%8E%D0%A7%D0%90%D0%A2%D0%9B%D0%90%D0%A0%D0%98%D0%9D%D0%98 %D0%9F%D0%90%D0%99%D0%92%D0%90%D0%9D%D0%94%D0%9B%D0%90%D0%A8 %D0%92%D0%90 %D0%95%D0%A2%D0%98%D0%A8%D0%A2%D0%98%D0%A0%D0%98%D0%A8 %D0%90%D0%93%D0%A0%D0%9E%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9B%D0%9E%D0%93%D0%98%D0%AF%D0%A1%D0%98&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": []
+  },
+  "response_hash": "161566c407986afd39ac249cbe1bbe4851f1a3edfa2752b75813af2e188412a6",
+  "retrieved_at": "2026-07-14T13:48:40Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

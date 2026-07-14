@@ -1,0 +1,721 @@
+{
+  "endpoint": "works/doi:10.1016/s0735-1097(02)01786-2",
+  "request_key": "0be6c9fcedc03bd6cf4d6f48e8cd5e5595c4e5bd7ea6b65671e0cfe429bb04a1",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I9360294"
+            ],
+            "raw_affiliation_string": "Institute of Cardiology, University of Bologna, Bologna, Italy. n.galie@bo.nettuno.it"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I9360294"
+            ],
+            "raw_affiliation_string": "Institute of Cardiology, University of Bologna, Bologna - Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Nazzareno Galiè",
+          "id": "https://openalex.org/A5065469571",
+          "orcid": "https://orcid.org/0000-0003-4271-8670"
+        },
+        "author_position": "first",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Bologna",
+            "id": "https://openalex.org/I9360294",
+            "lineage": [
+              "https://openalex.org/I9360294"
+            ],
+            "ror": "https://ror.org/01111rn36",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Institute of Cardiology, University of Bologna, Bologna, Italy. n.galie@bo.nettuno.it",
+          "Institute of Cardiology, University of Bologna, Bologna - Italy"
+        ],
+        "raw_author_name": "Nazzareno Galiè",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I102197404",
+              "https://openalex.org/I4210150149"
+            ],
+            "raw_affiliation_string": "Division of Pulmonary and Critical Care Medicine, Antoine Béclère Hospital, Clamart, Paris-Sud University, Clamart, France"
+          }
+        ],
+        "author": {
+          "display_name": "Marc Humbert",
+          "id": "https://openalex.org/A5082059107",
+          "orcid": "https://orcid.org/0000-0003-0703-2892"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Université Paris-Sud",
+            "id": "https://openalex.org/I102197404",
+            "lineage": [
+              "https://openalex.org/I102197404"
+            ],
+            "ror": "https://ror.org/028rypz17",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Hôpital Antoine-Béclère",
+            "id": "https://openalex.org/I4210150149",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210150149",
+              "https://openalex.org/I4405259118"
+            ],
+            "ror": "https://ror.org/04sb8a726",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Pulmonary and Critical Care Medicine, Antoine Béclère Hospital, Clamart, Paris-Sud University, Clamart, France"
+        ],
+        "raw_author_name": "Marc Humbert",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I132053463",
+              "https://openalex.org/I2802054198"
+            ],
+            "raw_affiliation_string": "Departement de Cardiologie et Laboratoire de Physiologie, Hôpital Erasme, Université Libre de Bruxelles, Brussels, Belgium"
+          }
+        ],
+        "author": {
+          "display_name": "Jean‐Luc Vachiéry",
+          "id": "https://openalex.org/A5041984682",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "Université Libre de Bruxelles",
+            "id": "https://openalex.org/I132053463",
+            "lineage": [
+              "https://openalex.org/I132053463"
+            ],
+            "ror": "https://ror.org/01r9htc13",
+            "type": "education"
+          },
+          {
+            "country_code": "BE",
+            "display_name": "Erasmus Hospital",
+            "id": "https://openalex.org/I2802054198",
+            "lineage": [
+              "https://openalex.org/I2802054198"
+            ],
+            "ror": "https://ror.org/05j1gs298",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Departement de Cardiologie et Laboratoire de Physiologie, Hôpital Erasme, Université Libre de Bruxelles, Brussels, Belgium"
+        ],
+        "raw_author_name": "Jean-Luc Vachiéry",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I861853513"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, University of Roma “La Sapienza,” Rome, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Carmine Dario Vizza",
+          "id": "https://openalex.org/A5090409167",
+          "orcid": "https://orcid.org/0000-0002-3540-4983"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "Sapienza University of Rome",
+            "id": "https://openalex.org/I861853513",
+            "lineage": [
+              "https://openalex.org/I861853513"
+            ],
+            "ror": "https://ror.org/02be6w209",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, University of Roma “La Sapienza,” Rome, Italy"
+        ],
+        "raw_author_name": "CarmineDario Vizza",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802328216",
+              "https://openalex.org/I129774422"
+            ],
+            "raw_affiliation_string": "Allgemeines Krankenhaus der Stadt Wien, University of Vienna, Vienna, Austria"
+          }
+        ],
+        "author": {
+          "display_name": "Meinhard Kneußl",
+          "id": "https://openalex.org/A5105832941",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "AT"
+        ],
+        "institutions": [
+          {
+            "country_code": "AT",
+            "display_name": "University of Vienna",
+            "id": "https://openalex.org/I129774422",
+            "lineage": [
+              "https://openalex.org/I129774422"
+            ],
+            "ror": "https://ror.org/03prydq77",
+            "type": "education"
+          },
+          {
+            "country_code": "AT",
+            "display_name": "Vienna General Hospital",
+            "id": "https://openalex.org/I2802328216",
+            "lineage": [
+              "https://openalex.org/I2802328216"
+            ],
+            "ror": "https://ror.org/05f0zr486",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Allgemeines Krankenhaus der Stadt Wien, University of Vienna, Vienna, Austria"
+        ],
+        "raw_author_name": "Meinhard Kneussl",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I9360294"
+            ],
+            "raw_affiliation_string": "Institute of Cardiology, University of Bologna, Bologna - Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Alessandra Manes",
+          "id": "https://openalex.org/A5005517026",
+          "orcid": "https://orcid.org/0000-0003-4081-6285"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Bologna",
+            "id": "https://openalex.org/I9360294",
+            "lineage": [
+              "https://openalex.org/I9360294"
+            ],
+            "ror": "https://ror.org/01111rn36",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Institute of Cardiology, University of Bologna, Bologna - Italy"
+        ],
+        "raw_author_name": "Alessandra Manes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I102197404",
+              "https://openalex.org/I4210150149"
+            ],
+            "raw_affiliation_string": "Division of Pulmonary and Critical Care Medicine, Antoine Béclère Hospital, Clamart, Paris-Sud University, Clamart, France"
+          }
+        ],
+        "author": {
+          "display_name": "Olivier Sitbon",
+          "id": "https://openalex.org/A5089300668",
+          "orcid": "https://orcid.org/0000-0002-1942-1951"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Université Paris-Sud",
+            "id": "https://openalex.org/I102197404",
+            "lineage": [
+              "https://openalex.org/I102197404"
+            ],
+            "ror": "https://ror.org/028rypz17",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Hôpital Antoine-Béclère",
+            "id": "https://openalex.org/I4210150149",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210150149",
+              "https://openalex.org/I4405259118"
+            ],
+            "ror": "https://ror.org/04sb8a726",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Pulmonary and Critical Care Medicine, Antoine Béclère Hospital, Clamart, Paris-Sud University, Clamart, France"
+        ],
+        "raw_author_name": "Olivier Sitbon",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210101740"
+            ],
+            "raw_affiliation_string": "Department of Chest Medicine, National Institute of Tuberculosis and Lung Disease, Warsaw, Poland"
+          }
+        ],
+        "author": {
+          "display_name": "Adam Torbicki",
+          "id": "https://openalex.org/A5007694037",
+          "orcid": "https://orcid.org/0000-0003-3475-8832"
+        },
+        "author_position": "middle",
+        "countries": [
+          "PL"
+        ],
+        "institutions": [
+          {
+            "country_code": "PL",
+            "display_name": "Narodowy Instytut Zdrowia Publicznego PZH – Państwowy Instytut Badawczy",
+            "id": "https://openalex.org/I4210101740",
+            "lineage": [
+              "https://openalex.org/I4210101740"
+            ],
+            "ror": "https://ror.org/015qjap30",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Chest Medicine, National Institute of Tuberculosis and Lung Disease, Warsaw, Poland"
+        ],
+        "raw_author_name": "Adam Torbicki",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2800231306"
+            ],
+            "raw_affiliation_string": "Department of Pneumology, Gasthuisberg University Hospital, Leuven, Belgium"
+          }
+        ],
+        "author": {
+          "display_name": "Marion Delcroix",
+          "id": "https://openalex.org/A5066741453",
+          "orcid": "https://orcid.org/0000-0001-8394-9809"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "Universitair Ziekenhuis Leuven",
+            "id": "https://openalex.org/I2800231306",
+            "lineage": [
+              "https://openalex.org/I2800231306"
+            ],
+            "ror": "https://ror.org/0424bsv16",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pneumology, Gasthuisberg University Hospital, Leuven, Belgium"
+        ],
+        "raw_author_name": "Marion Delcroix",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I132053463",
+              "https://openalex.org/I2802054198"
+            ],
+            "raw_affiliation_string": "Departement de Cardiologie et Laboratoire de Physiologie, Hôpital Erasme, Université Libre de Bruxelles, Brussels, Belgium"
+          }
+        ],
+        "author": {
+          "display_name": "Robert Naeije",
+          "id": "https://openalex.org/A5101527405",
+          "orcid": "https://orcid.org/0000-0003-0533-7334"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "Université Libre de Bruxelles",
+            "id": "https://openalex.org/I132053463",
+            "lineage": [
+              "https://openalex.org/I132053463"
+            ],
+            "ror": "https://ror.org/01r9htc13",
+            "type": "education"
+          },
+          {
+            "country_code": "BE",
+            "display_name": "Erasmus Hospital",
+            "id": "https://openalex.org/I2802054198",
+            "lineage": [
+              "https://openalex.org/I2802054198"
+            ],
+            "ror": "https://ror.org/05j1gs298",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Departement de Cardiologie et Laboratoire de Physiologie, Hôpital Erasme, Université Libre de Bruxelles, Brussels, Belgium"
+        ],
+        "raw_author_name": "Robert Naeije",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I34809795"
+            ],
+            "raw_affiliation_string": "Abteilung Pneumologie, Medizinische Hochschule Hannover, Hannover, Germany"
+          }
+        ],
+        "author": {
+          "display_name": "Marius M. Hoeper",
+          "id": "https://openalex.org/A5016773092",
+          "orcid": "https://orcid.org/0000-0001-9086-2293"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DE"
+        ],
+        "institutions": [
+          {
+            "country_code": "DE",
+            "display_name": "Medizinische Hochschule Hannover",
+            "id": "https://openalex.org/I34809795",
+            "lineage": [
+              "https://openalex.org/I34809795"
+            ],
+            "ror": "https://ror.org/00f2yqf98",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Abteilung Pneumologie, Medizinische Hochschule Hannover, Hannover, Germany"
+        ],
+        "raw_author_name": "Marius Hoeper",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210157127"
+            ],
+            "raw_affiliation_string": "Service de Pneumologie, Centre Hospitalier Hautepierre, Strasbourg, France"
+          }
+        ],
+        "author": {
+          "display_name": "Ari Chaouat",
+          "id": "https://openalex.org/A5030999203",
+          "orcid": "https://orcid.org/0000-0001-6056-202X"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Hôpital d'Hautepierre",
+            "id": "https://openalex.org/I4210157127",
+            "lineage": [
+              "https://openalex.org/I4210145324",
+              "https://openalex.org/I4210157127"
+            ],
+            "ror": "https://ror.org/04e1w6923",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Service de Pneumologie, Centre Hospitalier Hautepierre, Strasbourg, France"
+        ],
+        "raw_author_name": "Ari Chaouat",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Laboratoire Aventis, Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "Sophie Morand",
+          "id": "https://openalex.org/A5031226576",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratoire Aventis, Paris, France"
+        ],
+        "raw_author_name": "Sophie Morand",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Laboratoire Aventis, Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "B. Besse",
+          "id": "https://openalex.org/A5020761970",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratoire Aventis, Paris, France"
+        ],
+        "raw_author_name": "Bruno Besse",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I102197404",
+              "https://openalex.org/I4210150149"
+            ],
+            "raw_affiliation_string": "Division of Pulmonary and Critical Care Medicine, Antoine Béclère Hospital, Clamart, Paris-Sud University, Clamart, France"
+          }
+        ],
+        "author": {
+          "display_name": "Gérald Simonneau",
+          "id": "https://openalex.org/A5106748942",
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Université Paris-Sud",
+            "id": "https://openalex.org/I102197404",
+            "lineage": [
+              "https://openalex.org/I102197404"
+            ],
+            "ror": "https://ror.org/028rypz17",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Hôpital Antoine-Béclère",
+            "id": "https://openalex.org/I4210150149",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210150149",
+              "https://openalex.org/I4405259118"
+            ],
+            "ror": "https://ror.org/04sb8a726",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Pulmonary and Critical Care Medicine, Antoine Béclère Hospital, Clamart, Paris-Sud University, Clamart, France"
+        ],
+        "raw_author_name": "Gerald Simonneau",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "1496",
+      "issue": "9",
+      "last_page": "1502",
+      "volume": "39"
+    },
+    "cited_by_count": 648,
+    "display_name": "Effects of beraprost sodium, an oral prostacyclin analogue, in patients with pulmonary arterial hypertension: a randomized, double-blind, placebo-controlled trial",
+    "doi": "https://doi.org/10.1016/s0735-1097(02)01786-2",
+    "id": "https://openalex.org/W2158657788",
+    "ids": {
+      "doi": "https://doi.org/10.1016/s0735-1097(02)01786-2",
+      "mag": "2158657788",
+      "openalex": "https://openalex.org/W2158657788",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/11985913"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/s0735-1097(02)01786-2",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/s0735-1097(02)01786-2",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Journal of the American College of Cardiology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Journal of the American College of Cardiology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S60865174",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0735-1097",
+          "1558-3597"
+        ],
+        "issn_l": "0735-1097",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2002-05-01",
+    "publication_year": 2002,
+    "referenced_works": [
+      "https://openalex.org/W151261112",
+      "https://openalex.org/W1861887407",
+      "https://openalex.org/W1966533394",
+      "https://openalex.org/W1971354490",
+      "https://openalex.org/W1985739295",
+      "https://openalex.org/W1999637800",
+      "https://openalex.org/W2004008756",
+      "https://openalex.org/W2021403302",
+      "https://openalex.org/W2039172749",
+      "https://openalex.org/W2040683779",
+      "https://openalex.org/W2041151644",
+      "https://openalex.org/W2052522225",
+      "https://openalex.org/W2056577607",
+      "https://openalex.org/W2081318043",
+      "https://openalex.org/W2100615913",
+      "https://openalex.org/W2105538851",
+      "https://openalex.org/W2105755143",
+      "https://openalex.org/W2119321741",
+      "https://openalex.org/W2119390803",
+      "https://openalex.org/W2123263258",
+      "https://openalex.org/W2135510321",
+      "https://openalex.org/W2141987653",
+      "https://openalex.org/W2151980275",
+      "https://openalex.org/W2155727545",
+      "https://openalex.org/W2160056424",
+      "https://openalex.org/W2313098007",
+      "https://openalex.org/W2321522617",
+      "https://openalex.org/W2323062634",
+      "https://openalex.org/W2741527614",
+      "https://openalex.org/W2769112780",
+      "https://openalex.org/W2988610037",
+      "https://openalex.org/W3140941560",
+      "https://openalex.org/W6606178901",
+      "https://openalex.org/W6639096105"
+    ],
+    "referenced_works_count": 34,
+    "title": "Effects of beraprost sodium, an oral prostacyclin analogue, in patients with pulmonary arterial hypertension: a randomized, double-blind, placebo-controlled trial",
+    "type": "article"
+  },
+  "response_hash": "fbcccff43b389b274d11ba2ff01d9e5875d964547a7409f2ec009d5630082181",
+  "retrieved_at": "2026-07-14T14:48:53Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

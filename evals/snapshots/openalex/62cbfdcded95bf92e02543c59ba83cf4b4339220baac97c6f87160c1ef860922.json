@@ -1,0 +1,297 @@
+{
+  "endpoint": "works/doi:10.1007/s12530-023-09559-0",
+  "request_key": "62cbfdcded95bf92e02543c59ba83cf4b4339220baac97c6f87160c1ef860922",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I81556334"
+            ],
+            "raw_affiliation_string": "Department of Electrical and Electronics Engineering, Amrita School of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore, India"
+          }
+        ],
+        "author": {
+          "display_name": "R. Anand",
+          "id": "https://openalex.org/A5068433266",
+          "orcid": "https://orcid.org/0000-0002-1558-4577"
+        },
+        "author_position": "first",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Amrita Vishwa Vidyapeetham",
+            "id": "https://openalex.org/I81556334",
+            "lineage": [
+              "https://openalex.org/I81556334"
+            ],
+            "ror": "https://ror.org/03am10p12",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Electrical and Electronics Engineering, Amrita School of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore, India"
+        ],
+        "raw_author_name": "R. Anand",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Department of Electronics and Communication Engineering, Sona College of Technology, Salem, Tamilnadu, 636005, India"
+          }
+        ],
+        "author": {
+          "display_name": "S. Lakshmi",
+          "id": "https://openalex.org/A5031700343",
+          "orcid": "https://orcid.org/0000-0002-8515-2390"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Electronics and Communication Engineering, Sona College of Technology, Salem, Tamilnadu, 636005, India"
+        ],
+        "raw_author_name": "S. Vijaya Lakshmi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I116943215"
+            ],
+            "raw_affiliation_string": "Department of Technical Education (Government of U.P), Department of Electronics Engineering, Institute of Engineering and Technology, Dr. A.P.J. Abdul Kalam Technical University, Lucknow, India"
+          }
+        ],
+        "author": {
+          "display_name": "Digvijay Pandey",
+          "id": "https://openalex.org/A5047208646",
+          "orcid": "https://orcid.org/0009-0008-7413-3531"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Dr. A.P.J. Abdul Kalam Technical University",
+            "id": "https://openalex.org/I116943215",
+            "lineage": [
+              "https://openalex.org/I116943215"
+            ],
+            "ror": "https://ror.org/03h56sg55",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Technical Education (Government of U.P), Department of Electronics Engineering, Institute of Engineering and Technology, Dr. A.P.J. Abdul Kalam Technical University, Lucknow, India"
+        ],
+        "raw_author_name": "Digvijay Pandey",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I81556334"
+            ],
+            "raw_affiliation_string": "Department of Electrical and Electronics Engineering, Amrita School of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore, India"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I252758333"
+            ],
+            "raw_affiliation_string": "Department of Information Technology, College of Technology, Govind Ballabh Pant University of Agriculture and Technology Pantnagar Uttarakhand, Pantnagar, India"
+          }
+        ],
+        "author": {
+          "display_name": "Binay Kumar Pandey",
+          "id": "https://openalex.org/A5055726807",
+          "orcid": "https://orcid.org/0000-0002-4041-1213"
+        },
+        "author_position": "last",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Govind Ballabh Pant University of Agriculture and Technology",
+            "id": "https://openalex.org/I252758333",
+            "lineage": [
+              "https://openalex.org/I252758333"
+            ],
+            "ror": "https://ror.org/02msjvh03",
+            "type": "education"
+          },
+          {
+            "country_code": "IN",
+            "display_name": "Amrita Vishwa Vidyapeetham",
+            "id": "https://openalex.org/I81556334",
+            "lineage": [
+              "https://openalex.org/I81556334"
+            ],
+            "ror": "https://ror.org/03am10p12",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Electrical and Electronics Engineering, Amrita School of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore, India",
+          "Department of Information Technology, College of Technology, Govind Ballabh Pant University of Agriculture and Technology Pantnagar Uttarakhand, Pantnagar, India"
+        ],
+        "raw_author_name": "Binay Kumar Pandey",
+        "raw_orcid": "https://orcid.org/0000-0002-4041-1213"
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1007/s12530-023-09559-0",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s12530-023-09559-0",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12530-023-09559-0.pdf",
+      "raw_source_name": "Evolving Systems",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Evolving Systems",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S202254422",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1868-6478",
+          "1868-6486"
+        ],
+        "issn_l": "1868-6478",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "83",
+      "issue": "1",
+      "last_page": "97",
+      "volume": "15"
+    },
+    "cited_by_count": 132,
+    "display_name": "An enhanced ResNet-50 deep learning model for arrhythmia detection using electrocardiogram biomedical indicators",
+    "doi": "https://doi.org/10.1007/s12530-023-09559-0",
+    "id": "https://openalex.org/W4390334962",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s12530-023-09559-0",
+      "openalex": "https://openalex.org/W4390334962"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": true,
+      "oa_status": "bronze",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s12530-023-09559-0.pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s12530-023-09559-0",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s12530-023-09559-0",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12530-023-09559-0.pdf",
+      "raw_source_name": "Evolving Systems",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Evolving Systems",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S202254422",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1868-6478",
+          "1868-6486"
+        ],
+        "issn_l": "1868-6478",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2023-12-28",
+    "publication_year": 2023,
+    "referenced_works": [
+      "https://openalex.org/W1973163442",
+      "https://openalex.org/W2032872419",
+      "https://openalex.org/W2034365297",
+      "https://openalex.org/W2149388786",
+      "https://openalex.org/W2755507768",
+      "https://openalex.org/W2775229114",
+      "https://openalex.org/W2791453970",
+      "https://openalex.org/W2804642894",
+      "https://openalex.org/W2891342985",
+      "https://openalex.org/W2913789442",
+      "https://openalex.org/W2962511854",
+      "https://openalex.org/W3010582158",
+      "https://openalex.org/W3033926838",
+      "https://openalex.org/W3048014709",
+      "https://openalex.org/W3093699748",
+      "https://openalex.org/W3158679540",
+      "https://openalex.org/W3174444331",
+      "https://openalex.org/W4200138055",
+      "https://openalex.org/W4205862336",
+      "https://openalex.org/W4206903137",
+      "https://openalex.org/W4210934391",
+      "https://openalex.org/W4292504111",
+      "https://openalex.org/W4296492377",
+      "https://openalex.org/W4309484365",
+      "https://openalex.org/W4313296012",
+      "https://openalex.org/W4362680661",
+      "https://openalex.org/W4385584909",
+      "https://openalex.org/W4386522055",
+      "https://openalex.org/W4389509203",
+      "https://openalex.org/W6603092727"
+    ],
+    "referenced_works_count": 30,
+    "title": "An enhanced ResNet-50 deep learning model for arrhythmia detection using electrocardiogram biomedical indicators",
+    "type": "article"
+  },
+  "response_hash": "3d5585093519d491fc153272cd07600538181f3268b7377635251f1e8a14b040",
+  "retrieved_at": "2026-07-14T14:48:20Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

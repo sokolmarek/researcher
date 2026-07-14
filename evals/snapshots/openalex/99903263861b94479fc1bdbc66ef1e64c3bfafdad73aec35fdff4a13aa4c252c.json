@@ -1,0 +1,577 @@
+{
+  "endpoint": "works/doi:10.1007/s13346-023-01342-7",
+  "request_key": "99903263861b94479fc1bdbc66ef1e64c3bfafdad73aec35fdff4a13aa4c252c",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Mohd Aman Mohd Ateeq",
+          "id": "https://openalex.org/A5013894537",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+        ],
+        "raw_author_name": "Mohd Aman Mohd Ateeq",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Mayur Aalhate",
+          "id": "https://openalex.org/A5075511072",
+          "orcid": "https://orcid.org/0000-0003-0574-3009"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+        ],
+        "raw_author_name": "Mayur Aalhate",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Srushti Mahajan",
+          "id": "https://openalex.org/A5078226951",
+          "orcid": "https://orcid.org/0000-0002-8273-6948"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+        ],
+        "raw_author_name": "Srushti Mahajan",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutical Analysis, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Gogikar Shiva Kumar",
+          "id": "https://openalex.org/A5006737628",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutical Analysis, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+        ],
+        "raw_author_name": "Gogikar Shiva Kumar",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutical Analysis, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Sibu Sen",
+          "id": "https://openalex.org/A5019950250",
+          "orcid": "https://orcid.org/0000-0002-2633-9294"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutical Analysis, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+        ],
+        "raw_author_name": "Sibu Sen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Biological Sciences, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Hoshiyar Singh",
+          "id": "https://openalex.org/A5101038043",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Biological Sciences, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+        ],
+        "raw_author_name": "Hoshiyar Singh",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Ujala Gupta",
+          "id": "https://openalex.org/A5042806503",
+          "orcid": "https://orcid.org/0000-0002-9579-4151"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+        ],
+        "raw_author_name": "Ujala Gupta",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Indrani Maji",
+          "id": "https://openalex.org/A5065951157",
+          "orcid": "https://orcid.org/0000-0001-7894-0543"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+        ],
+        "raw_author_name": "Indrani Maji",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutical Analysis, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Amol G. Dikundwar",
+          "id": "https://openalex.org/A5065633467",
+          "orcid": "https://orcid.org/0000-0002-7149-1279"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutical Analysis, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+        ],
+        "raw_author_name": "Amol Dikundwar",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Biological Sciences, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Santosh Kumar Guru",
+          "id": "https://openalex.org/A5046268716",
+          "orcid": "https://orcid.org/0000-0002-9287-1836"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Biological Sciences, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, 500037, India"
+        ],
+        "raw_author_name": "Santosh Kumar Guru",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411",
+              "https://openalex.org/I4210146715"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India. pankajksingh3@gmail.com"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102411"
+            ],
+            "raw_affiliation_string": "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+          }
+        ],
+        "author": {
+          "display_name": "Pankaj Kumar Singh",
+          "id": "https://openalex.org/A5006519161",
+          "orcid": "https://orcid.org/0000-0001-8462-2170"
+        },
+        "author_position": "last",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research (NIPER) - Ahmedabad",
+            "id": "https://openalex.org/I4210102411",
+            "lineage": [
+              "https://openalex.org/I4210102411"
+            ],
+            "ror": "https://ror.org/01dphnv87",
+            "type": "government"
+          },
+          {
+            "country_code": "IN",
+            "display_name": "National Institute of Pharmaceutical Education and Research",
+            "id": "https://openalex.org/I4210146715",
+            "lineage": [
+              "https://openalex.org/I4210146715"
+            ],
+            "ror": "https://ror.org/040dgqr26",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India. pankajksingh3@gmail.com",
+          "Department of Pharmaceutics, National Institute of Pharmaceutical Education and Research (NIPER), Balanagar, Hyderabad, Telangana, 500037, India"
+        ],
+        "raw_author_name": "Pankaj Kumar Singh",
+        "raw_orcid": "https://orcid.org/0000-0001-8462-2170"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "2614",
+      "issue": "10",
+      "last_page": "2638",
+      "volume": "13"
+    },
+    "cited_by_count": 35,
+    "display_name": "Self-nanoemulsifying drug delivery system (SNEDDS) of docetaxel and carvacrol synergizes the anticancer activity and enables safer toxicity profile: optimization, and in-vitro, ex-vivo and in-vivo pharmacokinetic evaluation",
+    "doi": "https://doi.org/10.1007/s13346-023-01342-7",
+    "id": "https://openalex.org/W4366084327",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s13346-023-01342-7",
+      "openalex": "https://openalex.org/W4366084327",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/37067745"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s13346-023-01342-7",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s13346-023-01342-7",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Drug Delivery and Translational Research",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Drug Delivery and Translational Research",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S2764352022",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "2190-393X",
+          "2190-3948"
+        ],
+        "issn_l": "2190-393X",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2023-04-17",
+    "publication_year": 2023,
+    "referenced_works": [
+      "https://openalex.org/W1858268936",
+      "https://openalex.org/W1976442101",
+      "https://openalex.org/W1982675616",
+      "https://openalex.org/W1992998027",
+      "https://openalex.org/W2002388452",
+      "https://openalex.org/W2017588435",
+      "https://openalex.org/W2022571369",
+      "https://openalex.org/W2025226890",
+      "https://openalex.org/W2066927092",
+      "https://openalex.org/W2069983835",
+      "https://openalex.org/W2074413753",
+      "https://openalex.org/W2075379117",
+      "https://openalex.org/W2075520799",
+      "https://openalex.org/W2085527076",
+      "https://openalex.org/W2088142318",
+      "https://openalex.org/W2089965465",
+      "https://openalex.org/W2094332572",
+      "https://openalex.org/W2095204097",
+      "https://openalex.org/W2102665547",
+      "https://openalex.org/W2107464496",
+      "https://openalex.org/W2111423100",
+      "https://openalex.org/W2114930318",
+      "https://openalex.org/W2115439624",
+      "https://openalex.org/W2119068203",
+      "https://openalex.org/W2144523920",
+      "https://openalex.org/W2150159407",
+      "https://openalex.org/W2154688881",
+      "https://openalex.org/W2256309826",
+      "https://openalex.org/W2316540570",
+      "https://openalex.org/W2343000836",
+      "https://openalex.org/W2461190436",
+      "https://openalex.org/W2516344495",
+      "https://openalex.org/W2518953239",
+      "https://openalex.org/W2589855064",
+      "https://openalex.org/W2590327565",
+      "https://openalex.org/W2607306953",
+      "https://openalex.org/W2744845007",
+      "https://openalex.org/W2761232170",
+      "https://openalex.org/W2794302209",
+      "https://openalex.org/W2800835638",
+      "https://openalex.org/W2896891363",
+      "https://openalex.org/W2905746668",
+      "https://openalex.org/W2906817193",
+      "https://openalex.org/W2943263610",
+      "https://openalex.org/W2982126510",
+      "https://openalex.org/W3032638141",
+      "https://openalex.org/W3036316395",
+      "https://openalex.org/W3045341895",
+      "https://openalex.org/W3085532306",
+      "https://openalex.org/W3112169762",
+      "https://openalex.org/W3128799600",
+      "https://openalex.org/W3132977304",
+      "https://openalex.org/W3161044173",
+      "https://openalex.org/W3185059641",
+      "https://openalex.org/W3192465278",
+      "https://openalex.org/W4206753415",
+      "https://openalex.org/W4211005384",
+      "https://openalex.org/W4283757174",
+      "https://openalex.org/W4300690596",
+      "https://openalex.org/W4304694542",
+      "https://openalex.org/W4318188904",
+      "https://openalex.org/W4321004063",
+      "https://openalex.org/W4322761393",
+      "https://openalex.org/W4327921934",
+      "https://openalex.org/W4368361064",
+      "https://openalex.org/W6672117198",
+      "https://openalex.org/W6677103068",
+      "https://openalex.org/W6807811888",
+      "https://openalex.org/W6845138867"
+    ],
+    "referenced_works_count": 69,
+    "title": "Self-nanoemulsifying drug delivery system (SNEDDS) of docetaxel and carvacrol synergizes the anticancer activity and enables safer toxicity profile: optimization, and in-vitro, ex-vivo and in-vivo pharmacokinetic evaluation",
+    "type": "article"
+  },
+  "response_hash": "e326f70ae2a6f0019ef6c8face0d887d794044a984e8faebefbffdca25a67f43",
+  "retrieved_at": "2026-07-14T13:49:06Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

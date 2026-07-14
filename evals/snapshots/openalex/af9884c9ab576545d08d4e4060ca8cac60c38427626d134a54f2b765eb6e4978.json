@@ -1,0 +1,842 @@
+{
+  "endpoint": "works/doi:10.1016/j.ccr.2009.10.014",
+  "request_key": "af9884c9ab576545d08d4e4060ca8cac60c38427626d134a54f2b765eb6e4978",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Michela Garofalo",
+          "id": "https://openalex.org/A5011218014",
+          "orcid": "https://orcid.org/0000-0002-1741-0415"
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Michela Garofalo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Gianpiero Di Leva",
+          "id": "https://openalex.org/A5032765469",
+          "orcid": "https://orcid.org/0000-0001-6759-8682"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Gianpiero Di Leva",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Fondazione SDN, 80143 Naples, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Giulia Romano",
+          "id": "https://openalex.org/A5001511394",
+          "orcid": "https://orcid.org/0000-0001-5847-4266"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Fondazione SDN, 80143 Naples, Italy"
+        ],
+        "raw_author_name": "Giulia Romano",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Gerard J. Nuovo",
+          "id": "https://openalex.org/A5081369976",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Gerard Nuovo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Sung‐Suk Suh",
+          "id": "https://openalex.org/A5003176695",
+          "orcid": "https://orcid.org/0000-0002-7259-1757"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Sung-Suk Suh",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Apollinaire Ngankeu",
+          "id": "https://openalex.org/A5030687668",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Apollinaire Ngankeu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Cristian Taccioli",
+          "id": "https://openalex.org/A5033146912",
+          "orcid": "https://orcid.org/0000-0003-2995-5612"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Cristian Taccioli",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Flavia Pichiorri",
+          "id": "https://openalex.org/A5102788111",
+          "orcid": "https://orcid.org/0009-0006-8429-9397"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Flavia Pichiorri",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Hansjüerg Alder",
+          "id": "https://openalex.org/A5012373469",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Hansjuerg Alder",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I201324441"
+            ],
+            "raw_affiliation_string": "Department of Morphology and Embryology, Human Anatomy Section, University of Ferrara, 44100 Ferrara, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Paola Secchiero",
+          "id": "https://openalex.org/A5075079041",
+          "orcid": "https://orcid.org/0000-0003-4101-7987"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Ferrara",
+            "id": "https://openalex.org/I201324441",
+            "lineage": [
+              "https://openalex.org/I201324441"
+            ],
+            "ror": "https://ror.org/041zkgm14",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Morphology and Embryology, Human Anatomy Section, University of Ferrara, 44100 Ferrara, Italy"
+        ],
+        "raw_author_name": "Paola Secchiero",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Pierluigi Gasparini",
+          "id": "https://openalex.org/A5068356269",
+          "orcid": "https://orcid.org/0000-0001-8311-8845"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Pierluigi Gasparini",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I201324441"
+            ],
+            "raw_affiliation_string": "Department of Morphology and Embryology, Human Anatomy Section, University of Ferrara, 44100 Ferrara, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Arianna Gonelli",
+          "id": "https://openalex.org/A5042887836",
+          "orcid": "https://orcid.org/0000-0003-2153-5453"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Ferrara",
+            "id": "https://openalex.org/I201324441",
+            "lineage": [
+              "https://openalex.org/I201324441"
+            ],
+            "ror": "https://ror.org/041zkgm14",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Morphology and Embryology, Human Anatomy Section, University of Ferrara, 44100 Ferrara, Italy"
+        ],
+        "raw_author_name": "Arianna Gonelli",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Stefan Costinean",
+          "id": "https://openalex.org/A5006332747",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Stefan Costinean",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Mario Acunzo",
+          "id": "https://openalex.org/A5001576696",
+          "orcid": "https://orcid.org/0000-0002-3942-9061"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Mario Acunzo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210139435"
+            ],
+            "raw_affiliation_string": "Department of Cellular and Molecular Biology and Pathology, Istituto di Endocrinologia e Oncologia Sperimentale “G. Salvatore”-Consiglio Nazionale delle Ricerche, Faculty of Biotechnological Science, “Federico II” University of Naples, I-80121 Naples, Italy"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I71267560"
+            ],
+            "raw_affiliation_string": "University of Naples Federico II, Naples, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Gerolama Condorelli",
+          "id": "https://openalex.org/A5106122967",
+          "orcid": "https://orcid.org/0000-0003-0177-8829"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "Institute for Experimental Endocrinology and Oncology",
+            "id": "https://openalex.org/I4210139435",
+            "lineage": [
+              "https://openalex.org/I4210139435",
+              "https://openalex.org/I4210155236"
+            ],
+            "ror": "https://ror.org/04sn06036",
+            "type": "facility"
+          },
+          {
+            "country_code": "IT",
+            "display_name": "University of Naples Federico II",
+            "id": "https://openalex.org/I71267560",
+            "lineage": [
+              "https://openalex.org/I71267560"
+            ],
+            "ror": "https://ror.org/05290cv24",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Cellular and Molecular Biology and Pathology, Istituto di Endocrinologia e Oncologia Sperimentale “G. Salvatore”-Consiglio Nazionale delle Ricerche, Faculty of Biotechnological Science, “Federico II” University of Naples, I-80121 Naples, Italy",
+          "University of Naples Federico II, Naples, Italy"
+        ],
+        "raw_author_name": "Gerolama Condorelli",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I52357470"
+            ],
+            "raw_affiliation_string": "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Carlo M. Croce",
+          "id": "https://openalex.org/A5079700663",
+          "orcid": "https://orcid.org/0000-0003-3788-1457"
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "The Ohio State University",
+            "id": "https://openalex.org/I52357470",
+            "lineage": [
+              "https://openalex.org/I52357470"
+            ],
+            "ror": "https://ror.org/00rs6vg23",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA",
+          "Department of Molecular Virology, Immunology and Medical Genetics, Comprehensive Cancer Center, Ohio State University, Columbus, OH 43210, USA"
+        ],
+        "raw_author_name": "Carlo Maria Croce",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1016/j.ccr.2009.10.014",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.ccr.2009.10.014",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "http://www.cell.com/article/S1535610809003833/pdf",
+      "raw_source_name": "Cancer Cell",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Cancer Cell",
+        "host_organization": "https://openalex.org/P4310315673",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310315673",
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Cell Press",
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Cell Press",
+        "id": "https://openalex.org/S25671836",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1535-6108",
+          "1878-3686"
+        ],
+        "issn_l": "1535-6108",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "498",
+      "issue": "6",
+      "last_page": "509",
+      "volume": "16"
+    },
+    "cited_by_count": 735,
+    "display_name": "RETRACTED: miR-221&amp;222 Regulate TRAIL Resistance and Enhance Tumorigenicity through PTEN and TIMP3 Downregulation",
+    "doi": "https://doi.org/10.1016/j.ccr.2009.10.014",
+    "id": "https://openalex.org/W2060459012",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.ccr.2009.10.014",
+      "mag": "2060459012",
+      "openalex": "https://openalex.org/W2060459012",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/19962668"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "bronze",
+      "oa_url": "http://www.cell.com/article/S1535610809003833/pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.ccr.2009.10.014",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.ccr.2009.10.014",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "http://www.cell.com/article/S1535610809003833/pdf",
+      "raw_source_name": "Cancer Cell",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Cancer Cell",
+        "host_organization": "https://openalex.org/P4310315673",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310315673",
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Cell Press",
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Cell Press",
+        "id": "https://openalex.org/S25671836",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1535-6108",
+          "1878-3686"
+        ],
+        "issn_l": "1535-6108",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2009-12-01",
+    "publication_year": 2009,
+    "referenced_works": [
+      "https://openalex.org/W144423133",
+      "https://openalex.org/W174497121",
+      "https://openalex.org/W1484817497",
+      "https://openalex.org/W1488829562",
+      "https://openalex.org/W1588391076",
+      "https://openalex.org/W1951248594",
+      "https://openalex.org/W1972791686",
+      "https://openalex.org/W1973577899",
+      "https://openalex.org/W1976073141",
+      "https://openalex.org/W1979421980",
+      "https://openalex.org/W1998279906",
+      "https://openalex.org/W2002771508",
+      "https://openalex.org/W2002995168",
+      "https://openalex.org/W2004383233",
+      "https://openalex.org/W2014946489",
+      "https://openalex.org/W2015018301",
+      "https://openalex.org/W2015879631",
+      "https://openalex.org/W2018547695",
+      "https://openalex.org/W2021274795",
+      "https://openalex.org/W2024220711",
+      "https://openalex.org/W2029492851",
+      "https://openalex.org/W2030341656",
+      "https://openalex.org/W2034352799",
+      "https://openalex.org/W2038279440",
+      "https://openalex.org/W2038444711",
+      "https://openalex.org/W2041509523",
+      "https://openalex.org/W2054041897",
+      "https://openalex.org/W2068635845",
+      "https://openalex.org/W2075340595",
+      "https://openalex.org/W2097362318",
+      "https://openalex.org/W2106513326",
+      "https://openalex.org/W2112192177",
+      "https://openalex.org/W2124756133",
+      "https://openalex.org/W2131212067",
+      "https://openalex.org/W2135314242",
+      "https://openalex.org/W2135810600",
+      "https://openalex.org/W2137456310",
+      "https://openalex.org/W2141584283",
+      "https://openalex.org/W2157754963",
+      "https://openalex.org/W2163655902",
+      "https://openalex.org/W2167085364",
+      "https://openalex.org/W2167368929",
+      "https://openalex.org/W2168086409",
+      "https://openalex.org/W2170034446",
+      "https://openalex.org/W2171833185",
+      "https://openalex.org/W2276450118",
+      "https://openalex.org/W2473472230",
+      "https://openalex.org/W2597632520",
+      "https://openalex.org/W6607086560",
+      "https://openalex.org/W6674383626",
+      "https://openalex.org/W6681006751"
+    ],
+    "referenced_works_count": 51,
+    "title": "RETRACTED: miR-221&amp;222 Regulate TRAIL Resistance and Enhance Tumorigenicity through PTEN and TIMP3 Downregulation",
+    "type": "article"
+  },
+  "response_hash": "d9288a9489f16eac78a18564478e45b62b5fa6daed617a0a9cb9cbdbdccfafd6",
+  "retrieved_at": "2026-07-14T13:48:52Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

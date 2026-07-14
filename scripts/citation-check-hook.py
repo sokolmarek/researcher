@@ -46,6 +46,22 @@ entry is. A regex would find keys inside @comment{...} blocks and inside
 %-commented-out entries, and those phantom keys would silently satisfy \\cite
 keys that real BibTeX would reject.
 
+EVIDENCE REPORT (researcher-core, optional). When core is available (uv plus core/,
+resolved by the core bridge in scripts/bib-validator.py) and the bibliographies in the
+prospective commit carry DOIs, the guard also runs
+`python -m researcher_core verify-bib --json` over the COMMITTED bibliography content
+and prints what it found: axis (a) reference identity, and axis (b) publication status,
+so a RETRACTED citation surfaces at commit time.
+
+That report NEVER changes the exit code. What blocks a commit here is exactly what
+blocked it before core existed: a citation key with no matching BibTeX entry in the
+committed state. Retractions are REPORTED, NOT BLOCKED, at this stage, and so are the
+refusal-grade identity findings (unresolvable, mismatch). The hard gate on those arrives
+with the M3 compile gate and /researcher:submit-ready, which weigh a whole manuscript
+rather than a single commit. Without core the guard behaves exactly as it did in M1
+(proved by scripts/tests/test_core_fallback.py): the plugin never hard-fails when core
+is absent (D3).
+
 When the repository has no .bib at all the guard warns instead of blocking
 (conservative by design), and any internal error exits 0 (fail-open) so a guard
 bug can never lock the user out of committing. Fail-open cuts both ways: a bug
@@ -59,6 +75,7 @@ import posixpath
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 CITE_RE = re.compile(
@@ -71,24 +88,37 @@ COMMENT_RE = re.compile(r"(?<!\\)%.*")
 
 MAX_TEX_FILES = 500
 
-_PARSE_BIB = None
+# Bibliographies larger than this are not sent to core at commit time: a 900-entry
+# library is a multi-minute verification, and a commit hook may not become that.
+MAX_CORE_ENTRIES = 200
+
+_VALIDATOR = None
 
 
-def load_parse_bib():
-    """Return parse_bib() from scripts/bib-validator.py.
+def load_validator():
+    """Return scripts/bib-validator.py as a module.
 
-    The filename has a hyphen, so it cannot be imported normally. Loading is lazy
-    so that a missing or broken validator surfaces inside check_commit(), where the
+    It carries both the brace-aware parse_bib() and the core bridge (core_command,
+    core_verify_bib, core_findings), so the guard, the validator, and the draft hook
+    share one definition of "what is an entry" and one definition of "is core here".
+
+    The filename has a hyphen, so it cannot be imported normally. Loading is lazy so
+    that a missing or broken validator surfaces inside check_commit(), where the
     fail-open handler turns it into "not blocking" rather than a hard traceback.
     """
-    global _PARSE_BIB
-    if _PARSE_BIB is None:
+    global _VALIDATOR
+    if _VALIDATOR is None:
         script = Path(__file__).resolve().parent / "bib-validator.py"
         spec = importlib.util.spec_from_file_location("researcher_bib_validator", script)
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
-        _PARSE_BIB = module.parse_bib
-    return _PARSE_BIB
+        _VALIDATOR = module
+    return _VALIDATOR
+
+
+def load_parse_bib():
+    """Return parse_bib() from scripts/bib-validator.py."""
+    return load_validator().parse_bib
 
 
 def bib_keys(text):
@@ -201,11 +231,17 @@ def root_of(path, roots):
 
 
 def check_commit(cwd, include_unstaged=False):
-    """Return (dangling: {key: example_tex}, bib_count, tex_count, declared_missing)."""
+    """Inspect the prospective commit tree.
+
+    Returns (dangling: {key: example_tex}, bib_count, tex_count, declared_missing,
+    scoped_bibs: {bib_path: prospective_content}). The last element is the bibliography
+    content the in-scope manuscripts actually declare, which is what the optional core
+    evidence report reads: it must be the COMMITTED content, not the worktree file.
+    """
     changed = changed_paths(cwd, include_unstaged)
     touched = {p for p in changed if p.lower().endswith((".tex", ".bib"))}
     if not touched:
-        return {}, 0, 0, False
+        return {}, 0, 0, False, {}
 
     tex_paths = [normalize(p) for p in git_lines(["ls-files", "--cached", "--", "*.tex"], cwd)]
     index_bibs = {normalize(p) for p in git_lines(["ls-files", "--cached", "--", "*.bib"], cwd)}
@@ -215,7 +251,7 @@ def check_commit(cwd, include_unstaged=False):
             f"{MAX_TEX_FILES}-file scan cap; skipping (not blocking).",
             file=sys.stderr,
         )
-        return {}, 0, 0, False
+        return {}, 0, 0, False, {}
 
     tex_content = {}
     for path in tex_paths:
@@ -270,11 +306,17 @@ def check_commit(cwd, include_unstaged=False):
         }
 
     bib_keys_cache = {}
+    bib_text_cache = {}
+    scoped_bibs = {}
+
+    def text_of(bib_path):
+        if bib_path not in bib_text_cache:
+            bib_text_cache[bib_path] = prospective_content(bib_path, cwd, include_unstaged) or ""
+        return bib_text_cache[bib_path]
 
     def keys_of(bib_path):
         if bib_path not in bib_keys_cache:
-            text = prospective_content(bib_path, cwd, include_unstaged) or ""
-            bib_keys_cache[bib_path] = bib_keys(text)
+            bib_keys_cache[bib_path] = bib_keys(text_of(bib_path))
         return bib_keys_cache[bib_path]
 
     dangling = {}
@@ -286,11 +328,103 @@ def check_commit(cwd, include_unstaged=False):
             continue
         known = set()
         for bib in bibs_for(path):
+            scoped_bibs[bib] = text_of(bib)
             known |= keys_of(bib)
         for key in cited - known:
             dangling.setdefault(key, path)
 
-    return dangling, len(index_bibs), len(in_scope), declared_missing
+    return dangling, len(index_bibs), len(in_scope), declared_missing, scoped_bibs
+
+
+def core_evidence_report(scoped_bibs):
+    """Print core's findings, and never let that reporting weaken the guard.
+
+    The blocking check must survive anything the optional evidence layer does, so every
+    failure inside it is contained here rather than reaching the module-level fail-open
+    handler, which would exit 0 and let a dangling citation through.
+    """
+    try:
+        _core_evidence_report(scoped_bibs)
+    except Exception as exc:  # noqa: BLE001 - reporting must never break the guard
+        print(
+            f"researcher citation guard: evidence report skipped (internal error: {exc}). "
+            "The citation-key check below is unaffected.",
+            file=sys.stderr,
+        )
+
+
+def _core_evidence_report(scoped_bibs):
+    """Print core's axis (a)/(b) findings for the committed bibliography content.
+
+    Prints nothing when core is unavailable, when the bibliographies carry no DOI (there
+    is nothing an index could resolve), or when the bibliography is too large to verify
+    inside a commit. Every finding printed here is INFORMATION: this function has no say
+    in the exit code, and its wording must never suggest otherwise.
+    """
+    if not scoped_bibs:
+        return
+    validator = load_validator()
+    if validator.core_command() is None:
+        return  # no uv, no core: the M1 behavior, silently
+
+    combined = "\n\n".join(text for text in scoped_bibs.values() if text.strip())
+    if not combined.strip():
+        return
+    entries = validator.parse_bib(combined + "\n")
+    with_doi = [e for e in entries if e.get("doi")]
+    if not with_doi or len(entries) > MAX_CORE_ENTRIES:
+        return
+
+    with tempfile.TemporaryDirectory(prefix="researcher-guard-") as tmp:
+        staged = Path(tmp) / "committed.bib"
+        staged.write_text(combined, encoding="utf-8")
+        report = validator.core_verify_bib(staged)
+
+    if report is None:
+        print(
+            "researcher citation guard: the researcher-core evidence check did not run "
+            "(core unavailable, too slow, or too old for `verify-bib`); "
+            "local citation checks only.",
+            file=sys.stderr,
+        )
+        return
+
+    findings = validator.core_findings(report)
+    flagged = [
+        f for f in findings
+        if f["refusal_grade"] or f["status"] in ("retracted", "corrected", "expression-of-concern")
+    ]
+    if not flagged:
+        return
+
+    print(
+        f"researcher citation guard: researcher-core evidence report over "
+        f"{len(findings)} bibliography entr{'y' if len(findings) == 1 else 'ies'}. "
+        "REPORTED, NOT BLOCKED: none of the findings below affect this commit's exit code.",
+        file=sys.stderr,
+    )
+    for finding in sorted(flagged, key=lambda f: f["key"]):
+        doi = f" {finding['doi']}" if finding["doi"] else ""
+        status = finding["status"]
+        if status in ("retracted", "corrected", "expression-of-concern"):
+            # An axis (b) finding. The axis (a) verdict rides along rather than being
+            # replaced by it: a reference can be perfectly verified AND retracted, and
+            # collapsing the two axes into one label is the mistake D16 exists to stop.
+            detail = f" (axis b; axis a: {finding['verdict']})"
+            print(f"  {status}  [{finding['key']}]{doi}{detail}", file=sys.stderr)
+        else:
+            detail = f": {finding['reason']}" if finding["reason"] else ""
+            print(
+                f"  {finding['verdict']}  [{finding['key']}]{doi} (axis a){detail}",
+                file=sys.stderr,
+            )
+    print(
+        "  Retractions and refusal-grade identity findings are reported here for the "
+        "human checkpoint. The hard gate on them is the M3 compile gate "
+        "(/researcher:submit-ready), not this hook. This hook blocks on one thing only: "
+        "a citation key with no matching BibTeX entry in the committed state.",
+        file=sys.stderr,
+    )
 
 
 def report_and_exit(dangling, bib_count, tex_count, block_code):
@@ -320,7 +454,8 @@ def report_and_exit(dangling, bib_count, tex_count, block_code):
 
 def main():
     if "--git-hook" in sys.argv:
-        dangling, bib_count, tex_count, _ = check_commit(".", include_unstaged=False)
+        dangling, bib_count, tex_count, _, scoped_bibs = check_commit(".", include_unstaged=False)
+        core_evidence_report(scoped_bibs)
         report_and_exit(dangling, bib_count, tex_count, block_code=1)
 
     # Claude PreToolUse guard: payload arrives as JSON on stdin.
@@ -337,7 +472,13 @@ def main():
     include_unstaged = bool(
         re.search(r"(?:^|\s)-[a-z]*a[a-z]*\b", command) or re.search(r"--all\b", command)
     )
-    dangling, bib_count, tex_count, _ = check_commit(cwd, include_unstaged=include_unstaged)
+    dangling, bib_count, tex_count, _, scoped_bibs = check_commit(
+        cwd, include_unstaged=include_unstaged
+    )
+    # The evidence report runs BEFORE the verdict so its findings are visible whether or
+    # not the commit is blocked, and so a reader sees the two as separate things: what
+    # core found, then what actually blocked.
+    core_evidence_report(scoped_bibs)
     report_and_exit(dangling, bib_count, tex_count, block_code=2)
 
 

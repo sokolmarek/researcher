@@ -1,0 +1,564 @@
+{
+  "endpoint": "works/doi:10.1161/circ.104.25.3169",
+  "request_key": "2608008650bc084189c9da6d0e1c94c5820db521ffd4ff1bdec99c5bf16196ab",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Alan H. Kadish"
+          }
+        ],
+        "author": {
+          "display_name": "Alan H. Kadish",
+          "id": "https://openalex.org/A5057274499",
+          "orcid": "https://orcid.org/0009-0000-5746-5552"
+        },
+        "author_position": "first",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Alan H. Kadish"
+        ],
+        "raw_author_name": "Alan H. Kadish",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210140207"
+            ],
+            "raw_affiliation_string": "Alfred E. Buxton"
+          }
+        ],
+        "author": {
+          "display_name": "Alfred E. Buxton",
+          "id": "https://openalex.org/A5102976561",
+          "orcid": "https://orcid.org/0000-0002-0641-4787"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "Buxton Hospital",
+            "id": "https://openalex.org/I4210140207",
+            "lineage": [
+              "https://openalex.org/I4210121323",
+              "https://openalex.org/I4210140207"
+            ],
+            "ror": "https://ror.org/043zhb260",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Alfred E. Buxton"
+        ],
+        "raw_author_name": "Alfred E. Buxton",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Harold L. Kennedy"
+          }
+        ],
+        "author": {
+          "display_name": "Harold L. Kennedy",
+          "id": "https://openalex.org/A5022346829",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Harold L. Kennedy"
+        ],
+        "raw_author_name": "Harold L. Kennedy",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2800634083"
+            ],
+            "raw_affiliation_string": "Bradley P. Knight"
+          }
+        ],
+        "author": {
+          "display_name": "Bradley P. Knight",
+          "id": "https://openalex.org/A5016979167",
+          "orcid": "https://orcid.org/0000-0002-2129-0401"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Bradley Hospital",
+            "id": "https://openalex.org/I2800634083",
+            "lineage": [
+              "https://openalex.org/I2800634083",
+              "https://openalex.org/I4210151747"
+            ],
+            "ror": "https://ror.org/02mx8nz45",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Bradley P. Knight"
+        ],
+        "raw_author_name": "Bradley P. Knight",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Jay W. Mason"
+          }
+        ],
+        "author": {
+          "display_name": "Jay W. Mason",
+          "id": "https://openalex.org/A5038222647",
+          "orcid": "https://orcid.org/0000-0002-5713-9906"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Jay W. Mason"
+        ],
+        "raw_author_name": "Jay W. Mason",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Claudio D. Schuger"
+          }
+        ],
+        "author": {
+          "display_name": "Claudio Schuger",
+          "id": "https://openalex.org/A5022198058",
+          "orcid": "https://orcid.org/0000-0002-7534-2465"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Claudio D. Schuger"
+        ],
+        "raw_author_name": "Claudio D. Schuger",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Cynthia M. Tracy"
+          }
+        ],
+        "author": {
+          "display_name": "Cynthia M. Tracy",
+          "id": "https://openalex.org/A5007520572",
+          "orcid": "https://orcid.org/0000-0002-3647-6444"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cynthia M. Tracy"
+        ],
+        "raw_author_name": "Cynthia M. Tracy",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "William L. WintersJr"
+          }
+        ],
+        "author": {
+          "display_name": "William L. Winters",
+          "id": "https://openalex.org/A5110831531",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "William L. WintersJr"
+        ],
+        "raw_author_name": "William L. Winters",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Alan W. Boone"
+          }
+        ],
+        "author": {
+          "display_name": "Alan W. Boone",
+          "id": "https://openalex.org/A5007653567",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Alan W. Boone"
+        ],
+        "raw_author_name": "Alan W. Boone",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210131859"
+            ],
+            "raw_affiliation_string": "Michael Elnicki"
+          }
+        ],
+        "author": {
+          "display_name": "Michael Elnicki",
+          "id": "https://openalex.org/A5109209527",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Michael & Associates",
+            "id": "https://openalex.org/I4210131859",
+            "lineage": [
+              "https://openalex.org/I4210131859"
+            ],
+            "ror": "https://ror.org/03dbx2z52",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Michael Elnicki"
+        ],
+        "raw_author_name": "Michael Elnicki",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "John W. HirshfeldJr"
+          }
+        ],
+        "author": {
+          "display_name": "John W. Hirshfeld",
+          "id": "https://openalex.org/A5060479070",
+          "orcid": "https://orcid.org/0000-0001-8989-2997"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "John W. HirshfeldJr"
+        ],
+        "raw_author_name": "John W. Hirshfeld",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210152129"
+            ],
+            "raw_affiliation_string": "Beverly H. Lorell"
+          }
+        ],
+        "author": {
+          "display_name": "Beverly H. Lorell",
+          "id": "https://openalex.org/A5085665354",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Beverly Hospital",
+            "id": "https://openalex.org/I4210152129",
+            "lineage": [
+              "https://openalex.org/I4210152129"
+            ],
+            "ror": "https://ror.org/04qhdw391",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Beverly H. Lorell"
+        ],
+        "raw_author_name": "Beverly H. Lorell",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "George P. Rodgers"
+          }
+        ],
+        "author": {
+          "display_name": "George P. Rodgers",
+          "id": "https://openalex.org/A5112088233",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "George P. Rodgers"
+        ],
+        "raw_author_name": "George P. Rodgers",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Cynthia M. Tracy"
+          }
+        ],
+        "author": {
+          "display_name": "Cynthia M. Tracy",
+          "id": "https://openalex.org/A5007520572",
+          "orcid": "https://orcid.org/0000-0002-3647-6444"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cynthia M. Tracy"
+        ],
+        "raw_author_name": "Cynthia M. Tracy",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Howard H. Weitz"
+          }
+        ],
+        "author": {
+          "display_name": "Howard H. Weitz",
+          "id": "https://openalex.org/A5005161288",
+          "orcid": "https://orcid.org/0000-0002-3325-0714"
+        },
+        "author_position": "last",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Howard H. Weitz"
+        ],
+        "raw_author_name": "Howard H. Weitz",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1161/circ.104.25.3169",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1161/circ.104.25.3169",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://www.ahajournals.org/doi/pdf/10.1161/circ.104.25.3169",
+      "raw_source_name": "Circulation",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Circulation",
+        "host_organization": "https://openalex.org/P4310315671",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310315671",
+          "https://openalex.org/P4310318547"
+        ],
+        "host_organization_lineage_names": [
+          "Lippincott Williams & Wilkins",
+          "Wolters Kluwer"
+        ],
+        "host_organization_name": "Lippincott Williams & Wilkins",
+        "id": "https://openalex.org/S116251202",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0009-7322",
+          "1524-4539"
+        ],
+        "issn_l": "0009-7322",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "3169",
+      "issue": "25",
+      "last_page": "3178",
+      "volume": "104"
+    },
+    "cited_by_count": 192,
+    "display_name": "ACC/AHA Clinical Competence Statement on Electrocardiography and Ambulatory Electrocardiography",
+    "doi": "https://doi.org/10.1161/circ.104.25.3169",
+    "id": "https://openalex.org/W3015702588",
+    "ids": {
+      "doi": "https://doi.org/10.1161/circ.104.25.3169",
+      "mag": "3015702588",
+      "openalex": "https://openalex.org/W3015702588"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": true,
+      "oa_status": "bronze",
+      "oa_url": "https://www.ahajournals.org/doi/pdf/10.1161/circ.104.25.3169"
+    },
+    "primary_location": {
+      "id": "doi:10.1161/circ.104.25.3169",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1161/circ.104.25.3169",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://www.ahajournals.org/doi/pdf/10.1161/circ.104.25.3169",
+      "raw_source_name": "Circulation",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Circulation",
+        "host_organization": "https://openalex.org/P4310315671",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310315671",
+          "https://openalex.org/P4310318547"
+        ],
+        "host_organization_lineage_names": [
+          "Lippincott Williams & Wilkins",
+          "Wolters Kluwer"
+        ],
+        "host_organization_name": "Lippincott Williams & Wilkins",
+        "id": "https://openalex.org/S116251202",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0009-7322",
+          "1524-4539"
+        ],
+        "issn_l": "0009-7322",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2001-12-17",
+    "publication_year": 2001,
+    "referenced_works": [
+      "https://openalex.org/W1823254",
+      "https://openalex.org/W168882473",
+      "https://openalex.org/W1598109819",
+      "https://openalex.org/W1965787434",
+      "https://openalex.org/W1967172540",
+      "https://openalex.org/W1969661636",
+      "https://openalex.org/W1969704561",
+      "https://openalex.org/W1971270590",
+      "https://openalex.org/W1976119917",
+      "https://openalex.org/W1979276457",
+      "https://openalex.org/W1984972157",
+      "https://openalex.org/W1985095498",
+      "https://openalex.org/W1986157160",
+      "https://openalex.org/W2008587878",
+      "https://openalex.org/W2011135064",
+      "https://openalex.org/W2013750388",
+      "https://openalex.org/W2017086716",
+      "https://openalex.org/W2017687241",
+      "https://openalex.org/W2019768128",
+      "https://openalex.org/W2024123491",
+      "https://openalex.org/W2024729839",
+      "https://openalex.org/W2027962319",
+      "https://openalex.org/W2028013985",
+      "https://openalex.org/W2028533410",
+      "https://openalex.org/W2034194778",
+      "https://openalex.org/W2043365038",
+      "https://openalex.org/W2046114465",
+      "https://openalex.org/W2051992017",
+      "https://openalex.org/W2063378240",
+      "https://openalex.org/W2063810433",
+      "https://openalex.org/W2066071317",
+      "https://openalex.org/W2077584720",
+      "https://openalex.org/W2082439039",
+      "https://openalex.org/W2087646214",
+      "https://openalex.org/W2095630937",
+      "https://openalex.org/W2097543227",
+      "https://openalex.org/W2100069431",
+      "https://openalex.org/W2150876928",
+      "https://openalex.org/W2162317519",
+      "https://openalex.org/W2170357506",
+      "https://openalex.org/W2314432587",
+      "https://openalex.org/W2314745108",
+      "https://openalex.org/W2314910045",
+      "https://openalex.org/W2332702233",
+      "https://openalex.org/W2334859129",
+      "https://openalex.org/W2339648799",
+      "https://openalex.org/W2397311942",
+      "https://openalex.org/W2407129172",
+      "https://openalex.org/W2408521221",
+      "https://openalex.org/W2412009275",
+      "https://openalex.org/W2442724129",
+      "https://openalex.org/W2615323911",
+      "https://openalex.org/W4210620072",
+      "https://openalex.org/W4247144249"
+    ],
+    "referenced_works_count": 54,
+    "title": "ACC/AHA Clinical Competence Statement on Electrocardiography and Ambulatory Electrocardiography",
+    "type": "article"
+  },
+  "response_hash": "895801c0d983f3216224f4dc6f3f2c35a3e9f9a9a1a7294a9963b021d2411b07",
+  "retrieved_at": "2026-07-14T13:49:31Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

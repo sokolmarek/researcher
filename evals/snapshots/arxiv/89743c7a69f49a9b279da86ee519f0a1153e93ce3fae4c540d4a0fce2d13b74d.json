@@ -1,0 +1,65 @@
+{
+  "endpoint": "query",
+  "request_key": "89743c7a69f49a9b279da86ee519f0a1153e93ce3fae4c540d4a0fce2d13b74d",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Self-supervised Learning: Generative or Contrastive\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Xiao Liu",
+          "Fanjin Zhang",
+          "Zhenyu Hou",
+          "Zhaoyu Wang",
+          "Li Mian",
+          "Jing Zhang",
+          "Jie Tang"
+        ],
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "comment": "24 pages, 19 figures",
+        "doi": "10.1109/TKDE.2021.3090866",
+        "id": "http://arxiv.org/abs/2006.08218v5",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2006.08218v5",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2006.08218v5",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1109/TKDE.2021.3090866",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2020-06-15T08:40:03Z",
+        "summary": "Deep supervised learning has achieved great success in the last decade. However, its deficiencies of dependence on manual labels and vulnerability to attacks have driven people to explore a better solution. As an alternative, self-supervised learning attracts many researchers for its soaring performance on representation learning in the last several years. Self-supervised representation learning leverages input data itself as supervision and benefits almost all types of downstream tasks. In this survey, we take a look into new self-supervised learning methods for representation in computer vision, natural language processing, and graph learning. We comprehensively review the existing empirical methods and summarize them into three main categories according to their objectives: generative, contrastive, and generative-contrastive (adversarial). We further investigate related theoretical analysis work to provide deeper thoughts on how self-supervised learning works. Finally, we briefly discuss open problems and future directions for self-supervised learning. An outline slide for the survey is provided.",
+        "title": "Self-supervised Learning: Generative or Contrastive",
+        "updated": "2021-03-20T05:07:03Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "a09354c74527b36518f06f9e77e30816e35d1287929dc6532884270caa7d7d6d",
+  "retrieved_at": "2026-07-14T14:06:19Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

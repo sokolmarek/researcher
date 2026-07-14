@@ -1,0 +1,62 @@
+{
+  "endpoint": "query",
+  "request_key": "bb7561010e8db553a7b4e3c73f60c91f1673830ad24ffebcb33a9668c74ea187",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Self-Supervised Representation Learning: Introduction, advances, and challenges\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Linus Ericsson",
+          "Henry Gouk",
+          "Chen Change Loy",
+          "Timothy M. Hospedales"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.CV",
+          "stat.ML"
+        ],
+        "doi": "10.1109/MSP.2021.3134634",
+        "id": "http://arxiv.org/abs/2110.09327v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2110.09327v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2110.09327v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1109/MSP.2021.3134634",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2021-10-18T13:51:22Z",
+        "summary": "Self-supervised representation learning methods aim to provide powerful deep feature learning without the requirement of large annotated datasets, thus alleviating the annotation bottleneck that is one of the main barriers to practical deployment of deep learning today. These methods have advanced rapidly in recent years, with their efficacy approaching and sometimes surpassing fully supervised pre-training alternatives across a variety of data modalities including image, video, sound, text and graphs. This article introduces this vibrant area including key concepts, the four main families of approach and associated state of the art, and how self-supervised methods are applied to diverse modalities of data. We further discuss practical considerations including workflows, representation transferability, and compute cost. Finally, we survey the major open challenges in the field that provide fertile ground for future work.",
+        "title": "Self-Supervised Representation Learning: Introduction, Advances and Challenges",
+        "updated": "2021-10-18T13:51:22Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "64b43432e7201719bee678905074c340abfd6db4c2268ac5fe2916703cf60ba4",
+  "retrieved_at": "2026-07-14T13:51:46Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

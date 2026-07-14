@@ -1,0 +1,735 @@
+{
+  "endpoint": "dois",
+  "request_key": "c5b31513ab2723aa52f28fffaa2293c56c812b19daaaf062509d1730727adc52",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self-supervised Representation Learning on Dynamic Graphs"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-02-27T03:03:16Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Bonnet",
+              "givenName": "Tyler",
+              "name": "Bonnet, Tyler",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Rei",
+              "givenName": "Marek",
+              "name": "Rei, Marek",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-02-26T15:51:51Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-02-27T01:53:58Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-06-27T09:53:28Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-06-30T00:30:40Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-02",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Edge classification on directed dynamic graphs requires modeling interactions between source and destination nodes exhibiting asymmetrical behavioral patterns and temporal dynamics. However, existing dynamic graph architectures largely rely on shared parameters for processing source and destination nodes, with limited or no systematic role-aware modeling. We propose DyGnROLE (Dynamic Graph Node-Role-Oriented Latent Encoding), a Transformer-based architecture that disentangles source and destination representations. By using separate embedding tables and role-semantic positional encodings, the model captures the distinct structural and temporal contexts unique to each role. Critical in limited-label settings, which are common in edge classification, is a self-supervised pretraining objective we introduce: Directional Role Alignment (DRA). DRA learns distinct but aligned source and destination embedding spaces by training source representations to retrieve their corresponding destination representations while a historical positive masking strategy excludes previously observed interactions from future negative comparisons. The masks introduce a temporally directional training signal in which node pairs progress monotonically from unseen to observed, after which the relationship is eligible only for further alignment. A comprehensive evaluation on four edge classification tasks across eight datasets demonstrates that DyGnROLE consistently outperforms a wide range of state-of-the-art baselines, highlighting the importance of role-aware representation learning and asymmetric pretraining for modeling complex directed interactions when labeled data is limited.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2602.23135",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2602.23135",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-02-27T03:03:17Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Social and Information Networks (cs.SI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "DyGnROLE: Asymmetric Pretraining for Edge Classification on Dynamic Graphs"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-06-30T04:11:25Z",
+          "url": "https://arxiv.org/abs/2602.23135",
+          "version": "2",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2602.23135",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-05-27T02:23:56Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Xu",
+              "givenName": "Yiming",
+              "name": "Xu, Yiming",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Peng",
+              "givenName": "Zhen",
+              "name": "Peng, Zhen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Shi",
+              "givenName": "Bin",
+              "name": "Shi, Bin",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Hua",
+              "givenName": "Xu",
+              "name": "Hua, Xu",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Dong",
+              "givenName": "Bo",
+              "name": "Dong, Bo",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-05-26T14:15:04Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-05-27T01:04:00Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-05",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2026",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "The rich information underlying graphs has inspired further investigation of unsupervised graph representation. Existing studies mainly depend on node features and topological properties within static graphs to create self-supervised signals, neglecting the temporal components carried by real-world graph data, such as timestamps of edges. To overcome this limitation, this paper explores how to model temporal evolution on dynamic graphs elegantly. Specifically, we introduce a new inductive bias, namely temporal translation invariance, which illustrates the tendency of the identical node to keep similar labels across different timespans. Based on this assumption, we develop a dynamic graph representation framework CLDG that encourages the node to maintain locally consistent temporal translation invariance through contrastive learning on different timespans. Except for standard CLDG which only considers explicit topological links, our further proposed CLDG++ additionally employs graph diffusion to uncover global contextual correlations between nodes, and designs a multi-scale contrastive learning objective composed of local-local, local-global, and global-global contrasts to enhance representation capabilities. Interestingly, by measuring the consistency between different timespans to shape anomaly indicators, CLDG and CLDG++ are seamlessly integrated with the task of spotting anomalies on dynamic graphs, which has broad applications in many high-impact domains, such as finance, cybersecurity, and healthcare. Experiments demonstrate that CLDG and CLDG++ both exhibit desirable performance in downstream tasks including node classification and dynamic graph anomaly detection. Moreover, CLDG significantly reduces time and space complexity by implicitly exploiting temporal cues instead of complicated sequence models.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted by Neural Networks",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2605.27063",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2605.27063",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-05-27T02:23:57Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Learning Dynamic Graph Representations through Timespan View Contrasts"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-05-27T02:23:57Z",
+          "url": "https://arxiv.org/abs/2605.27063",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2605.27063",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-04-03T01:51:58Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Lincan",
+              "name": "Li, Lincan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Kotoge",
+              "givenName": "Rikuto",
+              "name": "Kotoge, Rikuto",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Piao",
+              "givenName": "Xihao",
+              "name": "Piao, Xihao",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Chen",
+              "givenName": "Zheng",
+              "name": "Chen, Zheng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Dong",
+              "givenName": "Yushun",
+              "name": "Dong, Yushun",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-04-02T04:09:10Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-04-03T00:24:01Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-04",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2026",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Seizure detection from EEG signals is highly challenging due to complex spatiotemporal dynamics and extreme inter-patient variability. To model them, recent methods construct dynamic graphs via statistical correlations, predefined similarity measures, or implicit learning, yet rarely account for EEG's noisy nature. Consequently, these graphs usually contain redundant or task-irrelevant connections, undermining model performance even with state-of-the-art architectures. In this paper, we present a new perspective for EEG seizure detection: jointly learning denoised dynamic graph structures and informative spatial-temporal representations guided by the Information Bottleneck (IB). Unlike prior approaches, our graph constructor explicitly accounts for the noisy characteristics of EEG data, producing compact and reliable connectivity patterns that better support downstream seizure detection. To further enhance representation learning, we employ a self-supervised Graph Masked AutoEncoder that reconstructs masked EEG signals based on dynamic graph context, promoting structure-aware and compact representations aligned with the IB principle. Bringing things together, we introduce Information Bottleneck-guided EEG SeizuRE DetectioN via SElf-Supervised Learning (IRENE), which explicitly learns dynamic graph structures and interpretable spatial-temporal EEG representations. IRENE addresses three core challenges: (i) Identifying the most informative nodes and edges; (ii) Explaining seizure propagation in the brain network; and (iii) Enhancing robustness against label scarcity and inter-patient variability. Extensive experiments on benchmark EEG datasets demonstrate that our method outperforms state-of-the-art baselines in seizure detection and provides clinically meaningful insights into seizure dynamics. The source code is available at https://github.com/LabRAI/IRENE.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted by IEEE 14th International Conference on Healthcare Informatics (ICHI)",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2604.01595",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2604.01595",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-04-03T01:51:59Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
+              "rightsIdentifier": "cc-by-nc-nd-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Optimizing EEG Graph Structure for Seizure Detection: An Information Bottleneck and Self-Supervised Learning Approach"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-04-03T01:51:59Z",
+          "url": "https://arxiv.org/abs/2604.01595",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2604.01595",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2024-07-31T14:59:52Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Yuan",
+              "givenName": "Zixuan",
+              "name": "Yuan, Zixuan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2023",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Company profiling has become indispensable in the contemporary business landscape as it offers market-concerned insights into various critical facets of a company, including fundamentals, operations, financials, products, market presence, and competitive positioning. Such profiling approach forms a solid foundation that summarizes a holistic understanding of companies, empowering successful decision-making and driving business growth. The advent of digitalization in industries has revolutionized the construction of comprehensive company profiles by leveraging a wealth of market information (e.g., company announcements, social media), and facilitating the decision-making process in various business applications. Due to its significance and usefulness, numerous studies have been conducted via the case-by-case empirical analysis that leverages traditional financial theories, or the deep learning methods that reformulate the problem into various supervised learning tasks.However, both categories of approaches heavily rely on domain knowledge and are labor-intensive. More crucially, the task-specific nature of both approaches restricts the applicability of the resulting company profiles to various downstream applications. Our main contribution is to provide an intelligent deep-learning-driven company profiling solution to address different business problems, including Venture Capital (VC) investment and quantitative trading. Specifically, we first develop a self-supervised representation learning framework (SePaL) for dynamic company profiling. By leveraging the topological information derived from event graphs and employing advanced self-supervised learning techniques, SePaL acquires unified and robust company representations. These representations are highly resistant to the influence of event noises, ensuring their reliability in practical applications. Moreover, we can easily fine-tune SePaL with only a small amount of annotated data, making it a versatile tool for various downstream applications. We then manage to extend the use of company profiling to facilitate two key business applications. For the problem of VC investment, we propose a reinforcement learning-based method (AlphaVC) to facilitate venture capitalists' decision-making. Our policy-based reinforcement learning agents can dynamically identify the best candidates based on their profile representations and sequentially place the optimal investment amounts at proper rounds to maximize financial returns for a given portfolio. For the problem of quantitative trading}, we propose an online adaptive sequence learning (LEVER) framework to simultaneously predict the tick-level trading signals for a variety of securities, which are pre-selected based on their learned company profiles. Moreover, we devise a competitive active-meta learning paradigm to enhance the signal learners' learning efficiency for online implementation. The above approaches are validated for extensive experiments on real-world financial datasets, demonstrating their effectiveness, efficiency, robustness, and generalization ability. We have further conducted the case studies to reveal some interpretable findings which provide actionable insight into the business decision process.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.7282/t3-6m6q-an05",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2023,
+          "published": null,
+          "publisher": "No Publisher Supplied",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2024-07-31T15:01:31Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [],
+          "titles": [
+            {
+              "title": "Deep learning driven company profiling"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2026-01-08T02:24:24Z",
+          "url": "https://rucore.libraries.rutgers.edu/rutgers-lib/72650",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.7282/t3-6m6q-an05",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "rutgers.lib",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-12-17T02:47:10Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Holm",
+              "givenName": "Felix",
+              "name": "Holm, Felix",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ghazaei",
+              "givenName": "Ghazal",
+              "name": "Ghazaei, Ghazal",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Navab",
+              "givenName": "Nassir",
+              "name": "Navab, Nassir",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-12-16T04:59:58Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-12-17T01:23:28Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-12",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2025",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Purpose: Detailed surgical recognition is critical for advancing AI-assisted surgery, yet progress is hampered by high annotation costs, data scarcity, and a lack of interpretable models. While scene graphs offer a structured abstraction of surgical events, their full potential remains untapped. In this work, we introduce ProtoFlow, a novel framework that learns dynamic scene graph prototypes to model complex surgical workflows in an interpretable and robust manner.\n Methods: ProtoFlow leverages a graph neural network (GNN) encoder-decoder architecture that combines self-supervised pretraining for rich representation learning with a prototype-based fine-tuning stage. This process discovers and refines core prototypes that encapsulate recurring, clinically meaningful patterns of surgical interaction, forming an explainable foundation for workflow analysis.\n Results: We evaluate our approach on the fine-grained CAT-SG dataset. ProtoFlow not only outperforms standard GNN baselines in overall accuracy but also demonstrates exceptional robustness in limited-data, few-shot scenarios, maintaining strong performance when trained on as few as one surgical video. Our qualitative analyses further show that the learned prototypes successfully identify distinct surgical sub-techniques and provide clear, interpretable insights into workflow deviations and rare complications.\n Conclusion: By uniting robust representation learning with inherent explainability, ProtoFlow represents a significant step toward developing more transparent, reliable, and data-efficient AI systems, accelerating their potential for clinical adoption in surgical training, real-time decision support, and workflow optimization.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2512.14092",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2512.14092",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-12-17T02:47:11Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+              "rightsIdentifier": "cc-by-nc-sa-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "lang": "en",
+              "subject": "I.2.10",
+              "subjectScheme": "ACM"
+            }
+          ],
+          "titles": [
+            {
+              "title": "ProtoFlow: Interpretable and Robust Surgical Workflow Modeling with Learned Dynamic Scene Graph Prototypes"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2025-12-17T02:47:11Z",
+          "url": "https://arxiv.org/abs/2512.14092",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2512.14092",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=5&query=Self-supervised+Representation+Learning+on+Dynamic+Graphs",
+      "self": "https://api.datacite.org/dois?query=Self-supervised+Representation+Learning+on+Dynamic+Graphs&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 21,
+      "totalPages": 5
+    }
+  },
+  "response_hash": "a493f62882493605d53a9a997725779c36fc410bdc4e4261de9f12c16e88f963",
+  "retrieved_at": "2026-07-14T14:48:37Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

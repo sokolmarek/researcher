@@ -1,0 +1,303 @@
+{
+  "endpoint": "dois/10.26007/6gq7-p170",
+  "request_key": "1e911672a88f002e1ac088c3b43bb85cf51b67f83f506b33ac4d72dad6e92b6f",
+  "request_params": {},
+  "response_body": {
+    "data": {
+      "attributes": {
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifier": "urn:nasa:pds:nh_mvic:jupiter_raw::1.0",
+            "alternateIdentifierType": "PDS4 Collection ID"
+          }
+        ],
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "container": {},
+        "contentUrl": null,
+        "contributors": [
+          {
+            "affiliation": [
+              "University of Maryland, College Park"
+            ],
+            "contributorType": "Editor",
+            "familyName": "Gicquel",
+            "givenName": "Adeline",
+            "name": "Gicquel, Adeline",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0002-9347-8753",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Southwest Research Institute, Boulder, Colorado, United States"
+            ],
+            "contributorType": "Producer",
+            "familyName": "Peterson",
+            "givenName": "Joseph",
+            "name": "Peterson, Joseph",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "University of Maryland, College Park"
+            ],
+            "contributorType": "DataCurator",
+            "name": "NASA PDS Small Bodies Node",
+            "nameIdentifiers": [],
+            "nameType": "Organizational"
+          }
+        ],
+        "created": "2025-11-21T16:08:59.000Z",
+        "creators": [
+          {
+            "affiliation": [
+              "Southwest Research Institute"
+            ],
+            "familyName": "Stern",
+            "givenName": "S. Alan",
+            "name": "Stern, S. Alan",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0001-5018-7537",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2026-07-14",
+            "dateType": "Available"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This data set contains Raw data in .FIT format taken \n by New Horizons Multispectral Visible Imaging Camera \n instrument during the JUPITER ENCOUNTER mission phase. \n \n These data were migrated from the PDS3 dataset: \n NH-J-MVIC-2-JUPITER-V2.0.\n \n The Ralph (LEISA and MVIC) Jupiter activities included calibration \n observations using Callisto and Jupiter as a target, scientific \n observations of Jovian targets, opnav test observations of \n Callisto, and mapping of solar input aperture. \n \n This version includes data downlinked from 01/11/2007 through 06/27/2007.\n \n Labels were redesigned during migration using the .FIT header and PDS3 .LBL\n files, but the data files are unchanged from their PDS3 version.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "doi": "10.26007/6gq7-p170",
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "formats": [
+          "application/fits",
+          "text/xml"
+        ],
+        "fundingReferences": [],
+        "geoLocations": [],
+        "identifiers": [
+          {
+            "identifier": "urn:nasa:pds:nh_mvic:jupiter_raw::1.0",
+            "identifierType": "PDS4 Collection ID"
+          }
+        ],
+        "isActive": true,
+        "language": null,
+        "metadataVersion": 2,
+        "partCount": 0,
+        "partOfCount": 0,
+        "prefix": "10.26007",
+        "publicationYear": 2026,
+        "published": "2026",
+        "publisher": "NASA Planetary Data System",
+        "reason": null,
+        "referenceCount": 3,
+        "registered": "2026-07-14T13:08:54.000Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.1007/s11214-007-9295-y",
+            "relatedIdentifierType": "DOI",
+            "relationType": "Cites"
+          },
+          {
+            "relatedIdentifier": "10.26007/y9p8-4h58",
+            "relatedIdentifierType": "DOI",
+            "relationType": "IsSourceOf"
+          },
+          {
+            "relatedIdentifier": "10.26007/w24z-4957",
+            "relatedIdentifierType": "DOI",
+            "relationType": "Cites"
+          },
+          {
+            "relatedIdentifier": "10.26007/afh6-zg11",
+            "relatedIdentifierType": "DOI",
+            "relationType": "Cites"
+          },
+          {
+            "relatedIdentifier": "10.26007/mwhy-rz68",
+            "relatedIdentifierType": "DOI",
+            "relationType": "IsVariantFormOf"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rights": "Creative Commons Zero v1.0 Universal",
+            "rightsIdentifier": "cc0-1.0",
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [
+          "1.2 GB",
+          "160 FITS files with detached PDS4 xml labels"
+        ],
+        "source": "fabricaForm",
+        "state": "findable",
+        "subjects": [
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Galilean satellites",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/627"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Callisto",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/2279"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Ganymede",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/2188"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Io",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/2190"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Europa",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/2189"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Jupiter",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/873"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Earth (planet)",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/439"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Flyby missions",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/545"
+          },
+          {
+            "schemeUri": "http://astrothesaurus.org",
+            "subject": "Spectrometers",
+            "subjectScheme": "UAT",
+            "valueUri": "http://astrothesaurus.org/uat/1554"
+          },
+          {
+            "schemeUri": "http://www.oecd.org/science/inno",
+            "subject": "FOS: Physical sciences",
+            "subjectScheme": "Fields of Science and Technology (FOS)",
+            "valueUri": "http://www.oecd.org/science/inno/38235147.pdf"
+          }
+        ],
+        "suffix": "6gq7-p170",
+        "titles": [
+          {
+            "title": "New Horizons Multispectral Visible Imaging Camera (MVIC) Jupiter Encounter Raw Data, Version 1.0"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceType": "PDS4 Refereed Data Collection",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2026-07-14T13:08:54.000Z",
+        "url": "https://pdssbn.astro.umd.edu/holdings/pds4-nh_mvic:jupiter_raw-v1.0/SUPPORT/dataset.shtml",
+        "version": null,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMjYwMDcvNkdRNy1QMTcwPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TdGVybiwgUy4gQWxhbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Uy4gQWxhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TdGVybjwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSJodHRwczovL29yY2lkLm9yZyI+aHR0cHM6Ly9vcmNpZC5vcmcvMDAwMC0wMDAxLTUwMTgtNzUzNzwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wM3RnaG5nNTkiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5Tb3V0aHdlc3QgUmVzZWFyY2ggSW5zdGl0dXRlPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+TmV3IEhvcml6b25zIE11bHRpc3BlY3RyYWwgVmlzaWJsZSBJbWFnaW5nIENhbWVyYSAoTVZJQykgSnVwaXRlciBFbmNvdW50ZXIgUmF3IERhdGEsIFZlcnNpb24gMS4wPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPk5BU0EgUGxhbmV0YXJ5IERhdGEgU3lzdGVtPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ij5QRFM0IFJlZmVyZWVkIERhdGEgQ29sbGVjdGlvbjwvcmVzb3VyY2VUeXBlPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IlVBVCIgc2NoZW1lVVJJPSJodHRwOi8vYXN0cm90aGVzYXVydXMub3JnIiB2YWx1ZVVSST0iaHR0cDovL2FzdHJvdGhlc2F1cnVzLm9yZy91YXQvNjI3Ij5HYWxpbGVhbiBzYXRlbGxpdGVzPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iVUFUIiBzY2hlbWVVUkk9Imh0dHA6Ly9hc3Ryb3RoZXNhdXJ1cy5vcmciIHZhbHVlVVJJPSJodHRwOi8vYXN0cm90aGVzYXVydXMub3JnL3VhdC8yMjc5Ij5DYWxsaXN0bzwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IlVBVCIgc2NoZW1lVVJJPSJodHRwOi8vYXN0cm90aGVzYXVydXMub3JnIiB2YWx1ZVVSST0iaHR0cDovL2FzdHJvdGhlc2F1cnVzLm9yZy91YXQvMjE4OCI+R2FueW1lZGU8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJVQVQiIHNjaGVtZVVSST0iaHR0cDovL2FzdHJvdGhlc2F1cnVzLm9yZyIgdmFsdWVVUkk9Imh0dHA6Ly9hc3Ryb3RoZXNhdXJ1cy5vcmcvdWF0LzIxOTAiPklvPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iVUFUIiBzY2hlbWVVUkk9Imh0dHA6Ly9hc3Ryb3RoZXNhdXJ1cy5vcmciIHZhbHVlVVJJPSJodHRwOi8vYXN0cm90aGVzYXVydXMub3JnL3VhdC8yMTg5Ij5FdXJvcGE8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJVQVQiIHNjaGVtZVVSST0iaHR0cDovL2FzdHJvdGhlc2F1cnVzLm9yZyIgdmFsdWVVUkk9Imh0dHA6Ly9hc3Ryb3RoZXNhdXJ1cy5vcmcvdWF0Lzg3MyI+SnVwaXRlcjwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IlVBVCIgc2NoZW1lVVJJPSJodHRwOi8vYXN0cm90aGVzYXVydXMub3JnIiB2YWx1ZVVSST0iaHR0cDovL2FzdHJvdGhlc2F1cnVzLm9yZy91YXQvNDM5Ij5FYXJ0aCAocGxhbmV0KTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IlVBVCIgc2NoZW1lVVJJPSJodHRwOi8vYXN0cm90aGVzYXVydXMub3JnIiB2YWx1ZVVSST0iaHR0cDovL2FzdHJvdGhlc2F1cnVzLm9yZy91YXQvNTQ1Ij5GbHlieSBtaXNzaW9uczwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IlVBVCIgc2NoZW1lVVJJPSJodHRwOi8vYXN0cm90aGVzYXVydXMub3JnIiB2YWx1ZVVSST0iaHR0cDovL2FzdHJvdGhlc2F1cnVzLm9yZy91YXQvMTU1NCI+U3BlY3Ryb21ldGVyczwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIiBzY2hlbWVVUkk9Imh0dHA6Ly93d3cub2VjZC5vcmcvc2NpZW5jZS9pbm5vIiB2YWx1ZVVSST0iaHR0cDovL3d3dy5vZWNkLm9yZy9zY2llbmNlL2lubm8vMzgyMzUxNDcucGRmIj5GT1M6IFBoeXNpY2FsIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGNvbnRyaWJ1dG9ycz4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9IkVkaXRvciI+CiAgICAgIDxjb250cmlidXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5HaWNxdWVsLCBBZGVsaW5lPC9jb250cmlidXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QWRlbGluZTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5HaWNxdWVsPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9Imh0dHBzOi8vb3JjaWQub3JnIj5odHRwczovL29yY2lkLm9yZy8wMDAwLTAwMDItOTM0Ny04NzUzPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzA0N3MyYzI1OCIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPlVuaXZlcnNpdHkgb2YgTWFyeWxhbmQsIENvbGxlZ2UgUGFyazwvYWZmaWxpYXRpb24+CiAgICA8L2NvbnRyaWJ1dG9yPgogICAgPGNvbnRyaWJ1dG9yIGNvbnRyaWJ1dG9yVHlwZT0iUHJvZHVjZXIiPgogICAgICA8Y29udHJpYnV0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+UGV0ZXJzb24sIEpvc2VwaDwvY29udHJpYnV0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkpvc2VwaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5QZXRlcnNvbjwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAzdGdobmc1OSIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPlNvdXRod2VzdCBSZXNlYXJjaCBJbnN0aXR1dGUsIEJvdWxkZXIsIENvbG9yYWRvLCBVbml0ZWQgU3RhdGVzPC9hZmZpbGlhdGlvbj4KICAgIDwvY29udHJpYnV0b3I+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSJEYXRhQ3VyYXRvciI+CiAgICAgIDxjb250cmlidXRvck5hbWUgbmFtZVR5cGU9Ik9yZ2FuaXphdGlvbmFsIj5OQVNBIFBEUyBTbWFsbCBCb2RpZXMgTm9kZTwvY29udHJpYnV0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDQ3czJjMjU4IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmcvIj5Vbml2ZXJzaXR5IG9mIE1hcnlsYW5kLCBDb2xsZWdlIFBhcms8L2FmZmlsaWF0aW9uPgogICAgPC9jb250cmlidXRvcj4KICA8L2NvbnRyaWJ1dG9ycz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIj4yMDI2LTA3LTE0PC9kYXRlPgogIDwvZGF0ZXM+CiAgPGFsdGVybmF0ZUlkZW50aWZpZXJzPgogICAgPGFsdGVybmF0ZUlkZW50aWZpZXIgYWx0ZXJuYXRlSWRlbnRpZmllclR5cGU9IlBEUzQgQ29sbGVjdGlvbiBJRCI+dXJuOm5hc2E6cGRzOm5oX212aWM6anVwaXRlcl9yYXc6OjEuMDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iQ2l0ZXMiPjEwLjEwMDcvczExMjE0LTAwNy05Mjk1LXk8L3JlbGF0ZWRJZGVudGlmaWVyPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IklzU291cmNlT2YiPjEwLjI2MDA3L3k5cDgtNGg1ODwvcmVsYXRlZElkZW50aWZpZXI+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iQ2l0ZXMiPjEwLjI2MDA3L3cyNHotNDk1NzwvcmVsYXRlZElkZW50aWZpZXI+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iQ2l0ZXMiPjEwLjI2MDA3L2FmaDYtemcxMTwvcmVsYXRlZElkZW50aWZpZXI+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iSXNWYXJpYW50Rm9ybU9mIj4xMC4yNjAwNy9td2h5LXJ6Njg8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxzaXplcz4KICAgIDxzaXplPjEuMiBHQjwvc2l6ZT4KICAgIDxzaXplPjE2MCBGSVRTIGZpbGVzIHdpdGggZGV0YWNoZWQgUERTNCB4bWwgbGFiZWxzPC9zaXplPgogIDwvc2l6ZXM+CiAgPGZvcm1hdHM+CiAgICA8Zm9ybWF0PmFwcGxpY2F0aW9uL2ZpdHM8L2Zvcm1hdD4KICAgIDxmb3JtYXQ+dGV4dC94bWw8L2Zvcm1hdD4KICA8L2Zvcm1hdHM+CiAgPHZlcnNpb24vPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9wdWJsaWNkb21haW4vemVyby8xLjAvbGVnYWxjb2RlIiByaWdodHNJZGVudGlmaWVyPSJjYzAtMS4wIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJTUERYIiBzY2hlbWVVUkk9Imh0dHBzOi8vc3BkeC5vcmcvbGljZW5zZXMvIj5DcmVhdGl2ZSBDb21tb25zIFplcm8gdjEuMCBVbml2ZXJzYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGlzIGRhdGEgc2V0IGNvbnRhaW5zIFJhdyBkYXRhIGluIC5GSVQgZm9ybWF0IHRha2VuIAogYnkgTmV3IEhvcml6b25zIE11bHRpc3BlY3RyYWwgVmlzaWJsZSBJbWFnaW5nIENhbWVyYSAKIGluc3RydW1lbnQgZHVyaW5nIHRoZSBKVVBJVEVSIEVOQ09VTlRFUiBtaXNzaW9uIHBoYXNlLiAKIAogVGhlc2UgZGF0YSB3ZXJlIG1pZ3JhdGVkIGZyb20gdGhlIFBEUzMgZGF0YXNldDogCiBOSC1KLU1WSUMtMi1KVVBJVEVSLVYyLjAuCiAKIFRoZSBSYWxwaCAoTEVJU0EgYW5kIE1WSUMpIEp1cGl0ZXIgYWN0aXZpdGllcyBpbmNsdWRlZCBjYWxpYnJhdGlvbiAKIG9ic2VydmF0aW9ucyB1c2luZyBDYWxsaXN0byBhbmQgSnVwaXRlciBhcyBhIHRhcmdldCwgc2NpZW50aWZpYyAKIG9ic2VydmF0aW9ucyBvZiBKb3ZpYW4gdGFyZ2V0cywgb3BuYXYgdGVzdCBvYnNlcnZhdGlvbnMgb2YgCiBDYWxsaXN0bywgYW5kIG1hcHBpbmcgb2Ygc29sYXIgaW5wdXQgYXBlcnR1cmUuIAogCiBUaGlzIHZlcnNpb24gaW5jbHVkZXMgZGF0YSBkb3dubGlua2VkIGZyb20gMDEvMTEvMjAwNyB0aHJvdWdoIDA2LzI3LzIwMDcuCiAKIExhYmVscyB3ZXJlIHJlZGVzaWduZWQgZHVyaW5nIG1pZ3JhdGlvbiB1c2luZyB0aGUgLkZJVCBoZWFkZXIgYW5kIFBEUzMgLkxCTAogZmlsZXMsIGJ1dCB0aGUgZGF0YSBmaWxlcyBhcmUgdW5jaGFuZ2VkIGZyb20gdGhlaXIgUERTMyB2ZXJzaW9uLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+      },
+      "id": "10.26007/6gq7-p170",
+      "relationships": {
+        "citations": {
+          "data": []
+        },
+        "client": {
+          "data": {
+            "id": "sbn.archive",
+            "type": "clients"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.26007/6gq7-p170",
+            "type": "media"
+          }
+        },
+        "partOf": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "provider": {
+          "data": {
+            "id": "sbn",
+            "type": "providers"
+          }
+        },
+        "references": {
+          "data": [
+            {
+              "id": "10.26007/w24z-4957",
+              "type": "dois"
+            },
+            {
+              "id": "10.1007/s11214-007-9295-y",
+              "type": "dois"
+            },
+            {
+              "id": "10.26007/afh6-zg11",
+              "type": "dois"
+            }
+          ]
+        },
+        "versionOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        }
+      },
+      "type": "dois"
+    }
+  },
+  "response_hash": "b422b02784e8c663718530d1f143998dcf2bb4b3b52a6298e057c8aa6fea13a6",
+  "retrieved_at": "2026-07-14T13:48:29Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

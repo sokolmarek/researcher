@@ -1,0 +1,416 @@
+{
+  "endpoint": "works/doi:10.1007/s00530-021-00845-y",
+  "request_key": "4f64f596b1cc16eeb58597a61a8e14f9a037026179066b5798d7afad3cab92f9",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1327237609"
+            ],
+            "raw_affiliation_string": "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I136765683"
+            ],
+            "raw_affiliation_string": "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+          }
+        ],
+        "author": {
+          "display_name": "Ruixu Wu",
+          "id": "https://openalex.org/A5025420932",
+          "orcid": "https://orcid.org/0000-0002-6136-3388"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Ministry of Education of the People's Republic of China",
+            "id": "https://openalex.org/I1327237609",
+            "lineage": [
+              "https://openalex.org/I1327237609",
+              "https://openalex.org/I4210127390"
+            ],
+            "ror": "https://ror.org/01mv9t934",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Tianjin University of Technology",
+            "id": "https://openalex.org/I136765683",
+            "lineage": [
+              "https://openalex.org/I136765683"
+            ],
+            "ror": "https://ror.org/00zbe0w13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China",
+          "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+        ],
+        "raw_author_name": "Ruixu Wu",
+        "raw_orcid": "https://orcid.org/0000-0002-6136-3388"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1327237609"
+            ],
+            "raw_affiliation_string": "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I136765683"
+            ],
+            "raw_affiliation_string": "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+          }
+        ],
+        "author": {
+          "display_name": "Xianbin Wen",
+          "id": "https://openalex.org/A5023169451",
+          "orcid": "https://orcid.org/0000-0002-5748-1744"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Ministry of Education of the People's Republic of China",
+            "id": "https://openalex.org/I1327237609",
+            "lineage": [
+              "https://openalex.org/I1327237609",
+              "https://openalex.org/I4210127390"
+            ],
+            "ror": "https://ror.org/01mv9t934",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Tianjin University of Technology",
+            "id": "https://openalex.org/I136765683",
+            "lineage": [
+              "https://openalex.org/I136765683"
+            ],
+            "ror": "https://ror.org/00zbe0w13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China",
+          "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+        ],
+        "raw_author_name": "Xianbin Wen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I133270356"
+            ],
+            "raw_affiliation_string": "Department of Physical Education, Tianjin University of Technology, Tianjin, 300384, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I136765683"
+            ],
+            "raw_affiliation_string": "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+          }
+        ],
+        "author": {
+          "display_name": "Zhanlu Liu",
+          "id": "https://openalex.org/A5052712906",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Tianjin University of Technology and Education",
+            "id": "https://openalex.org/I133270356",
+            "lineage": [
+              "https://openalex.org/I133270356"
+            ],
+            "ror": "https://ror.org/035gwtk09",
+            "type": "education"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Tianjin University of Technology",
+            "id": "https://openalex.org/I136765683",
+            "lineage": [
+              "https://openalex.org/I136765683"
+            ],
+            "ror": "https://ror.org/00zbe0w13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Physical Education, Tianjin University of Technology, Tianjin, 300384, China",
+          "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+        ],
+        "raw_author_name": "Zhanlu Liu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1327237609"
+            ],
+            "raw_affiliation_string": "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I136765683"
+            ],
+            "raw_affiliation_string": "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+          }
+        ],
+        "author": {
+          "display_name": "Liming Yuan",
+          "id": "https://openalex.org/A5051487216",
+          "orcid": "https://orcid.org/0000-0002-6464-6017"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Ministry of Education of the People's Republic of China",
+            "id": "https://openalex.org/I1327237609",
+            "lineage": [
+              "https://openalex.org/I1327237609",
+              "https://openalex.org/I4210127390"
+            ],
+            "ror": "https://ror.org/01mv9t934",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Tianjin University of Technology",
+            "id": "https://openalex.org/I136765683",
+            "lineage": [
+              "https://openalex.org/I136765683"
+            ],
+            "ror": "https://ror.org/00zbe0w13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China",
+          "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+        ],
+        "raw_author_name": "Liming Yuan",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1327237609"
+            ],
+            "raw_affiliation_string": "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I136765683"
+            ],
+            "raw_affiliation_string": "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+          }
+        ],
+        "author": {
+          "display_name": "Haixia Xu",
+          "id": "https://openalex.org/A5077709558",
+          "orcid": "https://orcid.org/0000-0001-8587-7044"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Ministry of Education of the People's Republic of China",
+            "id": "https://openalex.org/I1327237609",
+            "lineage": [
+              "https://openalex.org/I1327237609",
+              "https://openalex.org/I4210127390"
+            ],
+            "ror": "https://ror.org/01mv9t934",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Tianjin University of Technology",
+            "id": "https://openalex.org/I136765683",
+            "lineage": [
+              "https://openalex.org/I136765683"
+            ],
+            "ror": "https://ror.org/00zbe0w13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Key Laboratory of Computer Vision and System, Ministry of Education, Tianjin, 300384, China",
+          "School of Computer Science and Engineering, Tianjin University of Technology, Tianjin, 300384, China"
+        ],
+        "raw_author_name": "Haixia Xu",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "1543",
+      "issue": "5",
+      "last_page": "1555",
+      "volume": "28"
+    },
+    "cited_by_count": 4,
+    "display_name": "STASiamRPN: visual tracking based on spatiotemporal and attention",
+    "doi": "https://doi.org/10.1007/s00530-021-00845-y",
+    "id": "https://openalex.org/W3209159425",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s00530-021-00845-y",
+      "mag": "3209159425",
+      "openalex": "https://openalex.org/W3209159425"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s00530-021-00845-y",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s00530-021-00845-y",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Multimedia Systems",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Multimedia Systems",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S112262039",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0942-4962",
+          "1432-1882"
+        ],
+        "issn_l": "0942-4962",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2021-10-28",
+    "publication_year": 2021,
+    "referenced_works": [
+      "https://openalex.org/W182940129",
+      "https://openalex.org/W254514693",
+      "https://openalex.org/W639708223",
+      "https://openalex.org/W818325216",
+      "https://openalex.org/W829245461",
+      "https://openalex.org/W1522734439",
+      "https://openalex.org/W1686810756",
+      "https://openalex.org/W1857884451",
+      "https://openalex.org/W1915599933",
+      "https://openalex.org/W1955741794",
+      "https://openalex.org/W1964846093",
+      "https://openalex.org/W1997121481",
+      "https://openalex.org/W2029843939",
+      "https://openalex.org/W2092401564",
+      "https://openalex.org/W2097117768",
+      "https://openalex.org/W2117539524",
+      "https://openalex.org/W2126302311",
+      "https://openalex.org/W2154889144",
+      "https://openalex.org/W2158592639",
+      "https://openalex.org/W2162383208",
+      "https://openalex.org/W2163605009",
+      "https://openalex.org/W2194775991",
+      "https://openalex.org/W2408241409",
+      "https://openalex.org/W2470394683",
+      "https://openalex.org/W2518013266",
+      "https://openalex.org/W2518876086",
+      "https://openalex.org/W2557641257",
+      "https://openalex.org/W2560662850",
+      "https://openalex.org/W2565049684",
+      "https://openalex.org/W2599547527",
+      "https://openalex.org/W2609476118",
+      "https://openalex.org/W2767427781",
+      "https://openalex.org/W2776035257",
+      "https://openalex.org/W2776581970",
+      "https://openalex.org/W2786979597",
+      "https://openalex.org/W2799058067",
+      "https://openalex.org/W2884585870",
+      "https://openalex.org/W2886910176",
+      "https://openalex.org/W2895588569",
+      "https://openalex.org/W2898200825",
+      "https://openalex.org/W2954137266",
+      "https://openalex.org/W2962824803",
+      "https://openalex.org/W2962934715",
+      "https://openalex.org/W2963091558",
+      "https://openalex.org/W2963099472",
+      "https://openalex.org/W2963420686",
+      "https://openalex.org/W2963534981",
+      "https://openalex.org/W2963854930",
+      "https://openalex.org/W2964111344",
+      "https://openalex.org/W2964198573",
+      "https://openalex.org/W2964253307",
+      "https://openalex.org/W2964423614",
+      "https://openalex.org/W2965376383",
+      "https://openalex.org/W2981548405",
+      "https://openalex.org/W2989688045",
+      "https://openalex.org/W3023013923",
+      "https://openalex.org/W3023742835",
+      "https://openalex.org/W3102624093",
+      "https://openalex.org/W6601037301"
+    ],
+    "referenced_works_count": 59,
+    "title": "STASiamRPN: visual tracking based on spatiotemporal and attention",
+    "type": "article"
+  },
+  "response_hash": "ccd97bb50fec9d1fd2a3bfb83a162904379104c591d1d738c3ed52838a2daee5",
+  "retrieved_at": "2026-07-14T13:49:05Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

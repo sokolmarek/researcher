@@ -1,0 +1,865 @@
+{
+  "endpoint": "dois",
+  "request_key": "2120c9003daee2fa9c2d2e7a4a5c68e49483078878d959c3dc1fafa339926c6c",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self-Supervised Representation Learning for Ultrasound Video"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "University of Oxford"
+              ],
+              "contributorType": "Supervisor",
+              "familyName": "Noble",
+              "givenName": "Julia Alison",
+              "name": "Noble, J",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "https://orcid.org/0000-0002-3060-3772",
+                  "nameIdentifierScheme": "ORCID",
+                  "schemeUri": "https://orcid.org"
+                }
+              ]
+            }
+          ],
+          "created": "2026-07-03T10:11:33Z",
+          "creators": [
+            {
+              "affiliation": [
+                "University of Oxford"
+              ],
+              "familyName": "Mishra",
+              "givenName": "Divyanshu",
+              "name": "Mishra, D",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "https://orcid.org/0000-0002-3264-8739",
+                  "nameIdentifierScheme": "ORCID",
+                  "schemeUri": "https://orcid.org"
+                }
+              ]
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-02",
+              "dateType": "Created"
+            },
+            {
+              "date": "2026-07-03",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-01-01",
+              "dateType": "Copyrighted"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Congenital heart disease (CHD) is the leading cause of infant mortality among congenital anomalies, yet many cases are missed during routine prenatal ultrasound screening. Routine fetal scans are primarily designed for general anatomical assessment and are not specifically focused on detailed evaluation of the fetal heart. As a result, imaging of fetal cardiac structures is often limited in both coverage and the level of detail required for reliable diagnosis. Detection is further challenged by the subtle presentation of many defects and the reliance on sonographers who are not specifically trained in fetal cardiology, making diagnosis highly operator-dependent.<br><br>This thesis introduces a video-based approach that learns directly from continuous fetal ultrasound videos, enabling temporal modeling of the beating heart rather than relying on isolated static frames. By leveraging the spatiotemporal information inherent in ultrasound videos, the approach aims to streamline workflow and assist sonographers in more effective CHD detection.<br><br>An unsupervised dual-conditioned diffusion model (DCDM) is developed to identify standard heart planes in free-hand ultrasound scans, reducing manual review effort without requiring labeled abnormal data. By conditioning jointly on image features and class information, DCDM enhances robustness to anatomical variability and reliably separates cardiac from non-cardiac views. Since free-hand scans are primarily used for general anatomical assessment and often focus on a single “best” frame per anatomy, they miss the continuous motion of the fetal heart. To address this limitation, the thesis adopts continuous “heart sweeps” for comprehensive capture of dynamic cardiac features. A novel task, visual query-based video clip localization (VQ-VCL), is formulated to efficiently retrieve diagnostically relevant views from these sweeps. We show that Transformer-based models, including STANLOC, TIER-LOC, and MCAT, enable user-guided, accurate retrieval through advanced spatiotemporal and class-specific modeling.<br><br>Building on these advances in unsupervised cardiac modeling, the thesis further addresses data scarcity, privacy constraints, and cross-domain generalization through large-scale self-supervised learning. We propose Sparse Tube Ultrasound Distillation (STUD), together with a divergence-guided model merging strategy, for decentralized anomaly detection across clinical sites without sharing patient data. Extending beyond fetal ultrasound, an approach called DISCOVR (Distilled Image Supervision for Cross-Modal Video Representation) is introduced as a video foundation model for general echocardiography. DISCOVR employs a dual-branch self-supervised architecture that aligns spatial semantics from images with temporal dynamics in videos via online semantic cluster distillation. This cross-modal framework is shown to produce anatomically grounded and temporally coherent video representations, enabling robust transfer across fetal, pediatric, and adult populations. DISCOVR demonstrates state-of-the-art performance in anomaly detection, representation learning, and segmentation, establishing a scalable foundation for future videobased analysis of echocardiography.<br><br>Overall, this thesis presents a unified progression from unsupervised cardiac frame detection to transformer-based localization and self-supervised modeling of cardiac motion. By reframing CHD detection as a video understanding problem, it establishes new methodological foundations for automated fetal cardiac analysis. Collectively, DCDM, STAN-LOC, TIER-LOC, MCAT, STUD, and DISCOVR demonstrate that modeling the temporal and spatial richness of ultrasound data can enhance the accuracy, efficiency, and consistency of prenatal CHD screening models, marking a significant step toward intelligent, video-based diagnostic systems suitable for clinical settings.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5287/ora-m89e68qj0",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [
+            {
+              "funderName": "Hong Kong Centre for Cerebro-cardiovascular Health Engineering (COCHE)"
+            }
+          ],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "University of Oxford",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-03T10:11:33Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rightsUri": "http://www.rioxx.net/licenses/all-rights-reserved"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "schemeUri": "https://fast.oclc.org/",
+              "subject": "Deep learning (Machine learning)",
+              "subjectScheme": "FAST"
+            },
+            {
+              "schemeUri": "https://fast.oclc.org/",
+              "subject": "Medical Video Understanding",
+              "subjectScheme": "FAST"
+            },
+            {
+              "schemeUri": "https://fast.oclc.org/",
+              "subject": "Computer vision",
+              "subjectScheme": "FAST"
+            },
+            {
+              "schemeUri": "https://fast.oclc.org/",
+              "subject": "Video Understanding",
+              "subjectScheme": "FAST"
+            },
+            {
+              "schemeUri": "https://fast.oclc.org/",
+              "subject": "Artificial Intelligence",
+              "subjectScheme": "FAST"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Beyond images: fetal ultrasound video understanding for detecting congenital heart diseases"
+            }
+          ],
+          "types": {
+            "bibtex": "phdthesis",
+            "citeproc": "thesis",
+            "resourceType": "Dissertation",
+            "resourceTypeGeneral": "Dissertation",
+            "ris": "THES",
+            "schemaOrg": "Thesis"
+          },
+          "updated": "2026-07-03T10:13:38Z",
+          "url": "https://ora.ox.ac.uk/objects/uuid:70ad424f-20dd-4602-a3e3-59cb14328d42",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5287/ora-m89e68qj0",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "bl.oxdb",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-06-16T01:48:33Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Mishra",
+              "givenName": "Divyanshu",
+              "name": "Mishra, Divyanshu",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Salehi",
+              "givenName": "Mohammadreza",
+              "name": "Salehi, Mohammadreza",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Saha",
+              "givenName": "Pramit",
+              "name": "Saha, Pramit",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Patey",
+              "givenName": "Olga",
+              "name": "Patey, Olga",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Papageorghiou",
+              "givenName": "Aris T.",
+              "name": "Papageorghiou, Aris T.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Asano",
+              "givenName": "Yuki M.",
+              "name": "Asano, Yuki M.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Noble",
+              "givenName": "J. Alison",
+              "name": "Noble, J. Alison",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-06-13T13:36:33Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-06-16T00:43:20Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-11-14T08:58:47Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-11-17T01:30:06Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-01-23T13:20:23Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-01-26T01:36:53Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-06",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2025",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Self-supervised learning (SSL) has achieved major advances in natural images and video understanding, but challenges remain in domains like echocardiography (heart ultrasound) due to subtle anatomical structures, complex temporal dynamics, and the current lack of domain-specific pre-trained models. Existing SSL approaches such as contrastive, masked modeling, and clustering-based methods struggle with high intersample similarity, sensitivity to low PSNR inputs common in ultrasound, or aggressive augmentations that distort clinically relevant features. We present DISCOVR (Distilled Image Supervision for Cross Modal Video Representation), a self-supervised dual branch framework for cardiac ultrasound video representation learning. DISCOVR combines a clustering-based video encoder that models temporal dynamics with an online image encoder that extracts fine-grained spatial semantics. These branches are connected through a semantic cluster distillation loss that transfers anatomical knowledge from the evolving image encoder to the video encoder, enabling temporally coherent representations enriched with fine-grained semantic understanding.Evaluated on six echocardiography datasets spanning fetal, pediatric, and adult populations, DISCOVR outperforms both specialized video anomaly detection methods and state-of-the-art video-SSL baselines in zero-shot and linear probing setups,achieving superior segmentation transfer and strong downstream performance on clinically relevant tasks such as LVEF prediction. Code available at: https://github.com/mdivyanshu97/DISCOVR",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted in NeurIPS 2025",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2506.11777",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2506.11777",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 2,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-06-16T01:48:34Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Computers and Society (cs.CY)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Self-supervised Learning of Echocardiographic Video Representations via Online Cluster Distillation"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-01-26T02:47:18Z",
+          "url": "https://arxiv.org/abs/2506.11777",
+          "version": "3",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2506.11777",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-10-24T01:51:16Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Ilyas",
+              "givenName": "Talha",
+              "name": "Ilyas, Talha",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Nhu",
+              "givenName": "Duong",
+              "name": "Nhu, Duong",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Thomas",
+              "givenName": "Allison",
+              "name": "Thomas, Allison",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Levin",
+              "givenName": "Arie",
+              "name": "Levin, Arie",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Yap",
+              "givenName": "Lim Wei",
+              "name": "Yap, Lim Wei",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Gong",
+              "givenName": "Shu",
+              "name": "Gong, Shu",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Anaya",
+              "givenName": "David Vera",
+              "name": "Anaya, David Vera",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Jiang",
+              "givenName": "Yiwen",
+              "name": "Jiang, Yiwen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Mehta",
+              "givenName": "Deval",
+              "name": "Mehta, Deval",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Warty",
+              "givenName": "Ritesh",
+              "name": "Warty, Ritesh",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Smith",
+              "givenName": "Vinayak",
+              "name": "Smith, Vinayak",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Reddy",
+              "givenName": "Maya",
+              "name": "Reddy, Maya",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wallace",
+              "givenName": "Euan",
+              "name": "Wallace, Euan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Cheng",
+              "givenName": "Wenlong",
+              "name": "Cheng, Wenlong",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ge",
+              "givenName": "Zongyuan",
+              "name": "Ge, Zongyuan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Marzbanrad",
+              "givenName": "Faezeh",
+              "name": "Marzbanrad, Faezeh",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-10-23T05:03:23Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-10-24T00:25:00Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-10",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2025",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Accurate fetal movement (FM) detection is essential for assessing prenatal health, as abnormal movement patterns can indicate underlying complications such as placental dysfunction or fetal distress. Traditional methods, including maternal perception and cardiotocography (CTG), suffer from subjectivity and limited accuracy. To address these challenges, we propose Contrastive Ultrasound Video Representation Learning (CURL), a novel self-supervised learning framework for FM detection from extended fetal ultrasound video recordings. Our approach leverages a dual-contrastive loss, incorporating both spatial and temporal contrastive learning, to learn robust motion representations. Additionally, we introduce a task-specific sampling strategy, ensuring the effective separation of movement and non-movement segments during self-supervised training, while enabling flexible inference on arbitrarily long ultrasound recordings through a probabilistic fine-tuning approach. Evaluated on an in-house dataset of 92 subjects, each with 30-minute ultrasound sessions, CURL achieves a sensitivity of 78.01% and an AUROC of 81.60%, demonstrating its potential for reliable and objective FM analysis. These results highlight the potential of self-supervised contrastive learning for fetal movement analysis, paving the way for improved prenatal monitoring and clinical decision-making.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "This is the preprint version of the manuscript submitted to IEEE Journal of Biomedical and Health Informatics (JBHI) for review",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2510.20214",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2510.20214",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-10-24T01:51:17Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Towards Objective Obstetric Ultrasound Assessment: Contrastive Representation Learning for Fetal Movement Detection"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2025-10-24T01:51:17Z",
+          "url": "https://arxiv.org/abs/2510.20214",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2510.20214",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "University of Oxford"
+              ],
+              "contributorType": "Supervisor",
+              "familyName": "Noble",
+              "givenName": "Alison",
+              "name": "Noble, Alison",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [
+                "University of Birmingham"
+              ],
+              "contributorType": "Supervisor",
+              "familyName": "Jiao",
+              "givenName": "Jianbo",
+              "name": "Jiao, Jianbo",
+              "nameIdentifiers": []
+            }
+          ],
+          "created": "2025-08-13T07:39:17Z",
+          "creators": [
+            {
+              "affiliation": [
+                "University of Oxford"
+              ],
+              "familyName": "Zhang",
+              "givenName": "Kangning",
+              "name": "Zhang, Kangning",
+              "nameIdentifiers": []
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-08-12",
+              "dateType": "Created"
+            },
+            {
+              "date": "2024-01-01",
+              "dateType": "Copyrighted"
+            },
+            {
+              "date": "2024",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Obstetric ultrasound (US) is a routinely used imaging modality for monitoring fetal development during pregnancy. With the rise of deep learning (DL)-based techniques, there is growing potential to reduce reliance on highly trained sonographers. However, the clinical adoption of DL models remains limited due to concerns around robustness, explainability, and reliability—key components of trustworthiness. This thesis addresses these challenges to advance trustworthy DL-based analysis of fetal US.\nGiven that manual annotation of US videos by expert sonographers is costly and time-consuming, we first investigate self-supervised learning as a scalable alternative. We propose a novel framework for feature-level local self-supervised learning, combining contrastive learning with Rubik’s cube recovery, cube reconstruction, and a new strategy for generating local contrastive pairs. This method enhances the robustness of learned representations and demonstrates improved performance in two key downstream clinical tasks.\nTo improve model transparency, we incorporate clinician-driven insights by integrating clinical-driven insights into the explanation process. We define explainability as the model’s ability to capture anatomy-aware knowledge. To evaluate this, we introduce a novel set of quantitative metrics that measure the alignment between learned representations and expert gaze-tracking data. These gaze-guided explanations provide a more clinically meaningful assessment of model behaviour, hence enhancing explainability.\nWhile explainability provides valuable insights, reliable deployment is equally critical in clinical applications. To this end, we introduce the concept of out-of-clinical-distribution (OCD), defined as US frames lacking diagnostically meaningful content. We propose the first method for OCD detection in fetal US, enabling models to filter out irrelevant frames from large, heterogeneous real-time scans. This method enhances the safe and reliable deployment of DL models by ensuring that decisions are based only on clinically significant inputs.\nIn summary, this thesis presents novel methods to enhance the robustness, explainability, and reliability of DL models for fetal US analysis. All approaches are validated on retrospective clinical data, laying the groundwork for more trustworthy integration of DL technologies in prenatal care and inspiring future research in this domain.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5287/ora-pdqon46ek",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [
+            {
+              "awardTitle": "Studentship in Health Data Science CDT",
+              "funderName": "Big Data Institute (Li Ka Shing Foundation)"
+            }
+          ],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2024,
+          "published": null,
+          "publisher": "University of Oxford",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-08-13T07:39:17Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rightsUri": "http://www.rioxx.net/licenses/all-rights-reserved"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [],
+          "titles": [
+            {
+              "title": "Self-supervised representation learning for trustworthy ultrasound video analysis"
+            }
+          ],
+          "types": {
+            "bibtex": "phdthesis",
+            "citeproc": "thesis",
+            "resourceType": "Dissertation",
+            "resourceTypeGeneral": "Dissertation",
+            "ris": "THES",
+            "schemaOrg": "Thesis"
+          },
+          "updated": "2025-08-13T07:39:17Z",
+          "url": "https://ora.ox.ac.uk/objects/uuid:f9c63524-01b8-4949-bb7a-d55795b0e331",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5287/ora-pdqon46ek",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "bl.oxdb",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2024-10-01T12:35:03Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "Jianbo Jiao",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "name": "Richard Droste",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "name": "Lior Drukker",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "name": "Aris Papageorghiou",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "name": "J Alison Noble",
+              "nameIdentifiers": []
+            }
+          ],
+          "dates": [],
+          "descriptions": [
+            {
+              "description": "IEEE ISBI 2020, Virtual Event, April 3-7, 2020"
+            },
+            {
+              "description": "Recent advances in deep learning have achieved promising performance for medical image analysis, while in most cases ground-truth annotations from human experts are necessary to train the deep model. In practice, such annotations are expensive to collect and can be scarce for medical imaging applications. Therefore, there is significant interest in learning representations from unlabelled raw data. In this paper, we propose a self-supervised learning approach to learn meaningful and transferable representations from medical imaging video without any type of human annotation. We assume that in order to learn such a representation, the model should identify anatomical structures from the unlabelled data. Therefore we force the model to address anatomy-aware tasks with free supervision from the data itself. Specifically, the model is designed to correct the order of a reshuffled video clip and at the same time predict the geometric transformation applied to the video clip. Experiments on fetal ultrasound video show that the proposed approach can effectively learn meaningful and strong representations, which transfer well to downstream tasks like standard plane detection and saliency prediction."
+            }
+          ],
+          "doi": "10.17023/a1h5-wn19",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2020,
+          "published": null,
+          "publisher": "IEEE",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2024-10-01T12:35:03Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": null,
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [],
+          "titles": [
+            {
+              "title": "Self-Supervised Representation Learning for Ultrasound Video"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceTypeGeneral": "Audiovisual",
+            "ris": "MPCT",
+            "schemaOrg": "MediaObject"
+          },
+          "updated": "2024-10-01T12:35:03Z",
+          "url": "https://rc.signalprocessingsociety.org/conferences/isbi-2020/spsisbivid0072",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.17023/a1h5-wn19",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "ieee.rc",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=5&query=Self-Supervised+Representation+Learning+for+Ultrasound+Video",
+      "self": "https://api.datacite.org/dois?query=Self-Supervised+Representation+Learning+for+Ultrasound+Video&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 7,
+      "totalPages": 2
+    }
+  },
+  "response_hash": "941efe5b7306398428fdc583455830c315adcc650108d869c781c0c87e797f42",
+  "retrieved_at": "2026-07-14T14:48:34Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

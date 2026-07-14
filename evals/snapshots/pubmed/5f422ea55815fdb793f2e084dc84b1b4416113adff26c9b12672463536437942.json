@@ -1,0 +1,42 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "5f422ea55815fdb793f2e084dc84b1b4416113adff26c9b12672463536437942",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.17026/ar/jzlhsu[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "0",
+      "errorlist": {
+        "fieldsnotfound": [],
+        "phrasesnotfound": [
+          "jzlhsu"
+        ]
+      },
+      "idlist": [],
+      "querytranslation": "10.17026/ar/jzlhsu[AID]",
+      "retmax": "0",
+      "retstart": "0",
+      "translationset": [],
+      "warninglist": {
+        "outputmessages": [
+          "No items found."
+        ],
+        "phrasesignored": [],
+        "quotedphrasesnotfound": []
+      }
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "650ede2a7220858c0cd474c7c1a3442c8d208c8020c5137ae9f28c27f165c96c",
+  "retrieved_at": "2026-07-14T13:50:26Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

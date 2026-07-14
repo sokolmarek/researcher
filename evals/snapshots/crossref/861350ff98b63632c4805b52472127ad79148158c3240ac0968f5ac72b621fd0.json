@@ -1,0 +1,4292 @@
+{
+  "endpoint": "works",
+  "request_key": "861350ff98b63632c4805b52472127ad79148158c3240ac0968f5ac72b621fd0",
+  "request_params": {
+    "query.bibliographic": "A new deep learning algorithm of 12-lead electrocardiogram for identifying atrial fibrilla",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1038/s41598-021-92172-5",
+          "ISSN": [
+            "2045-2322"
+          ],
+          "URL": "https://doi.org/10.1038/s41598-021-92172-5",
+          "abstract": "<jats:title>Abstract</jats:title><jats:p>Atrial fibrillation (AF) is the most prevalent arrhythmia and is associated with increased morbidity and mortality. Its early detection is challenging because of the low detection yield of conventional methods. We aimed to develop a deep learning-based algorithm to identify AF during normal sinus rhythm (NSR) using 12-lead electrocardiogram (ECG) findings. We developed a new deep neural network to detect subtle differences in paroxysmal AF (PAF) during NSR using digital data from standard 12-lead ECGs. Raw digital data of 2,412 12-lead ECGs were analyzed. The artificial intelligence (AI) model showed that the optimal interval to detect subtle changes in PAF was within 0.24 s before the QRS complex in the 12-lead ECG. We allocated the enrolled ECGs to the training, internal validation, and testing datasets in a 7:1:2 ratio. Regarding AF identification, the AI-based algorithm showed the following values in the internal and external validation datasets: area under the receiver operating characteristic curve, 0.79 and 0.75; recall, 82% and 77%; specificity, 78% and 72%; F1 score, 75% and 74%; and overall accuracy, 72.8% and 71.2%, respectively. The deep learning-based algorithm using 12-lead ECG demonstrated high accuracy for detecting AF during NSR.</jats:p>",
+          "alternative-id": [
+            "92172"
+          ],
+          "article-number": "12818",
+          "assertion": [
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Received",
+              "name": "received",
+              "order": 1,
+              "value": "16 March 2021"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Accepted",
+              "name": "accepted",
+              "order": 2,
+              "value": "7 June 2021"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "First Online",
+              "name": "first_online",
+              "order": 3,
+              "value": "17 June 2021"
+            },
+            {
+              "group": {
+                "label": "Competing interests",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 1,
+              "value": "The authors declare no competing interests."
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Baek",
+              "given": "Yong-Soo",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Lee",
+              "given": "Sang-Chul",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Choi",
+              "given": "Wonik",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Kim",
+              "given": "Dae-Hyeok",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Scientific Reports"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "link.springer.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2021,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2021-06-17T10:03:09Z",
+            "timestamp": 1623924189000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                3
+              ]
+            ],
+            "date-time": "2022-12-03T10:15:47Z",
+            "timestamp": 1670062547000
+          },
+          "funder": [
+            {
+              "award": [
+                "57856-1"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "57856-1"
+                  ]
+                }
+              ],
+              "name": "Inha University Research Grant"
+            },
+            {
+              "name": "Bio & Medical Technology Development Program of the National Research Foundation"
+            },
+            {
+              "award": [
+                "2019M3E5D1A02069617"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2019M3E5D1A02069617"
+                  ]
+                }
+              ],
+              "name": "Korean Government Ministry of Science and ICT"
+            },
+            {
+              "award": [
+                "2018-630"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2018-630"
+                  ]
+                }
+              ],
+              "name": "Inha University Hospital Research Grant"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2026-07-14T10:17:41Z",
+            "timestamp": 1784024261773,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 88,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2045-2322"
+            }
+          ],
+          "issue": "1",
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                6,
+                17
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "1",
+            "published-online": {
+              "date-parts": [
+                [
+                  2021,
+                  12
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    6,
+                    17
+                  ]
+                ],
+                "date-time": "2021-06-17T00:00:00Z",
+                "timestamp": 1623888000000
+              }
+            },
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    6,
+                    17
+                  ]
+                ],
+                "date-time": "2021-06-17T00:00:00Z",
+                "timestamp": 1623888000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.nature.com/articles/s41598-021-92172-5.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.nature.com/articles/s41598-021-92172-5",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.nature.com/articles/s41598-021-92172-5.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "prefix": "10.1038",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                6,
+                17
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2021,
+                6,
+                17
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference": [
+            {
+              "DOI": "10.1016/j.ahj.2018.04.017",
+              "author": "D Kim",
+              "doi-asserted-by": "publisher",
+              "first-page": "20",
+              "journal-title": "Am. Heart J.",
+              "key": "92172_CR1",
+              "unstructured": "Kim, D. et al. 10-year nationwide trends of the incidence, prevalence, and adverse outcomes of non-valvular atrial fibrillation nationwide health insurance data covering the entire Korean population. Am. Heart J. 202, 20–26 (2018).",
+              "volume": "202",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1056/NEJMoa1311376",
+              "author": "DJ Gladstone",
+              "doi-asserted-by": "publisher",
+              "first-page": "2467",
+              "journal-title": "N. Engl. J. Med.",
+              "key": "92172_CR2",
+              "unstructured": "Gladstone, D. J. et al. Atrial fibrillation in patients with cryptogenic stroke. N. Engl. J. Med. 370, 2467–2477 (2014).",
+              "volume": "370",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1056/NEJMoa1313600",
+              "author": "T Sanna",
+              "doi-asserted-by": "publisher",
+              "first-page": "2478",
+              "journal-title": "N. Engl. J. Med.",
+              "key": "92172_CR3",
+              "unstructured": "Sanna, T. et al. Cryptogenic stroke and underlying atrial fibrillation. N. Engl. J. Med. 370, 2478–2486 (2014).",
+              "volume": "370",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1001/jamacardio.2018.4335",
+              "author": "B Freedman",
+              "doi-asserted-by": "publisher",
+              "first-page": "91",
+              "journal-title": "JAMA Cardiol.",
+              "key": "92172_CR4",
+              "unstructured": "Freedman, B., Schnabel, R. & Calkins, H. Opportunistic electrocardiogram screening for atrial fibrillation to prevent stroke. JAMA Cardiol. 4, 91–92 (2019).",
+              "volume": "4",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1056/NEJMoa1901183",
+              "author": "MV Perez",
+              "doi-asserted-by": "publisher",
+              "first-page": "1909",
+              "journal-title": "N. Engl. J. Med.",
+              "key": "92172_CR5",
+              "unstructured": "Perez, M. V. et al. Large-scale assessment of a smartwatch to identify atrial fibrillation. N. Engl. J. Med. 381, 1909–1917 (2019).",
+              "volume": "381",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1212/WNL.0000000000002282",
+              "author": "VN Thijs",
+              "doi-asserted-by": "publisher",
+              "first-page": "261",
+              "journal-title": "Neurology",
+              "key": "92172_CR6",
+              "unstructured": "Thijs, V. N. et al. Predictors for atrial fibrillation detection after cryptogenic stroke. Neurology 86, 261–269 (2016).",
+              "volume": "86",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1016/j.jacc.2014.02.555",
+              "author": "S Nattel",
+              "doi-asserted-by": "publisher",
+              "first-page": "2335",
+              "journal-title": "J. Am. Coll. Cardiol.",
+              "key": "92172_CR7",
+              "unstructured": "Nattel, S. & Harada, M. Atrial remodeling and atrial fibrillation: recent advances and translational perspectives. J. Am. Coll. Cardiol. 63, 2335–2345 (2014).",
+              "volume": "63",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1093/europace/eul107",
+              "author": "IC Van Gelder",
+              "doi-asserted-by": "publisher",
+              "first-page": "943",
+              "journal-title": "Europace",
+              "key": "92172_CR8",
+              "unstructured": "Van Gelder, I. C. & Hemels, M. E. W. The progressive nature of atrial fibrillation: a rationale for early restoration and maintenance of sinus rhythm. Europace 8, 943–949 (2006).",
+              "volume": "8",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1016/S0140-6736(19)31721-0",
+              "author": "ZI Attia",
+              "doi-asserted-by": "publisher",
+              "first-page": "861",
+              "journal-title": "Lancet",
+              "key": "92172_CR9",
+              "unstructured": "Attia, Z. I. et al. An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction. Lancet 394, 861–867 (2019).",
+              "volume": "394",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1161/CIRCULATIONAHA.120.047829",
+              "author": "S Raghunath",
+              "doi-asserted-by": "publisher",
+              "first-page": "1287",
+              "journal-title": "Circulation",
+              "key": "92172_CR10",
+              "unstructured": "Raghunath, S. et al. Deep neural networks can predict new-onset atrial fibrillation from the 12-lead ECG and help identify those at risk of atrial fibrillation–related stroke. Circulation 143, 1287–1298 (2021).",
+              "volume": "143",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1145/2976749.2978318",
+              "doi-asserted-by": "crossref",
+              "key": "92172_CR11",
+              "unstructured": "Abadi, M. et al. Deep learning with differential privacy. Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security, 308–318 (2016)."
+            },
+            {
+              "DOI": "10.1111/j.1542-474X.2001.tb00101.x",
+              "author": "PE Dilaveris",
+              "doi-asserted-by": "publisher",
+              "first-page": "159",
+              "journal-title": "Ann. Noninvasive Electrocardiol.",
+              "key": "92172_CR12",
+              "unstructured": "Dilaveris, P. E. & Gialafos, J. E. P-wave dispersion: a novel predictor of paroxysmal atrial fibrillation. Ann. Noninvasive Electrocardiol. 6, 159–165 (2001).",
+              "volume": "6",
+              "year": "2001"
+            },
+            {
+              "DOI": "10.1161/01.CIR.88.6.2618",
+              "author": "JS Steinberg",
+              "doi-asserted-by": "publisher",
+              "first-page": "2618",
+              "journal-title": "Circulation",
+              "key": "92172_CR13",
+              "unstructured": "Steinberg, J. S. et al. Value of the P-wave signal-averaged ECG for predicting atrial fibrillation after cardiac surgery. Circulation 88, 2618–2622 (1993).",
+              "volume": "88",
+              "year": "1993"
+            },
+            {
+              "DOI": "10.1093/eurheartj/ehaa612",
+              "author": "G Hindricks",
+              "doi-asserted-by": "publisher",
+              "first-page": "373",
+              "journal-title": "Eur Heart J",
+              "key": "92172_CR14",
+              "unstructured": "Hindricks, G. et al. 2020 ESC guidelines for the diagnosis and management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS). Eur Heart J 42, 373–498 (2021).",
+              "volume": "42",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1161/CIRCULATIONAHA.116.026693",
+              "author": "B Freedman",
+              "doi-asserted-by": "publisher",
+              "first-page": "1851",
+              "journal-title": "Circulation",
+              "key": "92172_CR15",
+              "unstructured": "Freedman, B. et al. Screening for atrial fibrillation: a report of the AF-SCREEN international collaboration. Circulation 135, 1851–1867 (2017).",
+              "volume": "135",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1001/jama.2018.9185",
+              "author": "JJ Goldberger",
+              "doi-asserted-by": "publisher",
+              "first-page": "447",
+              "journal-title": "JAMA",
+              "key": "92172_CR16",
+              "unstructured": "Goldberger, J. J. & Mitrani, R. D. Electrocardiographic monitoring for prevention of atrial fibrillation-associated cardioembolic stroke. JAMA 320, 447–449 (2018).",
+              "volume": "320",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1161/CIRCULATIONAHA.118.035411",
+              "author": "A Maheshwari",
+              "doi-asserted-by": "publisher",
+              "first-page": "180",
+              "journal-title": "Circulation",
+              "key": "92172_CR17",
+              "unstructured": "Maheshwari, A. et al. Refining prediction of atrial fibrillation-related stroke using the P2-CHA2DS2-VASc score. Circulation 139, 180–191 (2019).",
+              "volume": "139",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1001/jama.2018.10321",
+              "author": "UPST Force",
+              "doi-asserted-by": "publisher",
+              "first-page": "478",
+              "journal-title": "JAMA",
+              "key": "92172_CR18",
+              "unstructured": "Force, U. P. S. T. et al. Screening for atrial fibrillation with electrocardiography: US preventive services task force recommendation statement. JAMA 320, 478–484 (2018).",
+              "volume": "320",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1093/eurheartj/ehy487",
+              "author": "B Freedman",
+              "doi-asserted-by": "publisher",
+              "first-page": "2984",
+              "journal-title": "Eur. Heart J.",
+              "key": "92172_CR19",
+              "unstructured": "Freedman, B. Major progress in anticoagulant uptake for atrial fibrillation at last: does it translate into stroke prevention?. Eur. Heart J. 39, 2984–2986 (2018).",
+              "volume": "39",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1177/2396987317746516",
+              "author": "XM Xu",
+              "doi-asserted-by": "publisher",
+              "first-page": "82",
+              "journal-title": "Eur. Stroke J.",
+              "key": "92172_CR20",
+              "unstructured": "Xu, X. M. et al. The economic burden of stroke care in England, Wales and Northern Ireland: Using a national stroke register to estimate and report patient-level health economic outcomes in stroke. Eur. Stroke J. 3, 82–91 (2018).",
+              "volume": "3",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1056/NEJMoa2019422",
+              "author": "P Kirchhof",
+              "doi-asserted-by": "publisher",
+              "first-page": "1305",
+              "journal-title": "N. Engl. J. Med.",
+              "key": "92172_CR21",
+              "unstructured": "Kirchhof, P. et al. Early rhythm-control therapy in patients with atrial fibrillation. N. Engl. J. Med. 383, 1305–1316 (2020).",
+              "volume": "383",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1161/01.CIR.92.7.1954",
+              "author": "MC Wijffels",
+              "doi-asserted-by": "publisher",
+              "first-page": "1954",
+              "journal-title": "Circulation",
+              "key": "92172_CR22",
+              "unstructured": "Wijffels, M. C., Kirchhof, C. J., Dorland, R. & Allessie, M. A. Atrial fibrillation begets atrial fibrillation. A study in awake chronically instrumented goats. Circulation 92, 1954–1968 (1995).",
+              "volume": "92",
+              "year": "1995"
+            },
+            {
+              "DOI": "10.1161/CIRCRESAHA.114.302226",
+              "author": "J Heijman",
+              "doi-asserted-by": "publisher",
+              "first-page": "1483",
+              "journal-title": "Circ. Res.",
+              "key": "92172_CR23",
+              "unstructured": "Heijman, J., Voigt, N., Nattel, S. & Dobrev, D. Cellular and molecular electrophysiology of atrial fibrillation initiation, maintenance, and progression. Circ. Res. 114, 1483–1499 (2014).",
+              "volume": "114",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1016/j.ijcard.2016.08.222",
+              "author": "Y-S Baek",
+              "doi-asserted-by": "publisher",
+              "first-page": "276",
+              "journal-title": "Int J Cardiol",
+              "key": "92172_CR24",
+              "unstructured": "Baek, Y.-S. et al. Delayed recurrence of atrial fibrillation 2years after catheter ablation is associated with metabolic syndrome. Int J Cardiol 223, 276–281 (2016).",
+              "volume": "223",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1161/CIRCULATIONAHA.113.004742",
+              "author": "RP Martins",
+              "doi-asserted-by": "publisher",
+              "first-page": "1472",
+              "journal-title": "Circulation",
+              "key": "92172_CR25",
+              "unstructured": "Martins, R. P. et al. Dominant frequency increase rate predicts transition from paroxysmal to long-term persistent atrial fibrillation. Circulation 129, 1472–1482 (2014).",
+              "volume": "129",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1093/europace/euz331",
+              "author": "JM Lillo-Castellano",
+              "doi-asserted-by": "publisher",
+              "first-page": "704",
+              "journal-title": "Europace",
+              "key": "92172_CR26",
+              "unstructured": "Lillo-Castellano, J. M. et al. Personalized monitoring of electrical remodelling during atrial fibrillation progression via remote transmissions from implantable devices. Europace 22, 704–715 (2020).",
+              "volume": "22",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1111/anec.12321",
+              "author": "DM German",
+              "doi-asserted-by": "publisher",
+              "first-page": "20",
+              "journal-title": "Ann. Noninvasive Electrocardiol.",
+              "key": "92172_CR27",
+              "unstructured": "German, D. M., Kabir, M. M., Dewland, T. A., Henrikson, C. A. & Tereshchenko, L. G. Atrial fibrillation predictors: importance of the electrocardiogram. Ann. Noninvasive Electrocardiol. 21, 20–29 (2016).",
+              "volume": "21",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1212/WNL.0000000000002282",
+              "author": "VN Thijs",
+              "doi-asserted-by": "publisher",
+              "first-page": "261",
+              "journal-title": "Neurology",
+              "key": "92172_CR28",
+              "unstructured": "Thijs, V. N. et al. Predictors for atrial fibrillation detection after cryptogenic stroke: results from CRYSTAL AF. Neurology 86, 261–269 (2016).",
+              "volume": "86",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.4070/kcj.2019.0234",
+              "author": "N Lowres",
+              "doi-asserted-by": "publisher",
+              "first-page": "883",
+              "journal-title": "Korean Circ. J.",
+              "key": "92172_CR29",
+              "unstructured": "Lowres, N., Giskes, K., Hespe, C. & Freedman, B. Reducing stroke risk in atrial fibrillation: adherence to guidelines has improved, but patient persistence with anticoagulant therapy remains suboptimal. Korean Circ. J. 49, 883–907 (2019).",
+              "volume": "49",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/TIP.2017.2700761",
+              "author": "Z Wen",
+              "doi-asserted-by": "publisher",
+              "first-page": "3449",
+              "journal-title": "IEEE Trans. Image Process.",
+              "key": "92172_CR30",
+              "unstructured": "Wen, Z., Hou, B. & Jiao, L. Discriminative nonlinear analysis operator learning: when cosparse model meets image classification. IEEE Trans. Image Process. 26, 3449–3462 (2017).",
+              "volume": "26",
+              "year": "2017"
+            },
+            {
+              "key": "92172_CR31",
+              "unstructured": "Chung, J., Gulcehre, C., Cho, K. & Bengio, Y. Empirical evaluation of gated recurrent neural networks on sequence modeling. arXiv:1412.3555 (2014)."
+            },
+            {
+              "key": "92172_CR32",
+              "unstructured": "Bahdanau, D., Cho, K. & Bengio, Y. Neural machine translation by jointly learning to align and translate. arXiv:1409.0473 (2014)."
+            },
+            {
+              "DOI": "10.1253/circrep.CR-19-0096",
+              "author": "S Goto",
+              "doi-asserted-by": "publisher",
+              "first-page": "481",
+              "journal-title": "Circ. Rep.",
+              "key": "92172_CR33",
+              "unstructured": "Goto, S. & Goto, S. Application of neural networks to 12-lead electrocardiography- current status and future directions. Circ. Rep. 1, 481–486 (2019).",
+              "volume": "1",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1111/j.1540-8159.2000.tb00910.x",
+              "author": "K Aytemir",
+              "doi-asserted-by": "publisher",
+              "first-page": "1109",
+              "journal-title": "Pacing Clin. Electrophysiol.",
+              "key": "92172_CR34",
+              "unstructured": "Aytemir, K. et al. P wave dispersion on 12-lead electrocardiography in patients with paroxysmal atrial fibrillation. Pacing Clin. Electrophysiol. 23, 1109–1112 (2000).",
+              "volume": "23",
+              "year": "2000"
+            }
+          ],
+          "reference-count": 34,
+          "references-count": 34,
+          "resource": {
+            "primary": {
+              "URL": "https://www.nature.com/articles/s41598-021-92172-5"
+            }
+          },
+          "score": 50.29124,
+          "short-container-title": [
+            "Sci Rep"
+          ],
+          "source": "Crossref",
+          "title": [
+            "A new deep learning algorithm of 12-lead electrocardiogram for identifying atrial fibrillation during sinus rhythm"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "volume": "11"
+        },
+        {
+          "DOI": "10.1038/s41598-025-18910-1",
+          "ISSN": [
+            "2045-2322"
+          ],
+          "URL": "https://doi.org/10.1038/s41598-025-18910-1",
+          "abstract": "<jats:title>Abstract</jats:title>\n          <jats:p>Artificial intelligence (AI) algorithms have demonstrated remarkable efficiency in analyzing 12-lead clinical electrocardiogram (ECG) signals. This has sparked interest in leveraging cost-effective and user-friendly smart devices based on single-lead ECG (SL-ECG) for diagnosing heart dysfunction. However, the development of reliable AI model is influenced by the limited availability of publicly accessible SL-ECG datasets. To address this challenge, presented study introduces a novel approach that utilizes 12-lead clinical ECG datasets to bridge this gap. We propose a hierarchical model architecture designed to translate SL-ECG data while maintaining compatibility with 12-lead signals, ensuring a more reliable framework for AI-driven diagnostics. The proposed sequential model utilizes a convolutional neural network enhanced with three integrated translational layers, trained on individual 12-lead clinical ECG, to significantly improve classification performance on SL-ECG. The experimental analysis is conducted using three benchmark datasets: Physikalisch-Technische Bundesanstalt (PTB-XL), Computing in Cardiology Challenge 2017, and China Physiological Signal Challenge 2018. This study also evaluates the effects of denoising techniques and lead polarity variations, including biphasic and negative deflections. Results show that the model achieved over 82% test accuracy on unseen SL-ECG signals, with an area under the receiver operating characteristic of 0.81, sensitivity of 76.60%, and specificity of 83.44% when trained on clinical lead I. Additionally, leads II, V4, and V5 demonstrated potential for effective AI model training. The work supports advancement of smart devices by enhancing SL-ECG classification and assists clinicians in assessing heart abnormalities more effectively.</jats:p>",
+          "alternative-id": [
+            "18910"
+          ],
+          "article-number": "34955",
+          "assertion": [
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Received",
+              "name": "received",
+              "order": 1,
+              "value": "12 March 2025"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Accepted",
+              "name": "accepted",
+              "order": 2,
+              "value": "4 September 2025"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "First Online",
+              "name": "first_online",
+              "order": 3,
+              "value": "7 October 2025"
+            },
+            {
+              "group": {
+                "label": "Declarations",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 1
+            },
+            {
+              "group": {
+                "label": "Competing interests",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 2,
+              "value": "The authors declare no competing interests."
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Safdar",
+              "given": "Muhammad Farhan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Nowak",
+              "given": "Robert Marek",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Pałka",
+              "given": "Piotr",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Faresi",
+              "given": "Ahmed Al",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Scientific Reports"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "link.springer.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                7
+              ]
+            ],
+            "date-time": "2025-10-07T14:22:09Z",
+            "timestamp": 1759846929000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                7
+              ]
+            ],
+            "date-time": "2025-10-07T14:22:18Z",
+            "timestamp": 1759846938000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2026-07-02T09:21:06Z",
+            "timestamp": 1782984066689,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 2,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2045-2322"
+            }
+          ],
+          "issue": "1",
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                7
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "1",
+            "published-online": {
+              "date-parts": [
+                [
+                  2025,
+                  12
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    10,
+                    7
+                  ]
+                ],
+                "date-time": "2025-10-07T00:00:00Z",
+                "timestamp": 1759795200000
+              }
+            },
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    10,
+                    7
+                  ]
+                ],
+                "date-time": "2025-10-07T00:00:00Z",
+                "timestamp": 1759795200000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.nature.com/articles/s41598-025-18910-1.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.nature.com/articles/s41598-025-18910-1",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.nature.com/articles/s41598-025-18910-1.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "prefix": "10.1038",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                7
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                7
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference": [
+            {
+              "DOI": "10.1136/bmj.294.6584.1396",
+              "author": "A Sykes",
+              "doi-asserted-by": "crossref",
+              "first-page": "1396",
+              "issue": "6584",
+              "journal-title": "Br. Med. J. (Clin. Res. Ed.)",
+              "key": "18910_CR1",
+              "unstructured": "Sykes, A. Ad waller and the electrocardiogram, 1887. Br. Med. J. (Clin. Res. Ed.) 294(6584), 1396 (1987).",
+              "volume": "294",
+              "year": "1987"
+            },
+            {
+              "DOI": "10.1016/0002-9149(94)90135-X",
+              "author": "WB Fye",
+              "doi-asserted-by": "crossref",
+              "first-page": "937",
+              "issue": "13",
+              "journal-title": "Am. J. Cardiol.",
+              "key": "18910_CR2",
+              "unstructured": "Fye, W. B. A history of the origin, evolution, and impact of electrocardiography. Am. J. Cardiol. 73(13), 937–949 (1994).",
+              "volume": "73",
+              "year": "1994"
+            },
+            {
+              "author": "E Gala",
+              "first-page": "122",
+              "issue": "1",
+              "journal-title": "Europace",
+              "key": "18910_CR3",
+              "unstructured": "Gala, E. et al. Single-lead ECGS with wearable technology: Diagnostic accuracy in patients with cardiovascular disease. Europace 25(1), 122–619 (2023).",
+              "volume": "25",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1016/j.ijcha.2024.101336",
+              "author": "DF Mesitskaya",
+              "doi-asserted-by": "crossref",
+              "journal-title": "IJC Heart & Vasculature",
+              "key": "18910_CR4",
+              "unstructured": "Mesitskaya, D. F. et al. A single-lead ecg based cardiotoxicity detection in patients on polychemotherapy. IJC Heart & Vasculature 50, 101336 (2024).",
+              "volume": "50",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1016/j.cvdhj.2023.12.003",
+              "author": "S Weidlich",
+              "doi-asserted-by": "crossref",
+              "first-page": "29",
+              "issue": "1",
+              "journal-title": "Cardiovas. Digit. Health J.",
+              "key": "18910_CR5",
+              "unstructured": "Weidlich, S. et al. Reducing the burden of inconclusive smart device single-lead ECG tracings via a novel artificial intelligence algorithm. Cardiovas. Digit. Health J. 5(1), 29–35 (2024).",
+              "volume": "5",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2023.105920",
+              "author": "Á Huerta",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Biomed. Signal Process. Control",
+              "key": "18910_CR6",
+              "unstructured": "Huerta, Á. et al. Single-lead electrocardiogram quality assessment in the context of paroxysmal atrial fibrillation through phase space plots. Biomed. Signal Process. Control 91, 105920 (2024).",
+              "volume": "91",
+              "year": "2024"
+            },
+            {
+              "key": "18910_CR7",
+              "unstructured": "Hampton, J., & Hampton, J. The ECG made easy e-book. Elsevier Health Sciences, 9th ed., (2019)."
+            },
+            {
+              "DOI": "10.1088/1755-1315/537/1/012022",
+              "doi-asserted-by": "crossref",
+              "key": "18910_CR8",
+              "unstructured": "Simanjuntak, J.E.S., Khodra, M.L., & Manullang, M.C.T. “Design methods of detecting atrial fibrillation using the recurrent neural network algorithm on the arduino ad8232 ecg module,” in Iop conference series: Earth and environmental science, vol. 537, p. 012022, IOP Publishing, (2020)."
+            },
+            {
+              "DOI": "10.3389/frsip.2022.866047",
+              "author": "A Abdou",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Front. Signal Process.",
+              "key": "18910_CR9",
+              "unstructured": "Abdou, A. & Krishnan, S. Horizons in single-lead ECG analysis from devices to data. Front. Signal Process. 2, 866047 (2022).",
+              "volume": "2",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.3390/s19204377",
+              "author": "A Samol",
+              "doi-asserted-by": "crossref",
+              "first-page": "4377",
+              "issue": "20",
+              "journal-title": "Sensors",
+              "key": "18910_CR10",
+              "unstructured": "Samol, A. et al. Single-lead ECG recordings including Einthoven and Wilson leads by a smartwatch: A new era of patient directed early ecg differential diagnosis of cardiac diseases?. Sensors 19(20), 4377 (2019).",
+              "volume": "19",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.3390/s19132894",
+              "author": "A Samol",
+              "doi-asserted-by": "crossref",
+              "first-page": "2894",
+              "issue": "13",
+              "journal-title": "Sensors",
+              "key": "18910_CR11",
+              "unstructured": "Samol, A. et al. Recording of bipolar multichannel ECGS by a smartwatch: Modern ECG diagnostic 100 years after Einthoven. Sensors 19(13), 2894 (2019).",
+              "volume": "19",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1038/s41597-020-0495-6",
+              "author": "P Wagner",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "issue": "1",
+              "journal-title": "Sci. Data",
+              "key": "18910_CR12",
+              "unstructured": "Wagner, P. et al. Ptb-xl, a large publicly available electrocardiography dataset. Sci. Data 7(1), 1–15 (2020).",
+              "volume": "7",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.3389/frai.2022.1087370",
+              "author": "R Ao",
+              "doi-asserted-by": "crossref",
+              "first-page": "1087370",
+              "journal-title": "Front. Artif. Intel.",
+              "key": "18910_CR13",
+              "unstructured": "Ao, R. & He, G. Image based deep learning in 12-lead ECG diagnosis. Front. Artif. Intel. 5, 1087370 (2023).",
+              "volume": "5",
+              "year": "2023"
+            },
+            {
+              "author": "F Khan",
+              "issue": "4",
+              "journal-title": "PLoS ONE",
+              "key": "18910_CR14",
+              "unstructured": "Khan, F., Yu, X., Yuan, Z. & Rehman, A. U. ECG classification using 1-d convolutional deep residual neural network. PLoS ONE 18(4), e0284791 (2023).",
+              "volume": "18",
+              "year": "2023"
+            },
+            {
+              "author": "MF Safdar",
+              "journal-title": "Comput. Biol. Med.",
+              "key": "18910_CR15",
+              "unstructured": "Safdar, M. F., Nowak, R. M. & Pałka, P. Pre-processing techniques and artificial intelligence algorithms for electrocardiogram (ECG) signals analysis: A comprehensive review. Comput. Biol. Med. 170, 107908 (2023).",
+              "volume": "170",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.3390/computers13020055",
+              "author": "A Eleyan",
+              "doi-asserted-by": "crossref",
+              "first-page": "55",
+              "issue": "2",
+              "journal-title": "Computers",
+              "key": "18910_CR16",
+              "unstructured": "Eleyan, A. & Alboghbaish, E. Electrocardiogram signals classification using deep-learning-based incorporated convolutional neural network and long short-term memory framework. Computers 13(2), 55 (2024).",
+              "volume": "13",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1186/s12911-023-02233-0",
+              "author": "A Darmawahyuni",
+              "doi-asserted-by": "crossref",
+              "first-page": "139",
+              "issue": "1",
+              "journal-title": "BMC Med. Inform. Decis. Mak.",
+              "key": "18910_CR17",
+              "unstructured": "Darmawahyuni, A. et al. Improved delineation model of a standard 12-lead electrocardiogram based on a deep learning algorithm. BMC Med. Inform. Decis. Mak. 23(1), 139 (2023).",
+              "volume": "23",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.3390/s24020398",
+              "author": "X Zhao",
+              "doi-asserted-by": "crossref",
+              "first-page": "398",
+              "issue": "2",
+              "journal-title": "Sensors",
+              "key": "18910_CR18",
+              "unstructured": "Zhao, X. et al. Atrial fibrillation detection with single-lead electrocardiogram based on temporal convolutional network-RESNET. Sensors 24(2), 398 (2024).",
+              "volume": "24",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.3389/fcvm.2022.812719",
+              "author": "G Luongo",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Front. Cardiovasc. Med.",
+              "key": "18910_CR19",
+              "unstructured": "Luongo, G. et al. Machine learning using a single-lead ECG to identify patients with atrial fibrillation-induced heart failure. Front. Cardiovasc. Med. 9, 812719 (2022).",
+              "volume": "9",
+              "year": "2022"
+            },
+            {
+              "author": "J Kim",
+              "issue": "5",
+              "journal-title": "J. Kor. Med. Sci.",
+              "key": "18910_CR20",
+              "unstructured": "Kim, J. et al. Identification of atrial fibrillation with single-lead mobile ECG during normal sinus rhythm using deep learning. J. Kor. Med. Sci. 39(5), e56 (2024).",
+              "volume": "39",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.22489/CinC.2017.173-154",
+              "doi-asserted-by": "crossref",
+              "key": "18910_CR21",
+              "unstructured": "Datta, S., Puri, C., Mukherjee, A., Banerjee, R., Choudhury, A.D., Singh, R., Ukil, A., Bandyopadhyay, S., Pal, A., & Khandelwal, S. “Identifying normal, af and other abnormal ecg rhythms using a cascaded binary classifier,” in 2017 Computing in cardiology (cinc), pp. 1–4, IEEE, (2017)."
+            },
+            {
+              "DOI": "10.1038/s41746-023-00869-w",
+              "doi-asserted-by": "crossref",
+              "key": "18910_CR22",
+              "unstructured": "Khunte, A., Sangha, V., Oikonomou, E.K., Dhingra, L.S., Aminorroaya, A., Mortazavi, B.J., Coppi, A., Brandt, C.A., Krumholz, H.M., & Khera, R. “Detection of left ventricular systolic dysfunction from single-lead electrocardiography adapted for portable and wearable devices,” NPJ Digital Medicine, 6(1), p. 124"
+            },
+            {
+              "DOI": "10.1093/ehjdh/ztac030",
+              "author": "ZI Attia",
+              "doi-asserted-by": "crossref",
+              "first-page": "373",
+              "issue": "3",
+              "journal-title": "Eur. Heart J. Digital Health",
+              "key": "18910_CR23",
+              "unstructured": "Attia, Z. I. et al. Automated detection of low ejection fraction from a one-lead electrocardiogram: application of an AI algorithm to an electrocardiogram-enabled digital stethoscope. Eur. Heart J. Digital Health 3(3), 373–379 (2022).",
+              "volume": "3",
+              "year": "2022"
+            },
+            {
+              "author": "F Liu",
+              "first-page": "1368",
+              "issue": "7",
+              "journal-title": "J. Med. Imag. Health Inf.",
+              "key": "18910_CR24",
+              "unstructured": "Liu, F. et al. An open access database for evaluating the algorithms of electrocardiogram rhythm and morphology abnormality detection. J. Med. Imag. Health Inf. 8(7), 1368–1373 (2018).",
+              "volume": "8",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.22489/CinC.2017.065-469",
+              "doi-asserted-by": "crossref",
+              "key": "18910_CR25",
+              "unstructured": "Clifford, G.D., Liu, C., Moody, B., Li-wei, H.L., Silva, I., Li, Q., Johnson, A., & Mark, R.G. “Af classification from a short single lead ecg recording: The physionet/computing in cardiology challenge 2017,” in 2017 Computing in Cardiology (CinC), pp. 1–4, IEEE, (2017)."
+            },
+            {
+              "key": "18910_CR26",
+              "unstructured": "AIDMED Zpp Project, “A library for signal denoising.” https://gitlab.mimuw.edu.pl/zpp_aidmed/zpp/-/blob/release/src/dataloader.py, (2025). Accessed on: 05-Feb-2025."
+            },
+            {
+              "key": "18910_CR27",
+              "unstructured": "Biosppy, “A library for ecg signals processing and detection.” https://biosppy.readthedocs.io/en/stable/biosppy.signals.html, (2024). Accessed on: 27-Mar-2024."
+            },
+            {
+              "key": "18910_CR28",
+              "unstructured": "Scipy, “A digital filters library for ecg signals processing.” https://docs.scipy.org/doc/scipy/reference/signal.html, (2024). Accessed on: 27-Mar-2024."
+            },
+            {
+              "DOI": "10.3390/medicina57050503",
+              "author": "TF Monaghan",
+              "doi-asserted-by": "crossref",
+              "first-page": "503",
+              "issue": "5",
+              "journal-title": "Medicina",
+              "key": "18910_CR29",
+              "unstructured": "Monaghan, T. F. et al. Foundational statistical principles in medical research: sensitivity, specificity, positive predictive value, and negative predictive value. Medicina 57(5), 503 (2021).",
+              "volume": "57",
+              "year": "2021"
+            },
+            {
+              "author": "W Zhu",
+              "first-page": "67",
+              "journal-title": "NESUG proceedings: health care and life sciences, Baltimore, Maryland",
+              "key": "18910_CR30",
+              "unstructured": "Zhu, W. et al. Sensitivity, specificity, accuracy, associated confidence interval and roc analysis with practical sas implementations. NESUG proceedings: health care and life sciences, Baltimore, Maryland 19, 67 (2010).",
+              "volume": "19",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.4103/0301-4738.37595",
+              "author": "R Parikh",
+              "doi-asserted-by": "crossref",
+              "first-page": "45",
+              "issue": "1",
+              "journal-title": "Indian J. Ophthalmol.",
+              "key": "18910_CR31",
+              "unstructured": "Parikh, R., Mathai, A., Parikh, S., Sekhar, G. C. & Thomas, R. Understanding and using sensitivity, specificity and predictive values. Indian J. Ophthalmol. 56(1), 45–50 (2008).",
+              "volume": "56",
+              "year": "2008"
+            },
+            {
+              "DOI": "10.1016/j.patrec.2005.10.010",
+              "author": "T Fawcett",
+              "doi-asserted-by": "crossref",
+              "first-page": "861",
+              "issue": "8",
+              "journal-title": "Pattern Recogn. Lett.",
+              "key": "18910_CR32",
+              "unstructured": "Fawcett, T. An introduction to roc analysis. Pattern Recogn. Lett. 27(8), 861–874 (2006).",
+              "volume": "27",
+              "year": "2006"
+            },
+            {
+              "key": "18910_CR33",
+              "unstructured": "Scikit-learn, “A built-in scikit-learn library for roc-auc score.” https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html, (2024). Accessed on: 22-April-2024."
+            },
+            {
+              "author": "K Lee",
+              "first-page": "3431",
+              "journal-title": "Eur. Heart J.",
+              "key": "18910_CR34",
+              "unstructured": "Lee, K. et al. Mobile single-lead ecg atrial fibrillation prediction enhancement integrated by standard ecg algorithm with deep learning model. Eur. Heart J. 45, 3431 (2024).",
+              "volume": "45",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2023.105114",
+              "doi-asserted-by": "crossref",
+              "key": "18910_CR35",
+              "unstructured": "Safdar, M.F., Pałka, P., Nowak, R.M., & Al Faresi, A. “A novel data augmentation approach for enhancement of ecg signal classification,” Biomedical Signal Processing and Control, vol. 86, p. 105114, (2023)."
+            },
+            {
+              "DOI": "10.3390/s22249576",
+              "author": "MF Safdar",
+              "doi-asserted-by": "crossref",
+              "first-page": "9576",
+              "issue": "24",
+              "journal-title": "Sensors",
+              "key": "18910_CR36",
+              "unstructured": "Safdar, M. F., Nowak, R. M. & Pałka, P. A denoising and fourier transformation-based spectrograms in ecg classification using convolutional neural network. Sensors 22(24), 9576 (2022).",
+              "volume": "22",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1038/s41598-024-72382-3",
+              "author": "HA Elyamani",
+              "doi-asserted-by": "crossref",
+              "first-page": "22040",
+              "issue": "1",
+              "journal-title": "Sci. Rep.",
+              "key": "18910_CR37",
+              "unstructured": "Elyamani, H. A., Salem, M. A., Melgani, F. & Yhiea, N. Deep residual 2d convolutional neural network for cardiovascular disease classification. Sci. Rep. 14(1), 22040 (2024).",
+              "volume": "14",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.3390/diagnostics12040795",
+              "author": "W Caesarendra",
+              "doi-asserted-by": "crossref",
+              "first-page": "795",
+              "issue": "4",
+              "journal-title": "Diagnostics",
+              "key": "18910_CR38",
+              "unstructured": "Caesarendra, W. et al. An embedded system using convolutional neural network model for online and real-time ecg signal classification and prediction. Diagnostics 12(4), 795 (2022).",
+              "volume": "12",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1007/s00521-025-11092-x",
+              "author": "YP Sai",
+              "doi-asserted-by": "crossref",
+              "first-page": "9759",
+              "issue": "16",
+              "journal-title": "Neural Comput. Appl.",
+              "key": "18910_CR39",
+              "unstructured": "Sai, Y. P. et al. A novel inference system for detecting cardiac arrhythmia using deep learning framework. Neural Comput. Appl. 37(16), 9759–9775 (2025).",
+              "volume": "37",
+              "year": "2025"
+            }
+          ],
+          "reference-count": 39,
+          "references-count": 39,
+          "resource": {
+            "primary": {
+              "URL": "https://www.nature.com/articles/s41598-025-18910-1"
+            }
+          },
+          "score": 35.805214,
+          "short-container-title": [
+            "Sci Rep"
+          ],
+          "source": "Crossref",
+          "title": [
+            "An integrated algorithm for single lead electrocardiogram signal analysis using deep learning with 12-lead data"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "volume": "15"
+        },
+        {
+          "DOI": "10.1093/sleep/zsaf226",
+          "ISSN": [
+            "0161-8105",
+            "1550-9109"
+          ],
+          "URL": "https://doi.org/10.1093/sleep/zsaf226",
+          "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Study Objectives</jats:title>\n                    <jats:p>Atrial fibrillation (AF) and obstructive sleep apnea (OSA) are interrelated conditions that substantially increase the risk of cardiovascular complications. However, concurrent detection of these conditions remains a critical unmet need in clinical practice. Current home sleep apnea test devices often fail to detect arrhythmias essential for diagnosing OSA-associated AF due to limited electrocardiogram (ECG) monitoring capabilities, and their integration with continuous positive airway pressure data for treatment optimization remains underutilized.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>This study introduces SHHDeepNet, an advanced deep learning-based framework designed for the detection of OSA in patients with AF, leveraging enhanced features extracted from single-lead ECG signals. The ECG signals were preprocessed and refined using reconstruction independent component analysis, which isolates statistically independent features for improved data representation. These features were subsequently classified using the customized SHHDeepNet architecture. SHHDeepNet utilizes advanced signal processing and deep learning techniques to enhance ECG-based detection of AF-associated OSA.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>The framework was validated using overnight ECG recordings from 101 subjects derived from the Sleep Heart Health Study Visit 1 database, encompassing 36 prevalent AF cases, 25 incident AF cases, and 40 OSA cases. Detection performance was evaluated through binary classification (AF AH vs. AF non-AH) and multi-class classification (AF AH, AF non-AH, non-AF AH, and non-AF non-AH). During fivefold cross-validation (fivefold-CV), the framework achieved a binary classification accuracy of 98.22 per cent, sensitivity of 96.8 per cent, specificity of 99 per cent, and an area under the curve (AUC) of 0.9981. For multi-class classification, fivefold-CV yielded 98.36 per cent accuracy, 97.14 per cent sensitivity, 98.77 per cent specificity, and an AUC of 0.9975. Validation using leave-one-subject-out cross-validation achieved a binary classification accuracy of 86.42 per cent, sensitivity of 79.4 per cent, specificity of 90.2 per cent, and an AUC of 0.9372. For multi-class classification under leave-one-subject-out cross-validation, the average accuracy, sensitivity, and F1-score were 86.7 per cent, 72.6 per cent, and 0.7224 per cent, respectively. External validation was performed on a cohort of 123 subjects from the osteoporotic fractures in men database, comprising 68 cases of prevalent AF and 55 cases of OSA. The proposed method achieved a multi-class classification accuracy of 88.51 per cent, sensitivity of 73.50 per cent, specificity of 91.34 per cent, and an AUC of 0.9363.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>These findings underscore the significance of simultaneous detection of AF and OSA, providing a more comprehensive evaluation of cardiovascular health. The proposed SHHDeepNet framework offers a promising tool to support clinical decision-making, enhance management strategies, and improve patient outcomes by mitigating the risks associated with these conditions.</jats:p>\n                  </jats:sec>",
+          "article-number": "zsaf226",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Biomedical Engineering, College of Engineering, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                }
+              ],
+              "family": "Setiawan",
+              "given": "Febryan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-6586-1053",
+              "affiliation": [
+                {
+                  "name": "Department of Otolaryngology, National Cheng Kung University Hospital, College of Medicine, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                },
+                {
+                  "name": "Department of Environmental and Occupational Medicine, National Cheng Kung University Hospital, College of Medicine, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                },
+                {
+                  "name": "Sleep Medicine Center, National Cheng Kung University Hospital, College of Medicine, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Lin",
+              "given": "Cheng-Yu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Biomedical Engineering, College of Engineering, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                },
+                {
+                  "name": "Medical Device Innovation Center, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                },
+                {
+                  "name": "Institute of Gerontology, College of Medicine, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                },
+                {
+                  "name": "Institute of Medical Informatics, College of Electrical Engineering and Computer Science, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                },
+                {
+                  "name": "Department of Biotechnology and Bioindustry Sciences, College of Bioscience and Biotechnology, National Cheng Kung University , Tainan City ,",
+                  "place": [
+                    "Taiwan"
+                  ]
+                }
+              ],
+              "family": "Lin",
+              "given": "Che-Wei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "SLEEPJ"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                7
+              ]
+            ],
+            "date-time": "2025-08-07T11:47:15Z",
+            "timestamp": 1754567235000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                9
+              ]
+            ],
+            "date-time": "2026-02-09T23:53:08Z",
+            "timestamp": 1770681188000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                10
+              ]
+            ],
+            "date-time": "2026-02-10T16:57:19Z",
+            "timestamp": 1770742639041,
+            "version": "3.49.0"
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0161-8105"
+            },
+            {
+              "type": "electronic",
+              "value": "1550-9109"
+            }
+          ],
+          "issue": "2",
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                8
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "2",
+            "published-online": {
+              "date-parts": [
+                [
+                  2025,
+                  8,
+                  8
+                ]
+              ]
+            },
+            "published-print": {
+              "date-parts": [
+                [
+                  2026,
+                  2,
+                  10
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://academic.oup.com/pages/standard-publication-reuse-rights",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    8,
+                    8
+                  ]
+                ],
+                "date-time": "2025-08-08T00:00:00Z",
+                "timestamp": 1754611200000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://academic.oup.com/sleep/advance-article-pdf/doi/10.1093/sleep/zsaf226/63990342/zsaf226.pdf",
+              "content-type": "application/pdf",
+              "content-version": "am",
+              "intended-application": "syndication"
+            },
+            {
+              "URL": "https://academic.oup.com/sleep/article-pdf/49/2/zsaf226/63990342/zsaf226.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "syndication"
+            },
+            {
+              "URL": "https://academic.oup.com/sleep/article-pdf/49/2/zsaf226/63990342/zsaf226.pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "286",
+          "prefix": "10.1093",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                8
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                8
+              ]
+            ]
+          },
+          "published-other": {
+            "date-parts": [
+              [
+                2026,
+                2
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                10
+              ]
+            ]
+          },
+          "publisher": "Oxford University Press (OUP)",
+          "reference": [
+            {
+              "DOI": "10.1016/j.smrv.2016.07.002",
+              "article-title": "Prevalence of obstructive sleep apnea in the general population: a systematic review",
+              "author": "Senaratna",
+              "doi-asserted-by": "publisher",
+              "first-page": "70",
+              "journal-title": "Sleep Med Rev",
+              "key": "2026020918530044000_ref1",
+              "volume": "34",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1161/CIR.0000000000000041",
+              "article-title": "2014 AHA/ACC/HRS guideline for the management of patients with atrial fibrillation: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines and the Heart Rhythm Society",
+              "author": "January",
+              "doi-asserted-by": "publisher",
+              "first-page": "e1",
+              "issue": "21",
+              "journal-title": "J Am Coll Cardiol",
+              "key": "2026020918530044000_ref2",
+              "volume": "64",
+              "year": "2014"
+            },
+            {
+              "author": "Agency for Healthcare Research and Quality. Weighted National Estimates. HCUP National Inpatient Sample",
+              "key": "2026020918530044000_ref3"
+            },
+            {
+              "author": "Centers for Disease Control and Prevention. About multiple cause of death 1999–2011",
+              "key": "2026020918530044000_ref4"
+            },
+            {
+              "DOI": "10.1161/CIR.0000000000001052",
+              "article-title": "Heart disease and stroke statistics—2022 update: a report from the American Heart Association",
+              "author": "Tsao",
+              "doi-asserted-by": "publisher",
+              "first-page": "e153",
+              "issue": "8",
+              "journal-title": "Circulation",
+              "key": "2026020918530044000_ref5",
+              "volume": "145",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1164/rccm.200509-1442OC",
+              "article-title": "Association of nocturnal arrhythmias with sleep-disordered breathing: the sleep heart health study",
+              "author": "Mehra",
+              "doi-asserted-by": "publisher",
+              "first-page": "910",
+              "issue": "8",
+              "journal-title": "Am J Respir Crit Care Med",
+              "key": "2026020918530044000_ref6",
+              "volume": "173",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1161/01.CIR.0000068337.25994.21",
+              "article-title": "Obstructive sleep apnea and the recurrence of atrial fibrillation",
+              "author": "Kanagala",
+              "doi-asserted-by": "publisher",
+              "first-page": "2589",
+              "issue": "20",
+              "journal-title": "Circulation.",
+              "key": "2026020918530044000_ref7",
+              "volume": "107",
+              "year": "2003"
+            },
+            {
+              "DOI": "10.1093/sleep/20.9.705",
+              "article-title": "Estimation of the clinically diagnosed proportion of sleep apnea syndrome in middle-aged men and women",
+              "author": "Young",
+              "doi-asserted-by": "publisher",
+              "first-page": "705",
+              "issue": "9",
+              "journal-title": "Sleep.",
+              "key": "2026020918530044000_ref8",
+              "volume": "20",
+              "year": "1997"
+            },
+            {
+              "article-title": "Burden of sleep apnea: rationale, design, and major findings of the Wisconsin sleep cohort study",
+              "author": "Young",
+              "first-page": "246",
+              "issue": "5",
+              "journal-title": "WMJ",
+              "key": "2026020918530044000_ref9",
+              "volume": "108",
+              "year": "2009"
+            },
+            {
+              "DOI": "10.1093/eurheartj/eht280",
+              "article-title": "Projections on the number of individuals with atrial fibrillation in the European Union, from 2000 to 2060",
+              "author": "Krijthe",
+              "doi-asserted-by": "publisher",
+              "first-page": "2746",
+              "issue": "35",
+              "journal-title": "Eur Heart J",
+              "key": "2026020918530044000_ref10",
+              "volume": "34",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.3389/fneur.2017.00668",
+              "article-title": "The interplay between obstructive sleep apnea and atrial fibrillation",
+              "author": "Marulanda-Londono",
+              "doi-asserted-by": "publisher",
+              "first-page": "668",
+              "journal-title": "Front Neurol",
+              "key": "2026020918530044000_ref11",
+              "volume": "8",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1056/NEJMoa043104",
+              "article-title": "Obstructive sleep apnea as a risk factor for stroke and death",
+              "author": "Yaggi",
+              "doi-asserted-by": "publisher",
+              "first-page": "2034",
+              "issue": "19",
+              "journal-title": "N Engl J Med",
+              "key": "2026020918530044000_ref12",
+              "volume": "353",
+              "year": "2005"
+            },
+            {
+              "DOI": "10.1161/01.STR.0000236560.15735.0f",
+              "article-title": "Severe sleep apnea and risk of ischemic stroke in the elderly",
+              "author": "Munoz",
+              "doi-asserted-by": "publisher",
+              "first-page": "2317",
+              "issue": "9",
+              "journal-title": "Stroke.",
+              "key": "2026020918530044000_ref13",
+              "volume": "37",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1056/NEJMoa1311376",
+              "article-title": "Atrial fibrillation in patients with cryptogenic stroke",
+              "author": "Gladstone",
+              "doi-asserted-by": "publisher",
+              "first-page": "2467",
+              "issue": "26",
+              "journal-title": "N Engl J Med",
+              "key": "2026020918530044000_ref14",
+              "volume": "370",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1186/1471-2105-13-24",
+              "article-title": "Independent principal component analysis for biologically meaningful dimension reduction of large biological data sets",
+              "author": "Yao",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "issue": "1",
+              "journal-title": "BMC Bioinform",
+              "key": "2026020918530044000_ref15",
+              "volume": "13",
+              "year": "2012"
+            },
+            {
+              "author": "Beltrán",
+              "key": "2026020918530044000_ref16",
+              "volume-title": "Study of Reconstruction ICA for Feature Extraction in Images and Signals",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.690",
+              "author": "Redmon",
+              "doi-asserted-by": "publisher",
+              "first-page": "7263",
+              "key": "2026020918530044000_ref17",
+              "volume-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1093/jamia/ocy064",
+              "article-title": "The National Sleep Research Resource: towards a sleep data commons",
+              "author": "Zhang",
+              "doi-asserted-by": "publisher",
+              "first-page": "1351",
+              "issue": "10",
+              "journal-title": "J Am Med Inform Assoc",
+              "key": "2026020918530044000_ref18",
+              "volume": "25",
+              "year": "2018"
+            },
+            {
+              "article-title": "The sleep heart health study: design, rationale, and methods",
+              "author": "Quan",
+              "first-page": "1077",
+              "issue": "12",
+              "journal-title": "Sleep.",
+              "key": "2026020918530044000_ref19",
+              "volume": "20",
+              "year": "1997"
+            },
+            {
+              "DOI": "10.1016/j.patrec.2005.10.010",
+              "article-title": "An introduction to ROC analysis",
+              "author": "Fawcett",
+              "doi-asserted-by": "publisher",
+              "first-page": "861",
+              "issue": "8",
+              "journal-title": "Pattern Recogn Lett",
+              "key": "2026020918530044000_ref20",
+              "volume": "27",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1002/1097-0142(1950)3:1%3C32::aid-cncr2820030106%3E3.0.co;2-3",
+              "article-title": "Index for rating diagnostic tests",
+              "author": "Youden",
+              "doi-asserted-by": "publisher",
+              "first-page": "32",
+              "issue": "1",
+              "journal-title": "Cancer.",
+              "key": "2026020918530044000_ref21",
+              "volume": "3",
+              "year": "1950"
+            },
+            {
+              "DOI": "10.1109/bhi.2019.8834637",
+              "article-title": "ECGNET: learning where to attend for detection of atrial fibrillation with deep visual attention",
+              "author": "Mousavi",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "journal-title": "IEEE",
+              "key": "2026020918530044000_ref22",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2019.2918792",
+              "article-title": "A novel deep arrhythmia-diagnosis network for atrial fibrillation classification using electrocardiogram signals",
+              "author": "Dang",
+              "doi-asserted-by": "publisher",
+              "first-page": "75577",
+              "journal-title": "IEEE Access",
+              "key": "2026020918530044000_ref23",
+              "volume": "7",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.48550/arXiv.2011.06187",
+              "author": "Wang",
+              "doi-asserted-by": "publisher",
+              "key": "2026020918530044000_ref24",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/jbhi.2024.3383240",
+              "article-title": "Estimating the severity of obstructive sleep apnea using ECG, respiratory effort and neural networks",
+              "author": "Fonseca",
+              "doi-asserted-by": "publisher",
+              "first-page": "3895",
+              "issue": "7",
+              "journal-title": "IEEE J Biomed Health Inform",
+              "key": "2026020918530044000_ref25",
+              "volume": "28",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1177/0194599819900014",
+              "article-title": "Prediction of apnea-hypopnea index using sound data collected by a noncontact device",
+              "author": "Kim",
+              "doi-asserted-by": "publisher",
+              "first-page": "392",
+              "issue": "3",
+              "journal-title": "Otolaryngol Head Neck Surg",
+              "key": "2026020918530044000_ref26",
+              "volume": "162",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.3390/diagnostics13132146",
+              "article-title": "The use of respiratory effort improves an ECG-based deep learning algorithm to assess sleep-disordered breathing",
+              "author": "Xie",
+              "doi-asserted-by": "publisher",
+              "first-page": "2146",
+              "issue": "13",
+              "journal-title": "Diagnostics.",
+              "key": "2026020918530044000_ref27",
+              "volume": "13",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1093/sleep/zsz276",
+              "article-title": "Robust, ECG-based detection of sleep-disordered breathing in large population-based cohorts",
+              "author": "Olsen",
+              "doi-asserted-by": "publisher",
+              "issue": "5",
+              "journal-title": "Sleep.",
+              "key": "2026020918530044000_ref28",
+              "volume": "43",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1111/j.1532-5415.2011.03731.x",
+              "article-title": "Associations between sleep architecture and sleep-disordered breathing and cognition in older community-dwelling men: the osteoporotic fractures in men sleep study",
+              "author": "Blackwell",
+              "doi-asserted-by": "publisher",
+              "first-page": "2217",
+              "issue": "12",
+              "journal-title": "J Am Geriatr Soc",
+              "key": "2026020918530044000_ref29",
+              "volume": "59",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1016/j.eswa.2016.12.035",
+              "article-title": "Learning from class-imbalanced data: review of methods and applications",
+              "author": "Haixiang",
+              "doi-asserted-by": "publisher",
+              "first-page": "220",
+              "journal-title": "Expert Syst Appl",
+              "key": "2026020918530044000_ref30",
+              "volume": "73",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/ICCTCT.2018.8551020",
+              "article-title": "A review on handling imbalanced data",
+              "author": "Spelmen",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "journal-title": "IEEE International Conference on Communication, Computing and Technologies (ICCTCT)",
+              "key": "2026020918530044000_ref31",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.48550/arXiv.1901.05555",
+              "article-title": "Class-balanced loss based on effective number of samples",
+              "author": "Cui",
+              "doi-asserted-by": "publisher",
+              "first-page": "9268",
+              "key": "2026020918530044000_ref32",
+              "volume-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1088/1361-6579/abb8bf",
+              "article-title": "Machine learning for nocturnal mass diagnosis of atrial fibrillation in a population at risk of sleep-disordered breathing",
+              "author": "Chocron",
+              "doi-asserted-by": "publisher",
+              "first-page": "104001",
+              "issue": "10",
+              "journal-title": "Physiol Meas",
+              "key": "2026020918530044000_ref33",
+              "volume": "41",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1016/j.sleep.2021.07.014",
+              "article-title": "Transfer learning artificial intelligence for automated detection of atrial fibrillation in patients undergoing evaluation for suspected obstructive sleep apnoea: a feasibility study",
+              "author": "Gahungu",
+              "doi-asserted-by": "publisher",
+              "first-page": "166",
+              "journal-title": "Sleep Med",
+              "key": "2026020918530044000_ref34",
+              "volume": "85",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.5664/jcsm.9630",
+              "article-title": "Obstructive sleep apnea predicts 10-year cardiovascular disease–related mortality in the sleep heart health study: a machine learning approach",
+              "author": "Li",
+              "doi-asserted-by": "publisher",
+              "first-page": "497",
+              "issue": "2",
+              "journal-title": "J Clin Sleep Med",
+              "key": "2026020918530044000_ref35",
+              "volume": "18",
+              "year": "2022"
+            }
+          ],
+          "reference-count": 35,
+          "references-count": 35,
+          "resource": {
+            "primary": {
+              "URL": "https://academic.oup.com/sleep/article/doi/10.1093/sleep/zsaf226/8228265"
+            }
+          },
+          "score": 35.469685,
+          "source": "Crossref",
+          "title": [
+            "A novel approach for atrial fibrillation-related obstructive sleep apnea detection using enhanced single-lead electrocardiogram features with customized deep learning algorithm"
+          ],
+          "type": "journal-article",
+          "volume": "49"
+        },
+        {
+          "DOI": "10.1161/circ.144.suppl_1.9894",
+          "ISSN": [
+            "0009-7322",
+            "1524-4539"
+          ],
+          "URL": "https://doi.org/10.1161/circ.144.suppl_1.9894",
+          "abstract": "<jats:p>\n            <jats:bold>Introduction:</jats:bold>\n            Early identification of myocardial infarction (MI) to activate rapid reperfusion therapies is linked to improved mortality and morbidity. Mounting evidence shows that electrocardiogram (ECG) markers are predictive of MI in the initial evaluation phase. Yet few studies have explored the feasibility of predictive modeling with deep learning, which has achieved promising performance in classifying cardiac arrhythmias. The pilot study aims to establish the baseline performance of deep learning in predicting MI.\n          </jats:p>\n          <jats:p>\n            <jats:bold>Methods:</jats:bold>\n            The PTB-XL database includes over 20K records of 10s 12-lead ECG and diagnostic annotations. ECGs with labels of normal sinus rhythm (9,528 records) and MI (5,486 records) were entered into the study. The dataset was first divided into development and test sets with an 80%-20% split. The development set was further split into training and validation sets following a five-fold cross-validation setup. The first 2.5s ECGs organized by the standard 12-lead ECG layout were converted into 2D image samples for model training. Two deep learning models, LeNet and a more complex ResNet, were adopted to probe the impact of model complexity on predicting MI. The area under the ROC curve (AUC) was selected to evaluate the model performance.\n          </jats:p>\n          <jats:p>\n            <jats:bold>Results:</jats:bold>\n            The AUCs were 93.45% ± 0.67% and 96.80% ± 0.50% (mean ± SD) achieved by the LeNet and ResNet models, respectively. Between the two, the ResNet outperformed the LeNet with statistical significance (\n            <jats:italic>p&lt;0.05,</jats:italic>\n            Wilcoxon rank-sum test).\n          </jats:p>\n          <jats:p>\n            <jats:bold>Discussion:</jats:bold>\n            By leveraging an unprecedented large-scale MI database and deep learning, our study demonstrated the feasibility of predicting MI using just 2.5s of standard 12-lead ECG and established the baseline performance. Results further show the more complex model offers additional performance gain. Our next step will be to evaluate the derived model's generalizability on a locally collected ECG dataset towards evaluation in clinical settings.\n          </jats:p>\n          <jats:p>\n            <jats:graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" orientation=\"portrait\" position=\"float\" xlink:href=\"g9894.jpg\" />\n          </jats:p>",
+          "alternative-id": [
+            "10.1161/circ.144.suppl_1.9894"
+          ],
+          "assertion": [
+            {
+              "group": {
+                "label": "Publication History",
+                "name": "publication_history"
+              },
+              "label": "Published",
+              "name": "published",
+              "order": 2,
+              "value": "2021-11-08"
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Sch of Nursing, Duke Univ, Durham, NC"
+                }
+              ],
+              "family": "Xiao",
+              "given": "Ran",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Sch of Engineering, Duke Univ, Durham, NC"
+                }
+              ],
+              "family": "Yang",
+              "given": "Fan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Sch of Engineering, Duke Univ, Durham, NC"
+                }
+              ],
+              "family": "Ding",
+              "given": "Cheng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "UNC CHAPEL HILL, Chapel Hill, NC"
+                }
+              ],
+              "family": "Zegre-hemsey",
+              "given": "Jessica K",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Sch of Nursing, Duke Univ, Durham, NC"
+                }
+              ],
+              "family": "Hu",
+              "given": "Xiao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Circulation"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "www.ahajournals.org"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                23
+              ]
+            ],
+            "date-time": "2024-04-23T14:34:58Z",
+            "timestamp": 1713882898000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                23
+              ]
+            ],
+            "date-time": "2024-04-23T14:49:04Z",
+            "timestamp": 1713883744000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                24
+              ]
+            ],
+            "date-time": "2024-04-24T00:37:22Z",
+            "timestamp": 1713919042250
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0009-7322"
+            },
+            {
+              "type": "electronic",
+              "value": "1524-4539"
+            }
+          ],
+          "issue": "Suppl_1",
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                11,
+                16
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "Suppl_1",
+            "published-print": {
+              "date-parts": [
+                [
+                  2021,
+                  11,
+                  16
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "member": "276",
+          "prefix": "10.1161",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                11,
+                16
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                11,
+                16
+              ]
+            ]
+          },
+          "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ahajournals.org/doi/10.1161/circ.144.suppl_1.9894"
+            }
+          },
+          "score": 35.209126,
+          "short-container-title": [
+            "Circulation"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Abstract 9894: Identifying Myocardial Infarction Using Clinical 12-Lead Electrocardiogram and Deep Learning"
+          ],
+          "type": "journal-article",
+          "update-policy": "http://dx.doi.org/10.1161/crossmarkpolicy",
+          "volume": "144"
+        },
+        {
+          "DOI": "10.31662/jmaj.2024-0195",
+          "ISSN": [
+            "2433-3298",
+            "2433-328X"
+          ],
+          "URL": "https://doi.org/10.31662/jmaj.2024-0195",
+          "alternative-id": [
+            "jmaj.2024-0195"
+          ],
+          "container-title": [
+            "JMA Journal"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                1,
+                8
+              ]
+            ],
+            "date-time": "2025-01-08T07:34:52Z",
+            "timestamp": 1736321692000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                1,
+                8
+              ]
+            ],
+            "date-time": "2025-01-08T07:35:10Z",
+            "timestamp": 1736321710000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                5
+              ]
+            ],
+            "date-time": "2026-06-05T14:41:45Z",
+            "timestamp": 1780670505954,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 6,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2433-3298"
+            },
+            {
+              "type": "print",
+              "value": "2433-328X"
+            }
+          ],
+          "issue": "1",
+          "issued": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "1"
+          },
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://www.jmaj.jp/download.php?id=10.31662/jmaj.2024-0195",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "16605",
+          "page": "102-112",
+          "prefix": "10.31662",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "publisher": "Japan Medical Association",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.jmaj.jp/detail.php?id=10.31662/jmaj.2024-0195"
+            }
+          },
+          "score": 33.498444,
+          "short-container-title": [
+            "JMA J"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Deep Learning Applications in 12-lead Electrocardiogram and Echocardiogram"
+          ],
+          "type": "journal-article",
+          "volume": "8"
+        },
+        {
+          "DOI": "10.1161/video.20231019.627029",
+          "URL": "https://doi.org/10.1161/video.20231019.627029",
+          "container-title": [
+            "Video Group"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                19
+              ]
+            ],
+            "date-time": "2023-10-19T16:58:54Z",
+            "timestamp": 1697734734000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                9
+              ]
+            ],
+            "date-time": "2025-05-09T19:43:09Z",
+            "timestamp": 1746819789000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                10
+              ]
+            ],
+            "date-time": "2025-05-10T04:11:33Z",
+            "timestamp": 1746850293912,
+            "version": "3.40.5"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                6
+              ]
+            ]
+          },
+          "member": "276",
+          "prefix": "10.1161",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                6
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                6
+              ]
+            ]
+          },
+          "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ahajournals.org/do/10.1161/video.20231019.627029/abs/"
+            }
+          },
+          "score": 32.584515,
+          "source": "Crossref",
+          "title": [
+            "CircGPM Video - Genetic Susceptibility to Atrial Fibrillation Identified via Deep Learning of 12-Lead Electrocardiograms"
+          ],
+          "type": "dataset"
+        },
+        {
+          "DOI": "10.64898/2026.01.12.26343962",
+          "URL": "https://doi.org/10.64898/2026.01.12.26343962",
+          "abstract": "<jats:title>Abstract</jats:title>\n                <jats:sec>\n                  <jats:title>Background and Aims</jats:title>\n                  <jats:p>Atrial cardiomyopathy (AtCM) contributes to the development of atrial fibrillation (AF), heart failure (HF) and stroke. Imaging-derived measures of left atrial (LA) structure and function are used to diagnose AtCM. Considering the tight coupling of heart structure and rhythm generation, this information might also be derived from 12-lead electrocardiogram (ECG), which is low-cost and readily available.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Methods</jats:title>\n                  <jats:p>We finetuned a deep learning (DL) ECG foundational model to predict LA imaging indices based on 26’134 ECGs from the UK Biobank cohort. We then investigated if the ECG-predicted imaging features improved risk stratification of AF beyond the CHARGE-AF Score on a test set from the UK Biobank. We repeated this analysis for diagnosis of HF. We then externally validated our model and applied it to a cohort of stroke patients.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>Our DL model successfully predicted LA imaging indices from 12 lead ECG. In the UK Biobank test set, the ECG-predicted LA imaging features significantly improved risk stratification for AF beyond the CHARGE-AF score. ECG-predicted imaging markers showed superior test performance compared to established ECG markers of AtCM and an alternative DL approach This also held on external validation sets. Importantly, the predicted imaging features improved risk stratification for HF in the UK Biobank, even when excluding patients with AF, suggesting that our model captures AtCM beyond AF.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Discussion</jats:title>\n                  <jats:p>We established a novel DL approach for the diagnosis of AtCM from 12 lead ECG. Due to the wide availability of ECG, our approach has the potential to improve screening and diagnosis of AtCM.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Structured Graphical Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Key Question</jats:title>\n                    <jats:p>Can left atrial imaging markers of atrial cardiomyopathy predicted from 12 lead electrocardiogram (ECG) using a deep learning (DL) model improve risk stratification for atrial fibrillation (AF) and heart failure (HF)?</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Key Finding</jats:title>\n                    <jats:p>Our DL model successfully predicted left atrial imaging features from 12 lead ECG. The predicted left atrial imaging markers improved risk stratification for AF and HF outperforming a deep learning model trained to identify patients with AF directly.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Take-home message</jats:title>\n                    <jats:p>DL allows improved diagnosis of atrial cardiomyopathy from ECG.</jats:p>\n                    <jats:fig id=\"ufig1\" position=\"float\" orientation=\"portrait\" fig-type=\"figure\">\n                      <jats:caption>\n                        <jats:title>Structured graphical abstract showing the model training and evaluation procedure.</jats:title>\n                        <jats:p>We first trained a deep learning model to predict left atrial imaging markers of atrial cardiomyopathy. We then added the predicted imaging features to clinical risk scores, creating multivariate regression models for risk stratification of different clinical outcomes. Finally, we externally validate the deep learning model and derived multivariate regression models on a diverse set of clinical cohorts.</jats:p>\n                      </jats:caption>\n                      <jats:graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"26343962v2_ufig1\" position=\"float\" orientation=\"portrait\"/>\n                    </jats:fig>\n                  </jats:sec>\n                </jats:sec>",
+          "accepted": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                31
+              ]
+            ]
+          },
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0009-0003-6615-3851",
+              "affiliation": [
+                {
+                  "name": "Department of Neurology and Neuroscience Center Zurich, University Hospital Zurich and University of Zurich, Switzerland"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Deseoe",
+              "given": "Julian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Quantitative Biomedicine, University of Zurich, Zurich, Switzerland"
+                }
+              ],
+              "family": "de la Rosa",
+              "given": "Ezequiel",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-9300-1130",
+              "affiliation": [
+                {
+                  "name": "Department of Neurology and Neuroscience Center Zurich, University Hospital Zurich and University of Zurich, Switzerland"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Haensel",
+              "given": "Martin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0000-2095-9516",
+              "affiliation": [
+                {
+                  "name": "Department of Neurology and Neuroscience Center Zurich, University Hospital Zurich and University of Zurich, Switzerland"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Herzog",
+              "given": "Lisa",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-9865-7382",
+              "affiliation": [
+                {
+                  "name": "Department of Neurology and Neuroscience Center Zurich, University Hospital Zurich and University of Zurich, Switzerland"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Luft",
+              "given": "Andreas R.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Epidemiology, Biostatistics & Prevention Institute, University of Zurich, Zurich, Switzerland"
+                },
+                {
+                  "name": "TIDIT, Thurgau Institute for Digital Transformation, Kreuzlingen, Switzerland"
+                }
+              ],
+              "family": "Sick",
+              "given": "Beate",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-1477-9153",
+              "affiliation": [
+                {
+                  "name": "HerzKlinik Hirslanden, Zurich, Switzerland"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Steffel",
+              "given": "Jan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Cardiology, University Hospital Zurich, Zurich, Switzerland"
+                }
+              ],
+              "family": "Breitenstein",
+              "given": "Alexander",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-7566-1626",
+              "affiliation": [
+                {
+                  "name": "Liverpool Centre for Cardiovascular Science at University of Liverpool, Liverpool John Moores University and Liverpool Heart & Chest Hospital, Liverpool, UK"
+                },
+                {
+                  "name": "Department of Clinical Medicine, Aalborg University, Aalborg, Denmark"
+                },
+                {
+                  "name": "Department of Cardiology, Lipidology and Internal Medicine with Intensive Coronary Care Unit, Medical University of Bialystok, Bialystok, Poland"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Lip",
+              "given": "Gregory Y. H.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Quantitative Biomedicine, University of Zurich, Zurich, Switzerland"
+                }
+              ],
+              "family": "Menze",
+              "given": "Björn",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-4369-7023",
+              "affiliation": [
+                {
+                  "name": "Department of Neurology and Neuroscience Center Zurich, University Hospital Zurich and University of Zurich, Switzerland"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Wegener",
+              "given": "Susanne",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                15
+              ]
+            ],
+            "date-time": "2026-01-15T16:55:12Z",
+            "timestamp": 1768496112000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2026-04-01T15:55:25Z",
+            "timestamp": 1775058925000
+          },
+          "group-title": "Cardiovascular Medicine",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2026-04-01T17:51:16Z",
+            "timestamp": 1775065876701,
+            "version": "3.50.1"
+          },
+          "institution": [
+            {
+              "name": "medRxiv"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                15
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "http://creativecommons.org/licenses/by-nc/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    1,
+                    15
+                  ]
+                ],
+                "date-time": "2026-01-15T00:00:00Z",
+                "timestamp": 1768435200000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://syndication.highwire.org/content/doi/10.64898/2026.01.12.26343962",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "54368",
+          "posted": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                15
+              ]
+            ]
+          },
+          "prefix": "10.64898",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                15
+              ]
+            ]
+          },
+          "publisher": "openRxiv",
+          "reference": [
+            {
+              "DOI": "10.1093/europace/euae204",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.1"
+            },
+            {
+              "DOI": "10.1161/jaha.119.013227",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.2"
+            },
+            {
+              "DOI": "10.3389/fneur.2020.00026",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.3"
+            },
+            {
+              "DOI": "10.3389/fcvm.2022.942385",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.4"
+            },
+            {
+              "DOI": "10.1161/jaha.122.027031",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.5"
+            },
+            {
+              "DOI": "10.1093/eurheartj/ehaf793",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.6"
+            },
+            {
+              "key": "2026040108551275000_2026.01.12.26343962v2.7",
+              "unstructured": "Deseoe J , Hänsel M , Herzog L , Davoudi N , Luft AR , Gebhard C et al. Left atrial to ventricular volume ratio is a specific marker of atrial cardiopathy. Evidence from the UK Biobank and an ischemic stroke patient cohort. medRxiv; 2025. Available under: https://www.medrxiv.org/content/10.64898/2025.12.18.25342359v1"
+            },
+            {
+              "DOI": "10.1093/ehjci/jeae138",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.8"
+            },
+            {
+              "DOI": "10.1016/j.hrthm.2015.04.026",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.9"
+            },
+            {
+              "DOI": "10.1001/archinternmed.2010.434",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.10"
+            },
+            {
+              "DOI": "10.1016/j.amjcard.2017.08.015",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.11"
+            },
+            {
+              "DOI": "10.1111/anec.12854",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.12"
+            },
+            {
+              "DOI": "10.1093/europace/euad014",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.13"
+            },
+            {
+              "DOI": "10.1016/j.ahj.2014.10.009",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.14"
+            },
+            {
+              "DOI": "10.1161/circulationaha.121.057480",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.15"
+            },
+            {
+              "DOI": "10.1001/jamacardio.2023.3701",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.16"
+            },
+            {
+              "DOI": "10.1161/circep.120.009355",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.17"
+            },
+            {
+              "DOI": "10.1161/CIRCULATIONAHA.120.047829",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.18"
+            },
+            {
+              "DOI": "10.1016/j.hrthm.2025.08.024",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.19"
+            },
+            {
+              "DOI": "10.1161/circep.125.013734",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.20"
+            },
+            {
+              "DOI": "10.1093/eurheartj/ehae595",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.21"
+            },
+            {
+              "DOI": "10.1093/jamiaopen/ooaf122",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.22"
+            },
+            {
+              "key": "2026040108551275000_2026.01.12.26343962v2.23",
+              "unstructured": "UK Biobank: Protocol for a Large-Scale Prospective Epidemiological Resource, 2007. https://www.ukbiobank.ac.uk/wp-content/uploads/2011/11/UK-Biobank-Protocol.pdf (06 February 2025, date last accessed)"
+            },
+            {
+              "DOI": "10.1186/s12968-016-0227-4",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.24"
+            },
+            {
+              "key": "2026040108551275000_2026.01.12.26343962v2.25",
+              "unstructured": "UK Biobank 12-lead (at rest) ECG, 2015 https://biobank.ndph.ox.ac.uk/ukb/ukb/docs/12lead_ecg_explan_doc.pdf (22 November 2025, date last accessed)"
+            },
+            {
+              "DOI": "10.1038/s41591-020-1009-y",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.26"
+            },
+            {
+              "DOI": "10.1038/s41467-021-25351-7",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.27"
+            },
+            {
+              "DOI": "10.1161/strokeaha.119.025384",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.28"
+            },
+            {
+              "DOI": "10.1038/s41597-025-04777-4",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.29"
+            },
+            {
+              "article-title": "[Evaluation of 3 chest leads CM5, CC5, and CL5 and factors which influence the results]",
+              "first-page": "103",
+              "issue": "2",
+              "journal-title": "Zhonghua Xin Xue Guan Bing Za Zhi",
+              "key": "2026040108551275000_2026.01.12.26343962v2.30",
+              "volume": "17",
+              "year": "1989"
+            },
+            {
+              "DOI": "10.1056/aioa2401033",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.31"
+            },
+            {
+              "DOI": "10.1016/j.xcrm.2024.101875",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.32"
+            },
+            {
+              "DOI": "10.1145/3746027.3755287",
+              "doi-asserted-by": "crossref",
+              "key": "2026040108551275000_2026.01.12.26343962v2.33",
+              "unstructured": "Nguyen HD , Pham T-T , Le N , Nguyen V. TolerantECG: A Foundation Model for Imperfect Electrocardiogram. arXiv preprint arXiv:250709887. 2025."
+            },
+            {
+              "DOI": "10.1161/JAHA.112.000102",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.34"
+            },
+            {
+              "DOI": "10.2307/2531595",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.35"
+            },
+            {
+              "DOI": "10.1161/CIRCHEARTFAILURE.115.003116",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.36"
+            },
+            {
+              "DOI": "10.1093/europace/eus305",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.37"
+            },
+            {
+              "DOI": "10.1016/j.crvasa.2012.11.004",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.38"
+            },
+            {
+              "key": "2026040108551275000_2026.01.12.26343962v2.39",
+              "unstructured": "Simonyan K , Vedaldi A , Zisserman A. Deep inside convolutional networks: Visualising image classification models and saliency maps. arXiv preprint arXiv:13126034. 2013."
+            },
+            {
+              "DOI": "10.1016/j.cpcardiol.2023.102181",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.40"
+            },
+            {
+              "DOI": "10.4103/jfcm.JFCM_99_18",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.41"
+            },
+            {
+              "DOI": "10.1007/s11886-020-01317-x",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.42"
+            },
+            {
+              "DOI": "10.1161/CIRCRESAHA.120.316340",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.43"
+            },
+            {
+              "DOI": "10.1161/str.0000000000000375",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.44"
+            },
+            {
+              "DOI": "10.1093/europace/euae071",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.45"
+            },
+            {
+              "DOI": "10.4022/jafib.2148",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.46"
+            },
+            {
+              "DOI": "10.31083/j.rcm2305154",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.47"
+            },
+            {
+              "DOI": "10.1136/openhrt-2023-002447",
+              "doi-asserted-by": "publisher",
+              "key": "2026040108551275000_2026.01.12.26343962v2.48"
+            }
+          ],
+          "reference-count": 48,
+          "references-count": 48,
+          "resource": {
+            "primary": {
+              "URL": "http://medrxiv.org/lookup/doi/10.64898/2026.01.12.26343962"
+            }
+          },
+          "score": 32.515484,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Deep learning enables diagnosis of atrial cardiomyopathy from routine 12-lead electrocardiogram"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.1016/j.ijcrp.2026.200674",
+          "ISSN": [
+            "2772-4875"
+          ],
+          "URL": "https://doi.org/10.1016/j.ijcrp.2026.200674",
+          "alternative-id": [
+            "S2772487526001042"
+          ],
+          "article-number": "200674",
+          "assertion": [
+            {
+              "label": "This article is maintained by",
+              "name": "publisher",
+              "value": "Elsevier"
+            },
+            {
+              "label": "Article Title",
+              "name": "articletitle",
+              "value": "Comment on “Deep Learning Model for Identifying Significant Tricuspid Regurgitation Using Standard 12-Lead Electrocardiogram”"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journaltitle",
+              "value": "International Journal of Cardiology Cardiovascular Risk and Prevention"
+            },
+            {
+              "label": "CrossRef DOI link to publisher maintained version",
+              "name": "articlelink",
+              "value": "https://doi.org/10.1016/j.ijcrp.2026.200674"
+            },
+            {
+              "label": "Content Type",
+              "name": "content_type",
+              "value": "simple-article"
+            },
+            {
+              "label": "Copyright",
+              "name": "copyright",
+              "value": "© 2026 Published by Elsevier B.V."
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Maddila",
+              "given": "Suresh Kumar",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0008-5422-3230",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Meruga",
+              "given": "Vishal Bharadwaj",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Kanakamedala",
+              "given": "Phaneendra",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "International Journal of Cardiology Cardiovascular Risk and Prevention"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "clinicalkey.com",
+              "clinicalkey.com.au",
+              "clinicalkey.es",
+              "clinicalkey.fr",
+              "clinicalkey.jp",
+              "elsevier.com",
+              "sciencedirect.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                1
+              ]
+            ],
+            "date-time": "2026-07-01T23:49:38Z",
+            "timestamp": 1782949778000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                1
+              ]
+            ],
+            "date-time": "2026-07-01T23:49:39Z",
+            "timestamp": 1782949779000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2026-07-02T00:44:06Z",
+            "timestamp": 1782953046667,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "2772-4875"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                7
+              ]
+            ]
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2026-07-01T00:00:00Z",
+                "timestamp": 1782864000000
+              }
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    7,
+                    1
+                  ]
+                ],
+                "date-time": "2026-07-01T00:00:00Z",
+                "timestamp": 1782864000000
+              }
+            },
+            {
+              "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    6,
+                    28
+                  ]
+                ],
+                "date-time": "2026-06-28T00:00:00Z",
+                "timestamp": 1782604800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S2772487526001042?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S2772487526001042?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "member": "78",
+          "page": "200674",
+          "prefix": "10.1016",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                7
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                7
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "article-title": "Deep learning model for identifying significant tricuspid regurgitation using standard 12-lead electrocardiogram",
+              "author": "Chang",
+              "journal-title": "Int J Cardiol Cardiovasc Risk Prev",
+              "key": "10.1016/j.ijcrp.2026.200674_bib1",
+              "volume": "28",
+              "year": "2026"
+            },
+            {
+              "DOI": "10.1016/j.gloepi.2025.100242",
+              "article-title": "On misconceptions about the Brier score in binary prediction models",
+              "author": "Hoessly",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Global epidemiology",
+              "key": "10.1016/j.ijcrp.2026.200674_bib2",
+              "volume": "11",
+              "year": "2026"
+            },
+            {
+              "DOI": "10.22159/ajpcr.2024v17i8.51243",
+              "article-title": "Understanding the sensitivity, specificity, and predictive values used in diagnostic tests",
+              "author": "Akula",
+              "doi-asserted-by": "crossref",
+              "first-page": "5",
+              "journal-title": "Asian Journal of Pharmaceutical and Clinical Research",
+              "key": "10.1016/j.ijcrp.2026.200674_bib3",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.3390/math14030398",
+              "article-title": "CUES: A Multiplicative Composite Metric for Evaluating Clinical Prediction Models Theory, Inference, and Properties",
+              "author": "Alqudah",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Mathematics",
+              "key": "10.1016/j.ijcrp.2026.200674_bib4",
+              "year": "2026"
+            },
+            {
+              "article-title": "Signal Fidelity Index-aware calibration for addressing distributional shift in predictive modeling across heterogeneous real-world data",
+              "author": "Cheng",
+              "journal-title": "Dental science reports",
+              "key": "10.1016/j.ijcrp.2026.200674_bib5",
+              "year": "2025"
+            }
+          ],
+          "reference-count": 5,
+          "references-count": 5,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2772487526001042"
+            }
+          },
+          "score": 31.75964,
+          "short-container-title": [
+            "International Journal of Cardiology Cardiovascular Risk and Prevention"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Comment on “Deep Learning Model for Identifying Significant Tricuspid Regurgitation Using Standard 12-Lead Electrocardiogram”"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy"
+        },
+        {
+          "DOI": "10.3233/jpd-223549",
+          "ISSN": [
+            "1877-7171",
+            "1877-718X"
+          ],
+          "URL": "https://doi.org/10.3233/jpd-223549",
+          "abstract": "<jats:sec>\n                    <jats:title>Background:</jats:title>\n                    <jats:p>Although idiopathic Parkinson’s disease (IPD) is increasing with the aging population, there is no adequate screening test for early diagnosis of IPD. Cardiac autonomic dysfunction begins in the early stages of IPD, and an electrocardiogram (ECG) contains precise information on the heart.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Objective:</jats:title>\n                    <jats:p>This study is to develop an ECG deep learning algorithm that can efficiently screen for IPD.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods:</jats:title>\n                    <jats:p>Data were collected from 751 IPD patients (2,138 ECGs), 751 age and sex-matched non-IPD patients (2,673 ECGs) as a control group, and 297 drug-induced Parkinsonism (DPD) patients (875 ECGs) as a disease control group. ECG data were randomly divided into training set, validation set, and test set at a ratio of 6:2:2. We developed a deep-convolutional neural network (CNN) consisting of 16 layers with Bayesian optimization that classified IPD patients by ECG data. The robustness of the deep learning model was verified through 5-fold cross-validation.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results:</jats:title>\n                    <jats:p>The AUROC of the model for detection of IPD was 0.924 (95% CI, 0.913–0.936) in the test set. That for detecting DPD was 0.473 (95% CI, 0.453–0.504). The sensitivities of the model according to Unified Parkinson’s Disease Rating Scale III and Hoehn &amp; Yahr scale were also similar.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion:</jats:title>\n                    <jats:p>In conclusion, the CNN-based deep learning model using ECG data showed quite good performance in identifying IPD patients. Standardized 12-lead ECG test could be one of the clinically feasible candidate methods for early screening of IPD in the future.</jats:p>\n                  </jats:sec>",
+          "alternative-id": [
+            "10.3233/JPD-223549"
+          ],
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Korea University Research Institute for Medical Bigdata Science, Korea University College of Medicine, Seoul, Republic of Korea"
+                }
+              ],
+              "family": "Yoo",
+              "given": "Hakje",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Biostatistics, Korea University College of Medicine, Seoul, Republic of Korea"
+                }
+              ],
+              "family": "Chung",
+              "given": "Se Hwa",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Neurology, Korea University Anam Hospital, Seoul, Republic of Korea"
+                }
+              ],
+              "family": "Lee",
+              "given": "Chan-Nyoung",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Medical Informatics, Korea University College of Medicine, Seoul, Republic of Korea"
+                },
+                {
+                  "name": "Division of Cardiology, Department of Internal Medicine, Korea University Anam Hospital, Seoul, Republic of Korea"
+                }
+              ],
+              "family": "Joo",
+              "given": "Hyung Joon",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Journal of Parkinson’s Disease"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "journals.sagepub.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                13
+              ]
+            ],
+            "date-time": "2023-01-13T12:32:08Z",
+            "timestamp": 1673613128000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                1
+              ]
+            ],
+            "date-time": "2026-05-01T04:52:24Z",
+            "timestamp": 1777611144000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                4
+              ]
+            ],
+            "date-time": "2026-05-04T09:58:03Z",
+            "timestamp": 1777888683081,
+            "version": "3.51.4"
+          },
+          "is-referenced-by-count": 9,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1877-7171"
+            },
+            {
+              "type": "electronic",
+              "value": "1877-718X"
+            }
+          ],
+          "issue": "1",
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                23
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "1",
+            "published-print": {
+              "date-parts": [
+                [
+                  2022,
+                  12,
+                  23
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    12,
+                    23
+                  ]
+                ],
+                "date-time": "2022-12-23T00:00:00Z",
+                "timestamp": 1671753600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://journals.sagepub.com/doi/pdf/10.3233/JPD-223549",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://journals.sagepub.com/doi/full-xml/10.3233/JPD-223549",
+              "content-type": "application/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://journals.sagepub.com/doi/pdf/10.3233/JPD-223549",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "179",
+          "page": "71-82",
+          "prefix": "10.1177",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                23
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                13
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                23
+              ]
+            ]
+          },
+          "publisher": "SAGE Publications",
+          "reference": [
+            {
+              "DOI": "10.1007/s00702-017-1686-y",
+              "doi-asserted-by": "publisher",
+              "key": "ref001"
+            },
+            {
+              "DOI": "10.3389/fnagi.2021.633752",
+              "doi-asserted-by": "publisher",
+              "key": "ref002"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2020.3016062",
+              "doi-asserted-by": "publisher",
+              "key": "ref003"
+            },
+            {
+              "DOI": "10.3390/brainsci11080959",
+              "doi-asserted-by": "publisher",
+              "key": "ref004"
+            },
+            {
+              "DOI": "10.1002/ana.24393",
+              "doi-asserted-by": "publisher",
+              "key": "ref005"
+            },
+            {
+              "DOI": "10.1038/s41598-020-68241-6",
+              "doi-asserted-by": "publisher",
+              "key": "ref006"
+            },
+            {
+              "DOI": "10.1161/JAHA.121.024045",
+              "doi-asserted-by": "publisher",
+              "key": "ref007"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2018.09.009",
+              "doi-asserted-by": "publisher",
+              "key": "ref008"
+            },
+            {
+              "author": "Yanfei L",
+              "first-page": "57",
+              "journal-title": "J Manufact Mater Process",
+              "key": "ref009",
+              "volume": "3",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1016/j.isatra.2022.01.013",
+              "doi-asserted-by": "publisher",
+              "key": "ref010"
+            },
+            {
+              "DOI": "10.1002/mp.15696",
+              "doi-asserted-by": "publisher",
+              "key": "ref011"
+            },
+            {
+              "DOI": "10.1016/j.gsf.2020.03.007",
+              "doi-asserted-by": "publisher",
+              "key": "ref012"
+            },
+            {
+              "DOI": "10.1503/cmaj.181504",
+              "doi-asserted-by": "publisher",
+              "key": "ref013"
+            },
+            {
+              "key": "ref014",
+              "unstructured": "National Collaborating Centre for Chronic Conditions (2006) Parkinson’s disease : National clinical guideline for diagnosis and management in primary and secondary care, Royal College of Physicians, London."
+            },
+            {
+              "DOI": "10.1161/CIRCULATIONAHA.119.044948",
+              "doi-asserted-by": "publisher",
+              "key": "ref015"
+            },
+            {
+              "DOI": "10.1016/j.parkreldis.2016.01.007",
+              "doi-asserted-by": "publisher",
+              "key": "ref016"
+            },
+            {
+              "DOI": "10.4081/ni.2017.7356",
+              "doi-asserted-by": "publisher",
+              "key": "ref017"
+            },
+            {
+              "DOI": "10.2147/IJGM.S296769",
+              "doi-asserted-by": "publisher",
+              "key": "ref018"
+            },
+            {
+              "DOI": "10.3390/jcm10071396",
+              "doi-asserted-by": "publisher",
+              "key": "ref019"
+            },
+            {
+              "DOI": "10.1080/01616412.2017.1390933",
+              "doi-asserted-by": "publisher",
+              "key": "ref020"
+            },
+            {
+              "DOI": "10.1002/mds.26424",
+              "doi-asserted-by": "publisher",
+              "key": "ref021"
+            },
+            {
+              "key": "ref022",
+              "unstructured": "AkbilgicO, KarabayirI, GunturkunF, GoldmanS, KamaleswaranRR, CollettaK, ChinthalaL, JefferiesJ, BobayK, RossG, PetrovitchH, MasakiK, TannerCM, Externally validated AI model to identify prodromal Parkinson’s disease from ECG, https://www.researchsquare.com/article/rs-1716898/v1, July 6, 2022, Accessed on December 24, 2022."
+            }
+          ],
+          "reference-count": 22,
+          "references-count": 22,
+          "resource": {
+            "primary": {
+              "URL": "https://journals.sagepub.com/doi/10.3233/JPD-223549"
+            }
+          },
+          "score": 31.737215,
+          "short-container-title": [
+            "Journal of Parkinson’s Disease"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Deep Learning Algorithm of 12-Lead Electrocardiogram for Parkinson Disease Screening"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+          "volume": "13"
+        },
+        {
+          "DOI": "10.1016/j.isci.2021.102373",
+          "ISSN": [
+            "2589-0042"
+          ],
+          "URL": "https://doi.org/10.1016/j.isci.2021.102373",
+          "alternative-id": [
+            "S2589004221003412"
+          ],
+          "article-number": "102373",
+          "assertion": [
+            {
+              "label": "This article is maintained by",
+              "name": "publisher",
+              "value": "Elsevier"
+            },
+            {
+              "label": "Article Title",
+              "name": "articletitle",
+              "value": "Interpretable deep learning for automatic diagnosis of 12-lead electrocardiogram"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journaltitle",
+              "value": "iScience"
+            },
+            {
+              "label": "CrossRef DOI link to publisher maintained version",
+              "name": "articlelink",
+              "value": "https://doi.org/10.1016/j.isci.2021.102373"
+            },
+            {
+              "label": "Content Type",
+              "name": "content_type",
+              "value": "article"
+            },
+            {
+              "label": "Copyright",
+              "name": "copyright",
+              "value": "© 2021 The Author(s)."
+            }
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-8619-2140",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Zhang",
+              "given": "Dongdong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2027-6771",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Yang",
+              "given": "Samuel",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Yuan",
+              "given": "Xiaohui",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-4601-0779",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Zhang",
+              "given": "Ping",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "iScience"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "cell.com",
+              "elsevier.com",
+              "sciencedirect.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2021,
+                3,
+                29
+              ]
+            ],
+            "date-time": "2021-03-29T18:48:57Z",
+            "timestamp": 1617043737000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                5
+              ]
+            ],
+            "date-time": "2025-08-05T17:47:36Z",
+            "timestamp": 1754416056000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/100000001",
+              "award": [
+                "CBET-2037398"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "CBET-2037398"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/100000001",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Science Foundation"
+            },
+            {
+              "DOI": "10.13039/100003187",
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/100003187",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "NSF"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                7
+              ]
+            ],
+            "date-time": "2026-07-07T15:12:21Z",
+            "timestamp": 1783437141902,
+            "version": "3.54.6"
+          },
+          "is-referenced-by-count": 168,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "2589-0042"
+            }
+          ],
+          "issue": "4",
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                4
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "4",
+            "published-print": {
+              "date-parts": [
+                [
+                  2021,
+                  4
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2021-04-01T00:00:00Z",
+                "timestamp": 1617235200000
+              }
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2021-04-01T00:00:00Z",
+                "timestamp": 1617235200000
+              }
+            },
+            {
+              "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    3,
+                    26
+                  ]
+                ],
+                "date-time": "2021-03-26T00:00:00Z",
+                "timestamp": 1616716800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S2589004221003412?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S2589004221003412?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "member": "78",
+          "page": "102373",
+          "prefix": "10.1016",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                4
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                4
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "DOI": "10.1080/13814788.2019.1639667",
+              "article-title": "Right bundle branch block: prevalence, incidence, and cardiovascular morbidity and mortality in the general population",
+              "author": "Alventosa-Zaidin",
+              "doi-asserted-by": "crossref",
+              "first-page": "109",
+              "journal-title": "Eur. J. Gen. Pract.",
+              "key": "10.1016/j.isci.2021.102373_bib1",
+              "volume": "25",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1007/s10840-006-9065-x",
+              "article-title": "First-degree atrioventricular block",
+              "author": "Barold",
+              "doi-asserted-by": "crossref",
+              "first-page": "139",
+              "journal-title": "J. Interv. Card. Electrophysiol.",
+              "key": "10.1016/j.isci.2021.102373_bib2",
+              "volume": "17",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1016/j.amjmed.2004.06.024",
+              "article-title": "Misdiagnosis of atrial fibrillation and its clinical consequences",
+              "author": "Bogun",
+              "doi-asserted-by": "crossref",
+              "first-page": "636",
+              "journal-title": "Am. J. Med.",
+              "key": "10.1016/j.isci.2021.102373_bib3",
+              "volume": "117",
+              "year": "2004"
+            },
+            {
+              "DOI": "10.1016/j.isci.2020.100886",
+              "article-title": "Detection and classification of cardiac arrhythmias by a challenge-best deep learning neural network model",
+              "author": "Chen",
+              "doi-asserted-by": "crossref",
+              "first-page": "100886",
+              "journal-title": "Iscience",
+              "key": "10.1016/j.isci.2021.102373_bib4",
+              "volume": "23",
+              "year": "2020"
+            },
+            {
+              "article-title": "AF classification from a short single lead ECG recording: The PhysioNet/computing in cardiology challenge 2017",
+              "author": "Clifford",
+              "journal-title": "Comput Cardiol",
+              "key": "10.1016/j.isci.2021.102373_bib39",
+              "year": "2017"
+            },
+            {
+              "article-title": "Identifying normal, AF and other abnormal ECG rhythms using a cascaded binary classifier",
+              "author": "Datta",
+              "journal-title": "Comput Cardiol",
+              "key": "10.1016/j.isci.2021.102373_bib38",
+              "year": "2017"
+            },
+            {
+              "article-title": "Using wavelet coefficients for the classification of the electrocardiogram",
+              "author": "De Chazal",
+              "journal-title": "Proceedings of the 22nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society (Cat. No. 00CH37143)",
+              "key": "10.1016/j.isci.2021.102373_bib40",
+              "year": "2000"
+            },
+            {
+              "DOI": "10.1038/s41591-018-0316-z",
+              "article-title": "A guide to deep learning in healthcare",
+              "author": "Esteva",
+              "doi-asserted-by": "crossref",
+              "first-page": "24",
+              "journal-title": "Nat. Med.",
+              "key": "10.1016/j.isci.2021.102373_bib8",
+              "volume": "25",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1007/s10618-020-00710-y",
+              "article-title": "Inceptiontime: finding alexnet for time series classification",
+              "author": "Fawaz",
+              "doi-asserted-by": "crossref",
+              "first-page": "1936",
+              "journal-title": "Data Mining Knowledge Discov.",
+              "key": "10.1016/j.isci.2021.102373_bib9",
+              "volume": "34",
+              "year": "2020"
+            },
+            {
+              "author": "Goldberger",
+              "key": "10.1016/j.isci.2021.102373_bib10",
+              "series-title": "Clinical Electrocardiography: A Simplified Approach E-Book",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1016/S0735-1097(01)01564-9",
+              "article-title": "Lead aVR, a mostly ignored but very valuable lead in clinical electrocardiography∗",
+              "author": "Gorgels",
+              "doi-asserted-by": "crossref",
+              "first-page": "1355",
+              "journal-title": "J. Am. Coll. Cardiol.",
+              "key": "10.1016/j.isci.2021.102373_bib11",
+              "volume": "38",
+              "year": "2001"
+            },
+            {
+              "article-title": "Atrial fibrillation: diagnosis and treatment",
+              "author": "Gutierrez",
+              "first-page": "61",
+              "journal-title": "Am. Fam. Phys.",
+              "key": "10.1016/j.isci.2021.102373_bib12",
+              "volume": "83",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1038/s41591-018-0268-3",
+              "article-title": "Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network",
+              "author": "Hannun",
+              "doi-asserted-by": "crossref",
+              "first-page": "65",
+              "journal-title": "Nat. Med.",
+              "key": "10.1016/j.isci.2021.102373_bib13",
+              "volume": "25",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2019.2931500",
+              "article-title": "Automatic cardiac arrhythmia classification using combination of deep residual network and bidirectional LSTM",
+              "author": "He",
+              "doi-asserted-by": "crossref",
+              "first-page": "102119",
+              "journal-title": "IEEE Access",
+              "key": "10.1016/j.isci.2021.102373_bib14",
+              "volume": "7",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1162/neco.1997.9.8.1735",
+              "article-title": "Long short-term memory",
+              "author": "Hochreiter",
+              "doi-asserted-by": "crossref",
+              "first-page": "1735",
+              "journal-title": "Neural Comput.",
+              "key": "10.1016/j.isci.2021.102373_bib15",
+              "volume": "9",
+              "year": "1997"
+            },
+            {
+              "DOI": "10.1046/j.1365-2281.1999.00195.x",
+              "article-title": "A confident decision support system for interpreting electrocardiograms",
+              "author": "Holst",
+              "doi-asserted-by": "crossref",
+              "first-page": "410",
+              "journal-title": "Clin. Physiol.",
+              "key": "10.1016/j.isci.2021.102373_bib16",
+              "volume": "19",
+              "year": "1999"
+            },
+            {
+              "article-title": "ENCASE: An ENsemble ClASsifiEr for ECG classification using expert features and deep neural networks",
+              "author": "Hong",
+              "journal-title": "Comput Cardiol",
+              "key": "10.1016/j.isci.2021.102373_bib41",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2020.103801",
+              "article-title": "Opportunities and challenges of deep learning methods for electrocardiogram data: a systematic review",
+              "author": "Hong",
+              "doi-asserted-by": "crossref",
+              "first-page": "103801",
+              "journal-title": "Comput. Biol. Med.",
+              "key": "10.1016/j.isci.2021.102373_bib18",
+              "year": "2020"
+            },
+            {
+              "article-title": "Classification of ECG signals using machine learning techniques: a survey",
+              "author": "Jambukia",
+              "journal-title": "015 International Conference on Advances in Computer Engineering and Applications",
+              "key": "10.1016/j.isci.2021.102373_bib42",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1038/nature14539",
+              "article-title": "Deep learning",
+              "author": "LeCun",
+              "doi-asserted-by": "crossref",
+              "first-page": "436",
+              "journal-title": "Nature",
+              "key": "10.1016/j.isci.2021.102373_bib20",
+              "volume": "521",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1097/CCM.0000000000004494",
+              "article-title": "A time-phased machine learning model for real-time prediction of sepsis in critical care",
+              "author": "Li",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Crit. Care Med.",
+              "key": "10.1016/j.isci.2021.102373_bib21",
+              "year": "2020"
+            },
+            {
+              "article-title": "An open access database for evaluating the algorithms of electrocardiogram rhythm and morphology abnormality detection",
+              "author": "Liu",
+              "first-page": "1368",
+              "journal-title": "J. Med. Imaging Health Inform.",
+              "key": "10.1016/j.isci.2021.102373_bib22",
+              "volume": "8",
+              "year": "2018"
+            },
+            {
+              "article-title": "Automatic identification of abnormalities in 12-lead ecgs using expert features and convolutional neural networks",
+              "author": "Liu",
+              "first-page": "163",
+              "key": "10.1016/j.isci.2021.102373_bib23",
+              "year": "2018"
+            },
+            {
+              "article-title": "From local explanations to global understanding with explainable AI for trees",
+              "author": "Lundberg",
+              "first-page": "2522",
+              "journal-title": "Nat. Mach. Intelligence",
+              "key": "10.1016/j.isci.2021.102373_bib24",
+              "volume": "2",
+              "year": "2020"
+            },
+            {
+              "article-title": "A unified approach to interpreting model predictions",
+              "author": "Lundberg",
+              "first-page": "4765",
+              "journal-title": "Adv Neural Inf Process Syst",
+              "key": "10.1016/j.isci.2021.102373_bib43",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CIC.2005.1588134",
+              "article-title": "The university of Glasgow (Uni-G) ECG analysis program",
+              "author": "Macfarlane",
+              "doi-asserted-by": "crossref",
+              "first-page": "451",
+              "journal-title": "Comput Cardiol",
+              "key": "10.1016/j.isci.2021.102373_bib44",
+              "year": "2005"
+            },
+            {
+              "DOI": "10.1161/JAHA.113.000268",
+              "article-title": "Physician accuracy in interpreting potential ST-segment elevation myocardial infarction electrocardiograms",
+              "author": "McCabe",
+              "doi-asserted-by": "crossref",
+              "first-page": "e000268",
+              "journal-title": "J. Am. Heart Assoc.",
+              "key": "10.1016/j.isci.2021.102373_bib27",
+              "volume": "2",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1109/51.932724",
+              "article-title": "The impact of the MIT-BIH arrhythmia database",
+              "author": "Moody",
+              "doi-asserted-by": "crossref",
+              "first-page": "45",
+              "journal-title": "IEEE Eng. Med. Biol. Mag.",
+              "key": "10.1016/j.isci.2021.102373_bib28",
+              "volume": "20",
+              "year": "2001"
+            },
+            {
+              "article-title": "Deep learning for ECG analysis: benchmarks and insights from PTB-XL",
+              "author": "Strodthoff",
+              "journal-title": "arXiv",
+              "key": "10.1016/j.isci.2021.102373_bib30",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.3390/rs12101685",
+              "article-title": "Classification of arrhythmia by using deep learning with 2-D ECG spectral image representation",
+              "author": "Ullah",
+              "doi-asserted-by": "crossref",
+              "first-page": "1685",
+              "journal-title": "Remote Sens.",
+              "key": "10.1016/j.isci.2021.102373_bib31",
+              "volume": "12",
+              "year": "2020"
+            },
+            {
+              "article-title": "Heart disease and stroke statistics—2020 update: a report from the American Heart Association",
+              "author": "Virani",
+              "first-page": "E139",
+              "journal-title": "Circulation",
+              "key": "10.1016/j.isci.2021.102373_bib32",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1038/s41597-020-0495-6",
+              "article-title": "PTB-XL, a large publicly available electrocardiography dataset",
+              "author": "Wagner",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "journal-title": "Sci. Data",
+              "key": "10.1016/j.isci.2021.102373_bib33",
+              "volume": "7",
+              "year": "2020"
+            },
+            {
+              "author": "World Health Organization",
+              "key": "10.1016/j.isci.2021.102373_bib29",
+              "series-title": "Global Status Report on Noncommunicable Diseases 2014. Number WHO/NMH/NVI/15.1",
+              "year": "2014"
+            },
+            {
+              "article-title": "Time-incremental convolutional neural network for arrhythmia detection in varied-length electrocardiogram",
+              "author": "Yao",
+              "journal-title": "2018 IEEE 16th Intl Conf on Dependable, Autonomic and Secure Computing, 16th Intl Conf on Pervasive Intelligence and Computing, 4th Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress(DASC/PiCom/DataCom/CyberSciTech)",
+              "key": "10.1016/j.isci.2021.102373_bib46",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/S2589-7500(20)30107-2",
+              "article-title": "Automatic multilabel electrocardiogram diagnosis of heart rhythm or conduction abnormalities with deep learning: a cohort study",
+              "author": "Zhu",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Lancet Digital Health",
+              "key": "10.1016/j.isci.2021.102373_bib35",
+              "year": "2020"
+            }
+          ],
+          "reference-count": 35,
+          "references-count": 35,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2589004221003412"
+            }
+          },
+          "score": 31.36685,
+          "short-container-title": [
+            "iScience"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Interpretable deep learning for automatic diagnosis of 12-lead electrocardiogram"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "volume": "24"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 783544
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "fc3913a694b6bbdad384b70e0b4ea2422b5e414c696b02ef9cf2d08943e2277a",
+  "retrieved_at": "2026-07-14T13:51:26Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

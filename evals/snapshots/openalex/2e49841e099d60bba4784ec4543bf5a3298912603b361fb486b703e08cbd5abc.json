@@ -1,0 +1,388 @@
+{
+  "endpoint": "works/doi:10.1016/j.micpro.2021.104006",
+  "request_key": "2e49841e099d60bba4784ec4543bf5a3298912603b361fb486b703e08cbd5abc",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102412"
+            ],
+            "raw_affiliation_string": "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yuhong Lyu",
+          "id": "https://openalex.org/A5013241146",
+          "orcid": "https://orcid.org/0000-0003-1859-2457"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Yan'an University",
+            "id": "https://openalex.org/I4210102412",
+            "lineage": [
+              "https://openalex.org/I4210102412"
+            ],
+            "ror": "https://ror.org/01dyr7034",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+        ],
+        "raw_author_name": "Yuhong Lyu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102412"
+            ],
+            "raw_affiliation_string": "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+          }
+        ],
+        "author": {
+          "display_name": "Lanlin Wang",
+          "id": "https://openalex.org/A5056008763",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Yan'an University",
+            "id": "https://openalex.org/I4210102412",
+            "lineage": [
+              "https://openalex.org/I4210102412"
+            ],
+            "ror": "https://ror.org/01dyr7034",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+        ],
+        "raw_author_name": "Lanlin Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102412"
+            ],
+            "raw_affiliation_string": "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+          }
+        ],
+        "author": {
+          "display_name": "Rui Sun",
+          "id": "https://openalex.org/A5111684213",
+          "orcid": "https://orcid.org/0000-0002-7378-7997"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Yan'an University",
+            "id": "https://openalex.org/I4210102412",
+            "lineage": [
+              "https://openalex.org/I4210102412"
+            ],
+            "ror": "https://ror.org/01dyr7034",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+        ],
+        "raw_author_name": "Rui Sun",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102412"
+            ],
+            "raw_affiliation_string": "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+          }
+        ],
+        "author": {
+          "display_name": "Zexin Li",
+          "id": "https://openalex.org/A5103043367",
+          "orcid": "https://orcid.org/0000-0002-5033-8064"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Yan'an University",
+            "id": "https://openalex.org/I4210102412",
+            "lineage": [
+              "https://openalex.org/I4210102412"
+            ],
+            "ror": "https://ror.org/01dyr7034",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+        ],
+        "raw_author_name": "Zexin Li",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102412"
+            ],
+            "raw_affiliation_string": "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+          }
+        ],
+        "author": {
+          "display_name": "Xuemi Wang",
+          "id": "https://openalex.org/A5089328125",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Yan'an University",
+            "id": "https://openalex.org/I4210102412",
+            "lineage": [
+              "https://openalex.org/I4210102412"
+            ],
+            "ror": "https://ror.org/01dyr7034",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+        ],
+        "raw_author_name": "Xuemi Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102412"
+            ],
+            "raw_affiliation_string": "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+          }
+        ],
+        "author": {
+          "display_name": "Ruirui Guo",
+          "id": "https://openalex.org/A5090138734",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Yan'an University",
+            "id": "https://openalex.org/I4210102412",
+            "lineage": [
+              "https://openalex.org/I4210102412"
+            ],
+            "ror": "https://ror.org/01dyr7034",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+        ],
+        "raw_author_name": "Ruirui Guo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210102412"
+            ],
+            "raw_affiliation_string": "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+          }
+        ],
+        "author": {
+          "display_name": "Changwu Yue",
+          "id": "https://openalex.org/A5102934186",
+          "orcid": "https://orcid.org/0000-0003-2679-5772"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Yan'an University",
+            "id": "https://openalex.org/I4210102412",
+            "lineage": [
+              "https://openalex.org/I4210102412"
+            ],
+            "ror": "https://ror.org/01dyr7034",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Yan'an key Laboratory of Microbial Drug Innovation and Transformation, College of Medicine, Yan'an University, Yan'an, Shaanxi, 716000, China"
+        ],
+        "raw_author_name": "Changwu Yue",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "104006",
+      "issue": null,
+      "last_page": "104006",
+      "volume": "83"
+    },
+    "cited_by_count": 1,
+    "display_name": "RETRACTED: Microprocessor in vitro simulation system applied to the separation of intestinal flora and fermented food microorganisms",
+    "doi": "https://doi.org/10.1016/j.micpro.2021.104006",
+    "id": "https://openalex.org/W3119427977",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.micpro.2021.104006",
+      "mag": "3119427977",
+      "openalex": "https://openalex.org/W3119427977"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.micpro.2021.104006",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.micpro.2021.104006",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Microprocessors and Microsystems",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Microprocessors and Microsystems",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S195663827",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0141-9331",
+          "1872-9436"
+        ],
+        "issn_l": "0141-9331",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2021-01-14",
+    "publication_year": 2021,
+    "referenced_works": [
+      "https://openalex.org/W1978628672",
+      "https://openalex.org/W1997660118",
+      "https://openalex.org/W2018539489",
+      "https://openalex.org/W2055363220",
+      "https://openalex.org/W2055844586",
+      "https://openalex.org/W2059760351",
+      "https://openalex.org/W2059943137",
+      "https://openalex.org/W2073281518",
+      "https://openalex.org/W2109670289",
+      "https://openalex.org/W2121369528",
+      "https://openalex.org/W2134434833",
+      "https://openalex.org/W2151468625",
+      "https://openalex.org/W2156075760",
+      "https://openalex.org/W2163798052",
+      "https://openalex.org/W2326940360",
+      "https://openalex.org/W2534411064",
+      "https://openalex.org/W2913034571",
+      "https://openalex.org/W3024442875",
+      "https://openalex.org/W3080383203",
+      "https://openalex.org/W4231181264",
+      "https://openalex.org/W4238066651",
+      "https://openalex.org/W4239460133",
+      "https://openalex.org/W4239719731",
+      "https://openalex.org/W4242291535",
+      "https://openalex.org/W4243637058",
+      "https://openalex.org/W4247096085",
+      "https://openalex.org/W4247215315",
+      "https://openalex.org/W4248252780",
+      "https://openalex.org/W4248313936",
+      "https://openalex.org/W4248668657",
+      "https://openalex.org/W4248952589",
+      "https://openalex.org/W4253239409",
+      "https://openalex.org/W4255525509",
+      "https://openalex.org/W6632047875",
+      "https://openalex.org/W6645011248",
+      "https://openalex.org/W6655163988",
+      "https://openalex.org/W6664182325",
+      "https://openalex.org/W6664437604",
+      "https://openalex.org/W6665272479",
+      "https://openalex.org/W6665302641",
+      "https://openalex.org/W6668461717",
+      "https://openalex.org/W6676358992",
+      "https://openalex.org/W6679650110",
+      "https://openalex.org/W6684197746",
+      "https://openalex.org/W6701323632",
+      "https://openalex.org/W6728852672",
+      "https://openalex.org/W6825141983",
+      "https://openalex.org/W6827048079"
+    ],
+    "referenced_works_count": 48,
+    "title": "RETRACTED: Microprocessor in vitro simulation system applied to the separation of intestinal flora and fermented food microorganisms",
+    "type": "article"
+  },
+  "response_hash": "262f5660892d7064452275e8f902414c5ddef2d8b6037ac949cb566099a0b7f5",
+  "retrieved_at": "2026-07-14T13:48:47Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

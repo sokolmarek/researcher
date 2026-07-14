@@ -1,0 +1,169 @@
+{
+  "endpoint": "dois",
+  "request_key": "0796cf5a64f9098befd483545ecf62730c32769ddb65e62f80be10acd948407b",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self-Supervised Video Representation Learning with Space-Time Cubic Puzzles"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-03-01T09:08:40Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Kim",
+              "givenName": "Dahun",
+              "name": "Kim, Dahun",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Cho",
+              "givenName": "Donghyeon",
+              "name": "Cho, Donghyeon",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Kweon",
+              "givenName": "In So",
+              "name": "Kweon, In So",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2018-11-24T09:08:08Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2018-11-27T01:07:17Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2018-11",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2018",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Self-supervised tasks such as colorization, inpainting and zigsaw puzzle have been utilized for visual representation learning for still images, when the number of labeled images is limited or absent at all. Recently, this worthwhile stream of study extends to video domain where the cost of human labeling is even more expensive. However, the most of existing methods are still based on 2D CNN architectures that can not directly capture spatio-temporal information for video applications. In this paper, we introduce a new self-supervised task called as \\textit{Space-Time Cubic Puzzles} to train 3D CNNs using large scale video dataset. This task requires a network to arrange permuted 3D spatio-temporal crops. By completing \\textit{Space-Time Cubic Puzzles}, the network learns both spatial appearance and temporal relation of video frames, which is our final goal. In experiments, we demonstrate that our learned 3D representation is well transferred to action recognition tasks, and outperforms state-of-the-art 2D CNN-based competitors on UCF101 and HMDB51 datasets.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted to AAAI 2019",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.1811.09795",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "1811.09795",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2018,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-03-01T09:08:41Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Self-Supervised Video Representation Learning with Space-Time Cubic Puzzles"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-03-01T09:08:41Z",
+          "url": "https://arxiv.org/abs/1811.09795",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.1811.09795",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Self-Supervised+Video+Representation+Learning+with+Space-Time+Cubic+Puzzles&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "1ffb2e5c670d41007b1d1c1a3422c0185bc9420977f88ffd191ed0720c7c222d",
+  "retrieved_at": "2026-07-14T14:48:34Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

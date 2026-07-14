@@ -1,0 +1,558 @@
+{
+  "endpoint": "works/doi:10.1016/j.hrthm.2018.06.037",
+  "request_key": "3ab4f5689ccb6ba434c43448d613d51c773fe4040ba151277b08a5fde2b91097",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Amila D. William",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Amila D. William",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I88694374"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Marshall University, Huntington, West Virginia"
+          }
+        ],
+        "author": {
+          "display_name": "Majd Kanbour",
+          "id": "https://openalex.org/A5061871208",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Marshall University",
+            "id": "https://openalex.org/I88694374",
+            "lineage": [
+              "https://openalex.org/I88694374"
+            ],
+            "ror": "https://ror.org/02erqft81",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Marshall University, Huntington, West Virginia"
+        ],
+        "raw_author_name": "Majd Kanbour",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Thomas Callahan",
+          "id": "https://openalex.org/A5033048744",
+          "orcid": "https://orcid.org/0000-0001-5281-7598"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Thomas Callahan",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Mandeep Bhargava",
+          "id": "https://openalex.org/A5074710268",
+          "orcid": "https://orcid.org/0000-0002-8287-8014"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Mandeep Bhargava",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Niraj Varma",
+          "id": "https://openalex.org/A5036210507",
+          "orcid": "https://orcid.org/0000-0003-2296-2596"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Niraj Varma",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "John Rickard",
+          "id": "https://openalex.org/A5106670979",
+          "orcid": "https://orcid.org/0000-0002-1559-0803"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "John Rickard",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Walid I. Saliba",
+          "id": "https://openalex.org/A5035774466",
+          "orcid": "https://orcid.org/0000-0003-3324-8611"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Walid Saliba",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210152177",
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Cleveland Clinic Coordinating Center for Clinical Research, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Kathy Wolski",
+          "id": "https://openalex.org/A5109410977",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Center for Clinical Research (United States)",
+            "id": "https://openalex.org/I4210152177",
+            "lineage": [
+              "https://openalex.org/I4210152177"
+            ],
+            "ror": "https://ror.org/05fnzzk18",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cleveland Clinic Coordinating Center for Clinical Research, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Kathy Wolski",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Ayman A. Hussein",
+          "id": "https://openalex.org/A5051621921",
+          "orcid": "https://orcid.org/0000-0002-8359-1525"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Ayman Hussein",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Bruce D. Lindsay",
+          "id": "https://openalex.org/A5109208531",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Bruce D. Lindsay",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Oussama M. Wazni",
+          "id": "https://openalex.org/A5076919385",
+          "orcid": "https://orcid.org/0000-0001-7115-7716"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Oussama M. Wazni",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio. Electronic address: tarakjk@ccf.org"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I1316902750"
+            ],
+            "raw_affiliation_string": "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+          }
+        ],
+        "author": {
+          "display_name": "Khaldoun G. Tarakji",
+          "id": "https://openalex.org/A5046071151",
+          "orcid": "https://orcid.org/0000-0002-3662-2886"
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Cleveland Clinic",
+            "id": "https://openalex.org/I1316902750",
+            "lineage": [
+              "https://openalex.org/I1316902750"
+            ],
+            "ror": "https://ror.org/03xjacd83",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio. Electronic address: tarakjk@ccf.org",
+          "Department of Cardiovascular Medicine, Cleveland Clinic, Cleveland, Ohio"
+        ],
+        "raw_author_name": "Khaldoun G. Tarakji",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "1561",
+      "issue": "10",
+      "last_page": "1565",
+      "volume": "15"
+    },
+    "cited_by_count": 157,
+    "display_name": "Assessing the accuracy of an automated atrial fibrillation detection algorithm using smartphone technology: The iREAD Study",
+    "doi": "https://doi.org/10.1016/j.hrthm.2018.06.037",
+    "id": "https://openalex.org/W2888509599",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.hrthm.2018.06.037",
+      "mag": "2888509599",
+      "openalex": "https://openalex.org/W2888509599",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/30143448"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.hrthm.2018.06.037",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.hrthm.2018.06.037",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Heart Rhythm",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Heart Rhythm",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S163651451",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1547-5271",
+          "1556-3871"
+        ],
+        "issn_l": "1547-5271",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2018-08-21",
+    "publication_year": 2018,
+    "referenced_works": [
+      "https://openalex.org/W1616073113",
+      "https://openalex.org/W1988256277",
+      "https://openalex.org/W2013697141",
+      "https://openalex.org/W2040115230",
+      "https://openalex.org/W2071859760",
+      "https://openalex.org/W2108790161",
+      "https://openalex.org/W2121394112",
+      "https://openalex.org/W2133435868",
+      "https://openalex.org/W2147018083",
+      "https://openalex.org/W2170350621",
+      "https://openalex.org/W2509438383",
+      "https://openalex.org/W2612100421",
+      "https://openalex.org/W2752766789",
+      "https://openalex.org/W6676550427"
+    ],
+    "referenced_works_count": 14,
+    "title": "Assessing the accuracy of an automated atrial fibrillation detection algorithm using smartphone technology: The iREAD Study",
+    "type": "article"
+  },
+  "response_hash": "1a692ca4f6494c1c129e25c3def440c19dc0f5fc5c55c2ee83bcee4e3548bd98",
+  "retrieved_at": "2026-07-14T14:48:46Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

@@ -1,0 +1,638 @@
+{
+  "endpoint": "works/doi:10.5281/zenodo.18433633",
+  "request_key": "557271a1c0bc2a11e693f927b880f5e8f5ac7bf44b8f6458a56a7e01a52335b6",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "(.h5ad)": [
+        39
+      ],
+      "(Candeli": [
+        32
+      ],
+      "(Conchola": [
+        92,
+        119
+      ],
+      "(Miller": [
+        79
+      ],
+      "(https://github.com/daytonlab/NEr-fAOs_2026)": [
+        47
+      ],
+      "(scRNA-seq)": [
+        7
+      ],
+      "2020)": [
+        82
+      ],
+      "2023)": [
+        122
+      ],
+      "2023).": [
+        95
+      ],
+      "2026)": [
+        35
+      ],
+      "AnnData": [
+        38
+      ],
+      "CellTagged": [
+        96
+      ],
+      "Conchola2023CellTagging.zip:": [
+        123
+      ],
+      "Conchola2023FetalEpithelium.zip:": [
+        83
+      ],
+      "Human": [
+        61
+      ],
+      "NEr-fAOs": [
+        15
+      ],
+      "NEr_fAOs_processed.zip:": [
+        48
+      ],
+      "Processed": [
+        49,
+        84,
+        124
+      ],
+      "RNA": [
+        5
+      ],
+      "STARsolo.velocyto_NEr-fAOs.h5ad:": [
+        36
+      ],
+      "This": [
+        0
+      ],
+      "Unprocessed": [
+        37
+      ],
+      "Zenodo": [
+        1
+      ],
+      "airway": [
+        19,
+        75,
+        106
+      ],
+      "al.,": [
+        34,
+        81,
+        94,
+        121
+      ],
+      "analyses.": [
+        60
+      ],
+      "analysis": [
+        45
+      ],
+      "and": [
+        25,
+        53,
+        58,
+        68,
+        111,
+        128
+      ],
+      "annotation": [
+        91
+      ],
+      "associated": [
+        9
+      ],
+      "at": [
+        76
+      ],
+      "below.": [
+        14
+      ],
+      "cells": [
+        102,
+        113
+      ],
+      "cells”": [
+        31
+      ],
+      "contains": [
+        3
+      ],
+      "corresponding": [
+        54,
+        129
+      ],
+      "datasets": [
+        8
+      ],
+      "developing": [
+        116
+      ],
+      "development": [
+        71
+      ],
+      "distinct": [
+        100
+      ],
+      "downstream": [
+        59
+      ],
+      "enables": [
+        22
+      ],
+      "et": [
+        33,
+        80,
+        93,
+        120
+      ],
+      "expansion": [
+        24
+      ],
+      "expression": [
+        51,
+        86,
+        126
+      ],
+      "fetal": [
+        62
+      ],
+      "for": [
+        56
+      ],
+      "gene": [
+        50,
+        85,
+        125
+      ],
+      "give": [
+        107
+      ],
+      "human": [
+        18,
+        74,
+        117
+      ],
+      "in": [
+        69,
+        103,
+        114
+      ],
+      "listed": [
+        13
+      ],
+      "lower": [
+        105
+      ],
+      "lung": [
+        63,
+        97
+      ],
+      "lung”": [
+        118
+      ],
+      "mapping": [
+        27
+      ],
+      "matrices": [
+        52,
+        87,
+        127
+      ],
+      "metadata": [
+        55,
+        90
+      ],
+      "metadata.": [
+        130
+      ],
+      "multiciliated": [
+        112
+      ],
+      "neuroendocrine": [
+        30,
+        110
+      ],
+      "object": [
+        40
+      ],
+      "of": [
+        28,
+        72
+      ],
+      "organoid": [
+        20
+      ],
+      "organoids": [
+        98
+      ],
+      "pipeline": [
+        46
+      ],
+      "platform": [
+        21
+      ],
+      "primary": [
+        64
+      ],
+      "progenitor": [
+        101
+      ],
+      "publications": [
+        12
+      ],
+      "pulmonary": [
+        29
+      ],
+      "repository": [
+        2
+      ],
+      "resolution”": [
+        78
+      ],
+      "reuse": [
+        57
+      ],
+      "rise": [
+        108
+      ],
+      "robust": [
+        17
+      ],
+      "run": [
+        43
+      ],
+      "scalable": [
+        23
+      ],
+      "sequencing": [
+        6
+      ],
+      "single-cell": [
+        4,
+        77
+      ],
+      "the": [
+        11,
+        44,
+        73,
+        104,
+        115
+      ],
+      "tissue": [
+        65
+      ],
+      "to": [
+        42,
+        109
+      ],
+      "trajectory": [
+        26
+      ],
+      "updated": [
+        89
+      ],
+      "used": [
+        41
+      ],
+      "vitro": [
+        67
+      ],
+      "vivo": [
+        70
+      ],
+      "with": [
+        10,
+        88
+      ],
+      "“A": [
+        16
+      ],
+      "“In": [
+        66
+      ],
+      "“Regionally": [
+        99
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "European Molecular Biology Laboratory"
+          }
+        ],
+        "author": {
+          "display_name": "Noah Candeli",
+          "id": "https://openalex.org/A5098940379",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "European Molecular Biology Laboratory"
+        ],
+        "raw_author_name": "Candeli, Noah",
+        "raw_orcid": "https://orcid.org/0000-0001-8087-1321"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "European Molecular Biology Laboratory"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210115206"
+            ],
+            "raw_affiliation_string": "Hubrecht Institute for Developmental Biology and Stem Cell Research"
+          }
+        ],
+        "author": {
+          "display_name": "Talya L. Dayton",
+          "id": "https://openalex.org/A5068977621",
+          "orcid": "https://orcid.org/0000-0002-7994-7963"
+        },
+        "author_position": "middle",
+        "countries": [
+          "NL"
+        ],
+        "institutions": [
+          {
+            "country_code": "NL",
+            "display_name": "Hubrecht Institute for Developmental Biology and Stem Cell Research",
+            "id": "https://openalex.org/I4210115206",
+            "lineage": [
+              "https://openalex.org/I1322597698",
+              "https://openalex.org/I4210115206"
+            ],
+            "ror": "https://ror.org/023qc4a07",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "European Molecular Biology Laboratory",
+          "Hubrecht Institute for Developmental Biology and Stem Cell Research"
+        ],
+        "raw_author_name": "Dayton, Talya",
+        "raw_orcid": "https://orcid.org/0000-0002-7994-7963"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "European Molecular Biology Laboratory"
+          }
+        ],
+        "author": {
+          "display_name": "Andrés Marco Giménez",
+          "id": "https://openalex.org/A5124461288",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "European Molecular Biology Laboratory"
+        ],
+        "raw_author_name": "Marco Giménez, Andrés",
+        "raw_orcid": "https://orcid.org/0000-0002-9831-8433"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "European Molecular Biology Laboratory"
+          }
+        ],
+        "author": {
+          "display_name": "José Antonio Sánchez Villicaña",
+          "id": "https://openalex.org/A5124961216",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "European Molecular Biology Laboratory"
+        ],
+        "raw_author_name": "José Antonio Sánchez Villicaña",
+        "raw_orcid": "https://orcid.org/0009-0006-7138-420X"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I27837315"
+            ],
+            "raw_affiliation_string": "University of Michigan"
+          }
+        ],
+        "author": {
+          "display_name": "Miller, Alyssa",
+          "id": null,
+          "orcid": "https://orcid.org/0000-0002-4069-1550"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Michigan",
+            "id": "https://openalex.org/I27837315",
+            "lineage": [
+              "https://openalex.org/I27837315"
+            ],
+            "ror": "https://ror.org/00jmfr291",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Michigan"
+        ],
+        "raw_author_name": "Miller, Alyssa",
+        "raw_orcid": "https://orcid.org/0000-0002-4069-1550"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I27837315"
+            ],
+            "raw_affiliation_string": "University of Michigan Medical School"
+          }
+        ],
+        "author": {
+          "display_name": "Ansley S. Conchola",
+          "id": "https://openalex.org/A5090265299",
+          "orcid": "https://orcid.org/0000-0002-2385-6712"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Michigan",
+            "id": "https://openalex.org/I27837315",
+            "lineage": [
+              "https://openalex.org/I27837315"
+            ],
+            "ror": "https://ror.org/00jmfr291",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Michigan Medical School"
+        ],
+        "raw_author_name": "Conchola, Ansley",
+        "raw_orcid": "https://orcid.org/0000-0002-2385-6712"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I27837315"
+            ],
+            "raw_affiliation_string": "University of Michigan"
+          }
+        ],
+        "author": {
+          "display_name": "Jason R. Spence",
+          "id": "https://openalex.org/A5040983764",
+          "orcid": "https://orcid.org/0000-0001-7869-3992"
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Michigan",
+            "id": "https://openalex.org/I27837315",
+            "lineage": [
+              "https://openalex.org/I27837315"
+            ],
+            "ror": "https://ror.org/00jmfr291",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Michigan"
+        ],
+        "raw_author_name": "Spence, Jason",
+        "raw_orcid": "https://orcid.org/0000-0001-7869-3992"
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.5281/zenodo.18433633",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.5281/zenodo.18433633",
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Dataset",
+      "source": {
+        "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+        "host_organization": "https://openalex.org/I67311998",
+        "host_organization_lineage": [
+          "https://openalex.org/I67311998"
+        ],
+        "host_organization_lineage_names": [],
+        "host_organization_name": "European Organization for Nuclear Research",
+        "id": "https://openalex.org/S4306400562",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": true,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": null
+    },
+    "biblio": {
+      "first_page": null,
+      "issue": null,
+      "last_page": null,
+      "volume": null
+    },
+    "cited_by_count": 0,
+    "display_name": "A robust human airway organoid platform enables scalable expansion and trajectory mapping of pulmonary neuroendocrine cells",
+    "doi": "https://doi.org/10.5281/zenodo.18433633",
+    "id": "https://openalex.org/W7126276661",
+    "ids": {
+      "doi": "https://doi.org/10.5281/zenodo.18433633",
+      "openalex": "https://openalex.org/W7126276661"
+    },
+    "is_retracted": false,
+    "language": null,
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://doi.org/10.5281/zenodo.18433633"
+    },
+    "primary_location": {
+      "id": "doi:10.5281/zenodo.18433633",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.5281/zenodo.18433633",
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Dataset",
+      "source": {
+        "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+        "host_organization": "https://openalex.org/I67311998",
+        "host_organization_lineage": [
+          "https://openalex.org/I67311998"
+        ],
+        "host_organization_lineage_names": [],
+        "host_organization_name": "European Organization for Nuclear Research",
+        "id": "https://openalex.org/S4306400562",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": true,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": null
+    },
+    "publication_date": "2026-01-30",
+    "publication_year": 2026,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "title": "A robust human airway organoid platform enables scalable expansion and trajectory mapping of pulmonary neuroendocrine cells",
+    "type": "dataset"
+  },
+  "response_hash": "f66ac6c130995454197ab56154f27e6529fbe48ed20936fe6722eeacc479f5c9",
+  "retrieved_at": "2026-07-14T13:48:36Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

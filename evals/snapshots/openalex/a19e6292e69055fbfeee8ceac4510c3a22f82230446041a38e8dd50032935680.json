@@ -1,0 +1,3184 @@
+{
+  "endpoint": "works",
+  "request_key": "a19e6292e69055fbfeee8ceac4510c3a22f82230446041a38e8dd50032935680",
+  "request_params": {
+    "per-page": 5,
+    "search": "Occurrence Download",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 1972813,
+      "db_response_time_ms": 244,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (Occurrence Download)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Occurrence Download"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Occurrence Download&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "\"DatasetKey": [
+            16
+          ],
+          "\"and\"": [
+            13
+          ],
+          "0": [
+            3,
+            27,
+            30
+          ],
+          ":": [
+            14
+          ],
+          "A": [
+            0
+          ],
+          "Antarctic": [
+            18
+          ],
+          "GBIF": [
+            8
+          ],
+          "The": [
+            24
+          ],
+          "[": [
+            15
+          ],
+          "]": [
+            22
+          ],
+          "algae": [
+            20
+          ],
+          "available": [
+            6
+          ],
+          "communities\"": [
+            21
+          ],
+          "constituent": [
+            31
+          ],
+          "containing": [
+            2
+          ],
+          "dataset": [
+            1,
+            25
+          ],
+          "datasets;": [
+            32
+          ],
+          "details.": [
+            36
+          ],
+          "for": [
+            35
+          ],
+          "from": [
+            29
+          ],
+          "https://api.gbif.org/v1/occurrence/download/0005508-190320150433242/datasets/export": [
+            34
+          ],
+          "in": [
+            7
+          ],
+          "includes": [
+            26
+          ],
+          "is": [
+            17
+          ],
+          "matching": [
+            9
+          ],
+          "occurrences": [
+            5
+          ],
+          "query:": [
+            11
+          ],
+          "records": [
+            28
+          ],
+          "see": [
+            33
+          ],
+          "snow": [
+            19
+          ],
+          "species": [
+            4
+          ],
+          "the": [
+            10
+          ],
+          "{": [
+            12
+          ],
+          "}": [
+            23
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "GBIF.Org User",
+              "id": null,
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "GBIF.Org User",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.15468/dl.8twozn",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.15468/dl.8twozn",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset",
+          "source": {
+            "display_name": "Global Biodiversity Information Facility",
+            "host_organization": "https://openalex.org/I111796040",
+            "host_organization_lineage": [
+              "https://openalex.org/I111796040"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Global Biodiversity Information Facility",
+            "id": "https://openalex.org/S4398183272",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": null
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 126,
+        "display_name": "Occurrence Download",
+        "doi": "https://doi.org/10.15468/dl.8twozn",
+        "id": "https://openalex.org/W4395356471",
+        "ids": {
+          "doi": "https://doi.org/10.15468/dl.8twozn",
+          "openalex": "https://openalex.org/W4395356471"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://doi.org/10.15468/dl.8twozn"
+        },
+        "primary_location": {
+          "id": "doi:10.15468/dl.8twozn",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.15468/dl.8twozn",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset",
+          "source": {
+            "display_name": "Global Biodiversity Information Facility",
+            "host_organization": "https://openalex.org/I111796040",
+            "host_organization_lineage": [
+              "https://openalex.org/I111796040"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Global Biodiversity Information Facility",
+            "id": "https://openalex.org/S4398183272",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": null
+        },
+        "publication_date": "2019-01-01",
+        "publication_year": 2019,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "Occurrence Download",
+        "type": "dataset"
+      },
+      {
+        "abstract_inverted_index": {
+          "(Dunal)": [
+            35
+          ],
+          "(south-Benin).": [
+            38
+          ],
+          "1": [
+            19
+          ],
+          "181": [
+            3,
+            16,
+            22
+          ],
+          "A": [
+            0
+          ],
+          "A.": [
+            36
+          ],
+          "GBIF": [
+            8
+          ],
+          "Inventory": [
+            25
+          ],
+          "Rich.": [
+            37
+          ],
+          "The": [
+            13
+          ],
+          "Xylopia": [
+            33
+          ],
+          "aethiopica": [
+            34
+          ],
+          "agroforestry": [
+            29
+          ],
+          "and": [
+            28
+          ],
+          "available": [
+            6
+          ],
+          "by": [
+            32
+          ],
+          "characterized": [
+            31
+          ],
+          "constituent": [
+            20
+          ],
+          "containing": [
+            2
+          ],
+          "dataset": [
+            1,
+            14
+          ],
+          "datasets:": [
+            21
+          ],
+          "from": [
+            18,
+            24
+          ],
+          "in": [
+            7
+          ],
+          "includes": [
+            15
+          ],
+          "matching": [
+            9
+          ],
+          "natural": [
+            27
+          ],
+          "null.": [
+            12
+          ],
+          "occurrences": [
+            5
+          ],
+          "of": [
+            26
+          ],
+          "query:": [
+            11
+          ],
+          "records": [
+            17,
+            23
+          ],
+          "species": [
+            4
+          ],
+          "stands": [
+            30
+          ],
+          "the": [
+            10
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "NULL AUTHOR_ID",
+              "id": "https://openalex.org/A9999999999",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "NULL AUTHOR_ID",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": null,
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 99,
+        "display_name": "GBIF Occurrence Download",
+        "doi": "https://doi.org/10.21373/gbif.10109150588812214",
+        "id": "https://openalex.org/W3004277780",
+        "ids": {
+          "doi": "https://doi.org/10.21373/gbif.10109150588812214",
+          "mag": "3004277780",
+          "openalex": "https://openalex.org/W3004277780"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null
+        },
+        "primary_location": {
+          "id": "mag:3004277780",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://search.datacite.org/works/10.15468/DL.9HHJLP",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": null,
+          "source": null,
+          "version": null
+        },
+        "publication_date": "2018-01-01",
+        "publication_year": 2018,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "GBIF Occurrence Download",
+        "type": "dataset"
+      },
+      {
+        "abstract_inverted_index": {
+          "(substring": [
+            9
+          ],
+          "31": [
+            131
+          ],
+          "AVAILABILITY:": [
+            173
+          ],
+          "At": [
+            77
+          ],
+          "C++": [
+            180
+          ],
+          "Counting": [
+            1
+          ],
+          "Due": [
+            135
+          ],
+          "For": [
+            153
+          ],
+          "GPL": [
+            183
+          ],
+          "It": [
+            116,
+            185
+          ],
+          "Jellyfish": [
+            164,
+            175
+          ],
+          "Jellyfish,": [
+            109
+          ],
+          "MOTIVATION:": [
+            0
+          ],
+          "RESULTS:": [
+            97
+          ],
+          "Recently,": [
+            39
+          ],
+          "The": [
+            174
+          ],
+          "We": [
+            98
+          ],
+          "a": [
+            14,
+            18,
+            59,
+            92,
+            100,
+            120,
+            166
+          ],
+          "algorithm": [
+            104
+          ],
+          "alignment": [
+            35
+          ],
+          "allowing": [
+            90
+          ],
+          "amount": [
+            52
+          ],
+          "and": [
+            36,
+            65,
+            74,
+            105,
+            113,
+            169,
+            181
+          ],
+          "applications,": [
+            23,
+            163
+          ],
+          "arrays": [
+            140
+          ],
+          "assembly,": [
+            26
+          ],
+          "associated": [
+            106
+          ],
+          "at": [
+            190
+          ],
+          "available": [
+            187
+          ],
+          "based": [
+            118
+          ],
+          "bases": [
+            132
+          ],
+          "be": [
+            56
+          ],
+          "become": [
+            85
+          ],
+          "been": [
+            142
+          ],
+          "biological": [
+            162
+          ],
+          "by": [
+            45
+          ],
+          "called": [
+            108
+          ],
+          "caused": [
+            50
+          ],
+          "central": [
+            19
+          ],
+          "choice": [
+            147
+          ],
+          "commonplace": [
+            86
+          ],
+          "computational": [
+            95
+          ],
+          "computers": [
+            83
+          ],
+          "correction": [
+            28
+          ],
+          "counting": [
+            70,
+            103,
+            127
+          ],
+          "counting,": [
+            158
+          ],
+          "coverage": [
+            43
+          ],
+          "current": [
+            68
+          ],
+          "data": [
+            144
+          ],
+          "deep": [
+            41
+          ],
+          "detection.": [
+            38
+          ],
+          "download": [
+            189
+          ],
+          "during": [
+            58
+          ],
+          "efficient.": [
+            115
+          ],
+          "error": [
+            27
+          ],
+          "every": [
+            7
+          ],
+          "facilities": [
+            89
+          ],
+          "fast": [
+            32,
+            112
+          ],
+          "faster": [
+            168
+          ],
+          "flexibility,": [
+            138
+          ],
+          "for": [
+            91,
+            126,
+            148,
+            188
+          ],
+          "generated": [
+            44
+          ],
+          "genome": [
+            25,
+            60
+          ],
+          "grow": [
+            63
+          ],
+          "has": [
+            49,
+            66
+          ],
+          "hash": [
+            123
+          ],
+          "have": [
+            84,
+            141
+          ],
+          "http://www.cbcb.umd.edu/software/jellyfish.": [
+            191
+          ],
+          "implementation,": [
+            107
+          ],
+          "important": [
+            159
+          ],
+          "in": [
+            13,
+            21,
+            87,
+            133,
+            160,
+            179
+          ],
+          "including": [
+            24
+          ],
+          "intensive.": [
+            76
+          ],
+          "is": [
+            17,
+            111,
+            117,
+            177,
+            182,
+            186
+          ],
+          "k)": [
+            12
+          ],
+          "k-mer": [
+            8,
+            69,
+            102,
+            157
+          ],
+          "k-mers": [
+            128
+          ],
+          "large": [
+            81
+          ],
+          "length": [
+            11
+          ],
+          "length.": [
+            134
+          ],
+          "licensed.": [
+            184
+          ],
+          "lock-free": [
+            122
+          ],
+          "long": [
+            15
+          ],
+          "many": [
+            22,
+            150,
+            161
+          ],
+          "memory": [
+            75,
+            114
+          ],
+          "memory-efficient": [
+            171
+          ],
+          "more": [
+            170
+          ],
+          "much": [
+            167
+          ],
+          "multicore": [
+            82
+          ],
+          "multiple": [
+            33
+          ],
+          "multithreaded,": [
+            121
+          ],
+          "new": [
+            93,
+            101
+          ],
+          "next-generation": [
+            46
+          ],
+          "number": [
+            3
+          ],
+          "occurrences": [
+            5
+          ],
+          "of": [
+            4,
+            6,
+            10,
+            29,
+            53,
+            146,
+            156
+          ],
+          "offers": [
+            165
+          ],
+          "on": [
+            119
+          ],
+          "optimized": [
+            125
+          ],
+          "paradigm.": [
+            96
+          ],
+          "parallel": [
+            94
+          ],
+          "problems.": [
+            152
+          ],
+          "processed": [
+            57
+          ],
+          "project": [
+            61
+          ],
+          "propose": [
+            99
+          ],
+          "rapidly,": [
+            64
+          ],
+          "reads,": [
+            31
+          ],
+          "rendered": [
+            67
+          ],
+          "repeat": [
+            37
+          ],
+          "research": [
+            88
+          ],
+          "same": [
+            79
+          ],
+          "sequence": [
+            34,
+            42,
+            54
+          ],
+          "sequencing": [
+            30,
+            47
+          ],
+          "slow": [
+            73
+          ],
+          "software": [
+            176
+          ],
+          "solution.": [
+            172
+          ],
+          "solving": [
+            149
+          ],
+          "string": [
+            16,
+            151
+          ],
+          "structure": [
+            145
+          ],
+          "subproblem": [
+            20
+          ],
+          "suffix": [
+            139
+          ],
+          "table": [
+            124
+          ],
+          "task": [
+            155
+          ],
+          "technologies": [
+            48
+          ],
+          "the": [
+            2,
+            40,
+            51,
+            78,
+            143,
+            154
+          ],
+          "their": [
+            137
+          ],
+          "time,": [
+            80
+          ],
+          "to": [
+            55,
+            62,
+            130,
+            136
+          ],
+          "too": [
+            72
+          ],
+          "tools": [
+            71
+          ],
+          "up": [
+            129
+          ],
+          "which": [
+            110
+          ],
+          "written": [
+            178
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I66946132"
+                ],
+                "raw_affiliation_string": "1 Program in Applied Mathematics, Statistics and Scientific Computation and 2Department of Computer Science and Institute for Advanced Computer Studies, University of Maryland, College Park, MD 20742, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Guillaume Marçais",
+              "id": "https://openalex.org/A5009407234",
+              "orcid": "https://orcid.org/0000-0002-5083-5925"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Maryland, College Park",
+                "id": "https://openalex.org/I66946132",
+                "lineage": [
+                  "https://openalex.org/I66946132"
+                ],
+                "ror": "https://ror.org/047s2c258",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "1 Program in Applied Mathematics, Statistics and Scientific Computation and 2Department of Computer Science and Institute for Advanced Computer Studies, University of Maryland, College Park, MD 20742, USA"
+            ],
+            "raw_author_name": "Guillaume Marçais",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I66946132"
+                ],
+                "raw_affiliation_string": "1 Program in Applied Mathematics, Statistics and Scientific Computation and 2Department of Computer Science and Institute for Advanced Computer Studies, University of Maryland, College Park, MD 20742, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Carl Kingsford",
+              "id": "https://openalex.org/A5113653378",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Maryland, College Park",
+                "id": "https://openalex.org/I66946132",
+                "lineage": [
+                  "https://openalex.org/I66946132"
+                ],
+                "ror": "https://ror.org/047s2c258",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "1 Program in Applied Mathematics, Statistics and Scientific Computation and 2Department of Computer Science and Institute for Advanced Computer Studies, University of Maryland, College Park, MD 20742, USA"
+            ],
+            "raw_author_name": "Carl Kingsford",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1093/bioinformatics/btr011",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1093/bioinformatics/btr011",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/27/6/764/16902460/btr011.pdf",
+          "raw_source_name": "Bioinformatics",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Bioinformatics",
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "host_organization_name": "Oxford University Press",
+            "id": "https://openalex.org/S52395412",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": false,
+            "issn": [
+              "1367-4803",
+              "1367-4811"
+            ],
+            "issn_l": "1367-4803",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "764",
+          "issue": "6",
+          "last_page": "770",
+          "volume": "27"
+        },
+        "cited_by_count": 5097,
+        "display_name": "A fast, lock-free approach for efficient parallel counting of occurrences of <i>k</i> -mers",
+        "doi": "https://doi.org/10.1093/bioinformatics/btr011",
+        "id": "https://openalex.org/W2096128575",
+        "ids": {
+          "doi": "https://doi.org/10.1093/bioinformatics/btr011",
+          "mag": "2096128575",
+          "openalex": "https://openalex.org/W2096128575",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/21217122"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/27/6/764/16902460/btr011.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1093/bioinformatics/btr011",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1093/bioinformatics/btr011",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/27/6/764/16902460/btr011.pdf",
+          "raw_source_name": "Bioinformatics",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Bioinformatics",
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "host_organization_name": "Oxford University Press",
+            "id": "https://openalex.org/S52395412",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": false,
+            "issn": [
+              "1367-4803",
+              "1367-4811"
+            ],
+            "issn_l": "1367-4803",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2011-01-07",
+        "publication_year": 2011,
+        "referenced_works": [
+          "https://openalex.org/W1606270358",
+          "https://openalex.org/W1635391495",
+          "https://openalex.org/W1981393723",
+          "https://openalex.org/W1992950355",
+          "https://openalex.org/W1994484216",
+          "https://openalex.org/W2006181434",
+          "https://openalex.org/W2009425918",
+          "https://openalex.org/W2037444377",
+          "https://openalex.org/W2084802221",
+          "https://openalex.org/W2096634299",
+          "https://openalex.org/W2105459732",
+          "https://openalex.org/W2114270824",
+          "https://openalex.org/W2127465481",
+          "https://openalex.org/W2132926880",
+          "https://openalex.org/W2133767259",
+          "https://openalex.org/W2133956160",
+          "https://openalex.org/W2152073175",
+          "https://openalex.org/W2158682869",
+          "https://openalex.org/W2159392969",
+          "https://openalex.org/W2159946869",
+          "https://openalex.org/W2173213060",
+          "https://openalex.org/W2752885492",
+          "https://openalex.org/W3145128584",
+          "https://openalex.org/W6632451819",
+          "https://openalex.org/W6651617160",
+          "https://openalex.org/W6676684217"
+        ],
+        "referenced_works_count": 26,
+        "title": "A fast, lock-free approach for efficient parallel counting of occurrences of <i>k</i> -mers",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(Print):April": [
+            25
+          ],
+          "(both": [
+            57
+          ],
+          "1": [
+            34
+          ],
+          "1,": [
+            26
+          ],
+          "1238–1243Publication": [
+            23
+          ],
+          "1965,": [
+            20
+          ],
+          "1965Publication": [
+            27
+          ],
+          "1965https://pubs.acs.org/doi/10.1021/j100888a024https://doi.org/10.1021/j100888a024research-articleACS": [
+            36
+          ],
+          "2002Published": [
+            32
+          ],
+          "2008": [
+            56
+          ],
+          "4,": [
+            22
+          ],
+          "69,": [
+            21
+          ],
+          "ABOUT": [
+            41
+          ],
+          "ADVERTISEMENT": [
+            0
+          ],
+          "Add": [
+            161
+          ],
+          "Altmetric": [
+            103,
+            151
+          ],
+          "April": [
+            35
+          ],
+          "Attention": [
+            104,
+            152
+          ],
+          "C.": [
+            14
+          ],
+          "COUNTER-compliant": [
+            47
+          ],
+          "Chem.": [
+            19
+          ],
+          "Clicking": [
+            120
+          ],
+          "Crossref": [
+            92,
+            100
+          ],
+          "Crystallite": [
+            11
+          ],
+          "Date": [
+            24
+          ],
+          "Description": [
+            168
+          ],
+          "EffectRonald": [
+            13
+          ],
+          "ExportRISCitationCitation": [
+            169
+          ],
+          "Find": [
+            96,
+            146
+          ],
+          "Full": [
+            164
+          ],
+          "GarvieCite": [
+            15
+          ],
+          "Get": [
+            181
+          ],
+          "HTML)": [
+            60
+          ],
+          "History": [
+            28
+          ],
+          "ISSUEPREVArticleNEXTThe": [
+            3
+          ],
+          "InAdd": [
+            163
+          ],
+          "InRedditEmail": [
+            177
+          ],
+          "J.": [
+            17
+          ],
+          "METRICSArticle": [
+            43
+          ],
+          "May": [
+            31
+          ],
+          "Metastable": [
+            6
+          ],
+          "November": [
+            55
+          ],
+          "Occurrence": [
+            4
+          ],
+          "Options": [
+            174
+          ],
+          "Other": [
+            178
+          ],
+          "PDF": [
+            58
+          ],
+          "Phys.": [
+            18
+          ],
+          "PublicationsRequest": [
+            37
+          ],
+          "Published": [
+            29
+          ],
+          "RETURN": [
+            1
+          ],
+          "ReferenceAdd": [
+            167
+          ],
+          "Score": [
+            105,
+            153
+          ],
+          "Share": [
+            160,
+            175
+          ],
+          "Size": [
+            12
+          ],
+          "THESE": [
+            42
+          ],
+          "TO": [
+            2
+          ],
+          "Tetragonal": [
+            7
+          ],
+          "Text": [
+            165
+          ],
+          "These": [
+            66
+          ],
+          "Views": [
+            44
+          ],
+          "Views4685Altmetric-Citations1315LEARN": [
+            40
+          ],
+          "Zirconia": [
+            8
+          ],
+          "a": [
+            10,
+            107,
+            114,
+            127
+          ],
+          "about": [
+            99,
+            134
+          ],
+          "abstractCitation": [
+            171
+          ],
+          "access": [
+            179
+          ],
+          "across": [
+            61
+          ],
+          "additional": [
+            132
+          ],
+          "all": [
+            62
+          ],
+          "altmetric.com": [
+            130
+          ],
+          "and": [
+            59,
+            64,
+            93,
+            137,
+            154,
+            170,
+            172
+          ],
+          "are": [
+            45,
+            68,
+            81
+          ],
+          "article": [
+            52,
+            116
+          ],
+          "article,": [
+            89
+          ],
+          "article.": [
+            145
+          ],
+          "articles": [
+            86
+          ],
+          "as": [
+            9
+          ],
+          "at": [
+            129
+          ],
+          "attention": [
+            112
+          ],
+          "by": [
+            91
+          ],
+          "calculated": [
+            90
+          ],
+          "calculated.": [
+            159
+          ],
+          "citation": [
+            101
+          ],
+          "citing": [
+            87
+          ],
+          "counts.The": [
+            102
+          ],
+          "daily.": [
+            95
+          ],
+          "days.Citations": [
+            80
+          ],
+          "details": [
+            133
+          ],
+          "donut": [
+            123
+          ],
+          "downloads": [
+            53
+          ],
+          "e-Alerts": [
+            182
+          ],
+          "few": [
+            79
+          ],
+          "for": [
+            142
+          ],
+          "full": [
+            50
+          ],
+          "given": [
+            144
+          ],
+          "has": [
+            117
+          ],
+          "how": [
+            155
+          ],
+          "icon": [
+            124
+          ],
+          "individuals.": [
+            65
+          ],
+          "information": [
+            98,
+            148
+          ],
+          "inissue": [
+            33
+          ],
+          "institutions": [
+            63
+          ],
+          "is": [
+            106,
+            158
+          ],
+          "last": [
+            78
+          ],
+          "leading": [
+            74
+          ],
+          "load": [
+            126
+          ],
+          "measure": [
+            109
+          ],
+          "media": [
+            140
+          ],
+          "metrics": [
+            67
+          ],
+          "more": [
+            97,
+            147
+          ],
+          "number": [
+            83
+          ],
+          "of": [
+            5,
+            49,
+            84,
+            110
+          ],
+          "on": [
+            121,
+            149
+          ],
+          "onFacebookTwitterWechatLinked": [
+            176
+          ],
+          "online.": [
+            119
+          ],
+          "online1": [
+            30
+          ],
+          "options": [
+            180
+          ],
+          "other": [
+            85
+          ],
+          "page": [
+            128
+          ],
+          "permissionsArticle": [
+            39
+          ],
+          "presence": [
+            141
+          ],
+          "quantitative": [
+            108
+          ],
+          "received": [
+            118
+          ],
+          "referencesMore": [
+            173
+          ],
+          "reflect": [
+            72
+          ],
+          "regularly": [
+            69
+          ],
+          "research": [
+            115
+          ],
+          "reuse": [
+            38
+          ],
+          "score": [
+            136,
+            157
+          ],
+          "since": [
+            54
+          ],
+          "social": [
+            139
+          ],
+          "sum": [
+            48
+          ],
+          "text": [
+            51
+          ],
+          "that": [
+            113
+          ],
+          "the": [
+            46,
+            77,
+            82,
+            111,
+            122,
+            135,
+            138,
+            143,
+            150,
+            156
+          ],
+          "this": [
+            88
+          ],
+          "this:": [
+            16
+          ],
+          "to": [
+            71,
+            76
+          ],
+          "toView": [
+            162
+          ],
+          "up": [
+            75
+          ],
+          "updated": [
+            70,
+            94
+          ],
+          "usage": [
+            73
+          ],
+          "will": [
+            125
+          ],
+          "with": [
+            131,
+            166
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "R. C. Garvie",
+              "id": "https://openalex.org/A5015094271",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Ronald C. Garvie",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": null,
+        "biblio": {
+          "first_page": "1238",
+          "issue": "4",
+          "last_page": "1243",
+          "volume": "69"
+        },
+        "cited_by_count": 1550,
+        "display_name": "The Occurrence of Metastable Tetragonal Zirconia as a Crystallite Size Effect",
+        "doi": "https://doi.org/10.1021/j100888a024",
+        "id": "https://openalex.org/W2047372568",
+        "ids": {
+          "doi": "https://doi.org/10.1021/j100888a024",
+          "mag": "2047372568",
+          "openalex": "https://openalex.org/W2047372568"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null
+        },
+        "primary_location": {
+          "id": "doi:10.1021/j100888a024",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1021/j100888a024",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "The Journal of Physical Chemistry",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "The Journal of Physical Chemistry",
+            "host_organization": "https://openalex.org/P4310320006",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320006"
+            ],
+            "host_organization_lineage_names": [
+              "American Chemical Society"
+            ],
+            "host_organization_name": "American Chemical Society",
+            "id": "https://openalex.org/S24459064",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0022-3654",
+              "1541-5740"
+            ],
+            "issn_l": "0022-3654",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "1965-04-01",
+        "publication_year": 1965,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "The Occurrence of Metastable Tetragonal Zirconia as a Crystallite Size Effect",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(Paris": [
+            61
+          ],
+          "(Web):October": [
+            78
+          ],
+          "(both": [
+            117
+          ],
+          "(iRTSV),": [
+            42
+          ],
+          "1": [
+            89
+          ],
+          "10,": [
+            75,
+            79
+          ],
+          "107,": [
+            74
+          ],
+          "12": [
+            63
+          ],
+          "17": [
+            43
+          ],
+          "2007": [
+            94
+          ],
+          "2007,": [
+            73
+          ],
+          "2007Publication": [
+            80
+          ],
+          "2007Published": [
+            84,
+            87
+          ],
+          "2007https://pubs.acs.org/doi/10.1021/cr050196rhttps://doi.org/10.1021/cr050196rresearch-articleACS": [
+            91
+          ],
+          "2008": [
+            116
+          ],
+          "38054": [
+            47
+          ],
+          "4206–4272Publication": [
+            76
+          ],
+          "5092,": [
+            31
+          ],
+          "6),": [
+            62
+          ],
+          "75005": [
+            66
+          ],
+          "9,": [
+            50
+          ],
+          "ABOUT": [
+            101
+          ],
+          "ADVERTISEMENT": [
+            0
+          ],
+          "Add": [
+            221
+          ],
+          "Altmetric": [
+            163,
+            211
+          ],
+          "American": [
+            95
+          ],
+          "An": [
+            10
+          ],
+          "Atelier": [
+            53
+          ],
+          "Attention": [
+            164,
+            212
+          ],
+          "Author": [
+            17
+          ],
+          "Bernard": [
+            15
+          ],
+          "BilloudView": [
+            16
+          ],
+          "BioInformatique": [
+            55
+          ],
+          "Biochimie": [
+            23
+          ],
+          "Biological": [
+            6
+          ],
+          "Biophysique": [
+            25
+          ],
+          "CEA": [
+            19
+          ],
+          "CEA/CNRS/UJF": [
+            30
+          ],
+          "COUNTER-compliant": [
+            107
+          ],
+          "Chem.": [
+            71
+          ],
+          "Chemical": [
+            96
+          ],
+          "Cite": [
+            69
+          ],
+          "Classification,": [
+            4
+          ],
+          "Clicking": [
+            180
+          ],
+          "Crossref": [
+            152,
+            160
+          ],
+          "Curie": [
+            60
+          ],
+          "Cuvier,": [
+            65
+          ],
+          "Date": [
+            77
+          ],
+          "Description": [
+            228
+          ],
+          "ExportRISCitationCitation": [
+            229
+          ],
+          "February": [
+            83
+          ],
+          "Find": [
+            156,
+            206
+          ],
+          "France": [
+            68
+          ],
+          "France,": [
+            51
+          ],
+          "Full": [
+            224
+          ],
+          "Function": [
+            7
+          ],
+          "Get": [
+            247
+          ],
+          "Grenoble": [
+            48
+          ],
+          "Grenoble,": [
+            20
+          ],
+          "HTML)": [
+            120
+          ],
+          "History": [
+            81
+          ],
+          "Hydrogenases:": [
+            9
+          ],
+          "ISSUEPREVArticleNEXTOccurrence,": [
+            3
+          ],
+          "InAdd": [
+            223
+          ],
+          "InRedditEmail": [
+            237
+          ],
+          "Information": [
+            18
+          ],
+          "Institut": [
+            32
+          ],
+          "Intégrés,": [
+            28
+          ],
+          "Laboratoire": [
+            21
+          ],
+          "M.": [
+            12
+          ],
+          "METRICSArticle": [
+            103
+          ],
+          "Marie": [
+            59
+          ],
+          "Martyrs,": [
+            46
+          ],
+          "November": [
+            115
+          ],
+          "October": [
+            86,
+            90
+          ],
+          "Options": [
+            234
+          ],
+          "Other": [
+            238
+          ],
+          "OverviewPaulette": [
+            11
+          ],
+          "PDF": [
+            118
+          ],
+          "Paris,": [
+            67
+          ],
+          "Pierre": [
+            57
+          ],
+          "PublicationsCopyright": [
+            92
+          ],
+          "RETURN": [
+            1
+          ],
+          "Received26": [
+            82
+          ],
+          "Recherches": [
+            34
+          ],
+          "ReferenceAdd": [
+            227
+          ],
+          "Rev.": [
+            72
+          ],
+          "SUBJECTS:Bacteria,Cluster": [
+            242
+          ],
+          "Sciences": [
+            38
+          ],
+          "Score": [
+            165,
+            213
+          ],
+          "Share": [
+            220,
+            235
+          ],
+          "SocietyRequest": [
+            97
+          ],
+          "Systèmes": [
+            27
+          ],
+          "THESE": [
+            102
+          ],
+          "TO": [
+            2
+          ],
+          "Technologies": [
+            36
+          ],
+          "Text": [
+            225
+          ],
+          "These": [
+            126
+          ],
+          "UMR": [
+            29
+          ],
+          "Université": [
+            56
+          ],
+          "Views": [
+            104
+          ],
+          "Views13248Altmetric-Citations1283LEARN": [
+            100
+          ],
+          "Vignais": [
+            13
+          ],
+          "Vivant": [
+            41
+          ],
+          "a": [
+            167,
+            174,
+            187
+          ],
+          "about": [
+            159,
+            194
+          ],
+          "abstractCitation": [
+            231
+          ],
+          "access": [
+            239
+          ],
+          "across": [
+            121
+          ],
+          "additional": [
+            192
+          ],
+          "all": [
+            122
+          ],
+          "altmetric.com": [
+            190
+          ],
+          "and": [
+            5,
+            14,
+            52,
+            119,
+            124,
+            153,
+            197,
+            214,
+            230,
+            232,
+            245
+          ],
+          "are": [
+            105,
+            128,
+            141
+          ],
+          "article": [
+            112,
+            176
+          ],
+          "article,": [
+            149
+          ],
+          "article.": [
+            205
+          ],
+          "articles": [
+            146
+          ],
+          "at": [
+            189
+          ],
+          "attention": [
+            172
+          ],
+          "by": [
+            151
+          ],
+          "calculated": [
+            150
+          ],
+          "calculated.": [
+            219
+          ],
+          "cedex": [
+            49
+          ],
+          "chemistry,Iron-sulfur": [
+            243
+          ],
+          "citation": [
+            161
+          ],
+          "citing": [
+            147
+          ],
+          "clusters,Monomers,Peptides": [
+            244
+          ],
+          "counts.The": [
+            162
+          ],
+          "daily.": [
+            155
+          ],
+          "days.Citations": [
+            140
+          ],
+          "de": [
+            22,
+            33,
+            54
+          ],
+          "des": [
+            26,
+            45
+          ],
+          "details": [
+            193
+          ],
+          "donut": [
+            183
+          ],
+          "downloads": [
+            113
+          ],
+          "e-Alerts": [
+            248
+          ],
+          "e-Alertsclose": [
+            241
+          ],
+          "en": [
+            35
+          ],
+          "et": [
+            24,
+            37,
+            58
+          ],
+          "few": [
+            139
+          ],
+          "for": [
+            202
+          ],
+          "full": [
+            110
+          ],
+          "given": [
+            204
+          ],
+          "has": [
+            177
+          ],
+          "how": [
+            215
+          ],
+          "icon": [
+            184
+          ],
+          "individuals.": [
+            125
+          ],
+          "information": [
+            158,
+            208
+          ],
+          "inissue": [
+            88
+          ],
+          "institutions": [
+            123
+          ],
+          "is": [
+            166,
+            218
+          ],
+          "last": [
+            138
+          ],
+          "le": [
+            40
+          ],
+          "leading": [
+            134
+          ],
+          "load": [
+            186
+          ],
+          "measure": [
+            169
+          ],
+          "media": [
+            200
+          ],
+          "metrics": [
+            127
+          ],
+          "more": [
+            157,
+            207
+          ],
+          "number": [
+            143
+          ],
+          "of": [
+            8,
+            109,
+            144,
+            170
+          ],
+          "on": [
+            181,
+            209
+          ],
+          "onFacebookTwitterWechatLinked": [
+            236
+          ],
+          "online.": [
+            179
+          ],
+          "online10": [
+            85
+          ],
+          "optionsGet": [
+            240
+          ],
+          "other": [
+            145
+          ],
+          "page": [
+            188
+          ],
+          "permissionsArticle": [
+            99
+          ],
+          "pour": [
+            39
+          ],
+          "presence": [
+            201
+          ],
+          "proteins": [
+            246
+          ],
+          "quantitative": [
+            168
+          ],
+          "received": [
+            178
+          ],
+          "referencesMore": [
+            233
+          ],
+          "reflect": [
+            132
+          ],
+          "regularly": [
+            129
+          ],
+          "research": [
+            175
+          ],
+          "reuse": [
+            98
+          ],
+          "rue": [
+            44,
+            64
+          ],
+          "score": [
+            196,
+            217
+          ],
+          "since": [
+            114
+          ],
+          "social": [
+            199
+          ],
+          "sum": [
+            108
+          ],
+          "text": [
+            111
+          ],
+          "that": [
+            173
+          ],
+          "the": [
+            106,
+            137,
+            142,
+            171,
+            182,
+            195,
+            198,
+            203,
+            210,
+            216
+          ],
+          "this": [
+            148
+          ],
+          "this:": [
+            70
+          ],
+          "to": [
+            131,
+            136
+          ],
+          "toView": [
+            222
+          ],
+          "up": [
+            135
+          ],
+          "updated": [
+            130,
+            154
+          ],
+          "usage": [
+            133
+          ],
+          "will": [
+            185
+          ],
+          "with": [
+            191,
+            226
+          ],
+          "©": [
+            93
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210144381",
+                  "https://openalex.org/I3020098449",
+                  "https://openalex.org/I177483745",
+                  "https://openalex.org/I39804081",
+                  "https://openalex.org/I899635006",
+                  "https://openalex.org/I1294671590",
+                  "https://openalex.org/I2738703131"
+                ],
+                "raw_affiliation_string": "CEA Grenoble, Laboratoire de Biochimie et Biophysique des Systèmes Intégrés, UMR CEA/CNRS/UJF 5092, Institut de Recherches en Technologies et Sciences pour le Vivant (iRTSV), 17 rue des Martyrs, 38054 Grenoble cedex 9, France, and Atelier de BioInformatique Université Pierre et Marie Curie (Paris 6), 12 rue Cuvier, 75005 Paris, France"
+              }
+            ],
+            "author": {
+              "display_name": "Paulette M. Vignais",
+              "id": "https://openalex.org/A5050853948",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "FR"
+            ],
+            "institutions": [
+              {
+                "country_code": "FR",
+                "display_name": "Centre National de la Recherche Scientifique",
+                "id": "https://openalex.org/I1294671590",
+                "lineage": [
+                  "https://openalex.org/I1294671590"
+                ],
+                "ror": "https://ror.org/02feahw73",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Joseph Fourier",
+                "id": "https://openalex.org/I177483745",
+                "lineage": [
+                  "https://openalex.org/I177483745"
+                ],
+                "ror": "https://ror.org/02aj0kh94",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+                "id": "https://openalex.org/I2738703131",
+                "lineage": [
+                  "https://openalex.org/I2738703131"
+                ],
+                "ror": "https://ror.org/00jjx8s55",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "CEA Grenoble",
+                "id": "https://openalex.org/I3020098449",
+                "lineage": [
+                  "https://openalex.org/I2738703131",
+                  "https://openalex.org/I3020098449"
+                ],
+                "ror": "https://ror.org/02mg6n827",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Sorbonne Université",
+                "id": "https://openalex.org/I39804081",
+                "lineage": [
+                  "https://openalex.org/I39804081"
+                ],
+                "ror": "https://ror.org/02en5vm52",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Institut de Recherches en Technologies et Sciences pour le Vivant",
+                "id": "https://openalex.org/I4210144381",
+                "lineage": [
+                  "https://openalex.org/I4210144381"
+                ],
+                "ror": "https://ror.org/039javj55",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Grenoble Alpes",
+                "id": "https://openalex.org/I899635006",
+                "lineage": [
+                  "https://openalex.org/I899635006"
+                ],
+                "ror": "https://ror.org/02rx3b187",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "CEA Grenoble, Laboratoire de Biochimie et Biophysique des Systèmes Intégrés, UMR CEA/CNRS/UJF 5092, Institut de Recherches en Technologies et Sciences pour le Vivant (iRTSV), 17 rue des Martyrs, 38054 Grenoble cedex 9, France, and Atelier de BioInformatique Université Pierre et Marie Curie (Paris 6), 12 rue Cuvier, 75005 Paris, France"
+            ],
+            "raw_author_name": "Paulette M. Vignais",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210144381",
+                  "https://openalex.org/I3020098449",
+                  "https://openalex.org/I177483745",
+                  "https://openalex.org/I39804081",
+                  "https://openalex.org/I899635006",
+                  "https://openalex.org/I1294671590",
+                  "https://openalex.org/I2738703131"
+                ],
+                "raw_affiliation_string": "CEA Grenoble, Laboratoire de Biochimie et Biophysique des Systèmes Intégrés, UMR CEA/CNRS/UJF 5092, Institut de Recherches en Technologies et Sciences pour le Vivant (iRTSV), 17 rue des Martyrs, 38054 Grenoble cedex 9, France, and Atelier de BioInformatique Université Pierre et Marie Curie (Paris 6), 12 rue Cuvier, 75005 Paris, France"
+              }
+            ],
+            "author": {
+              "display_name": "Bernard Billoud",
+              "id": "https://openalex.org/A5023552550",
+              "orcid": "https://orcid.org/0000-0002-5140-8087"
+            },
+            "author_position": "last",
+            "countries": [
+              "FR"
+            ],
+            "institutions": [
+              {
+                "country_code": "FR",
+                "display_name": "Centre National de la Recherche Scientifique",
+                "id": "https://openalex.org/I1294671590",
+                "lineage": [
+                  "https://openalex.org/I1294671590"
+                ],
+                "ror": "https://ror.org/02feahw73",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Joseph Fourier",
+                "id": "https://openalex.org/I177483745",
+                "lineage": [
+                  "https://openalex.org/I177483745"
+                ],
+                "ror": "https://ror.org/02aj0kh94",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+                "id": "https://openalex.org/I2738703131",
+                "lineage": [
+                  "https://openalex.org/I2738703131"
+                ],
+                "ror": "https://ror.org/00jjx8s55",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "CEA Grenoble",
+                "id": "https://openalex.org/I3020098449",
+                "lineage": [
+                  "https://openalex.org/I2738703131",
+                  "https://openalex.org/I3020098449"
+                ],
+                "ror": "https://ror.org/02mg6n827",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Sorbonne Université",
+                "id": "https://openalex.org/I39804081",
+                "lineage": [
+                  "https://openalex.org/I39804081"
+                ],
+                "ror": "https://ror.org/02en5vm52",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Institut de Recherches en Technologies et Sciences pour le Vivant",
+                "id": "https://openalex.org/I4210144381",
+                "lineage": [
+                  "https://openalex.org/I4210144381"
+                ],
+                "ror": "https://ror.org/039javj55",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Grenoble Alpes",
+                "id": "https://openalex.org/I899635006",
+                "lineage": [
+                  "https://openalex.org/I899635006"
+                ],
+                "ror": "https://ror.org/02rx3b187",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "CEA Grenoble, Laboratoire de Biochimie et Biophysique des Systèmes Intégrés, UMR CEA/CNRS/UJF 5092, Institut de Recherches en Technologies et Sciences pour le Vivant (iRTSV), 17 rue des Martyrs, 38054 Grenoble cedex 9, France, and Atelier de BioInformatique Université Pierre et Marie Curie (Paris 6), 12 rue Cuvier, 75005 Paris, France"
+            ],
+            "raw_author_name": "Bernard Billoud",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": null,
+        "biblio": {
+          "first_page": "4206",
+          "issue": "10",
+          "last_page": "4272",
+          "volume": "107"
+        },
+        "cited_by_count": 1562,
+        "display_name": "Occurrence, Classification, and Biological Function of Hydrogenases:  An Overview",
+        "doi": "https://doi.org/10.1021/cr050196r",
+        "id": "https://openalex.org/W2092638302",
+        "ids": {
+          "doi": "https://doi.org/10.1021/cr050196r",
+          "mag": "2092638302",
+          "openalex": "https://openalex.org/W2092638302",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/17927159"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null
+        },
+        "primary_location": {
+          "id": "doi:10.1021/cr050196r",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1021/cr050196r",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Chemical Reviews",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Chemical Reviews",
+            "host_organization": "https://openalex.org/P4310320006",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320006"
+            ],
+            "host_organization_lineage_names": [
+              "American Chemical Society"
+            ],
+            "host_organization_name": "American Chemical Society",
+            "id": "https://openalex.org/S41143188",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0009-2665",
+              "1520-6890"
+            ],
+            "issn_l": "0009-2665",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2007-10-01",
+        "publication_year": 2007,
+        "referenced_works": [
+          "https://openalex.org/W70253726",
+          "https://openalex.org/W100311329",
+          "https://openalex.org/W112957163",
+          "https://openalex.org/W142797207",
+          "https://openalex.org/W176612975",
+          "https://openalex.org/W274810760",
+          "https://openalex.org/W277606711",
+          "https://openalex.org/W582912272",
+          "https://openalex.org/W636606157",
+          "https://openalex.org/W1487169814",
+          "https://openalex.org/W1489444021",
+          "https://openalex.org/W1490200115",
+          "https://openalex.org/W1505575182",
+          "https://openalex.org/W1512542262",
+          "https://openalex.org/W1512552641",
+          "https://openalex.org/W1519475286",
+          "https://openalex.org/W1519983722",
+          "https://openalex.org/W1522930227",
+          "https://openalex.org/W1525105770",
+          "https://openalex.org/W1532568205",
+          "https://openalex.org/W1532916803",
+          "https://openalex.org/W1536079305",
+          "https://openalex.org/W1538811370",
+          "https://openalex.org/W1543554615",
+          "https://openalex.org/W1547056372",
+          "https://openalex.org/W1555428325",
+          "https://openalex.org/W1561344266",
+          "https://openalex.org/W1563527550",
+          "https://openalex.org/W1565276006",
+          "https://openalex.org/W1566880855",
+          "https://openalex.org/W1574785574",
+          "https://openalex.org/W1579625220",
+          "https://openalex.org/W1589161844",
+          "https://openalex.org/W1596601654",
+          "https://openalex.org/W1597487419",
+          "https://openalex.org/W1601593267",
+          "https://openalex.org/W1602264642",
+          "https://openalex.org/W1630260213",
+          "https://openalex.org/W1646462907",
+          "https://openalex.org/W1652691445",
+          "https://openalex.org/W1655025181",
+          "https://openalex.org/W1737532001",
+          "https://openalex.org/W1748960176",
+          "https://openalex.org/W1755717076",
+          "https://openalex.org/W1770775467",
+          "https://openalex.org/W1774708529",
+          "https://openalex.org/W1783581160",
+          "https://openalex.org/W1799490590",
+          "https://openalex.org/W1865947077",
+          "https://openalex.org/W1877026449",
+          "https://openalex.org/W1882597211",
+          "https://openalex.org/W1884407889",
+          "https://openalex.org/W1908700796",
+          "https://openalex.org/W1919856353",
+          "https://openalex.org/W1935158889",
+          "https://openalex.org/W1947962930",
+          "https://openalex.org/W1960048856",
+          "https://openalex.org/W1962198824",
+          "https://openalex.org/W1963921746",
+          "https://openalex.org/W1963957860",
+          "https://openalex.org/W1965026539",
+          "https://openalex.org/W1965039394",
+          "https://openalex.org/W1965219865",
+          "https://openalex.org/W1966082253",
+          "https://openalex.org/W1966165014",
+          "https://openalex.org/W1966369330",
+          "https://openalex.org/W1966467441",
+          "https://openalex.org/W1966488638",
+          "https://openalex.org/W1966687891",
+          "https://openalex.org/W1966999937",
+          "https://openalex.org/W1967250942",
+          "https://openalex.org/W1967750933",
+          "https://openalex.org/W1968203296",
+          "https://openalex.org/W1969059821",
+          "https://openalex.org/W1969783007",
+          "https://openalex.org/W1970141747",
+          "https://openalex.org/W1970214315",
+          "https://openalex.org/W1970359761",
+          "https://openalex.org/W1970741034",
+          "https://openalex.org/W1971396352",
+          "https://openalex.org/W1971844719",
+          "https://openalex.org/W1972300333",
+          "https://openalex.org/W1972911562",
+          "https://openalex.org/W1975615339",
+          "https://openalex.org/W1976814390",
+          "https://openalex.org/W1977671794",
+          "https://openalex.org/W1977972614",
+          "https://openalex.org/W1978297942",
+          "https://openalex.org/W1978663690",
+          "https://openalex.org/W1978679164",
+          "https://openalex.org/W1979501993",
+          "https://openalex.org/W1980314610",
+          "https://openalex.org/W1980581541",
+          "https://openalex.org/W1981038407",
+          "https://openalex.org/W1981521607",
+          "https://openalex.org/W1981804683",
+          "https://openalex.org/W1982048806",
+          "https://openalex.org/W1982245868",
+          "https://openalex.org/W1982481323",
+          "https://openalex.org/W1982652385",
+          "https://openalex.org/W1982670116",
+          "https://openalex.org/W1982876627",
+          "https://openalex.org/W1983081312",
+          "https://openalex.org/W1983200117",
+          "https://openalex.org/W1983206534",
+          "https://openalex.org/W1983730749",
+          "https://openalex.org/W1983737836",
+          "https://openalex.org/W1983925681",
+          "https://openalex.org/W1984074076",
+          "https://openalex.org/W1984155168",
+          "https://openalex.org/W1984764939",
+          "https://openalex.org/W1984882823",
+          "https://openalex.org/W1984933445",
+          "https://openalex.org/W1985004900",
+          "https://openalex.org/W1985205346",
+          "https://openalex.org/W1985244259",
+          "https://openalex.org/W1985469540",
+          "https://openalex.org/W1985652038",
+          "https://openalex.org/W1985844569",
+          "https://openalex.org/W1986705484",
+          "https://openalex.org/W1987421178",
+          "https://openalex.org/W1987675760",
+          "https://openalex.org/W1988179415",
+          "https://openalex.org/W1988318747",
+          "https://openalex.org/W1988698238",
+          "https://openalex.org/W1988788131",
+          "https://openalex.org/W1989255793",
+          "https://openalex.org/W1989312301",
+          "https://openalex.org/W1989788282",
+          "https://openalex.org/W1990503857",
+          "https://openalex.org/W1990950772",
+          "https://openalex.org/W1991071471",
+          "https://openalex.org/W1991184579",
+          "https://openalex.org/W1991405035",
+          "https://openalex.org/W1991649090",
+          "https://openalex.org/W1991721655",
+          "https://openalex.org/W1992058339",
+          "https://openalex.org/W1992467202",
+          "https://openalex.org/W1993342588",
+          "https://openalex.org/W1993547575",
+          "https://openalex.org/W1993743888",
+          "https://openalex.org/W1993904017",
+          "https://openalex.org/W1994050027",
+          "https://openalex.org/W1994180220",
+          "https://openalex.org/W1994600616",
+          "https://openalex.org/W1995027955",
+          "https://openalex.org/W1995201607",
+          "https://openalex.org/W1995540207",
+          "https://openalex.org/W1995925875",
+          "https://openalex.org/W1995950751",
+          "https://openalex.org/W1996158890",
+          "https://openalex.org/W1996624679",
+          "https://openalex.org/W1996711495",
+          "https://openalex.org/W1998686777",
+          "https://openalex.org/W1998743692",
+          "https://openalex.org/W1998827821",
+          "https://openalex.org/W1999289272",
+          "https://openalex.org/W2000959843",
+          "https://openalex.org/W2001383430",
+          "https://openalex.org/W2001417338",
+          "https://openalex.org/W2001569923",
+          "https://openalex.org/W2002507236",
+          "https://openalex.org/W2002593242",
+          "https://openalex.org/W2002602060",
+          "https://openalex.org/W2003132540",
+          "https://openalex.org/W2003713913",
+          "https://openalex.org/W2003836702",
+          "https://openalex.org/W2004203596",
+          "https://openalex.org/W2005324474",
+          "https://openalex.org/W2006129171",
+          "https://openalex.org/W2006175108",
+          "https://openalex.org/W2006385716",
+          "https://openalex.org/W2006421795",
+          "https://openalex.org/W2006511194",
+          "https://openalex.org/W2006558833",
+          "https://openalex.org/W2006756678",
+          "https://openalex.org/W2007826649",
+          "https://openalex.org/W2007945450",
+          "https://openalex.org/W2008293899",
+          "https://openalex.org/W2008575230",
+          "https://openalex.org/W2008616641",
+          "https://openalex.org/W2009236670",
+          "https://openalex.org/W2009433461",
+          "https://openalex.org/W2010709492",
+          "https://openalex.org/W2010957354",
+          "https://openalex.org/W2011617269",
+          "https://openalex.org/W2011772877",
+          "https://openalex.org/W2012047383",
+          "https://openalex.org/W2012418721",
+          "https://openalex.org/W2013026736",
+          "https://openalex.org/W2014457801",
+          "https://openalex.org/W2015661405",
+          "https://openalex.org/W2016376041",
+          "https://openalex.org/W2016468793",
+          "https://openalex.org/W2016472363",
+          "https://openalex.org/W2018390217",
+          "https://openalex.org/W2020234079",
+          "https://openalex.org/W2020237664",
+          "https://openalex.org/W2020678097",
+          "https://openalex.org/W2021184491",
+          "https://openalex.org/W2021241430",
+          "https://openalex.org/W2021574644",
+          "https://openalex.org/W2021588372",
+          "https://openalex.org/W2021793449",
+          "https://openalex.org/W2021989638",
+          "https://openalex.org/W2022491296",
+          "https://openalex.org/W2022668082",
+          "https://openalex.org/W2022863863",
+          "https://openalex.org/W2022916467",
+          "https://openalex.org/W2023026110",
+          "https://openalex.org/W2023464111",
+          "https://openalex.org/W2024227515",
+          "https://openalex.org/W2024280615",
+          "https://openalex.org/W2025070998",
+          "https://openalex.org/W2025348458",
+          "https://openalex.org/W2026199611",
+          "https://openalex.org/W2026551489",
+          "https://openalex.org/W2027803750",
+          "https://openalex.org/W2027831967",
+          "https://openalex.org/W2027861057",
+          "https://openalex.org/W2028195127",
+          "https://openalex.org/W2028490595",
+          "https://openalex.org/W2028677812",
+          "https://openalex.org/W2028834903",
+          "https://openalex.org/W2028890624",
+          "https://openalex.org/W2029282790",
+          "https://openalex.org/W2030113297",
+          "https://openalex.org/W2030580765",
+          "https://openalex.org/W2030983914",
+          "https://openalex.org/W2031389000",
+          "https://openalex.org/W2032929186",
+          "https://openalex.org/W2032939539",
+          "https://openalex.org/W2032991899",
+          "https://openalex.org/W2033298896",
+          "https://openalex.org/W2033367616",
+          "https://openalex.org/W2034184914",
+          "https://openalex.org/W2034777681",
+          "https://openalex.org/W2035079084",
+          "https://openalex.org/W2035115681",
+          "https://openalex.org/W2035656589",
+          "https://openalex.org/W2035718028",
+          "https://openalex.org/W2036153245",
+          "https://openalex.org/W2036519154",
+          "https://openalex.org/W2036847531",
+          "https://openalex.org/W2037067254",
+          "https://openalex.org/W2037801198",
+          "https://openalex.org/W2038327935",
+          "https://openalex.org/W2039259720",
+          "https://openalex.org/W2039444003",
+          "https://openalex.org/W2039943732",
+          "https://openalex.org/W2040358298",
+          "https://openalex.org/W2040461302",
+          "https://openalex.org/W2041306907",
+          "https://openalex.org/W2041973695",
+          "https://openalex.org/W2044291290",
+          "https://openalex.org/W2045089853",
+          "https://openalex.org/W2046238084",
+          "https://openalex.org/W2046449734",
+          "https://openalex.org/W2046474288",
+          "https://openalex.org/W2046530962",
+          "https://openalex.org/W2046722790",
+          "https://openalex.org/W2046812128",
+          "https://openalex.org/W2047142948",
+          "https://openalex.org/W2047532688",
+          "https://openalex.org/W2047664968",
+          "https://openalex.org/W2048119690",
+          "https://openalex.org/W2048160774",
+          "https://openalex.org/W2048179590",
+          "https://openalex.org/W2048837132",
+          "https://openalex.org/W2049063635",
+          "https://openalex.org/W2049234932",
+          "https://openalex.org/W2049681916",
+          "https://openalex.org/W2050046047",
+          "https://openalex.org/W2050378152",
+          "https://openalex.org/W2050943927",
+          "https://openalex.org/W2051088457",
+          "https://openalex.org/W2051317564",
+          "https://openalex.org/W2051366115",
+          "https://openalex.org/W2051722169",
+          "https://openalex.org/W2052207828",
+          "https://openalex.org/W2052293468",
+          "https://openalex.org/W2053096433",
+          "https://openalex.org/W2053302061",
+          "https://openalex.org/W2053365019",
+          "https://openalex.org/W2053442902",
+          "https://openalex.org/W2053501576",
+          "https://openalex.org/W2054212314",
+          "https://openalex.org/W2056091107",
+          "https://openalex.org/W2056872218",
+          "https://openalex.org/W2057081312",
+          "https://openalex.org/W2058934428",
+          "https://openalex.org/W2059081508",
+          "https://openalex.org/W2059820709",
+          "https://openalex.org/W2059831206",
+          "https://openalex.org/W2061510311",
+          "https://openalex.org/W2061685624",
+          "https://openalex.org/W2062220773",
+          "https://openalex.org/W2062417798",
+          "https://openalex.org/W2062424661",
+          "https://openalex.org/W2062463248",
+          "https://openalex.org/W2062510485",
+          "https://openalex.org/W2062899499",
+          "https://openalex.org/W2063227084",
+          "https://openalex.org/W2064561414",
+          "https://openalex.org/W2064918826",
+          "https://openalex.org/W2065484014",
+          "https://openalex.org/W2065625116",
+          "https://openalex.org/W2066198366",
+          "https://openalex.org/W2066363284",
+          "https://openalex.org/W2066468520",
+          "https://openalex.org/W2066510550",
+          "https://openalex.org/W2066670002",
+          "https://openalex.org/W2066983136",
+          "https://openalex.org/W2067406500",
+          "https://openalex.org/W2067473649",
+          "https://openalex.org/W2067914364",
+          "https://openalex.org/W2068202437",
+          "https://openalex.org/W2068491975",
+          "https://openalex.org/W2068625498",
+          "https://openalex.org/W2068803034",
+          "https://openalex.org/W2069039477",
+          "https://openalex.org/W2069140334",
+          "https://openalex.org/W2069182996",
+          "https://openalex.org/W2069255722",
+          "https://openalex.org/W2069778225",
+          "https://openalex.org/W2070480892",
+          "https://openalex.org/W2070889260",
+          "https://openalex.org/W2070896226",
+          "https://openalex.org/W2070940402",
+          "https://openalex.org/W2070943502",
+          "https://openalex.org/W2071437577",
+          "https://openalex.org/W2071655141",
+          "https://openalex.org/W2072207453",
+          "https://openalex.org/W2072238174",
+          "https://openalex.org/W2072339497",
+          "https://openalex.org/W2072454801",
+          "https://openalex.org/W2072960151",
+          "https://openalex.org/W2073516784",
+          "https://openalex.org/W2073676365",
+          "https://openalex.org/W2073845244",
+          "https://openalex.org/W2073975658",
+          "https://openalex.org/W2074439439",
+          "https://openalex.org/W2074724924",
+          "https://openalex.org/W2074981631",
+          "https://openalex.org/W2075008260",
+          "https://openalex.org/W2075175555",
+          "https://openalex.org/W2075275271",
+          "https://openalex.org/W2075572031",
+          "https://openalex.org/W2075888213",
+          "https://openalex.org/W2076009954",
+          "https://openalex.org/W2077561767",
+          "https://openalex.org/W2078448486",
+          "https://openalex.org/W2079317510",
+          "https://openalex.org/W2081296614",
+          "https://openalex.org/W2082064202",
+          "https://openalex.org/W2082512835",
+          "https://openalex.org/W2083196242",
+          "https://openalex.org/W2083359532",
+          "https://openalex.org/W2084327947",
+          "https://openalex.org/W2084612893",
+          "https://openalex.org/W2084851042",
+          "https://openalex.org/W2084856012",
+          "https://openalex.org/W2085385457",
+          "https://openalex.org/W2085614442",
+          "https://openalex.org/W2085643423",
+          "https://openalex.org/W2085779944",
+          "https://openalex.org/W2086265338",
+          "https://openalex.org/W2087501181",
+          "https://openalex.org/W2087921651",
+          "https://openalex.org/W2088343356",
+          "https://openalex.org/W2088401602",
+          "https://openalex.org/W2088647375",
+          "https://openalex.org/W2088723535",
+          "https://openalex.org/W2090188429",
+          "https://openalex.org/W2090479621",
+          "https://openalex.org/W2090805401",
+          "https://openalex.org/W2091016124",
+          "https://openalex.org/W2091216358",
+          "https://openalex.org/W2091884263",
+          "https://openalex.org/W2092159405",
+          "https://openalex.org/W2092636724",
+          "https://openalex.org/W2093100029",
+          "https://openalex.org/W2094008073",
+          "https://openalex.org/W2094392461",
+          "https://openalex.org/W2094427369",
+          "https://openalex.org/W2095264703",
+          "https://openalex.org/W2096280727",
+          "https://openalex.org/W2096399051",
+          "https://openalex.org/W2096692378",
+          "https://openalex.org/W2097139838",
+          "https://openalex.org/W2097382368",
+          "https://openalex.org/W2097574050",
+          "https://openalex.org/W2097634886",
+          "https://openalex.org/W2098386120",
+          "https://openalex.org/W2098558111",
+          "https://openalex.org/W2099033590",
+          "https://openalex.org/W2101521247",
+          "https://openalex.org/W2101652315",
+          "https://openalex.org/W2101901686",
+          "https://openalex.org/W2101932429",
+          "https://openalex.org/W2103546861",
+          "https://openalex.org/W2103736180",
+          "https://openalex.org/W2104796556",
+          "https://openalex.org/W2104828227",
+          "https://openalex.org/W2104901286",
+          "https://openalex.org/W2105869636",
+          "https://openalex.org/W2105917686",
+          "https://openalex.org/W2106741229",
+          "https://openalex.org/W2106798606",
+          "https://openalex.org/W2107174478",
+          "https://openalex.org/W2107658620",
+          "https://openalex.org/W2108060296",
+          "https://openalex.org/W2108187295",
+          "https://openalex.org/W2108575112",
+          "https://openalex.org/W2108934940",
+          "https://openalex.org/W2108992291",
+          "https://openalex.org/W2109128618",
+          "https://openalex.org/W2109615341",
+          "https://openalex.org/W2109785991",
+          "https://openalex.org/W2109833906",
+          "https://openalex.org/W2110315272",
+          "https://openalex.org/W2110380892",
+          "https://openalex.org/W2110649328",
+          "https://openalex.org/W2110824209",
+          "https://openalex.org/W2112191661",
+          "https://openalex.org/W2112487274",
+          "https://openalex.org/W2113215061",
+          "https://openalex.org/W2113341665",
+          "https://openalex.org/W2113958777",
+          "https://openalex.org/W2114224318",
+          "https://openalex.org/W2114355484",
+          "https://openalex.org/W2114427389",
+          "https://openalex.org/W2115800014",
+          "https://openalex.org/W2116403749",
+          "https://openalex.org/W2116472408",
+          "https://openalex.org/W2116774744",
+          "https://openalex.org/W2117656863",
+          "https://openalex.org/W2119176438",
+          "https://openalex.org/W2119861955",
+          "https://openalex.org/W2120094205",
+          "https://openalex.org/W2122049162",
+          "https://openalex.org/W2122594388",
+          "https://openalex.org/W2122989899",
+          "https://openalex.org/W2123094137",
+          "https://openalex.org/W2123308343",
+          "https://openalex.org/W2123865368",
+          "https://openalex.org/W2123912011",
+          "https://openalex.org/W2124924735",
+          "https://openalex.org/W2125021980",
+          "https://openalex.org/W2125079066",
+          "https://openalex.org/W2126256622",
+          "https://openalex.org/W2126602225",
+          "https://openalex.org/W2126763121",
+          "https://openalex.org/W2127169056",
+          "https://openalex.org/W2127650182",
+          "https://openalex.org/W2127716012",
+          "https://openalex.org/W2128110461",
+          "https://openalex.org/W2128152314",
+          "https://openalex.org/W2128319326",
+          "https://openalex.org/W2128607086",
+          "https://openalex.org/W2128988319",
+          "https://openalex.org/W2129730961",
+          "https://openalex.org/W2129761907",
+          "https://openalex.org/W2129786705",
+          "https://openalex.org/W2130897733",
+          "https://openalex.org/W2131502017",
+          "https://openalex.org/W2132216048",
+          "https://openalex.org/W2133542385",
+          "https://openalex.org/W2133728369",
+          "https://openalex.org/W2133870489",
+          "https://openalex.org/W2134153749",
+          "https://openalex.org/W2134229777",
+          "https://openalex.org/W2134503580",
+          "https://openalex.org/W2134701031",
+          "https://openalex.org/W2134808690",
+          "https://openalex.org/W2135318435",
+          "https://openalex.org/W2136979963",
+          "https://openalex.org/W2137143084",
+          "https://openalex.org/W2137712278",
+          "https://openalex.org/W2137912205",
+          "https://openalex.org/W2139406905",
+          "https://openalex.org/W2139782760",
+          "https://openalex.org/W2140628261",
+          "https://openalex.org/W2141449959",
+          "https://openalex.org/W2142444085",
+          "https://openalex.org/W2142512344",
+          "https://openalex.org/W2142534773",
+          "https://openalex.org/W2142558639",
+          "https://openalex.org/W2142790570",
+          "https://openalex.org/W2143277187",
+          "https://openalex.org/W2143453049",
+          "https://openalex.org/W2143599839",
+          "https://openalex.org/W2143988805",
+          "https://openalex.org/W2143997716",
+          "https://openalex.org/W2144815022",
+          "https://openalex.org/W2145100181",
+          "https://openalex.org/W2145198797",
+          "https://openalex.org/W2145332103",
+          "https://openalex.org/W2145387569",
+          "https://openalex.org/W2145614575",
+          "https://openalex.org/W2145712880",
+          "https://openalex.org/W2145727150",
+          "https://openalex.org/W2145926526",
+          "https://openalex.org/W2146650297",
+          "https://openalex.org/W2147619435",
+          "https://openalex.org/W2147954119",
+          "https://openalex.org/W2149080875",
+          "https://openalex.org/W2149299298",
+          "https://openalex.org/W2149352439",
+          "https://openalex.org/W2149776132",
+          "https://openalex.org/W2149833428",
+          "https://openalex.org/W2150710339",
+          "https://openalex.org/W2151016166",
+          "https://openalex.org/W2151654632",
+          "https://openalex.org/W2151933704",
+          "https://openalex.org/W2152302193",
+          "https://openalex.org/W2152375584",
+          "https://openalex.org/W2152797960",
+          "https://openalex.org/W2153001370",
+          "https://openalex.org/W2153546241",
+          "https://openalex.org/W2154556609",
+          "https://openalex.org/W2154914696",
+          "https://openalex.org/W2155061349",
+          "https://openalex.org/W2157165780",
+          "https://openalex.org/W2157390382",
+          "https://openalex.org/W2157433322",
+          "https://openalex.org/W2157619992",
+          "https://openalex.org/W2157683818",
+          "https://openalex.org/W2157857991",
+          "https://openalex.org/W2158388954",
+          "https://openalex.org/W2158814506",
+          "https://openalex.org/W2159009005",
+          "https://openalex.org/W2159266221",
+          "https://openalex.org/W2159565093",
+          "https://openalex.org/W2159817812",
+          "https://openalex.org/W2160598359",
+          "https://openalex.org/W2160717157",
+          "https://openalex.org/W2161288816",
+          "https://openalex.org/W2161491767",
+          "https://openalex.org/W2161515728",
+          "https://openalex.org/W2161732286",
+          "https://openalex.org/W2162245166",
+          "https://openalex.org/W2162582565",
+          "https://openalex.org/W2163344049",
+          "https://openalex.org/W2163465287",
+          "https://openalex.org/W2163635166",
+          "https://openalex.org/W2163707022",
+          "https://openalex.org/W2163813592",
+          "https://openalex.org/W2164249947",
+          "https://openalex.org/W2164633611",
+          "https://openalex.org/W2165882147",
+          "https://openalex.org/W2165979614",
+          "https://openalex.org/W2166471466",
+          "https://openalex.org/W2166865790",
+          "https://openalex.org/W2167321449",
+          "https://openalex.org/W2167882512",
+          "https://openalex.org/W2168277730",
+          "https://openalex.org/W2168282603",
+          "https://openalex.org/W2168492610",
+          "https://openalex.org/W2168497631",
+          "https://openalex.org/W2168876597",
+          "https://openalex.org/W2169289150",
+          "https://openalex.org/W2169783079",
+          "https://openalex.org/W2170525977",
+          "https://openalex.org/W2171071880",
+          "https://openalex.org/W2171604407",
+          "https://openalex.org/W2178280253",
+          "https://openalex.org/W2181499160",
+          "https://openalex.org/W2248091142",
+          "https://openalex.org/W2323468476",
+          "https://openalex.org/W2332837587",
+          "https://openalex.org/W2395374664",
+          "https://openalex.org/W2471444534",
+          "https://openalex.org/W2501677824",
+          "https://openalex.org/W2766283617",
+          "https://openalex.org/W2949375867",
+          "https://openalex.org/W2949431523",
+          "https://openalex.org/W3028507370",
+          "https://openalex.org/W3148790017",
+          "https://openalex.org/W3149676951",
+          "https://openalex.org/W3173624724",
+          "https://openalex.org/W4211022623",
+          "https://openalex.org/W4233918678",
+          "https://openalex.org/W4234057315",
+          "https://openalex.org/W4236262546",
+          "https://openalex.org/W4239833500",
+          "https://openalex.org/W4245543257",
+          "https://openalex.org/W4327849160",
+          "https://openalex.org/W6738945739"
+        ],
+        "referenced_works_count": 589,
+        "title": "Occurrence, Classification, and Biological Function of Hydrogenases:  An Overview",
+        "type": "review"
+      }
+    ]
+  },
+  "response_hash": "088a439710cbea2d8aefa515da5facdded219aeceafed4e7aacf644896af8616",
+  "retrieved_at": "2026-07-14T13:48:45Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

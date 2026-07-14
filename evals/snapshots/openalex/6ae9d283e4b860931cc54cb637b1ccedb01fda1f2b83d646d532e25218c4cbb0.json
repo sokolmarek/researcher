@@ -1,0 +1,301 @@
+{
+  "endpoint": "works/doi:10.1007/s40846-022-00681-z",
+  "request_key": "6ae9d283e4b860931cc54cb637b1ccedb01fda1f2b83d646d532e25218c4cbb0",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I74525822"
+            ],
+            "raw_affiliation_string": "Hubei Collaborative Innovation Center for High-Efficiency Utilization of Solar Energy, Hubei University of Technology, Wuhan, 430068, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yunfan Chen",
+          "id": "https://openalex.org/A5060215503",
+          "orcid": "https://orcid.org/0000-0003-4808-6352"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Hubei University of Technology",
+            "id": "https://openalex.org/I74525822",
+            "lineage": [
+              "https://openalex.org/I74525822"
+            ],
+            "ror": "https://ror.org/02d3fj342",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Hubei Collaborative Innovation Center for High-Efficiency Utilization of Solar Energy, Hubei University of Technology, Wuhan, 430068, China"
+        ],
+        "raw_author_name": "Yunfan Chen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I74525822"
+            ],
+            "raw_affiliation_string": "Hubei Collaborative Innovation Center for High-Efficiency Utilization of Solar Energy, Hubei University of Technology, Wuhan, 430068, China"
+          }
+        ],
+        "author": {
+          "display_name": "Chong Zhang",
+          "id": "https://openalex.org/A5100393902",
+          "orcid": "https://orcid.org/0000-0002-2933-5002"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Hubei University of Technology",
+            "id": "https://openalex.org/I74525822",
+            "lineage": [
+              "https://openalex.org/I74525822"
+            ],
+            "ror": "https://ror.org/02d3fj342",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Hubei Collaborative Innovation Center for High-Efficiency Utilization of Solar Energy, Hubei University of Technology, Wuhan, 430068, China"
+        ],
+        "raw_author_name": "Chong Zhang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I76569877"
+            ],
+            "raw_affiliation_string": "School of Instrument Science and Engineering, Southeast University, Nanjing, 210096, China"
+          }
+        ],
+        "author": {
+          "display_name": "Chengyu Liu",
+          "id": "https://openalex.org/A5100321186",
+          "orcid": "https://orcid.org/0000-0003-1965-3020"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Southeast University",
+            "id": "https://openalex.org/I76569877",
+            "lineage": [
+              "https://openalex.org/I76569877"
+            ],
+            "ror": "https://ror.org/04ct4d772",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "School of Instrument Science and Engineering, Southeast University, Nanjing, 210096, China"
+        ],
+        "raw_author_name": "Chengyu Liu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I149137203",
+              "https://openalex.org/I4210109381"
+            ],
+            "raw_affiliation_string": "Department of Psychiatry, Affiliated Hospital To Guizhou Medical University, Guiyang, 550004, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yiming Wang",
+          "id": "https://openalex.org/A5100377942",
+          "orcid": "https://orcid.org/0000-0002-9054-1868"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Affiliated Hospital of Guizhou Medical University",
+            "id": "https://openalex.org/I4210109381",
+            "lineage": [
+              "https://openalex.org/I4210109381"
+            ],
+            "ror": "https://ror.org/02kstas42",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Guiyang Medical University",
+            "id": "https://openalex.org/I149137203",
+            "lineage": [
+              "https://openalex.org/I149137203"
+            ],
+            "ror": "https://ror.org/035y7a716",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Psychiatry, Affiliated Hospital To Guizhou Medical University, Guiyang, 550004, China"
+        ],
+        "raw_author_name": "Yiming Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I74525822"
+            ],
+            "raw_affiliation_string": "Hubei Collaborative Innovation Center for High-Efficiency Utilization of Solar Energy, Hubei University of Technology, Wuhan, 430068, China"
+          }
+        ],
+        "author": {
+          "display_name": "Xiangkui Wan",
+          "id": "https://openalex.org/A5101831073",
+          "orcid": "https://orcid.org/0000-0001-8871-3088"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Hubei University of Technology",
+            "id": "https://openalex.org/I74525822",
+            "lineage": [
+              "https://openalex.org/I74525822"
+            ],
+            "ror": "https://ror.org/02d3fj342",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Hubei Collaborative Innovation Center for High-Efficiency Utilization of Solar Energy, Hubei University of Technology, Wuhan, 430068, China"
+        ],
+        "raw_author_name": "Xiangkui Wan",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "63",
+      "issue": "1",
+      "last_page": "73",
+      "volume": "42"
+    },
+    "cited_by_count": 67,
+    "display_name": "Atrial Fibrillation Detection Using a Feedforward Neural Network",
+    "doi": "https://doi.org/10.1007/s40846-022-00681-z",
+    "id": "https://openalex.org/W4210830697",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s40846-022-00681-z",
+      "openalex": "https://openalex.org/W4210830697"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s40846-022-00681-z",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s40846-022-00681-z",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Journal of Medical and Biological Engineering",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Journal of Medical and Biological Engineering",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S8769598",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1609-0985",
+          "2199-4757"
+        ],
+        "issn_l": "1609-0985",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2022-02-01",
+    "publication_year": 2022,
+    "referenced_works": [
+      "https://openalex.org/W1944792747",
+      "https://openalex.org/W2037641135",
+      "https://openalex.org/W2162273778",
+      "https://openalex.org/W2170605288",
+      "https://openalex.org/W2621205740",
+      "https://openalex.org/W2704923930",
+      "https://openalex.org/W2742774386",
+      "https://openalex.org/W2767978081",
+      "https://openalex.org/W2791945458",
+      "https://openalex.org/W2794550444",
+      "https://openalex.org/W2795115089",
+      "https://openalex.org/W2805313241",
+      "https://openalex.org/W2906848975",
+      "https://openalex.org/W2919543428",
+      "https://openalex.org/W2971414156",
+      "https://openalex.org/W2984852226",
+      "https://openalex.org/W2987623830",
+      "https://openalex.org/W2998943469",
+      "https://openalex.org/W3033966907",
+      "https://openalex.org/W3084170995",
+      "https://openalex.org/W3088346701",
+      "https://openalex.org/W3096932763",
+      "https://openalex.org/W4253204342"
+    ],
+    "referenced_works_count": 23,
+    "title": "Atrial Fibrillation Detection Using a Feedforward Neural Network",
+    "type": "article"
+  },
+  "response_hash": "8fe978dfafec01f3e09fc7be59d8940333fd2a181046a307cf2c56c72aa1cad1",
+  "retrieved_at": "2026-07-14T14:48:48Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

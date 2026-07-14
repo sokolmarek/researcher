@@ -1,0 +1,686 @@
+{
+  "endpoint": "dois",
+  "request_key": "6cbc11fbb62fe17d094d51be37d3ba766ae4efdf9ffacd61c9a9961ac4c26aaa",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Spatio-temporal Self-Supervised Representation Learning for 3D Point Clouds"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-11-24T02:35:30Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Lilja",
+              "givenName": "Adam",
+              "name": "Lilja, Adam",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Lan",
+              "givenName": "Ji",
+              "name": "Lan, Ji",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Fu",
+              "givenName": "Junsheng",
+              "name": "Fu, Junsheng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Hammarstrand",
+              "givenName": "Lars",
+              "name": "Hammarstrand, Lars",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-11-21T13:05:42Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-11-24T01:36:23Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-06-11T16:41:57Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-06-12T01:03:20Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-11",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2025",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Learning 3D scene geometry and semantics from images is a core challenge in computer vision and a key capability for autonomous driving. Since large-scale 3D annotation is prohibitively expensive, recent work explores self-supervised learning directly from sensor data without manual labels. Existing approaches either rely on 2D rendering consistency, where 3D structure emerges only implicitly, or on discretized voxel grids from accumulated lidar point clouds, limiting spatial precision and scalability. We introduce QueryOcc, a query-based self-supervised framework that learns continuous 3D semantic occupancy directly through independent 4D spatio-temporal queries sampled across adjacent frames. The framework supports supervision from either pseudo-point clouds derived from vision foundation models or raw lidar data. To enable long-range supervision and reasoning under constant memory, we introduce a contractive scene representation that preserves near-field detail while smoothly compressing distant regions. QueryOcc surpasses previous camera-based methods by 26% in semantic RayIoU on the self-supervised Occ3D-nuScenes benchmark while running at 11.6 FPS, demonstrating that direct 4D query supervision enables strong self-supervised occupancy learning. https://research.zenseact.com/publications/queryocc/",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2511.17221",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2511.17221",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-11-24T02:35:31Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Robotics (cs.RO)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "QueryOcc: Query-based Self-Supervision for 3D Semantic Occupancy"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-06-12T02:20:35Z",
+          "url": "https://arxiv.org/abs/2511.17221",
+          "version": "2",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2511.17221",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-06-10T02:05:55Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Liu",
+              "givenName": "Yun",
+              "name": "Liu, Yun",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Yan",
+              "givenName": "Xuefeng",
+              "name": "Yan, Xuefeng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Nan",
+              "givenName": "Liangliang",
+              "name": "Nan, Liangliang",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Xianzhi",
+              "name": "Li, Xianzhi",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Peng",
+              "name": "Li, Peng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhu",
+              "givenName": "Zhe",
+              "name": "Zhu, Zhe",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Chen",
+              "givenName": "Honghua",
+              "name": "Chen, Honghua",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wei",
+              "givenName": "Mingqiang",
+              "name": "Wei, Mingqiang",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-06-09T04:16:39Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-06-10T00:26:18Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-06",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2026",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "The recent receptance weighted key value (RWKV) model combines RNN-style recurrence, offering a linear-complexity alternative to Transformers' quadratic self-attention for modeling global dependencies. However, when directly applied to point clouds, RWKV, originally developed for sequential text, struggles to capture local geometric structures and model spatial dependencies effectively. To address this, we propose the \\textbf{P-RWKV} block, which bridges the gap between sequence modeling and irregular 3D geometry while preserving the efficiency advantages of RWKV. It consists of a Local Perception Expansion (LPE) component to expand contextual perception along the spatio-temporal sequence and a Spatial Context Enhancement (SCE) component to strengthen spatial awareness. To validate the effectiveness of P-RWKV for point cloud understanding, we construct PointER, a single-modality self-supervised representation learning framework whose encoder is composed of stacked P-RWKV blocks. Furthermore, we extend P-RWKV to a cross-modality setting and integrate the proposed core sub-modules into multiple architectures, demonstrating strong plug-and-play flexibility and architectural generality. Extensive experiments show that the P-RWKV block and its key sub-modules achieve competitive performance across various tasks with lower computational cost and inference latency. Code will be released upon acceptance.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2606.10395",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2606.10395",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-06-10T02:05:56Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Efficient RWKV-based Representation Learning for 3D Point Clouds"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-06-10T02:05:56Z",
+          "url": "https://arxiv.org/abs/2606.10395",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2606.10395",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-12-11T02:47:06Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Zhiheng",
+              "name": "Li, Zhiheng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Weihua",
+              "name": "Wang, Weihua",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Shen",
+              "givenName": "Qiang",
+              "name": "Shen, Qiang",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhao",
+              "givenName": "Yichen",
+              "name": "Zhao, Yichen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Fang",
+              "givenName": "Zheng",
+              "name": "Fang, Zheng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-12-10T12:55:05Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-12-11T01:40:17Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-12",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2025",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Conventional SLAM systems using visual or LiDAR data often struggle in poor lighting and severe weather. Although 4D radar is suited for such environments, its sparse and noisy point clouds hinder accurate odometry estimation, while the radar maps suffer from obscure and incomplete structures. Thus, we propose Super4DR, a 4D radar-centric framework for learning-based odometry estimation and gaussian-based map optimization. First, we design a cluster-aware odometry network that incorporates object-level cues from the clustered radar points for inter-frame matching, alongside a hierarchical self-supervision mechanism to overcome outliers through spatio-temporal consistency, knowledge transfer, and feature contrast. Second, we propose using 3D gaussians as an intermediate representation, coupled with a radar-specific growth strategy, selective separation, and multi-view regularization, to recover blurry map areas and those undetected based on image texture. Experiments show that Super4DR achieves a 67% performance gain over prior self-supervised methods, nearly matches supervised odometry, and narrows the map quality disparity with LiDAR while enabling multi-modal image rendering.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "17 pages, 20 figures",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2512.09608",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2512.09608",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-12-11T02:47:07Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Robotics (cs.RO)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Super4DR: 4D Radar-centric Self-supervised Odometry and Gaussian-based Map Optimization"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2025-12-11T02:47:07Z",
+          "url": "https://arxiv.org/abs/2512.09608",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2512.09608",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-20T17:55:36Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Huang",
+              "givenName": "Siyuan",
+              "name": "Huang, Siyuan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Xie",
+              "givenName": "Yichen",
+              "name": "Xie, Yichen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhu",
+              "givenName": "Song-Chun",
+              "name": "Zhu, Song-Chun",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhu",
+              "givenName": "Yixin",
+              "name": "Zhu, Yixin",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2021-09-01T04:17:11Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-09-02T00:08:35Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-09",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2021",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "To date, various 3D scene understanding tasks still lack practical and generalizable pre-trained models, primarily due to the intricate nature of 3D scene understanding tasks and their immense variations introduced by camera views, lighting, occlusions, etc. In this paper, we tackle this challenge by introducing a spatio-temporal representation learning (STRL) framework, capable of learning from unlabeled 3D point clouds in a self-supervised fashion. Inspired by how infants learn from visual data in the wild, we explore the rich spatio-temporal cues derived from the 3D data. Specifically, STRL takes two temporally-correlated frames from a 3D point cloud sequence as the input, transforms it with the spatial data augmentation, and learns the invariant representation self-supervisedly. To corroborate the efficacy of STRL, we conduct extensive experiments on three types (synthetic, indoor, and outdoor) of datasets. Experimental results demonstrate that, compared with supervised learning methods, the learned self-supervised representation facilitates various models to attain comparable or even better performances while capable of generalizing pre-trained models to downstream tasks, including 3D shape classification, 3D object detection, and 3D semantic segmentation. Moreover, the spatio-temporal contextual cues embedded in 3D point clouds significantly improve the learned representations.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "ICCV 2021",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2109.00179",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2109.00179",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2021,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-20T17:55:37Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Spatio-temporal Self-Supervised Representation Learning for 3D Point Clouds"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-02-20T17:55:37Z",
+          "url": "https://arxiv.org/abs/2109.00179",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2109.00179",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Spatio-temporal+Self-Supervised+Representation+Learning+for+3D+Point+Clouds&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 4,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "82c754053433522f7b37a3e6d0acb628b65780953400124c754b008ebcde8ef9",
+  "retrieved_at": "2026-07-14T14:48:29Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

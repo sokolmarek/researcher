@@ -1,0 +1,173 @@
+{
+  "endpoint": "works/doi:10.1016/j.micpro.2020.103363",
+  "request_key": "f782cc361f8f72c0d80cf5bf3e255591a73b7db33d7269a6af7a7ee9a973e1b7",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I154099455"
+            ],
+            "raw_affiliation_string": "Shandong University Department of Physical Education, Weihai campus, Weihai, Shandong, China"
+          }
+        ],
+        "author": {
+          "display_name": "Kai Zhan",
+          "id": "https://openalex.org/A5070528488",
+          "orcid": "https://orcid.org/0000-0001-6955-7323"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Shandong University",
+            "id": "https://openalex.org/I154099455",
+            "lineage": [
+              "https://openalex.org/I154099455"
+            ],
+            "ror": "https://ror.org/0207yh398",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Shandong University Department of Physical Education, Weihai campus, Weihai, Shandong, China"
+        ],
+        "raw_author_name": "Kai Zhan"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "103363",
+      "issue": null,
+      "last_page": "103363",
+      "volume": "80"
+    },
+    "cited_by_count": 61,
+    "display_name": "RETRACTED: Sports and health big data system based on 5G network and Internet of Things system",
+    "doi": "https://doi.org/10.1016/j.micpro.2020.103363",
+    "id": "https://openalex.org/W3095650198",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.micpro.2020.103363",
+      "mag": "3095650198",
+      "openalex": "https://openalex.org/W3095650198"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.micpro.2020.103363",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.micpro.2020.103363",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Microprocessors and Microsystems",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Microprocessors and Microsystems",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S195663827",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0141-9331",
+          "1872-9436"
+        ],
+        "issn_l": "0141-9331",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2020-11-01",
+    "publication_year": 2020,
+    "referenced_works": [
+      "https://openalex.org/W2240293855",
+      "https://openalex.org/W2519716312",
+      "https://openalex.org/W2586211620",
+      "https://openalex.org/W2606425852",
+      "https://openalex.org/W2766297433",
+      "https://openalex.org/W2769611029",
+      "https://openalex.org/W2783286845",
+      "https://openalex.org/W2799597322",
+      "https://openalex.org/W2805240935",
+      "https://openalex.org/W2851171840",
+      "https://openalex.org/W2884081323",
+      "https://openalex.org/W2903016534",
+      "https://openalex.org/W2909071188",
+      "https://openalex.org/W2934441046",
+      "https://openalex.org/W2964225543",
+      "https://openalex.org/W2965017265",
+      "https://openalex.org/W3011252872",
+      "https://openalex.org/W3011466106",
+      "https://openalex.org/W3011980056",
+      "https://openalex.org/W3017420457",
+      "https://openalex.org/W3018701654",
+      "https://openalex.org/W3092751470",
+      "https://openalex.org/W3092984463",
+      "https://openalex.org/W3099984696",
+      "https://openalex.org/W4213356160",
+      "https://openalex.org/W4230105235",
+      "https://openalex.org/W4230323401",
+      "https://openalex.org/W4232046170",
+      "https://openalex.org/W4235392608",
+      "https://openalex.org/W4240303977",
+      "https://openalex.org/W4244891047",
+      "https://openalex.org/W4244893975",
+      "https://openalex.org/W4247381352",
+      "https://openalex.org/W4249382586",
+      "https://openalex.org/W4252558762",
+      "https://openalex.org/W4255340499",
+      "https://openalex.org/W4256217191",
+      "https://openalex.org/W4256712666",
+      "https://openalex.org/W6690401946",
+      "https://openalex.org/W6726790345",
+      "https://openalex.org/W6733439882",
+      "https://openalex.org/W6745035472",
+      "https://openalex.org/W6745518915",
+      "https://openalex.org/W6750499312",
+      "https://openalex.org/W6751906029",
+      "https://openalex.org/W6752775170",
+      "https://openalex.org/W6753365011",
+      "https://openalex.org/W6757090751",
+      "https://openalex.org/W6757954797",
+      "https://openalex.org/W6760880666",
+      "https://openalex.org/W6766519997",
+      "https://openalex.org/W6766544000",
+      "https://openalex.org/W6774776340",
+      "https://openalex.org/W6775068164",
+      "https://openalex.org/W6776733711",
+      "https://openalex.org/W6784761122"
+    ],
+    "referenced_works_count": 56,
+    "title": "RETRACTED: Sports and health big data system based on 5G network and Internet of Things system",
+    "type": "article"
+  },
+  "response_hash": "38c94ad685f147b18ebb701bda32b83e06a31079b4cfb2b56c8014a928c39770",
+  "retrieved_at": "2026-07-14T13:48:51Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

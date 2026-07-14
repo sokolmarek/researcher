@@ -1,0 +1,596 @@
+{
+  "endpoint": "works/doi:10.1145/3404835.3462862",
+  "request_key": "f85e6503cb5e321a004bb685fc97e3a6622bf65ade4a15832e93ce1947bb3574",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "(1)": [
+        47
+      ],
+      "(2)": [
+        65
+      ],
+      "(GCNs)": [
+        29
+      ],
+      "(long-tail)": [
+        62
+      ],
+      "Despite": [
+        37
+      ],
+      "ID": [
+        12
+      ],
+      "LightGCN.": [
+        36
+      ],
+      "PinSage": [
+        34
+      ],
+      "Representation": [
+        0
+      ],
+      "This": [
+        20
+      ],
+      "aggregation": [
+        75
+      ],
+      "and": [
+        35,
+        64
+      ],
+      "are": [
+        67
+      ],
+      "argue": [
+        40
+      ],
+      "as": [
+        33,
+        72
+      ],
+      "convolution": [
+        27
+      ],
+      "deteriorating": [
+        57
+      ],
+      "edges.": [
+        83
+      ],
+      "effectiveness,": [
+        38
+      ],
+      "enlarges": [
+        78
+      ],
+      "evolved": [
+        8
+      ],
+      "exert": [
+        50
+      ],
+      "exploiting": [
+        17
+      ],
+      "for": [
+        5,
+        30
+      ],
+      "from": [
+        9,
+        44
+      ],
+      "further": [
+        77
+      ],
+      "graph": [
+        4,
+        26
+      ],
+      "has": [
+        7
+      ],
+      "high-degree": [
+        48
+      ],
+      "higher-order": [
+        18
+      ],
+      "history": [
+        15
+      ],
+      "impact": [
+        52,
+        80
+      ],
+      "interaction": [
+        14
+      ],
+      "interactions,": [
+        71
+      ],
+      "items;": [
+        63
+      ],
+      "larger": [
+        51
+      ],
+      "leads": [
+        21
+      ],
+      "learning": [
+        1
+      ],
+      "learning,": [
+        56
+      ],
+      "limitations:": [
+        46
+      ],
+      "low-degree": [
+        61
+      ],
+      "neighborhood": [
+        74
+      ],
+      "neighbors.": [
+        19
+      ],
+      "networks": [
+        28
+      ],
+      "nodes": [
+        49
+      ],
+      "noisy": [
+        70
+      ],
+      "observed": [
+        82
+      ],
+      "of": [
+        25,
+        60,
+        81
+      ],
+      "on": [
+        2,
+        53
+      ],
+      "or": [
+        13
+      ],
+      "recommendation": [
+        6,
+        31
+      ],
+      "recommendations": [
+        59
+      ],
+      "representation": [
+        55
+      ],
+      "representations": [
+        66
+      ],
+      "scheme": [
+        76
+      ],
+      "single": [
+        11
+      ],
+      "success": [
+        24
+      ],
+      "such": [
+        32
+      ],
+      "suffer": [
+        43
+      ],
+      "that": [
+        41
+      ],
+      "the": [
+        23,
+        54,
+        58,
+        73,
+        79
+      ],
+      "they": [
+        42
+      ],
+      "to": [
+        16,
+        22,
+        69
+      ],
+      "two": [
+        45
+      ],
+      "user-item": [
+        3
+      ],
+      "using": [
+        10
+      ],
+      "vulnerable": [
+        68
+      ],
+      "we": [
+        39
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I126520041"
+            ],
+            "raw_affiliation_string": "University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "author": {
+          "display_name": "Jiancan Wu",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "University of Science and Technology of China",
+            "id": "https://openalex.org/I126520041",
+            "lineage": [
+              "https://openalex.org/I126520041",
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/04c4dkn09",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Science and Technology of China, Hefei, China"
+        ],
+        "raw_author_name": "Jiancan Wu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I165932596"
+            ],
+            "raw_affiliation_string": "National University of Singapore, Singapore, Singapore"
+          }
+        ],
+        "author": {
+          "display_name": "Xiang Wang",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "SG"
+        ],
+        "institutions": [
+          {
+            "country_code": "SG",
+            "display_name": "National University of Singapore",
+            "id": "https://openalex.org/I165932596",
+            "lineage": [
+              "https://openalex.org/I165932596"
+            ],
+            "ror": "https://ror.org/01tgyzw49",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "National University of Singapore, Singapore, Singapore"
+        ],
+        "raw_author_name": "Xiang Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I165932596"
+            ],
+            "raw_affiliation_string": "National University of Singapore, Singapore, Singapore"
+          }
+        ],
+        "author": {
+          "display_name": "Fuli Feng",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "SG"
+        ],
+        "institutions": [
+          {
+            "country_code": "SG",
+            "display_name": "National University of Singapore",
+            "id": "https://openalex.org/I165932596",
+            "lineage": [
+              "https://openalex.org/I165932596"
+            ],
+            "ror": "https://ror.org/01tgyzw49",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "National University of Singapore, Singapore, Singapore"
+        ],
+        "raw_author_name": "Fuli Feng",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I126520041"
+            ],
+            "raw_affiliation_string": "University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "author": {
+          "display_name": "Xiangnan He",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "University of Science and Technology of China",
+            "id": "https://openalex.org/I126520041",
+            "lineage": [
+              "https://openalex.org/I126520041",
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/04c4dkn09",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Science and Technology of China, Hefei, China"
+        ],
+        "raw_author_name": "Xiangnan He",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I157773358"
+            ],
+            "raw_affiliation_string": "Sun Yat-sen University, Guangzhou, China"
+          }
+        ],
+        "author": {
+          "display_name": "Liang Chen",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Sun Yat-sen University",
+            "id": "https://openalex.org/I157773358",
+            "lineage": [
+              "https://openalex.org/I157773358"
+            ],
+            "ror": "https://ror.org/0064kty71",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Sun Yat-sen University, Guangzhou, China"
+        ],
+        "raw_author_name": "Liang Chen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210113369"
+            ],
+            "raw_affiliation_string": "Microsoft Research Asia, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Jianxun Lian",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Microsoft Research Asia (China)",
+            "id": "https://openalex.org/I4210113369",
+            "lineage": [
+              "https://openalex.org/I1290206253",
+              "https://openalex.org/I4210113369"
+            ],
+            "ror": "https://ror.org/0300m5276",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Microsoft Research Asia, Beijing, China"
+        ],
+        "raw_author_name": "Jianxun Lian",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210113369"
+            ],
+            "raw_affiliation_string": "Microsoft Research Asia, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Xing Xie",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Microsoft Research Asia (China)",
+            "id": "https://openalex.org/I4210113369",
+            "lineage": [
+              "https://openalex.org/I1290206253",
+              "https://openalex.org/I4210113369"
+            ],
+            "ror": "https://ror.org/0300m5276",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Microsoft Research Asia, Beijing, China"
+        ],
+        "raw_author_name": "Xing Xie",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "pmh:oai:arXiv.org:2010.10783",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2010.10783",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2010.10783",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+        "display_name": "arXiv (Cornell University)",
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "host_organization_name": "Cornell University",
+        "id": "https://openalex.org/S4306400194",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": true,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": "submittedVersion"
+    },
+    "biblio": {
+      "first_page": "726",
+      "issue": null,
+      "last_page": "735",
+      "volume": null
+    },
+    "cited_by_count": 1347,
+    "display_name": "Self-supervised Graph Learning for Recommendation",
+    "doi": "https://doi.org/10.1145/3404835.3462862",
+    "id": "https://openalex.org/W3094605801",
+    "ids": {
+      "doi": "https://doi.org/10.1145/3404835.3462862",
+      "mag": "3094605801",
+      "openalex": "https://openalex.org/W3094605801"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://arxiv.org/pdf/2010.10783"
+    },
+    "primary_location": {
+      "id": "doi:10.1145/3404835.3462862",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1145/3404835.3462862",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "raw_type": "proceedings-article",
+      "source": null,
+      "version": "publishedVersion"
+    },
+    "publication_date": "2021-07-11",
+    "publication_year": 2021,
+    "referenced_works": [
+      "https://openalex.org/W1533861849",
+      "https://openalex.org/W1976999215",
+      "https://openalex.org/W1994389483",
+      "https://openalex.org/W2056021151",
+      "https://openalex.org/W2102035799",
+      "https://openalex.org/W2152790380",
+      "https://openalex.org/W2488426624",
+      "https://openalex.org/W2565948352",
+      "https://openalex.org/W2807021761",
+      "https://openalex.org/W2911778742",
+      "https://openalex.org/W2913560138",
+      "https://openalex.org/W2945623882",
+      "https://openalex.org/W2945827670",
+      "https://openalex.org/W2946617802",
+      "https://openalex.org/W2949465136",
+      "https://openalex.org/W2963085847",
+      "https://openalex.org/W2964965220",
+      "https://openalex.org/W3033630125",
+      "https://openalex.org/W3034896171",
+      "https://openalex.org/W3036446966",
+      "https://openalex.org/W3048692209",
+      "https://openalex.org/W6600213211",
+      "https://openalex.org/W6736685754"
+    ],
+    "referenced_works_count": 23,
+    "title": "Self-supervised Graph Learning for Recommendation",
+    "type": "article"
+  },
+  "response_hash": "7efe00f1688f0f1edc7ce427bf3e7689060531b920e905bb7ad50bc62ead9f63",
+  "retrieved_at": "2026-07-14T13:49:41Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

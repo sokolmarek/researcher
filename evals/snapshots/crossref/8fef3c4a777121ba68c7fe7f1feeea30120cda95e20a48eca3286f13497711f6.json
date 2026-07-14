@@ -1,0 +1,1075 @@
+{
+  "endpoint": "works/10.1038/s42256-023-00640-6",
+  "request_key": "8fef3c4a777121ba68c7fe7f1feeea30120cda95e20a48eca3286f13497711f6",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1038/s42256-023-00640-6",
+      "ISSN": [
+        "2522-5839"
+      ],
+      "URL": "https://doi.org/10.1038/s42256-023-00640-6",
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Self-supervised representation learning (SSL) on biomedical networks provides new opportunities for drug discovery; however, effectively combining multiple SSL models is still challenging and has been rarely explored. We therefore propose multitask joint strategies of SSL on biomedical networks for drug discovery, named MSSL2drug. We design six basic SSL tasks that are inspired by the knowledge of various modalities, inlcuding structures, semantics and attributes in heterogeneous biomedical networks. Importantly, fifteen combinations of multiple tasks are evaluated using a graph-attention-based multitask adversarial learning framework in two drug discovery scenarios. The results suggest two important findings: (1) combinations of multimodal tasks achieve better performance than other multitask joint models; (2) the local–global combination models yield higher performance than random two-task combinations when there are the same number of modalities. We thus conjecture that the multimodal and local–global combination strategies can be treated as the guideline of multitask SSL for drug discovery.</jats:p>",
+      "alternative-id": [
+        "640"
+      ],
+      "assertion": [
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Received",
+          "name": "received",
+          "order": 1,
+          "value": "14 January 2022"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Accepted",
+          "name": "accepted",
+          "order": 2,
+          "value": "2 March 2023"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "First Online",
+          "name": "first_online",
+          "order": 3,
+          "value": "24 April 2023"
+        },
+        {
+          "group": {
+            "label": "Competing interests",
+            "name": "EthicsHeading"
+          },
+          "name": "Ethics",
+          "order": 1,
+          "value": "The authors declare no competing interests."
+        }
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5041-4269",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Wang",
+          "given": "Xiaoqi",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7232-9946",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Cheng",
+          "given": "Yingjie",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Yang",
+          "given": "Yaning",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9865-2212",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Yu",
+          "given": "Yue",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4895-7330",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Li",
+          "given": "Fei",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4647-2615",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Peng",
+          "given": "Shaoliang",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Nature Machine Intelligence"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": [
+          "link.springer.com"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            24
+          ]
+        ],
+        "date-time": "2023-04-24T12:03:09Z",
+        "timestamp": 1682337789000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            24
+          ]
+        ],
+        "date-time": "2023-04-24T12:09:25Z",
+        "timestamp": 1682338165000
+      },
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            10
+          ]
+        ],
+        "date-time": "2026-07-10T13:23:55Z",
+        "timestamp": 1783689835024,
+        "version": "3.55.0"
+      },
+      "is-referenced-by-count": 71,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2522-5839"
+        }
+      ],
+      "issue": "4",
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            24
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "4",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              4
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0",
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                24
+              ]
+            ],
+            "date-time": "2023-04-24T00:00:00Z",
+            "timestamp": 1682294400000
+          }
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                24
+              ]
+            ],
+            "date-time": "2023-04-24T00:00:00Z",
+            "timestamp": 1682294400000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s42256-023-00640-6.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s42256-023-00640-6",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s42256-023-00640-6.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "297",
+      "original-title": [],
+      "page": "445-456",
+      "prefix": "10.1038",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            24
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            24
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "reference": [
+        {
+          "DOI": "10.1038/nrd1382",
+          "author": "M Dickson",
+          "doi-asserted-by": "publisher",
+          "first-page": "417",
+          "journal-title": "Nat. Rev. Drug Discov.",
+          "key": "640_CR1",
+          "unstructured": "Dickson, M. & Gagnon, J. P. Key factors in the rising cost of new drug discovery and development. Nat. Rev. Drug Discov. 3, 417–429 (2004).",
+          "volume": "3",
+          "year": "2004"
+        },
+        {
+          "DOI": "10.1038/nrd3681",
+          "author": "J Scannell",
+          "doi-asserted-by": "publisher",
+          "first-page": "191",
+          "journal-title": "Nat. Rev. Drug Discov.",
+          "key": "640_CR2",
+          "unstructured": "Scannell, J., Blanckley, A., Boldon, H. & Warrington, B. Diagnosing the decline in pharmaceutical R&D efficiency. Nat. Rev. Drug Discov. 11, 191–200 (2012).",
+          "volume": "11",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1038/s42256-021-00301-6",
+          "author": "WX Shen",
+          "doi-asserted-by": "publisher",
+          "first-page": "334",
+          "journal-title": "Nat. Mach. Intell.",
+          "key": "640_CR3",
+          "unstructured": "Shen, W. X. et al. Out-of-the-box deep learning prediction of pharmaceutical properties by broadly learned knowledge-based molecular representations. Nat. Mach. Intell. 3, 334–343 (2021).",
+          "volume": "3",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1038/s41467-020-20314-w",
+          "author": "D Chen",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "journal-title": "Nat. Commun.",
+          "key": "640_CR4",
+          "unstructured": "Chen, D. et al. Algebraic graph-assisted bidirectional transformers for molecular property prediction. Nat. Commun. 12, 1–9 (2021).",
+          "volume": "12",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1038/s41467-021-27137-3",
+          "author": "Q Ye",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "Nat. Commun.",
+          "key": "640_CR5",
+          "unstructured": "Ye, Q. et al. A unified drug–target interaction prediction framework based on knowledge graph and recommendation system. Nat. Commun. 12, 1–12 (2021).",
+          "volume": "12",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1038/s41467-017-00680-8",
+          "author": "Y Luo",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "Nat. Commun.",
+          "key": "640_CR6",
+          "unstructured": "Luo, Y. et al. A network integration approach for drug–target interaction prediction and computational drug repositioning from heterogeneous information. Nat. Commun. 8, 1–13 (2017).",
+          "volume": "8",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1038/s41467-018-05116-5",
+          "author": "F Cheng",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "Nat. Commun.",
+          "key": "640_CR7",
+          "unstructured": "Cheng, F. et al. Network-based approach to prediction and population-based validation of in silico drug repurposing. Nat. Commun. 9, 1–12 (2018).",
+          "volume": "9",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1093/bib/bbz152",
+          "author": "Y Chu",
+          "doi-asserted-by": "publisher",
+          "first-page": "451",
+          "journal-title": "Brief. Bioinformatics",
+          "key": "640_CR8",
+          "unstructured": "Chu, Y. et al. DTI-CDF: a cascade deep forest model towards the prediction of drug–target interactions based on hybrid features. Brief. Bioinformatics 22, 451–462 (2021).",
+          "volume": "22",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1093/bib/bbaa205",
+          "author": "Y Chu",
+          "doi-asserted-by": "publisher",
+          "first-page": "bbaa205",
+          "journal-title": "Brief. Bioinformatics.",
+          "key": "640_CR9",
+          "unstructured": "Chu, Y. et al. DTI-MLCD: predicting drug–target interactions using multi-label learning with community detection method. Brief. Bioinformatics. 22, bbaa205 (2021).",
+          "volume": "22",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1038/s42256-020-0152-y",
+          "author": "S Zheng",
+          "doi-asserted-by": "publisher",
+          "first-page": "134",
+          "journal-title": "Nat. Mach. Intell.",
+          "key": "640_CR10",
+          "unstructured": "Zheng, S. et al. Predicting drug–protein interaction using quasi-visual question answering system. Nat. Mach. Intell. 2, 134–140 (2020).",
+          "volume": "2",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1038/s42256-020-00276-w",
+          "author": "R Liu",
+          "doi-asserted-by": "publisher",
+          "first-page": "68",
+          "journal-title": "Nat. Mach. Intell.",
+          "key": "640_CR11",
+          "unstructured": "Liu, R., Wei, L. & Zhang, P. A deep learning framework for drug repurposing via emulating clinical trials on real-world patient data. Nat. Mach. Intell. 3, 68–75 (2021).",
+          "volume": "3",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1073/pnas.1803294115",
+          "author": "J Ryu",
+          "doi-asserted-by": "publisher",
+          "first-page": "E4304",
+          "journal-title": "Proc. Natl Acad. Sci. USA",
+          "key": "640_CR12",
+          "unstructured": "Ryu, J., Kim, H. & Lee, S. Deep learning improves prediction of drug–drug and drug–food interactions. Proc. Natl Acad. Sci. USA 115, E4304–E4311 (2018).",
+          "volume": "115",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1093/bib/bbab421",
+          "author": "S Lin",
+          "doi-asserted-by": "publisher",
+          "first-page": "bbab421",
+          "journal-title": "Brief. Bioinformatics.",
+          "key": "640_CR13",
+          "unstructured": "Lin, S. et al. MDF-SA-DDI: predicting drug-drug interaction events based on multi-source drug fusion, multi-source feature fusion and transformer self-attention mechanism. Brief. Bioinformatics. 23, bbab421 (2022).",
+          "volume": "23",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1038/s42256-020-00236-4",
+          "author": "J Jiménez-Luna",
+          "doi-asserted-by": "publisher",
+          "first-page": "573",
+          "journal-title": "Nat. Mach. Intell.",
+          "key": "640_CR14",
+          "unstructured": "Jiménez-Luna, J., Grisoni, F. & Schneider, G. Drug discovery with explainable artificial intelligence. Nat. Mach. Intell. 2, 573–584 (2020).",
+          "volume": "2",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1007/978-3-319-10590-1_53",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR15",
+          "unstructured": "Zeiler, M. D. & Fergus, R. Visualizing and understanding convolutional networks. In Proc. 13th European Conference on Computer Vision 818–833 (Springer, 2014)."
+        },
+        {
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "author": "S Hochreiter",
+          "doi-asserted-by": "publisher",
+          "first-page": "1735",
+          "journal-title": "Neural Comput.",
+          "key": "640_CR16",
+          "unstructured": "Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural Comput. 9, 1735–1780 (1997).",
+          "volume": "9",
+          "year": "1997"
+        },
+        {
+          "DOI": "10.1038/s41467-019-09692-y",
+          "author": "F Cheng",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "Nat. Commun.",
+          "key": "640_CR17",
+          "unstructured": "Cheng, F., Kovács, I. A. & Barabási, A. L. Network-based prediction of drug combinations. Nat. Commun. 10, 1–11 (2019).",
+          "volume": "10",
+          "year": "2019"
+        },
+        {
+          "key": "640_CR18",
+          "unstructured": "Kipf, T. N. & Welling, M. Semi-supervised classification with graph convolutional networks. In Proc. 4th International Conference on Learning Representations (OpenReview.net, 2017)."
+        },
+        {
+          "key": "640_CR19",
+          "unstructured": "Veličković, P. et al. Graph Attention Networks. In Proc. 5th International Conference on Learning Representations (OpenReview.net, 2018)."
+        },
+        {
+          "key": "640_CR20",
+          "unstructured": "Hamilton, W. L., Ying, R. & Leskovec, J. Inductive representation learning on large graphs. In Proc. 31st International Conference on Neural Information Processing Systems 1025–1035 (MIT Press, 2017)."
+        },
+        {
+          "DOI": "10.1093/bioinformatics/bty294",
+          "author": "M Zitnik",
+          "doi-asserted-by": "publisher",
+          "first-page": "i457",
+          "journal-title": "Bioinformatics",
+          "key": "640_CR21",
+          "unstructured": "Zitnik, M., Agrawal, M. & Leskovec, J. Modeling polypharmacy side effects with graph convolutional networks. Bioinformatics 34, i457–i466 (2018).",
+          "volume": "34",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.24963/ijcai.2018/483",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR22",
+          "unstructured": "Ma, T., Xiao, C., Zhou, J. & Wang, F. Drug similarity integration through attentive multi-view graph auto-encoders. In Proc. 27th International Joint Conference on Artificial Intelligence 3477–3483 (Morgan Kaufmann, 2018)."
+        },
+        {
+          "DOI": "10.1073/pnas.2025581118",
+          "author": "DM Gysi",
+          "doi-asserted-by": "publisher",
+          "first-page": "e2025581118",
+          "journal-title": "Proc. Natl Acad. Sci. USA",
+          "key": "640_CR23",
+          "unstructured": "Gysi, D. M. et al. Network medicine framework for identifying drug-repurposing opportunities for COVID-19. Proc. Natl Acad. Sci. USA 118, e2025581118 (2021).",
+          "volume": "118",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1093/bioinformatics/btaa437",
+          "author": "Z Wang",
+          "doi-asserted-by": "publisher",
+          "first-page": "i525",
+          "journal-title": "Bioinformatics",
+          "key": "640_CR24",
+          "unstructured": "Wang, Z., Zhou, M. & Arnold, C. Toward heterogeneous information fusion: bipartite graph convolutional networks for in silico drug repurposing. Bioinformatics 36, i525–i533 (2020).",
+          "volume": "36",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1109/CVPR42600.2020.00975",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR25",
+          "unstructured": "He, K., Fan, H., Wu, Y., Xie, S. & Girshick, R. Momentum contrast for unsupervised visual representation learning. In Proc. 33rd IEEE/CVF Conference on Computer Vision and Pattern Recognition 9729–9738 (IEEE, 2020)."
+        },
+        {
+          "key": "640_CR26",
+          "unstructured": "Grill, J. B. et al. Bootstrap your own latent: a new approach to self-supervised learning. In Proc. 34th Conference on Neural Information Processing Systems Vol. 33, 21271–21284 (MIT Press, 2020)."
+        },
+        {
+          "key": "640_CR27",
+          "unstructured": "Devlin, J., Chang, M. W., Lee, K. & Toutanova, K. BERT: pre-training of deep bidirectional transformers for language understanding. In Proc. Conference of the North American Chapter of the Association for Computational Linguistic 4171–4186 (NAACL, 2019)"
+        },
+        {
+          "key": "640_CR28",
+          "unstructured": "Brown, T. B. et al. Language models are few-shot learners. In Proc. 34th Conference on Neural Information Processing Systems Vol. 33, 1877–1901 (MIT Press, 2020)."
+        },
+        {
+          "DOI": "10.1038/s42256-020-00285-9",
+          "author": "TH Pham",
+          "doi-asserted-by": "publisher",
+          "first-page": "247",
+          "journal-title": "Nat. Mach. Intell.",
+          "key": "640_CR29",
+          "unstructured": "Pham, T. H., Qiu, Y., Zeng, J., Xie, L. & Zhang, P. A deep learning framework for high-throughput mechanism-driven phenotype compound screening. Nat. Mach. Intell. 3, 247–257 (2021).",
+          "volume": "3",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1145/3442381.3449786",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR30",
+          "unstructured": "Wang, Y., Min, Y., Chen, X. & Wu, J. Multi-view graph contrastive representation learning for drug–drug interaction prediction. In Proc. 30th Web Conference 2921–2933 (ACM, 2021)."
+        },
+        {
+          "DOI": "10.1093/bib/bbab226",
+          "author": "X Wang",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "Brief. Bioinform",
+          "key": "640_CR31",
+          "unstructured": "Wang, X. et al. DeepR2cov: deep representation learning on heterogeneous drug networks to discover anti-inflammatory agents for COVID-19. Brief. Bioinform 22, 1–14 (2021).",
+          "volume": "22",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1038/s42256-022-00459-7",
+          "author": "Y Chu",
+          "doi-asserted-by": "publisher",
+          "first-page": "300",
+          "journal-title": "Nat. Mach. Intell.",
+          "key": "640_CR32",
+          "unstructured": "Chu, Y. et al. A transformer-based model to predict peptide-HLA class I binding and optimize mutated peptides for vaccine design. Nat. Mach. Intell. 4, 300–311 (2022).",
+          "volume": "4",
+          "year": "2022"
+        },
+        {
+          "key": "640_CR33",
+          "unstructured": "Rong, Y. et al. Self-supervised graph transformer on large-scale molecular data. In Proc. 34th Conference on Neural Information Processing Systems 33, 12559–12571 (MIT Press, 2020)."
+        },
+        {
+          "DOI": "10.1093/bioinformatics/btab565",
+          "author": "X Wang",
+          "doi-asserted-by": "publisher",
+          "first-page": "4793",
+          "journal-title": "Bioinformatics",
+          "key": "640_CR34",
+          "unstructured": "Wang, X. et al. BioERP: biomedical heterogeneous network-based self-supervised representation learning approach for entity relationship predictions. Bioinformatics 37, 4793–4800 (2021).",
+          "volume": "37",
+          "year": "2021"
+        },
+        {
+          "key": "640_CR35",
+          "unstructured": "Hu, W. et al. Strategies for pre-training graph neural networks. In Proc. 8th International Conference on Learning Representations (OpenReview.net, 2020)."
+        },
+        {
+          "DOI": "10.48550/arXiv.2006.10141",
+          "doi-asserted-by": "publisher",
+          "key": "640_CR36",
+          "unstructured": "Jin, W. et al. Self-supervised learning on graphs: deep insights and new direction. Preprint at arXiv https://doi.org/10.48550/arXiv.2006.10141 (2020)."
+        },
+        {
+          "DOI": "10.1039/C9SC04336E",
+          "author": "X Zeng",
+          "doi-asserted-by": "publisher",
+          "first-page": "1775",
+          "journal-title": "Chem. Sci.",
+          "key": "640_CR37",
+          "unstructured": "Zeng, X. et al. Target identification among known drugs by deep learning from heterogeneous networks. Chem. Sci. 11, 1775–1797 (2020).",
+          "volume": "11",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1039/C7SC02664A",
+          "author": "Z Wu",
+          "doi-asserted-by": "publisher",
+          "first-page": "513",
+          "journal-title": "Chem. Sci.",
+          "key": "640_CR38",
+          "unstructured": "Wu, Z. et al. MoleculeNet: a benchmark for molecular machine learning. Chem. Sci. 9, 513–530 (2018).",
+          "volume": "9",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1093/bioinformatics/btaa501",
+          "author": "Y Deng",
+          "doi-asserted-by": "publisher",
+          "first-page": "4316",
+          "journal-title": "Bioinformatics",
+          "key": "640_CR39",
+          "unstructured": "Deng, Y. et al. A multimodal deep learning framework for predicting drug–drug interaction events. Bioinformatics 36, 4316–4322 (2020).",
+          "volume": "36",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1162/089976603321780317",
+          "author": "M Belkin",
+          "doi-asserted-by": "publisher",
+          "first-page": "1373",
+          "journal-title": "Neural Comput.",
+          "key": "640_CR40",
+          "unstructured": "Belkin, M. & Niyogi, P. Laplacian eigenmaps for dimensionality reduction and data representation. Neural Comput. 15, 1373–1396 (2003).",
+          "volume": "15",
+          "year": "2003"
+        },
+        {
+          "DOI": "10.1145/2488388.2488393",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR41",
+          "unstructured": "Ahmed, A., Shervashidze, N., Narayanamurthy, S., Josifovski, V. & Smola, A. J. Distributed large-scale natural graph factorization. In Proc. 22nd International World Wide Web Conference 37–48 (ACM, 2013)."
+        },
+        {
+          "DOI": "10.1145/2623330.2623732",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR42",
+          "unstructured": "Perozzi, B., Al-Rfou, R. & Skiena, S. Deepwalk: online learning of social representations. In Proc. 20th International Conference on Knowledge Discovery and Data Mining 701–710 (ACM, 2014)."
+        },
+        {
+          "key": "640_CR43",
+          "unstructured": "Liu, B. & Tsoumakas, G. Optimizing area under the curve measures via matrix factorization for predicting drug–target interaction with multiple similarities. Preprint at arXiv https://arxiv.org/abs/2105.01545 (2021)."
+        },
+        {
+          "DOI": "10.1145/3442381.3449786",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR44",
+          "unstructured": "Wang, Y., Min, Y., Chen, X. & Wu, J. Multi-view graph contrastive representation learning for drug–drug interaction prediction. In Proc. 30th Web Conference 2921–2933 (ACM, 2021)."
+        },
+        {
+          "DOI": "10.1002/adfm.201202148",
+          "author": "W Hou",
+          "doi-asserted-by": "publisher",
+          "first-page": "1612",
+          "journal-title": "Adv. Funct. Mater.",
+          "key": "640_CR45",
+          "unstructured": "Hou, W. & Cronin, S. B. A review of surface plasmon resonance-enhanced photocatalysis. Adv. Funct. Mater. 23, 1612–1619 (2013).",
+          "volume": "23",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1073/pnas.022341799",
+          "author": "M Sigman",
+          "doi-asserted-by": "publisher",
+          "first-page": "1742",
+          "journal-title": "Proc. Natl Acad. Sci. USA",
+          "key": "640_CR46",
+          "unstructured": "Sigman, M. & Cecchi, G. A. Global organization of the Wordnet lexicon. Proc. Natl Acad. Sci. USA 99, 1742–1747 (2002).",
+          "volume": "99",
+          "year": "2002"
+        },
+        {
+          "DOI": "10.1038/30918",
+          "author": "DJ Watts",
+          "doi-asserted-by": "publisher",
+          "first-page": "440",
+          "journal-title": "Nature",
+          "key": "640_CR47",
+          "unstructured": "Watts, D. J. & Strogatz, S. H. Collective dynamics of ‘small-world’ networks. Nature 393, 440–442 (1998).",
+          "volume": "393",
+          "year": "1998"
+        },
+        {
+          "DOI": "10.1080/00018730601170527",
+          "author": "LDF Costa",
+          "doi-asserted-by": "publisher",
+          "first-page": "167",
+          "journal-title": "Adv. Phys.",
+          "key": "640_CR48",
+          "unstructured": "Costa, L. D. F., Rodrigues, F. A., Travieso, G. & Villas Boas, P. R. Characterization of complex networks: a survey of measurements. Adv. Phys. 56, 167–242 (2007).",
+          "volume": "56",
+          "year": "2007"
+        },
+        {
+          "key": "640_CR49",
+          "unstructured": "Peng, Z., Dong, Y., Luo, M., Wu, X. M. & Zheng, Q. Self-supervised graph representation learning via global context prediction. Preprint at arXiv https://arxiv.org/abs/2003.01604 (2020)."
+        },
+        {
+          "DOI": "10.1186/s12859-016-1005-x",
+          "author": "G Fu",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "BMC Bioinf.",
+          "key": "640_CR50",
+          "unstructured": "Fu, G. et al. Predicting drug target interactions using meta-path-based semantic network analysis. BMC Bioinf. 17, 1–10 (2016).",
+          "volume": "17",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.1186/s12859-019-2644-5",
+          "author": "G Wu",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "BMC Bioinf.",
+          "key": "640_CR51",
+          "unstructured": "Wu, G., Liu, J. & Yue, X. Prediction of drug–disease associations based on ensemble meta paths and singular value decomposition. BMC Bioinf. 20, 1–13 (2019).",
+          "volume": "20",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1023/A:1010933404324",
+          "author": "L Breiman",
+          "doi-asserted-by": "publisher",
+          "first-page": "5",
+          "journal-title": "Mach. Learn.",
+          "key": "640_CR52",
+          "unstructured": "Breiman, L. Random Forests. Mach. Learn. 45, 5–32 (2001).",
+          "volume": "45",
+          "year": "2001"
+        },
+        {
+          "DOI": "10.1007/BF00994018",
+          "author": "C Cortes",
+          "doi-asserted-by": "publisher",
+          "first-page": "273",
+          "journal-title": "Mach. Learn.",
+          "key": "640_CR53",
+          "unstructured": "Cortes, C. & Vapnik, V. Support-vector networks. Mach. Learn. 20, 273–297 (1995).",
+          "volume": "20",
+          "year": "1995"
+        },
+        {
+          "DOI": "10.1109/CVPR46437.2021.01650",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR54",
+          "unstructured": "Yang, X., Deng, C., Dang, Z., Wei, K. & Yan, J. SelfSAGCN: self-supervised semantic alignment for graph convolution network. In Proc. 34th IEEE/CVF Conference on Computer Vision and Pattern Recognition 16775–16784 (IEEE, 2021)."
+        },
+        {
+          "DOI": "10.1109/TPAMI.2021.3061479",
+          "author": "G Kapidis",
+          "doi-asserted-by": "publisher",
+          "journal-title": "IEEE Trans Pattern Anal. Mach. Intell.",
+          "key": "640_CR55",
+          "unstructured": "Kapidis, G., Poppe, R. & Veltkamp, R. C. Multi-dataset, multitask learning of egocentric vision tasks. IEEE Trans Pattern Anal. Mach. Intell. https://doi.org/10.1109/TPAMI.2021.3061479 (2021).",
+          "year": "2021"
+        },
+        {
+          "key": "640_CR56",
+          "unstructured": "Hernández-Lobato, D. & Hernández-Lobato, J. M. Learning feature selection dependencies in multi-task learning. In Proc. 27th Conference on Neural Information Processing Systems 746–754 (MIT Press, 2013)."
+        },
+        {
+          "DOI": "10.1609/aaai.v33i01.3301817",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR57",
+          "unstructured": "Zhao, S., Liu, T., Zhao, S. & Wang, F. A neural multi-task learning framework to jointly model medical named entity recognition and normalization. In Proc. 33rd AAAI Conference on Artificial Intelligence 817–824 (AAAI, 2019)."
+        },
+        {
+          "DOI": "10.1023/A:1007327622663",
+          "author": "J Baxter",
+          "doi-asserted-by": "publisher",
+          "first-page": "7",
+          "journal-title": "Mach. Learn.",
+          "key": "640_CR58",
+          "unstructured": "Baxter, J. A Bayesian/information theoretic model of learning to learn via multiple task sampling. Mach. Learn. 28, 7–39 (1997).",
+          "volume": "28",
+          "year": "1997"
+        },
+        {
+          "DOI": "10.48550/arXiv.1706.05098",
+          "doi-asserted-by": "publisher",
+          "key": "640_CR59",
+          "unstructured": "Ruder, S. An overview of multi-task learning in deep neural networks. Preprint at arXiv https://doi.org/10.48550/arXiv.1706.05098 (2017)."
+        },
+        {
+          "DOI": "10.1038/s42256-022-00447-x",
+          "author": "Y Wang",
+          "doi-asserted-by": "publisher",
+          "first-page": "279",
+          "journal-title": "Nat. Mach. Intell.",
+          "key": "640_CR60",
+          "unstructured": "Wang, Y., Wang, J., Cao, Z. & Barati Farimani, A. Molecular contrastive learning of representations via graph neural networks. Nat. Mach. Intell. 4, 279–287 (2022).",
+          "volume": "4",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1609/aaai.v35i12.17293",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR61",
+          "unstructured": "Zeng, J. & Xie, P. Contrastive self-supervised learning for graph classification. In Proc. 35th AAAI Conference on Artificial Intelligence 10824–10832 (AAAI, 2021)."
+        },
+        {
+          "DOI": "10.1109/ICCV48922.2021.00067",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR62",
+          "unstructured": "Li, T., Wang, L. & Wu, G. Self-supervision to distillation for long-tailed visual recognition. In Proc. 34th IEEE/CVF International Conference on Computer Vision 630–639 (IEEE, 2021)."
+        },
+        {
+          "DOI": "10.1109/TAFFC.2022.3170428",
+          "doi-asserted-by": "publisher",
+          "key": "640_CR63",
+          "unstructured": "Li, Y, et al. GMSS: graph-based multi-task self-supervised learning for EEG emotion recognition. IEEE Trans. Affect. Comput. https://doi.org/10.1109/TAFFC.2022.3170428 (2022)."
+        },
+        {
+          "DOI": "10.1093/nar/gkt1068",
+          "author": "V Law",
+          "doi-asserted-by": "publisher",
+          "first-page": "D1091",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR64",
+          "unstructured": "Law, V. et al. DrugBank 4.0: shedding new light on drug metabolism. Nucleic Acids Res. 42, D1091–D1097 (2014).",
+          "volume": "42",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1093/nar/gkm1009",
+          "author": "T Hernandez",
+          "doi-asserted-by": "publisher",
+          "first-page": "D913",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR65",
+          "unstructured": "Hernandez, T. et al. The pharmacogenetics and pharmacogenomics knowledge base: accentuating the knowledge. Nucleic Acids Res. 36, D913–D918 (2008).",
+          "volume": "36",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1093/nar/gkr797",
+          "author": "F Zhu",
+          "doi-asserted-by": "publisher",
+          "first-page": "D1128",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR66",
+          "unstructured": "Zhu, F. et al. Therapeutic target database update 2012: a resource for facilitating target-oriented drug discovery. Nucleic Acids Res. 40, D1128–D1136 (2012).",
+          "volume": "40",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1093/nar/gkn892",
+          "author": "T Keshava Prasad",
+          "doi-asserted-by": "publisher",
+          "first-page": "D767",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR67",
+          "unstructured": "Keshava Prasad, T. et al. Human protein reference database 2009 update. Nucleic Acids Res. 37, D767–D772 (2009).",
+          "volume": "37",
+          "year": "2009"
+        },
+        {
+          "DOI": "10.1038/cr.2008.72",
+          "author": "D Figeys",
+          "doi-asserted-by": "publisher",
+          "first-page": "716",
+          "journal-title": "Cell Res.",
+          "key": "640_CR68",
+          "unstructured": "Figeys, D. Mapping the human protein interactome. Cell Res. 18, 716–724 (2008).",
+          "volume": "18",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1093/nar/gky1079",
+          "author": "R Oughtred",
+          "doi-asserted-by": "publisher",
+          "first-page": "D529",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR69",
+          "unstructured": "Oughtred, R. et al. The BioGRID interaction database: 2019 update. Nucleic Acids Res. 47, D529–D541 (2019).",
+          "volume": "47",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1038/sdata.2017.29",
+          "author": "AS Brown",
+          "doi-asserted-by": "publisher",
+          "journal-title": "Sci. Data",
+          "key": "640_CR70",
+          "unstructured": "Brown, A. S. & Patel, C. J. A standard database for drug repositioning. Sci. Data 4, 170029 (2017).",
+          "volume": "4",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1093/nar/gkw993",
+          "author": "O Ursu",
+          "doi-asserted-by": "publisher",
+          "first-page": "D932",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR71",
+          "unstructured": "Ursu, O. et al. DrugCentral: online drug compendium. Nucleic Acids Res. 45, D932–D939 (2017).",
+          "volume": "45",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1093/nar/gki033",
+          "author": "A Hamosh",
+          "doi-asserted-by": "publisher",
+          "first-page": "D514",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR72",
+          "unstructured": "Hamosh, A., Scott, A. F., Amberger, J. S., Bocchini, C. A. & McKusick, V. A. Online Mendelian Inheritance in Man (OMIM), a knowledgebase of human genes and genetic disorders. Nucleic Acids Res. 33, D514–D517 (2005).",
+          "volume": "33",
+          "year": "2005"
+        },
+        {
+          "DOI": "10.1093/nar/gks994",
+          "author": "AP Davis",
+          "doi-asserted-by": "publisher",
+          "first-page": "D1104",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR73",
+          "unstructured": "Davis, A. P. et al. The comparative toxicogenomics database: update 2013. Nucleic Acids Res. 41, D1104–D1114 (2013).",
+          "volume": "41",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1093/nar/gkh061",
+          "author": "O Bodenreider",
+          "doi-asserted-by": "publisher",
+          "first-page": "D267",
+          "journal-title": "Nucleic Acids Res.",
+          "key": "640_CR74",
+          "unstructured": "Bodenreider, O. The Unified Medical Language System (UMLS): integrating biomedical terminology. Nucleic Acids Res. 32, D267–D270 (2004).",
+          "volume": "32",
+          "year": "2004"
+        },
+        {
+          "DOI": "10.1086/210318",
+          "author": "DJ Watts",
+          "doi-asserted-by": "publisher",
+          "first-page": "493",
+          "journal-title": "Am. J. Sociol.",
+          "key": "640_CR75",
+          "unstructured": "Watts, D. J. Networks, dynamics, and the small-world phenomenon. Am. J. Sociol. 105, 493–527 (1999).",
+          "volume": "105",
+          "year": "1999"
+        },
+        {
+          "DOI": "10.1177/107769905303000401",
+          "author": "WL Taylor",
+          "doi-asserted-by": "publisher",
+          "first-page": "415",
+          "journal-title": "Journalism Quarterly",
+          "key": "640_CR76",
+          "unstructured": "Taylor, W. L. ‘Cloze procedure’: a new tool for measuring readability. Journalism Quarterly 30, 415–433 (1953).",
+          "volume": "30",
+          "year": "1953"
+        },
+        {
+          "author": "D Weininger",
+          "first-page": "31",
+          "journal-title": "J. Chem. Inf. Model.",
+          "key": "640_CR77",
+          "unstructured": "Weininger, D. SMILES, a chemical language and information system. 1. Introduction to methodology and eccoding rules. J. Chem. Inf. Model. 28, 31–36 (1988).",
+          "volume": "28",
+          "year": "1988"
+        },
+        {
+          "DOI": "10.1038/nprot.2014.151",
+          "author": "S Vilar",
+          "doi-asserted-by": "publisher",
+          "first-page": "2147",
+          "journal-title": "Nat. Protoc.",
+          "key": "640_CR78",
+          "unstructured": "Vilar, S. et al. Similarity-based modeling in large-scale prediction of drug–drug interactions. Nat. Protoc. 9, 2147–2163 (2014).",
+          "volume": "9",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1016/0022-2836(82)90398-9",
+          "author": "O Gotoh",
+          "doi-asserted-by": "publisher",
+          "first-page": "705",
+          "journal-title": "J. Mol. Biol.",
+          "key": "640_CR79",
+          "unstructured": "Gotoh, O. An improved algorithm for matching biological sequences. J. Mol. Biol. 162, 705–708 (1982).",
+          "volume": "162",
+          "year": "1982"
+        },
+        {
+          "DOI": "10.1109/TCBB.2018.2817624",
+          "author": "P Ni",
+          "doi-asserted-by": "publisher",
+          "first-page": "906",
+          "journal-title": "IEEE/ACM Trans. Comput. Biol. Bioinform.",
+          "key": "640_CR80",
+          "unstructured": "Ni, P. et al. Constructing disease similarity networks based on disease module theory. IEEE/ACM Trans. Comput. Biol. Bioinform. 17, 906–915 (2018).",
+          "volume": "17",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.18653/v1/P17-1001",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR81",
+          "unstructured": "Liu, P., Qiu, X. & Huang, X. Adversarial multi-task learning for text classification. In Proc. 55th Annual Meeting of the Association for Computational Linguistics 1–10 (ACL, 2017)."
+        },
+        {
+          "key": "640_CR82",
+          "unstructured": "Bousmalis, K., Trigeorgis, G., Silberman, N., Krishnan, D. & Erhan, D. Domain separation networks. Proc. 30th Conference on Neural Information Processing Systems Vol. 29, 343–351 (2016)."
+        },
+        {
+          "DOI": "10.1145/1390156.1390177",
+          "doi-asserted-by": "crossref",
+          "key": "640_CR83",
+          "unstructured": "Collobert, R. & Weston, J. A unified architecture for natural language processing: deep neural networks with multitask learning. In Proc. 25th International Conference on Machine Learning 160–167 (ACM, 2008)."
+        }
+      ],
+      "reference-count": 83,
+      "references-count": 83,
+      "relation": {
+        "has-preprint": [
+          {
+            "asserted-by": "object",
+            "id": "10.21203/rs.3.rs-1260249/v1",
+            "id-type": "doi"
+          }
+        ]
+      },
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s42256-023-00640-6"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "Nat Mach Intell"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Multitask joint strategies of self-supervised representation learning on biomedical networks for drug discovery"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "volume": "5"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "4d0c21586162d2f1a95937b93a10ec837fb731481f6771c4537e4f96016be6c7",
+  "retrieved_at": "2026-07-14T14:48:35Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

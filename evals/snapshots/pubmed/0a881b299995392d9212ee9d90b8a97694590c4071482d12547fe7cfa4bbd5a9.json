@@ -1,0 +1,31 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "0a881b299995392d9212ee9d90b8a97694590c4071482d12547fe7cfa4bbd5a9",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.1109/tbme.2012.2208112[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "22868524"
+      ],
+      "querytranslation": "\"10 1109 tbme 2012 2208112\"[Publisher ID]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": []
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "7a662fd0d541ee0439f0e9aca3ad782d3861e74cb6f4b9146b6226c7ac5d8da4",
+  "retrieved_at": "2026-07-14T13:49:58Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

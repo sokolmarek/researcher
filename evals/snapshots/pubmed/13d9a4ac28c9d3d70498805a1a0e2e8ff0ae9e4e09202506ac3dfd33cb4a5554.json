@@ -1,0 +1,31 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "13d9a4ac28c9d3d70498805a1a0e2e8ff0ae9e4e09202506ac3dfd33cb4a5554",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.1016/j.hrthm.2018.06.037[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "30143448"
+      ],
+      "querytranslation": "\"10 1016 j hrthm 2018 06 037\"[Publisher ID]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": []
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "45a856a2d661193b3fdafbbd854e10b4a4bfe19495a6e693af1707bcb30e95fd",
+  "retrieved_at": "2026-07-14T13:50:12Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

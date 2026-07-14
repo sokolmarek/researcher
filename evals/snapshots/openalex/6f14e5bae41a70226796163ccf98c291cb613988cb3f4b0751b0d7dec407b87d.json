@@ -1,0 +1,62 @@
+{
+  "endpoint": "works",
+  "request_key": "6f14e5bae41a70226796163ccf98c291cb613988cb3f4b0751b0d7dec407b87d",
+  "request_params": {
+    "per-page": 5,
+    "search": "New Horizons Multispectral Visible Imaging Camera (MVIC) Jupiter Encounter Partially Proce",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 0,
+      "db_response_time_ms": 92,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (New Horizons Multispectral Visible Imaging Camera MVIC Jupiter Encounter Partially Proce)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "New Horizons Multispectral Visible Imaging Camera (MVIC) Jupiter Encounter Partially Proce"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:New Horizons Multispectral Visible Imaging Camera %28MVIC%29 Jupiter Encounter Partially Proce&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": []
+  },
+  "response_hash": "448d35f1ac97ea77e7d82f69c9c538882030584dea38a2d7cdeba9a9bcc2eb76",
+  "retrieved_at": "2026-07-14T13:48:35Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

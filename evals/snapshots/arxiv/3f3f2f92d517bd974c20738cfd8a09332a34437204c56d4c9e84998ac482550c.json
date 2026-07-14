@@ -1,0 +1,54 @@
+{
+  "endpoint": "query",
+  "request_key": "3f3f2f92d517bd974c20738cfd8a09332a34437204c56d4c9e84998ac482550c",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Self-Supervised Video Representation Learning with Odd-One-Out Networks\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Basura Fernando",
+          "Hakan Bilen",
+          "Efstratios Gavves",
+          "Stephen Gould"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "comment": "Accepted in In IEEE International Conference on Computer Vision and Pattern Recognition CVPR 2017",
+        "id": "http://arxiv.org/abs/1611.06646v4",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/1611.06646v4",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/1611.06646v4",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.CV",
+        "published": "2016-11-21T04:35:45Z",
+        "summary": "We propose a new self-supervised CNN pre-training technique based on a novel auxiliary task called \"odd-one-out learning\". In this task, the machine is asked to identify the unrelated or odd element from a set of otherwise related elements. We apply this technique to self-supervised video representation learning where we sample subsequences from videos and ask the network to learn to predict the odd video subsequence. The odd video subsequence is sampled such that it has wrong temporal order of frames while the even ones have the correct temporal order. Therefore, to generate a odd-one-out question no manual annotation is required. Our learning machine is implemented as multi-stream convolutional neural network, which is learned end-to-end. Using odd-one-out networks, we learn temporal representations for videos that generalizes to other related tasks such as action recognition. On action classification, our method obtains 60.3\\% on the UCF101 dataset using only UCF101 data for training which is approximately 10% better than current state-of-the-art self-supervised learning methods. Similarly, on HMDB51 dataset we outperform self-supervised state-of-the art methods by 12.7% on action classification task.",
+        "title": "Self-Supervised Video Representation Learning With Odd-One-Out Networks",
+        "updated": "2017-04-05T05:52:00Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "86857ca52a87ccef4e9b3a48714ef17663a5c7d8f33537bc0d1b7753705cd60f",
+  "retrieved_at": "2026-07-14T13:53:16Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

@@ -1,0 +1,82 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "12091e3ea1dd1f1598d432afd175987f4ab2f1ca6a0e659cdd53aa3e7b3b8356",
+  "request_params": {
+    "db": "pubmed",
+    "id": "32972654",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "Continuous blood pressure (BP) measurement is crucial for reliable and timely hypertension detection. State-of-the-art continuous BP measurement methods based on pulse transit time or multiple parameters require simultaneous electrocardiogram (ECG) and photoplethysmogram (PPG) signals. Compared with PPG signals, ECG signals are easy to collect using wearable devices. This study examined a novel continuous BP estimation approach using one-channel ECG signals for unobtrusive BP monitoring. A BP model is developed based on the fusion of a residual network and long short-term memory to obtain the spatial-temporal information of ECG signals. The public multiparameter intelligent monitoring waveform database, which contains ECG, PPG, and invasive BP data of patients in intensive care units, is used to develop and verify the model. Experimental results demonstrated that the proposed approach exhibited an estimation error of 0.07 ± 7.77 mmHg for mean arterial pressure (MAP) and 0.01 ± 6.29 for diastolic BP (DBP), which comply with the Association for the Advancement of Medical Instrumentation standard. According to the British Hypertension Society standards, the results achieved grade A for MAP and DBP estimation and grade B for systolic BP (SBP) estimation. Furthermore, we verified the model with an independent dataset for arrhythmia patients. The experimental results exhibited an estimation error of -0.22 ± 5.82 mmHg, -0.57 ± 4.39 mmHg, and -0.75 ± 5.62 mmHg for SBP, MAP, and DBP measurements, respectively. These results indicate the feasibility of estimating BP by using a one-channel ECG signal, thus enabling continuous BP measurement for ubiquitous health care applications.",
+        "authors": [
+          {
+            "family": "Miao",
+            "given": "Fen"
+          },
+          {
+            "family": "Wen",
+            "given": "Bo"
+          },
+          {
+            "family": "Hu",
+            "given": "Zhejing"
+          },
+          {
+            "family": "Fortino",
+            "given": "Giancarlo"
+          },
+          {
+            "family": "Wang",
+            "given": "Xi-Ping"
+          },
+          {
+            "family": "Liu",
+            "given": "Zeng-Ding"
+          },
+          {
+            "family": "Tang",
+            "given": "Min"
+          },
+          {
+            "family": "Li",
+            "given": "Ye"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1016/j.artmed.2020.101919",
+        "issn": [
+          "1873-2860"
+        ],
+        "issue": "",
+        "journal": "Artificial intelligence in medicine",
+        "journal_abbreviation": "Artif Intell Med",
+        "keywords": [
+          "Blood pressure",
+          "ECG",
+          "Long short-term memory",
+          "Residual network"
+        ],
+        "language": "eng",
+        "month": 8,
+        "page": "101919",
+        "pmcid": "",
+        "pmid": "32972654",
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "record_type": "article",
+        "title": "Continuous blood pressure measurement from one-channel electrocardiogram signal using deep-learning techniques.",
+        "volume": "108",
+        "year": 2020
+      }
+    ]
+  },
+  "response_hash": "29e4ea6b957a871ec2791a53b78029dd981d65b81ffcf53459504613e6974965",
+  "retrieved_at": "2026-07-14T14:15:53Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

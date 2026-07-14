@@ -1,0 +1,4351 @@
+{
+  "endpoint": "works",
+  "request_key": "45fb78e63f5ed8a079c94c918481f9a1839f55fe5580fdcee871d7978d778522",
+  "request_params": {
+    "per-page": 5,
+    "search": "Hayward Fault 2026",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 391,
+      "db_response_time_ms": 54,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (Hayward Fault 2026)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Hayward Fault 2026"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Hayward Fault 2026&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(1990)": [
+            38
+          ],
+          "(2035–2104,": [
+            123
+          ],
+          "1864": [
+            92
+          ],
+          "1868,": [
+            241
+          ],
+          "1891": [
+            90
+          ],
+          "1955": [
+            27,
+            76
+          ],
+          "2007": [
+            14,
+            78
+          ],
+          "2012,": [
+            188
+          ],
+          "2014,": [
+            187
+          ],
+          "2026,": [
+            190
+          ],
+          "2064": [
+            122
+          ],
+          "31": [
+            12
+          ],
+          "4.9–5.0": [
+            152
+          ],
+          "5.1–5.3,": [
+            142
+          ],
+          "5.4": [
+            18
+          ],
+          "5.4–5.5": [
+            73
+          ],
+          "5.5": [
+            30
+          ],
+          "5.6–5.8,": [
+            145
+          ],
+          "5–6": [
+            175
+          ],
+          "6.1–6.3,": [
+            148
+          ],
+          "95%": [
+            124
+          ],
+          "Alum": [
+            19
+          ],
+          "Both": [
+            32
+          ],
+          "Calaveras": [
+            46,
+            55,
+            218,
+            250
+          ],
+          "Earthquakes": [
+            88
+          ],
+          "Hayward": [
+            215,
+            234
+          ],
+          "I": [
+            165
+          ],
+          "I,": [
+            132
+          ],
+          "II,": [
+            133,
+            182
+          ],
+          "III,": [
+            134,
+            183
+          ],
+          "IV": [
+            136,
+            185
+          ],
+          "If": [
+            155
+          ],
+          "L": [
+            29
+          ],
+          "M": [
+            17,
+            28,
+            71,
+            140,
+            143,
+            146,
+            150,
+            174
+          ],
+          "Mission": [
+            209
+          ],
+          "October": [
+            13
+          ],
+          "Oppenheimer": [
+            35
+          ],
+          "Rock": [
+            20
+          ],
+          "Seismic": [
+            210
+          ],
+          "The": [
+            0,
+            75,
+            99
+          ],
+          "Trend,": [
+            211
+          ],
+          "V": [
+            40,
+            63,
+            86,
+            97,
+            102
+          ],
+          "VI,": [
+            200
+          ],
+          "We": [
+            59,
+            127,
+            192
+          ],
+          "Zone": [
+            39,
+            62,
+            85,
+            96,
+            101,
+            164,
+            199
+          ],
+          "Zones": [
+            131,
+            181
+          ],
+          "a": [
+            23,
+            26,
+            67,
+            113
+          ],
+          "activity.": [
+            58
+          ],
+          "adjoining": [
+            248
+          ],
+          "al.'s": [
+            37
+          ],
+          "and": [
+            77,
+            83,
+            91,
+            135,
+            149,
+            169,
+            173,
+            184,
+            189,
+            216
+          ],
+          "anytime,": [
+            172
+          ],
+          "appear": [
+            220
+          ],
+          "are": [
+            80,
+            93
+          ],
+          "as": [
+            237
+          ],
+          "aseismically": [
+            226
+          ],
+          "assuming": [
+            112
+          ],
+          "at": [
+            203,
+            223
+          ],
+          "before": [
+            186
+          ],
+          "by": [
+            5
+          ],
+          "cannot": [
+            193
+          ],
+          "central": [
+            45,
+            217
+          ],
+          "confidence": [
+            125
+          ],
+          "connect": [
+            222
+          ],
+          "correct,": [
+            161
+          ],
+          "could": [
+            170
+          ],
+          "date": [
+            120
+          ],
+          "decades,": [
+            111
+          ],
+          "demonstrate": [
+            9
+          ],
+          "depth,": [
+            224
+          ],
+          "earlier": [
+            95
+          ],
+          "earthquake": [
+            21,
+            57,
+            157
+          ],
+          "earthquake.": [
+            31
+          ],
+          "earthquakes": [
+            79,
+            176
+          ],
+          "earthquakes,": [
+            153
+          ],
+          "earthquakes.": [
+            74
+          ],
+          "end": [
+            206
+          ],
+          "et": [
+            36
+          ],
+          "event": [
+            103,
+            166
+          ],
+          "events": [
+            230,
+            245
+          ],
+          "events.": [
+            87,
+            98
+          ],
+          "expected": [
+            106
+          ],
+          "fail": [
+            137
+          ],
+          "fails": [
+            64,
+            225
+          ],
+          "family": [
+            68
+          ],
+          "fault": [
+            56,
+            251
+          ],
+          "fault,": [
+            47,
+            235
+          ],
+          "faults": [
+            219
+          ],
+          "few": [
+            110
+          ],
+          "for": [
+            51
+          ],
+          "forecast": [
+            119
+          ],
+          "further": [
+            128
+          ],
+          "in": [
+            66,
+            89,
+            107,
+            138,
+            228,
+            240,
+            243
+          ],
+          "is": [
+            22,
+            104,
+            121,
+            160,
+            167
+          ],
+          "large": [
+            229,
+            244
+          ],
+          "last": [
+            238
+          ],
+          "lies": [
+            202
+          ],
+          "magnitude": [
+            16
+          ],
+          "mean": [
+            118
+          ],
+          "model": [
+            53,
+            159
+          ],
+          "model:": [
+            116
+          ],
+          "moment": [
+            15
+          ],
+          "new": [
+            49
+          ],
+          "next": [
+            100,
+            109,
+            163
+          ],
+          "northern": [
+            249
+          ],
+          "not": [
+            105,
+            178
+          ],
+          "occur": [
+            171,
+            179
+          ],
+          "occurred": [
+            33,
+            239
+          ],
+          "of": [
+            2,
+            25,
+            54,
+            69,
+            207
+          ],
+          "on": [
+            34,
+            43,
+            180,
+            231,
+            246
+          ],
+          "only": [
+            65
+          ],
+          "or": [
+            227,
+            242
+          ],
+          "our": [
+            156
+          ],
+          "out": [
+            195
+          ],
+          "overdue": [
+            168
+          ],
+          "patch”": [
+            42
+          ],
+          "penultimate": [
+            82
+          ],
+          "possibility": [
+            197
+          ],
+          "possible": [
+            94
+          ],
+          "providing": [
+            48
+          ],
+          "range).": [
+            126
+          ],
+          "recorded": [
+            4
+          ],
+          "recurrence": [
+            115,
+            158
+          ],
+          "recurring": [
+            70,
+            139
+          ],
+          "repeat": [
+            24
+          ],
+          "respectively.": [
+            154,
+            191
+          ],
+          "rule": [
+            194
+          ],
+          "segment.": [
+            252
+          ],
+          "seismic": [
+            7
+          ],
+          "seismograms": [
+            3
+          ],
+          "should": [
+            177
+          ],
+          "similarity": [
+            1
+          ],
+          "southern": [
+            205,
+            214,
+            233
+          ],
+          "stations": [
+            8
+          ],
+          "such": [
+            236
+          ],
+          "suggest": [
+            60,
+            129
+          ],
+          "support": [
+            50
+          ],
+          "that": [
+            10,
+            61,
+            130,
+            198
+          ],
+          "the": [
+            11,
+            44,
+            81,
+            108,
+            117,
+            162,
+            196,
+            204,
+            208,
+            213,
+            232,
+            247
+          ],
+          "their": [
+            52
+          ],
+          "time‐dependent": [
+            114
+          ],
+          "to": [
+            221
+          ],
+          "two": [
+            6
+          ],
+          "ultimate": [
+            84
+          ],
+          "where": [
+            212
+          ],
+          "which": [
+            201
+          ],
+          "“stuck": [
+            41
+          ],
+          "∼": [
+            72,
+            141,
+            144,
+            147,
+            151
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1286329397"
+                ],
+                "raw_affiliation_string": "U.S. Geological Survey  Menlo Park California USA"
+              }
+            ],
+            "author": {
+              "display_name": "David H. Oppenheimer",
+              "id": "https://openalex.org/A5065681304",
+              "orcid": "https://orcid.org/0000-0002-6569-3640"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "United States Geological Survey",
+                "id": "https://openalex.org/I1286329397",
+                "lineage": [
+                  "https://openalex.org/I1286329397",
+                  "https://openalex.org/I1335927249"
+                ],
+                "ror": "https://ror.org/035a68863",
+                "type": "government"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "U.S. Geological Survey  Menlo Park California USA"
+            ],
+            "raw_author_name": "David H. Oppenheimer",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1286329397"
+                ],
+                "raw_affiliation_string": "U.S. Geological Survey  Menlo Park California USA"
+              }
+            ],
+            "author": {
+              "display_name": "W. H. Bakun",
+              "id": "https://openalex.org/A5110861678",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "United States Geological Survey",
+                "id": "https://openalex.org/I1286329397",
+                "lineage": [
+                  "https://openalex.org/I1286329397",
+                  "https://openalex.org/I1335927249"
+                ],
+                "ror": "https://ror.org/035a68863",
+                "type": "government"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "U.S. Geological Survey  Menlo Park California USA"
+            ],
+            "raw_author_name": "William H. Bakun",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1286329397"
+                ],
+                "raw_affiliation_string": "U.S. Geological Survey  Menlo Park California USA"
+              }
+            ],
+            "author": {
+              "display_name": "Tom Parsons",
+              "id": "https://openalex.org/A5084232501",
+              "orcid": "https://orcid.org/0000-0002-0582-4338"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "United States Geological Survey",
+                "id": "https://openalex.org/I1286329397",
+                "lineage": [
+                  "https://openalex.org/I1286329397",
+                  "https://openalex.org/I1335927249"
+                ],
+                "ror": "https://ror.org/035a68863",
+                "type": "government"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "U.S. Geological Survey  Menlo Park California USA"
+            ],
+            "raw_author_name": "Tom Parsons",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1286329397"
+                ],
+                "raw_affiliation_string": "U.S. Geological Survey  Menlo Park California USA"
+              }
+            ],
+            "author": {
+              "display_name": "Robert W. Simpson",
+              "id": "https://openalex.org/A5103175528",
+              "orcid": "https://orcid.org/0000-0002-2787-8679"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "United States Geological Survey",
+                "id": "https://openalex.org/I1286329397",
+                "lineage": [
+                  "https://openalex.org/I1286329397",
+                  "https://openalex.org/I1335927249"
+                ],
+                "ror": "https://ror.org/035a68863",
+                "type": "government"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "U.S. Geological Survey  Menlo Park California USA"
+            ],
+            "raw_author_name": "Robert W. Simpson",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1286329397"
+                ],
+                "raw_affiliation_string": "U.S. Geological Survey  Menlo Park California USA"
+              }
+            ],
+            "author": {
+              "display_name": "John Boatwright",
+              "id": "https://openalex.org/A5075258273",
+              "orcid": "https://orcid.org/0000-0002-6931-5241"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "United States Geological Survey",
+                "id": "https://openalex.org/I1286329397",
+                "lineage": [
+                  "https://openalex.org/I1286329397",
+                  "https://openalex.org/I1335927249"
+                ],
+                "ror": "https://ror.org/035a68863",
+                "type": "government"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "U.S. Geological Survey  Menlo Park California USA"
+            ],
+            "raw_author_name": "John Boatwright",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Berkeley Seismological Laboratory University of California  Berkeley California USA"
+              }
+            ],
+            "author": {
+              "display_name": "R. A. Uhrhammer",
+              "id": "https://openalex.org/A5002810853",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of California, Berkeley",
+                "id": "https://openalex.org/I95457486",
+                "lineage": [
+                  "https://openalex.org/I95457486"
+                ],
+                "ror": "https://ror.org/01an7q238",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Berkeley Seismological Laboratory University of California  Berkeley California USA"
+            ],
+            "raw_author_name": "Robert A. Uhrhammer",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1029/2009jb006683",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1029/2009jb006683",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2009JB006683",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Atmospheres",
+            "host_organization": "https://openalex.org/P4310315809",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315809"
+            ],
+            "host_organization_lineage_names": [
+              "American Geophysical Union"
+            ],
+            "host_organization_name": "American Geophysical Union",
+            "id": "https://openalex.org/S207178839",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0148-0227",
+              "2156-2202",
+              "2169-897X",
+              "2169-8996"
+            ],
+            "issn_l": "0148-0227",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": "B8",
+          "last_page": null,
+          "volume": "115"
+        },
+        "cited_by_count": 14,
+        "display_name": "The 2007 <i>M</i>5.4 Alum Rock, California, earthquake: Implications for future earthquakes on the central and southern Calaveras Fault",
+        "doi": "https://doi.org/10.1029/2009jb006683",
+        "id": "https://openalex.org/W2044030285",
+        "ids": {
+          "doi": "https://doi.org/10.1029/2009jb006683",
+          "mag": "2044030285",
+          "openalex": "https://openalex.org/W2044030285"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2009JB006683"
+        },
+        "primary_location": {
+          "id": "doi:10.1029/2009jb006683",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1029/2009jb006683",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2009JB006683",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Atmospheres",
+            "host_organization": "https://openalex.org/P4310315809",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315809"
+            ],
+            "host_organization_lineage_names": [
+              "American Geophysical Union"
+            ],
+            "host_organization_name": "American Geophysical Union",
+            "id": "https://openalex.org/S207178839",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0148-0227",
+              "2156-2202",
+              "2169-897X",
+              "2169-8996"
+            ],
+            "issn_l": "0148-0227",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2010-08-01",
+        "publication_year": 2010,
+        "referenced_works": [
+          "https://openalex.org/W87935633",
+          "https://openalex.org/W127611397",
+          "https://openalex.org/W1496193564",
+          "https://openalex.org/W1504877043",
+          "https://openalex.org/W1513208469",
+          "https://openalex.org/W1576282442",
+          "https://openalex.org/W1587975607",
+          "https://openalex.org/W1791230833",
+          "https://openalex.org/W1960471763",
+          "https://openalex.org/W1964170472",
+          "https://openalex.org/W1970707286",
+          "https://openalex.org/W1987016481",
+          "https://openalex.org/W2002797922",
+          "https://openalex.org/W2010637407",
+          "https://openalex.org/W2020952883",
+          "https://openalex.org/W2026601811",
+          "https://openalex.org/W2033125700",
+          "https://openalex.org/W2041191706",
+          "https://openalex.org/W2068965564",
+          "https://openalex.org/W2072939040",
+          "https://openalex.org/W2088073153",
+          "https://openalex.org/W2088101138",
+          "https://openalex.org/W2104951932",
+          "https://openalex.org/W2107222310",
+          "https://openalex.org/W2107289379",
+          "https://openalex.org/W2107722219",
+          "https://openalex.org/W2109092409",
+          "https://openalex.org/W2128718400",
+          "https://openalex.org/W2132359256",
+          "https://openalex.org/W2133972289",
+          "https://openalex.org/W2137974145",
+          "https://openalex.org/W2149538179",
+          "https://openalex.org/W2153775295",
+          "https://openalex.org/W2159916387",
+          "https://openalex.org/W2160364760",
+          "https://openalex.org/W2167321937",
+          "https://openalex.org/W2169557514",
+          "https://openalex.org/W2194697299",
+          "https://openalex.org/W2253820264",
+          "https://openalex.org/W2254354279",
+          "https://openalex.org/W2275713872",
+          "https://openalex.org/W2481735570",
+          "https://openalex.org/W2587814872",
+          "https://openalex.org/W2597243364",
+          "https://openalex.org/W2601447003",
+          "https://openalex.org/W2769729163",
+          "https://openalex.org/W4243850718",
+          "https://openalex.org/W6693665564"
+        ],
+        "referenced_works_count": 48,
+        "title": "The 2007 <i>M</i>5.4 Alum Rock, California, earthquake: Implications for future earthquakes on the central and southern Calaveras Fault",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(average": [
+            144
+          ],
+          "+2": [
+            159
+          ],
+          "10": [
+            182
+          ],
+          "10–25": [
+            99
+          ],
+          "19": [
+            183
+          ],
+          "2–5": [
+            180
+          ],
+          "36": [
+            157
+          ],
+          "Andreas": [
+            34,
+            154
+          ],
+          "Carrizo": [
+            29
+          ],
+          "Fault": [
+            155
+          ],
+          "Fault,": [
+            35
+          ],
+          "Franciscan": [
+            45
+          ],
+          "GPS": [
+            25
+          ],
+          "Holocene": [
+            166
+          ],
+          "Major": [
+            0
+          ],
+          "Pa": [
+            184
+          ],
+          "Salinian": [
+            38
+          ],
+          "San": [
+            33,
+            153
+          ],
+          "The": [
+            83
+          ],
+          "This": [
+            106
+          ],
+          "Using": [
+            137
+          ],
+          "We": [
+            22,
+            57
+          ],
+          "a": [
+            60,
+            90,
+            94,
+            142,
+            171
+          ],
+          "accumulation.": [
+            21,
+            56
+          ],
+          "agreement": [
+            162
+          ],
+          "also": [
+            58,
+            109
+          ],
+          "an": [
+            16
+          ],
+          "and": [
+            76,
+            121,
+            134,
+            170
+          ],
+          "are": [
+            86
+          ],
+          "as": [
+            129,
+            131
+          ],
+          "asymmetric": [
+            17,
+            54
+          ],
+          "better": [
+            52
+          ],
+          "block": [
+            39
+          ],
+          "combined": [
+            175
+          ],
+          "comprising": [
+            93
+          ],
+          "consistent": [
+            110
+          ],
+          "corresponding": [
+            122
+          ],
+          "crust.": [
+            82
+          ],
+          "crust/upper": [
+            177
+          ],
+          "crustal": [
+            97
+          ],
+          "cycles)": [
+            148
+          ],
+          "data": [
+            26,
+            85,
+            113,
+            124
+          ],
+          "data.": [
+            136
+          ],
+          "dissimilar": [
+            6
+          ],
+          "distribution": [
+            116
+          ],
+          "elastic": [
+            73
+          ],
+          "element": [
+            64
+          ],
+          "estimate": [
+            141
+          ],
+          "fault": [
+            43
+          ],
+          "fault,": [
+            50
+          ],
+          "fault.": [
+            105
+          ],
+          "faults": [
+            3
+          ],
+          "finite": [
+            63
+          ],
+          "fit": [
+            88
+          ],
+          "for": [
+            151,
+            173
+          ],
+          "from": [
+            44
+          ],
+          "geodetic": [
+            84
+          ],
+          "geologic": [
+            112
+          ],
+          "geologically": [
+            5
+          ],
+          "in": [
+            11,
+            161
+          ],
+          "investigate": [
+            67
+          ],
+          "is": [
+            108
+          ],
+          "juxtapose": [
+            4
+          ],
+          "km": [
+            100
+          ],
+          "known": [
+            165
+          ],
+          "laboratory": [
+            123
+          ],
+          "layer": [
+            74
+          ],
+          "leading": [
+            14
+          ],
+          "lower": [
+            176
+          ],
+          "magnetotelluric": [
+            135
+          ],
+          "major": [
+            118
+          ],
+          "mantle": [
+            178
+          ],
+          "material": [
+            77,
+            127
+          ],
+          "may": [
+            9
+          ],
+          "mechanical": [
+            12
+          ],
+          "mm/yr": [
+            160
+          ],
+          "model": [
+            92,
+            107
+          ],
+          "model,": [
+            139
+          ],
+          "models": [
+            65
+          ],
+          "new": [
+            24
+          ],
+          "northeast": [
+            47,
+            102
+          ],
+          "of": [
+            19,
+            31,
+            41,
+            48,
+            62,
+            71,
+            79,
+            103,
+            117,
+            156,
+            179
+          ],
+          "on": [
+            27,
+            114,
+            125
+          ],
+          "over": [
+            145
+          ],
+          "paleoseismic,": [
+            132
+          ],
+          "pattern": [
+            18
+          ],
+          "possible": [
+            69
+          ],
+          "present": [
+            23,
+            59
+          ],
+          "properties": [
+            78
+          ],
+          "properties,": [
+            13,
+            128
+          ],
+          "quantify": [
+            53
+          ],
+          "rate": [
+            150,
+            167
+          ],
+          "rock": [
+            119
+          ],
+          "role": [
+            70
+          ],
+          "s.": [
+            185
+          ],
+          "segment": [
+            30
+          ],
+          "seismic": [
+            133,
+            147
+          ],
+          "separating": [
+            36
+          ],
+          "series": [
+            61
+          ],
+          "several": [
+            146
+          ],
+          "simple": [
+            91
+          ],
+          "slip": [
+            2,
+            149
+          ],
+          "southwest": [
+            40
+          ],
+          "strain": [
+            20,
+            55
+          ],
+          "strike": [
+            1
+          ],
+          "terrain": [
+            7
+          ],
+          "terrane": [
+            46
+          ],
+          "the": [
+            28,
+            32,
+            37,
+            42,
+            49,
+            68,
+            80,
+            104,
+            115,
+            152,
+            164,
+            174
+          ],
+          "their": [
+            126
+          ],
+          "thickness": [
+            75
+          ],
+          "this": [
+            138
+          ],
+          "to": [
+            15,
+            51,
+            66
+          ],
+          "types": [
+            120
+          ],
+          "uncertainties,": [
+            169
+          ],
+          "upper": [
+            81,
+            96
+          ],
+          "variable": [
+            72
+          ],
+          "vary": [
+            10
+          ],
+          "viscosity": [
+            172
+          ],
+          "we": [
+            140
+          ],
+          "weak": [
+            95
+          ],
+          "well": [
+            87,
+            130
+          ],
+          "which": [
+            8
+          ],
+          "wide": [
+            101
+          ],
+          "with": [
+            89,
+            111,
+            163
+          ],
+          "within": [
+            168
+          ],
+          "zone": [
+            98
+          ],
+          "×": [
+            181
+          ],
+          "“long‐term”": [
+            143
+          ],
+          "−1.5": [
+            158
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145608581"
+                ],
+                "raw_affiliation_string": "Rosenstiel School of Marine and Atmospheric Sciences University of Miami  Miami Florida USA"
+              }
+            ],
+            "author": {
+              "display_name": "G. M. Schmalzle",
+              "id": "https://openalex.org/A5035404833",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Miami",
+                "id": "https://openalex.org/I145608581",
+                "lineage": [
+                  "https://openalex.org/I145608581"
+                ],
+                "ror": "https://ror.org/02dgjyy92",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Rosenstiel School of Marine and Atmospheric Sciences University of Miami  Miami Florida USA"
+            ],
+            "raw_author_name": "Gina Schmalzle",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145608581"
+                ],
+                "raw_affiliation_string": "Rosenstiel School of Marine and Atmospheric Sciences University of Miami  Miami Florida USA"
+              }
+            ],
+            "author": {
+              "display_name": "Timothy H. Dixon",
+              "id": "https://openalex.org/A5089098731",
+              "orcid": "https://orcid.org/0000-0002-5127-0583"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Miami",
+                "id": "https://openalex.org/I145608581",
+                "lineage": [
+                  "https://openalex.org/I145608581"
+                ],
+                "ror": "https://ror.org/02dgjyy92",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Rosenstiel School of Marine and Atmospheric Sciences University of Miami  Miami Florida USA"
+            ],
+            "raw_author_name": "Timothy Dixon",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145608581"
+                ],
+                "raw_affiliation_string": "Rosenstiel School of Marine and Atmospheric Sciences University of Miami  Miami Florida USA"
+              }
+            ],
+            "author": {
+              "display_name": "R. Malservisi",
+              "id": "https://openalex.org/A5078216232",
+              "orcid": "https://orcid.org/0000-0003-1767-8187"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Miami",
+                "id": "https://openalex.org/I145608581",
+                "lineage": [
+                  "https://openalex.org/I145608581"
+                ],
+                "ror": "https://ror.org/02dgjyy92",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Rosenstiel School of Marine and Atmospheric Sciences University of Miami  Miami Florida USA"
+            ],
+            "raw_author_name": "Rocco Malservisi",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I193662353"
+                ],
+                "raw_affiliation_string": "Faculty of Earth Sciences Utrecht University  Utrecht Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Rob Govers",
+              "id": "https://openalex.org/A5087985060",
+              "orcid": "https://orcid.org/0000-0001-7148-8857"
+            },
+            "author_position": "last",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Utrecht University",
+                "id": "https://openalex.org/I193662353",
+                "lineage": [
+                  "https://openalex.org/I193662353"
+                ],
+                "ror": "https://ror.org/04pp8hn57",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Faculty of Earth Sciences Utrecht University  Utrecht Netherlands"
+            ],
+            "raw_author_name": "Rob Govers",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1029/2005jb003843",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1029/2005jb003843",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2005JB003843",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Atmospheres",
+            "host_organization": "https://openalex.org/P4310315809",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315809"
+            ],
+            "host_organization_lineage_names": [
+              "American Geophysical Union"
+            ],
+            "host_organization_name": "American Geophysical Union",
+            "id": "https://openalex.org/S207178839",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0148-0227",
+              "2156-2202",
+              "2169-897X",
+              "2169-8996"
+            ],
+            "issn_l": "0148-0227",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": "B5",
+          "last_page": null,
+          "volume": "111"
+        },
+        "cited_by_count": 78,
+        "display_name": "Strain accumulation across the Carrizo segment of the San Andreas Fault, California: Impact of laterally varying crustal properties",
+        "doi": "https://doi.org/10.1029/2005jb003843",
+        "id": "https://openalex.org/W2027103826",
+        "ids": {
+          "doi": "https://doi.org/10.1029/2005jb003843",
+          "mag": "2027103826",
+          "openalex": "https://openalex.org/W2027103826"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2005JB003843"
+        },
+        "primary_location": {
+          "id": "doi:10.1029/2005jb003843",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1029/2005jb003843",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2005JB003843",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Atmospheres",
+            "host_organization": "https://openalex.org/P4310315809",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315809"
+            ],
+            "host_organization_lineage_names": [
+              "American Geophysical Union"
+            ],
+            "host_organization_name": "American Geophysical Union",
+            "id": "https://openalex.org/S207178839",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0148-0227",
+              "2156-2202",
+              "2169-897X",
+              "2169-8996"
+            ],
+            "issn_l": "0148-0227",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2006-05-01",
+        "publication_year": 2006,
+        "referenced_works": [
+          "https://openalex.org/W427481048",
+          "https://openalex.org/W1963569243",
+          "https://openalex.org/W1964086728",
+          "https://openalex.org/W1967488184",
+          "https://openalex.org/W1971222638",
+          "https://openalex.org/W1983091118",
+          "https://openalex.org/W1991794762",
+          "https://openalex.org/W1993854719",
+          "https://openalex.org/W1994417800",
+          "https://openalex.org/W1999186212",
+          "https://openalex.org/W2004280753",
+          "https://openalex.org/W2005015950",
+          "https://openalex.org/W2006915059",
+          "https://openalex.org/W2011939763",
+          "https://openalex.org/W2024953052",
+          "https://openalex.org/W2031316998",
+          "https://openalex.org/W2041968301",
+          "https://openalex.org/W2046181429",
+          "https://openalex.org/W2055289106",
+          "https://openalex.org/W2056294232",
+          "https://openalex.org/W2058827292",
+          "https://openalex.org/W2060803307",
+          "https://openalex.org/W2063101822",
+          "https://openalex.org/W2065126285",
+          "https://openalex.org/W2066906716",
+          "https://openalex.org/W2069191682",
+          "https://openalex.org/W2077571609",
+          "https://openalex.org/W2093378357",
+          "https://openalex.org/W2095062691",
+          "https://openalex.org/W2097903974",
+          "https://openalex.org/W2099719806",
+          "https://openalex.org/W2111061528",
+          "https://openalex.org/W2127972904",
+          "https://openalex.org/W2137974145",
+          "https://openalex.org/W2140709557",
+          "https://openalex.org/W2141309105",
+          "https://openalex.org/W2142536098",
+          "https://openalex.org/W2143350209",
+          "https://openalex.org/W2146799928",
+          "https://openalex.org/W2150385097",
+          "https://openalex.org/W2159035137",
+          "https://openalex.org/W2159244353",
+          "https://openalex.org/W2164238519",
+          "https://openalex.org/W2300819935",
+          "https://openalex.org/W2469240176",
+          "https://openalex.org/W3021018147"
+        ],
+        "referenced_works_count": 46,
+        "title": "Strain accumulation across the Carrizo segment of the San Andreas Fault, California: Impact of laterally varying crustal properties",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(10–13": [
+            202
+          ],
+          "(MMF),": [
+            38
+          ],
+          "(∼100": [
+            111
+          ],
+          "14": [
+            73
+          ],
+          "150": [
+            55
+          ],
+          "1963": [
+            95
+          ],
+          "2019": [
+            59
+          ],
+          "3.5": [
+            77
+          ],
+          "4.7": [
+            121
+          ],
+          "5.8": [
+            83,
+            143,
+            230
+          ],
+          "6.3": [
+            97
+          ],
+          "8": [
+            178
+          ],
+          "Anatolian": [
+            7
+          ],
+          "Basin.": [
+            222
+          ],
+          "Coulomb": [
+            235
+          ],
+          "Fault": [
+            8,
+            37
+          ],
+          "Finite-fault": [
+            170
+          ],
+          "In": [
+            58
+          ],
+          "MMF": [
+            242
+          ],
+          "MMF,": [
+            66,
+            150
+          ],
+          "MMF.": [
+            169,
+            193
+          ],
+          "Main": [
+            35
+          ],
+          "Marmara": [
+            13,
+            36,
+            91,
+            221
+          ],
+          "Mw": [
+            76,
+            82,
+            96,
+            120,
+            142,
+            229
+          ],
+          "North": [
+            6
+          ],
+          "Our": [
+            100
+          ],
+          "SUMMARY": [
+            0
+          ],
+          "Sea": [
+            11,
+            92
+          ],
+          "September,": [
+            60
+          ],
+          "Silivri": [
+            84
+          ],
+          "Silivri,": [
+            71
+          ],
+          "The": [
+            1,
+            26,
+            81,
+            126,
+            194,
+            223,
+            238
+          ],
+          "a": [
+            15,
+            42,
+            61,
+            79,
+            108
+          ],
+          "active": [
+            32
+          ],
+          "activity": [
+            63,
+            105
+          ],
+          "aftershock": [
+            206
+          ],
+          "aftershocks": [
+            130,
+            226
+          ],
+          "along": [
+            53,
+            241
+          ],
+          "an": [
+            119
+          ],
+          "analyses": [
+            101
+          ],
+          "and": [
+            28,
+            45,
+            50,
+            113,
+            131,
+            204,
+            252,
+            255
+          ],
+          "behaviour": [
+            52
+          ],
+          "below": [
+            214
+          ],
+          "beneath": [
+            9
+          ],
+          "both": [
+            47,
+            246
+          ],
+          "branch,": [
+            33
+          ],
+          "but": [
+            151
+          ],
+          "causative": [
+            211
+          ],
+          "changes": [
+            240
+          ],
+          "city": [
+            23
+          ],
+          "clamping": [
+            251
+          ],
+          "component": [
+            162
+          ],
+          "computed": [
+            135
+          ],
+          "consistent": [
+            233
+          ],
+          "cover": [
+            218
+          ],
+          "creeping": [
+            49
+          ],
+          "currently": [
+            29
+          ],
+          "d.": [
+            125
+          ],
+          "decrease": [
+            248
+          ],
+          "deep": [
+            216
+          ],
+          "depth": [
+            196
+          ],
+          "did": [
+            145
+          ],
+          "directivity": [
+            183
+          ],
+          "distribution": [
+            127,
+            201,
+            224
+          ],
+          "due": [
+            249,
+            258
+          ],
+          "earthquake": [
+            144
+          ],
+          "earthquake,": [
+            85
+          ],
+          "earthquake.": [
+            99
+          ],
+          "earthquakes": [
+            74
+          ],
+          "east,": [
+            185
+          ],
+          "event": [
+            231
+          ],
+          "exhibits": [
+            46
+          ],
+          "fault": [
+            158,
+            189,
+            212
+          ],
+          "focal": [
+            133
+          ],
+          "following": [
+            118
+          ],
+          "for": [
+            21
+          ],
+          "foreshock": [
+            122
+          ],
+          "from": [
+            136
+          ],
+          "generating": [
+            72
+          ],
+          "hazard": [
+            20
+          ],
+          "imply": [
+            208
+          ],
+          "in": [
+            78,
+            89,
+            107
+          ],
+          "include": [
+            243
+          ],
+          "increase": [
+            257
+          ],
+          "increase.": [
+            237
+          ],
+          "initiated": [
+            64
+          ],
+          "is": [
+            14,
+            39,
+            86,
+            213,
+            232
+          ],
+          "it": [
+            152
+          ],
+          "its": [
+            54
+          ],
+          "km": [
+            56,
+            117,
+            179
+          ],
+          "km)": [
+            203
+          ],
+          "largest": [
+            88
+          ],
+          "length.": [
+            57
+          ],
+          "loading.": [
+            260
+          ],
+          "located": [
+            163
+          ],
+          "locked": [
+            51
+          ],
+          "long": [
+            180
+          ],
+          "m)": [
+            112
+          ],
+          "main": [
+            175
+          ],
+          "major": [
+            16
+          ],
+          "mechanisms": [
+            134
+          ],
+          "merges": [
+            190
+          ],
+          "model": [
+            172
+          ],
+          "most": [
+            31
+          ],
+          "narrow": [
+            109,
+            195
+          ],
+          "near": [
+            65
+          ],
+          "north": [
+            166
+          ],
+          "north-dipping": [
+            155
+          ],
+          "northern": [
+            27
+          ],
+          "not": [
+            146
+          ],
+          "oblique": [
+            156
+          ],
+          "occur": [
+            147
+          ],
+          "of": [
+            4,
+            12,
+            18,
+            24,
+            70,
+            128,
+            167,
+            173,
+            198,
+            219,
+            225,
+            227,
+            245
+          ],
+          "off-coast": [
+            67
+          ],
+          "on": [
+            148,
+            164
+          ],
+          "partially": [
+            48
+          ],
+          "range": [
+            197
+          ],
+          "regional": [
+            137
+          ],
+          "relocated": [
+            129
+          ],
+          "reveal": [
+            102,
+            139
+          ],
+          "right-lateral": [
+            253
+          ],
+          "rupture": [
+            181
+          ],
+          "ruptured": [
+            153,
+            188
+          ],
+          "section": [
+            3
+          ],
+          "sedimentary": [
+            217
+          ],
+          "segmented": [
+            40
+          ],
+          "seismic": [
+            19,
+            62
+          ],
+          "shear": [
+            43
+          ],
+          "shock": [
+            176
+          ],
+          "shows": [
+            177
+          ],
+          "significant": [
+            160
+          ],
+          "since": [
+            93
+          ],
+          "slip": [
+            171,
+            200
+          ],
+          "slip,": [
+            254
+          ],
+          "source": [
+            17
+          ],
+          "spread": [
+            114
+          ],
+          "started": [
+            106
+          ],
+          "stress": [
+            236,
+            239,
+            247,
+            256
+          ],
+          "strike-slip": [
+            157
+          ],
+          "that": [
+            103,
+            140,
+            209
+          ],
+          "the": [
+            5,
+            10,
+            22,
+            30,
+            34,
+            68,
+            87,
+            90,
+            94,
+            104,
+            132,
+            141,
+            149,
+            165,
+            168,
+            174,
+            187,
+            192,
+            199,
+            205,
+            210,
+            215,
+            220,
+            228
+          ],
+          "thrust": [
+            161
+          ],
+          "to": [
+            115,
+            191,
+            250,
+            259
+          ],
+          "toward": [
+            184
+          ],
+          "town": [
+            69
+          ],
+          "unbroken": [
+            2
+          ],
+          "waveforms": [
+            138
+          ],
+          "week.": [
+            80
+          ],
+          "where": [
+            186
+          ],
+          "with": [
+            159,
+            182,
+            234
+          ],
+          "within": [
+            41,
+            123
+          ],
+          "zone": [
+            44,
+            110,
+            207
+          ],
+          "zones": [
+            244
+          ],
+          "Çınarcık": [
+            98
+          ],
+          "İstanbul.": [
+            25
+          ],
+          "∼2": [
+            124
+          ],
+          "∼60°": [
+            154
+          ],
+          "∼7": [
+            116
+          ],
+          "≥": [
+            75
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802243403",
+                  "https://openalex.org/I4405392"
+                ],
+                "raw_affiliation_string": "Kandilli Observatory and Earthquake Research Institute, Department of Geophysics, Boğaziçi University, 34684, Istanbul, Turkey"
+              }
+            ],
+            "author": {
+              "display_name": "Hayrullah Karabulut",
+              "id": "https://openalex.org/A5054462039",
+              "orcid": "https://orcid.org/0000-0003-3975-761X"
+            },
+            "author_position": "first",
+            "countries": [
+              "TR"
+            ],
+            "institutions": [
+              {
+                "country_code": "TR",
+                "display_name": "Kandilli Observatory and Earthquake Research Institute",
+                "id": "https://openalex.org/I2802243403",
+                "lineage": [
+                  "https://openalex.org/I2802243403"
+                ],
+                "ror": "https://ror.org/012set728",
+                "type": "facility"
+              },
+              {
+                "country_code": "TR",
+                "display_name": "Boğaziçi University",
+                "id": "https://openalex.org/I4405392",
+                "lineage": [
+                  "https://openalex.org/I4405392"
+                ],
+                "ror": "https://ror.org/03z9tma90",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Kandilli Observatory and Earthquake Research Institute, Department of Geophysics, Boğaziçi University, 34684, Istanbul, Turkey"
+            ],
+            "raw_author_name": "Hayrullah Karabulut",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4101805"
+                ],
+                "raw_affiliation_string": "Faculty of Civil Engineering, Department of Geomatic Engineering, Yıldız Technical University, 34220, Istanbul, Turkey"
+              }
+            ],
+            "author": {
+              "display_name": "Sezim Ezgi Güvercin",
+              "id": "https://openalex.org/A5042659597",
+              "orcid": "https://orcid.org/0000-0002-6355-5244"
+            },
+            "author_position": "middle",
+            "countries": [
+              "TR"
+            ],
+            "institutions": [
+              {
+                "country_code": "TR",
+                "display_name": "Yıldız Technical University",
+                "id": "https://openalex.org/I4101805",
+                "lineage": [
+                  "https://openalex.org/I4101805"
+                ],
+                "ror": "https://ror.org/0547yzj13",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Faculty of Civil Engineering, Department of Geomatic Engineering, Yıldız Technical University, 34220, Istanbul, Turkey"
+            ],
+            "raw_author_name": "Sezim Ezgi Güvercin",
+            "raw_orcid": "https://orcid.org/0000-0002-6355-5244"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802243403",
+                  "https://openalex.org/I4405392"
+                ],
+                "raw_affiliation_string": "Kandilli Observatory and Earthquake Research Institute, Department of Geophysics, Boğaziçi University, 34684, Istanbul, Turkey"
+              }
+            ],
+            "author": {
+              "display_name": "Figen Eskiköy",
+              "id": "https://openalex.org/A5064888771",
+              "orcid": "https://orcid.org/0000-0002-3013-3096"
+            },
+            "author_position": "middle",
+            "countries": [
+              "TR"
+            ],
+            "institutions": [
+              {
+                "country_code": "TR",
+                "display_name": "Kandilli Observatory and Earthquake Research Institute",
+                "id": "https://openalex.org/I2802243403",
+                "lineage": [
+                  "https://openalex.org/I2802243403"
+                ],
+                "ror": "https://ror.org/012set728",
+                "type": "facility"
+              },
+              {
+                "country_code": "TR",
+                "display_name": "Boğaziçi University",
+                "id": "https://openalex.org/I4405392",
+                "lineage": [
+                  "https://openalex.org/I4405392"
+                ],
+                "ror": "https://ror.org/03z9tma90",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Kandilli Observatory and Earthquake Research Institute, Department of Geophysics, Boğaziçi University, 34684, Istanbul, Turkey"
+            ],
+            "raw_author_name": "Figen Eskiköy",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802243403",
+                  "https://openalex.org/I4405392"
+                ],
+                "raw_affiliation_string": "Kandilli Observatory and Earthquake Research Institute, Department of Geophysics, Boğaziçi University, 34684, Istanbul, Turkey"
+              }
+            ],
+            "author": {
+              "display_name": "A. Ö. Konca",
+              "id": "https://openalex.org/A5088368931",
+              "orcid": "https://orcid.org/0000-0002-3198-7763"
+            },
+            "author_position": "middle",
+            "countries": [
+              "TR"
+            ],
+            "institutions": [
+              {
+                "country_code": "TR",
+                "display_name": "Kandilli Observatory and Earthquake Research Institute",
+                "id": "https://openalex.org/I2802243403",
+                "lineage": [
+                  "https://openalex.org/I2802243403"
+                ],
+                "ror": "https://ror.org/012set728",
+                "type": "facility"
+              },
+              {
+                "country_code": "TR",
+                "display_name": "Boğaziçi University",
+                "id": "https://openalex.org/I4405392",
+                "lineage": [
+                  "https://openalex.org/I4405392"
+                ],
+                "ror": "https://ror.org/03z9tma90",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Kandilli Observatory and Earthquake Research Institute, Department of Geophysics, Boğaziçi University, 34684, Istanbul, Turkey"
+            ],
+            "raw_author_name": "Ali Özgun Konca",
+            "raw_orcid": "https://orcid.org/0000-0002-3198-7763"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802243403",
+                  "https://openalex.org/I4405392"
+                ],
+                "raw_affiliation_string": "Kandilli Observatory and Earthquake Research Institute, Department of Geodesy, Boğaziçi University, 34684, Istanbul, Turkey"
+              }
+            ],
+            "author": {
+              "display_name": "Semih Ergintav",
+              "id": "https://openalex.org/A5068769693",
+              "orcid": "https://orcid.org/0000-0001-7080-183X"
+            },
+            "author_position": "last",
+            "countries": [
+              "TR"
+            ],
+            "institutions": [
+              {
+                "country_code": "TR",
+                "display_name": "Kandilli Observatory and Earthquake Research Institute",
+                "id": "https://openalex.org/I2802243403",
+                "lineage": [
+                  "https://openalex.org/I2802243403"
+                ],
+                "ror": "https://ror.org/012set728",
+                "type": "facility"
+              },
+              {
+                "country_code": "TR",
+                "display_name": "Boğaziçi University",
+                "id": "https://openalex.org/I4405392",
+                "lineage": [
+                  "https://openalex.org/I4405392"
+                ],
+                "ror": "https://ror.org/03z9tma90",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Kandilli Observatory and Earthquake Research Institute, Department of Geodesy, Boğaziçi University, 34684, Istanbul, Turkey"
+            ],
+            "raw_author_name": "Semih Ergintav",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1093/gji/ggaa469",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1093/gji/ggaa469",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://academic.oup.com/gji/article-pdf/224/1/377/34192264/ggaa469.pdf",
+          "raw_source_name": "Geophysical Journal International",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Geophysical Journal International",
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "host_organization_name": "Oxford University Press",
+            "id": "https://openalex.org/S108821158",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": false,
+            "issn": [
+              "0956-540X",
+              "1365-246X"
+            ],
+            "issn_l": "0956-540X",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "377",
+          "issue": "1",
+          "last_page": "388",
+          "volume": "224"
+        },
+        "cited_by_count": 51,
+        "display_name": "The moderate size 2019 September Mw 5.8 Silivri earthquake unveils the complexity of the Main Marmara Fault shear zone",
+        "doi": "https://doi.org/10.1093/gji/ggaa469",
+        "id": "https://openalex.org/W3089484330",
+        "ids": {
+          "doi": "https://doi.org/10.1093/gji/ggaa469",
+          "mag": "3089484330",
+          "openalex": "https://openalex.org/W3089484330"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://academic.oup.com/gji/article-pdf/224/1/377/34192264/ggaa469.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1093/gji/ggaa469",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1093/gji/ggaa469",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://academic.oup.com/gji/article-pdf/224/1/377/34192264/ggaa469.pdf",
+          "raw_source_name": "Geophysical Journal International",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Geophysical Journal International",
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "host_organization_name": "Oxford University Press",
+            "id": "https://openalex.org/S108821158",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": false,
+            "issn": [
+              "0956-540X",
+              "1365-246X"
+            ],
+            "issn_l": "0956-540X",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2020-09-26",
+        "publication_year": 2020,
+        "referenced_works": [
+          "https://openalex.org/W1499797361",
+          "https://openalex.org/W1777568429",
+          "https://openalex.org/W1803019238",
+          "https://openalex.org/W1976715182",
+          "https://openalex.org/W1981165981",
+          "https://openalex.org/W1994425869",
+          "https://openalex.org/W2006210223",
+          "https://openalex.org/W2009657377",
+          "https://openalex.org/W2027237425",
+          "https://openalex.org/W2033998922",
+          "https://openalex.org/W2046413941",
+          "https://openalex.org/W2053089547",
+          "https://openalex.org/W2068093276",
+          "https://openalex.org/W2085807439",
+          "https://openalex.org/W2094277696",
+          "https://openalex.org/W2108225522",
+          "https://openalex.org/W2109532957",
+          "https://openalex.org/W2110673429",
+          "https://openalex.org/W2111266914",
+          "https://openalex.org/W2113150115",
+          "https://openalex.org/W2113955130",
+          "https://openalex.org/W2117897510",
+          "https://openalex.org/W2120887430",
+          "https://openalex.org/W2122938374",
+          "https://openalex.org/W2129686492",
+          "https://openalex.org/W2141133733",
+          "https://openalex.org/W2153210255",
+          "https://openalex.org/W2154463886",
+          "https://openalex.org/W2166426012",
+          "https://openalex.org/W2171883451",
+          "https://openalex.org/W2183497328",
+          "https://openalex.org/W2254003259",
+          "https://openalex.org/W2295102336",
+          "https://openalex.org/W2331831130",
+          "https://openalex.org/W2344103485",
+          "https://openalex.org/W2410410974",
+          "https://openalex.org/W2520209389",
+          "https://openalex.org/W2560269720",
+          "https://openalex.org/W2913612773",
+          "https://openalex.org/W2940954324",
+          "https://openalex.org/W6636081937",
+          "https://openalex.org/W6645509275",
+          "https://openalex.org/W6674025620",
+          "https://openalex.org/W6677120180",
+          "https://openalex.org/W6679221798",
+          "https://openalex.org/W6685319833",
+          "https://openalex.org/W6686311132"
+        ],
+        "referenced_works_count": 47,
+        "title": "The moderate size 2019 September Mw 5.8 Silivri earthquake unveils the complexity of the Main Marmara Fault shear zone",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "+6": [
+            35
+          ],
+          "+7": [
+            170
+          ],
+          "12": [
+            168,
+            199
+          ],
+          "1945.": [
+            134
+          ],
+          "20–23": [
+            105
+          ],
+          "22": [
+            33,
+            97,
+            122,
+            162
+          ],
+          "800‐year": [
+            154
+          ],
+          "800‐year‐long": [
+            28
+          ],
+          "An": [
+            0
+          ],
+          "Andreas": [
+            21,
+            146,
+            181,
+            232,
+            255
+          ],
+          "Benito": [
+            6
+          ],
+          "Calaveras": [
+            261,
+            267,
+            292
+          ],
+          "California,": [
+            25
+          ],
+          "Francisco": [
+            213
+          ],
+          "Hayward": [
+            294
+          ],
+          "Hollister": [
+            271
+          ],
+          "Hollister,": [
+            251
+          ],
+          "Hollister.": [
+            298
+          ],
+          "If": [
+            263
+          ],
+          "Melendy": [
+            9,
+            72,
+            118,
+            149,
+            165
+          ],
+          "Numerous": [
+            59
+          ],
+          "Paicines": [
+            259,
+            265
+          ],
+          "Peninsula.": [
+            214
+          ],
+          "Ranch": [
+            119,
+            150,
+            166
+          ],
+          "Ranch,": [
+            10
+          ],
+          "Ranch.": [
+            73
+          ],
+          "River": [
+            7
+          ],
+          "San": [
+            5,
+            20,
+            145,
+            180,
+            212,
+            231,
+            254
+          ],
+          "The": [
+            37,
+            96,
+            156,
+            234
+          ],
+          "These": [
+            74
+          ],
+          "This": [
+            135
+          ],
+          "Thus": [
+            215
+          ],
+          "a": [
+            121,
+            221,
+            244,
+            273,
+            283
+          ],
+          "about": [
+            161,
+            198,
+            279
+          ],
+          "across": [
+            290
+          ],
+          "age": [
+            44,
+            84
+          ],
+          "ages": [
+            62,
+            76
+          ],
+          "alluvial": [
+            1
+          ],
+          "alluvium": [
+            70,
+            87
+          ],
+          "along": [
+            14,
+            143,
+            178,
+            202,
+            229
+          ],
+          "also": [
+            287
+          ],
+          "an": [
+            27,
+            128
+          ],
+          "and": [
+            45,
+            50,
+            56,
+            93,
+            120,
+            188,
+            260,
+            266,
+            293
+          ],
+          "appear": [
+            77
+          ],
+          "are": [
+            112
+          ],
+          "at": [
+            8,
+            71,
+            80,
+            117,
+            148,
+            164
+          ],
+          "attributed": [
+            242
+          ],
+          "average": [
+            29
+          ],
+          "average.": [
+            155
+          ],
+          "based": [
+            52
+          ],
+          "basis": [
+            90
+          ],
+          "be": [
+            79
+          ],
+          "built": [
+            132
+          ],
+          "by": [
+            114,
+            127
+          ],
+          "calculated": [
+            40
+          ],
+          "central": [
+            24
+          ],
+          "charcoal": [
+            67
+          ],
+          "combined": [
+            274
+          ],
+          "corral": [
+            130
+          ],
+          "creeping": [
+            16,
+            186,
+            208
+          ],
+          "data": [
+            219
+          ],
+          "data.": [
+            58,
+            95
+          ],
+          "decrease": [
+            225,
+            236
+          ],
+          "deposit": [
+            2
+          ],
+          "determined": [
+            64
+          ],
+          "detrital": [
+            66
+          ],
+          "displacement": [
+            49
+          ],
+          "fault": [
+            22,
+            147,
+            182,
+            204,
+            256
+          ],
+          "fault.": [
+            233
+          ],
+          "faults": [
+            268,
+            295
+          ],
+          "faults.": [
+            262
+          ],
+          "fence": [
+            131
+          ],
+          "for": [
+            65
+          ],
+          "found": [
+            177,
+            201
+          ],
+          "from": [
+            41,
+            68,
+            252
+          ],
+          "geodetic": [
+            115
+          ],
+          "greater": [
+            191
+          ],
+          "have": [
+            272
+          ],
+          "historic": [
+            139
+          ],
+          "in": [
+            23,
+            133,
+            226,
+            237
+          ],
+          "instruments": [
+            116
+          ],
+          "is": [
+            12,
+            39,
+            51,
+            101,
+            151,
+            167,
+            190,
+            241
+          ],
+          "it": [
+            189
+          ],
+          "its": [
+            153
+          ],
+          "less": [
+            172
+          ],
+          "located": [
+            13
+          ],
+          "long‐term": [
+            99,
+            157,
+            175,
+            195,
+            217,
+            238,
+            275
+          ],
+          "may": [
+            286
+          ],
+          "measures": [
+            47
+          ],
+          "minimum": [
+            194
+          ],
+          "mm/yr": [
+            98,
+            106,
+            123,
+            163,
+            171,
+            200,
+            223
+          ],
+          "mm/yr,": [
+            281
+          ],
+          "mm/yr.": [
+            36
+          ],
+          "movement": [
+            142
+          ],
+          "near": [
+            152
+          ],
+          "north": [
+            205,
+            296
+          ],
+          "northwestward": [
+            224,
+            235
+          ],
+          "of": [
+            3,
+            18,
+            32,
+            48,
+            85,
+            91,
+            108,
+            141,
+            160,
+            184,
+            197,
+            206,
+            247,
+            250,
+            270,
+            278,
+            297
+          ],
+          "offset": [
+            129
+          ],
+          "on": [
+            53,
+            88,
+            210
+          ],
+          "one": [
+            42
+          ],
+          "other": [
+            60
+          ],
+          "radiocarbon": [
+            43,
+            61,
+            75
+          ],
+          "range": [
+            107
+          ],
+          "rate": [
+            31,
+            38,
+            100,
+            125,
+            140,
+            159,
+            176,
+            196,
+            228,
+            240,
+            277,
+            285
+          ],
+          "rates": [
+            110
+          ],
+          "recorded": [
+            113,
+            126
+          ],
+          "records": [
+            26
+          ],
+          "represent": [
+            288
+          ],
+          "sedimentologic": [
+            55,
+            92
+          ],
+          "segment": [
+            17,
+            209
+          ],
+          "segment,": [
+            187
+          ],
+          "similar": [
+            102,
+            284
+          ],
+          "slip": [
+            30,
+            109,
+            124,
+            158,
+            227,
+            239,
+            276,
+            289
+          ],
+          "slip,": [
+            248
+          ],
+          "slip‐rate": [
+            218
+          ],
+          "south": [
+            183,
+            249,
+            269
+          ],
+          "stratigraphic": [
+            57,
+            94
+          ],
+          "suggest": [
+            220
+          ],
+          "suggests": [
+            136
+          ],
+          "than": [
+            173,
+            192
+          ],
+          "that": [
+            111,
+            137
+          ],
+          "the": [
+            4,
+            15,
+            19,
+            69,
+            83,
+            86,
+            89,
+            104,
+            138,
+            144,
+            174,
+            179,
+            185,
+            193,
+            203,
+            207,
+            211,
+            216,
+            230,
+            253,
+            258,
+            264,
+            291
+          ],
+          "then": [
+            282
+          ],
+          "to": [
+            78,
+            103,
+            243,
+            257
+          ],
+          "transfer": [
+            246
+          ],
+          "two": [
+            46
+          ],
+          "two‐part": [
+            245
+          ],
+          "variance": [
+            81
+          ],
+          "various": [
+            54
+          ],
+          "were": [
+            63
+          ],
+          "which": [
+            11
+          ],
+          "with": [
+            82
+          ],
+          "−4": [
+            34
+          ],
+          "−5": [
+            169
+          ],
+          "∼20": [
+            222,
+            280
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "James A. Perkins",
+              "id": "https://openalex.org/A5104041554",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "James A. Perkins",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "John D. Sims",
+              "id": "https://openalex.org/A5026385394",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "John D. Sims",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Steven S. Sturgess",
+              "id": "https://openalex.org/A5013230558",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Steven S. Sturgess",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1029/jb094ib08p10217",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1029/jb094ib08p10217",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/JB094iB08p10217",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Atmospheres",
+            "host_organization": "https://openalex.org/P4310315809",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315809"
+            ],
+            "host_organization_lineage_names": [
+              "American Geophysical Union"
+            ],
+            "host_organization_name": "American Geophysical Union",
+            "id": "https://openalex.org/S207178839",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0148-0227",
+              "2156-2202",
+              "2169-897X",
+              "2169-8996"
+            ],
+            "issn_l": "0148-0227",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "10217",
+          "issue": "B8",
+          "last_page": "10230",
+          "volume": "94"
+        },
+        "cited_by_count": 11,
+        "display_name": "Late Holocene movement along the San Andreas Fault at Melendy Ranch: Implications for the distribution of fault slip in central California",
+        "doi": "https://doi.org/10.1029/jb094ib08p10217",
+        "id": "https://openalex.org/W1969470523",
+        "ids": {
+          "doi": "https://doi.org/10.1029/jb094ib08p10217",
+          "mag": "1969470523",
+          "openalex": "https://openalex.org/W1969470523"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/JB094iB08p10217"
+        },
+        "primary_location": {
+          "id": "doi:10.1029/jb094ib08p10217",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1029/jb094ib08p10217",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/JB094iB08p10217",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Atmospheres",
+            "host_organization": "https://openalex.org/P4310315809",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315809"
+            ],
+            "host_organization_lineage_names": [
+              "American Geophysical Union"
+            ],
+            "host_organization_name": "American Geophysical Union",
+            "id": "https://openalex.org/S207178839",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0148-0227",
+              "2156-2202",
+              "2169-897X",
+              "2169-8996"
+            ],
+            "issn_l": "0148-0227",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "1989-08-10",
+        "publication_year": 1989,
+        "referenced_works": [
+          "https://openalex.org/W53179137",
+          "https://openalex.org/W112680859",
+          "https://openalex.org/W222801617",
+          "https://openalex.org/W1501074959",
+          "https://openalex.org/W1551971208",
+          "https://openalex.org/W1928750549",
+          "https://openalex.org/W1992928455",
+          "https://openalex.org/W1997760873",
+          "https://openalex.org/W2004966701",
+          "https://openalex.org/W2039224345",
+          "https://openalex.org/W2054493525",
+          "https://openalex.org/W2065234232",
+          "https://openalex.org/W2080591287",
+          "https://openalex.org/W2088312067",
+          "https://openalex.org/W2093875131",
+          "https://openalex.org/W2101957328",
+          "https://openalex.org/W2112498588",
+          "https://openalex.org/W2140709557",
+          "https://openalex.org/W2345271828",
+          "https://openalex.org/W2484737424",
+          "https://openalex.org/W2554926413",
+          "https://openalex.org/W4245668497",
+          "https://openalex.org/W4294555410",
+          "https://openalex.org/W6608773027"
+        ],
+        "referenced_works_count": 24,
+        "title": "Late Holocene movement along the San Andreas Fault at Melendy Ranch: Implications for the distribution of fault slip in central California",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "10": [
+            108,
+            196
+          ],
+          "2": [
+            258
+          ],
+          "2010": [
+            34,
+            45
+          ],
+          "4": [
+            32
+          ],
+          "5.4,": [
+            42
+          ],
+          "7": [
+            43
+          ],
+          "7.2,": [
+            31
+          ],
+          "Abstract": [
+            0
+          ],
+          "Anza": [
+            17,
+            58,
+            182,
+            189
+          ],
+          "April": [
+            33
+          ],
+          "Boundary": [
+            53
+          ],
+          "California.": [
+            22
+          ],
+          "Collins": [
+            46,
+            233
+          ],
+          "El": [
+            35,
+            248
+          ],
+          "Elevated": [
+            23
+          ],
+          "Fault,": [
+            14
+          ],
+          "Gap": [
+            190
+          ],
+          "Gap,": [
+            19,
+            183
+          ],
+          "Jacinto": [
+            13
+          ],
+          "July": [
+            44
+          ],
+          "M": [
+            29,
+            40
+          ],
+          "Mayor‐Cucapah": [
+            36,
+            249
+          ],
+          "Observatory": [
+            54
+          ],
+          "Our": [
+            165
+          ],
+          "Plate": [
+            52
+          ],
+          "San": [
+            12
+          ],
+          "Seismic": [
+            18
+          ],
+          "Stresses": [
+            225
+          ],
+          "Synthetic": [
+            115
+          ],
+          "The": [
+            131,
+            198
+          ],
+          "Valley": [
+            47,
+            234
+          ],
+          "We": [
+            1,
+            66,
+            100
+          ],
+          "a": [
+            68,
+            86,
+            139,
+            146,
+            211,
+            222
+          ],
+          "accompanied": [
+            61
+          ],
+          "activity": [
+            229
+          ],
+          "adjacent": [
+            152,
+            180
+          ],
+          "aftershock": [
+            64,
+            122
+          ],
+          "along": [
+            6,
+            173
+          ],
+          "also": [
+            213
+          ],
+          "and": [
+            37,
+            59,
+            81,
+            161
+          ],
+          "are": [
+            163
+          ],
+          "as": [
+            184,
+            186
+          ],
+          "aseismic": [
+            4,
+            76,
+            143,
+            159,
+            169,
+            200,
+            251
+          ],
+          "at": [
+            192
+          ],
+          "based": [
+            84
+          ],
+          "beneath": [
+            187
+          ],
+          "borehole": [
+            55
+          ],
+          "by": [
+            51,
+            62,
+            203,
+            243,
+            246
+          ],
+          "central": [
+            8
+          ],
+          "changes": [
+            93
+          ],
+          "changes.": [
+            99
+          ],
+          "clusters": [
+            179
+          ],
+          "combined": [
+            79
+          ],
+          "consistent": [
+            137
+          ],
+          "coplanar.": [
+            164
+          ],
+          "cumulative": [
+            104
+          ],
+          "data": [
+            133
+          ],
+          "data,": [
+            83
+          ],
+          "day": [
+            109
+          ],
+          "deep": [
+            3
+          ],
+          "depths": [
+            193
+          ],
+          "distribution": [
+            73,
+            128
+          ],
+          "each": [
+            112
+          ],
+          "earthquake": [
+            240
+          ],
+          "earthquakes": [
+            48,
+            219
+          ],
+          "effect": [
+            120
+          ],
+          "fault": [
+            148
+          ],
+          "fault.": [
+            224
+          ],
+          "faults": [
+            153
+          ],
+          "following": [
+            26,
+            111
+          ],
+          "for": [
+            102,
+            255
+          ],
+          "found": [
+            214
+          ],
+          "friction": [
+            88
+          ],
+          "from": [
+            78,
+            227
+          ],
+          "generated": [
+            202
+          ],
+          "geodetic": [
+            82
+          ],
+          "has": [
+            208
+          ],
+          "imposed": [
+            245
+          ],
+          "in": [
+            20,
+            94,
+            106,
+            141,
+            157,
+            215
+          ],
+          "indicate": [
+            167
+          ],
+          "infer": [
+            71
+          ],
+          "inferred": [
+            126,
+            226
+          ],
+          "interactions": [
+            123
+          ],
+          "into": [
+            97
+          ],
+          "introduce": [
+            67
+          ],
+          "invert": [
+            101
+          ],
+          "is": [
+            129,
+            135
+          ],
+          "itself,": [
+            191
+          ],
+          "joint": [
+            132
+          ],
+          "km.": [
+            197
+          ],
+          "large": [
+            218
+          ],
+          "larger": [
+            194
+          ],
+          "leading": [
+            230
+          ],
+          "little": [
+            209
+          ],
+          "local": [
+            39
+          ],
+          "main": [
+            113,
+            206,
+            235
+          ],
+          "maps": [
+            91
+          ],
+          "method": [
+            69
+          ],
+          "model": [
+            89,
+            140
+          ],
+          "months.": [
+            259
+          ],
+          "more": [
+            136,
+            256
+          ],
+          "near": [
+            15,
+            57
+          ],
+          "negligible.": [
+            130
+          ],
+          "observed": [
+            92
+          ],
+          "occurring": [
+            220
+          ],
+          "occurs": [
+            172
+          ],
+          "of": [
+            10,
+            74,
+            121,
+            176,
+            217
+          ],
+          "on": [
+            85,
+            124,
+            145,
+            151,
+            221
+          ],
+          "one": [
+            156
+          ],
+          "overlap,": [
+            210
+          ],
+          "pattern": [
+            212
+          ],
+          "period": [
+            110
+          ],
+          "persisted": [
+            254
+          ],
+          "primarily": [
+            171
+          ],
+          "principal": [
+            147
+          ],
+          "rates": [
+            25,
+            96
+          ],
+          "rate‐and‐state": [
+            87
+          ],
+          "recorded": [
+            50
+          ],
+          "remote": [
+            28
+          ],
+          "remote‐triggered": [
+            250
+          ],
+          "results": [
+            166
+          ],
+          "rim": [
+            175
+          ],
+          "same": [
+            223
+          ],
+          "section": [
+            9
+          ],
+          "seismic": [
+            228
+          ],
+          "seismicity": [
+            80,
+            95,
+            150,
+            162,
+            178
+          ],
+          "sequences": [
+            216
+          ],
+          "sequences.": [
+            65
+          ],
+          "set": [
+            134
+          ],
+          "shock": [
+            236
+          ],
+          "shock.": [
+            114
+          ],
+          "shocks": [
+            207
+          ],
+          "show": [
+            117
+          ],
+          "slip": [
+            5,
+            77,
+            105,
+            127,
+            144,
+            160,
+            170,
+            201
+          ],
+          "slip,": [
+            252
+          ],
+          "southern": [
+            21
+          ],
+          "strain": [
+            24
+          ],
+          "strainmeters": [
+            56
+          ],
+          "stress": [
+            98
+          ],
+          "stresses": [
+            244
+          ],
+          "study": [
+            2
+          ],
+          "suggest": [
+            237
+          ],
+          "tests": [
+            116
+          ],
+          "than": [
+            154,
+            195,
+            257
+          ],
+          "that": [
+            90,
+            118,
+            168,
+            238
+          ],
+          "the": [
+            7,
+            11,
+            16,
+            27,
+            38,
+            72,
+            103,
+            107,
+            119,
+            125,
+            174,
+            188,
+            204,
+            232,
+            247
+          ],
+          "this": [
+            239
+          ],
+          "to": [
+            70,
+            181,
+            231
+          ],
+          "triggered": [
+            75,
+            199,
+            242
+          ],
+          "triggers": [
+            149
+          ],
+          "two": [
+            177,
+            205
+          ],
+          "vigorous": [
+            63
+          ],
+          "w": [
+            30,
+            41
+          ],
+          "was": [
+            241
+          ],
+          "well": [
+            185
+          ],
+          "were": [
+            49,
+            60
+          ],
+          "which": [
+            142,
+            158,
+            253
+          ],
+          "with": [
+            138,
+            155
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Berkeley Seismological Laboratory University of California  Berkeley California USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Berkeley Seismological Laboratory, University of California, Berkeley, California, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Asaf Inbal",
+              "id": "https://openalex.org/A5018926854",
+              "orcid": "https://orcid.org/0000-0001-8848-7279"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of California, Berkeley",
+                "id": "https://openalex.org/I95457486",
+                "lineage": [
+                  "https://openalex.org/I95457486"
+                ],
+                "ror": "https://ror.org/01an7q238",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Berkeley Seismological Laboratory University of California  Berkeley California USA",
+              "Berkeley Seismological Laboratory, University of California, Berkeley, California, USA"
+            ],
+            "raw_author_name": "A. Inbal",
+            "raw_orcid": "https://orcid.org/0000-0001-8848-7279"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122411786"
+                ],
+                "raw_affiliation_string": "Seismological Laboratory California Institute of Technology  Pasadena California USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122411786"
+                ],
+                "raw_affiliation_string": "Seismological Laboratory, California Institute of Technology, Pasadena, California, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Jean‐Paul Ampuero",
+              "id": "https://openalex.org/A5062511933",
+              "orcid": "https://orcid.org/0000-0002-4827-7987"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "California Institute of Technology",
+                "id": "https://openalex.org/I122411786",
+                "lineage": [
+                  "https://openalex.org/I122411786"
+                ],
+                "ror": "https://ror.org/05dxps055",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Seismological Laboratory California Institute of Technology  Pasadena California USA",
+              "Seismological Laboratory, California Institute of Technology, Pasadena, California, USA"
+            ],
+            "raw_author_name": "J.‐P. Ampuero",
+            "raw_orcid": "https://orcid.org/0000-0002-4827-7987"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122411786"
+                ],
+                "raw_affiliation_string": "Seismological Laboratory California Institute of Technology  Pasadena California USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122411786"
+                ],
+                "raw_affiliation_string": "Seismological Laboratory, California Institute of Technology, Pasadena, California, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Jean‐Philippe Avouac",
+              "id": "https://openalex.org/A5081216175",
+              "orcid": "https://orcid.org/0000-0002-3060-8442"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "California Institute of Technology",
+                "id": "https://openalex.org/I122411786",
+                "lineage": [
+                  "https://openalex.org/I122411786"
+                ],
+                "ror": "https://ror.org/05dxps055",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Seismological Laboratory California Institute of Technology  Pasadena California USA",
+              "Seismological Laboratory, California Institute of Technology, Pasadena, California, USA"
+            ],
+            "raw_author_name": "J.‐P. Avouac",
+            "raw_orcid": "https://orcid.org/0000-0002-3060-8442"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1002/2016jb013499",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1002/2016jb013499",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/2016JB013499",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Solid Earth",
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "host_organization_name": "Wiley",
+            "id": "https://openalex.org/S4210228715",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2169-9313",
+              "2169-9356"
+            ],
+            "issn_l": "2169-9313",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "3033",
+          "issue": "4",
+          "last_page": "3061",
+          "volume": "122"
+        },
+        "cited_by_count": 41,
+        "display_name": "Locally and remotely triggered aseismic slip on the central San Jacinto Fault near Anza, CA, from joint inversion of seismicity and strainmeter data",
+        "doi": "https://doi.org/10.1002/2016jb013499",
+        "id": "https://openalex.org/W2606196077",
+        "ids": {
+          "doi": "https://doi.org/10.1002/2016jb013499",
+          "mag": "2606196077",
+          "openalex": "https://openalex.org/W2606196077"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/2016JB013499"
+        },
+        "primary_location": {
+          "id": "doi:10.1002/2016jb013499",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1002/2016jb013499",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/2016JB013499",
+          "raw_source_name": "Journal of Geophysical Research: Solid Earth",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Geophysical Research Solid Earth",
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "host_organization_name": "Wiley",
+            "id": "https://openalex.org/S4210228715",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2169-9313",
+              "2169-9356"
+            ],
+            "issn_l": "2169-9313",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2017-04-01",
+        "publication_year": 2017,
+        "referenced_works": [
+          "https://openalex.org/W85881675",
+          "https://openalex.org/W1488262563",
+          "https://openalex.org/W1499641835",
+          "https://openalex.org/W1522985695",
+          "https://openalex.org/W1525966310",
+          "https://openalex.org/W1552765939",
+          "https://openalex.org/W1556362145",
+          "https://openalex.org/W1598451437",
+          "https://openalex.org/W1610439653",
+          "https://openalex.org/W1782121173",
+          "https://openalex.org/W1821911971",
+          "https://openalex.org/W1901898090",
+          "https://openalex.org/W1910087588",
+          "https://openalex.org/W1946005105",
+          "https://openalex.org/W1949548932",
+          "https://openalex.org/W1966278782",
+          "https://openalex.org/W1970173068",
+          "https://openalex.org/W1974294618",
+          "https://openalex.org/W1974719076",
+          "https://openalex.org/W1974932270",
+          "https://openalex.org/W1975036168",
+          "https://openalex.org/W1975809429",
+          "https://openalex.org/W1977069718",
+          "https://openalex.org/W1979181601",
+          "https://openalex.org/W1984296399",
+          "https://openalex.org/W1984972503",
+          "https://openalex.org/W1986671007",
+          "https://openalex.org/W1987974849",
+          "https://openalex.org/W1992001318",
+          "https://openalex.org/W1993839861",
+          "https://openalex.org/W1996830300",
+          "https://openalex.org/W2006733653",
+          "https://openalex.org/W2010946829",
+          "https://openalex.org/W2014924393",
+          "https://openalex.org/W2015286714",
+          "https://openalex.org/W2015425150",
+          "https://openalex.org/W2019098410",
+          "https://openalex.org/W2023462290",
+          "https://openalex.org/W2031052504",
+          "https://openalex.org/W2033931687",
+          "https://openalex.org/W2036208679",
+          "https://openalex.org/W2036598166",
+          "https://openalex.org/W2037305674",
+          "https://openalex.org/W2039103353",
+          "https://openalex.org/W2045373870",
+          "https://openalex.org/W2046673561",
+          "https://openalex.org/W2052673198",
+          "https://openalex.org/W2052967122",
+          "https://openalex.org/W2053496294",
+          "https://openalex.org/W2054324603",
+          "https://openalex.org/W2065169229",
+          "https://openalex.org/W2074162590",
+          "https://openalex.org/W2074251734",
+          "https://openalex.org/W2075665712",
+          "https://openalex.org/W2079959006",
+          "https://openalex.org/W2096105657",
+          "https://openalex.org/W2096400294",
+          "https://openalex.org/W2097498985",
+          "https://openalex.org/W2100011028",
+          "https://openalex.org/W2107436373",
+          "https://openalex.org/W2108996432",
+          "https://openalex.org/W2114371073",
+          "https://openalex.org/W2116740019",
+          "https://openalex.org/W2119375093",
+          "https://openalex.org/W2122592815",
+          "https://openalex.org/W2125058410",
+          "https://openalex.org/W2130014760",
+          "https://openalex.org/W2132805467",
+          "https://openalex.org/W2137433526",
+          "https://openalex.org/W2137595706",
+          "https://openalex.org/W2142680641",
+          "https://openalex.org/W2143264102",
+          "https://openalex.org/W2156431740",
+          "https://openalex.org/W2158564951",
+          "https://openalex.org/W2163633222",
+          "https://openalex.org/W2164693161",
+          "https://openalex.org/W2169099160",
+          "https://openalex.org/W2169318800",
+          "https://openalex.org/W2170559182",
+          "https://openalex.org/W2285190173",
+          "https://openalex.org/W2320409886",
+          "https://openalex.org/W2467015568",
+          "https://openalex.org/W2529107930",
+          "https://openalex.org/W4243437659",
+          "https://openalex.org/W4299865898",
+          "https://openalex.org/W6631167676",
+          "https://openalex.org/W6638321005"
+        ],
+        "referenced_works_count": 87,
+        "title": "Locally and remotely triggered aseismic slip on the central San Jacinto Fault near Anza, CA, from joint inversion of seismicity and strainmeter data",
+        "type": "article"
+      }
+    ]
+  },
+  "response_hash": "08ded918f6ccbb8ffa50812aaae84fa5fd0f40ac47dacae61e9c33ea7ed525a4",
+  "retrieved_at": "2026-07-14T13:48:28Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

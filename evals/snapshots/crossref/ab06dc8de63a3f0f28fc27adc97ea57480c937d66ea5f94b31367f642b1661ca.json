@@ -1,0 +1,676 @@
+{
+  "endpoint": "works/10.1145/3328932",
+  "request_key": "ab06dc8de63a3f0f28fc27adc97ea57480c937d66ea5f94b31367f642b1661ca",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1145/3328932",
+      "ISSN": [
+        "2474-9567"
+      ],
+      "URL": "https://doi.org/10.1145/3328932",
+      "abstract": "<jats:p>Deep learning methods are successfully used in applications pertaining to ubiquitous computing, pervasive intelligence, health, and well-being. Specifically, the area of human activity recognition (HAR) is primarily transformed by the convolutional and recurrent neural networks, thanks to their ability to learn semantic representations directly from raw input. However, in order to extract generalizable features massive amounts of well-curated data are required, which is a notoriously challenging task; hindered by privacy issues and annotation costs. Therefore, unsupervised representation learning (i.e., learning without manually labeling the instances) is of prime importance to leverage the vast amount of unlabeled data produced by smart devices. In this work, we propose a novel self-supervised technique for feature learning from sensory data that does not require access to any form of semantic labels, i.e., activity classes. We learn a multi-task temporal convolutional network to recognize transformations applied on an input signal. By exploiting these transformations, we demonstrate that simple auxiliary tasks of the binary classification result in a strong supervisory signal for extracting useful features for the down-stream task. We extensively evaluate the proposed approach on several publicly available datasets for smartphone-based HAR in unsupervised, semi-supervised and transfer learning settings. Our method achieves performance levels superior to or comparable with fully-supervised networks trained directly with activity labels, and it performs significantly better than unsupervised learning through autoencoders. Notably, for the semi-supervised case, the self-supervised features substantially boost the detection rate by attaining a kappa score between 0.7 - 0.8 with only 10 labeled examples per class. We get similar impressive performance even if the features are transferred from a different data source. Self-supervision drastically reduces the requirement of labeled activity data, effectively narrowing the gap between supervised and unsupervised techniques for learning meaningful representations. While this paper focuses on HAR as the application domain, the proposed approach is general and could be applied to a wide variety of problems in other areas.</jats:p>",
+      "alternative-id": [
+        "10.1145/3328932"
+      ],
+      "assertion": [
+        {
+          "group": {
+            "label": "Publication History",
+            "name": "publication_history"
+          },
+          "label": "Received",
+          "name": "received",
+          "order": 0,
+          "value": "2019-02-01"
+        },
+        {
+          "group": {
+            "label": "Publication History",
+            "name": "publication_history"
+          },
+          "label": "Accepted",
+          "name": "accepted",
+          "order": 1,
+          "value": "2019-04-01"
+        },
+        {
+          "group": {
+            "label": "Publication History",
+            "name": "publication_history"
+          },
+          "label": "Published",
+          "name": "published",
+          "order": 2,
+          "value": "2019-06-21"
+        }
+      ],
+      "author": [
+        {
+          "affiliation": [
+            {
+              "name": "Eindhoven University of Technology, Eindhoven, The Netherlands"
+            }
+          ],
+          "family": "Saeed",
+          "given": "Aaqib",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Eindhoven University of Technology, Eindhoven, The Netherlands"
+            }
+          ],
+          "family": "Ozcelebi",
+          "given": "Tanir",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Eindhoven University of Technology, Eindhoven, The Netherlands"
+            }
+          ],
+          "family": "Lukkien",
+          "given": "Johan",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies"
+      ],
+      "content-domain": {
+        "crossmark-restriction": true,
+        "domain": [
+          "dl.acm.org"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            24
+          ]
+        ],
+        "date-time": "2019-06-24T13:45:01Z",
+        "timestamp": 1561383901000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            17
+          ]
+        ],
+        "date-time": "2025-06-17T23:54:41Z",
+        "timestamp": 1750204481000
+      },
+      "funder": [
+        {
+          "DOI": "10.13039/501100007601",
+          "award": [
+            "737422"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "737422"
+              ]
+            }
+          ],
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/501100007601",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "Horizon 2020 Framework Programme"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            11
+          ]
+        ],
+        "date-time": "2026-07-11T19:25:47Z",
+        "timestamp": 1783797947050,
+        "version": "3.55.0"
+      },
+      "is-referenced-by-count": 299,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2474-9567"
+        }
+      ],
+      "issue": "2",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            21
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "2",
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              6,
+              21
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "https://www.acm.org/publications/policies/copyright_policy#Background",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                6,
+                21
+              ]
+            ],
+            "date-time": "2019-06-21T00:00:00Z",
+            "timestamp": 1561075200000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://dl.acm.org/doi/10.1145/3328932",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://dl.acm.org/doi/pdf/10.1145/3328932",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "320",
+      "original-title": [],
+      "page": "1-30",
+      "prefix": "10.1145",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            21
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            21
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            21
+          ]
+        ]
+      },
+      "publisher": "Association for Computing Machinery (ACM)",
+      "reference": [
+        {
+          "DOI": "10.1109/ICCV.2015.13",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_1_1"
+        },
+        {
+          "key": "e_1_2_2_2_1",
+          "unstructured": "Davide Anguita Alessandro Ghio Luca Oneto Xavier Parra and Jorge Luis Reyes-Ortiz. 2013. A public domain dataset for human activity recognition using smartphones.. In ESANN.  Davide Anguita Alessandro Ghio Luca Oneto Xavier Parra and Jorge Luis Reyes-Ortiz. 2013. A public domain dataset for human activity recognition using smartphones.. In ESANN."
+        },
+        {
+          "key": "e_1_2_2_3_1",
+          "unstructured": "Relja Arandjelović and Andrew Zisserman. 2017. Objects that sound. arXiv preprint arXiv:1712.06651 (2017).  Relja Arandjelović and Andrew Zisserman. 2017. Objects that sound. arXiv preprint arXiv:1712.06651 (2017)."
+        },
+        {
+          "author": "Aytar Yusuf",
+          "key": "e_1_2_2_4_1",
+          "volume-title": "Soundnet: Learning sound representations from unlabeled video. In Advances in Neural Information Processing Systems. 892--900.",
+          "year": "2016"
+        },
+        {
+          "key": "e_1_2_2_5_1",
+          "unstructured": "Shaojie Bai J Zico Kolter and Vladlen Koltun. 2018. An empirical evaluation of generic convolutional and recurrent networks for sequence modeling. arXiv preprint arXiv:1803.01271 (2018).  Shaojie Bai J Zico Kolter and Vladlen Koltun. 2018. An empirical evaluation of generic convolutional and recurrent networks for sequence modeling. arXiv preprint arXiv:1803.01271 (2018)."
+        },
+        {
+          "author": "Baldi Pierre",
+          "key": "e_1_2_2_6_1",
+          "volume-title": "Proceedings of ICML workshop on unsupervised and transfer learning. 37--49",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1137/1.9781611972818.60",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_7_1"
+        },
+        {
+          "DOI": "10.1109/TPAMI.2013.50",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_8_1",
+          "unstructured": "Yoshua Bengio Aaron Courville and Pascal Vincent. 2013. Representation learning: A review and new perspectives. IEEE transactions on pattern analysis and machine intelligence 35 8 (2013) 1798--1828.  Yoshua Bengio Aaron Courville and Pascal Vincent. 2013. Representation learning: A review and new perspectives. IEEE transactions on pattern analysis and machine intelligence 35 8 (2013) 1798--1828."
+        },
+        {
+          "DOI": "10.1016/j.pmcj.2014.05.006",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_9_1"
+        },
+        {
+          "DOI": "10.1023/A:1007379606734",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_10_1"
+        },
+        {
+          "author": "Chatzaki Charikleia",
+          "key": "e_1_2_2_11_1",
+          "volume-title": "International Conference on Information and Communication Technologies for Ageing Well and e-Health. Springer, 100--118",
+          "year": "2016"
+        },
+        {
+          "key": "e_1_2_2_12_1",
+          "unstructured": "Zhicheng Cui Wenlin Chen and Yixin Chen. 2016. Multi-scale convolutional neural networks for time series classification. arXiv preprint arXiv:1603.06995 (2016).  Zhicheng Cui Wenlin Chen and Yixin Chen. 2016. Multi-scale convolutional neural networks for time series classification. arXiv preprint arXiv:1603.06995 (2016)."
+        },
+        {
+          "DOI": "10.1109/ICCV.2015.167",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_13_1"
+        },
+        {
+          "DOI": "10.1109/ICCV.2017.226",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_14_1"
+        },
+        {
+          "DOI": "10.1109/CVPR.2017.607",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_15_1"
+        },
+        {
+          "DOI": "10.1007/s00779-010-0293-9",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_16_1"
+        },
+        {
+          "DOI": "10.1145/3131895",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_17_1"
+        },
+        {
+          "key": "e_1_2_2_18_1",
+          "unstructured": "Spyros Gidaris Praveer Singh and Nikos Komodakis. 2018. Unsupervised Representation Learning by Predicting Image Rotations. arXiv preprint arXiv:1803.07728 (2018).  Spyros Gidaris Praveer Singh and Nikos Komodakis. 2018. Unsupervised Representation Learning by Predicting Image Rotations. arXiv preprint arXiv:1803.07728 (2018)."
+        },
+        {
+          "DOI": "10.1109/CVPR.2017.218",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_19_1",
+          "unstructured": "Lluis Gomez Yash Patel Marçal Rusiñol Dimosthenis Karatzas and CV Jawahar. 2017. Self-supervised learning of visual features through embedding images into text topic spaces. arXiv preprint arXiv:1705.08631 (2017).  Lluis Gomez Yash Patel Marçal Rusiñol Dimosthenis Karatzas and CV Jawahar. 2017. Self-supervised learning of visual features through embedding images into text topic spaces. arXiv preprint arXiv:1705.08631 (2017)."
+        },
+        {
+          "key": "e_1_2_2_20_1",
+          "unstructured": "Nils Y Hammerla Shane Halloran and Thomas Ploetz. 2016. Deep convolutional and recurrent models for human activity recognition using wearables. arXiv preprint arXiv:1604.08880 (2016).  Nils Y Hammerla Shane Halloran and Thomas Ploetz. 2016. Deep convolutional and recurrent models for human activity recognition using wearables. arXiv preprint arXiv:1604.08880 (2016)."
+        },
+        {
+          "DOI": "10.1038/s41591-018-0268-3",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_21_1"
+        },
+        {
+          "DOI": "10.18653/v1/D17-1206",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_22_1"
+        },
+        {
+          "DOI": "10.18653/v1/P18-1031",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_23_1"
+        },
+        {
+          "DOI": "10.1109/CVPR.2018.00289",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_24_1",
+          "unstructured": "Simon Jenni and Paolo Favaro. 2018. Self-Supervised Feature Learning by Learning to Spot Artifacts. arXiv preprint arXiv:1806.05024 (2018).  Simon Jenni and Paolo Favaro. 2018. Self-Supervised Feature Learning by Learning to Spot Artifacts. arXiv preprint arXiv:1806.05024 (2018)."
+        },
+        {
+          "key": "e_1_2_2_25_1",
+          "unstructured": "Alex Kendall Yarin Gal and Roberto Cipolla. {n. d.}. Multi-task learning using uncertainty to weigh losses for scene geometry and semantics. ({n. d.}).  Alex Kendall Yarin Gal and Roberto Cipolla. {n. d.}. Multi-task learning using uncertainty to weigh losses for scene geometry and semantics. ({n. d.})."
+        },
+        {
+          "author": "Kingma Diederik P",
+          "key": "e_1_2_2_26_1",
+          "volume-title": "Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980",
+          "year": "2014"
+        },
+        {
+          "key": "e_1_2_2_27_1",
+          "unstructured": "Bruno Korbar Du Tran and Lorenzo Torresani. 2018. Cooperative Learning of Audio and Video Models from Self-Supervised Synchronization. In Advances in Neural Information Processing Systems. 7774--7785.  Bruno Korbar Du Tran and Lorenzo Torresani. 2018. Cooperative Learning of Audio and Video Models from Self-Supervised Synchronization. In Advances in Neural Information Processing Systems. 7774--7785."
+        },
+        {
+          "key": "e_1_2_2_28_1",
+          "unstructured": "Alex Krizhevsky Ilya Sutskever and Geoffrey E Hinton. 2012. Imagenet classification with deep convolutional neural networks. In Advances in neural information processing systems. 1097--1105.   Alex Krizhevsky Ilya Sutskever and Geoffrey E Hinton. 2012. Imagenet classification with deep convolutional neural networks. In Advances in neural information processing systems. 1097--1105."
+        },
+        {
+          "DOI": "10.1145/1964897.1964918",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_29_1"
+        },
+        {
+          "article-title": "Colorization as a proxy task for visual understanding",
+          "author": "Larsson Gustav",
+          "first-page": "7",
+          "journal-title": "CVPR",
+          "key": "e_1_2_2_30_1",
+          "volume": "2",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1038/nature14539",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_31_1",
+          "unstructured": "Yann LeCun Yoshua Bengio and Geoffrey Hinton. 2015. Deep learning. Nature 521 (27 May 2015) 436 EP --.  Yann LeCun Yoshua Bengio and Geoffrey Hinton. 2015. Deep learning. Nature 521 (27 May 2015) 436 EP --."
+        },
+        {
+          "key": "e_1_2_2_32_1",
+          "unstructured": "Yann LeCun John S Denker and Sara A Solla. 1990. Optimal brain damage. In Advances in neural information processing systems. 598--605.   Yann LeCun John S Denker and Sara A Solla. 1990. Optimal brain damage. In Advances in neural information processing systems. 598--605."
+        },
+        {
+          "DOI": "10.1145/1553374.1553453",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_33_1"
+        },
+        {
+          "DOI": "10.1109/ICCV.2017.79",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_34_1"
+        },
+        {
+          "key": "e_1_2_2_35_1",
+          "unstructured": "Chunyuan Li Heerad Farkhoor Rosanne Liu and Jason Yosinski. 2018. Measuring the intrinsic dimension of objective landscapes. arXiv preprint arXiv:1804.08838 (2018).  Chunyuan Li Heerad Farkhoor Rosanne Liu and Jason Yosinski. 2018. Measuring the intrinsic dimension of objective landscapes. arXiv preprint arXiv:1804.08838 (2018)."
+        },
+        {
+          "DOI": "10.1109/CVPR.2017.49",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_36_1",
+          "unstructured": "Chi Li M Zeeshan Zia Quoc-Huy Tran Xiang Yu Gregory D Hager and Manmohan Chandraker. 2016. Deep supervision with shape concepts for occlusion-aware 3d object parsing. arXiv preprint arXiv:1612.02699 (2016).  Chi Li M Zeeshan Zia Quoc-Huy Tran Xiang Yu Gregory D Hager and Manmohan Chandraker. 2016. Deep supervision with shape concepts for occlusion-aware 3d object parsing. arXiv preprint arXiv:1612.02699 (2016)."
+        },
+        {
+          "author": "Li Yongmou",
+          "key": "e_1_2_2_37_1",
+          "volume-title": "Mining Intelligence and Knowledge Exploration"
+        },
+        {
+          "DOI": "10.1007/978-3-319-39601-9_4",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_38_1"
+        },
+        {
+          "article-title": "Visualizing data using t-SNE",
+          "author": "van der Maaten Laurens",
+          "first-page": "2579",
+          "journal-title": "Journal of machine learning research 9",
+          "key": "e_1_2_2_39_1",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1145/3195258.3195260",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_40_1"
+        },
+        {
+          "DOI": "10.3390/app7101101",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_41_1"
+        },
+        {
+          "DOI": "10.1007/978-3-319-46448-0_32",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_42_1"
+        },
+        {
+          "DOI": "10.1109/TASL.2011.2109382",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_43_1"
+        },
+        {
+          "DOI": "10.1145/2971763.2971764",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_44_1"
+        },
+        {
+          "key": "e_1_2_2_45_1",
+          "unstructured": "Ari S Morcos David GT Barrett Neil C Rabinowitz and Matthew Botvinick. 2018. On the importance of single directions for generalization. arXiv preprint arXiv:1803.06959 (2018).  Ari S Morcos David GT Barrett Neil C Rabinowitz and Matthew Botvinick. 2018. On the importance of single directions for generalization. arXiv preprint arXiv:1803.06959 (2018)."
+        },
+        {
+          "DOI": "10.5555/3104322.3104425",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_46_1"
+        },
+        {
+          "DOI": "10.1007/978-3-319-46466-4_5",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_47_1"
+        },
+        {
+          "key": "e_1_2_2_48_1",
+          "unstructured": "Jeeheh Oh Jiaxuan Wang and Jenna Wiens. 2018. Learning to Exploit Invariances in Clinical Time-Series Data using Sequence Transformer Networks. arXiv preprint arXiv:1808.06725 (2018).  Jeeheh Oh Jiaxuan Wang and Jenna Wiens. 2018. Learning to Exploit Invariances in Clinical Time-Series Data using Sequence Transformer Networks. arXiv preprint arXiv:1808.06725 (2018)."
+        },
+        {
+          "DOI": "10.23915/distill.00010",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_49_1",
+          "unstructured": "Chris Olah Arvind Satyanarayan Ian Johnson Shan Carter Ludwig Schubert Katherine Ye and Alexander Mordvintsev. 2018. The Building Blocks of Interpretability. Distill (2018). https://doi.org/undefined https://distill.pub/2018/building-blocks.  Chris Olah Arvind Satyanarayan Ian Johnson Shan Carter Ludwig Schubert Katherine Ye and Alexander Mordvintsev. 2018. The Building Blocks of Interpretability. Distill (2018). https://doi.org/undefined https://distill.pub/2018/building-blocks."
+        },
+        {
+          "key": "e_1_2_2_50_1",
+          "unstructured": "Avital Oliver Augustus Odena Colin Raffel Ekin D Cubuk and Ian J Goodfellow. 2018. Realistic Evaluation of Deep Semi-Supervised Learning Algorithms. (2018).   Avital Oliver Augustus Odena Colin Raffel Ekin D Cubuk and Ian J Goodfellow. 2018. Realistic Evaluation of Deep Semi-Supervised Learning Algorithms. (2018)."
+        },
+        {
+          "DOI": "10.1007/978-3-030-01231-1_39",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_51_1",
+          "unstructured": "Andrew Owens and Alexei A Efros. 2018. Audio-visual scene analysis with self-supervised multisensory features. arXiv preprint arXiv:1804.03641 (2018).  Andrew Owens and Alexei A Efros. 2018. Audio-visual scene analysis with self-supervised multisensory features. arXiv preprint arXiv:1804.03641 (2018)."
+        },
+        {
+          "DOI": "10.1007/978-3-319-46448-0_48",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_52_1"
+        },
+        {
+          "DOI": "10.1109/TKDE.2009.191",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_53_1"
+        },
+        {
+          "DOI": "10.5555/3305890.3305968",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_54_1"
+        },
+        {
+          "author": "Plötz Thomas",
+          "key": "e_1_2_2_55_1",
+          "volume": "22",
+          "volume-title": "IJCAI Proceedings-International Joint Conference on Artificial Intelligence",
+          "year": "2011"
+        },
+        {
+          "DOI": "10.1145/3161174",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_56_1"
+        },
+        {
+          "author": "Raghu Maithra",
+          "key": "e_1_2_2_57_1",
+          "volume-title": "Svcca: Singular vector canonical correlation analysis for deep learning dynamics and interpretability. In Advances in Neural Information Processing Systems. 6076--6085.",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1145/1273496.1273592",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_58_1"
+        },
+        {
+          "author": "Razavian Narges",
+          "key": "e_1_2_2_59_1",
+          "volume-title": "Machine Learning for Healthcare Conference. 73--100",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.3390/s18092967",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_60_1"
+        },
+        {
+          "key": "e_1_2_2_61_1",
+          "unstructured": "Aaqib Saeed and Stojan Trajanovski. 2017. Personalized Driver Stress Detection with Multi-task Neural Networks using Physiological Signals. arXiv preprint arXiv:1711.06116 (2017).  Aaqib Saeed and Stojan Trajanovski. 2017. Personalized Driver Stress Detection with Multi-task Neural Networks using Physiological Signals. arXiv preprint arXiv:1711.06116 (2017)."
+        },
+        {
+          "DOI": "10.1109/CVPRW.2014.131",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_62_1"
+        },
+        {
+          "key": "e_1_2_2_63_1",
+          "unstructured": "Karen Simonyan Andrea Vedaldi and Andrew Zisserman. 2013. Deep inside convolutional networks: Visualising image classification models and saliency maps. arXiv preprint arXiv:1312.6034 (2013).  Karen Simonyan Andrea Vedaldi and Andrew Zisserman. 2013. Deep inside convolutional networks: Visualising image classification models and saliency maps. arXiv preprint arXiv:1312.6034 (2013)."
+        },
+        {
+          "DOI": "10.1145/2809695.2809718",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_64_1"
+        },
+        {
+          "key": "e_1_2_2_65_1",
+          "unstructured": "Ilya Sutskever Oriol Vinyals and Quoc V Le. 2014. Sequence to sequence learning with neural networks. In Advances in neural information processing systems. 3104--3112.   Ilya Sutskever Oriol Vinyals and Quoc V Le. 2014. Sequence to sequence learning with neural networks. In Advances in neural information processing systems. 3104--3112."
+        },
+        {
+          "DOI": "10.1109/CVPR.2014.220",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_66_1"
+        },
+        {
+          "DOI": "10.1145/3136755.3136817",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_67_1"
+        },
+        {
+          "DOI": "10.1016/j.patrec.2018.02.010",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_2_68_1",
+          "unstructured": "Jindong Wang Yiqiang Chen Shuji Hao Xiaohui Peng and Lisha Hu. 2018. Deep learning for sensor-based activity recognition: A survey. Pattern Recognition Letters (2018).  Jindong Wang Yiqiang Chen Shuji Hao Xiaohui Peng and Lisha Hu. 2018. Deep learning for sensor-based activity recognition: A survey. Pattern Recognition Letters (2018)."
+        },
+        {
+          "DOI": "10.1145/3265689.3265705",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_69_1"
+        },
+        {
+          "author": "Wawrzyniak S.",
+          "key": "e_1_2_2_70_1",
+          "volume-title": "2015 Federated Conference on Computer Science and Information Systems (FedCSIS). 411--416"
+        },
+        {
+          "DOI": "10.1109/CVPR.2018.00840",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_71_1"
+        },
+        {
+          "article-title": "Deep Convolutional Neural Networks on Multichannel Time Series for Human Activity Recognition",
+          "author": "Yang Jianbo",
+          "first-page": "3995",
+          "journal-title": "Ijcai",
+          "key": "e_1_2_2_72_1",
+          "volume": "15",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1145/3264954",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_2_73_1"
+        },
+        {
+          "article-title": "Split-brain autoencoders: Unsupervised learning by cross-channel prediction",
+          "author": "Zhang Richard",
+          "first-page": "5",
+          "journal-title": "CVPR",
+          "key": "e_1_2_2_74_1",
+          "volume": "1",
+          "year": "2017"
+        }
+      ],
+      "reference-count": 74,
+      "references-count": 74,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://dl.acm.org/doi/10.1145/3328932"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol."
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Multi-task Self-Supervised Learning for Human Activity Detection"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1145/crossmark-policy",
+      "volume": "3"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "768f932da0821692d9160aa25b864c98197a9593002d0322d3453e6087e45346",
+  "retrieved_at": "2026-07-14T13:49:40Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

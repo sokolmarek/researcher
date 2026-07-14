@@ -1,0 +1,433 @@
+{
+  "endpoint": "works/doi:10.1038/s41591-018-0268-3",
+  "request_key": "13f740a77a049a645646c65d262f7458b3ca8d9a8143330c336e88261ea3e1a3",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I97018004",
+              "https://openalex.org/I4210137306"
+            ],
+            "raw_affiliation_string": "Department of Computer Science, Stanford University, Stanford, CA, USA. awni@cs.stanford.edu"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I97018004"
+            ],
+            "raw_affiliation_string": "Department of Computer Science, Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Awni Hannun",
+          "id": "https://openalex.org/A5087325198",
+          "orcid": "https://orcid.org/0000-0003-3080-4002"
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Stanford Medicine",
+            "id": "https://openalex.org/I4210137306",
+            "lineage": [
+              "https://openalex.org/I4210137306",
+              "https://openalex.org/I97018004"
+            ],
+            "ror": "https://ror.org/03mtd9a03",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Stanford University",
+            "id": "https://openalex.org/I97018004",
+            "lineage": [
+              "https://openalex.org/I97018004"
+            ],
+            "ror": "https://ror.org/00f54p054",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Computer Science, Stanford University, Stanford, CA, USA. awni@cs.stanford.edu",
+          "Department of Computer Science, Stanford University, Stanford, CA, USA"
+        ],
+        "raw_author_name": "Awni Y. Hannun",
+        "raw_orcid": "https://orcid.org/0000-0003-3080-4002"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I97018004"
+            ],
+            "raw_affiliation_string": "Department of Computer Science, Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Pranav Rajpurkar",
+          "id": "https://openalex.org/A5001094226",
+          "orcid": "https://orcid.org/0000-0002-8030-3727"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Stanford University",
+            "id": "https://openalex.org/I97018004",
+            "lineage": [
+              "https://openalex.org/I97018004"
+            ],
+            "ror": "https://ror.org/00f54p054",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Computer Science, Stanford University, Stanford, CA, USA"
+        ],
+        "raw_author_name": "Pranav Rajpurkar",
+        "raw_orcid": "https://orcid.org/0000-0002-8030-3727"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210152621"
+            ],
+            "raw_affiliation_string": "iRhythm Technologies Inc., San Francisco, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Masoumeh Haghpanahi",
+          "id": "https://openalex.org/A5012542201",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "iRhythm (United States)",
+            "id": "https://openalex.org/I4210152621",
+            "lineage": [
+              "https://openalex.org/I4210152621"
+            ],
+            "ror": "https://ror.org/056yt6m90",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "iRhythm Technologies Inc., San Francisco, CA, USA"
+        ],
+        "raw_author_name": "Masoumeh Haghpanahi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I180670191"
+            ],
+            "raw_affiliation_string": "Division of Cardiology, Department of Medicine, University of California San Francisco, San Francisco, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Geoffrey H. Tison",
+          "id": "https://openalex.org/A5014012806",
+          "orcid": "https://orcid.org/0000-0002-0310-3326"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of California, San Francisco",
+            "id": "https://openalex.org/I180670191",
+            "lineage": [
+              "https://openalex.org/I180670191"
+            ],
+            "ror": "https://ror.org/043mz5j54",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Cardiology, Department of Medicine, University of California San Francisco, San Francisco, CA, USA"
+        ],
+        "raw_author_name": "Geoffrey H. Tison",
+        "raw_orcid": "https://orcid.org/0000-0002-0310-3326"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210152621"
+            ],
+            "raw_affiliation_string": "iRhythm Technologies Inc., San Francisco, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Codie Bourn",
+          "id": "https://openalex.org/A5040395451",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "iRhythm (United States)",
+            "id": "https://openalex.org/I4210152621",
+            "lineage": [
+              "https://openalex.org/I4210152621"
+            ],
+            "ror": "https://ror.org/056yt6m90",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "iRhythm Technologies Inc., San Francisco, CA, USA"
+        ],
+        "raw_author_name": "Codie Bourn",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I97018004"
+            ],
+            "raw_affiliation_string": "Department of Medicine and Center for Digital Health, Stanford University School of Medicine, Stanford, CA, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I204866599"
+            ],
+            "raw_affiliation_string": "Veterans Affairs Palo Alto Health Care System, Palo Alto, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Mintu P. Turakhia",
+          "id": "https://openalex.org/A5003568676",
+          "orcid": "https://orcid.org/0000-0001-8025-0904"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "VA Palo Alto Health Care System",
+            "id": "https://openalex.org/I204866599",
+            "lineage": [
+              "https://openalex.org/I1322918889",
+              "https://openalex.org/I204866599",
+              "https://openalex.org/I2799886695",
+              "https://openalex.org/I4210125474"
+            ],
+            "ror": "https://ror.org/00nr17z89",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Stanford University",
+            "id": "https://openalex.org/I97018004",
+            "lineage": [
+              "https://openalex.org/I97018004"
+            ],
+            "ror": "https://ror.org/00f54p054",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Medicine and Center for Digital Health, Stanford University School of Medicine, Stanford, CA, USA",
+          "Veterans Affairs Palo Alto Health Care System, Palo Alto, CA, USA"
+        ],
+        "raw_author_name": "Mintu P. Turakhia",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I97018004"
+            ],
+            "raw_affiliation_string": "Department of Computer Science, Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Andrew Y. Ng",
+          "id": "https://openalex.org/A5112456378",
+          "orcid": "https://orcid.org/0000-0001-5547-3196"
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Stanford University",
+            "id": "https://openalex.org/I97018004",
+            "lineage": [
+              "https://openalex.org/I97018004"
+            ],
+            "ror": "https://ror.org/00f54p054",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Computer Science, Stanford University, Stanford, CA, USA"
+        ],
+        "raw_author_name": "Andrew Y. Ng",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "65",
+      "issue": "1",
+      "last_page": "69",
+      "volume": "25"
+    },
+    "cited_by_count": 2985,
+    "display_name": "Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network",
+    "doi": "https://doi.org/10.1038/s41591-018-0268-3",
+    "id": "https://openalex.org/W2902644322",
+    "ids": {
+      "doi": "https://doi.org/10.1038/s41591-018-0268-3",
+      "mag": "2902644322",
+      "openalex": "https://openalex.org/W2902644322",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/30617320"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1038/s41591-018-0268-3",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1038/s41591-018-0268-3",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Nature Medicine",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Nature Medicine",
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Nature Portfolio",
+        "id": "https://openalex.org/S203256638",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1078-8956",
+          "1546-170X",
+          "1744-7933"
+        ],
+        "issn_l": "1078-8956",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2018-12-05",
+    "publication_year": 2018,
+    "referenced_works": [
+      "https://openalex.org/W89420957",
+      "https://openalex.org/W1677182931",
+      "https://openalex.org/W1912982817",
+      "https://openalex.org/W1966716734",
+      "https://openalex.org/W1993346928",
+      "https://openalex.org/W2019078790",
+      "https://openalex.org/W2020730810",
+      "https://openalex.org/W2038920371",
+      "https://openalex.org/W2050259033",
+      "https://openalex.org/W2064675550",
+      "https://openalex.org/W2068677783",
+      "https://openalex.org/W2085398739",
+      "https://openalex.org/W2095705004",
+      "https://openalex.org/W2102150307",
+      "https://openalex.org/W2108199928",
+      "https://openalex.org/W2122763650",
+      "https://openalex.org/W2132350210",
+      "https://openalex.org/W2144369611",
+      "https://openalex.org/W2158698691",
+      "https://openalex.org/W2162800060",
+      "https://openalex.org/W2163784611",
+      "https://openalex.org/W2193413348",
+      "https://openalex.org/W2194775991",
+      "https://openalex.org/W2251482333",
+      "https://openalex.org/W2257979135",
+      "https://openalex.org/W2289846183",
+      "https://openalex.org/W2302255633",
+      "https://openalex.org/W2557738935",
+      "https://openalex.org/W2581082771",
+      "https://openalex.org/W2605056515",
+      "https://openalex.org/W2621205740",
+      "https://openalex.org/W2747849569",
+      "https://openalex.org/W2748902594",
+      "https://openalex.org/W2751583008",
+      "https://openalex.org/W2767978081",
+      "https://openalex.org/W2771148491",
+      "https://openalex.org/W2784316640",
+      "https://openalex.org/W2794550444",
+      "https://openalex.org/W2794633590",
+      "https://openalex.org/W2795086889",
+      "https://openalex.org/W2795115089",
+      "https://openalex.org/W2803832415",
+      "https://openalex.org/W2806806521",
+      "https://openalex.org/W2891342985",
+      "https://openalex.org/W2919115771",
+      "https://openalex.org/W2949117887",
+      "https://openalex.org/W2963478701",
+      "https://openalex.org/W2964121744",
+      "https://openalex.org/W3103811943",
+      "https://openalex.org/W4210404720"
+    ],
+    "referenced_works_count": 50,
+    "title": "Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network",
+    "type": "article"
+  },
+  "response_hash": "6f3701efdb1fad80aefded2dcce65a38eab163874dfc6cd7a247c394547271be",
+  "retrieved_at": "2026-07-14T14:48:14Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

@@ -1,0 +1,215 @@
+{
+  "endpoint": "dois",
+  "request_key": "4f2d942720b11291273cdc794257fce616ad528f8840fa406c65c8d6a159188c",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Solving Inefficiency of Self-supervised Representation Learning"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-22T10:17:41Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Guangrun",
+              "name": "Wang, Guangrun",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Keze",
+              "name": "Wang, Keze",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Guangcong",
+              "name": "Wang, Guangcong",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Torr",
+              "givenName": "Philip H. S.",
+              "name": "Torr, Philip H. S.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Lin",
+              "givenName": "Liang",
+              "name": "Lin, Liang",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2021-04-18T07:47:10Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-04-20T00:20:46Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-06-22T10:30:49Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-06-23T00:17:03Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-10-21T10:19:10Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-10-22T00:41:28Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-04",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2021",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Self-supervised learning (especially contrastive learning) has attracted great interest due to its huge potential in learning discriminative representations in an unsupervised manner. Despite the acknowledged successes, existing contrastive learning methods suffer from very low learning efficiency, e.g., taking about ten times more training epochs than supervised learning for comparable recognition accuracy. In this paper, we reveal two contradictory phenomena in contrastive learning that we call under-clustering and over-clustering problems, which are major obstacles to learning efficiency. Under-clustering means that the model cannot efficiently learn to discover the dissimilarity between inter-class samples when the negative sample pairs for contrastive learning are insufficient to differentiate all the actual object classes. Over-clustering implies that the model cannot efficiently learn features from excessive negative sample pairs, forcing the model to over-cluster samples of the same actual classes into different clusters. To simultaneously overcome these two problems, we propose a novel self-supervised learning framework using a truncated triplet loss. Precisely, we employ a triplet loss tending to maximize the relative distance between the positive pair and negative pairs to address the under-clustering problem; and we construct the negative pair by selecting a negative sample deputy from all negative samples to avoid the over-clustering problem, guaranteed by the Bernoulli Distribution model. We extensively evaluate our framework in several large-scale benchmarks (e.g., ImageNet, SYSU-30k, and COCO). The results demonstrate our model's superiority (e.g., the learning efficiency) over the latest state-of-the-art methods by a clear margin. Codes available at: https://github.com/wanggrun/triplet .",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "ICCV 2021 paper, oral presentation",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2104.08760",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2104.08760",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2021,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-22T10:17:43Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Solving Inefficiency of Self-supervised Representation Learning"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-02-22T10:17:43Z",
+          "url": "https://arxiv.org/abs/2104.08760",
+          "version": "3",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2104.08760",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Solving+Inefficiency+of+Self-supervised+Representation+Learning&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "7a8cb06cb3e5e06e2d0463b6d6d71344d547cb9a9f068cfd84bd79da43eacd91",
+  "retrieved_at": "2026-07-14T14:48:33Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

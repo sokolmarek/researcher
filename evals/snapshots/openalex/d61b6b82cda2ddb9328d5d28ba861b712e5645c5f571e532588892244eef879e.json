@@ -1,0 +1,399 @@
+{
+  "endpoint": "works/doi:10.18653/v1/2021.acl-long.393",
+  "request_key": "d61b6b82cda2ddb9328d5d28ba861b712e5645c5f571e532588892244eef879e",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "(Volume": [
+        34
+      ],
+      "11th": [
+        26
+      ],
+      "1:": [
+        35
+      ],
+      "2021.": [
+        38
+      ],
+      "59th": [
+        15
+      ],
+      "Annual": [
+        16
+      ],
+      "Association": [
+        20
+      ],
+      "Computational": [
+        22
+      ],
+      "Conference": [
+        29
+      ],
+      "Fuzheng": [
+        6
+      ],
+      "International": [
+        27
+      ],
+      "Joint": [
+        28
+      ],
+      "Language": [
+        32
+      ],
+      "Li,": [
+        3
+      ],
+      "Linguistics": [
+        23
+      ],
+      "Long": [
+        36
+      ],
+      "Meeting": [
+        17
+      ],
+      "Natural": [
+        31
+      ],
+      "Papers).": [
+        37
+      ],
+      "Proceedings": [
+        12
+      ],
+      "Processing": [
+        33
+      ],
+      "Rumei": [
+        2
+      ],
+      "Sirui": [
+        4
+      ],
+      "Wang,": [
+        5
+      ],
+      "Wei": [
+        8
+      ],
+      "Weiran": [
+        10
+      ],
+      "Wu,": [
+        9
+      ],
+      "Xu.": [
+        11
+      ],
+      "Yan,": [
+        1
+      ],
+      "Yuanmeng": [
+        0
+      ],
+      "Zhang,": [
+        7
+      ],
+      "and": [
+        24
+      ],
+      "for": [
+        21
+      ],
+      "of": [
+        13,
+        18
+      ],
+      "on": [
+        30
+      ],
+      "the": [
+        14,
+        19,
+        25
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I139759216"
+            ],
+            "raw_affiliation_string": "Beijing University of Posts and Telecommunications, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yuanmeng Yan",
+          "id": "https://openalex.org/A5030878947",
+          "orcid": "https://orcid.org/0000-0002-0400-4522"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Beijing University of Posts and Telecommunications",
+            "id": "https://openalex.org/I139759216",
+            "lineage": [
+              "https://openalex.org/I139759216"
+            ],
+            "ror": "https://ror.org/04w9fbh59",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Beijing University of Posts and Telecommunications, Beijing, China"
+        ],
+        "raw_author_name": "Yuanmeng Yan",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Meituan Inc., Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Rumei Li",
+          "id": "https://openalex.org/A5114269634",
+          "orcid": "https://orcid.org/0009-0009-1264-5854"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Meituan Inc., Beijing, China"
+        ],
+        "raw_author_name": "Rumei Li",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Meituan Inc., Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Sirui Wang",
+          "id": "https://openalex.org/A5100631506",
+          "orcid": "https://orcid.org/0000-0001-9519-5741"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Meituan Inc., Beijing, China"
+        ],
+        "raw_author_name": "Sirui Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Meituan Inc., Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Fuzheng Zhang",
+          "id": "https://openalex.org/A5101586840",
+          "orcid": "https://orcid.org/0000-0002-6079-6392"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Meituan Inc., Beijing, China"
+        ],
+        "raw_author_name": "Fuzheng Zhang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Meituan Inc., Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Wei Wu",
+          "id": "https://openalex.org/A5101796417",
+          "orcid": "https://orcid.org/0000-0001-6572-8471"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Meituan Inc., Beijing, China"
+        ],
+        "raw_author_name": "Wei Wu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I139759216"
+            ],
+            "raw_affiliation_string": "Beijing University of Posts and Telecommunications, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Weiran Xu",
+          "id": "https://openalex.org/A5016651990",
+          "orcid": "https://orcid.org/0000-0002-9416-7666"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Beijing University of Posts and Telecommunications",
+            "id": "https://openalex.org/I139759216",
+            "lineage": [
+              "https://openalex.org/I139759216"
+            ],
+            "ror": "https://ror.org/04w9fbh59",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Beijing University of Posts and Telecommunications, Beijing, China"
+        ],
+        "raw_author_name": "Weiran Xu",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.18653/v1/2021.acl-long.393",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.18653/v1/2021.acl-long.393",
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "pdf_url": "https://aclanthology.org/2021.acl-long.393.pdf",
+      "raw_source_name": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+      "raw_type": "proceedings-article",
+      "source": null,
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "5065",
+      "issue": null,
+      "last_page": "5075",
+      "volume": null
+    },
+    "cited_by_count": 486,
+    "display_name": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+    "doi": "https://doi.org/10.18653/v1/2021.acl-long.393",
+    "id": "https://openalex.org/W3175362188",
+    "ids": {
+      "doi": "https://doi.org/10.18653/v1/2021.acl-long.393",
+      "mag": "3175362188",
+      "openalex": "https://openalex.org/W3175362188"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": null,
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://aclanthology.org/2021.acl-long.393.pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.18653/v1/2021.acl-long.393",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.18653/v1/2021.acl-long.393",
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "pdf_url": "https://aclanthology.org/2021.acl-long.393.pdf",
+      "raw_source_name": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+      "raw_type": "proceedings-article",
+      "source": null,
+      "version": "publishedVersion"
+    },
+    "publication_date": "2021-01-01",
+    "publication_year": 2021,
+    "referenced_works": [
+      "https://openalex.org/W1486649854",
+      "https://openalex.org/W1840435438",
+      "https://openalex.org/W1904365287",
+      "https://openalex.org/W1945616565",
+      "https://openalex.org/W2126400076",
+      "https://openalex.org/W2133458109",
+      "https://openalex.org/W2152180407",
+      "https://openalex.org/W2250790822",
+      "https://openalex.org/W2251861449",
+      "https://openalex.org/W2460937040",
+      "https://openalex.org/W2462305634",
+      "https://openalex.org/W2790235966",
+      "https://openalex.org/W2887997457",
+      "https://openalex.org/W2891177506",
+      "https://openalex.org/W2896457183",
+      "https://openalex.org/W2907252220",
+      "https://openalex.org/W2951873722",
+      "https://openalex.org/W2963098487",
+      "https://openalex.org/W2963207607",
+      "https://openalex.org/W2963341956",
+      "https://openalex.org/W2963804993",
+      "https://openalex.org/W2963846996",
+      "https://openalex.org/W2963918774",
+      "https://openalex.org/W2964165804",
+      "https://openalex.org/W2965373594",
+      "https://openalex.org/W2966610483",
+      "https://openalex.org/W2970641574",
+      "https://openalex.org/W2996657533",
+      "https://openalex.org/W3005680577",
+      "https://openalex.org/W3026732421",
+      "https://openalex.org/W3033406728",
+      "https://openalex.org/W3035524453",
+      "https://openalex.org/W3036982689",
+      "https://openalex.org/W3089659770",
+      "https://openalex.org/W3100652389",
+      "https://openalex.org/W3100859887",
+      "https://openalex.org/W3103188966",
+      "https://openalex.org/W3104033643",
+      "https://openalex.org/W3104417388",
+      "https://openalex.org/W3105816068",
+      "https://openalex.org/W3107668149",
+      "https://openalex.org/W3114537677",
+      "https://openalex.org/W3115295967",
+      "https://openalex.org/W3122838366",
+      "https://openalex.org/W3173783447",
+      "https://openalex.org/W4249573750",
+      "https://openalex.org/W4287592659",
+      "https://openalex.org/W4298443704",
+      "https://openalex.org/W4300511536",
+      "https://openalex.org/W4309086292",
+      "https://openalex.org/W4313908941"
+    ],
+    "referenced_works_count": 51,
+    "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+    "type": "article"
+  },
+  "response_hash": "b9a57bc99b1e0d18c12f1b57a7a47095e3ab9184063ad33ca74d09557425a7f5",
+  "retrieved_at": "2026-07-14T14:48:32Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

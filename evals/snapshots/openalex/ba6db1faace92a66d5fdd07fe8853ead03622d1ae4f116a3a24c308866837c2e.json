@@ -1,0 +1,2587 @@
+{
+  "endpoint": "works",
+  "request_key": "ba6db1faace92a66d5fdd07fe8853ead03622d1ae4f116a3a24c308866837c2e",
+  "request_params": {
+    "per-page": 10,
+    "search": "A deep neural network learning algorithm outperforms a conventional algorithm for emergenc",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 4,
+      "db_response_time_ms": 66,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 10,
+      "x_query": {
+        "oql": "works where full text has (A deep neural network learning algorithm outperforms a conventional algorithm for emergenc)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "A deep neural network learning algorithm outperforms a conventional algorithm for emergenc"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 10,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:A deep neural network learning algorithm outperforms a conventional algorithm for emergenc&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=10"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "A": [
+            25,
+            154
+          ],
+          "In": [
+            47
+          ],
+          "The": [
+            0,
+            76,
+            126
+          ],
+          "a": [
+            59,
+            95,
+            118
+          ],
+          "algorithm": [
+            79
+          ],
+          "all": [
+            102
+          ],
+          "allocation": [
+            78
+          ],
+          "an": [
+            8
+          ],
+          "and": [
+            22,
+            39,
+            90,
+            112,
+            117,
+            159,
+            167,
+            184
+          ],
+          "are": [
+            115
+          ],
+          "as": [
+            97
+          ],
+          "at": [
+            43
+          ],
+          "battery": [
+            108
+          ],
+          "be": [
+            124,
+            147
+          ],
+          "behaviors": [
+            143
+          ],
+          "between": [
+            87
+          ],
+          "blended": [
+            18
+          ],
+          "brake": [
+            121
+          ],
+          "brakes": [
+            92
+          ],
+          "brakes.": [
+            24
+          ],
+          "braking": [
+            6,
+            41,
+            103
+          ],
+          "braking.": [
+            75
+          ],
+          "capable": [
+            31,
+            138
+          ],
+          "capturing": [
+            140
+          ],
+          "car": [
+            173
+          ],
+          "changing": [
+            44
+          ],
+          "charge": [
+            111
+          ],
+          "comparison": [
+            155
+          ],
+          "confirm": [
+            170
+          ],
+          "conflicting": [
+            35
+          ],
+          "control": [
+            57
+          ],
+          "controller": [
+            28,
+            53
+          ],
+          "copes": [
+            179
+          ],
+          "could": [
+            145
+          ],
+          "coupled": [
+            134
+          ],
+          "deceleration": [
+            19
+          ],
+          "demonstrates": [
+            128,
+            162
+          ],
+          "determines": [
+            80
+          ],
+          "driver’s": [
+            85
+          ],
+          "during": [
+            74
+          ],
+          "dynamic": [
+            142
+          ],
+          "dynamics.": [
+            189
+          ],
+          "effectiveness": [
+            130
+          ],
+          "electric": [
+            9
+          ],
+          "electrical": [
+            21,
+            91
+          ],
+          "enable": [
+            99
+          ],
+          "energy": [
+            3,
+            68,
+            72
+          ],
+          "ensures": [
+            15
+          ],
+          "except": [
+            105
+          ],
+          "experimental": [
+            160
+          ],
+          "for": [
+            101
+          ],
+          "friction": [
+            23,
+            89,
+            120
+          ],
+          "gradient": [
+            56
+          ],
+          "gradual": [
+            40
+          ],
+          "has": [
+            122
+          ],
+          "here,": [
+            13
+          ],
+          "high": [
+            16
+          ],
+          "how": [
+            81
+          ],
+          "hybrid": [
+            71
+          ],
+          "in": [
+            5,
+            63,
+            93,
+            149
+          ],
+          "included": [
+            148
+          ],
+          "instability": [
+            185
+          ],
+          "intensive": [
+            38
+          ],
+          "is": [
+            11,
+            29
+          ],
+          "levels": [
+            114
+          ],
+          "maximal": [
+            67
+          ],
+          "meet": [
+            33
+          ],
+          "model": [
+            26
+          ],
+          "model,": [
+            61
+          ],
+          "model.": [
+            153
+          ],
+          "modes,": [
+            104
+          ],
+          "network": [
+            52,
+            137
+          ],
+          "neural": [
+            51,
+            136
+          ],
+          "nonlinearity": [
+            183
+          ],
+          "not": [
+            146
+          ],
+          "of": [
+            2,
+            7,
+            37,
+            66,
+            110,
+            131,
+            139,
+            156,
+            186
+          ],
+          "offered,": [
+            30
+          ],
+          "performance,": [
+            174
+          ],
+          "physics-based": [
+            152
+          ],
+          "problem": [
+            1
+          ],
+          "proper": [
+            172
+          ],
+          "proposed": [
+            133
+          ],
+          "provides": [
+            54
+          ],
+          "quality": [
+            17
+          ],
+          "recovery": [
+            4
+          ],
+          "reference": [
+            27
+          ],
+          "regeneration": [
+            100
+          ],
+          "request": [
+            86
+          ],
+          "requirements": [
+            36
+          ],
+          "responses": [
+            169
+          ],
+          "resulting": [
+            62
+          ],
+          "results": [
+            161
+          ],
+          "return": [
+            65
+          ],
+          "road": [
+            45
+          ],
+          "saturated,": [
+            116
+          ],
+          "scenarios": [
+            42
+          ],
+          "share": [
+            83
+          ],
+          "simplified": [
+            151
+          ],
+          "simulation": [
+            127,
+            158
+          ],
+          "slip,": [
+            166
+          ],
+          "solo": [
+            119
+          ],
+          "solved": [
+            12
+          ],
+          "state": [
+            109
+          ],
+          "storage": [
+            73
+          ],
+          "strong": [
+            182
+          ],
+          "study,": [
+            49
+          ],
+          "successfully": [
+            178
+          ],
+          "such": [
+            94
+          ],
+          "surfaces.": [
+            46
+          ],
+          "system": [
+            177
+          ],
+          "that": [
+            144,
+            163
+          ],
+          "the": [
+            34,
+            50,
+            64,
+            70,
+            84,
+            88,
+            107,
+            129,
+            132,
+            150,
+            157,
+            164,
+            171,
+            176,
+            181,
+            187
+          ],
+          "this": [
+            48
+          ],
+          "tire": [
+            60
+          ],
+          "to": [
+            32,
+            69,
+            82,
+            98,
+            123
+          ],
+          "torque": [
+            55,
+            77,
+            168
+          ],
+          "two-layer": [
+            135
+          ],
+          "used.": [
+            125
+          ],
+          "using": [
+            20
+          ],
+          "various": [
+            141
+          ],
+          "vehicle": [
+            10,
+            188
+          ],
+          "velocity,": [
+            165
+          ],
+          "voltage": [
+            113
+          ],
+          "way": [
+            96
+          ],
+          "when": [
+            106
+          ],
+          "which": [
+            14
+          ],
+          "while": [
+            175
+          ],
+          "with": [
+            180
+          ],
+          "without": [
+            58
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I111112146"
+                ],
+                "raw_affiliation_string": "Department of Electrical Engineering, Tallinn University of Technology, 19086 Tallinn, Estonia"
+              }
+            ],
+            "author": {
+              "display_name": "Valery Vodovozov",
+              "id": "https://openalex.org/A5078844817",
+              "orcid": "https://orcid.org/0000-0002-5530-3813"
+            },
+            "author_position": "first",
+            "countries": [
+              "EE"
+            ],
+            "institutions": [
+              {
+                "country_code": "EE",
+                "display_name": "Tallinn University of Technology",
+                "id": "https://openalex.org/I111112146",
+                "lineage": [
+                  "https://openalex.org/I111112146"
+                ],
+                "ror": "https://ror.org/0443cwa12",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Electrical Engineering, Tallinn University of Technology, 19086 Tallinn, Estonia"
+            ],
+            "raw_author_name": "Valery Vodovozov",
+            "raw_orcid": "https://orcid.org/0000-0002-5530-3813"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I9927081"
+                ],
+                "raw_affiliation_string": "Electrical Engineering and Automation, Aalto University, FI-00076 Aalto, Finland"
+              }
+            ],
+            "author": {
+              "display_name": "Andrei Aksjonov",
+              "id": "https://openalex.org/A5025416340",
+              "orcid": "https://orcid.org/0000-0001-7460-6548"
+            },
+            "author_position": "middle",
+            "countries": [
+              "FI"
+            ],
+            "institutions": [
+              {
+                "country_code": "FI",
+                "display_name": "Aalto University",
+                "id": "https://openalex.org/I9927081",
+                "lineage": [
+                  "https://openalex.org/I9927081"
+                ],
+                "ror": "https://ror.org/020hwjq30",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Electrical Engineering and Automation, Aalto University, FI-00076 Aalto, Finland"
+            ],
+            "raw_author_name": "Andrei Aksjonov",
+            "raw_orcid": "https://orcid.org/0000-0001-7460-6548"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I111112146"
+                ],
+                "raw_affiliation_string": "Department of Electrical Engineering, Tallinn University of Technology, 19086 Tallinn, Estonia"
+              }
+            ],
+            "author": {
+              "display_name": "Eduard Petlenkov",
+              "id": "https://openalex.org/A5061791014",
+              "orcid": "https://orcid.org/0000-0003-2167-6280"
+            },
+            "author_position": "middle",
+            "countries": [
+              "EE"
+            ],
+            "institutions": [
+              {
+                "country_code": "EE",
+                "display_name": "Tallinn University of Technology",
+                "id": "https://openalex.org/I111112146",
+                "lineage": [
+                  "https://openalex.org/I111112146"
+                ],
+                "ror": "https://ror.org/0443cwa12",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Electrical Engineering, Tallinn University of Technology, 19086 Tallinn, Estonia"
+            ],
+            "raw_author_name": "Eduard Petlenkov",
+            "raw_orcid": "https://orcid.org/0000-0003-2167-6280"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I111112146"
+                ],
+                "raw_affiliation_string": "Department of Electrical Engineering, Tallinn University of Technology, 19086 Tallinn, Estonia"
+              }
+            ],
+            "author": {
+              "display_name": "Zoja Raud",
+              "id": "https://openalex.org/A5022991441",
+              "orcid": "https://orcid.org/0000-0001-5197-3599"
+            },
+            "author_position": "last",
+            "countries": [
+              "EE"
+            ],
+            "institutions": [
+              {
+                "country_code": "EE",
+                "display_name": "Tallinn University of Technology",
+                "id": "https://openalex.org/I111112146",
+                "lineage": [
+                  "https://openalex.org/I111112146"
+                ],
+                "ror": "https://ror.org/0443cwa12",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Electrical Engineering, Tallinn University of Technology, 19086 Tallinn, Estonia"
+            ],
+            "raw_author_name": "Zoja Raud",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3390/en14092373",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/en14092373",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/1996-1073/14/9/2373/pdf?version=1619161128",
+          "raw_source_name": "Energies",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Energies",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S198098182",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1996-1073"
+            ],
+            "issn_l": "1996-1073",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "2373",
+          "issue": "9",
+          "last_page": "2373",
+          "volume": "14"
+        },
+        "cited_by_count": 32,
+        "display_name": "Neural Network-Based Model Reference Control of Braking Electric Vehicles",
+        "doi": "https://doi.org/10.3390/en14092373",
+        "id": "https://openalex.org/W3156367665",
+        "ids": {
+          "doi": "https://doi.org/10.3390/en14092373",
+          "mag": "3156367665",
+          "openalex": "https://openalex.org/W3156367665"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.mdpi.com/1996-1073/14/9/2373/pdf?version=1619161128"
+        },
+        "primary_location": {
+          "id": "doi:10.3390/en14092373",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/en14092373",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/1996-1073/14/9/2373/pdf?version=1619161128",
+          "raw_source_name": "Energies",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Energies",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S198098182",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1996-1073"
+            ],
+            "issn_l": "1996-1073",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2021-04-22",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W647179678",
+          "https://openalex.org/W1649074408",
+          "https://openalex.org/W1966080329",
+          "https://openalex.org/W1980262410",
+          "https://openalex.org/W1991541925",
+          "https://openalex.org/W2003987307",
+          "https://openalex.org/W2005339191",
+          "https://openalex.org/W2014308243",
+          "https://openalex.org/W2026807004",
+          "https://openalex.org/W2041689126",
+          "https://openalex.org/W2045441293",
+          "https://openalex.org/W2053804658",
+          "https://openalex.org/W2074490768",
+          "https://openalex.org/W2082832982",
+          "https://openalex.org/W2086744513",
+          "https://openalex.org/W2088191608",
+          "https://openalex.org/W2103162708",
+          "https://openalex.org/W2138113005",
+          "https://openalex.org/W2142405938",
+          "https://openalex.org/W2154293820",
+          "https://openalex.org/W2167283922",
+          "https://openalex.org/W2169563256",
+          "https://openalex.org/W2293322898",
+          "https://openalex.org/W2382974130",
+          "https://openalex.org/W2482692949",
+          "https://openalex.org/W2488334914",
+          "https://openalex.org/W2523127231",
+          "https://openalex.org/W2567433034",
+          "https://openalex.org/W2586886183",
+          "https://openalex.org/W2755551059",
+          "https://openalex.org/W2766818391",
+          "https://openalex.org/W2785609098",
+          "https://openalex.org/W2806253579",
+          "https://openalex.org/W2809381576",
+          "https://openalex.org/W2897669309",
+          "https://openalex.org/W2898099435",
+          "https://openalex.org/W2906966838",
+          "https://openalex.org/W2928714912",
+          "https://openalex.org/W2938932713",
+          "https://openalex.org/W2963679616",
+          "https://openalex.org/W2966877637",
+          "https://openalex.org/W2972276377",
+          "https://openalex.org/W2986437028",
+          "https://openalex.org/W2986822919",
+          "https://openalex.org/W2989964299",
+          "https://openalex.org/W2990123453",
+          "https://openalex.org/W3000984398",
+          "https://openalex.org/W3001301599",
+          "https://openalex.org/W3002146716",
+          "https://openalex.org/W3083507751",
+          "https://openalex.org/W3097920840",
+          "https://openalex.org/W3105064092",
+          "https://openalex.org/W4236915885",
+          "https://openalex.org/W4248837473",
+          "https://openalex.org/W6657181162",
+          "https://openalex.org/W6710336881",
+          "https://openalex.org/W6727588416",
+          "https://openalex.org/W6746072942",
+          "https://openalex.org/W6773256948",
+          "https://openalex.org/W6782738731"
+        ],
+        "referenced_works_count": 60,
+        "title": "Neural Network-Based Model Reference Control of Braking Electric Vehicles",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(94.57%).": [
+            201
+          ],
+          "(ISI)": [
+            111
+          ],
+          "19": [
+            150
+          ],
+          "2,630": [
+            145
+          ],
+          "2024.": [
+            120
+          ],
+          "AI": [
+            154,
+            169,
+            193
+          ],
+          "AND": [
+            1
+          ],
+          "CONCLUSION:": [
+            220
+          ],
+          "COVID-19": [
+            200
+          ],
+          "CRD42023471415.": [
+            98
+          ],
+          "Developing": [
+            221
+          ],
+          "For": [
+            239
+          ],
+          "Google": [
+            125
+          ],
+          "INTRODUCTION": [
+            0
+          ],
+          "Implementing": [
+            202
+          ],
+          "METHOD:": [
+            74
+          ],
+          "Modern": [
+            3
+          ],
+          "OBJECTIVE:": [
+            2
+          ],
+          "OpenPose": [
+            172
+          ],
+          "PRISMA": [
+            84
+          ],
+          "PROSPERO": [
+            94
+          ],
+          "PubMed,": [
+            105
+          ],
+          "RESULTS:": [
+            141
+          ],
+          "Scholar": [
+            126
+          ],
+          "Science": [
+            110
+          ],
+          "Scopus": [
+            106
+          ],
+          "September": [
+            119
+          ],
+          "Technology": [
+            53
+          ],
+          "The": [
+            38,
+            75,
+            86,
+            121,
+            142
+          ],
+          "To": [
+            99
+          ],
+          "Web": [
+            108
+          ],
+          "YOLO": [
+            174
+          ],
+          "a": [
+            79,
+            115
+          ],
+          "accuracy": [
+            197
+          ],
+          "algorithms": [
+            170
+          ],
+          "allowed": [
+            184
+          ],
+          "and": [
+            4,
+            18,
+            21,
+            52,
+            62,
+            64,
+            82,
+            107,
+            127,
+            165,
+            173,
+            190,
+            216,
+            230,
+            255
+          ],
+          "application": [
+            48
+          ],
+          "are": [
+            8
+          ],
+          "articles": [
+            133
+          ],
+          "articles,": [
+            146
+          ],
+          "artificial": [
+            50,
+            225
+          ],
+          "as": [
+            209
+          ],
+          "assessment": [
+            222
+          ],
+          "better": [
+            231
+          ],
+          "by": [
+            60
+          ],
+          "care": [
+            160
+          ],
+          "casualty": [
+            179
+          ],
+          "challenge": [
+            32
+          ],
+          "challenges": [
+            66,
+            207
+          ],
+          "children": [
+            254
+          ],
+          "code": [
+            97
+          ],
+          "concerns.": [
+            219
+          ],
+          "continuous": [
+            186
+          ],
+          "data": [
+            167,
+            217
+          ],
+          "databases": [
+            104
+          ],
+          "demonstrated": [
+            195
+          ],
+          "designing": [
+            244
+          ],
+          "diagnosing": [
+            199
+          ],
+          "disabled": [
+            256
+          ],
+          "disasters": [
+            17,
+            61
+          ],
+          "disasters.": [
+            238,
+            259
+          ],
+          "down": [
+            148
+          ],
+          "due": [
+            11
+          ],
+          "e-triage": [
+            182
+          ],
+          "efficiency": [
+            176
+          ],
+          "emergencies": [
+            19,
+            63
+          ],
+          "enables": [
+            227
+          ],
+          "engine": [
+            124
+          ],
+          "enhanced": [
+            175
+          ],
+          "equipment": [
+            214
+          ],
+          "faced": [
+            206
+          ],
+          "facing": [
+            30
+          ],
+          "faster": [
+            191
+          ],
+          "final": [
+            132,
+            139
+          ],
+          "find": [
+            100
+          ],
+          "follows": [
+            83
+          ],
+          "for": [
+            137,
+            185,
+            234
+          ],
+          "future": [
+            240
+          ],
+          "growing": [
+            14
+          ],
+          "guidelines.": [
+            85
+          ],
+          "high": [
+            196
+          ],
+          "high-quality": [
+            151
+          ],
+          "identified": [
+            144
+          ],
+          "implementation": [
+            69
+          ],
+          "improved": [
+            158
+          ],
+          "in": [
+            24,
+            54,
+            93,
+            155,
+            177,
+            198,
+            237,
+            252,
+            258
+          ],
+          "incidents,": [
+            180
+          ],
+          "increase": [
+            23
+          ],
+          "injured": [
+            28,
+            59,
+            236
+          ],
+          "intelligence": [
+            51,
+            226
+          ],
+          "intelligent": [
+            5,
+            71,
+            203,
+            245
+          ],
+          "investigate": [
+            46
+          ],
+          "is": [
+            44,
+            78
+          ],
+          "issues,": [
+            211
+          ],
+          "like": [
+            171
+          ],
+          "limit": [
+            117
+          ],
+          "main": [
+            39
+          ],
+          "management": [
+            164
+          ],
+          "manually": [
+            136
+          ],
+          "mass": [
+            178
+          ],
+          "methods.": [
+            37
+          ],
+          "monitoring": [
+            189
+          ],
+          "narrowing": [
+            147
+          ],
+          "needs,": [
+            213
+          ],
+          "number": [
+            26
+          ],
+          "objective": [
+            40
+          ],
+          "obstacles": [
+            251
+          ],
+          "of": [
+            16,
+            27,
+            33,
+            41,
+            49,
+            57,
+            67,
+            70,
+            88,
+            109,
+            130
+          ],
+          "on": [
+            153
+          ],
+          "optimized": [
+            162
+          ],
+          "patient": [
+            159
+          ],
+          "patients": [
+            58
+          ],
+          "people": [
+            29,
+            235,
+            257
+          ],
+          "present": [
+            76
+          ],
+          "privacy": [
+            218
+          ],
+          "protocol": [
+            87
+          ],
+          "read": [
+            135
+          ],
+          "real-time": [
+            166
+          ],
+          "recommend": [
+            243
+          ],
+          "references": [
+            129
+          ],
+          "registered": [
+            92
+          ],
+          "relevant": [
+            101
+          ],
+          "remove": [
+            249
+          ],
+          "resource": [
+            163
+          ],
+          "resuscitation": [
+            232
+          ],
+          "review": [
+            81
+          ],
+          "review.": [
+            140
+          ],
+          "scientific": [
+            122
+          ],
+          "search": [
+            123,
+            143
+          ],
+          "searched": [
+            113
+          ],
+          "services": [
+            233
+          ],
+          "shortages,": [
+            215
+          ],
+          "sign": [
+            188
+          ],
+          "studies": [
+            152
+          ],
+          "studies,": [
+            102,
+            241
+          ],
+          "study": [
+            43,
+            77,
+            90
+          ],
+          "such": [
+            208
+          ],
+          "systematic": [
+            80
+          ],
+          "systems": [
+            7,
+            183,
+            205,
+            223,
+            247
+          ],
+          "systems.": [
+            73
+          ],
+          "the": [
+            13,
+            22,
+            25,
+            31,
+            47,
+            55,
+            65,
+            68,
+            96,
+            103,
+            128,
+            131,
+            138,
+            250
+          ],
+          "this": [
+            42,
+            89
+          ],
+          "through": [
+            161
+          ],
+          "time": [
+            116
+          ],
+          "timely": [
+            228
+          ],
+          "to": [
+            12,
+            45,
+            149,
+            248
+          ],
+          "today": [
+            10
+          ],
+          "tools": [
+            194
+          ],
+          "traditional": [
+            35
+          ],
+          "training": [
+            212
+          ],
+          "transmission.": [
+            168
+          ],
+          "treatment": [
+            229
+          ],
+          "trend": [
+            15
+          ],
+          "triage": [
+            6,
+            36,
+            56,
+            72,
+            204,
+            246
+          ],
+          "triage,": [
+            156
+          ],
+          "triaging": [
+            253
+          ],
+          "triaging.": [
+            192
+          ],
+          "trust": [
+            210
+          ],
+          "until": [
+            118
+          ],
+          "used": [
+            9
+          ],
+          "using": [
+            34,
+            224
+          ],
+          "vital": [
+            187
+          ],
+          "was": [
+            91
+          ],
+          "we": [
+            242
+          ],
+          "were": [
+            112,
+            134
+          ],
+          "which": [
+            157
+          ],
+          "while": [
+            181
+          ],
+          "with": [
+            95
+          ],
+          "without": [
+            114
+          ],
+          "worldwide": [
+            20
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I58048189"
+                ],
+                "raw_affiliation_string": "Department of Health in Disasters and Emergencies, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, 1983535511, Iran"
+              }
+            ],
+            "author": {
+              "display_name": "Azadeh Tahernejad",
+              "id": "https://openalex.org/A5073873093",
+              "orcid": "https://orcid.org/0000-0001-6342-815X"
+            },
+            "author_position": "first",
+            "countries": [
+              "IR"
+            ],
+            "institutions": [
+              {
+                "country_code": "IR",
+                "display_name": "Shahid Beheshti University of Medical Sciences",
+                "id": "https://openalex.org/I58048189",
+                "lineage": [
+                  "https://openalex.org/I58048189"
+                ],
+                "ror": "https://ror.org/034m2b326",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Health in Disasters and Emergencies, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, 1983535511, Iran"
+            ],
+            "raw_author_name": "Azadeh Tahernejad",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210116604",
+                  "https://openalex.org/I3017965041"
+                ],
+                "raw_affiliation_string": "Department of Prehospital Medical Emergencies and Health in Disaster and Emergencies, School of Allied Medical Sciences, Ilam University of Medical Sciences, Ilam, Iran"
+              }
+            ],
+            "author": {
+              "display_name": "Ali Sahebi",
+              "id": "https://openalex.org/A5054086336",
+              "orcid": "https://orcid.org/0000-0003-4662-8998"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IR"
+            ],
+            "institutions": [
+              {
+                "country_code": "IR",
+                "display_name": "Medical University of Ilam",
+                "id": "https://openalex.org/I3017965041",
+                "lineage": [
+                  "https://openalex.org/I3017965041"
+                ],
+                "ror": "https://ror.org/042hptv04",
+                "type": "education"
+              },
+              {
+                "country_code": "IR",
+                "display_name": "Ilam University",
+                "id": "https://openalex.org/I4210116604",
+                "lineage": [
+                  "https://openalex.org/I4210116604"
+                ],
+                "ror": "https://ror.org/01r277z15",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Prehospital Medical Emergencies and Health in Disaster and Emergencies, School of Allied Medical Sciences, Ilam University of Medical Sciences, Ilam, Iran"
+            ],
+            "raw_author_name": "Ali Sahebi",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I58048189"
+                ],
+                "raw_affiliation_string": "Department of Occupational Health and Safety Engineering, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, Iran"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I58048189"
+                ],
+                "raw_affiliation_string": "Safety Promotion and Injury Prevention Research Center, Research Institute for Health Sciences and Environment, Shahid Beheshti University of Medical Sciences, Tehran, Iran"
+              }
+            ],
+            "author": {
+              "display_name": "Ali Salehi Sahl Abadi",
+              "id": "https://openalex.org/A5042864713",
+              "orcid": "https://orcid.org/0000-0002-9675-7344"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IR"
+            ],
+            "institutions": [
+              {
+                "country_code": "IR",
+                "display_name": "Shahid Beheshti University of Medical Sciences",
+                "id": "https://openalex.org/I58048189",
+                "lineage": [
+                  "https://openalex.org/I58048189"
+                ],
+                "ror": "https://ror.org/034m2b326",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Occupational Health and Safety Engineering, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, Iran",
+              "Safety Promotion and Injury Prevention Research Center, Research Institute for Health Sciences and Environment, Shahid Beheshti University of Medical Sciences, Tehran, Iran"
+            ],
+            "raw_author_name": "Ali Salehi Sahl Abadi",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I58048189"
+                ],
+                "raw_affiliation_string": "Department of Health in Disasters and Emergencies, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, 1983535511, Iran. safari.pe@gmail.com"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I58048189"
+                ],
+                "raw_affiliation_string": "Department of Health in Disasters and Emergencies, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, 1983535511, Iran"
+              }
+            ],
+            "author": {
+              "display_name": "Mehdi Safari",
+              "id": "https://openalex.org/A5101504043",
+              "orcid": "https://orcid.org/0000-0002-0449-3688"
+            },
+            "author_position": "last",
+            "countries": [
+              "IR"
+            ],
+            "institutions": [
+              {
+                "country_code": "IR",
+                "display_name": "Shahid Beheshti University of Medical Sciences",
+                "id": "https://openalex.org/I58048189",
+                "lineage": [
+                  "https://openalex.org/I58048189"
+                ],
+                "ror": "https://ror.org/034m2b326",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Health in Disasters and Emergencies, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, 1983535511, Iran. safari.pe@gmail.com",
+              "Department of Health in Disasters and Emergencies, School of Public Health and Safety, Shahid Beheshti University of Medical Sciences, Tehran, 1983535511, Iran"
+            ],
+            "raw_author_name": "Mehdi Safari",
+            "raw_orcid": "https://orcid.org/0000-0002-0449-3688"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1186/s12889-024-20447-3",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1186/s12889-024-20447-3",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://bmcpublichealth.biomedcentral.com/counter/pdf/10.1186/s12889-024-20447-3",
+          "raw_source_name": "BMC Public Health",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "BMC Public Health",
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "host_organization_name": "BioMed Central",
+            "id": "https://openalex.org/S200437886",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1471-2458"
+            ],
+            "issn_l": "1471-2458",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "3203",
+          "issue": "1",
+          "last_page": "3203",
+          "volume": "24"
+        },
+        "cited_by_count": 49,
+        "display_name": "Application of artificial intelligence in triage in emergencies and disasters: a systematic review",
+        "doi": "https://doi.org/10.1186/s12889-024-20447-3",
+        "id": "https://openalex.org/W4404462415",
+        "ids": {
+          "doi": "https://doi.org/10.1186/s12889-024-20447-3",
+          "openalex": "https://openalex.org/W4404462415",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/39558305"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://bmcpublichealth.biomedcentral.com/counter/pdf/10.1186/s12889-024-20447-3"
+        },
+        "primary_location": {
+          "id": "doi:10.1186/s12889-024-20447-3",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1186/s12889-024-20447-3",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://bmcpublichealth.biomedcentral.com/counter/pdf/10.1186/s12889-024-20447-3",
+          "raw_source_name": "BMC Public Health",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "BMC Public Health",
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "host_organization_name": "BioMed Central",
+            "id": "https://openalex.org/S200437886",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1471-2458"
+            ],
+            "issn_l": "1471-2458",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2024-11-18",
+        "publication_year": 2024,
+        "referenced_works": [
+          "https://openalex.org/W175699640",
+          "https://openalex.org/W1429857689",
+          "https://openalex.org/W1528467043",
+          "https://openalex.org/W1857199133",
+          "https://openalex.org/W1968527108",
+          "https://openalex.org/W2031075562",
+          "https://openalex.org/W2094247666",
+          "https://openalex.org/W2095718580",
+          "https://openalex.org/W2096926032",
+          "https://openalex.org/W2116531504",
+          "https://openalex.org/W2159470470",
+          "https://openalex.org/W2560255563",
+          "https://openalex.org/W2744110848",
+          "https://openalex.org/W2897076163",
+          "https://openalex.org/W2897268237",
+          "https://openalex.org/W2901724277",
+          "https://openalex.org/W2911865420",
+          "https://openalex.org/W3011681177",
+          "https://openalex.org/W3023828099",
+          "https://openalex.org/W3102427443",
+          "https://openalex.org/W3108779652",
+          "https://openalex.org/W3110677219",
+          "https://openalex.org/W3127672048",
+          "https://openalex.org/W3136114163",
+          "https://openalex.org/W3178888370",
+          "https://openalex.org/W4230559526",
+          "https://openalex.org/W4246743683",
+          "https://openalex.org/W4283584526",
+          "https://openalex.org/W4296834848",
+          "https://openalex.org/W4304688324",
+          "https://openalex.org/W4313641534",
+          "https://openalex.org/W4372311383",
+          "https://openalex.org/W4380232284",
+          "https://openalex.org/W4382068371",
+          "https://openalex.org/W4387464369",
+          "https://openalex.org/W4390414802",
+          "https://openalex.org/W4391944708",
+          "https://openalex.org/W4403093823",
+          "https://openalex.org/W6848797763"
+        ],
+        "referenced_works_count": 39,
+        "title": "Application of artificial intelligence in triage in emergencies and disasters: a systematic review",
+        "type": "review"
+      },
+      {
+        "abstract_inverted_index": {
+          "AI.": [
+            72
+          ],
+          "Each": [
+            73
+          ],
+          "Implementation": [
+            95
+          ],
+          "The": [
+            0,
+            114
+          ],
+          "This": [
+            25
+          ],
+          "a": [
+            9,
+            120
+          ],
+          "across": [
+            30
+          ],
+          "adaptation": [
+            103
+          ],
+          "adaptive": [
+            34
+          ],
+          "address": [
+            97
+          ],
+          "agency": [
+            66
+          ],
+          "algorithmic": [
+            28,
+            116
+          ],
+          "alignment": [
+            106
+          ],
+          "and": [
+            5,
+            59,
+            70,
+            84,
+            108,
+            135,
+            144
+          ],
+          "ant": [
+            51
+          ],
+          "architectures": [
+            29
+          ],
+          "article": [
+            26
+          ],
+          "artificial": [
+            3,
+            145
+          ],
+          "automation": [
+            7,
+            143
+          ],
+          "basic": [
+            44
+          ],
+          "basis": [
+            122
+          ],
+          "benchmarking,": [
+            101
+          ],
+          "beyond": [
+            22
+          ],
+          "by": [
+            141
+          ],
+          "characterized": [
+            140
+          ],
+          "collaborative": [
+            61
+          ],
+          "colony": [
+            52
+          ],
+          "computational": [
+            17,
+            80,
+            98
+          ],
+          "considerations": [
+            96
+          ],
+          "contexts.": [
+            94
+          ],
+          "continuous": [
+            136
+          ],
+          "creative": [
+            65
+          ],
+          "deployment.": [
+            113
+          ],
+          "descent": [
+            40
+          ],
+          "designed": [
+            87
+          ],
+          "developing": [
+            124
+          ],
+          "distribution,": [
+            134
+          ],
+          "domain": [
+            74
+          ],
+          "domains:": [
+            33
+          ],
+          "educational": [
+            56
+          ],
+          "employing": [
+            50
+          ],
+          "employment.": [
+            24
+          ],
+          "enable": [
+            128
+          ],
+          "equitable": [
+            132
+          ],
+          "establish": [
+            119
+          ],
+          "ethical": [
+            105
+          ],
+          "evaluation": [
+            85
+          ],
+          "explainable": [
+            71
+          ],
+          "flourishing": [
+            21
+          ],
+          "for": [
+            19,
+            111,
+            123
+          ],
+          "formalized": [
+            77,
+            115
+          ],
+          "formalizes": [
+            27
+          ],
+          "foundations": [
+            117
+          ],
+          "frameworks": [
+            18,
+            62
+          ],
+          "gradient": [
+            39
+          ],
+          "graphs;": [
+            58
+          ],
+          "human": [
+            20,
+            90,
+            130
+          ],
+          "human-AI": [
+            60
+          ],
+          "humanoid": [
+            6
+          ],
+          "in": [
+            12,
+            92,
+            138
+          ],
+          "income": [
+            45
+          ],
+          "integration": [
+            109
+          ],
+          "intelligence": [
+            4
+          ],
+          "intelligence.": [
+            146
+          ],
+          "interconnected": [
+            32
+          ],
+          "is": [
+            75
+          ],
+          "knowledge": [
+            57
+          ],
+          "large-scale": [
+            112
+          ],
+          "learning": [
+            48,
+            137
+          ],
+          "mathematically": [
+            76
+          ],
+          "meaningful": [
+            129
+          ],
+          "mechanisms,": [
+            104
+          ],
+          "metrics": [
+            86
+          ],
+          "models,": [
+            81
+          ],
+          "navigate": [
+            55
+          ],
+          "necessitating": [
+            15
+          ],
+          "novel": [
+            16
+          ],
+          "of": [
+            2
+          ],
+          "operationalize": [
+            89
+          ],
+          "optimization": [
+            53,
+            82
+          ],
+          "optimize": [
+            42
+          ],
+          "parameters;": [
+            46
+          ],
+          "participation,": [
+            131
+          ],
+          "pathways": [
+            110
+          ],
+          "personalized": [
+            47
+          ],
+          "platforms": [
+            49
+          ],
+          "post-work": [
+            93
+          ],
+          "presages": [
+            8
+          ],
+          "presented": [
+            118
+          ],
+          "preserve": [
+            64
+          ],
+          "profound": [
+            10
+          ],
+          "real-time": [
+            102
+          ],
+          "redistribution": [
+            36
+          ],
+          "resource": [
+            35,
+            133
+          ],
+          "rigorous": [
+            79,
+            121
+          ],
+          "rise": [
+            1
+          ],
+          "science": [
+            100
+          ],
+          "shift": [
+            11
+          ],
+          "social": [
+            99
+          ],
+          "societies": [
+            139
+          ],
+          "socio-technical": [
+            125
+          ],
+          "socioeconomic": [
+            13
+          ],
+          "strategies,": [
+            107
+          ],
+          "structured": [
+            68
+          ],
+          "structures,": [
+            14
+          ],
+          "systems": [
+            37,
+            126
+          ],
+          "techniques,": [
+            83
+          ],
+          "that": [
+            63,
+            127
+          ],
+          "three": [
+            31
+          ],
+          "thriving": [
+            91
+          ],
+          "through": [
+            67
+          ],
+          "to": [
+            41,
+            54,
+            88
+          ],
+          "traditional": [
+            23
+          ],
+          "universal": [
+            43
+          ],
+          "utilizing": [
+            38
+          ],
+          "widespread": [
+            142
+          ],
+          "with": [
+            78
+          ],
+          "workflows": [
+            69
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8975392"
+                ],
+                "raw_affiliation_string": "Osmania University, India"
+              }
+            ],
+            "author": {
+              "display_name": "Swamy Biru",
+              "id": "https://openalex.org/A5128870701",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "IN"
+            ],
+            "institutions": [
+              {
+                "country_code": "IN",
+                "display_name": "Osmania University",
+                "id": "https://openalex.org/I8975392",
+                "lineage": [
+                  "https://openalex.org/I8975392"
+                ],
+                "ror": "https://ror.org/030sjb889",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Osmania University, India"
+            ],
+            "raw_author_name": "Swamy Biru",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I98365261"
+                ],
+                "raw_affiliation_string": "Indian Institute of Engineering Science and Technology, Shibpur"
+              }
+            ],
+            "author": {
+              "display_name": "Sudhakar Pallaprolu",
+              "id": "https://openalex.org/A5128883831",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "IN"
+            ],
+            "institutions": [
+              {
+                "country_code": "IN",
+                "display_name": "Indian Institute of Engineering Science and Technology, Shibpur",
+                "id": "https://openalex.org/I98365261",
+                "lineage": [
+                  "https://openalex.org/I98365261"
+                ],
+                "ror": "https://ror.org/02ytfzr55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Indian Institute of Engineering Science and Technology, Shibpur"
+            ],
+            "raw_author_name": "Sudhakar Pallaprolu",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.32996/jcsts.2025.7.12.17",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.32996/jcsts.2025.7.12.17",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://al-kindipublisher.com/index.php/jcsts/article/download/11534/10270",
+          "raw_source_name": "Journal of Computer Science and Technology Studies",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Computer Science and Technology Studies",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4210180307",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "2709-104X"
+            ],
+            "issn_l": "2709-104X",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "120",
+          "issue": "12",
+          "last_page": "134",
+          "volume": "7"
+        },
+        "cited_by_count": 1,
+        "display_name": "AI-Driven Pathways to Human Happiness: Algorithmic Architectures for Thriving Beyond Work in the Age of Humanoid Automation",
+        "doi": "https://doi.org/10.32996/jcsts.2025.7.12.17",
+        "id": "https://openalex.org/W7135046409",
+        "ids": {
+          "doi": "https://doi.org/10.32996/jcsts.2025.7.12.17",
+          "openalex": "https://openalex.org/W7135046409"
+        },
+        "is_retracted": false,
+        "language": null,
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://al-kindipublisher.com/index.php/jcsts/article/download/11534/10270"
+        },
+        "primary_location": {
+          "id": "doi:10.32996/jcsts.2025.7.12.17",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.32996/jcsts.2025.7.12.17",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://al-kindipublisher.com/index.php/jcsts/article/download/11534/10270",
+          "raw_source_name": "Journal of Computer Science and Technology Studies",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Computer Science and Technology Studies",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4210180307",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "2709-104X"
+            ],
+            "issn_l": "2709-104X",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2025-11-26",
+        "publication_year": 2025,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "AI-Driven Pathways to Human Happiness: Algorithmic Architectures for Thriving Beyond Work in the Age of Humanoid Automation",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(LLMs)": [
+            3
+          ],
+          "(Tree-of-Thoughts,": [
+            63
+          ],
+          "Chain-of-Thought": [
+            8
+          ],
+          "Existing": [
+            54
+          ],
+          "Graph-of-Thoughts)": [
+            64
+          ],
+          "Huginn": [
+            29
+          ],
+          "Language": [
+            1
+          ],
+          "Large": [
+            0
+          ],
+          "Models": [
+            2
+          ],
+          "While": [
+            25
+          ],
+          "adaptive": [
+            74
+          ],
+          "and": [
+            17,
+            46
+          ],
+          "approach": [
+            12
+          ],
+          "approaches": [
+            71
+          ],
+          "architectures": [
+            27
+          ],
+          "attempt": [
+            30
+          ],
+          "by": [
+            41
+          ],
+          "capabilities": [
+            6
+          ],
+          "chaotic": [
+            38
+          ],
+          "characterized": [
+            40
+          ],
+          "cognitive": [
+            52
+          ],
+          "computational": [
+            15
+          ],
+          "computationally": [
+            59
+          ],
+          "control.": [
+            53
+          ],
+          "demonstrate": [
+            4
+          ],
+          "depth-recurrent": [
+            26
+          ],
+          "discontinuities": [
+            48
+          ],
+          "dynamics": [
+            39
+          ],
+          "efficiency": [
+            20
+          ],
+          "either": [
+            56
+          ],
+          "enable": [
+            32
+          ],
+          "exhibit": [
+            37
+          ],
+          "expensive": [
+            60
+          ],
+          "external": [
+            61
+          ],
+          "flexibility.": [
+            75
+          ],
+          "inconsistencies,": [
+            43
+          ],
+          "incurs": [
+            13
+          ],
+          "internal,": [
+            22
+          ],
+          "lack": [
+            73
+          ],
+          "lacks": [
+            18
+          ],
+          "latent": [
+            23,
+            34
+          ],
+          "like": [
+            28
+          ],
+          "limited": [
+            67
+          ],
+          "of": [
+            21
+          ],
+          "on": [
+            58
+          ],
+          "or": [
+            65
+          ],
+          "orchestration": [
+            62
+          ],
+          "oscillations,": [
+            45
+          ],
+          "overhead": [
+            16
+          ],
+          "periodic": [
+            44
+          ],
+          "prevent": [
+            50
+          ],
+          "probing": [
+            42
+          ],
+          "prompting": [
+            70
+          ],
+          "prompting,": [
+            9
+          ],
+          "reasoning,": [
+            35
+          ],
+          "reasoning.": [
+            24
+          ],
+          "reliable": [
+            51
+          ],
+          "rely": [
+            57
+          ],
+          "remain": [
+            66
+          ],
+          "remarkable": [
+            5
+          ],
+          "sharp": [
+            47
+          ],
+          "significant": [
+            14
+          ],
+          "solutions": [
+            55
+          ],
+          "static": [
+            69
+          ],
+          "structured": [
+            33
+          ],
+          "that": [
+            49,
+            72
+          ],
+          "the": [
+            19
+          ],
+          "they": [
+            36
+          ],
+          "this": [
+            11
+          ],
+          "through": [
+            7
+          ],
+          "to": [
+            31,
+            68
+          ],
+          "yet": [
+            10
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Yu Geunbin",
+              "id": "https://openalex.org/A5119129540",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Yu Geunbin",
+            "raw_orcid": "https://orcid.org/0009-0006-2879-9514"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.36227/techrxiv.175393512.21951930/v1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.36227/techrxiv.175393512.21951930/v1",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.175393512.21951930/v1",
+          "raw_source_name": "Techrxiv",
+          "raw_type": "posted-content",
+          "source": null,
+          "version": "acceptedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "Cognitive State Engineering: A Neuro Computational Control Framework for Language Model Reasoning",
+        "doi": "https://doi.org/10.36227/techrxiv.175393512.21951930/v1",
+        "id": "https://openalex.org/W4412774055",
+        "ids": {
+          "doi": "https://doi.org/10.36227/techrxiv.175393512.21951930/v1",
+          "openalex": "https://openalex.org/W4412774055"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": null,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.175393512.21951930/v1"
+        },
+        "primary_location": {
+          "id": "doi:10.36227/techrxiv.175393512.21951930/v1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.36227/techrxiv.175393512.21951930/v1",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.175393512.21951930/v1",
+          "raw_source_name": "Techrxiv",
+          "raw_type": "posted-content",
+          "source": null,
+          "version": "acceptedVersion"
+        },
+        "publication_date": "2025-07-31",
+        "publication_year": 2025,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "Cognitive State Engineering: A Neuro Computational Control Framework for Language Model Reasoning",
+        "type": "preprint"
+      }
+    ]
+  },
+  "response_hash": "2b3cc1016df1a626041b00c26fa34965d3f0e5ebc73f5ac0478f532c70fb1660",
+  "retrieved_at": "2026-07-14T13:51:31Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

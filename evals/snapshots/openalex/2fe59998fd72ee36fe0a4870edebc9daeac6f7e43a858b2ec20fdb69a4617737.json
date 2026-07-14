@@ -1,0 +1,2849 @@
+{
+  "endpoint": "works",
+  "request_key": "2fe59998fd72ee36fe0a4870edebc9daeac6f7e43a858b2ec20fdb69a4617737",
+  "request_params": {
+    "per-page": 10,
+    "search": "Using Deep-Learning Algorithms to Simultaneously Identify Right and Left Ventricular Dysfu",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 2,
+      "db_response_time_ms": 78,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 10,
+      "x_query": {
+        "oql": "works where full text has (Using Deep-Learning Algorithms to Simultaneously Identify Right \"and\" Left Ventricular Dysfu)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Using Deep-Learning Algorithms to Simultaneously Identify Right and Left Ventricular Dysfu"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 10,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Using Deep-Learning Algorithms to Simultaneously Identify Right and Left Ventricular Dysfu&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=10"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(Tregs)": [
+            27
+          ],
+          "Flow": [
+            105
+          ],
+          "Indeed,": [
+            130
+          ],
+          "Our": [
+            149
+          ],
+          "Phenotyping": [
+            87
+          ],
+          "Sepsis,": [
+            0
+          ],
+          "T": [
+            25
+          ],
+          "The": [
+            45
+          ],
+          "This": [
+            19,
+            71,
+            179
+          ],
+          "a": [
+            1,
+            109
+          ],
+          "adaptive": [
+            13
+          ],
+          "affected": [
+            192
+          ],
+          "affects": [
+            30
+          ],
+          "also": [
+            56
+          ],
+          "alteration": [
+            21
+          ],
+          "altered": [
+            39
+          ],
+          "analysis": [
+            121
+          ],
+          "and": [
+            12,
+            42,
+            84,
+            96,
+            119,
+            126,
+            141,
+            163
+          ],
+          "approach": [
+            180
+          ],
+          "approaches.": [
+            104
+          ],
+          "as": [
+            108
+          ],
+          "based": [
+            93
+          ],
+          "biomarkers.": [
+            148
+          ],
+          "both": [
+            10
+          ],
+          "but": [
+            28,
+            55
+          ],
+          "by": [
+            5
+          ],
+          "can": [
+            22
+          ],
+          "care.": [
+            178
+          ],
+          "categorizes": [
+            91
+          ],
+          "cell": [
+            124
+          ],
+          "cells": [
+            26
+          ],
+          "cells,": [
+            89
+          ],
+          "challenges": [
+            65
+          ],
+          "changes.": [
+            44
+          ],
+          "characteristics,": [
+            98
+          ],
+          "clinical": [
+            95,
+            164
+          ],
+          "complexity": [
+            46
+          ],
+          "condition": [
+            3
+          ],
+          "contributes": [
+            142
+          ],
+          "cost": [
+            118
+          ],
+          "could": [
+            181
+          ],
+          "critical": [
+            2,
+            177
+          ],
+          "crucial": [
+            110
+          ],
+          "cytokine": [
+            40
+          ],
+          "cytometry": [
+            106,
+            157
+          ],
+          "data,": [
+            160
+          ],
+          "detailed": [
+            120
+          ],
+          "developing": [
+            67
+          ],
+          "diagnostic": [
+            83
+          ],
+          "diminished": [
+            36
+          ],
+          "dysfunctions": [
+            138
+          ],
+          "effective": [
+            69
+          ],
+          "effector": [
+            37
+          ],
+          "emerges": [
+            107
+          ],
+          "emphasizes": [
+            73
+          ],
+          "endeavor,": [
+            114
+          ],
+          "enhance": [
+            81
+          ],
+          "facilitates": [
+            133
+          ],
+          "flow": [
+            156
+          ],
+          "for": [
+            101
+          ],
+          "from": [
+            52,
+            57
+          ],
+          "functional": [
+            128
+          ],
+          "functions,": [
+            38
+          ],
+          "heterogeneity": [
+            59
+          ],
+          "heterogeneously": [
+            191
+          ],
+          "highlighting": [
+            170
+          ],
+          "identification": [
+            145
+          ],
+          "immune": [
+            20,
+            88,
+            123,
+            137
+          ],
+          "immunity,": [
+            14
+          ],
+          "immunological": [
+            97
+          ],
+          "impacts": [
+            9
+          ],
+          "importance": [
+            75
+          ],
+          "improving": [
+            187
+          ],
+          "in": [
+            17,
+            66,
+            78,
+            112,
+            139,
+            176,
+            189
+          ],
+          "inflammation,": [
+            7
+          ],
+          "innate": [
+            11
+          ],
+          "integrating": [
+            155
+          ],
+          "interventions,": [
+            186
+          ],
+          "is": [
+            99
+          ],
+          "its": [
+            53
+          ],
+          "lead": [
+            182
+          ],
+          "leading": [
+            34
+          ],
+          "learning": [
+            162
+          ],
+          "low": [
+            117
+          ],
+          "lymphocyte": [
+            32
+          ],
+          "lymphopenia.": [
+            18
+          ],
+          "machine": [
+            161
+          ],
+          "management,": [
+            169
+          ],
+          "marked": [
+            4
+          ],
+          "medicine": [
+            175
+          ],
+          "metabolic": [
+            43
+          ],
+          "more": [
+            184
+          ],
+          "not": [
+            50
+          ],
+          "novel": [
+            147
+          ],
+          "observations": [
+            165
+          ],
+          "of": [
+            47,
+            60,
+            76,
+            122,
+            136,
+            146,
+            154
+          ],
+          "offering": [
+            115
+          ],
+          "often": [
+            15
+          ],
+          "omics": [
+            159
+          ],
+          "on": [
+            94
+          ],
+          "only": [
+            51
+          ],
+          "other": [
+            31
+          ],
+          "outcomes": [
+            188
+          ],
+          "pathophysiology": [
+            54
+          ],
+          "patient": [
+            61,
+            193
+          ],
+          "patient-specific": [
+            82
+          ],
+          "patients": [
+            92
+          ],
+          "personalized": [
+            174
+          ],
+          "phenotyping": [
+            77
+          ],
+          "pivotal": [
+            100
+          ],
+          "population.": [
+            194
+          ],
+          "populations": [
+            125
+          ],
+          "posing": [
+            63
+          ],
+          "potential": [
+            153
+          ],
+          "precise": [
+            185
+          ],
+          "profiles,": [
+            41
+          ],
+          "profoundly": [
+            8
+          ],
+          "rapid,": [
+            116
+          ],
+          "refine": [
+            167
+          ],
+          "regulatory": [
+            24
+          ],
+          "responses,": [
+            62
+          ],
+          "resulting": [
+            16
+          ],
+          "review": [
+            72,
+            150
+          ],
+          "sepsis": [
+            48,
+            79,
+            140,
+            168
+          ],
+          "shift": [
+            172
+          ],
+          "significant": [
+            64
+          ],
+          "significantly": [
+            29
+          ],
+          "spare": [
+            23
+          ],
+          "states.": [
+            129
+          ],
+          "stems": [
+            49
+          ],
+          "strategies.": [
+            86
+          ],
+          "subsets,": [
+            33
+          ],
+          "systemic": [
+            6
+          ],
+          "tailoring": [
+            102
+          ],
+          "technology": [
+            132
+          ],
+          "the": [
+            58,
+            74,
+            134,
+            144,
+            152,
+            171
+          ],
+          "their": [
+            127
+          ],
+          "therapeutic": [
+            85
+          ],
+          "therapies.": [
+            70
+          ],
+          "this": [
+            113,
+            131,
+            190
+          ],
+          "to": [
+            35,
+            80,
+            143,
+            166,
+            183
+          ],
+          "tool": [
+            111
+          ],
+          "towards": [
+            173
+          ],
+          "treatment": [
+            103
+          ],
+          "underscores": [
+            151
+          ],
+          "understanding": [
+            135
+          ],
+          "universally": [
+            68
+          ],
+          "which": [
+            90
+          ],
+          "with": [
+            158
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Elena Santacroce",
+              "id": "https://openalex.org/A5003317536",
+              "orcid": "https://orcid.org/0000-0002-7581-9147"
+            },
+            "author_position": "first",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Elena Santacroce",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Miriam D’Angerio",
+              "id": "https://openalex.org/A5094049907",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Miriam D’Angerio",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Alin Liviu Ciobanu",
+              "id": "https://openalex.org/A5103064429",
+              "orcid": "https://orcid.org/0009-0000-0906-9459"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Alin Liviu Ciobanu",
+            "raw_orcid": "https://orcid.org/0009-0000-0906-9459"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "L. Masini",
+              "id": "https://openalex.org/A5109080734",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Linda Masini",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Domenico Lo Tartaro",
+              "id": "https://openalex.org/A5046669478",
+              "orcid": "https://orcid.org/0000-0001-7762-2535"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Domenico Lo Tartaro",
+            "raw_orcid": "https://orcid.org/0000-0001-7762-2535"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Irene Coloretti",
+              "id": "https://openalex.org/A5028162150",
+              "orcid": "https://orcid.org/0000-0002-9022-1768"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+            ],
+            "raw_author_name": "Irene Coloretti",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Stefano Busani",
+              "id": "https://openalex.org/A5066376259",
+              "orcid": "https://orcid.org/0000-0003-0150-4967"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+            ],
+            "raw_author_name": "Stefano Busani",
+            "raw_orcid": "https://orcid.org/0000-0003-0150-4967"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210134900"
+                ],
+                "raw_affiliation_string": "Department of Anesthesiology and Intensive Care Medicine, Center for Sepsis Control and Care, Jena University Hospital, 07747 Jena, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Ignacio Rubio",
+              "id": "https://openalex.org/A5027717692",
+              "orcid": "https://orcid.org/0000-0002-0251-7711"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Jena University Hospital",
+                "id": "https://openalex.org/I4210134900",
+                "lineage": [
+                  "https://openalex.org/I4210134900"
+                ],
+                "ror": "https://ror.org/035rzkx15",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Anesthesiology and Intensive Care Medicine, Center for Sepsis Control and Care, Jena University Hospital, 07747 Jena, Germany"
+            ],
+            "raw_author_name": "Ignacio Rubio",
+            "raw_orcid": "https://orcid.org/0000-0002-0251-7711"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Marianna Meschiari",
+              "id": "https://openalex.org/A5053930257",
+              "orcid": "https://orcid.org/0000-0002-1254-9995"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+            ],
+            "raw_author_name": "Marianna Meschiari",
+            "raw_orcid": "https://orcid.org/0000-0002-1254-9995"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Erica Franceschini",
+              "id": "https://openalex.org/A5050098750",
+              "orcid": "https://orcid.org/0000-0001-6922-5759"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+            ],
+            "raw_author_name": "Erica Franceschini",
+            "raw_orcid": "https://orcid.org/0000-0001-6922-5759"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Cristina Mussini",
+              "id": "https://openalex.org/A5082122622",
+              "orcid": "https://orcid.org/0000-0002-6615-4198"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+            ],
+            "raw_author_name": "Cristina Mussini",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Massimo Girardis",
+              "id": "https://openalex.org/A5073280348",
+              "orcid": "https://orcid.org/0000-0002-2453-0829"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Surgery, Medicine, Dentistry and Morphological Sciences, University of Modena and Reggio Emilia, 41121 Modena, Italy"
+            ],
+            "raw_author_name": "Massimo Girardis",
+            "raw_orcid": "https://orcid.org/0000-0002-2453-0829"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Lara Gibellini",
+              "id": "https://openalex.org/A5031185527",
+              "orcid": "https://orcid.org/0000-0002-4268-6552"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Lara Gibellini",
+            "raw_orcid": "https://orcid.org/0000-0002-4268-6552"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Andrea Cossarizza",
+              "id": "https://openalex.org/A5083279701",
+              "orcid": "https://orcid.org/0000-0002-5381-1558"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Andrea Cossarizza",
+            "raw_orcid": "https://orcid.org/0000-0002-5381-1558"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I122346577"
+                ],
+                "raw_affiliation_string": "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+              }
+            ],
+            "author": {
+              "display_name": "Sara De Biasi",
+              "id": "https://openalex.org/A5018307013",
+              "orcid": "https://orcid.org/0000-0002-3217-9821"
+            },
+            "author_position": "last",
+            "countries": [
+              "IT"
+            ],
+            "institutions": [
+              {
+                "country_code": "IT",
+                "display_name": "University of Modena and Reggio Emilia",
+                "id": "https://openalex.org/I122346577",
+                "lineage": [
+                  "https://openalex.org/I122346577"
+                ],
+                "ror": "https://ror.org/02d4c4y02",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Medical and Surgical Sciences for Children & Adults, University of Modena and Reggio Emilia, 41125 Modena, Italy"
+            ],
+            "raw_author_name": "Sara De Biasi",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3390/cells13050439",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/cells13050439",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2073-4409/13/5/439/pdf?version=1709600002",
+          "raw_source_name": "Cells",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Cells",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S2736626452",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2073-4409"
+            ],
+            "issn_l": "2073-4409",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "439",
+          "issue": "5",
+          "last_page": "439",
+          "volume": "13"
+        },
+        "cited_by_count": 76,
+        "display_name": "Advances and Challenges in Sepsis Management: Modern Tools and Future Directions",
+        "doi": "https://doi.org/10.3390/cells13050439",
+        "id": "https://openalex.org/W4392379361",
+        "ids": {
+          "doi": "https://doi.org/10.3390/cells13050439",
+          "openalex": "https://openalex.org/W4392379361",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/38474403"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.mdpi.com/2073-4409/13/5/439/pdf?version=1709600002"
+        },
+        "primary_location": {
+          "id": "doi:10.3390/cells13050439",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/cells13050439",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2073-4409/13/5/439/pdf?version=1709600002",
+          "raw_source_name": "Cells",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Cells",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S2736626452",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2073-4409"
+            ],
+            "issn_l": "2073-4409",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2024-03-02",
+        "publication_year": 2024,
+        "referenced_works": [
+          "https://openalex.org/W101740868",
+          "https://openalex.org/W1480532996",
+          "https://openalex.org/W1492950536",
+          "https://openalex.org/W1512663552",
+          "https://openalex.org/W1512693074",
+          "https://openalex.org/W1546142467",
+          "https://openalex.org/W1579180289",
+          "https://openalex.org/W1605165880",
+          "https://openalex.org/W1641790357",
+          "https://openalex.org/W1661840774",
+          "https://openalex.org/W1814025132",
+          "https://openalex.org/W1834782762",
+          "https://openalex.org/W1840867122",
+          "https://openalex.org/W1847094188",
+          "https://openalex.org/W1879733589",
+          "https://openalex.org/W1925096404",
+          "https://openalex.org/W1926790978",
+          "https://openalex.org/W1965361671",
+          "https://openalex.org/W1965737875",
+          "https://openalex.org/W1966677759",
+          "https://openalex.org/W1969468610",
+          "https://openalex.org/W1972757665",
+          "https://openalex.org/W1975622213",
+          "https://openalex.org/W1976554265",
+          "https://openalex.org/W1976557086",
+          "https://openalex.org/W1978262930",
+          "https://openalex.org/W1979308931",
+          "https://openalex.org/W1981700081",
+          "https://openalex.org/W1981875526",
+          "https://openalex.org/W1984747276",
+          "https://openalex.org/W1986858178",
+          "https://openalex.org/W1987679006",
+          "https://openalex.org/W1989400994",
+          "https://openalex.org/W1990174038",
+          "https://openalex.org/W1990839577",
+          "https://openalex.org/W1992730330",
+          "https://openalex.org/W1993065921",
+          "https://openalex.org/W1993197717",
+          "https://openalex.org/W1993197880",
+          "https://openalex.org/W1994377656",
+          "https://openalex.org/W1996531679",
+          "https://openalex.org/W1998335652",
+          "https://openalex.org/W1998427452",
+          "https://openalex.org/W2000167382",
+          "https://openalex.org/W2002532523",
+          "https://openalex.org/W2004061569",
+          "https://openalex.org/W2006919847",
+          "https://openalex.org/W2007031231",
+          "https://openalex.org/W2009337229",
+          "https://openalex.org/W2010087314",
+          "https://openalex.org/W2011429240",
+          "https://openalex.org/W2011670785",
+          "https://openalex.org/W2011825836",
+          "https://openalex.org/W2012885541",
+          "https://openalex.org/W2014662110",
+          "https://openalex.org/W2018848049",
+          "https://openalex.org/W2019917125",
+          "https://openalex.org/W2023203069",
+          "https://openalex.org/W2025193748",
+          "https://openalex.org/W2028619817",
+          "https://openalex.org/W2028646275",
+          "https://openalex.org/W2030817385",
+          "https://openalex.org/W2031474938",
+          "https://openalex.org/W2034919642",
+          "https://openalex.org/W2036215348",
+          "https://openalex.org/W2037092521",
+          "https://openalex.org/W2039285985",
+          "https://openalex.org/W2043662454",
+          "https://openalex.org/W2043937148",
+          "https://openalex.org/W2044268463",
+          "https://openalex.org/W2045819100",
+          "https://openalex.org/W2053354159",
+          "https://openalex.org/W2053953640",
+          "https://openalex.org/W2056796152",
+          "https://openalex.org/W2057585285",
+          "https://openalex.org/W2058712031",
+          "https://openalex.org/W2059106230",
+          "https://openalex.org/W2060342254",
+          "https://openalex.org/W2061402985",
+          "https://openalex.org/W2062565344",
+          "https://openalex.org/W2064464655",
+          "https://openalex.org/W2064656497",
+          "https://openalex.org/W2064693934",
+          "https://openalex.org/W2065252029",
+          "https://openalex.org/W2065345742",
+          "https://openalex.org/W2066585969",
+          "https://openalex.org/W2067175115",
+          "https://openalex.org/W2068818475",
+          "https://openalex.org/W2068928880",
+          "https://openalex.org/W2069375519",
+          "https://openalex.org/W2069698619",
+          "https://openalex.org/W2070115405",
+          "https://openalex.org/W2070743921",
+          "https://openalex.org/W2073185462",
+          "https://openalex.org/W2075965368",
+          "https://openalex.org/W2076588270",
+          "https://openalex.org/W2076753860",
+          "https://openalex.org/W2078704378",
+          "https://openalex.org/W2079099886",
+          "https://openalex.org/W2082654322",
+          "https://openalex.org/W2083051190",
+          "https://openalex.org/W2083348332",
+          "https://openalex.org/W2083513831",
+          "https://openalex.org/W2083812577",
+          "https://openalex.org/W2083875480",
+          "https://openalex.org/W2084320333",
+          "https://openalex.org/W2084630350",
+          "https://openalex.org/W2086143858",
+          "https://openalex.org/W2092449249",
+          "https://openalex.org/W2092781537",
+          "https://openalex.org/W2094265468",
+          "https://openalex.org/W2095897782",
+          "https://openalex.org/W2097476575",
+          "https://openalex.org/W2097824618",
+          "https://openalex.org/W2098951785",
+          "https://openalex.org/W2099676868",
+          "https://openalex.org/W2101748726",
+          "https://openalex.org/W2102217299",
+          "https://openalex.org/W2104934425",
+          "https://openalex.org/W2105697998",
+          "https://openalex.org/W2108373826",
+          "https://openalex.org/W2108373994",
+          "https://openalex.org/W2108855375",
+          "https://openalex.org/W2109417296",
+          "https://openalex.org/W2110068780",
+          "https://openalex.org/W2120344759",
+          "https://openalex.org/W2124013425",
+          "https://openalex.org/W2125170576",
+          "https://openalex.org/W2125663148",
+          "https://openalex.org/W2125814863",
+          "https://openalex.org/W2127658943",
+          "https://openalex.org/W2127860293",
+          "https://openalex.org/W2129098199",
+          "https://openalex.org/W2129203245",
+          "https://openalex.org/W2130610340",
+          "https://openalex.org/W2130956966",
+          "https://openalex.org/W2133037534",
+          "https://openalex.org/W2133629433",
+          "https://openalex.org/W2134678519",
+          "https://openalex.org/W2135327250",
+          "https://openalex.org/W2136030067",
+          "https://openalex.org/W2137082708",
+          "https://openalex.org/W2137120610",
+          "https://openalex.org/W2138978488",
+          "https://openalex.org/W2139137116",
+          "https://openalex.org/W2141868068",
+          "https://openalex.org/W2143012846",
+          "https://openalex.org/W2144716650",
+          "https://openalex.org/W2145699122",
+          "https://openalex.org/W2146507205",
+          "https://openalex.org/W2147286476",
+          "https://openalex.org/W2148989392",
+          "https://openalex.org/W2149604782",
+          "https://openalex.org/W2150003757",
+          "https://openalex.org/W2157891998",
+          "https://openalex.org/W2158510250",
+          "https://openalex.org/W2159123942",
+          "https://openalex.org/W2159321073",
+          "https://openalex.org/W2159343439",
+          "https://openalex.org/W2161771297",
+          "https://openalex.org/W2162709457",
+          "https://openalex.org/W2165158988",
+          "https://openalex.org/W2165163860",
+          "https://openalex.org/W2166035250",
+          "https://openalex.org/W2166442530",
+          "https://openalex.org/W2166622301",
+          "https://openalex.org/W2167783980",
+          "https://openalex.org/W2172191543",
+          "https://openalex.org/W2212107724",
+          "https://openalex.org/W2257342069",
+          "https://openalex.org/W2274346642",
+          "https://openalex.org/W2276440020",
+          "https://openalex.org/W2279335743",
+          "https://openalex.org/W2280404143",
+          "https://openalex.org/W2296736194",
+          "https://openalex.org/W2316387878",
+          "https://openalex.org/W2318873727",
+          "https://openalex.org/W2325491525",
+          "https://openalex.org/W2332078202",
+          "https://openalex.org/W2333831866",
+          "https://openalex.org/W2341817708",
+          "https://openalex.org/W2342532453",
+          "https://openalex.org/W2346900030",
+          "https://openalex.org/W2359448896",
+          "https://openalex.org/W2396212074",
+          "https://openalex.org/W2403408669",
+          "https://openalex.org/W2419150001",
+          "https://openalex.org/W2419520222",
+          "https://openalex.org/W2489082772",
+          "https://openalex.org/W2540365220",
+          "https://openalex.org/W2550156746",
+          "https://openalex.org/W2571593691",
+          "https://openalex.org/W2587788458",
+          "https://openalex.org/W2598485812",
+          "https://openalex.org/W2608823051",
+          "https://openalex.org/W2698307513",
+          "https://openalex.org/W2724395578",
+          "https://openalex.org/W2739999387",
+          "https://openalex.org/W2750720130",
+          "https://openalex.org/W2759168201",
+          "https://openalex.org/W2763751618",
+          "https://openalex.org/W2765809068",
+          "https://openalex.org/W2766503825",
+          "https://openalex.org/W2770636609",
+          "https://openalex.org/W2773182070",
+          "https://openalex.org/W2774868879",
+          "https://openalex.org/W2788612624",
+          "https://openalex.org/W2790225925",
+          "https://openalex.org/W2790798571",
+          "https://openalex.org/W2791787856",
+          "https://openalex.org/W2792583887",
+          "https://openalex.org/W2792878487",
+          "https://openalex.org/W2796634598",
+          "https://openalex.org/W2799324172",
+          "https://openalex.org/W2800151641",
+          "https://openalex.org/W2802460516",
+          "https://openalex.org/W2802591674",
+          "https://openalex.org/W2804326218",
+          "https://openalex.org/W2808494670",
+          "https://openalex.org/W2808512787",
+          "https://openalex.org/W2808670625",
+          "https://openalex.org/W2809570974",
+          "https://openalex.org/W2902879240",
+          "https://openalex.org/W2904677804",
+          "https://openalex.org/W2913703264",
+          "https://openalex.org/W2918178231",
+          "https://openalex.org/W2919041980",
+          "https://openalex.org/W2920890714",
+          "https://openalex.org/W2922864197",
+          "https://openalex.org/W2923965910",
+          "https://openalex.org/W2928046056",
+          "https://openalex.org/W2935989633",
+          "https://openalex.org/W2944028175",
+          "https://openalex.org/W2944988359",
+          "https://openalex.org/W2945749611",
+          "https://openalex.org/W2956342844",
+          "https://openalex.org/W2967611657",
+          "https://openalex.org/W2972054198",
+          "https://openalex.org/W2976974401",
+          "https://openalex.org/W2980930900",
+          "https://openalex.org/W2990568486",
+          "https://openalex.org/W2998853022",
+          "https://openalex.org/W3000013244",
+          "https://openalex.org/W3000385575",
+          "https://openalex.org/W3005215640",
+          "https://openalex.org/W3006033724",
+          "https://openalex.org/W3007215987",
+          "https://openalex.org/W3011508332",
+          "https://openalex.org/W3012116029",
+          "https://openalex.org/W3012763772",
+          "https://openalex.org/W3016600903",
+          "https://openalex.org/W3019754109",
+          "https://openalex.org/W3029420556",
+          "https://openalex.org/W3047637682",
+          "https://openalex.org/W3067742226",
+          "https://openalex.org/W3068834188",
+          "https://openalex.org/W3080427029",
+          "https://openalex.org/W3081449785",
+          "https://openalex.org/W3084131871",
+          "https://openalex.org/W3087626507",
+          "https://openalex.org/W3090869459",
+          "https://openalex.org/W3103699740",
+          "https://openalex.org/W3107076227",
+          "https://openalex.org/W3112300343",
+          "https://openalex.org/W3113205298",
+          "https://openalex.org/W3114479866",
+          "https://openalex.org/W3117392398",
+          "https://openalex.org/W3122971552",
+          "https://openalex.org/W3154911274",
+          "https://openalex.org/W3157618458",
+          "https://openalex.org/W3157799680",
+          "https://openalex.org/W3162905796",
+          "https://openalex.org/W3163155077",
+          "https://openalex.org/W3166273078",
+          "https://openalex.org/W3166530379",
+          "https://openalex.org/W3182332828",
+          "https://openalex.org/W3184165494",
+          "https://openalex.org/W3191620207",
+          "https://openalex.org/W3197236462",
+          "https://openalex.org/W3200806187",
+          "https://openalex.org/W3202964273",
+          "https://openalex.org/W3205127831",
+          "https://openalex.org/W3205250645",
+          "https://openalex.org/W3211513489",
+          "https://openalex.org/W3212948591",
+          "https://openalex.org/W3214720083",
+          "https://openalex.org/W3216975858",
+          "https://openalex.org/W3217265335",
+          "https://openalex.org/W4200187347",
+          "https://openalex.org/W4200236650",
+          "https://openalex.org/W4200287358",
+          "https://openalex.org/W4205262708",
+          "https://openalex.org/W4206400960",
+          "https://openalex.org/W4206712537",
+          "https://openalex.org/W4206760173",
+          "https://openalex.org/W4206929266",
+          "https://openalex.org/W4211031844",
+          "https://openalex.org/W4212796095",
+          "https://openalex.org/W4213348585",
+          "https://openalex.org/W4214624040",
+          "https://openalex.org/W4220653597",
+          "https://openalex.org/W4220836760",
+          "https://openalex.org/W4221062698",
+          "https://openalex.org/W4224222931",
+          "https://openalex.org/W4226129967",
+          "https://openalex.org/W4226244469",
+          "https://openalex.org/W4226334101",
+          "https://openalex.org/W4232794027",
+          "https://openalex.org/W4233323540",
+          "https://openalex.org/W4280500778",
+          "https://openalex.org/W4291150331",
+          "https://openalex.org/W4292339330",
+          "https://openalex.org/W4295539699",
+          "https://openalex.org/W4308577033",
+          "https://openalex.org/W4309073385",
+          "https://openalex.org/W4310772912",
+          "https://openalex.org/W4310779572",
+          "https://openalex.org/W4310784069",
+          "https://openalex.org/W4311731279",
+          "https://openalex.org/W4318464563",
+          "https://openalex.org/W4319442152",
+          "https://openalex.org/W4320489583",
+          "https://openalex.org/W4367311192",
+          "https://openalex.org/W4375861198",
+          "https://openalex.org/W4376121239",
+          "https://openalex.org/W4376954935",
+          "https://openalex.org/W4386221161",
+          "https://openalex.org/W4387568739",
+          "https://openalex.org/W4387936522",
+          "https://openalex.org/W4388728623",
+          "https://openalex.org/W4389391175",
+          "https://openalex.org/W4390064966",
+          "https://openalex.org/W4390500913",
+          "https://openalex.org/W4390669227",
+          "https://openalex.org/W4391066577",
+          "https://openalex.org/W6628975196",
+          "https://openalex.org/W6680119784",
+          "https://openalex.org/W6756910751",
+          "https://openalex.org/W6762255422",
+          "https://openalex.org/W6773506921",
+          "https://openalex.org/W6795810674"
+        ],
+        "referenced_works_count": 341,
+        "title": "Advances and Challenges in Sepsis Management: Modern Tools and Future Directions",
+        "type": "review"
+      },
+      {
+        "abstract_inverted_index": {
+          "(13%).": [
+            206
+          ],
+          "(33%),": [
+            200
+          ],
+          "(53%),": [
+            202
+          ],
+          "(FP)": [
+            98
+          ],
+          "(SSRIs)": [
+            34
+          ],
+          "39": [
+            171
+          ],
+          "Anxiety": [
+            0
+          ],
+          "Beyond": [
+            207
+          ],
+          "Bridging": [
+            76
+          ],
+          "By": [
+            116,
+            221
+          ],
+          "Current": [
+            27
+          ],
+          "FP": [
+            179,
+            216
+          ],
+          "FP,": [
+            154
+          ],
+          "Fiber": [
+            96
+          ],
+          "However,": [
+            56
+          ],
+          "In": [
+            144
+          ],
+          "Our": [
+            187
+          ],
+          "PubMed": [
+            175
+          ],
+          "They": [
+            15
+          ],
+          "We": [
+            164
+          ],
+          "a": [
+            102,
+            167,
+            223
+          ],
+          "accessible": [
+            151,
+            218
+          ],
+          "across": [
+            194
+          ],
+          "activity": [
+            110
+          ],
+          "advanced": [
+            81
+          ],
+          "advances": [
+            237
+          ],
+          "advantages": [
+            161
+          ],
+          "affecting": [
+            12
+          ],
+          "aim": [
+            234
+          ],
+          "alternative": [
+            53
+          ],
+          "among": [
+            3
+          ],
+          "an": [
+            66,
+            150
+          ],
+          "analysis": [
+            169
+          ],
+          "and": [
+            35,
+            41,
+            104,
+            141,
+            159,
+            162,
+            203,
+            241
+          ],
+          "animal": [
+            114
+          ],
+          "anxiety": [
+            239
+          ],
+          "anxiety.": [
+            95,
+            186
+          ],
+          "apparatus,": [
+            157
+          ],
+          "approaches.": [
+            55
+          ],
+          "are": [
+            16,
+            42
+          ],
+          "as": [
+            101
+          ],
+          "associated": [
+            43
+          ],
+          "been": [
+            63
+          ],
+          "benzodiazepines,": [
+            36
+          ],
+          "both": [
+            137
+          ],
+          "brain": [
+            129
+          ],
+          "by": [
+            65
+          ],
+          "calcium": [
+            121
+          ],
+          "capable": [
+            84
+          ],
+          "circuits": [
+            92,
+            183
+          ],
+          "comorbid": [
+            18
+          ],
+          "comprehensive": [
+            168
+          ],
+          "conditions": [
+            9
+          ],
+          "conducted": [
+            166
+          ],
+          "contribute": [
+            242
+          ],
+          "contributions": [
+            193
+          ],
+          "cost-effective": [
+            105
+          ],
+          "deeper": [
+            87
+          ],
+          "defined": [
+            128
+          ],
+          "detailing": [
+            155
+          ],
+          "developing": [
+            59
+          ],
+          "development": [
+            245
+          ],
+          "different": [
+            195
+          ],
+          "disorders": [
+            1
+          ],
+          "disorders,": [
+            22
+          ],
+          "disorders.": [
+            75
+          ],
+          "domains,": [
+            197
+          ],
+          "dual-purpose": [
+            204
+          ],
+          "dynamics": [
+            122
+          ],
+          "effects,": [
+            47
+          ],
+          "efficacy": [
+            40
+          ],
+          "emerged": [
+            100
+          ],
+          "employed": [
+            178
+          ],
+          "enabling": [
+            117
+          ],
+          "exacerbating": [
+            24
+          ],
+          "facilitate": [
+            236
+          ],
+          "first": [
+            148
+          ],
+          "for": [
+            52,
+            107,
+            226
+          ],
+          "foundational": [
+            224
+          ],
+          "freely": [
+            112
+          ],
+          "frequently": [
+            17
+          ],
+          "future": [
+            230
+          ],
+          "gap": [
+            79
+          ],
+          "goal": [
+            212
+          ],
+          "guide": [
+            225
+          ],
+          "has": [
+            62,
+            99
+          ],
+          "have": [
+            177
+          ],
+          "health": [
+            8
+          ],
+          "hindered": [
+            64
+          ],
+          "implicated": [
+            184
+          ],
+          "in": [
+            39,
+            58,
+            94,
+            111,
+            123,
+            174,
+            185,
+            238
+          ],
+          "including": [
+            198
+          ],
+          "incomplete": [
+            67
+          ],
+          "indexed": [
+            173
+          ],
+          "inhibitors": [
+            33
+          ],
+          "insight": [
+            88
+          ],
+          "insights": [
+            135
+          ],
+          "integration": [
+            228
+          ],
+          "into": [
+            89,
+            136,
+            229
+          ],
+          "introduction": [
+            152
+          ],
+          "invaluable": [
+            134
+          ],
+          "investigate": [
+            181
+          ],
+          "involved": [
+            93
+          ],
+          "is": [
+            213
+          ],
+          "its": [
+            156,
+            209,
+            227
+          ],
+          "key": [
+            160
+          ],
+          "knowledge": [
+            78
+          ],
+          "limitations.": [
+            163
+          ],
+          "limited": [
+            38
+          ],
+          "lives.": [
+            14
+          ],
+          "make": [
+            215
+          ],
+          "measuring": [
+            108
+          ],
+          "mechanisms": [
+            72
+          ],
+          "mental": [
+            7
+          ],
+          "method": [
+            132
+          ],
+          "models.": [
+            115
+          ],
+          "monitoring": [
+            119
+          ],
+          "more": [
+            217
+          ],
+          "most": [
+            5
+          ],
+          "moving": [
+            113
+          ],
+          "need": [
+            51
+          ],
+          "neural": [
+            71,
+            91,
+            109,
+            125,
+            182
+          ],
+          "new": [
+            60
+          ],
+          "normal": [
+            138
+          ],
+          "novel": [
+            247
+          ],
+          "of": [
+            69,
+            85,
+            120,
+            170,
+            246
+          ],
+          "offers": [
+            133
+          ],
+          "often": [
+            23
+          ],
+          "other": [
+            20
+          ],
+          "our": [
+            211
+          ],
+          "pathological": [
+            142,
+            201
+          ],
+          "patients'": [
+            13
+          ],
+          "pharmacological": [
+            28
+          ],
+          "photometry": [
+            97
+          ],
+          "physiological": [
+            139,
+            199
+          ],
+          "populations": [
+            126
+          ],
+          "powerful": [
+            103
+          ],
+          "present": [
+            149
+          ],
+          "prevalent": [
+            6
+          ],
+          "procedures,": [
+            158
+          ],
+          "processes": [
+            140
+          ],
+          "progress": [
+            57
+          ],
+          "projects,": [
+            232
+          ],
+          "providing": [
+            86,
+            222
+          ],
+          "psychiatric": [
+            21
+          ],
+          "rank": [
+            2
+          ],
+          "real-time": [
+            118
+          ],
+          "regions,": [
+            130
+          ],
+          "remain": [
+            37
+          ],
+          "requires": [
+            80
+          ],
+          "research": [
+            82,
+            196,
+            240
+          ],
+          "researchers.": [
+            220
+          ],
+          "reuptake": [
+            32
+          ],
+          "reveals": [
+            189
+          ],
+          "review": [
+            188
+          ],
+          "review,": [
+            146
+          ],
+          "scientific": [
+            231
+          ],
+          "selective": [
+            30
+          ],
+          "serotonin": [
+            31
+          ],
+          "severity.": [
+            26
+          ],
+          "side": [
+            46
+          ],
+          "significant": [
+            192
+          ],
+          "significantly": [
+            11
+          ],
+          "specific": [
+            124
+          ],
+          "states.": [
+            143
+          ],
+          "strategies.": [
+            249
+          ],
+          "studies": [
+            172,
+            205
+          ],
+          "summarizing": [
+            208
+          ],
+          "technique": [
+            106
+          ],
+          "techniques'": [
+            191
+          ],
+          "that": [
+            176
+          ],
+          "the": [
+            4,
+            49,
+            70,
+            90,
+            190,
+            244
+          ],
+          "their": [
+            25
+          ],
+          "then": [
+            165
+          ],
+          "therapeutic": [
+            54,
+            248
+          ],
+          "these": [
+            74
+          ],
+          "this": [
+            77,
+            131,
+            145
+          ],
+          "to": [
+            153,
+            180,
+            214,
+            219,
+            235,
+            243
+          ],
+          "tools": [
+            83
+          ],
+          "treatments": [
+            61
+          ],
+          "treatments;": [
+            29
+          ],
+          "underlying": [
+            73
+          ],
+          "underscoring": [
+            48
+          ],
+          "understanding": [
+            68
+          ],
+          "undesirable": [
+            45
+          ],
+          "urgent": [
+            50
+          ],
+          "utility,": [
+            210
+          ],
+          "we": [
+            147,
+            233
+          ],
+          "with": [
+            19,
+            44
+          ],
+          "within": [
+            127
+          ],
+          "worldwide,": [
+            10
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+              }
+            ],
+            "author": {
+              "display_name": "Salma R. Abdennebi",
+              "id": "https://openalex.org/A5119269137",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "FR"
+            ],
+            "institutions": [
+              {
+                "country_code": "FR",
+                "display_name": "Inserm",
+                "id": "https://openalex.org/I154526488",
+                "lineage": [
+                  "https://openalex.org/I154526488"
+                ],
+                "ror": "https://ror.org/02vjkv261",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université de Versailles Saint-Quentin-en-Yvelines",
+                "id": "https://openalex.org/I195731000",
+                "lineage": [
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03mkjjy25",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Paris-Saclay",
+                "id": "https://openalex.org/I277688954",
+                "lineage": [
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03xjwb503",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Centre de recherche en Epidémiologie et Santé des Populations",
+                "id": "https://openalex.org/I4210103698",
+                "lineage": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I4210164847",
+                  "https://openalex.org/I4405259118"
+                ],
+                "ror": "https://ror.org/01ed4t417",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France",
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+            ],
+            "raw_author_name": "Salma R. Abdennebi",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+              }
+            ],
+            "author": {
+              "display_name": "Nour El Haya Touihri",
+              "id": "https://openalex.org/A5119269138",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "FR"
+            ],
+            "institutions": [
+              {
+                "country_code": "FR",
+                "display_name": "Inserm",
+                "id": "https://openalex.org/I154526488",
+                "lineage": [
+                  "https://openalex.org/I154526488"
+                ],
+                "ror": "https://ror.org/02vjkv261",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université de Versailles Saint-Quentin-en-Yvelines",
+                "id": "https://openalex.org/I195731000",
+                "lineage": [
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03mkjjy25",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Paris-Saclay",
+                "id": "https://openalex.org/I277688954",
+                "lineage": [
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03xjwb503",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Centre de recherche en Epidémiologie et Santé des Populations",
+                "id": "https://openalex.org/I4210103698",
+                "lineage": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I4210164847",
+                  "https://openalex.org/I4405259118"
+                ],
+                "ror": "https://ror.org/01ed4t417",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France",
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+            ],
+            "raw_author_name": "Nour El Haya Touihri",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), MOODS UMR1018, CESP‐Inserm, Team Moods, Faculté de Médecine Université Paris‐Saclay  Le Kremlin‐Bicêtre France"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162942"
+                ],
+                "raw_affiliation_string": "Service Hospitalo‐Universitaire de Psychiatrie, Hôpital de Bicêtre Hôpitaux Universitaires Paris‐Saclay, Assistance Publique‐Hôpitaux de Paris  Le Kremlin‐Bicêtre France"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162942",
+                  "https://openalex.org/I4210097159"
+                ],
+                "raw_affiliation_string": "Service Hospitalo-Universitaire de Psychiatrie, Hôpital de Bicêtre, Hôpitaux Universitaires Paris-Saclay, Assistance Publique-Hôpitaux de Paris, Le Kremlin-Bicêtre, France"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I277688954"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), MOODS UMR1018, CESP-Inserm, Team Moods, Faculté de Médecine, Université Paris-Saclay, Le Kremlin-Bicêtre, France"
+              }
+            ],
+            "author": {
+              "display_name": "Emmanuelle Corruble",
+              "id": "https://openalex.org/A5078636406",
+              "orcid": "https://orcid.org/0000-0002-9441-6079"
+            },
+            "author_position": "middle",
+            "countries": [
+              "FR"
+            ],
+            "institutions": [
+              {
+                "country_code": "FR",
+                "display_name": "Inserm",
+                "id": "https://openalex.org/I154526488",
+                "lineage": [
+                  "https://openalex.org/I154526488"
+                ],
+                "ror": "https://ror.org/02vjkv261",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Paris-Saclay",
+                "id": "https://openalex.org/I277688954",
+                "lineage": [
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03xjwb503",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Assistance Publique – Hôpitaux de Paris",
+                "id": "https://openalex.org/I4210097159",
+                "lineage": [
+                  "https://openalex.org/I4210097159"
+                ],
+                "ror": "https://ror.org/00pg5jh14",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Centre de recherche en Epidémiologie et Santé des Populations",
+                "id": "https://openalex.org/I4210103698",
+                "lineage": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I4210164847",
+                  "https://openalex.org/I4405259118"
+                ],
+                "ror": "https://ror.org/01ed4t417",
+                "type": "facility"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Bicêtre Hospital",
+                "id": "https://openalex.org/I4210162942",
+                "lineage": [
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210162942",
+                  "https://openalex.org/I4405259118"
+                ],
+                "ror": "https://ror.org/05c9p1x46",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), MOODS UMR1018, CESP‐Inserm, Team Moods, Faculté de Médecine Université Paris‐Saclay  Le Kremlin‐Bicêtre France",
+              "Service Hospitalo‐Universitaire de Psychiatrie, Hôpital de Bicêtre Hôpitaux Universitaires Paris‐Saclay, Assistance Publique‐Hôpitaux de Paris  Le Kremlin‐Bicêtre France",
+              "Service Hospitalo-Universitaire de Psychiatrie, Hôpital de Bicêtre, Hôpitaux Universitaires Paris-Saclay, Assistance Publique-Hôpitaux de Paris, Le Kremlin-Bicêtre, France",
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), MOODS UMR1018, CESP-Inserm, Team Moods, Faculté de Médecine, Université Paris-Saclay, Le Kremlin-Bicêtre, France"
+            ],
+            "raw_author_name": "Emmanuelle Corruble",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+              }
+            ],
+            "author": {
+              "display_name": "Denis J. David",
+              "id": "https://openalex.org/A5062468145",
+              "orcid": "https://orcid.org/0000-0002-0506-6688"
+            },
+            "author_position": "middle",
+            "countries": [
+              "FR"
+            ],
+            "institutions": [
+              {
+                "country_code": "FR",
+                "display_name": "Inserm",
+                "id": "https://openalex.org/I154526488",
+                "lineage": [
+                  "https://openalex.org/I154526488"
+                ],
+                "ror": "https://ror.org/02vjkv261",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université de Versailles Saint-Quentin-en-Yvelines",
+                "id": "https://openalex.org/I195731000",
+                "lineage": [
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03mkjjy25",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Paris-Saclay",
+                "id": "https://openalex.org/I277688954",
+                "lineage": [
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03xjwb503",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Centre de recherche en Epidémiologie et Santé des Populations",
+                "id": "https://openalex.org/I4210103698",
+                "lineage": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I4210164847",
+                  "https://openalex.org/I4405259118"
+                ],
+                "ror": "https://ror.org/01ed4t417",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France",
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+            ],
+            "raw_author_name": "Denis J. David",
+            "raw_orcid": "https://orcid.org/0000-0002-0506-6688"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "raw_affiliation_string": "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+              }
+            ],
+            "author": {
+              "display_name": "Indira Mendez‐David",
+              "id": "https://openalex.org/A5050500376",
+              "orcid": "https://orcid.org/0000-0001-9759-0833"
+            },
+            "author_position": "last",
+            "countries": [
+              "FR"
+            ],
+            "institutions": [
+              {
+                "country_code": "FR",
+                "display_name": "Inserm",
+                "id": "https://openalex.org/I154526488",
+                "lineage": [
+                  "https://openalex.org/I154526488"
+                ],
+                "ror": "https://ror.org/02vjkv261",
+                "type": "government"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université de Versailles Saint-Quentin-en-Yvelines",
+                "id": "https://openalex.org/I195731000",
+                "lineage": [
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03mkjjy25",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Université Paris-Saclay",
+                "id": "https://openalex.org/I277688954",
+                "lineage": [
+                  "https://openalex.org/I277688954"
+                ],
+                "ror": "https://ror.org/03xjwb503",
+                "type": "education"
+              },
+              {
+                "country_code": "FR",
+                "display_name": "Centre de recherche en Epidémiologie et Santé des Populations",
+                "id": "https://openalex.org/I4210103698",
+                "lineage": [
+                  "https://openalex.org/I154526488",
+                  "https://openalex.org/I195731000",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210097159",
+                  "https://openalex.org/I4210103698",
+                  "https://openalex.org/I4210164847",
+                  "https://openalex.org/I4405259118"
+                ],
+                "ror": "https://ror.org/01ed4t417",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP‐Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan Université Paris‐Saclay, UVSQ  Orsay France",
+              "Centre de recherche en Epidémiologie et Santé des Populations (CESP), UMR 1018, CESP-Inserm, Team Moods, Faculté de Pharmacie, Bâtiment Henri Moissan, Université Paris-Saclay, UVSQ, Orsay, France"
+            ],
+            "raw_author_name": "Indira Mendez‐David",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1111/fcp.70043",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1111/fcp.70043",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/fcp.70043",
+          "raw_source_name": "Fundamental &amp; Clinical Pharmacology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Fundamental and Clinical Pharmacology",
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "host_organization_name": "Wiley",
+            "id": "https://openalex.org/S35226884",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0767-3981",
+              "1472-8206"
+            ],
+            "issn_l": "0767-3981",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "e70043",
+          "issue": "5",
+          "last_page": "e70043",
+          "volume": "39"
+        },
+        "cited_by_count": 2,
+        "display_name": "Leveraging Fiber Photometry to Decipher Neural Circuits Underlying Anxiety in Mice",
+        "doi": "https://doi.org/10.1111/fcp.70043",
+        "id": "https://openalex.org/W4413107292",
+        "ids": {
+          "doi": "https://doi.org/10.1111/fcp.70043",
+          "openalex": "https://openalex.org/W4413107292",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/40789675"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/fcp.70043"
+        },
+        "primary_location": {
+          "id": "doi:10.1111/fcp.70043",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1111/fcp.70043",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/fcp.70043",
+          "raw_source_name": "Fundamental &amp; Clinical Pharmacology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Fundamental and Clinical Pharmacology",
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "host_organization_name": "Wiley",
+            "id": "https://openalex.org/S35226884",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0767-3981",
+              "1472-8206"
+            ],
+            "issn_l": "0767-3981",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2025-08-11",
+        "publication_year": 2025,
+        "referenced_works": [
+          "https://openalex.org/W1875506666",
+          "https://openalex.org/W1973261402",
+          "https://openalex.org/W2016365402",
+          "https://openalex.org/W2034400748",
+          "https://openalex.org/W2041060053",
+          "https://openalex.org/W2051719689",
+          "https://openalex.org/W2055725584",
+          "https://openalex.org/W2060978874",
+          "https://openalex.org/W2114135413",
+          "https://openalex.org/W2114151143",
+          "https://openalex.org/W2142659066",
+          "https://openalex.org/W2142798211",
+          "https://openalex.org/W2147800368",
+          "https://openalex.org/W2171332611",
+          "https://openalex.org/W2274452385",
+          "https://openalex.org/W2291957660",
+          "https://openalex.org/W2546124122",
+          "https://openalex.org/W2767578348",
+          "https://openalex.org/W2773803332",
+          "https://openalex.org/W2807588602",
+          "https://openalex.org/W2878370351",
+          "https://openalex.org/W2884641336",
+          "https://openalex.org/W2898238798",
+          "https://openalex.org/W2901153433",
+          "https://openalex.org/W2905176374",
+          "https://openalex.org/W2921075922",
+          "https://openalex.org/W2945188862",
+          "https://openalex.org/W2950849463",
+          "https://openalex.org/W2952373194",
+          "https://openalex.org/W2970067111",
+          "https://openalex.org/W2981227605",
+          "https://openalex.org/W2990708009",
+          "https://openalex.org/W2998371471",
+          "https://openalex.org/W3015437409",
+          "https://openalex.org/W3022051147",
+          "https://openalex.org/W3031362435",
+          "https://openalex.org/W3038046194",
+          "https://openalex.org/W3046360811",
+          "https://openalex.org/W3046852106",
+          "https://openalex.org/W3047093352",
+          "https://openalex.org/W3082795532",
+          "https://openalex.org/W3109032036",
+          "https://openalex.org/W3117293313",
+          "https://openalex.org/W3146171909",
+          "https://openalex.org/W3162812404",
+          "https://openalex.org/W3183557027",
+          "https://openalex.org/W3197957209",
+          "https://openalex.org/W3198633625",
+          "https://openalex.org/W3200389116",
+          "https://openalex.org/W3205456555",
+          "https://openalex.org/W4210267227",
+          "https://openalex.org/W4213251494",
+          "https://openalex.org/W4213347682",
+          "https://openalex.org/W4220982034",
+          "https://openalex.org/W4226059393",
+          "https://openalex.org/W4283380446",
+          "https://openalex.org/W4285128426",
+          "https://openalex.org/W4293092465",
+          "https://openalex.org/W4304789338",
+          "https://openalex.org/W4307583447",
+          "https://openalex.org/W4309852926",
+          "https://openalex.org/W4311584806",
+          "https://openalex.org/W4313485035",
+          "https://openalex.org/W4327938851",
+          "https://openalex.org/W4363645824",
+          "https://openalex.org/W4367394870",
+          "https://openalex.org/W4368618203",
+          "https://openalex.org/W4378746242",
+          "https://openalex.org/W4385969373",
+          "https://openalex.org/W4386033582",
+          "https://openalex.org/W4387357911",
+          "https://openalex.org/W4388662506",
+          "https://openalex.org/W4389371589",
+          "https://openalex.org/W4389781439",
+          "https://openalex.org/W4391056187",
+          "https://openalex.org/W4391486105",
+          "https://openalex.org/W4391752708",
+          "https://openalex.org/W4392901875",
+          "https://openalex.org/W4394954104",
+          "https://openalex.org/W4396738959",
+          "https://openalex.org/W4398139792",
+          "https://openalex.org/W4400199093",
+          "https://openalex.org/W4400913706",
+          "https://openalex.org/W4401457400",
+          "https://openalex.org/W4402281821",
+          "https://openalex.org/W4403146116",
+          "https://openalex.org/W4405224214",
+          "https://openalex.org/W4405624547",
+          "https://openalex.org/W4405873477",
+          "https://openalex.org/W4405909871",
+          "https://openalex.org/W4406903757",
+          "https://openalex.org/W4407315997",
+          "https://openalex.org/W4407704216",
+          "https://openalex.org/W4407736038",
+          "https://openalex.org/W4413107292"
+        ],
+        "referenced_works_count": 95,
+        "title": "Leveraging Fiber Photometry to Decipher Neural Circuits Underlying Anxiety in Mice",
+        "type": "review"
+      }
+    ]
+  },
+  "response_hash": "7907ae2a4098f6d6c7d1036c99c1febcd89043325cd24e9b24033e29c06f675b",
+  "retrieved_at": "2026-07-14T13:51:16Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

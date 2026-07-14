@@ -1,0 +1,401 @@
+{
+  "endpoint": "works",
+  "request_key": "e818f659bdc01ffb999aefafa294cba6a66790450170815d40dacd9923f4e65e",
+  "request_params": {
+    "per-page": 5,
+    "search": "PharMeBINet V3",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 2,
+      "db_response_time_ms": 20,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (PharMeBINet V3)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "PharMeBINet V3"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:PharMeBINet V3&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "GraphML,": [
+            10
+          ],
+          "JSON,": [
+            9
+          ],
+          "Neo4j": [
+            5,
+            7
+          ],
+          "PharMeBINet": [
+            0
+          ],
+          "TSV": [
+            12
+          ],
+          "V3": [
+            1
+          ],
+          "and": [
+            11
+          ],
+          "as": [
+            4
+          ],
+          "data": [
+            3
+          ],
+          "database,": [
+            6
+          ],
+          "dump,": [
+            8
+          ],
+          "files.": [
+            13
+          ],
+          "with": [
+            2
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I20121455"
+                ],
+                "raw_affiliation_string": "Bielefeld University"
+              }
+            ],
+            "author": {
+              "display_name": "Cassandra Königs",
+              "id": "https://openalex.org/A5002979041",
+              "orcid": "https://orcid.org/0000-0001-8991-9272"
+            },
+            "author_position": "first",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Bielefeld University",
+                "id": "https://openalex.org/I20121455",
+                "lineage": [
+                  "https://openalex.org/I20121455"
+                ],
+                "ror": "https://ror.org/02hpadn98",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Bielefeld University"
+            ],
+            "raw_author_name": "Königs, Cassandra",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.5281/zenodo.17877565",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.17877565",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset",
+          "source": {
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "European Organization for Nuclear Research",
+            "id": "https://openalex.org/S4306400562",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": null
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "PharMeBINet V3",
+        "doi": "https://doi.org/10.5281/zenodo.17877565",
+        "id": "https://openalex.org/W7139006633",
+        "ids": {
+          "doi": "https://doi.org/10.5281/zenodo.17877565",
+          "openalex": "https://openalex.org/W7139006633"
+        },
+        "is_retracted": false,
+        "language": null,
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://doi.org/10.5281/zenodo.17877565"
+        },
+        "primary_location": {
+          "id": "doi:10.5281/zenodo.17877565",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.17877565",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset",
+          "source": {
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "European Organization for Nuclear Research",
+            "id": "https://openalex.org/S4306400562",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": null
+        },
+        "publication_date": "2025-10-30",
+        "publication_year": 2025,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "PharMeBINet V3",
+        "type": "dataset"
+      },
+      {
+        "abstract_inverted_index": {
+          "GraphML,": [
+            10
+          ],
+          "JSON,": [
+            9
+          ],
+          "Neo4j": [
+            5,
+            7
+          ],
+          "PharMeBINet": [
+            0
+          ],
+          "TSV": [
+            12
+          ],
+          "V3": [
+            1
+          ],
+          "and": [
+            11
+          ],
+          "as": [
+            4
+          ],
+          "data": [
+            3
+          ],
+          "database,": [
+            6
+          ],
+          "dump,": [
+            8
+          ],
+          "files.": [
+            13
+          ],
+          "with": [
+            2
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I20121455"
+                ],
+                "raw_affiliation_string": "Bielefeld University"
+              }
+            ],
+            "author": {
+              "display_name": "Cassandra Königs",
+              "id": "https://openalex.org/A5002979041",
+              "orcid": "https://orcid.org/0000-0001-8991-9272"
+            },
+            "author_position": "first",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Bielefeld University",
+                "id": "https://openalex.org/I20121455",
+                "lineage": [
+                  "https://openalex.org/I20121455"
+                ],
+                "ror": "https://ror.org/02hpadn98",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Bielefeld University"
+            ],
+            "raw_author_name": "Königs, Cassandra",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.5281/zenodo.17877564",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.17877564",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset",
+          "source": {
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "European Organization for Nuclear Research",
+            "id": "https://openalex.org/S4306400562",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": null
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "PharMeBINet V3",
+        "doi": "https://doi.org/10.5281/zenodo.17877564",
+        "id": "https://openalex.org/W7138996353",
+        "ids": {
+          "doi": "https://doi.org/10.5281/zenodo.17877564",
+          "openalex": "https://openalex.org/W7138996353"
+        },
+        "is_retracted": false,
+        "language": null,
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://doi.org/10.5281/zenodo.17877564"
+        },
+        "primary_location": {
+          "id": "doi:10.5281/zenodo.17877564",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.17877564",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset",
+          "source": {
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "European Organization for Nuclear Research",
+            "id": "https://openalex.org/S4306400562",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": null
+        },
+        "publication_date": "2025-10-30",
+        "publication_year": 2025,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "PharMeBINet V3",
+        "type": "dataset"
+      }
+    ]
+  },
+  "response_hash": "a9a4839db6615df5d4e7528c9e213a569c671c32216c3f13d2bd9921632ba124",
+  "retrieved_at": "2026-07-14T13:48:35Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

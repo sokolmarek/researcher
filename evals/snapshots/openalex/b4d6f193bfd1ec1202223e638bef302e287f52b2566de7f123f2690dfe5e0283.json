@@ -1,0 +1,167 @@
+{
+  "endpoint": "works/doi:10.1016/j.matpr.2020.11.057",
+  "request_key": "b4d6f193bfd1ec1202223e638bef302e287f52b2566de7f123f2690dfe5e0283",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I875944469"
+            ],
+            "raw_affiliation_string": "EEE Department, Koneru Lakshmaiah Educational Foundation, Guntur, Andhra Pradesh, India"
+          }
+        ],
+        "author": {
+          "display_name": "L. B. Bharath Raju",
+          "id": "https://openalex.org/A5070069029",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Koneru Lakshmaiah Education Foundation",
+            "id": "https://openalex.org/I875944469",
+            "lineage": [
+              "https://openalex.org/I875944469"
+            ],
+            "ror": "https://ror.org/02k949197",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "EEE Department, Koneru Lakshmaiah Educational Foundation, Guntur, Andhra Pradesh, India"
+        ],
+        "raw_author_name": "L. Bangar Raju",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I875944469"
+            ],
+            "raw_affiliation_string": "EEE Department, Koneru Lakshmaiah Educational Foundation, Guntur, Andhra Pradesh, India"
+          }
+        ],
+        "author": {
+          "display_name": "Katta Subba Rao",
+          "id": "https://openalex.org/A5009465109",
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Koneru Lakshmaiah Education Foundation",
+            "id": "https://openalex.org/I875944469",
+            "lineage": [
+              "https://openalex.org/I875944469"
+            ],
+            "ror": "https://ror.org/02k949197",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "EEE Department, Koneru Lakshmaiah Educational Foundation, Guntur, Andhra Pradesh, India"
+        ],
+        "raw_author_name": "K. Subba Rao",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": null,
+      "issue": null,
+      "last_page": null,
+      "volume": null
+    },
+    "cited_by_count": 3,
+    "display_name": "WITHDRAWN: Control and stability of micro grids during transient states",
+    "doi": "https://doi.org/10.1016/j.matpr.2020.11.057",
+    "id": "https://openalex.org/W3121048880",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.matpr.2020.11.057",
+      "mag": "3121048880",
+      "openalex": "https://openalex.org/W3121048880"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.matpr.2020.11.057",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.matpr.2020.11.057",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Materials Today: Proceedings",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Materials Today Proceedings",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S2898407351",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "2214-7853"
+        ],
+        "issn_l": "2214-7853",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2021-01-01",
+    "publication_year": 2021,
+    "referenced_works": [
+      "https://openalex.org/W1965086952",
+      "https://openalex.org/W2102014627",
+      "https://openalex.org/W2125909959",
+      "https://openalex.org/W2513110265",
+      "https://openalex.org/W2770854281",
+      "https://openalex.org/W2797051622",
+      "https://openalex.org/W2954153511",
+      "https://openalex.org/W2955078011",
+      "https://openalex.org/W3003334666",
+      "https://openalex.org/W3016994781",
+      "https://openalex.org/W3048453447",
+      "https://openalex.org/W6746402011",
+      "https://openalex.org/W6750383866"
+    ],
+    "referenced_works_count": 13,
+    "title": "WITHDRAWN: Control and stability of micro grids during transient states",
+    "type": "article"
+  },
+  "response_hash": "35a32f7b13ba7ac3bfed805f334833729db1b8ae53ed37d656742732f5a096a5",
+  "retrieved_at": "2026-07-14T13:48:50Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

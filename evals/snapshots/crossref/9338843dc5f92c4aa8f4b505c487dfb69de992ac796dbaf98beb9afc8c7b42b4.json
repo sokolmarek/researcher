@@ -1,0 +1,3021 @@
+{
+  "endpoint": "works",
+  "request_key": "9338843dc5f92c4aa8f4b505c487dfb69de992ac796dbaf98beb9afc8c7b42b4",
+  "request_params": {
+    "query.bibliographic": "Deep learning in the cross-time frequency domain for sleep staging from a single-lead elec",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1088/1361-6579/aaf339",
+          "ISSN": [
+            "0967-3334",
+            "1361-6579"
+          ],
+          "URL": "https://doi.org/10.1088/1361-6579/aaf339",
+          "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    <jats:italic>Objective</jats:italic>\n                    : This study classifies sleep stages from a single lead electrocardiogram (ECG) using beat detection, cardiorespiratory coupling in the time-frequency domain and a deep convolutional neural network (CNN).\n                    <jats:italic>Approach</jats:italic>\n                    : An ECG-derived respiration (EDR) signal and synchronous beat-to-beat heart rate variability (HRV) time series were derived from the ECG using previously described robust algorithms. A measure of cardiorespiratory coupling (CRC) was extracted by calculating the coherence and cross-spectrogram of the EDR and HRV signal in 5 min windows. A CNN was then trained to classify the sleep stages (wake, rapid-eye-movement (REM) sleep, non-REM (NREM) light sleep and NREM deep sleep) from the corresponding CRC spectrograms. A support vector machine was then used to combine the output of CNN with the other features derived from the ECG, including phase-rectified signal averaging (PRSA), sample entropy, as well as standard spectral and temporal HRV measures. The MIT-BIH Polysomnographic Database (SLPDB), the PhysioNet/Computing in Cardiology Challenge 2018 database (CinC2018) and the Sleep Heart Health Study (SHHS) database, all expert-annotated for sleep stages, were used to train and validate the algorithm.\n                    <jats:italic>Main results</jats:italic>\n                    : Ten-fold cross validation results showed that the proposed algorithm achieved an accuracy (Acc) of 75.4% and a Cohen’s kappa coefficient of\n                    <jats:inline-formula/>\n                      =  0.54 on the out of sample validation data in the classification of Wake, REM, NREM light and deep sleep in SLPDB. This rose to Acc  =  81.6% and\n                    <jats:inline-formula/>\n                      =  0.63 for the classification of Wake, REM sleep and NREM sleep and Acc  =  85.1% and\n                    <jats:inline-formula/>\n                      =  0.68 for the classification of NREM sleep versus REM/wakefulness in SLPDB.\n                    <jats:italic>Significance</jats:italic>\n                    : The proposed ECG-based sleep stage classification approach that represents the highest reported results on non-electroencephalographic data and uses datasets over ten times larger than those in previous studies. By using a state-of-the-art QRS detector and deep learning model, the system does not require human annotation and can therefore be scaled for mass analysis.\n                  </jats:p>",
+          "assertion": [
+            {
+              "label": "Article Title",
+              "name": "article_title",
+              "value": "Deep learning in the cross-time frequency domain for sleep staging from a single-lead electrocardiogram"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journal_title",
+              "value": "Physiological Measurement"
+            },
+            {
+              "label": "Article Type",
+              "name": "article_type",
+              "value": "paper"
+            },
+            {
+              "label": "Copyright Information",
+              "name": "copyright_information",
+              "value": "© 2018 Institute of Physics and Engineering in Medicine. All rights, including for text and data mining, AI training, and similar technologies, are reserved."
+            },
+            {
+              "group": {
+                "label": "Publication dates",
+                "name": "publication_dates"
+              },
+              "label": "Date Received",
+              "name": "date_received",
+              "value": "2018-08-31"
+            },
+            {
+              "group": {
+                "label": "Publication dates",
+                "name": "publication_dates"
+              },
+              "label": "Date Accepted",
+              "name": "date_accepted",
+              "value": "2018-11-23"
+            },
+            {
+              "group": {
+                "label": "Publication dates",
+                "name": "publication_dates"
+              },
+              "label": "Online publication date",
+              "name": "date_epub",
+              "value": "2018-12-21"
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Emory University"
+                }
+              ],
+              "family": "Li",
+              "given": "Qiao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "University of Oxford"
+                }
+              ],
+              "family": "Li",
+              "given": "Qichen",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Southeast University"
+                }
+              ],
+              "family": "Liu",
+              "given": "Chengyu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-0348-4261",
+              "affiliation": [
+                {
+                  "name": "Georgia Institute of Technology"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Shashikumar",
+              "given": "Supreeth P",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Emory University"
+                }
+              ],
+              "family": "Nemati",
+              "given": "Shamim",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Emory University"
+                },
+                {
+                  "name": "Georgia Institute of Technology"
+                },
+                {
+                  "name": "Emory University"
+                }
+              ],
+              "family": "Clifford",
+              "given": "Gari D",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Physiological Measurement"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "iopscience.iop.org"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2018,
+                11,
+                23
+              ]
+            ],
+            "date-time": "2018-11-23T17:16:36Z",
+            "timestamp": 1542993396000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                23
+              ]
+            ],
+            "date-time": "2026-05-23T12:23:06Z",
+            "timestamp": 1779538986000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/100000002",
+              "award": [
+                "5R01HL136205"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "5R01HL136205"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "crossref",
+              "id": [
+                {
+                  "asserted-by": "crossref",
+                  "id": "10.13039/100000002",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Institutes of Health"
+            },
+            {
+              "award": [
+                "R24 HL114473"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "R24 HL114473"
+                  ]
+                }
+              ],
+              "name": "NSRR"
+            },
+            {
+              "award": [
+                "U01HL53916"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "U01HL53916"
+                  ]
+                }
+              ],
+              "name": "NHLBI National Sleep Research Resource and grants"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2026-06-29T21:41:16Z",
+            "timestamp": 1782769276390,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 78,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0967-3334"
+            },
+            {
+              "type": "electronic",
+              "value": "1361-6579"
+            }
+          ],
+          "issue": "12",
+          "issued": {
+            "date-parts": [
+              [
+                2018,
+                12,
+                1
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "12",
+            "published-online": {
+              "date-parts": [
+                [
+                  2018,
+                  12,
+                  21
+                ]
+              ]
+            },
+            "published-print": {
+              "date-parts": [
+                [
+                  2018,
+                  12,
+                  1
+                ]
+              ]
+            }
+          },
+          "license": [
+            {
+              "URL": "https://publishingsupport.iopscience.iop.org/iop-standard/v1",
+              "content-version": "vor",
+              "delay-in-days": 20,
+              "start": {
+                "date-parts": [
+                  [
+                    2018,
+                    12,
+                    21
+                  ]
+                ],
+                "date-time": "2018-12-21T00:00:00Z",
+                "timestamp": 1545350400000
+              }
+            },
+            {
+              "URL": "https://iopscience.iop.org/info/page/text-and-data-mining",
+              "content-version": "tdm",
+              "delay-in-days": 20,
+              "start": {
+                "date-parts": [
+                  [
+                    2018,
+                    12,
+                    21
+                  ]
+                ],
+                "date-time": "2018-12-21T00:00:00Z",
+                "timestamp": 1545350400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://stacks.iop.org/0967-3334/39/i=12/a=124005?key=crossref.05230137f43c00f0fa27e46d91dd5fec",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://iopscience.iop.org/article/10.1088/1361-6579/aaf339/pdf",
+              "content-type": "application/pdf",
+              "content-version": "am",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://stacks.iop.org/0967-3334/39/i=12/a=124005/pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://iopscience.iop.org/article/10.1088/1361-6579/aaf339",
+              "content-type": "text/html",
+              "content-version": "am",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://iopscience.iop.org/article/10.1088/1361-6579/aaf339",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://iopscience.iop.org/article/10.1088/1361-6579/aaf339/pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://iopscience.iop.org/article/10.1088/1361-6579/aaf339/pdf",
+              "content-type": "application/pdf",
+              "content-version": "am",
+              "intended-application": "syndication"
+            },
+            {
+              "URL": "https://iopscience.iop.org/article/10.1088/1361-6579/aaf339/pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "syndication"
+            },
+            {
+              "URL": "http://iopscience.iop.org/article/10.1088/1361-6579/aaf339/pdf",
+              "content-type": "application/pdf",
+              "content-version": "am",
+              "intended-application": "similarity-checking"
+            },
+            {
+              "URL": "http://stacks.iop.org/0967-3334/39/i=12/a=124005/pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            },
+            {
+              "URL": "http://stacks.iop.org/0967-3334/39/i=12/a=124005?key=crossref.05230137f43c00f0fa27e46d91dd5fec",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            },
+            {
+              "URL": "https://iopscience.iop.org/article/10.1088/1361-6579/aaf339/pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "266",
+          "page": "124005",
+          "prefix": "10.1088",
+          "published": {
+            "date-parts": [
+              [
+                2018,
+                12,
+                1
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2018,
+                12,
+                21
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2018,
+                12,
+                1
+              ]
+            ]
+          },
+          "publisher": "IOP Publishing",
+          "reference": [
+            {
+              "DOI": "10.1126/science.118.3062.273",
+              "article-title": "Regularly occurring periods of eye motility, and concomitant phenomena, during sleep",
+              "author": "Aserinsky",
+              "doi-asserted-by": "publisher",
+              "first-page": "273",
+              "journal-title": "Science",
+              "key": "pmeaaaf339bib001",
+              "type": "journal-article",
+              "volume": "118",
+              "year": "1953"
+            },
+            {
+              "DOI": "10.1371/journal.pone.0142143",
+              "article-title": "Network physiology: how organ systems dynamically interact",
+              "author": "Bartsch",
+              "doi-asserted-by": "publisher",
+              "first-page": "e0142143",
+              "journal-title": "PLoS One",
+              "key": "pmeaaaf339bib002",
+              "type": "journal-article",
+              "volume": "10",
+              "year": "2015"
+            },
+            {
+              "article-title": "Three independent forms of cardio-respiratory coupling: transitions across sleep stages",
+              "author": "Bartsch",
+              "first-page": "781",
+              "key": "pmeaaaf339bib003",
+              "type": "conference-proceedings",
+              "volume": "41",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1073/pnas.1204568109",
+              "article-title": "Phase transitions in physiologic coupling",
+              "author": "Bartsch",
+              "doi-asserted-by": "publisher",
+              "first-page": "10181",
+              "journal-title": "Proc. Natl Acad. Sci.",
+              "key": "pmeaaaf339bib004",
+              "type": "journal-article",
+              "volume": "109",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1038/ncomms1705",
+              "article-title": "Network physiology reveals relations between network topology and physiological function",
+              "author": "Bashan",
+              "doi-asserted-by": "publisher",
+              "first-page": "702",
+              "journal-title": "Nat. Commun.",
+              "key": "pmeaaaf339bib005",
+              "type": "journal-article",
+              "volume": "3",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1016/S0140-6736(06)68735-7",
+              "article-title": "Deceleration capacity of heart rate as a predictor of mortality after myocardial infarction: cohort study",
+              "author": "Bauer",
+              "doi-asserted-by": "publisher",
+              "first-page": "1674",
+              "journal-title": "Lancet",
+              "key": "pmeaaaf339bib006",
+              "type": "journal-article",
+              "volume": "367",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1152/japplphysiol.00013.2010",
+              "article-title": "Phase-rectified signal averaging as a sensitive index of autonomic changes with aging",
+              "author": "Campana",
+              "doi-asserted-by": "publisher",
+              "first-page": "1668",
+              "journal-title": "J. Appl. Physiol.",
+              "key": "pmeaaaf339bib007",
+              "type": "journal-article",
+              "volume": "108",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1145/1961189.1961199",
+              "article-title": "LIBSVM: a library for support vector machines",
+              "author": "Chang",
+              "doi-asserted-by": "publisher",
+              "first-page": "27",
+              "journal-title": "ACM Trans. Intell. Syst. Technol.",
+              "key": "pmeaaaf339bib008",
+              "type": "journal-article",
+              "volume": "2",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1103/PhysRevE.71.021906",
+              "article-title": "Multiscale entropy analysis of biological signals",
+              "author": "Costa",
+              "doi-asserted-by": "publisher",
+              "journal-title": "Phys. Rev. E",
+              "key": "pmeaaaf339bib009",
+              "type": "journal-article",
+              "volume": "71",
+              "year": "2005"
+            },
+            {
+              "DOI": "10.1093/sleep/20.7.553",
+              "article-title": "Infant polysomnography: reliability",
+              "author": "Crowell",
+              "doi-asserted-by": "publisher",
+              "first-page": "553",
+              "journal-title": "Sleep",
+              "key": "pmeaaaf339bib010",
+              "type": "journal-article",
+              "volume": "20",
+              "year": "1997"
+            },
+            {
+              "DOI": "10.1097/00004691-200210000-00010",
+              "article-title": "Infant polysomnography: reliability and validity of infant arousal assessment",
+              "author": "CHIME Study Group",
+              "doi-asserted-by": "publisher",
+              "first-page": "469",
+              "journal-title": "J. Clin. Neurophysiol.",
+              "key": "pmeaaaf339bib011",
+              "type": "journal-article",
+              "volume": "19",
+              "year": "2002"
+            },
+            {
+              "DOI": "10.1007/978-3-319-03518-5",
+              "author": "D’Agostino",
+              "doi-asserted-by": "publisher",
+              "key": "pmeaaaf339bib012",
+              "type": "book",
+              "volume": "vol 340",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.5665/sleep.5774",
+              "article-title": "Scaling up scientific discovery in sleep medicine: the National Sleep Research Resource",
+              "author": "Dean",
+              "doi-asserted-by": "publisher",
+              "first-page": "1151",
+              "journal-title": "Sleep",
+              "key": "pmeaaaf339bib0013a",
+              "type": "journal-article",
+              "volume": "39",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1016/j.clinph.2004.09.021",
+              "article-title": "Inter-rater reliability of sleep cyclic alternating pattern (CAP) scoring and validation of a new computer-assisted CAP scoring method",
+              "author": "Ferri",
+              "doi-asserted-by": "publisher",
+              "first-page": "696",
+              "journal-title": "Clin. Neurophysiol.",
+              "key": "pmeaaaf339bib013",
+              "type": "journal-article",
+              "volume": "116",
+              "year": "2005"
+            },
+            {
+              "DOI": "10.1109/JBHI.2016.2550104",
+              "article-title": "Cardiorespiratory sleep stage detection using conditional random fields",
+              "author": "Fonseca",
+              "doi-asserted-by": "publisher",
+              "first-page": "956",
+              "journal-title": "IEEE J. Biomed. Health Inf.",
+              "key": "pmeaaaf339bib014",
+              "type": "journal-article",
+              "volume": "21",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1088/0967-3334/36/10/2027",
+              "article-title": "Sleep stage classification with ECG and respiratory effort",
+              "author": "Fonseca",
+              "doi-asserted-by": "publisher",
+              "first-page": "2027",
+              "journal-title": "Physiol. Meas.",
+              "key": "pmeaaaf339bib015",
+              "type": "journal-article",
+              "volume": "36",
+              "year": "2015"
+            },
+            {
+              "article-title": "You snooze you win: the PhysioNet/Computing in Cardiology Challenge 2018",
+              "author": "Ghassemi",
+              "first-page": "1",
+              "key": "pmeaaaf339bib016",
+              "type": "book",
+              "volume": "vol 45",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1161/01.CIR.101.23.e215",
+              "article-title": "PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals",
+              "author": "Goldberger",
+              "doi-asserted-by": "publisher",
+              "first-page": "e215",
+              "journal-title": "Circulation",
+              "key": "pmeaaaf339bib017",
+              "type": "journal-article",
+              "volume": "101",
+              "year": "2000"
+            },
+            {
+              "DOI": "10.1111/j.1469-8986.2010.01030.x",
+              "article-title": "Adaptation effects to sleep studies in participants with and without chronic posttraumatic stress disorder",
+              "author": "Herbst",
+              "doi-asserted-by": "publisher",
+              "first-page": "1127",
+              "journal-title": "Psychophysiology",
+              "key": "pmeaaaf339bib018",
+              "type": "journal-article",
+              "volume": "47",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1016/j.physa.2016.03.086",
+              "article-title": "Visibility graph analysis of very short-term heart rate variability during sleep",
+              "author": "Hou",
+              "doi-asserted-by": "publisher",
+              "first-page": "140",
+              "journal-title": "Physica A",
+              "key": "pmeaaaf339bib019",
+              "type": "journal-article",
+              "volume": "458",
+              "year": "2016"
+            },
+            {
+              "author": "Iber",
+              "key": "pmeaaaf339bib020",
+              "type": "book",
+              "year": "2007"
+            },
+            {
+              "DOI": "10.1007/978-3-319-03518-5_10",
+              "article-title": "Network physiology: mapping interactions between networks of physiologic networks",
+              "author": "Ivanov",
+              "doi-asserted-by": "publisher",
+              "first-page": "203",
+              "key": "pmeaaaf339bib021",
+              "type": "book",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1088/1367-2630/18/10/100201",
+              "article-title": "Focus on the emerging new fields of network physiology and network medicine",
+              "author": "Ivanov",
+              "doi-asserted-by": "publisher",
+              "journal-title": "New J. Phys.",
+              "key": "pmeaaaf339bib022",
+              "type": "journal-article",
+              "volume": "18",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1088/0967-3334/36/8/1665",
+              "article-title": "Multimodal heart beat detection using signal quality indices",
+              "author": "Johnson",
+              "doi-asserted-by": "publisher",
+              "first-page": "1665",
+              "journal-title": "Physiol. Meas.",
+              "key": "pmeaaaf339bib023",
+              "type": "journal-article",
+              "volume": "36",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1016/j.ncl.2012.08.018",
+              "article-title": "Psychiatric disorders and sleep",
+              "author": "Krystal",
+              "doi-asserted-by": "publisher",
+              "first-page": "1389",
+              "journal-title": "Neurol. Clin.",
+              "key": "pmeaaaf339bib024",
+              "type": "journal-article",
+              "volume": "30",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1088/0967-3334/29/1/002",
+              "article-title": "Robust heart rate estimation from multiple asynchronous noisy sources using signal quality indices and a Kalman filter",
+              "author": "Li",
+              "doi-asserted-by": "publisher",
+              "first-page": "15",
+              "journal-title": "Physiol. Meas.",
+              "key": "pmeaaaf339bib025",
+              "type": "journal-article",
+              "volume": "29",
+              "year": "2008"
+            },
+            {
+              "DOI": "10.1088/0967-3334/35/12/2529",
+              "article-title": "Measuring dissimilarity between respiratory effort signals based on uniform scaling for sleep staging",
+              "author": "Long",
+              "doi-asserted-by": "publisher",
+              "first-page": "2529",
+              "journal-title": "Physiol. Meas.",
+              "key": "pmeaaaf339bib027",
+              "type": "journal-article",
+              "volume": "35",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1037/h0062089",
+              "article-title": "Electrical potentials of the human brain",
+              "author": "Loomis",
+              "doi-asserted-by": "publisher",
+              "first-page": "249",
+              "journal-title": "J. Exp. Psychol.",
+              "key": "pmeaaaf339bib028",
+              "type": "journal-article",
+              "volume": "19",
+              "year": "1936"
+            },
+            {
+              "DOI": "10.1037/h0057431",
+              "article-title": "Cerebral states during sleep, as studied by human brain potentials",
+              "author": "Loomis",
+              "doi-asserted-by": "publisher",
+              "first-page": "127",
+              "journal-title": "J. Exp. Psychol.",
+              "key": "pmeaaaf339bib029",
+              "type": "journal-article",
+              "volume": "21",
+              "year": "1937"
+            },
+            {
+              "DOI": "10.1378/chest.10-1872",
+              "article-title": "Wrist actigraphy",
+              "author": "Martin",
+              "doi-asserted-by": "publisher",
+              "first-page": "1514",
+              "journal-title": "Chest",
+              "key": "pmeaaaf339bib030",
+              "type": "journal-article",
+              "volume": "139",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1016/j.jelectrocard.2015.08.013",
+              "article-title": "Impact of the presence of noise on RR interval-based atrial fibrillation detection",
+              "author": "Oster",
+              "doi-asserted-by": "publisher",
+              "first-page": "947",
+              "journal-title": "J. Electrocardiology",
+              "key": "pmeaaaf339bib032a",
+              "type": "journal-article",
+              "volume": "48",
+              "year": "2015"
+            },
+            {
+              "article-title": "The sleep heart health study: design, rationale, and methods",
+              "author": "Quan",
+              "first-page": "1077",
+              "journal-title": "Sleep",
+              "key": "pmeaaaf339bib032",
+              "type": "journal-article",
+              "volume": "20",
+              "year": "1997"
+            },
+            {
+              "author": "Rechtschaffen",
+              "key": "pmeaaaf339bib033",
+              "type": "book",
+              "year": "1968"
+            },
+            {
+              "DOI": "10.1093/sleep/21.7.759",
+              "article-title": "Methods for obtaining and analyzing unattended polysomnography data for a multicenter study: Sleep Heart Health Research Group",
+              "author": "Redline",
+              "doi-asserted-by": "publisher",
+              "first-page": "759",
+              "journal-title": "Sleep",
+              "key": "pmeaaaf339bib0034a",
+              "type": "journal-article",
+              "volume": "21",
+              "year": "1998"
+            },
+            {
+              "DOI": "10.1088/0967-3334/35/1/1",
+              "article-title": "A review of signals used in sleep analysis",
+              "author": "Roebuck",
+              "doi-asserted-by": "publisher",
+              "first-page": "R1",
+              "journal-title": "Physiol. Meas.",
+              "key": "pmeaaaf339bib034",
+              "type": "journal-article",
+              "volume": "35",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1590/S0004-282X2006000400008",
+              "article-title": "Visual and automatic cyclic alternating pattern (CAP) scoring: inter-rater reliability study",
+              "author": "Rosa",
+              "doi-asserted-by": "publisher",
+              "first-page": "578",
+              "journal-title": "Arquivos Neuro-psiquiatria",
+              "key": "pmeaaaf339bib035",
+              "type": "journal-article",
+              "volume": "64",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1002/sim.2294",
+              "article-title": "Effective number of subjects and number of raters for inter-rater reliability studies",
+              "author": "Saito",
+              "doi-asserted-by": "publisher",
+              "first-page": "1547",
+              "journal-title": "Stat. Med.",
+              "key": "pmeaaaf339bib036",
+              "type": "journal-article",
+              "volume": "25",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1093/sleep/27.5.990",
+              "article-title": "The effect of measurement unreliability on sleep and respiratory variables",
+              "author": "Stepnowsky",
+              "doi-asserted-by": "publisher",
+              "first-page": "990",
+              "journal-title": "Sleep",
+              "key": "pmeaaaf339bib037",
+              "type": "journal-article",
+              "volume": "27",
+              "year": "2004"
+            },
+            {
+              "article-title": "Sleep architecture measurement based on cardiorespiratory parameters",
+              "author": "Tataraidze",
+              "first-page": "3478",
+              "key": "pmeaaaf339bib038",
+              "type": "other",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1093/sleep/28.9.1151",
+              "article-title": "An electrocardiogram-based technique to assess cardiopulmonary coupling during sleep",
+              "author": "Thomas",
+              "doi-asserted-by": "publisher",
+              "first-page": "1151",
+              "journal-title": "Sleep",
+              "key": "pmeaaaf339bib039",
+              "type": "journal-article",
+              "volume": "28",
+              "year": "2005"
+            },
+            {
+              "DOI": "10.1145/2733373.2807412",
+              "article-title": "Matconvnet: convolutional neural networks for matlab",
+              "author": "Vedaldi",
+              "doi-asserted-by": "publisher",
+              "first-page": "689",
+              "key": "pmeaaaf339bib040",
+              "type": "other",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1088/1361-6579/aae021",
+              "article-title": "An open source benchmarked toolbox for cardiovascular waveform and interval analysis",
+              "author": "Vest",
+              "doi-asserted-by": "publisher",
+              "journal-title": "Physiol. Meas.",
+              "key": "pmeaaaf339bib041",
+              "type": "journal-article",
+              "volume": "39",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1007/s13534-017-0044-1",
+              "article-title": "The research of sleep staging based on single-lead electrocardiogram and deep neural network",
+              "author": "Wei",
+              "doi-asserted-by": "publisher",
+              "first-page": "87",
+              "journal-title": "Biomed. Eng. Lett.",
+              "key": "pmeaaaf339bib042",
+              "type": "journal-article",
+              "volume": "8",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1111/1469-8986.3620233",
+              "article-title": "How many nights are enough? The short-term stability of sleep parameters in elderly insomniacs and normal sleepers",
+              "author": "Wohlgemuth",
+              "doi-asserted-by": "publisher",
+              "first-page": "233",
+              "journal-title": "Psychophysiology",
+              "key": "pmeaaaf339bib043",
+              "type": "journal-article",
+              "volume": "36",
+              "year": "1999"
+            },
+            {
+              "DOI": "10.1088/1361-6579/aa63c9",
+              "article-title": "Rem sleep estimation based on autonomic dynamics using r–r intervals",
+              "author": "Yoon",
+              "doi-asserted-by": "publisher",
+              "first-page": "631",
+              "journal-title": "Physiol. Meas.",
+              "key": "pmeaaaf339bib044",
+              "type": "journal-article",
+              "volume": "38",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1093/jamia/ocy064",
+              "article-title": "The National Sleep Research Resource: towards a sleep data commons",
+              "author": "Zhang",
+              "doi-asserted-by": "publisher",
+              "first-page": "1351",
+              "journal-title": "J. Am. Med. Inform. Assoc.",
+              "key": "pmeaaaf339bib0044a",
+              "type": "journal-article",
+              "volume": "25",
+              "year": "2018"
+            },
+            {
+              "article-title": "A robust open-source algorithm to detect onset and duration of QRS complexes",
+              "author": "Zong",
+              "first-page": "737",
+              "journal-title": "Comput. Cardiol.",
+              "key": "pmeaaaf339bib045",
+              "type": "journal-article",
+              "volume": "30",
+              "year": "2003"
+            }
+          ],
+          "reference-count": 47,
+          "references-count": 47,
+          "resource": {
+            "primary": {
+              "URL": "https://iopscience.iop.org/article/10.1088/1361-6579/aaf339"
+            }
+          },
+          "score": 54.54968,
+          "short-container-title": [
+            "Physiol. Meas."
+          ],
+          "source": "Crossref",
+          "title": [
+            "Deep learning in the cross-time frequency domain for sleep staging from a single-lead electrocardiogram"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1088/crossmark-policy",
+          "volume": "39"
+        },
+        {
+          "DOI": "10.1109/prml56267.2022.9882257",
+          "URL": "https://doi.org/10.1109/prml56267.2022.9882257",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "University of Electronic Science and Technology of China,School of Electronic Science and Engineering,Chengdu,China"
+                }
+              ],
+              "family": "Fan",
+              "given": "Xiongbin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "University of Electronic Science and Technology of China,School of Electronic Science and Engineering,Chengdu,China"
+                }
+              ],
+              "family": "Kang",
+              "given": "Tongzhou",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "University of Electronic Science and Technology of China,School of Electronic Science and Engineering,Chengdu,China"
+                }
+              ],
+              "family": "Luo",
+              "given": "Ruixue",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "University of Electronic Science and Technology of China,School of Electronic Science and Engineering,Chengdu,China"
+                }
+              ],
+              "family": "Lai",
+              "given": "Dakun",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2022 3rd International Conference on Pattern Recognition and Machine Learning (PRML)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                9,
+                13
+              ]
+            ],
+            "date-time": "2022-09-13T19:46:04Z",
+            "timestamp": 1663098364000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                3
+              ]
+            ],
+            "date-time": "2022-10-03T20:42:04Z",
+            "timestamp": 1664829724000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2022,
+                  7,
+                  24
+                ]
+              ]
+            },
+            "location": "Chengdu, China",
+            "name": "2022 3rd International Conference on Pattern Recognition and Machine Learning (PRML)",
+            "start": {
+              "date-parts": [
+                [
+                  2022,
+                  7,
+                  22
+                ]
+              ]
+            }
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100001809",
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2025-02-21T01:23:03Z",
+            "timestamp": 1740100983757,
+            "version": "3.37.3"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                22
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    22
+                  ]
+                ],
+                "date-time": "2022-07-22T00:00:00Z",
+                "timestamp": 1658448000000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    7,
+                    22
+                  ]
+                ],
+                "date-time": "2022-07-22T00:00:00Z",
+                "timestamp": 1658448000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/9882087/9882185/09882257.pdf?arnumber=9882257",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "211-215",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                22
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                22
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/9882257/"
+            }
+          },
+          "score": 36.500557,
+          "source": "Crossref",
+          "title": [
+            "Two-Dimensional Deep Learning Based Classification of Sleep Stages with Time-Frequency Maps of Single-Lead EEG Segment"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.32657/10356/75872",
+          "URL": "https://doi.org/10.32657/10356/75872",
+          "approved": {
+            "date-parts": [
+              [
+                2018
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Wenya",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                28
+              ]
+            ],
+            "date-time": "2020-10-28T06:55:20Z",
+            "timestamp": 1603868120000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                28
+              ]
+            ],
+            "date-time": "2020-10-28T07:11:37Z",
+            "timestamp": 1603869097000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2022-04-01T02:05:49Z",
+            "timestamp": 1648778749531
+          },
+          "institution": [
+            {
+              "name": "Nanyang Technological University"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "13751",
+          "prefix": "10.32657",
+          "publisher": "Nanyang Technological University",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "http://hdl.handle.net/10356/75872"
+            }
+          },
+          "score": 36.154987,
+          "source": "Crossref",
+          "title": [
+            "Deep interactive learning for fine-grained opinion mining : single-domain, cross-domain &amp; cross-lingual"
+          ],
+          "type": "dissertation"
+        },
+        {
+          "DOI": "10.1109/cibcb66090.2025.11177138",
+          "URL": "https://doi.org/10.1109/cibcb66090.2025.11177138",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "National Cheng Kung University,Department of Biomedical Engineering,Tainan,Taiwan"
+                }
+              ],
+              "family": "Setiawan",
+              "given": "Febryan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "National Cheng Kung University,Department of Biomedical Engineering,Tainan,Taiwan"
+                }
+              ],
+              "family": "Lin",
+              "given": "Che-Wei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2025 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2025-09-30T17:36:59Z",
+            "timestamp": 1759253819000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2025-10-01T05:55:36Z",
+            "timestamp": 1759298136000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2025,
+                  8,
+                  22
+                ]
+              ]
+            },
+            "location": "Tainan, Taiwan",
+            "name": "2025 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)",
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  8,
+                  20
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                19
+              ]
+            ],
+            "date-time": "2026-02-19T02:27:14Z",
+            "timestamp": 1771468034182,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                20
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    8,
+                    20
+                  ]
+                ],
+                "date-time": "2025-08-20T00:00:00Z",
+                "timestamp": 1755648000000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    8,
+                    20
+                  ]
+                ],
+                "date-time": "2025-08-20T00:00:00Z",
+                "timestamp": 1755648000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/11177003/11177052/11177138.pdf?arnumber=11177138",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "1-8",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                20
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                20
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1056/NEJM199601113340207",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "DOI": "10.4103/2231-0770.94803",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "author": "Iber",
+              "journal-title": "The AASM manual for the scoring of sleep and associated events: rules, terminology and technical specifications.",
+              "key": "ref3",
+              "year": "2007"
+            },
+            {
+              "DOI": "10.1513/pats.200709-155MG",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1016/j.smrv.2016.07.002",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.5664/jcsm.6506",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "article-title": "Polysomnography in patients with obstructive sleep apnea: an evidence-based analysis",
+              "author": "Ontario",
+              "first-page": "1",
+              "issue": "13",
+              "journal-title": "Ont Health Technol Assess Ser",
+              "key": "ref7",
+              "volume": "6",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1093/sleep/22.5.667",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1056/NEJM199304293281704",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1016/j.sleep.2005.03.014",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.1109/TBME.2009.2018297",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1109/TBME.2015.2422378",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "DOI": "10.1109/JBHI.2018.2886064",
+              "doi-asserted-by": "publisher",
+              "key": "ref13"
+            },
+            {
+              "DOI": "10.1109/TBME.2003.817636",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "DOI": "10.1109/IEMBS.2009.5333736",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "DOI": "10.1109/JBHI.2013.2292928",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "DOI": "10.1016/j.jbi.2014.02.015",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2017.10.004",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "DOI": "10.1142/S021951941950026X",
+              "doi-asserted-by": "publisher",
+              "key": "ref19"
+            },
+            {
+              "DOI": "10.1093/sleep/28.9.1151",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "DOI": "10.1016/j.sleep.2010.09.011",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "DOI": "10.1016/j.sleep.2011.10.035",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "DOI": "10.1109/TBME.2015.2498199",
+              "doi-asserted-by": "publisher",
+              "key": "ref23"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2016.08.012",
+              "doi-asserted-by": "publisher",
+              "key": "ref24"
+            },
+            {
+              "DOI": "10.1109/TBCAS.2018.2824659",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2018.06.011",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/JBHI.2018.2842919",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2019.03.016",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2020.101927",
+              "doi-asserted-by": "publisher",
+              "key": "ref29"
+            },
+            {
+              "DOI": "10.3390/jcm11010192",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "DOI": "10.1016/j.irbm.2020.05.006",
+              "doi-asserted-by": "publisher",
+              "key": "ref31"
+            },
+            {
+              "DOI": "10.1109/ICEEICT.2015.7307522",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "DOI": "10.1016/j.bbe.2017.11.003",
+              "doi-asserted-by": "publisher",
+              "key": "ref33"
+            },
+            {
+              "DOI": "10.3390/s20154157",
+              "doi-asserted-by": "publisher",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.3390/s22020510",
+              "doi-asserted-by": "publisher",
+              "key": "ref35"
+            },
+            {
+              "DOI": "10.1016/j.neucom.2021.12.001",
+              "doi-asserted-by": "publisher",
+              "key": "ref36"
+            },
+            {
+              "DOI": "10.3390/app11146622",
+              "doi-asserted-by": "publisher",
+              "key": "ref37"
+            },
+            {
+              "DOI": "10.1016/j.neucom.2018.03.011",
+              "doi-asserted-by": "publisher",
+              "key": "ref38"
+            },
+            {
+              "DOI": "10.1109/TIM.2020.3017246",
+              "doi-asserted-by": "publisher",
+              "key": "ref39"
+            },
+            {
+              "DOI": "10.1161/01.CTR.101.23.e215",
+              "doi-asserted-by": "publisher",
+              "key": "ref40"
+            },
+            {
+              "DOI": "10.1109/CIC.2000.898505",
+              "doi-asserted-by": "publisher",
+              "key": "ref41"
+            },
+            {
+              "article-title": "The continuous wavelet transform: a tool for signal investigation and understanding",
+              "author": "Sadowsky",
+              "first-page": "306",
+              "journal-title": "Johns Hopkins APL Technical Digest",
+              "key": "ref42",
+              "volume": "15",
+              "year": "1994"
+            },
+            {
+              "article-title": "Visual categorization with bags of keypoints",
+              "author": "Csurka",
+              "first-page": "1",
+              "issue": "1-22",
+              "key": "ref43",
+              "volume": "1",
+              "volume-title": "Workshop on statistical learning in computer vision, ECCV"
+            },
+            {
+              "DOI": "10.1016/j.cviu.2007.09.014",
+              "doi-asserted-by": "publisher",
+              "key": "ref44"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.690",
+              "doi-asserted-by": "publisher",
+              "key": "ref45"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2016.05.009",
+              "doi-asserted-by": "publisher",
+              "key": "ref46"
+            }
+          ],
+          "reference-count": 46,
+          "references-count": 46,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/11177138/"
+            }
+          },
+          "score": 36.07421,
+          "source": "Crossref",
+          "title": [
+            "OSANet: Detection of Obstructive Sleep Apnea Episodes Using a DarkNet-Based Deep Learning Approach and Time-Frequency Spectrogram Features Derived from Single-Lead ECG"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.23919/ascc56756.2022.9828168",
+          "URL": "https://doi.org/10.23919/ascc56756.2022.9828168",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Pusan National University,School of Mechanical Engineering,Busan,Korea"
+                }
+              ],
+              "family": "Kang",
+              "given": "Min-Kyoung",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Pusan National University,School of Mechanical Engineering,Busan,Korea"
+                }
+              ],
+              "family": "Hong",
+              "given": "Keum-Shik",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2022 13th Asian Control Conference (ASCC)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2022-07-20T19:38:23Z",
+            "timestamp": 1658345903000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2024-02-01T06:44:18Z",
+            "timestamp": 1706769858000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2022,
+                  5,
+                  7
+                ]
+              ]
+            },
+            "location": "Jeju, Korea, Republic of",
+            "name": "2022 13th Asian Control Conference (ASCC)",
+            "start": {
+              "date-parts": [
+                [
+                  2022,
+                  5,
+                  4
+                ]
+              ]
+            }
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100003725",
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100003725",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Research Foundation of Korea"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                2
+              ]
+            ],
+            "date-time": "2026-06-02T07:08:15Z",
+            "timestamp": 1780384095109,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 5,
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                4
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    5,
+                    4
+                  ]
+                ],
+                "date-time": "2022-05-04T00:00:00Z",
+                "timestamp": 1651622400000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    5,
+                    4
+                  ]
+                ],
+                "date-time": "2022-05-04T00:00:00Z",
+                "timestamp": 1651622400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/9828005/9828007/09828168.pdf?arnumber=9828168",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "1575-1580",
+          "prefix": "10.23919",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                4
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                4
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1016/j.compbiomed.2020.103697",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "DOI": "10.1371/journal.pone.0256111",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2013.07.006",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2016.12.004",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1109/TNSRE.2018.2813138",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1016/S1388-2457(01)00699-X",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.1016/j.eswa.2016.07.004",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2011.11.005",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2018.03.001",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1161/01.CTR.101.23.e215",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2016.05.009",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1016/j.bbe.2015.11.001",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2015.09.002",
+              "doi-asserted-by": "publisher",
+              "key": "ref13"
+            },
+            {
+              "DOI": "10.1016/j.neucom.2016.09.011",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2016.12.015",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "DOI": "10.1016/j.neucom.2016.12.062",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "DOI": "10.1016/j.knosys.2017.05.005",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1016/S0165-1684(97)00038-8",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2019.105253",
+              "doi-asserted-by": "publisher",
+              "key": "ref19"
+            },
+            {
+              "DOI": "10.1016/j.bbe.2020.01.010",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "DOI": "10.1016/j.eswa.2013.06.023",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2012.09.012",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2016.06.006",
+              "doi-asserted-by": "publisher",
+              "key": "ref23"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2020.2998788",
+              "doi-asserted-by": "publisher",
+              "key": "ref24"
+            },
+            {
+              "DOI": "10.5664/jcsm.7234",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2019.01.013",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/TBME.2019.2911423",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "DOI": "10.1093/sleep/zsy041",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2021.3068055",
+              "doi-asserted-by": "publisher",
+              "key": "ref29"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2018.08.022",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "DOI": "10.1093/sleep/32.2.150",
+              "doi-asserted-by": "publisher",
+              "key": "ref31"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2018.04.025",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "DOI": "10.1016/j.jneumeth.2015.07.006",
+              "doi-asserted-by": "publisher",
+              "key": "ref33"
+            },
+            {
+              "DOI": "10.1002/dac.4685",
+              "doi-asserted-by": "publisher",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2017.12.001",
+              "doi-asserted-by": "publisher",
+              "key": "ref35"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2021.106091",
+              "doi-asserted-by": "publisher",
+              "key": "ref36"
+            },
+            {
+              "DOI": "10.1175/1520-0477(1998)079<0061:apgtwa>2.0.co;2",
+              "doi-asserted-by": "publisher",
+              "key": "ref37"
+            },
+            {
+              "DOI": "10.1016/j.jneumeth.2015.11.015",
+              "doi-asserted-by": "publisher",
+              "key": "ref38"
+            },
+            {
+              "DOI": "10.1177/0142331215587568",
+              "doi-asserted-by": "publisher",
+              "key": "ref39"
+            }
+          ],
+          "reference-count": 39,
+          "references-count": 39,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/9828168/"
+            }
+          },
+          "score": 34.969994,
+          "source": "Crossref",
+          "title": [
+            "A sleep stage classification method using deep learning by extracting the characteristics of frequency domain from a single EEG channel"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.1109/tbme.2024.3470534/mm1",
+          "URL": "https://doi.org/10.1109/tbme.2024.3470534/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Behar",
+              "given": "Joachim",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                2
+              ]
+            ],
+            "date-time": "2024-10-02T14:23:12Z",
+            "timestamp": 1727878992000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T13:35:09Z",
+            "timestamp": 1769780109000
+          },
+          "description": "Supplementary information including detailed performance report and recordings included in the CHAT test set.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:33:40Z",
+            "timestamp": 1772159620398,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/TBME.2024.3470534",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx8/10/10848360/10697461/supp1-3470534.pdf?arnumber=10697461"
+            }
+          },
+          "score": 34.940086,
+          "source": "Crossref",
+          "title": [
+            "Deep Learning for Pediatric Sleep Staging from Photoplethysmography: A Transfer Learning Approach from Adults to Children_supp1-3470534.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.1109/prml62565.2024.10779777",
+          "URL": "https://doi.org/10.1109/prml62565.2024.10779777",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "School of Artificial Intelligence South China Normal University,Foshan,China"
+                }
+              ],
+              "family": "Lin",
+              "given": "Ye",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "School of Computer Science South China Normal University,Foshan,China"
+                }
+              ],
+              "family": "Dai",
+              "given": "Yidan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                12
+              ]
+            ],
+            "date-time": "2024-12-12T19:06:44Z",
+            "timestamp": 1734030404000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                13
+              ]
+            ],
+            "date-time": "2024-12-13T06:33:01Z",
+            "timestamp": 1734071581000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2024,
+                  7,
+                  21
+                ]
+              ]
+            },
+            "location": "Chongqing, China",
+            "name": "2024 IEEE 5th International Conference on Pattern Recognition and Machine Learning (PRML)",
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  7,
+                  19
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                14
+              ]
+            ],
+            "date-time": "2024-12-14T05:16:16Z",
+            "timestamp": 1734153376871,
+            "version": "3.30.2"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                19
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    7,
+                    19
+                  ]
+                ],
+                "date-time": "2024-07-19T00:00:00Z",
+                "timestamp": 1721347200000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    7,
+                    19
+                  ]
+                ],
+                "date-time": "2024-07-19T00:00:00Z",
+                "timestamp": 1721347200000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/10779588/10779607/10779777.pdf?arnumber=10779777",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "269-276",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                19
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                19
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1016/j.cmpb.2019.04.032",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "DOI": "10.5664/jcsm.2172",
+              "article-title": "Rules for scoring respiratory events in sleep: update of the 2007 AASM manual for the scoring of sleep and associated events: deliberations of the sleep apnea definitions task force of the American Academy of Sleep Medicine",
+              "author": "Richard",
+              "doi-asserted-by": "crossref",
+              "first-page": "597",
+              "issue": "5",
+              "journal-title": "Journal of Clinical Sleep Medicine",
+              "key": "ref2",
+              "volume": "8",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1016/j.eswa.2019.07.007",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "article-title": "Sleep stage classification on ECG signal and HRV using combination of random forest and SHAP value",
+              "author": "Fikri",
+              "first-page": "8680",
+              "issue": "4",
+              "journal-title": "Innovative: Journal of Social Science Research",
+              "key": "ref4",
+              "volume": "3",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1109/JBHI.2022.3228341",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1186/s40537-020-00406-6",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.1109/ICBME49163.2019.9030391",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1016/j.eswa.2018.02.034",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2021.102455",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1007/s13534-017-0044-1",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.3390/diagnostics12051235",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1111/1468-2354.t01-1-00076",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "DOI": "10.1093/sleep/28.9.1151",
+              "doi-asserted-by": "publisher",
+              "key": "ref13"
+            },
+            {
+              "DOI": "10.1109/TBME.1985.325532",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.01155",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2015.10.013",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "DOI": "10.1016/j.procs.2019.08.173",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1038/s41746-020-0291-x",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            }
+          ],
+          "reference-count": 18,
+          "references-count": 18,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/10779777/"
+            }
+          },
+          "score": 33.967293,
+          "source": "Crossref",
+          "title": [
+            "Sleep Staging Based on Cardiopulmonary Coupling Features Derived from Single-Lead ECG Signal"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.1016/j.sleep.2025.108531",
+          "ISSN": [
+            "1389-9457"
+          ],
+          "URL": "https://doi.org/10.1016/j.sleep.2025.108531",
+          "alternative-id": [
+            "S1389945725022063"
+          ],
+          "article-number": "108531",
+          "assertion": [
+            {
+              "label": "This article is maintained by",
+              "name": "publisher",
+              "value": "Elsevier"
+            },
+            {
+              "label": "Article Title",
+              "name": "articletitle",
+              "value": "Time-Frequency Representation Learning Based on PPG Signals for Sleep Staging"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journaltitle",
+              "value": "Sleep Medicine"
+            },
+            {
+              "label": "CrossRef DOI link to publisher maintained version",
+              "name": "articlelink",
+              "value": "https://doi.org/10.1016/j.sleep.2025.108531"
+            },
+            {
+              "label": "Content Type",
+              "name": "content_type",
+              "value": "simple-article"
+            },
+            {
+              "label": "Copyright",
+              "name": "copyright",
+              "value": "Copyright © 2025 Published by Elsevier B.V."
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Li",
+              "given": "Y.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Song",
+              "given": "Z.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Glos",
+              "given": "M.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Y.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Penzel",
+              "given": "T.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Sleep Medicine"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "clinicalkey.com",
+              "clinicalkey.com.au",
+              "clinicalkey.es",
+              "clinicalkey.fr",
+              "clinicalkey.jp",
+              "elsevier.com",
+              "sciencedirect.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                29
+              ]
+            ],
+            "date-time": "2026-01-29T20:34:28Z",
+            "timestamp": 1769718868000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T00:39:24Z",
+            "timestamp": 1769733564000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T14:33:40Z",
+            "timestamp": 1769783620029,
+            "version": "3.49.0"
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1389-9457"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                2
+              ]
+            ]
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    2,
+                    1
+                  ]
+                ],
+                "date-time": "2026-02-01T00:00:00Z",
+                "timestamp": 1769904000000
+              }
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    2,
+                    1
+                  ]
+                ],
+                "date-time": "2026-02-01T00:00:00Z",
+                "timestamp": 1769904000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1389945725022063?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1389945725022063?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "member": "78",
+          "page": "108531",
+          "prefix": "10.1016",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                2
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                2
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1389945725022063"
+            }
+          },
+          "score": 33.481693,
+          "short-container-title": [
+            "Sleep Medicine"
+          ],
+          "source": "Crossref",
+          "special_numbering": "S",
+          "title": [
+            "Time-Frequency Representation Learning Based on PPG Signals for Sleep Staging"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "volume": "138"
+        },
+        {
+          "DOI": "10.1002/brb3.3028/v2/review2",
+          "URL": "https://doi.org/10.1002/brb3.3028/v2/review2",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2023-05-19T17:01:36Z",
+            "timestamp": 1684515696000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2023-05-19T17:01:40Z",
+            "timestamp": 1684515700000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T20:50:28Z",
+            "timestamp": 1779396628508,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                13
+              ]
+            ]
+          },
+          "member": "311",
+          "prefix": "10.1002",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                13
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                13
+              ]
+            ]
+          },
+          "publisher": "Wiley",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1002/BRB3.3028",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://publons.com/publon/60584465"
+            }
+          },
+          "review": {
+            "revision-round": "2",
+            "running-number": "PR3V2",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 33.417404,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Deep convolutional architecture‐based hybrid learning for sleep arousal events detection through single‐lead EEG signals\""
+          ],
+          "type": "peer-review"
+        },
+        {
+          "DOI": "10.1002/brb3.3028/v1/review2",
+          "URL": "https://doi.org/10.1002/brb3.3028/v1/review2",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2023-05-19T17:01:36Z",
+            "timestamp": 1684515696000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                19
+              ]
+            ],
+            "date-time": "2023-05-19T17:01:46Z",
+            "timestamp": 1684515706000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T18:28:25Z",
+            "timestamp": 1779388105314,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                25
+              ]
+            ]
+          },
+          "member": "311",
+          "prefix": "10.1002",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                25
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                25
+              ]
+            ]
+          },
+          "publisher": "Wiley",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1002/BRB3.3028",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://publons.com/publon/60584465"
+            }
+          },
+          "review": {
+            "revision-round": "1",
+            "running-number": "PR1V1",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 33.388412,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Deep convolutional architecture‐based hybrid learning for sleep arousal events detection through single‐lead EEG signals\""
+          ],
+          "type": "peer-review"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 1115981
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "022ec2928247fd84f04ee34c93886e0145f90ff4ed5578aa028bd49547df387f",
+  "retrieved_at": "2026-07-14T13:51:34Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

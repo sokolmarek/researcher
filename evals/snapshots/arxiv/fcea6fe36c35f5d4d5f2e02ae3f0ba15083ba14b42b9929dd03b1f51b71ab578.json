@@ -1,0 +1,57 @@
+{
+  "endpoint": "query",
+  "request_key": "fcea6fe36c35f5d4d5f2e02ae3f0ba15083ba14b42b9929dd03b1f51b71ab578",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Yuanmeng Yan",
+          "Rumei Li",
+          "Sirui Wang",
+          "Fuzheng Zhang",
+          "Wei Wu",
+          "Weiran Xu"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "comment": "Accepted by ACL2021, 10 pages, 7 figures, 4 tables",
+        "id": "http://arxiv.org/abs/2105.11741v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2105.11741v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2105.11741v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.CL",
+        "published": "2021-05-25T08:15:01Z",
+        "summary": "Learning high-quality sentence representations benefits a wide range of natural language processing tasks. Though BERT-based pre-trained language models achieve high performance on many downstream tasks, the native derived sentence representations are proved to be collapsed and thus produce a poor performance on the semantic textual similarity (STS) tasks. In this paper, we present ConSERT, a Contrastive Framework for Self-Supervised Sentence Representation Transfer, that adopts contrastive learning to fine-tune BERT in an unsupervised and effective way. By making use of unlabeled texts, ConSERT solves the collapse issue of BERT-derived sentence representations and make them more applicable for downstream tasks. Experiments on STS datasets demonstrate that ConSERT achieves an 8\\% relative improvement over the previous state-of-the-art, even comparable to the supervised SBERT-NLI. And when further incorporating NLI supervision, we achieve new state-of-the-art performance on STS tasks. Moreover, ConSERT obtains comparable results with only 1000 samples available, showing its robustness in data scarcity scenarios.",
+        "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+        "updated": "2021-05-25T08:15:01Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "cb80c1e89d793099aadc5549350857298eb0cfd206174ab2eedc17ae5c780ec7",
+  "retrieved_at": "2026-07-14T13:54:16Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

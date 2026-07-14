@@ -1,0 +1,892 @@
+{
+  "endpoint": "works/10.3390/rs12111868",
+  "request_key": "d2f3d7e3e3aad9f18793f55f1b89f5e6947a0ae2734066c175666c6791003619",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.3390/rs12111868",
+      "ISSN": [
+        "2072-4292"
+      ],
+      "URL": "https://doi.org/10.3390/rs12111868",
+      "abstract": "<jats:p>Traditional change detection (CD) methods operate in the simple image domain or hand-crafted features, which has less robustness to the inconsistencies (e.g., brightness and noise distribution, etc.) between bitemporal satellite images. Recently, deep learning techniques have reported compelling performance on robust feature learning. However, generating accurate semantic supervision that reveals real change information in satellite images still remains challenging, especially for manual annotation. To solve this problem, we propose a novel self-supervised representation learning method based on temporal prediction for remote sensing image CD. The main idea of our algorithm is to transform two satellite images into more consistent feature representations through a self-supervised mechanism without semantic supervision and any additional computations. Based on the transformed feature representations, a better difference image (DI) can be obtained, which reduces the propagated error of DI on the final detection result. In the self-supervised mechanism, the network is asked to identify different sample patches between two temporal images, namely, temporal prediction. By designing the network for the temporal prediction task to imitate the discriminator of generative adversarial networks, the distribution-aware feature representations are automatically captured and the result with powerful robustness can be acquired. Experimental results on real remote sensing data sets show the effectiveness and superiority of our method, improving the detection precision up to 0.94–35.49%.</jats:p>",
+      "alternative-id": [
+        "rs12111868"
+      ],
+      "author": [
+        {
+          "affiliation": [
+            {
+              "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+            }
+          ],
+          "family": "Dong",
+          "given": "Huihui",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+            }
+          ],
+          "family": "Ma",
+          "given": "Wenping",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3459-5079",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Technology, The Xi’an Key Laboratory of Big Data and Intelligent Vision, Xidian University, Xi’an 710071, China"
+            }
+          ],
+          "authenticated-orcid": false,
+          "family": "Wu",
+          "given": "Yue",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+            }
+          ],
+          "family": "Zhang",
+          "given": "Jun",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+            }
+          ],
+          "family": "Jiao",
+          "given": "Licheng",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Remote Sensing"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": []
+      },
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            9
+          ]
+        ],
+        "date-time": "2020-06-09T06:34:16Z",
+        "timestamp": 1591684456000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            11
+          ]
+        ],
+        "date-time": "2025-10-11T09:36:59Z",
+        "timestamp": 1760175419000
+      },
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            29
+          ]
+        ],
+        "date-time": "2026-06-29T21:25:49Z",
+        "timestamp": 1782768349349,
+        "version": "3.54.5"
+      },
+      "is-referenced-by-count": 65,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2072-4292"
+        }
+      ],
+      "issue": "11",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            9
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "11",
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              6
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0/",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                6,
+                9
+              ]
+            ],
+            "date-time": "2020-06-09T00:00:00Z",
+            "timestamp": 1591660800000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://www.mdpi.com/2072-4292/12/11/1868/pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "1968",
+      "original-title": [],
+      "page": "1868",
+      "prefix": "10.3390",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            9
+          ]
+        ]
+      },
+      "publisher": "MDPI AG",
+      "reference": [
+        {
+          "DOI": "10.1080/01431168908903939",
+          "article-title": "Review Article Digital change detection techniques using remotely-sensed data",
+          "author": "Singh",
+          "doi-asserted-by": "crossref",
+          "first-page": "989",
+          "journal-title": "Int. J. Remote. Sens.",
+          "key": "ref_1",
+          "volume": "10",
+          "year": "1989"
+        },
+        {
+          "DOI": "10.1016/j.isprsjprs.2018.07.002",
+          "article-title": "Towards a polyalgorithm for land use change detection",
+          "author": "Saxena",
+          "doi-asserted-by": "crossref",
+          "first-page": "217",
+          "journal-title": "J. Photogramm. Remote Sens.",
+          "key": "ref_2",
+          "volume": "144",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1016/j.isprsjprs.2018.04.013",
+          "article-title": "A scale-invariant change detection method for land use/cover change research",
+          "author": "Xing",
+          "doi-asserted-by": "crossref",
+          "first-page": "252",
+          "journal-title": "J. Photogramm. Remote Sens.",
+          "key": "ref_3",
+          "volume": "141",
+          "year": "2018"
+        },
+        {
+          "article-title": "A review of multi-temporal remote sensing data change detection algorithms",
+          "author": "Gong",
+          "first-page": "308",
+          "journal-title": "Protein Expr. Purif.",
+          "key": "ref_4",
+          "volume": "82",
+          "year": "2011"
+        },
+        {
+          "DOI": "10.1109/36.843009",
+          "article-title": "Automatic analysis of the difference image for unsupervised change detection",
+          "author": "Bruzzone",
+          "doi-asserted-by": "crossref",
+          "first-page": "1171",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_5",
+          "volume": "38",
+          "year": "2000"
+        },
+        {
+          "DOI": "10.1016/j.patcog.2014.09.023",
+          "article-title": "Combining where and what in change detection for unsupervised foreground learning in surveillance",
+          "author": "Huerta",
+          "doi-asserted-by": "crossref",
+          "first-page": "709",
+          "journal-title": "Pattern Recognit.",
+          "key": "ref_6",
+          "volume": "48",
+          "year": "2015"
+        },
+        {
+          "article-title": "Generalized minimum-error thresholding for unsupervised change detection from multilook polarimetric SAR data",
+          "author": "Ghanbari",
+          "first-page": "2972",
+          "journal-title": "IEEE Trans. Geosci. Remote. Sens.",
+          "key": "ref_7",
+          "volume": "44",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/TGRS.2017.2759663",
+          "article-title": "A Theoretical Framework for Change Detection Based on a Compound Multiclass Statistical Model of the Difference Image",
+          "author": "Zanetti",
+          "doi-asserted-by": "crossref",
+          "first-page": "1129",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_8",
+          "volume": "56",
+          "year": "2018"
+        },
+        {
+          "article-title": "InSAR Principles–Guidelines for SAR Interferometry Processing and Interpretation",
+          "author": "Ferretti",
+          "first-page": "156",
+          "journal-title": "J. Financ. Stab.",
+          "key": "ref_9",
+          "volume": "10",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1007/978-3-319-47037-5_2",
+          "doi-asserted-by": "crossref",
+          "key": "ref_10",
+          "unstructured": "Ban, Y., and Yousif, O. (2016). Change Detection Techniques: A Review, Springer International Publishing."
+        },
+        {
+          "DOI": "10.1016/j.rse.2015.01.006",
+          "article-title": "A critical synthesis of remotely sensed optical image change detection techniques",
+          "author": "Tewkesbury",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "journal-title": "Remote Sens. Environ.",
+          "key": "ref_11",
+          "volume": "160",
+          "year": "2015"
+        },
+        {
+          "key": "ref_12",
+          "unstructured": "Lunetta, R.S.E., and Christopher, D. (1998). Remote Sensing Change Detection: Environmental Monitoring Methods and Applications, CRC Press."
+        },
+        {
+          "DOI": "10.1016/j.isprsjprs.2014.04.010",
+          "article-title": "SAR change detection based on intensity and texture changes",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "123",
+          "journal-title": "J. Photogramm. Remote Sens.",
+          "key": "ref_13",
+          "volume": "93",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TGRS.2006.885408",
+          "article-title": "A theoretical framework for unsupervised change detection based on change vector analysis in the polar domain",
+          "author": "Bovolo",
+          "doi-asserted-by": "crossref",
+          "first-page": "218",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_14",
+          "volume": "45",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1109/LGRS.2009.2025059",
+          "article-title": "Unsupervised Change Detection in Satellite Images Using Principal Component Analysis and k-Means Clustering",
+          "author": "Celik",
+          "doi-asserted-by": "crossref",
+          "first-page": "772",
+          "journal-title": "IEEE GEoscience Remote Sens. Lett.",
+          "key": "ref_15",
+          "volume": "6",
+          "year": "2009"
+        },
+        {
+          "DOI": "10.1117/1.1631315",
+          "article-title": "Survey over image thresholding techniques and quantitative performance evaluation",
+          "author": "Sezgin",
+          "doi-asserted-by": "crossref",
+          "first-page": "146",
+          "journal-title": "J. Electron. Imaging",
+          "key": "ref_16",
+          "volume": "13",
+          "year": "2004"
+        },
+        {
+          "DOI": "10.1109/TIP.2011.2170702",
+          "article-title": "Change detection in synthetic aperture radar images based on image fusion and fuzzy clustering",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "2141",
+          "journal-title": "IEEE Trans. Image Process.",
+          "key": "ref_17",
+          "volume": "21",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1109/TGRS.2017.2739800",
+          "article-title": "Discriminative Feature Learning for Unsupervised Change Detection in Heterogeneous Images Based on a Coupled Neural Network",
+          "author": "Zhao",
+          "doi-asserted-by": "crossref",
+          "first-page": "7066",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_18",
+          "volume": "55",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/ICASSP.2011.5947611",
+          "doi-asserted-by": "crossref",
+          "key": "ref_19",
+          "unstructured": "Mikolov, T., Kombrink, S., Burget, L., Cernocky, J., and Khudanpur, S. (2011, January 22–27). Extensions of recurrent neural network language model. Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing, Prague, Czech Republic."
+        },
+        {
+          "key": "ref_20",
+          "unstructured": "Krizhevsky, A., Sutskever, I., and Hinton, G.E. (2012, January 3–6). ImageNet classification with deep convolutional neural networks. Proceedings of the Advances on Neural Information Processing Systems, Lake Tahoe, NV, USA."
+        },
+        {
+          "key": "ref_21",
+          "unstructured": "Dai, J., Li, Y., He, K., and Sun, J. (2016, January 5–10). R-FCN: Object Detection via Region-based Fully Convolutional Networks. Proceedings of the Advances on Neural Information Processing Systems, Barcelona, Spain."
+        },
+        {
+          "DOI": "10.1109/CVPR.2018.00937",
+          "doi-asserted-by": "crossref",
+          "key": "ref_22",
+          "unstructured": "Song, Y., Ma, C., Wu, X., Gong, L., Bao, L., Zuo, W., Shen, C., Lau, R.W., and Yang, M.H. (2018, January 18–23). Vital: Visual tracking via adversarial learning. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Salt Lake City, UT, USA."
+        },
+        {
+          "key": "ref_23",
+          "unstructured": "Radford, A., Metz, L., and Chintala, S. (2015). Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks. arXiv."
+        },
+        {
+          "DOI": "10.1109/CVPR.2017.632",
+          "doi-asserted-by": "crossref",
+          "key": "ref_24",
+          "unstructured": "Isola, P., Zhu, J.Y., Zhou, T., and Efros, A.A. (2017, January 21–26). Image-to-image translation with conditional adversarial networks. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Honolulu, HI, USA."
+        },
+        {
+          "DOI": "10.1109/ICCV.2017.606",
+          "doi-asserted-by": "crossref",
+          "key": "ref_25",
+          "unstructured": "Souly, N., Spampinato, C., and Shah, M. (2017, January 22–29). Semi supervised semantic segmentation using generative adversarial network. Proceedings of the IEEE International Conference on Computer Vision, Venice, Italy."
+        },
+        {
+          "key": "ref_26",
+          "unstructured": "Jing, L., and Tian, Y. (2019). Self-supervised visual feature learning with deep neural networks: A survey. arXiv."
+        },
+        {
+          "DOI": "10.1109/ICCV.2015.320",
+          "doi-asserted-by": "crossref",
+          "key": "ref_27",
+          "unstructured": "Wang, X., and Gupta, A. (2015, January 11–18). Unsupervised Learning of Visual Representations Using Videos. Proceedings of the IEEE International Conference on Computer Vision, Santiago, Chile."
+        },
+        {
+          "DOI": "10.1109/CVPR.2017.607",
+          "doi-asserted-by": "crossref",
+          "key": "ref_28",
+          "unstructured": "Fernando, B., Bilen, H., Gavves, E., and Gould, S. (2017, January 21–26). Self-supervised video representation learning with odd-one-out networks. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Honolulu, HI, USA."
+        },
+        {
+          "DOI": "10.1109/ICCV.2015.167",
+          "doi-asserted-by": "crossref",
+          "key": "ref_29",
+          "unstructured": "Doersch, C., Gupta, A., and Efros, A.A. (2015, January 11–18). Unsupervised visual representation learning by context prediction. Proceedings of the IEEE International Conference on Computer Vision, Santiago, Chile."
+        },
+        {
+          "DOI": "10.1109/TNNLS.2016.2636227",
+          "article-title": "A deep convolutional coupling network for change detection based on heterogeneous optical and radar images",
+          "author": "Liu",
+          "doi-asserted-by": "crossref",
+          "first-page": "545",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst.",
+          "key": "ref_30",
+          "volume": "29",
+          "year": "2018"
+        },
+        {
+          "key": "ref_31",
+          "unstructured": "Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., and Bengio, Y. (2014, January 8–13). Generative adversarial nets. Proceedings of the Advances on Neural Information Processing Systems, Montreal, QC, Canada."
+        },
+        {
+          "DOI": "10.3390/rs10101592",
+          "doi-asserted-by": "crossref",
+          "key": "ref_32",
+          "unstructured": "Lang, F., Yang, J., Yan, S., and Qin, F. (2018). Superpixel Segmentation of Polarimetric Synthetic Aperture Radar (SAR) Images Based on Generalized Mean Shift. Remote Sens., 10."
+        },
+        {
+          "DOI": "10.1016/j.cviu.2017.03.007",
+          "article-title": "Superpixels: An Evaluation of the State-of-the-Art",
+          "author": "Stutz",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "journal-title": "Comput. Vis. Image Underst.",
+          "key": "ref_33",
+          "volume": "166",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2017.04.018",
+          "article-title": "River channel segmentation in polarimetric SAR images: Watershed transform combined with average contrast maximisation",
+          "author": "Ciecholewski",
+          "doi-asserted-by": "crossref",
+          "first-page": "196",
+          "journal-title": "Expert Syst. Appl. Int. J.",
+          "key": "ref_34",
+          "volume": "82",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/TPAMI.2009.71",
+          "article-title": "Watershed Cuts: Thinnings, Shortest Path Forests, and Topological Watersheds",
+          "author": "Cousty",
+          "doi-asserted-by": "crossref",
+          "first-page": "925",
+          "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+          "key": "ref_35",
+          "volume": "32",
+          "year": "2010"
+        },
+        {
+          "DOI": "10.1109/LGRS.2017.2702062",
+          "article-title": "A Median Regularized Level Set for Hierarchical Segmentation of SAR Images",
+          "author": "Braga",
+          "doi-asserted-by": "crossref",
+          "first-page": "1171",
+          "journal-title": "IEEE Geosci. Remote Sens. Lett.",
+          "key": "ref_36",
+          "volume": "14",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/JSTARS.2017.2716620",
+          "article-title": "Level Set Segmentation Algorithm for High-Resolution Polarimetric SAR Images Based on a Heterogeneous Clutter Model",
+          "author": "Jin",
+          "doi-asserted-by": "crossref",
+          "first-page": "4565",
+          "journal-title": "IEEE J. Sel. Top. Appl. Earth Obs. Remote. Sens.",
+          "key": "ref_37",
+          "volume": "10",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/TNNLS.2015.2435783",
+          "article-title": "Change Detection in Synthetic Aperture Radar Images Based on Deep Neural Networks",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "125",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst.",
+          "key": "ref_38",
+          "volume": "27",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/TIP.2012.2219547",
+          "article-title": "Fuzzy C-means clustering with local information and kernel metric for image segmentation",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "573",
+          "journal-title": "IEEE Trans. Image Process.",
+          "key": "ref_39",
+          "volume": "22",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/TGRS.2015.2407953",
+          "article-title": "Change-Detection Map Learning Using Matching Pursuit",
+          "author": "Li",
+          "doi-asserted-by": "crossref",
+          "first-page": "4712",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_40",
+          "volume": "53",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1007/s11042-015-2960-3",
+          "article-title": "Change detection method for remote sensing images based on an improved Markov random field",
+          "author": "Gu",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "journal-title": "Multimed. Tools Appl.",
+          "key": "ref_41",
+          "volume": "76",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/TIP.2012.2226048",
+          "article-title": "A robust fuzzy local information C-means clustering algorithm",
+          "author": "Turgay",
+          "doi-asserted-by": "crossref",
+          "first-page": "1258",
+          "journal-title": "IEEE Trans. Image Process.",
+          "key": "ref_42",
+          "volume": "22",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/TFUZZ.2013.2249072",
+          "article-title": "Fuzzy Clustering With a Modified MRF Energy Function for Change Detection in Synthetic Aperture Radar Images",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "98",
+          "journal-title": "IEEE Trans. Fuzzy Syst.",
+          "key": "ref_43",
+          "volume": "22",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1080/01431161.2014.916054",
+          "article-title": "Detecting changes of the Yellow River Estuary via SAR images based on a local fit-search model and kernel-induced graph cuts",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "4009",
+          "journal-title": "Int. J. Remote Sens.",
+          "key": "ref_44",
+          "volume": "35",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1016/j.asoc.2015.05.003",
+          "article-title": "Change detection in synthetic aperture radar images based on unsupervised artificial immune systems",
+          "author": "Liu",
+          "doi-asserted-by": "crossref",
+          "first-page": "151",
+          "journal-title": "Appl. Soft Comput.",
+          "key": "ref_45",
+          "volume": "34",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1016/j.patcog.2016.07.040",
+          "article-title": "Unsupervised saliency-guided SAR image change detection",
+          "author": "Zheng",
+          "doi-asserted-by": "crossref",
+          "first-page": "309",
+          "journal-title": "Pattern Recognit.",
+          "key": "ref_46",
+          "volume": "61",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/MGRS.2017.2762307",
+          "article-title": "Deep Learning in Remote Sensing: A Comprehensive Review and List of Resources",
+          "author": "Zhu",
+          "doi-asserted-by": "crossref",
+          "first-page": "8",
+          "journal-title": "IEEE Geosci. Remote Sens. Mag.",
+          "key": "ref_47",
+          "volume": "5",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1109/TGRS.2018.2863224",
+          "article-title": "Learning spectral-spatial-temporal features via a recurrent convolutional neural network for change detection in multispectral imagery",
+          "author": "Mou",
+          "doi-asserted-by": "crossref",
+          "first-page": "924",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_48",
+          "volume": "57",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1109/TGRS.2018.2849692",
+          "article-title": "GETNET: A General End-to-End 2-D CNN Framework for Hyperspectral Image Change Detection",
+          "author": "Wang",
+          "doi-asserted-by": "crossref",
+          "first-page": "3",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_49",
+          "volume": "57",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/TGRS.2017.2650198",
+          "article-title": "Superpixel-Based Difference Representation Learning for Change Detection in Multispectral Remote Sensing Images",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "2658",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_50",
+          "volume": "55",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/ACCESS.2018.2889326",
+          "article-title": "Local Descriptor Learning for Change Detection in Synthetic Aperture Radar Images via Convolutional Neural Networks",
+          "author": "Dong",
+          "doi-asserted-by": "crossref",
+          "first-page": "15389",
+          "journal-title": "IEEE Access",
+          "key": "ref_51",
+          "volume": "7",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/LGRS.2019.2895656",
+          "article-title": "Sea Ice Change Detection in SAR Images Based on Convolutional-Wavelet Neural Networks",
+          "author": "Gao",
+          "doi-asserted-by": "crossref",
+          "first-page": "1240",
+          "journal-title": "IEEE Geosci. Remote. Sens. Lett.",
+          "key": "ref_52",
+          "volume": "16",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/j.isprsjprs.2018.09.002",
+          "article-title": "Iterative feature mapping network for detecting multiple changes in multi-source remote sensing images",
+          "author": "Zhan",
+          "doi-asserted-by": "crossref",
+          "first-page": "38",
+          "journal-title": "J. Photogramm. Remote Sens.",
+          "key": "ref_53",
+          "volume": "146",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1109/LGRS.2017.2762694",
+          "article-title": "Generative Adversarial Networks for Change Detection in Multispectral Imagery",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "2310",
+          "journal-title": "IEEE Geosci. Remote. Sens. Lett.",
+          "key": "ref_54",
+          "volume": "14",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/LGRS.2018.2868704",
+          "article-title": "A Conditional Adversarial Network for Change Detection in Heterogeneous Images",
+          "author": "Niu",
+          "doi-asserted-by": "crossref",
+          "first-page": "45",
+          "journal-title": "IEEE Geosci. Remote. Sens. Lett.",
+          "key": "ref_55",
+          "volume": "16",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/JSTARS.2018.2887108",
+          "article-title": "A generative discriminatory classified network for change detection in multispectral imagery",
+          "author": "Gong",
+          "doi-asserted-by": "crossref",
+          "first-page": "321",
+          "journal-title": "IEEE J. Sel. Top. Appl. Earth Obs. Remote Sens.",
+          "key": "ref_56",
+          "volume": "12",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/TGRS.2019.2948659",
+          "article-title": "From W-Net to CDGAN: Bitemporal Change Detection via Deep Learning Techniques",
+          "author": "Hou",
+          "doi-asserted-by": "crossref",
+          "first-page": "1790",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "ref_57",
+          "volume": "58",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1007/978-3-030-01264-9_9",
+          "doi-asserted-by": "crossref",
+          "key": "ref_58",
+          "unstructured": "Caron, M., Bojanowski, P., Joulin, A., and Douze, M. (2018, January 8–14). Deep clustering for unsupervised learning of visual features. Proceedings of the European Conference on Computer Vision, Munich, Germany."
+        },
+        {
+          "DOI": "10.1016/j.isprsjprs.2017.12.012",
+          "article-title": "A deep learning framework for remote sensing image registration",
+          "author": "Wang",
+          "doi-asserted-by": "crossref",
+          "first-page": "148",
+          "journal-title": "J. Photogramm. Remote Sens.",
+          "key": "ref_59",
+          "volume": "145",
+          "year": "2018"
+        },
+        {
+          "article-title": "Inland wetland change detection using aircraft MSS data",
+          "author": "Jensen",
+          "first-page": "521",
+          "journal-title": "Photogramm. Eng. Remote Sens.",
+          "key": "ref_60",
+          "volume": "53",
+          "year": "1987"
+        },
+        {
+          "DOI": "10.4236/ars.2012.13008",
+          "doi-asserted-by": "crossref",
+          "key": "ref_61",
+          "unstructured": "Mubea, K., and Menz, G. (2012). Monitoring Land-Use Change in Nakuru (Kenya) Using Multi-Sensor Satellite Data. Adv. Remote Sens., 1."
+        },
+        {
+          "article-title": "Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion",
+          "author": "Vincent",
+          "first-page": "3371",
+          "journal-title": "J. Mach. Learn. Res.",
+          "key": "ref_62",
+          "volume": "11",
+          "year": "2010"
+        },
+        {
+          "DOI": "10.1126/science.1127647",
+          "article-title": "Reducing the dimensionality of data with neural networks",
+          "author": "Hinton",
+          "doi-asserted-by": "crossref",
+          "first-page": "504",
+          "journal-title": "Science",
+          "key": "ref_63",
+          "volume": "313",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1007/978-3-642-33275-3_2",
+          "doi-asserted-by": "crossref",
+          "key": "ref_64",
+          "unstructured": "Fischer, A., and Igel, C. (2012). An Introduction to Restricted Boltzmann Machines. Iberoamerican Congress on Pattern Recognition, Springer."
+        },
+        {
+          "article-title": "A Practical Guide to Training Restricted Boltzmann Machines",
+          "author": "Hinton",
+          "first-page": "599",
+          "journal-title": "Momentum",
+          "key": "ref_65",
+          "volume": "9",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1162/neco.2006.18.7.1527",
+          "article-title": "A fast learning algorithm for deep belief nets",
+          "author": "Hinton",
+          "doi-asserted-by": "crossref",
+          "first-page": "1527",
+          "journal-title": "Neural Comput.",
+          "key": "ref_66",
+          "volume": "18",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1177/001316448104100307",
+          "article-title": "Coefficient Kappa: Some Uses, Misuses, and Alternatives",
+          "author": "Brennan",
+          "doi-asserted-by": "crossref",
+          "first-page": "687",
+          "journal-title": "Educ. Psychol. Meas.",
+          "key": "ref_67",
+          "volume": "41",
+          "year": "1981"
+        },
+        {
+          "DOI": "10.1016/S0167-8655(03)00060-6",
+          "article-title": "Evaluation of global image thresholding for change detection",
+          "author": "Rosin",
+          "doi-asserted-by": "crossref",
+          "first-page": "2345",
+          "journal-title": "Pattern Recognit. Lett.",
+          "key": "ref_68",
+          "volume": "24",
+          "year": "2003"
+        },
+        {
+          "DOI": "10.1109/IGARSS.2018.8518015",
+          "doi-asserted-by": "crossref",
+          "key": "ref_69",
+          "unstructured": "Daudt, R.C., Saux, B.L., Boulch, A., and Gousseau, Y. (2018, January 22–27). Urban Change Detection for Multispectral Earth Observation Using Convolutional Neural Networks. Proceedings of the International Geoscience and Remote Sensing Symposium, Valencia, Spain."
+        }
+      ],
+      "reference-count": 69,
+      "references-count": 69,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://www.mdpi.com/2072-4292/12/11/1868"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "Remote Sensing"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+      "volume": "12"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "3ced52655d16f269ad0b4bea62333b320c3e08588e4fb07457292dc9502adbfd",
+  "retrieved_at": "2026-07-14T14:48:34Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

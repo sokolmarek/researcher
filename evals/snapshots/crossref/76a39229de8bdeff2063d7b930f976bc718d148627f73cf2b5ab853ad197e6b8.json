@@ -1,0 +1,960 @@
+{
+  "endpoint": "works/10.1371/journal.pone.0306294",
+  "request_key": "76a39229de8bdeff2063d7b930f976bc718d148627f73cf2b5ab853ad197e6b8",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1371/journal.pone.0306294",
+      "ISSN": [
+        "1932-6203"
+      ],
+      "URL": "https://doi.org/10.1371/journal.pone.0306294",
+      "abstract": "<jats:p>Recycling of used products can provide substantial economic and environmental benefits for supply chain players. However, many factors associated with the design of closed-loop supply chain networks are uncertain in their nature, including demand, opening cost of facilities, capacity of opened facilities, transportation cost, and procurement cost. Therefore, this study proposes a novel fuzzy programming model for closed-loop supply chain network design, which directly relies on the fuzzy ranking method based on a credibility measure. The objective of the presented optimization model aims at minimizing the total cost of the network when selecting the facility locations and transportation routes between the nodes of the network. Based on the problem characteristics, a Migratory Birds Optimization Algorithm with a new product source encoding scheme is developed as a solution approach. The inspiration for the product source coding method originates from the label information of raw material supplier and manufacturing factories on product packaging, as well as the information of each logistics node on the delivery order. This novel encoding method aims to address the limitations of four traditional encoding methods: Prüfer number based encoding, spanning tree based encoding, forest data structure based encoding, and priority based encoding, thereby increasing the likelihood of heuristic algorithms finding the optimal solution. Thirty-five illustrative examples are developed to evaluate the proposed algorithm against the exact optimization method (LINGO) and a Genetic Algorithm, Ant Colony Optimization, Simulated Annealing, which are recognized as well-known metaheuristic algorithms. The results from extensive experiments show that the proposed algorithm is able to provide optimal and good-quality solutions within acceptable computational time even for large-scale numerical examples. The suitability of the model is confirmed through a meticulous sensitivity analysis. This analysis involves adjusting the confidence level incrementally from 50% to 100%, in 5% intervals, with respect to the model’s uncertain parameters. Consequently, it yields valuable managerial insights. The outcomes of this research are expected to provide scientific support for related supply chain enterprises and stakeholders.</jats:p>",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0007-7360-1279",
+          "affiliation": [],
+          "authenticated-orcid": true,
+          "family": "Ren",
+          "given": "Yangjun",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0321-1335",
+          "affiliation": [],
+          "authenticated-orcid": true,
+          "family": "Chen",
+          "given": "Qiong",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Lau",
+          "given": "Yui-yip",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Dulebenets",
+          "given": "Maxim A.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Li",
+          "given": "Mengchi",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Li",
+          "given": "Botang",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9921-3107",
+          "affiliation": [],
+          "authenticated-orcid": true,
+          "family": "Ching-Pong Poo",
+          "given": "Mark",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Zhang",
+          "given": "Pengfei",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "PLOS ONE"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": [
+          "www.plosone.org"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            27
+          ]
+        ],
+        "date-time": "2024-06-27T20:57:08Z",
+        "timestamp": 1719521828000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            27
+          ]
+        ],
+        "date-time": "2024-06-27T20:58:02Z",
+        "timestamp": 1719521882000
+      },
+      "editor": [
+        {
+          "affiliation": [],
+          "family": "Goli",
+          "given": "Alireza",
+          "role": [
+            {
+              "role": "editor",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        }
+      ],
+      "funder": [
+        {
+          "award": [
+            "JAT220181"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "JAT220181"
+              ]
+            }
+          ],
+          "name": "major project of the Fujian Provincial Department of Education"
+        },
+        {
+          "award": [
+            "2023C08"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "2023C08"
+              ]
+            }
+          ],
+          "name": "Building a New Highland for Marine Scientific Research and Innovation in Xiamen"
+        },
+        {
+          "award": [
+            "SL2023A04J00414"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "SL2023A04J00414"
+              ]
+            }
+          ],
+          "name": "research platforms and projects of the Guangzhou Basic and Applied Basic Research Project"
+        },
+        {
+          "award": [
+            "2022KQNCX064"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "2022KQNCX064"
+              ]
+            }
+          ],
+          "name": "higher education institutions of the Guangdong Provincial Department of Education"
+        },
+        {
+          "award": [
+            "2021GXJK074"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "2021GXJK074"
+              ]
+            }
+          ],
+          "name": "the Educational Science Planning Project of the Guangdong Provincial Department of Education"
+        },
+        {
+          "award": [
+            "K52022026"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "K52022026"
+              ]
+            }
+          ],
+          "name": "the Discipline Construction Project of Guangzhou Jiao-tong University"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            3
+          ]
+        ],
+        "date-time": "2026-03-03T00:26:46Z",
+        "timestamp": 1772497606816,
+        "version": "3.50.1"
+      },
+      "is-referenced-by-count": 3,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "1932-6203"
+        }
+      ],
+      "issue": "6",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            27
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "6",
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              27
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "http://creativecommons.org/licenses/by/4.0/",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                6,
+                27
+              ]
+            ],
+            "date-time": "2024-06-27T00:00:00Z",
+            "timestamp": 1719446400000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://dx.plos.org/10.1371/journal.pone.0306294",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "340",
+      "original-title": [],
+      "page": "e0306294",
+      "prefix": "10.1371",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            27
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            27
+          ]
+        ]
+      },
+      "publisher": "Public Library of Science (PLoS)",
+      "reference": [
+        {
+          "DOI": "10.1371/journal.pone.0292753",
+          "article-title": "A dual-channel secondary closed-loop supply chain considering retail groups and fairness concerns.",
+          "author": "Y. Tan",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0292753",
+          "issue": "10",
+          "journal-title": "Plos One",
+          "key": "pone.0306294.ref001",
+          "volume": "18",
+          "year": "2023"
+        },
+        {
+          "DOI": "10.1016/S0377-2217(97)00230-0",
+          "article-title": "Quantitative models for reverse logistics",
+          "author": "M. Fleischmann",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "issue": "1",
+          "journal-title": "Eur. J. Oper. Res",
+          "key": "pone.0306294.ref002",
+          "volume": "103",
+          "year": "1997"
+        },
+        {
+          "DOI": "10.1016/j.ijpe.2021.108389",
+          "article-title": "Recovery strategies for a disrupted supply chain network: leveraging blockchain technology in pre- and post-disruption scenarios.",
+          "author": "V. K. Manupati",
+          "doi-asserted-by": "crossref",
+          "first-page": "108389",
+          "journal-title": "Int. J. Prod. Econ",
+          "key": "pone.0306294.ref003",
+          "volume": "245",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1016/j.knosys.2019.05.003",
+          "article-title": "Designing a realistic ICT closed loop supply chain network with integrated decisions under uncertain demand and lead time.",
+          "author": "B. Vahdani",
+          "doi-asserted-by": "crossref",
+          "first-page": "34",
+          "journal-title": "Knowl-Based. Syst.",
+          "key": "pone.0306294.ref004",
+          "volume": "179",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1371/journal.pone.0287684",
+          "article-title": "Optimal pricing and carbon emission reduction decisions for a prefabricated building closed-loop supply chain under a carbon cap-and-trade regulation and government subsidies.",
+          "author": "X. Sun",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0287684",
+          "issue": "6",
+          "journal-title": "Plos One",
+          "key": "pone.0306294.ref005",
+          "volume": "18",
+          "year": "2023"
+        },
+        {
+          "DOI": "10.1016/j.susoc.2022.01.001",
+          "article-title": "A review on sustainable supply chain network design: Dimensions, paradigms, concepts, framework and future directions.",
+          "author": "S. Joshi",
+          "doi-asserted-by": "crossref",
+          "first-page": "136",
+          "journal-title": "Sustainable Operations and Computers",
+          "key": "pone.0306294.ref006",
+          "volume": "3",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1016/j.resconrec.2019.05.020",
+          "article-title": "Sustainable supply chain management in the chemical industry: Evolution, opportunities, and challenges.",
+          "author": "A. Rajeev",
+          "doi-asserted-by": "crossref",
+          "first-page": "275",
+          "journal-title": "Resour. Conserv. Recy.",
+          "key": "pone.0306294.ref007",
+          "volume": "149",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/j.cie.2021.107589",
+          "article-title": "Conceptualising a supply and demand resilience methodology: A hybrid DEMATEL-TOPSIS-possibilistic multi-objective optimization approach.",
+          "author": "A. Mohammed",
+          "doi-asserted-by": "crossref",
+          "first-page": "107589",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref008",
+          "volume": "160",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.clscn.2021.100025",
+          "article-title": "Bi-objective green supply chain network design under disruption risk through an extended NSGA-II algorithm.",
+          "author": "X. Wang",
+          "doi-asserted-by": "crossref",
+          "first-page": "100025",
+          "journal-title": "Cleaner Logistics and Supply Chain",
+          "key": "pone.0306294.ref009",
+          "volume": "3",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1016/j.cie.2021.107164",
+          "article-title": "An interactive fuzzy programming approach for a sustainable supplier selection under textile supply chain management.",
+          "author": "M. Tayyab",
+          "doi-asserted-by": "crossref",
+          "first-page": "107164",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref010",
+          "volume": "155",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.compchemeng.2021.107472",
+          "article-title": "Decentralized decision system for closed-Loop supply chain: A Bi-Level multi-objective risk-based robust optimization approach",
+          "author": "H. Golpra",
+          "doi-asserted-by": "crossref",
+          "first-page": "107472",
+          "journal-title": "Comput. Chem. Eng",
+          "key": "pone.0306294.ref011",
+          "volume": "154",
+          "year": "2021"
+        },
+        {
+          "article-title": "Multi-objective modelling of sustainable closed-loop supply chain network with price-sensitive demand and consumer’s incentives",
+          "author": "D. Mogale",
+          "first-page": "108105",
+          "journal-title": "Comput. Chem. Eng",
+          "key": "pone.0306294.ref012",
+          "volume": "168",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.apm.2022.02.009",
+          "article-title": "Hashem, Moazzez, H., Kashan, A. H. A hybrid system dynamics and two-stage mixed integer stochastic programming approach for closed-loop battery supply chain optimization",
+          "author": "E. Kamyabi",
+          "doi-asserted-by": "crossref",
+          "first-page": "770",
+          "journal-title": "Appl. Math. Model",
+          "key": "pone.0306294.ref013",
+          "volume": "106",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1111/j.1937-5956.2001.tb00076.x",
+          "article-title": "The impact of product recovery on logistics network design.",
+          "author": "M. Fleischmann",
+          "doi-asserted-by": "crossref",
+          "first-page": "156",
+          "issue": "2",
+          "journal-title": "Prod. Oper. Manag",
+          "key": "pone.0306294.ref014",
+          "volume": "10",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1002/nav.20262",
+          "article-title": "Benders decomposition with alternative multiple cuts for a multi-product closed-loop supply chain network design model.",
+          "author": "H. Üster",
+          "doi-asserted-by": "crossref",
+          "first-page": "890",
+          "issue": "8",
+          "journal-title": "Nav. Res. Log",
+          "key": "pone.0306294.ref015",
+          "volume": "54",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1016/j.ijpe.2011.01.010",
+          "article-title": "Redesigning a closed-loop supply chain exposed to risks.",
+          "author": "Lundin",
+          "doi-asserted-by": "crossref",
+          "first-page": "596",
+          "issue": "2",
+          "journal-title": "Int. J. Prod. Econ.",
+          "key": "pone.0306294.ref016",
+          "volume": "140",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1016/j.cie.2016.12.022",
+          "article-title": "A closed-loop supply chain network design for automotive industry in Turkey.",
+          "author": "E. Özceylan",
+          "doi-asserted-by": "crossref",
+          "first-page": "727",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref017",
+          "volume": "113",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1016/j.jclepro.2018.06.034",
+          "article-title": "A novel multi-objective optimization model for integrated problem of green closed loop supply chain network design and quantity discount.",
+          "author": "S. R. Reza",
+          "doi-asserted-by": "crossref",
+          "first-page": "1549",
+          "journal-title": "J. Clean. Prod",
+          "key": "pone.0306294.ref018",
+          "volume": "196",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1016/j.apm.2018.08.036",
+          "article-title": "Four-level closed loop supply chain with remanufacturing",
+          "author": "P. Hasanov",
+          "doi-asserted-by": "crossref",
+          "first-page": "141",
+          "journal-title": "Appl. Math. Model",
+          "key": "pone.0306294.ref019",
+          "volume": "66",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/j.cie.2022.108439",
+          "article-title": "Pricing and advertising decisions in a direct-sales closed-loop supply chain.",
+          "author": "M. Asghari",
+          "doi-asserted-by": "crossref",
+          "first-page": "108439",
+          "journal-title": "Comput. Ind. Eng.",
+          "key": "pone.0306294.ref020",
+          "volume": "171",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1016/j.ejor.2018.09.041",
+          "article-title": "On risk management of a two-stage stochastic mixed 0–1 model for the closed-loop supply chain design problem",
+          "author": "S. Baptista",
+          "doi-asserted-by": "crossref",
+          "first-page": "91",
+          "issue": "1",
+          "journal-title": "Eur. J. Oper. Res",
+          "key": "pone.0306294.ref021",
+          "volume": "274",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/j.ejor.2015.08.059",
+          "article-title": "Humanitarian logistics network design under mixed uncertainty",
+          "author": "S. Tofighi",
+          "doi-asserted-by": "crossref",
+          "first-page": "239",
+          "issue": "1",
+          "journal-title": "Eur. J. Oper. Res",
+          "key": "pone.0306294.ref022",
+          "volume": "250",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1016/j.jclepro.2017.06.180",
+          "article-title": "Fuzzy multi-objective approach for optimal selection of suppliers and transportation decisions in an eco-efficient closed loop supply chain network.",
+          "author": "K. Govindan",
+          "doi-asserted-by": "crossref",
+          "first-page": "1598",
+          "journal-title": "J. Clean. Prod",
+          "key": "pone.0306294.ref023",
+          "volume": "165",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1016/j.cie.2017.04.038",
+          "article-title": "Fuzzy multi-objective sustainable and green closed-loop supply chain network design.",
+          "author": "H. Soleimani",
+          "doi-asserted-by": "crossref",
+          "first-page": "191",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref024",
+          "volume": "109",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1016/j.rcim.2017.05.005",
+          "article-title": "Optimization of product refurbishment in closed-loop supply chain using multi-period model integrated with fuzzy controller under uncertainties.",
+          "author": "Y. T. Chen",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "journal-title": "Robot. Cim-Int. Manuf",
+          "key": "pone.0306294.ref025",
+          "volume": "50",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1016/j.jclepro.2018.03.273",
+          "article-title": "A fuzzy pricing model for a green competitive closed-loop supply chain network design in the presence of disruptions.",
+          "author": "M. Ghomi-Avili",
+          "doi-asserted-by": "crossref",
+          "first-page": "425",
+          "journal-title": "J. Clean. Prod",
+          "key": "pone.0306294.ref026",
+          "volume": "188",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2018.09.027",
+          "article-title": "A robust fuzzy mathematical programming model for the closed-loop supply chain network design and a whale optimization solution algorithm.",
+          "author": "J. Ghahremani-Nahr",
+          "doi-asserted-by": "crossref",
+          "first-page": "454",
+          "journal-title": "Expert. Syst. Appl",
+          "key": "pone.0306294.ref027",
+          "volume": "116",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/j.spc.2018.11.010",
+          "article-title": "An uncertain model for integrated production-transportation closed-loop supply chain network with cost reliability.",
+          "author": "Z. Asim",
+          "doi-asserted-by": "crossref",
+          "first-page": "298",
+          "journal-title": "Sustain. Prod. Consump",
+          "key": "pone.0306294.ref028",
+          "volume": "17",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2015.02.058",
+          "article-title": "Two-echelon logistics distribution region partitioning problem based on a hybrid particle swarm optimization–genetic algorithm.",
+          "author": "Y. Wang",
+          "doi-asserted-by": "crossref",
+          "first-page": "5019",
+          "issue": "12",
+          "journal-title": "Expert. Syst. Appl",
+          "key": "pone.0306294.ref029",
+          "volume": "42",
+          "year": "2015"
+        },
+        {
+          "article-title": "Resolving forward-reverse logistics multi-period model using evolutionary algorithms.",
+          "author": "V. N. S. A. Kumar",
+          "first-page": "458",
+          "issue": "B",
+          "journal-title": "Int. J. Prod. Econ",
+          "key": "pone.0306294.ref030",
+          "volume": "183",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.1016/j.ins.2012.06.032",
+          "article-title": "Migrating Birds Optimization: A new metaheuristic approach and its performance on quadratic assignment problem.",
+          "author": "E. Duman",
+          "doi-asserted-by": "crossref",
+          "first-page": "65",
+          "journal-title": "Inform. Sciences",
+          "key": "pone.0306294.ref031",
+          "volume": "217",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1016/j.asoc.2016.12.021",
+          "article-title": "An effective modified migrating birds optimization for hybrid flowshop scheduling problem with lot streaming.",
+          "author": "B. Zhang",
+          "doi-asserted-by": "crossref",
+          "first-page": "14",
+          "journal-title": "Appl. Soft. Comput",
+          "key": "pone.0306294.ref032",
+          "volume": "52",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1016/j.ejor.2017.06.027",
+          "article-title": "Enhanced migrating birds optimization algorithm for the permutation flow shop problem with sequence dependent setup times",
+          "author": "A. Sioud",
+          "doi-asserted-by": "crossref",
+          "first-page": "66",
+          "issue": "1",
+          "journal-title": "Eur. J. Oper. Res",
+          "key": "pone.0306294.ref033",
+          "volume": "264",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1007/978-3-319-27000-5_19",
+          "author": "V. Tongur",
+          "doi-asserted-by": "crossref",
+          "first-page": "227",
+          "key": "pone.0306294.ref034",
+          "volume-title": "Intelligent and Evolutionary Systems.",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2015.04.040",
+          "article-title": "Modified migrating birds optimization algorithm for closed loop layout with exact distances in flexible manufacturing systems.",
+          "author": "S. Niroomand",
+          "doi-asserted-by": "crossref",
+          "first-page": "6586",
+          "issue": "19",
+          "journal-title": "Expert Syst. Appl",
+          "key": "pone.0306294.ref035",
+          "volume": "42",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1016/j.cie.2004.12.012",
+          "article-title": "Hybrid genetic algorithm for multi-time period production/distribution planning.",
+          "author": "M. Gen",
+          "doi-asserted-by": "crossref",
+          "first-page": "799",
+          "issue": "4",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref036",
+          "volume": "48",
+          "year": "2005"
+        },
+        {
+          "DOI": "10.1016/S0360-8352(02)00076-1",
+          "article-title": "Study on multi-stage logistic chain network: a spanning tree-based genetic algorithm approach.",
+          "author": "A. Syarif",
+          "doi-asserted-by": "crossref",
+          "first-page": "299",
+          "issue": "1–2",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref037",
+          "volume": "43",
+          "year": "2002"
+        },
+        {
+          "DOI": "10.1109/TEVC.2011.2173579",
+          "article-title": "Efficient forest data structure for evolutionary algorithms applied to network design",
+          "author": "A. C. B Delbem",
+          "doi-asserted-by": "crossref",
+          "first-page": "829",
+          "issue": "6",
+          "journal-title": "Ieee T. Evolut. Comput",
+          "key": "pone.0306294.ref038",
+          "volume": "16",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1016/j.ijpe.2014.08.015",
+          "article-title": "A carbon market sensitive optimization model for integrated forward–reverse logistics.",
+          "author": "A. Choudhary",
+          "doi-asserted-by": "crossref",
+          "first-page": "433",
+          "issue": "6",
+          "journal-title": "Int. J. Prod. Econ",
+          "key": "pone.0306294.ref039",
+          "volume": "164",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1007/s00291-005-0029-9",
+          "article-title": "A genetic algorithm for two-stage transportation problem using priority-based encoding.",
+          "author": "M. Gen",
+          "doi-asserted-by": "crossref",
+          "first-page": "337",
+          "issue": "3",
+          "journal-title": "Or Spectrum",
+          "key": "pone.0306294.ref040",
+          "volume": "28",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1016/j.cie.2008.09.021",
+          "article-title": "Network model and optimization of reverse logistics by hybrid genetic algorithm.",
+          "author": "J. E. Lee",
+          "doi-asserted-by": "crossref",
+          "first-page": "951",
+          "issue": "3",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref041",
+          "volume": "56",
+          "year": "2009"
+        },
+        {
+          "DOI": "10.1016/j.cor.2011.09.020",
+          "article-title": "A genetic algorithm for solving the fixed-charge transportation model: two-stage problem.",
+          "author": "K. Raj",
+          "doi-asserted-by": "crossref",
+          "first-page": "2016",
+          "issue": "9",
+          "journal-title": "Comput. Oper. Res",
+          "key": "pone.0306294.ref042",
+          "volume": "39",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1016/j.asoc.2012.11.016",
+          "article-title": "A genetic algorithm using priority-based encoding with new operators for fixed charge transportation problems.",
+          "author": "M. M. Lotfi",
+          "doi-asserted-by": "crossref",
+          "first-page": "2711",
+          "issue": "5",
+          "journal-title": "Appl. Soft Comput",
+          "key": "pone.0306294.ref043",
+          "volume": "13",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1016/j.jmsy.2014.02.007",
+          "article-title": "An optimization model for reverse logistics network under stochastic environment by using genetic algorithm.",
+          "author": "E. Roghanian",
+          "doi-asserted-by": "crossref",
+          "first-page": "348",
+          "issue": "3",
+          "journal-title": "J. Manuf. Syst",
+          "key": "pone.0306294.ref044",
+          "volume": "33",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1016/j.cie.2016.09.008",
+          "article-title": "A genetic algorithm for supply chain configuration with new product development",
+          "author": "Z. A. Afrouzy",
+          "doi-asserted-by": "crossref",
+          "first-page": "440",
+          "issue": "11",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref045",
+          "volume": "101",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.1016/j.cie.2016.03.010",
+          "article-title": "A priority based genetic algorithm for nonlinear transportation costs problems.",
+          "author": "F. G. Tari",
+          "doi-asserted-by": "crossref",
+          "first-page": "86",
+          "issue": "6",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref046",
+          "volume": "96",
+          "year": "2016"
+        },
+        {
+          "article-title": "logistics",
+          "author": "G. Mitsuo",
+          "first-page": "394",
+          "issue": "11",
+          "journal-title": "Comput. Ind. Eng",
+          "key": "pone.0306294.ref047",
+          "volume": "125",
+          "year": "2018"
+        },
+        {
+          "author": "B. Liu",
+          "journal-title": "Uncertainty theory. An introduction to its axiomatic foundations. Berlin: Springer-Verlag",
+          "key": "pone.0306294.ref048",
+          "year": "2004"
+        },
+        {
+          "DOI": "10.1109/TFUZZ.2002.800692",
+          "article-title": "Expected value of fuzzy variable and fuzzy expected value models.",
+          "author": "B. Liu",
+          "doi-asserted-by": "crossref",
+          "first-page": "445",
+          "issue": "4",
+          "journal-title": "Ieee T. Fuzzy. Syst",
+          "key": "pone.0306294.ref049",
+          "volume": "10",
+          "year": "2002"
+        },
+        {
+          "DOI": "10.1016/S0165-0114(96)00236-9",
+          "article-title": "Chance constrained programming with fuzzy parameters",
+          "author": "B. Liu",
+          "doi-asserted-by": "crossref",
+          "first-page": "227",
+          "issue": "2",
+          "journal-title": "Fuzzy. Set. Syst",
+          "key": "pone.0306294.ref050",
+          "volume": "94",
+          "year": "1998"
+        },
+        {
+          "DOI": "10.1109/91.771090",
+          "article-title": "Dependent-chance programming with fuzzy decisions.",
+          "author": "B. Liu",
+          "doi-asserted-by": "crossref",
+          "first-page": "354",
+          "issue": "3",
+          "journal-title": "Ieee T. Fuzzy Syst",
+          "key": "pone.0306294.ref051",
+          "volume": "7",
+          "year": "1999"
+        }
+      ],
+      "reference-count": 51,
+      "references-count": 51,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://dx.plos.org/10.1371/journal.pone.0306294"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "PLoS ONE"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "An Improved Migratory Birds Optimization Algorithm for Closed- Loop Supply Chain Network Planning in a Fuzzy Environment"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+      "updated-by": [
+        {
+          "DOI": "10.1371/journal.pone.0329803",
+          "label": "Expression of concern",
+          "source": "publisher",
+          "type": "expression_of_concern",
+          "updated": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                6
+              ]
+            ],
+            "date-time": "2025-08-06T00:00:00Z",
+            "timestamp": 1754438400000
+          }
+        }
+      ],
+      "volume": "19"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "cabcc3a2e48a70f2bb6cca6c4f6b9b79ad5be2013c036c8ccce6e97369af6dc5",
+  "retrieved_at": "2026-07-14T13:49:22Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

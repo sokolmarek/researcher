@@ -1,0 +1,209 @@
+{
+  "endpoint": "dois",
+  "request_key": "6befae12e4b99d05e0342d3b69c658edf3ca9bd783bbcccf577ca75e66f20daf",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Atrial Fibrillation Detection via Accelerometer and Gyroscope of a Smartphone"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 2,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [
+                "University of Applied Sciences Saarbrücken (htwsaar)"
+              ],
+              "contributorType": "Supervisor",
+              "familyName": "Scholz",
+              "givenName": "Oliver",
+              "name": "Scholz, Oliver",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [
+                "University of Applied Sciences Saarbrücken (htwsaar)"
+              ],
+              "contributorType": "Supervisor",
+              "familyName": "Strauss",
+              "givenName": "Daniel",
+              "name": "Strauss, Daniel",
+              "nameIdentifiers": []
+            }
+          ],
+          "created": "2021-02-24T15:00:37Z",
+          "creators": [
+            {
+              "affiliation": [
+                "University of Applied Sciences Saarbrücken"
+              ],
+              "familyName": "Auer",
+              "givenName": "Eric",
+              "name": "Auer, Eric",
+              "nameIdentifiers": []
+            }
+          ],
+          "dates": [
+            {
+              "date": "2020-12-27",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Atrial fibrillation (A-Fib) and atrial flutter are widespread medical conditions of the heart. Loss of coordination between atrial and ventricular activities affects the smooth circulation of blood, causing an increased risk of blood clotting, which in turn elevates risk of pulmonary embolisms and cerebral infarction. However, the condition is not necessarily noticed by patients, for example through palpitations or tachycardia. A custom embedded device developed for this master's thesis helps people to evaluate whether they are experiencing atrial fibrillation at a specific moment. The device measures single-channel ECG for less than one minute and instantly classifies it as either A-Fib, normal sinus rhythm (NSR) or undecided (low measurement quality or atypical ECG). Building on an earlier proof of concept project work by the author, this thesis presents a fully integrated, custom device, using an advanced classification algorithm trained on thousands of short, annotated ECG fragments from the PTB-XL corpus. The algorithm uses morphological analysis of the averaged ECG shape, properties of the R/R interval distribution and spectral analysis of the ECG to create a feature vector used for classification. Analysis and raw ECG data can be transferred via Bluetooth at the user's discretion.<br>",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Master's Thesis, Neural Engineering, University of Applied Sciences Saarbrücken (htwsaar) Supervisors: Prof. Dr. Oliver Scholz, Prof. Dr. rer. nat. Dr. rer. med. habil. Daniel J. Strauss",
+              "descriptionType": "Other"
+            },
+            {
+              "description": "{\"references\": [\"[\\u00a0Software source code for this thesis, FreeBSD license, DOI: 10.5281/zenodo.4560322 ]\", \"[ Hardware design files for this thesis, Creative Commons license, DOI: 10.5281/zenodo.4560352 ]\", \"M AlMusallam, A Soudani, Embedded Solution for Atrial Fibrillation Detection Using Smart Wireless Body Sensors, IEEE Sensors Journal, Vol. 19, No. 14 (2019) DOI: 10.1109/JSEN.2019.2906238\", \"E Auer, Embedded detection of atrial fibrillation and atrial flutter in single-channel ECG, project report (2020) DOI: 10.5281/zenodo.4311642\", \"R Duarte, A Stainthorpe, J Greenhalgh et al, Lead-I ECG for detecting atrial fibrillation in patients with an irregular pulse using single time point testing: a systematic review and economic evaluation, Health technology assessment 24(3):1-164 (2020) DOI: 10.3310/hta24030\", \"A Goldberger et al, PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals, Circulation Online. 101 (23), pp. e215 -- e220 (2000)\", \"RVL Hartley, A More Symmetrical Fourier Analysis Applied to Transmission Problems}, Proceedings of the IRE. 30 (3), pp. 144 -- 150 (1942) DOI: 10.1109/JRPROC.1942.234333\", \"YW Hau, HW Lim, CW Lim, S Kasim, P204 Automated detection of atrial fibrillation based on stationary wavelet transform and artificial neural network targeted for embedded system-on-chip technology, European Heart Journal, Volume 41, Issue Supplement 1 (2020) DOI: 10.1093/ehjci/ehz872.075\", \"IT Jolliffe, J Cadima, Principal component analysis: A review and recent developments, Philosophical Transactions of the Royal Society A, 374: 20150202 (2016) DOI: 10.1098/rsta.2015.0202\", \"H Khamis, R Weiss, Y Xie, C-W Chang, NH Lovell, SJ Redmond, QRS detection algorithm for telehealth electrocardiogram recordings, IEEE Transaction in Biomedical Engineering, vol. 63(7), p. 1377-1388 (2016) DOI: 10.7910/DVN/QTG0EP\", \"R Kramme, KP Hoffmann, RS Pozos (eds.), Springer Handbook of Medical Technology (2011) ISBN: 9783540746577\", \"O Lahdenoja, T Humanen, Z Iftikhar, et al, Atrial Fibrillation Detection via Accelerometer and Gyroscope of a Smartphone, IEEE Journal of Biomedical and Health Informatics 22(1):108-118 (2018) DOI: 10.1109/jbhi.2017.2688473\", \"TS Lugovaya, Biometric human identification based on electrocardiogram}, Master's thesis, Faculty of Computing Technologies and Informatics, Electrotechnical University LETI, Saint-Petersburg (2005) with Physionet ECGIDDB 1.0.0 dataset\", \"K Medhi, Heterogeneous Dataset of Arrhythmia}, Mendeley Data, v1 (2019) DOI: 10.17632/mmhw3vhf6w.1\", \"N Menche (ed.), Biologie, Anatomie, Physiologie (2007) ISBN: 9783437268014\", \"GB Moody, RG Mark, A new method for detecting atrial fibrillation using R-R intervals, Computers in Cardiology. 10:227-230 (1983)\", \"M Nabian, A Nouhi, Y Yin, S Ostadabbas, A Biosignal-Specific Processing Tool for Machine Learning and Pattern Recognition, IEEE-NIH 2017 Special Topics Conference on Healthcare Innovations and Point-of-Care Technologies (HI-POCT 2017)\", \"S Paine, The am atmospheric model (2019) DOI: 10.5281/zenodo.640645\", \"J Pan, WJ Tompkins, A Real-Time QRS Detection Algorithm, IEEE Transactions on Biomedical Engineering, Vol BME-32, No. 3 (1985)\", \"SC Pei, CC Tseng, IIR Multiple Notch Filter Design Based on Allpass Filter IEEE Tencon (1996) DOI: 10.1109/TENCON.1996.608814\", \"CRL Perales, HGC van Spall, S Maeda et al., Mobile health applications for the detection of atrial fibrillation: a systematic review, EP Europace, euaa139 (2020) DOI: 10.1093/europace/euaa139\", \"J Peterson, D Kynor, Intracardiac Atrial Fibrillation Database, Physionet IAFDB 1.0.0 dataset\", \"G P Pizzuti, S Cifaldi, G Nolfe, Digital Sampling Rate and ECG Analysis, J Biomed. Eng., 1985 ; 7(3) : 247 -- 250 DOI: 10.1016/0141-5425(85)90027-5\", \"AA Reeves, Optimized Fast Hartley Transform for the MC68000 with Applications in Image Processing, Master's thesis (1990)\", \"F Rinc\\u00f3n, PR Grassi, N Khaled, D Atienza, D Sciuto, Automated real-time atrial fibrillation detection on a wearable wireless sensor platform, 2012 Annual International Conference of the IEEE Engineering in Medicine and Biology Society (2012) DOI: 10.1109/EMBC.2012.6346465\", \"Sedghamiz, BioSigKit: A Matlab Toolbox and Interface for Analysis of BioSignals}. Journal of Open Source Software, 3(30), 671, (2018) DOI: 10.21105/joss.00671\", \"SW Smith, The Scientist and Engineer's Guide to Digital Signal Processing (1998) ISBN: 0-7506-7444-X\", \"P Wagner, N Strodthoff, R Bousseljot, W Samek, T Schaeffter, PTB-XL, a large publicly available electrocardiography dataset (2020) DOI: 10.13026/x4td-x982 and Physionet PTB-XL 1.0.1 dataset\", \"P Wagner, N Strodthoff, R Bousseljot, D Kreiseler, FI Lunze, W Samek, T Schaeffter, PTB-XL: A Large Publicly Available ECG Dataset. Scientific Data (2020) DOI: 10.1038/s41597-020-0495-6\"]}",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.5281/zenodo.4560150",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 5,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2020,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2021-02-24T15:00:39Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.5281/zenodo.4560322",
+              "relatedIdentifierType": "DOI",
+              "relationType": "Documents",
+              "resourceTypeGeneral": "Software"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.4560352",
+              "relatedIdentifierType": "DOI",
+              "relationType": "Documents",
+              "resourceTypeGeneral": "PhysicalObject"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.4311642",
+              "relatedIdentifierType": "DOI",
+              "relationType": "Continues",
+              "resourceTypeGeneral": "Text"
+            },
+            {
+              "relatedIdentifier": "10.13026/x4td-x982",
+              "relatedIdentifierType": "DOI",
+              "relationType": "Cites",
+              "resourceTypeGeneral": "Dataset"
+            },
+            {
+              "relatedIdentifier": "10.1038/s41597-020-0495-6",
+              "relatedIdentifierType": "DOI",
+              "relationType": "Cites",
+              "resourceTypeGeneral": "Text"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.4560151",
+              "relatedIdentifierType": "DOI",
+              "relationType": "HasVersion"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            },
+            {
+              "rights": "Open Access",
+              "rightsUri": "info:eu-repo/semantics/openAccess"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "ecg"
+            },
+            {
+              "subject": "atrial fibrillation"
+            },
+            {
+              "subject": "esp32"
+            },
+            {
+              "subject": "embedded system"
+            },
+            {
+              "subject": "medical engineering"
+            },
+            {
+              "subject": "open hardware"
+            },
+            {
+              "subject": "open source"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Development of an embedded device for real-time detection of atrial fibrillation and atrial flutter in single-channel ECG, using optimised classification based on a large training corpus"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceType": "Thesis",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2021-03-18T16:48:02Z",
+          "url": "https://zenodo.org/record/4560150",
+          "version": "original version",
+          "versionCount": 1,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.4560150",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Atrial+Fibrillation+Detection+via+Accelerometer+and+Gyroscope+of+a+Smartphone&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "8b48e4b28672fd3ae04265ac3cdb7206961125cace5d666b97c9827ea5dd2f9d",
+  "retrieved_at": "2026-07-14T14:48:42Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

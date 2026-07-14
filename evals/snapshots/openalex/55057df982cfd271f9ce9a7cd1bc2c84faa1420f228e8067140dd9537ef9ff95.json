@@ -1,0 +1,3042 @@
+{
+  "endpoint": "works/doi:10.1093/eurheartj/eht151",
+  "request_key": "55057df982cfd271f9ce9a7cd1bc2c84faa1420f228e8067140dd9537ef9ff95",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "ESC": [
+        10
+      ],
+      "ESH": [
+        8
+      ],
+      "ESH/ESC": [
+        1
+      ],
+      "Guidelines": [
+        2
+      ],
+      "Health": [
+        28
+      ],
+      "It": [
+        81
+      ],
+      "The": [
+        0,
+        43
+      ],
+      "account": [
+        37
+      ],
+      "after": [
+        15
+      ],
+      "also": [
+        83
+      ],
+      "and": [
+        9,
+        11,
+        71,
+        74,
+        92,
+        97
+      ],
+      "applicable": [
+        94
+      ],
+      "appropriate": [
+        57,
+        73
+      ],
+      "are": [
+        30
+      ],
+      "arrived": [
+        13
+      ],
+      "at": [
+        14,
+        22,
+        99
+      ],
+      "available": [
+        20
+      ],
+      "careful": [
+        16
+      ],
+      "carer.": [
+        80
+      ],
+      "circumstances": [
+        61
+      ],
+      "clinical": [
+        41
+      ],
+      "consideration": [
+        17
+      ],
+      "consultation": [
+        67
+      ],
+      "decisions": [
+        58
+      ],
+      "devices": [
+        98
+      ],
+      "do": [
+        45
+      ],
+      "drugs": [
+        96
+      ],
+      "encouraged": [
+        31
+      ],
+      "evidence": [
+        21
+      ],
+      "exercising": [
+        39
+      ],
+      "fully": [
+        35
+      ],
+      "guardian": [
+        78
+      ],
+      "guidelines": [
+        44
+      ],
+      "health": [
+        53,
+        85
+      ],
+      "however,": [
+        47
+      ],
+      "in": [
+        59,
+        66
+      ],
+      "individual": [
+        50,
+        64
+      ],
+      "into": [
+        36
+      ],
+      "is": [
+        82
+      ],
+      "judgement.": [
+        42
+      ],
+      "make": [
+        56
+      ],
+      "necessary": [
+        75
+      ],
+      "not,": [
+        46
+      ],
+      "of": [
+        6,
+        18,
+        52,
+        62,
+        102
+      ],
+      "or": [
+        79
+      ],
+      "override": [
+        48
+      ],
+      "patient's": [
+        77
+      ],
+      "patient,": [
+        70
+      ],
+      "patients,": [
+        65
+      ],
+      "prescription.": [
+        103
+      ],
+      "professional's": [
+        86
+      ],
+      "professionals": [
+        29,
+        54
+      ],
+      "regulations": [
+        93
+      ],
+      "represent": [
+        3
+      ],
+      "responsibility": [
+        51,
+        87
+      ],
+      "rules": [
+        91
+      ],
+      "take": [
+        33
+      ],
+      "that": [
+        69
+      ],
+      "the": [
+        4,
+        7,
+        19,
+        23,
+        49,
+        60,
+        63,
+        76,
+        84,
+        90,
+        100
+      ],
+      "their": [
+        40
+      ],
+      "them": [
+        34
+      ],
+      "they": [
+        25
+      ],
+      "time": [
+        24,
+        101
+      ],
+      "to": [
+        32,
+        55,
+        88,
+        95
+      ],
+      "verify": [
+        89
+      ],
+      "views": [
+        5
+      ],
+      "were": [
+        12,
+        26
+      ],
+      "when": [
+        38
+      ],
+      "where": [
+        72
+      ],
+      "with": [
+        68
+      ],
+      "written.": [
+        27
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I66752286"
+            ],
+            "raw_affiliation_string": "Centro di Fisiologia Clinica e Ipertensione, Università Milano-Bicocca, Milano, Italy. giuseppe.mancia@unimib.it"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I66752286"
+            ],
+            "raw_affiliation_string": "University of Milano-Bicocca, Milan, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Giuseppe Mancia",
+          "id": "https://openalex.org/A5109556918",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Milano-Bicocca",
+            "id": "https://openalex.org/I66752286",
+            "lineage": [
+              "https://openalex.org/I66752286"
+            ],
+            "ror": "https://ror.org/01ynf4891",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Centro di Fisiologia Clinica e Ipertensione, Università Milano-Bicocca, Milano, Italy. giuseppe.mancia@unimib.it",
+          "University of Milano-Bicocca, Milan, Italy"
+        ],
+        "raw_author_name": "Giuseppe Mancia",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Robert Fagard",
+          "id": "https://openalex.org/A5111569665",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Robert Fagard",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Krzysztof Narkiewicz",
+          "id": "https://openalex.org/A5089727588",
+          "orcid": "https://orcid.org/0000-0001-5949-5018"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Krzysztof Narkiewicz",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Josep Redón",
+          "id": "https://openalex.org/A5007735183",
+          "orcid": "https://orcid.org/0000-0001-8777-6773"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Josep Redon",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Alberto Zanchetti",
+          "id": "https://openalex.org/A5042107498",
+          "orcid": "https://orcid.org/0000-0003-4796-7959"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Alberto Zanchetti",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Michael Böhm",
+          "id": "https://openalex.org/A5109794881",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Michael Böhm",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Thierry Christiaens",
+          "id": "https://openalex.org/A5105817690",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Thierry Christiaens",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Renata Cífková",
+          "id": "https://openalex.org/A5062764105",
+          "orcid": "https://orcid.org/0000-0003-2765-3821"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Renata Cifkova",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Guy De Backer",
+          "id": "https://openalex.org/A5107869815",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Guy De Backer",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Anna F. Dominiczak",
+          "id": "https://openalex.org/A5017081040",
+          "orcid": "https://orcid.org/0000-0003-4913-3608"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Anna Dominiczak",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Maurizio Galderisi",
+          "id": "https://openalex.org/A5073163158",
+          "orcid": "https://orcid.org/0000-0003-0311-9069"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Maurizio Galderisi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Diederick E. Grobbee",
+          "id": "https://openalex.org/A5113667374",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Diederick E Grobbee",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Tiny Jaarsma",
+          "id": "https://openalex.org/A5046767891",
+          "orcid": "https://orcid.org/0000-0002-4197-4026"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Tiny Jaarsma",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Paulus Kirchhof",
+          "id": "https://openalex.org/A5047325459",
+          "orcid": "https://orcid.org/0000-0002-1881-0197"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Paulus Kirchhof",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Sverre E. Kjeldsen",
+          "id": "https://openalex.org/A5087577272",
+          "orcid": "https://orcid.org/0000-0003-2389-0272"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Sverre E Kjeldsen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Stéphane Laurent",
+          "id": "https://openalex.org/A5108135057",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Stéphane Laurent",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Athanasios J Manolis",
+          "id": "https://openalex.org/A5086871534",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Athanasios J Manolis",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Peter M. Nilsson",
+          "id": "https://openalex.org/A5020047304",
+          "orcid": "https://orcid.org/0000-0002-5652-8459"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Peter M Nilsson",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Luís M. Ruilope",
+          "id": "https://openalex.org/A5040062593",
+          "orcid": "https://orcid.org/0000-0001-6278-7951"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Luis Miguel Ruilope",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Roland E Schmieder",
+          "id": "https://openalex.org/A5107854154",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Roland E Schmieder",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Per Anton Sirnes",
+          "id": "https://openalex.org/A5033890566",
+          "orcid": "https://orcid.org/0000-0001-6055-5858"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Per Anton Sirnes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Peter Sleight",
+          "id": "https://openalex.org/A5110181982",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Peter Sleight",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Margus Viigimaa",
+          "id": "https://openalex.org/A5013595648",
+          "orcid": "https://orcid.org/0000-0001-5575-5978"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Margus Viigimaa",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Bernard Waeber",
+          "id": "https://openalex.org/A5032738255",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Bernard Waeber",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Faı̈ez Zannad",
+          "id": "https://openalex.org/A5036821495",
+          "orcid": "https://orcid.org/0000-0001-7456-1570"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Faiez Zannad",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Josep Redon",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Josep Redon",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Anna F. Dominiczak",
+          "id": "https://openalex.org/A5017081040",
+          "orcid": "https://orcid.org/0000-0003-4913-3608"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Anna Dominiczak",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Krzysztof Narkiewicz",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Krzysztof Narkiewicz",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Peter M. Nilsson",
+          "id": "https://openalex.org/A5020047304",
+          "orcid": "https://orcid.org/0000-0002-5652-8459"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Peter M Nilsson",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Michel Burnier",
+          "id": "https://openalex.org/A5106486430",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Michel Burnier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Margus Viigimaa",
+          "id": "https://openalex.org/A5013595648",
+          "orcid": "https://orcid.org/0000-0001-5575-5978"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Margus Viigimaa",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Ettore Ambrosioni",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Ettore Ambrosioni",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Mark Caufield",
+          "id": "https://openalex.org/A5105987752",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Mark Caufield",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "António Coca",
+          "id": "https://openalex.org/A5069730469",
+          "orcid": "https://orcid.org/0000-0001-6968-3266"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Antonio Coca",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Michael Hecht Olsen",
+          "id": "https://openalex.org/A5056069818",
+          "orcid": "https://orcid.org/0000-0003-2230-5780"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Michael Hecht Olsen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Roland E Schmieder",
+          "id": "https://openalex.org/A5107854154",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Roland E Schmieder",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Costas Tsioufis",
+          "id": "https://openalex.org/A5107877457",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Costas Tsioufis",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Philippe van de Borne",
+          "id": "https://openalex.org/A5108129340",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Philippe van de Borne",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Jose Luis Zamorano",
+          "id": "https://openalex.org/A5105464564",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Jose Luis Zamorano",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Stephan Achenbach",
+          "id": "https://openalex.org/A5108094982",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Stephan Achenbach",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Helmut Baumgartner",
+          "id": "https://openalex.org/A5108094981",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Helmut Baumgartner",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Jeroen J. Bax",
+          "id": "https://openalex.org/A5108135318",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Jeroen J Bax",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Héctor Bueno",
+          "id": "https://openalex.org/A5053660748",
+          "orcid": "https://orcid.org/0000-0003-0277-7596"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Héctor Bueno",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Veronica Dean",
+          "id": "https://openalex.org/A5106134180",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Veronica Dean",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I157674565"
+            ],
+            "raw_affiliation_string": "University of Liège, Liège, Belgium"
+          }
+        ],
+        "author": {
+          "display_name": "Christi Deaton",
+          "id": "https://openalex.org/A5025950676",
+          "orcid": "https://orcid.org/0000-0003-3209-0752"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "University of Liège",
+            "id": "https://openalex.org/I157674565",
+            "lineage": [
+              "https://openalex.org/I157674565"
+            ],
+            "ror": "https://ror.org/00afp2z80",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Liège, Liège, Belgium"
+        ],
+        "raw_author_name": "Christi Deaton",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Çetin Erol",
+          "id": "https://openalex.org/A5056342618",
+          "orcid": "https://orcid.org/0000-0001-7396-3818"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Cetin Erol",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Robert Fagard",
+          "id": "https://openalex.org/A5111569665",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Robert Fagard",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Roberto Ferrari",
+          "id": "https://openalex.org/A5100727528",
+          "orcid": "https://orcid.org/0000-0003-2046-9175"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Roberto Ferrari",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "David Hasdai",
+          "id": "https://openalex.org/A5108086695",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "David Hasdai",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Arno W Hoes",
+          "id": "https://openalex.org/A5105528722",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Arno W Hoes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Paulus Kirchhof",
+          "id": "https://openalex.org/A5047325459",
+          "orcid": "https://orcid.org/0000-0002-1881-0197"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Paulus Kirchhof",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Juhani Knuuti",
+          "id": "https://openalex.org/A5070124449",
+          "orcid": "https://orcid.org/0000-0003-3156-9593"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Juhani Knuuti",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Philippe Kolh",
+          "id": "https://openalex.org/A5106720395",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Philippe Kolh",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Patrizio Lancellotti",
+          "id": "https://openalex.org/A5108096312",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Patrizio Lancellotti",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Aleš Linhart",
+          "id": "https://openalex.org/A5075282771",
+          "orcid": "https://orcid.org/0000-0002-3372-7850"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Ales Linhart",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Petros Nihoyannopoulos",
+          "id": "https://openalex.org/A5107854155",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Petros Nihoyannopoulos",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Massimo Piepoli",
+          "id": "https://openalex.org/A5086153061",
+          "orcid": "https://orcid.org/0000-0003-1124-234X"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Massimo F Piepoli",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Piotr Ponikowski",
+          "id": "https://openalex.org/A5017272571",
+          "orcid": "https://orcid.org/0000-0002-3391-7064"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Piotr Ponikowski",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Per Anton Sirnes",
+          "id": "https://openalex.org/A5033890566",
+          "orcid": "https://orcid.org/0000-0001-6055-5858"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Per Anton Sirnes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Juan Tamargo",
+          "id": "https://openalex.org/A5002326750",
+          "orcid": "https://orcid.org/0000-0002-7979-7758"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Juan Luis Tamargo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Michał Tendera",
+          "id": "https://openalex.org/A5073792258",
+          "orcid": "https://orcid.org/0000-0002-0812-6113"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Michal Tendera",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Adam Torbicki",
+          "id": "https://openalex.org/A5007694037",
+          "orcid": "https://orcid.org/0000-0003-3475-8832"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Adam Torbicki",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "William Wijns",
+          "id": "https://openalex.org/A5033359462",
+          "orcid": "https://orcid.org/0000-0002-7267-4376"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "William Wijns",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Stephan Windecker",
+          "id": "https://openalex.org/A5053194091",
+          "orcid": "https://orcid.org/0000-0003-2653-6762"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Stephan Windecker",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Denis Clément",
+          "id": "https://openalex.org/A5103612022",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Denis L Clement",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "António Coca",
+          "id": "https://openalex.org/A5069730469",
+          "orcid": "https://orcid.org/0000-0001-6968-3266"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Antonio Coca",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Thierry Gillebert",
+          "id": "https://openalex.org/A5006809482",
+          "orcid": "https://orcid.org/0000-0002-3832-919X"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Thierry C Gillebert",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Michał Tendera",
+          "id": "https://openalex.org/A5073792258",
+          "orcid": "https://orcid.org/0000-0002-0812-6113"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Michal Tendera",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Enrico Agabiti Rosei",
+          "id": "https://openalex.org/A5108191116",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Enrico Agabiti Rosei",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Ettore Ambrosioni",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Ettore Ambrosioni",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Stefan D Anker",
+          "id": "https://openalex.org/A5105887846",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Stefan D Anker",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Johann Bauersachs",
+          "id": "https://openalex.org/A5107870069",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Johann Bauersachs",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Jana Brguljan Hitij",
+          "id": "https://openalex.org/A5055391386",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Jana Brguljan Hitij",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Mark J. Caulfield",
+          "id": "https://openalex.org/A5074262853",
+          "orcid": "https://orcid.org/0000-0001-9295-3594"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Mark Caulfield",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Marc De Buyzere",
+          "id": "https://openalex.org/A5059691866",
+          "orcid": "https://orcid.org/0000-0003-1277-1083"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Marc De Buyzere",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Sabina De Geest",
+          "id": "https://openalex.org/A5082147781",
+          "orcid": "https://orcid.org/0000-0001-6596-7237"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Sabina De Geest",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Geneviève Dérumeaux",
+          "id": "https://openalex.org/A5086655631",
+          "orcid": "https://orcid.org/0000-0003-1471-1631"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Geneviève Anne Derumeaux",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Serap Erdine",
+          "id": "https://openalex.org/A5003816226",
+          "orcid": "https://orcid.org/0000-0001-6642-5931"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Serap Erdine",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Csaba Farsang",
+          "id": "https://openalex.org/A5107854157",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Csaba Farsang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Christian Funck‐Brentano",
+          "id": "https://openalex.org/A5027731973",
+          "orcid": "https://orcid.org/0000-0003-0406-5189"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Christian Funck-Brentano",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Vjekoslav Gerc",
+          "id": "https://openalex.org/A5105933452",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Vjekoslav Gerc",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Giuseppe Germanò",
+          "id": "https://openalex.org/A5001023135",
+          "orcid": "https://orcid.org/0000-0001-8739-058X"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Giuseppe Germano",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Stephan Gielen",
+          "id": "https://openalex.org/A5108131297",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Stephan Gielen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Herman Haller",
+          "id": "https://openalex.org/A5038353193",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Herman Haller",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Arno W Hoes",
+          "id": "https://openalex.org/A5105528722",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Arno W Hoes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Jens Jordan",
+          "id": "https://openalex.org/A5017690840",
+          "orcid": "https://orcid.org/0000-0003-4518-0706"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Jens Jordan",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Thomas Kahan",
+          "id": "https://openalex.org/A5052721005",
+          "orcid": "https://orcid.org/0000-0001-9909-4956"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Thomas Kahan",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Michel Komajda",
+          "id": "https://openalex.org/A5108014854",
+          "orcid": "https://orcid.org/0000-0002-3010-5589"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Michel Komajda",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Dragan Lović",
+          "id": "https://openalex.org/A5059140544",
+          "orcid": "https://orcid.org/0000-0002-0685-2605"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Dragan Lovic",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Heiko Mahrholdt",
+          "id": "https://openalex.org/A5051025215",
+          "orcid": "https://orcid.org/0000-0001-9862-947X"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Heiko Mahrholdt",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Michael Hecht Olsen",
+          "id": "https://openalex.org/A5056069818",
+          "orcid": "https://orcid.org/0000-0003-2230-5780"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Michael Hecht Olsen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Jan Östergren",
+          "id": "https://openalex.org/A5108599951",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Jan Ostergren",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Gianfranco Parati",
+          "id": "https://openalex.org/A5015206826",
+          "orcid": "https://orcid.org/0000-0001-9402-7439"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Gianfranco Parati",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Joep Perk",
+          "id": "https://openalex.org/A5108096314",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Joep Perk",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Jorge Polónia",
+          "id": "https://openalex.org/A5070646346",
+          "orcid": "https://orcid.org/0000-0002-0133-7217"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Jorge Polonia",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Bogdan A Popescu",
+          "id": "https://openalex.org/A5108128188",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Bogdan A Popescu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Zeljko Reiner",
+          "id": "https://openalex.org/A5108086284",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Zeljko Reiner",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Lars Rydén",
+          "id": "https://openalex.org/A5108096315",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Lars Rydén",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Yu.M. Sіrenko",
+          "id": "https://openalex.org/A5040924418",
+          "orcid": "https://orcid.org/0000-0002-4091-4910"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Yuriy Sirenko",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Alice Stanton",
+          "id": "https://openalex.org/A5037240336",
+          "orcid": "https://orcid.org/0000-0002-4961-165X"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Alice Stanton",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Harry Struijker-Boudier",
+          "id": "https://openalex.org/A5113678614",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Harry Struijker-Boudier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Costas Tsioufis",
+          "id": "https://openalex.org/A5107877457",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Costas Tsioufis",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Philippe van de Borne",
+          "id": "https://openalex.org/A5108129340",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Philippe van de Borne",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Charalambos Vlachopoulos",
+          "id": "https://openalex.org/A5032584545",
+          "orcid": "https://orcid.org/0000-0002-9904-3558"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Charalambos Vlachopoulos",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Massimo Volpe",
+          "id": "https://openalex.org/A5054282642",
+          "orcid": "https://orcid.org/0000-0002-9642-8380"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Massimo Volpe",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "David Wood",
+          "id": "https://openalex.org/A5023089434",
+          "orcid": "https://orcid.org/0000-0003-3058-4871"
+        },
+        "author_position": "last",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "David A Wood",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1093/eurheartj/eht151",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1093/eurheartj/eht151",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://academic.oup.com/eurheartj/article-pdf/34/28/2159/17895598/eht151.pdf",
+      "raw_source_name": "European Heart Journal",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "European Heart Journal",
+        "host_organization": "https://openalex.org/P4310311648",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310311648",
+          "https://openalex.org/P4310311647"
+        ],
+        "host_organization_lineage_names": [
+          "Oxford University Press",
+          "University of Oxford"
+        ],
+        "host_organization_name": "Oxford University Press",
+        "id": "https://openalex.org/S181568219",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0195-668X",
+          "1522-9645"
+        ],
+        "issn_l": "0195-668X",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "2159",
+      "issue": "28",
+      "last_page": "2219",
+      "volume": "34"
+    },
+    "cited_by_count": 13682,
+    "display_name": "2013 ESH/ESC Guidelines for the management of arterial hypertension",
+    "doi": "https://doi.org/10.1093/eurheartj/eht151",
+    "id": "https://openalex.org/W2133416234",
+    "ids": {
+      "doi": "https://doi.org/10.1093/eurheartj/eht151",
+      "mag": "2133416234",
+      "openalex": "https://openalex.org/W2133416234",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/23771844"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "bronze",
+      "oa_url": "https://academic.oup.com/eurheartj/article-pdf/34/28/2159/17895598/eht151.pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1093/eurheartj/eht151",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1093/eurheartj/eht151",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://academic.oup.com/eurheartj/article-pdf/34/28/2159/17895598/eht151.pdf",
+      "raw_source_name": "European Heart Journal",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "European Heart Journal",
+        "host_organization": "https://openalex.org/P4310311648",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310311648",
+          "https://openalex.org/P4310311647"
+        ],
+        "host_organization_lineage_names": [
+          "Oxford University Press",
+          "University of Oxford"
+        ],
+        "host_organization_name": "Oxford University Press",
+        "id": "https://openalex.org/S181568219",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0195-668X",
+          "1522-9645"
+        ],
+        "issn_l": "0195-668X",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2013-06-14",
+    "publication_year": 2013,
+    "referenced_works": [
+      "https://openalex.org/W7687383",
+      "https://openalex.org/W8133324",
+      "https://openalex.org/W22189248",
+      "https://openalex.org/W41201517",
+      "https://openalex.org/W43415297",
+      "https://openalex.org/W49917511",
+      "https://openalex.org/W53379003",
+      "https://openalex.org/W61639876",
+      "https://openalex.org/W62443207",
+      "https://openalex.org/W69532248",
+      "https://openalex.org/W75245760",
+      "https://openalex.org/W75251984",
+      "https://openalex.org/W81008224",
+      "https://openalex.org/W101667153",
+      "https://openalex.org/W108690756",
+      "https://openalex.org/W122349615",
+      "https://openalex.org/W136657926",
+      "https://openalex.org/W152614436",
+      "https://openalex.org/W157267557",
+      "https://openalex.org/W166669532",
+      "https://openalex.org/W167701172",
+      "https://openalex.org/W171259044",
+      "https://openalex.org/W177593246",
+      "https://openalex.org/W180946569",
+      "https://openalex.org/W197402492",
+      "https://openalex.org/W197868875",
+      "https://openalex.org/W1492717268",
+      "https://openalex.org/W1497461844",
+      "https://openalex.org/W1497546664",
+      "https://openalex.org/W1500963439",
+      "https://openalex.org/W1510898619",
+      "https://openalex.org/W1514653714",
+      "https://openalex.org/W1526927233",
+      "https://openalex.org/W1528134127",
+      "https://openalex.org/W1529565841",
+      "https://openalex.org/W1532542861",
+      "https://openalex.org/W1539575618",
+      "https://openalex.org/W1542808053",
+      "https://openalex.org/W1546258268",
+      "https://openalex.org/W1556618881",
+      "https://openalex.org/W1560486856",
+      "https://openalex.org/W1568095913",
+      "https://openalex.org/W1570583414",
+      "https://openalex.org/W1571825438",
+      "https://openalex.org/W1583436557",
+      "https://openalex.org/W1583834060",
+      "https://openalex.org/W1588499096",
+      "https://openalex.org/W1591823274",
+      "https://openalex.org/W1592471891",
+      "https://openalex.org/W1593442063",
+      "https://openalex.org/W1598717523",
+      "https://openalex.org/W1604542334",
+      "https://openalex.org/W1627293103",
+      "https://openalex.org/W1710832400",
+      "https://openalex.org/W1712642890",
+      "https://openalex.org/W1752045965",
+      "https://openalex.org/W1754998596",
+      "https://openalex.org/W1782778410",
+      "https://openalex.org/W1816597323",
+      "https://openalex.org/W1821528277",
+      "https://openalex.org/W1821872278",
+      "https://openalex.org/W1879148715",
+      "https://openalex.org/W1900198249",
+      "https://openalex.org/W1918449402",
+      "https://openalex.org/W1929752127",
+      "https://openalex.org/W1943854380",
+      "https://openalex.org/W1964167758",
+      "https://openalex.org/W1964467403",
+      "https://openalex.org/W1964546363",
+      "https://openalex.org/W1965087670",
+      "https://openalex.org/W1965309126",
+      "https://openalex.org/W1965412716",
+      "https://openalex.org/W1965708830",
+      "https://openalex.org/W1965733146",
+      "https://openalex.org/W1966886574",
+      "https://openalex.org/W1967096675",
+      "https://openalex.org/W1967610947",
+      "https://openalex.org/W1967955094",
+      "https://openalex.org/W1968136313",
+      "https://openalex.org/W1968181857",
+      "https://openalex.org/W1969728057",
+      "https://openalex.org/W1969748795",
+      "https://openalex.org/W1969942274",
+      "https://openalex.org/W1970142006",
+      "https://openalex.org/W1970193515",
+      "https://openalex.org/W1970475964",
+      "https://openalex.org/W1970627024",
+      "https://openalex.org/W1970770340",
+      "https://openalex.org/W1970957826",
+      "https://openalex.org/W1971049363",
+      "https://openalex.org/W1971486232",
+      "https://openalex.org/W1971698096",
+      "https://openalex.org/W1971732155",
+      "https://openalex.org/W1972358173",
+      "https://openalex.org/W1972424302",
+      "https://openalex.org/W1972619023",
+      "https://openalex.org/W1972661406",
+      "https://openalex.org/W1973845611",
+      "https://openalex.org/W1973921707",
+      "https://openalex.org/W1973928079",
+      "https://openalex.org/W1974103732",
+      "https://openalex.org/W1974437103",
+      "https://openalex.org/W1974545466",
+      "https://openalex.org/W1974548284",
+      "https://openalex.org/W1974868694",
+      "https://openalex.org/W1975138211",
+      "https://openalex.org/W1975240757",
+      "https://openalex.org/W1975540296",
+      "https://openalex.org/W1976099946",
+      "https://openalex.org/W1976574306",
+      "https://openalex.org/W1976646275",
+      "https://openalex.org/W1976904550",
+      "https://openalex.org/W1976921866",
+      "https://openalex.org/W1977014222",
+      "https://openalex.org/W1977186839",
+      "https://openalex.org/W1977414340",
+      "https://openalex.org/W1977607782",
+      "https://openalex.org/W1977660421",
+      "https://openalex.org/W1978190600",
+      "https://openalex.org/W1978481506",
+      "https://openalex.org/W1979030376",
+      "https://openalex.org/W1979098009",
+      "https://openalex.org/W1979170245",
+      "https://openalex.org/W1979506151",
+      "https://openalex.org/W1979754756",
+      "https://openalex.org/W1979821633",
+      "https://openalex.org/W1979950397",
+      "https://openalex.org/W1980268488",
+      "https://openalex.org/W1980446507",
+      "https://openalex.org/W1980533403",
+      "https://openalex.org/W1980820351",
+      "https://openalex.org/W1980967898",
+      "https://openalex.org/W1981160421",
+      "https://openalex.org/W1982031085",
+      "https://openalex.org/W1982080117",
+      "https://openalex.org/W1982151116",
+      "https://openalex.org/W1982392960",
+      "https://openalex.org/W1982922318",
+      "https://openalex.org/W1983269691",
+      "https://openalex.org/W1983526026",
+      "https://openalex.org/W1983946640",
+      "https://openalex.org/W1984187899",
+      "https://openalex.org/W1984207232",
+      "https://openalex.org/W1984417177",
+      "https://openalex.org/W1984450750",
+      "https://openalex.org/W1984749959",
+      "https://openalex.org/W1984935479",
+      "https://openalex.org/W1984969055",
+      "https://openalex.org/W1985360781",
+      "https://openalex.org/W1985549269",
+      "https://openalex.org/W1985628753",
+      "https://openalex.org/W1985967126",
+      "https://openalex.org/W1986789729",
+      "https://openalex.org/W1986952072",
+      "https://openalex.org/W1987521955",
+      "https://openalex.org/W1987730138",
+      "https://openalex.org/W1987763443",
+      "https://openalex.org/W1987782379",
+      "https://openalex.org/W1988023270",
+      "https://openalex.org/W1988122810",
+      "https://openalex.org/W1988404310",
+      "https://openalex.org/W1988716175",
+      "https://openalex.org/W1989722793",
+      "https://openalex.org/W1990029466",
+      "https://openalex.org/W1990397156",
+      "https://openalex.org/W1990855053",
+      "https://openalex.org/W1991241839",
+      "https://openalex.org/W1991295827",
+      "https://openalex.org/W1991518573",
+      "https://openalex.org/W1991655882",
+      "https://openalex.org/W1991778481",
+      "https://openalex.org/W1992084132",
+      "https://openalex.org/W1992281996",
+      "https://openalex.org/W1992890029",
+      "https://openalex.org/W1993050502",
+      "https://openalex.org/W1993088005",
+      "https://openalex.org/W1993286003",
+      "https://openalex.org/W1993566535",
+      "https://openalex.org/W1993727635",
+      "https://openalex.org/W1993884221",
+      "https://openalex.org/W1994560902",
+      "https://openalex.org/W1994880957",
+      "https://openalex.org/W1994907634",
+      "https://openalex.org/W1995753814",
+      "https://openalex.org/W1996042816",
+      "https://openalex.org/W1996060956",
+      "https://openalex.org/W1996249483",
+      "https://openalex.org/W1996419725",
+      "https://openalex.org/W1998181443",
+      "https://openalex.org/W1998374020",
+      "https://openalex.org/W1998705051",
+      "https://openalex.org/W1998936516",
+      "https://openalex.org/W1999197889",
+      "https://openalex.org/W1999338190",
+      "https://openalex.org/W1999339475",
+      "https://openalex.org/W1999420609",
+      "https://openalex.org/W1999468381",
+      "https://openalex.org/W1999904792",
+      "https://openalex.org/W1999945328",
+      "https://openalex.org/W2000304914",
+      "https://openalex.org/W2000311463",
+      "https://openalex.org/W2000514018",
+      "https://openalex.org/W2000747883",
+      "https://openalex.org/W2000838889",
+      "https://openalex.org/W2001101777",
+      "https://openalex.org/W2001434990",
+      "https://openalex.org/W2001450629",
+      "https://openalex.org/W2001468869",
+      "https://openalex.org/W2001722069",
+      "https://openalex.org/W2001791400",
+      "https://openalex.org/W2002770383",
+      "https://openalex.org/W2002868671",
+      "https://openalex.org/W2002906434",
+      "https://openalex.org/W2002955968",
+      "https://openalex.org/W2003145631",
+      "https://openalex.org/W2003221755",
+      "https://openalex.org/W2003348418",
+      "https://openalex.org/W2003659188",
+      "https://openalex.org/W2004320230",
+      "https://openalex.org/W2004570764",
+      "https://openalex.org/W2005611808",
+      "https://openalex.org/W2006078326",
+      "https://openalex.org/W2006096652",
+      "https://openalex.org/W2006495214",
+      "https://openalex.org/W2006880943",
+      "https://openalex.org/W2007253428",
+      "https://openalex.org/W2008274782",
+      "https://openalex.org/W2008386859",
+      "https://openalex.org/W2008846719",
+      "https://openalex.org/W2008885520",
+      "https://openalex.org/W2009614218",
+      "https://openalex.org/W2010263754",
+      "https://openalex.org/W2010912810",
+      "https://openalex.org/W2011710844",
+      "https://openalex.org/W2013014208",
+      "https://openalex.org/W2013354239",
+      "https://openalex.org/W2013841756",
+      "https://openalex.org/W2013993868",
+      "https://openalex.org/W2014462481",
+      "https://openalex.org/W2014750372",
+      "https://openalex.org/W2014759828",
+      "https://openalex.org/W2015569360",
+      "https://openalex.org/W2015983369",
+      "https://openalex.org/W2016928897",
+      "https://openalex.org/W2018335030",
+      "https://openalex.org/W2018553669",
+      "https://openalex.org/W2019005611",
+      "https://openalex.org/W2019019126",
+      "https://openalex.org/W2019030153",
+      "https://openalex.org/W2020541809",
+      "https://openalex.org/W2020753774",
+      "https://openalex.org/W2020804368",
+      "https://openalex.org/W2021257249",
+      "https://openalex.org/W2021407105",
+      "https://openalex.org/W2021618766",
+      "https://openalex.org/W2022151089",
+      "https://openalex.org/W2022313726",
+      "https://openalex.org/W2022782848",
+      "https://openalex.org/W2023143117",
+      "https://openalex.org/W2023144631",
+      "https://openalex.org/W2023198338",
+      "https://openalex.org/W2023456049",
+      "https://openalex.org/W2023493734",
+      "https://openalex.org/W2023748361",
+      "https://openalex.org/W2024036497",
+      "https://openalex.org/W2024281376",
+      "https://openalex.org/W2024848725",
+      "https://openalex.org/W2024886564",
+      "https://openalex.org/W2025309234",
+      "https://openalex.org/W2025452032",
+      "https://openalex.org/W2025838357",
+      "https://openalex.org/W2027004049",
+      "https://openalex.org/W2027432853",
+      "https://openalex.org/W2027617419",
+      "https://openalex.org/W2027768749",
+      "https://openalex.org/W2027842117",
+      "https://openalex.org/W2027925409",
+      "https://openalex.org/W2027996634",
+      "https://openalex.org/W2028035457",
+      "https://openalex.org/W2028733661",
+      "https://openalex.org/W2028871874",
+      "https://openalex.org/W2029157695",
+      "https://openalex.org/W2029384360",
+      "https://openalex.org/W2029744010",
+      "https://openalex.org/W2030233677",
+      "https://openalex.org/W2030367449",
+      "https://openalex.org/W2030486736",
+      "https://openalex.org/W2030502813",
+      "https://openalex.org/W2030541107",
+      "https://openalex.org/W2031185570",
+      "https://openalex.org/W2031449118",
+      "https://openalex.org/W2032290100",
+      "https://openalex.org/W2032871154",
+      "https://openalex.org/W2032884061",
+      "https://openalex.org/W2033233132",
+      "https://openalex.org/W2033645952",
+      "https://openalex.org/W2033956723",
+      "https://openalex.org/W2033989169",
+      "https://openalex.org/W2034072139",
+      "https://openalex.org/W2034158808",
+      "https://openalex.org/W2034249599",
+      "https://openalex.org/W2034262083",
+      "https://openalex.org/W2034533447",
+      "https://openalex.org/W2034570429",
+      "https://openalex.org/W2034576097",
+      "https://openalex.org/W2035095160",
+      "https://openalex.org/W2035300209",
+      "https://openalex.org/W2035557978",
+      "https://openalex.org/W2035617981",
+      "https://openalex.org/W2036605610",
+      "https://openalex.org/W2036704593",
+      "https://openalex.org/W2036970144",
+      "https://openalex.org/W2037526611",
+      "https://openalex.org/W2037709655",
+      "https://openalex.org/W2037768170",
+      "https://openalex.org/W2037989593",
+      "https://openalex.org/W2038922047",
+      "https://openalex.org/W2038923746",
+      "https://openalex.org/W2039552608",
+      "https://openalex.org/W2039597642",
+      "https://openalex.org/W2039858103",
+      "https://openalex.org/W2040025337",
+      "https://openalex.org/W2040489347",
+      "https://openalex.org/W2040888535",
+      "https://openalex.org/W2041000173",
+      "https://openalex.org/W2041501154",
+      "https://openalex.org/W2041502303",
+      "https://openalex.org/W2042006238",
+      "https://openalex.org/W2042864031",
+      "https://openalex.org/W2043012655",
+      "https://openalex.org/W2043244508",
+      "https://openalex.org/W2043575472",
+      "https://openalex.org/W2043826848",
+      "https://openalex.org/W2043859609",
+      "https://openalex.org/W2044178472",
+      "https://openalex.org/W2044206864",
+      "https://openalex.org/W2044276013",
+      "https://openalex.org/W2044401392",
+      "https://openalex.org/W2044773944",
+      "https://openalex.org/W2045618464",
+      "https://openalex.org/W2045975885",
+      "https://openalex.org/W2046575388",
+      "https://openalex.org/W2046584811",
+      "https://openalex.org/W2046763768",
+      "https://openalex.org/W2047046572",
+      "https://openalex.org/W2047184366",
+      "https://openalex.org/W2047390341",
+      "https://openalex.org/W2047872109",
+      "https://openalex.org/W2048092130",
+      "https://openalex.org/W2048389998",
+      "https://openalex.org/W2048481574",
+      "https://openalex.org/W2048695535",
+      "https://openalex.org/W2049295462",
+      "https://openalex.org/W2049337335",
+      "https://openalex.org/W2050025296",
+      "https://openalex.org/W2050169733",
+      "https://openalex.org/W2050350498",
+      "https://openalex.org/W2050959160",
+      "https://openalex.org/W2050967786",
+      "https://openalex.org/W2050978313",
+      "https://openalex.org/W2051213492",
+      "https://openalex.org/W2051722503",
+      "https://openalex.org/W2051754484",
+      "https://openalex.org/W2052097243",
+      "https://openalex.org/W2052348125",
+      "https://openalex.org/W2052893344",
+      "https://openalex.org/W2052979500",
+      "https://openalex.org/W2054024601",
+      "https://openalex.org/W2054618061",
+      "https://openalex.org/W2054698849",
+      "https://openalex.org/W2054796764",
+      "https://openalex.org/W2055033862",
+      "https://openalex.org/W2055235799",
+      "https://openalex.org/W2055420779",
+      "https://openalex.org/W2055834296",
+      "https://openalex.org/W2055838663",
+      "https://openalex.org/W2056056000",
+      "https://openalex.org/W2056084145",
+      "https://openalex.org/W2056110476",
+      "https://openalex.org/W2056233199",
+      "https://openalex.org/W2056421541",
+      "https://openalex.org/W2056893352",
+      "https://openalex.org/W2056976690",
+      "https://openalex.org/W2056993598",
+      "https://openalex.org/W2057097343",
+      "https://openalex.org/W2057513617",
+      "https://openalex.org/W2057568810",
+      "https://openalex.org/W2058153849",
+      "https://openalex.org/W2058331351",
+      "https://openalex.org/W2058841902",
+      "https://openalex.org/W2058989856",
+      "https://openalex.org/W2059109260",
+      "https://openalex.org/W2059253582",
+      "https://openalex.org/W2059647022",
+      "https://openalex.org/W2059687232",
+      "https://openalex.org/W2059792416",
+      "https://openalex.org/W2059818560",
+      "https://openalex.org/W2060318133",
+      "https://openalex.org/W2060358696",
+      "https://openalex.org/W2060449981",
+      "https://openalex.org/W2060858984",
+      "https://openalex.org/W2061078276",
+      "https://openalex.org/W2061298156",
+      "https://openalex.org/W2061595855",
+      "https://openalex.org/W2062226970",
+      "https://openalex.org/W2063529007",
+      "https://openalex.org/W2063613083",
+      "https://openalex.org/W2063641603",
+      "https://openalex.org/W2063998910",
+      "https://openalex.org/W2064808544",
+      "https://openalex.org/W2064813626",
+      "https://openalex.org/W2065232710",
+      "https://openalex.org/W2065333004",
+      "https://openalex.org/W2065827854",
+      "https://openalex.org/W2065987587",
+      "https://openalex.org/W2066418960",
+      "https://openalex.org/W2066447278",
+      "https://openalex.org/W2066833658",
+      "https://openalex.org/W2067287032",
+      "https://openalex.org/W2068129753",
+      "https://openalex.org/W2068217843",
+      "https://openalex.org/W2068236391",
+      "https://openalex.org/W2068238388",
+      "https://openalex.org/W2068519950",
+      "https://openalex.org/W2068579932",
+      "https://openalex.org/W2068598655",
+      "https://openalex.org/W2069401285",
+      "https://openalex.org/W2070136138",
+      "https://openalex.org/W2070434008",
+      "https://openalex.org/W2070568974",
+      "https://openalex.org/W2070715001",
+      "https://openalex.org/W2070904782",
+      "https://openalex.org/W2071363168",
+      "https://openalex.org/W2071618074",
+      "https://openalex.org/W2071626971",
+      "https://openalex.org/W2071656461",
+      "https://openalex.org/W2071876215",
+      "https://openalex.org/W2071939988",
+      "https://openalex.org/W2072013326",
+      "https://openalex.org/W2072378295",
+      "https://openalex.org/W2072495400",
+      "https://openalex.org/W2072605137",
+      "https://openalex.org/W2072869822",
+      "https://openalex.org/W2072872332",
+      "https://openalex.org/W2073002995",
+      "https://openalex.org/W2073261560",
+      "https://openalex.org/W2073476900",
+      "https://openalex.org/W2073549750",
+      "https://openalex.org/W2073703896",
+      "https://openalex.org/W2073780460",
+      "https://openalex.org/W2073930646",
+      "https://openalex.org/W2074337274",
+      "https://openalex.org/W2074823161",
+      "https://openalex.org/W2074865009",
+      "https://openalex.org/W2075032872",
+      "https://openalex.org/W2075252918",
+      "https://openalex.org/W2075429282",
+      "https://openalex.org/W2075630013",
+      "https://openalex.org/W2075662010",
+      "https://openalex.org/W2075862502",
+      "https://openalex.org/W2076007231",
+      "https://openalex.org/W2076009085",
+      "https://openalex.org/W2076316624",
+      "https://openalex.org/W2076538703",
+      "https://openalex.org/W2077254878",
+      "https://openalex.org/W2077522448",
+      "https://openalex.org/W2078247442",
+      "https://openalex.org/W2078361267",
+      "https://openalex.org/W2078472811",
+      "https://openalex.org/W2078878902",
+      "https://openalex.org/W2079277345",
+      "https://openalex.org/W2079326569",
+      "https://openalex.org/W2079513145",
+      "https://openalex.org/W2079663279",
+      "https://openalex.org/W2079786240",
+      "https://openalex.org/W2080690921",
+      "https://openalex.org/W2081040808",
+      "https://openalex.org/W2081231656",
+      "https://openalex.org/W2081912847",
+      "https://openalex.org/W2081919223",
+      "https://openalex.org/W2082551533",
+      "https://openalex.org/W2082598945",
+      "https://openalex.org/W2082785280",
+      "https://openalex.org/W2083022412",
+      "https://openalex.org/W2083342497",
+      "https://openalex.org/W2083575326",
+      "https://openalex.org/W2083910569",
+      "https://openalex.org/W2084003875",
+      "https://openalex.org/W2084076051",
+      "https://openalex.org/W2084118978",
+      "https://openalex.org/W2084881649",
+      "https://openalex.org/W2086199925",
+      "https://openalex.org/W2086204562",
+      "https://openalex.org/W2086392128",
+      "https://openalex.org/W2087827184",
+      "https://openalex.org/W2088303275",
+      "https://openalex.org/W2088993478",
+      "https://openalex.org/W2089015826",
+      "https://openalex.org/W2089259727",
+      "https://openalex.org/W2089602295",
+      "https://openalex.org/W2089682547",
+      "https://openalex.org/W2089923812",
+      "https://openalex.org/W2090024638",
+      "https://openalex.org/W2091163929",
+      "https://openalex.org/W2091475694",
+      "https://openalex.org/W2091813837",
+      "https://openalex.org/W2092244434",
+      "https://openalex.org/W2092353651",
+      "https://openalex.org/W2092358462",
+      "https://openalex.org/W2092430951",
+      "https://openalex.org/W2092433221",
+      "https://openalex.org/W2092678169",
+      "https://openalex.org/W2092973433",
+      "https://openalex.org/W2093080669",
+      "https://openalex.org/W2093193801",
+      "https://openalex.org/W2094050483",
+      "https://openalex.org/W2094309256",
+      "https://openalex.org/W2094374112",
+      "https://openalex.org/W2095670879",
+      "https://openalex.org/W2096706787",
+      "https://openalex.org/W2096784990",
+      "https://openalex.org/W2096807144",
+      "https://openalex.org/W2096817559",
+      "https://openalex.org/W2096875294",
+      "https://openalex.org/W2097110468",
+      "https://openalex.org/W2097240907",
+      "https://openalex.org/W2097453220",
+      "https://openalex.org/W2097546089",
+      "https://openalex.org/W2097596003",
+      "https://openalex.org/W2097810034",
+      "https://openalex.org/W2097838640",
+      "https://openalex.org/W2098352519",
+      "https://openalex.org/W2098780362",
+      "https://openalex.org/W2099163669",
+      "https://openalex.org/W2099301718",
+      "https://openalex.org/W2099345663",
+      "https://openalex.org/W2099562899",
+      "https://openalex.org/W2099614776",
+      "https://openalex.org/W2099685738",
+      "https://openalex.org/W2099777569",
+      "https://openalex.org/W2100089051",
+      "https://openalex.org/W2100116850",
+      "https://openalex.org/W2100346673",
+      "https://openalex.org/W2100409734",
+      "https://openalex.org/W2100862440",
+      "https://openalex.org/W2101605059",
+      "https://openalex.org/W2101834875",
+      "https://openalex.org/W2102036895",
+      "https://openalex.org/W2102476412",
+      "https://openalex.org/W2102522239",
+      "https://openalex.org/W2102773820",
+      "https://openalex.org/W2102794110",
+      "https://openalex.org/W2102979143",
+      "https://openalex.org/W2103015566",
+      "https://openalex.org/W2103093968",
+      "https://openalex.org/W2103256591",
+      "https://openalex.org/W2103310692",
+      "https://openalex.org/W2103596506",
+      "https://openalex.org/W2103881469",
+      "https://openalex.org/W2104182939",
+      "https://openalex.org/W2104408488",
+      "https://openalex.org/W2104412770",
+      "https://openalex.org/W2104761168",
+      "https://openalex.org/W2104855192",
+      "https://openalex.org/W2105473163",
+      "https://openalex.org/W2105587305",
+      "https://openalex.org/W2105695548",
+      "https://openalex.org/W2105993464",
+      "https://openalex.org/W2106244081",
+      "https://openalex.org/W2106648861",
+      "https://openalex.org/W2106761290",
+      "https://openalex.org/W2107031719",
+      "https://openalex.org/W2107165713",
+      "https://openalex.org/W2107195787",
+      "https://openalex.org/W2107295258",
+      "https://openalex.org/W2107599980",
+      "https://openalex.org/W2107773092",
+      "https://openalex.org/W2107870941",
+      "https://openalex.org/W2107950332",
+      "https://openalex.org/W2107999636",
+      "https://openalex.org/W2108287899",
+      "https://openalex.org/W2108329377",
+      "https://openalex.org/W2108486578",
+      "https://openalex.org/W2108907637",
+      "https://openalex.org/W2109639628",
+      "https://openalex.org/W2109876426",
+      "https://openalex.org/W2110020527",
+      "https://openalex.org/W2110051876",
+      "https://openalex.org/W2110141547",
+      "https://openalex.org/W2110759418",
+      "https://openalex.org/W2110862289",
+      "https://openalex.org/W2110880027",
+      "https://openalex.org/W2110882681",
+      "https://openalex.org/W2111175587",
+      "https://openalex.org/W2111179294",
+      "https://openalex.org/W2111361912",
+      "https://openalex.org/W2111362243",
+      "https://openalex.org/W2111404298",
+      "https://openalex.org/W2111421663",
+      "https://openalex.org/W2111844910",
+      "https://openalex.org/W2111876001",
+      "https://openalex.org/W2111995867",
+      "https://openalex.org/W2112427158",
+      "https://openalex.org/W2112620497",
+      "https://openalex.org/W2112846582",
+      "https://openalex.org/W2112904969",
+      "https://openalex.org/W2113070381",
+      "https://openalex.org/W2113176678",
+      "https://openalex.org/W2113264115",
+      "https://openalex.org/W2113538204",
+      "https://openalex.org/W2113750355",
+      "https://openalex.org/W2113836584",
+      "https://openalex.org/W2113842550",
+      "https://openalex.org/W2114027342",
+      "https://openalex.org/W2114369401",
+      "https://openalex.org/W2114634962",
+      "https://openalex.org/W2115409589",
+      "https://openalex.org/W2115461708",
+      "https://openalex.org/W2115972085",
+      "https://openalex.org/W2116077357",
+      "https://openalex.org/W2116224448",
+      "https://openalex.org/W2116842056",
+      "https://openalex.org/W2117140855",
+      "https://openalex.org/W2117205765",
+      "https://openalex.org/W2117371402",
+      "https://openalex.org/W2117389430",
+      "https://openalex.org/W2117529378",
+      "https://openalex.org/W2117730841",
+      "https://openalex.org/W2117827372",
+      "https://openalex.org/W2117855475",
+      "https://openalex.org/W2118170160",
+      "https://openalex.org/W2118194784",
+      "https://openalex.org/W2118344567",
+      "https://openalex.org/W2118711079",
+      "https://openalex.org/W2118876811",
+      "https://openalex.org/W2119369921",
+      "https://openalex.org/W2119513877",
+      "https://openalex.org/W2119577709",
+      "https://openalex.org/W2119841174",
+      "https://openalex.org/W2119953883",
+      "https://openalex.org/W2119963086",
+      "https://openalex.org/W2120072858",
+      "https://openalex.org/W2120179549",
+      "https://openalex.org/W2120235169",
+      "https://openalex.org/W2120294503",
+      "https://openalex.org/W2120309176",
+      "https://openalex.org/W2120348869",
+      "https://openalex.org/W2120418712",
+      "https://openalex.org/W2121227196",
+      "https://openalex.org/W2121238642",
+      "https://openalex.org/W2121490027",
+      "https://openalex.org/W2121708260",
+      "https://openalex.org/W2121770303",
+      "https://openalex.org/W2122238500",
+      "https://openalex.org/W2122826224",
+      "https://openalex.org/W2122839539",
+      "https://openalex.org/W2122843273",
+      "https://openalex.org/W2122891093",
+      "https://openalex.org/W2122953592",
+      "https://openalex.org/W2123196786",
+      "https://openalex.org/W2123312526",
+      "https://openalex.org/W2123446777",
+      "https://openalex.org/W2123831918",
+      "https://openalex.org/W2123895995",
+      "https://openalex.org/W2124481954",
+      "https://openalex.org/W2124495751",
+      "https://openalex.org/W2124529018",
+      "https://openalex.org/W2124581256",
+      "https://openalex.org/W2124663880",
+      "https://openalex.org/W2125062701",
+      "https://openalex.org/W2125089162",
+      "https://openalex.org/W2125178820",
+      "https://openalex.org/W2125440793",
+      "https://openalex.org/W2125466807",
+      "https://openalex.org/W2125468958",
+      "https://openalex.org/W2125914602",
+      "https://openalex.org/W2125966706",
+      "https://openalex.org/W2126651813",
+      "https://openalex.org/W2126874967",
+      "https://openalex.org/W2128055881",
+      "https://openalex.org/W2128791637",
+      "https://openalex.org/W2128809156",
+      "https://openalex.org/W2128864868",
+      "https://openalex.org/W2128878016",
+      "https://openalex.org/W2128921112",
+      "https://openalex.org/W2128975163",
+      "https://openalex.org/W2129213988",
+      "https://openalex.org/W2129684069",
+      "https://openalex.org/W2129695314",
+      "https://openalex.org/W2129698390",
+      "https://openalex.org/W2129817697",
+      "https://openalex.org/W2129869438",
+      "https://openalex.org/W2129967926",
+      "https://openalex.org/W2129991662",
+      "https://openalex.org/W2130136596",
+      "https://openalex.org/W2130827265",
+      "https://openalex.org/W2131487201",
+      "https://openalex.org/W2131599914",
+      "https://openalex.org/W2131973318",
+      "https://openalex.org/W2132058431",
+      "https://openalex.org/W2132095884",
+      "https://openalex.org/W2133012200",
+      "https://openalex.org/W2133108839",
+      "https://openalex.org/W2133217116",
+      "https://openalex.org/W2133280987",
+      "https://openalex.org/W2133295920",
+      "https://openalex.org/W2133479239",
+      "https://openalex.org/W2134277458",
+      "https://openalex.org/W2134287276",
+      "https://openalex.org/W2134631016",
+      "https://openalex.org/W2134884703",
+      "https://openalex.org/W2135175490",
+      "https://openalex.org/W2135466550",
+      "https://openalex.org/W2136039267",
+      "https://openalex.org/W2136145230",
+      "https://openalex.org/W2136398777",
+      "https://openalex.org/W2136455591",
+      "https://openalex.org/W2136486607",
+      "https://openalex.org/W2136600425",
+      "https://openalex.org/W2136801118",
+      "https://openalex.org/W2137015106",
+      "https://openalex.org/W2137020418",
+      "https://openalex.org/W2137408480",
+      "https://openalex.org/W2137947658",
+      "https://openalex.org/W2137979240",
+      "https://openalex.org/W2137983259",
+      "https://openalex.org/W2138209376",
+      "https://openalex.org/W2138530279",
+      "https://openalex.org/W2138597449",
+      "https://openalex.org/W2138689448",
+      "https://openalex.org/W2138862624",
+      "https://openalex.org/W2138955883",
+      "https://openalex.org/W2138993551",
+      "https://openalex.org/W2139076190",
+      "https://openalex.org/W2139175967",
+      "https://openalex.org/W2139561039",
+      "https://openalex.org/W2139634859",
+      "https://openalex.org/W2139654800",
+      "https://openalex.org/W2139787829",
+      "https://openalex.org/W2139805666",
+      "https://openalex.org/W2139968474",
+      "https://openalex.org/W2139998668",
+      "https://openalex.org/W2140075426",
+      "https://openalex.org/W2140208945",
+      "https://openalex.org/W2140281675",
+      "https://openalex.org/W2140376832",
+      "https://openalex.org/W2140384764",
+      "https://openalex.org/W2140592517",
+      "https://openalex.org/W2140678692",
+      "https://openalex.org/W2141118868",
+      "https://openalex.org/W2141779514",
+      "https://openalex.org/W2142164422",
+      "https://openalex.org/W2142170772",
+      "https://openalex.org/W2142264046",
+      "https://openalex.org/W2142522358",
+      "https://openalex.org/W2142742490",
+      "https://openalex.org/W2142772495",
+      "https://openalex.org/W2143104968",
+      "https://openalex.org/W2143208696",
+      "https://openalex.org/W2143719257",
+      "https://openalex.org/W2143954917",
+      "https://openalex.org/W2143978441",
+      "https://openalex.org/W2144120465",
+      "https://openalex.org/W2144125787",
+      "https://openalex.org/W2144140589",
+      "https://openalex.org/W2144692487",
+      "https://openalex.org/W2144919740",
+      "https://openalex.org/W2145144040",
+      "https://openalex.org/W2145632481",
+      "https://openalex.org/W2145853128",
+      "https://openalex.org/W2145989311",
+      "https://openalex.org/W2146174453",
+      "https://openalex.org/W2146282879",
+      "https://openalex.org/W2146311773",
+      "https://openalex.org/W2146578470",
+      "https://openalex.org/W2146610728",
+      "https://openalex.org/W2146672582",
+      "https://openalex.org/W2146728882",
+      "https://openalex.org/W2146798390",
+      "https://openalex.org/W2146903578",
+      "https://openalex.org/W2147201241",
+      "https://openalex.org/W2147551338",
+      "https://openalex.org/W2147918774",
+      "https://openalex.org/W2148092884",
+      "https://openalex.org/W2148105346",
+      "https://openalex.org/W2148183789",
+      "https://openalex.org/W2148311100",
+      "https://openalex.org/W2148644774",
+      "https://openalex.org/W2148685898",
+      "https://openalex.org/W2148818926",
+      "https://openalex.org/W2148897749",
+      "https://openalex.org/W2148910374",
+      "https://openalex.org/W2148960335",
+      "https://openalex.org/W2149207625",
+      "https://openalex.org/W2149308565",
+      "https://openalex.org/W2149359025",
+      "https://openalex.org/W2149891278",
+      "https://openalex.org/W2149897387",
+      "https://openalex.org/W2150409719",
+      "https://openalex.org/W2150429350",
+      "https://openalex.org/W2150734413",
+      "https://openalex.org/W2151061107",
+      "https://openalex.org/W2151100203",
+      "https://openalex.org/W2151273903",
+      "https://openalex.org/W2151423733",
+      "https://openalex.org/W2151750734",
+      "https://openalex.org/W2152077553",
+      "https://openalex.org/W2152334831",
+      "https://openalex.org/W2152660527",
+      "https://openalex.org/W2152798629",
+      "https://openalex.org/W2152907424",
+      "https://openalex.org/W2153034914",
+      "https://openalex.org/W2153149959",
+      "https://openalex.org/W2153152935",
+      "https://openalex.org/W2153393409",
+      "https://openalex.org/W2153553951",
+      "https://openalex.org/W2153610348",
+      "https://openalex.org/W2153677157",
+      "https://openalex.org/W2153780288",
+      "https://openalex.org/W2154124763",
+      "https://openalex.org/W2154294934",
+      "https://openalex.org/W2154347115",
+      "https://openalex.org/W2154743615",
+      "https://openalex.org/W2155044939",
+      "https://openalex.org/W2155113775",
+      "https://openalex.org/W2155121555",
+      "https://openalex.org/W2155309039",
+      "https://openalex.org/W2155336724",
+      "https://openalex.org/W2155396404",
+      "https://openalex.org/W2155559652",
+      "https://openalex.org/W2156371934",
+      "https://openalex.org/W2156648526",
+      "https://openalex.org/W2156903075",
+      "https://openalex.org/W2156904334",
+      "https://openalex.org/W2157217056",
+      "https://openalex.org/W2157227325",
+      "https://openalex.org/W2157282802",
+      "https://openalex.org/W2157488387",
+      "https://openalex.org/W2157677292",
+      "https://openalex.org/W2157748738",
+      "https://openalex.org/W2157769629",
+      "https://openalex.org/W2157775240",
+      "https://openalex.org/W2157870057",
+      "https://openalex.org/W2157894862",
+      "https://openalex.org/W2157983429",
+      "https://openalex.org/W2158226607",
+      "https://openalex.org/W2158666727",
+      "https://openalex.org/W2158745423",
+      "https://openalex.org/W2158822657",
+      "https://openalex.org/W2158880436",
+      "https://openalex.org/W2159688077",
+      "https://openalex.org/W2159854507",
+      "https://openalex.org/W2159871503",
+      "https://openalex.org/W2159957894",
+      "https://openalex.org/W2159969745",
+      "https://openalex.org/W2160100356",
+      "https://openalex.org/W2160258470",
+      "https://openalex.org/W2160368930",
+      "https://openalex.org/W2160489770",
+      "https://openalex.org/W2160532782",
+      "https://openalex.org/W2160547085",
+      "https://openalex.org/W2160571817",
+      "https://openalex.org/W2160629168",
+      "https://openalex.org/W2160643135",
+      "https://openalex.org/W2160643831",
+      "https://openalex.org/W2160704477",
+      "https://openalex.org/W2161084785",
+      "https://openalex.org/W2161358815",
+      "https://openalex.org/W2161752365",
+      "https://openalex.org/W2161841978",
+      "https://openalex.org/W2162048857",
+      "https://openalex.org/W2162876271",
+      "https://openalex.org/W2163161539",
+      "https://openalex.org/W2163539177",
+      "https://openalex.org/W2163665839",
+      "https://openalex.org/W2163788386",
+      "https://openalex.org/W2163797039",
+      "https://openalex.org/W2163849500",
+      "https://openalex.org/W2163895795",
+      "https://openalex.org/W2164026547",
+      "https://openalex.org/W2164089346",
+      "https://openalex.org/W2164132830",
+      "https://openalex.org/W2164705414",
+      "https://openalex.org/W2164755552",
+      "https://openalex.org/W2164861810",
+      "https://openalex.org/W2165017694",
+      "https://openalex.org/W2165146299",
+      "https://openalex.org/W2165307813",
+      "https://openalex.org/W2165530727",
+      "https://openalex.org/W2165548166",
+      "https://openalex.org/W2166000498",
+      "https://openalex.org/W2166263247",
+      "https://openalex.org/W2166710642",
+      "https://openalex.org/W2167011204",
+      "https://openalex.org/W2167142042",
+      "https://openalex.org/W2167353762",
+      "https://openalex.org/W2167607159",
+      "https://openalex.org/W2167964651",
+      "https://openalex.org/W2168307594",
+      "https://openalex.org/W2168487042",
+      "https://openalex.org/W2168507847",
+      "https://openalex.org/W2168586084",
+      "https://openalex.org/W2169090892",
+      "https://openalex.org/W2169337270",
+      "https://openalex.org/W2169506520",
+      "https://openalex.org/W2170518045",
+      "https://openalex.org/W2170675093",
+      "https://openalex.org/W2171112559",
+      "https://openalex.org/W2171540512",
+      "https://openalex.org/W2171546997",
+      "https://openalex.org/W2171867406",
+      "https://openalex.org/W2171903673",
+      "https://openalex.org/W2172032309",
+      "https://openalex.org/W2172124430",
+      "https://openalex.org/W2172159264",
+      "https://openalex.org/W2172164753",
+      "https://openalex.org/W2179377441",
+      "https://openalex.org/W2183021336",
+      "https://openalex.org/W2185899798",
+      "https://openalex.org/W2188255799",
+      "https://openalex.org/W2188846692",
+      "https://openalex.org/W2188950424",
+      "https://openalex.org/W2189612961",
+      "https://openalex.org/W2194840208",
+      "https://openalex.org/W2196328866",
+      "https://openalex.org/W2202544074",
+      "https://openalex.org/W2211956284",
+      "https://openalex.org/W2225494317",
+      "https://openalex.org/W2271771390",
+      "https://openalex.org/W2275139239",
+      "https://openalex.org/W2284554048",
+      "https://openalex.org/W2297164013",
+      "https://openalex.org/W2303651371",
+      "https://openalex.org/W2305118939",
+      "https://openalex.org/W2312193316",
+      "https://openalex.org/W2313803809",
+      "https://openalex.org/W2315875886",
+      "https://openalex.org/W2315889134",
+      "https://openalex.org/W2316167515",
+      "https://openalex.org/W2318579539",
+      "https://openalex.org/W2319560072",
+      "https://openalex.org/W2319843891",
+      "https://openalex.org/W2320020463",
+      "https://openalex.org/W2320210054",
+      "https://openalex.org/W2320339246",
+      "https://openalex.org/W2321007701",
+      "https://openalex.org/W2321986725",
+      "https://openalex.org/W2323238248",
+      "https://openalex.org/W2323458614",
+      "https://openalex.org/W2324521349",
+      "https://openalex.org/W2327679526",
+      "https://openalex.org/W2328300666",
+      "https://openalex.org/W2328926651",
+      "https://openalex.org/W2328965873",
+      "https://openalex.org/W2329403739",
+      "https://openalex.org/W2331274940",
+      "https://openalex.org/W2331848428",
+      "https://openalex.org/W2332140992",
+      "https://openalex.org/W2332951586",
+      "https://openalex.org/W2333431076",
+      "https://openalex.org/W2334192787",
+      "https://openalex.org/W2334474642",
+      "https://openalex.org/W2334499091",
+      "https://openalex.org/W2334899541",
+      "https://openalex.org/W2335530743",
+      "https://openalex.org/W2337454357",
+      "https://openalex.org/W2393373959",
+      "https://openalex.org/W2411539137",
+      "https://openalex.org/W2413483943",
+      "https://openalex.org/W2432029965",
+      "https://openalex.org/W2437698127",
+      "https://openalex.org/W2476009631",
+      "https://openalex.org/W2490075085",
+      "https://openalex.org/W2529012027",
+      "https://openalex.org/W2559924875",
+      "https://openalex.org/W2562329777",
+      "https://openalex.org/W2569586089",
+      "https://openalex.org/W2592197377",
+      "https://openalex.org/W2606467290",
+      "https://openalex.org/W2746294255",
+      "https://openalex.org/W2747337056",
+      "https://openalex.org/W2758744495",
+      "https://openalex.org/W2764653566",
+      "https://openalex.org/W2779222444",
+      "https://openalex.org/W2790711591",
+      "https://openalex.org/W2884118916",
+      "https://openalex.org/W2884536880",
+      "https://openalex.org/W2908737464",
+      "https://openalex.org/W3020881060",
+      "https://openalex.org/W3021842026",
+      "https://openalex.org/W3022179669",
+      "https://openalex.org/W3022401702",
+      "https://openalex.org/W3022984723",
+      "https://openalex.org/W3023587756",
+      "https://openalex.org/W3023894528",
+      "https://openalex.org/W3030075105",
+      "https://openalex.org/W3030533492",
+      "https://openalex.org/W3034899365",
+      "https://openalex.org/W3036643429",
+      "https://openalex.org/W3080346889",
+      "https://openalex.org/W3110805540",
+      "https://openalex.org/W3145838374",
+      "https://openalex.org/W3147351840",
+      "https://openalex.org/W3171237122",
+      "https://openalex.org/W3198570063",
+      "https://openalex.org/W4205373146",
+      "https://openalex.org/W4210367804",
+      "https://openalex.org/W4211124322",
+      "https://openalex.org/W4211124521",
+      "https://openalex.org/W4211182590",
+      "https://openalex.org/W4211247657",
+      "https://openalex.org/W4230629920",
+      "https://openalex.org/W4232706911",
+      "https://openalex.org/W4233188614",
+      "https://openalex.org/W4233755971",
+      "https://openalex.org/W4234657925",
+      "https://openalex.org/W4235120756",
+      "https://openalex.org/W4237743012",
+      "https://openalex.org/W4241186196",
+      "https://openalex.org/W4242869084",
+      "https://openalex.org/W4243178606",
+      "https://openalex.org/W4246023634",
+      "https://openalex.org/W4246064375",
+      "https://openalex.org/W4246169631",
+      "https://openalex.org/W4248116761",
+      "https://openalex.org/W4248501265",
+      "https://openalex.org/W4249101651",
+      "https://openalex.org/W4253437654",
+      "https://openalex.org/W4253446037",
+      "https://openalex.org/W4255533584",
+      "https://openalex.org/W4285719527",
+      "https://openalex.org/W4292764096",
+      "https://openalex.org/W4297084692",
+      "https://openalex.org/W4299310161",
+      "https://openalex.org/W4300056947"
+    ],
+    "referenced_works_count": 1035,
+    "title": "2013 ESH/ESC Guidelines for the management of arterial hypertension",
+    "type": "article"
+  },
+  "response_hash": "b4576d4aa29f9aaf9a70291cda3f2602c41359b7ffd5fa7bfbaccdcd8994a061",
+  "retrieved_at": "2026-07-14T14:48:53Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

@@ -1,0 +1,2536 @@
+{
+  "endpoint": "works",
+  "request_key": "bf1cfa7b53f954ae1a5741d9a84545bdf22c707dbb9f24b136c51fea42b0252d",
+  "request_params": {
+    "query.bibliographic": "Mixing up contrastive learning: Self-supervised representation learning for time series",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1016/j.patrec.2022.02.007",
+          "ISSN": [
+            "0167-8655"
+          ],
+          "URL": "https://doi.org/10.1016/j.patrec.2022.02.007",
+          "alternative-id": [
+            "S0167865522000502"
+          ],
+          "assertion": [
+            {
+              "label": "This article is maintained by",
+              "name": "publisher",
+              "value": "Elsevier"
+            },
+            {
+              "label": "Article Title",
+              "name": "articletitle",
+              "value": "Mixing up contrastive learning: Self-supervised representation learning for time series"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journaltitle",
+              "value": "Pattern Recognition Letters"
+            },
+            {
+              "label": "CrossRef DOI link to publisher maintained version",
+              "name": "articlelink",
+              "value": "https://doi.org/10.1016/j.patrec.2022.02.007"
+            },
+            {
+              "label": "Content Type",
+              "name": "content_type",
+              "value": "article"
+            },
+            {
+              "label": "Copyright",
+              "name": "copyright",
+              "value": "© 2022 The Author(s). Published by Elsevier B.V."
+            }
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-1395-7154",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Wickstrøm",
+              "given": "Kristoffer",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Kampffmeyer",
+              "given": "Michael",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Mikalsen",
+              "given": "Karl Øyvind",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Jenssen",
+              "given": "Robert",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Pattern Recognition Letters"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "elsevier.com",
+              "sciencedirect.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                14
+              ]
+            ],
+            "date-time": "2022-02-14T11:24:10Z",
+            "timestamp": 1644837850000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2025-09-29T06:16:15Z",
+            "timestamp": 1759126575000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100005416",
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100005416",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "Norges forskningsråd"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                9
+              ]
+            ],
+            "date-time": "2026-06-09T14:54:40Z",
+            "timestamp": 1781016880158,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 94,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0167-8655"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                3
+              ]
+            ]
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    3,
+                    1
+                  ]
+                ],
+                "date-time": "2022-03-01T00:00:00Z",
+                "timestamp": 1646092800000
+              }
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    3,
+                    1
+                  ]
+                ],
+                "date-time": "2022-03-01T00:00:00Z",
+                "timestamp": 1646092800000
+              }
+            },
+            {
+              "URL": "http://creativecommons.org/licenses/by/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    2,
+                    14
+                  ]
+                ],
+                "date-time": "2022-02-14T00:00:00Z",
+                "timestamp": 1644796800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0167865522000502?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0167865522000502?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "member": "78",
+          "page": "54-61",
+          "prefix": "10.1016",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                3
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                3
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "DOI": "10.1098/rsif.2017.0387",
+              "article-title": "Opportunities and obstacles for deep learning in biology and medicine",
+              "author": "Ching",
+              "doi-asserted-by": "crossref",
+              "first-page": "20170387",
+              "journal-title": "J. R. Soc. Interface",
+              "key": "10.1016/j.patrec.2022.02.007_bib0001",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/TKDE.2009.191",
+              "article-title": "A survey on transfer learning",
+              "author": "Pan",
+              "doi-asserted-by": "crossref",
+              "first-page": "1345",
+              "journal-title": "IEEE Trans. Knowl. Data Eng.",
+              "key": "10.1016/j.patrec.2022.02.007_bib0002",
+              "volume": "22",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2013.50",
+              "article-title": "Representation learning: a review and new perspectives",
+              "author": "Bengio",
+              "doi-asserted-by": "crossref",
+              "first-page": "1798",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+              "key": "10.1016/j.patrec.2022.02.007_bib0003",
+              "volume": "35",
+              "year": "2013"
+            },
+            {
+              "article-title": "Self-supervised visual feature learning with deep neural networks: a survey",
+              "author": "Jing",
+              "first-page": "1",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+              "key": "10.1016/j.patrec.2022.02.007_bib0004",
+              "year": "2019"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "Chen",
+              "first-page": "1597",
+              "key": "10.1016/j.patrec.2022.02.007_bib0005",
+              "series-title": "International Conference on Machine Learning",
+              "year": "2020"
+            },
+            {
+              "article-title": "Momentum contrast for unsupervised visual representation learning",
+              "author": "He",
+              "first-page": "9729",
+              "key": "10.1016/j.patrec.2022.02.007_bib0006",
+              "series-title": "Conference on Computer Vision and Pattern Recognition",
+              "year": "2020"
+            },
+            {
+              "article-title": "Bootstrap your own latent: a new approach to self-supervised learning",
+              "author": "Grill",
+              "first-page": "21271",
+              "key": "10.1016/j.patrec.2022.02.007_bib0007",
+              "series-title": "Advances in Neural Information Processing Systems",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1186/s40537-019-0197-0",
+              "article-title": "A survey on image data augmentation for deep learning",
+              "author": "Shorten",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "journal-title": "J. Big Data",
+              "key": "10.1016/j.patrec.2022.02.007_bib0008",
+              "volume": "6",
+              "year": "2019"
+            },
+            {
+              "article-title": "mixup: Beyond empirical risk minimization",
+              "author": "Zhang",
+              "key": "10.1016/j.patrec.2022.02.007_bib0009",
+              "series-title": "International Conference on Learning Representations",
+              "year": "2018"
+            },
+            {
+              "article-title": "When does label smoothing help?",
+              "author": "Müller",
+              "first-page": "4694",
+              "key": "10.1016/j.patrec.2022.02.007_bib0010",
+              "series-title": "Advances in Neural Information Processing Systems",
+              "year": "2019"
+            },
+            {
+              "key": "10.1016/j.patrec.2022.02.007_bib0011",
+              "unstructured": "H.A. Dau, A.J. Bagnall, K. Kamgar, et al., The UCR time series archive, 2018. http://arxiv.org/abs/1810.07758."
+            },
+            {
+              "key": "10.1016/j.patrec.2022.02.007_bib0012",
+              "unstructured": "A.J. Bagnall, H.A. Dau, J. Lines, et al., The UEA multivariate time series classification archive, 2018, CoRR abs/1811.00075(2018)."
+            },
+            {
+              "article-title": "Learning to exploit invariances in clinical time-series data using sequence transformer networks",
+              "author": "Oh",
+              "first-page": "332",
+              "key": "10.1016/j.patrec.2022.02.007_bib0013",
+              "series-title": "Proceedings of Machine Learning Research, Volume 85, Palo Alto, California",
+              "year": "2018"
+            },
+            {
+              "article-title": "Why ReLU networks yield high-confidence predictions far away from the training data and how to mitigate the problem",
+              "author": "Hein",
+              "first-page": "41",
+              "key": "10.1016/j.patrec.2022.02.007_bib0014",
+              "series-title": "Conference on Computer Vision and Pattern Recognition",
+              "year": "2019"
+            },
+            {
+              "article-title": "Split-brain autoencoders: unsupervised learning by cross-channel prediction",
+              "author": "Zhang",
+              "first-page": "645",
+              "key": "10.1016/j.patrec.2022.02.007_bib0015",
+              "series-title": "Conference on Computer Vision and Pattern Recognition",
+              "year": "2017"
+            },
+            {
+              "article-title": "Deep clustering for unsupervised learning of visual features",
+              "author": "Caron",
+              "first-page": "139",
+              "key": "10.1016/j.patrec.2022.02.007_bib0016",
+              "series-title": "Proceedings of the European Conference on Computer Vision",
+              "year": "2018"
+            },
+            {
+              "article-title": "Temporal cross-layer correlation mining for action recognition",
+              "author": "Zhu",
+              "first-page": "1",
+              "journal-title": "IEEE Trans. Multimed.",
+              "key": "10.1016/j.patrec.2022.02.007_bib0017",
+              "year": "2021"
+            },
+            {
+              "article-title": "Outlier detection for time series with recurrent autoencoder ensembles",
+              "author": "Kieu",
+              "first-page": "2725",
+              "key": "10.1016/j.patrec.2022.02.007_bib0018",
+              "series-title": "International Joint Conference on Artificial Intelligence",
+              "year": "2019"
+            },
+            {
+              "article-title": "Time series classification from scratch with deep neural networks: a strong baseline",
+              "author": "Wang",
+              "first-page": "1578",
+              "key": "10.1016/j.patrec.2022.02.007_bib0019",
+              "series-title": "Proceedings of the International Joint Conference on Neural Networks",
+              "year": "2017"
+            },
+            {
+              "article-title": "Batch normalization: accelerating deep network training by reducing internal covariate shift",
+              "author": "Ioffe",
+              "first-page": "448",
+              "key": "10.1016/j.patrec.2022.02.007_bib0020",
+              "series-title": "International Conference on Machine Learning",
+              "year": "2015"
+            },
+            {
+              "article-title": "Adam: a method for stochastic optimization",
+              "author": "Kingma",
+              "key": "10.1016/j.patrec.2022.02.007_bib0021",
+              "series-title": "International Conference on Learning Representations",
+              "year": "2014"
+            },
+            {
+              "article-title": "Delving deep into rectifiers: surpassing human-level performance on imagenet classification",
+              "author": "He",
+              "first-page": "1026",
+              "key": "10.1016/j.patrec.2022.02.007_bib0022",
+              "series-title": "2015 IEEE International Conference on Computer Vision",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1162/neco.1995.7.2.219",
+              "article-title": "Regularization theory and neural networks architectures",
+              "author": "Girosi",
+              "doi-asserted-by": "crossref",
+              "first-page": "219",
+              "journal-title": "Neural Comput.",
+              "key": "10.1016/j.patrec.2022.02.007_bib0023",
+              "volume": "7",
+              "year": "1995"
+            },
+            {
+              "article-title": "Unsupervised scalable representation learning for multivariate time series",
+              "author": "Franceschi",
+              "first-page": "4650",
+              "key": "10.1016/j.patrec.2022.02.007_bib0024",
+              "series-title": "Advances in Neural Information Processing Systems",
+              "year": "2019"
+            },
+            {
+              "article-title": "Self-supervised representation learning from electroencephalography signals",
+              "author": "Banville",
+              "first-page": "1",
+              "key": "10.1016/j.patrec.2022.02.007_bib0025",
+              "series-title": "International Workshop on Machine Learning for Signal Processing",
+              "year": "2019"
+            },
+            {
+              "article-title": "Unsupervised feature extraction by time-contrastive learning and nonlinear ICA",
+              "author": "Hyvarinen",
+              "first-page": "3765",
+              "key": "10.1016/j.patrec.2022.02.007_bib0026",
+              "series-title": "Advances in Neural Information Processing Systems",
+              "year": "2016"
+            },
+            {
+              "article-title": "Nonlinear ICA using auxiliary variables and generalized contrastive learning",
+              "author": "Hyvärinen",
+              "first-page": "859",
+              "key": "10.1016/j.patrec.2022.02.007_bib0027",
+              "series-title": "The 22nd International Conference on Artificial Intelligence and Statistics",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/3369393",
+              "article-title": "Adaptive exploration for unsupervised person re-identification",
+              "author": "Ding",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "issue": "1",
+              "journal-title": "ACM Trans. Multimed. Comput., Commun., Appl.",
+              "key": "10.1016/j.patrec.2022.02.007_bib0028",
+              "volume": "16",
+              "year": "2020"
+            }
+          ],
+          "reference-count": 28,
+          "references-count": 28,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167865522000502"
+            }
+          },
+          "score": 61.9817,
+          "short-container-title": [
+            "Pattern Recognition Letters"
+          ],
+          "source": "Crossref",
+          "special_numbering": "C",
+          "title": [
+            "Mixing up contrastive learning: Self-supervised representation learning for time series"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "volume": "155"
+        },
+        {
+          "DOI": "10.1109/tpami.2023.3308189/mm1",
+          "URL": "https://doi.org/10.1109/tpami.2023.3308189/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Wu",
+              "given": "Min",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                29
+              ]
+            ],
+            "date-time": "2023-08-29T13:46:04Z",
+            "timestamp": 1693316764000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T15:10:13Z",
+            "timestamp": 1769785813000
+          },
+          "description": "The supplemental material contains material that is not included within the article itself.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:36:29Z",
+            "timestamp": 1772159789538,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/TPAMI.2023.3308189",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx7/34/10308548/10233092/supp1-3308189.pdf?arnumber=10233092"
+            }
+          },
+          "score": 61.208023,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Representation Learning for Semi-Supervised Time-Series Classification_supp1-3308189.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.1201/9781003612742-6",
+          "ISBN": [
+            "9781003612742"
+          ],
+          "URL": "https://doi.org/10.1201/9781003612742-6",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Eldele",
+              "given": "Emadeldeen",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Chen",
+              "given": "Zhenghua",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wu",
+              "given": "Min",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Li",
+              "given": "Xiaoli",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Ragab",
+              "given": "Mohamed",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Kwoh",
+              "given": "Chee-Keong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Guan",
+              "given": "Cuntai",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "AI for Time Series"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                19
+              ]
+            ],
+            "date-time": "2026-03-19T18:45:19Z",
+            "timestamp": 1773945919000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                19
+              ]
+            ],
+            "date-time": "2026-03-19T18:45:23Z",
+            "timestamp": 1773945923000
+          },
+          "edition-number": "1",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                19
+              ]
+            ],
+            "date-time": "2026-03-19T22:23:19Z",
+            "timestamp": 1773958999938,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "isbn-type": [
+            {
+              "type": "electronic",
+              "value": "9781003612742"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                19
+              ]
+            ]
+          },
+          "language": "en",
+          "member": "301",
+          "page": "95-121",
+          "prefix": "10.1201",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                19
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                19
+              ]
+            ]
+          },
+          "publisher": "CRC Press",
+          "publisher-location": "Boca Raton",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.taylorfrancis.com/books/9781003612742/chapters/10.1201/9781003612742-6"
+            }
+          },
+          "score": 51.458042,
+          "source": "Crossref",
+          "title": [
+            "Self-supervised Contrastive Representation Learning for Semi-supervised Time-series Classification"
+          ],
+          "type": "book-chapter"
+        },
+        {
+          "DOI": "10.1109/isocc62682.2024.10762741",
+          "URL": "https://doi.org/10.1109/isocc62682.2024.10762741",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Kwangwoon University,Department of Electronic Convergence Engineering,Seoul,South Korea,01897"
+                }
+              ],
+              "family": "Li",
+              "given": "Kunpeng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Kwangwoon University,Department of Electronic Convergence Engineering,Seoul,South Korea,01897"
+                }
+              ],
+              "family": "Lee",
+              "given": "Jong-Chul",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2024 21st International SoC Design Conference (ISOCC)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                29
+              ]
+            ],
+            "date-time": "2024-11-29T18:49:10Z",
+            "timestamp": 1732906150000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                1,
+                10
+              ]
+            ],
+            "date-time": "2025-01-10T19:50:39Z",
+            "timestamp": 1736538639000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2024,
+                  8,
+                  22
+                ]
+              ]
+            },
+            "location": "Sapporo, Japan",
+            "name": "2024 21st International SoC Design Conference (ISOCC)",
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  8,
+                  19
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                25
+              ]
+            ],
+            "date-time": "2025-09-25T16:39:41Z",
+            "timestamp": 1758818381032,
+            "version": "3.32.0"
+          },
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                19
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    8,
+                    19
+                  ]
+                ],
+                "date-time": "2024-08-19T00:00:00Z",
+                "timestamp": 1724025600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    8,
+                    19
+                  ]
+                ],
+                "date-time": "2024-08-19T00:00:00Z",
+                "timestamp": 1724025600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/10761119/10761994/10762741.pdf?arnumber=10762741",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "1-2",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                19
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                19
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1098/rsif.2017.0387",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "article-title": "A Simple Framework for Contrastive Learning of Visual Representations",
+              "author": "Chen",
+              "first-page": "1597",
+              "journal-title": "PMLR",
+              "key": "ref2",
+              "volume": "119",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00975",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            }
+          ],
+          "reference-count": 3,
+          "references-count": 3,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/10762741/"
+            }
+          },
+          "score": 51.33322,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Representation Learning for Time-Series Classification"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.1021/acs.jcim.4c00157.s001",
+          "URL": "https://doi.org/10.1021/acs.jcim.4c00157.s001",
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                14
+              ]
+            ],
+            "date-time": "2024-03-14T19:00:20Z",
+            "timestamp": 1710442820000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2024-03-25T03:42:10Z",
+            "timestamp": 1711338130000
+          },
+          "description": "Supplemental Information for 10.1021/acs.jcim.4c00157",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                26
+              ]
+            ],
+            "date-time": "2026-02-26T17:37:15Z",
+            "timestamp": 1772127435972,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "316",
+          "prefix": "10.1021",
+          "publisher": "American Chemical Society (ACS)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1021/acs.jcim.4c00157",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.4c00157/suppl_file/ci4c00157_si_001.pdf"
+            }
+          },
+          "score": 49.22748,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Molecular Representation Learning with a Chemical Synthesis Knowledge Graph"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.1609/aaai.v38i12.29299",
+          "ISSN": [
+            "2374-3468",
+            "2159-5399"
+          ],
+          "URL": "https://doi.org/10.1609/aaai.v38i12.29299",
+          "abstract": "<jats:p>Learning universal time series representations applicable to various types of downstream tasks is challenging but valuable in real applications. Recently, researchers have attempted to leverage the success of self-supervised contrastive learning (SSCL) in Computer Vision(CV) and Natural Language Processing(NLP) to tackle time series representation. Nevertheless, due to the special temporal characteristics, relying solely on empirical guidance from other domains may be ineffective for time series and difficult to adapt to multiple downstream tasks. To this end, we review three parts involved in SSCL including 1) designing augmentation methods for positive pairs, 2) constructing (hard) negative pairs, and 3) designing SSCL loss. For 1) and 2), we find that unsuitable positive and negative pair construction may introduce inappropriate inductive biases, which neither preserve temporal properties nor provide sufficient discriminative features. For 3), just exploring segment- or instance-level semantics information is not enough for learning universal representation. To remedy the above issues, we propose a novel self-supervised framework named TimesURL. Specifically, we first introduce a frequency-temporal-based augmentation to keep the temporal property unchanged. And then, we construct double Universums as a special kind of hard negative to guide better contrastive learning. Additionally, we introduce time reconstruction as a joint optimization objective with contrastive learning to capture both segment-level and instance-level information. As a result, TimesURL can learn high-quality universal representations and achieve state-of-the-art performance in 6 different downstream tasks, including short- and long-term forecasting, imputation, classification, anomaly detection and transfer learning.</jats:p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Liu",
+              "given": "Jiexi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Chen",
+              "given": "Songcan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Proceedings of the AAAI Conference on Artificial Intelligence"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2024-03-25T11:03:06Z",
+            "timestamp": 1711364586000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2024-03-25T11:03:07Z",
+            "timestamp": 1711364587000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                9
+              ]
+            ],
+            "date-time": "2026-07-09T02:43:12Z",
+            "timestamp": 1783564992790,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 94,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2374-3468"
+            },
+            {
+              "type": "print",
+              "value": "2159-5399"
+            }
+          ],
+          "issue": "12",
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                24
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "12",
+            "published-online": {
+              "date-parts": [
+                [
+                  2024,
+                  3,
+                  25
+                ]
+              ]
+            }
+          },
+          "link": [
+            {
+              "URL": "https://ojs.aaai.org/index.php/AAAI/article/download/29299/30450",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://ojs.aaai.org/index.php/AAAI/article/download/29299/30451",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://ojs.aaai.org/index.php/AAAI/article/download/29299/30450",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "9382",
+          "page": "13918-13926",
+          "prefix": "10.1609",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                24
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                24
+              ]
+            ]
+          },
+          "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://ojs.aaai.org/index.php/AAAI/article/view/29299"
+            }
+          },
+          "score": 48.667614,
+          "short-container-title": [
+            "AAAI"
+          ],
+          "source": "Crossref",
+          "title": [
+            "TimesURL: Self-Supervised Contrastive Learning for Universal Time Series Representation Learning"
+          ],
+          "type": "journal-article",
+          "volume": "38"
+        },
+        {
+          "DOI": "10.1016/j.knosys.2022.108606",
+          "ISSN": [
+            "0950-7051"
+          ],
+          "URL": "https://doi.org/10.1016/j.knosys.2022.108606",
+          "alternative-id": [
+            "S0950705122002726"
+          ],
+          "article-number": "108606",
+          "assertion": [
+            {
+              "label": "This article is maintained by",
+              "name": "publisher",
+              "value": "Elsevier"
+            },
+            {
+              "label": "Article Title",
+              "name": "articletitle",
+              "value": "TimeCLR: A self-supervised contrastive learning framework for univariate time series representation"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journaltitle",
+              "value": "Knowledge-Based Systems"
+            },
+            {
+              "label": "CrossRef DOI link to publisher maintained version",
+              "name": "articlelink",
+              "value": "https://doi.org/10.1016/j.knosys.2022.108606"
+            },
+            {
+              "label": "Content Type",
+              "name": "content_type",
+              "value": "article"
+            },
+            {
+              "label": "Copyright",
+              "name": "copyright",
+              "value": "© 2022 Elsevier B.V. All rights reserved."
+            }
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-0481-4880",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Yang",
+              "given": "Xinyu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Zhenguo",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Cui",
+              "given": "Rongyi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Knowledge-Based Systems"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "elsevier.com",
+              "sciencedirect.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                3,
+                21
+              ]
+            ],
+            "date-time": "2022-03-21T13:28:35Z",
+            "timestamp": 1647869315000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2025-10-16T04:34:36Z",
+            "timestamp": 1760589276000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "62162062"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "62162062"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                10
+              ]
+            ],
+            "date-time": "2026-07-10T06:00:51Z",
+            "timestamp": 1783663251426,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 100,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0950-7051"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                6
+              ]
+            ]
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-017",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-012",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-004",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0950705122002726?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0950705122002726?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "member": "78",
+          "page": "108606",
+          "prefix": "10.1016",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                6
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                6
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "DOI": "10.1007/s10618-019-00619-1",
+              "article-title": "Deep learning for time series classification: A review",
+              "author": "Fawaz",
+              "doi-asserted-by": "crossref",
+              "first-page": "917",
+              "issue": "4",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b1",
+              "volume": "33",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1098/rsta.2020.0209",
+              "article-title": "Time-series forecasting with deep learning: A survey",
+              "author": "Lim",
+              "doi-asserted-by": "crossref",
+              "issue": "2194",
+              "journal-title": "Phil. Trans. R. Soc. A",
+              "key": "10.1016/j.knosys.2022.108606_b2",
+              "volume": "379",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1098/rsif.2017.0387",
+              "article-title": "Opportunities and obstacles for deep learning in biology and medicine",
+              "author": "Ching",
+              "doi-asserted-by": "crossref",
+              "issue": "141",
+              "journal-title": "J. R. Soc. Interface",
+              "key": "10.1016/j.knosys.2022.108606_b3",
+              "volume": "15",
+              "year": "2018"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "Chen",
+              "first-page": "1597",
+              "key": "10.1016/j.knosys.2022.108606_b4",
+              "series-title": "International Conference on Machine Learning",
+              "year": "2020"
+            },
+            {
+              "article-title": "Big self-supervised models are strong semi-supervised learners",
+              "author": "Chen",
+              "first-page": "22243",
+              "key": "10.1016/j.knosys.2022.108606_b5",
+              "series-title": "Advances in Neural Information Processing Systems, 33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised learning of visual representations by solving jigsaw puzzles",
+              "author": "Noroozi",
+              "first-page": "69",
+              "key": "10.1016/j.knosys.2022.108606_b6",
+              "series-title": "European Conference on Computer Vision",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00393",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b7",
+              "unstructured": "Z. Wu, Y. Xiong, S.X. Yu, D. Lin, Unsupervised feature learning via non-parametric instance discrimination, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2018, pp. 3733–3742."
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00975",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b8",
+              "unstructured": "K. He, H. Fan, Y. Wu, S. Xie, R. Girshick, Momentum contrast for unsupervised visual representation learning, in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2020, pp. 9729–9738."
+            },
+            {
+              "author": "Hjelm",
+              "key": "10.1016/j.knosys.2022.108606_b9",
+              "series-title": "Learning deep representations by mutual information estimation and maximization",
+              "year": "2018"
+            },
+            {
+              "article-title": "Contrastive representation learning for electroencephalogram classification",
+              "author": "Mohsenvand",
+              "first-page": "238",
+              "key": "10.1016/j.knosys.2022.108606_b10",
+              "series-title": "Machine Learning for Health",
+              "year": "2020"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b11",
+              "unstructured": "D.J. Berndt, J. Clifford, Using dynamic time warping to find patterns in time series, in: KDD Workshop, vol. 10, Seattle, WA, USA, 1994, pp. 359–370."
+            },
+            {
+              "DOI": "10.1007/978-3-540-74048-3_4",
+              "article-title": "Dynamic time warping",
+              "author": "Müller",
+              "doi-asserted-by": "crossref",
+              "first-page": "69",
+              "journal-title": "Inf. Retr. Music Motion",
+              "key": "10.1016/j.knosys.2022.108606_b12",
+              "year": "2007"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2010.09.022",
+              "article-title": "Weighted dynamic time warping for time series classification",
+              "author": "Jeong",
+              "doi-asserted-by": "crossref",
+              "first-page": "2231",
+              "issue": "9",
+              "journal-title": "Pattern Recognit.",
+              "key": "10.1016/j.knosys.2022.108606_b13",
+              "volume": "44",
+              "year": "2011"
+            },
+            {
+              "article-title": "Time series classification from scratch with deep neural networks: A strong baseline",
+              "author": "Wang",
+              "first-page": "1578",
+              "key": "10.1016/j.knosys.2022.108606_b14",
+              "series-title": "2017 International Joint Conference on Neural Networks, IJCNN",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1007/s10618-016-0483-9",
+              "article-title": "The great time series classification bake off: A review and experimental evaluation of recent algorithmic advances",
+              "author": "Bagnall",
+              "doi-asserted-by": "crossref",
+              "first-page": "606",
+              "issue": "3",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b15",
+              "volume": "31",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1007/s10618-020-00710-y",
+              "article-title": "Inceptiontime: Finding alexnet for time series classification",
+              "author": "Fawaz",
+              "doi-asserted-by": "crossref",
+              "first-page": "1936",
+              "issue": "6",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b16",
+              "volume": "34",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1145/1557019.1557122",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b17",
+              "unstructured": "L. Ye, E. Keogh, Time series shapelets: A new primitive for data mining, in: Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2009, pp. 947–956."
+            },
+            {
+              "DOI": "10.1145/2020408.2020587",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b18",
+              "unstructured": "A. Mueen, E. Keogh, N. Young, Logical-shapelets: An expressive primitive for time series classification, in: Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2011, pp. 1154–1162."
+            },
+            {
+              "DOI": "10.1007/s10618-013-0322-1",
+              "article-title": "Classification of time series by shapelet transformation",
+              "author": "Hills",
+              "doi-asserted-by": "crossref",
+              "first-page": "851",
+              "issue": "4",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b19",
+              "volume": "28",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1016/j.knosys.2014.02.011",
+              "article-title": "Non-isometric transforms in time series classification using DTW",
+              "author": "Górecki",
+              "doi-asserted-by": "crossref",
+              "first-page": "98",
+              "journal-title": "Knowl.-Based Syst.",
+              "key": "10.1016/j.knosys.2022.108606_b20",
+              "volume": "61",
+              "year": "2014"
+            },
+            {
+              "article-title": "DTWNet: A dynamic time warping network",
+              "author": "Cai",
+              "key": "10.1016/j.knosys.2022.108606_b21",
+              "series-title": "Advances in Neural Information Processing Systems, Vol. 32",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2017.2779939",
+              "article-title": "LSTM fully convolutional networks for time series classification",
+              "author": "Karim",
+              "doi-asserted-by": "crossref",
+              "first-page": "1662",
+              "journal-title": "IEEE Access",
+              "key": "10.1016/j.knosys.2022.108606_b22",
+              "volume": "6",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1145/3136755.3136817",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b23",
+              "unstructured": "T.T. Um, F.M. Pfister, D. Pichler, S. Endo, M. Lang, S. Hirche, U. Fietzek, D. Kulić, Data augmentation of wearable sensor data for Parkinson’s disease monitoring using convolutional neural networks, in: Proceedings of the 19th ACM International Conference on Multimodal Interaction, 2017, pp. 216–220."
+            },
+            {
+              "article-title": "Biosignal data augmentation based on generative adversarial networks",
+              "author": "Haradal",
+              "first-page": "368",
+              "key": "10.1016/j.knosys.2022.108606_b24",
+              "series-title": "2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBC",
+              "year": "2018"
+            },
+            {
+              "author": "Ramponi",
+              "key": "10.1016/j.knosys.2022.108606_b25",
+              "series-title": "T-cgan: Conditional generative adversarial network for data augmentation in noisy time series with irregular sampling",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2019.101675",
+              "article-title": "A novel data augmentation method to enhance deep neural networks for detection of atrial fibrillation",
+              "author": "Cao",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Biomed. Signal Process. Control",
+              "key": "10.1016/j.knosys.2022.108606_b26",
+              "volume": "56",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.3390/s20010098",
+              "article-title": "Data augmentation with suboptimal warping for time-series classification",
+              "author": "Kamycki",
+              "doi-asserted-by": "crossref",
+              "first-page": "98",
+              "issue": "1",
+              "journal-title": "Sensors",
+              "key": "10.1016/j.knosys.2022.108606_b27",
+              "volume": "20",
+              "year": "2020"
+            },
+            {
+              "author": "DeVries",
+              "key": "10.1016/j.knosys.2022.108606_b28",
+              "series-title": "Dataset augmentation in feature space",
+              "year": "2017"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b29",
+              "unstructured": "N. Komodakis, S. Gidaris, Unsupervised representation learning by predicting image rotations, in: International Conference on Learning Representations, ICLR, 2018."
+            },
+            {
+              "article-title": "Self-supervised video representation learning by pace prediction",
+              "author": "Wang",
+              "first-page": "504",
+              "key": "10.1016/j.knosys.2022.108606_b30",
+              "series-title": "European Conference on Computer Vision",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised feature extraction by time-contrastive learning and nonlinear ica",
+              "author": "Hyvarinen",
+              "first-page": "3765",
+              "journal-title": "Adv. Neural Inf. Process. Syst.",
+              "key": "10.1016/j.knosys.2022.108606_b31",
+              "volume": "29",
+              "year": "2016"
+            },
+            {
+              "article-title": "Unsupervised scalable representation learning for multivariate time series",
+              "author": "Franceschi",
+              "key": "10.1016/j.knosys.2022.108606_b32",
+              "series-title": "Advances in Neural Information Processing Systems, Vol. 32",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1007/978-3-030-47426-3_39",
+              "article-title": "Self-supervised learning for semi-supervised time series classification",
+              "author": "Jawed",
+              "doi-asserted-by": "crossref",
+              "first-page": "499",
+              "journal-title": "Adv. Knowl. Discov. Data Min.",
+              "key": "10.1016/j.knosys.2022.108606_b33",
+              "volume": "12084",
+              "year": "2020"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b34",
+              "unstructured": "S. Tonekaboni, D. Eytan, A. Goldenberg, Unsupervised representation learning for time series with temporal neighborhood coding, in: International Conference on Learning Representations, 2021."
+            },
+            {
+              "author": "Fan",
+              "key": "10.1016/j.knosys.2022.108606_b35",
+              "series-title": "Self-supervised time series representation learning by inter-intra relational reasoning",
+              "year": "2020"
+            },
+            {
+              "article-title": "Time-series representation learning via temporal and contextual contrasting",
+              "author": "Eldele",
+              "first-page": "2352",
+              "key": "10.1016/j.knosys.2022.108606_b36",
+              "series-title": "Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence, IJCAI-21",
+              "year": "2021"
+            },
+            {
+              "article-title": "Unsupervised visual time-series representation learning and clustering",
+              "author": "Anand",
+              "first-page": "832",
+              "key": "10.1016/j.knosys.2022.108606_b37",
+              "series-title": "International Conference on Neural Information Processing",
+              "year": "2020"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b38",
+              "unstructured": "A. Abid, J. Zou, Autowarp: Learning a warping distance from unlabeled time using sequence autoencoders, in: Proceedings of the 32nd International Conference on Neural Information Processing Systems, 2018, pp. 10568–10578."
+            },
+            {
+              "article-title": "Self-supervised ECG representation learning for emotion recognition",
+              "author": "Sarkar",
+              "journal-title": "IEEE Trans. Affect. Comput.",
+              "key": "10.1016/j.knosys.2022.108606_b39",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1145/2939672.2945383",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b40",
+              "unstructured": "A. Mueen, E. Keogh, Extracting optimal performance from dynamic time warping, in: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2016, pp. 2129–2130."
+            },
+            {
+              "article-title": "Improved deep metric learning with multi-class n-pair loss objective",
+              "author": "Sohn",
+              "first-page": "1857",
+              "journal-title": "Adv. Neural Inf. Process. Syst.",
+              "key": "10.1016/j.knosys.2022.108606_b41",
+              "year": "2016"
+            },
+            {
+              "author": "Oord",
+              "key": "10.1016/j.knosys.2022.108606_b42",
+              "series-title": "Representation learning with contrastive predictive coding",
+              "year": "2018"
+            },
+            {
+              "article-title": "Contrastive representation learning for electroencephalogram classification",
+              "author": "Mohsenvand",
+              "first-page": "238",
+              "key": "10.1016/j.knosys.2022.108606_b43",
+              "series-title": "Machine Learning for Health",
+              "year": "2020"
+            },
+            {
+              "author": "Davis",
+              "key": "10.1016/j.knosys.2022.108606_b44",
+              "series-title": "Predictive Modelling of Bone Ageing",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1016/S0895-6111(00)00026-4",
+              "article-title": "Digital hand atlas and web-based bone age assessment: System design and implementation",
+              "author": "Cao",
+              "doi-asserted-by": "crossref",
+              "first-page": "297",
+              "issue": "5",
+              "journal-title": "Comput. Med. Imaging Graph.",
+              "key": "10.1016/j.knosys.2022.108606_b45",
+              "volume": "24",
+              "year": "2000"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2010.09.013",
+              "article-title": "A global averaging method for dynamic time warping, with applications to clustering",
+              "author": "Petitjean",
+              "doi-asserted-by": "crossref",
+              "first-page": "678",
+              "issue": "3",
+              "journal-title": "Pattern Recognit.",
+              "key": "10.1016/j.knosys.2022.108606_b46",
+              "volume": "44",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1109/TPAMI.1979.4766909",
+              "article-title": "A cluster separation measure",
+              "author": "Davies",
+              "doi-asserted-by": "crossref",
+              "first-page": "224",
+              "issue": "2",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+              "key": "10.1016/j.knosys.2022.108606_b47",
+              "year": "1979"
+            },
+            {
+              "DOI": "10.1016/0377-0427(87)90125-7",
+              "article-title": "Silhouettes: A graphical aid to the interpretation and validation of cluster analysis",
+              "author": "Rousseeuw",
+              "doi-asserted-by": "crossref",
+              "first-page": "53",
+              "journal-title": "J. Comput. Appl. Math.",
+              "key": "10.1016/j.knosys.2022.108606_b48",
+              "volume": "20",
+              "year": "1987"
+            }
+          ],
+          "reference-count": 48,
+          "references-count": 48,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0950705122002726"
+            }
+          },
+          "score": 47.361526,
+          "short-container-title": [
+            "Knowledge-Based Systems"
+          ],
+          "source": "Crossref",
+          "special_numbering": "C",
+          "title": [
+            "TimeCLR: A self-supervised contrastive learning framework for univariate time series representation"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "volume": "245"
+        },
+        {
+          "DOI": "10.1109/access.2025.3556957/mm1",
+          "URL": "https://doi.org/10.1109/access.2025.3556957/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "VAARAS",
+              "given": "EINARI",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2025-04-02T20:21:00Z",
+            "timestamp": 1743625260000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T16:27:30Z",
+            "timestamp": 1769790450000
+          },
+          "description": "Appendix for the article.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:31:33Z",
+            "timestamp": 1772159493059,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/ACCESS.2025.3556957",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx8/6287639/10820123/10947019/supp1-3556957.pdf?arnumber=10947019"
+            }
+          },
+          "score": 47.264053,
+          "source": "Crossref",
+          "title": [
+            "PFML: Self-Supervised Learning of Time-Series Data Without Representation Collapse_supp1-3556957.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.14801/jkiit.2025.23.6.55",
+          "ISSN": [
+            "1598-8619",
+            "2093-7571"
+          ],
+          "URL": "https://doi.org/10.14801/jkiit.2025.23.6.55",
+          "alternative-id": [
+            "10.14801/jkiit.2025.23.6.55"
+          ],
+          "assertion": [
+            {
+              "URL": "https://orcid.org/0009-0004-9782-3253",
+              "group": {
+                "label": "Identifiers",
+                "name": "identifiers"
+              },
+              "label": "ORCID",
+              "name": "orcid",
+              "order": 0,
+              "value": "https://orcid.org/0009-0004-9782-3253"
+            },
+            {
+              "URL": "https://orcid.org/0000-0002-7854-6180",
+              "group": {
+                "label": "Identifiers",
+                "name": "identifiers"
+              },
+              "label": "ORCID",
+              "name": "orcid",
+              "order": 1,
+              "value": "https://orcid.org/0000-0002-7854-6180"
+            },
+            {
+              "group": {
+                "label": "Publication History",
+                "name": "publication_history"
+              },
+              "label": "Received",
+              "name": "received",
+              "order": 0,
+              "value": "2025-05-02"
+            },
+            {
+              "group": {
+                "label": "Publication History",
+                "name": "publication_history"
+              },
+              "label": "Accepted",
+              "name": "accepted",
+              "order": 1,
+              "value": "2025-05-24"
+            },
+            {
+              "group": {
+                "label": "Publication History",
+                "name": "publication_history"
+              },
+              "label": "Published",
+              "name": "published",
+              "order": 2,
+              "value": "2025-06-30"
+            }
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0009-0004-9782-3253",
+              "affiliation": [],
+              "authenticated-orcid": true,
+              "family": "Li",
+              "given": "Kunpeng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-7854-6180",
+              "affiliation": [],
+              "authenticated-orcid": true,
+              "family": "Lee",
+              "given": "Jong-Chul",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "The Journal of Korean Institute of Information Technology"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "ki-it.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                7
+              ]
+            ],
+            "date-time": "2025-07-07T02:35:55Z",
+            "timestamp": 1751855755000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2025-10-31T01:53:05Z",
+            "timestamp": 1761875585000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100002643",
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100002643",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "Kwangwoon University"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2025-10-31T02:21:01Z",
+            "timestamp": 1761877261251,
+            "version": "build-2065373602"
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1598-8619"
+            },
+            {
+              "type": "electronic",
+              "value": "2093-7571"
+            }
+          ],
+          "issue": "6",
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                30
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "6",
+            "published-print": {
+              "date-parts": [
+                [
+                  2025,
+                  6,
+                  30
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12266422",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "5798",
+          "page": "55-63",
+          "prefix": "10.14801",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                30
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                30
+              ]
+            ]
+          },
+          "publisher": "Korean Institute of Information Technology",
+          "reference": [
+            {
+              "DOI": "10.1016/j.rcim.2024.102839",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref1"
+            },
+            {
+              "DOI": "10.1109/TAI.2024.3430236",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref2"
+            },
+            {
+              "DOI": "10.1109/TNSRE.2023.3245285",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref3"
+            },
+            {
+              "DOI": "10.1109/LSP.2021.3130826",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref4"
+            },
+            {
+              "DOI": "10.1145/3516367",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref5"
+            },
+            {
+              "DOI": "10.1109/ICRA.2018.8462891",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref6"
+            },
+            {
+              "DOI": "10.1016/j.compag.2021.106510",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref7"
+            },
+            {
+              "DOI": "10.1145/3627158",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref8"
+            },
+            {
+              "DOI": "10.1109/TNNLS.2020.3016666",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref9"
+            },
+            {
+              "DOI": "10.1109/TAFFC.2020.3014842",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref10"
+            },
+            {
+              "DOI": "10.1109/TAFFC.2022.3210441",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref11"
+            },
+            {
+              "DOI": "10.1109/TIM.2025.3533618",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref12"
+            },
+            {
+              "DOI": "10.1016/j.knosys.2024.111855",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref13"
+            },
+            {
+              "key": "10.14801/jkiit.2025.23.6.55_ref14",
+              "unstructured": "T. Chen, S. Kornblith, M. Norouzi, and G. Hinton, \"A Simple Framework for Contrastive Learning of Visual Representations\", Proc. of the 37th International Conference on Machine Learning, Online, Vol. 119, Jul. 2020."
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00975",
+              "doi-asserted-by": "crossref",
+              "key": "10.14801/jkiit.2025.23.6.55_ref15",
+              "unstructured": "K. He, H. Fan, Y. Wu, S. Xie, and R. Girshick, \"Momentum Contrast for Unsupervised Visual Representation Learning\", 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Seattle, WA, USA, pp. 9729-9738, Jun. 2020."
+            },
+            {
+              "key": "10.14801/jkiit.2025.23.6.55_ref16",
+              "unstructured": "J.-B. Grill, et al. \"Bootstrap your own latent: A new approach to self-supervised Learning\", NIPS'20, Vancouver BC Canada, No. 1786, pp. 21271-21284, Dec. 2020."
+            },
+            {
+              "DOI": "10.1016/j.knosys.2022.108606",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref17"
+            },
+            {
+              "key": "10.14801/jkiit.2025.23.6.55_ref18",
+              "unstructured": "X. Zhang, Z. Zhao, T. Tsiligkaridis, and M. Zitnik, \"Self-Supervised Contrastive Pre-Training For Time Series via Time-Frequency Consistency in Advances in Neural Information Processing Systems\", NIPS'22, New Orleans LA USA, No. 288, pp. 3988-4003, Nov. 2022."
+            },
+            {
+              "DOI": "10.1609/aaai.v38i12.29299",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref19"
+            },
+            {
+              "DOI": "10.48550/arXiv.1807.03748",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref20"
+            },
+            {
+              "DOI": "10.48550/arXiv.2106.14112",
+              "doi-asserted-by": "publisher",
+              "key": "10.14801/jkiit.2025.23.6.55_ref21"
+            }
+          ],
+          "reference-count": 21,
+          "references-count": 21,
+          "resource": {
+            "primary": {
+              "URL": "http://www.dbpia.co.kr/Journal/ArticleDetail/NODE12266422"
+            }
+          },
+          "score": 46.130753,
+          "short-container-title": [
+            "jkiit"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Representation Learning for Time Series"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.14801/crossmark_policy",
+          "volume": "23"
+        },
+        {
+          "DOI": "10.2139/ssrn.4698444",
+          "URL": "https://doi.org/10.2139/ssrn.4698444",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "ye",
+              "given": "zhengxin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Schuller",
+              "given": "Björn  W.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                17
+              ]
+            ],
+            "date-time": "2024-01-17T20:21:55Z",
+            "timestamp": 1705522915000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                17
+              ]
+            ],
+            "date-time": "2024-01-17T20:21:56Z",
+            "timestamp": 1705522916000
+          },
+          "group-title": "SSRN",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                9
+              ]
+            ],
+            "date-time": "2026-03-09T07:39:48Z",
+            "timestamp": 1773041988528,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "member": "78",
+          "posted": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4698444"
+            }
+          },
+          "score": 45.462074,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Trading Through Earnings Seasons Using Self-Supervised Contrastive Representation Learning"
+          ],
+          "type": "posted-content"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 2785905
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "d9048a46e1b24482d79702a990f018779cb06296c00d750a99c0f23069c1fd60",
+  "retrieved_at": "2026-07-14T13:55:16Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

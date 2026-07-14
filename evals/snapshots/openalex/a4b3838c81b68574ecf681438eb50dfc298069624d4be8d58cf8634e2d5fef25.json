@@ -1,0 +1,289 @@
+{
+  "endpoint": "works/doi:10.1016/0002-9149(94)90135-x",
+  "request_key": "a4b3838c81b68574ecf681438eb50dfc298069624d4be8d58cf8634e2d5fef25",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210138321",
+              "https://openalex.org/I1315135799",
+              "https://openalex.org/I4210092581"
+            ],
+            "raw_affiliation_string": "Cardiology Department, Marshfield Clinic, Wisconsin 54449"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210138321",
+              "https://openalex.org/I1315135799"
+            ],
+            "raw_affiliation_string": "From the Marshfield Clinic, Marshfield, U.S.A"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I135310074",
+              "https://openalex.org/I1304256225"
+            ],
+            "raw_affiliation_string": "From the University of Wisconsin, Madison, Wisconsin U.S.A"
+          }
+        ],
+        "author": {
+          "display_name": "W. Bruce Fye",
+          "id": "https://openalex.org/A5057808192",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Wisconsin System",
+            "id": "https://openalex.org/I1304256225",
+            "lineage": [
+              "https://openalex.org/I1304256225"
+            ],
+            "ror": "https://ror.org/03ydkyb10",
+            "type": "education"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Marshfield Clinic",
+            "id": "https://openalex.org/I1315135799",
+            "lineage": [
+              "https://openalex.org/I1315135799"
+            ],
+            "ror": "https://ror.org/025chrz76",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "University of Wisconsin–Madison",
+            "id": "https://openalex.org/I135310074",
+            "lineage": [
+              "https://openalex.org/I135310074"
+            ],
+            "ror": "https://ror.org/01y2jtd41",
+            "type": "education"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Marshfield Clinic",
+            "id": "https://openalex.org/I4210092581",
+            "lineage": [
+              "https://openalex.org/I4210092581"
+            ],
+            "ror": "https://ror.org/00etqq360",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Marshfield Clinic",
+            "id": "https://openalex.org/I4210138321",
+            "lineage": [
+              "https://openalex.org/I4210138321"
+            ],
+            "ror": "https://ror.org/03zxy2q77",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Cardiology Department, Marshfield Clinic, Wisconsin 54449",
+          "From the Marshfield Clinic, Marshfield, U.S.A",
+          "From the University of Wisconsin, Madison, Wisconsin U.S.A"
+        ],
+        "raw_author_name": "W.Bruce Fye",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "937",
+      "issue": "13",
+      "last_page": "949",
+      "volume": "73"
+    },
+    "cited_by_count": 226,
+    "display_name": "A History of the origin, evolution, and impact of electrocardiography",
+    "doi": "https://doi.org/10.1016/0002-9149(94)90135-x",
+    "id": "https://openalex.org/W2072331803",
+    "ids": {
+      "doi": "https://doi.org/10.1016/0002-9149(94)90135-x",
+      "mag": "2072331803",
+      "openalex": "https://openalex.org/W2072331803",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/8184849"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/0002-9149(94)90135-x",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/0002-9149(94)90135-x",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "The American Journal of Cardiology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "The American Journal of Cardiology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S185186944",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0002-9149",
+          "1879-1913"
+        ],
+        "issn_l": "0002-9149",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "1994-05-01",
+    "publication_year": 1994,
+    "referenced_works": [
+      "https://openalex.org/W84777390",
+      "https://openalex.org/W192070559",
+      "https://openalex.org/W243437783",
+      "https://openalex.org/W571692631",
+      "https://openalex.org/W574026571",
+      "https://openalex.org/W574706017",
+      "https://openalex.org/W589275258",
+      "https://openalex.org/W597748064",
+      "https://openalex.org/W1574664604",
+      "https://openalex.org/W1596418265",
+      "https://openalex.org/W1603972298",
+      "https://openalex.org/W1607949385",
+      "https://openalex.org/W1658523209",
+      "https://openalex.org/W1889631222",
+      "https://openalex.org/W1965801696",
+      "https://openalex.org/W1966377131",
+      "https://openalex.org/W1967506984",
+      "https://openalex.org/W1967854042",
+      "https://openalex.org/W1971573857",
+      "https://openalex.org/W1975711531",
+      "https://openalex.org/W1977041256",
+      "https://openalex.org/W1979008266",
+      "https://openalex.org/W1984406966",
+      "https://openalex.org/W1985944456",
+      "https://openalex.org/W1987889845",
+      "https://openalex.org/W1989090236",
+      "https://openalex.org/W1992889461",
+      "https://openalex.org/W1993245830",
+      "https://openalex.org/W2000661474",
+      "https://openalex.org/W2002584619",
+      "https://openalex.org/W2003303558",
+      "https://openalex.org/W2004346804",
+      "https://openalex.org/W2009886600",
+      "https://openalex.org/W2010067476",
+      "https://openalex.org/W2010401872",
+      "https://openalex.org/W2011938140",
+      "https://openalex.org/W2012331257",
+      "https://openalex.org/W2016657278",
+      "https://openalex.org/W2018908188",
+      "https://openalex.org/W2019275550",
+      "https://openalex.org/W2021740115",
+      "https://openalex.org/W2025511934",
+      "https://openalex.org/W2031834612",
+      "https://openalex.org/W2036685434",
+      "https://openalex.org/W2036941386",
+      "https://openalex.org/W2037313376",
+      "https://openalex.org/W2037411552",
+      "https://openalex.org/W2037916677",
+      "https://openalex.org/W2045643943",
+      "https://openalex.org/W2049649373",
+      "https://openalex.org/W2052448643",
+      "https://openalex.org/W2053606802",
+      "https://openalex.org/W2054098850",
+      "https://openalex.org/W2056380994",
+      "https://openalex.org/W2058034034",
+      "https://openalex.org/W2059099776",
+      "https://openalex.org/W2059319478",
+      "https://openalex.org/W2060689982",
+      "https://openalex.org/W2063810433",
+      "https://openalex.org/W2073708061",
+      "https://openalex.org/W2077468971",
+      "https://openalex.org/W2081329204",
+      "https://openalex.org/W2081578091",
+      "https://openalex.org/W2084717989",
+      "https://openalex.org/W2088515921",
+      "https://openalex.org/W2126665596",
+      "https://openalex.org/W2141164513",
+      "https://openalex.org/W2153677276",
+      "https://openalex.org/W2252766695",
+      "https://openalex.org/W2313219886",
+      "https://openalex.org/W2316922739",
+      "https://openalex.org/W2321594633",
+      "https://openalex.org/W2400743319",
+      "https://openalex.org/W2402444298",
+      "https://openalex.org/W2403077129",
+      "https://openalex.org/W2403571154",
+      "https://openalex.org/W2414777746",
+      "https://openalex.org/W2416526813",
+      "https://openalex.org/W2417400088",
+      "https://openalex.org/W2418151844",
+      "https://openalex.org/W2419170791",
+      "https://openalex.org/W2431063680",
+      "https://openalex.org/W2472671479",
+      "https://openalex.org/W2550128835",
+      "https://openalex.org/W3135601989",
+      "https://openalex.org/W3215384971",
+      "https://openalex.org/W4205270968",
+      "https://openalex.org/W4205919899",
+      "https://openalex.org/W4206628069",
+      "https://openalex.org/W4229964714",
+      "https://openalex.org/W4234917455",
+      "https://openalex.org/W4238898568",
+      "https://openalex.org/W4240619294",
+      "https://openalex.org/W4240870152",
+      "https://openalex.org/W4245016056",
+      "https://openalex.org/W4249048987",
+      "https://openalex.org/W4249248577",
+      "https://openalex.org/W4252171878",
+      "https://openalex.org/W4252183873",
+      "https://openalex.org/W4255627872",
+      "https://openalex.org/W4290162619",
+      "https://openalex.org/W4297563123",
+      "https://openalex.org/W4300146794",
+      "https://openalex.org/W6636938478",
+      "https://openalex.org/W6650986209",
+      "https://openalex.org/W6654845666",
+      "https://openalex.org/W6717421388",
+      "https://openalex.org/W6729523851",
+      "https://openalex.org/W6791880878",
+      "https://openalex.org/W6820212899",
+      "https://openalex.org/W6841172059",
+      "https://openalex.org/W6841564776"
+    ],
+    "referenced_works_count": 112,
+    "title": "A History of the origin, evolution, and impact of electrocardiography",
+    "type": "article"
+  },
+  "response_hash": "da1e006dd5b6a7889db0c760de572eb3aff6862c4ac0c7acc2b61d89c8811d7e",
+  "retrieved_at": "2026-07-14T13:49:30Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

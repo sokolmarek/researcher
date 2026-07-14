@@ -1,0 +1,229 @@
+{
+  "endpoint": "works/doi:10.1016/j.firesaf.2020.103145",
+  "request_key": "d3ae37309fe41bf321f25926d338a4d4601cbc43dcda536e1de8fc8ba6e1845c",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I104946051"
+            ],
+            "raw_affiliation_string": "College of Science and Technology, Nihon University, 7-24-1 Narashinodai, Funabashi, 274-8501, Japan"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210136277"
+            ],
+            "raw_affiliation_string": "Institute of Space and Astronautical Science, JAXA, 3-1-1 Yoshimodai, Chuo-ku, Sagamihara, 252-5210, Japan"
+          }
+        ],
+        "author": {
+          "display_name": "Akiyo Takahashi",
+          "id": "https://openalex.org/A5102364084",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "JP"
+        ],
+        "institutions": [
+          {
+            "country_code": "JP",
+            "display_name": "Nihon University",
+            "id": "https://openalex.org/I104946051",
+            "lineage": [
+              "https://openalex.org/I104946051"
+            ],
+            "ror": "https://ror.org/05jk51a88",
+            "type": "education"
+          },
+          {
+            "country_code": "JP",
+            "display_name": "Institute of Space and Astronautical Science",
+            "id": "https://openalex.org/I4210136277",
+            "lineage": [
+              "https://openalex.org/I2800865746",
+              "https://openalex.org/I4210136277"
+            ],
+            "ror": "https://ror.org/034gcgw60",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "College of Science and Technology, Nihon University, 7-24-1 Narashinodai, Funabashi, 274-8501, Japan",
+          "Institute of Space and Astronautical Science, JAXA, 3-1-1 Yoshimodai, Chuo-ku, Sagamihara, 252-5210, Japan"
+        ],
+        "raw_author_name": "Akiyo Takahashi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210136277"
+            ],
+            "raw_affiliation_string": "Institute of Space and Astronautical Science, JAXA, 3-1-1 Yoshimodai, Chuo-ku, Sagamihara, 252-5210, Japan"
+          }
+        ],
+        "author": {
+          "display_name": "Koki Kitagawa",
+          "id": "https://openalex.org/A5112314747",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "JP"
+        ],
+        "institutions": [
+          {
+            "country_code": "JP",
+            "display_name": "Institute of Space and Astronautical Science",
+            "id": "https://openalex.org/I4210136277",
+            "lineage": [
+              "https://openalex.org/I2800865746",
+              "https://openalex.org/I4210136277"
+            ],
+            "ror": "https://ror.org/034gcgw60",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Institute of Space and Astronautical Science, JAXA, 3-1-1 Yoshimodai, Chuo-ku, Sagamihara, 252-5210, Japan"
+        ],
+        "raw_author_name": "Koki Kitagawa",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210136277"
+            ],
+            "raw_affiliation_string": "Institute of Space and Astronautical Science, JAXA, 3-1-1 Yoshimodai, Chuo-ku, Sagamihara, 252-5210, Japan"
+          }
+        ],
+        "author": {
+          "display_name": "Toru Shimada",
+          "id": "https://openalex.org/A5084771116",
+          "orcid": "https://orcid.org/0000-0003-2970-2842"
+        },
+        "author_position": "last",
+        "countries": [
+          "JP"
+        ],
+        "institutions": [
+          {
+            "country_code": "JP",
+            "display_name": "Institute of Space and Astronautical Science",
+            "id": "https://openalex.org/I4210136277",
+            "lineage": [
+              "https://openalex.org/I2800865746",
+              "https://openalex.org/I4210136277"
+            ],
+            "ror": "https://ror.org/034gcgw60",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Institute of Space and Astronautical Science, JAXA, 3-1-1 Yoshimodai, Chuo-ku, Sagamihara, 252-5210, Japan"
+        ],
+        "raw_author_name": "Toru Shimada",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "103145",
+      "issue": null,
+      "last_page": "103145",
+      "volume": null
+    },
+    "cited_by_count": 3,
+    "display_name": "WITHDRAWN: Evaluation of safety distance for blast of hybrid rocket propellants",
+    "doi": "https://doi.org/10.1016/j.firesaf.2020.103145",
+    "id": "https://openalex.org/W3035612848",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.firesaf.2020.103145",
+      "mag": "3035612848",
+      "openalex": "https://openalex.org/W3035612848"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.firesaf.2020.103145",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.firesaf.2020.103145",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Fire Safety Journal",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Fire Safety Journal",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S160215590",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0379-7112",
+          "1873-7226"
+        ],
+        "issn_l": "0379-7112",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2020-06-01",
+    "publication_year": 2020,
+    "referenced_works": [
+      "https://openalex.org/W309747730",
+      "https://openalex.org/W1516702321",
+      "https://openalex.org/W1973665930",
+      "https://openalex.org/W1976979829",
+      "https://openalex.org/W1981896218",
+      "https://openalex.org/W1988165671",
+      "https://openalex.org/W2078315922",
+      "https://openalex.org/W2083367386",
+      "https://openalex.org/W2162357087",
+      "https://openalex.org/W2277749169",
+      "https://openalex.org/W2967905477",
+      "https://openalex.org/W2997611923",
+      "https://openalex.org/W6610899549",
+      "https://openalex.org/W6644485164",
+      "https://openalex.org/W6669917875",
+      "https://openalex.org/W6786912821",
+      "https://openalex.org/W6816274378"
+    ],
+    "referenced_works_count": 17,
+    "title": "WITHDRAWN: Evaluation of safety distance for blast of hybrid rocket propellants",
+    "type": "article"
+  },
+  "response_hash": "c92b78007c5f3d17344568d79d511d4799c8331b09db06f1711291905b3121b5",
+  "retrieved_at": "2026-07-14T13:48:49Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

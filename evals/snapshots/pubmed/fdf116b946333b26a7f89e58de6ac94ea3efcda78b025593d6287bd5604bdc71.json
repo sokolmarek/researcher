@@ -1,0 +1,42 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "fdf116b946333b26a7f89e58de6ac94ea3efcda78b025593d6287bd5604bdc71",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.1016/j.neucom.2020.04.076[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "0",
+      "errorlist": {
+        "fieldsnotfound": [],
+        "phrasesnotfound": [
+          "j.neucom.2020.04.076"
+        ]
+      },
+      "idlist": [],
+      "querytranslation": "10.1016/j.neucom.2020.04.076[AID]",
+      "retmax": "0",
+      "retstart": "0",
+      "translationset": [],
+      "warninglist": {
+        "outputmessages": [
+          "No items found."
+        ],
+        "phrasesignored": [],
+        "quotedphrasesnotfound": []
+      }
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "bca8837c243a63c458ed8aebcc0798e5519b639e7818500d24e17cfaa24c6d6a",
+  "retrieved_at": "2026-07-14T14:15:51Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

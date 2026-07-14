@@ -1,0 +1,182 @@
+{
+  "endpoint": "works/doi:10.1109/ifita.2009.204",
+  "request_key": "453a346a1dd68c051aeb5ec2428c9a61759dc6c79f34ab4daf67fdbb28da49a9",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "This": [
+        0
+      ],
+      "article": [
+        1
+      ],
+      "been": [
+        3
+      ],
+      "by": [
+        5
+      ],
+      "has": [
+        2
+      ],
+      "publisher.": [
+        7
+      ],
+      "retracted": [
+        4
+      ],
+      "the": [
+        6
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I204831749"
+            ],
+            "raw_affiliation_string": "School of Economic Information Engineering, Southwestern University of Finance and Economics, Chengdu, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I204831749"
+            ],
+            "raw_affiliation_string": "School of Economic Information Engineering, Southwestern University of Finance and Economics, Chengdu, China#TAB#"
+          }
+        ],
+        "author": {
+          "display_name": "Yu Wang",
+          "id": "https://openalex.org/A5115602709",
+          "orcid": "https://orcid.org/0000-0001-6351-6467"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Southwestern University of Finance and Economics",
+            "id": "https://openalex.org/I204831749",
+            "lineage": [
+              "https://openalex.org/I204831749"
+            ],
+            "ror": "https://ror.org/04ewct822",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "School of Economic Information Engineering, Southwestern University of Finance and Economics, Chengdu, China",
+          "School of Economic Information Engineering, Southwestern University of Finance and Economics, Chengdu, China#TAB#"
+        ],
+        "raw_author_name": "Wang Yu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I102345215"
+            ],
+            "raw_affiliation_string": "School of Mathematics and Computer Engineering, Xihua University, Chengdu, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I102345215"
+            ],
+            "raw_affiliation_string": "Sch. of Math. & Comput. Eng., Xihua Univ., Chengdu, , China"
+          }
+        ],
+        "author": {
+          "display_name": "Xudong Li",
+          "id": "https://openalex.org/A5100354502",
+          "orcid": "https://orcid.org/0000-0002-4279-3024"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Xihua University",
+            "id": "https://openalex.org/I102345215",
+            "lineage": [
+              "https://openalex.org/I102345215"
+            ],
+            "ror": "https://ror.org/04gwtvf26",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "School of Mathematics and Computer Engineering, Xihua University, Chengdu, China",
+          "Sch. of Math. & Comput. Eng., Xihua Univ., Chengdu, , China"
+        ],
+        "raw_author_name": "Li Xudong",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "530",
+      "issue": null,
+      "last_page": "533",
+      "volume": null
+    },
+    "cited_by_count": 5,
+    "display_name": "Notice of Retraction: Prediction and Analysis of Chinese CPI Based on RBF Neural Network",
+    "doi": "https://doi.org/10.1109/ifita.2009.204",
+    "id": "https://openalex.org/W2117144899",
+    "ids": {
+      "doi": "https://doi.org/10.1109/ifita.2009.204",
+      "mag": "2117144899",
+      "openalex": "https://openalex.org/W2117144899"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1109/ifita.2009.204",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1109/ifita.2009.204",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "2009 International Forum on Information Technology and Applications",
+      "raw_type": "proceedings-article",
+      "source": null,
+      "version": "publishedVersion"
+    },
+    "publication_date": "2009-05-01",
+    "publication_year": 2009,
+    "referenced_works": [
+      "https://openalex.org/W94523489",
+      "https://openalex.org/W1548502347",
+      "https://openalex.org/W1992288729",
+      "https://openalex.org/W1999542175",
+      "https://openalex.org/W2038085771",
+      "https://openalex.org/W2075899207",
+      "https://openalex.org/W2161913203",
+      "https://openalex.org/W2535168706"
+    ],
+    "referenced_works_count": 8,
+    "title": "Notice of Retraction: Prediction and Analysis of Chinese CPI Based on RBF Neural Network",
+    "type": "article"
+  },
+  "response_hash": "173328140415e76085474d4b8335ae822ecf84c4327ad53d8b25559a609d57d7",
+  "retrieved_at": "2026-07-14T13:48:56Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

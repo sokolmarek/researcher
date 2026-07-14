@@ -1,0 +1,703 @@
+{
+  "endpoint": "works/doi:10.1016/j.nmni.2017.04.003",
+  "request_key": "e3b2872861f16937004a931868c1c216a1c423fde341ec777c6639f0cc1864f7",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "(CSUR": [
+        17
+      ],
+      "47-year-old": [
+        30
+      ],
+      "Marseille-P3241T": [
+        16
+      ],
+      "P3241),": [
+        18
+      ],
+      "This": [
+        0
+      ],
+      "a": [
+        19,
+        24,
+        28
+      ],
+      "and": [
+        10
+      ],
+      "bacterium": [
+        21
+      ],
+      "characteristics": [
+        5
+      ],
+      "from": [
+        23
+      ],
+      "genus": [
+        9
+      ],
+      "healthy": [
+        29
+      ],
+      "isolated": [
+        22
+      ],
+      "main": [
+        4
+      ],
+      "massiliensis’": [
+        14
+      ],
+      "new": [
+        8,
+        11,
+        20
+      ],
+      "of": [
+        6,
+        27
+      ],
+      "pygmy": [
+        31
+      ],
+      "sample": [
+        26
+      ],
+      "species": [
+        12
+      ],
+      "stool": [
+        25
+      ],
+      "strain": [
+        15
+      ],
+      "study": [
+        1
+      ],
+      "supports": [
+        2
+      ],
+      "the": [
+        3,
+        7
+      ],
+      "woman.": [
+        32
+      ],
+      "‘Phoenicibacter": [
+        13
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I1294671590"
+            ],
+            "raw_affiliation_string": "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I168913471"
+            ],
+            "raw_affiliation_string": "Clinical Microbiology Laboratory, Saint George University Hospital, Faculty of Health Sciences, University of Balamand, Beirut, Lebanon"
+          }
+        ],
+        "author": {
+          "display_name": "Melhem Bilen",
+          "id": "https://openalex.org/A5052889629",
+          "orcid": "https://orcid.org/0000-0002-0178-5124"
+        },
+        "author_position": "first",
+        "countries": [
+          "FR",
+          "LB"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Centre National de la Recherche Scientifique",
+            "id": "https://openalex.org/I1294671590",
+            "lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "ror": "https://ror.org/02feahw73",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "LB",
+            "display_name": "University of Balamand",
+            "id": "https://openalex.org/I168913471",
+            "lineage": [
+              "https://openalex.org/I168913471"
+            ],
+            "ror": "https://ror.org/01xvwxv41",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Aix-Marseille Université",
+            "id": "https://openalex.org/I21491767",
+            "lineage": [
+              "https://openalex.org/I21491767"
+            ],
+            "ror": "https://ror.org/035xkbk20",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Unité de Recherche sur les Maladies Infectieuses et Tropicales Emergentes",
+            "id": "https://openalex.org/I4210107588",
+            "lineage": [
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1327553481",
+              "https://openalex.org/I154202486",
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I2799535048",
+              "https://openalex.org/I2802818602",
+              "https://openalex.org/I4210088668",
+              "https://openalex.org/I4210090127",
+              "https://openalex.org/I4210096427",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I4210113730",
+              "https://openalex.org/I4210131494",
+              "https://openalex.org/I4210166444",
+              "https://openalex.org/I4405257220"
+            ],
+            "ror": "https://ror.org/01ws78v34",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France",
+          "Clinical Microbiology Laboratory, Saint George University Hospital, Faculty of Health Sciences, University of Balamand, Beirut, Lebanon"
+        ],
+        "raw_author_name": "M. Bilen",
+        "raw_orcid": "https://orcid.org/0000-0002-0178-5124"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I1294671590"
+            ],
+            "raw_affiliation_string": "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+          }
+        ],
+        "author": {
+          "display_name": "F. Cadoret",
+          "id": "https://openalex.org/A5085598208",
+          "orcid": "https://orcid.org/0000-0002-9553-8959"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Centre National de la Recherche Scientifique",
+            "id": "https://openalex.org/I1294671590",
+            "lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "ror": "https://ror.org/02feahw73",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Aix-Marseille Université",
+            "id": "https://openalex.org/I21491767",
+            "lineage": [
+              "https://openalex.org/I21491767"
+            ],
+            "ror": "https://ror.org/035xkbk20",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Unité de Recherche sur les Maladies Infectieuses et Tropicales Emergentes",
+            "id": "https://openalex.org/I4210107588",
+            "lineage": [
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1327553481",
+              "https://openalex.org/I154202486",
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I2799535048",
+              "https://openalex.org/I2802818602",
+              "https://openalex.org/I4210088668",
+              "https://openalex.org/I4210090127",
+              "https://openalex.org/I4210096427",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I4210113730",
+              "https://openalex.org/I4210131494",
+              "https://openalex.org/I4210166444",
+              "https://openalex.org/I4405257220"
+            ],
+            "ror": "https://ror.org/01ws78v34",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+        ],
+        "raw_author_name": "F. Cadoret",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I1294671590"
+            ],
+            "raw_affiliation_string": "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+          }
+        ],
+        "author": {
+          "display_name": "G. Dubourg",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Centre National de la Recherche Scientifique",
+            "id": "https://openalex.org/I1294671590",
+            "lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "ror": "https://ror.org/02feahw73",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Aix-Marseille Université",
+            "id": "https://openalex.org/I21491767",
+            "lineage": [
+              "https://openalex.org/I21491767"
+            ],
+            "ror": "https://ror.org/035xkbk20",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Unité de Recherche sur les Maladies Infectieuses et Tropicales Emergentes",
+            "id": "https://openalex.org/I4210107588",
+            "lineage": [
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1327553481",
+              "https://openalex.org/I154202486",
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I2799535048",
+              "https://openalex.org/I2802818602",
+              "https://openalex.org/I4210088668",
+              "https://openalex.org/I4210090127",
+              "https://openalex.org/I4210096427",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I4210113730",
+              "https://openalex.org/I4210131494",
+              "https://openalex.org/I4210166444",
+              "https://openalex.org/I4405257220"
+            ],
+            "ror": "https://ror.org/01ws78v34",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+        ],
+        "raw_author_name": "G. Dubourg",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I1294671590"
+            ],
+            "raw_affiliation_string": "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+          }
+        ],
+        "author": {
+          "display_name": "Pierre‐Edouard Fournier",
+          "id": "https://openalex.org/A5038418925",
+          "orcid": "https://orcid.org/0000-0001-8463-8885"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Centre National de la Recherche Scientifique",
+            "id": "https://openalex.org/I1294671590",
+            "lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "ror": "https://ror.org/02feahw73",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Aix-Marseille Université",
+            "id": "https://openalex.org/I21491767",
+            "lineage": [
+              "https://openalex.org/I21491767"
+            ],
+            "ror": "https://ror.org/035xkbk20",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Unité de Recherche sur les Maladies Infectieuses et Tropicales Emergentes",
+            "id": "https://openalex.org/I4210107588",
+            "lineage": [
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1327553481",
+              "https://openalex.org/I154202486",
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I2799535048",
+              "https://openalex.org/I2802818602",
+              "https://openalex.org/I4210088668",
+              "https://openalex.org/I4210090127",
+              "https://openalex.org/I4210096427",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I4210113730",
+              "https://openalex.org/I4210131494",
+              "https://openalex.org/I4210166444",
+              "https://openalex.org/I4405257220"
+            ],
+            "ror": "https://ror.org/01ws78v34",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+        ],
+        "raw_author_name": "P.-E. Fournier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I168913471"
+            ],
+            "raw_affiliation_string": "Clinical Microbiology Laboratory, Saint George University Hospital, Faculty of Health Sciences, University of Balamand, Beirut, Lebanon"
+          }
+        ],
+        "author": {
+          "display_name": "Ziad Daoud",
+          "id": "https://openalex.org/A5106523405",
+          "orcid": "https://orcid.org/0000-0001-7139-6282"
+        },
+        "author_position": "middle",
+        "countries": [
+          "LB"
+        ],
+        "institutions": [
+          {
+            "country_code": "LB",
+            "display_name": "University of Balamand",
+            "id": "https://openalex.org/I168913471",
+            "lineage": [
+              "https://openalex.org/I168913471"
+            ],
+            "ror": "https://ror.org/01xvwxv41",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Clinical Microbiology Laboratory, Saint George University Hospital, Faculty of Health Sciences, University of Balamand, Beirut, Lebanon"
+        ],
+        "raw_author_name": "Z. Daoud",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I1294671590"
+            ],
+            "raw_affiliation_string": "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I185163786"
+            ],
+            "raw_affiliation_string": "Special Infectious Agents Unit, King Fahd Medical Research Center, King Abdulaziz University, Jeddah, Saudi Arabia"
+          }
+        ],
+        "author": {
+          "display_name": "Didier Raoult",
+          "id": "https://openalex.org/A5074730004",
+          "orcid": "https://orcid.org/0000-0002-0633-5974"
+        },
+        "author_position": "last",
+        "countries": [
+          "FR",
+          "SA"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Centre National de la Recherche Scientifique",
+            "id": "https://openalex.org/I1294671590",
+            "lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "ror": "https://ror.org/02feahw73",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "SA",
+            "display_name": "King Abdulaziz University",
+            "id": "https://openalex.org/I185163786",
+            "lineage": [
+              "https://openalex.org/I185163786"
+            ],
+            "ror": "https://ror.org/02ma4wv74",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Aix-Marseille Université",
+            "id": "https://openalex.org/I21491767",
+            "lineage": [
+              "https://openalex.org/I21491767"
+            ],
+            "ror": "https://ror.org/035xkbk20",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Unité de Recherche sur les Maladies Infectieuses et Tropicales Emergentes",
+            "id": "https://openalex.org/I4210107588",
+            "lineage": [
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1294671590",
+              "https://openalex.org/I1327553481",
+              "https://openalex.org/I154202486",
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I21491767",
+              "https://openalex.org/I2799535048",
+              "https://openalex.org/I2802818602",
+              "https://openalex.org/I4210088668",
+              "https://openalex.org/I4210090127",
+              "https://openalex.org/I4210096427",
+              "https://openalex.org/I4210107588",
+              "https://openalex.org/I4210113730",
+              "https://openalex.org/I4210131494",
+              "https://openalex.org/I4210166444",
+              "https://openalex.org/I4405257220"
+            ],
+            "ror": "https://ror.org/01ws78v34",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Aix-Marseille Université, URMITE, UM63, CNRS7278, IRD198, Inserm 1095, Institut Hospitalo-Universitaire Méditerranée-Infection, Marseille, France",
+          "Special Infectious Agents Unit, King Fahd Medical Research Center, King Abdulaziz University, Jeddah, Saudi Arabia"
+        ],
+        "raw_author_name": "D. Raoult",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1016/j.nmni.2017.04.003",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.nmni.2017.04.003",
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "pdf_url": null,
+      "raw_source_name": "New Microbes and New Infections",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "New Microbes and New Infections",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S2765012804",
+        "is_core": true,
+        "is_in_doaj": true,
+        "is_oa": true,
+        "issn": [
+          "2052-2975"
+        ],
+        "issn_l": "2052-2975",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "43",
+      "issue": null,
+      "last_page": "44",
+      "volume": "19"
+    },
+    "cited_by_count": 3,
+    "display_name": "‘Phoenicibacter massiliensis’ gen. nov., sp. nov., a new bacterium isolated from the human gut of a pygmy woman",
+    "doi": "https://doi.org/10.1016/j.nmni.2017.04.003",
+    "id": "https://openalex.org/W2606220134",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.nmni.2017.04.003",
+      "mag": "2606220134",
+      "openalex": "https://openalex.org/W2606220134",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/28706722"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://doi.org/10.1016/j.nmni.2017.04.003"
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.nmni.2017.04.003",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.nmni.2017.04.003",
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "pdf_url": null,
+      "raw_source_name": "New Microbes and New Infections",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "New Microbes and New Infections",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S2765012804",
+        "is_core": true,
+        "is_in_doaj": true,
+        "is_oa": true,
+        "issn": [
+          "2052-2975"
+        ],
+        "issn_l": "2052-2975",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2017-04-18",
+    "publication_year": 2017,
+    "referenced_works": [
+      "https://openalex.org/W2065465329",
+      "https://openalex.org/W2121055398",
+      "https://openalex.org/W2144305368",
+      "https://openalex.org/W2154408346"
+    ],
+    "referenced_works_count": 4,
+    "title": "‘Phoenicibacter massiliensis’ gen. nov., sp. nov., a new bacterium isolated from the human gut of a pygmy woman",
+    "type": "article"
+  },
+  "response_hash": "431408cbeb5cd77264bd5da549c4534aae07c5af932ddac39117ec24303d6d18",
+  "retrieved_at": "2026-07-14T13:49:23Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

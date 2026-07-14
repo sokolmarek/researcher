@@ -1,0 +1,62 @@
+{
+  "endpoint": "works",
+  "request_key": "62679d419d410d79145a40208759900d089931a66eb34adad22d92aca89244f5",
+  "request_params": {
+    "per-page": 5,
+    "search": "English interiors : txt : 5300-5399",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 0,
+      "db_response_time_ms": 21,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (English interiors : txt : 5300-5399)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "English interiors : txt : 5300-5399"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:English interiors : txt : 5300-5399&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": []
+  },
+  "response_hash": "99c7e85d975cf1613f02e473a1bc2dbfb3bea371c68be3c8a50869aa5062d8b5",
+  "retrieved_at": "2026-07-14T13:48:41Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

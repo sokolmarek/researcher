@@ -1,0 +1,4296 @@
+{
+  "endpoint": "works",
+  "request_key": "bb243c34d44c9c900c472be8d9900dfd3e69f662c97d2ac2b67ac3002d3a9289",
+  "request_params": {
+    "per-page": 10,
+    "search": "Explainable Deep Learning-Based Approach for Multilabel Classification of Electrocardiogra",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 5,
+      "db_response_time_ms": 41,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 10,
+      "x_query": {
+        "oql": "works where full text has (Explainable Deep Learning-Based Approach for Multilabel Classification of Electrocardiogra)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Explainable Deep Learning-Based Approach for Multilabel Classification of Electrocardiogra"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 10,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Explainable Deep Learning-Based Approach for Multilabel Classification of Electrocardiogra&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=10"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(ATCNN)": [
+            82
+          ],
+          "(CVDs).": [
+            19
+          ],
+          "(ECG)": [
+            5
+          ],
+          "12-lead": [
+            3,
+            89,
+            159
+          ],
+          "76.51%.": [
+            177
+          ],
+          "ATCNN": [
+            122
+          ],
+          "ATCNN-based": [
+            96
+          ],
+          "Automated": [
+            0
+          ],
+          "CVDs,": [
+            38
+          ],
+          "ECG": [
+            52,
+            56,
+            64,
+            90,
+            149,
+            160
+          ],
+          "ECG-lead": [
+            189
+          ],
+          "F1-score": [
+            175
+          ],
+          "In": [
+            20,
+            69
+          ],
+          "Moreover,": [
+            178
+          ],
+          "Most": [
+            45
+          ],
+          "PTBXL-2020": [
+            169
+          ],
+          "Specifically,": [
+            92
+          ],
+          "TCNN": [
+            127,
+            137
+          ],
+          "The": [
+            121,
+            136,
+            162,
+            200
+          ],
+          "a": [
+            7,
+            93,
+            124
+          ],
+          "ability": [
+            211
+          ],
+          "achieved": [
+            172
+          ],
+          "an": [
+            74,
+            173
+          ],
+          "analysis": [
+            1
+          ],
+          "and": [
+            14,
+            107,
+            132,
+            152,
+            171,
+            181,
+            195,
+            203,
+            216
+          ],
+          "approach": [
+            208
+          ],
+          "are": [
+            100
+          ],
+          "at": [
+            140
+          ],
+          "attention": [
+            134,
+            153,
+            183
+          ],
+          "attention-based": [
+            77
+          ],
+          "average": [
+            174
+          ],
+          "binary": [
+            98
+          ],
+          "by": [
+            130
+          ],
+          "cardiac": [
+            29,
+            61,
+            105
+          ],
+          "cardiovascular": [
+            17
+          ],
+          "classification": [
+            87
+          ],
+          "classification,": [
+            53
+          ],
+          "classifiers": [
+            99,
+            112
+          ],
+          "clinicians": [
+            218
+          ],
+          "co-occurring": [
+            28
+          ],
+          "common": [
+            24
+          ],
+          "contains": [
+            123
+          ],
+          "convolutional": [
+            79
+          ],
+          "corresponds": [
+            58
+          ],
+          "crucial": [
+            8
+          ],
+          "current": [
+            46
+          ],
+          "dataset": [
+            170
+          ],
+          "decisions.": [
+            120
+          ],
+          "demonstrate": [
+            209
+          ],
+          "diagnostically": [
+            157
+          ],
+          "different": [
+            141
+          ],
+          "dilation": [
+            142
+          ],
+          "disease": [
+            194
+          ],
+          "diseases": [
+            18
+          ],
+          "disorder,": [
+            62,
+            106
+          ],
+          "disorders,": [
+            30
+          ],
+          "dynamics,": [
+            151
+          ],
+          "each": [
+            55,
+            104,
+            193
+          ],
+          "early": [
+            12
+          ],
+          "electrocardiogram": [
+            4
+          ],
+          "emphasize/reduce": [
+            155
+          ],
+          "ensemble": [
+            75
+          ],
+          "evaluated": [
+            166
+          ],
+          "features": [
+            150
+          ],
+          "final": [
+            118
+          ],
+          "focuses": [
+            48
+          ],
+          "followed": [
+            129
+          ],
+          "for": [
+            43,
+            84,
+            103,
+            192
+          ],
+          "framework": [
+            164
+          ],
+          "from": [
+            110
+          ],
+          "generate": [
+            116
+          ],
+          "help": [
+            217
+          ],
+          "i.e.,": [
+            31,
+            54
+          ],
+          "ignoring": [
+            63
+          ],
+          "improved": [
+            201
+          ],
+          "in": [
+            10,
+            35
+          ],
+          "increases": [
+            40
+          ],
+          "information.": [
+            161
+          ],
+          "initiate": [
+            219
+          ],
+          "interpretability": [
+            197,
+            204
+          ],
+          "is": [
+            23,
+            165
+          ],
+          "it": [
+            22
+          ],
+          "its": [
+            210
+          ],
+          "layers": [
+            128,
+            138,
+            154
+          ],
+          "layers.": [
+            135
+          ],
+          "management": [
+            15
+          ],
+          "model": [
+            196
+          ],
+          "models": [
+            83
+          ],
+          "mortality.": [
+            44
+          ],
+          "multi-label": [
+            32,
+            67,
+            86,
+            119
+          ],
+          "multi-scaled": [
+            147
+          ],
+          "multimorbidity": [
+            34,
+            214
+          ],
+          "multiple": [
+            27
+          ],
+          "network": [
+            81
+          ],
+          "neural": [
+            80
+          ],
+          "of": [
+            2,
+            16,
+            76,
+            88,
+            95,
+            126,
+            176,
+            205
+          ],
+          "on": [
+            49,
+            167
+          ],
+          "one": [
+            60,
+            102
+          ],
+          "operate": [
+            139
+          ],
+          "optimal": [
+            188
+          ],
+          "or": [
+            33
+          ],
+          "paper,": [
+            71
+          ],
+          "pathological": [
+            148
+          ],
+          "patients": [
+            36,
+            215
+          ],
+          "performance": [
+            202
+          ],
+          "phenomenon.": [
+            68
+          ],
+          "plays": [
+            6
+          ],
+          "practice,": [
+            21
+          ],
+          "predictions": [
+            109
+          ],
+          "propose": [
+            73
+          ],
+          "proposed": [
+            163,
+            207
+          ],
+          "provides": [
+            186
+          ],
+          "rates": [
+            143
+          ],
+          "record": [
+            57
+          ],
+          "records": [
+            65
+          ],
+          "records.": [
+            91
+          ],
+          "relevant/redundant": [
+            158
+          ],
+          "represent": [
+            145
+          ],
+          "research": [
+            47
+          ],
+          "respectively.": [
+            199
+          ],
+          "results,": [
+            198
+          ],
+          "risk": [
+            42
+          ],
+          "role": [
+            9
+          ],
+          "screen": [
+            213
+          ],
+          "screening": [
+            13
+          ],
+          "see": [
+            26
+          ],
+          "selection": [
+            191
+          ],
+          "set": [
+            94
+          ],
+          "simple": [
+            114
+          ],
+          "single-label": [
+            51
+          ],
+          "single-lead": [
+            97
+          ],
+          "spatial": [
+            133,
+            180
+          ],
+          "stack": [
+            125
+          ],
+          "subset": [
+            190
+          ],
+          "temporal": [
+            78,
+            131,
+            182
+          ],
+          "the": [
+            11,
+            41,
+            50,
+            85,
+            108,
+            117,
+            146,
+            156,
+            168,
+            179,
+            187,
+            206
+          ],
+          "these": [
+            111
+          ],
+          "this": [
+            70
+          ],
+          "thresholding": [
+            115
+          ],
+          "timely": [
+            220
+          ],
+          "to": [
+            25,
+            59,
+            144,
+            212
+          ],
+          "trained": [
+            101
+          ],
+          "treatment.": [
+            221
+          ],
+          "visualization": [
+            185
+          ],
+          "we": [
+            72
+          ],
+          "weights": [
+            184
+          ],
+          "which": [
+            39
+          ],
+          "with": [
+            37,
+            66,
+            113
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Eedara Prabhakararao",
+              "id": "https://openalex.org/A5052664987",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Prabhakararao, Eedara",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Samarendra Dandapt",
+              "id": "https://openalex.org/A5092119066",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Dandapt, Samarendra",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2306.03844",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2306.03844",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2306.03844",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 1,
+        "display_name": "Multi-Label ECG Classification using Temporal Convolutional Neural Network",
+        "doi": "https://doi.org/10.48550/arxiv.2306.03844",
+        "id": "https://openalex.org/W4379925133",
+        "ids": {
+          "doi": "https://doi.org/10.48550/arxiv.2306.03844",
+          "openalex": "https://openalex.org/W4379925133"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2306.03844"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2306.03844",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2306.03844",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2306.03844",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2023-06-06",
+        "publication_year": 2023,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "Multi-Label ECG Classification using Temporal Convolutional Neural Network",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "(AFib),": [
+            105
+          ],
+          "(ECG)": [
+            2
+          ],
+          "(ERs)": [
+            36
+          ],
+          "(N),": [
+            102
+          ],
+          "(O).": [
+            108
+          ],
+          "(PACS)": [
+            230
+          ],
+          "1,074": [
+            170
+          ],
+          "12-lead": [
+            62,
+            77
+          ],
+          "70.4%": [
+            155
+          ],
+          "91.8%,": [
+            152
+          ],
+          "93.3%": [
+            122
+          ],
+          "95.3%,": [
+            119
+          ],
+          "97.5%,": [
+            153
+          ],
+          "97.7%": [
+            184
+          ],
+          "98.0%,": [
+            182
+          ],
+          "98.3%,": [
+            181
+          ],
+          "99,746": [
+            76
+          ],
+          "99.1%,": [
+            120
+          ],
+          "A": [
+            23
+          ],
+          "AFib,": [
+            125,
+            160,
+            189
+          ],
+          "AUROC": [
+            116,
+            149,
+            178
+          ],
+          "Additionally,": [
+            164
+          ],
+          "Archiving": [
+            226
+          ],
+          "Atrial": [
+            18,
+            103
+          ],
+          "Challenge": [
+            142
+          ],
+          "Chinese": [
+            139
+          ],
+          "Communication": [
+            228
+          ],
+          "ECG": [
+            29,
+            63,
+            78,
+            220,
+            265,
+            283
+          ],
+          "ER": [
+            206
+          ],
+          "ER,": [
+            175
+          ],
+          "ER.": [
+            233,
+            299
+          ],
+          "Fibrillation": [
+            19,
+            104
+          ],
+          "Finally,": [
+            193
+          ],
+          "In": [
+            47,
+            144
+          ],
+          "Infarction.": [
+            22
+          ],
+          "Myocardial": [
+            21
+          ],
+          "N,": [
+            124,
+            159,
+            188
+          ],
+          "Normal": [
+            101
+          ],
+          "O,": [
+            127,
+            162,
+            191
+          ],
+          "Other": [
+            107
+          ],
+          "Our": [
+            65
+          ],
+          "Physiological": [
+            140
+          ],
+          "Picture": [
+            225
+          ],
+          "Signal": [
+            141
+          ],
+          "System": [
+            229
+          ],
+          "The": [
+            0,
+            89,
+            109,
+            214,
+            267
+          ],
+          "These": [
+            234
+          ],
+          "This": [
+            249
+          ],
+          "To": [
+            129
+          ],
+          "a": [
+            5,
+            86,
+            198,
+            201,
+            208,
+            286
+          ],
+          "about": [
+            12
+          ],
+          "accurately": [
+            94
+          ],
+          "achieved": [
+            148,
+            177
+          ],
+          "acquired": [
+            172
+          ],
+          "ambulatory": [
+            83
+          ],
+          "an": [
+            53,
+            72,
+            258
+          ],
+          "analyze": [
+            61
+          ],
+          "and": [
+            20,
+            25,
+            106,
+            121,
+            126,
+            154,
+            161,
+            176,
+            183,
+            190,
+            196,
+            227,
+            240,
+            260,
+            293
+          ],
+          "approach": [
+            251
+          ],
+          "approach,": [
+            133
+          ],
+          "artificial": [
+            54,
+            277
+          ],
+          "as": [
+            4,
+            17,
+            242
+          ],
+          "assessed": [
+            166
+          ],
+          "assessment": [
+            27,
+            292
+          ],
+          "automatically": [
+            216
+          ],
+          "been": [
+            69
+          ],
+          "can": [
+            37
+          ],
+          "captured": [
+            219
+          ],
+          "cardiac": [
+            14
+          ],
+          "chances": [
+            41
+          ],
+          "chart": [
+            221
+          ],
+          "classes": [
+            158,
+            187
+          ],
+          "classes:": [
+            100
+          ],
+          "classification": [
+            247
+          ],
+          "classification.": [
+            266
+          ],
+          "classify": [
+            95
+          ],
+          "collected": [
+            80
+          ],
+          "comprehensive": [
+            250
+          ],
+          "comprising": [
+            75
+          ],
+          "conditions": [
+            15
+          ],
+          "conducted": [
+            135
+          ],
+          "crucial": [
+            10
+          ],
+          "database.": [
+            143
+          ],
+          "dataset": [
+            74
+          ],
+          "deployed": [
+            197
+          ],
+          "designed": [
+            59
+          ],
+          "developed": [
+            52,
+            195
+          ],
+          "diagnostic": [
+            7
+          ],
+          "efficient": [
+            26,
+            259
+          ],
+          "electrocardiogram": [
+            1
+          ],
+          "emergency": [
+            34
+          ],
+          "end-to-end": [
+            262
+          ],
+          "environments": [
+            32
+          ],
+          "establishment": [
+            256
+          ],
+          "evaluation": [
+            110
+          ],
+          "evaluation,": [
+            146
+          ],
+          "evaluations": [
+            136
+          ],
+          "exams": [
+            30,
+            79,
+            97,
+            171
+          ],
+          "exams,": [
+            284
+          ],
+          "extensive": [
+            73
+          ],
+          "for": [
+            44,
+            123,
+            156,
+            185,
+            211,
+            244,
+            264,
+            289
+          ],
+          "framework": [
+            263
+          ],
+          "from": [
+            81,
+            223
+          ],
+          "further": [
+            130
+          ],
+          "has": [
+            68,
+            252
+          ],
+          "have": [
+            51
+          ],
+          "high-risk": [
+            45
+          ],
+          "highlight": [
+            272
+          ],
+          "hospital": [
+            210
+          ],
+          "hospital.": [
+            88
+          ],
+          "images": [
+            222,
+            235
+          ],
+          "images.": [
+            64
+          ],
+          "improve": [
+            39
+          ],
+          "in": [
+            31,
+            115,
+            173,
+            254,
+            279,
+            297
+          ],
+          "information": [
+            11
+          ],
+          "input": [
+            243
+          ],
+          "intelligence": [
+            278
+          ],
+          "intelligence-driven": [
+            55
+          ],
+          "into": [
+            98
+          ],
+          "leveraging": [
+            276
+          ],
+          "life-threatening": [
+            13
+          ],
+          "like": [
+            33
+          ],
+          "method": [
+            67,
+            113,
+            168
+          ],
+          "method.": [
+            248
+          ],
+          "model": [
+            203
+          ],
+          "necessary": [
+            237
+          ],
+          "newly": [
+            218
+          ],
+          "objective": [
+            91
+          ],
+          "of": [
+            28,
+            42,
+            85,
+            111,
+            118,
+            151,
+            180,
+            207,
+            257,
+            269,
+            275,
+            282,
+            295
+          ],
+          "offering": [
+            285
+          ],
+          "on": [
+            71
+          ],
+          "our": [
+            112,
+            132,
+            167,
+            245,
+            270
+          ],
+          "patients": [
+            296
+          ],
+          "patients.": [
+            46
+          ],
+          "potential": [
+            274
+          ],
+          "preprocessing": [
+            238
+          ],
+          "primary": [
+            90
+          ],
+          "prioritization": [
+            294
+          ],
+          "promising": [
+            287
+          ],
+          "prompt": [
+            24
+          ],
+          "proposed": [
+            66,
+            246
+          ],
+          "providing": [
+            9
+          ],
+          "purposes.": [
+            213
+          ],
+          "rapid": [
+            291
+          ],
+          "research": [
+            212
+          ],
+          "respectively.": [
+            128,
+            163,
+            192
+          ],
+          "resulted": [
+            114,
+            253
+          ],
+          "results": [
+            268
+          ],
+          "retrieves": [
+            217
+          ],
+          "rooms": [
+            35
+          ],
+          "scores": [
+            117,
+            150
+          ],
+          "screening": [
+            56,
+            281
+          ],
+          "section": [
+            84
+          ],
+          "serve": [
+            241
+          ],
+          "serves": [
+            3
+          ],
+          "significantly": [
+            38
+          ],
+          "solution": [
+            288
+          ],
+          "specifically": [
+            58
+          ],
+          "steps": [
+            239
+          ],
+          "study": [
+            271
+          ],
+          "study,": [
+            49
+          ],
+          "such": [
+            16
+          ],
+          "survival": [
+            43
+          ],
+          "system": [
+            57,
+            199,
+            215
+          ],
+          "tertiary": [
+            87,
+            209
+          ],
+          "the": [
+            40,
+            82,
+            96,
+            138,
+            157,
+            174,
+            186,
+            205,
+            224,
+            232,
+            255,
+            273,
+            280,
+            290,
+            298
+          ],
+          "this": [
+            48,
+            145
+          ],
+          "three": [
+            99
+          ],
+          "to": [
+            60,
+            93
+          ],
+          "tool,": [
+            8
+          ],
+          "trained": [
+            70,
+            202
+          ],
+          "undergo": [
+            236
+          ],
+          "using": [
+            137,
+            169
+          ],
+          "validate": [
+            131
+          ],
+          "valuable": [
+            6
+          ],
+          "values": [
+            179
+          ],
+          "versatile": [
+            261
+          ],
+          "was": [
+            92
+          ],
+          "we": [
+            50,
+            134,
+            147,
+            165,
+            194
+          ],
+          "with": [
+            200
+          ],
+          "within": [
+            204,
+            231
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210131481"
+                ],
+                "raw_affiliation_string": "USP"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Polytechnique School, University of Sao Paulo (POLI USP) -Sao Paulo -SP -Brazil"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162743",
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+              }
+            ],
+            "author": {
+              "display_name": "Felipe Meneguitti Dias",
+              "id": "https://openalex.org/A5016699369",
+              "orcid": "https://orcid.org/0000-0001-7778-4606"
+            },
+            "author_position": "first",
+            "countries": [
+              "BR",
+              "PE"
+            ],
+            "institutions": [
+              {
+                "country_code": "BR",
+                "display_name": "Universidade de São Paulo",
+                "id": "https://openalex.org/I17974374",
+                "lineage": [
+                  "https://openalex.org/I17974374"
+                ],
+                "ror": "https://ror.org/036rp1748",
+                "type": "education"
+              },
+              {
+                "country_code": "PE",
+                "display_name": "Universidad San Pedro",
+                "id": "https://openalex.org/I4210131481",
+                "lineage": [
+                  "https://openalex.org/I4210131481"
+                ],
+                "ror": "https://ror.org/03fehwj53",
+                "type": "education"
+              },
+              {
+                "country_code": "BR",
+                "display_name": "Hospital São Paulo",
+                "id": "https://openalex.org/I4210162743",
+                "lineage": [
+                  "https://openalex.org/I4210162743"
+                ],
+                "ror": "https://ror.org/050z9fj14",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "USP",
+              "Polytechnique School, University of Sao Paulo (POLI USP) -Sao Paulo -SP -Brazil",
+              "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+            ],
+            "raw_author_name": "Felipe Meneguitti Dias",
+            "raw_orcid": "https://orcid.org/0000-0001-7778-4606"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162743",
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+              }
+            ],
+            "author": {
+              "display_name": "Estela Ribeiro",
+              "id": "https://openalex.org/A5081544980",
+              "orcid": "https://orcid.org/0000-0002-2193-6866"
+            },
+            "author_position": "middle",
+            "countries": [
+              "BR"
+            ],
+            "institutions": [
+              {
+                "country_code": "BR",
+                "display_name": "Universidade de São Paulo",
+                "id": "https://openalex.org/I17974374",
+                "lineage": [
+                  "https://openalex.org/I17974374"
+                ],
+                "ror": "https://ror.org/036rp1748",
+                "type": "education"
+              },
+              {
+                "country_code": "BR",
+                "display_name": "Hospital São Paulo",
+                "id": "https://openalex.org/I4210162743",
+                "lineage": [
+                  "https://openalex.org/I4210162743"
+                ],
+                "ror": "https://ror.org/050z9fj14",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil",
+              "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+            ],
+            "raw_author_name": "Estela Ribeiro",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162743",
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+              }
+            ],
+            "author": {
+              "display_name": "ramon moreno",
+              "id": "https://openalex.org/A5104156331",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "BR"
+            ],
+            "institutions": [
+              {
+                "country_code": "BR",
+                "display_name": "Universidade de São Paulo",
+                "id": "https://openalex.org/I17974374",
+                "lineage": [
+                  "https://openalex.org/I17974374"
+                ],
+                "ror": "https://ror.org/036rp1748",
+                "type": "education"
+              },
+              {
+                "country_code": "BR",
+                "display_name": "Hospital São Paulo",
+                "id": "https://openalex.org/I4210162743",
+                "lineage": [
+                  "https://openalex.org/I4210162743"
+                ],
+                "ror": "https://ror.org/050z9fj14",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+            ],
+            "raw_author_name": "ramon moreno",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Adèle H. Ribeiro",
+              "id": "https://openalex.org/A5014466746",
+              "orcid": "https://orcid.org/0000-0002-4523-2062"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Adele Ribeiro",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162743",
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+              }
+            ],
+            "author": {
+              "display_name": "Nelson Samesima",
+              "id": "https://openalex.org/A5044813419",
+              "orcid": "https://orcid.org/0000-0003-4116-6835"
+            },
+            "author_position": "middle",
+            "countries": [
+              "BR"
+            ],
+            "institutions": [
+              {
+                "country_code": "BR",
+                "display_name": "Universidade de São Paulo",
+                "id": "https://openalex.org/I17974374",
+                "lineage": [
+                  "https://openalex.org/I17974374"
+                ],
+                "ror": "https://ror.org/036rp1748",
+                "type": "education"
+              },
+              {
+                "country_code": "BR",
+                "display_name": "Hospital São Paulo",
+                "id": "https://openalex.org/I4210162743",
+                "lineage": [
+                  "https://openalex.org/I4210162743"
+                ],
+                "ror": "https://ror.org/050z9fj14",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil",
+              "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+            ],
+            "raw_author_name": "nelson samesima",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162743",
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+              }
+            ],
+            "author": {
+              "display_name": "Carlos Alberto Pastore",
+              "id": "https://openalex.org/A5072087213",
+              "orcid": "https://orcid.org/0000-0001-6134-629X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "BR"
+            ],
+            "institutions": [
+              {
+                "country_code": "BR",
+                "display_name": "Universidade de São Paulo",
+                "id": "https://openalex.org/I17974374",
+                "lineage": [
+                  "https://openalex.org/I17974374"
+                ],
+                "ror": "https://ror.org/036rp1748",
+                "type": "education"
+              },
+              {
+                "country_code": "BR",
+                "display_name": "Hospital São Paulo",
+                "id": "https://openalex.org/I4210162743",
+                "lineage": [
+                  "https://openalex.org/I4210162743"
+                ],
+                "ror": "https://ror.org/050z9fj14",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil",
+              "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+            ],
+            "raw_author_name": "carlos pastore",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162743",
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+              }
+            ],
+            "author": {
+              "display_name": "José Eduardo Krieger",
+              "id": "https://openalex.org/A5088604083",
+              "orcid": "https://orcid.org/0000-0001-5464-1792"
+            },
+            "author_position": "middle",
+            "countries": [
+              "BR"
+            ],
+            "institutions": [
+              {
+                "country_code": "BR",
+                "display_name": "Universidade de São Paulo",
+                "id": "https://openalex.org/I17974374",
+                "lineage": [
+                  "https://openalex.org/I17974374"
+                ],
+                "ror": "https://ror.org/036rp1748",
+                "type": "education"
+              },
+              {
+                "country_code": "BR",
+                "display_name": "Hospital São Paulo",
+                "id": "https://openalex.org/I4210162743",
+                "lineage": [
+                  "https://openalex.org/I4210162743"
+                ],
+                "ror": "https://ror.org/050z9fj14",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil",
+              "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+            ],
+            "raw_author_name": "Jose Krieger",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Polytechnique School, University of Sao Paulo (POLI USP) -Sao Paulo -SP -Brazil"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210162743",
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I17974374"
+                ],
+                "raw_affiliation_string": "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+              }
+            ],
+            "author": {
+              "display_name": "Marco A. Gutiérrez",
+              "id": "https://openalex.org/A5085369510",
+              "orcid": "https://orcid.org/0000-0003-0964-6222"
+            },
+            "author_position": "last",
+            "countries": [
+              "BR"
+            ],
+            "institutions": [
+              {
+                "country_code": "BR",
+                "display_name": "Universidade de São Paulo",
+                "id": "https://openalex.org/I17974374",
+                "lineage": [
+                  "https://openalex.org/I17974374"
+                ],
+                "ror": "https://ror.org/036rp1748",
+                "type": "education"
+              },
+              {
+                "country_code": "BR",
+                "display_name": "Hospital São Paulo",
+                "id": "https://openalex.org/I4210162743",
+                "lineage": [
+                  "https://openalex.org/I4210162743"
+                ],
+                "ror": "https://ror.org/050z9fj14",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Polytechnique School, University of Sao Paulo (POLI USP) -Sao Paulo -SP -Brazil",
+              "Heart Institute (InCor) -Clinics Hospital University of Sao Paulo Medical School (HCFMUSP) -Sao Paulo -SP -Brazil",
+              "University of Sao Paulo Medical School (FMUSP) -Sao Paulo -SP -Brazil"
+            ],
+            "raw_author_name": "Marco Antonio Gutierrez",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.36227/techrxiv.23925210.v1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://dx.doi.org/10.36227/techrxiv.23925210.v1",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.techrxiv.org/articles/preprint/Artificial_Intelligence-Driven_Screening_System_for_Rapid_Classification_of_12-Lead_ECG_Exams_A_Promising_Solution_for_Emergency_Room_Prioritization/23925210/1/files/41961027.pdf",
+          "raw_source_name": "TechRxiv",
+          "raw_type": "posted-content",
+          "source": null,
+          "version": "acceptedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 2,
+        "display_name": "Artificial Intelligence-Driven Screening System for Rapid Classification of 12-Lead ECG Exams: A Promising Solution for Emergency Room Prioritization",
+        "doi": "https://doi.org/10.36227/techrxiv.23925210.v1",
+        "id": "https://openalex.org/W4385835621",
+        "ids": {
+          "doi": "https://doi.org/10.36227/techrxiv.23925210.v1",
+          "openalex": "https://openalex.org/W4385835621"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.techrxiv.org/articles/preprint/Artificial_Intelligence-Driven_Screening_System_for_Rapid_Classification_of_12-Lead_ECG_Exams_A_Promising_Solution_for_Emergency_Room_Prioritization/23925210/1/files/41961027.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.36227/techrxiv.23925210.v1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://dx.doi.org/10.36227/techrxiv.23925210.v1",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.techrxiv.org/articles/preprint/Artificial_Intelligence-Driven_Screening_System_for_Rapid_Classification_of_12-Lead_ECG_Exams_A_Promising_Solution_for_Emergency_Room_Prioritization/23925210/1/files/41961027.pdf",
+          "raw_source_name": "TechRxiv",
+          "raw_type": "posted-content",
+          "source": null,
+          "version": "acceptedVersion"
+        },
+        "publication_date": "2023-08-15",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W1579760457",
+          "https://openalex.org/W2039490691",
+          "https://openalex.org/W2294751811",
+          "https://openalex.org/W2506122723",
+          "https://openalex.org/W2613911730",
+          "https://openalex.org/W2744849219",
+          "https://openalex.org/W2886982273",
+          "https://openalex.org/W2888456553",
+          "https://openalex.org/W2890189169",
+          "https://openalex.org/W2902644322",
+          "https://openalex.org/W2945976633",
+          "https://openalex.org/W2994951659",
+          "https://openalex.org/W3005648791",
+          "https://openalex.org/W3015226328",
+          "https://openalex.org/W3024959804",
+          "https://openalex.org/W3027572331",
+          "https://openalex.org/W3090145920",
+          "https://openalex.org/W3099085560",
+          "https://openalex.org/W3127657277",
+          "https://openalex.org/W3137700257",
+          "https://openalex.org/W3142998727",
+          "https://openalex.org/W3162867693",
+          "https://openalex.org/W3166902960",
+          "https://openalex.org/W3185122822",
+          "https://openalex.org/W3199488187",
+          "https://openalex.org/W3200369172",
+          "https://openalex.org/W4206338324",
+          "https://openalex.org/W4221035431",
+          "https://openalex.org/W4240100077",
+          "https://openalex.org/W6660223849"
+        ],
+        "referenced_works_count": 30,
+        "title": "Artificial Intelligence-Driven Screening System for Rapid Classification of 12-Lead ECG Exams: A Promising Solution for Emergency Room Prioritization",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "(CVD)": [
+            13
+          ],
+          "(ECG)": [
+            1
+          ],
+          "(ECG-CL)": [
+            166
+          ],
+          "But": [
+            70
+          ],
+          "Classic": [
+            58
+          ],
+          "ECG": [
+            22,
+            93,
+            163,
+            210,
+            230
+          ],
+          "ECGs": [
+            38,
+            236
+          ],
+          "Electrocardiogram": [
+            0
+          ],
+          "From": [
+            146,
+            218
+          ],
+          "However,": [
+            28
+          ],
+          "Our": [
+            197
+          ],
+          "We": [
+            111,
+            168
+          ],
+          "a": [
+            113,
+            159,
+            228
+          ],
+          "access": [
+            42
+          ],
+          "advanced": [
+            55
+          ],
+          "advancement": [
+            72
+          ],
+          "again": [
+            45
+          ],
+          "algorithm": [
+            232
+          ],
+          "algorithms": [
+            60,
+            76
+          ],
+          "algorithms.": [
+            57
+          ],
+          "also": [
+            238
+          ],
+          "and": [
+            16,
+            91,
+            96,
+            104,
+            142,
+            153,
+            190,
+            206
+          ],
+          "applications,": [
+            224
+          ],
+          "approach": [
+            198
+          ],
+          "approach.": [
+            167
+          ],
+          "are": [
+            61
+          ],
+          "based": [
+            68,
+            162,
+            233
+          ],
+          "been": [
+            46
+          ],
+          "between": [
+            109
+          ],
+          "both": [
+            138
+          ],
+          "by": [
+            65,
+            79,
+            135,
+            177
+          ],
+          "can": [
+            117
+          ],
+          "capitalizing": [
+            136
+          ],
+          "cardiovascular": [
+            11
+          ],
+          "category": [
+            187
+          ],
+          "class": [
+            185
+          ],
+          "classification": [
+            216
+          ],
+          "completely": [
+            63
+          ],
+          "comprehensive": [
+            229
+          ],
+          "confirmed.": [
+            239
+          ],
+          "consuming": [
+            99
+          ],
+          "continual": [
+            164
+          ],
+          "cross-domain": [
+            181
+          ],
+          "daily": [
+            26
+          ],
+          "data": [
+            85,
+            151
+          ],
+          "dataset,": [
+            83
+          ],
+          "datasets": [
+            176
+          ],
+          "deep": [
+            66
+          ],
+          "deployment": [
+            100
+          ],
+          "designing": [
+            178
+          ],
+          "develop": [
+            158
+          ],
+          "development": [
+            53,
+            129
+          ],
+          "devices": [
+            23
+          ],
+          "diagnostic": [
+            56,
+            75
+          ],
+          "disease": [
+            12
+          ],
+          "due": [
+            29
+          ],
+          "early": [
+            14
+          ],
+          "effective": [
+            150
+          ],
+          "enabled": [
+            25
+          ],
+          "evaluated": [
+            169
+          ],
+          "expertise": [
+            35
+          ],
+          "extract": [
+            203
+          ],
+          "features": [
+            208
+          ],
+          "for": [
+            33,
+            51,
+            180,
+            186,
+            193
+          ],
+          "four": [
+            174
+          ],
+          "from": [
+            209
+          ],
+          "general": [
+            40
+          ],
+          "global": [
+            92,
+            143
+          ],
+          "hampered": [
+            78
+          ],
+          "has": [
+            24,
+            43
+          ],
+          "help": [
+            126
+          ],
+          "high-level": [
+            132
+          ],
+          "high-resolution": [
+            119
+          ],
+          "higher": [
+            214
+          ],
+          "identification,": [
+            15
+          ],
+          "in": [
+            36
+          ],
+          "inconsistent": [
+            84
+          ],
+          "incremental": [
+            182,
+            188,
+            195
+          ],
+          "inefficient": [
+            87
+          ],
+          "inference": [
+            97
+          ],
+          "information": [
+            107,
+            122,
+            141
+          ],
+          "information,": [
+            94,
+            134
+          ],
+          "information.": [
+            145
+          ],
+          "informative": [
+            204
+          ],
+          "intelligent": [
+            20,
+            222
+          ],
+          "inter-task": [
+            154
+          ],
+          "interpretation": [
+            231
+          ],
+          "interpretation,": [
+            39
+          ],
+          "introduction": [
+            18
+          ],
+          "is": [
+            3,
+            77,
+            199,
+            237
+          ],
+          "isolation": [
+            161
+          ],
+          "issues": [
+            80
+          ],
+          "knowledge": [
+            155
+          ],
+          "labeling,": [
+            86
+          ],
+          "lack": [
+            105
+          ],
+          "leading": [
+            212
+          ],
+          "learning": [
+            67,
+            165
+          ],
+          "learning,": [
+            183,
+            189
+          ],
+          "learning.": [
+            196
+          ],
+          "leverage": [
+            152
+          ],
+          "like": [
+            81
+          ],
+          "local": [
+            90,
+            139
+          ],
+          "low-level": [
+            120
+          ],
+          "low-resolution": [
+            131
+          ],
+          "memory": [
+            95
+          ],
+          "methods.": [
+            69
+          ],
+          "minority-to-majority": [
+            184
+          ],
+          "model": [
+            115
+          ],
+          "model's": [
+            171
+          ],
+          "models,": [
+            103
+          ],
+          "monitoring": [
+            2
+          ],
+          "monitoring.": [
+            27
+          ],
+          "morphological": [
+            140,
+            205
+          ],
+          "most": [
+            7
+          ],
+          "multi-resolution": [
+            114
+          ],
+          "multiple": [
+            102
+          ],
+          "need": [
+            32,
+            50
+          ],
+          "now": [
+            62
+          ],
+          "of": [
+            5,
+            10,
+            19,
+            54,
+            73,
+            89,
+            101,
+            106,
+            127,
+            130,
+            149,
+            221,
+            227
+          ],
+          "on": [
+            137,
+            173,
+            234
+          ],
+          "once": [
+            44
+          ],
+          "one": [
+            4
+          ],
+          "open-access": [
+            175
+          ],
+          "our": [
+            170
+          ],
+          "outperformed": [
+            64
+          ],
+          "parameter": [
+            160
+          ],
+          "performance": [
+            172
+          ],
+          "perspective": [
+            148,
+            220
+          ],
+          "possibility": [
+            226
+          ],
+          "powerful": [
+            8
+          ],
+          "professional": [
+            34
+          ],
+          "prompting": [
+            48
+          ],
+          "propose": [
+            112
+          ],
+          "public": [
+            41
+          ],
+          "quality": [
+            215
+          ],
+          "restricted,": [
+            47
+          ],
+          "results.": [
+            217
+          ],
+          "rhythm": [
+            144
+          ],
+          "rhythmic": [
+            207
+          ],
+          "rule-based": [
+            59
+          ],
+          "sample": [
+            192
+          ],
+          "segmentation,": [
+            211
+          ],
+          "segmentation-to-classification": [
+            179
+          ],
+          "semantic": [
+            121,
+            133
+          ],
+          "shown": [
+            200
+          ],
+          "single-lead": [
+            235
+          ],
+          "small": [
+            82
+          ],
+          "small-to-large": [
+            191
+          ],
+          "smart": [
+            74
+          ],
+          "successfully": [
+            202
+          ],
+          "sustain": [
+            118
+          ],
+          "task": [
+            194
+          ],
+          "tasks.": [
+            110
+          ],
+          "technique": [
+            9
+          ],
+          "that": [
+            116
+          ],
+          "the": [
+            6,
+            17,
+            31,
+            37,
+            49,
+            52,
+            71,
+            125,
+            128,
+            147,
+            219,
+            225
+          ],
+          "throughout,": [
+            123
+          ],
+          "time": [
+            98
+          ],
+          "to": [
+            30,
+            201,
+            213
+          ],
+          "transfer": [
+            108
+          ],
+          "transfer,": [
+            156
+          ],
+          "use": [
+            88
+          ],
+          "we": [
+            157
+          ],
+          "wearable": [
+            21,
+            223
+          ],
+          "with": [
+            124
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I76569877",
+                  "https://openalex.org/I4387154005"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I115228651"
+                ],
+                "raw_affiliation_string": "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+              }
+            ],
+            "author": {
+              "display_name": "Hongxiang Gao",
+              "id": "https://openalex.org/A5101828945",
+              "orcid": "https://orcid.org/0000-0003-4121-0250"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN",
+              "SG"
+            ],
+            "institutions": [
+              {
+                "country_code": "SG",
+                "display_name": "Agency for Science, Technology and Research",
+                "id": "https://openalex.org/I115228651",
+                "lineage": [
+                  "https://openalex.org/I115228651"
+                ],
+                "ror": "https://ror.org/036wvzt09",
+                "type": "government"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute of High Performance Computing",
+                "id": "https://openalex.org/I3004594783",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/02n0ejh50",
+                "type": "facility"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute for Infocomm Research",
+                "id": "https://openalex.org/I3005327000",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/053rfa017",
+                "type": "facility"
+              },
+              {
+                "country_code": null,
+                "display_name": "State Key Laboratory of Digital Medical Engineering",
+                "id": "https://openalex.org/I4387154005",
+                "lineage": [
+                  "https://openalex.org/I4387154005",
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/03ab0at74",
+                "type": "facility"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Southeast University",
+                "id": "https://openalex.org/I76569877",
+                "lineage": [
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/04ct4d772",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China",
+              "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+            ],
+            "raw_author_name": "Gao, Hongxiang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I76569877",
+                  "https://openalex.org/I4387154005"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I115228651"
+                ],
+                "raw_affiliation_string": "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+              }
+            ],
+            "author": {
+              "display_name": "Xingyao Wang",
+              "id": "https://openalex.org/A5065691929",
+              "orcid": "https://orcid.org/0000-0002-3483-8624"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "SG"
+            ],
+            "institutions": [
+              {
+                "country_code": "SG",
+                "display_name": "Agency for Science, Technology and Research",
+                "id": "https://openalex.org/I115228651",
+                "lineage": [
+                  "https://openalex.org/I115228651"
+                ],
+                "ror": "https://ror.org/036wvzt09",
+                "type": "government"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute of High Performance Computing",
+                "id": "https://openalex.org/I3004594783",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/02n0ejh50",
+                "type": "facility"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute for Infocomm Research",
+                "id": "https://openalex.org/I3005327000",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/053rfa017",
+                "type": "facility"
+              },
+              {
+                "country_code": null,
+                "display_name": "State Key Laboratory of Digital Medical Engineering",
+                "id": "https://openalex.org/I4387154005",
+                "lineage": [
+                  "https://openalex.org/I4387154005",
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/03ab0at74",
+                "type": "facility"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Southeast University",
+                "id": "https://openalex.org/I76569877",
+                "lineage": [
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/04ct4d772",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China",
+              "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+            ],
+            "raw_author_name": "Wang, Xingyao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I76569877",
+                  "https://openalex.org/I4387154005"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I115228651"
+                ],
+                "raw_affiliation_string": "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+              }
+            ],
+            "author": {
+              "display_name": "Zhenghua Chen",
+              "id": "https://openalex.org/A5080343454",
+              "orcid": "https://orcid.org/0000-0002-1719-0328"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "SG"
+            ],
+            "institutions": [
+              {
+                "country_code": "SG",
+                "display_name": "Agency for Science, Technology and Research",
+                "id": "https://openalex.org/I115228651",
+                "lineage": [
+                  "https://openalex.org/I115228651"
+                ],
+                "ror": "https://ror.org/036wvzt09",
+                "type": "government"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute of High Performance Computing",
+                "id": "https://openalex.org/I3004594783",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/02n0ejh50",
+                "type": "facility"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute for Infocomm Research",
+                "id": "https://openalex.org/I3005327000",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/053rfa017",
+                "type": "facility"
+              },
+              {
+                "country_code": null,
+                "display_name": "State Key Laboratory of Digital Medical Engineering",
+                "id": "https://openalex.org/I4387154005",
+                "lineage": [
+                  "https://openalex.org/I4387154005",
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/03ab0at74",
+                "type": "facility"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Southeast University",
+                "id": "https://openalex.org/I76569877",
+                "lineage": [
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/04ct4d772",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China",
+              "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+            ],
+            "raw_author_name": "Chen, Zhenghua",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I115228651"
+                ],
+                "raw_affiliation_string": "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I76569877",
+                  "https://openalex.org/I4387154005"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China"
+              }
+            ],
+            "author": {
+              "display_name": "Min Wu",
+              "id": "https://openalex.org/A5100340964",
+              "orcid": "https://orcid.org/0000-0003-0977-3600"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "SG"
+            ],
+            "institutions": [
+              {
+                "country_code": "SG",
+                "display_name": "Agency for Science, Technology and Research",
+                "id": "https://openalex.org/I115228651",
+                "lineage": [
+                  "https://openalex.org/I115228651"
+                ],
+                "ror": "https://ror.org/036wvzt09",
+                "type": "government"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute of High Performance Computing",
+                "id": "https://openalex.org/I3004594783",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/02n0ejh50",
+                "type": "facility"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute for Infocomm Research",
+                "id": "https://openalex.org/I3005327000",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/053rfa017",
+                "type": "facility"
+              },
+              {
+                "country_code": null,
+                "display_name": "State Key Laboratory of Digital Medical Engineering",
+                "id": "https://openalex.org/I4387154005",
+                "lineage": [
+                  "https://openalex.org/I4387154005",
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/03ab0at74",
+                "type": "facility"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Southeast University",
+                "id": "https://openalex.org/I76569877",
+                "lineage": [
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/04ct4d772",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore",
+              "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China"
+            ],
+            "raw_author_name": "Wu, Min",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I76569877",
+                  "https://openalex.org/I4387154005"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I115228651"
+                ],
+                "raw_affiliation_string": "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+              }
+            ],
+            "author": {
+              "display_name": "Jianqing Li",
+              "id": "https://openalex.org/A5100641148",
+              "orcid": "https://orcid.org/0000-0002-2472-5060"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "SG"
+            ],
+            "institutions": [
+              {
+                "country_code": "SG",
+                "display_name": "Agency for Science, Technology and Research",
+                "id": "https://openalex.org/I115228651",
+                "lineage": [
+                  "https://openalex.org/I115228651"
+                ],
+                "ror": "https://ror.org/036wvzt09",
+                "type": "government"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute of High Performance Computing",
+                "id": "https://openalex.org/I3004594783",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/02n0ejh50",
+                "type": "facility"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute for Infocomm Research",
+                "id": "https://openalex.org/I3005327000",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/053rfa017",
+                "type": "facility"
+              },
+              {
+                "country_code": null,
+                "display_name": "State Key Laboratory of Digital Medical Engineering",
+                "id": "https://openalex.org/I4387154005",
+                "lineage": [
+                  "https://openalex.org/I4387154005",
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/03ab0at74",
+                "type": "facility"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Southeast University",
+                "id": "https://openalex.org/I76569877",
+                "lineage": [
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/04ct4d772",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China",
+              "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+            ],
+            "raw_author_name": "Li, Jianqing",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I76569877",
+                  "https://openalex.org/I4387154005"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I115228651"
+                ],
+                "raw_affiliation_string": "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+              }
+            ],
+            "author": {
+              "display_name": "Chengyu Liu",
+              "id": "https://openalex.org/A5100321186",
+              "orcid": "https://orcid.org/0000-0003-1965-3020"
+            },
+            "author_position": "last",
+            "countries": [
+              "CN",
+              "SG"
+            ],
+            "institutions": [
+              {
+                "country_code": "SG",
+                "display_name": "Agency for Science, Technology and Research",
+                "id": "https://openalex.org/I115228651",
+                "lineage": [
+                  "https://openalex.org/I115228651"
+                ],
+                "ror": "https://ror.org/036wvzt09",
+                "type": "government"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute of High Performance Computing",
+                "id": "https://openalex.org/I3004594783",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3004594783",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/02n0ejh50",
+                "type": "facility"
+              },
+              {
+                "country_code": "SG",
+                "display_name": "Institute for Infocomm Research",
+                "id": "https://openalex.org/I3005327000",
+                "lineage": [
+                  "https://openalex.org/I115228651",
+                  "https://openalex.org/I3005327000",
+                  "https://openalex.org/I91275662"
+                ],
+                "ror": "https://ror.org/053rfa017",
+                "type": "facility"
+              },
+              {
+                "country_code": null,
+                "display_name": "State Key Laboratory of Digital Medical Engineering",
+                "id": "https://openalex.org/I4387154005",
+                "lineage": [
+                  "https://openalex.org/I4387154005",
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/03ab0at74",
+                "type": "facility"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Southeast University",
+                "id": "https://openalex.org/I76569877",
+                "lineage": [
+                  "https://openalex.org/I76569877"
+                ],
+                "ror": "https://ror.org/04ct4d772",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "State Key Laboratory of Digital Medical Engineering, School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China",
+              "Institute for In-focomm Research, Xingyao Wang is with Institute of High Performance Computing, A*STAR, Singapore 138632, Singapore"
+            ],
+            "raw_author_name": "Liu, Chengyu",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2304.04646",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2304.04646",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2304.04646",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "ECG-CL: A Comprehensive Electrocardiogram Interpretation Method Based on Continual Learning",
+        "doi": "https://doi.org/10.48550/arxiv.2304.04646",
+        "id": "https://openalex.org/W4364387590",
+        "ids": {
+          "doi": "https://doi.org/10.48550/arxiv.2304.04646",
+          "openalex": "https://openalex.org/W4364387590"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2304.04646"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2304.04646",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2304.04646",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2304.04646",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2023-04-10",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W1901129140",
+          "https://openalex.org/W2095409369",
+          "https://openalex.org/W2146254945",
+          "https://openalex.org/W2162273778",
+          "https://openalex.org/W2412782625",
+          "https://openalex.org/W2520745063",
+          "https://openalex.org/W2551393996",
+          "https://openalex.org/W2560023338",
+          "https://openalex.org/W2888456553",
+          "https://openalex.org/W2902644322",
+          "https://openalex.org/W2915295645",
+          "https://openalex.org/W2939137134",
+          "https://openalex.org/W2945651267",
+          "https://openalex.org/W2963072899",
+          "https://openalex.org/W2970976899",
+          "https://openalex.org/W2972255700",
+          "https://openalex.org/W3014641072",
+          "https://openalex.org/W3027572331",
+          "https://openalex.org/W3032108578",
+          "https://openalex.org/W3035916338",
+          "https://openalex.org/W3037100020",
+          "https://openalex.org/W3081072690",
+          "https://openalex.org/W3084949122",
+          "https://openalex.org/W3085439927",
+          "https://openalex.org/W3098026853",
+          "https://openalex.org/W3119282903",
+          "https://openalex.org/W3128947494",
+          "https://openalex.org/W3134859729",
+          "https://openalex.org/W3135891860",
+          "https://openalex.org/W3172243723",
+          "https://openalex.org/W3179083309",
+          "https://openalex.org/W3180942533",
+          "https://openalex.org/W3201493179",
+          "https://openalex.org/W3217790602",
+          "https://openalex.org/W4200342043",
+          "https://openalex.org/W4282939171",
+          "https://openalex.org/W4285740536",
+          "https://openalex.org/W4286951891",
+          "https://openalex.org/W4287218107",
+          "https://openalex.org/W4294215205",
+          "https://openalex.org/W4296438001",
+          "https://openalex.org/W4296634750",
+          "https://openalex.org/W4301132610",
+          "https://openalex.org/W4308310014",
+          "https://openalex.org/W4309330414",
+          "https://openalex.org/W4317496162",
+          "https://openalex.org/W4367174969",
+          "https://openalex.org/W4383899330",
+          "https://openalex.org/W4385064232"
+        ],
+        "referenced_works_count": 49,
+        "title": "ECG-CL: A Comprehensive Electrocardiogram Interpretation Method Based on Continual Learning",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "(AI)-based": [
+            34
+          ],
+          "(ECGs)": [
+            38
+          ],
+          "(ECHO).": [
+            27
+          ],
+          "(SHD)": [
+            3
+          ],
+          "+0.98%": [
+            105
+          ],
+          "+1.01%": [
+            108
+          ],
+          "+1.41%": [
+            112
+          ],
+          "30%": [
+            130
+          ],
+          "80,000": [
+            96
+          ],
+          "AI,": [
+            174
+          ],
+          "AUPRC,": [
+            110
+          ],
+          "AUROC,": [
+            107
+          ],
+          "ECG": [
+            73,
+            158
+          ],
+          "ECG-ECHO": [
+            97
+          ],
+          "ECG-based": [
+            184
+          ],
+          "EchoNext": [
+            92
+          ],
+          "F1": [
+            114
+          ],
+          "However,": [
+            46
+          ],
+          "Recent": [
+            28
+          ],
+          "SHD": [
+            185
+          ],
+          "SHD,": [
+            41
+          ],
+          "SHD.": [
+            161
+          ],
+          "Structural": [
+            0
+          ],
+          "Subgroup": [
+            135
+          ],
+          "This": [
+            162
+          ],
+          "To": [
+            58
+          ],
+          "Using": [
+            90
+          ],
+          "a": [
+            5,
+            43,
+            77,
+            165,
+            176
+          ],
+          "accessibility": [
+            23
+          ],
+          "achieving": [
+            123
+          ],
+          "across": [
+            140
+          ],
+          "actionable": [
+            183
+          ],
+          "additive": [
+            79
+          ],
+          "address": [
+            59
+          ],
+          "adoption.": [
+            57
+          ],
+          "alternative.": [
+            45
+          ],
+          "an": [
+            64
+          ],
+          "analyses": [
+            136
+          ],
+          "analysis": [
+            35
+          ],
+          "and": [
+            12,
+            22,
+            55,
+            66,
+            111,
+            143,
+            160,
+            172,
+            181
+          ],
+          "are": [
+            49
+          ],
+          "artificial": [
+            32
+          ],
+          "attribution": [
+            84
+          ],
+          "baseline,": [
+            121
+          ],
+          "benchmark": [
+            93
+          ],
+          "better": [
+            125
+          ],
+          "between": [
+            154,
+            168
+          ],
+          "black-box": [
+            51
+          ],
+          "by": [
+            18
+          ],
+          "can": [
+            39
+          ],
+          "cases,": [
+            11
+          ],
+          "challenges,": [
+            61
+          ],
+          "classical": [
+            169
+          ],
+          "clinical": [
+            56
+          ],
+          "clinically": [
+            71,
+            182
+          ],
+          "complementary": [
+            166
+          ],
+          "condition": [
+            7
+          ],
+          "confirm": [
+            137
+          ],
+          "constraints": [
+            24
+          ],
+          "cost": [
+            21
+          ],
+          "data.": [
+            134
+          ],
+          "deep-learning": [
+            120
+          ],
+          "demonstrates": [
+            101
+          ],
+          "detect": [
+            40
+          ],
+          "detection": [
+            14
+          ],
+          "diagnoses": [
+            159
+          ],
+          "disease": [
+            2
+          ],
+          "early": [
+            13
+          ],
+          "echocardiography": [
+            26
+          ],
+          "effective": [
+            67
+          ],
+          "electrocardiograms": [
+            37
+          ],
+          "enabling": [
+            81
+          ],
+          "entry-wise": [
+            146
+          ],
+          "estimated": [
+            145
+          ],
+          "even": [
+            127
+          ],
+          "existing": [
+            47
+          ],
+          "foundation-model": [
+            74
+          ],
+          "framework": [
+            68
+          ],
+          "fully": [
+            50
+          ],
+          "functions": [
+            147
+          ],
+          "generalized": [
+            78
+          ],
+          "heart": [
+            1
+          ],
+          "heterogeneous": [
+            141
+          ],
+          "high": [
+            20
+          ],
+          "high-performing,": [
+            180
+          ],
+          "illustrates": [
+            164
+          ],
+          "improvements": [
+            103
+          ],
+          "in": [
+            106,
+            109,
+            113
+          ],
+          "insights": [
+            150
+          ],
+          "integrates": [
+            70
+          ],
+          "intelligence": [
+            33
+          ],
+          "interpretability": [
+            54
+          ],
+          "interpretable": [
+            65,
+            149
+          ],
+          "interpretable,": [
+            179
+          ],
+          "into": [
+            151
+          ],
+          "is": [
+            4,
+            15
+          ],
+          "latest": [
+            118
+          ],
+          "limited": [
+            17
+          ],
+          "limiting": [
+            53
+          ],
+          "maintaining": [
+            86
+          ],
+          "many": [
+            9
+          ],
+          "meaningful": [
+            72
+          ],
+          "method": [
+            100
+          ],
+          "methods": [
+            48
+          ],
+          "model,": [
+            80
+          ],
+          "modeling": [
+            171
+          ],
+          "models,": [
+            52
+          ],
+          "modern": [
+            173
+          ],
+          "of": [
+            25,
+            36,
+            94,
+            104,
+            131,
+            156
+          ],
+          "offering": [
+            42,
+            175
+          ],
+          "often": [
+            16
+          ],
+          "only": [
+            129
+          ],
+          "over": [
+            95,
+            116
+          ],
+          "pairs,": [
+            98
+          ],
+          "paradigm": [
+            167
+          ],
+          "pathway": [
+            177
+          ],
+          "performance": [
+            126,
+            139
+          ],
+          "performance.": [
+            89
+          ],
+          "populations,": [
+            142
+          ],
+          "predictive": [
+            88
+          ],
+          "predictors": [
+            75
+          ],
+          "prevalent": [
+            6
+          ],
+          "propose": [
+            63
+          ],
+          "provide": [
+            148
+          ],
+          "relationships": [
+            153
+          ],
+          "relative": [
+            102
+          ],
+          "risk": [
+            83
+          ],
+          "risks": [
+            155
+          ],
+          "robust": [
+            138
+          ],
+          "scalable": [
+            44
+          ],
+          "score": [
+            115
+          ],
+          "screening.": [
+            186
+          ],
+          "show": [
+            30
+          ],
+          "slightly": [
+            124
+          ],
+          "state-of-the-art": [
+            119
+          ],
+          "statistical": [
+            170
+          ],
+          "strong": [
+            87
+          ],
+          "studies": [
+            29
+          ],
+          "that": [
+            31,
+            69
+          ],
+          "the": [
+            19,
+            91,
+            99,
+            117,
+            132,
+            144,
+            152
+          ],
+          "these": [
+            60
+          ],
+          "to": [
+            178
+          ],
+          "traditional": [
+            157
+          ],
+          "training": [
+            133
+          ],
+          "transparent": [
+            82
+          ],
+          "undiagnosed": [
+            10
+          ],
+          "we": [
+            62
+          ],
+          "while": [
+            85,
+            122
+          ],
+          "with": [
+            8,
+            128
+          ],
+          "within": [
+            76
+          ],
+          "work": [
+            163
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Ya Zhou",
+              "id": "https://openalex.org/A5128087100",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Zhou, Ya",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Zhaohong Sun",
+              "id": "https://openalex.org/A5103110206",
+              "orcid": "https://orcid.org/0000-0003-1793-1162"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Sun, Zhaohong",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Tianxiang Hao",
+              "id": "https://openalex.org/A5128074505",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Hao, Tianxiang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Xiangjie Li",
+              "id": "https://openalex.org/A5128083102",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Li, Xiangjie",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2603.02616",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2603.02616",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2603.02616",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "Detecting Structural Heart Disease from Electrocardiograms via a Generalized Additive Model of Interpretable Foundation-Model Predictors",
+        "doi": null,
+        "id": "https://openalex.org/W7133570647",
+        "ids": {
+          "openalex": "https://openalex.org/W7133570647"
+        },
+        "is_retracted": false,
+        "language": null,
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2603.02616"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2603.02616",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2603.02616",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2603.02616",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2026-03-03",
+        "publication_year": 2026,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "Detecting Structural Heart Disease from Electrocardiograms via a Generalized Additive Model of Interpretable Foundation-Model Predictors",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "(ECG)": [
+            2
+          ],
+          "10-second": [
+            80
+          ],
+          "12-lead": [
+            81
+          ],
+          "An": [
+            0
+          ],
+          "Diffusion": [
+            38
+          ],
+          "ECG": [
+            82
+          ],
+          "ECGs": [
+            28
+          ],
+          "Finally,": [
+            126
+          ],
+          "However,": [
+            21
+          ],
+          "In": [
+            66
+          ],
+          "SSSD-ECG": [
+            91
+          ],
+          "SSSD-ECG-nle": [
+            87
+          ],
+          "We": [
+            84,
+            104
+          ],
+          "a": [
+            93
+          ],
+          "adding": [
+            117
+          ],
+          "adoption": [
+            62
+          ],
+          "allowing": [
+            59
+          ],
+          "also": [
+            135
+          ],
+          "analyzed.": [
+            37
+          ],
+          "analyzing": [
+            111
+          ],
+          "and": [
+            16,
+            36,
+            58,
+            97,
+            107,
+            120,
+            134
+          ],
+          "architecture": [
+            88
+          ],
+          "are": [
+            29
+          ],
+          "assessment": [
+            121
+          ],
+          "available": [
+            139
+          ],
+          "based": [
+            89
+          ],
+          "cardiac": [
+            7
+          ],
+          "comparable": [
+            53
+          ],
+          "concerns": [
+            33
+          ],
+          "concerns.": [
+            65
+          ],
+          "conditioning": [
+            95
+          ],
+          "conditions": [
+            15
+          ],
+          "conduct": [
+            105
+          ],
+          "convergence": [
+            112
+          ],
+          "creating": [
+            47
+          ],
+          "crucial": [
+            10
+          ],
+          "data": [
+            52,
+            138
+          ],
+          "data,": [
+            27
+          ],
+          "demonstrate": [
+            98
+          ],
+          "described.": [
+            147
+          ],
+          "diagnosing": [
+            13
+          ],
+          "diffusion": [
+            71
+          ],
+          "digital": [
+            79
+          ],
+          "diseases,": [
+            8
+          ],
+          "distributed": [
+            35
+          ],
+          "downstream": [
+            102
+          ],
+          "efficiency": [
+            100
+          ],
+          "electrocardiogram": [
+            1
+          ],
+          "ensure": [
+            141
+          ],
+          "evaluations": [
+            133
+          ],
+          "evaluations,": [
+            109
+          ],
+          "experiments": [
+            146
+          ],
+          "expert": [
+            124
+          ],
+          "for": [
+            5,
+            12,
+            50,
+            77
+          ],
+          "generating": [
+            78
+          ],
+          "have": [
+            40
+          ],
+          "heart": [
+            14
+          ],
+          "identifying": [
+            6
+          ],
+          "impact": [
+            115
+          ],
+          "in": [
+            44
+          ],
+          "including": [
+            110
+          ],
+          "informing": [
+            17
+          ],
+          "insights": [
+            11
+          ],
+          "is": [
+            3
+          ],
+          "its": [
+            99
+          ],
+          "knowledge.": [
+            125
+          ],
+          "life-saving": [
+            19
+          ],
+          "like": [
+            22
+          ],
+          "made": [
+            41
+          ],
+          "make": [
+            136
+          ],
+          "mechanism": [
+            96
+          ],
+          "medical": [
+            26
+          ],
+          "models": [
+            39,
+            72
+          ],
+          "modified": [
+            94
+          ],
+          "of": [
+            25,
+            116,
+            131,
+            144
+          ],
+          "offering": [
+            9
+          ],
+          "on": [
+            90,
+            101
+          ],
+          "one": [
+            57
+          ],
+          "other": [
+            23
+          ],
+          "paper,": [
+            68
+          ],
+          "physician": [
+            132
+          ],
+          "physicians'": [
+            123
+          ],
+          "positive": [
+            118
+          ],
+          "possibility": [
+            49
+          ],
+          "potentially": [
+            18
+          ],
+          "privacy": [
+            32,
+            64
+          ],
+          "progress": [
+            43
+          ],
+          "propose": [
+            85
+          ],
+          "qualitative": [
+            108
+          ],
+          "quantitative": [
+            106
+          ],
+          "real": [
+            56
+          ],
+          "recent": [
+            45
+          ],
+          "reproducibility": [
+            143
+          ],
+          "results": [
+            130
+          ],
+          "samples,": [
+            119
+          ],
+          "share": [
+            128
+          ],
+          "signals.": [
+            83
+          ],
+          "significant": [
+            42
+          ],
+          "spaces": [
+            76
+          ],
+          "speed,": [
+            113
+          ],
+          "state": [
+            75
+          ],
+          "structured": [
+            74
+          ],
+          "subject": [
+            30
+          ],
+          "synthesizing": [
+            51
+          ],
+          "synthetic": [
+            137
+          ],
+          "tasks.": [
+            103
+          ],
+          "the": [
+            48,
+            55,
+            86,
+            114,
+            129,
+            142,
+            145
+          ],
+          "their": [
+            60
+          ],
+          "this": [
+            67
+          ],
+          "to": [
+            31,
+            54,
+            140
+          ],
+          "treatments.": [
+            20
+          ],
+          "types": [
+            24
+          ],
+          "use": [
+            70
+          ],
+          "vital": [
+            4
+          ],
+          "we": [
+            69,
+            127
+          ],
+          "when": [
+            34
+          ],
+          "widespread": [
+            61
+          ],
+          "with": [
+            73,
+            92,
+            122
+          ],
+          "without": [
+            63
+          ],
+          "years,": [
+            46
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Sergey Skorik",
+              "id": "https://openalex.org/A5050366806",
+              "orcid": "https://orcid.org/0000-0002-8316-7302"
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Skorik, Sergey",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "A. Avetisyan",
+              "id": "https://openalex.org/A5101514670",
+              "orcid": "https://orcid.org/0000-0002-7066-6954"
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Avetisyan, Aram",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2407.11108",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2407.11108",
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "pdf_url": "https://arxiv.org/pdf/2407.11108",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "SSSD-ECG-nle: New Label Embeddings with Structured State-Space Models for ECG generation",
+        "doi": "https://doi.org/10.48550/arxiv.2407.11108",
+        "id": "https://openalex.org/W4403753391",
+        "ids": {
+          "doi": "https://doi.org/10.48550/arxiv.2407.11108",
+          "openalex": "https://openalex.org/W4403753391"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2407.11108"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2407.11108",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2407.11108",
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "pdf_url": "https://arxiv.org/pdf/2407.11108",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2024-07-15",
+        "publication_year": 2024,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "SSSD-ECG-nle: New Label Embeddings with Structured State-Space Models for ECG generation",
+        "type": "preprint"
+      }
+    ]
+  },
+  "response_hash": "26c6d1696becbf3245edc792cf8b4e15a9848e19f5c89034dde9f9e22a96d53f",
+  "retrieved_at": "2026-07-14T13:51:08Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

@@ -1,0 +1,64 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "4ca71c0960bb4d9917af41aa60467d0acccc064a8c11850543977b013d56f622",
+  "request_params": {
+    "db": "pubmed",
+    "id": "19608194",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "Electrocardiographic (ECG) monitoring plays an important role in the management of patients with atrial fibrillation (AF). Automated real-time AF detection algorithm is an integral part of ECG monitoring during AF therapy. Before and after antiarrhythmic drug therapy and surgical procedures require ECG monitoring to ensure the success of AF therapy. This article reports our experience in developing a real-time AF monitoring algorithm and techniques to eliminate false-positive AF alarms. We start by designing an algorithm based on R-R intervals. This algorithm uses a Markov modeling approach to calculate an R-R Markov score. This score reflects the relative likelihood of observing a sequence of R-R intervals in AF episodes versus making the same observation outside AF episodes. Enhancement of the AF algorithm is achieved by adding atrial activity analysis. P-R interval variability and a P wave morphology similarity measure are used in addition to R-R Markov score in classification. A hysteresis counter is applied to eliminate short AF segments to reduce false AF alarms for better suitability in a monitoring environment. A large ambulatory Holter database (n = 633) was used for algorithm development and the publicly available MIT-BIH AF database (n = 23) was used for algorithm validation. This validation database allowed us to compare our algorithm performance with previously published algorithms. Although R-R irregularity is the main characteristic and strongest discriminator of AF rhythm, by adding atrial activity analysis and techniques to eliminate very short AF episodes, we have achieved 92% sensitivity and 97% positive predictive value in detecting AF episodes, and 93% sensitivity and 98% positive predictive value in quantifying AF segment duration.",
+        "authors": [
+          {
+            "family": "Babaeizadeh",
+            "given": "Saeed"
+          },
+          {
+            "family": "Gregg",
+            "given": "Richard E"
+          },
+          {
+            "family": "Helfenbein",
+            "given": "Eric D"
+          },
+          {
+            "family": "Lindauer",
+            "given": "James M"
+          },
+          {
+            "family": "Zhou",
+            "given": "Sophia H"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1016/j.jelectrocard.2009.06.006",
+        "issn": [
+          "1532-8430"
+        ],
+        "issue": "6",
+        "journal": "Journal of electrocardiology",
+        "journal_abbreviation": "J Electrocardiol",
+        "keywords": [],
+        "language": "eng",
+        "month": null,
+        "page": "522-6",
+        "pmcid": "",
+        "pmid": "19608194",
+        "publication_types": [
+          "Journal Article"
+        ],
+        "record_type": "article",
+        "title": "Improvements in atrial fibrillation detection for real-time monitoring.",
+        "volume": "42",
+        "year": 2009
+      }
+    ]
+  },
+  "response_hash": "8ef684e20b7238d280f017391c57bfc482f12a879180526c15f1db4fd3beb478",
+  "retrieved_at": "2026-07-14T13:50:00Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

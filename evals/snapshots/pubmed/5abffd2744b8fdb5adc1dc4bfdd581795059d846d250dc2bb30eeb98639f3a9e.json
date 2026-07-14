@@ -1,0 +1,91 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "5abffd2744b8fdb5adc1dc4bfdd581795059d846d250dc2bb30eeb98639f3a9e",
+  "request_params": {
+    "db": "pubmed",
+    "id": "30821035",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "OBJECTIVES: We sought to validate a deep learning algorithm designed to predict an ejection fraction (EF) less than or equal to 35% based on the 12-lead electrocardiogram (ECG) in a large prospective cohort. BACKGROUND: Patients undergoing routine ECG may have undetected left ventricular (LV) dysfunction that warrants further echocardiographic assessment. However, identification of these patients can be challenging. METHODS: We applied the algorithm to all ECGs interpreted by the Mayo Clinic ECG laboratory in September 2018. The performance of the algorithm was tested among patients with recent echocardiographic assessments of LV function. We also applied the algorithm in patients with no recent echocardiographic assessments of LV function to determine the rate of new \"positive screens.\" RESULTS: Among 16 056 adult patients who underwent routine ECG, 8600 (age 67.1 ± 15.2 years, 45.6% male), had a transthoracic echocardiogram (TTE) and 3874 patients had a TTE and ECG less than 1 month apart. Among these patients, the algorithm was able to detect an EF less than or equal to 35% with 86.8% specificity, 82.5% sensitivity, and 86.5% accuracy, (area under the curve, 0.918). Among 474 \"false-positives screens,\" 189 (39.8%) had an EF of 36% to 50%. Among patients with no prior TTE, the algorithm identified 3.5% of the patients with suspected EF less than or equal to 35%. Exploratory analysis suggests false positives could be reduced by assessing NT-pro-BNP after the initial \"positive screen.\" CONCLUSIONS: A deep learning algorithm detected depressed LV function with good accuracy in routine practice. Further studies are needed to validate the algorithm in patients with no prior echocardiogram and to assess the impact on echocardiography utilization, cost, and clinical outcomes.",
+        "authors": [
+          {
+            "family": "Attia",
+            "given": "Zachi I"
+          },
+          {
+            "family": "Kapa",
+            "given": "Suraj"
+          },
+          {
+            "family": "Yao",
+            "given": "Xiaoxi"
+          },
+          {
+            "family": "Lopez-Jimenez",
+            "given": "Francisco"
+          },
+          {
+            "family": "Mohan",
+            "given": "Tarun L"
+          },
+          {
+            "family": "Pellikka",
+            "given": "Patricia A"
+          },
+          {
+            "family": "Carter",
+            "given": "Rickey E"
+          },
+          {
+            "family": "Shah",
+            "given": "Nilay D"
+          },
+          {
+            "family": "Friedman",
+            "given": "Paul A"
+          },
+          {
+            "family": "Noseworthy",
+            "given": "Peter A"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1111/jce.13889",
+        "issn": [
+          "1540-8167"
+        ],
+        "issue": "5",
+        "journal": "Journal of cardiovascular electrophysiology",
+        "journal_abbreviation": "J Cardiovasc Electrophysiol",
+        "keywords": [
+          "artificial intelligence",
+          "deep learning",
+          "echocardiography",
+          "ejection fraction",
+          "electrocardiogram"
+        ],
+        "language": "eng",
+        "month": 5,
+        "page": "668-674",
+        "pmcid": "",
+        "pmid": "30821035",
+        "publication_types": [
+          "Journal Article",
+          "Validation Study"
+        ],
+        "record_type": "article",
+        "title": "Prospective validation of a deep learning electrocardiogram algorithm for the detection of left ventricular systolic dysfunction.",
+        "volume": "30",
+        "year": 2019
+      }
+    ]
+  },
+  "response_hash": "3cca66c7c52ec1e955fed89c2e12970b74be9e3b5197b0453896098247535f30",
+  "retrieved_at": "2026-07-14T14:15:51Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

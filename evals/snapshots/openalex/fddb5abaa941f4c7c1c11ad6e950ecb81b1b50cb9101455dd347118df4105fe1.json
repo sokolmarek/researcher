@@ -1,0 +1,436 @@
+{
+  "endpoint": "works/doi:10.1016/j.jelectrocard.2018.11.013",
+  "request_key": "fddb5abaa941f4c7c1c11ad6e950ecb81b1b50cb9101455dd347118df4105fe1",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802288015"
+            ],
+            "raw_affiliation_string": "Department of Emergency Medicine, Hennepin County Medical Center, Minneapolis, MN, USA; University of Minnesota, Department of Emergency Medicine, USA. Electronic address: smith253@umn.edu"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802288015"
+            ],
+            "raw_affiliation_string": "Department of Emergency Medicine, Hennepin County Medical Center, Minneapolis, MN, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "University of Minnesota, Department of Emergency Medicine, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Stephen W. Smith",
+          "id": "https://openalex.org/A5019962152",
+          "orcid": "https://orcid.org/0000-0002-9166-9804"
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Hennepin County Medical Center",
+            "id": "https://openalex.org/I2802288015",
+            "lineage": [
+              "https://openalex.org/I2802288015"
+            ],
+            "ror": "https://ror.org/01k7a6660",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Emergency Medicine, Hennepin County Medical Center, Minneapolis, MN, USA; University of Minnesota, Department of Emergency Medicine, USA. Electronic address: smith253@umn.edu",
+          "Department of Emergency Medicine, Hennepin County Medical Center, Minneapolis, MN, USA",
+          "University of Minnesota, Department of Emergency Medicine, USA"
+        ],
+        "raw_author_name": "Stephen W. Smith",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802074625"
+            ],
+            "raw_affiliation_string": "Bridgeport Hospital, Bridgeport, CT, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Brooks Walsh",
+          "id": "https://openalex.org/A5111913558",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Bridgeport Hospital",
+            "id": "https://openalex.org/I2802074625",
+            "lineage": [
+              "https://openalex.org/I2802074625",
+              "https://openalex.org/I4210117499"
+            ],
+            "ror": "https://ror.org/000yct867",
+            "type": "nonprofit"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Bridgeport Hospital, Bridgeport, CT, USA"
+        ],
+        "raw_author_name": "Brooks Walsh",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I33213144"
+            ],
+            "raw_affiliation_string": "College of Medicine, University of Florida, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Ken Grauer",
+          "id": "https://openalex.org/A5081405088",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Florida",
+            "id": "https://openalex.org/I33213144",
+            "lineage": [
+              "https://openalex.org/I33213144"
+            ],
+            "ror": "https://ror.org/02y3ad647",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "College of Medicine, University of Florida, USA"
+        ],
+        "raw_author_name": "Ken Grauer",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I130238516"
+            ],
+            "raw_affiliation_string": "University of Minnesota, Department of Medicine, Division of Cardiology, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Kyuhyun Wang",
+          "id": "https://openalex.org/A5045597831",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "University of Minnesota",
+            "id": "https://openalex.org/I130238516",
+            "lineage": [
+              "https://openalex.org/I130238516"
+            ],
+            "ror": "https://ror.org/017zqws13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Minnesota, Department of Medicine, Division of Cardiology, USA"
+        ],
+        "raw_author_name": "Kyuhyun Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Cardiologs® Technologies, Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "Jérémy Rapin",
+          "id": "https://openalex.org/A5108109774",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiologs® Technologies, Paris, France"
+        ],
+        "raw_author_name": "Jeremy Rapin",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Cardiologs® Technologies, Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "Jia Li",
+          "id": "https://openalex.org/A5043094331",
+          "orcid": "https://orcid.org/0000-0003-4286-5953"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiologs® Technologies, Paris, France"
+        ],
+        "raw_author_name": "Jia Li",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I27577105"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, University College, Cork, Ireland"
+          }
+        ],
+        "author": {
+          "display_name": "William H. Fennell",
+          "id": "https://openalex.org/A5079818414",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "IE"
+        ],
+        "institutions": [
+          {
+            "country_code": "IE",
+            "display_name": "University College Cork",
+            "id": "https://openalex.org/I27577105",
+            "lineage": [
+              "https://openalex.org/I27577105"
+            ],
+            "ror": "https://ror.org/03265fv13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, University College, Cork, Ireland"
+        ],
+        "raw_author_name": "William Fennell",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210144610"
+            ],
+            "raw_affiliation_string": "Cardiologs® Technologies, Paris, France; Department of Emergency Medicine, Hôpital Saint Louis, Assistance Publique-Hôpitaux de Paris, Paris, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210144610",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "Department of Emergency Medicine, Hôpital Saint Louis, Assistance Publique–Hôpitaux de Paris, Paris, France"
+          },
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Cardiologs® Technologies, Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "P. Taboulet",
+          "id": "https://openalex.org/A5058485558",
+          "orcid": "https://orcid.org/0000-0003-0843-9758"
+        },
+        "author_position": "last",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Hôpital Saint-Louis",
+            "id": "https://openalex.org/I4210144610",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210144610"
+            ],
+            "ror": "https://ror.org/049am9t04",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiologs® Technologies, Paris, France; Department of Emergency Medicine, Hôpital Saint Louis, Assistance Publique-Hôpitaux de Paris, Paris, France",
+          "Department of Emergency Medicine, Hôpital Saint Louis, Assistance Publique–Hôpitaux de Paris, Paris, France",
+          "Cardiologs® Technologies, Paris, France"
+        ],
+        "raw_author_name": "Pierre Taboulet",
+        "raw_orcid": "https://orcid.org/0000-0003-0843-9758"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "88",
+      "issue": null,
+      "last_page": "95",
+      "volume": "52"
+    },
+    "cited_by_count": 107,
+    "display_name": "A deep neural network learning algorithm outperforms a conventional algorithm for emergency department electrocardiogram interpretation",
+    "doi": "https://doi.org/10.1016/j.jelectrocard.2018.11.013",
+    "id": "https://openalex.org/W2900614987",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.jelectrocard.2018.11.013",
+      "mag": "2900614987",
+      "openalex": "https://openalex.org/W2900614987",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/30476648"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.jelectrocard.2018.11.013",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.jelectrocard.2018.11.013",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Journal of Electrocardiology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Journal of Electrocardiology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S197069552",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0022-0736",
+          "1532-8430"
+        ],
+        "issn_l": "0022-0736",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2018-11-16",
+    "publication_year": 2018,
+    "referenced_works": [
+      "https://openalex.org/W1473944704",
+      "https://openalex.org/W1686810756",
+      "https://openalex.org/W1757870343",
+      "https://openalex.org/W1976543942",
+      "https://openalex.org/W1986697782",
+      "https://openalex.org/W2017086716",
+      "https://openalex.org/W2032872419",
+      "https://openalex.org/W2045489121",
+      "https://openalex.org/W2046075739",
+      "https://openalex.org/W2057998225",
+      "https://openalex.org/W2066105073",
+      "https://openalex.org/W2073962065",
+      "https://openalex.org/W2096266263",
+      "https://openalex.org/W2111833294",
+      "https://openalex.org/W2112827290",
+      "https://openalex.org/W2118412326",
+      "https://openalex.org/W2122671679",
+      "https://openalex.org/W2146915726",
+      "https://openalex.org/W2146948310",
+      "https://openalex.org/W2162467118",
+      "https://openalex.org/W2163922914",
+      "https://openalex.org/W2271840356",
+      "https://openalex.org/W2346522676",
+      "https://openalex.org/W2409271626",
+      "https://openalex.org/W2477001453",
+      "https://openalex.org/W2511157081",
+      "https://openalex.org/W2534816586",
+      "https://openalex.org/W2581082771",
+      "https://openalex.org/W2588003592",
+      "https://openalex.org/W2747849569",
+      "https://openalex.org/W2771148491",
+      "https://openalex.org/W2775460922",
+      "https://openalex.org/W2791211031",
+      "https://openalex.org/W2793848618",
+      "https://openalex.org/W2962835968",
+      "https://openalex.org/W4248656560",
+      "https://openalex.org/W6637373629",
+      "https://openalex.org/W6677846240",
+      "https://openalex.org/W6746917377"
+    ],
+    "referenced_works_count": 39,
+    "title": "A deep neural network learning algorithm outperforms a conventional algorithm for emergency department electrocardiogram interpretation",
+    "type": "article"
+  },
+  "response_hash": "463c60389456ce552c2c7e5a0aae4eb4e03e144e011960242e10f4f8b0f7569a",
+  "retrieved_at": "2026-07-14T14:48:25Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

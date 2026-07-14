@@ -1,0 +1,485 @@
+{
+  "endpoint": "works/doi:10.1016/j.bspc.2020.102194",
+  "request_key": "56a2733119930a482e40459e66da9c2a84d9431535d2e0e243bf811a57b33b9b",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I21370196"
+            ],
+            "raw_affiliation_string": "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Γεώργιος Πετμεζάς",
+          "id": "https://openalex.org/A5075090284",
+          "orcid": "https://orcid.org/0000-0002-3371-569X"
+        },
+        "author_position": "first",
+        "countries": [
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "Aristotle University of Thessaloniki",
+            "id": "https://openalex.org/I21370196",
+            "lineage": [
+              "https://openalex.org/I21370196"
+            ],
+            "ror": "https://ror.org/02j61yw88",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+        ],
+        "raw_author_name": "Georgios Petmezas",
+        "raw_orcid": "https://orcid.org/0000-0002-3371-569X"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I21370196"
+            ],
+            "raw_affiliation_string": "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Kostas Haris",
+          "id": "https://openalex.org/A5010400065",
+          "orcid": "https://orcid.org/0000-0002-9806-6272"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "Aristotle University of Thessaloniki",
+            "id": "https://openalex.org/I21370196",
+            "lineage": [
+              "https://openalex.org/I21370196"
+            ],
+            "ror": "https://ror.org/02j61yw88",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+        ],
+        "raw_author_name": "Kostas Haris",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I21370196"
+            ],
+            "raw_affiliation_string": "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Leandros Stefanopoulos",
+          "id": "https://openalex.org/A5021422275",
+          "orcid": "https://orcid.org/0000-0002-2682-5639"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "Aristotle University of Thessaloniki",
+            "id": "https://openalex.org/I21370196",
+            "lineage": [
+              "https://openalex.org/I21370196"
+            ],
+            "ror": "https://ror.org/02j61yw88",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+        ],
+        "raw_author_name": "Leandros Stefanopoulos",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I21370196"
+            ],
+            "raw_affiliation_string": "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Vassilis Kilintzis",
+          "id": "https://openalex.org/A5070128360",
+          "orcid": "https://orcid.org/0000-0002-9783-6757"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "Aristotle University of Thessaloniki",
+            "id": "https://openalex.org/I21370196",
+            "lineage": [
+              "https://openalex.org/I21370196"
+            ],
+            "ror": "https://ror.org/02j61yw88",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+        ],
+        "raw_author_name": "Vassilis Kilintzis",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I111979921"
+            ],
+            "raw_affiliation_string": "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I111979921"
+            ],
+            "raw_affiliation_string": "Dept of Material Science, Northwestern University, Evanston, IL, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Andreas Tzavelis",
+          "id": "https://openalex.org/A5038415901",
+          "orcid": "https://orcid.org/0000-0002-0750-5007"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Northwestern University",
+            "id": "https://openalex.org/I111979921",
+            "lineage": [
+              "https://openalex.org/I111979921"
+            ],
+            "ror": "https://ror.org/000e0be47",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA",
+          "Dept of Material Science, Northwestern University, Evanston, IL, USA"
+        ],
+        "raw_author_name": "Andreas Tzavelis",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I111979921"
+            ],
+            "raw_affiliation_string": "Dept of Material Science, Northwestern University, Evanston, IL, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I111979921"
+            ],
+            "raw_affiliation_string": "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA"
+          }
+        ],
+        "author": {
+          "display_name": "John A. Rogers",
+          "id": "https://openalex.org/A5045551635",
+          "orcid": "https://orcid.org/0000-0002-2980-3961"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Northwestern University",
+            "id": "https://openalex.org/I111979921",
+            "lineage": [
+              "https://openalex.org/I111979921"
+            ],
+            "ror": "https://ror.org/000e0be47",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Dept of Material Science, Northwestern University, Evanston, IL, USA",
+          "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA"
+        ],
+        "raw_author_name": "John A Rogers",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I111979921"
+            ],
+            "raw_affiliation_string": "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Aggelos K. Katsaggelos",
+          "id": "https://openalex.org/A5048650003",
+          "orcid": "https://orcid.org/0000-0003-4554-0070"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Northwestern University",
+            "id": "https://openalex.org/I111979921",
+            "lineage": [
+              "https://openalex.org/I111979921"
+            ],
+            "ror": "https://ror.org/000e0be47",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA"
+        ],
+        "raw_author_name": "Aggelos K Katsaggelos",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I111979921"
+            ],
+            "raw_affiliation_string": "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I21370196"
+            ],
+            "raw_affiliation_string": "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Nicos Maglaveras",
+          "id": "https://openalex.org/A5082929636",
+          "orcid": "https://orcid.org/0000-0002-4919-0664"
+        },
+        "author_position": "last",
+        "countries": [
+          "GR",
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Northwestern University",
+            "id": "https://openalex.org/I111979921",
+            "lineage": [
+              "https://openalex.org/I111979921"
+            ],
+            "ror": "https://ror.org/000e0be47",
+            "type": "education"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "Aristotle University of Thessaloniki",
+            "id": "https://openalex.org/I21370196",
+            "lineage": [
+              "https://openalex.org/I21370196"
+            ],
+            "ror": "https://ror.org/02j61yw88",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Dept of Electrical and Computer Engineering, Northwestern University, Evanston, IL, USA",
+          "Lab of Computing, Medical Informatics and Biomedical Imaging TechnologiesAristotle University of Thessaloniki, Thessaloniki, Greece"
+        ],
+        "raw_author_name": "Nicos Maglaveras",
+        "raw_orcid": "https://orcid.org/0000-0002-4919-0664"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "102194",
+      "issue": null,
+      "last_page": "102194",
+      "volume": "63"
+    },
+    "cited_by_count": 330,
+    "display_name": "Automated Atrial Fibrillation Detection using a Hybrid CNN-LSTM Network on Imbalanced ECG Datasets",
+    "doi": "https://doi.org/10.1016/j.bspc.2020.102194",
+    "id": "https://openalex.org/W3084352865",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.bspc.2020.102194",
+      "mag": "3084352865",
+      "openalex": "https://openalex.org/W3084352865"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.bspc.2020.102194",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.bspc.2020.102194",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Biomedical Signal Processing and Control",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Biomedical Signal Processing and Control",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S8427965",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1746-8094",
+          "1746-8108"
+        ],
+        "issn_l": "1746-8094",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2020-09-08",
+    "publication_year": 2020,
+    "referenced_works": [
+      "https://openalex.org/W40758061",
+      "https://openalex.org/W1443198733",
+      "https://openalex.org/W1540777168",
+      "https://openalex.org/W1553437616",
+      "https://openalex.org/W1554539653",
+      "https://openalex.org/W1972142091",
+      "https://openalex.org/W1975415200",
+      "https://openalex.org/W1983712387",
+      "https://openalex.org/W1985258458",
+      "https://openalex.org/W2017487767",
+      "https://openalex.org/W2026319679",
+      "https://openalex.org/W2026775633",
+      "https://openalex.org/W2034817911",
+      "https://openalex.org/W2041932130",
+      "https://openalex.org/W2064675550",
+      "https://openalex.org/W2069143585",
+      "https://openalex.org/W2074334843",
+      "https://openalex.org/W2094757280",
+      "https://openalex.org/W2095409369",
+      "https://openalex.org/W2100537461",
+      "https://openalex.org/W2104614052",
+      "https://openalex.org/W2131103247",
+      "https://openalex.org/W2141889414",
+      "https://openalex.org/W2146842127",
+      "https://openalex.org/W2147018083",
+      "https://openalex.org/W2148143831",
+      "https://openalex.org/W2158940042",
+      "https://openalex.org/W2159975225",
+      "https://openalex.org/W2162800060",
+      "https://openalex.org/W2163621334",
+      "https://openalex.org/W2164861810",
+      "https://openalex.org/W2170694609",
+      "https://openalex.org/W2186910770",
+      "https://openalex.org/W2310760139",
+      "https://openalex.org/W2463469659",
+      "https://openalex.org/W2515241735",
+      "https://openalex.org/W2563349205",
+      "https://openalex.org/W2591710255",
+      "https://openalex.org/W2621205740",
+      "https://openalex.org/W2748902594",
+      "https://openalex.org/W2755936613",
+      "https://openalex.org/W2766705511",
+      "https://openalex.org/W2769531941",
+      "https://openalex.org/W2773952774",
+      "https://openalex.org/W2775229114",
+      "https://openalex.org/W2778545923",
+      "https://openalex.org/W2780360157",
+      "https://openalex.org/W2795340004",
+      "https://openalex.org/W2796659423",
+      "https://openalex.org/W2799962034",
+      "https://openalex.org/W2806806521",
+      "https://openalex.org/W2811306060",
+      "https://openalex.org/W2884561390",
+      "https://openalex.org/W2884795774",
+      "https://openalex.org/W2886982273",
+      "https://openalex.org/W2886997817",
+      "https://openalex.org/W2891154157",
+      "https://openalex.org/W2899697553",
+      "https://openalex.org/W2902562790",
+      "https://openalex.org/W2916326551",
+      "https://openalex.org/W2919115771",
+      "https://openalex.org/W2957144925",
+      "https://openalex.org/W2979570803",
+      "https://openalex.org/W2979640443",
+      "https://openalex.org/W2982683722",
+      "https://openalex.org/W2994951659",
+      "https://openalex.org/W3004063830",
+      "https://openalex.org/W3014899874",
+      "https://openalex.org/W3030443594",
+      "https://openalex.org/W3098125385",
+      "https://openalex.org/W6656955203",
+      "https://openalex.org/W6679203416",
+      "https://openalex.org/W6750097528",
+      "https://openalex.org/W6752969721",
+      "https://openalex.org/W6769605761",
+      "https://openalex.org/W6771271839"
+    ],
+    "referenced_works_count": 76,
+    "title": "Automated Atrial Fibrillation Detection using a Hybrid CNN-LSTM Network on Imbalanced ECG Datasets",
+    "type": "article"
+  },
+  "response_hash": "3d9cdca504dfd7c77af499a17e410783f9619ac3876356597589b89f5f205dd8",
+  "retrieved_at": "2026-07-14T14:48:39Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

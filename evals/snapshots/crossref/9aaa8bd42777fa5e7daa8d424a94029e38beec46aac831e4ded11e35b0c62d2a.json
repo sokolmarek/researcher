@@ -1,0 +1,5353 @@
+{
+  "endpoint": "works",
+  "request_key": "9aaa8bd42777fa5e7daa8d424a94029e38beec46aac831e4ded11e35b0c62d2a",
+  "request_params": {
+    "query.bibliographic": "Spatio-temporal Self-Supervised Representation Learning for 3D Point Clouds",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1109/iccv48922.2021.00647",
+          "URL": "https://doi.org/10.1109/iccv48922.2021.00647",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "University of California,Los Angeles"
+                }
+              ],
+              "family": "Huang",
+              "given": "Siyuan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Shanghai Jiao Tong University"
+                }
+              ],
+              "family": "Xie",
+              "given": "Yichen",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Beijing Institute for General Artificial Intelligence"
+                }
+              ],
+              "family": "Zhu",
+              "given": "Song-Chun",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Beijing Institute for General Artificial Intelligence"
+                }
+              ],
+              "family": "Zhu",
+              "given": "Yixin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2021 IEEE/CVF International Conference on Computer Vision (ICCV)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                2,
+                28
+              ]
+            ],
+            "date-time": "2022-02-28T22:08:02Z",
+            "timestamp": 1646086082000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                14
+              ]
+            ],
+            "date-time": "2022-07-14T19:45:44Z",
+            "timestamp": 1657827944000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2021,
+                  10,
+                  17
+                ]
+              ]
+            },
+            "location": "Montreal, QC, Canada",
+            "name": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  10,
+                  10
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                3
+              ]
+            ],
+            "date-time": "2026-06-03T18:46:08Z",
+            "timestamp": 1780512368421,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 183,
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                10
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2021-10-01T00:00:00Z",
+                "timestamp": 1633046400000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    10,
+                    1
+                  ]
+                ],
+                "date-time": "2021-10-01T00:00:00Z",
+                "timestamp": 1633046400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/9709627/9709628/09711130.pdf?arnumber=9711130",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "6515-6525",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                10
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                10
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "article-title": "Pointcontrast: Unsupervised pretraining for 3d point cloud understanding",
+              "author": "xie",
+              "journal-title": "Proceedings of European Conference on Computer Vision (ECCV)",
+              "key": "ref73",
+              "year": "2020"
+            },
+            {
+              "article-title": "A theory of generative convnet",
+              "author": "xie",
+              "journal-title": "Proceedings of International Conference on Machine Learning (ICML)",
+              "key": "ref72",
+              "year": "2016"
+            },
+            {
+              "article-title": "3d shapenets: A deep representation for volumetric shapes",
+              "author": "wu",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "key": "ref71",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00985",
+              "doi-asserted-by": "publisher",
+              "key": "ref70"
+            },
+            {
+              "article-title": "Scaling sgd batch size to 32k for imagenet training",
+              "author": "you",
+              "journal-title": "arXiv preprint arXiv 1708 03359",
+              "key": "ref76",
+              "year": "2017"
+            },
+            {
+              "article-title": "Deep sets",
+              "author": "zaheer",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref77",
+              "year": "2017"
+            },
+            {
+              "article-title": "Spidercnn: Deep learning on point sets with parameterized convolutional filters",
+              "author": "xu",
+              "journal-title": "Proceedings of European Conference on Computer Vision (ECCV)",
+              "key": "ref74",
+              "year": "2018"
+            },
+            {
+              "article-title": "Pointcnn: Convolution on x-transformed points",
+              "author": "li",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref39",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00029",
+              "doi-asserted-by": "publisher",
+              "key": "ref75"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00979",
+              "doi-asserted-by": "publisher",
+              "key": "ref38"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00169",
+              "doi-asserted-by": "publisher",
+              "key": "ref78"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00110",
+              "doi-asserted-by": "publisher",
+              "key": "ref79"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.99",
+              "doi-asserted-by": "publisher",
+              "key": "ref33"
+            },
+            {
+              "article-title": "Auto-encoding variational bayes",
+              "author": "kingma",
+              "journal-title": "arXiv preprint arXiv 1312 6114",
+              "key": "ref32",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1007/s11263-018-1103-5",
+              "doi-asserted-by": "publisher",
+              "key": "ref31"
+            },
+            {
+              "DOI": "10.1007/978-3-030-58574-7_46",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "article-title": "Point cloud gan",
+              "author": "li",
+              "journal-title": "arXiv preprint arXiv 1810 04805",
+              "key": "ref37",
+              "year": "2018"
+            },
+            {
+              "article-title": "A tutorial on energy-based learning",
+              "author": "lecun",
+              "journal-title": "Predicting Structured Data",
+              "key": "ref36",
+              "volume": "1",
+              "year": "2006"
+            },
+            {
+              "article-title": "Maximum entropy generators for energy-based models",
+              "author": "kumar",
+              "journal-title": "arXiv preprint arXiv 1901 00828",
+              "key": "ref35",
+              "year": "2019"
+            },
+            {
+              "article-title": "Temporally coherent embeddings for self-supervised video representation learning",
+              "author": "knights",
+              "journal-title": "arXiv preprint arXiv 2004 06774",
+              "key": "ref34",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/WACV45572.2020.9093430",
+              "doi-asserted-by": "publisher",
+              "key": "ref60"
+            },
+            {
+              "article-title": "Contrastive multiview coding",
+              "author": "tian",
+              "journal-title": "arXiv preprint arXiv 1906 09003",
+              "key": "ref62",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00651",
+              "doi-asserted-by": "publisher",
+              "key": "ref61"
+            },
+            {
+              "article-title": "What makes for good views for contrastive learning",
+              "author": "tian",
+              "journal-title": "arXiv preprint arXiv 2005 10545",
+              "key": "ref63",
+              "year": "2020"
+            },
+            {
+              "article-title": "Holistic 3d scene parsing and reconstruction from a single rgb image",
+              "author": "huang",
+              "journal-title": "Proceedings of European Conference on Computer Vision (ECCV)",
+              "key": "ref28",
+              "year": "2018"
+            },
+            {
+              "article-title": "Feast-net: Feature-steered graph convolutions for 3d shape analysis",
+              "author": "verma",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "key": "ref64",
+              "year": "2018"
+            },
+            {
+              "article-title": "Cooperative holistic scene understanding: Unifying 3d object, layout and camera pose estimation",
+              "author": "huang",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref27",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1145/1390156.1390294",
+              "doi-asserted-by": "publisher",
+              "key": "ref65"
+            },
+            {
+              "article-title": "Order matters: Sequence to sequence for sets",
+              "author": "vinyals",
+              "journal-title": "arXiv preprint arXiv 1511 06841",
+              "key": "ref66",
+              "year": "2015"
+            },
+            {
+              "article-title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+              "author": "ioffe",
+              "journal-title": "arXiv preprint arXiv 1502 03167",
+              "key": "ref29",
+              "year": "2015"
+            },
+            {
+              "article-title": "Dynamic graph cnn for learning on point clouds",
+              "author": "wang",
+              "first-page": "1",
+              "journal-title": "ACM Transactions on Graphics (TOG)",
+              "key": "ref67",
+              "volume": "38",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1162/089976602317318938",
+              "doi-asserted-by": "publisher",
+              "key": "ref68"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.170",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "article-title": "Learning a probabilistic latent space of object shapes via 3d generative-adversarial modeling",
+              "author": "wu",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref69",
+              "year": "2016"
+            },
+            {
+              "article-title": "Representation learning and adversarial generation of 3d point clouds",
+              "author": "achlioptas",
+              "journal-title": "Proceedings of International Conference on Machine Learning (ICML)",
+              "key": "ref1",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018376",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00975",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.01054",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "article-title": "Learning deep representations by mutual information estimation and maximization",
+              "author": "hjelm",
+              "journal-title": "arXiv preprint arXiv 1808 06241",
+              "key": "ref24",
+              "year": "2018"
+            },
+            {
+              "article-title": "Data-efficient image recognition with contrastive predictive coding",
+              "author": "hénaff",
+              "journal-title": "arXiv preprint arXiv 1905 09010",
+              "key": "ref23",
+              "year": "2019"
+            },
+            {
+              "article-title": "Perspectivenet: 3d object detection from a single rgb image via perspective points",
+              "author": "huang",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref26",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00109",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00618",
+              "doi-asserted-by": "publisher",
+              "key": "ref50"
+            },
+            {
+              "article-title": "Spatiotemporal contrastive video representation learning",
+              "author": "qian",
+              "journal-title": "arXiv preprint arXiv 2008 06439",
+              "key": "ref51",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00268",
+              "doi-asserted-by": "publisher",
+              "key": "ref59"
+            },
+            {
+              "DOI": "10.1109/CVPR.2015.7298655",
+              "doi-asserted-by": "publisher",
+              "key": "ref58"
+            },
+            {
+              "DOI": "10.1162/1064546053278973",
+              "doi-asserted-by": "publisher",
+              "key": "ref57"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.01054",
+              "doi-asserted-by": "publisher",
+              "key": "ref56"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00478",
+              "doi-asserted-by": "publisher",
+              "key": "ref55"
+            },
+            {
+              "DOI": "10.1109/ICRA.2018.8462891",
+              "doi-asserted-by": "publisher",
+              "key": "ref54"
+            },
+            {
+              "article-title": "Self-supervised deep learning on point clouds by reconstructing space",
+              "author": "sauder",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref53",
+              "year": "2019"
+            },
+            {
+              "article-title": "Deep learning with sets and point clouds",
+              "author": "ravanbakhsh",
+              "journal-title": "arXiv preprint arXiv 1611 04500",
+              "key": "ref52",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.261",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.1109/ICCV.2015.167",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "article-title": "Sgdr: Stochastic gradient descent with warm restarts",
+              "author": "loshchilov",
+              "journal-title": "arXiv preprint arXiv 1608 03983",
+              "key": "ref40",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1162/neco.1991.3.2.194",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "article-title": "Multiresolution tree networks for 3d point cloud processing",
+              "author": "gadelha",
+              "journal-title": "Proceedings of European Conference on Computer Vision (ECCV)",
+              "key": "ref13",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00954",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "DOI": "10.1177/0278364913491297",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "DOI": "10.1109/CVPR.2012.6248074",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "article-title": "Generative adversarial nets",
+              "author": "goodfellow",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref17",
+              "year": "2014"
+            },
+            {
+              "article-title": "The scientist in the crib: What early learning tells us about the mind",
+              "author": "gopnik",
+              "journal-title": "William Morrow Paperbacks",
+              "key": "ref18",
+              "year": "2000"
+            },
+            {
+              "article-title": "Bootstrap your own latent: A new approach to self-supervised learning",
+              "author": "grill",
+              "journal-title": "arXiv preprint arXiv 2006 04989",
+              "key": "ref19",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00958",
+              "doi-asserted-by": "publisher",
+              "key": "ref80"
+            },
+            {
+              "article-title": "Generalized denoising auto-encoders as generative models",
+              "author": "bengio",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref4",
+              "year": "2013"
+            },
+            {
+              "article-title": "Learning representations by maximizing mutual information across views",
+              "author": "bachman",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref3",
+              "year": "2019"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "chen",
+              "journal-title": "arXiv preprint arXiv 2002 05155",
+              "key": "ref6",
+              "year": "2020"
+            },
+            {
+              "article-title": "Shapenet: An information-rich 3d model repository",
+              "author": "chang",
+              "journal-title": "arXiv preprint arXiv 1512 00327",
+              "key": "ref5",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00874",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1109/CVPR46437.2021.01549",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "article-title": "Pointnet++: Deep hierarchical feature learning on point sets in a metric space",
+              "author": "qi",
+              "journal-title": "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref49",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00319",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1109/3DV50981.2020.00112",
+              "doi-asserted-by": "publisher",
+              "key": "ref46"
+            },
+            {
+              "article-title": "Representation learning with contrastive predictive coding",
+              "author": "van den oord",
+              "journal-title": "arXiv preprint arXiv 1807 03748",
+              "key": "ref45",
+              "year": "2018"
+            },
+            {
+              "article-title": "Pointnet: Deep learning on point sets for 3d classification and segmentation",
+              "author": "qi",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "key": "ref48",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00937",
+              "doi-asserted-by": "publisher",
+              "key": "ref47"
+            },
+            {
+              "article-title": "On learning sets of symmetric elements",
+              "author": "maron",
+              "journal-title": "arXiv preprint arXiv 2002 05155",
+              "key": "ref42",
+              "year": "2020"
+            },
+            {
+              "article-title": "Visualizing data using t-sne",
+              "author": "van der maaten",
+              "first-page": "2579",
+              "journal-title": "Journal of Machine Learning Research",
+              "key": "ref41",
+              "volume": "9",
+              "year": "2008"
+            },
+            {
+              "article-title": "Learning deep energy models",
+              "author": "ngiam",
+              "journal-title": "Proceedings of International Conference on Machine Learning (ICML)",
+              "key": "ref44",
+              "year": "2011"
+            },
+            {
+              "article-title": "Rectified linear units improve restricted boltzmann machines",
+              "author": "nair",
+              "journal-title": "Proceedings of International Conference on Machine Learning (ICML)",
+              "key": "ref43",
+              "year": "2010"
+            }
+          ],
+          "reference-count": 80,
+          "references-count": 80,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/9711130/"
+            }
+          },
+          "score": 59.442226,
+          "source": "Crossref",
+          "title": [
+            "Spatio-temporal Self-Supervised Representation Learning for 3D Point Clouds"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.1109/tpami.2025.3584625/mm1",
+          "URL": "https://doi.org/10.1109/tpami.2025.3584625/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Hou",
+              "given": "Junhui",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                2
+              ]
+            ],
+            "date-time": "2025-07-02T13:44:43Z",
+            "timestamp": 1751463883000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T15:07:59Z",
+            "timestamp": 1769785679000
+          },
+          "description": "The supplemental material contains material that is not included within the article itself.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:37:06Z",
+            "timestamp": 1772159826998,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/TPAMI.2025.3584625",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx8/34/11163533/11059839/supp1-3584625.pdf?arnumber=11059839"
+            }
+          },
+          "score": 47.899548,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Learning of LiDAR 3D Point Clouds Via 2D-3D Neural Calibration_supp1-3584625.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.2139/ssrn.4552868",
+          "URL": "https://doi.org/10.2139/ssrn.4552868",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Shi",
+              "given": "Lu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Guoqing",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "CAO",
+              "given": "Qi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Linna",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Cen",
+              "given": "Yi-Gang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Cen",
+              "given": "Yi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                8
+              ]
+            ],
+            "date-time": "2023-09-08T19:47:16Z",
+            "timestamp": 1694202436000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2023-09-09T03:10:52Z",
+            "timestamp": 1694229052000
+          },
+          "group-title": "SSRN",
+          "indexed": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                10
+              ]
+            ],
+            "date-time": "2023-09-10T13:49:22Z",
+            "timestamp": 1694353762651
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "member": "78",
+          "posted": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "article-title": "Upg: 3d vision-based prediction framework for robotic grasping in multi-object scenes",
+              "author": "X Li",
+              "journal-title": "Knowledge-Based Systems",
+              "key": "ref1",
+              "volume": "270",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1016/j.knosys.2022.110080",
+              "article-title": "Sat-gcn: Self-attention graph convolutional network-based 3d object detection for autonomous driving",
+              "author": "L Wang",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Knowledge-Based Systems",
+              "key": "ref2",
+              "volume": "259",
+              "year": "2023"
+            },
+            {
+              "author": "C R Qi",
+              "journal-title": "Pointnet: Deep learning on point sets for 3d classification and segmentation, computer vision and pattern recognition",
+              "key": "ref3",
+              "year": "2016"
+            },
+            {
+              "article-title": "Tackling background ambiguities in multi-class few-shot point cloud semantic segmentation",
+              "author": "L Lai",
+              "journal-title": "Knowledge-Based Systems",
+              "key": "ref4",
+              "volume": "253",
+              "year": "2022"
+            },
+            {
+              "author": "A Xiao",
+              "journal-title": "Unsupervised representation learning for point clouds: A survey",
+              "key": "ref5",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1016/j.knosys.2022.109991",
+              "article-title": "Multi-network contrastive learning of visual representations",
+              "author": "X Long",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Knowledge-Based Systems",
+              "key": "ref6",
+              "volume": "258",
+              "year": "2022"
+            },
+            {
+              "article-title": "Masked autoencoders are scalable vision learners",
+              "author": "K He",
+              "first-page": "16000",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref7",
+              "year": "2022"
+            },
+            {
+              "article-title": "Self-supervised remote sensing feature learning: Learning paradigms, challenges, and future works",
+              "author": "C Tao",
+              "journal-title": "IEEE Transactions on Geoscience and Remote Sensing",
+              "key": "ref8",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1145/3474085.3475458",
+              "article-title": "Self-contrastive learning with hard negative sampling for self-supervised point cloud learning",
+              "author": "B Du",
+              "doi-asserted-by": "crossref",
+              "first-page": "3133",
+              "journal-title": "Proceedings of the 29th ACM International Conference on Multimedia",
+              "key": "ref9",
+              "year": "2021"
+            },
+            {
+              "article-title": "Self-supervised point cloud representation learning via separating mixed shapes",
+              "author": "C Sun",
+              "journal-title": "IEEE Transactions on Multimedia",
+              "key": "ref10",
+              "year": "2022"
+            },
+            {
+              "author": "Y Pang",
+              "journal-title": "Masked autoencoders for point cloud self-supervised learning",
+              "key": "ref11",
+              "year": "2022"
+            },
+            {
+              "article-title": "Point-bert: Pre-training 3d point cloud transformers with masked point modeling",
+              "author": "X Yu",
+              "first-page": "19313",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref12",
+              "year": "2022"
+            },
+            {
+              "author": "S Xie",
+              "first-page": "574",
+              "journal-title": "Pointcontrast: Unsupervised pre-training for 3d point cloud understanding",
+              "key": "ref13",
+              "year": "2020"
+            },
+            {
+              "article-title": "Spatio-temporal self-supervised representation learning for 3d point clouds",
+              "author": "S Huang",
+              "first-page": "6535",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref14",
+              "year": "2021"
+            },
+            {
+              "article-title": "Self-supervised cross-modal contrastive learning for 3d point cloud understanding",
+              "author": "M Afham",
+              "first-page": "9902",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref15",
+              "year": "2022"
+            },
+            {
+              "article-title": "Momentum contrast for unsupervised visual representation learning",
+              "author": "K He",
+              "first-page": "9729",
+              "journal-title": "Proceedings of the IEEE/CVF conference on computer vision and pattern recognition",
+              "key": "ref16",
+              "year": "2020"
+            },
+            {
+              "article-title": "Selfsupervised learning: Generative or contrastive",
+              "author": "X Liu",
+              "journal-title": "IEEE Transactions on Knowledge and Data Engineering",
+              "key": "ref17",
+              "year": "2021"
+            },
+            {
+              "article-title": "Bootstrap your own latent-a new approach to self-supervised learning",
+              "author": "J.-B Grill",
+              "first-page": "21271",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref18",
+              "volume": "33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Point-level region contrast for object detection pre-training",
+              "author": "Y Bai",
+              "first-page": "16061",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref19",
+              "year": "2022"
+            },
+            {
+              "author": "Z Wu",
+              "first-page": "1912",
+              "journal-title": "3d shapenets: A deep representation for volumetric shapes",
+              "key": "ref20",
+              "year": "2015"
+            },
+            {
+              "article-title": "Revisiting point cloud classification: A new benchmark dataset and classification model on real-world data",
+              "author": "M A Uy",
+              "first-page": "1588",
+              "journal-title": "Proceedings of the IEEE/CVF international conference on computer vision",
+              "key": "ref21",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/2980179.2980238",
+              "article-title": "A scalable active framework for region annotation in 3d shape collections",
+              "author": "L Yi",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "issue": "6",
+              "journal-title": "ACM Transactions on Graphics (ToG)",
+              "key": "ref22",
+              "volume": "35",
+              "year": "2016"
+            },
+            {
+              "article-title": "3d semantic parsing of large-scale indoor spaces",
+              "author": "I Armeni",
+              "first-page": "1534",
+              "journal-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+              "key": "ref23",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/3DV50981.2020.00112",
+              "article-title": "Self-supervised learning of point clouds via orientation estimation",
+              "author": "O Poursaeed",
+              "doi-asserted-by": "crossref",
+              "first-page": "1018",
+              "journal-title": "2020 International Conference on 3D Vision (3DV)",
+              "key": "ref24",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2020.2992393",
+              "article-title": "Self-supervised visual feature learning with deep neural networks: A survey",
+              "author": "L Jing",
+              "doi-asserted-by": "crossref",
+              "first-page": "4037",
+              "issue": "11",
+              "journal-title": "IEEE transactions on pattern analysis and machine intelligence",
+              "key": "ref25",
+              "volume": "43",
+              "year": "2020"
+            },
+            {
+              "article-title": "Self-supervised deep learning on point clouds by reconstructing space",
+              "author": "J Sauder",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref26",
+              "volume": "32",
+              "year": "2019"
+            },
+            {
+              "article-title": "Unsupervised point cloud pre-training via occlusion completion",
+              "author": "H Wang",
+              "first-page": "9782",
+              "journal-title": "Proceedings of the IEEE/CVF international conference on computer vision",
+              "key": "ref27",
+              "year": "2021"
+            },
+            {
+              "article-title": "Attention is all you need",
+              "author": "A Vaswani",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref28",
+              "volume": "30",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1609/aaai.v36i2.20040",
+              "article-title": "Simipu: Simple 2d image and 3d point cloud unsupervised pretraining for spatial-aware visual representations",
+              "author": "Z Li",
+              "doi-asserted-by": "crossref",
+              "first-page": "1500",
+              "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+              "key": "ref29",
+              "volume": "36",
+              "year": "2022"
+            },
+            {
+              "article-title": "Local and global knowledge distillation with direction-enhanced contrastive learning for single-image deraining",
+              "author": "Y Luo",
+              "journal-title": "Knowledge-Based Systems",
+              "key": "ref30",
+              "volume": "268",
+              "year": "2023"
+            },
+            {
+              "article-title": "Unsupervised multi-task feature learning on point clouds",
+              "author": "K Hassani",
+              "first-page": "8160",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref31",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/3326362",
+              "article-title": "Dynamic graph cnn for learning on point clouds",
+              "author": "Y Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "issue": "5",
+              "journal-title": "Acm Transactions On Graphics (tog)",
+              "key": "ref32",
+              "volume": "38",
+              "year": "2019"
+            },
+            {
+              "article-title": "Pointnet++: Deep hierarchical feature learning on point sets in a metric space",
+              "author": "C R Qi",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref33",
+              "volume": "30",
+              "year": "2017"
+            },
+            {
+              "author": "Z Huang",
+              "journal-title": "Towards effective 3d point cloud analysis via local context propagation in transformers",
+              "key": "ref34",
+              "year": "2023"
+            },
+            {
+              "article-title": "Dense contrastive learning for self-supervised visual pre-training",
+              "author": "X Wang",
+              "first-page": "3024",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref35",
+              "year": "2021"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "T Chen",
+              "first-page": "1597",
+              "journal-title": "International conference on machine learning",
+              "key": "ref36",
+              "year": "2020"
+            },
+            {
+              "author": "A X Chang",
+              "journal-title": "Shapenet: An informationrich 3d model repository",
+              "key": "ref37",
+              "year": "2015"
+            },
+            {
+              "article-title": "Scannet: Richly-annotated 3d reconstructions of indoor scenes",
+              "author": "A Dai",
+              "first-page": "5828",
+              "journal-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+              "key": "ref38",
+              "year": "2017"
+            },
+            {
+              "article-title": "Learning representations and generative models for 3d point clouds",
+              "author": "P Achlioptas",
+              "first-page": "40",
+              "journal-title": "Proceedings of the International conference on machine learning",
+              "key": "ref39",
+              "year": "2018"
+            },
+            {
+              "article-title": "So-net: Self-organizing network for point cloud analysis",
+              "author": "J Li",
+              "first-page": "9397",
+              "journal-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+              "key": "ref40",
+              "year": "2018"
+            },
+            {
+              "article-title": "Foldingnet: Point cloud auto-encoder via deep grid deformation",
+              "author": "Y Yang",
+              "first-page": "206",
+              "journal-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+              "key": "ref41",
+              "year": "2018"
+            },
+            {
+              "article-title": "Multiresolution tree networks for 3d point cloud processing",
+              "author": "M Gadelha",
+              "first-page": "103",
+              "journal-title": "Proceedings of the European Conference on Computer Vision (ECCV)",
+              "key": "ref42",
+              "year": "2018"
+            },
+            {
+              "article-title": "3d point capsule networks",
+              "author": "Y Zhao",
+              "first-page": "1009",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref43",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018376",
+              "article-title": "View inter-prediction gan: Unsupervised representation learning for 3d shapes by learning global shape memories to support local view predictions",
+              "author": "Z Han",
+              "doi-asserted-by": "crossref",
+              "first-page": "8376",
+              "journal-title": "Proceedings of the AAAI conference on artificial intelligence",
+              "key": "ref44",
+              "volume": "33",
+              "year": "2019"
+            },
+            {
+              "article-title": "Self-supervised pretraining of 3d features on any point-cloud",
+              "author": "Z Zhang",
+              "first-page": "10252",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref45",
+              "year": "2021"
+            },
+            {
+              "article-title": "Autoencoders as cross-modal teachers: Can pretrained 2d image transformers help 3d representation learning?",
+              "author": "R Dong",
+              "journal-title": "The Eleventh International Conference on Learning Representations (ICLR)",
+              "key": "ref46",
+              "year": "2023"
+            },
+            {
+              "article-title": "Walk in the cloud: Learning curves for point clouds shape analysis",
+              "author": "T Xiang",
+              "first-page": "915",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref47",
+              "year": "2021"
+            },
+            {
+              "article-title": "Rethinking fewshot image classification: a good embedding is all you need?",
+              "author": "Y Tian",
+              "first-page": "266",
+              "journal-title": "Computer Vision-ECCV 2020: 16th European Conference",
+              "key": "ref48",
+              "year": "2020"
+            }
+          ],
+          "reference-count": 48,
+          "references-count": 48,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4552868"
+            }
+          },
+          "score": 45.69875,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Dcpoint: Global-Local Dual Contrast for Self-Supervised Representation Learning of 3d Point Clouds"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.1109/qrs65678.2025.00033",
+          "URL": "https://doi.org/10.1109/qrs65678.2025.00033",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Nanjing University of Information Science and Technology,Nanjing,Jiangsu,China"
+                }
+              ],
+              "family": "Han",
+              "given": "Yuehui",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "University of New South Wales,Sydney,NSW,Australia"
+                }
+              ],
+              "family": "Yu",
+              "given": "Xinpeng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Nanjing University of Information Science and Technology,Nanjing,Jiangsu,China"
+                }
+              ],
+              "family": "Wang",
+              "given": "Yao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Nanjing University of Science and Technology,Nanjing,Jiangsu,China"
+                }
+              ],
+              "family": "Xu",
+              "given": "Can",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Nanjing University of Information Science and Technology,Nanjing,Jiangsu,China"
+                }
+              ],
+              "family": "Liu",
+              "given": "Qi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2025 25th International Conference on Software Quality, Reliability and Security (QRS)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                29
+              ]
+            ],
+            "date-time": "2025-09-29T17:51:28Z",
+            "timestamp": 1759168288000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2025-10-01T05:14:45Z",
+            "timestamp": 1759295685000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  20
+                ]
+              ]
+            },
+            "location": "Hangzhou, China",
+            "name": "2025 25th International Conference on Software Quality, Reliability and Security (QRS)",
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  16
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                2
+              ]
+            ],
+            "date-time": "2025-10-02T00:29:15Z",
+            "timestamp": 1759364955033,
+            "version": "build-2065373602"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                16
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    7,
+                    16
+                  ]
+                ],
+                "date-time": "2025-07-16T00:00:00Z",
+                "timestamp": 1752624000000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    7,
+                    16
+                  ]
+                ],
+                "date-time": "2025-07-16T00:00:00Z",
+                "timestamp": 1752624000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/11173421/11173424/11173442.pdf?arnumber=11173442",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "235-245",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                16
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                16
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1109/TPAMI.2023.3262786",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "DOI": "10.1109/CVPR52688.2022.00967",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "article-title": "Pointnet: Deep learning on point sets for 3d classification and segmentation",
+              "author": "Qi",
+              "first-page": "652",
+              "key": "ref3",
+              "volume-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1145/3326362",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00651",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00939",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.1109/ICCV48922.2021.00290",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00937",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1007/978-3-031-20086-1_35",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "article-title": "Point-m2ae: multi-scale masked autoencoders for hierarchical point cloud pre-training",
+              "author": "Zhang",
+              "journal-title": "arXiv preprint",
+              "key": "ref10",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1007/978-3-030-58580-8_34",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1109/cvprw53098.2021.00174",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "DOI": "10.1109/3DV50981.2020.00112",
+              "doi-asserted-by": "publisher",
+              "key": "ref13"
+            },
+            {
+              "DOI": "10.1109/3DV.2019.00051",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "article-title": "Clr-gam: Contrastive point cloud learning with guided augmentation and feature mapping",
+              "author": "Malla",
+              "journal-title": "arXiv preprint",
+              "key": "ref15",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1109/ICCV48922.2021.00647",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "DOI": "10.1109/ICCV48922.2021.01009",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1007/978-3-031-20056-4_38",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "article-title": "Pointnet++: Deep hierarchical feature learning on point sets in a metric space",
+              "author": "Ruizhongtai Qi",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref19",
+              "volume": "30",
+              "year": "2017"
+            },
+            {
+              "article-title": "Pointcnn: Convolution on xtransformed points",
+              "author": "Li",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref20",
+              "volume": "31",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00985",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00910",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "DOI": "10.1109/ICCV48922.2021.00635",
+              "doi-asserted-by": "publisher",
+              "key": "ref23"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00201",
+              "doi-asserted-by": "publisher",
+              "key": "ref24"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.01054",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1109/TNNLS.2024.3479309",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/cvpr52729.2023.02085",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "article-title": "Self-supervised deep learning on point clouds by reconstructing space",
+              "author": "Sauder",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref28",
+              "volume": "32",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ICME57554.2024.10687606",
+              "doi-asserted-by": "publisher",
+              "key": "ref29"
+            },
+            {
+              "DOI": "10.1007/978-3-030-58526-6_37",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "DOI": "10.1145/3474085.3475458",
+              "doi-asserted-by": "publisher",
+              "key": "ref31"
+            },
+            {
+              "DOI": "10.1109/tpami.2024.3378708",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "article-title": "Joshi, and Jie Lin",
+              "author": "Liu",
+              "first-page": "4251",
+              "key": "ref33",
+              "volume-title": "Point discriminative learning for data-efficient 3d point cloud analysis. In 2022 International Conference on 3D Vision (3DV)",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.5555/3495724.3497510",
+              "doi-asserted-by": "publisher",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46466-4_5",
+              "doi-asserted-by": "publisher",
+              "key": "ref35"
+            },
+            {
+              "DOI": "10.1109/WACV.2018.00092",
+              "doi-asserted-by": "publisher",
+              "key": "ref36"
+            },
+            {
+              "DOI": "10.1109/CVPR46437.2021.01136",
+              "doi-asserted-by": "publisher",
+              "key": "ref37"
+            },
+            {
+              "article-title": "Mvjar: Masked voxel jigsaw and reconstruction for lidarbased self-supervised pre-training",
+              "author": "Xu",
+              "journal-title": "arXiv preprint",
+              "key": "ref38",
+              "year": "2023"
+            },
+            {
+              "article-title": "Shapenet: An information-rich 3d model repository",
+              "author": "Chang",
+              "journal-title": "arXiv preprint",
+              "key": "ref39",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/CVPR52688.2022.01553",
+              "doi-asserted-by": "publisher",
+              "key": "ref40"
+            },
+            {
+              "DOI": "10.1007/978-1-4842-2766-4",
+              "doi-asserted-by": "publisher",
+              "key": "ref41"
+            },
+            {
+              "article-title": "Adam: A method for stochastic optimization",
+              "author": "Kingma",
+              "journal-title": "arXiv preprint",
+              "key": "ref42",
+              "year": "2014"
+            },
+            {
+              "article-title": "Sgdr: Stochastic gradient descent with warm restarts",
+              "author": "Loshchilov",
+              "journal-title": "arXiv preprint",
+              "key": "ref43",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/CVPR.2015.7298801",
+              "doi-asserted-by": "publisher",
+              "key": "ref44"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00167",
+              "doi-asserted-by": "publisher",
+              "key": "ref45"
+            },
+            {
+              "DOI": "10.1145/2980179.2980238",
+              "doi-asserted-by": "publisher",
+              "key": "ref46"
+            },
+            {
+              "article-title": "Learning a probabilistic latent space of object shapes via 3d generative-adversarial modeling",
+              "author": "Wu",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref47",
+              "volume": "29",
+              "year": "2016"
+            },
+            {
+              "article-title": "Learning representations and generative models for 3d point clouds",
+              "author": "Achlioptas",
+              "first-page": "40",
+              "key": "ref48",
+              "volume-title": "International conference on machine learning",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00979",
+              "doi-asserted-by": "publisher",
+              "key": "ref49"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00029",
+              "doi-asserted-by": "publisher",
+              "key": "ref50"
+            },
+            {
+              "DOI": "10.1007/978-3-030-01234-2_7",
+              "doi-asserted-by": "publisher",
+              "key": "ref51"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00110",
+              "doi-asserted-by": "publisher",
+              "key": "ref52"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018376",
+              "doi-asserted-by": "publisher",
+              "key": "ref53"
+            },
+            {
+              "DOI": "10.1109/iccv48922.2021.00964",
+              "doi-asserted-by": "publisher",
+              "key": "ref54"
+            },
+            {
+              "DOI": "10.1109/iccv.2019.00825",
+              "doi-asserted-by": "publisher",
+              "key": "ref55"
+            },
+            {
+              "article-title": "Self-supervised fewshot learning on point clouds",
+              "author": "Sharma",
+              "first-page": "7212",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref56",
+              "volume": "33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Point discriminative learning for unsupervised representation learning on 3d point clouds",
+              "author": "Liu",
+              "journal-title": "arXiv preprint",
+              "key": "ref57",
+              "year": "2021"
+            }
+          ],
+          "reference-count": 57,
+          "references-count": 57,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/11173442/"
+            }
+          },
+          "score": 40.5707,
+          "source": "Crossref",
+          "title": [
+            "Cross-Modal Contrast with Image Jigsaw for Self-Supervised Representation Learning of 3D Point Clouds"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.2139/ssrn.4162678",
+          "ISSN": [
+            "1556-5068"
+          ],
+          "URL": "https://doi.org/10.2139/ssrn.4162678",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "ZHANG",
+              "given": "YANG",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "HE",
+              "given": "GANG",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "FAN",
+              "given": "SHAN XIAO",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "SSRN Electronic Journal"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                15
+              ]
+            ],
+            "date-time": "2022-07-15T15:13:46Z",
+            "timestamp": 1657898026000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                18
+              ]
+            ],
+            "date-time": "2023-04-18T22:21:48Z",
+            "timestamp": 1681856508000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                19
+              ]
+            ],
+            "date-time": "2023-04-19T04:50:54Z",
+            "timestamp": 1681879854753
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "1556-5068"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "language": "en",
+          "member": "78",
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "published-other": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "DOI": "10.1145/1273496.1273592",
+              "article-title": "Self-taught learning: transfer learning from unlabeled data",
+              "author": "Rajat Raina",
+              "doi-asserted-by": "crossref",
+              "first-page": "759",
+              "journal-title": "Proceedings of the 24th international conference on Machine learning",
+              "key": "ref1",
+              "year": "2007"
+            },
+            {
+              "article-title": "Unsupervised learning of visual representations using videos",
+              "author": "Xiaolong Wang",
+              "first-page": "2794",
+              "journal-title": "Proceedings of the IEEE international conference on computer vision",
+              "key": "ref2",
+              "year": "2015"
+            },
+            {
+              "author": "Tengda Han",
+              "journal-title": "Self-supervised co-training for video representation learning",
+              "key": "ref3",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised feature learning via nonparametric instance discrimination",
+              "author": "Zhirong Wu",
+              "first-page": "3733",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref4",
+              "year": "2018"
+            },
+            {
+              "article-title": "Jing Hao Xue. 2021. 3D-TDC: A 3D temporal dilation convolution framework for video action recognition",
+              "author": "Yue Ming",
+              "journal-title": "Applied Soft Computing",
+              "key": "ref5"
+            },
+            {
+              "author": "Sergey Zagoruyko",
+              "journal-title": "Paying more attention to attention: Improving the performance of convolutional neural networks via attention transfer",
+              "key": "ref6",
+              "year": "2016"
+            },
+            {
+              "article-title": "Noise-contrastive � estimation: A new estimation principle for unnormalized statistical models",
+              "author": "Michael Gutmann",
+              "first-page": "297",
+              "journal-title": "Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics",
+              "key": "ref7",
+              "year": "2020"
+            },
+            {
+              "article-title": "Self-supervised video representation learning with odd-one-out networks",
+              "author": "Basura Fernando",
+              "first-page": "3636",
+              "journal-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+              "key": "ref8",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CVPR.2006.100",
+              "article-title": "Dimensionality reduction by learning an invariant mapping",
+              "author": "Raia Hadsell",
+              "doi-asserted-by": "crossref",
+              "first-page": "1735",
+              "journal-title": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)",
+              "key": "ref9",
+              "volume": "2",
+              "year": "2006"
+            },
+            {
+              "article-title": "Shuffle and learn: unsupervised learning using temporal order verification",
+              "author": "Ishan Misra",
+              "first-page": "527",
+              "journal-title": "European Conference on Computer Vision",
+              "key": "ref10",
+              "year": "2016"
+            },
+            {
+              "article-title": "Slowfast networks for video recognition",
+              "author": "Christoph Feichtenhofer",
+              "first-page": "6202",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref11",
+              "year": "2019"
+            },
+            {
+              "author": "Phillip Isola",
+              "journal-title": "Learning visual groups from cooccurrences in space and time",
+              "key": "ref12",
+              "year": "2015"
+            },
+            {
+              "article-title": "Unsupervised representation learning by sorting sequences",
+              "author": "Hsin-Ying Lee",
+              "journal-title": "Proceedings of the IEEE International Conference on Computer Vision",
+              "key": "ref13",
+              "year": "2017"
+            },
+            {
+              "article-title": "Tracking emerges by colorizing videos",
+              "author": "Carl Vondrick",
+              "first-page": "391",
+              "journal-title": "Proceedings of the European Conference on Computer Vision (ECCV)",
+              "key": "ref14",
+              "year": "2018"
+            },
+            {
+              "article-title": "Evolving losses for unsupervised video representation learning",
+              "author": "Anelia Aj Piergiovanni",
+              "first-page": "133",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref15",
+              "year": "2020"
+            },
+            {
+              "article-title": "Momentum contrast for unsupervised visual representation learning",
+              "author": "Kaiming He",
+              "first-page": "9729",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref16",
+              "year": "2020"
+            },
+            {
+              "author": "Yonglong Tian",
+              "journal-title": "Contrastive multiview coding",
+              "key": "ref17",
+              "year": "2019"
+            },
+            {
+              "article-title": "Data-efficient image recognition with contrastive predictive coding",
+              "author": "Olivier Henaff",
+              "first-page": "4182",
+              "journal-title": "International Conference on Machine Learning",
+              "key": "ref18",
+              "year": "2020"
+            },
+            {
+              "article-title": "Model-agnostic meta-learning for fast adaptation of deep networks",
+              "author": "Chelsea Finn",
+              "first-page": "1126",
+              "journal-title": "International Conference on Machine Learning",
+              "key": "ref19",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1162/neco.2006.18.7.1527",
+              "article-title": "A fast learning algorithm for deep belief nets",
+              "author": "Geoffrey E Hinton",
+              "doi-asserted-by": "crossref",
+              "first-page": "1527",
+              "issue": "7",
+              "journal-title": "Neural computation",
+              "key": "ref20",
+              "volume": "18",
+              "year": "2006"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "Ting Chen",
+              "first-page": "1597",
+              "journal-title": "International conference on machine learning",
+              "key": "ref21",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1126/science.1127647",
+              "article-title": "Reducing the dimensionality of data with neural networks",
+              "author": "Geoffrey E Hinton",
+              "doi-asserted-by": "crossref",
+              "first-page": "504",
+              "issue": "5786",
+              "journal-title": "science",
+              "key": "ref22",
+              "volume": "313",
+              "year": "2006"
+            },
+            {
+              "article-title": "Learning hierarchical invariant spatiotemporal features for action recognition with independent subspace analysis",
+              "author": "Will Y Quoc V Le",
+              "first-page": "3361",
+              "journal-title": "CVPR 2011",
+              "key": "ref23",
+              "year": "2011"
+            },
+            {
+              "article-title": "Efficient sparse coding algorithms",
+              "author": "Honglak Lee",
+              "first-page": "801",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref24",
+              "year": "2007"
+            },
+            {
+              "article-title": "Unsupervised visual representation learning by context prediction",
+              "author": "Carl Doersch",
+              "first-page": "1422",
+              "journal-title": "Proceedings of the IEEE International Conference on Computer Vision",
+              "key": "ref25",
+              "year": "2015"
+            },
+            {
+              "article-title": "Self-supervised learning of pretext-invariant representations",
+              "author": "Ishan Misra",
+              "first-page": "6707",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref26",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised learning of invariant feature hierarchies with applications to object recognition",
+              "author": "Aurelio Marc",
+              "first-page": "1",
+              "journal-title": "2007 IEEE conference on computer vision and pattern recognition",
+              "key": "ref27",
+              "year": "2007"
+            },
+            {
+              "author": "Chen Sun",
+              "journal-title": "Learning video representations using contrastive bidirectional transformer",
+              "key": "ref28",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/1390156.1390294",
+              "article-title": "Extracting and composing robust features with denoising autoencoders",
+              "author": "Pascal Vincent",
+              "doi-asserted-by": "crossref",
+              "first-page": "1096",
+              "journal-title": "Proceedings of the 25th international conference on Machine learning",
+              "key": "ref29",
+              "year": "2008"
+            },
+            {
+              "author": "Adria Recasens",
+              "journal-title": "Broaden your views for self-supervised video learning",
+              "key": "ref30",
+              "year": "2021"
+            },
+            {
+              "article-title": "Learning and using the arrow of time",
+              "author": "Donglai Wei",
+              "first-page": "8052",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref31",
+              "year": "2018"
+            },
+            {
+              "author": "Khurram Soomro",
+              "journal-title": "Ucf101: A dataset of 101 human actions classes from videos in the wild",
+              "key": "ref32",
+              "year": "2012"
+            },
+            {
+              "article-title": "Slow and steady feature analysis: higher order temporal coherence in video",
+              "author": "Dinesh Jayaraman",
+              "first-page": "3852",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref33",
+              "year": "2016"
+            },
+            {
+              "author": "Jue Wang",
+              "journal-title": "Long-short temporal contrastive learning of video transformers",
+              "key": "ref34",
+              "year": "2021"
+            },
+            {
+              "article-title": "Self-supervised spatiotemporal learning via video clip order prediction",
+              "author": "Dejing Xu",
+              "first-page": "10334",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref35",
+              "year": "2019"
+            },
+            {
+              "author": "Aravind Rajeswaran",
+              "journal-title": "Meta-learning with implicit gradients",
+              "key": "ref36",
+              "year": "2019"
+            },
+            {
+              "article-title": "Tsm: Temporal shift module for efficient video understanding",
+              "author": "Ji Lin",
+              "first-page": "7083",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref37",
+              "year": "2019"
+            },
+            {
+              "article-title": "Self-supervised spatio-temporal representation learning for videos by predicting motion and appearance statistics",
+              "author": "Jiangliu Wang",
+              "first-page": "4006",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref38",
+              "year": "2019"
+            },
+            {
+              "article-title": "On human motion prediction using recurrent neural networks",
+              "author": "Julieta Martinez",
+              "first-page": "2891",
+              "journal-title": "CVPR",
+              "key": "ref39",
+              "year": "2017"
+            },
+            {
+              "author": "Devon Hjelm",
+              "journal-title": "Learning deep representations by mutual information estimation and maximization",
+              "key": "ref40",
+              "year": "2018"
+            },
+            {
+              "author": "Josip Michael Tschannen",
+              "journal-title": "Self-supervised learning of video-induced visual invariances",
+              "key": "ref41",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/3394171.3413694",
+              "article-title": "Self-supervised video representation learning using inter-intra contrastive framework",
+              "author": "Li Tao",
+              "doi-asserted-by": "crossref",
+              "first-page": "2193",
+              "journal-title": "Proceedings of the 28th ACM International Conference on Multimedia",
+              "key": "ref42",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/ICCV.2011.6126543",
+              "article-title": "Hmdb: a large video database for human motion recognition",
+              "author": "Hildegard Kuehne",
+              "doi-asserted-by": "crossref",
+              "first-page": "2556",
+              "journal-title": "2011 International conference on computer vision",
+              "key": "ref43",
+              "year": "2011"
+            },
+            {
+              "article-title": "Learning correspondence from the cycle-consistency of time",
+              "author": "Xiaolong Wang",
+              "first-page": "2566",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref44",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018545",
+              "article-title": "Self-supervised video representation learning with space-time cubic puzzles",
+              "author": "Dahun Kim",
+              "doi-asserted-by": "crossref",
+              "first-page": "8545",
+              "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+              "key": "ref45",
+              "volume": "33",
+              "year": "2019"
+            },
+            {
+              "article-title": "Tracking by instance detection: A meta-learning approach",
+              "author": "Guangting Wang",
+              "first-page": "6288",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref46",
+              "year": "2020"
+            },
+            {
+              "author": "Antoine Miech",
+              "key": "ref47",
+              "year": "2020"
+            },
+            {
+              "article-title": "End-to-end learning of visual representations from uncurated instructional videos",
+              "first-page": "9879",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref48"
+            },
+            {
+              "article-title": "Video representation learning by dense predictive coding",
+              "author": "Tengda Han",
+              "first-page": "0",
+              "journal-title": "Proceedings of the IEEE International Conference on Computer Vision Workshops",
+              "key": "ref49",
+              "year": "2019"
+            },
+            {
+              "article-title": "Temporal segment networks: Towards good practices for deep action recognition",
+              "author": "Limin Wang",
+              "first-page": "20",
+              "journal-title": "European conference on computer vision",
+              "key": "ref50",
+              "year": "2016"
+            },
+            {
+              "article-title": "Learning trajectory dependencies for human motion prediction",
+              "author": "Wei Mao",
+              "first-page": "9489",
+              "journal-title": "ICCV",
+              "key": "ref51",
+              "year": "2019"
+            },
+            {
+              "author": "Will Kay",
+              "journal-title": "The kinetics human action video dataset",
+              "key": "ref52",
+              "year": "2017"
+            },
+            {
+              "article-title": "Tpnet: Trajectory proposal network for motion prediction",
+              "author": "Liangji Fang",
+              "first-page": "6797",
+              "journal-title": "CVPR",
+              "key": "ref53",
+              "year": "2020"
+            },
+            {
+              "article-title": "Rethinking spatiotemporal feature learning: Speed-accuracy trade-offs in video classification",
+              "author": "Saining Xie",
+              "first-page": "305",
+              "journal-title": "Proceedings of the European Conference on Computer Vision (ECCV)",
+              "key": "ref54",
+              "year": "2018"
+            },
+            {
+              "article-title": "A closer look at spatiotemporal convolutions for action recognition",
+              "author": "Du Tran",
+              "first-page": "6450",
+              "journal-title": "Proceedings of the IEEE conference on Computer Vision and Pattern Recognition",
+              "key": "ref55",
+              "year": "2018"
+            },
+            {
+              "article-title": "Learning meta face recognition in unseen domains",
+              "author": "Jianzhu Guo",
+              "first-page": "6163",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref56",
+              "year": "2020"
+            },
+            {
+              "article-title": "Recurrent network models for human dynamics",
+              "author": "Katerina Fragkiadaki",
+              "first-page": "4346",
+              "journal-title": "ICCV",
+              "key": "ref57",
+              "year": "2015"
+            },
+            {
+              "article-title": "Can spatiotemporal 3d cnns retrace the history of 2d cnns and imagenet?",
+              "author": "Kensho Hara",
+              "first-page": "6546",
+              "journal-title": "Proceedings of the IEEE conference on Computer Vision and Pattern Recognition",
+              "key": "ref58",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2012.6248074",
+              "article-title": "Are we ready for autonomous driving? the kitti vision benchmark suite",
+              "author": "Andreas Geiger",
+              "doi-asserted-by": "crossref",
+              "first-page": "3354",
+              "journal-title": "2012 IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref59",
+              "year": "2012"
+            },
+            {
+              "author": "Tengda Han",
+              "journal-title": "Memory-augmented dense predictive coding for video representation learning",
+              "key": "ref60",
+              "year": "2020"
+            },
+            {
+              "article-title": "Meta-learning to detect rare objects",
+              "author": "Yu-Xiong Wang",
+              "first-page": "9925",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref61",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1609/aaai.v34i07.6840",
+              "article-title": "Video cloze procedure for self-supervised spatio-temporal learning",
+              "author": "Dezhao Luo",
+              "doi-asserted-by": "crossref",
+              "first-page": "11701",
+              "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+              "key": "ref62",
+              "volume": "34",
+              "year": "2020"
+            },
+            {
+              "article-title": "Future person localization in firstperson videos",
+              "author": "Takuma Yagi",
+              "first-page": "7593",
+              "journal-title": "CVPR",
+              "key": "ref63",
+              "year": "2018"
+            },
+            {
+              "article-title": "Video playback rate perception for selfsupervised spatio-temporal representation learning",
+              "author": "Yuan Yao",
+              "first-page": "6548",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref64",
+              "year": "2020"
+            },
+            {
+              "article-title": "Self-supervised video representation learning by pace prediction",
+              "author": "Jiangliu Wang",
+              "first-page": "504",
+              "journal-title": "European Conference on Computer Vision",
+              "key": "ref65",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised learning of visual representations by solving jigsaw puzzles",
+              "author": "Mehdi Noroozi",
+              "first-page": "69",
+              "journal-title": "European conference on computer vision",
+              "key": "ref66",
+              "year": "2016"
+            },
+            {
+              "article-title": "Speednet: Learning the speediness in videos",
+              "author": "Sagie Benaim",
+              "first-page": "9922",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref67",
+              "year": "2020"
+            },
+            {
+              "article-title": "Quo vadis, action recognition? a new model and the kinetics dataset",
+              "author": "Joao Carreira",
+              "first-page": "6299",
+              "journal-title": "proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref68",
+              "year": "2017"
+            },
+            {
+              "author": "Longlong Jing",
+              "journal-title": "Self-supervised spatiotemporal feature learning via video rotation prediction",
+              "key": "ref69",
+              "year": "2018"
+            },
+            {
+              "author": "Rui Qian",
+              "key": "ref70"
+            },
+            {
+              "journal-title": "Spatiotemporal contrastive video representation learning",
+              "key": "ref71"
+            },
+            {
+              "article-title": "Improving spatiotemporal self-supervision by deep reinforcement learning",
+              "author": "Uta Buchler",
+              "first-page": "770",
+              "journal-title": "Proceedings of the European conference on computer vision (ECCV)",
+              "key": "ref72",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1145/1273496.1273592",
+              "article-title": "Self-taught learning: transfer learning from unlabeled data",
+              "author": "Rajat Raina",
+              "doi-asserted-by": "crossref",
+              "first-page": "759",
+              "journal-title": "Proceedings of the 24th international conference on Machine learning",
+              "key": "ref73",
+              "year": "2007"
+            },
+            {
+              "article-title": "Unsupervised learning of visual representations using videos",
+              "author": "Xiaolong Wang",
+              "first-page": "2794",
+              "journal-title": "Proceedings of the IEEE international conference on computer vision",
+              "key": "ref74",
+              "year": "2015"
+            },
+            {
+              "author": "Tengda Han",
+              "journal-title": "Self-supervised co-training for video representation learning",
+              "key": "ref75",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised feature learning via nonparametric instance discrimination",
+              "author": "Zhirong Wu",
+              "first-page": "3733",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref76",
+              "year": "2018"
+            },
+            {
+              "article-title": "Jing Hao Xue. 2021. 3D-TDC: A 3D temporal dilation convolution framework for video action recognition",
+              "author": "Yue Ming",
+              "journal-title": "Applied Soft Computing",
+              "key": "ref77"
+            },
+            {
+              "author": "Sergey Zagoruyko",
+              "journal-title": "Paying more attention to attention: Improving the performance of convolutional neural networks via attention transfer",
+              "key": "ref78",
+              "year": "2016"
+            },
+            {
+              "article-title": "Noise-contrastive � estimation: A new estimation principle for unnormalized statistical models",
+              "author": "Michael Gutmann",
+              "first-page": "297",
+              "journal-title": "Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics",
+              "key": "ref79",
+              "year": "2020"
+            },
+            {
+              "article-title": "Self-supervised video representation learning with odd-one-out networks",
+              "author": "Basura Fernando",
+              "first-page": "3636",
+              "journal-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+              "key": "ref80",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CVPR.2006.100",
+              "article-title": "Dimensionality reduction by learning an invariant mapping",
+              "author": "Raia Hadsell",
+              "doi-asserted-by": "crossref",
+              "first-page": "1735",
+              "journal-title": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)",
+              "key": "ref81",
+              "volume": "2",
+              "year": "2006"
+            },
+            {
+              "article-title": "Shuffle and learn: unsupervised learning using temporal order verification",
+              "author": "Ishan Misra",
+              "first-page": "527",
+              "journal-title": "European Conference on Computer Vision",
+              "key": "ref82",
+              "year": "2016"
+            },
+            {
+              "article-title": "Slowfast networks for video recognition",
+              "author": "Christoph Feichtenhofer",
+              "first-page": "6202",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref83",
+              "year": "2019"
+            },
+            {
+              "author": "Phillip Isola",
+              "journal-title": "Learning visual groups from cooccurrences in space and time",
+              "key": "ref84",
+              "year": "2015"
+            },
+            {
+              "article-title": "Unsupervised representation learning by sorting sequences",
+              "author": "Hsin-Ying Lee",
+              "journal-title": "Proceedings of the IEEE International Conference on Computer Vision",
+              "key": "ref85",
+              "year": "2017"
+            },
+            {
+              "article-title": "Tracking emerges by colorizing videos",
+              "author": "Carl Vondrick",
+              "first-page": "391",
+              "journal-title": "Proceedings of the European Conference on Computer Vision (ECCV)",
+              "key": "ref86",
+              "year": "2018"
+            },
+            {
+              "article-title": "Evolving losses for unsupervised video representation learning",
+              "author": "Anelia Aj Piergiovanni",
+              "first-page": "133",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref87",
+              "year": "2020"
+            },
+            {
+              "article-title": "Momentum contrast for unsupervised visual representation learning",
+              "author": "Kaiming He",
+              "first-page": "9729",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref88",
+              "year": "2020"
+            },
+            {
+              "author": "Yonglong Tian",
+              "journal-title": "Contrastive multiview coding",
+              "key": "ref89",
+              "year": "2019"
+            },
+            {
+              "article-title": "Data-efficient image recognition with contrastive predictive coding",
+              "author": "Olivier Henaff",
+              "first-page": "4182",
+              "journal-title": "International Conference on Machine Learning",
+              "key": "ref90",
+              "year": "2020"
+            },
+            {
+              "article-title": "Model-agnostic meta-learning for fast adaptation of deep networks",
+              "author": "Chelsea Finn",
+              "first-page": "1126",
+              "journal-title": "International Conference on Machine Learning",
+              "key": "ref91",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1162/neco.2006.18.7.1527",
+              "article-title": "A fast learning algorithm for deep belief nets",
+              "author": "Geoffrey E Hinton",
+              "doi-asserted-by": "crossref",
+              "first-page": "1527",
+              "issue": "7",
+              "journal-title": "Neural computation",
+              "key": "ref92",
+              "volume": "18",
+              "year": "2006"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "Ting Chen",
+              "first-page": "1597",
+              "journal-title": "International conference on machine learning",
+              "key": "ref93",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1126/science.1127647",
+              "article-title": "Reducing the dimensionality of data with neural networks",
+              "author": "Geoffrey E Hinton",
+              "doi-asserted-by": "crossref",
+              "first-page": "504",
+              "issue": "5786",
+              "journal-title": "science",
+              "key": "ref94",
+              "volume": "313",
+              "year": "2006"
+            },
+            {
+              "article-title": "Learning hierarchical invariant spatiotemporal features for action recognition with independent subspace analysis",
+              "author": "Will Y Quoc V Le",
+              "first-page": "3361",
+              "journal-title": "CVPR 2011",
+              "key": "ref95",
+              "year": "2011"
+            },
+            {
+              "article-title": "Efficient sparse coding algorithms",
+              "author": "Honglak Lee",
+              "first-page": "801",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref96",
+              "year": "2007"
+            },
+            {
+              "article-title": "Unsupervised visual representation learning by context prediction",
+              "author": "Carl Doersch",
+              "first-page": "1422",
+              "journal-title": "Proceedings of the IEEE International Conference on Computer Vision",
+              "key": "ref97",
+              "year": "2015"
+            },
+            {
+              "article-title": "Self-supervised learning of pretext-invariant representations",
+              "author": "Ishan Misra",
+              "first-page": "6707",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref98",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised learning of invariant feature hierarchies with applications to object recognition",
+              "author": "Aurelio Marc",
+              "first-page": "1",
+              "journal-title": "2007 IEEE conference on computer vision and pattern recognition",
+              "key": "ref99",
+              "year": "2007"
+            },
+            {
+              "author": "Chen Sun",
+              "journal-title": "Learning video representations using contrastive bidirectional transformer",
+              "key": "ref100",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/1390156.1390294",
+              "article-title": "Extracting and composing robust features with denoising autoencoders",
+              "author": "Pascal Vincent",
+              "doi-asserted-by": "crossref",
+              "first-page": "1096",
+              "journal-title": "Proceedings of the 25th international conference on Machine learning",
+              "key": "ref101",
+              "year": "2008"
+            },
+            {
+              "author": "Adria Recasens",
+              "journal-title": "Broaden your views for self-supervised video learning",
+              "key": "ref102",
+              "year": "2021"
+            },
+            {
+              "article-title": "Learning and using the arrow of time",
+              "author": "Donglai Wei",
+              "first-page": "8052",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref103",
+              "year": "2018"
+            },
+            {
+              "author": "Khurram Soomro",
+              "journal-title": "Ucf101: A dataset of 101 human actions classes from videos in the wild",
+              "key": "ref104",
+              "year": "2012"
+            },
+            {
+              "article-title": "Slow and steady feature analysis: higher order temporal coherence in video",
+              "author": "Dinesh Jayaraman",
+              "first-page": "3852",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref105",
+              "year": "2016"
+            },
+            {
+              "author": "Jue Wang",
+              "journal-title": "Long-short temporal contrastive learning of video transformers",
+              "key": "ref106",
+              "year": "2021"
+            },
+            {
+              "article-title": "Self-supervised spatiotemporal learning via video clip order prediction",
+              "author": "Dejing Xu",
+              "first-page": "10334",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref107",
+              "year": "2019"
+            },
+            {
+              "author": "Aravind Rajeswaran",
+              "journal-title": "Meta-learning with implicit gradients",
+              "key": "ref108",
+              "year": "2019"
+            },
+            {
+              "article-title": "Tsm: Temporal shift module for efficient video understanding",
+              "author": "Ji Lin",
+              "first-page": "7083",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref109",
+              "year": "2019"
+            },
+            {
+              "article-title": "Self-supervised spatio-temporal representation learning for videos by predicting motion and appearance statistics",
+              "author": "Jiangliu Wang",
+              "first-page": "4006",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref110",
+              "year": "2019"
+            },
+            {
+              "article-title": "On human motion prediction using recurrent neural networks",
+              "author": "Julieta Martinez",
+              "first-page": "2891",
+              "journal-title": "CVPR",
+              "key": "ref111",
+              "year": "2017"
+            },
+            {
+              "author": "Devon Hjelm",
+              "journal-title": "Learning deep representations by mutual information estimation and maximization",
+              "key": "ref112",
+              "year": "2018"
+            },
+            {
+              "author": "Josip Michael Tschannen",
+              "journal-title": "Self-supervised learning of video-induced visual invariances",
+              "key": "ref113",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/3394171.3413694",
+              "article-title": "Self-supervised video representation learning using inter-intra contrastive framework",
+              "author": "Li Tao",
+              "doi-asserted-by": "crossref",
+              "first-page": "2193",
+              "journal-title": "Proceedings of the 28th ACM International Conference on Multimedia",
+              "key": "ref114",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/ICCV.2011.6126543",
+              "article-title": "Hmdb: a large video database for human motion recognition",
+              "author": "Hildegard Kuehne",
+              "doi-asserted-by": "crossref",
+              "first-page": "2556",
+              "journal-title": "2011 International conference on computer vision",
+              "key": "ref115",
+              "year": "2011"
+            },
+            {
+              "article-title": "Learning correspondence from the cycle-consistency of time",
+              "author": "Xiaolong Wang",
+              "first-page": "2566",
+              "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref116",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018545",
+              "article-title": "Self-supervised video representation learning with space-time cubic puzzles",
+              "author": "Dahun Kim",
+              "doi-asserted-by": "crossref",
+              "first-page": "8545",
+              "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+              "key": "ref117",
+              "volume": "33",
+              "year": "2019"
+            },
+            {
+              "article-title": "Tracking by instance detection: A meta-learning approach",
+              "author": "Guangting Wang",
+              "first-page": "6288",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref118",
+              "year": "2020"
+            },
+            {
+              "author": "Antoine Miech",
+              "key": "ref119",
+              "year": "2020"
+            },
+            {
+              "article-title": "End-to-end learning of visual representations from uncurated instructional videos",
+              "first-page": "9879",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref120"
+            },
+            {
+              "article-title": "Video representation learning by dense predictive coding",
+              "author": "Tengda Han",
+              "first-page": "0",
+              "journal-title": "Proceedings of the IEEE International Conference on Computer Vision Workshops",
+              "key": "ref121",
+              "year": "2019"
+            },
+            {
+              "article-title": "Temporal segment networks: Towards good practices for deep action recognition",
+              "author": "Limin Wang",
+              "first-page": "20",
+              "journal-title": "European conference on computer vision",
+              "key": "ref122",
+              "year": "2016"
+            },
+            {
+              "article-title": "Learning trajectory dependencies for human motion prediction",
+              "author": "Wei Mao",
+              "first-page": "9489",
+              "journal-title": "ICCV",
+              "key": "ref123",
+              "year": "2019"
+            },
+            {
+              "author": "Will Kay",
+              "journal-title": "The kinetics human action video dataset",
+              "key": "ref124",
+              "year": "2017"
+            },
+            {
+              "article-title": "Tpnet: Trajectory proposal network for motion prediction",
+              "author": "Liangji Fang",
+              "first-page": "6797",
+              "journal-title": "CVPR",
+              "key": "ref125",
+              "year": "2020"
+            },
+            {
+              "article-title": "Rethinking spatiotemporal feature learning: Speed-accuracy trade-offs in video classification",
+              "author": "Saining Xie",
+              "first-page": "305",
+              "journal-title": "Proceedings of the European Conference on Computer Vision (ECCV)",
+              "key": "ref126",
+              "year": "2018"
+            },
+            {
+              "article-title": "A closer look at spatiotemporal convolutions for action recognition",
+              "author": "Du Tran",
+              "first-page": "6450",
+              "journal-title": "Proceedings of the IEEE conference on Computer Vision and Pattern Recognition",
+              "key": "ref127",
+              "year": "2018"
+            },
+            {
+              "article-title": "Learning meta face recognition in unseen domains",
+              "author": "Jianzhu Guo",
+              "first-page": "6163",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref128",
+              "year": "2020"
+            },
+            {
+              "article-title": "Recurrent network models for human dynamics",
+              "author": "Katerina Fragkiadaki",
+              "first-page": "4346",
+              "journal-title": "ICCV",
+              "key": "ref129",
+              "year": "2015"
+            },
+            {
+              "article-title": "Can spatiotemporal 3d cnns retrace the history of 2d cnns and imagenet?",
+              "author": "Kensho Hara",
+              "first-page": "6546",
+              "journal-title": "Proceedings of the IEEE conference on Computer Vision and Pattern Recognition",
+              "key": "ref130",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2012.6248074",
+              "article-title": "Are we ready for autonomous driving? the kitti vision benchmark suite",
+              "author": "Andreas Geiger",
+              "doi-asserted-by": "crossref",
+              "first-page": "3354",
+              "journal-title": "2012 IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref131",
+              "year": "2012"
+            },
+            {
+              "author": "Tengda Han",
+              "journal-title": "Memory-augmented dense predictive coding for video representation learning",
+              "key": "ref132",
+              "year": "2020"
+            },
+            {
+              "article-title": "Meta-learning to detect rare objects",
+              "author": "Yu-Xiong Wang",
+              "first-page": "9925",
+              "journal-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+              "key": "ref133",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1609/aaai.v34i07.6840",
+              "article-title": "Video cloze procedure for self-supervised spatio-temporal learning",
+              "author": "Dezhao Luo",
+              "doi-asserted-by": "crossref",
+              "first-page": "11701",
+              "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+              "key": "ref134",
+              "volume": "34",
+              "year": "2020"
+            },
+            {
+              "article-title": "Future person localization in firstperson videos",
+              "author": "Takuma Yagi",
+              "first-page": "7593",
+              "journal-title": "CVPR",
+              "key": "ref135",
+              "year": "2018"
+            },
+            {
+              "article-title": "Video playback rate perception for selfsupervised spatio-temporal representation learning",
+              "author": "Yuan Yao",
+              "first-page": "6548",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref136",
+              "year": "2020"
+            },
+            {
+              "article-title": "Self-supervised video representation learning by pace prediction",
+              "author": "Jiangliu Wang",
+              "first-page": "504",
+              "journal-title": "European Conference on Computer Vision",
+              "key": "ref137",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised learning of visual representations by solving jigsaw puzzles",
+              "author": "Mehdi Noroozi",
+              "first-page": "69",
+              "journal-title": "European conference on computer vision",
+              "key": "ref138",
+              "year": "2016"
+            },
+            {
+              "article-title": "Speednet: Learning the speediness in videos",
+              "author": "Sagie Benaim",
+              "first-page": "9922",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref139",
+              "year": "2020"
+            },
+            {
+              "article-title": "Quo vadis, action recognition? a new model and the kinetics dataset",
+              "author": "Joao Carreira",
+              "first-page": "6299",
+              "journal-title": "proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+              "key": "ref140",
+              "year": "2017"
+            },
+            {
+              "author": "Longlong Jing",
+              "journal-title": "Self-supervised spatiotemporal feature learning via video rotation prediction",
+              "key": "ref141",
+              "year": "2018"
+            },
+            {
+              "author": "Rui Qian",
+              "key": "ref142"
+            },
+            {
+              "journal-title": "Spatiotemporal contrastive video representation learning",
+              "key": "ref143"
+            },
+            {
+              "article-title": "Improving spatiotemporal self-supervision by deep reinforcement learning",
+              "author": "Uta Buchler",
+              "first-page": "770",
+              "journal-title": "Proceedings of the European conference on computer vision (ECCV)",
+              "key": "ref144",
+              "year": "2018"
+            }
+          ],
+          "reference-count": 144,
+          "references-count": 144,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4162678"
+            }
+          },
+          "score": 40.35988,
+          "short-container-title": [
+            "SSRN Journal"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Meta-Contrast Self-Supervised Video Representation Learning Based on Multi-Task Spatio-Temporal Representation Fusion and Scale Decoupling"
+          ],
+          "type": "journal-article"
+        },
+        {
+          "DOI": "10.1109/3dv53792.2021.00102",
+          "URL": "https://doi.org/10.1109/3dv53792.2021.00102",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Boulch",
+              "given": "Alexandre",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Langlois",
+              "given": "Pierre-Alain",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Puy",
+              "given": "Gilles",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Marlet",
+              "given": "Renaud",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2021 International Conference on 3D Vision (3DV)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                6
+              ]
+            ],
+            "date-time": "2022-01-06T20:33:42Z",
+            "timestamp": 1641501222000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                10
+              ]
+            ],
+            "date-time": "2022-05-10T16:57:00Z",
+            "timestamp": 1652201820000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2021,
+                  12,
+                  3
+                ]
+              ]
+            },
+            "location": "London, United Kingdom",
+            "name": "2021 International Conference on 3D Vision (3DV)",
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  12,
+                  1
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                24
+              ]
+            ],
+            "date-time": "2026-06-24T16:22:45Z",
+            "timestamp": 1782318165909,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 16,
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                12
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    12,
+                    1
+                  ]
+                ],
+                "date-time": "2021-12-01T00:00:00Z",
+                "timestamp": 1638316800000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    12,
+                    1
+                  ]
+                ],
+                "date-time": "2021-12-01T00:00:00Z",
+                "timestamp": 1638316800000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    12,
+                    1
+                  ]
+                ],
+                "date-time": "2021-12-01T00:00:00Z",
+                "timestamp": 1638316800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/9665713/9665818/09665876.pdf?arnumber=9665876",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "940-950",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                12
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                12
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1109/CVPR46437.2021.01287",
+              "doi-asserted-by": "publisher",
+              "key": "ref39"
+            },
+            {
+              "article-title": "Adam: A method for stochastic optimization",
+              "author": "kingma",
+              "journal-title": "International Conference on Learning Representations",
+              "key": "ref38",
+              "year": "2015"
+            },
+            {
+              "article-title": "Unsupervised learning of shape and pose with differentiable point clouds",
+              "author": "insafutdinov",
+              "journal-title": "arXivpreprint arXiv 1810 09381",
+              "key": "ref33",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/3DV.2017.00054",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "article-title": "A papier-m&#x00E2;ch&#x00E9; approach to learning 3d surface generation",
+              "author": "groueix",
+              "first-page": "216",
+              "journal-title": "In IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "key": "ref31",
+              "year": "2018"
+            },
+            {
+              "article-title": "3D-CODED: 3D correspondences by deep deformation",
+              "author": "groueix",
+              "journal-title": "In European Conference on Computer Vision (ECCV)",
+              "key": "ref30",
+              "year": "2018"
+            },
+            {
+              "article-title": "Poisson surface reconstruction",
+              "author": "kazhdan",
+              "journal-title": "In Proceedings of the fourth Eurographics symposium on Geometry processing",
+              "key": "ref37",
+              "volume": "7",
+              "year": "2006"
+            },
+            {
+              "article-title": "Learning a multi-view stereo machine",
+              "author": "kar",
+              "first-page": "364",
+              "journal-title": "In Proceedings of the 31st International Conference on Neural Information Processing Systems",
+              "key": "ref36",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00604",
+              "doi-asserted-by": "publisher",
+              "key": "ref35"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.253",
+              "doi-asserted-by": "publisher",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.230",
+              "doi-asserted-by": "publisher",
+              "key": "ref60"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.160",
+              "doi-asserted-by": "publisher",
+              "key": "ref62"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00651",
+              "doi-asserted-by": "publisher",
+              "key": "ref61"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.30",
+              "doi-asserted-by": "publisher",
+              "key": "ref63"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00961",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "article-title": "Global-to-local generative model for 3d shapes",
+              "author": "wang",
+              "first-page": "1",
+              "journal-title": "ACM Transactions on Graphics (TOG)",
+              "key": "ref64",
+              "volume": "37",
+              "year": "2018"
+            },
+            {
+              "article-title": "Spatially-sparse convolutional neural networks",
+              "author": "graham",
+              "journal-title": "arXivpreprint arXiv 1409 6070",
+              "key": "ref27",
+              "year": "2014"
+            },
+            {
+              "article-title": "Pixel2mesh: Generating 3d mesh models from single rgb images",
+              "author": "wang",
+              "first-page": "52",
+              "journal-title": "In Proceedings of the European Conference on Computer Vision (ECCV)",
+              "key": "ref65",
+              "year": "2018"
+            },
+            {
+              "article-title": "3D ShapeNets: A deep representation for volumetric shapes",
+              "author": "wu",
+              "first-page": "1912",
+              "journal-title": "In IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "key": "ref66",
+              "year": "2015"
+            },
+            {
+              "article-title": "Implicit geometric regularization for learning shapes",
+              "author": "gropp",
+              "first-page": "3789",
+              "journal-title": "In International Conference on Machine Learning",
+              "key": "ref29",
+              "year": "2020"
+            },
+            {
+              "article-title": "DISN: Deep implicit surface network for high-quality single-view 3D reconstruction",
+              "author": "xu",
+              "journal-title": "In Advances in Neural Information Processing Systems",
+              "key": "ref67",
+              "volume": "32",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00464",
+              "doi-asserted-by": "publisher",
+              "key": "ref68"
+            },
+            {
+              "article-title": "Complete & label: A domain adaptation approach to semantic segmentation of lidar point clouds",
+              "author": "yi",
+              "journal-title": "arXiv preprint arXiv 2007 09948",
+              "key": "ref69",
+              "year": "2020"
+            },
+            {
+              "article-title": "Sald: Sign agnostic learning with derivatives",
+              "author": "atzmon",
+              "journal-title": "In International Conference on Learning Representations",
+              "key": "ref2",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00264",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "article-title": "Convolutional neural networks on graphs with fast localized spectral filtering",
+              "author": "defferrard",
+              "first-page": "3844",
+              "journal-title": "In Proceedings of the 30th International Conference on Neural Information Processing Systems",
+              "key": "ref20",
+              "year": "2016"
+            },
+            {
+              "article-title": "Adversarially learned inference",
+              "author": "dumoulin",
+              "journal-title": "International Conference on Learning Representations",
+              "key": "ref22",
+              "year": "2017"
+            },
+            {
+              "article-title": "Nasa: Neural articulated shape approximation",
+              "author": "deng",
+              "first-page": "612",
+              "journal-title": "16th European Conference on Computer Vision",
+              "key": "ref21",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018279",
+              "doi-asserted-by": "publisher",
+              "key": "ref24"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.264",
+              "doi-asserted-by": "publisher",
+              "key": "ref23"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00988",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00491",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00797",
+              "doi-asserted-by": "publisher",
+              "key": "ref50"
+            },
+            {
+              "article-title": "PointNet: Deep learning on point sets for 3D classification and segmentation",
+              "author": "qi",
+              "journal-title": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+              "key": "ref51",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00209",
+              "doi-asserted-by": "publisher",
+              "key": "ref59"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.28",
+              "doi-asserted-by": "publisher",
+              "key": "ref58"
+            },
+            {
+              "DOI": "10.1109/3DV.2017.00017",
+              "doi-asserted-by": "publisher",
+              "key": "ref57"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.701",
+              "doi-asserted-by": "publisher",
+              "key": "ref56"
+            },
+            {
+              "article-title": "Unsupervised learning of 3d structure from images",
+              "author": "rezende",
+              "journal-title": "In NIPS",
+              "key": "ref55",
+              "year": "2016"
+            },
+            {
+              "article-title": "Generating 3d faces using convolutional mesh autoencoders",
+              "author": "ranjan",
+              "first-page": "704",
+              "journal-title": "In Proceedings of the European Conference on Computer Vision (ECCV)",
+              "key": "ref54",
+              "year": "2018"
+            },
+            {
+              "article-title": "PointNet++: Deep hierarchical feature learning on point sets in a metric space",
+              "author": "qi",
+              "first-page": "5105",
+              "journal-title": "In Advances in neural information processing systems (NeurIPS)",
+              "key": "ref53",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.609",
+              "doi-asserted-by": "publisher",
+              "key": "ref52"
+            },
+            {
+              "article-title": "Shapenet: An information-rich 3d model repository",
+              "author": "chang",
+              "journal-title": "arXiv preprint arXiv 1512 00327",
+              "key": "ref10",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00609",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.420",
+              "doi-asserted-by": "publisher",
+              "key": "ref40"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00700",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "article-title": "Neural unsigned distance fields for implicit function learning",
+              "author": "chibane",
+              "journal-title": "In Advances in neural information processing systems (NeurIPS)",
+              "key": "ref13",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00319",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "article-title": "3D-R2N2: A unified approach for single and multi-view 3D object reconstruction",
+              "author": "choy",
+              "first-page": "628",
+              "journal-title": "in European Conference on Computer Vision",
+              "key": "ref15",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1145/237170.237269",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00572",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.693",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "article-title": "Modulating early visual processing by language",
+              "author": "vries",
+              "first-page": "6597",
+              "journal-title": "In 31st International Conference on Advances in Neural Information Processing Systems (NeurIPS)",
+              "key": "ref19",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/2945.817351",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1111/cgf.12802",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "article-title": "Fkaconv: Feature-kernel alignment for point cloud convolution",
+              "author": "boulch",
+              "journal-title": "In Proceedings of the Asian Conference on Computer Vision",
+              "key": "ref6",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.591",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1007/978-3-030-58580-8_22",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1109/MSP.2017.2693418",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1145/2766993",
+              "doi-asserted-by": "publisher",
+              "key": "ref49"
+            },
+            {
+              "DOI": "10.1016/j.cagd.2004.09.004",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00459",
+              "doi-asserted-by": "publisher",
+              "key": "ref46"
+            },
+            {
+              "DOI": "10.1109/IROS.2015.7353481",
+              "doi-asserted-by": "publisher",
+              "key": "ref45"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00025",
+              "doi-asserted-by": "publisher",
+              "key": "ref48"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00484",
+              "doi-asserted-by": "publisher",
+              "key": "ref47"
+            },
+            {
+              "article-title": "PointCNN: Convolution on X-transformed points",
+              "author": "li",
+              "first-page": "820",
+              "journal-title": "In Advances in neural information processing systems (NeurIPS)",
+              "key": "ref42",
+              "year": "2018"
+            },
+            {
+              "author": "leclerc",
+              "journal-title": "Suppl&#x00E9;ment &#x00E0; l&#x2019;Histoire Naturelle",
+              "key": "ref41",
+              "volume": "4",
+              "year": "1777"
+            },
+            {
+              "DOI": "10.1145/37402.37422",
+              "doi-asserted-by": "publisher",
+              "key": "ref44"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00308",
+              "doi-asserted-by": "publisher",
+              "key": "ref43"
+            }
+          ],
+          "reference-count": 69,
+          "references-count": 69,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/9665876/"
+            }
+          },
+          "score": 40.268036,
+          "source": "Crossref",
+          "title": [
+            "NeeDrop: Self-supervised Shape Representation from Sparse Point Clouds using Needle Dropping"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.2139/ssrn.4259822",
+          "ISSN": [
+            "1556-5068"
+          ],
+          "URL": "https://doi.org/10.2139/ssrn.4259822",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Lu",
+              "given": "Zhuheng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Dai",
+              "given": "Yuewei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "li",
+              "given": "weiqing",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "su",
+              "given": "zhiyong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "SSRN Electronic Journal"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                29
+              ]
+            ],
+            "date-time": "2022-10-29T00:01:38Z",
+            "timestamp": 1667001698000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                29
+              ]
+            ],
+            "date-time": "2022-10-29T00:02:58Z",
+            "timestamp": 1667001778000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                29
+              ]
+            ],
+            "date-time": "2022-10-29T05:06:47Z",
+            "timestamp": 1667020007259
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "1556-5068"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "language": "en",
+          "member": "78",
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "published-other": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4259822"
+            }
+          },
+          "score": 39.596367,
+          "short-container-title": [
+            "SSRN Journal"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Joint Data and Feature Augmentation for Self-Supervised Representation Learning on Point Clouds"
+          ],
+          "type": "journal-article"
+        },
+        {
+          "DOI": "10.1007/s13534-023-00329-0",
+          "ISSN": [
+            "2093-9868",
+            "2093-985X"
+          ],
+          "URL": "https://doi.org/10.1007/s13534-023-00329-0",
+          "alternative-id": [
+            "329"
+          ],
+          "assertion": [
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Received",
+              "name": "received",
+              "order": 1,
+              "value": "3 July 2023"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Revised",
+              "name": "revised",
+              "order": 2,
+              "value": "8 September 2023"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Accepted",
+              "name": "accepted",
+              "order": 3,
+              "value": "26 September 2023"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "First Online",
+              "name": "first_online",
+              "order": 4,
+              "value": "15 October 2023"
+            },
+            {
+              "group": {
+                "label": "Declarations",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 1
+            },
+            {
+              "group": {
+                "label": "Competing interest",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 2,
+              "value": "The authors have no relevant financial or non-financial interests to disclose."
+            },
+            {
+              "group": {
+                "label": "Ethical approval",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 3,
+              "value": "Not required."
+            },
+            {
+              "group": {
+                "label": "Consent to participate",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 4,
+              "value": "Not applicable."
+            },
+            {
+              "group": {
+                "label": "Consent to publish",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 5,
+              "value": "Nothing to obtain consent to publish"
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Ran",
+              "given": "Ao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Liu",
+              "given": "Huafeng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Biomedical Engineering Letters"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "link.springer.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                15
+              ]
+            ],
+            "date-time": "2023-10-15T06:01:31Z",
+            "timestamp": 1697349691000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                2,
+                17
+              ]
+            ],
+            "date-time": "2024-02-17T17:04:39Z",
+            "timestamp": 1708189479000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "U1809204"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "U1809204"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            },
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "61525106"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "61525106"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            },
+            {
+              "award": [
+                "2021R51004"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2021R51004"
+                  ]
+                }
+              ],
+              "name": "Talent Program of Zhejiang Province"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                11
+              ]
+            ],
+            "date-time": "2026-07-11T03:25:24Z",
+            "timestamp": 1783740324111,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 4,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "2093-9868"
+            },
+            {
+              "type": "electronic",
+              "value": "2093-985X"
+            }
+          ],
+          "issue": "2",
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                15
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "2",
+            "published-print": {
+              "date-parts": [
+                [
+                  2024,
+                  3
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    10,
+                    15
+                  ]
+                ],
+                "date-time": "2023-10-15T00:00:00Z",
+                "timestamp": 1697328000000
+              }
+            },
+            {
+              "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    10,
+                    15
+                  ]
+                ],
+                "date-time": "2023-10-15T00:00:00Z",
+                "timestamp": 1697328000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/s13534-023-00329-0.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/article/10.1007/s13534-023-00329-0/fulltext.html",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/s13534-023-00329-0.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "page": "209-220",
+          "prefix": "10.1007",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                15
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                15
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                3
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference": [
+            {
+              "DOI": "10.1038/s41591-018-0268-3",
+              "author": "AY Hannun",
+              "doi-asserted-by": "publisher",
+              "first-page": "65",
+              "issue": "1",
+              "journal-title": "Nat Med",
+              "key": "329_CR1",
+              "unstructured": "Hannun AY, Rajpurkar P, Haghpanahi M, Tison GH, Bourn C, Turakhia MP, Ng AY. Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network. Nat Med. 2019;25(1):65–9.",
+              "volume": "25",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1038/s41467-019-13993-7",
+              "author": "AH Ribeiro",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "issue": "1",
+              "journal-title": "Nat Commun",
+              "key": "329_CR2",
+              "unstructured": "Ribeiro AH, Ribeiro MH, Paixão GM, Oliveira DM, Gomes PR, Canazart JA, Ferreira MP, Andersson CR, Macfarlane PW, Meira W Jr, et al. Automatic diagnosis of the 12-lead ECG using a deep neural network. Nat Commun. 2020;11(1):1–9.",
+              "volume": "11",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/TBME.2021.3135622",
+              "author": "J Malik",
+              "doi-asserted-by": "publisher",
+              "first-page": "1788",
+              "issue": "5",
+              "journal-title": "IEEE Trans Biomed Eng",
+              "key": "329_CR3",
+              "unstructured": "Malik J, Devecioglu OC, Kiranyaz S, Ince T, Gabbouj M. Real-time patient-specific ECG classification by 1d self-operational neural networks. IEEE Trans Biomed Eng. 2021;69(5):1788–801.",
+              "volume": "69",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1007/s00530-020-00728-8",
+              "author": "M Hammad",
+              "doi-asserted-by": "publisher",
+              "first-page": "1373",
+              "issue": "4",
+              "journal-title": "Multimedia Syst",
+              "key": "329_CR4",
+              "unstructured": "Hammad M, Alkinani MH, Gupta B, El-Latif A, Ahmed A. Myocardial infarction detection based on deep neural network on imbalanced data. Multimedia Syst. 2022;28(4):1373–85.",
+              "volume": "28",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1016/j.patrec.2020.07.007",
+              "doi-asserted-by": "publisher",
+              "key": "329_CR5",
+              "unstructured": "Mu L, Liu H. Noninvasive electrocardiographic imaging with low-rank and non-local total variation regularization. Pattern Recognit Lett. 2020;138:106–114. https://doi.org/10.1016/j.patrec.2020.07.007."
+            },
+            {
+              "DOI": "10.1016/j.patrec.2018.03.028",
+              "author": "RD Labati",
+              "doi-asserted-by": "publisher",
+              "first-page": "78",
+              "journal-title": "Pattern Recogn Lett",
+              "key": "329_CR6",
+              "unstructured": "Labati RD, Muñoz E, Piuri V, Sassi R, Scotti F. Deep-ECG: convolutional neural networks for ECG biometric recognition. Pattern Recogn Lett. 2019;126:78–85.",
+              "volume": "126",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1016/j.neucom.2020.01.019",
+              "author": "Y Li",
+              "doi-asserted-by": "publisher",
+              "first-page": "83",
+              "journal-title": "Neurocomputing",
+              "key": "329_CR7",
+              "unstructured": "Li Y, Pang Y, Wang K, Li X. Toward improving ECG biometric identification using cascaded convolutional neural networks. Neurocomputing. 2020;391:83–95.",
+              "volume": "391",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2021.102689",
+              "author": "Y Zhang",
+              "doi-asserted-by": "publisher",
+              "first-page": "102689",
+              "journal-title": "Biomed Signal Process Control",
+              "key": "329_CR8",
+              "unstructured": "Zhang Y, Zhao Z, Deng Y, Zhang X, Zhang Y. Human identification driven by deep CNN and transfer learning based on multiview feature representations of ECG. Biomed Signal Process Control. 2021;68:102689.",
+              "volume": "68",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2022.104439",
+              "author": "DV Puri",
+              "doi-asserted-by": "publisher",
+              "first-page": "104439",
+              "journal-title": "Biomed Signal Process Control",
+              "key": "329_CR9",
+              "unstructured": "Puri DV, Nalbalwar SL, Nandgaonkar AB, Gawande JP, Wagh A. Automatic detection of Alzheimer’s disease from EEG signals using low-complexity orthogonal wavelet filter banks. Biomed Signal Process Control. 2023;81:104439. https://doi.org/10.1016/j.bspc.2022.104439.",
+              "volume": "81",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2021.103275",
+              "author": "A Rasti-Meymandi",
+              "doi-asserted-by": "publisher",
+              "first-page": "103275",
+              "journal-title": "Biomed Signal Process Control",
+              "key": "329_CR10",
+              "unstructured": "Rasti-Meymandi A, Ghaffari A. A deep learning-based framework For ECG signal denoising based on stacked cardiac cycle tensor. Biomed Signal Process Control. 2022;71:103275.",
+              "volume": "71",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1155/2021/5527904",
+              "author": "B Xu",
+              "doi-asserted-by": "publisher",
+              "first-page": "69",
+              "journal-title": "Comput Math Methods Med",
+              "key": "329_CR11",
+              "unstructured": "Xu B, Liu R, Shu M, Shang X, Wang Y. An ECG denoising method based on the generative adversarial residual network. Comput Math Methods Med. 2021;2021:69.",
+              "volume": "2021",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1007/978-981-10-1678-3_5",
+              "author": "YV Parkale",
+              "doi-asserted-by": "publisher",
+              "first-page": "53",
+              "journal-title": "Science",
+              "key": "329_CR12",
+              "unstructured": "Parkale YV, Nalbalwar SL. Application of compressed sensing (CS) for ECG signal compression: a review. Science. 2017;6:53–65. https://doi.org/10.1007/978-981-10-1678-3_5.",
+              "volume": "6",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/JBHI.2021.3085318",
+              "author": "Y Zhang",
+              "doi-asserted-by": "publisher",
+              "first-page": "4175",
+              "issue": "11",
+              "journal-title": "IEEE J Biomed Health Inform",
+              "key": "329_CR13",
+              "unstructured": "Zhang Y, Li J, Wei S, Zhou F, Li D. Heartbeats classification using hybrid time-frequency analysis and transfer learning based on ResNet. IEEE J Biomed Health Inform. 2021;25(11):4175–84.",
+              "volume": "25",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1088/1361-6579/aad9ed",
+              "author": "Z Xiong",
+              "doi-asserted-by": "publisher",
+              "first-page": "094006",
+              "issue": "9",
+              "journal-title": "Physiol Meas",
+              "key": "329_CR14",
+              "unstructured": "Xiong Z, Nash MP, Cheng E, Fedorov VV, Stiles MK, Zhao J. ECG signal classification for the detection of cardiac arrhythmias using a convolutional recurrent neural network. Physiol Meas. 2018;39(9):094006.",
+              "volume": "39",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2021.106024",
+              "author": "P Xiong",
+              "doi-asserted-by": "publisher",
+              "first-page": "106024",
+              "journal-title": "Comput Methods Programs Biomed",
+              "key": "329_CR15",
+              "unstructured": "Xiong P, Xue Y, Zhang J, Liu M, Du H, Zhang H, Hou Z, Wang H, Liu X. Localization of myocardial infarction with multi-lead ECG based on DenseNet. Comput Methods Programs Biomed. 2021;203:106024.",
+              "volume": "203",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2018.03.016",
+              "author": "Ö Yildirim",
+              "doi-asserted-by": "publisher",
+              "first-page": "189",
+              "journal-title": "Comput Biol Med",
+              "key": "329_CR16",
+              "unstructured": "Yildirim Ö. A novel wavelet sequence based on deep bidirectional LSTM network model for ECG signal classification. Comput Biol Med. 2018;96:189–202.",
+              "volume": "96",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/j.artmed.2020.101856",
+              "author": "J Zhang",
+              "doi-asserted-by": "publisher",
+              "first-page": "101856",
+              "journal-title": "Artif Intell Med",
+              "key": "329_CR17",
+              "unstructured": "Zhang J, Liu A, Gao M, Chen X, Zhang X, Chen X. ECG-based multi-class arrhythmia detection using spatio-temporal attention-based convolutional recurrent neural network. Artif Intell Med. 2020;106:101856.",
+              "volume": "106",
+              "year": "2020"
+            },
+            {
+              "key": "329_CR18",
+              "unstructured": "Kenton J.D.M.-W.C, Toutanova L.K. Bert: Pre-training of deep bidirectional transformers for language understanding. In: Proceedings of naacL-HLT, 2019; pp. 4171–4186."
+            },
+            {
+              "author": "W-N Hsu",
+              "first-page": "3451",
+              "journal-title": "Science",
+              "key": "329_CR19",
+              "unstructured": "Hsu W-N, Bolte B, Tsai Y-HH, Lakhotia K, Salakhutdinov R, Mohamed AI. Transactions on audio, speech, and language processing. Science. 2021;29:3451–60.",
+              "volume": "29",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.21437/Interspeech.2019-1873",
+              "doi-asserted-by": "crossref",
+              "key": "329_CR20",
+              "unstructured": "Schneider S, Baevski A, Collobert R, Auli M. wav2vec: Unsupervised Pre-Training for Speech Recognition. In: INTERSPEECH 2019."
+            },
+            {
+              "key": "329_CR21",
+              "unstructured": "Chen T, Kornblith S, Norouzi M, Hinton G. A simple framework for contrastive learning of visual representations. In: International Conference on Machine Learning, 2020; pp. 1597–1607. PMLR"
+            },
+            {
+              "DOI": "10.1109/CVPR52688.2022.01553",
+              "doi-asserted-by": "crossref",
+              "key": "329_CR22",
+              "unstructured": "He K, Chen X, Xie S, Li Y, Dollár P, Girshick R. Masked autoencoders are scalable vision learners. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022; pp. 16000–16009."
+            },
+            {
+              "author": "P Sarkar",
+              "first-page": "96",
+              "journal-title": "IEEE Trans Affect Comput",
+              "key": "329_CR23",
+              "unstructured": "Sarkar P, Etemad A. Self-supervised ECG representation learning for emotion recognition. IEEE Trans Affect Comput. 2020;2:96.",
+              "volume": "2",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2022.104194",
+              "author": "W Zhang",
+              "doi-asserted-by": "publisher",
+              "first-page": "104194",
+              "journal-title": "Biomed Signal Process Control",
+              "key": "329_CR24",
+              "unstructured": "Zhang W, Geng S, Hong S. A simple self-supervised ECG representation learning method via manipulated temporal-spatial reverse detection. Biomed Signal Process Control. 2023;79:104194.",
+              "volume": "79",
+              "year": "2023"
+            },
+            {
+              "key": "329_CR25",
+              "unstructured": "Kiyasseh D, Zhu T, Clifton D.A. Clocs: Contrastive learning of cardiac signals across space, time, and patients. In: International Conference on Machine Learning, 2021; pp. 5606–5615. PMLR"
+            },
+            {
+              "DOI": "10.1109/ICHI.2018.00092",
+              "doi-asserted-by": "crossref",
+              "key": "329_CR26",
+              "unstructured": "Kachuee M, Fazeli S, Sarrafzadeh M. ECG heartbeat classification: A deep transferable representation. In: 2018 IEEE International Conference on Healthcare Informatics (ICHI), 2018; pp. 443–444. IEEE"
+            },
+            {
+              "DOI": "10.1109/BIBM47256.2019.8983326",
+              "doi-asserted-by": "crossref",
+              "key": "329_CR27",
+              "unstructured": "Yan G, Liang S, Zhang Y, Liu F. Fusing transformer model with temporal features for ECG heartbeat classification. In: 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2019; pp. 898–905. IEEE"
+            },
+            {
+              "DOI": "10.1109/ised48680.2019.9096244",
+              "doi-asserted-by": "publisher",
+              "key": "329_CR28",
+              "unstructured": "Manju B.R, Nair A.R. Classification of cardiac arrhythmia of 12 lead ecg using combination of smoteenn, xgboost and machine learning algorithms. In: 2019 9th International Symposium on Embedded Computing and System Design (ISED) 2019. https://doi.org/10.1109/ised48680.2019.9096244."
+            },
+            {
+              "DOI": "10.24963/ijcai.2021/495",
+              "doi-asserted-by": "publisher",
+              "key": "329_CR29",
+              "unstructured": "Chen J, Zheng X, Yu H, Chen D.Z, Wu J. Electrocardio panorama: synthesizing new ECG views with self-supervision. In: Zhou, Z.-H. (ed.) Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence, IJCAI-21, pp. 3597–3605. International Joint Conferences on Artificial Intelligence Organization, ??? 2021. https://doi.org/10.24963/ijcai.2021/495. Main Track."
+            },
+            {
+              "DOI": "10.1109/EMBC46164.2021.9630364",
+              "doi-asserted-by": "crossref",
+              "key": "329_CR30",
+              "unstructured": "Lee B.T, Kong S.T, Song Y, Lee Y. Self-supervised learning with electrocardiogram delineation for arrhythmia detection. In: 2021 43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), 2021; pp. 591–594. IEEE"
+            },
+            {
+              "DOI": "10.1088/1361-6579/abc960",
+              "author": "EAP Alday",
+              "doi-asserted-by": "publisher",
+              "first-page": "124003",
+              "issue": "12",
+              "journal-title": "Physiol Meas",
+              "key": "329_CR31",
+              "unstructured": "Alday EAP, Gu A, Shah AJ, Robichaux C, Wong A-KI, Liu C, Liu F, Rad AB, Elola A, Seyedi S, et al. Classification of 12-lead ECGs: the physionet/computing in cardiology challenge 2020. Physiol Meas. 2020;41(12):124003.",
+              "volume": "41",
+              "year": "2020"
+            },
+            {
+              "author": "A Vaswani",
+              "first-page": "63",
+              "journal-title": "Adv Neural Inf Process Syst",
+              "key": "329_CR32",
+              "unstructured": "Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser Ł, Polosukhin I. Attention is all you need. Adv Neural Inf Process Syst. 2017;30:63.",
+              "volume": "30",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1016/0169-7439(87)80084-9",
+              "author": "S Wold",
+              "doi-asserted-by": "publisher",
+              "first-page": "37",
+              "issue": "1–3",
+              "journal-title": "Chemom Intell Lab Syst",
+              "key": "329_CR33",
+              "unstructured": "Wold S, Esbensen K, Geladi P. Principal component analysis. Chemom Intell Lab Syst. 1987;2(1–3):37–52.",
+              "volume": "2",
+              "year": "1987"
+            },
+            {
+              "key": "329_CR34",
+              "unstructured": "Chen T, Kornblith S, Norouzi M, Hinton G. A simple framework for contrastive learning of visual representations. Cornell University - arXiv, Cornell University - arXiv, 2020."
+            },
+            {
+              "key": "329_CR35",
+              "unstructured": "Oh J, Chung H, Kwon J.-m, Hong D.-g, Choi E. Lead-agnostic self-supervised learning for local and global representations of electrocardiogram2"
+            },
+            {
+              "DOI": "10.1162/neco.1997.9.8.1735",
+              "author": "S Hochreiter",
+              "doi-asserted-by": "publisher",
+              "first-page": "1735",
+              "issue": "8",
+              "journal-title": "Neural Comput",
+              "key": "329_CR36",
+              "unstructured": "Hochreiter S, Schmidhuber J. Long short-term memory. Neural Comput. 1997;9(8):1735–80.",
+              "volume": "9",
+              "year": "1997"
+            },
+            {
+              "DOI": "10.3390/app11031125",
+              "author": "HM Lynn",
+              "doi-asserted-by": "publisher",
+              "first-page": "1125",
+              "issue": "3",
+              "journal-title": "Appl Sci",
+              "key": "329_CR37",
+              "unstructured": "Lynn HM, Kim P, Pan SB. Data independent acquisition based bi-directional deep networks for biometric ECG authentication. Appl Sci. 2021;11(3):1125.",
+              "volume": "11",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/TSMC.2017.2705582",
+              "author": "B Pourbabaee",
+              "doi-asserted-by": "publisher",
+              "first-page": "2095",
+              "issue": "12",
+              "journal-title": "IEEE Trans Syst Man Cybern Syst",
+              "key": "329_CR38",
+              "unstructured": "Pourbabaee B, Roshtkhari MJ, Khorasani K. Deep convolutional neural networks and learning ECG features for screening paroxysmal atrial fibrillation patients. IEEE Trans Syst Man Cybern Syst. 2018;48(12):2095–104.",
+              "volume": "48",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.90",
+              "doi-asserted-by": "crossref",
+              "key": "329_CR39",
+              "unstructured": "He K, Zhang X, Ren S, Sun J. Deep residual learning for image recognition. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2016; pp. 770–778."
+            },
+            {
+              "DOI": "10.1016/j.micpro.2020.102989",
+              "author": "M Loni",
+              "doi-asserted-by": "publisher",
+              "first-page": "102989",
+              "journal-title": "Microprocess Microsyst",
+              "key": "329_CR40",
+              "unstructured": "Loni M, Sinaei S, Zoljodi A, Daneshtalab M, Sjödin M. DeepMaker: a multi-objective optimization framework for deep neural networks in embedded systems. Microprocess Microsyst. 2020;73:102989.",
+              "volume": "73",
+              "year": "2020"
+            }
+          ],
+          "reference-count": 40,
+          "references-count": 40,
+          "resource": {
+            "primary": {
+              "URL": "https://link.springer.com/10.1007/s13534-023-00329-0"
+            }
+          },
+          "score": 39.444912,
+          "short-container-title": [
+            "Biomed. Eng. Lett."
+          ],
+          "source": "Crossref",
+          "title": [
+            "Joint spatio-temporal features constrained self-supervised electrocardiogram representation learning"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "volume": "14"
+        },
+        {
+          "DOI": "10.1109/igarss52108.2023.10281412",
+          "URL": "https://doi.org/10.1109/igarss52108.2023.10281412",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "CESBIO, Universit&#x00E9; de Toulouse, CNES/CNRS/INRAe/IRD/UPS,Toulouse,France,31000"
+                }
+              ],
+              "family": "Dumeur",
+              "given": "Iris",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "CESBIO, Universit&#x00E9; de Toulouse, CNES/CNRS/INRAe/IRD/UPS,Toulouse,France,31000"
+                }
+              ],
+              "family": "Valero",
+              "given": "Silvia",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "CESBIO, Universit&#x00E9; de Toulouse, CNES/CNRS/INRAe/IRD/UPS,Toulouse,France,31000"
+                }
+              ],
+              "family": "Inglada",
+              "given": "Jordi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                20
+              ]
+            ],
+            "date-time": "2023-10-20T17:42:53Z",
+            "timestamp": 1697823773000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                2
+              ]
+            ],
+            "date-time": "2024-03-02T09:08:52Z",
+            "timestamp": 1709370532000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2023,
+                  7,
+                  21
+                ]
+              ]
+            },
+            "location": "Pasadena, CA, USA",
+            "name": "IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium",
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  7,
+                  16
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                7
+              ]
+            ],
+            "date-time": "2025-08-07T09:19:18Z",
+            "timestamp": 1754558358343,
+            "version": "3.28.0"
+          },
+          "is-referenced-by-count": 3,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                16
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    7,
+                    16
+                  ]
+                ],
+                "date-time": "2023-07-16T00:00:00Z",
+                "timestamp": 1689465600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    7,
+                    16
+                  ]
+                ],
+                "date-time": "2023-07-16T00:00:00Z",
+                "timestamp": 1689465600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/10281394/10281399/10281412.pdf?arnumber=10281412",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "642-645",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                16
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                16
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1016/j.isprsjprs.2020.06.006",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "DOI": "10.3390/rs11050523",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "DOI": "10.48550/ARXIV.1706.03762",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2020.3036602",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1016/j.jag.2021.102651",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1109/ICCV48922.2021.00483",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.01234",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1007/978-3-319-24574-4_28",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1109/MGRS.2022.3198244",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "article-title": "Bert: Pre-training of deep bidirectional transformers for language understanding",
+              "author": "Devlin",
+              "first-page": "4171",
+              "key": "ref10",
+              "volume": "1",
+              "volume-title": "NAACL HLT 2019 - 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies - Proceedings of the Conference"
+            }
+          ],
+          "reference-count": 10,
+          "references-count": 10,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/10281412/"
+            }
+          },
+          "score": 39.28032,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Spatio-Temporal Representation Learning of Satellite Image Time Series"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.1109/iceccme55909.2022.9988228",
+          "URL": "https://doi.org/10.1109/iceccme55909.2022.9988228",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Henan University of Economics and Law,Zhengzhou,China"
+                }
+              ],
+              "family": "Ma",
+              "given": "Yingzi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "container-title": [
+            "2022 International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                30
+              ]
+            ],
+            "date-time": "2022-12-30T14:03:47Z",
+            "timestamp": 1672409027000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2023-01-30T14:58:31Z",
+            "timestamp": 1675090711000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2022,
+                  11,
+                  18
+                ]
+              ]
+            },
+            "location": "Maldives, Maldives",
+            "name": "2022 International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)",
+            "start": {
+              "date-parts": [
+                [
+                  2022,
+                  11,
+                  16
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                29
+              ]
+            ],
+            "date-time": "2024-10-29T22:13:56Z",
+            "timestamp": 1730240036826,
+            "version": "3.28.0"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                16
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    11,
+                    16
+                  ]
+                ],
+                "date-time": "2022-11-16T00:00:00Z",
+                "timestamp": 1668556800000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    11,
+                    16
+                  ]
+                ],
+                "date-time": "2022-11-16T00:00:00Z",
+                "timestamp": 1668556800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/9987724/9987729/09988228.pdf?arnumber=9988228",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "1-8",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                16
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                11,
+                16
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "article-title": "PointNet: Deep learning on point sets for 3D classification and segmentation",
+              "author": "qi",
+              "first-page": "652",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref13",
+              "year": "2017"
+            },
+            {
+              "author": "mahendran",
+              "journal-title": "Self-supervised learning using motion and visual-izing convolutional neural networks",
+              "key": "ref35",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/ICRA.2019.8793495",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "author": "karnam",
+              "journal-title": "Self-Supervised Learning for Segmentation using Image Reconstruction Rochester Institute of Technology",
+              "key": "ref34",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1145/3326362",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "article-title": "PointNet++: Deep hierarchical feature learning on point sets in a metric space",
+              "author": "ruizhongtai qi",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref14",
+              "year": "2017"
+            },
+            {
+              "article-title": "Gradnorm: Gradient normalization for adaptive loss balancing in deep multitask networks",
+              "author": "chen",
+              "first-page": "794",
+              "journal-title": "International Conference on Machine Learning",
+              "key": "ref36",
+              "year": "2018"
+            },
+            {
+              "author": "govindarajan",
+              "journal-title": "Self-supervised representation learning for content based image retrieval",
+              "key": "ref31",
+              "year": "2020"
+            },
+            {
+              "author": "pathak",
+              "journal-title": "Learning to generalize via self-supervised prediction University of California Berkeley",
+              "key": "ref30",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/ICRA.2018.8462926",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "author": "sitzmann",
+              "journal-title": "Self-Supervised Scene Representation Learning Stanford University",
+              "key": "ref33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Salsanet: Fast road and vehicle segmentation in LiDAR point clouds for autonomous driving",
+              "author": "erdal aksoy",
+              "first-page": "926",
+              "journal-title": "2020 IEEE Intelligent Vehicles Symposium (IV)",
+              "key": "ref10",
+              "year": "2019"
+            },
+            {
+              "author": "lin",
+              "journal-title": "Self-supervised Learning and Domain Adaptation for Visual Analysis University of Washington",
+              "key": "ref32",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00939",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.01112",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "article-title": "PointCNN: Convolution on X-transformed points",
+              "author": "li",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref17",
+              "volume": "31",
+              "year": "2018"
+            },
+            {
+              "article-title": "PointConv: Deep convolutional networks on 3D point clouds",
+              "author": "wu",
+              "first-page": "9621",
+              "journal-title": "Proc Conf Computer Vision and Pattern Recognition",
+              "key": "ref16",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1609/aaai.v35i4.16382",
+              "doi-asserted-by": "publisher",
+              "key": "ref19"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00651",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "author": "liu",
+              "journal-title": "P4contrast Contrastive learning with pairs of point-pixel pairs for rgb-d scene understanding",
+              "key": "ref24",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/ICCV48922.2021.01009",
+              "doi-asserted-by": "publisher",
+              "key": "ref23"
+            },
+            {
+              "DOI": "10.1109/3DV50981.2020.00112",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/CVPRW50498.2020.00477",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00029",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "article-title": "Ex-ploring data-efficient 3d scene understanding with contrastive scene contexts",
+              "author": "hou",
+              "first-page": "15587",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref22",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00936",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2019.2899857",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "DOI": "10.1109/ICIP42928.2021.9506132",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "author": "harlan coen",
+              "journal-title": "Multimodal Dynamics Self-Supervised Learning in Perceptual and Motor Systems",
+              "key": "ref29",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00319",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "article-title": "3D semantic segmentation with submanifold sparse convolutional net-works",
+              "author": "graham",
+              "first-page": "9224",
+              "journal-title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+              "key": "ref7",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/IROS40897.2019.8967762",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1109/ICCV48922.2021.00964",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1109/CVPR52688.2022.01440",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "article-title": "Self-supervised deep learning on point clouds by reconstructing space",
+              "author": "sauder",
+              "first-page": "12962",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref6",
+              "year": "2019"
+            },
+            {
+              "author": "poursaeed",
+              "journal-title": "Self-supervised learning of point clouds via ori-entation estimation",
+              "key": "ref5",
+              "year": "2020"
+            }
+          ],
+          "reference-count": 36,
+          "references-count": 36,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/9988228/"
+            }
+          },
+          "score": 38.85576,
+          "source": "Crossref",
+          "title": [
+            "Self-supervised Learning of 3D Point Clouds via Feature Transformation and Rotation Prediction"
+          ],
+          "type": "proceedings-article"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 5223616
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "03ef4a91c547c86ceb362c486edabf20dab2a6b55b2bb51def2c3e1f0506c5c6",
+  "retrieved_at": "2026-07-14T13:51:57Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

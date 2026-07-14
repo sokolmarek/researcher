@@ -1,0 +1,336 @@
+{
+  "endpoint": "works/doi:10.1016/j.jddst.2019.101360",
+  "request_key": "1fcf40595d56d888af190948b10352de6eea020dd6988ea47a6495a12f50fb43",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I156144747",
+              "https://openalex.org/I4210156501"
+            ],
+            "raw_affiliation_string": "Stroke Epilepsy Ward, The First Affiliated Hospital of Harbin Medical University, China"
+          }
+        ],
+        "author": {
+          "display_name": "Liang Zhang",
+          "id": "https://openalex.org/A5100425296",
+          "orcid": "https://orcid.org/0000-0003-4396-9199"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Harbin Medical University",
+            "id": "https://openalex.org/I156144747",
+            "lineage": [
+              "https://openalex.org/I156144747"
+            ],
+            "ror": "https://ror.org/05jscf583",
+            "type": "education"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "First Affiliated Hospital of Harbin Medical University",
+            "id": "https://openalex.org/I4210156501",
+            "lineage": [
+              "https://openalex.org/I4210156501"
+            ],
+            "ror": "https://ror.org/05vy2sc54",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stroke Epilepsy Ward, The First Affiliated Hospital of Harbin Medical University, China"
+        ],
+        "raw_author_name": "Liang Zhang"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210130714"
+            ],
+            "raw_affiliation_string": "Department of Vascular Medicine, Heilongjiang Provincial Hospital, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yue Zhang",
+          "id": "https://openalex.org/A5100333790",
+          "orcid": "https://orcid.org/0000-0003-2181-7266"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Heilongjiang Provincial Hospital",
+            "id": "https://openalex.org/I4210130714",
+            "lineage": [
+              "https://openalex.org/I4210130714"
+            ],
+            "ror": "https://ror.org/03qrkhd32",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Vascular Medicine, Heilongjiang Provincial Hospital, China"
+        ],
+        "raw_author_name": "Yue Zhang"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I156144747",
+              "https://openalex.org/I4210156501"
+            ],
+            "raw_affiliation_string": "Maternity Ward, The First Affiliated Hospital of Harbin Medical University, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yan Du",
+          "id": "https://openalex.org/A5014924965",
+          "orcid": "https://orcid.org/0000-0001-9931-4197"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Harbin Medical University",
+            "id": "https://openalex.org/I156144747",
+            "lineage": [
+              "https://openalex.org/I156144747"
+            ],
+            "ror": "https://ror.org/05jscf583",
+            "type": "education"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "First Affiliated Hospital of Harbin Medical University",
+            "id": "https://openalex.org/I4210156501",
+            "lineage": [
+              "https://openalex.org/I4210156501"
+            ],
+            "ror": "https://ror.org/05vy2sc54",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Maternity Ward, The First Affiliated Hospital of Harbin Medical University, China"
+        ],
+        "raw_author_name": "Yan Du"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I156144747",
+              "https://openalex.org/I4210156501"
+            ],
+            "raw_affiliation_string": "Stroke Epilepsy Ward, The First Affiliated Hospital of Harbin Medical University, China"
+          }
+        ],
+        "author": {
+          "display_name": "Jing Wang",
+          "id": "https://openalex.org/A5100699718",
+          "orcid": "https://orcid.org/0000-0003-4896-0142"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "First Affiliated Hospital of Harbin Medical University",
+            "id": "https://openalex.org/I4210156501",
+            "lineage": [
+              "https://openalex.org/I4210156501"
+            ],
+            "ror": "https://ror.org/05vy2sc54",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Harbin Medical University",
+            "id": "https://openalex.org/I156144747",
+            "lineage": [
+              "https://openalex.org/I156144747"
+            ],
+            "ror": "https://ror.org/05jscf583",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Stroke Epilepsy Ward, The First Affiliated Hospital of Harbin Medical University, China"
+        ],
+        "raw_author_name": "Jing Wang"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I156144747",
+              "https://openalex.org/I4210156501"
+            ],
+            "raw_affiliation_string": "Stroke Epilepsy Ward, The First Affiliated Hospital of Harbin Medical University, China"
+          }
+        ],
+        "author": {
+          "display_name": "Lijun Chi",
+          "id": "https://openalex.org/A5044579598",
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Harbin Medical University",
+            "id": "https://openalex.org/I156144747",
+            "lineage": [
+              "https://openalex.org/I156144747"
+            ],
+            "ror": "https://ror.org/05jscf583",
+            "type": "education"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "First Affiliated Hospital of Harbin Medical University",
+            "id": "https://openalex.org/I4210156501",
+            "lineage": [
+              "https://openalex.org/I4210156501"
+            ],
+            "ror": "https://ror.org/05vy2sc54",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Stroke Epilepsy Ward, The First Affiliated Hospital of Harbin Medical University, China"
+        ],
+        "raw_author_name": "Lijun Chi"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "101360",
+      "issue": null,
+      "last_page": "101360",
+      "volume": "55"
+    },
+    "cited_by_count": 6,
+    "display_name": "RETRACTED: Development of curcumin-loaded silk fibroin nanoparticles as drug delivery vehicle for the treatment of ischemic stroke for patients in nursing care in hospitals",
+    "doi": "https://doi.org/10.1016/j.jddst.2019.101360",
+    "id": "https://openalex.org/W2985274730",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.jddst.2019.101360",
+      "mag": "2985274730",
+      "openalex": "https://openalex.org/W2985274730"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.jddst.2019.101360",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.jddst.2019.101360",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Journal of Drug Delivery Science and Technology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Journal of Drug Delivery Science and Technology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S97205441",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1773-2247",
+          "2588-8943"
+        ],
+        "issn_l": "1773-2247",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2019-11-03",
+    "publication_year": 2019,
+    "referenced_works": [
+      "https://openalex.org/W1506349042",
+      "https://openalex.org/W1664719478",
+      "https://openalex.org/W1762968278",
+      "https://openalex.org/W1972264015",
+      "https://openalex.org/W1973015438",
+      "https://openalex.org/W1977920395",
+      "https://openalex.org/W1983314851",
+      "https://openalex.org/W1986603095",
+      "https://openalex.org/W2011085845",
+      "https://openalex.org/W2031596649",
+      "https://openalex.org/W2041764058",
+      "https://openalex.org/W2043126451",
+      "https://openalex.org/W2057849450",
+      "https://openalex.org/W2060688810",
+      "https://openalex.org/W2069119383",
+      "https://openalex.org/W2069691760",
+      "https://openalex.org/W2070172912",
+      "https://openalex.org/W2070978834",
+      "https://openalex.org/W2088430875",
+      "https://openalex.org/W2102449174",
+      "https://openalex.org/W2104841476",
+      "https://openalex.org/W2124238382",
+      "https://openalex.org/W2137404701",
+      "https://openalex.org/W2148324547",
+      "https://openalex.org/W2154086349",
+      "https://openalex.org/W2167639932",
+      "https://openalex.org/W2320064004",
+      "https://openalex.org/W2520379539",
+      "https://openalex.org/W2583403278",
+      "https://openalex.org/W2684253457",
+      "https://openalex.org/W6680457069"
+    ],
+    "referenced_works_count": 31,
+    "title": "RETRACTED: Development of curcumin-loaded silk fibroin nanoparticles as drug delivery vehicle for the treatment of ischemic stroke for patients in nursing care in hospitals",
+    "type": "article"
+  },
+  "response_hash": "1b473a38fe0bc65755afb748050cafed296b130dc7edd60b58e67d770dd2bcee",
+  "retrieved_at": "2026-07-14T13:48:47Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

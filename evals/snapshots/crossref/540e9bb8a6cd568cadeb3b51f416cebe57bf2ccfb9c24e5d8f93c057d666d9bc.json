@@ -1,0 +1,999 @@
+{
+  "endpoint": "works/10.1016/j.ins.2016.01.082",
+  "request_key": "540e9bb8a6cd568cadeb3b51f416cebe57bf2ccfb9c24e5d8f93c057d666d9bc",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1016/j.ins.2016.01.082",
+      "ISSN": [
+        "0020-0255"
+      ],
+      "URL": "https://doi.org/10.1016/j.ins.2016.01.082",
+      "alternative-id": [
+        "S0020025516300184"
+      ],
+      "assertion": [
+        {
+          "label": "This article is maintained by",
+          "name": "publisher",
+          "value": "Elsevier"
+        },
+        {
+          "label": "Article Title",
+          "name": "articletitle",
+          "value": "Deep learning approach for active classification of electrocardiogram signals"
+        },
+        {
+          "label": "Journal Title",
+          "name": "journaltitle",
+          "value": "Information Sciences"
+        },
+        {
+          "label": "CrossRef DOI link to publisher maintained version",
+          "name": "articlelink",
+          "value": "https://doi.org/10.1016/j.ins.2016.01.082"
+        },
+        {
+          "label": "Content Type",
+          "name": "content_type",
+          "value": "article"
+        },
+        {
+          "label": "Copyright",
+          "name": "copyright",
+          "value": "Copyright © 2016 Elsevier Inc. Published by Elsevier Inc. All rights reserved."
+        }
+      ],
+      "author": [
+        {
+          "affiliation": [],
+          "family": "Rahhal",
+          "given": "M.M. Al",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9287-0596",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Bazi",
+          "given": "Yakoub",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "AlHichri",
+          "given": "Haikel",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Alajlan",
+          "given": "Naif",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Melgani",
+          "given": "Farid",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Yager",
+          "given": "R.R.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Information Sciences"
+      ],
+      "content-domain": {
+        "crossmark-restriction": true,
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            5
+          ]
+        ],
+        "date-time": "2016-02-05T12:16:01Z",
+        "timestamp": 1454674561000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            17
+          ]
+        ],
+        "date-time": "2025-09-17T04:45:16Z",
+        "timestamp": 1758084316000
+      },
+      "funder": [
+        {
+          "DOI": "10.13039/501100002383",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/501100002383",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "King Saud University"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            13
+          ]
+        ],
+        "date-time": "2026-07-13T10:09:02Z",
+        "timestamp": 1783937342451,
+        "version": "3.55.0"
+      },
+      "is-referenced-by-count": 543,
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "0020-0255"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2016-06-01T00:00:00Z",
+            "timestamp": 1464739200000
+          }
+        },
+        {
+          "URL": "https://www.elsevier.com/legal/tdmrep-license",
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2016-06-01T00:00:00Z",
+            "timestamp": 1464739200000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0020025516300184?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0020025516300184?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "member": "78",
+      "original-title": [],
+      "page": "340-354",
+      "prefix": "10.1016",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "publisher": "Elsevier BV",
+      "reference": [
+        {
+          "DOI": "10.1007/s11760-012-0339-8",
+          "article-title": "Detection of premature ventricular contraction arrhythmias in electrocardiogram signals with kernel methods",
+          "author": "Alajlan",
+          "doi-asserted-by": "crossref",
+          "first-page": "931",
+          "journal-title": "Signal Image Video Process.",
+          "key": "10.1016/j.ins.2016.01.082_bib0001",
+          "volume": "8",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TBME.2011.2112658",
+          "article-title": "Classification of paroxysmal and persistent atrial fibrillation in ambulatory ECG recordings",
+          "author": "Alcaraz",
+          "doi-asserted-by": "crossref",
+          "first-page": "1441",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0002",
+          "volume": "58",
+          "year": "2011"
+        },
+        {
+          "DOI": "10.1109/TBME.2013.2290800",
+          "article-title": "Detection of life-threatening arrhythmias using feature selection and support vector machines",
+          "author": "Alonso-Atienza",
+          "doi-asserted-by": "crossref",
+          "first-page": "832",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0003",
+          "volume": "61",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TBME.2012.2191407",
+          "article-title": "Time-based compression and classification of heartbeats",
+          "author": "Alvarado",
+          "doi-asserted-by": "crossref",
+          "first-page": "1641",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0004",
+          "volume": "59",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1109/TEVC.2003.814633",
+          "article-title": "Elitism-based compact genetic algorithms",
+          "author": "Ahn",
+          "doi-asserted-by": "crossref",
+          "first-page": "367",
+          "journal-title": "IEEE Trans. Evol. Comput.",
+          "key": "10.1016/j.ins.2016.01.082_bib0005",
+          "volume": "7",
+          "year": "2003"
+        },
+        {
+          "DOI": "10.1016/j.neucom.2015.03.017",
+          "article-title": "Subset based deep learning for RGB-D object recognition",
+          "author": "Bai",
+          "doi-asserted-by": "crossref",
+          "first-page": "280",
+          "journal-title": "Neurocomputing",
+          "key": "10.1016/j.ins.2016.01.082_bib0006",
+          "volume": "165",
+          "year": "2015"
+        },
+        {
+          "article-title": "Practical recommendations for gradient-based training of deep architectures",
+          "author": "Bengio",
+          "first-page": "437",
+          "key": "10.1016/j.ins.2016.01.082_bib0007",
+          "series-title": "Neural Network Tricks Trade",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1109/TPAMI.2013.50",
+          "article-title": "Representation Learning: A review and new perspectives",
+          "author": "Bengio",
+          "doi-asserted-by": "crossref",
+          "first-page": "1798",
+          "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+          "key": "10.1016/j.ins.2016.01.082_bib0008",
+          "volume": "35",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/JBHI.2013.2263311",
+          "article-title": "Development of an automated updated Selvester QRS scoring system using SWT-based QRS fractionation detection and classification",
+          "author": "Bono",
+          "doi-asserted-by": "crossref",
+          "first-page": "193",
+          "journal-title": "IEEE J. Biomed. Health Inf.",
+          "key": "10.1016/j.ins.2016.01.082_bib0009",
+          "volume": "18",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1162/NECO_a_00682",
+          "article-title": "Efficient training of convolutional deep belief networks in the frequency domain for application to high-resolution 2D and 3D images",
+          "author": "Brosch",
+          "doi-asserted-by": "crossref",
+          "first-page": "211",
+          "journal-title": "Neural Comput.",
+          "key": "10.1016/j.ins.2016.01.082_bib0010",
+          "volume": "27",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/TIT.2008.920189",
+          "article-title": "Minimax bounds for active learning",
+          "author": "Castro",
+          "doi-asserted-by": "crossref",
+          "first-page": "2339",
+          "journal-title": "IEEE Trans. Inf. Theory",
+          "key": "10.1016/j.ins.2016.01.082_bib0011",
+          "volume": "54",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1016/j.asoc.2012.06.004",
+          "article-title": "Myocardial infarction classification with multi-lead ECG using hidden Markov models and Gaussian mixture models",
+          "author": "Chang",
+          "doi-asserted-by": "crossref",
+          "first-page": "3165",
+          "journal-title": "Appl. Soft Comput.",
+          "key": "10.1016/j.ins.2016.01.082_bib0012",
+          "volume": "12",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1007/s13042-013-0198-9",
+          "article-title": "Bi-firing deep neural networks",
+          "author": "Li",
+          "doi-asserted-by": "crossref",
+          "first-page": "73",
+          "issue": "1",
+          "journal-title": "Int. J. Mach. Learn. Cybern.",
+          "key": "10.1016/j.ins.2016.01.082_bib0013",
+          "volume": "5",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TBME.2004.827359",
+          "article-title": "Automatic classification of heartbeats using ECG morphology and heartbeat interval features",
+          "author": "De Chazal",
+          "doi-asserted-by": "crossref",
+          "first-page": "1196",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0014",
+          "volume": "51",
+          "year": "2004"
+        },
+        {
+          "DOI": "10.1109/TBME.2006.883802",
+          "article-title": "A patient-adapting heartbeat classifier using ECG morphology and heartbeat interval features",
+          "author": "De Chazal",
+          "doi-asserted-by": "crossref",
+          "first-page": "2535",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0015",
+          "volume": "53",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1109/LSP.2014.2324759",
+          "article-title": "Autoencoder-based unsupervised domain adaptation for speech emotion recognition",
+          "author": "Deng",
+          "doi-asserted-by": "crossref",
+          "first-page": "1068",
+          "journal-title": "IEEE Signal Process. Lett.",
+          "key": "10.1016/j.ins.2016.01.082_bib0016",
+          "volume": "21",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2009.06.022",
+          "article-title": "Recurrent neural networks employing Lyapunov exponents for analysis of ECG signals",
+          "author": "Derya Übeyli",
+          "doi-asserted-by": "crossref",
+          "first-page": "1192",
+          "journal-title": "Expert Syst. Appl.",
+          "key": "10.1016/j.ins.2016.01.082_bib0017",
+          "volume": "37",
+          "year": "2010"
+        },
+        {
+          "DOI": "10.1109/TBME.2013.2279998",
+          "article-title": "On the detection of myocadial scar based on ECG/VCG analysis",
+          "author": "Dima",
+          "doi-asserted-by": "crossref",
+          "first-page": "3399",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0018",
+          "volume": "60",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1016/j.medengphy.2010.08.007",
+          "article-title": "Correlation technique and least square support vector machine combine for frequency domain based ECG beat classification",
+          "author": "Dutta",
+          "doi-asserted-by": "crossref",
+          "first-page": "1161",
+          "journal-title": "Med. Eng. Phys.",
+          "key": "10.1016/j.ins.2016.01.082_bib0019",
+          "volume": "32",
+          "year": "2010"
+        },
+        {
+          "DOI": "10.1109/TKDE.2013.165",
+          "article-title": "Active learning without knowing individual instance labels: A pairwise label homogeneity query approach",
+          "author": "Fu",
+          "doi-asserted-by": "crossref",
+          "first-page": "808",
+          "journal-title": "IEEE Trans. Knowl. Data Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0020",
+          "volume": "26",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TIP.2008.924286",
+          "article-title": "Active learning methods for interactive image retrieval",
+          "author": "Gosselin",
+          "doi-asserted-by": "crossref",
+          "first-page": "1200",
+          "journal-title": "IEEE Trans. Image Process.",
+          "key": "10.1016/j.ins.2016.01.082_bib0021",
+          "volume": "17",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1109/TCBB.2013.38",
+          "article-title": "Generalized query-based active learning to identify differentially methylated regions in DNA",
+          "author": "Haque",
+          "doi-asserted-by": "crossref",
+          "first-page": "632",
+          "journal-title": "IEEE/ACM Trans. Comput. Biol. Bioinform.",
+          "key": "10.1016/j.ins.2016.01.082_bib0022",
+          "volume": "10",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/TPAMI.2014.2353635",
+          "article-title": "Deep reconstruction models for image set classification",
+          "author": "Hayat",
+          "doi-asserted-by": "crossref",
+          "first-page": "713",
+          "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+          "key": "10.1016/j.ins.2016.01.082_bib0023",
+          "volume": "37",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/MSP.2012.2205597",
+          "article-title": "Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups",
+          "author": "Hinton",
+          "doi-asserted-by": "crossref",
+          "first-page": "82",
+          "journal-title": "IEEE Signal Process. Mag.",
+          "key": "10.1016/j.ins.2016.01.082_bib0024",
+          "volume": "29",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1126/science.1127647",
+          "article-title": "Reducing the dimensionality of data with neural networks",
+          "author": "Hinton",
+          "doi-asserted-by": "crossref",
+          "first-page": "504",
+          "journal-title": "Science",
+          "key": "10.1016/j.ins.2016.01.082_bib0025",
+          "volume": "313",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1162/neco.2006.18.7.1527",
+          "article-title": "A fast learning algorithm for deep belief nets",
+          "author": "Hinton",
+          "doi-asserted-by": "crossref",
+          "first-page": "1527",
+          "journal-title": "Neural Comput.",
+          "key": "10.1016/j.ins.2016.01.082_bib0026",
+          "volume": "18",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2011.08.025",
+          "article-title": "ECG arrhythmia recognition via a neuro-SVM–KNN hybrid classifier with virtual QRS image-based geometrical features",
+          "author": "Homaeinezhad",
+          "doi-asserted-by": "crossref",
+          "first-page": "2047",
+          "journal-title": "Expert Syst. Appl.",
+          "key": "10.1016/j.ins.2016.01.082_bib0027",
+          "volume": "39",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1109/TPAMI.2014.2307881",
+          "article-title": "Active learning by querying informative and representative examples",
+          "author": "Huang",
+          "doi-asserted-by": "crossref",
+          "first-page": "1936",
+          "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+          "key": "10.1016/j.ins.2016.01.082_bib0028",
+          "volume": "36",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1016/j.patcog.2015.03.011",
+          "article-title": "Face recognition on large-scale video in the wild with hybrid Euclidean-and-Riemannian metric learning",
+          "author": "Huang",
+          "doi-asserted-by": "crossref",
+          "first-page": "3113",
+          "journal-title": "Pattern Recognit.",
+          "key": "10.1016/j.ins.2016.01.082_bib0029",
+          "volume": "48",
+          "year": "2015"
+        },
+        {
+          "article-title": "Classification of electrocardiogram signals with deep belief networks",
+          "author": "Huanhuan",
+          "first-page": "7",
+          "key": "10.1016/j.ins.2016.01.082_bib0030",
+          "series-title": "Proceedings of the 2014 IEEE Seventeenth International Conference on Computer Science Engineering CSE",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/10.623058",
+          "article-title": "A patient-adaptable ECG beat classifier using a mixture of experts approach",
+          "author": "Hu",
+          "doi-asserted-by": "crossref",
+          "first-page": "891",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0031",
+          "volume": "44",
+          "year": "1997"
+        },
+        {
+          "DOI": "10.1109/TBME.2009.2013934",
+          "article-title": "A generic and robust system for automated patient-specific classification of ECG signals",
+          "author": "Ince",
+          "doi-asserted-by": "crossref",
+          "first-page": "1415",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0032",
+          "volume": "56",
+          "year": "2009"
+        },
+        {
+          "DOI": "10.1016/j.bspc.2012.10.005",
+          "article-title": "Classification of ECG arrhythmia by a modular neural network based on mixture of experts and negatively correlated learning",
+          "author": "Javadi",
+          "doi-asserted-by": "crossref",
+          "first-page": "289",
+          "journal-title": "Biomed. Signal Process. Control",
+          "key": "10.1016/j.ins.2016.01.082_bib0033",
+          "volume": "8",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/TNN.2007.900239",
+          "article-title": "Block-based neural networks for personalized ECG signal classification",
+          "author": "Jiang",
+          "doi-asserted-by": "crossref",
+          "first-page": "1750",
+          "journal-title": "IEEE Trans. Neural Netw.",
+          "key": "10.1016/j.ins.2016.01.082_bib0034",
+          "volume": "18",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1016/j.cmpb.2011.10.002",
+          "article-title": "Feature extraction for ECG heartbeats using higher order statistics of WPD coefficients",
+          "author": "Kutlu",
+          "doi-asserted-by": "crossref",
+          "first-page": "257",
+          "journal-title": "Comput. Methods Progr. Biomed.",
+          "key": "10.1016/j.ins.2016.01.082_bib0035",
+          "volume": "105",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1016/j.patrec.2014.01.008",
+          "article-title": "A review of unsupervised feature learning and deep learning for time-series modeling",
+          "author": "Längkvist",
+          "doi-asserted-by": "crossref",
+          "first-page": "11",
+          "journal-title": "Pattern Recognit. Lett.",
+          "key": "10.1016/j.ins.2016.01.082_bib0036",
+          "volume": "42",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TBME.2011.2171037",
+          "article-title": "Weighted conditional random fields for supervised interpatient heartbeat classification",
+          "author": "de Lannoy",
+          "doi-asserted-by": "crossref",
+          "first-page": "241",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0037",
+          "volume": "59",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1007/BF01589116",
+          "article-title": "On the limited memory BFGS method for large scale optimization",
+          "author": "Liu",
+          "doi-asserted-by": "crossref",
+          "first-page": "503",
+          "journal-title": "Math. Program.",
+          "key": "10.1016/j.ins.2016.01.082_bib0038",
+          "volume": "45",
+          "year": "1989"
+        },
+        {
+          "article-title": "Active learning to recognize multiple types of plankton",
+          "author": "Luo",
+          "first-page": "589",
+          "journal-title": "J. Mach. Learn. Res.",
+          "key": "10.1016/j.ins.2016.01.082_bib0039",
+          "volume": "6",
+          "year": "2005"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2012.12.063",
+          "article-title": "ECG arrhythmia classification based on optimum-path forest",
+          "author": "da S. Luz",
+          "doi-asserted-by": "crossref",
+          "first-page": "3561",
+          "journal-title": "Expert Syst. Appl.",
+          "key": "10.1016/j.ins.2016.01.082_bib0040",
+          "volume": "40",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1155/2012/107046",
+          "article-title": "Sleep stage classification using unsupervised feature learning",
+          "author": "Langkvist",
+          "doi-asserted-by": "crossref",
+          "journal-title": "Adv. Artif. Neural Syst.",
+          "key": "10.1016/j.ins.2016.01.082_bib0041",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1016/j.bspc.2013.01.005",
+          "article-title": "ECG beat classification using PCA, LDA, ICA and discrete wavelet transform",
+          "author": "Martis",
+          "doi-asserted-by": "crossref",
+          "first-page": "437",
+          "journal-title": "Biomed. Signal Process. Control",
+          "key": "10.1016/j.ins.2016.01.082_bib0042",
+          "volume": "8",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/TITB.2008.923147",
+          "article-title": "Classification of electrocardiogram signals with support vector machines and particle swarm optimization",
+          "author": "Melgani",
+          "doi-asserted-by": "crossref",
+          "first-page": "667",
+          "journal-title": "IEEE Trans. Inf. Technol. Biomed.",
+          "key": "10.1016/j.ins.2016.01.082_bib0043",
+          "volume": "12",
+          "year": "2008"
+        },
+        {
+          "article-title": "Detecting premature ventricular contractions in ECG signals with Gaussian processes",
+          "author": "Melgani",
+          "first-page": "237",
+          "journal-title": "Comput. Cardiol.",
+          "key": "10.1016/j.ins.2016.01.082_bib0044",
+          "year": "2008"
+        },
+        {
+          "article-title": "Comparing SVM and convolutional networks for epileptic seizure prediction from intracranial EEG",
+          "author": "Mirowski",
+          "first-page": "244",
+          "key": "10.1016/j.ins.2016.01.082_bib0045",
+          "series-title": "Proceedings of the IEEE Workshop on Machine Learning Signal Process, 2008 MLSP 2008",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1016/j.bspc.2013.06.005",
+          "article-title": "ECG enhancement and QRS detection based on sparse derivatives",
+          "author": "Ning",
+          "doi-asserted-by": "crossref",
+          "first-page": "713",
+          "journal-title": "Biomed. Signal Process. Control",
+          "key": "10.1016/j.ins.2016.01.082_bib0046",
+          "volume": "8",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1090/S0025-5718-1980-0572855-7",
+          "article-title": "Updating quasi-Newton matrices with limited storage",
+          "author": "Nocedal",
+          "doi-asserted-by": "crossref",
+          "first-page": "773",
+          "journal-title": "Math. Comput.",
+          "key": "10.1016/j.ins.2016.01.082_bib0047",
+          "volume": "35",
+          "year": "1980"
+        },
+        {
+          "DOI": "10.1109/TITB.2010.2048922",
+          "article-title": "Active learning methods for electrocardiographic signal classification",
+          "author": "Pasolli",
+          "doi-asserted-by": "crossref",
+          "first-page": "1405",
+          "journal-title": "IEEE Trans. Inf. Technol. Biomed.",
+          "key": "10.1016/j.ins.2016.01.082_bib0048",
+          "volume": "14",
+          "year": "2010"
+        },
+        {
+          "DOI": "10.1109/LGRS.2010.2083630",
+          "article-title": "Support vector machine active learning through significance space construction",
+          "author": "Pasolli",
+          "doi-asserted-by": "crossref",
+          "first-page": "431",
+          "journal-title": "IEEE Geosci. Remote Sens. Lett.",
+          "key": "10.1016/j.ins.2016.01.082_bib0049",
+          "volume": "8",
+          "year": "2011"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2015.02.012",
+          "article-title": "QRS detection algorithm based on the quadratic filter",
+          "author": "Phukpattaranont",
+          "doi-asserted-by": "crossref",
+          "first-page": "4867",
+          "journal-title": "Expert Syst. Appl.",
+          "key": "10.1016/j.ins.2016.01.082_bib0050",
+          "volume": "42",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/TBME.2007.897817",
+          "article-title": "A nonlinear Bayesian filtering framework for ECG Denoising",
+          "author": "Sameni",
+          "doi-asserted-by": "crossref",
+          "first-page": "2172",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0051",
+          "volume": "54",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1016/j.neunet.2014.09.003",
+          "article-title": "Deep learning in neural networks: An overview",
+          "author": "Schmidhuber",
+          "doi-asserted-by": "crossref",
+          "first-page": "85",
+          "journal-title": "Neural Netw.",
+          "key": "10.1016/j.ins.2016.01.082_bib0052",
+          "volume": "61",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/TGRS.2015.2399978",
+          "article-title": "Task-driven dictionary learning for hyperspectral image classification with structured sparsity constraints",
+          "author": "Sun",
+          "doi-asserted-by": "crossref",
+          "first-page": "4457",
+          "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+          "key": "10.1016/j.ins.2016.01.082_bib0053",
+          "volume": "53",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/LSP.2014.2325781",
+          "article-title": "Convolutional neural networks for distant speech recognition",
+          "author": "Swietojanski",
+          "doi-asserted-by": "crossref",
+          "first-page": "1120",
+          "journal-title": "IEEE Signal Process. Lett.",
+          "key": "10.1016/j.ins.2016.01.082_bib0054",
+          "volume": "21",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TBME.2012.2208964",
+          "article-title": "Nonlocal means denoising of ECG signals",
+          "author": "Tracey",
+          "doi-asserted-by": "crossref",
+          "first-page": "2383",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0055",
+          "volume": "59",
+          "year": "2012"
+        },
+        {
+          "article-title": "Extracting and composing robust features with denoising autoencoders",
+          "author": "Vincent",
+          "first-page": "1096",
+          "key": "10.1016/j.ins.2016.01.082_bib0056",
+          "series-title": "Proceedings of the Twenty Fifth International Conference on Machine Learning",
+          "year": "2008"
+        },
+        {
+          "article-title": "Modeling physiological data with deep belief networks",
+          "author": "Wang",
+          "first-page": "505",
+          "journal-title": "Int. J. Inf. Educ. Technol. IJIET",
+          "key": "10.1016/j.ins.2016.01.082_bib0057",
+          "volume": "3",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1016/j.neucom.2011.10.045",
+          "article-title": "ECG arrhythmia classification using a probabilistic neural network with a feature reduction method",
+          "author": "Wang",
+          "doi-asserted-by": "crossref",
+          "first-page": "38",
+          "journal-title": "Neurocomputing",
+          "key": "10.1016/j.ins.2016.01.082_bib0058",
+          "volume": "116",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1016/j.bspc.2014.10.012",
+          "article-title": "Parallel-type fractional zero-phase filtering for ECG signal denoising",
+          "author": "Wang",
+          "doi-asserted-by": "crossref",
+          "first-page": "36",
+          "journal-title": "Biomed. Signal Process. Control.",
+          "key": "10.1016/j.ins.2016.01.082_bib0059",
+          "volume": "18",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1049/iet-spr.2014.0005",
+          "article-title": "Electrocardiogram signal denoising using non-local wavelet transform domain filtering",
+          "author": "Yadav",
+          "doi-asserted-by": "crossref",
+          "first-page": "88",
+          "journal-title": "IET Signal Process.",
+          "key": "10.1016/j.ins.2016.01.082_bib0060",
+          "volume": "9",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/TASE.2013.2263497",
+          "article-title": "Spatiotemporal differentiation of myocardial infarctions",
+          "author": "Yang",
+          "doi-asserted-by": "crossref",
+          "first-page": "938",
+          "journal-title": "IEEE Trans. Autom. Sci. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0061",
+          "volume": "10",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/TBME.2012.2213253",
+          "article-title": "Heartbeat classification using morphological and dynamic features of ECG signals",
+          "author": "Ye",
+          "doi-asserted-by": "crossref",
+          "first-page": "2930",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.ins.2016.01.082_bib0062",
+          "volume": "59",
+          "year": "2012"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2007.05.006",
+          "article-title": "Integration of independent component analysis and neural networks for ECG beat classification",
+          "author": "Yu",
+          "doi-asserted-by": "crossref",
+          "first-page": "2841",
+          "journal-title": "Expert Syst. Appl.",
+          "key": "10.1016/j.ins.2016.01.082_bib0063",
+          "volume": "34",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2013.11.019",
+          "article-title": "Heartbeat classification using disease-specific feature selection",
+          "author": "Zhang",
+          "doi-asserted-by": "crossref",
+          "first-page": "79",
+          "journal-title": "Comput. Biol. Med.",
+          "key": "10.1016/j.ins.2016.01.082_bib0064",
+          "volume": "46",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1007/s13042-015-0419-5",
+          "article-title": "Incremental extreme learning machine based on deep feature embedded",
+          "author": "Zhang",
+          "doi-asserted-by": "crossref",
+          "first-page": "111",
+          "journal-title": "Int. J. Mach. Learn. Cybern.",
+          "key": "10.1016/j.ins.2016.01.082_bib0065",
+          "volume": "7",
+          "year": "2016"
+        },
+        {
+          "key": "10.1016/j.ins.2016.01.082_bib0066",
+          "unstructured": "minFunc - unconstrained differentiable multivariate optimization in Matlab, 2005 (n.d.)."
+        }
+      ],
+      "reference-count": 66,
+      "references-count": 66,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0020025516300184"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "Information Sciences"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "special_numbering": "C",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Deep learning approach for active classification of electrocardiogram signals"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "volume": "345"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "dd9c78be3d489462cbc99145ee48145434363ee8568eab9d09149593668a91f4",
+  "retrieved_at": "2026-07-14T14:48:13Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

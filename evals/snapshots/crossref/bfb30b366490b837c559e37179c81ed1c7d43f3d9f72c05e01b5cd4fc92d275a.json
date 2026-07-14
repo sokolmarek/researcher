@@ -1,0 +1,1300 @@
+{
+  "endpoint": "works",
+  "request_key": "bfb30b366490b837c559e37179c81ed1c7d43f3d9f72c05e01b5cd4fc92d275a",
+  "request_params": {
+    "query.bibliographic": "Self-supervised Learning: Generative or Contrastive",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1109/tpami.2024.3378708/mm1",
+          "URL": "https://doi.org/10.1109/tpami.2024.3378708/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Bohua",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                21
+              ]
+            ],
+            "date-time": "2024-03-21T14:22:26Z",
+            "timestamp": 1711030946000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T15:06:20Z",
+            "timestamp": 1769785580000
+          },
+          "description": "The \"Appendix\" describes detailed derivation of the loss functions in the main paper.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:37:22Z",
+            "timestamp": 1772159842042,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/TPAMI.2024.3378708",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx7/34/10627928/10475594/supp1-3378708.pdf?arnumber=10475594"
+            }
+          },
+          "score": 43.108173,
+          "source": "Crossref",
+          "title": [
+            "Generative Variational-Contrastive Learning for Self-Supervised Point Cloud Representation_supp1-3378708.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.36227/techrxiv.172953448.85699324/v1",
+          "URL": "https://doi.org/10.36227/techrxiv.172953448.85699324/v1",
+          "abstract": "<jats:p>Deep supervised learning has revolutionized medical image segmentation although its success heavily relies on the availability of large volumes of training data with high-quality annotations. Self-supervised learning (SSL) methods have been recently introduced to address the annotation starving problem. In this paper, we report a general, scalable framework that combines contrastive and generative SSL methods to effectively learn robust and task-specific representations from large unannotated medical image datasets. Specifically, the SSL strategy is based on restoring transformed sub-volume images and contrasting the representations of paired transformed sub-volume images. By fine-tuning the pre-trained encoder-decoder network on small annotated medical image datasets, improved segmentation performance is efficiently achieved. The performance of our method was evaluated on two X-ray computed tomography (CT) image segmentation tasks and achieved better than state-of-theart results when 3D-segmenting a) psoas muscles in 60 torso CT images, and b) 20 thoracic organs at risk in a public SegTHOR dataset, demonstrating the effectiveness and broad applicability of our novel framework.</jats:p>",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-0029-5657",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Zhang",
+              "given": "Lichun",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Honghai",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Nau",
+              "given": "Peter N",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Sonka",
+              "given": "Milan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2024-10-21T14:14:53Z",
+            "timestamp": 1729520093000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                12
+              ]
+            ],
+            "date-time": "2026-06-12T15:03:28Z",
+            "timestamp": 1781276608000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                12
+              ]
+            ],
+            "date-time": "2026-06-12T16:00:41Z",
+            "timestamp": 1781280041090,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                21
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    21
+                  ]
+                ],
+                "date-time": "2024-10-21T00:00:00Z",
+                "timestamp": 1729468800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.172953448.85699324/v1",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "posted": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                21
+              ]
+            ]
+          },
+          "prefix": "10.36227",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                21
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.172953448.85699324/v1"
+            }
+          },
+          "score": 39.33256,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Contrastive Generative Self-Supervised Learning for 3D Medical Image Segmentation"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.5220/0013932200004919",
+          "URL": "https://doi.org/10.5220/0013932200004919",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Computer Science and Engineering, SRM Institute of Science and Technology, Ramapuram, Chennai, Tamil Nadu, India"
+                }
+              ],
+              "family": "Indumathi",
+              "given": "G.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Computer Science and Engineering, SRM Institute of Science and Technology, Ramapuram, Chennai, Tamil Nadu, India"
+                }
+              ],
+              "family": "S.",
+              "given": "Sudharsan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Computer Science and Engineering, SRM Institute of Science and Technology, Ramapuram, Chennai, Tamil Nadu, India"
+                }
+              ],
+              "family": "I.",
+              "given": "Ashok",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Department of Computer Science and Engineering, SRM Institute of Science and Technology, Ramapuram, Chennai, Tamil Nadu, India"
+                }
+              ],
+              "family": "M.",
+              "given": "Tharunkumar",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Proceedings of the 1st International Conference on Research and Development in Information, Communication, and Computing Technologies"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2026-01-01T01:51:06Z",
+            "timestamp": 1767232266000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2026-01-01T02:10:24Z",
+            "timestamp": 1767233424000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2025,
+                  4,
+                  5
+                ]
+              ]
+            },
+            "location": "Nagapattinam, India",
+            "name": "INTERNATIONAL CONFERENCE ON RESEARCH AND DEVELOPMENT IN INFORMATION, COMMUNICATION, AND COMPUTING TECHNOLOGIES",
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  4,
+                  4
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2026-01-01T02:12:36Z",
+            "timestamp": 1767233556198,
+            "version": "3.48.0"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "member": "3171",
+          "original-title": [
+            "Deep Learning-Based Generative Al for Segmenting Necrotic Lung Lesions in CT Images Using Self-Supervised Contrastive Learning"
+          ],
+          "page": "512-518",
+          "prefix": "10.5220",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "publisher": "SCITEPRESS - Science and Technology Publications",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0013932200004919"
+            }
+          },
+          "score": 38.331673,
+          "source": "Crossref",
+          "subtitle": [
+            ""
+          ],
+          "title": [
+            "Deep Learning-Based Generative Al for Segmenting Necrotic Lung Lesions in CT Images Using Self-Supervised Contrastive Learning"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.2139/ssrn.5358497",
+          "URL": "https://doi.org/10.2139/ssrn.5358497",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Sakhamuri",
+              "given": "Mallikharjuna Rao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Henna",
+              "given": "Shagufta",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Creedon",
+              "given": "Leo",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Meehan",
+              "given": "Kevin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2025-07-20T02:55:26Z",
+            "timestamp": 1752980126000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                20
+              ]
+            ],
+            "date-time": "2025-07-20T02:55:26Z",
+            "timestamp": 1752980126000
+          },
+          "group-title": "SSRN",
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                2
+              ]
+            ],
+            "date-time": "2025-08-02T16:21:29Z",
+            "timestamp": 1754151689750,
+            "version": "3.41.2"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "member": "78",
+          "posted": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=5358497"
+            }
+          },
+          "score": 37.152306,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Self-Supervised Molecular Representation Learning for Immune Response Modeling Via Momentum-Driven Generative Graph Contrastive Learning"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.1109/tpami.2023.3308189/mm1",
+          "URL": "https://doi.org/10.1109/tpami.2023.3308189/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Wu",
+              "given": "Min",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                29
+              ]
+            ],
+            "date-time": "2023-08-29T13:46:04Z",
+            "timestamp": 1693316764000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T15:10:13Z",
+            "timestamp": 1769785813000
+          },
+          "description": "The supplemental material contains material that is not included within the article itself.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:36:29Z",
+            "timestamp": 1772159789538,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/TPAMI.2023.3308189",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx7/34/10308548/10233092/supp1-3308189.pdf?arnumber=10233092"
+            }
+          },
+          "score": 35.586136,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Representation Learning for Semi-Supervised Time-Series Classification_supp1-3308189.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.20944/preprints202506.0217.v1",
+          "URL": "https://doi.org/10.20944/preprints202506.0217.v1",
+          "abstract": "<jats:p>Virulence factors (VFs), produced by pathogens, facilitate pathogenic microorganisms to invade, colonize, and damage the host cells. Accurate VF identification advances pathogenic mechanism understanding and provides novel anti-virulence targets. Existing models primarily utilize protein sequence features while overlooking the systematic protein-protein interaction (PPI) information, despite pathogenesis typically results from coordinated protein-protein actions. Moreover, a severe imbalance exists between virulence and non-virulence proteins, which causes existing models trained on balanced datasets by sampling to fail to incorporate proteins&amp;#039; inherent distributional characteristics, thus restricting generalization to real-world imbalanced data. To address these challenges, we propose a novel Generative and Contrastive self-supervised learning framework for Virulence Factor identification (GC-VF) that transforms VF identification into an imbalanced node classification task on graphs generated from PPI networks. The framework encompasses two core modules: the generative attribute reconstruction module learns attribute space representations via feature reconstruction, capturing intrinsic data patterns and reducing noise; the local contrastive learning module employs node-level contrastive learning to precisely capture local features and contextual information, avoiding global aggregation losses while ensuring node representations truly reflect inherent characteristics. Comprehensive benchmark experiments demonstrate that GC-VF outperforms baseline methods on naturally imbalanced datasets, exhibiting higher accuracy and stability, providing a potential solution for accurate VF identification.</jats:p>",
+          "accepted": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                3
+              ]
+            ]
+          },
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0009-0003-0641-1636",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Yao",
+              "given": "Yalin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Chen",
+              "given": "Hao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Jianxin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Yeru",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                4
+              ]
+            ],
+            "date-time": "2025-06-04T21:44:56Z",
+            "timestamp": 1749073496000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                17
+              ]
+            ],
+            "date-time": "2025-07-17T01:37:24Z",
+            "timestamp": 1752716244000
+          },
+          "group-title": "Biology and Life Sciences",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                12
+              ]
+            ],
+            "date-time": "2026-05-12T06:48:14Z",
+            "timestamp": 1778568494682,
+            "version": "3.51.4"
+          },
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                3
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "http://creativecommons.org/licenses/by/4.0",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    6,
+                    3
+                  ]
+                ],
+                "date-time": "2025-06-03T00:00:00Z",
+                "timestamp": 1748908800000
+              }
+            }
+          ],
+          "member": "1968",
+          "posted": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                3
+              ]
+            ]
+          },
+          "prefix": "10.20944",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                3
+              ]
+            ]
+          },
+          "publisher": "MDPI AG",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-preprint-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.3390/microorganisms13071635",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.preprints.org/manuscript/202506.0217/v1"
+            }
+          },
+          "score": 34.769806,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Generative and Contrastive Self-Supervised Learning for Virulence Factor Identification Based on Protein-Protein Interaction Networks"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.1021/acs.jcim.4c00157.s001",
+          "URL": "https://doi.org/10.1021/acs.jcim.4c00157.s001",
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                14
+              ]
+            ],
+            "date-time": "2024-03-14T19:00:20Z",
+            "timestamp": 1710442820000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2024-03-25T03:42:10Z",
+            "timestamp": 1711338130000
+          },
+          "description": "Supplemental Information for 10.1021/acs.jcim.4c00157",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                26
+              ]
+            ],
+            "date-time": "2026-02-26T17:37:15Z",
+            "timestamp": 1772127435972,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "316",
+          "prefix": "10.1021",
+          "publisher": "American Chemical Society (ACS)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1021/acs.jcim.4c00157",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.4c00157/suppl_file/ci4c00157_si_001.pdf"
+            }
+          },
+          "score": 34.644897,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Molecular Representation Learning with a Chemical Synthesis Knowledge Graph"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.7717/peerjcs.1045/table-5",
+          "URL": "https://doi.org/10.7717/peerjcs.1045/table-5",
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                19
+              ]
+            ],
+            "date-time": "2022-07-19T04:11:30Z",
+            "timestamp": 1658203890000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                7,
+                19
+              ]
+            ],
+            "date-time": "2022-07-19T04:11:38Z",
+            "timestamp": 1658203898000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                28
+              ]
+            ],
+            "date-time": "2026-02-28T09:28:32Z",
+            "timestamp": 1772270912141,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "4443",
+          "prefix": "10.7717",
+          "publisher": "PeerJ",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.7717/peerj-cs.1045",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://peerj.com/articles/cs-1045/table-5"
+            }
+          },
+          "score": 34.610916,
+          "source": "Crossref",
+          "title": [
+            "Table 5: Summary of contrastive self-supervised learning methods in medical imaging."
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.36227/techrxiv.12308378.v1",
+          "URL": "https://doi.org/10.36227/techrxiv.12308378.v1",
+          "abstract": "<jats:p>Pretrained language models such as BERT, GPT have shown great\neffectiveness in language understanding. The auxiliary predictive tasks\nin existing pretraining approaches are mostly defined on tokens, thus\nmay not be able to capture sentence-level semantics very well. To\naddress this issue, we propose CERT: Contrastive self-supervised Encoder\nRepresentations from Transformers, which pretrains language\nrepresentation models using contrastive self-supervised learning at the\nsentence level. CERT creates augmentations of original sentences using\nback-translation. Then it finetunes a pretrained language encoder (e.g.,\nBERT) by predicting whether two augmented sentences originate from the\nsame sentence. CERT is simple to use and can be flexibly plugged into\nany pretraining-finetuning NLP pipeline. We evaluate CERT on three\nlanguage understanding tasks: CoLA, RTE, and QNLI. CERT outperforms BERT\nsignificantly.</jats:p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Fang",
+              "given": "Hongchao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "UC San Diego"
+                }
+              ],
+              "family": "Xie",
+              "given": "Pengtao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2020-05-21T13:02:42Z",
+            "timestamp": 1590066162000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                3
+              ]
+            ],
+            "date-time": "2026-06-03T17:07:00Z",
+            "timestamp": 1780506420000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                3
+              ]
+            ],
+            "date-time": "2026-06-03T18:01:55Z",
+            "timestamp": 1780509715808,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 69,
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                21
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    5,
+                    21
+                  ]
+                ],
+                "date-time": "2020-05-21T00:00:00Z",
+                "timestamp": 1590019200000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.12308378.v1",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "posted": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                21
+              ]
+            ]
+          },
+          "prefix": "10.36227",
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                5,
+                21
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.12308378.v1"
+            }
+          },
+          "score": 34.08292,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "CERT: Contrastive Self-supervised Learning for Language Understanding"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.36227/techrxiv.16828363",
+          "URL": "https://doi.org/10.36227/techrxiv.16828363",
+          "abstract": "<jats:p>We propose an acoustic anomaly detection algorithm based on the framework of contrastive learning. Contrastive learning is a recently proposed self-supervised approach that has shown promising results in image classification and speech recognition. However, its application in anomaly detection is underexplored. Earlier studies have demonstrated that it can achieve state-of-the-art performance in image anomaly detection, but its capability in anomalous sound detection is yet to be investigated. For the first time, we propose a contrastive learning-based framework that is suitable for acoustic anomaly detection. Since most existing contrastive learning approaches are targeted toward images, the effect of other data transformations on the performance of the algorithm is unknown. Our framework learns a representation from unlabeled data by applying audio-specific data augmentations.  We show that in the resulting latent space, normal and abnormal points are distinguishable. Experiments conducted on the MIMII dataset confirm that our approach can outperform competing methods in detecting anomalies.</jats:p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Hojjati",
+              "given": "Hadi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Armanfard",
+              "given": "Narges",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2021-10-21T04:39:47Z",
+            "timestamp": 1634791187000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2021-10-21T18:43:17Z",
+            "timestamp": 1634841797000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                2,
+                14
+              ]
+            ],
+            "date-time": "2024-02-14T19:40:14Z",
+            "timestamp": 1707939614062
+          },
+          "institution": [
+            {
+              "name": "TechRxiv"
+            }
+          ],
+          "is-referenced-by-count": 2,
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                21
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    10,
+                    21
+                  ]
+                ],
+                "date-time": "2021-10-21T00:00:00Z",
+                "timestamp": 1634774400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://ndownloader.figshare.com/files/31153600",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "posted": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                21
+              ]
+            ]
+          },
+          "prefix": "10.36227",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                21
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.techrxiv.org/articles/preprint/SELF-SUPERVISED_ACOUSTIC_ANOMALY_DETECTION_VIA_CONTRASTIVE_LEARNING/16828363"
+            }
+          },
+          "score": 34.034447,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "SELF-SUPERVISED ACOUSTIC ANOMALY DETECTION VIA CONTRASTIVE LEARNING"
+          ],
+          "type": "posted-content"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 3876880
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "c181ec06dcb538651df0e6f38ccbd1ec70da41e153f8a7cc0ee9ce8737997df2",
+  "retrieved_at": "2026-07-14T14:06:19Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

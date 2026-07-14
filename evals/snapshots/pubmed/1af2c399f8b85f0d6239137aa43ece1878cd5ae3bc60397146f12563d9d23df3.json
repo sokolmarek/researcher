@@ -1,0 +1,74 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "1af2c399f8b85f0d6239137aa43ece1878cd5ae3bc60397146f12563d9d23df3",
+  "request_params": {
+    "db": "pubmed",
+    "id": "30617320",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "Computerized electrocardiogram (ECG) interpretation plays a critical role in the clinical ECG workflow1. Widely available digital ECG data and the algorithmic paradigm of deep learning2 present an opportunity to substantially improve the accuracy and scalability of automated ECG analysis. However, a comprehensive evaluation of an end-to-end deep learning approach for ECG analysis across a wide variety of diagnostic classes has not been previously reported. Here, we develop a deep neural network (DNN) to classify 12 rhythm classes using 91,232 single-lead ECGs from 53,549 patients who used a single-lead ambulatory ECG monitoring device. When validated against an independent test dataset annotated by a consensus committee of board-certified practicing cardiologists, the DNN achieved an average area under the receiver operating characteristic curve (ROC) of 0.97. The average F1 score, which is the harmonic mean of the positive predictive value and sensitivity, for the DNN (0.837) exceeded that of average cardiologists (0.780). With specificity fixed at the average specificity achieved by cardiologists, the sensitivity of the DNN exceeded the average cardiologist sensitivity for all rhythm classes. These findings demonstrate that an end-to-end deep learning approach can classify a broad range of distinct arrhythmias from single-lead ECGs with high diagnostic performance similar to that of cardiologists. If confirmed in clinical settings, this approach could reduce the rate of misdiagnosed computerized ECG interpretations and improve the efficiency of expert human ECG interpretation by accurately triaging or prioritizing the most urgent conditions.",
+        "authors": [
+          {
+            "family": "Hannun",
+            "given": "Awni Y"
+          },
+          {
+            "family": "Rajpurkar",
+            "given": "Pranav"
+          },
+          {
+            "family": "Haghpanahi",
+            "given": "Masoumeh"
+          },
+          {
+            "family": "Tison",
+            "given": "Geoffrey H"
+          },
+          {
+            "family": "Bourn",
+            "given": "Codie"
+          },
+          {
+            "family": "Turakhia",
+            "given": "Mintu P"
+          },
+          {
+            "family": "Ng",
+            "given": "Andrew Y"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1038/s41591-018-0268-3",
+        "issn": [
+          "1546-170X"
+        ],
+        "issue": "1",
+        "journal": "Nature medicine",
+        "journal_abbreviation": "Nat Med",
+        "keywords": [],
+        "language": "eng",
+        "month": 1,
+        "page": "65-69",
+        "pmcid": "PMC6784839",
+        "pmid": "30617320",
+        "publication_types": [
+          "Journal Article",
+          "Research Support, N.I.H., Extramural",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "record_type": "article",
+        "title": "Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network.",
+        "volume": "25",
+        "year": 2019
+      }
+    ]
+  },
+  "response_hash": "9d9b5d3874d0ff21ce2367de65e373c2a768557dda7b5ec3d4856aa2193ad989",
+  "retrieved_at": "2026-07-14T13:49:43Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

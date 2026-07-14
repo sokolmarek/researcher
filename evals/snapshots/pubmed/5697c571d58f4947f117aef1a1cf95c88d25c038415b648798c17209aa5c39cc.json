@@ -1,0 +1,42 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "5697c571d58f4947f117aef1a1cf95c88d25c038415b648798c17209aa5c39cc",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.21437/interspeech.2022-143[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "0",
+      "errorlist": {
+        "fieldsnotfound": [],
+        "phrasesnotfound": [
+          "interspeech.2022-143"
+        ]
+      },
+      "idlist": [],
+      "querytranslation": "10.21437/interspeech.2022-143[AID]",
+      "retmax": "0",
+      "retstart": "0",
+      "translationset": [],
+      "warninglist": {
+        "outputmessages": [
+          "No items found."
+        ],
+        "phrasesignored": [],
+        "quotedphrasesnotfound": []
+      }
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "f02a2a77cbe168525a735c2731ecdd65d306171a8e507c0dddb4e183621211a3",
+  "retrieved_at": "2026-07-14T14:15:57Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

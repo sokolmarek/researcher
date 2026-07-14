@@ -1,0 +1,294 @@
+{
+  "endpoint": "works/doi:10.1016/j.jelectrocard.2009.06.006",
+  "request_key": "2126a9b38a6aeb01c38251a976d433842019ed78c2fc74fa44410141380e0219",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210131230"
+            ],
+            "raw_affiliation_string": "Advanced Algorithm Research Center, Philips Healthcare, 1525 Rancho Conejo Blvd., Thousand Oaks, CA 91320, USA. saeed.babaeizadeh@philips.com"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210131230"
+            ],
+            "raw_affiliation_string": "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Saeed Babaeizadeh",
+          "id": "https://openalex.org/A5046489727",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Philips (United States)",
+            "id": "https://openalex.org/I4210131230",
+            "lineage": [
+              "https://openalex.org/I4210122849",
+              "https://openalex.org/I4210131230"
+            ],
+            "ror": "https://ror.org/03kw6wr76",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Advanced Algorithm Research Center, Philips Healthcare, 1525 Rancho Conejo Blvd., Thousand Oaks, CA 91320, USA. saeed.babaeizadeh@philips.com",
+          "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+        ],
+        "raw_author_name": "Saeed Babaeizadeh"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210131230"
+            ],
+            "raw_affiliation_string": "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Richard E. Gregg",
+          "id": "https://openalex.org/A5010676062",
+          "orcid": "https://orcid.org/0000-0001-8858-2591"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Philips (United States)",
+            "id": "https://openalex.org/I4210131230",
+            "lineage": [
+              "https://openalex.org/I4210122849",
+              "https://openalex.org/I4210131230"
+            ],
+            "ror": "https://ror.org/03kw6wr76",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+        ],
+        "raw_author_name": "Richard E. Gregg"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210131230"
+            ],
+            "raw_affiliation_string": "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Eric Helfenbein",
+          "id": "https://openalex.org/A5043557535",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Philips (United States)",
+            "id": "https://openalex.org/I4210131230",
+            "lineage": [
+              "https://openalex.org/I4210122849",
+              "https://openalex.org/I4210131230"
+            ],
+            "ror": "https://ror.org/03kw6wr76",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+        ],
+        "raw_author_name": "Eric D. Helfenbein"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210131230"
+            ],
+            "raw_affiliation_string": "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "James M. Lindauer",
+          "id": "https://openalex.org/A5108199995",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Philips (United States)",
+            "id": "https://openalex.org/I4210131230",
+            "lineage": [
+              "https://openalex.org/I4210122849",
+              "https://openalex.org/I4210131230"
+            ],
+            "ror": "https://ror.org/03kw6wr76",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+        ],
+        "raw_author_name": "James M. Lindauer"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210131230"
+            ],
+            "raw_affiliation_string": "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Sophia Zhou",
+          "id": "https://openalex.org/A5103361160",
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Philips (United States)",
+            "id": "https://openalex.org/I4210131230",
+            "lineage": [
+              "https://openalex.org/I4210122849",
+              "https://openalex.org/I4210131230"
+            ],
+            "ror": "https://ror.org/03kw6wr76",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Advanced Algorithm Research Center, Philips Healthcare, Thousand Oaks, CA, USA"
+        ],
+        "raw_author_name": "Sophia H. Zhou"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "522",
+      "issue": "6",
+      "last_page": "526",
+      "volume": "42"
+    },
+    "cited_by_count": 171,
+    "display_name": "Improvements in atrial fibrillation detection for real-time monitoring",
+    "doi": "https://doi.org/10.1016/j.jelectrocard.2009.06.006",
+    "id": "https://openalex.org/W2041691167",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.jelectrocard.2009.06.006",
+      "mag": "2041691167",
+      "openalex": "https://openalex.org/W2041691167",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/19608194"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.jelectrocard.2009.06.006",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.jelectrocard.2009.06.006",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Journal of Electrocardiology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Journal of Electrocardiology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S197069552",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0022-0736",
+          "1532-8430"
+        ],
+        "issn_l": "0022-0736",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2009-07-16",
+    "publication_year": 2009,
+    "referenced_works": [
+      "https://openalex.org/W19748391",
+      "https://openalex.org/W1540596182",
+      "https://openalex.org/W1594031697",
+      "https://openalex.org/W1968243177",
+      "https://openalex.org/W2050786596",
+      "https://openalex.org/W2056400192",
+      "https://openalex.org/W2060669113",
+      "https://openalex.org/W2063090239",
+      "https://openalex.org/W2100797435",
+      "https://openalex.org/W2105349897",
+      "https://openalex.org/W2113260616",
+      "https://openalex.org/W2172245650",
+      "https://openalex.org/W2330820318",
+      "https://openalex.org/W2470108114",
+      "https://openalex.org/W2744079636",
+      "https://openalex.org/W3085162807",
+      "https://openalex.org/W3099514962",
+      "https://openalex.org/W4250857377",
+      "https://openalex.org/W6632267817",
+      "https://openalex.org/W6675382273"
+    ],
+    "referenced_works_count": 20,
+    "title": "Improvements in atrial fibrillation detection for real-time monitoring",
+    "type": "article"
+  },
+  "response_hash": "a397338411db50034af23d0714043380f9704bffee180b2a1662b3575fecde44",
+  "retrieved_at": "2026-07-14T14:48:40Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

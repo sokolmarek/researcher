@@ -1,0 +1,442 @@
+{
+  "endpoint": "works/10.1186/1475-925x-8-38",
+  "request_key": "07874ee3bcc8411d1f0003fced45fe8f0517aa4360cb7da8fd90dc43573f808d",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1186/1475-925x-8-38",
+      "ISSN": [
+        "1475-925X"
+      ],
+      "URL": "https://doi.org/10.1186/1475-925x-8-38",
+      "abstract": "<jats:title>Abstract</jats:title>\n          <jats:sec>\n            <jats:title>Background</jats:title>\n            <jats:p>Atrial fibrillation (AFib) is one of the prominent causes of stroke, and its risk increases with age. We need to detect AFib correctly as early as possible to avoid medical disaster because it is likely to proceed into a more serious form in short time. If we can make a portable AFib monitoring system, it will be helpful to many old people because we cannot predict when a patient will have a spasm of AFib.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Methods</jats:title>\n            <jats:p>We analyzed heart beat variability from inter-beat intervals obtained by a wavelet-based detector. We made a Poincare plot using the inter-beat intervals. By analyzing the plot, we extracted three feature measures characterizing AFib and non-AFib: the number of clusters, mean stepping increment of inter-beat intervals, and dispersion of the points around a diagonal line in the plot. We divided distribution of the number of clusters into two and calculated mean value of the lower part by k-means clustering method. We classified data whose number of clusters is more than one and less than this mean value as non-AFib data. In the other case, we tried to discriminate AFib from non-AFib using support vector machine with the other feature measures: the mean stepping increment and dispersion of the points in the Poincare plot.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Results</jats:title>\n            <jats:p>We found that Poincare plot from non-AFib data showed some pattern, while the plot from AFib data showed irregularly irregular shape. In case of non-AFib data, the definite pattern in the plot manifested itself with some limited number of clusters or closely packed one cluster. In case of AFib data, the number of clusters in the plot was one or too many. We evaluated the accuracy using leave-one-out cross-validation. Mean sensitivity and mean specificity were 91.4% and 92.9% respectively.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Conclusions</jats:title>\n            <jats:p>Because pulse beats of ventricles are less likely to be influenced by baseline wandering and noise, we used the inter-beat intervals to diagnose AFib. We visually displayed regularity of the inter-beat intervals by way of Poincare plot. We tried to design an automated algorithm which did not require any human intervention and any specific threshold, and could be installed in a portable AFib monitoring system.</jats:p>\n          </jats:sec>",
+      "alternative-id": [
+        "324"
+      ],
+      "article-number": "38",
+      "assertion": [
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Received",
+          "name": "received",
+          "order": 1,
+          "value": "17 September 2009"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Accepted",
+          "name": "accepted",
+          "order": 2,
+          "value": "11 December 2009"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "First Online",
+          "name": "first_online",
+          "order": 3,
+          "value": "11 December 2009"
+        }
+      ],
+      "author": [
+        {
+          "affiliation": [],
+          "family": "Park",
+          "given": "Jinho",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "affiliation": [],
+          "family": "Lee",
+          "given": "Sangwook",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Jeon",
+          "given": "Moongu",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "BioMedical Engineering OnLine"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": [
+          "link.springer.com"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2009,
+            12,
+            11
+          ]
+        ],
+        "date-time": "2009-12-11T19:15:23Z",
+        "timestamp": 1260558923000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T01:05:37Z",
+        "timestamp": 1630458337000
+      },
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            18
+          ]
+        ],
+        "date-time": "2026-03-18T08:37:07Z",
+        "timestamp": 1773823027566,
+        "version": "3.50.1"
+      },
+      "is-referenced-by-count": 133,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "1475-925X"
+        }
+      ],
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            12
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2009,
+              12
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1186/1475-925X-8-38.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "297",
+      "original-title": [],
+      "prefix": "10.1186",
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2009,
+            12,
+            11
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            12
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "reference": [
+        {
+          "DOI": "10.1016/0002-9149(94)90363-8",
+          "author": "C Furberg",
+          "doi-asserted-by": "publisher",
+          "first-page": "236",
+          "issue": "3",
+          "journal-title": "The American Journal of Cardiology",
+          "key": "324_CR1",
+          "unstructured": "Furberg C, Psaty B, Manolio T, Gardin J, Smith V, Rautaharju P: Prevalence of atrial fibrillation in elderly subjects. The American Journal of Cardiology 1994,74(3):236–241. 10.1016/0002-9149(94)90363-8",
+          "volume": "74",
+          "year": "1994"
+        },
+        {
+          "DOI": "10.1109/EMB-M.2006.250504",
+          "author": "A Bollmann",
+          "doi-asserted-by": "publisher",
+          "first-page": "15",
+          "issue": "6",
+          "journal-title": "IEEE Engineering in Medicine and Biology Magazine",
+          "key": "324_CR2",
+          "unstructured": "Bollmann A, Lombardi F: Electrocardiology of Atrial Fibrillation. Current Knowledge and Future Challenges. IEEE Engineering in Medicine and Biology Magazine 2006,25(6):15–23. 10.1109/EMB-M.2006.250504",
+          "volume": "25",
+          "year": "2006"
+        },
+        {
+          "author": "N Al-Rawahi",
+          "first-page": "21",
+          "key": "324_CR3",
+          "unstructured": "Al-Rawahi N, Green M: Diagnosis of Supraventricular Tachycardia. Journal of The Association of Physicians of India 2007, (Suppl 55):21–24.",
+          "volume-title": "Diagnosis of Supraventricular Tachycardia",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1536/ihj.22.143",
+          "author": "N Takahashi",
+          "doi-asserted-by": "publisher",
+          "first-page": "143",
+          "journal-title": "Japanese Heart Journal",
+          "key": "324_CR4",
+          "unstructured": "Takahashi N, Seki A, Imataka K, Fujii J: Clinical Features of Paroxysmal Atrial Fibrillation. An Observation of 94 Patients [abstract]. Japanese Heart Journal 1981, 22: 143–149.",
+          "volume": "22",
+          "year": "1981"
+        },
+        {
+          "DOI": "10.1161/01.CIR.95.5.1231",
+          "author": "KT Konings",
+          "doi-asserted-by": "publisher",
+          "first-page": "1231",
+          "issue": "5",
+          "journal-title": "Circulation",
+          "key": "324_CR5",
+          "unstructured": "Konings KT, Smeets JL, Penn OC, Wellens HJ, Allessie MA: Configuration of Unipolar Atrial Electrograms During Electrically Induced Atrial Fibrillation in Humans. Circulation 1997,95(5):1231–1241.",
+          "volume": "95",
+          "year": "1997"
+        },
+        {
+          "DOI": "10.1109/EMB-M.2006.250511",
+          "author": "V Jacquemet",
+          "doi-asserted-by": "publisher",
+          "first-page": "79",
+          "issue": "6",
+          "journal-title": "IEEE Engineering In Medicine And Biology Magazine",
+          "key": "324_CR6",
+          "unstructured": "Jacquemet V, Van Oosterom A, Vesin JM, Kappenberger L: Analysis of Electrocardiograms During Atrial Fibrillation. A Biophysical Model Approach. IEEE Engineering In Medicine And Biology Magazine 2006,25(6):79–88. 10.1109/EMB-M.2006.250511",
+          "volume": "25",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1136/bmj.317.7154.327",
+          "author": "M Sudlow",
+          "doi-asserted-by": "publisher",
+          "first-page": "327",
+          "journal-title": "BMJ",
+          "key": "324_CR7",
+          "unstructured": "Sudlow M, Rodgers H, Kenny RA, Thomson R: Identification of patients with atrial fibrillation in general practice: a study of screening methods. BMJ 1998, 317: 327–328.",
+          "volume": "317",
+          "year": "1998"
+        },
+        {
+          "author": "S Somerville",
+          "first-page": "727",
+          "journal-title": "Br J Gen Pract",
+          "key": "324_CR8",
+          "unstructured": "Somerville S, Somerville J, Croft P, Lewis M: Atrial fibrillation: a comparison of methods to identify cases in general practice. Br J Gen Pract 2000, 50: 727–729.",
+          "volume": "50",
+          "year": "2000"
+        },
+        {
+          "DOI": "10.1136/bmj.39227.551713.AE",
+          "author": "J Mant",
+          "doi-asserted-by": "publisher",
+          "first-page": "380",
+          "journal-title": "BMJ",
+          "key": "324_CR9",
+          "unstructured": "Mant J, Fitzmaurice DA, Hobbs FDR, Jowett S, Murray ET, Holder R, Davies M, Lip GYH: Accuracy of diagnosing atrial fibrillation on electrocardiogram by primary care practitioners and interpretative diagnostic software: analysis of data from screening for atrial fibrillation in the elderly (SAFE) trial. BMJ 2007, 335: 380. 10.1136/bmj.39227.551713.AE",
+          "volume": "335",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1161/01.CIR.0000012349.14270.54",
+          "author": "W Xu",
+          "doi-asserted-by": "publisher",
+          "first-page": "1472",
+          "journal-title": "Circulation",
+          "key": "324_CR10",
+          "unstructured": "Xu W, Tse HF, Chan F, Fung P, Lee K, Lau CP: New Bayesian Discriminator for Detection of Atrial Tachyarrhythmias. Circulation 2002, 105: 1472–1479. 10.1161/01.CIR.0000012349.14270.54",
+          "volume": "105",
+          "year": "2002"
+        },
+        {
+          "author": "E Petrucci",
+          "first-page": "623",
+          "journal-title": "Computers in Cardiology",
+          "key": "324_CR11",
+          "unstructured": "Petrucci E, Balian V, Filippini G, Mainardi L: Atrial Fibrillation Detection Algorithms for Very Long Term ECG Monitoring. Computers in Cardiology 2005, 2005: 623–626. full_text",
+          "volume": "2005",
+          "year": "2005"
+        },
+        {
+          "author": "N Kikillus",
+          "first-page": "275",
+          "journal-title": "Conf Proc IEEE Eng Med Biol Soc",
+          "key": "324_CR12",
+          "unstructured": "Kikillus N, Hammer G, Wieland S, Bolz A: Algorithm for Identifying Patients with Paroxysmal Atrial Fibrillation without Appearance on the ECG. Conf Proc IEEE Eng Med Biol Soc 2007, 2007: 275–278.",
+          "volume": "2007",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1016/j.jelectrocard.2006.10.061",
+          "author": "R Thuraisingham",
+          "doi-asserted-by": "publisher",
+          "first-page": "344",
+          "journal-title": "Journal of Electrocardiology",
+          "key": "324_CR13",
+          "unstructured": "Thuraisingham R: An electrocardiogram marker to detect paroxysmal atrial fibrillation. Journal of Electrocardiology 2007, 40: 344–347. 10.1016/j.jelectrocard.2006.10.061",
+          "volume": "40",
+          "year": "2007"
+        },
+        {
+          "author": "R Shouldice",
+          "first-page": "686",
+          "journal-title": "Conf Proc IEEE Eng Med Biol Soc",
+          "key": "324_CR14",
+          "unstructured": "Shouldice R, Heneghan C, de Chazal P: Automated Detection of Paroxysmal Atrial Fibrillation from Inter-Heartbeat Intervals. Conf Proc IEEE Eng Med Biol Soc 2007, 2007: 686–689.",
+          "volume": "2007",
+          "year": "2007"
+        },
+        {
+          "author": "N Kikillus",
+          "first-page": "1349",
+          "key": "324_CR15",
+          "unstructured": "Kikillus N, Schweikert M, Bolz A: Identifying Patients Suffering From Atrial Fibrillation During Atrial Fibrillation and Non-Atrial Fibrillation Episodes. 4th European Conference of the International Federation for Medical and Biological Engineering 2008, 1349–1352.",
+          "volume-title": "4th European Conference of the International Federation for Medical and Biological Engineering",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1109/EMB-M.2006.250505",
+          "author": "S Petrutiu",
+          "doi-asserted-by": "publisher",
+          "first-page": "24",
+          "issue": "6",
+          "journal-title": "IEEE Engineering in Medicine and Biology Magazine",
+          "key": "324_CR16",
+          "unstructured": "Petrutiu S, Ng J, Nijm GM, Al-Angari HM, Swiryn S, Sahakian AV: Atrial Fibrillation and Waveform Characterization. A Time Domain Perspective in the Surface ECG. IEEE Engineering in Medicine and Biology Magazine 2006,25(6):24–30. 10.1109/EMB-M.2006.250505",
+          "volume": "25",
+          "year": "2006"
+        },
+        {
+          "key": "324_CR17",
+          "unstructured": "The Paroxysmal Atrial Fibrillation Prediction Challenge Database, Computers in Cardiology Challenge 2001[http://www.physionet.org/physiobank/database/afpdb]"
+        },
+        {
+          "key": "324_CR18",
+          "unstructured": "The Atrial Fibrillation Termination Challenge Database, Computers in Cardiology Challenge 2004[http://www.physionet.org/physiobank/database/aftdb]"
+        },
+        {
+          "author": "J Park",
+          "key": "324_CR19",
+          "unstructured": "Park J: Analysis of Heart Beat Irregularity for Atrial Fibrillation by Wavelet Method of QRS Complex Detection. In Master's thesis. Korea University of Science and Technology, Medical Physics; 2008.",
+          "volume-title": "Master's thesis",
+          "year": "2008"
+        },
+        {
+          "DOI": "10.1155/S1026022600000066",
+          "author": "H Kasmacher",
+          "doi-asserted-by": "publisher",
+          "first-page": "63",
+          "journal-title": "Discrete Dynamics In Nature And Society",
+          "key": "324_CR20",
+          "unstructured": "Kasmacher H, Wiese S, Lahl M: Monitoring the Complexity of Ventricular Response in Atrial Fibrillation. Discrete Dynamics In Nature And Society 2000, 4: 63–75. 10.1155/S1026022600000066",
+          "volume": "4",
+          "year": "2000"
+        },
+        {
+          "author": "D Zemaityte",
+          "first-page": "80",
+          "issue": "2",
+          "journal-title": "Biomedicine",
+          "key": "324_CR21",
+          "unstructured": "Zemaityte D, Varoneckas G, Ozeraitis E, Podlipskyte A, Valyte G, Zakarevicius L: Heart Rate Poincare Plots and Their Hemodynamic Correlates: Discrimination Between Sinus and Ectopic Rhythms. Biomedicine 2001,1(2):80–89.",
+          "volume": "1",
+          "year": "2001"
+        },
+        {
+          "author": "F Chung",
+          "key": "324_CR22",
+          "unstructured": "Chung F: Spectral graph theory. American Mathematical Society; 1997.",
+          "volume-title": "Spectral graph theory",
+          "year": "1997"
+        },
+        {
+          "key": "324_CR23",
+          "unstructured": "Chih-Chung Chang and Chih-Jen Lin, LIBSVM: a library for support vector machines, 2001[http://www.csie.ntu.edu.tw/~cjlin/libsvm]"
+        }
+      ],
+      "reference-count": 23,
+      "references-count": 23,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-8-38"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "BioMed Eng OnLine"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Atrial fibrillation detection by heart rate variability in Poincare plot"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "volume": "8"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "32850a7d32d4673013d2fc79be1be628a125970055c9e3872cfa83af93d39339",
+  "retrieved_at": "2026-07-14T14:48:42Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

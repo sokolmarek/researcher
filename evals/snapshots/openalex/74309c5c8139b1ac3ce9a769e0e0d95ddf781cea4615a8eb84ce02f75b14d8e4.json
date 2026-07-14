@@ -1,0 +1,553 @@
+{
+  "endpoint": "works/doi:10.1007/s11263-023-01852-4",
+  "request_key": "74309c5c8139b1ac3ce9a769e0e0d95ddf781cea4615a8eb84ce02f75b14d8e4",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I20231570"
+            ],
+            "raw_affiliation_string": "Peking University, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Xiaokang Chen",
+          "id": "https://openalex.org/A5101412833",
+          "orcid": "https://orcid.org/0000-0002-6188-5821"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Peking University",
+            "id": "https://openalex.org/I20231570",
+            "lineage": [
+              "https://openalex.org/I20231570"
+            ],
+            "ror": "https://ror.org/02v51f717",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Peking University, Beijing, China"
+        ],
+        "raw_author_name": "Xiaokang Chen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I134446601",
+              "https://openalex.org/I95457486"
+            ],
+            "raw_affiliation_string": "UC Berkeley, Berkeley, CA, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I889458895"
+            ],
+            "raw_affiliation_string": "University of Hong Kong, Pok Fu Lam, Hong Kong"
+          }
+        ],
+        "author": {
+          "display_name": "Mingyu Ding",
+          "id": "https://openalex.org/A5022382771",
+          "orcid": "https://orcid.org/0000-0001-6556-8359"
+        },
+        "author_position": "middle",
+        "countries": [
+          "HK",
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Berkeley College",
+            "id": "https://openalex.org/I134446601",
+            "lineage": [
+              "https://openalex.org/I134446601"
+            ],
+            "ror": "https://ror.org/02xewxa75",
+            "type": "education"
+          },
+          {
+            "country_code": "HK",
+            "display_name": "University of Hong Kong",
+            "id": "https://openalex.org/I889458895",
+            "lineage": [
+              "https://openalex.org/I889458895"
+            ],
+            "ror": "https://ror.org/02zhqgq86",
+            "type": "education"
+          },
+          {
+            "country_code": "US",
+            "display_name": "University of California, Berkeley",
+            "id": "https://openalex.org/I95457486",
+            "lineage": [
+              "https://openalex.org/I95457486"
+            ],
+            "ror": "https://ror.org/01an7q238",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "UC Berkeley, Berkeley, CA, USA",
+          "University of Hong Kong, Pok Fu Lam, Hong Kong"
+        ],
+        "raw_author_name": "Mingyu Ding",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98301712"
+            ],
+            "raw_affiliation_string": "Baidu, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Xiaodi Wang",
+          "id": "https://openalex.org/A5100760481",
+          "orcid": "https://orcid.org/0000-0001-5854-2003"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Baidu (China)",
+            "id": "https://openalex.org/I98301712",
+            "lineage": [
+              "https://openalex.org/I98301712"
+            ],
+            "ror": "https://ror.org/03vs3wt56",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Baidu, Beijing, China"
+        ],
+        "raw_author_name": "Xiaodi Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98301712"
+            ],
+            "raw_affiliation_string": "Baidu, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Ying Xin",
+          "id": "https://openalex.org/A5055779014",
+          "orcid": "https://orcid.org/0000-0001-7413-0711"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Baidu (China)",
+            "id": "https://openalex.org/I98301712",
+            "lineage": [
+              "https://openalex.org/I98301712"
+            ],
+            "ror": "https://ror.org/03vs3wt56",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Baidu, Beijing, China"
+        ],
+        "raw_author_name": "Ying Xin",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98301712"
+            ],
+            "raw_affiliation_string": "Baidu, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Shentong Mo",
+          "id": "https://openalex.org/A5042783792",
+          "orcid": "https://orcid.org/0000-0003-3308-9585"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Baidu (China)",
+            "id": "https://openalex.org/I98301712",
+            "lineage": [
+              "https://openalex.org/I98301712"
+            ],
+            "ror": "https://ror.org/03vs3wt56",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Baidu, Beijing, China"
+        ],
+        "raw_author_name": "Shentong Mo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98301712"
+            ],
+            "raw_affiliation_string": "Baidu, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yunhao Wang",
+          "id": "https://openalex.org/A5101775309",
+          "orcid": "https://orcid.org/0000-0002-4308-1555"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Baidu (China)",
+            "id": "https://openalex.org/I98301712",
+            "lineage": [
+              "https://openalex.org/I98301712"
+            ],
+            "ror": "https://ror.org/03vs3wt56",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Baidu, Beijing, China"
+        ],
+        "raw_author_name": "Yunhao Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98301712"
+            ],
+            "raw_affiliation_string": "Baidu, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Shumin Han",
+          "id": "https://openalex.org/A5016062734",
+          "orcid": "https://orcid.org/0000-0001-5602-9863"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Baidu (China)",
+            "id": "https://openalex.org/I98301712",
+            "lineage": [
+              "https://openalex.org/I98301712"
+            ],
+            "ror": "https://ror.org/03vs3wt56",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Baidu, Beijing, China"
+        ],
+        "raw_author_name": "Shumin Han",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I889458895"
+            ],
+            "raw_affiliation_string": "University of Hong Kong, Pok Fu Lam, Hong Kong"
+          }
+        ],
+        "author": {
+          "display_name": "Ping Luo",
+          "id": "https://openalex.org/A5100752686",
+          "orcid": "https://orcid.org/0000-0002-6685-7950"
+        },
+        "author_position": "middle",
+        "countries": [
+          "HK"
+        ],
+        "institutions": [
+          {
+            "country_code": "HK",
+            "display_name": "University of Hong Kong",
+            "id": "https://openalex.org/I889458895",
+            "lineage": [
+              "https://openalex.org/I889458895"
+            ],
+            "ror": "https://ror.org/02zhqgq86",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Hong Kong, Pok Fu Lam, Hong Kong"
+        ],
+        "raw_author_name": "Ping Luo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I20231570"
+            ],
+            "raw_affiliation_string": "Peking University, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Gang Zeng",
+          "id": "https://openalex.org/A5103205993",
+          "orcid": "https://orcid.org/0000-0002-9575-4651"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Peking University",
+            "id": "https://openalex.org/I20231570",
+            "lineage": [
+              "https://openalex.org/I20231570"
+            ],
+            "ror": "https://ror.org/02v51f717",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Peking University, Beijing, China"
+        ],
+        "raw_author_name": "Gang Zeng",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98301712"
+            ],
+            "raw_affiliation_string": "Baidu, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Jingdong Wang",
+          "id": "https://openalex.org/A5075880303",
+          "orcid": "https://orcid.org/0000-0002-4888-4445"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Baidu (China)",
+            "id": "https://openalex.org/I98301712",
+            "lineage": [
+              "https://openalex.org/I98301712"
+            ],
+            "ror": "https://ror.org/03vs3wt56",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Baidu, Beijing, China"
+        ],
+        "raw_author_name": "Jingdong Wang",
+        "raw_orcid": "https://orcid.org/0000-0002-4888-4445"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "208",
+      "issue": "1",
+      "last_page": "223",
+      "volume": "132"
+    },
+    "cited_by_count": 296,
+    "display_name": "Context Autoencoder for Self-supervised Representation Learning",
+    "doi": "https://doi.org/10.1007/s11263-023-01852-4",
+    "id": "https://openalex.org/W4386221015",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s11263-023-01852-4",
+      "openalex": "https://openalex.org/W4386221015"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s11263-023-01852-4",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s11263-023-01852-4",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "International Journal of Computer Vision",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "International Journal of Computer Vision",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S25538012",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0920-5691",
+          "1573-1405"
+        ],
+        "issn_l": "0920-5691",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2023-08-28",
+    "publication_year": 2023,
+    "referenced_works": [
+      "https://openalex.org/W12634471",
+      "https://openalex.org/W343636949",
+      "https://openalex.org/W1836465849",
+      "https://openalex.org/W1861492603",
+      "https://openalex.org/W2025768430",
+      "https://openalex.org/W2100495367",
+      "https://openalex.org/W2102409316",
+      "https://openalex.org/W2108598243",
+      "https://openalex.org/W2117539524",
+      "https://openalex.org/W2144796873",
+      "https://openalex.org/W2145094598",
+      "https://openalex.org/W2148349024",
+      "https://openalex.org/W2172174689",
+      "https://openalex.org/W2321533354",
+      "https://openalex.org/W2326925005",
+      "https://openalex.org/W2331143823",
+      "https://openalex.org/W2474574787",
+      "https://openalex.org/W2609208295",
+      "https://openalex.org/W2737258237",
+      "https://openalex.org/W2798991696",
+      "https://openalex.org/W2883725317",
+      "https://openalex.org/W2884822772",
+      "https://openalex.org/W2896457183",
+      "https://openalex.org/W2941964676",
+      "https://openalex.org/W2944828972",
+      "https://openalex.org/W2962852342",
+      "https://openalex.org/W2963150697",
+      "https://openalex.org/W2963420272",
+      "https://openalex.org/W2987741655",
+      "https://openalex.org/W2989676862",
+      "https://openalex.org/W2992308087",
+      "https://openalex.org/W2998388430",
+      "https://openalex.org/W3005680577",
+      "https://openalex.org/W3018265077",
+      "https://openalex.org/W3035524453",
+      "https://openalex.org/W3041919418",
+      "https://openalex.org/W3094502228",
+      "https://openalex.org/W3145450063",
+      "https://openalex.org/W3159481202",
+      "https://openalex.org/W3168822201",
+      "https://openalex.org/W3171007011",
+      "https://openalex.org/W3172456032",
+      "https://openalex.org/W3172615411",
+      "https://openalex.org/W3192125374",
+      "https://openalex.org/W4221146106",
+      "https://openalex.org/W4281621864",
+      "https://openalex.org/W4285605548",
+      "https://openalex.org/W4307823382",
+      "https://openalex.org/W4308503280",
+      "https://openalex.org/W4308615805",
+      "https://openalex.org/W4312312750",
+      "https://openalex.org/W4312349930",
+      "https://openalex.org/W4312535427",
+      "https://openalex.org/W4312804044",
+      "https://openalex.org/W4313056800",
+      "https://openalex.org/W4313156423",
+      "https://openalex.org/W4313158203",
+      "https://openalex.org/W4318621302",
+      "https://openalex.org/W4320719205",
+      "https://openalex.org/W4382467347",
+      "https://openalex.org/W4386065386",
+      "https://openalex.org/W4386071687",
+      "https://openalex.org/W4386072059",
+      "https://openalex.org/W4386076385",
+      "https://openalex.org/W4386076509",
+      "https://openalex.org/W4386221015",
+      "https://openalex.org/W4389104669",
+      "https://openalex.org/W4390871882",
+      "https://openalex.org/W6685380521",
+      "https://openalex.org/W6779879114",
+      "https://openalex.org/W6790978476",
+      "https://openalex.org/W6846740302"
+    ],
+    "referenced_works_count": 72,
+    "title": "Context Autoencoder for Self-supervised Representation Learning",
+    "type": "article"
+  },
+  "response_hash": "40f1d552120f793e2bff642dffc2708df4d330e7124851a9dba8f2255c11ec87",
+  "retrieved_at": "2026-07-14T14:48:27Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

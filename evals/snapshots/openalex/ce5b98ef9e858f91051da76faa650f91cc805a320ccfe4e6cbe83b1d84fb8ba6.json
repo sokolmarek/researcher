@@ -1,0 +1,568 @@
+{
+  "endpoint": "works/doi:10.1053/j.gastro.2009.01.043",
+  "request_key": "ce5b98ef9e858f91051da76faa650f91cc805a320ccfe4e6cbe83b1d84fb8ba6",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I71999127"
+            ],
+            "raw_affiliation_string": "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210132431"
+            ],
+            "raw_affiliation_string": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Juan G. Abraldeṣ",
+          "id": "https://openalex.org/A5085194045",
+          "orcid": "https://orcid.org/0000-0003-3421-937X"
+        },
+        "author_position": "first",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas",
+            "id": "https://openalex.org/I4210132431",
+            "lineage": [
+              "https://openalex.org/I4210132431"
+            ],
+            "ror": "https://ror.org/03cn6tr16",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Universitat de Barcelona",
+            "id": "https://openalex.org/I71999127",
+            "lineage": [
+              "https://openalex.org/I71999127"
+            ],
+            "ror": "https://ror.org/021018s57",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain",
+          "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+        ],
+        "raw_author_name": "Juan G. Abraldes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210132431"
+            ],
+            "raw_affiliation_string": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210161852",
+              "https://openalex.org/I4210104776"
+            ],
+            "raw_affiliation_string": "Servicio de Gastroenterología, Hospital Universitario Ramón y Cajal, Unidad I+D Asociada al Centro Nacional de Biotecnología, Universidad Alcalá, Madrid, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Agustı́n Albillos",
+          "id": "https://openalex.org/A5054601700",
+          "orcid": "https://orcid.org/0000-0001-9131-2592"
+        },
+        "author_position": "middle",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Centro Nacional de Biotecnología",
+            "id": "https://openalex.org/I4210104776",
+            "lineage": [
+              "https://openalex.org/I134820265",
+              "https://openalex.org/I4210104776"
+            ],
+            "ror": "https://ror.org/015w4v032",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas",
+            "id": "https://openalex.org/I4210132431",
+            "lineage": [
+              "https://openalex.org/I4210132431"
+            ],
+            "ror": "https://ror.org/03cn6tr16",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Hospital Universitario Ramón y Cajal",
+            "id": "https://openalex.org/I4210161852",
+            "lineage": [
+              "https://openalex.org/I4210139293",
+              "https://openalex.org/I4210161852"
+            ],
+            "ror": "https://ror.org/050eq1942",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain",
+          "Servicio de Gastroenterología, Hospital Universitario Ramón y Cajal, Unidad I+D Asociada al Centro Nacional de Biotecnología, Universidad Alcalá, Madrid, Spain"
+        ],
+        "raw_author_name": "Agustin Albillos",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210132431"
+            ],
+            "raw_affiliation_string": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2960094004"
+            ],
+            "raw_affiliation_string": "Servicio de Aparato Digestivo, Sección de Hepatología, Hospital General Universitario Gregorio Marañón, Madrid, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Rafael Bañares",
+          "id": "https://openalex.org/A5017803053",
+          "orcid": "https://orcid.org/0000-0002-0412-8437"
+        },
+        "author_position": "middle",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Hospital General Universitario Gregorio Marañón",
+            "id": "https://openalex.org/I2960094004",
+            "lineage": [
+              "https://openalex.org/I2960094004",
+              "https://openalex.org/I4210139293"
+            ],
+            "ror": "https://ror.org/0111es613",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas",
+            "id": "https://openalex.org/I4210132431",
+            "lineage": [
+              "https://openalex.org/I4210132431"
+            ],
+            "ror": "https://ror.org/03cn6tr16",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain",
+          "Servicio de Aparato Digestivo, Sección de Hepatología, Hospital General Universitario Gregorio Marañón, Madrid, Spain"
+        ],
+        "raw_author_name": "Rafael Bañares",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210132431"
+            ],
+            "raw_affiliation_string": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I71999127"
+            ],
+            "raw_affiliation_string": "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Juan Turnés",
+          "id": "https://openalex.org/A5022846808",
+          "orcid": "https://orcid.org/0000-0001-8426-6145"
+        },
+        "author_position": "middle",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas",
+            "id": "https://openalex.org/I4210132431",
+            "lineage": [
+              "https://openalex.org/I4210132431"
+            ],
+            "ror": "https://ror.org/03cn6tr16",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Universitat de Barcelona",
+            "id": "https://openalex.org/I71999127",
+            "lineage": [
+              "https://openalex.org/I71999127"
+            ],
+            "ror": "https://ror.org/021018s57",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain",
+          "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain"
+        ],
+        "raw_author_name": "Juan Turnes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210132431"
+            ],
+            "raw_affiliation_string": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210161852",
+              "https://openalex.org/I4210104776"
+            ],
+            "raw_affiliation_string": "Servicio de Gastroenterología, Hospital Universitario Ramón y Cajal, Unidad I+D Asociada al Centro Nacional de Biotecnología, Universidad Alcalá, Madrid, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Rosario González",
+          "id": "https://openalex.org/A5103844504",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Centro Nacional de Biotecnología",
+            "id": "https://openalex.org/I4210104776",
+            "lineage": [
+              "https://openalex.org/I134820265",
+              "https://openalex.org/I4210104776"
+            ],
+            "ror": "https://ror.org/015w4v032",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas",
+            "id": "https://openalex.org/I4210132431",
+            "lineage": [
+              "https://openalex.org/I4210132431"
+            ],
+            "ror": "https://ror.org/03cn6tr16",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Hospital Universitario Ramón y Cajal",
+            "id": "https://openalex.org/I4210161852",
+            "lineage": [
+              "https://openalex.org/I4210139293",
+              "https://openalex.org/I4210161852"
+            ],
+            "ror": "https://ror.org/050eq1942",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain",
+          "Servicio de Gastroenterología, Hospital Universitario Ramón y Cajal, Unidad I+D Asociada al Centro Nacional de Biotecnología, Universidad Alcalá, Madrid, Spain"
+        ],
+        "raw_author_name": "Rosario González",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210132431"
+            ],
+            "raw_affiliation_string": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I71999127"
+            ],
+            "raw_affiliation_string": "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Juan Carlos García‐Pagán",
+          "id": "https://openalex.org/A5001524643",
+          "orcid": "https://orcid.org/0000-0001-9032-4954"
+        },
+        "author_position": "middle",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas",
+            "id": "https://openalex.org/I4210132431",
+            "lineage": [
+              "https://openalex.org/I4210132431"
+            ],
+            "ror": "https://ror.org/03cn6tr16",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Universitat de Barcelona",
+            "id": "https://openalex.org/I71999127",
+            "lineage": [
+              "https://openalex.org/I71999127"
+            ],
+            "ror": "https://ror.org/021018s57",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain",
+          "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain"
+        ],
+        "raw_author_name": "Juan Carlos García–Pagán",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210132431"
+            ],
+            "raw_affiliation_string": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I71999127"
+            ],
+            "raw_affiliation_string": "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Jackie Bosch",
+          "id": "https://openalex.org/A5078471246",
+          "orcid": "https://orcid.org/0000-0001-6292-4207"
+        },
+        "author_position": "last",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas",
+            "id": "https://openalex.org/I4210132431",
+            "lineage": [
+              "https://openalex.org/I4210132431"
+            ],
+            "ror": "https://ror.org/03cn6tr16",
+            "type": "facility"
+          },
+          {
+            "country_code": "ES",
+            "display_name": "Universitat de Barcelona",
+            "id": "https://openalex.org/I71999127",
+            "lineage": [
+              "https://openalex.org/I71999127"
+            ],
+            "ror": "https://ror.org/021018s57",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas, Madrid, Spain",
+          "Hepatic Hemodynamic Laboratory, Liver Unit, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer, University of Barcelona, Spain"
+        ],
+        "raw_author_name": "Jaime Bosch",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1053/j.gastro.2009.01.043",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1053/j.gastro.2009.01.043",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "http://www.gastrojournal.org/article/S0016508509001449/pdf",
+      "raw_source_name": "Gastroenterology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Gastroenterology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S143352558",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0016-5085",
+          "1528-0012"
+        ],
+        "issn_l": "0016-5085",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "1651",
+      "issue": "5",
+      "last_page": "1658",
+      "volume": "136"
+    },
+    "cited_by_count": 462,
+    "display_name": "Simvastatin Lowers Portal Pressure in Patients With Cirrhosis and Portal Hypertension: A Randomized Controlled Trial",
+    "doi": "https://doi.org/10.1053/j.gastro.2009.01.043",
+    "id": "https://openalex.org/W2014616693",
+    "ids": {
+      "doi": "https://doi.org/10.1053/j.gastro.2009.01.043",
+      "mag": "2014616693",
+      "openalex": "https://openalex.org/W2014616693",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/19208350"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": true,
+      "oa_status": "bronze",
+      "oa_url": "http://www.gastrojournal.org/article/S0016508509001449/pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1053/j.gastro.2009.01.043",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1053/j.gastro.2009.01.043",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "http://www.gastrojournal.org/article/S0016508509001449/pdf",
+      "raw_source_name": "Gastroenterology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Gastroenterology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S143352558",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0016-5085",
+          "1528-0012"
+        ],
+        "issn_l": "0016-5085",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2009-01-27",
+    "publication_year": 2009,
+    "referenced_works": [
+      "https://openalex.org/W98090258",
+      "https://openalex.org/W1969611494",
+      "https://openalex.org/W1974885996",
+      "https://openalex.org/W1975239399",
+      "https://openalex.org/W1982878947",
+      "https://openalex.org/W1983485446",
+      "https://openalex.org/W1986446548",
+      "https://openalex.org/W1994608393",
+      "https://openalex.org/W1997131223",
+      "https://openalex.org/W1998423430",
+      "https://openalex.org/W2004295172",
+      "https://openalex.org/W2007677328",
+      "https://openalex.org/W2008882355",
+      "https://openalex.org/W2010805821",
+      "https://openalex.org/W2031670776",
+      "https://openalex.org/W2033260776",
+      "https://openalex.org/W2033548041",
+      "https://openalex.org/W2034456201",
+      "https://openalex.org/W2049864335",
+      "https://openalex.org/W2055230161",
+      "https://openalex.org/W2055288459",
+      "https://openalex.org/W2058138382",
+      "https://openalex.org/W2062557346",
+      "https://openalex.org/W2073530393",
+      "https://openalex.org/W2073776492",
+      "https://openalex.org/W2082027499",
+      "https://openalex.org/W2089003251",
+      "https://openalex.org/W2095394267",
+      "https://openalex.org/W2101099470",
+      "https://openalex.org/W2107062590",
+      "https://openalex.org/W2112665890",
+      "https://openalex.org/W2117143538",
+      "https://openalex.org/W2122581891",
+      "https://openalex.org/W2122603930",
+      "https://openalex.org/W2126903895",
+      "https://openalex.org/W2129861366",
+      "https://openalex.org/W2143412399",
+      "https://openalex.org/W2145036374",
+      "https://openalex.org/W2152685914",
+      "https://openalex.org/W2171716651",
+      "https://openalex.org/W2171943778",
+      "https://openalex.org/W2782183735",
+      "https://openalex.org/W3115875733",
+      "https://openalex.org/W4253768726",
+      "https://openalex.org/W4254771884",
+      "https://openalex.org/W4285719527",
+      "https://openalex.org/W6603930196",
+      "https://openalex.org/W6676208485"
+    ],
+    "referenced_works_count": 48,
+    "title": "Simvastatin Lowers Portal Pressure in Patients With Cirrhosis and Portal Hypertension: A Randomized Controlled Trial",
+    "type": "article"
+  },
+  "response_hash": "4e9ba32366ac74d9938022c43c21794706f7f6ea37ede2505a65e16edd40691e",
+  "retrieved_at": "2026-07-14T14:48:51Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

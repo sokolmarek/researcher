@@ -1,0 +1,594 @@
+{
+  "endpoint": "dois",
+  "request_key": "6786966b21348a7e65e1c7e1032aa54f61ead81499da67ab7b7279137b646c05",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-09-17T01:58:54Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Carlesso",
+              "givenName": "Hugo",
+              "name": "Carlesso, Hugo",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Mothe",
+              "givenName": "Josiane",
+              "name": "Mothe, Josiane",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ionescu",
+              "givenName": "Radu Tudor",
+              "name": "Ionescu, Radu Tudor",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-09-16T16:37:59Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-09-17T00:56:22Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-02-16T12:19:18Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-02-17T02:31:26Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-09",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2025",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Hyperspectral imaging (HSI) captures detailed spectral signatures across hundreds of contiguous bands per pixel, being indispensable for remote sensing applications such as land-cover classification, change detection, and environmental monitoring. Due to the high dimensionality of HSI data and the slow rate of data transfer in satellite-based systems, compact and efficient models are required to support onboard processing and minimize the transmission of redundant or low-value data. To this end, we introduce a novel curriculum multi-task self-supervised learning (CMTSSL) framework designed for lightweight architectures for HSI analysis. CMTSSL integrates masked image modeling with decoupled spatial and spectral jigsaw puzzle solving, guided by a curriculum learning strategy that progressively increases data difficulty during self-supervision. This enables the encoder to jointly capture fine-grained spectral continuity, spatial structure, and global semantic features. Unlike prior dual-task SSL methods, CMTSSL simultaneously addresses spatial and spectral reasoning within a unified and computationally efficient design, being particularly suitable for training lightweight models for onboard satellite deployment. We validate our approach on four public benchmark datasets, demonstrating consistent gains in downstream segmentation tasks, using architectures that are over 16,000x lighter than some state-of-the-art models. These results highlight the potential of CMTSSL in generalizable representation learning with lightweight architectures for real-world HSI applications. Our code is publicly available at https://github.com/hugocarlesso/CMTSSL.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted at ICRA 2026",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2509.13229",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2509.13229",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-09-17T01:58:55Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Curriculum Multi-Task Self-Supervision Improves Lightweight Architectures for Onboard Satellite Hyperspectral Image Segmentation"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-02-17T04:44:45Z",
+          "url": "https://arxiv.org/abs/2509.13229",
+          "version": "2",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2509.13229",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2023-03-03T21:16:07Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Akiva",
+              "givenName": "Peri",
+              "name": "Akiva, Peri",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2023",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Understanding complex scenes is a fundamental necessity for any artificial agent system aiming to properly function under real world conditions. Those include autonomous vehicles needing to navigate in crowds or busy streets, or surveillance systems needing to track and recognize individuals in crowds. In this work, we explore the challenges affiliated with application of deep learning methodologies on complex scenes while utilizing minimal amounts of expensive, manually collected annotations. In general, the goal of this research is to maximize the applicable range of scene complexities, namely for the tasks of semantic segmentation and counting, while also minimizing annotations requirements, priori constraints, and distributional assumptions. This thesis presents the gradual removal of aforementioned supervisions, from using weak supervision, priori constraints, and data distributional assumptions, to using no supervision, no priori constraints, and no data distributional assumptions. In subsequent chapters we define the types of supervision, annotation costs, scene complexity, and selected deep learning tasks we aim to achieve. In particular, we develop the following methods: 1. Triple-S Network: This work presents a deep learning method for simultaneous segmentation and counting of cranberries to aid in yield estimation and sun exposure predictions. Notably, supervision is done using low cost center point annotations. The approach, named Triple-S Network, incorporates a three-part loss with shape priors to promote better fitting to objects of known shape typical in agricultural scenes. Our results improve overall segmentation performance by more than 6.74% and counting results by 22.91\\% when compared to state-of-the-art methods. To train and evaluate the network, we collected the CRanberry Aerial Imagery Dataset (CRAID), the largest dataset of aerial drone imagery from cranberry fields. 2. Pseudo-Masks from Points: This work presents a generalizable approach to a wide range of dataset complexities, that is trainable from scratch, without any dependency on pre-trained backbones, classification, or separate refinement tasks. We utilize point annotations to generate reliable, on-the-fly pseudo-masks through refined and spatially filtered features. While our method requires point annotations that are only slightly more expensive than image-level annotations, we are to demonstrate state-of-the-art performance on benchmark datasets (PascalVOC 2012), as well as significantly outperform other state-of-the-art weakly supervised semantic segmentation methods on recent real-world datasets (CRAID, CityPersons, IAD, ADE20K, CityScapes) with up to 28.1% and 22.6% performance boosts compared to our single-stage and multi-stage baselines respectively. 3. H20-Network: This work presents a self supervised deep learning method to segment floods from satellites and aerial imagery by bridging domain gap between low and high latency satellite and coarse-to-fine label refinement. H2O-Net learns to synthesize signals highly correlative with water presence as a domain adaptation step for semantic segmentation in high resolution satellite imagery. Our work also proposes a self-supervision mechanism, which does not require any hand annotation, used during training to generate high quality ground truth data. We demonstrate that H2O-Net outperforms the state-of-the-art semantic segmentation methods on satellite imagery by 10\\% and 12\\% pixel accuracy and mIoU respectively for the task of flood segmentation. We emphasize the generalizability of our model by transferring model weights trained on satellite imagery to drone imagery, a highly different sensor and domain. 4. Material and Texture Representation Learning (MATTER): In this work, we present our material and texture based self-supervision method named MATTER (MATerial and TExture Representation Learning), which is inspired by classical material and texture methods. Material and texture can effectively describe any surface, including its tactile properties, color, and specularity. By extension, effective representation of material and texture can describe other semantic classes strongly associated with said material and texture. MATTER leverages multi-temporal, spatially aligned remote sensing imagery over unchanged regions to learn invariance to illumination and viewing angle as a mechanism to achieve consistency of material and texture representation. We show that our self-supervision pre-training method allows for up to 24.22% and 6.33% performance increase in unsupervised and fine-tuned setups, and up to 76% faster convergence on change detection, land cover classification, and semantic segmentation tasks. 5. Self-Supervised Object Detection from Egocentric Videos (DEVI): This work addresses the problem of self-supervised, class-agnostic object detection, which aims to locate all objects in a given view, regardless of category, without extit{extbf{any}} annotations or pre-training weights. Egocentric videos exhibit high scene complexity and irregular motion flows compared to typical video understanding tasks. Our method, self-supervised object extbf{d}etection from extbf{e}gocentric extbf{vi}deos (extbf{DEVI}), generalizes appearance-based methods to learn features that are category-specific and invariant to viewing angles and illumination conditions from highly ambiguous environments in an end-to-end manner. Our approach leverages typical human behavior and its egocentric perception to sample diverse views of the same objects for our multi-view and scale-regression loss functions. With our learned cluster residual module, we are able to effectively describe multi-category patches for better complex scene understanding. DEVI provides a boost in performance on recent egocentric datasets, with performance gains up to 4.11% AP50, 0.11% AR1, 1.32% AR10, and 5.03% AR100, while significantly reducing model complexity. We also demonstrate competitive performance on out-of-domain datasets without additional training or fine-tuning.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.7282/t3-psah-3q22",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2023,
+          "published": null,
+          "publisher": "No Publisher Supplied",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2023-03-03T21:19:18Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [],
+          "titles": [
+            {
+              "title": "Complex scene understanding with minimal supervision"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2026-01-08T01:53:47Z",
+          "url": "https://rucore.libraries.rutgers.edu/rutgers-lib/69072",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.7282/t3-psah-3q22",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "rutgers.lib",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-19T02:34:11Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Akiva",
+              "givenName": "Peri",
+              "name": "Akiva, Peri",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Purri",
+              "givenName": "Matthew",
+              "name": "Purri, Matthew",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Leotta",
+              "givenName": "Matthew",
+              "name": "Leotta, Matthew",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2021-12-03T04:59:13Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-12-06T01:10:56Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-12",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2021",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Self-supervised learning aims to learn image feature representations without the usage of manually annotated labels. It is often used as a precursor step to obtain useful initial network weights which contribute to faster convergence and superior performance of downstream tasks. While self-supervision allows one to reduce the domain gap between supervised and unsupervised learning without the usage of labels, the self-supervised objective still requires a strong inductive bias to downstream tasks for effective transfer learning. In this work, we present our material and texture based self-supervision method named MATTER (MATerial and TExture Representation Learning), which is inspired by classical material and texture methods. Material and texture can effectively describe any surface, including its tactile properties, color, and specularity. By extension, effective representation of material and texture can describe other semantic classes strongly associated with said material and texture. MATTER leverages multi-temporal, spatially aligned remote sensing imagery over unchanged regions to learn invariance to illumination and viewing angle as a mechanism to achieve consistency of material and texture representation. We show that our self-supervision pre-training method allows for up to 24.22% and 6.33% performance increase in unsupervised and fine-tuned setups, and up to 76% faster convergence on change detection, land cover classification, and semantic segmentation tasks.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2112.01715",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2112.01715",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2021,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-19T02:34:12Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Image and Video Processing (eess.IV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Self-Supervised Material and Texture Representation Learning for Remote Sensing Tasks"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-02-19T02:34:12Z",
+          "url": "https://arxiv.org/abs/2112.01715",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2112.01715",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-01-19T03:07:05Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Chen",
+              "givenName": "Hao",
+              "name": "Chen, Hao",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zao",
+              "givenName": "Yifan",
+              "name": "Zao, Yifan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Liu",
+              "givenName": "Liqin",
+              "name": "Liu, Liqin",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Chen",
+              "givenName": "Song",
+              "name": "Chen, Song",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Shi",
+              "givenName": "Zhenwei",
+              "name": "Shi, Zhenwei",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2022-01-15T07:35:26Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2022-01-19T01:09:48Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2022-01",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2022",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Contemporary transfer learning-based methods to alleviate the data insufficiency in change detection (CD) are mainly based on ImageNet pre-training. Self-supervised learning (SSL) has recently been introduced to remote sensing (RS) for learning in-domain representations. Here, we propose a semantic decoupled representation learning for RS image CD. Typically, the object of interest (e.g., building) is relatively small compared to the vast background. Different from existing methods expressing an image into one representation vector that may be dominated by irrelevant land-covers, we disentangle representations of different semantic regions by leveraging the semantic mask. We additionally force the model to distinguish different semantic representations, which benefits the recognition of objects of interest in the downstream CD task. We construct a dataset of bitemporal images with semantic masks in an effortless manner for pre-training. Experiments on two CD datasets show our model outperforms ImageNet pre-training, in-domain supervised pre-training, and several recent SSL methods.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Submitted to IEEE for possible publication. 4 pages, 2 figures",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2201.05778",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2201.05778",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2022,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-01-19T03:07:06Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Semantic decoupled representation learning for remote sensing image change detection"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-01-19T03:07:06Z",
+          "url": "https://arxiv.org/abs/2201.05778",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2201.05778",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Self-Supervised+Representation+Learning+for+Remote+Sensing+Image+Change+Detection+Based+on&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 4,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "1ef5a6ba136b01d665b0ed95e39c96537f99eb95b3eab7a35f0833abdf6a7a59",
+  "retrieved_at": "2026-07-14T14:48:35Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

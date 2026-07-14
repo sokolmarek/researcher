@@ -1,0 +1,31 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "17fa0a30ef33a2f920d904073ca6e0e2f97455d9a7a280e69ab5329de16b1c5c",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.1016/j.jelectrocard.2018.11.013[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "30476648"
+      ],
+      "querytranslation": "\"10 1016 j jelectrocard 2018 11 013\"[Publisher ID]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": []
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "6fda6e82d89d973ce973516b60ae4ab3f9a7bcd3913e51a11df98f40f38fafd8",
+  "retrieved_at": "2026-07-14T14:15:53Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

@@ -1,0 +1,57 @@
+{
+  "endpoint": "query",
+  "request_key": "09299b5fe545b8c96bef738c5e306a51172b1635830f8031c8793d66a9894a45",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Self-Supervised Representation Learning for Ultrasound Video\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Jianbo Jiao",
+          "Richard Droste",
+          "Lior Drukker",
+          "Aris T. Papageorghiou",
+          "J. Alison Noble"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "eess.IV"
+        ],
+        "comment": "ISBI 2020",
+        "id": "http://arxiv.org/abs/2003.00105v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2003.00105v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2003.00105v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.CV",
+        "published": "2020-02-28T23:00:26Z",
+        "summary": "Recent advances in deep learning have achieved promising performance for medical image analysis, while in most cases ground-truth annotations from human experts are necessary to train the deep model. In practice, such annotations are expensive to collect and can be scarce for medical imaging applications. Therefore, there is significant interest in learning representations from unlabelled raw data. In this paper, we propose a self-supervised learning approach to learn meaningful and transferable representations from medical imaging video without any type of human annotation. We assume that in order to learn such a representation, the model should identify anatomical structures from the unlabelled data. Therefore we force the model to address anatomy-aware tasks with free supervision from the data itself. Specifically, the model is designed to correct the order of a reshuffled video clip and at the same time predict the geometric transformation applied to the video clip. Experiments on fetal ultrasound video show that the proposed approach can effectively learn meaningful and strong representations, which transfer well to downstream tasks like standard plane detection and saliency prediction.",
+        "title": "Self-supervised Representation Learning for Ultrasound Video",
+        "updated": "2020-02-28T23:00:26Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "52e14bb53cc3c1921dc957e5d8e4e9f29a4dcaaaaefcbff90dff71acb56a9082",
+  "retrieved_at": "2026-07-14T14:00:18Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

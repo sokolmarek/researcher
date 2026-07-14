@@ -1,0 +1,6130 @@
+{
+  "endpoint": "works",
+  "request_key": "725c4f0bed43d4ab98aab18c1097443d58183f92333247ce692ef4e1a02701a1",
+  "request_params": {
+    "per-page": 5,
+    "search": "Data Supporting '[Anonymized Data]' on Peer Acceptance, Language Skills, and Psychological",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 5667,
+      "db_response_time_ms": 65,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (Data Supporting ' Anonymized Data ' on Peer Acceptance Language Skills \"and\" Psychological)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Data Supporting '[Anonymized Data]' on Peer Acceptance, Language Skills, and Psychological"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Data Supporting %27%5BAnonymized Data%5D%27 on Peer Acceptance, Language Skills, and Psychological&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": null,
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Enkelejda Kasneci",
+              "id": "https://openalex.org/A5008809634",
+              "orcid": "https://orcid.org/0000-0003-3146-4484"
+            },
+            "author_position": "first",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Enkelejda Kasneci",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Kathrin Seßler",
+              "id": "https://openalex.org/A5013346660",
+              "orcid": "https://orcid.org/0000-0002-3380-4641"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Kathrin Sessler",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8204097"
+                ],
+                "raw_affiliation_string": "Ludwig-Maximilians-Universität Műnchen, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Stefan Küchemann",
+              "id": "https://openalex.org/A5050063899",
+              "orcid": "https://orcid.org/0000-0003-2729-1592"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Ludwig-Maximilians-Universität München",
+                "id": "https://openalex.org/I8204097",
+                "lineage": [
+                  "https://openalex.org/I8204097"
+                ],
+                "ror": "https://ror.org/05591te55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Ludwig-Maximilians-Universität Műnchen, Germany"
+            ],
+            "raw_author_name": "Stefan Küchemann",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Maria Bannert",
+              "id": "https://openalex.org/A5052257833",
+              "orcid": "https://orcid.org/0000-0001-7045-2764"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Maria Bannert",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Daryna Dementieva",
+              "id": "https://openalex.org/A5043273387",
+              "orcid": "https://orcid.org/0000-0003-0929-4140"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Daryna Dementieva",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8204097"
+                ],
+                "raw_affiliation_string": "Ludwig-Maximilians-Universität Műnchen, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Frank Fischer",
+              "id": "https://openalex.org/A5005995116",
+              "orcid": "https://orcid.org/0000-0003-0253-659X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Ludwig-Maximilians-Universität München",
+                "id": "https://openalex.org/I8204097",
+                "lineage": [
+                  "https://openalex.org/I8204097"
+                ],
+                "ror": "https://ror.org/05591te55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Ludwig-Maximilians-Universität Műnchen, Germany"
+            ],
+            "raw_author_name": "Frank Fischer",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Urs Gasser",
+              "id": "https://openalex.org/A5052258450",
+              "orcid": "https://orcid.org/0000-0001-6899-5647"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Urs Gasser",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Georg Groh",
+              "id": "https://openalex.org/A5004398345",
+              "orcid": "https://orcid.org/0000-0002-5942-2297"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Georg Groh",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Stephan Günnemann",
+              "id": "https://openalex.org/A5074504351",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Stephan Günnemann",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8204097"
+                ],
+                "raw_affiliation_string": "Ludwig-Maximilians-Universität Műnchen, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Eyke Hüllermeier",
+              "id": "https://openalex.org/A5059439673",
+              "orcid": "https://orcid.org/0000-0002-9944-4108"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Ludwig-Maximilians-Universität München",
+                "id": "https://openalex.org/I8204097",
+                "lineage": [
+                  "https://openalex.org/I8204097"
+                ],
+                "ror": "https://ror.org/05591te55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Ludwig-Maximilians-Universität Műnchen, Germany"
+            ],
+            "raw_author_name": "Eyke Hüllermeier",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Stephan Krusche",
+              "id": "https://openalex.org/A5044900523",
+              "orcid": "https://orcid.org/0000-0002-4552-644X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Stephan Krusche",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8204097"
+                ],
+                "raw_affiliation_string": "Ludwig-Maximilians-Universität Műnchen, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Gitta Kutyniok",
+              "id": "https://openalex.org/A5090767423",
+              "orcid": "https://orcid.org/0000-0001-9738-2487"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Ludwig-Maximilians-Universität München",
+                "id": "https://openalex.org/I8204097",
+                "lineage": [
+                  "https://openalex.org/I8204097"
+                ],
+                "ror": "https://ror.org/05591te55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Ludwig-Maximilians-Universität Műnchen, Germany"
+            ],
+            "raw_author_name": "Gitta Kutyniok",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Tilman Michaeli",
+              "id": "https://openalex.org/A5090477420",
+              "orcid": "https://orcid.org/0000-0002-5453-8581"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Tilman Michaeli",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Claudia Nerdel",
+              "id": "https://openalex.org/A5063270174",
+              "orcid": "https://orcid.org/0000-0003-1170-8875"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Claudia Nerdel",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Jürgen Pfeffer",
+              "id": "https://openalex.org/A5030571651",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Jürgen Pfeffer",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Oleksandra Poquet",
+              "id": "https://openalex.org/A5023504178",
+              "orcid": "https://orcid.org/0000-0001-9782-816X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Oleksandra Poquet",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8204097"
+                ],
+                "raw_affiliation_string": "Ludwig-Maximilians-Universität Műnchen, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Michael Sailer",
+              "id": "https://openalex.org/A5064948864",
+              "orcid": "https://orcid.org/0000-0001-6831-5429"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Ludwig-Maximilians-Universität München",
+                "id": "https://openalex.org/I8204097",
+                "lineage": [
+                  "https://openalex.org/I8204097"
+                ],
+                "ror": "https://ror.org/05591te55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Ludwig-Maximilians-Universität Műnchen, Germany"
+            ],
+            "raw_author_name": "Michael Sailer",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8204097"
+                ],
+                "raw_affiliation_string": "Ludwig-Maximilians-Universität Műnchen, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Albrecht Schmidt",
+              "id": "https://openalex.org/A5062196262",
+              "orcid": "https://orcid.org/0000-0003-3890-1990"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Ludwig-Maximilians-Universität München",
+                "id": "https://openalex.org/I8204097",
+                "lineage": [
+                  "https://openalex.org/I8204097"
+                ],
+                "ror": "https://ror.org/05591te55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Ludwig-Maximilians-Universität Műnchen, Germany"
+            ],
+            "raw_author_name": "Albrecht Schmidt",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Tina Seidel",
+              "id": "https://openalex.org/A5045427635",
+              "orcid": "https://orcid.org/0000-0002-2578-1208"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Tina Seidel",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8204097"
+                ],
+                "raw_affiliation_string": "Ludwig-Maximilians-Universität Műnchen, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Matthias Stadler",
+              "id": "https://openalex.org/A5016857737",
+              "orcid": "https://orcid.org/0000-0001-8241-8723"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Ludwig-Maximilians-Universität München",
+                "id": "https://openalex.org/I8204097",
+                "lineage": [
+                  "https://openalex.org/I8204097"
+                ],
+                "ror": "https://ror.org/05591te55",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Ludwig-Maximilians-Universität Műnchen, Germany"
+            ],
+            "raw_author_name": "Matthias Stadler",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "J. Weller",
+              "id": "https://openalex.org/A5057374299",
+              "orcid": "https://orcid.org/0000-0002-8282-2010"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Jochen Weller",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Jochen Kühn",
+              "id": "https://openalex.org/A5029469707",
+              "orcid": "https://orcid.org/0000-0002-6985-3218"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Jochen Kuhn",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich, Germany"
+              }
+            ],
+            "author": {
+              "display_name": "Gjergji Kasneci",
+              "id": "https://openalex.org/A5024434748",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich, Germany"
+            ],
+            "raw_author_name": "Gjergji Kasneci",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:epub.ub.uni-muenchen.de:125071",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://nbn-resolving.de/urn:nbn:de:bvb:19-epub-125071-3",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://epub.ub.uni-muenchen.de/125071/1/ChatGPT_for_Good_v3.pdf",
+          "raw_source_name": "Learning and Individual Differences",
+          "raw_type": "doc-type:article",
+          "source": {
+            "display_name": "Open access LMU (Ludwid Maxmilian's Universitat Munchen)",
+            "host_organization": "https://openalex.org/I8204097",
+            "host_organization_lineage": [
+              "https://openalex.org/I8204097"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Ludwig-Maximilians-Universität München",
+            "id": "https://openalex.org/S4306401845",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": "102274",
+          "issue": null,
+          "last_page": "102274",
+          "volume": "103"
+        },
+        "cited_by_count": 5361,
+        "display_name": "ChatGPT for good? On opportunities and challenges of large language models for education",
+        "doi": "https://doi.org/10.1016/j.lindif.2023.102274",
+        "id": "https://openalex.org/W4323655724",
+        "ids": {
+          "doi": "https://doi.org/10.1016/j.lindif.2023.102274",
+          "openalex": "https://openalex.org/W4323655724"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://epub.ub.uni-muenchen.de/125071/1/ChatGPT_for_Good_v3.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1016/j.lindif.2023.102274",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.lindif.2023.102274",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Learning and Individual Differences",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Learning and Individual Differences",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S9267903",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1041-6080",
+              "1873-3425"
+            ],
+            "issn_l": "1041-6080",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2023-03-09",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W1583837637",
+          "https://openalex.org/W2783539613",
+          "https://openalex.org/W2896457183",
+          "https://openalex.org/W2937444804",
+          "https://openalex.org/W2955088691",
+          "https://openalex.org/W2958068682",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2969717756",
+          "https://openalex.org/W2970597249",
+          "https://openalex.org/W3085139254",
+          "https://openalex.org/W3085332162",
+          "https://openalex.org/W3095319910",
+          "https://openalex.org/W3100449273",
+          "https://openalex.org/W3101118213",
+          "https://openalex.org/W3125358881",
+          "https://openalex.org/W3125760442",
+          "https://openalex.org/W3126219458",
+          "https://openalex.org/W3184900232",
+          "https://openalex.org/W3199652424",
+          "https://openalex.org/W3205296127",
+          "https://openalex.org/W3209721572",
+          "https://openalex.org/W4205807230",
+          "https://openalex.org/W4223626855",
+          "https://openalex.org/W4224229986",
+          "https://openalex.org/W4231350832",
+          "https://openalex.org/W4236389844",
+          "https://openalex.org/W4283591250",
+          "https://openalex.org/W4286639707",
+          "https://openalex.org/W4286914509",
+          "https://openalex.org/W4288089799",
+          "https://openalex.org/W4292779060",
+          "https://openalex.org/W4295413191",
+          "https://openalex.org/W4297412105",
+          "https://openalex.org/W4300484403",
+          "https://openalex.org/W4306178203",
+          "https://openalex.org/W4310285843",
+          "https://openalex.org/W4310436400",
+          "https://openalex.org/W4310744613",
+          "https://openalex.org/W4311642023",
+          "https://openalex.org/W4312193283",
+          "https://openalex.org/W4312869754",
+          "https://openalex.org/W4313294616",
+          "https://openalex.org/W4313451803",
+          "https://openalex.org/W4313678819",
+          "https://openalex.org/W4318149317",
+          "https://openalex.org/W4320526977",
+          "https://openalex.org/W4322801648",
+          "https://openalex.org/W4365806374",
+          "https://openalex.org/W4385245566",
+          "https://openalex.org/W6602878332",
+          "https://openalex.org/W6739901393",
+          "https://openalex.org/W6763701032",
+          "https://openalex.org/W6765448137",
+          "https://openalex.org/W6769627184",
+          "https://openalex.org/W6778883912",
+          "https://openalex.org/W6785207331",
+          "https://openalex.org/W6789809708",
+          "https://openalex.org/W6790541173",
+          "https://openalex.org/W6790978476",
+          "https://openalex.org/W6800988931",
+          "https://openalex.org/W6801646962",
+          "https://openalex.org/W6803223122",
+          "https://openalex.org/W6803472069",
+          "https://openalex.org/W6810575415",
+          "https://openalex.org/W6838410229",
+          "https://openalex.org/W6839151846",
+          "https://openalex.org/W6840209120",
+          "https://openalex.org/W6840341114",
+          "https://openalex.org/W6841963672",
+          "https://openalex.org/W6842461238",
+          "https://openalex.org/W6843049818",
+          "https://openalex.org/W6847799837",
+          "https://openalex.org/W6848468598",
+          "https://openalex.org/W7075608578"
+        ],
+        "referenced_works_count": 74,
+        "title": "ChatGPT for good? On opportunities and challenges of large language models for education",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(AI)": [
+            28
+          ],
+          "(AI-assisted": [
+            80
+          ],
+          "(EFL)": [
+            18
+          ],
+          "(traditional": [
+            86
+          ],
+          "AI": [
+            206
+          ],
+          "AI's": [
+            165,
+            217,
+            240
+          ],
+          "AI-assisted": [
+            8,
+            114,
+            132,
+            195
+          ],
+          "As": [
+            25
+          ],
+          "ChatGPT)": [
+            83
+          ],
+          "Chinese": [
+            12
+          ],
+          "Concurrently,": [
+            97
+          ],
+          "Discussion:": [
+            208
+          ],
+          "EFL": [
+            70
+          ],
+          "English": [
+            13
+          ],
+          "Fifty": [
+            69
+          ],
+          "Foreign": [
+            16
+          ],
+          "Introduction:": [
+            0
+          ],
+          "Language": [
+            17
+          ],
+          "Methods:": [
+            44
+          ],
+          "Participants": [
+            185
+          ],
+          "Qualitative": [
+            156
+          ],
+          "Quantitative": [
+            117
+          ],
+          "Results:": [
+            116
+          ],
+          "The": [
+            45,
+            56,
+            139,
+            209
+          ],
+          "These": [
+            222
+          ],
+          "This": [
+            1
+          ],
+          "Writing": [
+            89
+          ],
+          "a": [
+            15,
+            48,
+            60,
+            103,
+            213
+          ],
+          "about": [
+            180
+          ],
+          "accuracy": [
+            182
+          ],
+          "adaptation": [
+            204
+          ],
+          "also": [
+            186
+          ],
+          "among": [
+            128
+          ],
+          "analysis": [
+            118
+          ],
+          "and": [
+            22,
+            53,
+            62,
+            111,
+            126,
+            154,
+            169,
+            176,
+            183,
+            192,
+            203,
+            229,
+            235
+          ],
+          "approach,": [
+            50
+          ],
+          "are": [
+            75,
+            91,
+            100
+          ],
+          "artificial": [
+            26
+          ],
+          "as": [
+            14
+          ],
+          "aspects": [
+            147
+          ],
+          "assess": [
+            66
+          ],
+          "assigned": [
+            77
+          ],
+          "becomes": [
+            29
+          ],
+          "benefits,": [
+            233
+          ],
+          "both": [
+            123
+          ],
+          "challenges,": [
+            234
+          ],
+          "coherence,": [
+            152
+          ],
+          "combining": [
+            51
+          ],
+          "compared": [
+            134
+          ],
+          "comprehensive": [
+            49,
+            214
+          ],
+          "concerns": [
+            179
+          ],
+          "conducted": [
+            101
+          ],
+          "contextual": [
+            181
+          ],
+          "control": [
+            85,
+            137
+          ],
+          "crucial.": [
+            43
+          ],
+          "demonstrates": [
+            142
+          ],
+          "design": [
+            64
+          ],
+          "development": [
+            202
+          ],
+          "diverse": [
+            159
+          ],
+          "education.": [
+            221
+          ],
+          "educational": [
+            33
+          ],
+          "effects": [
+            37
+          ],
+          "emphasizing": [
+            197,
+            231
+          ],
+          "employs": [
+            47
+          ],
+          "enhanced": [
+            143
+          ],
+          "established": [
+            94
+          ],
+          "evaluated": [
+            92
+          ],
+          "evaluates": [
+            4
+          ],
+          "evolving": [
+            237
+          ],
+          "experiences": [
+            112
+          ],
+          "experimental": [
+            79,
+            140
+          ],
+          "explore": [
+            108
+          ],
+          "findings": [
+            157,
+            211
+          ],
+          "for": [
+            73,
+            200,
+            227
+          ],
+          "from": [
+            162
+          ],
+          "grammar,": [
+            153
+          ],
+          "group": [
+            141
+          ],
+          "group.": [
+            138
+          ],
+          "groups.": [
+            88
+          ],
+          "have": [
+            224
+          ],
+          "impact": [
+            6,
+            191
+          ],
+          "implications": [
+            226
+          ],
+          "improvements": [
+            121
+          ],
+          "in": [
+            32,
+            122,
+            145,
+            220,
+            242
+          ],
+          "including": [
+            150
+          ],
+          "influence": [
+            172
+          ],
+          "innovative": [
+            166
+          ],
+          "insights": [
+            223
+          ],
+          "instruction": [
+            81,
+            133
+          ],
+          "instruction)": [
+            87
+          ],
+          "instruction,": [
+            196
+          ],
+          "instruction.": [
+            244
+          ],
+          "instructional": [
+            167
+          ],
+          "intelligence": [
+            27
+          ],
+          "interviews": [
+            99
+          ],
+          "is": [
+            42
+          ],
+          "its": [
+            36,
+            170
+          ],
+          "language": [
+            9,
+            39,
+            243
+          ],
+          "learning": [
+            10,
+            40
+          ],
+          "learning.": [
+            115
+          ],
+          "long-term": [
+            190
+          ],
+          "matched": [
+            72
+          ],
+          "methods.": [
+            55
+          ],
+          "mixed-methods": [
+            2
+          ],
+          "more": [
+            30
+          ],
+          "motivation": [
+            110,
+            127,
+            177
+          ],
+          "motivation.": [
+            24
+          ],
+          "nature": [
+            238
+          ],
+          "need": [
+            199
+          ],
+          "nuanced": [
+            210
+          ],
+          "of": [
+            7,
+            105,
+            148,
+            164,
+            194,
+            205,
+            216,
+            239
+          ],
+          "offer": [
+            212
+          ],
+          "on": [
+            11,
+            38,
+            173,
+            188
+          ],
+          "ongoing": [
+            201
+          ],
+          "or": [
+            84
+          ],
+          "organization,": [
+            151
+          ],
+          "outcomes": [
+            41
+          ],
+          "over-reliance.": [
+            184
+          ],
+          "participants": [
+            106
+          ],
+          "perspectives,": [
+            160
+          ],
+          "phase": [
+            58
+          ],
+          "positive": [
+            171
+          ],
+          "post-test": [
+            63
+          ],
+          "potential": [
+            219
+          ],
+          "practical": [
+            225
+          ],
+          "practitioners": [
+            228
+          ],
+          "pre-test": [
+            61
+          ],
+          "prevalent": [
+            31
+          ],
+          "proficiency": [
+            144
+          ],
+          "proficiency,": [
+            74
+          ],
+          "qualitative": [
+            54
+          ],
+          "quantitative": [
+            52,
+            57
+          ],
+          "randomly": [
+            76
+          ],
+          "ranging": [
+            161
+          ],
+          "received": [
+            131
+          ],
+          "recognition": [
+            163
+          ],
+          "reflect": [
+            187
+          ],
+          "researchers,": [
+            230
+          ],
+          "reveals": [
+            119
+          ],
+          "role": [
+            168,
+            241
+          ],
+          "rubrics.": [
+            96
+          ],
+          "samples": [
+            90
+          ],
+          "scoring": [
+            95
+          ],
+          "semi-structured": [
+            98
+          ],
+          "settings,": [
+            34
+          ],
+          "showcase": [
+            158
+          ],
+          "significant": [
+            120
+          ],
+          "skills": [
+            21,
+            125,
+            175
+          ],
+          "skills.": [
+            68
+          ],
+          "students": [
+            129
+          ],
+          "students'": [
+            19
+          ],
+          "students,": [
+            71
+          ],
+          "study": [
+            3,
+            46
+          ],
+          "subset": [
+            104
+          ],
+          "sustainability": [
+            193
+          ],
+          "the": [
+            5,
+            136,
+            189,
+            198,
+            232,
+            236
+          ],
+          "to": [
+            65,
+            78,
+            107,
+            135,
+            178
+          ],
+          "tools.": [
+            207
+          ],
+          "transformative": [
+            218
+          ],
+          "understanding": [
+            35,
+            215
+          ],
+          "using": [
+            93
+          ],
+          "utilizes": [
+            59
+          ],
+          "various": [
+            146
+          ],
+          "via": [
+            82
+          ],
+          "vocabulary.": [
+            155
+          ],
+          "who": [
+            130
+          ],
+          "with": [
+            102,
+            113
+          ],
+          "writing": [
+            20,
+            23,
+            67,
+            109,
+            124,
+            174
+          ],
+          "writing,": [
+            149
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3019309368"
+                ],
+                "raw_affiliation_string": "School of Foreign Studies, North Minzu University, Yinchuan, Ningxia, China"
+              }
+            ],
+            "author": {
+              "display_name": "Cuiping Song",
+              "id": "https://openalex.org/A5100295471",
+              "orcid": "https://orcid.org/0009-0000-6195-5626"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "North Minzu University",
+                "id": "https://openalex.org/I3019309368",
+                "lineage": [
+                  "https://openalex.org/I3019309368"
+                ],
+                "ror": "https://ror.org/05xjevr11",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "School of Foreign Studies, North Minzu University, Yinchuan, Ningxia, China"
+            ],
+            "raw_author_name": "Cuiping Song",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I139660479"
+                ],
+                "raw_affiliation_string": "School of Public Administration, Central South University, Changsha, Hunan, China"
+              }
+            ],
+            "author": {
+              "display_name": "Yanping Song",
+              "id": "https://openalex.org/A5101818731",
+              "orcid": "https://orcid.org/0000-0001-7222-778X"
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Central South University",
+                "id": "https://openalex.org/I139660479",
+                "lineage": [
+                  "https://openalex.org/I139660479"
+                ],
+                "ror": "https://ror.org/00f1zfq44",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Public Administration, Central South University, Changsha, Hunan, China"
+            ],
+            "raw_author_name": "Yanping Song",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3389/fpsyg.2023.1260843",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3389/fpsyg.2023.1260843",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1260843/pdf?isPublishedV2=False",
+          "raw_source_name": "Frontiers in Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Frontiers in Psychology",
+            "host_organization": "https://openalex.org/P4310320527",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320527"
+            ],
+            "host_organization_lineage_names": [
+              "Frontiers Media"
+            ],
+            "host_organization_name": "Frontiers Media",
+            "id": "https://openalex.org/S9692511",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1664-1078"
+            ],
+            "issn_l": "1664-1078",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "1260843",
+          "issue": null,
+          "last_page": "1260843",
+          "volume": "14"
+        },
+        "cited_by_count": 581,
+        "display_name": "Enhancing academic writing skills and motivation: assessing the efficacy of ChatGPT in AI-assisted language learning for EFL students",
+        "doi": "https://doi.org/10.3389/fpsyg.2023.1260843",
+        "id": "https://openalex.org/W4389793309",
+        "ids": {
+          "doi": "https://doi.org/10.3389/fpsyg.2023.1260843",
+          "openalex": "https://openalex.org/W4389793309",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/38162975"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1260843/pdf?isPublishedV2=False"
+        },
+        "primary_location": {
+          "id": "doi:10.3389/fpsyg.2023.1260843",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3389/fpsyg.2023.1260843",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1260843/pdf?isPublishedV2=False",
+          "raw_source_name": "Frontiers in Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Frontiers in Psychology",
+            "host_organization": "https://openalex.org/P4310320527",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320527"
+            ],
+            "host_organization_lineage_names": [
+              "Frontiers Media"
+            ],
+            "host_organization_name": "Frontiers Media",
+            "id": "https://openalex.org/S9692511",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1664-1078"
+            ],
+            "issn_l": "1664-1078",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2023-12-15",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W8522102",
+          "https://openalex.org/W347186812",
+          "https://openalex.org/W1951008065",
+          "https://openalex.org/W2020190353",
+          "https://openalex.org/W2042188341",
+          "https://openalex.org/W2042534177",
+          "https://openalex.org/W2043128473",
+          "https://openalex.org/W2117766479",
+          "https://openalex.org/W2120427806",
+          "https://openalex.org/W2194670527",
+          "https://openalex.org/W2286110194",
+          "https://openalex.org/W2337155942",
+          "https://openalex.org/W2589972988",
+          "https://openalex.org/W2601200092",
+          "https://openalex.org/W2614095004",
+          "https://openalex.org/W2746986659",
+          "https://openalex.org/W2793493211",
+          "https://openalex.org/W2972445579",
+          "https://openalex.org/W2973996917",
+          "https://openalex.org/W2981863007",
+          "https://openalex.org/W3002240416",
+          "https://openalex.org/W3002613281",
+          "https://openalex.org/W3010952285",
+          "https://openalex.org/W3014686280",
+          "https://openalex.org/W3017157646",
+          "https://openalex.org/W3090363550",
+          "https://openalex.org/W3092271587",
+          "https://openalex.org/W3093253033",
+          "https://openalex.org/W3105650436",
+          "https://openalex.org/W3109980540",
+          "https://openalex.org/W3129445530",
+          "https://openalex.org/W3132276786",
+          "https://openalex.org/W3144679910",
+          "https://openalex.org/W3160941578",
+          "https://openalex.org/W3163136630",
+          "https://openalex.org/W3163701888",
+          "https://openalex.org/W3189271732",
+          "https://openalex.org/W3195589482",
+          "https://openalex.org/W3202830893",
+          "https://openalex.org/W3215162826",
+          "https://openalex.org/W4214706752",
+          "https://openalex.org/W4225262729",
+          "https://openalex.org/W4283574461",
+          "https://openalex.org/W4284993420",
+          "https://openalex.org/W4309307641",
+          "https://openalex.org/W4309713818",
+          "https://openalex.org/W4309865496",
+          "https://openalex.org/W4309971308",
+          "https://openalex.org/W4312214206",
+          "https://openalex.org/W4317436759",
+          "https://openalex.org/W4317488881",
+          "https://openalex.org/W4318240052",
+          "https://openalex.org/W4319985185",
+          "https://openalex.org/W4320895630",
+          "https://openalex.org/W4322008312",
+          "https://openalex.org/W4362585490",
+          "https://openalex.org/W4367399085",
+          "https://openalex.org/W4376224599",
+          "https://openalex.org/W4376876311",
+          "https://openalex.org/W4378193514",
+          "https://openalex.org/W4379193309",
+          "https://openalex.org/W4381236221",
+          "https://openalex.org/W4381786521",
+          "https://openalex.org/W4384822899",
+          "https://openalex.org/W6775521226",
+          "https://openalex.org/W6803982907",
+          "https://openalex.org/W6846500806",
+          "https://openalex.org/W6852301161",
+          "https://openalex.org/W6852733080",
+          "https://openalex.org/W6965064126"
+        ],
+        "referenced_works_count": 70,
+        "title": "Enhancing academic writing skills and motivation: assessing the efficacy of ChatGPT in AI-assisted language learning for EFL students",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "Does": [
+            41
+          ],
+          "Ideally,": [
+            174
+          ],
+          "In": [
+            14
+          ],
+          "Peer": [
+            0
+          ],
+          "Studies": [
+            54
+          ],
+          "Success": [
+            248
+          ],
+          "These": [
+            103
+          ],
+          "We": [
+            139,
+            194,
+            217
+          ],
+          "Web": [
+            148
+          ],
+          "What": [
+            29
+          ],
+          "With": [
+            81
+          ],
+          "a": [
+            6,
+            91,
+            115,
+            144,
+            157,
+            220,
+            256,
+            276
+          ],
+          "abuse": [
+            67
+          ],
+          "achieved": [
+            274
+          ],
+          "address": [
+            127
+          ],
+          "advantages.": [
+            216
+          ],
+          "advent": [
+            83
+          ],
+          "also": [
+            218
+          ],
+          "and": [
+            21,
+            38,
+            66,
+            73,
+            95,
+            119,
+            121,
+            150,
+            170,
+            172,
+            183,
+            215,
+            240,
+            267,
+            270
+          ],
+          "any": [
+            175,
+            250
+          ],
+          "approaches": [
+            99
+          ],
+          "are": [
+            88
+          ],
+          "articles": [
+            4
+          ],
+          "as": [
+            167,
+            190,
+            192
+          ],
+          "ask": [
+            123
+          ],
+          "associated": [
+            236
+          ],
+          "at": [
+            227
+          ],
+          "be": [
+            207,
+            273
+          ],
+          "bias": [
+            65
+          ],
+          "biases": [
+            186
+          ],
+          "both": [
+            264
+          ],
+          "can": [
+            74
+          ],
+          "cannot": [
+            272
+          ],
+          "certification": [
+            171
+          ],
+          "change": [
+            278
+          ],
+          "communication": [
+            12,
+            246
+          ],
+          "communications": [
+            39
+          ],
+          "community": [
+            261
+          ],
+          "compare": [
+            151
+          ],
+          "conclude": [
+            195
+          ],
+          "considerable": [
+            199
+          ],
+          "contested.": [
+            28
+          ],
+          "control,": [
+            163
+          ],
+          "core": [
+            7
+          ],
+          "could,": [
+            226
+          ],
+          "critical": [
+            257
+          ],
+          "current": [
+            134
+          ],
+          "demonstrate": [
+            179
+          ],
+          "detect": [
+            77
+          ],
+          "developed,": [
+            208
+          ],
+          "development": [
+            252
+          ],
+          "developments": [
+            104
+          ],
+          "digital": [
+            36
+          ],
+          "dimensions,": [
+            70
+          ],
+          "disciplines": [
+            118
+          ],
+          "disrupt": [
+            242
+          ],
+          "each": [
+            209
+          ],
+          "emerging": [
+            109
+          ],
+          "engagement": [
+            168,
+            262
+          ],
+          "entire": [
+            244
+          ],
+          "environments.": [
+            283
+          ],
+          "even": [
+            78
+          ],
+          "examine": [
+            108,
+            140
+          ],
+          "existing": [
+            188
+          ],
+          "experimentation": [
+            96
+          ],
+          "fail": [
+            75
+          ],
+          "for": [
+            201,
+            249
+          ],
+          "fraudulent": [
+            79
+          ],
+          "frequently": [
+            71
+          ],
+          "from": [
+            114
+          ],
+          "functionality": [
+            142
+          ],
+          "generally": [
+            52
+          ],
+          "have": [
+            58
+          ],
+          "high": [
+            46
+          ],
+          "how": [
+            124
+          ],
+          "hybrid": [
+            222
+          ],
+          "importance,": [
+            18
+          ],
+          "in": [
+            33,
+            68,
+            97,
+            281
+          ],
+          "incentives": [
+            280
+          ],
+          "incentives,": [
+            169
+          ],
+          "infrastructure?": [
+            40
+          ],
+          "initiatives": [
+            205
+          ],
+          "innovation": [
+            94
+          ],
+          "is": [
+            5,
+            26,
+            30,
+            51,
+            62,
+            198
+          ],
+          "issues": [
+            131,
+            214,
+            235
+          ],
+          "it": [
+            42,
+            50,
+            61
+          ],
+          "its": [
+            17,
+            31
+          ],
+          "least": [
+            228
+          ],
+          "many": [
+            231
+          ],
+          "metrics": [
+            166
+          ],
+          "might": [
+            126
+          ],
+          "model": [
+            224
+          ],
+          "models": [
+            110,
+            189
+          ],
+          "modern": [
+            35
+          ],
+          "much": [
+            191
+          ],
+          "new": [
+            176,
+            202
+          ],
+          "novel": [
+            221
+          ],
+          "now": [
+            89
+          ],
+          "numerous": [
+            69
+          ],
+          "of": [
+            2,
+            9,
+            16,
+            23,
+            55,
+            84,
+            93,
+            111,
+            117,
+            129,
+            136,
+            143,
+            146,
+            187,
+            232,
+            259,
+            279
+          ],
+          "often": [
+            27
+          ],
+          "on": [
+            254
+          ],
+          "our": [
+            10,
+            34,
+            98,
+            133
+          ],
+          "out-perform": [
+            182
+          ],
+          "own": [
+            212
+          ],
+          "part": [
+            8
+          ],
+          "partially,": [
+            229
+          ],
+          "peer": [
+            24,
+            56,
+            101,
+            112,
+            137,
+            159,
+            203,
+            238
+          ],
+          "perform": [
+            43
+          ],
+          "performance": [
+            165
+          ],
+          "phase": [
+            92
+          ],
+          "platform": [
+            223
+          ],
+          "platform,": [
+            269
+          ],
+          "platforms,": [
+            149
+          ],
+          "possible.": [
+            193
+          ],
+          "potential": [
+            213
+          ],
+          "potentially": [
+            241
+          ],
+          "process": [
+            266
+          ],
+          "prompted": [
+            105
+          ],
+          "prone": [
+            63
+          ],
+          "propose": [
+            219
+          ],
+          "purpose": [
+            22
+          ],
+          "quality": [
+            162
+          ],
+          "quantified": [
+            164
+          ],
+          "range": [
+            116,
+            145
+          ],
+          "reaching": [
+            255
+          ],
+          "reduce": [
+            184
+          ],
+          "regarded?": [
+            53
+          ],
+          "relies": [
+            253
+          ],
+          "reputation.": [
+            173
+          ],
+          "research": [
+            3,
+            37,
+            260,
+            282
+          ],
+          "research.": [
+            80
+          ],
+          "resolve": [
+            230
+          ],
+          "review": [
+            1,
+            25,
+            57,
+            113,
+            160,
+            204
+          ],
+          "review,": [
+            239
+          ],
+          "review.": [
+            102,
+            138
+          ],
+          "role": [
+            32
+          ],
+          "scholarly": [
+            11,
+            245
+          ],
+          "scope": [
+            200
+          ],
+          "shown": [
+            59
+          ],
+          "significant": [
+            277
+          ],
+          "social": [
+            147
+          ],
+          "socio-technical": [
+            234
+          ],
+          "some": [
+            128
+          ],
+          "spite": [
+            15
+          ],
+          "standards": [
+            47
+          ],
+          "status": [
+            20
+          ],
+          "such": [
+            251
+          ],
+          "system.": [
+            13,
+            247
+          ],
+          "system:": [
+            161
+          ],
+          "systems": [
+            135,
+            177
+          ],
+          "technologies,": [
+            86
+          ],
+          "that": [
+            60,
+            180,
+            196,
+            225
+          ],
+          "the": [
+            19,
+            45,
+            82,
+            130,
+            141,
+            154,
+            185,
+            233,
+            243,
+            265,
+            268
+          ],
+          "their": [
+            211
+          ],
+          "there": [
+            197
+          ],
+          "therefore": [
+            271
+          ],
+          "these": [
+            152
+          ],
+          "they": [
+            125,
+            181
+          ],
+          "threshold": [
+            258
+          ],
+          "to": [
+            44,
+            64,
+            76,
+            100,
+            107,
+            122,
+            206
+          ],
+          "traits": [
+            155
+          ],
+          "underlying": [
+            156
+          ],
+          "unreliable,": [
+            72
+          ],
+          "us": [
+            106
+          ],
+          "venues,": [
+            120
+          ],
+          "viable": [
+            158
+          ],
+          "we": [
+            87
+          ],
+          "web": [
+            85
+          ],
+          "which": [
+            49
+          ],
+          "will": [
+            178
+          ],
+          "with": [
+            48,
+            132,
+            153,
+            210,
+            237,
+            263
+          ],
+          "without": [
+            275
+          ],
+          "witnessing": [
+            90
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I47508984"
+                ],
+                "raw_affiliation_string": "Imperial College London, London, UK"
+              },
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "ScienceOpen, Berlin, Germany"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I47508984"
+                ],
+                "raw_affiliation_string": "Imperial College London, Berlin"
+              },
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "ScienceOpen, London"
+              }
+            ],
+            "author": {
+              "display_name": "Jonathan Tennant",
+              "id": "https://openalex.org/A5009210770",
+              "orcid": "https://orcid.org/0000-0001-7794-0218"
+            },
+            "author_position": "first",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Imperial College London",
+                "id": "https://openalex.org/I47508984",
+                "lineage": [
+                  "https://openalex.org/I47508984"
+                ],
+                "ror": "https://ror.org/041kmwe10",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Imperial College London, London, UK",
+              "ScienceOpen, Berlin, Germany",
+              "Imperial College London, Berlin",
+              "ScienceOpen, London"
+            ],
+            "raw_author_name": "Jonathan P. Tennant",
+            "raw_orcid": "https://orcid.org/0000-0001-7794-0218"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Berkeley Institute for Data Science, University of California, Berkeley, CA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95457486"
+                ],
+                "raw_affiliation_string": "Berkeley Institute for Data Science, University of California, Berkeley, CA"
+              }
+            ],
+            "author": {
+              "display_name": "Jonathan M. Dugan",
+              "id": "https://openalex.org/A5046278870",
+              "orcid": "https://orcid.org/0000-0001-8525-6221"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of California, Berkeley",
+                "id": "https://openalex.org/I95457486",
+                "lineage": [
+                  "https://openalex.org/I95457486"
+                ],
+                "ror": "https://ror.org/01an7q238",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Berkeley Institute for Data Science, University of California, Berkeley, CA, USA",
+              "Berkeley Institute for Data Science, University of California, Berkeley, CA"
+            ],
+            "raw_author_name": "Jonathan M. Dugan",
+            "raw_orcid": "https://orcid.org/0000-0001-8525-6221"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I100066346"
+                ],
+                "raw_affiliation_string": "Institute of Software Technology, University of Stuttgart, Stuttgart, Germany"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I100066346",
+                  "https://openalex.org/I4210128818"
+                ],
+                "raw_affiliation_string": "Institute of Software Technology, University of Stuttgart, Stuttgart"
+              }
+            ],
+            "author": {
+              "display_name": "Daniel Graziotin",
+              "id": "https://openalex.org/A5050191675",
+              "orcid": "https://orcid.org/0000-0002-9107-7681"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "University of Stuttgart",
+                "id": "https://openalex.org/I100066346",
+                "lineage": [
+                  "https://openalex.org/I100066346"
+                ],
+                "ror": "https://ror.org/04vnq7t77",
+                "type": "education"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Institute of Software",
+                "id": "https://openalex.org/I4210128818",
+                "lineage": [
+                  "https://openalex.org/I19820366",
+                  "https://openalex.org/I4210128818"
+                ],
+                "ror": "https://ror.org/033dfsn42",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Software Technology, University of Stuttgart, Stuttgart, Germany",
+              "Institute of Software Technology, University of Stuttgart, Stuttgart"
+            ],
+            "raw_author_name": "Daniel Graziotin",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95674353"
+                ],
+                "raw_affiliation_string": "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve, Belgium"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95674353"
+                ],
+                "raw_affiliation_string": "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve"
+              }
+            ],
+            "author": {
+              "display_name": "Damien Jacques",
+              "id": "https://openalex.org/A5081003521",
+              "orcid": "https://orcid.org/0000-0002-9069-4143"
+            },
+            "author_position": "middle",
+            "countries": [
+              "BE"
+            ],
+            "institutions": [
+              {
+                "country_code": "BE",
+                "display_name": "UCLouvain",
+                "id": "https://openalex.org/I95674353",
+                "lineage": [
+                  "https://openalex.org/I95674353"
+                ],
+                "ror": "https://ror.org/02495e989",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve, Belgium",
+              "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve"
+            ],
+            "raw_author_name": "Damien C. Jacques",
+            "raw_orcid": "https://orcid.org/0000-0002-9069-4143"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95674353"
+                ],
+                "raw_affiliation_string": "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve, Belgium"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I95674353"
+                ],
+                "raw_affiliation_string": "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve"
+              }
+            ],
+            "author": {
+              "display_name": "François Waldner",
+              "id": "https://openalex.org/A5062689394",
+              "orcid": "https://orcid.org/0000-0002-5599-7456"
+            },
+            "author_position": "middle",
+            "countries": [
+              "BE"
+            ],
+            "institutions": [
+              {
+                "country_code": "BE",
+                "display_name": "UCLouvain",
+                "id": "https://openalex.org/I95674353",
+                "lineage": [
+                  "https://openalex.org/I95674353"
+                ],
+                "ror": "https://ror.org/02495e989",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve, Belgium",
+              "Earth and Life Institute, Université catholique de Louvain, Louvain-la-Neuve"
+            ],
+            "raw_author_name": "François Waldner",
+            "raw_orcid": "https://orcid.org/0000-0002-5599-7456"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Data Science Institute, University of Virginia, Charlottesville, VA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Data Science Institute, University of Virginia, Charlottesville, VA"
+              }
+            ],
+            "author": {
+              "display_name": "Daniel Mietchen",
+              "id": "https://openalex.org/A5050528093",
+              "orcid": "https://orcid.org/0000-0001-9488-1870"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Virginia",
+                "id": "https://openalex.org/I51556381",
+                "lineage": [
+                  "https://openalex.org/I51556381"
+                ],
+                "ror": "https://ror.org/0153tk833",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Data Science Institute, University of Virginia, Charlottesville, VA, USA",
+              "Data Science Institute, University of Virginia, Charlottesville, VA"
+            ],
+            "raw_author_name": "Daniel Mietchen",
+            "raw_orcid": "https://orcid.org/0000-0001-9488-1870"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I67415387"
+                ],
+                "raw_affiliation_string": "School of Computing and Communications, Lancaster University, Lancaster, UK"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I67415387"
+                ],
+                "raw_affiliation_string": "School of Computing and Communications, Lancaster University, Lancaster"
+              }
+            ],
+            "author": {
+              "display_name": "Yehia Elkhatib",
+              "id": "https://openalex.org/A5059109166",
+              "orcid": "https://orcid.org/0000-0003-4639-436X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Lancaster University",
+                "id": "https://openalex.org/I67415387",
+                "lineage": [
+                  "https://openalex.org/I67415387"
+                ],
+                "ror": "https://ror.org/04f2nsd36",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Computing and Communications, Lancaster University, Lancaster, UK",
+              "School of Computing and Communications, Lancaster University, Lancaster"
+            ],
+            "raw_author_name": "Yehia Elkhatib",
+            "raw_orcid": "https://orcid.org/0000-0003-4639-436X"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "University Library System, University of Pittsburgh, Pittsburgh, PA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I170201317"
+                ],
+                "raw_affiliation_string": "University Library System, University of Pittsburgh, Pittsburgh, PA"
+              }
+            ],
+            "author": {
+              "display_name": "Lauren Collister",
+              "id": "https://openalex.org/A5032787867",
+              "orcid": "https://orcid.org/0000-0001-5767-8486"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Pittsburgh",
+                "id": "https://openalex.org/I170201317",
+                "lineage": [
+                  "https://openalex.org/I170201317"
+                ],
+                "ror": "https://ror.org/01an3r305",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "University Library System, University of Pittsburgh, Pittsburgh, PA, USA",
+              "University Library System, University of Pittsburgh, Pittsburgh, PA"
+            ],
+            "raw_author_name": "Lauren B. Collister",
+            "raw_orcid": "https://orcid.org/0000-0001-5767-8486"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802946424"
+                ],
+                "raw_affiliation_string": "Johns Hopkins University Applied Physics Laboratory, Laurel, MD, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802946424"
+                ],
+                "raw_affiliation_string": "Johns Hopkins University Applied Physics Laboratory, Laurel, MD"
+              }
+            ],
+            "author": {
+              "display_name": "Christina K. Pikas",
+              "id": "https://openalex.org/A5068602755",
+              "orcid": "https://orcid.org/0000-0002-4455-8036"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Johns Hopkins University Applied Physics Laboratory",
+                "id": "https://openalex.org/I2802946424",
+                "lineage": [
+                  "https://openalex.org/I145311948",
+                  "https://openalex.org/I2802946424"
+                ],
+                "ror": "https://ror.org/029pp9z10",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Johns Hopkins University Applied Physics Laboratory, Laurel, MD, USA",
+              "Johns Hopkins University Applied Physics Laboratory, Laurel, MD"
+            ],
+            "raw_author_name": "Christina K. Pikas",
+            "raw_orcid": "https://orcid.org/0000-0002-4455-8036"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8408910"
+                ],
+                "raw_affiliation_string": "Cardiff Metropolitan University, Cardiff, UK"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I8408910"
+                ],
+                "raw_affiliation_string": "Cardiff Metropolitan University, Cardiff"
+              }
+            ],
+            "author": {
+              "display_name": "Tom Crick",
+              "id": "https://openalex.org/A5015452463",
+              "orcid": "https://orcid.org/0000-0001-5196-9389"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Cardiff Metropolitan University",
+                "id": "https://openalex.org/I8408910",
+                "lineage": [
+                  "https://openalex.org/I8408910"
+                ],
+                "ror": "https://ror.org/00bqvf857",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Cardiff Metropolitan University, Cardiff, UK",
+              "Cardiff Metropolitan University, Cardiff"
+            ],
+            "raw_author_name": "Tom Crick",
+            "raw_orcid": "https://orcid.org/0000-0001-5196-9389"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I32597200"
+                ],
+                "raw_affiliation_string": "Department of Biochemistry, Ghent University, Ghent, Belgium"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210151194"
+                ],
+                "raw_affiliation_string": "VIB-UGent Center for Medical Biotechnology, Ghent, Belgium"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210151194"
+                ],
+                "raw_affiliation_string": "VIB-UGent Center for Medical Biotechnology, Ghent"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I32597200"
+                ],
+                "raw_affiliation_string": "Department of Biochemistry, Ghent University, Ghent"
+              }
+            ],
+            "author": {
+              "display_name": "Paola Masuzzo",
+              "id": "https://openalex.org/A5079670845",
+              "orcid": "https://orcid.org/0000-0003-3699-1195"
+            },
+            "author_position": "middle",
+            "countries": [
+              "BE"
+            ],
+            "institutions": [
+              {
+                "country_code": "BE",
+                "display_name": "Ghent University",
+                "id": "https://openalex.org/I32597200",
+                "lineage": [
+                  "https://openalex.org/I32597200"
+                ],
+                "ror": "https://ror.org/00cv9y106",
+                "type": "education"
+              },
+              {
+                "country_code": "BE",
+                "display_name": "VIB-UGent Center for Medical Biotechnology",
+                "id": "https://openalex.org/I4210151194",
+                "lineage": [
+                  "https://openalex.org/I2802017950",
+                  "https://openalex.org/I32597200",
+                  "https://openalex.org/I4210151194"
+                ],
+                "ror": "https://ror.org/04hbttm44",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biochemistry, Ghent University, Ghent, Belgium",
+              "VIB-UGent Center for Medical Biotechnology, Ghent, Belgium",
+              "VIB-UGent Center for Medical Biotechnology, Ghent",
+              "Department of Biochemistry, Ghent University, Ghent"
+            ],
+            "raw_author_name": "Paola Masuzzo",
+            "raw_orcid": "https://orcid.org/0000-0003-3699-1195"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I27577105"
+                ],
+                "raw_affiliation_string": "School of Biological, Earth and Environmental Sciences, University College Cork, Cork, Ireland"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I27577105"
+                ],
+                "raw_affiliation_string": "School of Biological, Earth and Environmental Sciences, University College Cork, Cork"
+              }
+            ],
+            "author": {
+              "display_name": "Anthony Caravaggi",
+              "id": "https://openalex.org/A5054155411",
+              "orcid": "https://orcid.org/0000-0002-1763-8970"
+            },
+            "author_position": "middle",
+            "countries": [
+              "IE"
+            ],
+            "institutions": [
+              {
+                "country_code": "IE",
+                "display_name": "University College Cork",
+                "id": "https://openalex.org/I27577105",
+                "lineage": [
+                  "https://openalex.org/I27577105"
+                ],
+                "ror": "https://ror.org/03265fv13",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Biological, Earth and Environmental Sciences, University College Cork, Cork, Ireland",
+              "School of Biological, Earth and Environmental Sciences, University College Cork, Cork"
+            ],
+            "raw_author_name": "Anthony Caravaggi",
+            "raw_orcid": "https://orcid.org/0000-0002-1763-8970"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1921588"
+                ],
+                "raw_affiliation_string": "Engineering & Technology Department, University of Wisconsin-Stout, Menomonie, WI, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1921588"
+                ],
+                "raw_affiliation_string": "Engineering & Technology Department, University of Wisconsin-Stout, Menomonie, WI"
+              }
+            ],
+            "author": {
+              "display_name": "Devin R. Berg",
+              "id": "https://openalex.org/A5087163882",
+              "orcid": "https://orcid.org/0000-0002-1193-3848"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Wisconsin–Stout",
+                "id": "https://openalex.org/I1921588",
+                "lineage": [
+                  "https://openalex.org/I1921588"
+                ],
+                "ror": "https://ror.org/01gb8pc70",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Engineering & Technology Department, University of Wisconsin-Stout, Menomonie, WI, USA",
+              "Engineering & Technology Department, University of Wisconsin-Stout, Menomonie, WI"
+            ],
+            "raw_author_name": "Devin R. Berg",
+            "raw_orcid": "https://orcid.org/0000-0002-1193-3848"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I131249849"
+                ],
+                "raw_affiliation_string": "School of Mechanical, Industrial, and Manufacturing Engineering, Oregon State University, Corvallis, OR, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I131249849"
+                ],
+                "raw_affiliation_string": "School of Mechanical, Industrial, and Manufacturing Engineering, Oregon State University, Corvallis, OR"
+              }
+            ],
+            "author": {
+              "display_name": "Kyle E. Niemeyer",
+              "id": "https://openalex.org/A5083534268",
+              "orcid": "https://orcid.org/0000-0003-4425-7097"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Oregon State University",
+                "id": "https://openalex.org/I131249849",
+                "lineage": [
+                  "https://openalex.org/I131249849"
+                ],
+                "ror": "https://ror.org/00ysfqy60",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Mechanical, Industrial, and Manufacturing Engineering, Oregon State University, Corvallis, OR, USA",
+              "School of Mechanical, Industrial, and Manufacturing Engineering, Oregon State University, Corvallis, OR"
+            ],
+            "raw_author_name": "Kyle E. Niemeyer",
+            "raw_orcid": "https://orcid.org/0000-0003-4425-7097"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I74656192"
+                ],
+                "raw_affiliation_string": "State and University Library, University of Göttingen, Göttingen, Germany"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210101183",
+                  "https://openalex.org/I74656192"
+                ],
+                "raw_affiliation_string": "State and University Library, University of Göttingen, Göttingen"
+              }
+            ],
+            "author": {
+              "display_name": "Tony Ross‐Hellauer",
+              "id": "https://openalex.org/A5081576873",
+              "orcid": "https://orcid.org/0000-0003-4470-7027"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE",
+              "DK"
+            ],
+            "institutions": [
+              {
+                "country_code": "DK",
+                "display_name": "State and University Library",
+                "id": "https://openalex.org/I4210101183",
+                "lineage": [
+                  "https://openalex.org/I4210101183"
+                ],
+                "ror": "https://ror.org/019ryn279",
+                "type": "archive"
+              },
+              {
+                "country_code": "DE",
+                "display_name": "University of Göttingen",
+                "id": "https://openalex.org/I74656192",
+                "lineage": [
+                  "https://openalex.org/I74656192"
+                ],
+                "ror": "https://ror.org/01y9bpm73",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "State and University Library, University of Göttingen, Göttingen, Germany",
+              "State and University Library, University of Göttingen, Göttingen"
+            ],
+            "raw_author_name": "Tony Ross-Hellauer",
+            "raw_orcid": "https://orcid.org/0000-0003-4470-7027"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I23732399"
+                ],
+                "raw_affiliation_string": "Montana State University, Bozeman, MT, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I23732399"
+                ],
+                "raw_affiliation_string": "Montana State University, Bozeman, MT"
+              }
+            ],
+            "author": {
+              "display_name": "Sara Mannheimer",
+              "id": "https://openalex.org/A5012866534",
+              "orcid": "https://orcid.org/0000-0002-1433-6782"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Montana State University",
+                "id": "https://openalex.org/I23732399",
+                "lineage": [
+                  "https://openalex.org/I23732399",
+                  "https://openalex.org/I4210126032"
+                ],
+                "ror": "https://ror.org/02w0trx84",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Montana State University, Bozeman, MT, USA",
+              "Montana State University, Bozeman, MT"
+            ],
+            "raw_author_name": "Sara Mannheimer",
+            "raw_orcid": "https://orcid.org/0000-0002-1433-6782"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I41639379",
+                  "https://openalex.org/I125749732"
+                ],
+                "raw_affiliation_string": "Western University Libraries, London, ON, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I125749732"
+                ],
+                "raw_affiliation_string": "Western University Libraries, London, ON"
+              }
+            ],
+            "author": {
+              "display_name": "Lillian Rigling",
+              "id": "https://openalex.org/A5013475290",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "CA",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "Western University",
+                "id": "https://openalex.org/I125749732",
+                "lineage": [
+                  "https://openalex.org/I125749732"
+                ],
+                "ror": "https://ror.org/02grkyz14",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Association of Research Libraries",
+                "id": "https://openalex.org/I41639379",
+                "lineage": [
+                  "https://openalex.org/I41639379"
+                ],
+                "ror": "https://ror.org/053mpbz30",
+                "type": "nonprofit"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Western University Libraries, London, ON, USA",
+              "Western University Libraries, London, ON"
+            ],
+            "raw_author_name": "Lillian Rigling",
+            "raw_orcid": "https://orcid.org/0000-0002-9178-0422"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "Department of Computer Science, University of Illinois Urbana-Champaign, Urbana, IL, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "Department of Electrical and Computer Engineering, University of Illinois Urbana-Champaign, Urbana, IL, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210135837",
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign, Urbana, IL, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "School of Information Sciences, University of Illinois at Urbana-Champaign, Urbana, IL, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210135837",
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "National Center for Supercomputing Applications, University of Illinois Urbana-Champaign, Urbana, IL"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "Department of Electrical and Computer Engineering, University of Illinois Urbana-Champaign, Urbana, IL"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "School of Information Sciences, University of Illinois at Urbana-Champaign, Urbana, IL"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I157725225"
+                ],
+                "raw_affiliation_string": "Department of Computer Science, University of Illinois Urbana-Champaign, Urbana, IL"
+              }
+            ],
+            "author": {
+              "display_name": "Daniel S. Katz",
+              "id": "https://openalex.org/A5061630529",
+              "orcid": "https://orcid.org/0000-0001-5934-7525"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Illinois Urbana-Champaign",
+                "id": "https://openalex.org/I157725225",
+                "lineage": [
+                  "https://openalex.org/I157725225"
+                ],
+                "ror": "https://ror.org/047426m28",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "National Center for Supercomputing Applications",
+                "id": "https://openalex.org/I4210135837",
+                "lineage": [
+                  "https://openalex.org/I157725225",
+                  "https://openalex.org/I4210135837"
+                ],
+                "ror": "https://ror.org/03r10zj06",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computer Science, University of Illinois Urbana-Champaign, Urbana, IL, USA",
+              "Department of Electrical and Computer Engineering, University of Illinois Urbana-Champaign, Urbana, IL, USA",
+              "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign, Urbana, IL, USA",
+              "School of Information Sciences, University of Illinois at Urbana-Champaign, Urbana, IL, USA",
+              "National Center for Supercomputing Applications, University of Illinois Urbana-Champaign, Urbana, IL",
+              "Department of Electrical and Computer Engineering, University of Illinois Urbana-Champaign, Urbana, IL",
+              "School of Information Sciences, University of Illinois at Urbana-Champaign, Urbana, IL",
+              "Department of Computer Science, University of Illinois Urbana-Champaign, Urbana, IL"
+            ],
+            "raw_author_name": "Daniel S. Katz",
+            "raw_orcid": "https://orcid.org/0000-0001-5934-7525"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I114090438"
+                ],
+                "raw_affiliation_string": "Institute of Cell Biology and Neuroscience, Goethe University Frankfurt, Frankfurt, Germany"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I114090438",
+                  "https://openalex.org/I4210155364"
+                ],
+                "raw_affiliation_string": "Institute of Cell Biology and Neuroscience, Goethe University Frankfurt, Frankfurt"
+              }
+            ],
+            "author": {
+              "display_name": "Bastian Greshake Tzovaras",
+              "id": "https://openalex.org/A5018956214",
+              "orcid": "https://orcid.org/0000-0002-9925-9623"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE",
+              "UA"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Goethe University Frankfurt",
+                "id": "https://openalex.org/I114090438",
+                "lineage": [
+                  "https://openalex.org/I114090438"
+                ],
+                "ror": "https://ror.org/04cvxnb49",
+                "type": "education"
+              },
+              {
+                "country_code": "UA",
+                "display_name": "Institute of Cell Biology",
+                "id": "https://openalex.org/I4210155364",
+                "lineage": [
+                  "https://openalex.org/I149851306",
+                  "https://openalex.org/I4210155364"
+                ],
+                "ror": "https://ror.org/04fg7fb49",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Cell Biology and Neuroscience, Goethe University Frankfurt, Frankfurt, Germany",
+              "Institute of Cell Biology and Neuroscience, Goethe University Frankfurt, Frankfurt"
+            ],
+            "raw_author_name": "Bastian Greshake Tzovaras",
+            "raw_orcid": "https://orcid.org/0000-0002-9925-9623"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I271457894"
+                ],
+                "raw_affiliation_string": "Universidad San Ignacio de Loyola, Lima, Peru"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I271457894"
+                ],
+                "raw_affiliation_string": "Universidad San Ignacio de Loyola,, Lima"
+              }
+            ],
+            "author": {
+              "display_name": "Josmel Pacheco‐Mendoza",
+              "id": "https://openalex.org/A5030068093",
+              "orcid": "https://orcid.org/0000-0002-2251-8092"
+            },
+            "author_position": "middle",
+            "countries": [
+              "PE"
+            ],
+            "institutions": [
+              {
+                "country_code": "PE",
+                "display_name": "Universidad San Ignacio de Loyola",
+                "id": "https://openalex.org/I271457894",
+                "lineage": [
+                  "https://openalex.org/I271457894"
+                ],
+                "ror": "https://ror.org/03vgk3f90",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Universidad San Ignacio de Loyola, Lima, Peru",
+              "Universidad San Ignacio de Loyola,, Lima"
+            ],
+            "raw_author_name": "Josmel Pacheco-Mendoza",
+            "raw_orcid": "https://orcid.org/0000-0002-2251-8092"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I187531555"
+                ],
+                "raw_affiliation_string": "Department of Biology, Faculty of Science, Lund University, Lund, Sweden"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I187531555"
+                ],
+                "raw_affiliation_string": "Department of Biology, Faculty of Science, Lund University, Lund"
+              }
+            ],
+            "author": {
+              "display_name": "Nazeefa Fatima",
+              "id": "https://openalex.org/A5068314673",
+              "orcid": "https://orcid.org/0000-0001-7791-4984"
+            },
+            "author_position": "middle",
+            "countries": [
+              "SE"
+            ],
+            "institutions": [
+              {
+                "country_code": "SE",
+                "display_name": "Lund University",
+                "id": "https://openalex.org/I187531555",
+                "lineage": [
+                  "https://openalex.org/I187531555"
+                ],
+                "ror": "https://ror.org/012a77v79",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biology, Faculty of Science, Lund University, Lund, Sweden",
+              "Department of Biology, Faculty of Science, Lund University, Lund"
+            ],
+            "raw_author_name": "Nazeefa Fatima",
+            "raw_orcid": "https://orcid.org/0000-0001-7791-4984"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82951845"
+                ],
+                "raw_affiliation_string": "Graduate School of Business and Law, RMIT University, Melbourne, Australia"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210095297",
+                  "https://openalex.org/I82951845"
+                ],
+                "raw_affiliation_string": "Graduate School of Business and Law, RMIT University, Melbourne"
+              }
+            ],
+            "author": {
+              "display_name": "Marta Poblet",
+              "id": "https://openalex.org/A5006685271",
+              "orcid": "https://orcid.org/0000-0002-0026-989X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "AU",
+              "MK"
+            ],
+            "institutions": [
+              {
+                "country_code": "MK",
+                "display_name": "MIT University",
+                "id": "https://openalex.org/I4210095297",
+                "lineage": [
+                  "https://openalex.org/I4210095297"
+                ],
+                "ror": "https://ror.org/00v140q16",
+                "type": "education"
+              },
+              {
+                "country_code": "AU",
+                "display_name": "RMIT University",
+                "id": "https://openalex.org/I82951845",
+                "lineage": [
+                  "https://openalex.org/I82951845"
+                ],
+                "ror": "https://ror.org/04ttjf776",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Graduate School of Business and Law, RMIT University, Melbourne, Australia",
+              "Graduate School of Business and Law, RMIT University, Melbourne"
+            ],
+            "raw_author_name": "Marta Poblet",
+            "raw_orcid": "https://orcid.org/0000-0002-0026-989X"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I45129253"
+                ],
+                "raw_affiliation_string": "Department of Computer Science, University College London, London, UK"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I45129253"
+                ],
+                "raw_affiliation_string": "Department of Computer Science, University College London, London"
+              }
+            ],
+            "author": {
+              "display_name": "Marios Isaakidis",
+              "id": "https://openalex.org/A5091080301",
+              "orcid": "https://orcid.org/0000-0001-8498-1309"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "University College London",
+                "id": "https://openalex.org/I45129253",
+                "lineage": [
+                  "https://openalex.org/I124357947",
+                  "https://openalex.org/I45129253"
+                ],
+                "ror": "https://ror.org/02jx3x895",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computer Science, University College London, London, UK",
+              "Department of Computer Science, University College London, London"
+            ],
+            "raw_author_name": "Marios Isaakidis",
+            "raw_orcid": "https://orcid.org/0000-0001-8498-1309"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I134635517"
+                ],
+                "raw_affiliation_string": "Department of Groundwater Engineering, Faculty of Earth Sciences and Technology, Institut Teknologi Bandung, Bandung, Indonesia"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I134635517"
+                ],
+                "raw_affiliation_string": "Department of Groundwater Engineering, Faculty of Earth Sciences and Technology, Institut Teknologi Bandung, Bandung"
+              }
+            ],
+            "author": {
+              "display_name": "Dasapta Erwin Irawan",
+              "id": "https://openalex.org/A5036928446",
+              "orcid": "https://orcid.org/0000-0002-1526-0863"
+            },
+            "author_position": "middle",
+            "countries": [
+              "ID"
+            ],
+            "institutions": [
+              {
+                "country_code": "ID",
+                "display_name": "Bandung Institute of Technology",
+                "id": "https://openalex.org/I134635517",
+                "lineage": [
+                  "https://openalex.org/I134635517"
+                ],
+                "ror": "https://ror.org/00apj8t60",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Groundwater Engineering, Faculty of Earth Sciences and Technology, Institut Teknologi Bandung, Bandung, Indonesia",
+              "Department of Groundwater Engineering, Faculty of Earth Sciences and Technology, Institut Teknologi Bandung, Bandung"
+            ],
+            "raw_author_name": "Dasapta Erwin Irawan",
+            "raw_orcid": "https://orcid.org/0000-0002-1526-0863"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I70931966"
+                ],
+                "raw_affiliation_string": "Département de Sciences Biologiques, Institut de Recherche en Biologie Végétale, Université de Montréal, Montreal, QC, Canada"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I70931966"
+                ],
+                "raw_affiliation_string": "Département de Sciences Biologiques, Institut de Recherche en Biologie Végétale, Montreal, QC"
+              }
+            ],
+            "author": {
+              "display_name": "Sébastien Renaut",
+              "id": "https://openalex.org/A5011296618",
+              "orcid": "https://orcid.org/0000-0002-8111-5082"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CA"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "Université de Montréal",
+                "id": "https://openalex.org/I70931966",
+                "lineage": [
+                  "https://openalex.org/I70931966"
+                ],
+                "ror": "https://ror.org/0161xgx34",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Département de Sciences Biologiques, Institut de Recherche en Biologie Végétale, Université de Montréal, Montreal, QC, Canada",
+              "Département de Sciences Biologiques, Institut de Recherche en Biologie Végétale, Montreal, QC"
+            ],
+            "raw_author_name": "Sébastien Renaut",
+            "raw_orcid": "https://orcid.org/0000-0002-8111-5082"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I142263535"
+                ],
+                "raw_affiliation_string": "School of Psychology, University of Nottingham, Nottingham, UK"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I142263535"
+                ],
+                "raw_affiliation_string": "School of Psychology, University of Nottingham, Nottingham"
+              }
+            ],
+            "author": {
+              "display_name": "Christopher R. Madan",
+              "id": "https://openalex.org/A5020772022",
+              "orcid": "https://orcid.org/0000-0003-3228-6501"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "University of Nottingham",
+                "id": "https://openalex.org/I142263535",
+                "lineage": [
+                  "https://openalex.org/I142263535"
+                ],
+                "ror": "https://ror.org/01ee9ar58",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Psychology, University of Nottingham, Nottingham, UK",
+              "School of Psychology, University of Nottingham, Nottingham"
+            ],
+            "raw_author_name": "Christopher R. Madan",
+            "raw_orcid": "https://orcid.org/0000-0003-3228-6501"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I74656192"
+                ],
+                "raw_affiliation_string": "OpenAIRE, University of Göttingen, Göttingen, Germany"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I74656192"
+                ],
+                "raw_affiliation_string": "OpenAIRE, University of Göttingen, Göttingen"
+              }
+            ],
+            "author": {
+              "display_name": "Lisa Matthias",
+              "id": "https://openalex.org/A5066880338",
+              "orcid": "https://orcid.org/0000-0002-2612-2132"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "University of Göttingen",
+                "id": "https://openalex.org/I74656192",
+                "lineage": [
+                  "https://openalex.org/I74656192"
+                ],
+                "ror": "https://ror.org/01y9bpm73",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "OpenAIRE, University of Göttingen, Göttingen, Germany",
+              "OpenAIRE, University of Göttingen, Göttingen"
+            ],
+            "raw_author_name": "Lisa Matthias",
+            "raw_orcid": "https://orcid.org/0000-0002-2612-2132"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802335433"
+                ],
+                "raw_affiliation_string": "Department of Affective Disorders, Psychiatric Research Academy, Aarhus University Hospital, Risskov, Denmark"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2802335433"
+                ],
+                "raw_affiliation_string": "Department of Affective Disorders, Psychiatric Research Academy, Aarhus University Hospital, Risskov"
+              }
+            ],
+            "author": {
+              "display_name": "Jesper Kjær",
+              "id": "https://openalex.org/A5002915457",
+              "orcid": "https://orcid.org/0000-0001-9183-9861"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DK"
+            ],
+            "institutions": [
+              {
+                "country_code": "DK",
+                "display_name": "Aarhus University Hospital",
+                "id": "https://openalex.org/I2802335433",
+                "lineage": [
+                  "https://openalex.org/I2802335433"
+                ],
+                "ror": "https://ror.org/040r8fr65",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Affective Disorders, Psychiatric Research Academy, Aarhus University Hospital, Risskov, Denmark",
+              "Department of Affective Disorders, Psychiatric Research Academy, Aarhus University Hospital, Risskov"
+            ],
+            "raw_author_name": "Jesper Nørgaard Kjær",
+            "raw_orcid": "https://orcid.org/0000-0001-9183-9861"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107949126"
+                ],
+                "raw_affiliation_string": "Department of English and Centre for the Study of Scholarly Communications, University of Lethbridge, Lethbridge, AB, Canada"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107949126"
+                ],
+                "raw_affiliation_string": "Department of English and Centre for the Study of Scholarly Communications, University of Lethbridge, Lethbridge, AB"
+              }
+            ],
+            "author": {
+              "display_name": "Daniel Paul O’Donnell",
+              "id": "https://openalex.org/A5003404400",
+              "orcid": "https://orcid.org/0000-0002-0127-4893"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CA"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "University of Lethbridge",
+                "id": "https://openalex.org/I107949126",
+                "lineage": [
+                  "https://openalex.org/I107949126"
+                ],
+                "ror": "https://ror.org/044j76961",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of English and Centre for the Study of Scholarly Communications, University of Lethbridge, Lethbridge, AB, Canada",
+              "Department of English and Centre for the Study of Scholarly Communications, University of Lethbridge, Lethbridge, AB"
+            ],
+            "raw_author_name": "Daniel Paul O'Donnell",
+            "raw_orcid": "https://orcid.org/0000-0002-0127-4893"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I205640436"
+                ],
+                "raw_affiliation_string": "Centre for Culture and Technology, Curtin University, Perth, Australia"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I205640436"
+                ],
+                "raw_affiliation_string": "Centre for Culture and Technology, Curtin University, Perth"
+              }
+            ],
+            "author": {
+              "display_name": "Cameron Neylon",
+              "id": "https://openalex.org/A5048552040",
+              "orcid": "https://orcid.org/0000-0002-0068-716X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "AU"
+            ],
+            "institutions": [
+              {
+                "country_code": "AU",
+                "display_name": "Curtin University",
+                "id": "https://openalex.org/I205640436",
+                "lineage": [
+                  "https://openalex.org/I205640436"
+                ],
+                "ror": "https://ror.org/02n415q13",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Centre for Culture and Technology, Curtin University, Perth, Australia",
+              "Centre for Culture and Technology, Curtin University, Perth"
+            ],
+            "raw_author_name": "Cameron Neylon",
+            "raw_orcid": "https://orcid.org/0000-0002-0068-716X"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I27837315"
+                ],
+                "raw_affiliation_string": "Department of Chemical Biology, University of Michigan, Ann Arbor, MI, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I27837315"
+                ],
+                "raw_affiliation_string": "Department of Chemical Biology, University of Michigan, Ann Arbor, MI"
+              }
+            ],
+            "author": {
+              "display_name": "Sarah Kearns",
+              "id": "https://openalex.org/A5090110629",
+              "orcid": "https://orcid.org/0000-0001-5640-909X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Michigan",
+                "id": "https://openalex.org/I27837315",
+                "lineage": [
+                  "https://openalex.org/I27837315"
+                ],
+                "ror": "https://ror.org/00jmfr291",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Chemical Biology, University of Michigan, Ann Arbor, MI, USA",
+              "Department of Chemical Biology, University of Michigan, Ann Arbor, MI"
+            ],
+            "raw_author_name": "Sarah Kearns",
+            "raw_orcid": "https://orcid.org/0000-0001-5640-909X"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Integrated Gulf Biosystems, Riyadh, Saudi Arabia"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1284598098"
+                ],
+                "raw_affiliation_string": "Saudi Human Genome Program, King Abdulaziz City for Science and Technology (KACST), Riyadh, Saudi Arabia"
+              },
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Integrated Gulf Biosystems, Riyadh"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1284598098"
+                ],
+                "raw_affiliation_string": "Saudi Human Genome Program, King Abdulaziz City for Science and Technology (KACST), Riyadh"
+              }
+            ],
+            "author": {
+              "display_name": "Manojkumar Selvaraju",
+              "id": "https://openalex.org/A5086057382",
+              "orcid": "https://orcid.org/0000-0001-6439-5652"
+            },
+            "author_position": "middle",
+            "countries": [
+              "SA"
+            ],
+            "institutions": [
+              {
+                "country_code": "SA",
+                "display_name": "King Abdulaziz City for Science and Technology",
+                "id": "https://openalex.org/I1284598098",
+                "lineage": [
+                  "https://openalex.org/I1284598098"
+                ],
+                "ror": "https://ror.org/05tdz6m39",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Integrated Gulf Biosystems, Riyadh, Saudi Arabia",
+              "Saudi Human Genome Program, King Abdulaziz City for Science and Technology (KACST), Riyadh, Saudi Arabia",
+              "Integrated Gulf Biosystems, Riyadh",
+              "Saudi Human Genome Program, King Abdulaziz City for Science and Technology (KACST), Riyadh"
+            ],
+            "raw_author_name": "Manojkumar Selvaraju",
+            "raw_orcid": "https://orcid.org/0000-0001-6439-5652"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Independent Researcher, Berlin, Germany"
+              },
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Independen Researcher, Berlin"
+              }
+            ],
+            "author": {
+              "display_name": "Julien Colomb",
+              "id": "https://openalex.org/A5007008932",
+              "orcid": "https://orcid.org/0000-0002-3127-5520"
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Independent Researcher, Berlin, Germany",
+              "Independen Researcher, Berlin"
+            ],
+            "raw_author_name": "Julien Colomb",
+            "raw_orcid": "https://orcid.org/0000-0002-3127-5520"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.12688/f1000research.12037.3",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.12688/f1000research.12037.3",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://f1000research.com/articles/6-1151/v3/pdf",
+          "raw_source_name": "F1000Research",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "F1000Research",
+            "host_organization": "https://openalex.org/P4310320357",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320357"
+            ],
+            "host_organization_lineage_names": [
+              "Faculty of 1000"
+            ],
+            "host_organization_name": "Faculty of 1000",
+            "id": "https://openalex.org/S4210239046",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2046-1402"
+            ],
+            "issn_l": "2046-1402",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "1151",
+          "issue": null,
+          "last_page": "1151",
+          "volume": "6"
+        },
+        "cited_by_count": 258,
+        "display_name": "A multi-disciplinary perspective on emergent and future innovations in peer review",
+        "doi": "https://doi.org/10.12688/f1000research.12037.3",
+        "id": "https://openalex.org/W2737988770",
+        "ids": {
+          "doi": "https://doi.org/10.12688/f1000research.12037.3",
+          "mag": "2737988770",
+          "openalex": "https://openalex.org/W2737988770",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/29188015"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://f1000research.com/articles/6-1151/v3/pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.12688/f1000research.12037.3",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.12688/f1000research.12037.3",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://f1000research.com/articles/6-1151/v3/pdf",
+          "raw_source_name": "F1000Research",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "F1000Research",
+            "host_organization": "https://openalex.org/P4310320357",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320357"
+            ],
+            "host_organization_lineage_names": [
+              "Faculty of 1000"
+            ],
+            "host_organization_name": "Faculty of 1000",
+            "id": "https://openalex.org/S4210239046",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2046-1402"
+            ],
+            "issn_l": "2046-1402",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2017-11-29",
+        "publication_year": 2017,
+        "referenced_works": [
+          "https://openalex.org/W106139605",
+          "https://openalex.org/W149542127",
+          "https://openalex.org/W165281593",
+          "https://openalex.org/W355727244",
+          "https://openalex.org/W893234787",
+          "https://openalex.org/W1496956611",
+          "https://openalex.org/W1503360264",
+          "https://openalex.org/W1508724808",
+          "https://openalex.org/W1514637787",
+          "https://openalex.org/W1516854273",
+          "https://openalex.org/W1524825687",
+          "https://openalex.org/W1536128219",
+          "https://openalex.org/W1563510596",
+          "https://openalex.org/W1578561495",
+          "https://openalex.org/W1594458610",
+          "https://openalex.org/W1618886074",
+          "https://openalex.org/W1627879863",
+          "https://openalex.org/W1655306493",
+          "https://openalex.org/W1667733128",
+          "https://openalex.org/W1673923490",
+          "https://openalex.org/W1778991734",
+          "https://openalex.org/W1859658685",
+          "https://openalex.org/W1864634822",
+          "https://openalex.org/W1886120841",
+          "https://openalex.org/W1902633415",
+          "https://openalex.org/W1907286193",
+          "https://openalex.org/W1910105761",
+          "https://openalex.org/W1917531491",
+          "https://openalex.org/W1963578450",
+          "https://openalex.org/W1964602390",
+          "https://openalex.org/W1965051248",
+          "https://openalex.org/W1967379013",
+          "https://openalex.org/W1969739015",
+          "https://openalex.org/W1970475751",
+          "https://openalex.org/W1970502313",
+          "https://openalex.org/W1971648300",
+          "https://openalex.org/W1971814199",
+          "https://openalex.org/W1971896716",
+          "https://openalex.org/W1972376036",
+          "https://openalex.org/W1976518102",
+          "https://openalex.org/W1977538118",
+          "https://openalex.org/W1977833499",
+          "https://openalex.org/W1978889227",
+          "https://openalex.org/W1980642331",
+          "https://openalex.org/W1981019926",
+          "https://openalex.org/W1982055613",
+          "https://openalex.org/W1982759407",
+          "https://openalex.org/W1982858898",
+          "https://openalex.org/W1983639327",
+          "https://openalex.org/W1986215651",
+          "https://openalex.org/W1987404332",
+          "https://openalex.org/W1988910266",
+          "https://openalex.org/W1993066822",
+          "https://openalex.org/W1993398606",
+          "https://openalex.org/W1999204556",
+          "https://openalex.org/W2000184796",
+          "https://openalex.org/W2001662846",
+          "https://openalex.org/W2002414224",
+          "https://openalex.org/W2002541938",
+          "https://openalex.org/W2002873854",
+          "https://openalex.org/W2004776253",
+          "https://openalex.org/W2005261700",
+          "https://openalex.org/W2005950835",
+          "https://openalex.org/W2007567350",
+          "https://openalex.org/W2011129068",
+          "https://openalex.org/W2012530195",
+          "https://openalex.org/W2012950673",
+          "https://openalex.org/W2015629500",
+          "https://openalex.org/W2017377318",
+          "https://openalex.org/W2017899036",
+          "https://openalex.org/W2018223524",
+          "https://openalex.org/W2018606774",
+          "https://openalex.org/W2023155726",
+          "https://openalex.org/W2023754051",
+          "https://openalex.org/W2024369691",
+          "https://openalex.org/W2025608443",
+          "https://openalex.org/W2026783052",
+          "https://openalex.org/W2026820572",
+          "https://openalex.org/W2028083052",
+          "https://openalex.org/W2030552375",
+          "https://openalex.org/W2031549147",
+          "https://openalex.org/W2032993717",
+          "https://openalex.org/W2033069678",
+          "https://openalex.org/W2034165193",
+          "https://openalex.org/W2034683619",
+          "https://openalex.org/W2035246518",
+          "https://openalex.org/W2035718480",
+          "https://openalex.org/W2035899887",
+          "https://openalex.org/W2037305461",
+          "https://openalex.org/W2038579646",
+          "https://openalex.org/W2041212401",
+          "https://openalex.org/W2041723949",
+          "https://openalex.org/W2043618984",
+          "https://openalex.org/W2044550240",
+          "https://openalex.org/W2046041011",
+          "https://openalex.org/W2050010271",
+          "https://openalex.org/W2051361469",
+          "https://openalex.org/W2052582499",
+          "https://openalex.org/W2052795711",
+          "https://openalex.org/W2052899782",
+          "https://openalex.org/W2053031440",
+          "https://openalex.org/W2053082582",
+          "https://openalex.org/W2054334489",
+          "https://openalex.org/W2054381589",
+          "https://openalex.org/W2057954853",
+          "https://openalex.org/W2058653048",
+          "https://openalex.org/W2059275568",
+          "https://openalex.org/W2059506323",
+          "https://openalex.org/W2060515758",
+          "https://openalex.org/W2060900567",
+          "https://openalex.org/W2061936695",
+          "https://openalex.org/W2061987532",
+          "https://openalex.org/W2062187425",
+          "https://openalex.org/W2062814223",
+          "https://openalex.org/W2064123557",
+          "https://openalex.org/W2068376834",
+          "https://openalex.org/W2072291958",
+          "https://openalex.org/W2072600048",
+          "https://openalex.org/W2073065350",
+          "https://openalex.org/W2073818266",
+          "https://openalex.org/W2076963713",
+          "https://openalex.org/W2077513286",
+          "https://openalex.org/W2078020500",
+          "https://openalex.org/W2079772095",
+          "https://openalex.org/W2084460082",
+          "https://openalex.org/W2087021579",
+          "https://openalex.org/W2088711535",
+          "https://openalex.org/W2100117397",
+          "https://openalex.org/W2101893053",
+          "https://openalex.org/W2102073367",
+          "https://openalex.org/W2103948822",
+          "https://openalex.org/W2109976502",
+          "https://openalex.org/W2111588213",
+          "https://openalex.org/W2113085067",
+          "https://openalex.org/W2114140352",
+          "https://openalex.org/W2118174895",
+          "https://openalex.org/W2119037484",
+          "https://openalex.org/W2121387070",
+          "https://openalex.org/W2122130843",
+          "https://openalex.org/W2123418328",
+          "https://openalex.org/W2125801084",
+          "https://openalex.org/W2133152913",
+          "https://openalex.org/W2134828291",
+          "https://openalex.org/W2134977167",
+          "https://openalex.org/W2144816075",
+          "https://openalex.org/W2144981148",
+          "https://openalex.org/W2145064763",
+          "https://openalex.org/W2145485458",
+          "https://openalex.org/W2159964404",
+          "https://openalex.org/W2162556894",
+          "https://openalex.org/W2164136002",
+          "https://openalex.org/W2164525561",
+          "https://openalex.org/W2167023602",
+          "https://openalex.org/W2169092974",
+          "https://openalex.org/W2170084306",
+          "https://openalex.org/W2171827218",
+          "https://openalex.org/W2173257495",
+          "https://openalex.org/W2180794488",
+          "https://openalex.org/W2184425661",
+          "https://openalex.org/W2188054488",
+          "https://openalex.org/W2195170762",
+          "https://openalex.org/W2235693693",
+          "https://openalex.org/W2250324679",
+          "https://openalex.org/W2256474644",
+          "https://openalex.org/W2261546149",
+          "https://openalex.org/W2268768122",
+          "https://openalex.org/W2276801815",
+          "https://openalex.org/W2280327463",
+          "https://openalex.org/W2287054277",
+          "https://openalex.org/W2312343893",
+          "https://openalex.org/W2315404267",
+          "https://openalex.org/W2321755921",
+          "https://openalex.org/W2322381034",
+          "https://openalex.org/W2323199028",
+          "https://openalex.org/W2328995612",
+          "https://openalex.org/W2332067735",
+          "https://openalex.org/W2339294314",
+          "https://openalex.org/W2340352011",
+          "https://openalex.org/W2400582259",
+          "https://openalex.org/W2401214671",
+          "https://openalex.org/W2404417369",
+          "https://openalex.org/W2406882901",
+          "https://openalex.org/W2413426462",
+          "https://openalex.org/W2415165184",
+          "https://openalex.org/W2417800084",
+          "https://openalex.org/W2461645408",
+          "https://openalex.org/W2463568293",
+          "https://openalex.org/W2469496264",
+          "https://openalex.org/W2470287615",
+          "https://openalex.org/W2470289662",
+          "https://openalex.org/W2471688006",
+          "https://openalex.org/W2489734851",
+          "https://openalex.org/W2508969283",
+          "https://openalex.org/W2515307843",
+          "https://openalex.org/W2527516663",
+          "https://openalex.org/W2527800909",
+          "https://openalex.org/W2529188509",
+          "https://openalex.org/W2531842628",
+          "https://openalex.org/W2537339517",
+          "https://openalex.org/W2551122076",
+          "https://openalex.org/W2555055705",
+          "https://openalex.org/W2564806710",
+          "https://openalex.org/W2570760970",
+          "https://openalex.org/W2573737445",
+          "https://openalex.org/W2574710058",
+          "https://openalex.org/W2584547955",
+          "https://openalex.org/W2585591731",
+          "https://openalex.org/W2592437185",
+          "https://openalex.org/W2594050207",
+          "https://openalex.org/W2594306710",
+          "https://openalex.org/W2603021916",
+          "https://openalex.org/W2604669265",
+          "https://openalex.org/W2617867351",
+          "https://openalex.org/W2618665414",
+          "https://openalex.org/W2619097379",
+          "https://openalex.org/W2620300291",
+          "https://openalex.org/W2620983119",
+          "https://openalex.org/W2626284853",
+          "https://openalex.org/W2626901378",
+          "https://openalex.org/W2726944738",
+          "https://openalex.org/W2727893020",
+          "https://openalex.org/W2729396025",
+          "https://openalex.org/W2736749021",
+          "https://openalex.org/W2737578613",
+          "https://openalex.org/W2738389686",
+          "https://openalex.org/W2743567953",
+          "https://openalex.org/W2744378798",
+          "https://openalex.org/W2748401780",
+          "https://openalex.org/W2753410613",
+          "https://openalex.org/W2754096738",
+          "https://openalex.org/W2754461217",
+          "https://openalex.org/W2756617697",
+          "https://openalex.org/W2758039703",
+          "https://openalex.org/W2760310584",
+          "https://openalex.org/W2765203623",
+          "https://openalex.org/W2766913883",
+          "https://openalex.org/W2768281947",
+          "https://openalex.org/W2787278159",
+          "https://openalex.org/W2793031353",
+          "https://openalex.org/W2916435294",
+          "https://openalex.org/W2963557794",
+          "https://openalex.org/W2964216187",
+          "https://openalex.org/W2970662945",
+          "https://openalex.org/W3012322630",
+          "https://openalex.org/W3099134192",
+          "https://openalex.org/W3102039902",
+          "https://openalex.org/W3103616818",
+          "https://openalex.org/W3121974832",
+          "https://openalex.org/W3123091093",
+          "https://openalex.org/W3124129388",
+          "https://openalex.org/W3124230418",
+          "https://openalex.org/W3125672425",
+          "https://openalex.org/W3141714916",
+          "https://openalex.org/W3158683096",
+          "https://openalex.org/W4206521017",
+          "https://openalex.org/W4210820563",
+          "https://openalex.org/W4211032755",
+          "https://openalex.org/W4211068006",
+          "https://openalex.org/W4235332646",
+          "https://openalex.org/W4238639366",
+          "https://openalex.org/W4239500632",
+          "https://openalex.org/W4240507605",
+          "https://openalex.org/W4241559800",
+          "https://openalex.org/W4241693213",
+          "https://openalex.org/W4244872700",
+          "https://openalex.org/W4245825857",
+          "https://openalex.org/W4246451368",
+          "https://openalex.org/W4248175462",
+          "https://openalex.org/W4251230844",
+          "https://openalex.org/W4251239684",
+          "https://openalex.org/W4252611745",
+          "https://openalex.org/W4255828633",
+          "https://openalex.org/W4255911937",
+          "https://openalex.org/W4292887282",
+          "https://openalex.org/W4297734756",
+          "https://openalex.org/W4301115652",
+          "https://openalex.org/W4386990984",
+          "https://openalex.org/W4392080455",
+          "https://openalex.org/W6624166757",
+          "https://openalex.org/W6637162671",
+          "https://openalex.org/W6639954461",
+          "https://openalex.org/W6742544503",
+          "https://openalex.org/W6745457058",
+          "https://openalex.org/W6857144817",
+          "https://openalex.org/W6898992229",
+          "https://openalex.org/W6902262997",
+          "https://openalex.org/W6929516321",
+          "https://openalex.org/W6929721993",
+          "https://openalex.org/W6944992202",
+          "https://openalex.org/W7058131676",
+          "https://openalex.org/W7062717298"
+        ],
+        "referenced_works_count": 291,
+        "title": "A multi-disciplinary perspective on emergent and future innovations in peer review",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "332": [
+            38
+          ],
+          "A": [
+            35
+          ],
+          "Chinese": [
+            21
+          ],
+          "English": [
+            43
+          ],
+          "Results": [
+            65
+          ],
+          "Specifically,": [
+            104
+          ],
+          "The": [
+            24,
+            83
+          ],
+          "This": [
+            0,
+            120
+          ],
+          "a": [
+            18,
+            129
+          ],
+          "acceptance": [
+            7,
+            70,
+            109
+          ],
+          "acceptance,": [
+            54,
+            95
+          ],
+          "also": [
+            26,
+            85
+          ],
+          "and": [
+            8,
+            62,
+            71,
+            98,
+            110,
+            140
+          ],
+          "as": [
+            128
+          ],
+          "associations.": [
+            34
+          ],
+          "attitude": [
+            12,
+            57,
+            78,
+            99,
+            115,
+            142
+          ],
+          "between": [
+            134
+          ],
+          "college": [
+            42
+          ],
+          "contribution": [
+            4
+          ],
+          "course": [
+            44
+          ],
+          "enrolled": [
+            46
+          ],
+          "environments": [
+            139
+          ],
+          "experiencing": [
+            106
+          ],
+          "explored": [
+            2
+          ],
+          "findings": [
+            84
+          ],
+          "greater": [
+            107
+          ],
+          "higher": [
+            114
+          ],
+          "highlighted": [
+            122
+          ],
+          "illustrating": [
+            132
+          ],
+          "in": [
+            17,
+            49
+          ],
+          "indicated": [
+            66,
+            86
+          ],
+          "inquired": [
+            27
+          ],
+          "into": [
+            28
+          ],
+          "learning": [
+            16,
+            30,
+            63,
+            88,
+            126
+          ],
+          "learning,": [
+            61
+          ],
+          "learning.": [
+            82,
+            103,
+            119,
+            146
+          ],
+          "mechanism": [
+            131
+          ],
+          "mediated": [
+            32,
+            90
+          ],
+          "mediating": [
+            130
+          ],
+          "motivation": [
+            31,
+            89,
+            127
+          ],
+          "motivation.": [
+            64
+          ],
+          "of": [
+            5,
+            20,
+            37,
+            41,
+            93,
+            125,
+            137
+          ],
+          "participate": [
+            48
+          ],
+          "perception": [
+            136
+          ],
+          "questionnaires": [
+            50
+          ],
+          "regarding": [
+            51
+          ],
+          "related": [
+            75
+          ],
+          "relations": [
+            92,
+            133
+          ],
+          "sample": [
+            19
+          ],
+          "self-directed": [
+            15,
+            60,
+            81,
+            102,
+            118,
+            145
+          ],
+          "self-efficacy": [
+            10,
+            73,
+            112
+          ],
+          "self-efficacy,": [
+            56,
+            97
+          ],
+          "showed": [
+            113
+          ],
+          "significance": [
+            124
+          ],
+          "students": [
+            40,
+            105
+          ],
+          "students'": [
+            68,
+            135
+          ],
+          "students.": [
+            23
+          ],
+          "study": [
+            1,
+            25,
+            121
+          ],
+          "technological": [
+            9,
+            55,
+            72,
+            96,
+            111
+          ],
+          "technology": [
+            6,
+            53,
+            69,
+            94,
+            108,
+            138
+          ],
+          "technology-based": [
+            14,
+            59,
+            80,
+            101,
+            117,
+            144
+          ],
+          "that": [
+            67,
+            87
+          ],
+          "the": [
+            3,
+            91,
+            123
+          ],
+          "their": [
+            52,
+            77,
+            141
+          ],
+          "these": [
+            33
+          ],
+          "to": [
+            11,
+            47,
+            76
+          ],
+          "total": [
+            36
+          ],
+          "toward": [
+            13,
+            58,
+            79,
+            100,
+            116,
+            143
+          ],
+          "undergraduate": [
+            22,
+            39
+          ],
+          "were": [
+            45,
+            74
+          ],
+          "whether": [
+            29
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I135237710"
+                ],
+                "raw_affiliation_string": "Xingzhi College, Zhejiang Normal University, Jinhua, China"
+              }
+            ],
+            "author": {
+              "display_name": "Xiaoquan Pan",
+              "id": "https://openalex.org/A5047501938",
+              "orcid": "https://orcid.org/0000-0002-5049-8498"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Zhejiang Normal University",
+                "id": "https://openalex.org/I135237710",
+                "lineage": [
+                  "https://openalex.org/I135237710"
+                ],
+                "ror": "https://ror.org/01vevwk45",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Xingzhi College, Zhejiang Normal University, Jinhua, China"
+            ],
+            "raw_author_name": "Xiaoquan Pan",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3389/fpsyg.2020.564294",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3389/fpsyg.2020.564294",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.564294/pdf",
+          "raw_source_name": "Frontiers in Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Frontiers in Psychology",
+            "host_organization": "https://openalex.org/P4310320527",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320527"
+            ],
+            "host_organization_lineage_names": [
+              "Frontiers Media"
+            ],
+            "host_organization_name": "Frontiers Media",
+            "id": "https://openalex.org/S9692511",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1664-1078"
+            ],
+            "issn_l": "1664-1078",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "564294",
+          "issue": null,
+          "last_page": "564294",
+          "volume": "11"
+        },
+        "cited_by_count": 307,
+        "display_name": "Technology Acceptance, Technological Self-Efficacy, and Attitude Toward Technology-Based Self-Directed Learning: Learning Motivation as a Mediator",
+        "doi": "https://doi.org/10.3389/fpsyg.2020.564294",
+        "id": "https://openalex.org/W3097042973",
+        "ids": {
+          "doi": "https://doi.org/10.3389/fpsyg.2020.564294",
+          "mag": "3097042973",
+          "openalex": "https://openalex.org/W3097042973",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/33192838"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.564294/pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.3389/fpsyg.2020.564294",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3389/fpsyg.2020.564294",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.564294/pdf",
+          "raw_source_name": "Frontiers in Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Frontiers in Psychology",
+            "host_organization": "https://openalex.org/P4310320527",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320527"
+            ],
+            "host_organization_lineage_names": [
+              "Frontiers Media"
+            ],
+            "host_organization_name": "Frontiers Media",
+            "id": "https://openalex.org/S9692511",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1664-1078"
+            ],
+            "issn_l": "1664-1078",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2020-10-27",
+        "publication_year": 2020,
+        "referenced_works": [
+          "https://openalex.org/W129780270",
+          "https://openalex.org/W572805672",
+          "https://openalex.org/W633404043",
+          "https://openalex.org/W1002625863",
+          "https://openalex.org/W1484864026",
+          "https://openalex.org/W1506352326",
+          "https://openalex.org/W1521477500",
+          "https://openalex.org/W1547809084",
+          "https://openalex.org/W1550992609",
+          "https://openalex.org/W1560399420",
+          "https://openalex.org/W1608078288",
+          "https://openalex.org/W1755228850",
+          "https://openalex.org/W1758841086",
+          "https://openalex.org/W1763058510",
+          "https://openalex.org/W1785487630",
+          "https://openalex.org/W1791587663",
+          "https://openalex.org/W1849190772",
+          "https://openalex.org/W1934117950",
+          "https://openalex.org/W1970131054",
+          "https://openalex.org/W1981959581",
+          "https://openalex.org/W1986682245",
+          "https://openalex.org/W1986842164",
+          "https://openalex.org/W1987450023",
+          "https://openalex.org/W1991394887",
+          "https://openalex.org/W1993959650",
+          "https://openalex.org/W2009781441",
+          "https://openalex.org/W2030652557",
+          "https://openalex.org/W2033943395",
+          "https://openalex.org/W2036389121",
+          "https://openalex.org/W2043716431",
+          "https://openalex.org/W2046460867",
+          "https://openalex.org/W2048696097",
+          "https://openalex.org/W2054102051",
+          "https://openalex.org/W2054763711",
+          "https://openalex.org/W2063007779",
+          "https://openalex.org/W2064430399",
+          "https://openalex.org/W2071666535",
+          "https://openalex.org/W2074074847",
+          "https://openalex.org/W2075647120",
+          "https://openalex.org/W2077211899",
+          "https://openalex.org/W2079117069",
+          "https://openalex.org/W2081957430",
+          "https://openalex.org/W2088135512",
+          "https://openalex.org/W2094651375",
+          "https://openalex.org/W2095288893",
+          "https://openalex.org/W2099981652",
+          "https://openalex.org/W2100379340",
+          "https://openalex.org/W2106533537",
+          "https://openalex.org/W2106752902",
+          "https://openalex.org/W2107370093",
+          "https://openalex.org/W2118170442",
+          "https://openalex.org/W2119225338",
+          "https://openalex.org/W2121560173",
+          "https://openalex.org/W2121918274",
+          "https://openalex.org/W2122517769",
+          "https://openalex.org/W2122912498",
+          "https://openalex.org/W2126512988",
+          "https://openalex.org/W2134685917",
+          "https://openalex.org/W2145626372",
+          "https://openalex.org/W2149385614",
+          "https://openalex.org/W2153110447",
+          "https://openalex.org/W2158581306",
+          "https://openalex.org/W2162025224",
+          "https://openalex.org/W2164515604",
+          "https://openalex.org/W2167298064",
+          "https://openalex.org/W2168569455",
+          "https://openalex.org/W2169276809",
+          "https://openalex.org/W2265024044",
+          "https://openalex.org/W2296393882",
+          "https://openalex.org/W2340053015",
+          "https://openalex.org/W2345260489",
+          "https://openalex.org/W2484151556",
+          "https://openalex.org/W2566381134",
+          "https://openalex.org/W2566487662",
+          "https://openalex.org/W2590508971",
+          "https://openalex.org/W2770640848",
+          "https://openalex.org/W2783356839",
+          "https://openalex.org/W2789092433",
+          "https://openalex.org/W2885587260",
+          "https://openalex.org/W2890892752",
+          "https://openalex.org/W2911862030",
+          "https://openalex.org/W2922298788",
+          "https://openalex.org/W2999571914",
+          "https://openalex.org/W3004664364",
+          "https://openalex.org/W3011220992",
+          "https://openalex.org/W3045771781",
+          "https://openalex.org/W3128798761",
+          "https://openalex.org/W3150553137",
+          "https://openalex.org/W3214923421",
+          "https://openalex.org/W4293586167",
+          "https://openalex.org/W6605339170",
+          "https://openalex.org/W6607414389",
+          "https://openalex.org/W6607831700",
+          "https://openalex.org/W6638028033",
+          "https://openalex.org/W6677787247",
+          "https://openalex.org/W6682336753",
+          "https://openalex.org/W6684529569",
+          "https://openalex.org/W6755111735"
+        ],
+        "referenced_works_count": 98,
+        "title": "Technology Acceptance, Technological Self-Efficacy, and Attitude Toward Technology-Based Self-Directed Learning: Learning Motivation as a Mediator",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(MHI)": [
+            37
+          ],
+          "(NLP": [
+            118
+          ],
+          "(NLP)": [
+            27
+          ],
+          "(NLPxMHI)": [
+            265
+          ],
+          "(clinical": [
+            129
+          ],
+          "(n": [
+            84,
+            181,
+            186,
+            193,
+            209,
+            215,
+            220,
+            225,
+            230,
+            236
+          ],
+          "(osf.io/s52jh)": [
+            69
+          ],
+          "102": [
+            109
+          ],
+          "11),": [
+            217
+          ],
+          "12),": [
+            227
+          ],
+          "14),": [
+            232
+          ],
+          "19,756),": [
+            86
+          ],
+          "20),": [
+            222
+          ],
+          "2019,": [
+            148
+          ],
+          "2023": [
+            97
+          ],
+          "26).": [
+            195
+          ],
+          "29)": [
+            188
+          ],
+          "31),": [
+            183
+          ],
+          "34),": [
+            211
+          ],
+          "4)": [
+            238
+          ],
+          "=": [
+            85,
+            182,
+            187,
+            194,
+            210,
+            216,
+            221,
+            226,
+            231,
+            237
+          ],
+          "A": [
+            106,
+            258
+          ],
+          "AI": [
+            20,
+            89
+          ],
+          "ArXiv.": [
+            105
+          ],
+          "Candidate": [
+            82
+          ],
+          "Digital": [
+            160
+          ],
+          "Google": [
+            102
+          ],
+          "Ground": [
+            170
+          ],
+          "However,": [
+            45
+          ],
+          "January": [
+            96
+          ],
+          "Language": [
+            25
+          ],
+          "Limitations": [
+            244
+          ],
+          "MHI": [
+            145,
+            168
+          ],
+          "MHI,": [
+            281
+          ],
+          "NLP": [
+            144,
+            279
+          ],
+          "NLP's": [
+            46
+          ],
+          "NLP-MHI": [
+            64
+          ],
+          "Natural": [
+            24
+          ],
+          "Neuropsychiatric": [
+            0
+          ],
+          "PRISMA": [
+            67
+          ],
+          "Patients'": [
+            206
+          ],
+          "Processing": [
+            26
+          ],
+          "PsycINFO,": [
+            100
+          ],
+          "PubMed,": [
+            99
+          ],
+          "Results": [
+            138
+          ],
+          "Scholar,": [
+            103
+          ],
+          "Scopus,": [
+            101
+          ],
+          "Text-based": [
+            196
+          ],
+          "We": [
+            56
+          ],
+          "a": [
+            3,
+            59,
+            140
+          ],
+          "access,": [
+            290
+          ],
+          "accuracy": [
+            202
+          ],
+          "address": [
+            49
+          ],
+          "addressing": [
+            273
+          ],
+          "algorithms,": [
+            119
+          ],
+          "and": [
+            17,
+            22,
+            51,
+            76,
+            80,
+            104,
+            136,
+            154,
+            189,
+            233,
+            255,
+            263,
+            269,
+            291
+          ],
+          "annotations": [
+            190
+          ],
+          "applications,": [
+            75
+          ],
+          "applying": [
+            278
+          ],
+          "articles": [
+            110
+          ],
+          "as": [
+            30
+          ],
+          "assist": [
+            267
+          ],
+          "at": [
+            38
+          ],
+          "audio": [
+            120,
+            204
+          ],
+          "based": [
+            177
+          ],
+          "bias.": [
+            257
+          ],
+          "biases": [
+            79
+          ],
+          "but": [
+            7
+          ],
+          "by": [
+            12,
+            150,
+            191
+          ],
+          "categories.": [
+            243
+          ],
+          "challenges": [
+            53
+          ],
+          "characteristics": [
+            117,
+            128,
+            224
+          ],
+          "characterized": [
+            149
+          ],
+          "clinical": [
+            50,
+            74,
+            127,
+            134,
+            207,
+            242,
+            270,
+            287
+          ],
+          "clinician": [
+            179
+          ],
+          "collected": [
+            93
+          ],
+          "commonly": [
+            240
+          ],
+          "computational": [
+            116,
+            268
+          ],
+          "conducted": [
+            58
+          ],
+          "conference": [
+            90
+          ],
+          "constituent": [
+            43
+          ],
+          "contributed": [
+            198
+          ],
+          "conversations.": [
+            44
+          ],
+          "cost,": [
+            6
+          ],
+          "data": [
+            234,
+            289
+          ],
+          "data.": [
+            169
+          ],
+          "developed": [
+            262
+          ],
+          "disorders": [
+            1
+          ],
+          "diversity,": [
+            252
+          ],
+          "dynamics": [
+            229
+          ],
+          "emerged": [
+            29
+          ],
+          "evaluate": [
+            71
+          ],
+          "fairness.": [
+            292
+          ],
+          "features": [
+            197
+          ],
+          "features,": [
+            121
+          ],
+          "fidelity": [
+            18
+          ],
+          "focus),": [
+            135
+          ],
+          "for": [
+            172
+          ],
+          "framework": [
+            260
+          ],
+          "gaps": [
+            276
+          ],
+          "gaps.": [
+            81
+          ],
+          "goal": [
+            284
+          ],
+          "ground": [
+            130
+          ],
+          "growth": [
+            142
+          ],
+          "guidelines": [
+            68
+          ],
+          "have": [
+            28
+          ],
+          "health": [
+            35,
+            161
+          ],
+          "high": [
+            4
+          ],
+          "hindered": [
+            11
+          ],
+          "identify": [
+            78
+          ],
+          "improving": [
+            286
+          ],
+          "in": [
+            272,
+            277
+          ],
+          "included": [
+            112,
+            248
+          ],
+          "including": [
+            87
+          ],
+          "increased": [
+            151
+          ],
+          "indicate": [
+            139
+          ],
+          "intervention": [
+            214,
+            218
+          ],
+          "interventions": [
+            36
+          ],
+          "investigate": [
+            114
+          ],
+          "investigated": [
+            241
+          ],
+          "is": [
+            10,
+            261
+          ],
+          "lack": [
+            13,
+            249
+          ],
+          "language": [
+            158
+          ],
+          "large": [
+            157
+          ],
+          "largest": [
+            165
+          ],
+          "learning": [
+            123,
+            174
+          ],
+          "level": [
+            40
+          ],
+          "limitations.": [
+            137
+          ],
+          "limited": [
+            253
+          ],
+          "linguistic": [
+            251
+          ],
+          "machine": [
+            122
+          ],
+          "manuscripts,": [
+            91
+          ],
+          "markers.": [
+            205
+          ],
+          "mental": [
+            34
+          ],
+          "metrics),": [
+            126
+          ],
+          "metrics.": [
+            19
+          ],
+          "model": [
+            201
+          ],
+          "models": [
+            175
+          ],
+          "models,": [
+            73
+          ],
+          "models.": [
+            159
+          ],
+          "monitoring": [
+            219
+          ],
+          "more": [
+            199
+          ],
+          "objective": [
+            15
+          ],
+          "of": [
+            14,
+            41,
+            63,
+            108,
+            143,
+            156,
+            167,
+            245,
+            250,
+            285
+          ],
+          "on": [
+            178
+          ],
+          "outcome": [
+            125
+          ],
+          "outcomes": [
+            16
+          ],
+          "patient": [
+            184
+          ],
+          "peer-reviewed": [
+            88
+          ],
+          "pipelines,": [
+            124
+          ],
+          "platforms": [
+            162
+          ],
+          "population": [
+            256
+          ],
+          "pose": [
+            2
+          ],
+          "potential": [
+            47
+          ],
+          "pre-registered": [
+            60
+          ],
+          "preparation": [
+            235
+          ],
+          "presentation": [
+            208
+          ],
+          "providers": [
+            166
+          ],
+          "providers'": [
+            223
+          ],
+          "rapid": [
+            141
+          ],
+          "raters": [
+            192
+          ],
+          "ratings": [
+            180
+          ],
+          "relational": [
+            228
+          ],
+          "remaining": [
+            275
+          ],
+          "remains": [
+            54
+          ],
+          "reproducibility,": [
+            254
+          ],
+          "research": [
+            52,
+            259
+          ],
+          "researchers": [
+            271
+          ],
+          "response": [
+            212
+          ],
+          "review": [
+            62
+          ],
+          "reviewed": [
+            246
+          ],
+          "sample": [
+            152
+          ],
+          "samples,": [
+            133
+          ],
+          "self-report": [
+            185
+          ],
+          "since": [
+            147
+          ],
+          "sizes": [
+            153
+          ],
+          "societal": [
+            5
+          ],
+          "specifically": [
+            23
+          ],
+          "studies": [
+            65,
+            83,
+            146,
+            247
+          ],
+          "study": [
+            33,
+            132
+          ],
+          "supervised": [
+            173
+          ],
+          "systematic": [
+            61
+          ],
+          "technologies": [
+            21
+          ],
+          "than": [
+            203
+          ],
+          "the": [
+            39,
+            164,
+            274,
+            283
+          ],
+          "their": [
+            8,
+            42,
+            72,
+            115
+          ],
+          "therefore": [
+            57
+          ],
+          "through": [
+            98
+          ],
+          "to": [
+            32,
+            48,
+            70,
+            77,
+            95,
+            113,
+            200,
+            213,
+            266,
+            280
+          ],
+          "tools": [
+            31
+          ],
+          "total": [
+            107
+          ],
+          "treatment": [
+            9
+          ],
+          "truth": [
+            171
+          ],
+          "truths,": [
+            131
+          ],
+          "unclear.": [
+            55
+          ],
+          "up": [
+            94
+          ],
+          "use": [
+            155
+          ],
+          "using": [
+            66
+          ],
+          "utility,": [
+            288
+          ],
+          "validated": [
+            264
+          ],
+          "was": [
+            176
+          ],
+          "were": [
+            92,
+            111,
+            163,
+            239
+          ],
+          "with": [
+            282
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I57206974"
+                ],
+                "raw_affiliation_string": "Department of Psychiatry, New York University, Grossman School of Medicine, New York, NY, 10016, USA. matteo.malgaroli@nyulangone.org"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I57206974"
+                ],
+                "raw_affiliation_string": "Department of Psychiatry, New York University, Grossman School of Medicine, New York, NY, 10016, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Matteo Malgaroli",
+              "id": "https://openalex.org/A5040524783",
+              "orcid": "https://orcid.org/0000-0003-4209-6939"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "New York University",
+                "id": "https://openalex.org/I57206974",
+                "lineage": [
+                  "https://openalex.org/I57206974"
+                ],
+                "ror": "https://ror.org/0190ak572",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Psychiatry, New York University, Grossman School of Medicine, New York, NY, 10016, USA. matteo.malgaroli@nyulangone.org",
+              "Department of Psychiatry, New York University, Grossman School of Medicine, New York, NY, 10016, USA"
+            ],
+            "raw_author_name": "Matteo Malgaroli",
+            "raw_orcid": "https://orcid.org/0000-0003-4209-6939"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Talkspace, New York, NY, 10025, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Thomas D. Hull",
+              "id": "https://openalex.org/A5044981630",
+              "orcid": "https://orcid.org/0000-0001-8275-6765"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Talkspace, New York, NY, 10025, USA"
+            ],
+            "raw_author_name": "Thomas D. Hull",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I103163165"
+                ],
+                "raw_affiliation_string": "Department of Psychology, Florida State University, Tallahassee, FL, 32306, USA"
+              },
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Talkspace, New York, NY, 10025, USA"
+              }
+            ],
+            "author": {
+              "display_name": "James M Zech",
+              "id": "https://openalex.org/A5060409321",
+              "orcid": "https://orcid.org/0000-0001-8726-1884"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Florida State University",
+                "id": "https://openalex.org/I103163165",
+                "lineage": [
+                  "https://openalex.org/I103163165"
+                ],
+                "ror": "https://ror.org/05g3dte14",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Psychology, Florida State University, Tallahassee, FL, 32306, USA",
+              "Talkspace, New York, NY, 10025, USA"
+            ],
+            "raw_author_name": "James M. Zech",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I201448701"
+                ],
+                "raw_affiliation_string": "Department of Computer Science, University of Washington, Seattle, WA, 98195, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Tim Althoff",
+              "id": "https://openalex.org/A5033639139",
+              "orcid": "https://orcid.org/0000-0003-4793-2289"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Washington",
+                "id": "https://openalex.org/I201448701",
+                "lineage": [
+                  "https://openalex.org/I201448701"
+                ],
+                "ror": "https://ror.org/00cvxb145",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computer Science, University of Washington, Seattle, WA, 98195, USA"
+            ],
+            "raw_author_name": "Tim Althoff",
+            "raw_orcid": "https://orcid.org/0000-0003-4793-2289"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/s41398-023-02592-2",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41398-023-02592-2",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41398-023-02592-2.pdf",
+          "raw_source_name": "Translational Psychiatry",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Translational Psychiatry",
+            "host_organization": "https://openalex.org/P4310319965",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature"
+            ],
+            "host_organization_name": "Springer Nature",
+            "id": "https://openalex.org/S163345920",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2158-3188"
+            ],
+            "issn_l": "2158-3188",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "309",
+          "issue": "1",
+          "last_page": "309",
+          "volume": "13"
+        },
+        "cited_by_count": 186,
+        "display_name": "Natural language processing for mental health interventions: a systematic review and research framework",
+        "doi": "https://doi.org/10.1038/s41398-023-02592-2",
+        "id": "https://openalex.org/W4387393037",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s41398-023-02592-2",
+          "openalex": "https://openalex.org/W4387393037",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/37798296"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.nature.com/articles/s41398-023-02592-2.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s41398-023-02592-2",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41398-023-02592-2",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41398-023-02592-2.pdf",
+          "raw_source_name": "Translational Psychiatry",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Translational Psychiatry",
+            "host_organization": "https://openalex.org/P4310319965",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature"
+            ],
+            "host_organization_name": "Springer Nature",
+            "id": "https://openalex.org/S163345920",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2158-3188"
+            ],
+            "issn_l": "2158-3188",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2023-10-06",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W1824543798",
+          "https://openalex.org/W1906603290",
+          "https://openalex.org/W1973165869",
+          "https://openalex.org/W2010464927",
+          "https://openalex.org/W2027791497",
+          "https://openalex.org/W2031362790",
+          "https://openalex.org/W2038665820",
+          "https://openalex.org/W2043241911",
+          "https://openalex.org/W2047196523",
+          "https://openalex.org/W2052664705",
+          "https://openalex.org/W2065974896",
+          "https://openalex.org/W2066231855",
+          "https://openalex.org/W2084808900",
+          "https://openalex.org/W2087727383",
+          "https://openalex.org/W2113669296",
+          "https://openalex.org/W2140772986",
+          "https://openalex.org/W2140910804",
+          "https://openalex.org/W2154608152",
+          "https://openalex.org/W2154690800",
+          "https://openalex.org/W2154843494",
+          "https://openalex.org/W2157394212",
+          "https://openalex.org/W2171464520",
+          "https://openalex.org/W2181445435",
+          "https://openalex.org/W2255670592",
+          "https://openalex.org/W2265658025",
+          "https://openalex.org/W2291118760",
+          "https://openalex.org/W2314271279",
+          "https://openalex.org/W2319736527",
+          "https://openalex.org/W2339315248",
+          "https://openalex.org/W2341536223",
+          "https://openalex.org/W2345106796",
+          "https://openalex.org/W2410358407",
+          "https://openalex.org/W2504424415",
+          "https://openalex.org/W2510364177",
+          "https://openalex.org/W2516684112",
+          "https://openalex.org/W2599618731",
+          "https://openalex.org/W2735723872",
+          "https://openalex.org/W2740811869",
+          "https://openalex.org/W2741866274",
+          "https://openalex.org/W2748039753",
+          "https://openalex.org/W2753392522",
+          "https://openalex.org/W2760160110",
+          "https://openalex.org/W2762862848",
+          "https://openalex.org/W2787427645",
+          "https://openalex.org/W2790056169",
+          "https://openalex.org/W2791063712",
+          "https://openalex.org/W2791735926",
+          "https://openalex.org/W2801150160",
+          "https://openalex.org/W2803760365",
+          "https://openalex.org/W2879234625",
+          "https://openalex.org/W2884518904",
+          "https://openalex.org/W2888829152",
+          "https://openalex.org/W2889101895",
+          "https://openalex.org/W2889239091",
+          "https://openalex.org/W2889620547",
+          "https://openalex.org/W2895624192",
+          "https://openalex.org/W2905522132",
+          "https://openalex.org/W2912048951",
+          "https://openalex.org/W2912654919",
+          "https://openalex.org/W2913131978",
+          "https://openalex.org/W2919115771",
+          "https://openalex.org/W2939469531",
+          "https://openalex.org/W2944774301",
+          "https://openalex.org/W2946793373",
+          "https://openalex.org/W2948756736",
+          "https://openalex.org/W2951098724",
+          "https://openalex.org/W2951886554",
+          "https://openalex.org/W2963303106",
+          "https://openalex.org/W2963422031",
+          "https://openalex.org/W2963716420",
+          "https://openalex.org/W2964199361",
+          "https://openalex.org/W2964262738",
+          "https://openalex.org/W2964331476",
+          "https://openalex.org/W2965016654",
+          "https://openalex.org/W2969401291",
+          "https://openalex.org/W2972562960",
+          "https://openalex.org/W2972726447",
+          "https://openalex.org/W2980364910",
+          "https://openalex.org/W2996469812",
+          "https://openalex.org/W2997081473",
+          "https://openalex.org/W3000211686",
+          "https://openalex.org/W3005056912",
+          "https://openalex.org/W3005932449",
+          "https://openalex.org/W3009692632",
+          "https://openalex.org/W3010849309",
+          "https://openalex.org/W3011495304",
+          "https://openalex.org/W3013541826",
+          "https://openalex.org/W3013908145",
+          "https://openalex.org/W3021841823",
+          "https://openalex.org/W3026338371",
+          "https://openalex.org/W3030200164",
+          "https://openalex.org/W3033057983",
+          "https://openalex.org/W3034496424",
+          "https://openalex.org/W3036340576",
+          "https://openalex.org/W3037405958",
+          "https://openalex.org/W3038711424",
+          "https://openalex.org/W3040426938",
+          "https://openalex.org/W3040438665",
+          "https://openalex.org/W3047024470",
+          "https://openalex.org/W3047654255",
+          "https://openalex.org/W3059654161",
+          "https://openalex.org/W3082929259",
+          "https://openalex.org/W3088597222",
+          "https://openalex.org/W3092638447",
+          "https://openalex.org/W3093749223",
+          "https://openalex.org/W3104982372",
+          "https://openalex.org/W3119581860",
+          "https://openalex.org/W3122391984",
+          "https://openalex.org/W3123008381",
+          "https://openalex.org/W3123449715",
+          "https://openalex.org/W3125250127",
+          "https://openalex.org/W3125575123",
+          "https://openalex.org/W3131455944",
+          "https://openalex.org/W3134934671",
+          "https://openalex.org/W3136599046",
+          "https://openalex.org/W3138845560",
+          "https://openalex.org/W3147637074",
+          "https://openalex.org/W3154272574",
+          "https://openalex.org/W3167472272",
+          "https://openalex.org/W3168124778",
+          "https://openalex.org/W3168927884",
+          "https://openalex.org/W3169370268",
+          "https://openalex.org/W3172348233",
+          "https://openalex.org/W3172662410",
+          "https://openalex.org/W3174101453",
+          "https://openalex.org/W3175475730",
+          "https://openalex.org/W3182275036",
+          "https://openalex.org/W3192973451",
+          "https://openalex.org/W3194472989",
+          "https://openalex.org/W3204993626",
+          "https://openalex.org/W3212368439",
+          "https://openalex.org/W3216595028",
+          "https://openalex.org/W4206688156",
+          "https://openalex.org/W4206733158",
+          "https://openalex.org/W4211027869",
+          "https://openalex.org/W4213195521",
+          "https://openalex.org/W4214576234",
+          "https://openalex.org/W4220794986",
+          "https://openalex.org/W4220987872",
+          "https://openalex.org/W4226119767",
+          "https://openalex.org/W4226132754",
+          "https://openalex.org/W4226336469",
+          "https://openalex.org/W4255955445",
+          "https://openalex.org/W4280523169",
+          "https://openalex.org/W4283580776",
+          "https://openalex.org/W4284706140",
+          "https://openalex.org/W4287854610",
+          "https://openalex.org/W4287854674",
+          "https://openalex.org/W4287887154",
+          "https://openalex.org/W4290948184",
+          "https://openalex.org/W4295473018",
+          "https://openalex.org/W4297841579",
+          "https://openalex.org/W4310332067",
+          "https://openalex.org/W4310610239",
+          "https://openalex.org/W4311824302",
+          "https://openalex.org/W4317757464",
+          "https://openalex.org/W4322718191",
+          "https://openalex.org/W4385573319",
+          "https://openalex.org/W4391156274",
+          "https://openalex.org/W6739901393"
+        ],
+        "referenced_works_count": 160,
+        "title": "Natural language processing for mental health interventions: a systematic review and research framework",
+        "type": "review"
+      }
+    ]
+  },
+  "response_hash": "989402e8b47e75b4ac85285401de8d83d949beda21099e097a655278ec7a5d45",
+  "retrieved_at": "2026-07-14T13:48:44Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

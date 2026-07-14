@@ -1,0 +1,54 @@
+{
+  "endpoint": "query",
+  "request_key": "301f90fd488b132b64514ce91c2e4d62e8ae56b64137dc7e7003834b355d2462",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Spatio-temporal Self-Supervised Representation Learning for 3D Point Clouds\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Siyuan Huang",
+          "Yichen Xie",
+          "Song-Chun Zhu",
+          "Yixin Zhu"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "comment": "ICCV 2021",
+        "id": "http://arxiv.org/abs/2109.00179v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2109.00179v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2109.00179v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.CV",
+        "published": "2021-09-01T04:17:11Z",
+        "summary": "To date, various 3D scene understanding tasks still lack practical and generalizable pre-trained models, primarily due to the intricate nature of 3D scene understanding tasks and their immense variations introduced by camera views, lighting, occlusions, etc. In this paper, we tackle this challenge by introducing a spatio-temporal representation learning (STRL) framework, capable of learning from unlabeled 3D point clouds in a self-supervised fashion. Inspired by how infants learn from visual data in the wild, we explore the rich spatio-temporal cues derived from the 3D data. Specifically, STRL takes two temporally-correlated frames from a 3D point cloud sequence as the input, transforms it with the spatial data augmentation, and learns the invariant representation self-supervisedly. To corroborate the efficacy of STRL, we conduct extensive experiments on three types (synthetic, indoor, and outdoor) of datasets. Experimental results demonstrate that, compared with supervised learning methods, the learned self-supervised representation facilitates various models to attain comparable or even better performances while capable of generalizing pre-trained models to downstream tasks, including 3D shape classification, 3D object detection, and 3D semantic segmentation. Moreover, the spatio-temporal contextual cues embedded in 3D point clouds significantly improve the learned representations.",
+        "title": "Spatio-temporal Self-Supervised Representation Learning for 3D Point Clouds",
+        "updated": "2021-09-01T04:17:11Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "cca0aa30b2586d71ed81f5c61aa4e36404d4191b907aa96634ee1c1500b99b27",
+  "retrieved_at": "2026-07-14T13:51:59Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

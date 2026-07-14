@@ -1,0 +1,954 @@
+{
+  "endpoint": "works",
+  "request_key": "0d432c562d00aaedf490be0f76311bdc5bef1e511cb934a91049b5f96571dd1b",
+  "request_params": {
+    "per-page": 5,
+    "search": "Data from: Small patches, big differences: how landscape structure shapes Scolytinae commu",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 1,
+      "db_response_time_ms": 59,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (Data from: Small patches big differences: how landscape structure shapes Scolytinae commu)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Data from: Small patches, big differences: how landscape structure shapes Scolytinae commu"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Data from: Small patches, big differences: how landscape structure shapes Scolytinae commu&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(i)": [
+            45
+          ],
+          "(ii)": [
+            54
+          ],
+          "(more": [
+            20
+          ],
+          "21st": [
+            3
+          ],
+          "Abstract": [
+            0
+          ],
+          "An": [
+            86
+          ],
+          "Finally,": [
+            139
+          ],
+          "In": [
+            1,
+            40
+          ],
+          "Insect": [
+            19
+          ],
+          "Special": [
+            120
+          ],
+          "We": [
+            65
+          ],
+          "a": [
+            67
+          ],
+          "advances": [
+            28
+          ],
+          "and": [
+            13,
+            29,
+            53,
+            58,
+            73,
+            108,
+            136,
+            146
+          ],
+          "applications": [
+            91
+          ],
+          "approach": [
+            79
+          ],
+          "approaches": [
+            72
+          ],
+          "areas,": [
+            148
+          ],
+          "as": [
+            37
+          ],
+          "asked": [
+            82
+          ],
+          "attention": [
+            121
+          ],
+          "been": [
+            169
+          ],
+          "between": [
+            155
+          ],
+          "broader": [
+            56
+          ],
+          "by": [
+            16
+          ],
+          "century,": [
+            4
+          ],
+          "challenges,": [
+            144
+          ],
+          "community": [
+            134
+          ],
+          "conservation,": [
+            104
+          ],
+          "contributed": [
+            25,
+            95
+          ],
+          "control,": [
+            107
+          ],
+          "critical": [
+            59
+          ],
+          "data": [
+            12,
+            131
+          ],
+          "described": [
+            159
+          ],
+          "devoted": [
+            123
+          ],
+          "different": [
+            80
+          ],
+          "dramatic": [
+            8
+          ],
+          "ecological": [
+            135
+          ],
+          "emerging": [
+            147
+          ],
+          "entomology,": [
+            100
+          ],
+          "evolutionary": [
+            137
+          ],
+          "exists": [
+            154
+          ],
+          "experienced": [
+            7
+          ],
+          "field": [
+            98
+          ],
+          "field.": [
+            18,
+            64,
+            119
+          ],
+          "focus": [
+            171
+          ],
+          "future": [
+            60
+          ],
+          "generally,": [
+            21
+          ],
+          "growth": [
+            9
+          ],
+          "has": [
+            6,
+            24,
+            94
+          ],
+          "have": [
+            168
+          ],
+          "hexapod": [
+            51,
+            160
+          ],
+          "hexapod)": [
+            22
+          ],
+          "hexapods": [
+            36
+          ],
+          "highlight": [
+            46,
+            114
+          ],
+          "highlighting": [
+            149
+          ],
+          "identify": [
+            55,
+            74
+          ],
+          "in": [
+            10,
+            50,
+            62,
+            83,
+            117
+          ],
+          "include": [
+            66
+          ],
+          "included": [
+            35,
+            112
+          ],
+          "including": [
+            101
+          ],
+          "influential": [
+            33
+          ],
+          "invasive": [
+            109
+          ],
+          "investigation.": [
+            174
+          ],
+          "investigations": [
+            125
+          ],
+          "is": [
+            111,
+            122
+          ],
+          "literature": [
+            42
+          ],
+          "main": [
+            143
+          ],
+          "major": [
+            27
+          ],
+          "many": [
+            30
+          ],
+          "methodological": [
+            71
+          ],
+          "methods": [
+            14,
+            76
+          ],
+          "model": [
+            38
+          ],
+          "multi-species": [
+            130
+          ],
+          "number": [
+            157,
+            164
+          ],
+          "of": [
+            31,
+            69,
+            89,
+            99,
+            158,
+            165,
+            172
+          ],
+          "opportunities,": [
+            145
+          ],
+          "overview": [
+            141
+          ],
+          "papers": [
+            34
+          ],
+          "pest": [
+            106
+          ],
+          "phylogeographic": [
+            48,
+            84,
+            173
+          ],
+          "phylogeography": [
+            5,
+            23,
+            93
+          ],
+          "processes.": [
+            138
+          ],
+          "questions": [
+            81
+          ],
+          "recent": [
+            47
+          ],
+          "review,": [
+            43
+          ],
+          "seek": [
+            127
+          ],
+          "shortfall”": [
+            152
+          ],
+          "spatial": [
+            102
+          ],
+          "species": [
+            161,
+            166
+          ],
+          "species,": [
+            110
+          ],
+          "steps": [
+            61
+          ],
+          "studies,": [
+            103
+          ],
+          "studies.": [
+            85
+          ],
+          "summary": [
+            68,
+            88
+          ],
+          "systematics,": [
+            105
+          ],
+          "systems,": [
+            52
+          ],
+          "systems.": [
+            39
+          ],
+          "that": [
+            92,
+            153,
+            167
+          ],
+          "the": [
+            2,
+            11,
+            17,
+            32,
+            63,
+            75,
+            90,
+            97,
+            118,
+            142,
+            150,
+            156,
+            163,
+            170
+          ],
+          "this": [
+            41
+          ],
+          "to": [
+            26,
+            78,
+            96,
+            113,
+            124,
+            128,
+            132
+          ],
+          "trends": [
+            57
+          ],
+          "understand": [
+            133
+          ],
+          "updated": [
+            87
+          ],
+          "use": [
+            129
+          ],
+          "used": [
+            15,
+            77
+          ],
+          "useful": [
+            70
+          ],
+          "vital": [
+            115
+          ],
+          "vs.": [
+            162
+          ],
+          "we": [
+            140
+          ],
+          "we:": [
+            44
+          ],
+          "which": [
+            126
+          ],
+          "work": [
+            49,
+            116
+          ],
+          "“phylogeographic": [
+            151
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I173911158"
+                ],
+                "raw_affiliation_string": "Department of Ecology, Evolution, and Organismal Biology, Iowa State University , Ames, IA 50011 , USA"
+              }
+            ],
+            "author": {
+              "display_name": "Jordan D. Satler",
+              "id": "https://openalex.org/A5029870548",
+              "orcid": "https://orcid.org/0000-0003-0156-2147"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Iowa State University",
+                "id": "https://openalex.org/I173911158",
+                "lineage": [
+                  "https://openalex.org/I173911158"
+                ],
+                "ror": "https://ror.org/04rswrd78",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Ecology, Evolution, and Organismal Biology, Iowa State University , Ames, IA 50011 , USA"
+            ],
+            "raw_author_name": "Jordan D Satler",
+            "raw_orcid": "https://orcid.org/0000-0003-0156-2147"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I52357470"
+                ],
+                "raw_affiliation_string": "Department of Evolution, Ecology and Organismal Biology, The Ohio State University , Columbus, OH 43210 , USA"
+              }
+            ],
+            "author": {
+              "display_name": "Bryan C. Carstens",
+              "id": "https://openalex.org/A5027836945",
+              "orcid": "https://orcid.org/0000-0002-1552-227X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "The Ohio State University",
+                "id": "https://openalex.org/I52357470",
+                "lineage": [
+                  "https://openalex.org/I52357470"
+                ],
+                "ror": "https://ror.org/00rs6vg23",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Evolution, Ecology and Organismal Biology, The Ohio State University , Columbus, OH 43210 , USA"
+            ],
+            "raw_author_name": "Bryan C Carstens",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I368840534"
+                ],
+                "raw_affiliation_string": "Department of Biology, University of Mississippi , Oxford, MS 38677 , USA"
+              }
+            ],
+            "author": {
+              "display_name": "Ryan C. Garrick",
+              "id": "https://openalex.org/A5083168408",
+              "orcid": "https://orcid.org/0000-0002-4057-7061"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Mississippi",
+                "id": "https://openalex.org/I368840534",
+                "lineage": [
+                  "https://openalex.org/I368840534",
+                  "https://openalex.org/I4210141039"
+                ],
+                "ror": "https://ror.org/02teq1165",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biology, University of Mississippi , Oxford, MS 38677 , USA"
+            ],
+            "raw_author_name": "Ryan C Garrick",
+            "raw_orcid": "https://orcid.org/0000-0002-4057-7061"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I66946132"
+                ],
+                "raw_affiliation_string": "Department of Entomology, University of Maryland , College Park, MD 20742 , USA"
+              }
+            ],
+            "author": {
+              "display_name": "Anahí Espíndola",
+              "id": "https://openalex.org/A5042067272",
+              "orcid": "https://orcid.org/0000-0001-9128-8836"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Maryland, College Park",
+                "id": "https://openalex.org/I66946132",
+                "lineage": [
+                  "https://openalex.org/I66946132"
+                ],
+                "ror": "https://ror.org/047s2c258",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Entomology, University of Maryland , College Park, MD 20742 , USA"
+            ],
+            "raw_author_name": "Anahí Espíndola",
+            "raw_orcid": "https://orcid.org/0000-0001-9128-8836"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1093/isd/ixab015",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1093/isd/ixab015",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://academic.oup.com/isd/article-pdf/5/5/1/40301941/ixab015.pdf",
+          "raw_source_name": "Insect Systematics and Diversity",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Insect Systematics and Diversity",
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "host_organization_name": "Oxford University Press",
+            "id": "https://openalex.org/S2735356129",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2399-3421"
+            ],
+            "issn_l": "2399-3421",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": "5",
+          "last_page": null,
+          "volume": "5"
+        },
+        "cited_by_count": 11,
+        "display_name": "The Phylogeographic Shortfall in Hexapods: A Lot of Leg Work Remaining",
+        "doi": "https://doi.org/10.1093/isd/ixab015",
+        "id": "https://openalex.org/W3197112003",
+        "ids": {
+          "doi": "https://doi.org/10.1093/isd/ixab015",
+          "mag": "3197112003",
+          "openalex": "https://openalex.org/W3197112003"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://academic.oup.com/isd/article-pdf/5/5/1/40301941/ixab015.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1093/isd/ixab015",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1093/isd/ixab015",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://academic.oup.com/isd/article-pdf/5/5/1/40301941/ixab015.pdf",
+          "raw_source_name": "Insect Systematics and Diversity",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Insect Systematics and Diversity",
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "host_organization_name": "Oxford University Press",
+            "id": "https://openalex.org/S2735356129",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2399-3421"
+            ],
+            "issn_l": "2399-3421",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2021-09-01",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W93588716",
+          "https://openalex.org/W1484255855",
+          "https://openalex.org/W1494971448",
+          "https://openalex.org/W1523840987",
+          "https://openalex.org/W1553177734",
+          "https://openalex.org/W1555299829",
+          "https://openalex.org/W1555476426",
+          "https://openalex.org/W1862875746",
+          "https://openalex.org/W1886810706",
+          "https://openalex.org/W1902365318",
+          "https://openalex.org/W1916205854",
+          "https://openalex.org/W1920301837",
+          "https://openalex.org/W1932013441",
+          "https://openalex.org/W1939346899",
+          "https://openalex.org/W1945217835",
+          "https://openalex.org/W1949176574",
+          "https://openalex.org/W1955299038",
+          "https://openalex.org/W1959449891",
+          "https://openalex.org/W1961168765",
+          "https://openalex.org/W1964422196",
+          "https://openalex.org/W1965175390",
+          "https://openalex.org/W1970627291",
+          "https://openalex.org/W1973406031",
+          "https://openalex.org/W1977601452",
+          "https://openalex.org/W1981925035",
+          "https://openalex.org/W1990275569",
+          "https://openalex.org/W1997476591",
+          "https://openalex.org/W2002198462",
+          "https://openalex.org/W2004511652",
+          "https://openalex.org/W2010724869",
+          "https://openalex.org/W2019051621",
+          "https://openalex.org/W2021004162",
+          "https://openalex.org/W2021880794",
+          "https://openalex.org/W2022372184",
+          "https://openalex.org/W2023822819",
+          "https://openalex.org/W2024459053",
+          "https://openalex.org/W2025017586",
+          "https://openalex.org/W2025404081",
+          "https://openalex.org/W2026819812",
+          "https://openalex.org/W2028594873",
+          "https://openalex.org/W2033062640",
+          "https://openalex.org/W2034937344",
+          "https://openalex.org/W2035405724",
+          "https://openalex.org/W2036346930",
+          "https://openalex.org/W2036655245",
+          "https://openalex.org/W2037916342",
+          "https://openalex.org/W2040677513",
+          "https://openalex.org/W2041026583",
+          "https://openalex.org/W2051653708",
+          "https://openalex.org/W2052346313",
+          "https://openalex.org/W2052931301",
+          "https://openalex.org/W2053996871",
+          "https://openalex.org/W2059051061",
+          "https://openalex.org/W2059359550",
+          "https://openalex.org/W2060611484",
+          "https://openalex.org/W2061929543",
+          "https://openalex.org/W2066289589",
+          "https://openalex.org/W2068992690",
+          "https://openalex.org/W2076564119",
+          "https://openalex.org/W2082620663",
+          "https://openalex.org/W2082967637",
+          "https://openalex.org/W2085728017",
+          "https://openalex.org/W2093631108",
+          "https://openalex.org/W2095779948",
+          "https://openalex.org/W2096749908",
+          "https://openalex.org/W2098126593",
+          "https://openalex.org/W2102537615",
+          "https://openalex.org/W2102883209",
+          "https://openalex.org/W2104038946",
+          "https://openalex.org/W2106011036",
+          "https://openalex.org/W2107411326",
+          "https://openalex.org/W2108164607",
+          "https://openalex.org/W2109334184",
+          "https://openalex.org/W2111180056",
+          "https://openalex.org/W2113483878",
+          "https://openalex.org/W2116226846",
+          "https://openalex.org/W2116416291",
+          "https://openalex.org/W2119823799",
+          "https://openalex.org/W2120684421",
+          "https://openalex.org/W2122302865",
+          "https://openalex.org/W2122377041",
+          "https://openalex.org/W2122968926",
+          "https://openalex.org/W2126412350",
+          "https://openalex.org/W2126899225",
+          "https://openalex.org/W2127417589",
+          "https://openalex.org/W2127499811",
+          "https://openalex.org/W2127586651",
+          "https://openalex.org/W2127874193",
+          "https://openalex.org/W2127890196",
+          "https://openalex.org/W2130526187",
+          "https://openalex.org/W2131428951",
+          "https://openalex.org/W2132799311",
+          "https://openalex.org/W2134828908",
+          "https://openalex.org/W2136010839",
+          "https://openalex.org/W2136571534",
+          "https://openalex.org/W2137864878",
+          "https://openalex.org/W2138798117",
+          "https://openalex.org/W2140784970",
+          "https://openalex.org/W2141240652",
+          "https://openalex.org/W2141283603",
+          "https://openalex.org/W2142635246",
+          "https://openalex.org/W2142740946",
+          "https://openalex.org/W2143645030",
+          "https://openalex.org/W2144454528",
+          "https://openalex.org/W2144898181",
+          "https://openalex.org/W2145962648",
+          "https://openalex.org/W2146198038",
+          "https://openalex.org/W2146442942",
+          "https://openalex.org/W2147071859",
+          "https://openalex.org/W2147860997",
+          "https://openalex.org/W2149371053",
+          "https://openalex.org/W2149509602",
+          "https://openalex.org/W2150477652",
+          "https://openalex.org/W2152169789",
+          "https://openalex.org/W2154531686",
+          "https://openalex.org/W2156140337",
+          "https://openalex.org/W2159843682",
+          "https://openalex.org/W2160358937",
+          "https://openalex.org/W2161184021",
+          "https://openalex.org/W2161759962",
+          "https://openalex.org/W2164368913",
+          "https://openalex.org/W2164890682",
+          "https://openalex.org/W2166505364",
+          "https://openalex.org/W2166655850",
+          "https://openalex.org/W2168480468",
+          "https://openalex.org/W2169120848",
+          "https://openalex.org/W2169694980",
+          "https://openalex.org/W2169773990",
+          "https://openalex.org/W2172126720",
+          "https://openalex.org/W2176261994",
+          "https://openalex.org/W2177816505",
+          "https://openalex.org/W2178747834",
+          "https://openalex.org/W2216087429",
+          "https://openalex.org/W2235233495",
+          "https://openalex.org/W2239084834",
+          "https://openalex.org/W2255543244",
+          "https://openalex.org/W2282013022",
+          "https://openalex.org/W2297320923",
+          "https://openalex.org/W2314066281",
+          "https://openalex.org/W2342279786",
+          "https://openalex.org/W2409201004",
+          "https://openalex.org/W2460751423",
+          "https://openalex.org/W2466752635",
+          "https://openalex.org/W2480383776",
+          "https://openalex.org/W2480462312",
+          "https://openalex.org/W2490252215",
+          "https://openalex.org/W2496207478",
+          "https://openalex.org/W2525424881",
+          "https://openalex.org/W2530102220",
+          "https://openalex.org/W2559750645",
+          "https://openalex.org/W2565150409",
+          "https://openalex.org/W2568408299",
+          "https://openalex.org/W2588289610",
+          "https://openalex.org/W2604311607",
+          "https://openalex.org/W2605138603",
+          "https://openalex.org/W2739122440",
+          "https://openalex.org/W2740471092",
+          "https://openalex.org/W2743415676",
+          "https://openalex.org/W2750817866",
+          "https://openalex.org/W2755420871",
+          "https://openalex.org/W2756383860",
+          "https://openalex.org/W2759820149",
+          "https://openalex.org/W2761730908",
+          "https://openalex.org/W2767897093",
+          "https://openalex.org/W2769291947",
+          "https://openalex.org/W2777623879",
+          "https://openalex.org/W2782787068",
+          "https://openalex.org/W2792311130",
+          "https://openalex.org/W2804597186",
+          "https://openalex.org/W2893385326",
+          "https://openalex.org/W2893784223",
+          "https://openalex.org/W2896363021",
+          "https://openalex.org/W2897971424",
+          "https://openalex.org/W2898020341",
+          "https://openalex.org/W2901609750",
+          "https://openalex.org/W2902712524",
+          "https://openalex.org/W2904247280",
+          "https://openalex.org/W2910393556",
+          "https://openalex.org/W2920023504",
+          "https://openalex.org/W2939121809",
+          "https://openalex.org/W2939175513",
+          "https://openalex.org/W2940518288",
+          "https://openalex.org/W2943429990",
+          "https://openalex.org/W2948269494",
+          "https://openalex.org/W2949404358",
+          "https://openalex.org/W2950022062",
+          "https://openalex.org/W2950040041",
+          "https://openalex.org/W2950836897",
+          "https://openalex.org/W2951373166",
+          "https://openalex.org/W2951641704",
+          "https://openalex.org/W2952596951",
+          "https://openalex.org/W2958805699",
+          "https://openalex.org/W2962782787",
+          "https://openalex.org/W2965490224",
+          "https://openalex.org/W2979845103",
+          "https://openalex.org/W2986978919",
+          "https://openalex.org/W2988920411",
+          "https://openalex.org/W2995753366",
+          "https://openalex.org/W2998940616",
+          "https://openalex.org/W3000095761",
+          "https://openalex.org/W3003996650",
+          "https://openalex.org/W3004179348",
+          "https://openalex.org/W3016847647",
+          "https://openalex.org/W3022591066",
+          "https://openalex.org/W3026316627",
+          "https://openalex.org/W3080462033",
+          "https://openalex.org/W3081961641",
+          "https://openalex.org/W3084693590",
+          "https://openalex.org/W3091815569",
+          "https://openalex.org/W3103466761",
+          "https://openalex.org/W3105049845",
+          "https://openalex.org/W3105939366",
+          "https://openalex.org/W3123906059",
+          "https://openalex.org/W4231311503",
+          "https://openalex.org/W4236572431",
+          "https://openalex.org/W4239027316",
+          "https://openalex.org/W4243094955",
+          "https://openalex.org/W4243771285",
+          "https://openalex.org/W4248231884",
+          "https://openalex.org/W4250668450",
+          "https://openalex.org/W4297820736",
+          "https://openalex.org/W4300750523",
+          "https://openalex.org/W6656148296",
+          "https://openalex.org/W6656150716",
+          "https://openalex.org/W6681556004",
+          "https://openalex.org/W6685194089",
+          "https://openalex.org/W6685460871",
+          "https://openalex.org/W6756507601",
+          "https://openalex.org/W6761548147",
+          "https://openalex.org/W6762768719",
+          "https://openalex.org/W6813131194"
+        ],
+        "referenced_works_count": 231,
+        "title": "The Phylogeographic Shortfall in Hexapods: A Lot of Leg Work Remaining",
+        "type": "article"
+      }
+    ]
+  },
+  "response_hash": "7dbf46d19f242b83102da4576076f8e1ada5692968f88e49bebab4266487c55c",
+  "retrieved_at": "2026-07-14T13:48:43Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

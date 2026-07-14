@@ -1,0 +1,139 @@
+{
+  "endpoint": "works/doi:10.1016/j.micpro.2020.103768",
+  "request_key": "759b52bfbafb1d811ec4d0f82a3c7c93dadd6a7f019c1987d0aee76738df77f1",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I119045251"
+            ],
+            "raw_affiliation_string": "Chinese Language and Culture College, Huaqiao University, Xiamen, Fujian, 361021, China"
+          }
+        ],
+        "author": {
+          "display_name": "Shengnan Zang",
+          "id": "https://openalex.org/A5065877226",
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Huaqiao University",
+            "id": "https://openalex.org/I119045251",
+            "lineage": [
+              "https://openalex.org/I119045251"
+            ],
+            "ror": "https://ror.org/03frdh605",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Chinese Language and Culture College, Huaqiao University, Xiamen, Fujian, 361021, China"
+        ],
+        "raw_author_name": "Shengnan Zang"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "103768",
+      "issue": null,
+      "last_page": "103768",
+      "volume": "81"
+    },
+    "cited_by_count": 5,
+    "display_name": "RETRACTED: Cross-Cultural communication of language learning social software based on FPGA and transfer learning",
+    "doi": "https://doi.org/10.1016/j.micpro.2020.103768",
+    "id": "https://openalex.org/W3117933537",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.micpro.2020.103768",
+      "mag": "3117933537",
+      "openalex": "https://openalex.org/W3117933537"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.micpro.2020.103768",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.micpro.2020.103768",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Microprocessors and Microsystems",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Microprocessors and Microsystems",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S195663827",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0141-9331",
+          "1872-9436"
+        ],
+        "issn_l": "0141-9331",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2020-12-28",
+    "publication_year": 2020,
+    "referenced_works": [
+      "https://openalex.org/W2060472931",
+      "https://openalex.org/W2079245171",
+      "https://openalex.org/W2082045565",
+      "https://openalex.org/W2590241100",
+      "https://openalex.org/W2591326233",
+      "https://openalex.org/W2732578738",
+      "https://openalex.org/W2808068086",
+      "https://openalex.org/W2912289970",
+      "https://openalex.org/W2925780537",
+      "https://openalex.org/W2944650281",
+      "https://openalex.org/W2969261967",
+      "https://openalex.org/W2974456924",
+      "https://openalex.org/W3005213854",
+      "https://openalex.org/W3047844415",
+      "https://openalex.org/W3048717973",
+      "https://openalex.org/W3083843829",
+      "https://openalex.org/W4205180792",
+      "https://openalex.org/W4240194029",
+      "https://openalex.org/W4248034937",
+      "https://openalex.org/W6734118895",
+      "https://openalex.org/W6741065929",
+      "https://openalex.org/W6783033979"
+    ],
+    "referenced_works_count": 22,
+    "title": "RETRACTED: Cross-Cultural communication of language learning social software based on FPGA and transfer learning",
+    "type": "article"
+  },
+  "response_hash": "28626e736df757ba74307381bf518408c26d66297c551d3c5f76bbda3774e2bf",
+  "retrieved_at": "2026-07-14T13:48:46Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

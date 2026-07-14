@@ -1,0 +1,225 @@
+{
+  "endpoint": "works/doi:10.1016/j.asoc.2019.105778",
+  "request_key": "fbdd9da56bff8f71b4f980e4c59354066e173cdfc30eec63571308b702242079",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I56934997"
+            ],
+            "raw_affiliation_string": "Hunan Provincial Key Laboratory of Intelligent Processing of Big Data on Transportation, Changsha University of Science and Technology, Changsha 410114, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I56934997"
+            ],
+            "raw_affiliation_string": "School of Computer and Communication Engineering, Changsha University of Science and Technology, Changsha 410114, China"
+          }
+        ],
+        "author": {
+          "display_name": "Shuren Zhou",
+          "id": "https://openalex.org/A5062788487",
+          "orcid": "https://orcid.org/0000-0002-0465-3258"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Changsha University of Science and Technology",
+            "id": "https://openalex.org/I56934997",
+            "lineage": [
+              "https://openalex.org/I56934997"
+            ],
+            "ror": "https://ror.org/03yph8055",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Hunan Provincial Key Laboratory of Intelligent Processing of Big Data on Transportation, Changsha University of Science and Technology, Changsha 410114, China",
+          "School of Computer and Communication Engineering, Changsha University of Science and Technology, Changsha 410114, China"
+        ],
+        "raw_author_name": "Shuren Zhou",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I56934997"
+            ],
+            "raw_affiliation_string": "Hunan Provincial Key Laboratory of Intelligent Processing of Big Data on Transportation, Changsha University of Science and Technology, Changsha 410114, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I56934997"
+            ],
+            "raw_affiliation_string": "School of Computer and Communication Engineering, Changsha University of Science and Technology, Changsha 410114, China"
+          }
+        ],
+        "author": {
+          "display_name": "Bo Tan",
+          "id": "https://openalex.org/A5062153144",
+          "orcid": "https://orcid.org/0009-0000-4633-6026"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Changsha University of Science and Technology",
+            "id": "https://openalex.org/I56934997",
+            "lineage": [
+              "https://openalex.org/I56934997"
+            ],
+            "ror": "https://ror.org/03yph8055",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Hunan Provincial Key Laboratory of Intelligent Processing of Big Data on Transportation, Changsha University of Science and Technology, Changsha 410114, China",
+          "School of Computer and Communication Engineering, Changsha University of Science and Technology, Changsha 410114, China"
+        ],
+        "raw_author_name": "Bo Tan",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "105778",
+      "issue": null,
+      "last_page": "105778",
+      "volume": "86"
+    },
+    "cited_by_count": 194,
+    "display_name": "Electrocardiogram soft computing using hybrid deep learning CNN-ELM",
+    "doi": "https://doi.org/10.1016/j.asoc.2019.105778",
+    "id": "https://openalex.org/W2977638463",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.asoc.2019.105778",
+      "mag": "2977638463",
+      "openalex": "https://openalex.org/W2977638463"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.asoc.2019.105778",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.asoc.2019.105778",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Applied Soft Computing",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Applied Soft Computing",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S140556538",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1568-4946",
+          "1872-9681"
+        ],
+        "issn_l": "1568-4946",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2019-09-30",
+    "publication_year": 2019,
+    "referenced_works": [
+      "https://openalex.org/W1963491989",
+      "https://openalex.org/W1965421420",
+      "https://openalex.org/W1987530867",
+      "https://openalex.org/W2002069843",
+      "https://openalex.org/W2006061627",
+      "https://openalex.org/W2015332508",
+      "https://openalex.org/W2027215587",
+      "https://openalex.org/W2028643935",
+      "https://openalex.org/W2034365922",
+      "https://openalex.org/W2045867791",
+      "https://openalex.org/W2047187509",
+      "https://openalex.org/W2063923412",
+      "https://openalex.org/W2064493351",
+      "https://openalex.org/W2069081297",
+      "https://openalex.org/W2101331317",
+      "https://openalex.org/W2103308415",
+      "https://openalex.org/W2104614052",
+      "https://openalex.org/W2104750904",
+      "https://openalex.org/W2108773319",
+      "https://openalex.org/W2109550800",
+      "https://openalex.org/W2111833294",
+      "https://openalex.org/W2113804337",
+      "https://openalex.org/W2117911070",
+      "https://openalex.org/W2122540156",
+      "https://openalex.org/W2124785086",
+      "https://openalex.org/W2143698637",
+      "https://openalex.org/W2145044818",
+      "https://openalex.org/W2148848626",
+      "https://openalex.org/W2160986881",
+      "https://openalex.org/W2162273778",
+      "https://openalex.org/W2162693370",
+      "https://openalex.org/W2289846183",
+      "https://openalex.org/W2291961022",
+      "https://openalex.org/W2423609858",
+      "https://openalex.org/W2482102801",
+      "https://openalex.org/W2513947486",
+      "https://openalex.org/W2547478161",
+      "https://openalex.org/W2568858846",
+      "https://openalex.org/W2587831636",
+      "https://openalex.org/W2619748849",
+      "https://openalex.org/W2748902594",
+      "https://openalex.org/W2766966028",
+      "https://openalex.org/W2791165381",
+      "https://openalex.org/W2801521191",
+      "https://openalex.org/W2806806521",
+      "https://openalex.org/W2884222111",
+      "https://openalex.org/W2888270240",
+      "https://openalex.org/W2902335478",
+      "https://openalex.org/W2912506169",
+      "https://openalex.org/W4234570955",
+      "https://openalex.org/W6647277135",
+      "https://openalex.org/W6676425410",
+      "https://openalex.org/W6697056676",
+      "https://openalex.org/W6718808734",
+      "https://openalex.org/W6733505527",
+      "https://openalex.org/W6751036062"
+    ],
+    "referenced_works_count": 56,
+    "title": "Electrocardiogram soft computing using hybrid deep learning CNN-ELM",
+    "type": "article"
+  },
+  "response_hash": "d5a593fe7f1eeed687ed5d88e0580551552056b5dd0f5019740c8e36e59d1da8",
+  "retrieved_at": "2026-07-14T14:48:16Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

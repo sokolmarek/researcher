@@ -1,0 +1,774 @@
+{
+  "endpoint": "works/doi:10.1016/s0140-6736(21)01698-6",
+  "request_key": "d66d063251c6ad2bba1413fe6d7d1ad3c4424656072b8678b21b4ec9f493a14f",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark; Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark. Electronic address: jesper.hastrup.svendsen@regionh.dk"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I124055696"
+            ],
+            "raw_affiliation_string": "Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Jesper Hastrup Svendsen",
+          "id": "https://openalex.org/A5063449841",
+          "orcid": "https://orcid.org/0000-0001-8466-8515"
+        },
+        "author_position": "first",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "University of Copenhagen",
+            "id": "https://openalex.org/I124055696",
+            "lineage": [
+              "https://openalex.org/I124055696"
+            ],
+            "ror": "https://ror.org/035b05819",
+            "type": "education"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Rigshospitalet",
+            "id": "https://openalex.org/I2802709434",
+            "lineage": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434",
+              "https://openalex.org/I4210145385"
+            ],
+            "ror": "https://ror.org/03mchdq19",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark; Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark. Electronic address: jesper.hastrup.svendsen@regionh.dk",
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark",
+          "Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+        ],
+        "raw_author_name": "Jesper H Svendsen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Søren Zöga Diederichsen",
+          "id": "https://openalex.org/A5011619847",
+          "orcid": "https://orcid.org/0000-0002-9687-0857"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Rigshospitalet",
+            "id": "https://openalex.org/I2802709434",
+            "lineage": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434",
+              "https://openalex.org/I4210145385"
+            ],
+            "ror": "https://ror.org/03mchdq19",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+        ],
+        "raw_author_name": "Søren Z Diederichsen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2801150652",
+              "https://openalex.org/I2802567020"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Bispebjerg and Frederiksberg, Copenhagen, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Søren Højberg",
+          "id": "https://openalex.org/A5112511518",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "Frederiksberg Hospital",
+            "id": "https://openalex.org/I2801150652",
+            "lineage": [
+              "https://openalex.org/I2801150652"
+            ],
+            "ror": "https://ror.org/00d264c35",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Bispebjerg and Frederiksberg, Copenhagen, Denmark"
+        ],
+        "raw_author_name": "Søren Højberg",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210108087",
+              "https://openalex.org/I4210126093"
+            ],
+            "raw_affiliation_string": "Department of Neurology, Mediclinic City Hospital, Dubai, United Arabic Emirates; Department of Neuroscience, Mohammed Bin Rashid University of Medicine and Health Science, Dubai, United Arabic Emirates"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210126093"
+            ],
+            "raw_affiliation_string": "Department of Neurology, Mediclinic City Hospital, Dubai, United Arabic Emirates"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210108087"
+            ],
+            "raw_affiliation_string": "Department of Neuroscience, Mohammed Bin Rashid University of Medicine and Health Science, Dubai, United Arabic Emirates"
+          }
+        ],
+        "author": {
+          "display_name": "Derk Krieger",
+          "id": "https://openalex.org/A5041277234",
+          "orcid": "https://orcid.org/0000-0003-2457-7333"
+        },
+        "author_position": "middle",
+        "countries": [
+          "AE"
+        ],
+        "institutions": [
+          {
+            "country_code": "AE",
+            "display_name": "Mediclinic City Hospital",
+            "id": "https://openalex.org/I4210126093",
+            "lineage": [
+              "https://openalex.org/I4210126093"
+            ],
+            "ror": "https://ror.org/041z54681",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "AE",
+            "display_name": "Mohammed Bin Rashid University of Medicine and Health Sciences",
+            "id": "https://openalex.org/I4210108087",
+            "lineage": [
+              "https://openalex.org/I4210108087"
+            ],
+            "ror": "https://ror.org/01xfzxq83",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Neurology, Mediclinic City Hospital, Dubai, United Arabic Emirates; Department of Neuroscience, Mohammed Bin Rashid University of Medicine and Health Science, Dubai, United Arabic Emirates",
+          "Department of Neurology, Mediclinic City Hospital, Dubai, United Arabic Emirates",
+          "Department of Neuroscience, Mohammed Bin Rashid University of Medicine and Health Science, Dubai, United Arabic Emirates"
+        ],
+        "raw_author_name": "Derk W Krieger",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I891191580"
+            ],
+            "raw_affiliation_string": "Department of Health Science and Technology, Aalborg University, Aalborg, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Claus Graff",
+          "id": "https://openalex.org/A5083156954",
+          "orcid": "https://orcid.org/0000-0001-9650-9781"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "Aalborg University",
+            "id": "https://openalex.org/I891191580",
+            "lineage": [
+              "https://openalex.org/I891191580"
+            ],
+            "ror": "https://ror.org/04m5j1k67",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Health Science and Technology, Aalborg University, Aalborg, Denmark"
+        ],
+        "raw_author_name": "Claus Graff",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I177969490"
+            ],
+            "raw_affiliation_string": "Department of Business and Economics, University of Southern Denmark, Odense, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Christian Kronborg",
+          "id": "https://openalex.org/A5013147371",
+          "orcid": "https://orcid.org/0000-0001-9627-1419"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "University of Southern Denmark",
+            "id": "https://openalex.org/I177969490",
+            "lineage": [
+              "https://openalex.org/I177969490"
+            ],
+            "ror": "https://ror.org/03yrrjy16",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Business and Economics, University of Southern Denmark, Odense, Denmark"
+        ],
+        "raw_author_name": "Christian Kronborg",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark; Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I124055696"
+            ],
+            "raw_affiliation_string": "Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Morten Olesen",
+          "id": "https://openalex.org/A5001078445",
+          "orcid": "https://orcid.org/0000-0002-0937-4952"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "University of Copenhagen",
+            "id": "https://openalex.org/I124055696",
+            "lineage": [
+              "https://openalex.org/I124055696"
+            ],
+            "ror": "https://ror.org/035b05819",
+            "type": "education"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Rigshospitalet",
+            "id": "https://openalex.org/I2802709434",
+            "lineage": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434",
+              "https://openalex.org/I4210145385"
+            ],
+            "ror": "https://ror.org/03mchdq19",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark; Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark",
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark",
+          "Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+        ],
+        "raw_author_name": "Morten S Olesen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Jonas B. Nielsen",
+          "id": "https://openalex.org/A5090431422",
+          "orcid": "https://orcid.org/0000-0002-6654-2852"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Rigshospitalet",
+            "id": "https://openalex.org/I2802709434",
+            "lineage": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434",
+              "https://openalex.org/I4210145385"
+            ],
+            "ror": "https://ror.org/03mchdq19",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+        ],
+        "raw_author_name": "Jonas B Nielsen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Anders G. Holst",
+          "id": "https://openalex.org/A5015716676",
+          "orcid": "https://orcid.org/0000-0002-5343-7367"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "Rigshospitalet",
+            "id": "https://openalex.org/I2802709434",
+            "lineage": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434",
+              "https://openalex.org/I4210145385"
+            ],
+            "ror": "https://ror.org/03mchdq19",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+        ],
+        "raw_author_name": "Anders G Holst",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Department of Clinical Research, Faculty of Health Sciences, University of Southern Denmark, Odense, Denmark; Department of Cardiology, Odense University Hospital, Odense, Denmark"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2801498763"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Odense University Hospital, Odense, Denmark"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I177969490"
+            ],
+            "raw_affiliation_string": "Department of Clinical Research, Faculty of Health Sciences, University of Southern Denmark, Odense, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Axel Brandes",
+          "id": "https://openalex.org/A5044467554",
+          "orcid": "https://orcid.org/0000-0001-9145-6887"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "University of Southern Denmark",
+            "id": "https://openalex.org/I177969490",
+            "lineage": [
+              "https://openalex.org/I177969490"
+            ],
+            "ror": "https://ror.org/03yrrjy16",
+            "type": "education"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Odense University Hospital",
+            "id": "https://openalex.org/I2801498763",
+            "lineage": [
+              "https://openalex.org/I2801498763"
+            ],
+            "ror": "https://ror.org/00ey0ed83",
+            "type": "funder"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Clinical Research, Faculty of Health Sciences, University of Southern Denmark, Odense, Denmark; Department of Cardiology, Odense University Hospital, Odense, Denmark",
+          "Department of Cardiology, Odense University Hospital, Odense, Denmark",
+          "Department of Clinical Research, Faculty of Health Sciences, University of Southern Denmark, Odense, Denmark"
+        ],
+        "raw_author_name": "Axel Brandes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210087803",
+              "https://openalex.org/I2802567020"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Zealand University Hospital Roskilde, Roskilde, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Ketil Haugan",
+          "id": "https://openalex.org/A5057135061",
+          "orcid": "https://orcid.org/0000-0001-5584-8445"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "Zealand University Hospital",
+            "id": "https://openalex.org/I4210087803",
+            "lineage": [
+              "https://openalex.org/I2799668677",
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I4210087803"
+            ],
+            "ror": "https://ror.org/00363z010",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Zealand University Hospital Roskilde, Roskilde, Denmark"
+        ],
+        "raw_author_name": "Ketil J Haugan",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark; Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434"
+            ],
+            "raw_affiliation_string": "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I124055696"
+            ],
+            "raw_affiliation_string": "Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+          }
+        ],
+        "author": {
+          "display_name": "Lars Køber",
+          "id": "https://openalex.org/A5033436516",
+          "orcid": "https://orcid.org/0000-0002-6635-1466"
+        },
+        "author_position": "last",
+        "countries": [
+          "DK"
+        ],
+        "institutions": [
+          {
+            "country_code": "DK",
+            "display_name": "Copenhagen University Hospital",
+            "id": "https://openalex.org/I2802567020",
+            "lineage": [
+              "https://openalex.org/I2802567020"
+            ],
+            "ror": "https://ror.org/05bpbnx46",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "Rigshospitalet",
+            "id": "https://openalex.org/I2802709434",
+            "lineage": [
+              "https://openalex.org/I2802567020",
+              "https://openalex.org/I2802709434",
+              "https://openalex.org/I4210145385"
+            ],
+            "ror": "https://ror.org/03mchdq19",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "DK",
+            "display_name": "University of Copenhagen",
+            "id": "https://openalex.org/I124055696",
+            "lineage": [
+              "https://openalex.org/I124055696"
+            ],
+            "ror": "https://ror.org/035b05819",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark; Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark",
+          "Department of Cardiology, Copenhagen University Hospital - Rigshospitalet, Copenhagen, Denmark",
+          "Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark"
+        ],
+        "raw_author_name": "Lars Køber",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "1507",
+      "issue": "10310",
+      "last_page": "1516",
+      "volume": "398"
+    },
+    "cited_by_count": 523,
+    "display_name": "Implantable loop recorder detection of atrial fibrillation to prevent stroke (The LOOP Study): a randomised controlled trial",
+    "doi": "https://doi.org/10.1016/s0140-6736(21)01698-6",
+    "id": "https://openalex.org/W3196294155",
+    "ids": {
+      "doi": "https://doi.org/10.1016/s0140-6736(21)01698-6",
+      "mag": "3196294155",
+      "openalex": "https://openalex.org/W3196294155",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/34469766"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/s0140-6736(21)01698-6",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/s0140-6736(21)01698-6",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "The Lancet",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "The Lancet",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S49861241",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0099-5355",
+          "0140-6736",
+          "1474-547X"
+        ],
+        "issn_l": "0099-5355",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2021-08-29",
+    "publication_year": 2021,
+    "referenced_works": [
+      "https://openalex.org/W1984364985",
+      "https://openalex.org/W1986820130",
+      "https://openalex.org/W1999468381",
+      "https://openalex.org/W2024497977",
+      "https://openalex.org/W2036215984",
+      "https://openalex.org/W2038316924",
+      "https://openalex.org/W2055586130",
+      "https://openalex.org/W2059231500",
+      "https://openalex.org/W2065028337",
+      "https://openalex.org/W2103447466",
+      "https://openalex.org/W2113315322",
+      "https://openalex.org/W2114635452",
+      "https://openalex.org/W2121394112",
+      "https://openalex.org/W2148056560",
+      "https://openalex.org/W2154658516",
+      "https://openalex.org/W2159975225",
+      "https://openalex.org/W2169428949",
+      "https://openalex.org/W2590212354",
+      "https://openalex.org/W2598361327",
+      "https://openalex.org/W2609696371",
+      "https://openalex.org/W2612343760",
+      "https://openalex.org/W2752766789",
+      "https://openalex.org/W2784029422",
+      "https://openalex.org/W2869528658",
+      "https://openalex.org/W2913876336",
+      "https://openalex.org/W2979231018",
+      "https://openalex.org/W3003299879",
+      "https://openalex.org/W3035961209",
+      "https://openalex.org/W3082188176",
+      "https://openalex.org/W3129415548",
+      "https://openalex.org/W3196502641",
+      "https://openalex.org/W4294236164"
+    ],
+    "referenced_works_count": 32,
+    "title": "Implantable loop recorder detection of atrial fibrillation to prevent stroke (The LOOP Study): a randomised controlled trial",
+    "type": "article"
+  },
+  "response_hash": "21aae987efd4c2f3a4d028d8ca9e1cb1bef7644bb3995569886c0ab2fbc7ae8f",
+  "retrieved_at": "2026-07-14T14:57:07Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

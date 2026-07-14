@@ -1,0 +1,61 @@
+{
+  "endpoint": "query",
+  "request_key": "7e094c51f34200f5848046e2077d23633f21fff1954c8760807e9b256fa58d5f",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Self-Supervised ECG Representation Learning for Emotion Recognition\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Pritam Sarkar",
+          "Ali Etemad"
+        ],
+        "categories": [
+          "eess.SP",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "comment": "Accepted in IEEE Transactions of Affective Computing",
+        "doi": "10.1109/TAFFC.2020.3014842",
+        "id": "http://arxiv.org/abs/2002.03898v2",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2002.03898v2",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2002.03898v2",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1109/TAFFC.2020.3014842",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "eess.SP",
+        "published": "2020-02-04T17:15:37Z",
+        "summary": "We exploit a self-supervised deep multi-task learning framework for electrocardiogram (ECG) -based emotion recognition. The proposed solution consists of two stages of learning a) learning ECG representations and b) learning to classify emotions. ECG representations are learned by a signal transformation recognition network. The network learns high-level abstract representations from unlabeled ECG data. Six different signal transformations are applied to the ECG signals, and transformation recognition is performed as pretext tasks. Training the model on pretext tasks helps the network learn spatiotemporal representations that generalize well across different datasets and different emotion categories. We transfer the weights of the self-supervised network to an emotion recognition network, where the convolutional layers are kept frozen and the dense layers are trained with labelled ECG data. We show that the proposed solution considerably improves the performance compared to a network trained using fully-supervised learning. New state-of-the-art results are set in classification of arousal, valence, affective states, and stress for the four utilized datasets. Extensive experiments are performed, providing interesting insights into the impact of using a multi-task self-supervised structure instead of a single-task model, as well as the optimum level of difficulty required for the pretext self-supervised tasks.",
+        "title": "Self-supervised ECG Representation Learning for Emotion Recognition",
+        "updated": "2020-08-10T07:09:41Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "5092a69d44ef88062608a0b34959e46437b0e7b698f930b96287acd4cc42ffdf",
+  "retrieved_at": "2026-07-14T13:59:17Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

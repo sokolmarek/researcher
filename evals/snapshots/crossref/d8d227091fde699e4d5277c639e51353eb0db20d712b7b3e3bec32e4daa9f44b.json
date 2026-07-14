@@ -1,0 +1,671 @@
+{
+  "endpoint": "works/10.1016/j.neucom.2020.04.076",
+  "request_key": "d8d227091fde699e4d5277c639e51353eb0db20d712b7b3e3bec32e4daa9f44b",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1016/j.neucom.2020.04.076",
+      "ISSN": [
+        "0925-2312"
+      ],
+      "URL": "https://doi.org/10.1016/j.neucom.2020.04.076",
+      "alternative-id": [
+        "S0925231220306615"
+      ],
+      "assertion": [
+        {
+          "label": "This article is maintained by",
+          "name": "publisher",
+          "value": "Elsevier"
+        },
+        {
+          "label": "Article Title",
+          "name": "articletitle",
+          "value": "Generating electrocardiogram signals by deep learning"
+        },
+        {
+          "label": "Journal Title",
+          "name": "journaltitle",
+          "value": "Neurocomputing"
+        },
+        {
+          "label": "CrossRef DOI link to publisher maintained version",
+          "name": "articlelink",
+          "value": "https://doi.org/10.1016/j.neucom.2020.04.076"
+        },
+        {
+          "label": "Content Type",
+          "name": "content_type",
+          "value": "article"
+        },
+        {
+          "label": "Copyright",
+          "name": "copyright",
+          "value": "© 2020 Elsevier B.V. All rights reserved."
+        }
+      ],
+      "author": [
+        {
+          "affiliation": [],
+          "family": "Wulan",
+          "given": "Naren",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1874-9947",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Wang",
+          "given": "Wei",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Sun",
+          "given": "Pengzhong",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1347-3491",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Wang",
+          "given": "Kuanquan",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Xia",
+          "given": "Yong",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Zhang",
+          "given": "Henggui",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Neurocomputing"
+      ],
+      "content-domain": {
+        "crossmark-restriction": true,
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            12
+          ]
+        ],
+        "date-time": "2020-05-12T21:38:48Z",
+        "timestamp": 1589319528000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2025-10-13T19:15:37Z",
+        "timestamp": 1760382937000
+      },
+      "funder": [
+        {
+          "DOI": "10.13039/501100002855",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/501100002855",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "Ministry of Science and Technology of the People's Republic of China"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            26
+          ]
+        ],
+        "date-time": "2026-06-26T13:29:33Z",
+        "timestamp": 1782480573582,
+        "version": "3.54.5"
+      },
+      "is-referenced-by-count": 71,
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "0925-2312"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            9
+          ]
+        ]
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2020-09-01T00:00:00Z",
+            "timestamp": 1598918400000
+          }
+        },
+        {
+          "URL": "https://www.elsevier.com/legal/tdmrep-license",
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2020-09-01T00:00:00Z",
+            "timestamp": 1598918400000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0925231220306615?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0925231220306615?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "member": "78",
+      "original-title": [],
+      "page": "122-136",
+      "prefix": "10.1016",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            9
+          ]
+        ]
+      },
+      "publisher": "Elsevier BV",
+      "reference": [
+        {
+          "DOI": "10.1016/j.bspc.2015.01.007",
+          "article-title": "Rate-independent detection of atrial fibrillation by statistical modeling of atrial activity",
+          "author": "Ladavich",
+          "doi-asserted-by": "crossref",
+          "first-page": "274",
+          "journal-title": "Biomed. Signal Process. Control",
+          "key": "10.1016/j.neucom.2020.04.076_bib0001",
+          "volume": "18",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2015.03.005",
+          "article-title": "Automatic detection of atrial fibrillation using stationary wavelet transform and support vector machine",
+          "author": "Asgari",
+          "doi-asserted-by": "crossref",
+          "first-page": "132",
+          "journal-title": "Comput. Biol. Med.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0002",
+          "volume": "60",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1161/01.CIR.101.23.e215",
+          "article-title": "PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals",
+          "author": "Goldberger",
+          "doi-asserted-by": "crossref",
+          "first-page": "e215",
+          "issue": "23",
+          "journal-title": "Circulation",
+          "key": "10.1016/j.neucom.2020.04.076_bib0003",
+          "volume": "101",
+          "year": "2000"
+        },
+        {
+          "DOI": "10.1109/TBME.2003.808805",
+          "article-title": "A dynamical model for generating synthetic electrocardiogram signals",
+          "author": "McSharry",
+          "doi-asserted-by": "crossref",
+          "first-page": "289",
+          "issue": "3",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0004",
+          "volume": "50",
+          "year": "2003"
+        },
+        {
+          "article-title": "ECG modeling with DFG",
+          "author": "Li",
+          "first-page": "2691",
+          "key": "10.1016/j.neucom.2020.04.076_bib0005",
+          "series-title": "Proceedings of the 27th IEEE Annual Conference Engineering in Medicine and Biology",
+          "year": "2005"
+        },
+        {
+          "article-title": "Multichannel ECG and noise modeling: Application to maternal and fetal ECG signals",
+          "author": "Sameni",
+          "journal-title": "EURASIP J. Adv. Signal Process.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0006",
+          "volume": "1",
+          "year": "2007"
+        },
+        {
+          "DOI": "10.1088/0967-3334/31/5/001",
+          "article-title": "An artificial vector model for generating abnormal electrocardiographic rhythms",
+          "author": "Clifford",
+          "doi-asserted-by": "crossref",
+          "first-page": "595",
+          "issue": "5",
+          "journal-title": "Physiol. Meas.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0007",
+          "volume": "31",
+          "year": "2010"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2013.06.017",
+          "article-title": "Morphological modeling of cardiac signals based on signal decomposition",
+          "author": "Roonizi",
+          "doi-asserted-by": "crossref",
+          "first-page": "1453",
+          "issue": "10",
+          "journal-title": "Comput. Biol. Med.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0008",
+          "volume": "43",
+          "year": "2013"
+        },
+        {
+          "DOI": "10.1109/ICASSP.2013.6638947",
+          "doi-asserted-by": "crossref",
+          "key": "10.1016/j.neucom.2020.04.076_bib0009",
+          "unstructured": "A. Graves, A.-r. Mohamed, and G. Hinton, Speech Recognition with Deep Recurrent Neural Networks. pp. 6645-6649."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0010",
+          "unstructured": "O. M. Parkhi, A. Vedaldi, and A. Zisserman, Deep Face Recognition. p. 6."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0011",
+          "unstructured": "W. Ouyang, X. Wang, X. Zeng, S. Qiu, P. Luo, Y. Tian, H. Li, S. Yang, Z. Wang, and C.-C. Loy, Deepid-net: Deformable Deep Convolutional Neural Networks for Object Detection. pp. 2403-2412."
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2017.12.007",
+          "article-title": "Detecting atrial fibrillation by deep convolutional neural networks",
+          "author": "Xia",
+          "doi-asserted-by": "crossref",
+          "first-page": "84",
+          "journal-title": "Comput. Biol. Med.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0012",
+          "volume": "93",
+          "year": "2018"
+        },
+        {
+          "article-title": "Deep learning in bioinformatics",
+          "author": "Min",
+          "first-page": "851",
+          "issue": "5",
+          "journal-title": "Brief. Bioinform.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0013",
+          "volume": "18",
+          "year": "2017"
+        },
+        {
+          "article-title": "The importance of skip connections in biomedical image segmentation",
+          "author": "Drozdzal",
+          "first-page": "179",
+          "key": "10.1016/j.neucom.2020.04.076_bib0014",
+          "series-title": "Deep Learning in Medical Image Analysis (DLMIA)",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.1007/978-3-319-66179-7_46",
+          "doi-asserted-by": "crossref",
+          "key": "10.1016/j.neucom.2020.04.076_bib0015",
+          "unstructured": "L. Yang, Y. Zhang, J. Chen, S. Zhang, and D. Z. Chen, Suggestive Annotation: A Deep Active Learning Framework for Biomedical Image Segmentation. pp. 399-407."
+        },
+        {
+          "DOI": "10.1146/annurev-bioeng-071516-044442",
+          "article-title": "Deep learning in medical image analysis",
+          "author": "Shen",
+          "doi-asserted-by": "crossref",
+          "first-page": "221",
+          "journal-title": "Annu. Rev. Biomed. Eng.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0016",
+          "volume": "19",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1109/TNANO.2019.2932271",
+          "article-title": "An improved particle filter with a novel hybrid proposal distribution for quantitative analysis of gold immunochromatographic strips",
+          "author": "Zeng",
+          "doi-asserted-by": "crossref",
+          "first-page": "819",
+          "journal-title": "IEEE Trans. Nanotechnol.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0017",
+          "volume": "18",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1007/s12559-016-9404-x",
+          "article-title": "Deep belief networks for quantitative analysis of a gold immunochromatographic strip",
+          "author": "Zeng",
+          "doi-asserted-by": "crossref",
+          "first-page": "684",
+          "issue": "4",
+          "journal-title": "Cogn. Comput.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0018",
+          "volume": "8",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.1109/TMI.2014.2305394",
+          "article-title": "Image-based quantitative analysis of gold immunochromatographic strip via cellular neural network approach",
+          "author": "Zeng",
+          "doi-asserted-by": "crossref",
+          "first-page": "1129",
+          "issue": "5",
+          "journal-title": "IEEE Trans. Med. Imaging",
+          "key": "10.1016/j.neucom.2020.04.076_bib0019",
+          "volume": "33",
+          "year": "2014"
+        },
+        {
+          "DOI": "10.1109/TNSRE.2020.3006180",
+          "doi-asserted-by": "crossref",
+          "key": "10.1016/j.neucom.2020.04.076_bib0020",
+          "unstructured": "S. Panwar, P. Rad, T.-P. Jung, Y. Huang, Modeling EEG Data Distribution with a Wasserstein Generative Adversarial Network to Predict RSVP Events, 2019, arXiv preprint arXiv:1911.04379."
+        },
+        {
+          "article-title": "Atrial fibrillation detection using stationary wavelet transform and deep learning",
+          "author": "Xia",
+          "first-page": "1",
+          "journal-title": "Comput. Cardiol.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0021",
+          "volume": "44",
+          "year": "2017"
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0022",
+          "unstructured": "P. Rajpurkar, A. Y. Hannun, M. Haghpanahi, C. Bourn, and A. Y. Ng, Cardiologist-level Arrhythmia Detection with Convolutional Neural Networks, 2017, arXiv preprint arXiv:1707.01836."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0023",
+          "unstructured": "I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio, Generative Adversarial Nets. pp. 2672-2680."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0024",
+          "unstructured": "A. Radford, L. Metz, and S. Chintala, Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks, 2015, arXiv preprint arXiv:1511.06434."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0025",
+          "unstructured": "D. Berthelot, T. Schumm, and L. Metz, Began: Boundary Equilibrium Generative Adversarial Networks, 2017, arXiv preprint arXiv:1703.10717."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0026",
+          "unstructured": "Z. Yi, H. Zhang, P. Tan, and M. Gong, Dualgan: Unsupervised Dual Learning for Image-To-Image Translation. pp. 2849-2857."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0027",
+          "unstructured": "H. Zhang, I. Goodfellow, D. Metaxas, and A. Odena, Self-Attention Generative Adversarial Networks, 2018, arXiv preprint arXiv:1805.08318."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0028",
+          "unstructured": "H. Zhang, T. Xu, H. Li, S. Zhang, X. Wang, X. Huang, and D. N. Metaxas, Stackgan: Text to Photo-Realistic Image Synthesis with Stacked Generative Adversarial Networks. pp. 5907-5915."
+        },
+        {
+          "DOI": "10.1109/ICIP.2017.8296985",
+          "doi-asserted-by": "crossref",
+          "key": "10.1016/j.neucom.2020.04.076_bib0029",
+          "unstructured": "W. R. Tan, C. S. Chan, H. E. Aguirre, and K. Tanaka, ArtGAN: Artwork synthesis with Conditional Categorical GANs. pp. 3760-3764."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0030",
+          "unstructured": "A. Elgammal, B. Liu, M. Elhoseiny, and M. Mazzone, Can: Creative Adversarial Networks, Generating Art by Learning About Styles and Deviating from Style Norms, 2017, arXiv preprint arXiv:1706.07068."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0031",
+          "unstructured": "L. Yu, W. Zhang, J. Wang, and Y. Yu, Seqgan: Sequence Generative Adversarial Nets With Policy Gradient.\"."
+        },
+        {
+          "DOI": "10.18653/v1/D17-1230",
+          "doi-asserted-by": "crossref",
+          "key": "10.1016/j.neucom.2020.04.076_bib0032",
+          "unstructured": "J. Li, W. Monroe, T. Shi, S. Jean, A. Ritter, and D. Jurafsky, Adversarial Learning for Neural Dialogue Generation, 2017, arXiv preprint arXiv:1701.06547."
+        },
+        {
+          "author": "Van Den Oord",
+          "key": "10.1016/j.neucom.2020.04.076_bib0033",
+          "volume": "125",
+          "year": "2016"
+        },
+        {
+          "author": "Mark",
+          "key": "10.1016/j.neucom.2020.04.076_bib0034",
+          "series-title": "MIT-BIH Arrhythmia Database Directory",
+          "year": "1988"
+        },
+        {
+          "DOI": "10.1109/TBME.1985.325532",
+          "article-title": "A real-time QRS detection algorithm",
+          "author": "Pan",
+          "doi-asserted-by": "crossref",
+          "first-page": "230",
+          "issue": "3",
+          "journal-title": "IEEE Trans. Biomed. Eng.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0035",
+          "volume": "32",
+          "year": "1985"
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0036",
+          "unstructured": "S. Xie, R. Girshick, P. Dollár, Z. Tu, and K. He, Aggregated Residual Transformations for Deep Neural Networks. pp. 1492-1500."
+        },
+        {
+          "author": "Recommendation",
+          "key": "10.1016/j.neucom.2020.04.076_bib0037",
+          "series-title": "Pulse Code Modulation (PCM) of Voice Frequencies",
+          "year": "1988"
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0038",
+          "unstructured": "M. Arjovsky, S. Chintala, L. Bottou, Wasserstein gan, 2017, arXiv preprint arXiv:1701.07875."
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0039",
+          "unstructured": "I. Gulrajani, F. Ahmed, M. Arjovsky, V. Dumoulin, and A. C. Courville, Improved Training of Wasserstein gans. pp. 5767-5777."
+        },
+        {
+          "DOI": "10.1109/TASSP.1984.1164317",
+          "article-title": "Signal estimation from modified short-time Fourier transform",
+          "author": "Griffin",
+          "doi-asserted-by": "crossref",
+          "first-page": "236",
+          "issue": "2",
+          "journal-title": "IEEE Trans. Acoust. Speech Signal Process.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0040",
+          "volume": "32",
+          "year": "1984"
+        },
+        {
+          "DOI": "10.1109/IEMBS.2010.5626456",
+          "doi-asserted-by": "crossref",
+          "key": "10.1016/j.neucom.2020.04.076_bib0041",
+          "unstructured": "P. R. Gomes, F. O. Soares, J. Correia, and C. Lima, ECG Data-Acquisition and Classification System by Using Wavelet-Domain Hidden Markov Models. pp. 4670-4673."
+        },
+        {
+          "DOI": "10.1007/978-1-4612-2544-7_17",
+          "article-title": "The stationary wavelet transform and some statistical applications",
+          "author": "Nason",
+          "doi-asserted-by": "crossref",
+          "first-page": "281",
+          "journal-title": "Wavelets Stat.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0042",
+          "volume": "103",
+          "year": "1995"
+        },
+        {
+          "DOI": "10.1109/IEMBS.2008.4649817",
+          "doi-asserted-by": "crossref",
+          "key": "10.1016/j.neucom.2020.04.076_bib0043",
+          "unstructured": "A. Salmanpour, L. J. Brown, and J. K. Shoemaker, Performance Analysis of Stationary and Discrete Wavelet Transform for Action Potential Detection from Sympathetic Nerve Recordings in Humans. pp. 2932-2935."
+        },
+        {
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "article-title": "Long short-term memory",
+          "author": "Hochreiter",
+          "doi-asserted-by": "crossref",
+          "first-page": "1735",
+          "issue": "8",
+          "journal-title": "Neural Comput.",
+          "key": "10.1016/j.neucom.2020.04.076_bib0044",
+          "volume": "9",
+          "year": "1997"
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0045",
+          "unstructured": "Q. Xu, G. Huang, Y. Yuan, C. Guo, Y. Sun, F. Wu, and K. Weinberger, An Empirical Study on Evaluation Metrics of Generative Adversarial Networks, 2018, arXiv preprint arXiv:1806.07755."
+        },
+        {
+          "article-title": "Improved techniques for training gans",
+          "author": "Salimans",
+          "first-page": "2234",
+          "key": "10.1016/j.neucom.2020.04.076_bib0046",
+          "series-title": "Neural Information Processing Systems (NIPS)",
+          "year": "2016"
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0047",
+          "unstructured": "T. Che, Y. Li, A.P. Jacob, Y. Bengio, W. Li, Mode Regularized Generative Adversarial Networks, 2016, arXiv preprint arXiv:1612.02136."
+        },
+        {
+          "article-title": "Gans trained by a two time-scale update rule converge to a local Nash equilibrium",
+          "author": "Heusel",
+          "first-page": "6626",
+          "key": "10.1016/j.neucom.2020.04.076_bib0048",
+          "series-title": "Neural Information Processing Systems (NIPS)",
+          "year": "2017"
+        },
+        {
+          "key": "10.1016/j.neucom.2020.04.076_bib0049",
+          "unstructured": "K. Shmelkov, C. Schmid, and K. Alahari, How Good is my GAN?. pp. 213-229."
+        },
+        {
+          "article-title": "PyTorch: an imperative style, high-performance deep learning library",
+          "author": "Paszke",
+          "first-page": "8024",
+          "key": "10.1016/j.neucom.2020.04.076_bib0050",
+          "series-title": "Neural Information Processing Systems (NIPS)",
+          "year": "2019"
+        }
+      ],
+      "reference-count": 50,
+      "references-count": 50,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0925231220306615"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "Neurocomputing"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "special_numbering": "C",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Generating electrocardiogram signals by deep learning"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "volume": "404"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "9e54ac0f1bd9604668e9080dd7a057c14cac22c80987faaef189c843975c17b5",
+  "retrieved_at": "2026-07-14T14:48:19Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

@@ -1,0 +1,251 @@
+{
+  "endpoint": "works/doi:10.17026/ar/jzlhsu",
+  "request_key": "22a65aaaf6b70327db0cb654ecef5f5a4dc4cc69719d4765a221112b1bd98e7e",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "-vondsten": [
+        24
+      ],
+      "/": [
+        34
+      ],
+      "1421": [
+        29
+      ],
+      "Dordrecht.": [
+        43
+      ],
+      "Dubbel": [
+        41
+      ],
+      "IJzertijd,": [
+        14
+      ],
+      "Middeleeuwen": [
+        27
+      ],
+      "Rapportage": [
+        0
+      ],
+      "Romeinse": [
+        19
+      ],
+      "archeologische": [
+        5
+      ],
+      "bewoningssporen": [
+        22
+      ],
+      "dataset": [
+        2
+      ],
+      "de": [
+        13,
+        18,
+        26,
+        31,
+        37,
+        40
+      ],
+      "een": [
+        4,
+        8,
+        15
+      ],
+      "en": [
+        1,
+        21,
+        23
+      ],
+      "in": [
+        30,
+        42
+      ],
+      "met": [
+        10
+      ],
+      "oeverwal": [
+        35
+      ],
+      "oeverzone": [
+        33
+      ],
+      "opgraving": [
+        6
+      ],
+      "periode": [
+        20
+      ],
+      "rivier": [
+        39
+      ],
+      "sporen": [
+        11
+      ],
+      "tot": [
+        28
+      ],
+      "uit": [
+        12,
+        17,
+        25
+      ],
+      "van": [
+        3,
+        7,
+        36
+      ],
+      "vindplaats": [
+        9
+      ],
+      "vondstcomplex": [
+        16
+      ],
+      "voormalige": [
+        38
+      ],
+      "zuidelijke": [
+        32
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210087268",
+              "https://openalex.org/I2799514511"
+            ],
+            "raw_affiliation_string": "Gemeente Dordrecht"
+          }
+        ],
+        "author": {
+          "display_name": "Dorst, M.C.",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [
+          "NL"
+        ],
+        "institutions": [
+          {
+            "country_code": "NL",
+            "display_name": "Gemeente Rotterdam",
+            "id": "https://openalex.org/I2799514511",
+            "lineage": [
+              "https://openalex.org/I2799514511"
+            ],
+            "ror": "https://ror.org/03ma5tr22",
+            "type": "government"
+          },
+          {
+            "country_code": "NL",
+            "display_name": "Gemeente Amsterdam",
+            "id": "https://openalex.org/I4210087268",
+            "lineage": [
+              "https://openalex.org/I4210087268"
+            ],
+            "ror": "https://ror.org/003h0ev22",
+            "type": "government"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Gemeente Dordrecht"
+        ],
+        "raw_author_name": "Dorst, M.C.",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.17026/ar/jzlhsu",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.17026/ar/jzlhsu",
+      "license": "public-domain",
+      "license_id": "https://openalex.org/licenses/public-domain",
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Dataset",
+      "source": {
+        "display_name": "DANS Data Stations",
+        "host_organization": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "host_organization_name": null,
+        "id": "https://openalex.org/S7407051052",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [],
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": null
+    },
+    "biblio": {
+      "first_page": null,
+      "issue": null,
+      "last_page": null,
+      "volume": null
+    },
+    "cited_by_count": 0,
+    "display_name": "Gezondheidspark West-Middenzone vindplaats 1, gemeente Dordrecht Een archeologische opgraving met bewoningssporen en vondsten uit de IJzertijd, Romeinse Periode en de Middeleeuwen",
+    "doi": "https://doi.org/10.17026/ar/jzlhsu",
+    "id": "https://openalex.org/W6906342033",
+    "ids": {
+      "doi": "https://doi.org/10.17026/ar/jzlhsu",
+      "openalex": "https://openalex.org/W6906342033"
+    },
+    "is_retracted": false,
+    "language": "nl",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://doi.org/10.17026/ar/jzlhsu"
+    },
+    "primary_location": {
+      "id": "pmh:doi:10.17026/AR/JZLHSU",
+      "is_accepted": false,
+      "is_oa": false,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.17026/AR/JZLHSU",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Dataset",
+      "source": {
+        "display_name": "DANS Data Station Archaeology",
+        "host_organization": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "host_organization_name": null,
+        "id": "https://openalex.org/S7407055379",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": "submittedVersion"
+    },
+    "publication_date": "2022-12-12",
+    "publication_year": 2022,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "title": "Gezondheidspark West-Middenzone vindplaats 1, gemeente Dordrecht Een archeologische opgraving met bewoningssporen en vondsten uit de IJzertijd, Romeinse Periode en de Middeleeuwen",
+    "type": "dataset"
+  },
+  "response_hash": "6fef28af9d3bb889739bd9624af962e8add2bb565c16973b8bd79061e5441d05",
+  "retrieved_at": "2026-07-14T13:48:38Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

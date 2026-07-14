@@ -1,0 +1,3785 @@
+{
+  "endpoint": "works",
+  "request_key": "ec585f7b241db5d40e8f326719e5570087d51e13f30920dba0febe06b898b93e",
+  "request_params": {
+    "query.bibliographic": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.18653/v1/2021.acl-long.393",
+          "URL": "https://doi.org/10.18653/v1/2021.acl-long.393",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Yan",
+              "given": "Yuanmeng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Li",
+              "given": "Rumei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Sirui",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Fuzheng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wu",
+              "given": "Wei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Xu",
+              "given": "Weiran",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                27
+              ]
+            ],
+            "date-time": "2021-07-27T01:42:51Z",
+            "timestamp": 1627350171000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2021,
+                7,
+                27
+              ]
+            ],
+            "date-time": "2021-07-27T01:45:27Z",
+            "timestamp": 1627350327000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2021,
+                  8
+                ]
+              ]
+            },
+            "location": "Online",
+            "name": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  8
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                25
+              ]
+            ],
+            "date-time": "2026-06-25T16:03:03Z",
+            "timestamp": 1782403383927,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 289,
+          "issued": {
+            "date-parts": [
+              [
+                2021
+              ]
+            ]
+          },
+          "member": "1643",
+          "page": "5065-5075",
+          "prefix": "10.18653",
+          "published": {
+            "date-parts": [
+              [
+                2021
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021
+              ]
+            ]
+          },
+          "publisher": "Association for Computational Linguistics",
+          "publisher-location": "Stroudsburg, PA, USA",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://aclanthology.org/2021.acl-long.393"
+            }
+          },
+          "score": 50.953384,
+          "source": "Crossref",
+          "title": [
+            "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.20944/preprints202307.1752.v1",
+          "URL": "https://doi.org/10.20944/preprints202307.1752.v1",
+          "abstract": "<jats:p>This paper proposes a Grouped Contrastive Learning of self-supervised Sentence Representation (GCLSR), which can learn an effective and meaningful representation of sentences. Previous works maximize the similarity between two vectors to be the objective of contrastive learning, suffering from the high-dimensionality of the vectors. In addition, most previous works have adopted discrete data augmentation to obtain positive samples and directly employed contrastive framework of computer vision to perform contrastive training, which could hamper contrastive training because text data is discrete and sparse compared with image data. To address those issues, we propose a grouped contrastive learning framework, i.e., GCLSR, which divides the high-dimensional feature vector into several groups and respectively computes the groups’ contrastive losses to make use of more local information, eventually obtaining a more fine-grained sentence representation. In addition, in GCLSR, we design a new self-attention mechanism and a continuous as well as partial word vector augmentation (PWVA). For the discrete and sparse text data, the usage of self-attention could help model focus the informative words by measuring the importance of every word in a sentence. By using the PWVA, GCLSR can obtain high-quality positive samples used for contrastive learning. Experimental results demonstrate that our proposed GCLSR achieves an encouraging result on the challenging datasets of the standard semantic textual similarity (STS) task and transfer task.</jats:p>",
+          "accepted": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                24
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Qian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Weiqi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Lei",
+              "given": "Tianyi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Peng",
+              "given": "Dezhong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                27
+              ]
+            ],
+            "date-time": "2023-07-27T00:28:06Z",
+            "timestamp": 1690417686000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                6
+              ]
+            ],
+            "date-time": "2023-09-06T00:29:28Z",
+            "timestamp": 1693960168000
+          },
+          "group-title": "Computer Science and Mathematics",
+          "indexed": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                7
+              ]
+            ],
+            "date-time": "2023-09-07T21:06:20Z",
+            "timestamp": 1694120780428
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                26
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "http://creativecommons.org/licenses/by/4.0",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    7,
+                    26
+                  ]
+                ],
+                "date-time": "2023-07-26T00:00:00Z",
+                "timestamp": 1690329600000
+              }
+            }
+          ],
+          "member": "1968",
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                26
+              ]
+            ]
+          },
+          "prefix": "10.20944",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                26
+              ]
+            ]
+          },
+          "publisher": "MDPI AG",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-preprint-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.3390/app13179873",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.preprints.org/manuscript/202307.1752/v1"
+            }
+          },
+          "score": 43.489258,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Grouped Contrastive Learning of Self-supervised Sentence Representation"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.3390/app13179873",
+          "ISSN": [
+            "2076-3417"
+          ],
+          "URL": "https://doi.org/10.3390/app13179873",
+          "abstract": "<jats:p>This paper proposes a method called Grouped Contrastive Learning of self-supervised Sentence Representation (GCLSR), which can learn an effective and meaningful representation of sentences. Previous works maximize the similarity between two vectors to be the objective of contrastive learning, suffering from the high-dimensionality of the vectors. In addition, most previous works have adopted discrete data augmentation to obtain positive samples and have directly employed a contrastive framework from computer vision to perform contrastive training, which could hamper contrastive training because text data are discrete and sparse compared with image data. To solve these issues, we design a novel framework of contrastive learning, i.e., GCLSR, which divides the high-dimensional feature vector into several groups and respectively computes the groups’ contrastive losses to make use of more local information, eventually obtaining a more fine-grained sentence representation. In addition, in GCLSR, we design a new self-attention mechanism and both a continuous and a partial-word vector augmentation (PWVA). For the discrete and sparse text data, the use of self-attention could help the model focus on the informative words by measuring the importance of every word in a sentence. By using the PWVA, GCLSR can obtain high-quality positive samples used for contrastive learning. Experimental results demonstrate that our proposed GCLSR achieves an encouraging result on the challenging datasets of the semantic textual similarity (STS) task and transfer task.</jats:p>",
+          "alternative-id": [
+            "app13179873"
+          ],
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "College of Computer Science, Sichuan University, Chengdu 610065, China"
+                }
+              ],
+              "family": "Wang",
+              "given": "Qian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "College of Computer Science, Sichuan University, Chengdu 610065, China"
+                }
+              ],
+              "family": "Zhang",
+              "given": "Weiqi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "College of Computer Science, Sichuan University, Chengdu 610065, China"
+                }
+              ],
+              "family": "Lei",
+              "given": "Tianyi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "College of Computer Science, Sichuan University, Chengdu 610065, China"
+                },
+                {
+                  "name": "Chengdu Ruibei Yingte Information Technology Co., Ltd., Chengdu 610054, China"
+                },
+                {
+                  "name": "Sichuan Zhiqian Technology Co., Ltd., Chengdu 610065, China"
+                }
+              ],
+              "family": "Peng",
+              "given": "Dezhong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Applied Sciences"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                31
+              ]
+            ],
+            "date-time": "2023-08-31T11:45:51Z",
+            "timestamp": 1693482351000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                10
+              ]
+            ],
+            "date-time": "2025-10-10T20:44:15Z",
+            "timestamp": 1760129055000
+          },
+          "funder": [
+            {
+              "award": [
+                "2021YFG0301"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2021YFG0301"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2021YFG0317"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2021YFG0317"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2023YFQ0020"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023YFQ0020"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2023YFG0033"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023YFG0033"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2023ZHCG0016"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023ZHCG0016"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2022YFQ0014"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2022YFQ0014"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2022YFH0021"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2022YFH0021"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2023-XT00-00004-GX"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023-XT00-00004-GX"
+                  ]
+                }
+              ],
+              "name": "Sichuan Science and Technology Planning Project"
+            },
+            {
+              "award": [
+                "2021YFG0301"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2021YFG0301"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            },
+            {
+              "award": [
+                "2021YFG0317"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2021YFG0317"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            },
+            {
+              "award": [
+                "2023YFQ0020"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023YFQ0020"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            },
+            {
+              "award": [
+                "2023YFG0033"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023YFG0033"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            },
+            {
+              "award": [
+                "2023ZHCG0016"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023ZHCG0016"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            },
+            {
+              "award": [
+                "2022YFQ0014"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2022YFQ0014"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            },
+            {
+              "award": [
+                "2022YFH0021"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2022YFH0021"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            },
+            {
+              "award": [
+                "2023-XT00-00004-GX"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "2023-XT00-00004-GX"
+                  ]
+                }
+              ],
+              "name": "Chengdu Science and Technology Project"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2026-04-01T18:05:52Z",
+            "timestamp": 1775066752698,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 2,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2076-3417"
+            }
+          ],
+          "issue": "17",
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                31
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "17",
+            "published-online": {
+              "date-parts": [
+                [
+                  2023,
+                  9
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    8,
+                    31
+                  ]
+                ],
+                "date-time": "2023-08-31T00:00:00Z",
+                "timestamp": 1693440000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.mdpi.com/2076-3417/13/17/9873/pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "1968",
+          "page": "9873",
+          "prefix": "10.3390",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                31
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                31
+              ]
+            ]
+          },
+          "publisher": "MDPI AG",
+          "reference": [
+            {
+              "DOI": "10.1016/j.knosys.2021.106869",
+              "article-title": "Sentence representation with manifold learning for biomedical texts",
+              "author": "Zhao",
+              "doi-asserted-by": "crossref",
+              "first-page": "106869",
+              "journal-title": "Knowl.-Based Syst.",
+              "key": "ref_1",
+              "volume": "218",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.18653/v1/2020.emnlp-main.733",
+              "doi-asserted-by": "crossref",
+              "key": "ref_2",
+              "unstructured": "Li, B., Zhou, H., He, J., Wang, M., Yang, Y., and Li, L. (2020). On the sentence embeddings from pre-trained language models. arXiv."
+            },
+            {
+              "key": "ref_3",
+              "unstructured": "Logeswaran, L., and Lee, H. (2018). An efficient framework for learning sentence representations. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.197",
+              "doi-asserted-by": "crossref",
+              "key": "ref_4",
+              "unstructured": "Kim, T., Yoo, K.M., and Lee, S.g. (2021). Self-Guided Contrastive Learning for BERT Sentence Representations. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/2021.emnlp-main.467",
+              "doi-asserted-by": "crossref",
+              "key": "ref_5",
+              "unstructured": "Zhang, D., Li, S.W., Xiao, W., Zhu, H., Nallapati, R., Arnold, A.O., and Xiang, B. (2021). Pairwise supervised contrastive learning of sentence representations. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/D19-1006",
+              "doi-asserted-by": "crossref",
+              "key": "ref_6",
+              "unstructured": "Ethayarajh, K. (2019). How contextual are contextualized word representations? comparing the geometry of BERT, ELMo, and GPT-2 embeddings. arXiv."
+            },
+            {
+              "key": "ref_7",
+              "unstructured": "Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., and Liu, P.J. (2019). Exploring the limits of transfer learning with a unified text-to-text transformer. arXiv."
+            },
+            {
+              "key": "ref_8",
+              "unstructured": "Dong, L., Yang, N., Wang, W., Wei, F., Liu, X., Wang, Y., Gao, J., Zhou, M., and Hon, H.W. (2019). Unified language model pre-training for natural language understanding and generation. arXiv."
+            },
+            {
+              "DOI": "10.1007/s13042-023-01823-8",
+              "article-title": "Text semantic matching with an enhanced sample building method based on contrastive learning",
+              "author": "Wu",
+              "doi-asserted-by": "crossref",
+              "first-page": "3105",
+              "journal-title": "Int. J. Mach. Learn. Cybern.",
+              "key": "ref_9",
+              "volume": "14",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1007/s13042-023-01813-w",
+              "article-title": "Importance-aware contrastive learning via semantically augmented instances for unsupervised sentence embeddings",
+              "author": "Ma",
+              "doi-asserted-by": "crossref",
+              "first-page": "2979",
+              "journal-title": "Int. J. Mach. Learn. Cybern.",
+              "key": "ref_10",
+              "volume": "14",
+              "year": "2023"
+            },
+            {
+              "key": "ref_11",
+              "unstructured": "Devlin, J., Chang, M.W., Lee, K., and Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv."
+            },
+            {
+              "DOI": "10.1016/j.neucom.2021.10.101",
+              "article-title": "Chinese named entity recognition: The state of the art",
+              "author": "Liu",
+              "doi-asserted-by": "crossref",
+              "first-page": "37",
+              "journal-title": "Neurocomputing",
+              "key": "ref_12",
+              "volume": "473",
+              "year": "2022"
+            },
+            {
+              "article-title": "Three-stage question answering model based on BERT",
+              "author": "Yu",
+              "first-page": "64",
+              "journal-title": "J. Comput. Appl.",
+              "key": "ref_13",
+              "volume": "42",
+              "year": "2022"
+            },
+            {
+              "key": "ref_14",
+              "unstructured": "Chen, T., Kornblith, S., Norouzi, M., and Hinton, G. (2020, January 13–18). A simple framework for contrastive learning of visual representations. Proceedings of the International Conference on Machine Learning, Virtual."
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00975",
+              "doi-asserted-by": "crossref",
+              "key": "ref_15",
+              "unstructured": "He, K., Fan, H., Wu, Y., Xie, S., and Girshick, R. (2020, January 13–19). Momentum contrast for unsupervised visual representation learning. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Seattle, WA, USA."
+            },
+            {
+              "DOI": "10.1109/CVPR46437.2021.01549",
+              "doi-asserted-by": "crossref",
+              "key": "ref_16",
+              "unstructured": "Chen, X., and He, K. (2021, January 20–25). Exploring simple siamese representation learning. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Nashville, TN, USA."
+            },
+            {
+              "key": "ref_17",
+              "unstructured": "Grill, J.B., Strub, F., Altché, F., Tallec, C., Richemond, P.H., Buchatskaya, E., Doersch, C., Pires, B.A., Guo, Z.D., and Azar, M.G. (2020). Bootstrap your own latent: A new approach to self-supervised learning. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/D19-1410",
+              "doi-asserted-by": "crossref",
+              "key": "ref_18",
+              "unstructured": "Reimers, N., and Gurevych, I. (2019). Sentence-bert: Sentence embeddings using siamese bert-networks. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.72",
+              "doi-asserted-by": "crossref",
+              "key": "ref_19",
+              "unstructured": "Giorgi, J.M., Nitski, O., Bader, G.D., and Wang, B. (2020). Declutr: Deep contrastive learning for unsupervised textual representations. arXiv."
+            },
+            {
+              "key": "ref_20",
+              "unstructured": "Wu, Z., Wang, S., Gu, J., Khabsa, M., Sun, F., and Ma, H. (2020). Clear: Contrastive learning for sentence representation. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/2021.emnlp-main.552",
+              "doi-asserted-by": "crossref",
+              "key": "ref_21",
+              "unstructured": "Gao, T., Yao, X., and Chen, D. (2021). SimCSE: Simple Contrastive Learning of Sentence Embeddings. arXiv."
+            },
+            {
+              "DOI": "10.1016/j.knosys.2023.110381",
+              "article-title": "CLSEP: Contrastive learning of sentence embedding with prompt",
+              "author": "Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "110381",
+              "journal-title": "Knowl.-Based Syst.",
+              "key": "ref_22",
+              "volume": "266",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.36227/techrxiv.12308378.v1",
+              "doi-asserted-by": "crossref",
+              "key": "ref_23",
+              "unstructured": "Fang, H., Wang, S., Zhou, M., Ding, J., and Xie, P. (2020). Cert: Contrastive self-supervised learning for language understanding. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-srw.27",
+              "doi-asserted-by": "crossref",
+              "key": "ref_24",
+              "unstructured": "Zhu, W., and Cheung, D. (2020). CMV-BERT: Contrastive multi-vocab pretraining of BERT. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.393",
+              "doi-asserted-by": "crossref",
+              "key": "ref_25",
+              "unstructured": "Yan, Y., Li, R., Wang, S., Zhang, F., Wu, W., and Xu, W. (2021). ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/D19-1670",
+              "doi-asserted-by": "crossref",
+              "key": "ref_26",
+              "unstructured": "Wei, J., and Zou, K. (2019). Eda: Easy data augmentation techniques for boosting performance on text classification tasks. arXiv."
+            },
+            {
+              "DOI": "10.18653/v1/D15-1306",
+              "doi-asserted-by": "crossref",
+              "key": "ref_27",
+              "unstructured": "Wang, W.Y., and Yang, D. (2015, January 17–21). That’s so annoying!!!: A lexical and frame-semantic embedding based data augmentation approach to automatic categorization of annoying behaviors using# petpeeve tweets. Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, Lisbon, Portugal."
+            },
+            {
+              "key": "ref_28",
+              "unstructured": "Guo, H., Mao, Y., and Zhang, R. (2019). Augmenting data with mixup for sentence classification: An empirical study. arXiv."
+            },
+            {
+              "key": "ref_29",
+              "unstructured": "Bahdanau, D., Cho, K., and Bengio, Y. (2014). Neural machine translation by jointly learning to align and translate. arXiv."
+            },
+            {
+              "key": "ref_30",
+              "unstructured": "Uchaikin, V.V., and Zolotarev, V.M. (2011). Chance and Stability: Stable Distributions and Their Applications, Walter de Gruyter."
+            },
+            {
+              "key": "ref_31",
+              "unstructured": "Géron, A. (2022). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, O’Reilly Media, Inc."
+            },
+            {
+              "key": "ref_32",
+              "unstructured": "Mikolov, T., Chen, K., Corrado, G., and Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv."
+            },
+            {
+              "DOI": "10.3115/v1/D14-1181",
+              "doi-asserted-by": "crossref",
+              "key": "ref_33",
+              "unstructured": "Kim, Y. (2014). Convolutional Neural Networks for Sentence Classification. arXiv."
+            },
+            {
+              "key": "ref_34",
+              "unstructured": "Ioffe, S., and Normalization, C.S.B. (2015). Accelerating Deep Network Training by Reducing Internal Covariate Shift. arXiv."
+            },
+            {
+              "key": "ref_35",
+              "unstructured": "Loshchilov, I., and Hutter, F. (2016). Sgdr: Stochastic gradient descent with warm restarts. arXiv."
+            },
+            {
+              "key": "ref_36",
+              "unstructured": "Conneau, A., and Kiela, D. (2018). Senteval: An evaluation toolkit for universal sentence representations. arXiv."
+            },
+            {
+              "key": "ref_37",
+              "unstructured": "Agirre, E., Cer, D., Diab, M., and Gonzalez-Agirre, A. Proceedings of the SEM 2012: The First Joint Conference on Lexical and Computational Semantics—Volume 1: Proceedings of the Main Conference and the Shared Task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation (SemEval 2012), Montréal, Canada, 7–8 June 2012."
+            },
+            {
+              "key": "ref_38",
+              "unstructured": "Agirre, E., Cer, D., Diab, M., Gonzalez-Agirre, A., and Guo, W. (2013, January 13–14). * SEM 2013 shared task: Semantic textual similarity. Proceedings of the Second Joint Conference on Lexical and Computational Semantics (* SEM), Volume 1: Proceedings of the Main Conference and the Shared Task: Semantic Textual Similarity, Atlanta, GA, USA."
+            },
+            {
+              "DOI": "10.3115/v1/S14-2010",
+              "doi-asserted-by": "crossref",
+              "key": "ref_39",
+              "unstructured": "Agirre, E., Banea, C., Cardie, C., Cer, D., Diab, M., Gonzalez-Agirre, A., Guo, W., Mihalcea, R., Rigau, G., and Wiebe, J. (2014, January 23–24). Semeval-2014 task 10: Multilingual semantic textual similarity. Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014), Dublin, Ireland."
+            },
+            {
+              "DOI": "10.18653/v1/S15-2045",
+              "doi-asserted-by": "crossref",
+              "key": "ref_40",
+              "unstructured": "Agirre, E., Banea, C., Cardie, C., Cer, D., Diab, M., Gonzalez-Agirre, A., Guo, W., Lopez-Gazpio, I., Maritxalar, M., and Mihalcea, R. (2015, January 4–5). Semeval-2015 task 2: Semantic textual similarity, english, spanish and pilot on interpretability. Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval 2015), Denver, CO, USA."
+            },
+            {
+              "DOI": "10.18653/v1/S16-1081",
+              "doi-asserted-by": "crossref",
+              "key": "ref_41",
+              "unstructured": "Agirre, E., Banea, C., Cer, D., Diab, M., Gonzalez Agirre, A., Mihalcea, R., Rigau Claramunt, G., and Wiebe, J. (2016, January 16–17). Semeval-2016 task 1: Semantic textual similarity, monolingual and cross-lingual evaluation. Proceedings of the SemEval-2016, 10th International Workshop on Semantic Evaluation, San Diego, CA, USA."
+            },
+            {
+              "DOI": "10.18653/v1/S17-2001",
+              "doi-asserted-by": "crossref",
+              "key": "ref_42",
+              "unstructured": "Cer, D., Diab, M., Agirre, E., Lopez-Gazpio, I., and Specia, L. (2017). Semeval-2017 task 1: Semantic textual similarity-multilingual and cross-lingual focused evaluation. arXiv."
+            },
+            {
+              "key": "ref_43",
+              "unstructured": "Marelli, M., Menini, S., Baroni, M., Bentivogli, L., Bernardi, R., and Zamparelli, R. (2014, January 26–31). A SICK cure for the evaluation of compositional distributional semantic models. Proceedings of the LREC 2014, Reykjavik, Iceland."
+            },
+            {
+              "DOI": "10.3115/1219840.1219855",
+              "doi-asserted-by": "crossref",
+              "key": "ref_44",
+              "unstructured": "Pang, B., and Lee, L. (2005). Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales. arXiv."
+            },
+            {
+              "DOI": "10.1145/1014052.1014073",
+              "doi-asserted-by": "crossref",
+              "key": "ref_45",
+              "unstructured": "Hu, M., and Liu, B. (2004, January 22–25). Mining and summarizing customer reviews. Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Seattle, WA, USA."
+            },
+            {
+              "DOI": "10.3115/1218955.1218990",
+              "doi-asserted-by": "crossref",
+              "key": "ref_46",
+              "unstructured": "Pang, B., and Lee, L. (2004). A sentimental education: Sentiment analysis using subjectivity summarization based on minimum cuts. arXiv."
+            },
+            {
+              "DOI": "10.1007/s10579-005-7880-9",
+              "article-title": "Annotating expressions of opinions and emotions in language",
+              "author": "Wiebe",
+              "doi-asserted-by": "crossref",
+              "first-page": "165",
+              "journal-title": "Lang. Resour. Eval.",
+              "key": "ref_47",
+              "volume": "39",
+              "year": "2005"
+            },
+            {
+              "key": "ref_48",
+              "unstructured": "Socher, R., Perelygin, A., Wu, J., Chuang, J., Manning, C.D., Ng, A.Y., and Potts, C. (2013, January 18–21). Recursive deep models for semantic compositionality over a sentiment treebank. Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing, Seattle, WA, USA."
+            },
+            {
+              "DOI": "10.1145/345508.345577",
+              "doi-asserted-by": "crossref",
+              "key": "ref_49",
+              "unstructured": "Voorhees, E.M., and Tice, D.M. (2000, January 24–28). Building a question answering test collection. Proceedings of the 23rd Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, Athens, Greece."
+            },
+            {
+              "key": "ref_50",
+              "unstructured": "Dolan, W.B., and Brockett, C. (2005, January 4). Automatically constructing a corpus of sentential paraphrases. Proceedings of the Third International Workshop on Paraphrasing (IWP2005), Jeju Island, Republic of Korea."
+            }
+          ],
+          "reference-count": 50,
+          "references-count": 50,
+          "resource": {
+            "primary": {
+              "URL": "https://www.mdpi.com/2076-3417/13/17/9873"
+            }
+          },
+          "score": 40.404945,
+          "short-container-title": [
+            "Applied Sciences"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Grouped Contrastive Learning of Self-Supervised Sentence Representation"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+          "volume": "13"
+        },
+        {
+          "DOI": "10.1007/978-3-031-18315-7_3",
+          "ISBN": [
+            "9783031183140",
+            "9783031183157"
+          ],
+          "ISSN": [
+            "0302-9743",
+            "1611-3349"
+          ],
+          "URL": "https://doi.org/10.1007/978-3-031-18315-7_3",
+          "assertion": [
+            {
+              "group": {
+                "label": "Chapter History",
+                "name": "ChapterHistory"
+              },
+              "label": "First Online",
+              "name": "first_online",
+              "order": 1,
+              "value": "6 October 2022"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference Acronym",
+              "name": "conference_acronym",
+              "order": 1,
+              "value": "CCL"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference Name",
+              "name": "conference_name",
+              "order": 2,
+              "value": "China National Conference on Chinese Computational Linguistics"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference City",
+              "name": "conference_city",
+              "order": 3,
+              "value": "Nanchang"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference Country",
+              "name": "conference_country",
+              "order": 4,
+              "value": "China"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference Year",
+              "name": "conference_year",
+              "order": 5,
+              "value": "2022"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference Start Date",
+              "name": "conference_start_date",
+              "order": 7,
+              "value": "14 October 2022"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference End Date",
+              "name": "conference_end_date",
+              "order": 8,
+              "value": "16 October 2022"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference Number",
+              "name": "conference_number",
+              "order": 9,
+              "value": "21"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference ID",
+              "name": "conference_id",
+              "order": 10,
+              "value": "cncl2022"
+            },
+            {
+              "group": {
+                "label": "Conference Information",
+                "name": "ConferenceInfo"
+              },
+              "label": "Conference URL",
+              "name": "conference_url",
+              "order": 11,
+              "value": "http://cips-cl.org/static/CCL2022/en/index.html"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Type",
+              "name": "type",
+              "order": 1,
+              "value": "Double-blind"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Conference Management System",
+              "name": "conference_management_system",
+              "order": 2,
+              "value": "www.softconf.com"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Number of Submissions Sent for Review",
+              "name": "number_of_submissions_sent_for_review",
+              "order": 3,
+              "value": "293"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Number of Full Papers Accepted",
+              "name": "number_of_full_papers_accepted",
+              "order": 4,
+              "value": "22"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Number of Short Papers Accepted",
+              "name": "number_of_short_papers_accepted",
+              "order": 5,
+              "value": "0"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Acceptance Rate of Full Papers",
+              "name": "acceptance_rate_of_full_papers",
+              "order": 6,
+              "value": "8% - The value is computed by the equation \"Number of Full Papers Accepted / Number of Submissions Sent for Review * 100\" and then rounded to a whole number."
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Average Number of Reviews per Paper",
+              "name": "average_number_of_reviews_per_paper",
+              "order": 7,
+              "value": "3"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Average Number of Papers per Reviewer",
+              "name": "average_number_of_papers_per_reviewer",
+              "order": 8,
+              "value": "3"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "External Reviewers Involved",
+              "name": "external_reviewers_involved",
+              "order": 9,
+              "value": "Yes"
+            },
+            {
+              "group": {
+                "label": "Peer Review Information (provided by the conference organizers)",
+                "name": "ConfEventPeerReviewInformation"
+              },
+              "label": "Additional Info on Review Process",
+              "name": "additional_info_on_review_process",
+              "order": 10,
+              "value": "293 submissions included both Chinese and English papers."
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Sun",
+              "given": "Meng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Huang",
+              "given": "Degen",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Lecture Notes in Computer Science",
+            "Chinese Computational Linguistics"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "link.springer.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                5
+              ]
+            ],
+            "date-time": "2022-10-05T23:03:52Z",
+            "timestamp": 1665011032000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                5
+              ]
+            ],
+            "date-time": "2024-10-05T07:40:19Z",
+            "timestamp": 1728114019000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2025-03-25T17:03:05Z",
+            "timestamp": 1742922185683,
+            "version": "3.40.3"
+          },
+          "is-referenced-by-count": 1,
+          "isbn-type": [
+            {
+              "type": "print",
+              "value": "9783031183140"
+            },
+            {
+              "type": "electronic",
+              "value": "9783031183157"
+            }
+          ],
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0302-9743"
+            },
+            {
+              "type": "electronic",
+              "value": "1611-3349"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.springer.com/tdm",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    1,
+                    1
+                  ]
+                ],
+                "date-time": "2022-01-01T00:00:00Z",
+                "timestamp": 1640995200000
+              }
+            },
+            {
+              "URL": "https://www.springer.com/tdm",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    1,
+                    1
+                  ]
+                ],
+                "date-time": "2022-01-01T00:00:00Z",
+                "timestamp": 1640995200000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/978-3-031-18315-7_3",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "page": "31-47",
+          "prefix": "10.1007",
+          "published": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                6
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "publisher": "Springer International Publishing",
+          "publisher-location": "Cham",
+          "reference": [
+            {
+              "DOI": "10.18653/v1/S15-2045",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR1",
+              "unstructured": "Agirre, E., et al.: SemEval-2015 task 2: semantic textual similarity, English, Spanish and pilot on interpretability. In: Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval 2015), pp. 252–263 (2015)"
+            },
+            {
+              "DOI": "10.3115/v1/S14-2010",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR2",
+              "unstructured": "Agirre, E., et al.: SemEval-2014 task 10: multilingual semantic textual similarity. In: Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014), pp. 81–91 (2014)"
+            },
+            {
+              "DOI": "10.18653/v1/S16-1081",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR3",
+              "unstructured": "Agirre, E., et al.: SemEval-2016 task 1: semantic textual similarity, monolingual and cross-lingual evaluation. In: SemEval-2016. 10th International Workshop on Semantic Evaluation, 16–17 June 2016, San Diego, CA, pp. 497–511. ACL (Association for Computational Linguistics), Stroudsburg (2016)"
+            },
+            {
+              "key": "3_CR4",
+              "unstructured": "Agirre, E., Cer, D., Diab, M., Gonzalez-Agirre, A.: SemEval-2012 task 6: a pilot on semantic textual similarity. In: * SEM 2012: The First Joint Conference on Lexical and Computational Semantics-Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation (SemEval 2012), pp. 385–393 (2012)"
+            },
+            {
+              "key": "3_CR5",
+              "unstructured": "Agirre, E., Cer, D., Diab, M., Gonzalez-Agirre, A., Guo, W.: * SEM 2013 shared task: semantic textual similarity. In: Second Joint Conference on Lexical and Computational Semantics (* SEM), Volume 1: Proceedings of the Main Conference and the Shared Task: Semantic Textual Similarity, pp. 32–43 (2013)"
+            },
+            {
+              "DOI": "10.18653/v1/D15-1075",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR6",
+              "unstructured": "Bowman, S., Angeli, G., Potts, C., Manning, C.D.: A large annotated corpus for learning natural language inference. In: Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pp. 632–642 (2015)"
+            },
+            {
+              "key": "3_CR7",
+              "unstructured": "Carlsson, F., Gyllensten, A.C., Gogoulou, E., Hellqvist, E.Y., Sahlgren, M.: Semantic re-tuning with contrastive tension. In: International Conference on Learning Representations (2020)"
+            },
+            {
+              "DOI": "10.18653/v1/S17-2001",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR8",
+              "unstructured": "Cer, D., Diab, M., Agirre, E., Lopez-Gazpio, I., Specia, L.: SemEval-2017 task 1: semantic textual similarity-multilingual and cross-lingual focused evaluation. arXiv preprint arXiv:1708.00055 (2017)"
+            },
+            {
+              "DOI": "10.18653/v1/D18-2029",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR9",
+              "unstructured": "Cer, D., et al.: Universal sentence encoder for English. In: Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations, pp. 169–174 (2018)"
+            },
+            {
+              "key": "3_CR10",
+              "unstructured": "Chen, T., Kornblith, S., Norouzi, M., Hinton, G.: A simple framework for contrastive learning of visual representations. In: International Conference on Machine Learning, pp. 1597–1607. PMLR (2020)"
+            },
+            {
+              "key": "3_CR11",
+              "unstructured": "Chen, T., Luo, C., Li, L.: Intriguing properties of contrastive losses. In: Advances in Neural Information Processing Systems, vol. 34 (2021)"
+            },
+            {
+              "DOI": "10.1145/3097983.3098202",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR12",
+              "unstructured": "Chen, T., Sun, Y., Shi, Y., Hong, L.: On sampling strategies for neural network-based collaborative filtering. In: Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp. 767–776 (2017)"
+            },
+            {
+              "DOI": "10.1109/CVPR.2005.202",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR13",
+              "unstructured": "Chopra, S., Hadsell, R., LeCun, Y.: Learning a similarity metric discriminatively, with application to face verification. In: 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR 2005), vol. 1, pp. 539–546. IEEE (2005)"
+            },
+            {
+              "DOI": "10.18653/v1/D17-1070",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR14",
+              "unstructured": "Conneau, A., Kiela, D., Schwenk, H., Barrault, L., Bordes, A.: Supervised learning of universal sentence representations from natural language inference data. In: Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pp. 670–680. Association for Computational Linguistics (2017)"
+            },
+            {
+              "key": "3_CR15",
+              "unstructured": "Conneau, A., Kiela, D.: SentEval: an evaluation toolkit for universal sentence representations. In: Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018) (2018)"
+            },
+            {
+              "key": "3_CR16",
+              "unstructured": "Devlin, J., Chang, M.W., Lee, K., Toutanova, K.: BERT: pre-training of deep bidirectional transformers for language understanding. In: NAACL-HLT (1) (2019)"
+            },
+            {
+              "DOI": "10.18653/v1/2021.emnlp-main.552",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR17",
+              "unstructured": "Gao, T., Yao, X., Chen, D.: SimCSE: simple contrastive learning of sentence embeddings. In: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pp. 6894–6910 (2021)"
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.72",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR18",
+              "unstructured": "Giorgi, J., Nitski, O., Wang, B., Bader, G.: DeCLUTR: deep contrastive learning for unsupervised textual representations. In: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pp. 879–895 (2021)"
+            },
+            {
+              "key": "3_CR19",
+              "unstructured": "Grill, J.B., et al.: Bootstrap your own latent-a new approach to self-supervised learning. In: Advances in Neural Information Processing Systems, vol. 33, pp. 21271–21284 (2020)"
+            },
+            {
+              "DOI": "10.18653/v1/N16-1162",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR20",
+              "unstructured": "Hill, F., Cho, K., Korhonen, A.: Learning distributed representations of sentences from unlabelled data. In: Proceedings of NAACL-HLT, pp. 1367–1377 (2016)"
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.197",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR21",
+              "unstructured": "Kim, T., Yoo, K.M., Lee, S.G.: Self-guided contrastive learning for BERT sentence representations. In: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pp. 2528–2540 (2021)"
+            },
+            {
+              "key": "3_CR22",
+              "unstructured": "Kiros, R., et al.: Skip-thought vectors. In: Advances in Neural Information Processing Systems, pp. 3294–3302 (2015)"
+            },
+            {
+              "DOI": "10.18653/v1/2020.emnlp-main.120",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR23",
+              "unstructured": "Lee, H., Hudson, D.A., Lee, K., Manning, C.D.: SLM: learning a discourse language representation with sentence unshuffling. In: Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 1551–1562 (2020)"
+            },
+            {
+              "DOI": "10.18653/v1/2020.emnlp-main.733",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR24",
+              "unstructured": "Li, B., Zhou, H., He, J., Wang, M., Yang, Y., Li, L.: On the sentence embeddings from pre-trained language models. In: Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 9119–9130 (2020)"
+            },
+            {
+              "DOI": "10.18653/v1/2022.emnlp-main.59",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR25",
+              "unstructured": "Li, D., et al.: VIRT: improving representation-based models for text matching through virtual interaction. arXiv preprint arXiv:2112.04195 (2021)"
+            },
+            {
+              "DOI": "10.18653/v1/2021.emnlp-main.109",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR26",
+              "unstructured": "Liu, F., Vulić, I., Korhonen, A., Collier, N.: Fast, effective, and self-supervised: transforming masked language models into universal lexical and sentence encoders. In: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pp. 1442–1459 (2021)"
+            },
+            {
+              "key": "3_CR27",
+              "unstructured": "Liu, Y., et al.: RoBERTa: a robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692 (2019)"
+            },
+            {
+              "key": "3_CR28",
+              "unstructured": "Logeswaran, L., Lee, H.: An efficient framework for learning sentence representations. In: International Conference on Learning Representations (2018)"
+            },
+            {
+              "key": "3_CR29",
+              "unstructured": "Lu, Y., et al.: Ernie-search: bridging cross-encoder with dual-encoder via self on-the-fly distillation for dense passage retrieval. arXiv preprint arXiv:2205.09153 (2022)"
+            },
+            {
+              "key": "3_CR30",
+              "unstructured": "Marelli, M., et al.: A sick cure for the evaluation of compositional distributional semantic models. In: Lrec, pp. 216–223. Reykjavik (2014)"
+            },
+            {
+              "key": "3_CR31",
+              "unstructured": "Mikolov, T., Sutskever, I., Chen, K., Corrado, G.S., Dean, J.: Distributed representations of words and phrases and their compositionality. In: Advances in Neural Information Processing Systems, pp. 3111–3119 (2013)"
+            },
+            {
+              "DOI": "10.3115/1075671.1075788",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR32",
+              "unstructured": "Miller, G.A.: WordNet: a lexical database for English. In: Human Language Technology: Proceedings of a Workshop Held at Plainsboro, New Jersey, 21–24 March 1993 (1993)"
+            },
+            {
+              "DOI": "10.3115/v1/D14-1162",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR33",
+              "unstructured": "Pennington, J., Socher, R., Manning, C.D.: GloVe: global vectors for word representation. In: Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 1532–1543 (2014)"
+            },
+            {
+              "DOI": "10.18653/v1/D19-1410",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR34",
+              "unstructured": "Reimers, N., et al.: Sentence-BERT: sentence embeddings using Siamese BERT-networks. In: Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing, pp. 671–688. Association for Computational Linguistics (2019)"
+            },
+            {
+              "key": "3_CR35",
+              "unstructured": "Robinson, J., Sun, L., Yu, K., Batmanghelich, K., Jegelka, S., Sra, S.: Can contrastive learning avoid shortcut solutions? In: Advances in Neural Information Processing Systems, vol. 34 (2021)"
+            },
+            {
+              "key": "3_CR36",
+              "unstructured": "Su, J., Cao, J., Liu, W., Ou, Y.: Whitening sentence representations for better semantics and faster retrieval. arXiv preprint arXiv:2103.15316 (2021)"
+            },
+            {
+              "key": "3_CR37",
+              "unstructured": "Vaswani, A., et al.: Attention is all you need. In: Advances in Neural Information Processing Systems, vol. 30 (2017)"
+            },
+            {
+              "DOI": "10.18653/v1/2020.emnlp-main.30",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR38",
+              "unstructured": "Wang, S., et al.: Cross-thought for sentence encoder pre-training. In: Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 412–421 (2020)"
+            },
+            {
+              "DOI": "10.18653/v1/2022.emnlp-main.608",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR39",
+              "unstructured": "Wang, Z., Wang, W., Zhu, H., Liu, M., Qin, B., Wei, F.: Distilled dual-encoder model for vision-language understanding. arXiv preprint arXiv:2112.08723 (2021)"
+            },
+            {
+              "DOI": "10.18653/v1/N18-1101",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR40",
+              "unstructured": "Williams, A., Nangia, N., Bowman, S.: A broad-coverage challenge corpus for sentence understanding through inference. In: Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers), pp. 1112–1122 (2018)"
+            },
+            {
+              "key": "3_CR41",
+              "unstructured": "Wu, Z., Wang, S., Gu, J., Khabsa, M., Sun, F., Ma, H.: CLEAR: contrastive learning for sentence representation. arXiv preprint arXiv:2012.15466 (2020)"
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.393",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR42",
+              "unstructured": "Yan, Y., Li, R., Wang, S., Zhang, F., Wu, W., Xu, W.: ConSERT: a contrastive framework for self-supervised sentence representation transfer. In: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pp. 5065–5075 (2021)"
+            },
+            {
+              "DOI": "10.18653/v1/2021.emnlp-main.502",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR43",
+              "unstructured": "Yang, Z., Yang, Y., Cer, D., Law, J., Darve, E.: Universal sentence representation learning with conditional masked language model. In: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pp. 6216–6228 (2021)"
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.402",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR44",
+              "unstructured": "Zhang, Y., He, R., Liu, Z., Bing, L., Li, H.: Bootstrapped unsupervised sentence representation learning. In: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pp. 5168–5180 (2021)"
+            },
+            {
+              "DOI": "10.18653/v1/2020.emnlp-main.124",
+              "doi-asserted-by": "crossref",
+              "key": "3_CR45",
+              "unstructured": "Zhang, Y., He, R., Liu, Z., Lim, K.H., Bing, L.: An unsupervised sentence embedding method by mutual information maximization. In: Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 1601–1610 (2020)"
+            }
+          ],
+          "reference-count": 45,
+          "references-count": 45,
+          "resource": {
+            "primary": {
+              "URL": "https://link.springer.com/10.1007/978-3-031-18315-7_3"
+            }
+          },
+          "score": 39.12043,
+          "source": "Crossref",
+          "title": [
+            "ConIsI: A Contrastive Framework with Inter-sentence Interaction for Self-supervised Sentence Representation"
+          ],
+          "type": "book-chapter",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy"
+        },
+        {
+          "DOI": "10.1109/tpami.2023.3308189/mm1",
+          "URL": "https://doi.org/10.1109/tpami.2023.3308189/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Wu",
+              "given": "Min",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                29
+              ]
+            ],
+            "date-time": "2023-08-29T13:46:04Z",
+            "timestamp": 1693316764000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T15:10:13Z",
+            "timestamp": 1769785813000
+          },
+          "description": "The supplemental material contains material that is not included within the article itself.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:36:29Z",
+            "timestamp": 1772159789538,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/TPAMI.2023.3308189",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx7/34/10308548/10233092/supp1-3308189.pdf?arnumber=10233092"
+            }
+          },
+          "score": 38.69427,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Representation Learning for Semi-Supervised Time-Series Classification_supp1-3308189.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.1021/acs.jcim.4c00157.s001",
+          "URL": "https://doi.org/10.1021/acs.jcim.4c00157.s001",
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                14
+              ]
+            ],
+            "date-time": "2024-03-14T19:00:20Z",
+            "timestamp": 1710442820000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2024-03-25T03:42:10Z",
+            "timestamp": 1711338130000
+          },
+          "description": "Supplemental Information for 10.1021/acs.jcim.4c00157",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                26
+              ]
+            ],
+            "date-time": "2026-02-26T17:37:15Z",
+            "timestamp": 1772127435972,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "316",
+          "prefix": "10.1021",
+          "publisher": "American Chemical Society (ACS)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1021/acs.jcim.4c00157",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.4c00157/suppl_file/ci4c00157_si_001.pdf"
+            }
+          },
+          "score": 37.97365,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Molecular Representation Learning with a Chemical Synthesis Knowledge Graph"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.1145/3394171.3413694",
+          "URL": "https://doi.org/10.1145/3394171.3413694",
+          "alternative-id": [
+            "10.1145/3394171.3413694",
+            "10.1145/3394171"
+          ],
+          "assertion": [
+            {
+              "group": {
+                "label": "Publication History",
+                "name": "publication_history"
+              },
+              "label": "Published",
+              "name": "published",
+              "order": 2,
+              "value": "2020-10-12"
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "The University of Tokyo, Tokyo, Japan"
+                }
+              ],
+              "family": "Tao",
+              "given": "Li",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "The University of Tokyo, Tokyo, Japan"
+                }
+              ],
+              "family": "Wang",
+              "given": "Xueting",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "The University of Tokyo, Tokyo, Japan"
+                }
+              ],
+              "family": "Yamasaki",
+              "given": "Toshihiko",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Proceedings of the 28th ACM International Conference on Multimedia"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "dl.acm.org"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                12
+              ]
+            ],
+            "date-time": "2020-10-12T12:27:35Z",
+            "timestamp": 1602505655000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2025-06-17T22:01:15Z",
+            "timestamp": 1750197675000
+          },
+          "event": {
+            "acronym": "MM '20",
+            "location": "Seattle WA USA",
+            "name": "MM '20: The 28th ACM International Conference on Multimedia",
+            "sponsor": [
+              "SIGMM ACM Special Interest Group on Multimedia"
+            ]
+          },
+          "funder": [
+            {
+              "award": [
+                "JP19K20289 and JP18H03339"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "JP19K20289 and JP18H03339"
+                  ]
+                }
+              ],
+              "name": "Japan Society for the Promotion of Science (JSPS)"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                12
+              ]
+            ],
+            "date-time": "2026-05-12T16:11:47Z",
+            "timestamp": 1778602307861,
+            "version": "3.51.4"
+          },
+          "is-referenced-by-count": 84,
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                12
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://www.acm.org/publications/policies/copyright_policy#Background",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    10,
+                    12
+                  ]
+                ],
+                "date-time": "2020-10-12T00:00:00Z",
+                "timestamp": 1602460800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://dl.acm.org/doi/10.1145/3394171.3413694",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://dl.acm.org/doi/pdf/10.1145/3394171.3413694",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "320",
+          "page": "2193-2201",
+          "prefix": "10.1145",
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                12
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                12
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                12
+              ]
+            ]
+          },
+          "publisher": "ACM",
+          "publisher-location": "New York, NY, USA",
+          "reference": [
+            {
+              "DOI": "10.1007/978-3-030-01267-0_47",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_1_1"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.502",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_2_1"
+            },
+            {
+              "author": "Chen Ting",
+              "key": "e_1_3_2_2_3_1",
+              "unstructured": "Ting Chen , Simon Kornblith , Mohammad Norouzi , and Geoffrey Hinton . 2020. A simple framework for contrastive learning of visual representations. arXiv preprint arXiv:2002.05709 ( 2020 ). Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. arXiv preprint arXiv:2002.05709 (2020).",
+              "volume-title": "A simple framework for contrastive learning of visual representations. arXiv preprint arXiv:2002.05709",
+              "year": "2020"
+            },
+            {
+              "key": "e_1_3_2_2_4_1",
+              "unstructured": "Christoph Feichtenhofer Axel Pinz and Richard Wildes. 2016a. Spatiotemporal residual networks for video action recognition. In Advances in neural information processing systems (NeurIPS). 3468--3476.  Christoph Feichtenhofer Axel Pinz and Richard Wildes. 2016a. Spatiotemporal residual networks for video action recognition. In Advances in neural information processing systems (NeurIPS). 3468--3476."
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.213",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_5_1"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.607",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_6_1"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00586",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_7_1"
+            },
+            {
+              "author": "Gidaris Spyros",
+              "key": "e_1_3_2_2_8_1",
+              "unstructured": "Spyros Gidaris , Praveer Singh , and Nikos Komodakis .2018. Unsupervised representation learning by predicting image rotations. arXiv preprint arXiv:1803.07728 ( 2018 ). Spyros Gidaris, Praveer Singh, and Nikos Komodakis.2018. Unsupervised representation learning by predicting image rotations. arXiv preprint arXiv:1803.07728 (2018).",
+              "volume-title": "Unsupervised representation learning by predicting image rotations. arXiv preprint arXiv:1803.07728",
+              "year": "2018"
+            },
+            {
+              "article-title": "The",
+              "author": "Goyal Raghav",
+              "first-page": "5",
+              "journal-title": "In ICCV",
+              "key": "e_1_3_2_2_9_1",
+              "unstructured": "Raghav Goyal , Samira Ebrahimi Kahou , Vincent Michalski , Joanna Materzynska , Susanne Westphal , Heuna Kim , Valentin Haenel , Ingo Fruend , Peter Yianilos , Moritz Mueller-Freitag , 2017 . The \" Something Something\" Video Database for Learning and Evaluating Visual Common Sense.. In ICCV , Vol. 1. 5 . Raghav Goyal, Samira Ebrahimi Kahou, Vincent Michalski, Joanna Materzynska, Susanne Westphal, Heuna Kim, Valentin Haenel, Ingo Fruend, Peter Yianilos, Moritz Mueller-Freitag, et almbox. 2017. The\" Something Something\" Video Database for Learning and Evaluating Visual Common Sense.. In ICCV, Vol. 1. 5.",
+              "volume": "1",
+              "year": "2017"
+            },
+            {
+              "author": "Gutmann Michael",
+              "key": "e_1_3_2_2_10_1",
+              "unstructured": "Michael Gutmann and Aapo Hyv\"arinen. 2010 . Noise-contrastive estimation: A new estimation principle for unnormalized statistical models . In Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics. 297--304 . Michael Gutmann and Aapo Hyv\"arinen. 2010. Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics. 297--304.",
+              "volume-title": "Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics. 297--304",
+              "year": "2010"
+            },
+            {
+              "author": "Hadsell Raia",
+              "key": "e_1_3_2_2_11_1",
+              "unstructured": "Raia Hadsell , Sumit Chopra , and Yann LeCun . 2006 . Dimensionality reduction by learning an invariant mapping . In 2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06) , Vol. 2 . IEEE, 1735--1742. Raia Hadsell, Sumit Chopra, and Yann LeCun. 2006. Dimensionality reduction by learning an invariant mapping. In 2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06), Vol. 2. IEEE, 1735--1742.",
+              "volume": "2",
+              "volume-title": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00685",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_12_1"
+            },
+            {
+              "author": "He Kaiming",
+              "key": "e_1_3_2_2_13_1",
+              "unstructured": "Kaiming He , Haoqi Fan , Yuxin Wu , Saining Xie , and Ross Girshick . 2019. Momentum contrast for unsupervised visual representation learning. arXiv preprint arXiv:1911.05722 ( 2019 ). Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. 2019. Momentum contrast for unsupervised visual representation learning. arXiv preprint arXiv:1911.05722 (2019).",
+              "volume-title": "Momentum contrast for unsupervised visual representation learning. arXiv preprint arXiv:1911.05722",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.90",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_14_1"
+            },
+            {
+              "key": "e_1_3_2_2_15_1",
+              "unstructured": "Alexander Hermans Lucas Beyer and Bastian Leibe. 2017. In defense of the triplet loss for person re-identification. arXiv preprint arXiv:1703.07737 (2017).  Alexander Hermans Lucas Beyer and Bastian Leibe. 2017. In defense of the triplet loss for person re-identification. arXiv preprint arXiv:1703.07737 (2017)."
+            },
+            {
+              "author": "Hinton Geoffrey E",
+              "key": "e_1_3_2_2_16_1",
+              "unstructured": "Geoffrey E Hinton and Ruslan R Salakhutdinov . 2006. Reducing the dimensionality of data with neural networks. science , Vol. 313 , 5786 ( 2006 ), 504--507. Geoffrey E Hinton and Ruslan R Salakhutdinov. 2006. Reducing the dimensionality of data with neural networks. science, Vol. 313, 5786 (2006), 504--507.",
+              "volume-title": "Reducing the dimensionality of data with neural networks. science",
+              "year": "2006"
+            },
+            {
+              "author": "Hjelm R Devon",
+              "key": "e_1_3_2_2_17_1",
+              "unstructured": "R Devon Hjelm , Alex Fedorov , Samuel Lavoie-Marchildon , Karan Grewal , Phil Bachman , Adam Trischler , and Yoshua Bengio . 2018. Learning deep representations by mutual information estimation and maximization. arXiv preprint arXiv:1808.06670 ( 2018 ). R Devon Hjelm, Alex Fedorov, Samuel Lavoie-Marchildon, Karan Grewal, Phil Bachman, Adam Trischler, and Yoshua Bengio. 2018. Learning deep representations by mutual information estimation and maximization. arXiv preprint arXiv:1808.06670 (2018).",
+              "volume-title": "Learning deep representations by mutual information estimation and maximization. arXiv preprint arXiv:1808.06670",
+              "year": "2018"
+            },
+            {
+              "author": "Kay Will",
+              "key": "e_1_3_2_2_18_1",
+              "unstructured": "Will Kay , Joao Carreira , Karen Simonyan , Brian Zhang , Chloe Hillier , Sudheendra Vijayanarasimhan , Fabio Viola , Tim Green , Trevor Back , Paul Natsev , et almbox . 2017 . The kinetics human action video dataset. arXiv preprint arXiv:1705.06950 (2017). Will Kay, Joao Carreira, Karen Simonyan, Brian Zhang, Chloe Hillier, Sudheendra Vijayanarasimhan, Fabio Viola, Tim Green, Trevor Back, Paul Natsev, et almbox. 2017. The kinetics human action video dataset. arXiv preprint arXiv:1705.06950 (2017).",
+              "volume-title": "et almbox",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018545",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_19_1"
+            },
+            {
+              "author": "Kingma Diederik P",
+              "key": "e_1_3_2_2_20_1",
+              "unstructured": "Diederik P Kingma and Max Welling . 2013. Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114 ( 2013 ). Diederik P Kingma and Max Welling. 2013. Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114 (2013).",
+              "volume-title": "Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114",
+              "year": "2013"
+            },
+            {
+              "key": "e_1_3_2_2_21_1",
+              "unstructured": "Alex Krizhevsky Ilya Sutskever and Geoffrey E Hinton. 2012. Imagenet classification with deep convolutional neural networks. In Advances in neural information processing systems. 1097--1105.  Alex Krizhevsky Ilya Sutskever and Geoffrey E Hinton. 2012. Imagenet classification with deep convolutional neural networks. In Advances in neural information processing systems. 1097--1105."
+            },
+            {
+              "DOI": "10.1109/ICCV.2011.6126543",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_22_1"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.79",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_23_1"
+            },
+            {
+              "author": "Luo Dezhao",
+              "key": "e_1_3_2_2_24_1",
+              "unstructured": "Dezhao Luo , Chang Liu , Yu Zhou , Dongbao Yang , Can Ma , Qixiang Ye , and Weiping Wang . 2020. Video Cloze Procedure for Self-Supervised Spatio-Temporal Learning. arXiv preprint arXiv:2001.00294 ( 2020 ). Dezhao Luo, Chang Liu, Yu Zhou, Dongbao Yang, Can Ma, Qixiang Ye, and Weiping Wang. 2020. Video Cloze Procedure for Self-Supervised Spatio-Temporal Learning. arXiv preprint arXiv:2001.00294 (2020).",
+              "volume-title": "Video Cloze Procedure for Self-Supervised Spatio-Temporal Learning. arXiv preprint arXiv:2001.00294",
+              "year": "2020"
+            },
+            {
+              "article-title": "Visualizing data using t-SNE",
+              "author": "van der Maaten Laurens",
+              "first-page": "2579",
+              "journal-title": "Journal of machine learning research",
+              "key": "e_1_3_2_2_25_1",
+              "unstructured": "Laurens van der Maaten and Geoffrey Hinton . 2008 . Visualizing data using t-SNE . Journal of machine learning research , Vol. 9 , Nov (2008), 2579 -- 2605 . Laurens van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research, Vol. 9, Nov (2008), 2579--2605.",
+              "volume": "9",
+              "year": "2008"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46448-0_32",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_26_1"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46466-4_5",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_27_1"
+            },
+            {
+              "author": "van den Oord Aaron",
+              "key": "e_1_3_2_2_28_1",
+              "unstructured": "Aaron van den Oord , Yazhe Li , and Oriol Vinyals . 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 ( 2018 ). Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018).",
+              "volume-title": "Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.278",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_29_1"
+            },
+            {
+              "author": "Sayed Nawid",
+              "key": "e_1_3_2_2_30_1",
+              "unstructured": "Nawid Sayed , Biagio Brattoli , and Björn Ommer . 2018 . Cross and learn: Cross-modal self-supervision . In German Conference on Pattern Recognition. Springer, 228--243 . Nawid Sayed, Biagio Brattoli, and Björn Ommer. 2018. Cross and learn: Cross-modal self-supervision. In German Conference on Pattern Recognition. Springer, 228--243.",
+              "volume-title": "German Conference on Pattern Recognition. Springer, 228--243",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/ICRA.2018.8462891",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_31_1"
+            },
+            {
+              "key": "e_1_3_2_2_32_1",
+              "unstructured": "Karen Simonyan and Andrew Zisserman. 2014. Two-stream convolutional networks for action recognition in videos. In Advances in neural information processing systems (NeurIPS). 568--576.  Karen Simonyan and Andrew Zisserman. 2014. Two-stream convolutional networks for action recognition in videos. In Advances in neural information processing systems (NeurIPS). 568--576."
+            },
+            {
+              "author": "Soomro Khurram",
+              "key": "e_1_3_2_2_33_1",
+              "unstructured": "Khurram Soomro , Amir Roshan Zamir, and Mubarak Shah . 2012 . UCF101: A dataset of 101 human actions classes from videos in the wild. arXiv preprint arXiv:1212.0402 (2012). Khurram Soomro, Amir Roshan Zamir, and Mubarak Shah. 2012. UCF101: A dataset of 101 human actions classes from videos in the wild. arXiv preprint arXiv:1212.0402 (2012).",
+              "volume-title": "Amir Roshan Zamir, and Mubarak Shah",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1109/CVPR.2015.7298594",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_34_1"
+            },
+            {
+              "author": "Tao Li",
+              "key": "e_1_3_2_2_35_1",
+              "unstructured": "Li Tao , Xueting Wang , and Toshihiko Yamasaki . 2020. Rethinking Motion Representation: Residual Frames with 3D ConvNets for Better Action Recognition. arXiv preprint arXiv:2001.05661 ( 2020 ). Li Tao, Xueting Wang, and Toshihiko Yamasaki. 2020. Rethinking Motion Representation: Residual Frames with 3D ConvNets for Better Action Recognition. arXiv preprint arXiv:2001.05661 (2020).",
+              "volume-title": "Rethinking Motion Representation: Residual Frames with 3D ConvNets for Better Action Recognition. arXiv preprint arXiv:2001.05661",
+              "year": "2020"
+            },
+            {
+              "author": "Tian Yonglong",
+              "key": "e_1_3_2_2_36_1",
+              "unstructured": "Yonglong Tian , Dilip Krishnan , and Phillip Isola . 2019. Contrastive multiview coding. arXiv preprint arXiv:1906.05849 ( 2019 ). Yonglong Tian, Dilip Krishnan, and Phillip Isola. 2019. Contrastive multiview coding. arXiv preprint arXiv:1906.05849 (2019).",
+              "volume-title": "Contrastive multiview coding. arXiv preprint arXiv:1906.05849",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ICCV.2015.510",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_37_1"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00675",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_38_1"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00413",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_39_1"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46484-8_2",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_40_1"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00393",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_41_1"
+            },
+            {
+              "DOI": "10.1007/978-3-030-01267-0_19",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_42_1"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.01058",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_43_1"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46487-9_40",
+              "doi-asserted-by": "publisher",
+              "key": "e_1_3_2_2_44_1"
+            }
+          ],
+          "reference-count": 44,
+          "references-count": 44,
+          "resource": {
+            "primary": {
+              "URL": "https://dl.acm.org/doi/10.1145/3394171.3413694"
+            }
+          },
+          "score": 35.13926,
+          "source": "Crossref",
+          "title": [
+            "Self-supervised Video Representation Learning Using Inter-intra Contrastive Framework"
+          ],
+          "type": "proceedings-article",
+          "update-policy": "https://doi.org/10.1145/crossmark-policy"
+        },
+        {
+          "DOI": "10.2139/ssrn.4698444",
+          "URL": "https://doi.org/10.2139/ssrn.4698444",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "ye",
+              "given": "zhengxin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Schuller",
+              "given": "Björn  W.",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                17
+              ]
+            ],
+            "date-time": "2024-01-17T20:21:55Z",
+            "timestamp": 1705522915000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                17
+              ]
+            ],
+            "date-time": "2024-01-17T20:21:56Z",
+            "timestamp": 1705522916000
+          },
+          "group-title": "SSRN",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                9
+              ]
+            ],
+            "date-time": "2026-03-09T07:39:48Z",
+            "timestamp": 1773041988528,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "member": "78",
+          "posted": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4698444"
+            }
+          },
+          "score": 35.05942,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Trading Through Earnings Seasons Using Self-Supervised Contrastive Representation Learning"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.1007/s13042-025-02690-1",
+          "ISSN": [
+            "1868-8071",
+            "1868-808X"
+          ],
+          "URL": "https://doi.org/10.1007/s13042-025-02690-1",
+          "alternative-id": [
+            "2690"
+          ],
+          "assertion": [
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Received",
+              "name": "received",
+              "order": 1,
+              "value": "28 January 2024"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Accepted",
+              "name": "accepted",
+              "order": 2,
+              "value": "22 May 2025"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "First Online",
+              "name": "first_online",
+              "order": 3,
+              "value": "7 June 2025"
+            },
+            {
+              "group": {
+                "label": "Declarations",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 1
+            },
+            {
+              "group": {
+                "label": "Conflict of interest",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 2,
+              "value": "The authors declare no competing interests."
+            }
+          ],
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Wu",
+              "given": "Jian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Qiu",
+              "given": "Dong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "International Journal of Machine Learning and Cybernetics"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "link.springer.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                7
+              ]
+            ],
+            "date-time": "2025-06-07T13:50:56Z",
+            "timestamp": 1749304256000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                13
+              ]
+            ],
+            "date-time": "2025-12-13T09:42:09Z",
+            "timestamp": 1765618929000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "12171065 and 11671001"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "12171065 and 11671001"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "crossref",
+              "id": [
+                {
+                  "asserted-by": "crossref",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundations of China"
+            },
+            {
+              "award": [
+                "GXR-6BG242404"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "GXR-6BG242404"
+                  ]
+                }
+              ],
+              "name": "the major talent project of Guangxi"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                13
+              ]
+            ],
+            "date-time": "2025-12-13T09:46:46Z",
+            "timestamp": 1765619206729,
+            "version": "3.48.0"
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1868-8071"
+            },
+            {
+              "type": "electronic",
+              "value": "1868-808X"
+            }
+          ],
+          "issue": "12",
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                7
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "12",
+            "published-print": {
+              "date-parts": [
+                [
+                  2025,
+                  12
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    6,
+                    7
+                  ]
+                ],
+                "date-time": "2025-06-07T00:00:00Z",
+                "timestamp": 1749254400000
+              }
+            },
+            {
+              "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    6,
+                    7
+                  ]
+                ],
+                "date-time": "2025-06-07T00:00:00Z",
+                "timestamp": 1749254400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/s13042-025-02690-1.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/article/10.1007/s13042-025-02690-1/fulltext.html",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/s13042-025-02690-1.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "page": "10265-10276",
+          "prefix": "10.1007",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                7
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                7
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                12
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference": [
+            {
+              "key": "2690_CR1",
+              "unstructured": "Trung NN, Van LN, Nguyen TH (2022) Unsupervised domain adaptation for text classification via meta self-paced learning. In: Proceedings of the 29th International Conference on computational linguistics, pp. 4741–4752"
+            },
+            {
+              "DOI": "10.1016/j.knosys.2023.110419",
+              "author": "L Jiang",
+              "doi-asserted-by": "publisher",
+              "journal-title": "Knowl-Based Syst",
+              "key": "2690_CR2",
+              "unstructured": "Jiang L, Li Y, Liao J et al (2023) Research on non-dependent aspect-level sentiment analysis. Knowl-Based Syst 266:110419",
+              "volume": "266",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1145/3539597.3570468",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR3",
+              "unstructured": "Huang Z, Yu P, Allan J (2023) Improving cross-lingual information retrieval on low-resource languages via optimal transport distillation. In: Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (WSDM ’23), New York, NY, USA, pp. 1048–1056, https://doi.org/10.1145/3539597.3570468"
+            },
+            {
+              "DOI": "10.18653/v1/n19-1423",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR4",
+              "unstructured": "Devlin J, Chang M, Lee K, Toutanova K (2019) BERT: pre-training of deep bidirectional transformers for language understanding. In: Proceedings of NAACL-HLT, pp. 4171-4186, https://doi.org/10.18653/v1/n19-1423"
+            },
+            {
+              "key": "2690_CR5",
+              "unstructured": "Gao J, He D, Tan X, Qin T, Wang L, Liu T-Y (2019) Representation degeneration problem in training natural language generation models. In: Proceedings of the 7th International Conference on Learning Representations (ICLR 2019), New Orleans, LA, USA, May 6-9"
+            },
+            {
+              "DOI": "10.3115/v1/D14-1162",
+              "doi-asserted-by": "crossref",
+              "key": "2690_CR6",
+              "unstructured": "Pennington J, Socher R, Manning CD (2014) Glove: global vectors for word representation. In: Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 1532–1543"
+            },
+            {
+              "DOI": "10.18653/v1/2021.emnlp-main.552",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR7",
+              "unstructured": "Gao T, Yao X, Chen D (2021) SimCSE: simple contrastive learning of sentence embeddings. In: Proceedings of the 2021 Conference on empirical methods in natural language processing, online and Punta Cana, Dominican Republic, pp. 6894–6910. https://doi.org/10.18653/v1/2021.emnlp-main.552"
+            },
+            {
+              "DOI": "10.18653/v1/2023.findings-acl.555",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR8",
+              "unstructured": "Deng J, Wan F, Yang T, Quan X, Wang R (2023) Clustering-aware negative sampling for unsupervised sentence representation. In: Findings of the Association for Computational Linguistics: ACL 2023, Toronto, Canada, pp. 8713–8729. https://doi.org/10.18653/v1/2023.findings-acl.555"
+            },
+            {
+              "DOI": "10.18653/v1/2022.acl-long.423",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR9",
+              "unstructured": "Zhou K, Zhang B, Zhao X, Wen J-R (2022) Debiased contrastive learning of unsupervised sentence representations. In: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), Dublin, Ireland, pp. 6120–6130, https://doi.org/10.18653/v1/2022.acl-long.423"
+            },
+            {
+              "key": "2690_CR10",
+              "unstructured": "Wu X, Gao C, Zang L, Han J, Wang Z, Hu S (2022) ESimCSE: Enhanced sample building method for contrastive learning of unsupervised sentence embedding. In: Proceedings of the 29th International Conference on Computational Linguistics, Gyeongju, Republic of Korea, pp. 3898–3907"
+            },
+            {
+              "key": "2690_CR11",
+              "unstructured": "Chen T, Kornblith S, Norouzi M, Hinton G (2020) A simple framework for contrastive learning of visual representations. In: Proceedings of the 37th International Conference on Machine Learning, vol. 119, ser. Proceedings of Machine Learning Research, H. D. III and A. Singh, Eds., Jul. 13-18, pp. 1597–1607. [Online]. Available: https://proceedings.mlr.press/v119/chen20j.html"
+            },
+            {
+              "key": "2690_CR12",
+              "unstructured": "Gidaris S, Singh P, Komodakis N (2018) Unsupervised representation learning by predicting image rotations. In: International Conference on Learning Representations. [Online]. Available: https://openreview.net/forum?id=S1v4N2l0-"
+            },
+            {
+              "key": "2690_CR13",
+              "unstructured": "Qu Y, Shen D, Shen Y, Sajeev S, Chen W, Han J (2021) CoDA: Contrast-enhanced and diversity-promoting data augmentation for natural language understanding. In: International Conference on Learning Representations. [Online]. Available: https://openreview.net/forum?id=Ozk9MrX1hvA"
+            },
+            {
+              "DOI": "10.1007/978-3-031-00129-1_11",
+              "author": "R Li",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR14",
+              "series-title": "Lecture Notes in Computer Science",
+              "unstructured": "Li R, Duan L, Xie G, Xiao S, Jiang W (2022) AdCSE: an adversarial method for contrastive learning of sentence embeddings. In: Bhattacharya A et al (eds) Database systems for advanced applications, vol 13247. Lecture Notes in Computer Science. Springer, Cham. https://doi.org/10.1007/978-3-031-00129-1_11",
+              "volume-title": "Database systems for advanced applications",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.393",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR15",
+              "unstructured": "Yan Y, Li R, Wang S, Zhang F, Wu W, Xu W (2021) ConSERT: a contrastive framework for self-supervised sentence representation transfer. In: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), Online, pp. 5065–5075, https://doi.org/10.18653/v1/2021.acl-long.393. [Online]. Available: https://aclanthology.org/2021.acl-long.393"
+            },
+            {
+              "DOI": "10.18653/v1/2022.emnlp-main.603",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR16",
+              "unstructured": "Jiang T, et al (2022) PromptBERT: improving BERT sentence embeddings with prompts. In: Proceedings of the 2022 Conference on empirical methods in natural language processing, Abu Dhabi, United Arab Emirates, pp. 8826–8837, https://doi.org/10.18653/v1/2022.emnlp-main.603"
+            },
+            {
+              "author": "CY Chuang",
+              "first-page": "8765",
+              "journal-title": "Adv Neural Inf Process Syst",
+              "key": "2690_CR17",
+              "unstructured": "Chuang CY, Robinson J, Lin YC et al (2020) Debiased contrastive learning. Adv Neural Inf Process Syst 33:8765–8775",
+              "volume": "33",
+              "year": "2020"
+            },
+            {
+              "key": "2690_CR18",
+              "unstructured": "Robinson J, Chuang C-Y, Sra S, Jegelka S (2021) Contrastive learning with hard negative samples. In: International Conference on learning representations. [Online]. Available: https://openreview.net/pdf?id=CR1XOQ0UTh-"
+            },
+            {
+              "DOI": "10.1609/aaai.v36i10.21428",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR19",
+              "unstructured": "Zhang Y, Zhang R, Mensah S, Liu X, Mao Y (2022) Unsupervised sentence representation via contrastive learning with mixing negatives. In: Proceedings of the AAAI Conference on artificial intelligence 36(10):11730–11738. https://doi.org/10.1609/aaai.v36i10.21428"
+            },
+            {
+              "DOI": "10.1145/3477495.3531823",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR20",
+              "unstructured": "Wang W, Ge L, Zhang J, Yang C (2022) Improving contrastive learning of sentence embeddings with case-augmented positives and retrieved negatives. In: Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, pp. 2159–2165, https://doi.org/10.1145/3477495.3531823. [Online]."
+            },
+            {
+              "DOI": "10.1016/j.inffus.2023.102065",
+              "author": "L Xu",
+              "doi-asserted-by": "publisher",
+              "journal-title": "Inform Fusion",
+              "key": "2690_CR21",
+              "unstructured": "Xu L, Xie H, Wang FL, Tao X, Wang W, Li Q (2024) Contrastive sentence representation learning with adaptive false negative cancellation. Inform Fusion 102:102065. https://doi.org/10.1016/j.inffus.2023.102065",
+              "volume": "102",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1109/CVPR52729.2023.02302",
+              "doi-asserted-by": "crossref",
+              "key": "2690_CR22",
+              "unstructured": "Jang T, Wang X (2023) Difficulty-based sampling for debiased contrastive representation learning. In: Proceedings of the IEEE/CVF Conference on computer vision and pattern recognition (CVPR), pp. 24039–24048"
+            },
+            {
+              "key": "2690_CR23",
+              "unstructured": "Wang T, Isola P (2020) Understanding contrastive representation learning through alignment and uniformity on the hypersphere. In: Proceedings of the 37th International Conference on Machine Learning (ICML’20), Art. no. 921"
+            },
+            {
+              "DOI": "10.1007/978-981-99-4752-2_35",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR24",
+              "unstructured": "Wang H, Dou Y (2023) SNCSE: contrastive learning for unsupervised sentence embedding with soft negative samples. In: Advanced Intelligent Computing Technology and Applications: 19th International Conference, ICIC (2023) Zhengzhou, China, August 10–13, 2023. Proceedings, Part IV, Berlin, Heidelberg: Springer-Verlag:419–431. https://doi.org/10.1007/978-981-99-4752-2_35. [Online]."
+            },
+            {
+              "key": "2690_CR25",
+              "unstructured": "Agirre E, Cer D, Diab M, Gonzalez-Agirre A (2012) SemEval-2012 Task 6: a pilot on semantic textual similarity. In: *SEM 2012: The First Joint Conference on Lexical and Computational Semantics – Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation (SemEval 2012), Montréal, Canada, Jun. 7-8, pp. 385–393. [Online]. Available: https://aclanthology.org/S12-1051"
+            },
+            {
+              "key": "2690_CR26",
+              "unstructured": "Agirre E, Cer D, Diab M, Gonzalez-Agirre A, Guo W (2013) SEM 2013 shared task: semantic textual similarity. In: Proceedings of the Second Joint Conference on Lexical and Computational Semantics (*SEM), Volume 1: Proceedings of the Main Conference and the Shared Task: Semantic Textual Similarity, Atlanta, Georgia, USA, pp. 32–43. [Online]. Available: https://aclanthology.org/S13-1004"
+            },
+            {
+              "DOI": "10.3115/v1/S14-2010",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR27",
+              "unstructured": "Agirre E, Banea C, Cardie C, Cer D, Diab M, Gonzalez-Agirre A, Guo W, Mihalcea R, Rigau G, Wiebe J (2014) SemEval-2014 Task 10: multilingual semantic textual similarity. In: Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014), Dublin, Ireland, pp. 81–91, https://doi.org/10.3115/v1/S14-2010. [Online]. Available: https://aclanthology.org/S14-2010"
+            },
+            {
+              "DOI": "10.18653/v1/S15-2045",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR28",
+              "unstructured": "Agirre E, Banea C, Cardie C, Cer D, Diab M, Gonzalez-Agirre A, Guo W, Lopez-Gazpio I, Maritxalar M, Mihalcea R, Rigau G, Uria L, Wiebe J (2015) SemEval-2015 Task 2: semantic textual similarity, English, Spanish and Pilot on Interpretability. In: Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval 2015), Denver, Colorado, pp. 252–263, https://doi.org/10.18653/v1/S15-2045. [Online]. Available: https://aclanthology.org/S15-2045"
+            },
+            {
+              "DOI": "10.18653/v1/S16-1081",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR29",
+              "unstructured": "Agirre E, Banea C, Cer D, Diab M, Gonzalez-Agirre A, Mihalcea R, Rigau G, Wiebe J (2016) SemEval-2016 Task 1: semantic textual similarity, monolingual and cross-lingual evaluation. In: Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016), San Diego, California, pp. 497–511, https://doi.org/10.18653/v1/S16-1081. [Online]. Available: https://aclanthology.org/S16-1081"
+            },
+            {
+              "DOI": "10.18653/v1/S17-2001",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR30",
+              "unstructured": "Cer D, Diab M, Agirre E, Lopez-Gazpio I, Specia L (2017) SemEval-2017 Task 1: semantic textual similarity multilingual and crosslingual focused evaluation. In: Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017), Vancouver, Canada, pp. 1–14, https://doi.org/10.18653/v1/S17-2001"
+            },
+            {
+              "key": "2690_CR31",
+              "unstructured": "Marelli M, Menini S, Baroni M, Bentivogli L, Bernardi R, Zamparelli R (2014) A SICK cure for the evaluation of compositional distributional semantic models. In: Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC’14), Reykjavik, Iceland, pp. 216–223. [Online]. Available: http://www.lrecconf.org/proceedings/lrec2014/pdf/363_Paper.pdf"
+            },
+            {
+              "key": "2690_CR32",
+              "unstructured": "Wu X, Gao C, Su Y, Han J, Wang Z, Hu S (2022) Smoothed Contrastive Learning for Unsupervised Sentence Embedding. In: Proceedings of the 29th International Conference on Computational Linguistics, Gyeongju, Republic of Korea, pp. 4902–4906. [Online]. Available: https://aclanthology.org/2022.coling-1.434"
+            },
+            {
+              "DOI": "10.18653/v1/2020.emnlp-main.733",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR33",
+              "unstructured": "Li B, Zhou H, He J, Wang M, Yang Y, Li L (2020) On the sentence embeddings from pre-trained language models. In: Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 9119–9130, https://doi.org/10.18653/v1/2020.emnlp-main.733"
+            },
+            {
+              "DOI": "10.18653/v1/2022.naacl-main.436",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR34",
+              "unstructured": "Zhang M, Mosbach M, Adelani D, Hedderich M, Klakow D (2022) MCSE: multimodal contrastive learning of sentence embeddings. In: Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics, pp. 5959–5969. [Online]. Available: https://aclanthology.org/2022.naacl-main.436. https://doi.org/10.18653/v1/2022.naacl-main.436"
+            },
+            {
+              "DOI": "10.18653/v1/2022.naacl-main.436",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR35",
+              "unstructured": "Zhang M, Mosbach M, Adelani D, Hedderich M, Klakow D (2022) MCSE: multimodal contrastive learning of sentence embeddings. In: Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics, pp. 5959–5969. [Online]. Available: https://aclanthology.org/2022.naacl-main.436. https://doi.org/10.18653/v1/2022.naacl-main.436"
+            },
+            {
+              "DOI": "10.18653/v1/2022.naacl-main.284",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR36",
+              "unstructured": "Nishikawa S, Ri R, Yamada I, Tsuruoka Y, Echizen I (2022) EASE: entity-aware contrastive learning of sentence embedding. In: Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics, pp. 3870–3885. [Online]. Available: https://aclanthology.org/2022.naacl-main.284. https://doi.org/10.18653/v1/2022.naacl-main.284"
+            },
+            {
+              "DOI": "10.1007/978-3-031-43415-0_37",
+              "doi-asserted-by": "crossref",
+              "key": "2690_CR37",
+              "unstructured": "Zhou K, Liu X, Gong Y, Zhao X, Jiang D, Duan N, Wen J-R (2023) MASTER: multi-task pre-trained bottlenecked masked autoencoders are better dense retrievers. [Online]. Available: https://openreview.net/forum?id=xKYlWJaLFi"
+            },
+            {
+              "DOI": "10.1109/TASLP.2023.3304485",
+              "author": "K Zhou",
+              "doi-asserted-by": "publisher",
+              "first-page": "3935",
+              "journal-title": "IEEE/ACM Trans Audio, Speech Lang Process",
+              "key": "2690_CR38",
+              "unstructured": "Zhou K, Zhou Y, Zhao WX, Wen J-R (2023) Learning to perturb for contrastive learning of unsupervised sentence representations. IEEE/ACM Trans Audio, Speech Lang Process 31:3935–3944. https://doi.org/10.1109/TASLP.2023.3304485",
+              "volume": "31",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1145/3474085.3475446",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR39",
+              "unstructured": "Wang Z, Xu Q, Yang Z, Cao X, Huang Q (2021) Implicit feedbacks are not always favorable: iterative relabeled one-class collaborative filtering against noisy interactions. In: Proceedings of the 29th ACM International Conference on Multimedia (MM ’21). Association for Computing Machinery, New York, NY, USA, 3070–3078. https://doi.org/10.1145/3474085.3475446"
+            },
+            {
+              "DOI": "10.1109/CVPR46437.2021.01608",
+              "doi-asserted-by": "publisher",
+              "key": "2690_CR40",
+              "unstructured": "Wen P, Xu Q, Jiang Y, Yang Z, He Y, Huang Q (2021) Seeking the shape of sound: an adaptive framework for learning voice-face association. In: 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Nashville, TN, USA, pp. 16342–16351, https://doi.org/10.1109/CVPR46437.2021.01608"
+            },
+            {
+              "DOI": "10.18653/v1/2021.acl-long.393",
+              "doi-asserted-by": "crossref",
+              "key": "2690_CR41",
+              "unstructured": "Yan Y, Li R, Wang S, Zhang F, Wu W, Xu W (2021) ConSERT: a contrastive framework for self-supervised sentence representation transfer. In: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 5065–5075, Online. Association for Computational Linguistics"
+            }
+          ],
+          "reference-count": 41,
+          "references-count": 41,
+          "resource": {
+            "primary": {
+              "URL": "https://link.springer.com/10.1007/s13042-025-02690-1"
+            }
+          },
+          "score": 34.929264,
+          "short-container-title": [
+            "Int. J. Mach. Learn. &amp; Cyber."
+          ],
+          "source": "Crossref",
+          "title": [
+            "Self-supervised contrastive learning of sentence representation with difficulty-based sampling"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "volume": "16"
+        },
+        {
+          "DOI": "10.1016/j.knosys.2022.108606",
+          "ISSN": [
+            "0950-7051"
+          ],
+          "URL": "https://doi.org/10.1016/j.knosys.2022.108606",
+          "alternative-id": [
+            "S0950705122002726"
+          ],
+          "article-number": "108606",
+          "assertion": [
+            {
+              "label": "This article is maintained by",
+              "name": "publisher",
+              "value": "Elsevier"
+            },
+            {
+              "label": "Article Title",
+              "name": "articletitle",
+              "value": "TimeCLR: A self-supervised contrastive learning framework for univariate time series representation"
+            },
+            {
+              "label": "Journal Title",
+              "name": "journaltitle",
+              "value": "Knowledge-Based Systems"
+            },
+            {
+              "label": "CrossRef DOI link to publisher maintained version",
+              "name": "articlelink",
+              "value": "https://doi.org/10.1016/j.knosys.2022.108606"
+            },
+            {
+              "label": "Content Type",
+              "name": "content_type",
+              "value": "article"
+            },
+            {
+              "label": "Copyright",
+              "name": "copyright",
+              "value": "© 2022 Elsevier B.V. All rights reserved."
+            }
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-0481-4880",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Yang",
+              "given": "Xinyu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Zhang",
+              "given": "Zhenguo",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Cui",
+              "given": "Rongyi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Knowledge-Based Systems"
+          ],
+          "content-domain": {
+            "crossmark-restriction": true,
+            "domain": [
+              "elsevier.com",
+              "sciencedirect.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                3,
+                21
+              ]
+            ],
+            "date-time": "2022-03-21T13:28:35Z",
+            "timestamp": 1647869315000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                16
+              ]
+            ],
+            "date-time": "2025-10-16T04:34:36Z",
+            "timestamp": 1760589276000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100001809",
+              "award": [
+                "62162062"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "62162062"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100001809",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Natural Science Foundation of China"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                10
+              ]
+            ],
+            "date-time": "2026-07-10T06:00:51Z",
+            "timestamp": 1783663251426,
+            "version": "3.55.0"
+          },
+          "is-referenced-by-count": 100,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0950-7051"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                6
+              ]
+            ]
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-017",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-012",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-004",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2022,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2022-06-01T00:00:00Z",
+                "timestamp": 1654041600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0950705122002726?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0950705122002726?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "member": "78",
+          "page": "108606",
+          "prefix": "10.1016",
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                6
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                6
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "DOI": "10.1007/s10618-019-00619-1",
+              "article-title": "Deep learning for time series classification: A review",
+              "author": "Fawaz",
+              "doi-asserted-by": "crossref",
+              "first-page": "917",
+              "issue": "4",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b1",
+              "volume": "33",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1098/rsta.2020.0209",
+              "article-title": "Time-series forecasting with deep learning: A survey",
+              "author": "Lim",
+              "doi-asserted-by": "crossref",
+              "issue": "2194",
+              "journal-title": "Phil. Trans. R. Soc. A",
+              "key": "10.1016/j.knosys.2022.108606_b2",
+              "volume": "379",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1098/rsif.2017.0387",
+              "article-title": "Opportunities and obstacles for deep learning in biology and medicine",
+              "author": "Ching",
+              "doi-asserted-by": "crossref",
+              "issue": "141",
+              "journal-title": "J. R. Soc. Interface",
+              "key": "10.1016/j.knosys.2022.108606_b3",
+              "volume": "15",
+              "year": "2018"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "Chen",
+              "first-page": "1597",
+              "key": "10.1016/j.knosys.2022.108606_b4",
+              "series-title": "International Conference on Machine Learning",
+              "year": "2020"
+            },
+            {
+              "article-title": "Big self-supervised models are strong semi-supervised learners",
+              "author": "Chen",
+              "first-page": "22243",
+              "key": "10.1016/j.knosys.2022.108606_b5",
+              "series-title": "Advances in Neural Information Processing Systems, 33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised learning of visual representations by solving jigsaw puzzles",
+              "author": "Noroozi",
+              "first-page": "69",
+              "key": "10.1016/j.knosys.2022.108606_b6",
+              "series-title": "European Conference on Computer Vision",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00393",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b7",
+              "unstructured": "Z. Wu, Y. Xiong, S.X. Yu, D. Lin, Unsupervised feature learning via non-parametric instance discrimination, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2018, pp. 3733–3742."
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00975",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b8",
+              "unstructured": "K. He, H. Fan, Y. Wu, S. Xie, R. Girshick, Momentum contrast for unsupervised visual representation learning, in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2020, pp. 9729–9738."
+            },
+            {
+              "author": "Hjelm",
+              "key": "10.1016/j.knosys.2022.108606_b9",
+              "series-title": "Learning deep representations by mutual information estimation and maximization",
+              "year": "2018"
+            },
+            {
+              "article-title": "Contrastive representation learning for electroencephalogram classification",
+              "author": "Mohsenvand",
+              "first-page": "238",
+              "key": "10.1016/j.knosys.2022.108606_b10",
+              "series-title": "Machine Learning for Health",
+              "year": "2020"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b11",
+              "unstructured": "D.J. Berndt, J. Clifford, Using dynamic time warping to find patterns in time series, in: KDD Workshop, vol. 10, Seattle, WA, USA, 1994, pp. 359–370."
+            },
+            {
+              "DOI": "10.1007/978-3-540-74048-3_4",
+              "article-title": "Dynamic time warping",
+              "author": "Müller",
+              "doi-asserted-by": "crossref",
+              "first-page": "69",
+              "journal-title": "Inf. Retr. Music Motion",
+              "key": "10.1016/j.knosys.2022.108606_b12",
+              "year": "2007"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2010.09.022",
+              "article-title": "Weighted dynamic time warping for time series classification",
+              "author": "Jeong",
+              "doi-asserted-by": "crossref",
+              "first-page": "2231",
+              "issue": "9",
+              "journal-title": "Pattern Recognit.",
+              "key": "10.1016/j.knosys.2022.108606_b13",
+              "volume": "44",
+              "year": "2011"
+            },
+            {
+              "article-title": "Time series classification from scratch with deep neural networks: A strong baseline",
+              "author": "Wang",
+              "first-page": "1578",
+              "key": "10.1016/j.knosys.2022.108606_b14",
+              "series-title": "2017 International Joint Conference on Neural Networks, IJCNN",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1007/s10618-016-0483-9",
+              "article-title": "The great time series classification bake off: A review and experimental evaluation of recent algorithmic advances",
+              "author": "Bagnall",
+              "doi-asserted-by": "crossref",
+              "first-page": "606",
+              "issue": "3",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b15",
+              "volume": "31",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1007/s10618-020-00710-y",
+              "article-title": "Inceptiontime: Finding alexnet for time series classification",
+              "author": "Fawaz",
+              "doi-asserted-by": "crossref",
+              "first-page": "1936",
+              "issue": "6",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b16",
+              "volume": "34",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1145/1557019.1557122",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b17",
+              "unstructured": "L. Ye, E. Keogh, Time series shapelets: A new primitive for data mining, in: Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2009, pp. 947–956."
+            },
+            {
+              "DOI": "10.1145/2020408.2020587",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b18",
+              "unstructured": "A. Mueen, E. Keogh, N. Young, Logical-shapelets: An expressive primitive for time series classification, in: Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2011, pp. 1154–1162."
+            },
+            {
+              "DOI": "10.1007/s10618-013-0322-1",
+              "article-title": "Classification of time series by shapelet transformation",
+              "author": "Hills",
+              "doi-asserted-by": "crossref",
+              "first-page": "851",
+              "issue": "4",
+              "journal-title": "Data Min. Knowl. Discov.",
+              "key": "10.1016/j.knosys.2022.108606_b19",
+              "volume": "28",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1016/j.knosys.2014.02.011",
+              "article-title": "Non-isometric transforms in time series classification using DTW",
+              "author": "Górecki",
+              "doi-asserted-by": "crossref",
+              "first-page": "98",
+              "journal-title": "Knowl.-Based Syst.",
+              "key": "10.1016/j.knosys.2022.108606_b20",
+              "volume": "61",
+              "year": "2014"
+            },
+            {
+              "article-title": "DTWNet: A dynamic time warping network",
+              "author": "Cai",
+              "key": "10.1016/j.knosys.2022.108606_b21",
+              "series-title": "Advances in Neural Information Processing Systems, Vol. 32",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2017.2779939",
+              "article-title": "LSTM fully convolutional networks for time series classification",
+              "author": "Karim",
+              "doi-asserted-by": "crossref",
+              "first-page": "1662",
+              "journal-title": "IEEE Access",
+              "key": "10.1016/j.knosys.2022.108606_b22",
+              "volume": "6",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1145/3136755.3136817",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b23",
+              "unstructured": "T.T. Um, F.M. Pfister, D. Pichler, S. Endo, M. Lang, S. Hirche, U. Fietzek, D. Kulić, Data augmentation of wearable sensor data for Parkinson’s disease monitoring using convolutional neural networks, in: Proceedings of the 19th ACM International Conference on Multimodal Interaction, 2017, pp. 216–220."
+            },
+            {
+              "article-title": "Biosignal data augmentation based on generative adversarial networks",
+              "author": "Haradal",
+              "first-page": "368",
+              "key": "10.1016/j.knosys.2022.108606_b24",
+              "series-title": "2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBC",
+              "year": "2018"
+            },
+            {
+              "author": "Ramponi",
+              "key": "10.1016/j.knosys.2022.108606_b25",
+              "series-title": "T-cgan: Conditional generative adversarial network for data augmentation in noisy time series with irregular sampling",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/j.bspc.2019.101675",
+              "article-title": "A novel data augmentation method to enhance deep neural networks for detection of atrial fibrillation",
+              "author": "Cao",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Biomed. Signal Process. Control",
+              "key": "10.1016/j.knosys.2022.108606_b26",
+              "volume": "56",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.3390/s20010098",
+              "article-title": "Data augmentation with suboptimal warping for time-series classification",
+              "author": "Kamycki",
+              "doi-asserted-by": "crossref",
+              "first-page": "98",
+              "issue": "1",
+              "journal-title": "Sensors",
+              "key": "10.1016/j.knosys.2022.108606_b27",
+              "volume": "20",
+              "year": "2020"
+            },
+            {
+              "author": "DeVries",
+              "key": "10.1016/j.knosys.2022.108606_b28",
+              "series-title": "Dataset augmentation in feature space",
+              "year": "2017"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b29",
+              "unstructured": "N. Komodakis, S. Gidaris, Unsupervised representation learning by predicting image rotations, in: International Conference on Learning Representations, ICLR, 2018."
+            },
+            {
+              "article-title": "Self-supervised video representation learning by pace prediction",
+              "author": "Wang",
+              "first-page": "504",
+              "key": "10.1016/j.knosys.2022.108606_b30",
+              "series-title": "European Conference on Computer Vision",
+              "year": "2020"
+            },
+            {
+              "article-title": "Unsupervised feature extraction by time-contrastive learning and nonlinear ica",
+              "author": "Hyvarinen",
+              "first-page": "3765",
+              "journal-title": "Adv. Neural Inf. Process. Syst.",
+              "key": "10.1016/j.knosys.2022.108606_b31",
+              "volume": "29",
+              "year": "2016"
+            },
+            {
+              "article-title": "Unsupervised scalable representation learning for multivariate time series",
+              "author": "Franceschi",
+              "key": "10.1016/j.knosys.2022.108606_b32",
+              "series-title": "Advances in Neural Information Processing Systems, Vol. 32",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1007/978-3-030-47426-3_39",
+              "article-title": "Self-supervised learning for semi-supervised time series classification",
+              "author": "Jawed",
+              "doi-asserted-by": "crossref",
+              "first-page": "499",
+              "journal-title": "Adv. Knowl. Discov. Data Min.",
+              "key": "10.1016/j.knosys.2022.108606_b33",
+              "volume": "12084",
+              "year": "2020"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b34",
+              "unstructured": "S. Tonekaboni, D. Eytan, A. Goldenberg, Unsupervised representation learning for time series with temporal neighborhood coding, in: International Conference on Learning Representations, 2021."
+            },
+            {
+              "author": "Fan",
+              "key": "10.1016/j.knosys.2022.108606_b35",
+              "series-title": "Self-supervised time series representation learning by inter-intra relational reasoning",
+              "year": "2020"
+            },
+            {
+              "article-title": "Time-series representation learning via temporal and contextual contrasting",
+              "author": "Eldele",
+              "first-page": "2352",
+              "key": "10.1016/j.knosys.2022.108606_b36",
+              "series-title": "Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence, IJCAI-21",
+              "year": "2021"
+            },
+            {
+              "article-title": "Unsupervised visual time-series representation learning and clustering",
+              "author": "Anand",
+              "first-page": "832",
+              "key": "10.1016/j.knosys.2022.108606_b37",
+              "series-title": "International Conference on Neural Information Processing",
+              "year": "2020"
+            },
+            {
+              "key": "10.1016/j.knosys.2022.108606_b38",
+              "unstructured": "A. Abid, J. Zou, Autowarp: Learning a warping distance from unlabeled time using sequence autoencoders, in: Proceedings of the 32nd International Conference on Neural Information Processing Systems, 2018, pp. 10568–10578."
+            },
+            {
+              "article-title": "Self-supervised ECG representation learning for emotion recognition",
+              "author": "Sarkar",
+              "journal-title": "IEEE Trans. Affect. Comput.",
+              "key": "10.1016/j.knosys.2022.108606_b39",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1145/2939672.2945383",
+              "doi-asserted-by": "crossref",
+              "key": "10.1016/j.knosys.2022.108606_b40",
+              "unstructured": "A. Mueen, E. Keogh, Extracting optimal performance from dynamic time warping, in: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2016, pp. 2129–2130."
+            },
+            {
+              "article-title": "Improved deep metric learning with multi-class n-pair loss objective",
+              "author": "Sohn",
+              "first-page": "1857",
+              "journal-title": "Adv. Neural Inf. Process. Syst.",
+              "key": "10.1016/j.knosys.2022.108606_b41",
+              "year": "2016"
+            },
+            {
+              "author": "Oord",
+              "key": "10.1016/j.knosys.2022.108606_b42",
+              "series-title": "Representation learning with contrastive predictive coding",
+              "year": "2018"
+            },
+            {
+              "article-title": "Contrastive representation learning for electroencephalogram classification",
+              "author": "Mohsenvand",
+              "first-page": "238",
+              "key": "10.1016/j.knosys.2022.108606_b43",
+              "series-title": "Machine Learning for Health",
+              "year": "2020"
+            },
+            {
+              "author": "Davis",
+              "key": "10.1016/j.knosys.2022.108606_b44",
+              "series-title": "Predictive Modelling of Bone Ageing",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1016/S0895-6111(00)00026-4",
+              "article-title": "Digital hand atlas and web-based bone age assessment: System design and implementation",
+              "author": "Cao",
+              "doi-asserted-by": "crossref",
+              "first-page": "297",
+              "issue": "5",
+              "journal-title": "Comput. Med. Imaging Graph.",
+              "key": "10.1016/j.knosys.2022.108606_b45",
+              "volume": "24",
+              "year": "2000"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2010.09.013",
+              "article-title": "A global averaging method for dynamic time warping, with applications to clustering",
+              "author": "Petitjean",
+              "doi-asserted-by": "crossref",
+              "first-page": "678",
+              "issue": "3",
+              "journal-title": "Pattern Recognit.",
+              "key": "10.1016/j.knosys.2022.108606_b46",
+              "volume": "44",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1109/TPAMI.1979.4766909",
+              "article-title": "A cluster separation measure",
+              "author": "Davies",
+              "doi-asserted-by": "crossref",
+              "first-page": "224",
+              "issue": "2",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+              "key": "10.1016/j.knosys.2022.108606_b47",
+              "year": "1979"
+            },
+            {
+              "DOI": "10.1016/0377-0427(87)90125-7",
+              "article-title": "Silhouettes: A graphical aid to the interpretation and validation of cluster analysis",
+              "author": "Rousseeuw",
+              "doi-asserted-by": "crossref",
+              "first-page": "53",
+              "journal-title": "J. Comput. Appl. Math.",
+              "key": "10.1016/j.knosys.2022.108606_b48",
+              "volume": "20",
+              "year": "1987"
+            }
+          ],
+          "reference-count": 48,
+          "references-count": 48,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0950705122002726"
+            }
+          },
+          "score": 34.71429,
+          "short-container-title": [
+            "Knowledge-Based Systems"
+          ],
+          "source": "Crossref",
+          "special_numbering": "C",
+          "title": [
+            "TimeCLR: A self-supervised contrastive learning framework for univariate time series representation"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "volume": "245"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 3156929
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "17bc2603e35ea3647e9a2c7ae01e61865b3086a407d15755a26a7ab42d9a0eb2",
+  "retrieved_at": "2026-07-14T13:54:17Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

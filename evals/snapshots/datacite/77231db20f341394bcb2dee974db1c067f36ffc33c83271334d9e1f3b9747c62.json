@@ -1,0 +1,211 @@
+{
+  "endpoint": "dois/10.5281/zenodo.21358409",
+  "request_key": "77231db20f341394bcb2dee974db1c067f36ffc33c83271334d9e1f3b9747c62",
+  "request_params": {},
+  "response_body": {
+    "data": {
+      "attributes": {
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifier": "oai:zenodo.org:21358409",
+            "alternateIdentifierType": "oai"
+          }
+        ],
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "container": {},
+        "contentUrl": null,
+        "contributors": [],
+        "created": "2026-07-14T13:05:48.000Z",
+        "creators": [
+          {
+            "affiliation": [
+              "Centro de Relevamiento y Evaluación de Recursos Agrícolas y Naturales (CREAN-IMBIV), CONICET, Universidad Nacional de Córdoba, Córdoba, Argentina.",
+              "Cátedra de Bioestadística I y II, FCEFyN, Universidad Nacional de Córdoba, Argentina"
+            ],
+            "familyName": "Grilli",
+            "givenName": "Mariano Pablo",
+            "name": "Grilli, Mariano Pablo",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0001-7189-6615",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Department of Agriculture and Forest Sciences (DAFNE), University of Tuscia, Viterbo, Italy",
+              "National Biodiversity Future Center (NBFC), Palermo, Italy"
+            ],
+            "familyName": "Cresta",
+            "givenName": "Eleonora",
+            "name": "Cresta, Eleonora",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0009-0003-8511-089X",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Department of Agriculture and Forest Sciences (DAFNE), University of Tuscia, Viterbo, Italy",
+              "Centro de Estudios Parasitológicos y de Vectores (CEPAVE, CONICET-UNLP), La Plata, Argentina"
+            ],
+            "familyName": "Spreanza",
+            "givenName": "Stefano",
+            "name": "Spreanza, Stefano",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Centro de Relevamiento y Evaluación de Recursos Agrícolas y Naturales (CREAN-IMBIV), CONICET, Universidad Nacional de Córdoba, Córdoba, Argentina."
+            ],
+            "familyName": "Fachinetti",
+            "givenName": "Romina",
+            "name": "Fachinetti, Romina",
+            "nameIdentifiers": [],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2026-07-14",
+            "dateType": "Issued"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This dataset accompanies the manuscript \"Small patches, big differences: how landscape structure shapes Scolytinae communities in pine plantations\" (Agricultural and Forest Entomology). It contains abundance data of nine Scolytinae species collected in pine plantations of central Córdoba, Argentina, along with landscape metrics (patch area, isolation, total pine cover, mean inter-patch distance) used in the analyses.\n\nThe data were collected from November 2018 to February 2019 across nine pine patches using cross-vane panel traps baited with ethanol and turpentine.\n\nVariables:\n\n\n\n\n\nDate: sampling date (YYYY-MM-DD)\n\n\n\n\nSite: sampling site / patch identifier\n\n\n\n\nAmasa_parviseta, Cyrtogenius_luteus, Hylastes_ater, Hylurgus_ligniperda, Orthotomicus_erosus, Scolytus_multistriatus, Xyleborinus_saxesenii, Xyleborus_bispinatus, Xyleborus_ferrugineus: abundance per trap per date\n\n\n\n\nAREA: patch area (ha)\n\n\n\n\nENN: Euclidean nearest neighbour distance (m)\n\n\n\n\nCA: total core area of pine at landscape level (ha)\n\n\n\n\nENN_MN: mean Euclidean nearest neighbour distance at class level (m)\n\n\n\nThe R script (Scolitinae_MMI.R) is included to reproduce the statistical analyses.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "doi": "10.5281/zenodo.21358409",
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "formats": [],
+        "fundingReferences": [],
+        "geoLocations": [],
+        "identifiers": [
+          {
+            "identifier": "oai:zenodo.org:21358409",
+            "identifierType": "oai"
+          }
+        ],
+        "isActive": true,
+        "language": null,
+        "metadataVersion": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "prefix": "10.5281",
+        "publicationYear": 2026,
+        "published": "2026",
+        "publisher": "Zenodo",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2026-07-14T13:05:48.000Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.5281/zenodo.21358408",
+            "relatedIdentifierType": "DOI",
+            "relationType": "IsVersionOf"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [],
+        "source": "api",
+        "state": "findable",
+        "subjects": [
+          {
+            "subject": "Scolytinae, bark beetles, ambrosia beetles, landscape structure, pine plantations, fragmentation, Argentina, biological invasions"
+          }
+        ],
+        "suffix": "zenodo.21358409",
+        "titles": [
+          {
+            "title": "Data from: Small patches, big differences: how landscape structure shapes Scolytinae communities in pine plantations"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceType": "",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2026-07-14T13:05:48.000Z",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21358409",
+        "version": "1.0",
+        "versionCount": 0,
+        "versionOfCount": 1,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMjEzNTg0MDk8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkdyaWxsaSwgTWFyaWFubyBQYWJsbzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TWFyaWFubyBQYWJsbzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5HcmlsbGk8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDEtNzE4OS02NjE1PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkNlbnRybyBkZSBSZWxldmFtaWVudG8geSBFdmFsdWFjacOzbiBkZSBSZWN1cnNvcyBBZ3LDrWNvbGFzIHkgTmF0dXJhbGVzIChDUkVBTi1JTUJJViksIENPTklDRVQsIFVuaXZlcnNpZGFkIE5hY2lvbmFsIGRlIEPDs3Jkb2JhLCBDw7NyZG9iYSwgQXJnZW50aW5hLjwvYWZmaWxpYXRpb24+CiAgICAgIDxhZmZpbGlhdGlvbj5Dw6F0ZWRyYSBkZSBCaW9lc3RhZMOtc3RpY2EgSSB5IElJLCBGQ0VGeU4sIFVuaXZlcnNpZGFkIE5hY2lvbmFsIGRlIEPDs3Jkb2JhLCBBcmdlbnRpbmE8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkNyZXN0YSwgRWxlb25vcmE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkVsZW9ub3JhPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkNyZXN0YTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDktMDAwMy04NTExLTA4OVg8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+RGVwYXJ0bWVudCBvZiBBZ3JpY3VsdHVyZSBhbmQgRm9yZXN0IFNjaWVuY2VzIChEQUZORSksIFVuaXZlcnNpdHkgb2YgVHVzY2lhLCBWaXRlcmJvLCBJdGFseTwvYWZmaWxpYXRpb24+CiAgICAgIDxhZmZpbGlhdGlvbj5OYXRpb25hbCBCaW9kaXZlcnNpdHkgRnV0dXJlIENlbnRlciAoTkJGQyksIFBhbGVybW8sIEl0YWx5PC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TcHJlYW56YSwgU3RlZmFubzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U3RlZmFubzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TcHJlYW56YTwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uPkRlcGFydG1lbnQgb2YgQWdyaWN1bHR1cmUgYW5kIEZvcmVzdCBTY2llbmNlcyAoREFGTkUpLCBVbml2ZXJzaXR5IG9mIFR1c2NpYSwgVml0ZXJibywgSXRhbHk8L2FmZmlsaWF0aW9uPgogICAgICA8YWZmaWxpYXRpb24+Q2VudHJvIGRlIEVzdHVkaW9zIFBhcmFzaXRvbMOzZ2ljb3MgeSBkZSBWZWN0b3JlcyAoQ0VQQVZFLCBDT05JQ0VULVVOTFApLCBMYSBQbGF0YSwgQXJnZW50aW5hPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5GYWNoaW5ldHRpLCBSb21pbmE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlJvbWluYTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5GYWNoaW5ldHRpPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+Q2VudHJvIGRlIFJlbGV2YW1pZW50byB5IEV2YWx1YWNpw7NuIGRlIFJlY3Vyc29zIEFncsOtY29sYXMgeSBOYXR1cmFsZXMgKENSRUFOLUlNQklWKSwgQ09OSUNFVCwgVW5pdmVyc2lkYWQgTmFjaW9uYWwgZGUgQ8OzcmRvYmEsIEPDs3Jkb2JhLCBBcmdlbnRpbmEuPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+RGF0YSBmcm9tOiBTbWFsbCBwYXRjaGVzLCBiaWcgZGlmZmVyZW5jZXM6IGhvdyBsYW5kc2NhcGUgc3RydWN0dXJlIHNoYXBlcyBTY29seXRpbmFlIGNvbW11bml0aWVzIGluIHBpbmUgcGxhbnRhdGlvbnM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+WmVub2RvPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ii8+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+U2NvbHl0aW5hZSwgYmFyayBiZWV0bGVzLCBhbWJyb3NpYSBiZWV0bGVzLCBsYW5kc2NhcGUgc3RydWN0dXJlLCBwaW5lIHBsYW50YXRpb25zLCBmcmFnbWVudGF0aW9uLCBBcmdlbnRpbmEsIGJpb2xvZ2ljYWwgaW52YXNpb25zPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAyNi0wNy0xNDwvZGF0ZT4KICA8L2RhdGVzPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJvYWkiPm9haTp6ZW5vZG8ub3JnOjIxMzU4NDA5PC9hbHRlcm5hdGVJZGVudGlmaWVyPgogIDwvYWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc1ZlcnNpb25PZiI+MTAuNTI4MS96ZW5vZG8uMjEzNTg0MDg8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxzaXplcy8+CiAgPGZvcm1hdHMvPgogIDx2ZXJzaW9uPjEuMDwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wL2xlZ2FsY29kZSIgcmlnaHRzSWRlbnRpZmllcj0iY2MtYnktNC4wIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJzcGR4Ij5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VGhpcyBkYXRhc2V0IGFjY29tcGFuaWVzIHRoZSBtYW51c2NyaXB0ICJTbWFsbCBwYXRjaGVzLCBiaWcgZGlmZmVyZW5jZXM6IGhvdyBsYW5kc2NhcGUgc3RydWN0dXJlIHNoYXBlcyBTY29seXRpbmFlIGNvbW11bml0aWVzIGluIHBpbmUgcGxhbnRhdGlvbnMiIChBZ3JpY3VsdHVyYWwgYW5kIEZvcmVzdCBFbnRvbW9sb2d5KS4gSXQgY29udGFpbnMgYWJ1bmRhbmNlIGRhdGEgb2YgbmluZSBTY29seXRpbmFlIHNwZWNpZXMgY29sbGVjdGVkIGluIHBpbmUgcGxhbnRhdGlvbnMgb2YgY2VudHJhbCBDw7NyZG9iYSwgQXJnZW50aW5hLCBhbG9uZyB3aXRoIGxhbmRzY2FwZSBtZXRyaWNzIChwYXRjaCBhcmVhLCBpc29sYXRpb24sIHRvdGFsIHBpbmUgY292ZXIsIG1lYW4gaW50ZXItcGF0Y2ggZGlzdGFuY2UpIHVzZWQgaW4gdGhlIGFuYWx5c2VzLgoKVGhlIGRhdGEgd2VyZSBjb2xsZWN0ZWQgZnJvbSBOb3ZlbWJlciAyMDE4IHRvIEZlYnJ1YXJ5IDIwMTkgYWNyb3NzIG5pbmUgcGluZSBwYXRjaGVzIHVzaW5nIGNyb3NzLXZhbmUgcGFuZWwgdHJhcHMgYmFpdGVkIHdpdGggZXRoYW5vbCBhbmQgdHVycGVudGluZS4KClZhcmlhYmxlczoKCgoKCgpEYXRlOiBzYW1wbGluZyBkYXRlIChZWVlZLU1NLUREKQoKCgoKU2l0ZTogc2FtcGxpbmcgc2l0ZSAvIHBhdGNoIGlkZW50aWZpZXIKCgoKCkFtYXNhX3BhcnZpc2V0YSwgQ3lydG9nZW5pdXNfbHV0ZXVzLCBIeWxhc3Rlc19hdGVyLCBIeWx1cmd1c19saWduaXBlcmRhLCBPcnRob3RvbWljdXNfZXJvc3VzLCBTY29seXR1c19tdWx0aXN0cmlhdHVzLCBYeWxlYm9yaW51c19zYXhlc2VuaWksIFh5bGVib3J1c19iaXNwaW5hdHVzLCBYeWxlYm9ydXNfZmVycnVnaW5ldXM6IGFidW5kYW5jZSBwZXIgdHJhcCBwZXIgZGF0ZQoKCgoKQVJFQTogcGF0Y2ggYXJlYSAoaGEpCgoKCgpFTk46IEV1Y2xpZGVhbiBuZWFyZXN0IG5laWdoYm91ciBkaXN0YW5jZSAobSkKCgoKCkNBOiB0b3RhbCBjb3JlIGFyZWEgb2YgcGluZSBhdCBsYW5kc2NhcGUgbGV2ZWwgKGhhKQoKCgoKRU5OX01OOiBtZWFuIEV1Y2xpZGVhbiBuZWFyZXN0IG5laWdoYm91ciBkaXN0YW5jZSBhdCBjbGFzcyBsZXZlbCAobSkKCgoKVGhlIFIgc2NyaXB0IChTY29saXRpbmFlX01NSS5SKSBpcyBpbmNsdWRlZCB0byByZXByb2R1Y2UgdGhlIHN0YXRpc3RpY2FsIGFuYWx5c2VzLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+      },
+      "id": "10.5281/zenodo.21358409",
+      "relationships": {
+        "citations": {
+          "data": []
+        },
+        "client": {
+          "data": {
+            "id": "cern.zenodo",
+            "type": "clients"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5281/zenodo.21358409",
+            "type": "media"
+          }
+        },
+        "partOf": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "provider": {
+          "data": {
+            "id": "cern",
+            "type": "providers"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "versionOf": {
+          "data": [
+            {
+              "id": "10.5281/zenodo.21358408",
+              "type": "dois"
+            }
+          ]
+        },
+        "versions": {
+          "data": []
+        }
+      },
+      "type": "dois"
+    }
+  },
+  "response_hash": "7177cab8642e9e9fa9373b1ff5bc5b4421057980435195cc30d95a43088f1480",
+  "retrieved_at": "2026-07-14T13:48:41Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

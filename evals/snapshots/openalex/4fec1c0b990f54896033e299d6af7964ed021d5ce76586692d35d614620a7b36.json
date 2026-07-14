@@ -1,0 +1,1020 @@
+{
+  "endpoint": "works/doi:10.1016/s1474-4422(19)30140-1",
+  "request_key": "4fec1c0b990f54896033e299d6af7964ed021d5ce76586692d35d614620a7b36",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Heather Wilson",
+          "id": "https://openalex.org/A5004209911",
+          "orcid": "https://orcid.org/0000-0002-2225-0241"
+        },
+        "author_position": "first",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Heather Wilson",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "George Dervenoulas",
+          "id": "https://openalex.org/A5034248910",
+          "orcid": "https://orcid.org/0000-0001-8395-507X"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "George Dervenoulas",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Gennaro Pagano",
+          "id": "https://openalex.org/A5048882944",
+          "orcid": "https://orcid.org/0000-0002-6247-8988"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Gennaro Pagano",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210140282",
+              "https://openalex.org/I200777214"
+            ],
+            "raw_affiliation_string": "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Christos Koros",
+          "id": "https://openalex.org/A5032335167",
+          "orcid": "https://orcid.org/0000-0001-5806-0717"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "National and Kapodistrian University of Athens",
+            "id": "https://openalex.org/I200777214",
+            "lineage": [
+              "https://openalex.org/I200777214"
+            ],
+            "ror": "https://ror.org/04gnjpq42",
+            "type": "education"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "University General Hospital Attikon",
+            "id": "https://openalex.org/I4210140282",
+            "lineage": [
+              "https://openalex.org/I4210140282"
+            ],
+            "ror": "https://ror.org/03gb7n667",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece"
+        ],
+        "raw_author_name": "Christos Koros",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Tayyabah Yousaf",
+          "id": "https://openalex.org/A5038003785",
+          "orcid": "https://orcid.org/0000-0001-7851-5352"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Tayyabah Yousaf",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I131729948"
+            ],
+            "raw_affiliation_string": "Center for Neurodegenerative Diseases (CEMAND), Department of Medicine, Neuroscience Section, University of Salerno, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Marina Picillo",
+          "id": "https://openalex.org/A5013496030",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Salerno",
+            "id": "https://openalex.org/I131729948",
+            "lineage": [
+              "https://openalex.org/I131729948"
+            ],
+            "ror": "https://ror.org/0192m2k53",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Center for Neurodegenerative Diseases (CEMAND), Department of Medicine, Neuroscience Section, University of Salerno, Italy"
+        ],
+        "raw_author_name": "Marina Picillo",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Sotirios Polychronis",
+          "id": "https://openalex.org/A5028271584",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Sotirios Polychronis",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210140282",
+              "https://openalex.org/I200777214"
+            ],
+            "raw_affiliation_string": "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Athina Maria Simitsi",
+          "id": "https://openalex.org/A5112665919",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "National and Kapodistrian University of Athens",
+            "id": "https://openalex.org/I200777214",
+            "lineage": [
+              "https://openalex.org/I200777214"
+            ],
+            "ror": "https://ror.org/04gnjpq42",
+            "type": "education"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "University General Hospital Attikon",
+            "id": "https://openalex.org/I4210140282",
+            "lineage": [
+              "https://openalex.org/I4210140282"
+            ],
+            "ror": "https://ror.org/03gb7n667",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece"
+        ],
+        "raw_author_name": "Athina Simitsi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Beniamino Giordano",
+          "id": "https://openalex.org/A5022467142",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Beniamino Giordano",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Zachary Chappell",
+          "id": "https://openalex.org/A5023691214",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Zachary Chappell",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210111135"
+            ],
+            "raw_affiliation_string": "Nuclear Medicine Department, King's College Hospital NHS Foundation Trust, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Benjamin Corcoran",
+          "id": "https://openalex.org/A5112982046",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College Hospital NHS Foundation Trust",
+            "id": "https://openalex.org/I4210111135",
+            "lineage": [
+              "https://openalex.org/I4210111135"
+            ],
+            "ror": "https://ror.org/01n0k5m85",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Nuclear Medicine Department, King's College Hospital NHS Foundation Trust, London, UK"
+        ],
+        "raw_author_name": "Benjamin Corcoran",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece; Department of Neurology, Philipps University, Marburg, Germany; Parkinson's Disease and Movement Disorders Department, HYGEIA Hospital, Athens, Greece"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I161103922"
+            ],
+            "raw_affiliation_string": "Department of Neurology, Philipps University, Marburg, Germany"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210140282",
+              "https://openalex.org/I200777214"
+            ],
+            "raw_affiliation_string": "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210122009"
+            ],
+            "raw_affiliation_string": "Parkinson's Disease and Movement Disorders Department, HYGEIA Hospital, Athens, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "María Stamelou",
+          "id": "https://openalex.org/A5062015847",
+          "orcid": "https://orcid.org/0000-0003-1668-9925"
+        },
+        "author_position": "middle",
+        "countries": [
+          "DE",
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "National and Kapodistrian University of Athens",
+            "id": "https://openalex.org/I200777214",
+            "lineage": [
+              "https://openalex.org/I200777214"
+            ],
+            "ror": "https://ror.org/04gnjpq42",
+            "type": "education"
+          },
+          {
+            "country_code": "DE",
+            "display_name": "Philipps University of Marburg",
+            "id": "https://openalex.org/I161103922",
+            "lineage": [
+              "https://openalex.org/I161103922"
+            ],
+            "ror": "https://ror.org/01rdrb571",
+            "type": "education"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "University General Hospital Attikon",
+            "id": "https://openalex.org/I4210140282",
+            "lineage": [
+              "https://openalex.org/I4210140282"
+            ],
+            "ror": "https://ror.org/03gb7n667",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "Hygeia Hospital",
+            "id": "https://openalex.org/I4210122009",
+            "lineage": [
+              "https://openalex.org/I4210122009"
+            ],
+            "ror": "https://ror.org/03qv5tx95",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece; Department of Neurology, Philipps University, Marburg, Germany; Parkinson's Disease and Movement Disorders Department, HYGEIA Hospital, Athens, Greece",
+          "Department of Neurology, Philipps University, Marburg, Germany",
+          "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece",
+          "Parkinson's Disease and Movement Disorders Department, HYGEIA Hospital, Athens, Greece"
+        ],
+        "raw_author_name": "Maria Stamelou",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Division of Brain Sciences, Department of Medicine, Imperial College London, London, UK; Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I47508984"
+            ],
+            "raw_affiliation_string": "Division of Brain Sciences, Department of Medicine, Imperial College London, London, UK"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2801748203",
+              "https://openalex.org/I4210093835"
+            ],
+            "raw_affiliation_string": "Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Roger N. Gunn",
+          "id": "https://openalex.org/A5065874626",
+          "orcid": "https://orcid.org/0000-0003-1181-5769"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "Invicro (United Kingdom)",
+            "id": "https://openalex.org/I4210093835",
+            "lineage": [
+              "https://openalex.org/I4210093835"
+            ],
+            "ror": "https://ror.org/00gssft54",
+            "type": "company"
+          },
+          {
+            "country_code": "GB",
+            "display_name": "Hammersmith Hospital",
+            "id": "https://openalex.org/I2801748203",
+            "lineage": [
+              "https://openalex.org/I153355300",
+              "https://openalex.org/I2801748203"
+            ],
+            "ror": "https://ror.org/05jg8yp15",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "GB",
+            "display_name": "Imperial College London",
+            "id": "https://openalex.org/I47508984",
+            "lineage": [
+              "https://openalex.org/I47508984"
+            ],
+            "ror": "https://ror.org/041kmwe10",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Division of Brain Sciences, Department of Medicine, Imperial College London, London, UK; Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK",
+          "Division of Brain Sciences, Department of Medicine, Imperial College London, London, UK",
+          "Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK"
+        ],
+        "raw_author_name": "Roger N Gunn",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I131729948"
+            ],
+            "raw_affiliation_string": "Center for Neurodegenerative Diseases (CEMAND), Department of Medicine, Neuroscience Section, University of Salerno, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Maria Teresa Pellecchia",
+          "id": "https://openalex.org/A5069172721",
+          "orcid": "https://orcid.org/0000-0002-6217-313X"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Salerno",
+            "id": "https://openalex.org/I131729948",
+            "lineage": [
+              "https://openalex.org/I131729948"
+            ],
+            "ror": "https://ror.org/0192m2k53",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Center for Neurodegenerative Diseases (CEMAND), Department of Medicine, Neuroscience Section, University of Salerno, Italy"
+        ],
+        "raw_author_name": "Maria Teresa Pellecchia",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Centre for Neuroimaging Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK; Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2801748203",
+              "https://openalex.org/I4210093835"
+            ],
+            "raw_affiliation_string": "Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I165524941",
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Centre for Neuroimaging Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Eugenii A. Rabiner",
+          "id": "https://openalex.org/A5005098704",
+          "orcid": "https://orcid.org/0000-0003-3612-6687"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "Invicro (United Kingdom)",
+            "id": "https://openalex.org/I4210093835",
+            "lineage": [
+              "https://openalex.org/I4210093835"
+            ],
+            "ror": "https://ror.org/00gssft54",
+            "type": "company"
+          },
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          },
+          {
+            "country_code": "GB",
+            "display_name": "Wellcome Centre for Human Neuroimaging",
+            "id": "https://openalex.org/I165524941",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I165524941",
+              "https://openalex.org/I45129253",
+              "https://openalex.org/I87048295"
+            ],
+            "ror": "https://ror.org/02704qw51",
+            "type": "facility"
+          },
+          {
+            "country_code": "GB",
+            "display_name": "Hammersmith Hospital",
+            "id": "https://openalex.org/I2801748203",
+            "lineage": [
+              "https://openalex.org/I153355300",
+              "https://openalex.org/I2801748203"
+            ],
+            "ror": "https://ror.org/05jg8yp15",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Centre for Neuroimaging Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK; Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK",
+          "Invicro LLC, Centre for Imaging Sciences, Hammersmith Hospital, London, UK",
+          "Centre for Neuroimaging Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Eugenii A Rabiner",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I131729948"
+            ],
+            "raw_affiliation_string": "Center for Neurodegenerative Diseases (CEMAND), Department of Medicine, Neuroscience Section, University of Salerno, Italy"
+          }
+        ],
+        "author": {
+          "display_name": "Paolo Barone",
+          "id": "https://openalex.org/A5005445227",
+          "orcid": "https://orcid.org/0000-0001-8965-2504"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IT"
+        ],
+        "institutions": [
+          {
+            "country_code": "IT",
+            "display_name": "University of Salerno",
+            "id": "https://openalex.org/I131729948",
+            "lineage": [
+              "https://openalex.org/I131729948"
+            ],
+            "ror": "https://ror.org/0192m2k53",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Center for Neurodegenerative Diseases (CEMAND), Department of Medicine, Neuroscience Section, University of Salerno, Italy"
+        ],
+        "raw_author_name": "Paolo Barone",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece; Center of Clinical Research, Experimental Surgery and Translational Research, Biomedical Research Foundation of the Academy of Athens, Athens, Greece"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210140282",
+              "https://openalex.org/I200777214"
+            ],
+            "raw_affiliation_string": "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I206127235",
+              "https://openalex.org/I4210093138"
+            ],
+            "raw_affiliation_string": "Center of Clinical Research, Experimental Surgery and Translational Research, Biomedical Research Foundation of the Academy of Athens, Athens, Greece"
+          }
+        ],
+        "author": {
+          "display_name": "Leonidas Stefanis",
+          "id": "https://openalex.org/A5089947731",
+          "orcid": "https://orcid.org/0000-0003-3569-8990"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GR"
+        ],
+        "institutions": [
+          {
+            "country_code": "GR",
+            "display_name": "National and Kapodistrian University of Athens",
+            "id": "https://openalex.org/I200777214",
+            "lineage": [
+              "https://openalex.org/I200777214"
+            ],
+            "ror": "https://ror.org/04gnjpq42",
+            "type": "education"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "University General Hospital Attikon",
+            "id": "https://openalex.org/I4210140282",
+            "lineage": [
+              "https://openalex.org/I4210140282"
+            ],
+            "ror": "https://ror.org/03gb7n667",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "Biomedical Research Foundation of the Academy of Athens",
+            "id": "https://openalex.org/I4210093138",
+            "lineage": [
+              "https://openalex.org/I4210093138"
+            ],
+            "ror": "https://ror.org/00gban551",
+            "type": "nonprofit"
+          },
+          {
+            "country_code": "GR",
+            "display_name": "Academy of Athens",
+            "id": "https://openalex.org/I206127235",
+            "lineage": [
+              "https://openalex.org/I206127235"
+            ],
+            "ror": "https://ror.org/00qsdn986",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece; Center of Clinical Research, Experimental Surgery and Translational Research, Biomedical Research Foundation of the Academy of Athens, Athens, Greece",
+          "University of Athens Medical School, 1st Department of Neurology, University of Athens Hospital Attikon, Greece",
+          "Center of Clinical Research, Experimental Surgery and Translational Research, Biomedical Research Foundation of the Academy of Athens, Athens, Greece"
+        ],
+        "raw_author_name": "Leonidas Stefanis",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK. Electronic address: marios.politis@kcl.ac.uk"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I183935753"
+            ],
+            "raw_affiliation_string": "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+          }
+        ],
+        "author": {
+          "display_name": "Marios Politis",
+          "id": "https://openalex.org/A5015136173",
+          "orcid": "https://orcid.org/0000-0001-8530-7113"
+        },
+        "author_position": "last",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "King's College London",
+            "id": "https://openalex.org/I183935753",
+            "lineage": [
+              "https://openalex.org/I124357947",
+              "https://openalex.org/I183935753"
+            ],
+            "ror": "https://ror.org/0220mzb33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK. Electronic address: marios.politis@kcl.ac.uk",
+          "Neurodegeneration Imaging Group, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK"
+        ],
+        "raw_author_name": "Marios Politis",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "pmh:oai:kclpure.kcl.ac.uk:publications/be38556a-de00-447e-bcba-02312acdadda",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://kclpure.kcl.ac.uk/portal/en/publications/be38556a-de00-447e-bcba-02312acdadda",
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "pdf_url": "https://kclpure.kcl.ac.uk/ws/files/113416685/MainText_Politis_RevisedManuscript_Clean.pdf",
+      "raw_source_name": "Wilson, H, Dervenoulas, G, Pagano, G, Koros, C, Yousaf, T, Picillo, M, Polychronis, S, Simitsi, A, Giordano, B, Chappell, Z, Corcoran, B, Stamelou, M, Gunn, R N, Pellecchia, M T, Rabiner, E A, Barone, P, Stefanis, L & Politis, M 2019, 'Serotonergic pathology and disease burden in the premotor and motor phase of A53T α-synuclein parkinsonism: a cross-sectional study', Lancet neurology, vol. 18, no. 8, pp. 748-759. https://doi.org/10.1016/S1474-4422(19)30140-1",
+      "raw_type": "info:eu-repo/semantics/article",
+      "source": {
+        "display_name": "Research Portal (King's College London)",
+        "host_organization": "https://openalex.org/I183935753",
+        "host_organization_lineage": [
+          "https://openalex.org/I183935753"
+        ],
+        "host_organization_lineage_names": [],
+        "host_organization_name": "King's College London",
+        "id": "https://openalex.org/S4306400216",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": "submittedVersion"
+    },
+    "biblio": {
+      "first_page": "748",
+      "issue": "8",
+      "last_page": "759",
+      "volume": "18"
+    },
+    "cited_by_count": 100,
+    "display_name": "Serotonergic pathology and disease burden in the premotor and motor phase of A53T α-synuclein parkinsonism: a cross-sectional study",
+    "doi": "https://doi.org/10.1016/s1474-4422(19)30140-1",
+    "id": "https://openalex.org/W2950773490",
+    "ids": {
+      "doi": "https://doi.org/10.1016/s1474-4422(19)30140-1",
+      "mag": "2950773490",
+      "openalex": "https://openalex.org/W2950773490",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/31229470"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://kclpure.kcl.ac.uk/ws/files/113416685/MainText_Politis_RevisedManuscript_Clean.pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1016/s1474-4422(19)30140-1",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/s1474-4422(19)30140-1",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "The Lancet Neurology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "The Lancet Neurology",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S70053155",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1474-4422",
+          "1474-4465"
+        ],
+        "issn_l": "1474-4422",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2019-06-19",
+    "publication_year": 2019,
+    "referenced_works": [
+      "https://openalex.org/W1513071869",
+      "https://openalex.org/W1527671059",
+      "https://openalex.org/W1586231797",
+      "https://openalex.org/W1981123646",
+      "https://openalex.org/W1992632425",
+      "https://openalex.org/W2000716207",
+      "https://openalex.org/W2012689648",
+      "https://openalex.org/W2017466158",
+      "https://openalex.org/W2051087311",
+      "https://openalex.org/W2054220858",
+      "https://openalex.org/W2064247269",
+      "https://openalex.org/W2073449985",
+      "https://openalex.org/W2084621653",
+      "https://openalex.org/W2090187118",
+      "https://openalex.org/W2093322139",
+      "https://openalex.org/W2105563190",
+      "https://openalex.org/W2108696068",
+      "https://openalex.org/W2112455323",
+      "https://openalex.org/W2119391460",
+      "https://openalex.org/W2150056619",
+      "https://openalex.org/W2150656456",
+      "https://openalex.org/W2170165316",
+      "https://openalex.org/W2171416399",
+      "https://openalex.org/W2171605000",
+      "https://openalex.org/W2320277906",
+      "https://openalex.org/W2521258590",
+      "https://openalex.org/W2601571152",
+      "https://openalex.org/W2785477235",
+      "https://openalex.org/W2793788459",
+      "https://openalex.org/W2895327410",
+      "https://openalex.org/W4297407199"
+    ],
+    "referenced_works_count": 31,
+    "title": "Serotonergic pathology and disease burden in the premotor and motor phase of A53T α-synuclein parkinsonism: a cross-sectional study",
+    "type": "article"
+  },
+  "response_hash": "c971e9efe8221c3729a1ebe3c953e4ca11e26e05f812ab703d38b30cd7f5dabf",
+  "retrieved_at": "2026-07-14T13:49:14Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

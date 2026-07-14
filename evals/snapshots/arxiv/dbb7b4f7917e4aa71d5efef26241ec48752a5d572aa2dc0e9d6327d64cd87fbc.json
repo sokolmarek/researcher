@@ -1,0 +1,60 @@
+{
+  "endpoint": "query",
+  "request_key": "dbb7b4f7917e4aa71d5efef26241ec48752a5d572aa2dc0e9d6327d64cd87fbc",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Graph Barlow Twins: A self-supervised representation learning framework for graphs\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Piotr Bielak",
+          "Tomasz Kajdanowicz",
+          "Nitesh V. Chawla"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "doi": "10.1016/j.knosys.2022.109631",
+        "id": "http://arxiv.org/abs/2106.02466v3",
+        "journal_ref": "Knowledge-Based Systems, Volume 256, 28 November 2022, 109631",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2106.02466v3",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2106.02466v3",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1016/j.knosys.2022.109631",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2021-06-04T13:10:51Z",
+        "summary": "The self-supervised learning (SSL) paradigm is an essential exploration area, which tries to eliminate the need for expensive data labeling. Despite the great success of SSL methods in computer vision and natural language processing, most of them employ contrastive learning objectives that require negative samples, which are hard to define. This becomes even more challenging in the case of graphs and is a bottleneck for achieving robust representations. To overcome such limitations, we propose a framework for self-supervised graph representation learning - Graph Barlow Twins, which utilizes a cross-correlation-based loss function instead of negative samples. Moreover, it does not rely on non-symmetric neural network architectures - in contrast to state-of-the-art self-supervised graph representation learning method BGRL. We show that our method achieves as competitive results as the best self-supervised methods and fully supervised ones while requiring fewer hyperparameters and substantially shorter computation time (ca. 30 times faster than BGRL).",
+        "title": "Graph Barlow Twins: A self-supervised representation learning framework for graphs",
+        "updated": "2023-09-12T14:53:38Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "e4550fe82a7b01862cc93a70b4b5eda3432d4686835eaf5892ad559310ca8713",
+  "retrieved_at": "2026-07-14T13:52:09Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

@@ -1,0 +1,1371 @@
+{
+  "endpoint": "works/doi:10.1186/s13054-025-05671-6",
+  "request_key": "65d3800ae6f3c60819164add733bea85e702498ae60228bcbf1da88ddc7e875c",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "SCOPUS:": [
+        0
+      ],
+      "le.j": [
+        1
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210111187"
+            ],
+            "raw_affiliation_string": "CHU de Poitiers, Médecine Intensive Réanimation, Poitiers, France. florence.boissier@chu-poitiers.fr"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I32881790"
+            ],
+            "raw_affiliation_string": "INSERM CIC 14-02 IS-ALIVE, Université de Poitiers, Poitiers, France. florence.boissier@chu-poitiers.fr"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I32881790"
+            ],
+            "raw_affiliation_string": "INSERM CIC 14-02 IS-ALIVE, Université de Poitiers, Poitiers, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210111187"
+            ],
+            "raw_affiliation_string": "CHU de Poitiers, Médecine Intensive Réanimation, Poitiers, France"
+          }
+        ],
+        "author": {
+          "display_name": "Florence Boissier",
+          "id": "https://openalex.org/A5089242770",
+          "orcid": "https://orcid.org/0000-0002-9745-4783"
+        },
+        "author_position": "first",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Université de Poitiers",
+            "id": "https://openalex.org/I32881790",
+            "lineage": [
+              "https://openalex.org/I32881790"
+            ],
+            "ror": "https://ror.org/04xhy8q59",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Centre Hospitalier Universitaire de Poitiers",
+            "id": "https://openalex.org/I4210111187",
+            "lineage": [
+              "https://openalex.org/I4210111187"
+            ],
+            "ror": "https://ror.org/029s6hd13",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "CHU de Poitiers, Médecine Intensive Réanimation, Poitiers, France. florence.boissier@chu-poitiers.fr",
+          "INSERM CIC 14-02 IS-ALIVE, Université de Poitiers, Poitiers, France. florence.boissier@chu-poitiers.fr",
+          "INSERM CIC 14-02 IS-ALIVE, Université de Poitiers, Poitiers, France",
+          "CHU de Poitiers, Médecine Intensive Réanimation, Poitiers, France"
+        ],
+        "raw_author_name": "Florence Boissier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210104887"
+            ],
+            "raw_affiliation_string": "Service de Réanimation, CH de St BRIEUC, 10, rue Marcel Proust, Saint-Brieuc, 22000, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4210121705",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive – Réanimation (Département R3S), Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "Nicolas Massart",
+          "id": "https://openalex.org/A5067653881",
+          "orcid": "https://orcid.org/0000-0001-5828-0197"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Sorbonne Université",
+            "id": "https://openalex.org/I39804081",
+            "lineage": [
+              "https://openalex.org/I39804081"
+            ],
+            "ror": "https://ror.org/02en5vm52",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Centre Hospitalier de Saint-Brieuc",
+            "id": "https://openalex.org/I4210104887",
+            "lineage": [
+              "https://openalex.org/I4210104887"
+            ],
+            "ror": "https://ror.org/01egnsq83",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Pitié-Salpêtrière Hospital",
+            "id": "https://openalex.org/I4210121705",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210121705"
+            ],
+            "ror": "https://ror.org/02mh9a093",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Service de Réanimation, CH de St BRIEUC, 10, rue Marcel Proust, Saint-Brieuc, 22000, France",
+          "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive – Réanimation (Département R3S), Paris, France"
+        ],
+        "raw_author_name": "Nicolas Massart",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210130325",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "Service de Médecine Intensive Réanimation, AP-HP, Hôpitaux Universitaires Henri Mondor, DHU A-TVB, Créteil, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4210121705",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive – Réanimation (Département R3S), Paris, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4387152586"
+            ],
+            "raw_affiliation_string": "Sorbonne Université, INSERM, UMRS1158 Neurophysiologie respiratoire expérimentale et clinique, Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "Thomas Frapard",
+          "id": "https://openalex.org/A5078639438",
+          "orcid": "https://orcid.org/0000-0002-4309-7266"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Sorbonne Université",
+            "id": "https://openalex.org/I39804081",
+            "lineage": [
+              "https://openalex.org/I39804081"
+            ],
+            "ror": "https://ror.org/02en5vm52",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Pitié-Salpêtrière Hospital",
+            "id": "https://openalex.org/I4210121705",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210121705"
+            ],
+            "ror": "https://ror.org/02mh9a093",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Hôpitaux Universitaires Henri-Mondor",
+            "id": "https://openalex.org/I4210130325",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210130325"
+            ],
+            "ror": "https://ror.org/033yb0967",
+            "type": "healthcare"
+          },
+          {
+            "country_code": null,
+            "display_name": "Neurophysiologie respiratoire expérimentale et clinique",
+            "id": "https://openalex.org/I4387152586",
+            "lineage": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4387152586"
+            ],
+            "ror": "https://ror.org/0259td381",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Service de Médecine Intensive Réanimation, AP-HP, Hôpitaux Universitaires Henri Mondor, DHU A-TVB, Créteil, France",
+          "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive – Réanimation (Département R3S), Paris, France",
+          "Sorbonne Université, INSERM, UMRS1158 Neurophysiologie respiratoire expérimentale et clinique, Paris, France"
+        ],
+        "raw_author_name": "Thomas Frapard",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4210121705",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I132053463"
+            ],
+            "raw_affiliation_string": "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France"
+          }
+        ],
+        "author": {
+          "display_name": "Marie Lecronier",
+          "id": "https://openalex.org/A5054260218",
+          "orcid": "https://orcid.org/0000-0002-5543-5074"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE",
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "Université Libre de Bruxelles",
+            "id": "https://openalex.org/I132053463",
+            "lineage": [
+              "https://openalex.org/I132053463"
+            ],
+            "ror": "https://ror.org/01r9htc13",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Sorbonne Université",
+            "id": "https://openalex.org/I39804081",
+            "lineage": [
+              "https://openalex.org/I39804081"
+            ],
+            "ror": "https://ror.org/02en5vm52",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Pitié-Salpêtrière Hospital",
+            "id": "https://openalex.org/I4210121705",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210121705"
+            ],
+            "ror": "https://ror.org/02mh9a093",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France",
+          "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France"
+        ],
+        "raw_author_name": "Marie Lecronier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4210121705",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4387152586"
+            ],
+            "raw_affiliation_string": "Sorbonne Université, INSERM, UMRS1158 Neurophysiologie respiratoire expérimentale et clinique, Paris, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210104887"
+            ],
+            "raw_affiliation_string": "Service de Réanimation, CH de St BRIEUC, 10, rue Marcel Proust, Saint-Brieuc, 22000, France"
+          }
+        ],
+        "author": {
+          "display_name": "Alexandre Demoule",
+          "id": "https://openalex.org/A5108147868",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Sorbonne Université",
+            "id": "https://openalex.org/I39804081",
+            "lineage": [
+              "https://openalex.org/I39804081"
+            ],
+            "ror": "https://ror.org/02en5vm52",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Centre Hospitalier de Saint-Brieuc",
+            "id": "https://openalex.org/I4210104887",
+            "lineage": [
+              "https://openalex.org/I4210104887"
+            ],
+            "ror": "https://ror.org/01egnsq83",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Pitié-Salpêtrière Hospital",
+            "id": "https://openalex.org/I4210121705",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210121705"
+            ],
+            "ror": "https://ror.org/02mh9a093",
+            "type": "healthcare"
+          },
+          {
+            "country_code": null,
+            "display_name": "Neurophysiologie respiratoire expérimentale et clinique",
+            "id": "https://openalex.org/I4387152586",
+            "lineage": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4387152586"
+            ],
+            "ror": "https://ror.org/0259td381",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France",
+          "Sorbonne Université, INSERM, UMRS1158 Neurophysiologie respiratoire expérimentale et clinique, Paris, France",
+          "Service de Réanimation, CH de St BRIEUC, 10, rue Marcel Proust, Saint-Brieuc, 22000, France"
+        ],
+        "raw_author_name": "Alexandre Demoule",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I132053463"
+            ],
+            "raw_affiliation_string": "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210130325",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "Service de Médecine Intensive Réanimation, AP-HP, Hôpitaux Universitaires Henri Mondor, DHU A-TVB, Créteil, France"
+          }
+        ],
+        "author": {
+          "display_name": "David Grimaldi",
+          "id": "https://openalex.org/A5015902606",
+          "orcid": "https://orcid.org/0000-0001-8428-065X"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE",
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "Université Libre de Bruxelles",
+            "id": "https://openalex.org/I132053463",
+            "lineage": [
+              "https://openalex.org/I132053463"
+            ],
+            "ror": "https://ror.org/01r9htc13",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Hôpitaux Universitaires Henri-Mondor",
+            "id": "https://openalex.org/I4210130325",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210130325"
+            ],
+            "ror": "https://ror.org/033yb0967",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France",
+          "Service de Médecine Intensive Réanimation, AP-HP, Hôpitaux Universitaires Henri Mondor, DHU A-TVB, Créteil, France"
+        ],
+        "raw_author_name": "David Grimaldi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4210121705",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive – Réanimation (Département R3S), Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "for the REAGIR group",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Sorbonne Université",
+            "id": "https://openalex.org/I39804081",
+            "lineage": [
+              "https://openalex.org/I39804081"
+            ],
+            "ror": "https://ror.org/02en5vm52",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Pitié-Salpêtrière Hospital",
+            "id": "https://openalex.org/I4210121705",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210121705"
+            ],
+            "ror": "https://ror.org/02mh9a093",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive – Réanimation (Département R3S), Paris, France"
+        ],
+        "raw_author_name": "for the REAGIR group",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210111187"
+            ],
+            "raw_affiliation_string": "CHU de Poitiers, Médecine Intensive Réanimation, Poitiers, France. florence.boissier@chu-poitiers.fr"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I32881790"
+            ],
+            "raw_affiliation_string": "INSERM CIC 14-02 IS-ALIVE, Université de Poitiers, Poitiers, France. florence.boissier@chu-poitiers.fr"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I132053463"
+            ],
+            "raw_affiliation_string": "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France"
+          }
+        ],
+        "author": {
+          "display_name": "Florence Boissier",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE",
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "Université Libre de Bruxelles",
+            "id": "https://openalex.org/I132053463",
+            "lineage": [
+              "https://openalex.org/I132053463"
+            ],
+            "ror": "https://ror.org/01r9htc13",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Université de Poitiers",
+            "id": "https://openalex.org/I32881790",
+            "lineage": [
+              "https://openalex.org/I32881790"
+            ],
+            "ror": "https://ror.org/04xhy8q59",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Centre Hospitalier Universitaire de Poitiers",
+            "id": "https://openalex.org/I4210111187",
+            "lineage": [
+              "https://openalex.org/I4210111187"
+            ],
+            "ror": "https://ror.org/029s6hd13",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "CHU de Poitiers, Médecine Intensive Réanimation, Poitiers, France. florence.boissier@chu-poitiers.fr",
+          "INSERM CIC 14-02 IS-ALIVE, Université de Poitiers, Poitiers, France. florence.boissier@chu-poitiers.fr",
+          "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France"
+        ],
+        "raw_author_name": "Florence Boissier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210104887"
+            ],
+            "raw_affiliation_string": "Service de Réanimation, CH de St BRIEUC, 10, rue Marcel Proust, Saint-Brieuc, 22000, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I12607205",
+              "https://openalex.org/I32597200"
+            ],
+            "raw_affiliation_string": "Department of Electronics and Information Systems, Ghent University, IBiTech, Gent, Belgium"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210143543"
+            ],
+            "raw_affiliation_string": "Department of Anaesthesia, Intensive Care and Pain Medicine, General Hospital Maria Middelares, Ghent, Belgium"
+          }
+        ],
+        "author": {
+          "display_name": "Nicolas Massart",
+          "id": "https://openalex.org/A5067653881",
+          "orcid": "https://orcid.org/0000-0001-5828-0197"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE",
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "HOGENT University of Applied Sciences and Arts",
+            "id": "https://openalex.org/I12607205",
+            "lineage": [
+              "https://openalex.org/I12607205"
+            ],
+            "ror": "https://ror.org/00rs45z86",
+            "type": "education"
+          },
+          {
+            "country_code": "BE",
+            "display_name": "Ghent University",
+            "id": "https://openalex.org/I32597200",
+            "lineage": [
+              "https://openalex.org/I32597200"
+            ],
+            "ror": "https://ror.org/00cv9y106",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Centre Hospitalier de Saint-Brieuc",
+            "id": "https://openalex.org/I4210104887",
+            "lineage": [
+              "https://openalex.org/I4210104887"
+            ],
+            "ror": "https://ror.org/01egnsq83",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "BE",
+            "display_name": "AZ Maria Middelares",
+            "id": "https://openalex.org/I4210143543",
+            "lineage": [
+              "https://openalex.org/I4210143543"
+            ],
+            "ror": "https://ror.org/048pv7s22",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Service de Réanimation, CH de St BRIEUC, 10, rue Marcel Proust, Saint-Brieuc, 22000, France",
+          "Department of Electronics and Information Systems, Ghent University, IBiTech, Gent, Belgium",
+          "Department of Anaesthesia, Intensive Care and Pain Medicine, General Hospital Maria Middelares, Ghent, Belgium"
+        ],
+        "raw_author_name": "Nicolas Massart",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210130325",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "Service de Médecine Intensive Réanimation, AP-HP, Hôpitaux Universitaires Henri Mondor, DHU A-TVB, Créteil, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210087487",
+              "https://openalex.org/I21491767"
+            ],
+            "raw_affiliation_string": "Department of Anaesthesia and Intensive Care MedicineHôpital Nord, Assistance Publique des Hôpitaux de Marseille, Aix Marseille University, Marseille, France"
+          }
+        ],
+        "author": {
+          "display_name": "Thomas Frapard",
+          "id": "https://openalex.org/A5078639438",
+          "orcid": "https://orcid.org/0000-0002-4309-7266"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Aix-Marseille Université",
+            "id": "https://openalex.org/I21491767",
+            "lineage": [
+              "https://openalex.org/I21491767"
+            ],
+            "ror": "https://ror.org/035xkbk20",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique Hôpitaux de Marseille",
+            "id": "https://openalex.org/I4210087487",
+            "lineage": [
+              "https://openalex.org/I4210087487"
+            ],
+            "ror": "https://ror.org/002cp4060",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Hôpitaux Universitaires Henri-Mondor",
+            "id": "https://openalex.org/I4210130325",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210130325"
+            ],
+            "ror": "https://ror.org/033yb0967",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Service de Médecine Intensive Réanimation, AP-HP, Hôpitaux Universitaires Henri Mondor, DHU A-TVB, Créteil, France",
+          "Department of Anaesthesia and Intensive Care MedicineHôpital Nord, Assistance Publique des Hôpitaux de Marseille, Aix Marseille University, Marseille, France"
+        ],
+        "raw_author_name": "Thomas Frapard",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4210121705",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "Marie Lecronier",
+          "id": "https://openalex.org/A5054260218",
+          "orcid": "https://orcid.org/0000-0002-5543-5074"
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Sorbonne Université",
+            "id": "https://openalex.org/I39804081",
+            "lineage": [
+              "https://openalex.org/I39804081"
+            ],
+            "ror": "https://ror.org/02en5vm52",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Pitié-Salpêtrière Hospital",
+            "id": "https://openalex.org/I4210121705",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210121705"
+            ],
+            "ror": "https://ror.org/02mh9a093",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France"
+        ],
+        "raw_author_name": "Marie Lecronier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4210121705",
+              "https://openalex.org/I4210097159"
+            ],
+            "raw_affiliation_string": "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4387152586"
+            ],
+            "raw_affiliation_string": "Sorbonne Université, INSERM, UMRS1158 Neurophysiologie respiratoire expérimentale et clinique, Paris, France"
+          }
+        ],
+        "author": {
+          "display_name": "Alexandre Demoule",
+          "id": "https://openalex.org/A5108147868",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Inserm",
+            "id": "https://openalex.org/I154526488",
+            "lineage": [
+              "https://openalex.org/I154526488"
+            ],
+            "ror": "https://ror.org/02vjkv261",
+            "type": "government"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Sorbonne Université",
+            "id": "https://openalex.org/I39804081",
+            "lineage": [
+              "https://openalex.org/I39804081"
+            ],
+            "ror": "https://ror.org/02en5vm52",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique – Hôpitaux de Paris",
+            "id": "https://openalex.org/I4210097159",
+            "lineage": [
+              "https://openalex.org/I4210097159"
+            ],
+            "ror": "https://ror.org/00pg5jh14",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Pitié-Salpêtrière Hospital",
+            "id": "https://openalex.org/I4210121705",
+            "lineage": [
+              "https://openalex.org/I4210097159",
+              "https://openalex.org/I4210121705"
+            ],
+            "ror": "https://ror.org/02mh9a093",
+            "type": "healthcare"
+          },
+          {
+            "country_code": null,
+            "display_name": "Neurophysiologie respiratoire expérimentale et clinique",
+            "id": "https://openalex.org/I4387152586",
+            "lineage": [
+              "https://openalex.org/I154526488",
+              "https://openalex.org/I39804081",
+              "https://openalex.org/I4387152586"
+            ],
+            "ror": "https://ror.org/0259td381",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "AP-HP. Sorbonne Université, Hôpital Pitié-Salpêtrière, Service de Médecine intensive - Réanimation (Département R3S), Paris, France",
+          "Sorbonne Université, INSERM, UMRS1158 Neurophysiologie respiratoire expérimentale et clinique, Paris, France"
+        ],
+        "raw_author_name": "Alexandre Demoule",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I132053463"
+            ],
+            "raw_affiliation_string": "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France"
+          }
+        ],
+        "author": {
+          "display_name": "David Grimaldi",
+          "id": "https://openalex.org/A5015902606",
+          "orcid": "https://orcid.org/0000-0001-8428-065X"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "Université Libre de Bruxelles",
+            "id": "https://openalex.org/I132053463",
+            "lineage": [
+              "https://openalex.org/I132053463"
+            ],
+            "ror": "https://ror.org/01r9htc13",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Intensive Care CUB-Erasme, Route de Lennik, Université Libre de Bruxelles (ULB), AfterROSC Network Group, Brussels, Paris, 8081070, France"
+        ],
+        "raw_author_name": "David Grimaldi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Astrid Bertier",
+          "id": "https://openalex.org/A5026315321",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Astrid Bertier",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Valentin Chabanel",
+          "id": "https://openalex.org/A5099103804",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Valentin Chabanel",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Véronique Chaillet",
+          "id": "https://openalex.org/A5120588100",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Véronique Chaillet",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "É. Cuquemelle",
+          "id": "https://openalex.org/A5067770194",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Elise Cuquemelle",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Gaëlle Freitas-Terzi",
+          "id": "https://openalex.org/A5116856723",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Gaëlle Freitas-Terzi",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Loïc Le Guennec",
+          "id": "https://openalex.org/A5083050228",
+          "orcid": "https://orcid.org/0000-0001-8146-6256"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Loïc Le Guennec",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [],
+        "author": {
+          "display_name": "Lamia Ouanes-Besbes",
+          "id": "https://openalex.org/A5058189844",
+          "orcid": "https://orcid.org/0000-0002-9905-5129"
+        },
+        "author_position": "middle",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [],
+        "raw_author_name": "Lamia Ouanes Besbes",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210143543"
+            ],
+            "raw_affiliation_string": "Department of Anaesthesia, Intensive Care and Pain Medicine, General Hospital Maria Middelares, Ghent, Belgium"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I12607205",
+              "https://openalex.org/I32597200"
+            ],
+            "raw_affiliation_string": "Department of Electronics and Information Systems, Ghent University, IBiTech, Gent, Belgium"
+          }
+        ],
+        "author": {
+          "display_name": "Alain F. Kalmar",
+          "id": "https://openalex.org/A5032813813",
+          "orcid": "https://orcid.org/0000-0003-2036-9019"
+        },
+        "author_position": "middle",
+        "countries": [
+          "BE"
+        ],
+        "institutions": [
+          {
+            "country_code": "BE",
+            "display_name": "HOGENT University of Applied Sciences and Arts",
+            "id": "https://openalex.org/I12607205",
+            "lineage": [
+              "https://openalex.org/I12607205"
+            ],
+            "ror": "https://ror.org/00rs45z86",
+            "type": "education"
+          },
+          {
+            "country_code": "BE",
+            "display_name": "Ghent University",
+            "id": "https://openalex.org/I32597200",
+            "lineage": [
+              "https://openalex.org/I32597200"
+            ],
+            "ror": "https://ror.org/00cv9y106",
+            "type": "education"
+          },
+          {
+            "country_code": "BE",
+            "display_name": "AZ Maria Middelares",
+            "id": "https://openalex.org/I4210143543",
+            "lineage": [
+              "https://openalex.org/I4210143543"
+            ],
+            "ror": "https://ror.org/048pv7s22",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Anaesthesia, Intensive Care and Pain Medicine, General Hospital Maria Middelares, Ghent, Belgium",
+          "Department of Electronics and Information Systems, Ghent University, IBiTech, Gent, Belgium"
+        ],
+        "raw_author_name": "Alain F. Kalmar",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210087487",
+              "https://openalex.org/I21491767"
+            ],
+            "raw_affiliation_string": "Department of Anaesthesia and Intensive Care MedicineHôpital Nord, Assistance Publique des Hôpitaux de Marseille, Aix Marseille University, Marseille, France"
+          }
+        ],
+        "author": {
+          "display_name": "Laurent Zieleskiewicz",
+          "id": "https://openalex.org/A5065642381",
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "FR"
+        ],
+        "institutions": [
+          {
+            "country_code": "FR",
+            "display_name": "Aix-Marseille Université",
+            "id": "https://openalex.org/I21491767",
+            "lineage": [
+              "https://openalex.org/I21491767"
+            ],
+            "ror": "https://ror.org/035xkbk20",
+            "type": "education"
+          },
+          {
+            "country_code": "FR",
+            "display_name": "Assistance Publique Hôpitaux de Marseille",
+            "id": "https://openalex.org/I4210087487",
+            "lineage": [
+              "https://openalex.org/I4210087487"
+            ],
+            "ror": "https://ror.org/002cp4060",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Anaesthesia and Intensive Care MedicineHôpital Nord, Assistance Publique des Hôpitaux de Marseille, Aix Marseille University, Marseille, France"
+        ],
+        "raw_author_name": "Laurent Zieleskiewicz",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1186/s13054-025-05671-6",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1186/s13054-025-05671-6",
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "pdf_url": "https://ccforum.biomedcentral.com/counter/pdf/10.1186/s13054-025-05671-6",
+      "raw_source_name": "Critical Care",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Critical Care",
+        "host_organization": "https://openalex.org/P4310320256",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320256",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "BioMed Central",
+          "Springer Nature"
+        ],
+        "host_organization_name": "BioMed Central",
+        "id": "https://openalex.org/S191417626",
+        "is_core": true,
+        "is_in_doaj": true,
+        "is_oa": true,
+        "issn": [
+          "1364-8535",
+          "1466-609X",
+          "1574-4280",
+          "1875-7081"
+        ],
+        "issn_l": "1364-8535",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "488",
+      "issue": "1",
+      "last_page": "488",
+      "volume": "29"
+    },
+    "cited_by_count": 2,
+    "display_name": "Volatile sedation in critically ill adults undergoing mechanical ventilation: not all sedatives are equivalent, in sustainability!",
+    "doi": "https://doi.org/10.1186/s13054-025-05671-6",
+    "id": "https://openalex.org/W4416225944",
+    "ids": {
+      "doi": "https://doi.org/10.1186/s13054-025-05671-6",
+      "openalex": "https://openalex.org/W4416225944",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/41239410"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://ccforum.biomedcentral.com/counter/pdf/10.1186/s13054-025-05671-6"
+    },
+    "primary_location": {
+      "id": "doi:10.1186/s13054-025-05671-6",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1186/s13054-025-05671-6",
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "pdf_url": "https://ccforum.biomedcentral.com/counter/pdf/10.1186/s13054-025-05671-6",
+      "raw_source_name": "Critical Care",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Critical Care",
+        "host_organization": "https://openalex.org/P4310320256",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320256",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "BioMed Central",
+          "Springer Nature"
+        ],
+        "host_organization_name": "BioMed Central",
+        "id": "https://openalex.org/S191417626",
+        "is_core": true,
+        "is_in_doaj": true,
+        "is_oa": true,
+        "issn": [
+          "1364-8535",
+          "1466-609X",
+          "1574-4280",
+          "1875-7081"
+        ],
+        "issn_l": "1364-8535",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2025-11-14",
+    "publication_year": 2025,
+    "referenced_works": [
+      "https://openalex.org/W3019635787",
+      "https://openalex.org/W4390744086",
+      "https://openalex.org/W4392233376",
+      "https://openalex.org/W4403448759",
+      "https://openalex.org/W4406865646",
+      "https://openalex.org/W4408577667",
+      "https://openalex.org/W4408660988",
+      "https://openalex.org/W4411045747",
+      "https://openalex.org/W4412391176",
+      "https://openalex.org/W4413139978",
+      "https://openalex.org/W4413496640",
+      "https://openalex.org/W4413814512",
+      "https://openalex.org/W7109567488"
+    ],
+    "referenced_works_count": 13,
+    "title": "Volatile sedation in critically ill adults undergoing mechanical ventilation: not all sedatives are equivalent, in sustainability!",
+    "type": "article"
+  },
+  "response_hash": "ef99ad6f921080273711688780d6e8515a760643366c0ddd7a74ad1cd73ee7f9",
+  "retrieved_at": "2026-07-14T13:49:07Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

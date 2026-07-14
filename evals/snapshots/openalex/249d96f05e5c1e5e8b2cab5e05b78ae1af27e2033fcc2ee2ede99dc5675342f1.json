@@ -1,0 +1,3912 @@
+{
+  "endpoint": "works",
+  "request_key": "249d96f05e5c1e5e8b2cab5e05b78ae1af27e2033fcc2ee2ede99dc5675342f1",
+  "request_params": {
+    "per-page": 5,
+    "search": "A robust human airway organoid platform enables scalable expansion and trajectory mapping",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 188,
+      "db_response_time_ms": 112,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (A robust human airway organoid platform enables scalable expansion \"and\" trajectory mapping)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "A robust human airway organoid platform enables scalable expansion and trajectory mapping"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:A robust human airway organoid platform enables scalable expansion and trajectory mapping&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": null,
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA. christina.theodoris@gladstone.ucsf.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "raw_affiliation_string": "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA. christina.theodoris@gladstone.ucsf.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1288882113"
+                ],
+                "raw_affiliation_string": "Division of Genetics and Genomics, Boston Children's Hospital, Boston, MA, USA. christina.theodoris@gladstone.ucsf.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1321430492"
+                ],
+                "raw_affiliation_string": "Harvard Medical School Genetics Training Program, Boston, USA. christina.theodoris@gladstone.ucsf.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "raw_affiliation_string": "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Christina V. Theodoris",
+              "id": "https://openalex.org/A5020538019",
+              "orcid": "https://orcid.org/0000-0003-1658-1447"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Boston Children's Hospital",
+                "id": "https://openalex.org/I1288882113",
+                "lineage": [
+                  "https://openalex.org/I1288882113"
+                ],
+                "ror": "https://ror.org/00dvg7y05",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Gladstone Institutes",
+                "id": "https://openalex.org/I1321430492",
+                "lineage": [
+                  "https://openalex.org/I1321430492"
+                ],
+                "ror": "https://ror.org/038321296",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Dana-Farber Cancer Institute",
+                "id": "https://openalex.org/I4210117453",
+                "lineage": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "ror": "https://ror.org/02jzgtq86",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA. christina.theodoris@gladstone.ucsf.edu",
+              "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA. christina.theodoris@gladstone.ucsf.edu",
+              "Division of Genetics and Genomics, Boston Children's Hospital, Boston, MA, USA. christina.theodoris@gladstone.ucsf.edu",
+              "Harvard Medical School Genetics Training Program, Boston, USA. christina.theodoris@gladstone.ucsf.edu",
+              "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA"
+            ],
+            "raw_author_name": "Christina V. Theodoris",
+            "raw_orcid": "https://orcid.org/0000-0003-1658-1447"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210087915"
+                ],
+                "raw_affiliation_string": "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Ling Xiao",
+              "id": "https://openalex.org/A5070597268",
+              "orcid": "https://orcid.org/0000-0002-5463-5576"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts General Hospital",
+                "id": "https://openalex.org/I4210087915",
+                "lineage": [
+                  "https://openalex.org/I4210087915",
+                  "https://openalex.org/I48633490"
+                ],
+                "ror": "https://ror.org/002pd6e78",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+              "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+            ],
+            "raw_author_name": "Ling Xiao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I150569930"
+                ],
+                "raw_affiliation_string": "Precision Cardiology Laboratory, Bayer US LLC, Cambridge, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Anant Chopra",
+              "id": "https://openalex.org/A5038484024",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Bayer (United States)",
+                "id": "https://openalex.org/I150569930",
+                "lineage": [
+                  "https://openalex.org/I150569930",
+                  "https://openalex.org/I67348948"
+                ],
+                "ror": "https://ror.org/034ffbg36",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Precision Cardiology Laboratory, Bayer US LLC, Cambridge, MA, USA"
+            ],
+            "raw_author_name": "Anant Chopra",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Mark Chaffin",
+              "id": "https://openalex.org/A5066653824",
+              "orcid": "https://orcid.org/0000-0002-1234-5562"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+            ],
+            "raw_author_name": "Mark D. Chaffin",
+            "raw_orcid": "https://orcid.org/0000-0002-1234-5562"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Zeina R. Al Sayed",
+              "id": "https://openalex.org/A5061249762",
+              "orcid": "https://orcid.org/0000-0002-0661-2003"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+            ],
+            "raw_author_name": "Zeina R. Al Sayed",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210087915"
+                ],
+                "raw_affiliation_string": "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Matthew C. Hill",
+              "id": "https://openalex.org/A5011247610",
+              "orcid": "https://orcid.org/0000-0003-4578-3873"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts General Hospital",
+                "id": "https://openalex.org/I4210087915",
+                "lineage": [
+                  "https://openalex.org/I4210087915",
+                  "https://openalex.org/I48633490"
+                ],
+                "ror": "https://ror.org/002pd6e78",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+              "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+            ],
+            "raw_author_name": "Matthew C. Hill",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210087915"
+                ],
+                "raw_affiliation_string": "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Helene Mantineo",
+              "id": "https://openalex.org/A5092055333",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts General Hospital",
+                "id": "https://openalex.org/I4210087915",
+                "lineage": [
+                  "https://openalex.org/I4210087915",
+                  "https://openalex.org/I48633490"
+                ],
+                "ror": "https://ror.org/002pd6e78",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+              "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+            ],
+            "raw_author_name": "Helene Mantineo",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I150569930"
+                ],
+                "raw_affiliation_string": "Precision Cardiology Laboratory, Bayer US LLC, Cambridge, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Elizabeth M. Brydon",
+              "id": "https://openalex.org/A5086244647",
+              "orcid": "https://orcid.org/0000-0002-6140-8005"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Bayer (United States)",
+                "id": "https://openalex.org/I150569930",
+                "lineage": [
+                  "https://openalex.org/I150569930",
+                  "https://openalex.org/I67348948"
+                ],
+                "ror": "https://ror.org/034ffbg36",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Precision Cardiology Laboratory, Bayer US LLC, Cambridge, MA, USA"
+            ],
+            "raw_author_name": "Elizabeth M. Brydon",
+            "raw_orcid": "https://orcid.org/0000-0002-6140-8005"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I136199984"
+                ],
+                "raw_affiliation_string": "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "raw_affiliation_string": "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Zexian Zeng",
+              "id": "https://openalex.org/A5079301959",
+              "orcid": "https://orcid.org/0000-0002-3905-3244"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Harvard University",
+                "id": "https://openalex.org/I136199984",
+                "lineage": [
+                  "https://openalex.org/I136199984"
+                ],
+                "ror": "https://ror.org/03vek6s52",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Dana-Farber Cancer Institute",
+                "id": "https://openalex.org/I4210117453",
+                "lineage": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "ror": "https://ror.org/02jzgtq86",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA",
+              "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA"
+            ],
+            "raw_author_name": "Zexian Zeng",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "raw_affiliation_string": "Center for Functional Cancer Epigenetics, Dana-Farber Cancer Institute, Boston, MA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I136199984"
+                ],
+                "raw_affiliation_string": "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "raw_affiliation_string": "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "X. Shirley Liu",
+              "id": "https://openalex.org/A5045575546",
+              "orcid": "https://orcid.org/0000-0003-4736-7339"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Harvard University",
+                "id": "https://openalex.org/I136199984",
+                "lineage": [
+                  "https://openalex.org/I136199984"
+                ],
+                "ror": "https://ror.org/03vek6s52",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Dana-Farber Cancer Institute",
+                "id": "https://openalex.org/I4210117453",
+                "lineage": [
+                  "https://openalex.org/I4210117453"
+                ],
+                "ror": "https://ror.org/02jzgtq86",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Center for Functional Cancer Epigenetics, Dana-Farber Cancer Institute, Boston, MA, USA",
+              "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA",
+              "Department of Data Science, Dana-Farber Cancer Institute, Boston, MA, USA"
+            ],
+            "raw_author_name": "X. Shirley Liu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I107606265"
+                ],
+                "raw_affiliation_string": "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA. ellinor@mgh.harvard.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210087915"
+                ],
+                "raw_affiliation_string": "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA. ellinor@mgh.harvard.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210087915"
+                ],
+                "raw_affiliation_string": "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Patrick T. Ellinor",
+              "id": "https://openalex.org/A5069822855",
+              "orcid": "https://orcid.org/0000-0002-2067-0533"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Broad Institute",
+                "id": "https://openalex.org/I107606265",
+                "lineage": [
+                  "https://openalex.org/I107606265"
+                ],
+                "ror": "https://ror.org/05a0ya142",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts General Hospital",
+                "id": "https://openalex.org/I4210087915",
+                "lineage": [
+                  "https://openalex.org/I4210087915",
+                  "https://openalex.org/I48633490"
+                ],
+                "ror": "https://ror.org/002pd6e78",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA. ellinor@mgh.harvard.edu",
+              "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA. ellinor@mgh.harvard.edu",
+              "Cardiovascular Research Center, Massachusetts General Hospital, Boston, MA, USA"
+            ],
+            "raw_author_name": "Patrick T. Ellinor",
+            "raw_orcid": "https://orcid.org/0000-0002-2067-0533"
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt8st2d5mx",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://escholarship.org/uc/item/8st2d5mx",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://escholarship.org/content/qt8st2d5mx/qt8st2d5mx.pdf",
+          "raw_source_name": "Nature, vol 618, iss 7965",
+          "raw_type": "article",
+          "source": {
+            "display_name": "eScholarship (California Digital Library)",
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "California Digital Library",
+            "id": "https://openalex.org/S4306400115",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": "616",
+          "issue": "7965",
+          "last_page": "624",
+          "volume": "618"
+        },
+        "cited_by_count": 1068,
+        "display_name": "Transfer learning enables predictions in network biology",
+        "doi": "https://doi.org/10.1038/s41586-023-06139-9",
+        "id": "https://openalex.org/W4378838672",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s41586-023-06139-9",
+          "openalex": "https://openalex.org/W4378838672",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/37258680"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://escholarship.org/content/qt8st2d5mx/qt8st2d5mx.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s41586-023-06139-9",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41586-023-06139-9",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Nature",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S137773608",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0028-0836",
+              "1476-4687"
+            ],
+            "issn_l": "0028-0836",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2023-05-31",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W1965115186",
+          "https://openalex.org/W1968931043",
+          "https://openalex.org/W1969661970",
+          "https://openalex.org/W1985130075",
+          "https://openalex.org/W2014543194",
+          "https://openalex.org/W2049598074",
+          "https://openalex.org/W2084078952",
+          "https://openalex.org/W2100906399",
+          "https://openalex.org/W2137802443",
+          "https://openalex.org/W2152010440",
+          "https://openalex.org/W2194775991",
+          "https://openalex.org/W2202954603",
+          "https://openalex.org/W2256016639",
+          "https://openalex.org/W2318201098",
+          "https://openalex.org/W2347037915",
+          "https://openalex.org/W2523620612",
+          "https://openalex.org/W2560905785",
+          "https://openalex.org/W2583057702",
+          "https://openalex.org/W2754961031",
+          "https://openalex.org/W2763984188",
+          "https://openalex.org/W2768173198",
+          "https://openalex.org/W2774307122",
+          "https://openalex.org/W2781484625",
+          "https://openalex.org/W2783929588",
+          "https://openalex.org/W2797428667",
+          "https://openalex.org/W2797630570",
+          "https://openalex.org/W2799540870",
+          "https://openalex.org/W2800392236",
+          "https://openalex.org/W2803499747",
+          "https://openalex.org/W2804159084",
+          "https://openalex.org/W2808474415",
+          "https://openalex.org/W2809205318",
+          "https://openalex.org/W2811387400",
+          "https://openalex.org/W2811427324",
+          "https://openalex.org/W2824445991",
+          "https://openalex.org/W2874034467",
+          "https://openalex.org/W2885298105",
+          "https://openalex.org/W2885499809",
+          "https://openalex.org/W2887034336",
+          "https://openalex.org/W2888465038",
+          "https://openalex.org/W2888574324",
+          "https://openalex.org/W2894232765",
+          "https://openalex.org/W2896156331",
+          "https://openalex.org/W2896518632",
+          "https://openalex.org/W2897336241",
+          "https://openalex.org/W2897346235",
+          "https://openalex.org/W2898933064",
+          "https://openalex.org/W2900144939",
+          "https://openalex.org/W2900354600",
+          "https://openalex.org/W2901335962",
+          "https://openalex.org/W2902162324",
+          "https://openalex.org/W2903665783",
+          "https://openalex.org/W2904111838",
+          "https://openalex.org/W2908510526",
+          "https://openalex.org/W2911725378",
+          "https://openalex.org/W2914225474",
+          "https://openalex.org/W2914997630",
+          "https://openalex.org/W2915844676",
+          "https://openalex.org/W2916244827",
+          "https://openalex.org/W2921398065",
+          "https://openalex.org/W2925075625",
+          "https://openalex.org/W2931036699",
+          "https://openalex.org/W2942273685",
+          "https://openalex.org/W2943598479",
+          "https://openalex.org/W2944311410",
+          "https://openalex.org/W2949559283",
+          "https://openalex.org/W2950891712",
+          "https://openalex.org/W2954610188",
+          "https://openalex.org/W2955066631",
+          "https://openalex.org/W2955796184",
+          "https://openalex.org/W2963622568",
+          "https://openalex.org/W2967689171",
+          "https://openalex.org/W2969993267",
+          "https://openalex.org/W2970372573",
+          "https://openalex.org/W2970463661",
+          "https://openalex.org/W2971705679",
+          "https://openalex.org/W2975379509",
+          "https://openalex.org/W2975589949",
+          "https://openalex.org/W2979595830",
+          "https://openalex.org/W2980282514",
+          "https://openalex.org/W2980292232",
+          "https://openalex.org/W2981010657",
+          "https://openalex.org/W2981346196",
+          "https://openalex.org/W2982638381",
+          "https://openalex.org/W2984009413",
+          "https://openalex.org/W2984472267",
+          "https://openalex.org/W2990171578",
+          "https://openalex.org/W2992387300",
+          "https://openalex.org/W2993601816",
+          "https://openalex.org/W2994702596",
+          "https://openalex.org/W2996866964",
+          "https://openalex.org/W2997954936",
+          "https://openalex.org/W2998033724",
+          "https://openalex.org/W2999612022",
+          "https://openalex.org/W2999689705",
+          "https://openalex.org/W2999755488",
+          "https://openalex.org/W3000676906",
+          "https://openalex.org/W3001059335",
+          "https://openalex.org/W3001381700",
+          "https://openalex.org/W3003285681",
+          "https://openalex.org/W3003348612",
+          "https://openalex.org/W3003421376",
+          "https://openalex.org/W3004379083",
+          "https://openalex.org/W3005472012",
+          "https://openalex.org/W3006497234",
+          "https://openalex.org/W3007874153",
+          "https://openalex.org/W3008278692",
+          "https://openalex.org/W3008540885",
+          "https://openalex.org/W3020212197",
+          "https://openalex.org/W3022968840",
+          "https://openalex.org/W3023537913",
+          "https://openalex.org/W3024498749",
+          "https://openalex.org/W3024643080",
+          "https://openalex.org/W3032384683",
+          "https://openalex.org/W3034168389",
+          "https://openalex.org/W3040876684",
+          "https://openalex.org/W3041062936",
+          "https://openalex.org/W3041278562",
+          "https://openalex.org/W3044388039",
+          "https://openalex.org/W3045953207",
+          "https://openalex.org/W3047168254",
+          "https://openalex.org/W3048745453",
+          "https://openalex.org/W3080632072",
+          "https://openalex.org/W3085530024",
+          "https://openalex.org/W3087018179",
+          "https://openalex.org/W3087102910",
+          "https://openalex.org/W3088401235",
+          "https://openalex.org/W3088521497",
+          "https://openalex.org/W3090295751",
+          "https://openalex.org/W3092742846",
+          "https://openalex.org/W3094514117",
+          "https://openalex.org/W3095645723",
+          "https://openalex.org/W3097722104",
+          "https://openalex.org/W3103366903",
+          "https://openalex.org/W3103797259",
+          "https://openalex.org/W3109243443",
+          "https://openalex.org/W3112439613",
+          "https://openalex.org/W3112652901",
+          "https://openalex.org/W3112976705",
+          "https://openalex.org/W3117786929",
+          "https://openalex.org/W3119231555",
+          "https://openalex.org/W3120401257",
+          "https://openalex.org/W3121562065",
+          "https://openalex.org/W3124098591",
+          "https://openalex.org/W3128961456",
+          "https://openalex.org/W3129831491",
+          "https://openalex.org/W3167338135",
+          "https://openalex.org/W3171465065",
+          "https://openalex.org/W3198628780",
+          "https://openalex.org/W3205985210",
+          "https://openalex.org/W4207066841",
+          "https://openalex.org/W4221058186",
+          "https://openalex.org/W4226476684",
+          "https://openalex.org/W4283257569",
+          "https://openalex.org/W4286984959",
+          "https://openalex.org/W4289262011",
+          "https://openalex.org/W4385245566",
+          "https://openalex.org/W4394647257",
+          "https://openalex.org/W4402745381"
+        ],
+        "referenced_works_count": 159,
+        "title": "Transfer learning enables predictions in network biology",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "3D": [
+            43
+          ],
+          "5167": [
+            61
+          ],
+          "5743": [
+            65
+          ],
+          "OrganoSeg": [
+            45,
+            91
+          ],
+          "OrganoSeg,": [
+            28
+          ],
+          "Organoid": [
+            71
+          ],
+          "RNA": [
+            88
+          ],
+          "Spheroid": [
+            0
+          ],
+          "To": [
+            22
+          ],
+          "accurate": [
+            48
+          ],
+          "an": [
+            29
+          ],
+          "analysis": [
+            37
+          ],
+          "and": [
+            1,
+            13,
+            36,
+            49,
+            54,
+            64,
+            67,
+            106
+          ],
+          "archived": [
+            39
+          ],
+          "are": [
+            4
+          ],
+          "biological": [
+            81
+          ],
+          "biology,": [
+            10
+          ],
+          "breast-cancer": [
+            62
+          ],
+          "brightfield": [
+            40,
+            97
+          ],
+          "but": [
+            11
+          ],
+          "by": [
+            59,
+            74
+          ],
+          "colon": [
+            66
+          ],
+          "colorectal-cancer": [
+            68
+          ],
+          "complete,": [
+            93
+          ],
+          "culture": [
+            18
+          ],
+          "culture.": [
+            44
+          ],
+          "cultures": [
+            3
+          ],
+          "data.": [
+            90
+          ],
+          "developed": [
+            27
+          ],
+          "diversity": [
+            15
+          ],
+          "enables": [
+            92
+          ],
+          "enriched": [
+            79
+          ],
+          "existing": [
+            52
+          ],
+          "filtering,": [
+            35
+          ],
+          "flexible": [
+            50
+          ],
+          "for": [
+            9,
+            38,
+            80
+          ],
+          "give": [
+            101
+          ],
+          "grouped": [
+            73
+          ],
+          "heterogeneity": [
+            77
+          ],
+          "ignored.": [
+            21
+          ],
+          "illustrate": [
+            56
+          ],
+          "images": [
+            41
+          ],
+          "in": [
+            6,
+            85
+          ],
+          "insight": [
+            102
+          ],
+          "integrates": [
+            33
+          ],
+          "into": [
+            103
+          ],
+          "is": [
+            19,
+            46
+          ],
+          "its": [
+            57
+          ],
+          "largely": [
+            20
+          ],
+          "may": [
+            100
+          ],
+          "mechanisms": [
+            108
+          ],
+          "models": [
+            8
+          ],
+          "molecular": [
+            105
+          ],
+          "more": [
+            47
+          ],
+          "morphologies.": [
+            70
+          ],
+          "morphometric": [
+            24,
+            75
+          ],
+          "multicellular": [
+            107
+          ],
+          "not": [
+            83
+          ],
+          "objective": [
+            94
+          ],
+          "of": [
+            42,
+            96,
+            109
+          ],
+          "open-source": [
+            30
+          ],
+          "organoid": [
+            2,
+            69,
+            110
+          ],
+          "original": [
+            87
+          ],
+          "phenotypes,": [
+            98
+          ],
+          "platforms,": [
+            53
+          ],
+          "potential": [
+            58
+          ],
+          "powerful": [
+            5
+          ],
+          "processes": [
+            82
+          ],
+          "profiling,": [
+            25
+          ],
+          "prominent": [
+            84
+          ],
+          "quantification": [
+            95
+          ],
+          "regulation.": [
+            111
+          ],
+          "segmentation,": [
+            34
+          ],
+          "sequencing": [
+            89
+          ],
+          "shape": [
+            14
+          ],
+          "signature": [
+            76
+          ],
+          "size": [
+            12
+          ],
+          "software": [
+            31
+          ],
+          "spheroid": [
+            63
+          ],
+          "stratifying": [
+            60
+          ],
+          "streamline": [
+            23
+          ],
+          "than": [
+            51
+          ],
+          "that": [
+            32
+          ],
+          "the": [
+            17,
+            86,
+            104
+          ],
+          "transcripts": [
+            72
+          ],
+          "vitro": [
+            7
+          ],
+          "we": [
+            26,
+            55
+          ],
+          "were": [
+            78
+          ],
+          "which": [
+            99
+          ],
+          "within": [
+            16
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Engineering, University of Virginia, Charlottesville, Virginia, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Engineering, University of Virginia, Charlottesville, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Michael A. Borten",
+              "id": "https://openalex.org/A5052062307",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Virginia",
+                "id": "https://openalex.org/I51556381",
+                "lineage": [
+                  "https://openalex.org/I51556381"
+                ],
+                "ror": "https://ror.org/0153tk833",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biomedical Engineering, University of Virginia, Charlottesville, Virginia, USA",
+              "Department of Biomedical Engineering, University of Virginia, Charlottesville, USA"
+            ],
+            "raw_author_name": "Michael A. Borten",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Engineering, University of Virginia, Charlottesville, Virginia, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Engineering, University of Virginia, Charlottesville, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Sameer S. Bajikar",
+              "id": "https://openalex.org/A5050406431",
+              "orcid": "https://orcid.org/0000-0002-8868-881X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Virginia",
+                "id": "https://openalex.org/I51556381",
+                "lineage": [
+                  "https://openalex.org/I51556381"
+                ],
+                "ror": "https://ror.org/0153tk833",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Biomedical Engineering, University of Virginia, Charlottesville, Virginia, USA",
+              "Department of Biomedical Engineering, University of Virginia, Charlottesville, USA"
+            ],
+            "raw_author_name": "Sameer S. Bajikar",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I203951103"
+                ],
+                "raw_affiliation_string": "Department of Gastroenterology, Keio University School of Medicine, Tokyo, Japan"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210115206"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute for Developmental Biology and Stem Cell Research, 3584 CT, Utrecht, The Netherlands"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210115206"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute for Developmental Biology and Stem Cell Research, Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Nobuo Sasaki",
+              "id": "https://openalex.org/A5057709910",
+              "orcid": "https://orcid.org/0000-0002-8798-7244"
+            },
+            "author_position": "middle",
+            "countries": [
+              "JP",
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "JP",
+                "display_name": "Keio University",
+                "id": "https://openalex.org/I203951103",
+                "lineage": [
+                  "https://openalex.org/I203951103"
+                ],
+                "ror": "https://ror.org/02kn6nx58",
+                "type": "education"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Hubrecht Institute for Developmental Biology and Stem Cell Research",
+                "id": "https://openalex.org/I4210115206",
+                "lineage": [
+                  "https://openalex.org/I1322597698",
+                  "https://openalex.org/I4210115206"
+                ],
+                "ror": "https://ror.org/023qc4a07",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Gastroenterology, Keio University School of Medicine, Tokyo, Japan",
+              "Hubrecht Institute for Developmental Biology and Stem Cell Research, 3584 CT, Utrecht, The Netherlands",
+              "Hubrecht Institute for Developmental Biology and Stem Cell Research, Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Nobuo Sasaki",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210115206"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute for Developmental Biology and Stem Cell Research, 3584 CT, Utrecht, The Netherlands"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210115206"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute for Developmental Biology and Stem Cell Research, Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Hans Clevers",
+              "id": "https://openalex.org/A5062248785",
+              "orcid": "https://orcid.org/0000-0002-3077-5582"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Hubrecht Institute for Developmental Biology and Stem Cell Research",
+                "id": "https://openalex.org/I4210115206",
+                "lineage": [
+                  "https://openalex.org/I1322597698",
+                  "https://openalex.org/I4210115206"
+                ],
+                "ror": "https://ror.org/023qc4a07",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Hubrecht Institute for Developmental Biology and Stem Cell Research, 3584 CT, Utrecht, The Netherlands",
+              "Hubrecht Institute for Developmental Biology and Stem Cell Research, Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Hans Clevers",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Engineering, University of Virginia, Charlottesville, Virginia, USA. kjanes@virginia.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I51556381"
+                ],
+                "raw_affiliation_string": "Department of Biomedical Engineering, University of Virginia, Charlottesville, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Kevin A. Janes",
+              "id": "https://openalex.org/A5027602726",
+              "orcid": "https://orcid.org/0000-0002-8028-6138"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of Virginia",
+                "id": "https://openalex.org/I51556381",
+                "lineage": [
+                  "https://openalex.org/I51556381"
+                ],
+                "ror": "https://ror.org/0153tk833",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Biomedical Engineering, University of Virginia, Charlottesville, Virginia, USA. kjanes@virginia.edu",
+              "Department of Biomedical Engineering, University of Virginia, Charlottesville, USA"
+            ],
+            "raw_author_name": "Kevin A. Janes",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/s41598-017-18815-8",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41598-017-18815-8",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41598-017-18815-8.pdf",
+          "raw_source_name": "Scientific Reports",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Scientific Reports",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S196734849",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2045-2322"
+            ],
+            "issn_l": "2045-2322",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "5319",
+          "issue": "1",
+          "last_page": "5319",
+          "volume": "8"
+        },
+        "cited_by_count": 162,
+        "display_name": "Automated brightfield morphometry of 3D organoid populations by OrganoSeg",
+        "doi": "https://doi.org/10.1038/s41598-017-18815-8",
+        "id": "https://openalex.org/W2795334574",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s41598-017-18815-8",
+          "mag": "2795334574",
+          "openalex": "https://openalex.org/W2795334574",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/29593296"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.nature.com/articles/s41598-017-18815-8.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s41598-017-18815-8",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41598-017-18815-8",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41598-017-18815-8.pdf",
+          "raw_source_name": "Scientific Reports",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Scientific Reports",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S196734849",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2045-2322"
+            ],
+            "issn_l": "2045-2322",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2018-03-28",
+        "publication_year": 2018,
+        "referenced_works": [
+          "https://openalex.org/W1442408307",
+          "https://openalex.org/W1967293289",
+          "https://openalex.org/W1980036425",
+          "https://openalex.org/W1980039397",
+          "https://openalex.org/W1985958520",
+          "https://openalex.org/W1993669821",
+          "https://openalex.org/W1995416395",
+          "https://openalex.org/W2003099669",
+          "https://openalex.org/W2004181770",
+          "https://openalex.org/W2038653804",
+          "https://openalex.org/W2052700237",
+          "https://openalex.org/W2058096164",
+          "https://openalex.org/W2065475665",
+          "https://openalex.org/W2075744820",
+          "https://openalex.org/W2099540110",
+          "https://openalex.org/W2102969613",
+          "https://openalex.org/W2103017472",
+          "https://openalex.org/W2107554012",
+          "https://openalex.org/W2125806967",
+          "https://openalex.org/W2129375080",
+          "https://openalex.org/W2130410032",
+          "https://openalex.org/W2143787026",
+          "https://openalex.org/W2144023435",
+          "https://openalex.org/W2146177965",
+          "https://openalex.org/W2150144117",
+          "https://openalex.org/W2169818143",
+          "https://openalex.org/W2187089797",
+          "https://openalex.org/W2214074259",
+          "https://openalex.org/W2441337908",
+          "https://openalex.org/W2467628122",
+          "https://openalex.org/W2592811885",
+          "https://openalex.org/W2604808360",
+          "https://openalex.org/W2768491271",
+          "https://openalex.org/W2798041799"
+        ],
+        "referenced_works_count": 34,
+        "title": "Automated brightfield morphometry of 3D organoid populations by OrganoSeg",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(1)": [
+            114
+          ],
+          "(2)": [
+            119
+          ],
+          "(3)": [
+            122
+          ],
+          "(4)": [
+            131
+          ],
+          "(ASC)-based": [
+            17
+          ],
+          "(PSC)-derived": [
+            8
+          ],
+          "ASC": [
+            67
+          ],
+          "After": [
+            37
+          ],
+          "Both": [
+            107
+          ],
+          "Currently,": [
+            134
+          ],
+          "Furthermore,": [
+            157
+          ],
+          "Henle,": [
+            100
+          ],
+          "In": [
+            0,
+            180
+          ],
+          "PSC-derived": [
+            33
+          ],
+          "a": [
+            158,
+            175
+          ],
+          "adult": [
+            12,
+            79,
+            95
+          ],
+          "advanced": [
+            23
+          ],
+          "allows": [
+            165
+          ],
+          "and": [
+            11,
+            31,
+            46,
+            54,
+            75,
+            82,
+            88,
+            103,
+            128,
+            130,
+            136,
+            147,
+            151,
+            170,
+            190,
+            192,
+            195,
+            200
+          ],
+          "applications": [
+            197
+          ],
+          "are": [
+            138
+          ],
+          "as": [
+            22
+          ],
+          "biobank": [
+            161
+          ],
+          "bud": [
+            45
+          ],
+          "causes": [
+            52
+          ],
+          "cell": [
+            7,
+            16
+          ],
+          "collecting": [
+            104
+          ],
+          "consist": [
+            93
+          ],
+          "cultures": [
+            91
+          ],
+          "current": [
+            194
+          ],
+          "development,": [
+            29
+          ],
+          "differentiation": [
+            38
+          ],
+          "discuss": [
+            184
+          ],
+          "disease": [
+            120
+          ],
+          "disease.": [
+            32
+          ],
+          "diseases": [
+            150
+          ],
+          "distal": [
+            101
+          ],
+          "drug": [
+            126,
+            172
+          ],
+          "duct": [
+            105
+          ],
+          "effective": [
+            155
+          ],
+          "efficacy": [
+            127
+          ],
+          "emerged": [
+            21
+          ],
+          "epithelium.": [
+            106
+          ],
+          "established,": [
+            163
+          ],
+          "expandable": [
+            87
+          ],
+          "fetal": [
+            65
+          ],
+          "five": [
+            3
+          ],
+          "for": [
+            125,
+            154
+          ],
+          "for:": [
+            113
+          ],
+          "future": [
+            196
+          ],
+          "generate": [
+            59
+          ],
+          "genetically": [
+            89
+          ],
+          "give": [
+            83
+          ],
+          "great": [
+            111
+          ],
+          "group": [
+            177
+          ],
+          "hand": [
+            72
+          ],
+          "have": [
+            20
+          ],
+          "hereditary,": [
+            143
+          ],
+          "high-throughput": [
+            123
+          ],
+          "hold": [
+            110
+          ],
+          "in": [
+            24,
+            56,
+            77,
+            174,
+            198
+          ],
+          "infectious,": [
+            144
+          ],
+          "interaction": [
+            51
+          ],
+          "kidney": [
+            9,
+            18,
+            28,
+            41,
+            80,
+            117,
+            149,
+            188
+          ],
+          "kidney.": [
+            66
+          ],
+          "large": [
+            176
+          ],
+          "long-term": [
+            86
+          ],
+          "loop": [
+            98
+          ],
+          "malignant": [
+            148
+          ],
+          "medicine.": [
+            133,
+            201
+          ],
+          "mesenchyme,": [
+            48
+          ],
+          "metabolic,": [
+            146
+          ],
+          "metanephric": [
+            47
+          ],
+          "mimic": [
+            35
+          ],
+          "model": [
+            142
+          ],
+          "modeling,": [
+            121
+          ],
+          "models": [
+            26
+          ],
+          "mutations": [
+            169
+          ],
+          "nature": [
+            186
+          ],
+          "nephrogenesis.": [
+            36
+          ],
+          "nephron": [
+            60
+          ],
+          "novel": [
+            171
+          ],
+          "of": [
+            27,
+            94,
+            99,
+            116,
+            167,
+            178,
+            187
+          ],
+          "on": [
+            69
+          ],
+          "or": [
+            14
+          ],
+          "organoid": [
+            108
+          ],
+          "organoids": [
+            10,
+            34,
+            135,
+            189
+          ],
+          "other": [
+            71
+          ],
+          "past": [
+            2
+          ],
+          "pathogenic": [
+            168
+          ],
+          "patients.": [
+            179
+          ],
+          "patterning": [
+            55
+          ],
+          "physiology,": [
+            30,
+            118
+          ],
+          "pluripotent": [
+            5
+          ],
+          "potential": [
+            112
+          ],
+          "precursor": [
+            42
+          ],
+          "progenitor": [
+            15
+          ],
+          "proximal": [
+            96
+          ],
+          "recapitulate": [
+            73
+          ],
+          "reciprocal": [
+            50
+          ],
+          "regenerative": [
+            132
+          ],
+          "renewal": [
+            74
+          ],
+          "repair": [
+            76
+          ],
+          "resemble": [
+            63
+          ],
+          "review,": [
+            182
+          ],
+          "rise": [
+            84
+          ],
+          "science": [
+            199
+          ],
+          "screen": [
+            153
+          ],
+          "screening": [
+            124
+          ],
+          "self-organization": [
+            53
+          ],
+          "stable": [
+            90
+          ],
+          "stem": [
+            6,
+            13
+          ],
+          "structures": [
+            61
+          ],
+          "studies": [
+            115,
+            166
+          ],
+          "successfully": [
+            139
+          ],
+          "targets": [
+            173
+          ],
+          "that": [
+            62,
+            92
+          ],
+          "the": [
+            1,
+            40,
+            64,
+            70,
+            78,
+            185
+          ],
+          "their": [
+            49,
+            193
+          ],
+          "therapies.": [
+            156
+          ],
+          "this": [
+            181
+          ],
+          "tissues": [
+            43
+          ],
+          "to": [
+            58,
+            85,
+            141,
+            152
+          ],
+          "towards": [
+            39
+          ],
+          "toxic,": [
+            145
+          ],
+          "toxicity,": [
+            129
+          ],
+          "tubule": [
+            81
+          ],
+          "tubule,": [
+            97,
+            102
+          ],
+          "tubuloid": [
+            160
+          ],
+          "tubuloids": [
+            19,
+            68,
+            137,
+            191
+          ],
+          "tumor": [
+            159
+          ],
+          "types": [
+            109
+          ],
+          "ureteric": [
+            44
+          ],
+          "used": [
+            140
+          ],
+          "vitro": [
+            25,
+            57
+          ],
+          "was": [
+            162
+          ],
+          "we": [
+            183
+          ],
+          "which": [
+            164
+          ],
+          "years,": [
+            4
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3018483916",
+                  "https://openalex.org/I223822909",
+                  "https://openalex.org/I2802164966"
+                ],
+                "raw_affiliation_string": "Department of Nephrology and Hypertension, University Medical Center Utrecht, Heidelberglaan 100, 3584 CX Utrecht, The Netherlands"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1322597698",
+                  "https://openalex.org/I3018483916"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute—Royal Netherlands Academy of Arts and Sciences and University Medical Center Utrecht, Uppsalalaan 8, 3584 CT Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Fjodor A. Yousef Yengej",
+              "id": "https://openalex.org/A5004595311",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "DE",
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Royal Netherlands Academy of Arts and Sciences",
+                "id": "https://openalex.org/I1322597698",
+                "lineage": [
+                  "https://openalex.org/I1322597698"
+                ],
+                "ror": "https://ror.org/043c0p156",
+                "type": "government"
+              },
+              {
+                "country_code": "DE",
+                "display_name": "Heidelberg University",
+                "id": "https://openalex.org/I223822909",
+                "lineage": [
+                  "https://openalex.org/I223822909"
+                ],
+                "ror": "https://ror.org/038t36y30",
+                "type": "education"
+              },
+              {
+                "country_code": "DE",
+                "display_name": "University Hospital Heidelberg",
+                "id": "https://openalex.org/I2802164966",
+                "lineage": [
+                  "https://openalex.org/I2802164966"
+                ],
+                "ror": "https://ror.org/013czdx64",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "University Medical Center Utrecht",
+                "id": "https://openalex.org/I3018483916",
+                "lineage": [
+                  "https://openalex.org/I3018483916"
+                ],
+                "ror": "https://ror.org/0575yy874",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Nephrology and Hypertension, University Medical Center Utrecht, Heidelberglaan 100, 3584 CX Utrecht, The Netherlands",
+              "Hubrecht Institute—Royal Netherlands Academy of Arts and Sciences and University Medical Center Utrecht, Uppsalalaan 8, 3584 CT Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Fjodor A. Yousef Yengej",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949",
+                  "https://openalex.org/I4210109357"
+                ],
+                "raw_affiliation_string": "Department of Pathology, Radboud Institute for Molecular Life Sciences, Radboud University Medical Center, Geert Grooteplein 24, 6500 HB Nijmegen, The Netherlands"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949",
+                  "https://openalex.org/I4210109357"
+                ],
+                "raw_affiliation_string": "Department of Pediatric Nephrology, Radboud Institute for Molecular Life Sciences, Radboud University Medical Center, Amalia Children’s Hospital, Geert Grooteplein 24, 6500 HB Nijmegen, The Netherlands"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I2802934949",
+                  "https://openalex.org/I4210109357"
+                ],
+                "raw_affiliation_string": "Department of Pediatric Nephrology, Radboud Institute for Molecular Life Sciences, Radboud University Medical Center, Amalia Children's Hospital, Geert Grooteplein 24, 6500 HB Nijmegen, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Jitske Jansen",
+              "id": "https://openalex.org/A5038195774",
+              "orcid": "https://orcid.org/0000-0003-0513-6102"
+            },
+            "author_position": "middle",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Nijmegen",
+                "id": "https://openalex.org/I145872427",
+                "lineage": [
+                  "https://openalex.org/I145872427"
+                ],
+                "ror": "https://ror.org/016xsfp80",
+                "type": "education"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud University Medical Center",
+                "id": "https://openalex.org/I2802934949",
+                "lineage": [
+                  "https://openalex.org/I2802934949"
+                ],
+                "ror": "https://ror.org/05wg1m734",
+                "type": "funder"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Radboud Institute for Molecular Life Sciences",
+                "id": "https://openalex.org/I4210109357",
+                "lineage": [
+                  "https://openalex.org/I145872427",
+                  "https://openalex.org/I4210109357"
+                ],
+                "ror": "https://ror.org/01yb10j39",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Pathology, Radboud Institute for Molecular Life Sciences, Radboud University Medical Center, Geert Grooteplein 24, 6500 HB Nijmegen, The Netherlands",
+              "Department of Pediatric Nephrology, Radboud Institute for Molecular Life Sciences, Radboud University Medical Center, Amalia Children’s Hospital, Geert Grooteplein 24, 6500 HB Nijmegen, The Netherlands",
+              "Department of Pediatric Nephrology, Radboud Institute for Molecular Life Sciences, Radboud University Medical Center, Amalia Children's Hospital, Geert Grooteplein 24, 6500 HB Nijmegen, The Netherlands"
+            ],
+            "raw_author_name": "Jitske Jansen",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3018483916",
+                  "https://openalex.org/I223822909",
+                  "https://openalex.org/I2802164966"
+                ],
+                "raw_affiliation_string": "Department of Nephrology and Hypertension, University Medical Center Utrecht, Heidelberglaan 100, 3584 CX Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Maarten B. Rookmaaker",
+              "id": "https://openalex.org/A5044707586",
+              "orcid": "https://orcid.org/0000-0002-0577-4641"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE",
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Heidelberg University",
+                "id": "https://openalex.org/I223822909",
+                "lineage": [
+                  "https://openalex.org/I223822909"
+                ],
+                "ror": "https://ror.org/038t36y30",
+                "type": "education"
+              },
+              {
+                "country_code": "DE",
+                "display_name": "University Hospital Heidelberg",
+                "id": "https://openalex.org/I2802164966",
+                "lineage": [
+                  "https://openalex.org/I2802164966"
+                ],
+                "ror": "https://ror.org/013czdx64",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "University Medical Center Utrecht",
+                "id": "https://openalex.org/I3018483916",
+                "lineage": [
+                  "https://openalex.org/I3018483916"
+                ],
+                "ror": "https://ror.org/0575yy874",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Nephrology and Hypertension, University Medical Center Utrecht, Heidelberglaan 100, 3584 CX Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Maarten B. Rookmaaker",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3018483916",
+                  "https://openalex.org/I223822909",
+                  "https://openalex.org/I2802164966"
+                ],
+                "raw_affiliation_string": "Department of Nephrology and Hypertension, University Medical Center Utrecht, Heidelberglaan 100, 3584 CX Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Marianne C. Verhaar",
+              "id": "https://openalex.org/A5065455968",
+              "orcid": "https://orcid.org/0000-0002-3276-6428"
+            },
+            "author_position": "middle",
+            "countries": [
+              "DE",
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Heidelberg University",
+                "id": "https://openalex.org/I223822909",
+                "lineage": [
+                  "https://openalex.org/I223822909"
+                ],
+                "ror": "https://ror.org/038t36y30",
+                "type": "education"
+              },
+              {
+                "country_code": "DE",
+                "display_name": "University Hospital Heidelberg",
+                "id": "https://openalex.org/I2802164966",
+                "lineage": [
+                  "https://openalex.org/I2802164966"
+                ],
+                "ror": "https://ror.org/013czdx64",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "University Medical Center Utrecht",
+                "id": "https://openalex.org/I3018483916",
+                "lineage": [
+                  "https://openalex.org/I3018483916"
+                ],
+                "ror": "https://ror.org/0575yy874",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Nephrology and Hypertension, University Medical Center Utrecht, Heidelberglaan 100, 3584 CX Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Marianne C. Verhaar",
+            "raw_orcid": "https://orcid.org/0000-0002-3276-6428"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1322597698",
+                  "https://openalex.org/I3018483916"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute—Royal Netherlands Academy of Arts and Sciences and University Medical Center Utrecht, Uppsalalaan 8, 3584 CT Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Hans Clevers",
+              "id": "https://openalex.org/A5062248785",
+              "orcid": "https://orcid.org/0000-0002-3077-5582"
+            },
+            "author_position": "last",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Royal Netherlands Academy of Arts and Sciences",
+                "id": "https://openalex.org/I1322597698",
+                "lineage": [
+                  "https://openalex.org/I1322597698"
+                ],
+                "ror": "https://ror.org/043c0p156",
+                "type": "government"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "University Medical Center Utrecht",
+                "id": "https://openalex.org/I3018483916",
+                "lineage": [
+                  "https://openalex.org/I3018483916"
+                ],
+                "ror": "https://ror.org/0575yy874",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Hubrecht Institute—Royal Netherlands Academy of Arts and Sciences and University Medical Center Utrecht, Uppsalalaan 8, 3584 CT Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Hans Clevers",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3390/cells9061326",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/cells9061326",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2073-4409/9/6/1326/pdf?version=1591181035",
+          "raw_source_name": "Cells",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Cells",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S2736626452",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2073-4409"
+            ],
+            "issn_l": "2073-4409",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "1326",
+          "issue": "6",
+          "last_page": "1326",
+          "volume": "9"
+        },
+        "cited_by_count": 105,
+        "display_name": "Kidney Organoids and Tubuloids",
+        "doi": "https://doi.org/10.3390/cells9061326",
+        "id": "https://openalex.org/W3029444118",
+        "ids": {
+          "doi": "https://doi.org/10.3390/cells9061326",
+          "mag": "3029444118",
+          "openalex": "https://openalex.org/W3029444118",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/32466429"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.mdpi.com/2073-4409/9/6/1326/pdf?version=1591181035"
+        },
+        "primary_location": {
+          "id": "doi:10.3390/cells9061326",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/cells9061326",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2073-4409/9/6/1326/pdf?version=1591181035",
+          "raw_source_name": "Cells",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Cells",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S2736626452",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2073-4409"
+            ],
+            "issn_l": "2073-4409",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2020-05-26",
+        "publication_year": 2020,
+        "referenced_works": [
+          "https://openalex.org/W128192144",
+          "https://openalex.org/W1487926964",
+          "https://openalex.org/W1677887083",
+          "https://openalex.org/W1744619657",
+          "https://openalex.org/W1802574002",
+          "https://openalex.org/W1825602802",
+          "https://openalex.org/W1831343369",
+          "https://openalex.org/W1955674559",
+          "https://openalex.org/W1965157206",
+          "https://openalex.org/W1972774086",
+          "https://openalex.org/W1976987666",
+          "https://openalex.org/W1981194657",
+          "https://openalex.org/W1983426462",
+          "https://openalex.org/W1986543208",
+          "https://openalex.org/W1986829962",
+          "https://openalex.org/W1994553956",
+          "https://openalex.org/W1995338323",
+          "https://openalex.org/W1998590298",
+          "https://openalex.org/W2000657793",
+          "https://openalex.org/W2000714884",
+          "https://openalex.org/W2015807591",
+          "https://openalex.org/W2018079417",
+          "https://openalex.org/W2021017423",
+          "https://openalex.org/W2029706942",
+          "https://openalex.org/W2032570745",
+          "https://openalex.org/W2045899482",
+          "https://openalex.org/W2045952188",
+          "https://openalex.org/W2046013132",
+          "https://openalex.org/W2050689355",
+          "https://openalex.org/W2052092179",
+          "https://openalex.org/W2056109978",
+          "https://openalex.org/W2057159461",
+          "https://openalex.org/W2064862709",
+          "https://openalex.org/W2075307097",
+          "https://openalex.org/W2083462941",
+          "https://openalex.org/W2085875626",
+          "https://openalex.org/W2085979052",
+          "https://openalex.org/W2086943348",
+          "https://openalex.org/W2088009584",
+          "https://openalex.org/W2091596275",
+          "https://openalex.org/W2092490016",
+          "https://openalex.org/W2098597036",
+          "https://openalex.org/W2102560467",
+          "https://openalex.org/W2103565029",
+          "https://openalex.org/W2116228354",
+          "https://openalex.org/W2124364796",
+          "https://openalex.org/W2125987139",
+          "https://openalex.org/W2131658531",
+          "https://openalex.org/W2136825322",
+          "https://openalex.org/W2138977668",
+          "https://openalex.org/W2143149122",
+          "https://openalex.org/W2150393481",
+          "https://openalex.org/W2152483372",
+          "https://openalex.org/W2168539681",
+          "https://openalex.org/W2174661840",
+          "https://openalex.org/W2176166968",
+          "https://openalex.org/W2192723508",
+          "https://openalex.org/W2234948637",
+          "https://openalex.org/W2270681162",
+          "https://openalex.org/W2335847319",
+          "https://openalex.org/W2338627627",
+          "https://openalex.org/W2397827027",
+          "https://openalex.org/W2413464959",
+          "https://openalex.org/W2415440329",
+          "https://openalex.org/W2441337908",
+          "https://openalex.org/W2472802576",
+          "https://openalex.org/W2479215566",
+          "https://openalex.org/W2510668402",
+          "https://openalex.org/W2519386099",
+          "https://openalex.org/W2559697881",
+          "https://openalex.org/W2561229677",
+          "https://openalex.org/W2564377385",
+          "https://openalex.org/W2582801455",
+          "https://openalex.org/W2587426589",
+          "https://openalex.org/W2606063506",
+          "https://openalex.org/W2753937826",
+          "https://openalex.org/W2767871975",
+          "https://openalex.org/W2768688513",
+          "https://openalex.org/W2769396370",
+          "https://openalex.org/W2771014127",
+          "https://openalex.org/W2780908039",
+          "https://openalex.org/W2782680790",
+          "https://openalex.org/W2788735115",
+          "https://openalex.org/W2790191085",
+          "https://openalex.org/W2791909710",
+          "https://openalex.org/W2792154144",
+          "https://openalex.org/W2796019185",
+          "https://openalex.org/W2799340062",
+          "https://openalex.org/W2800799277",
+          "https://openalex.org/W2803499747",
+          "https://openalex.org/W2887161891",
+          "https://openalex.org/W2891156969",
+          "https://openalex.org/W2892107476",
+          "https://openalex.org/W2901335962",
+          "https://openalex.org/W2901597112",
+          "https://openalex.org/W2901988546",
+          "https://openalex.org/W2903061871",
+          "https://openalex.org/W2904111838",
+          "https://openalex.org/W2910124901",
+          "https://openalex.org/W2911418673",
+          "https://openalex.org/W2913348902",
+          "https://openalex.org/W2914840837",
+          "https://openalex.org/W2915238057",
+          "https://openalex.org/W2916592801",
+          "https://openalex.org/W2919899673",
+          "https://openalex.org/W2921211326",
+          "https://openalex.org/W2921426628",
+          "https://openalex.org/W2943439515",
+          "https://openalex.org/W2955066631",
+          "https://openalex.org/W2963641255",
+          "https://openalex.org/W2964845115",
+          "https://openalex.org/W2966677792",
+          "https://openalex.org/W2971570665",
+          "https://openalex.org/W2978117166",
+          "https://openalex.org/W2978493967",
+          "https://openalex.org/W2981137429",
+          "https://openalex.org/W2988904063",
+          "https://openalex.org/W2990026706",
+          "https://openalex.org/W2992164897",
+          "https://openalex.org/W2999709233",
+          "https://openalex.org/W3004888602",
+          "https://openalex.org/W3005595012",
+          "https://openalex.org/W3007694991",
+          "https://openalex.org/W3011087486",
+          "https://openalex.org/W3011131797",
+          "https://openalex.org/W3012326978",
+          "https://openalex.org/W4236140864",
+          "https://openalex.org/W6774579446"
+        ],
+        "referenced_works_count": 128,
+        "title": "Kidney Organoids and Tubuloids",
+        "type": "review"
+      },
+      {
+        "abstract_inverted_index": {
+          "Cell–cell": [
+            0,
+            114
+          ],
+          "In": [
+            70,
+            89
+          ],
+          "RNA": [
+            50,
+            122
+          ],
+          "Review,": [
+            91
+          ],
+          "The": [
+            40,
+            130
+          ],
+          "Thus,": [
+            22
+          ],
+          "When": [
+            9
+          ],
+          "a": [
+            33
+          ],
+          "across": [
+            37
+          ],
+          "advances": [
+            48
+          ],
+          "analyses": [
+            56,
+            97
+          ],
+          "analysis": [
+            35
+          ],
+          "and": [
+            6,
+            25,
+            46,
+            66,
+            104,
+            108,
+            116,
+            135,
+            138
+          ],
+          "authors": [
+            131
+          ],
+          "based": [
+            146
+          ],
+          "be": [
+            75,
+            119
+          ],
+          "become": [
+            32
+          ],
+          "bulk": [
+            65
+          ],
+          "by": [
+            96
+          ],
+          "can": [
+            74,
+            118
+          ],
+          "cells": [
+            10
+          ],
+          "cell–cell": [
+            99,
+            144
+          ],
+          "cognate": [
+            87
+          ],
+          "common": [
+            34
+          ],
+          "communication": [
+            80,
+            117
+          ],
+          "context.": [
+            113
+          ],
+          "coordinated": [
+            83
+          ],
+          "data": [
+            68,
+            103,
+            124
+          ],
+          "data.": [
+            149
+          ],
+          "databases": [
+            45
+          ],
+          "decode": [
+            17
+          ],
+          "development,": [
+            4
+          ],
+          "disciplines.": [
+            39
+          ],
+          "discoveries": [
+            94
+          ],
+          "disease": [
+            20
+          ],
+          "diverse": [
+            38
+          ],
+          "do": [
+            11
+          ],
+          "enabled": [
+            54,
+            95
+          ],
+          "ensues.": [
+            21
+          ],
+          "example,": [
+            127
+          ],
+          "expansion": [
+            41
+          ],
+          "expression": [
+            62,
+            84
+          ],
+          "for": [
+            126
+          ],
+          "from": [
+            60,
+            81,
+            101,
+            121
+          ],
+          "functions.": [
+            8
+          ],
+          "gained": [
+            134
+          ],
+          "gene": [
+            61
+          ],
+          "genes.": [
+            88
+          ],
+          "has": [
+            31
+          ],
+          "have": [
+            53
+          ],
+          "highlight": [
+            93
+          ],
+          "homeostasis": [
+            5
+          ],
+          "identification": [
+            24
+          ],
+          "improperly": [
+            16
+          ],
+          "in": [
+            49,
+            111,
+            141
+          ],
+          "infer": [
+            78
+          ],
+          "inferred": [
+            120
+          ],
+          "insights": [
+            133
+          ],
+          "interact": [
+            14
+          ],
+          "interaction": [
+            44
+          ],
+          "interactions": [
+            1,
+            100,
+            115,
+            145
+          ],
+          "intercellular": [
+            28,
+            58,
+            79
+          ],
+          "ligand–receptor": [
+            72,
+            128
+          ],
+          "measurements": [
+            63
+          ],
+          "messages,": [
+            19
+          ],
+          "methods": [
+            107,
+            137
+          ],
+          "molecular": [
+            18
+          ],
+          "not": [
+            12
+          ],
+          "of": [
+            27,
+            42,
+            57,
+            64,
+            85,
+            98,
+            143
+          ],
+          "of,": [
+            125
+          ],
+          "on": [
+            147
+          ],
+          "or": [
+            15
+          ],
+          "orchestrate": [
+            2
+          ],
+          "organismal": [
+            3
+          ],
+          "pairs": [
+            73
+          ],
+          "pairs.": [
+            129
+          ],
+          "particular,": [
+            71
+          ],
+          "pathways": [
+            30
+          ],
+          "performed": [
+            36
+          ],
+          "properly": [
+            13
+          ],
+          "protein–protein": [
+            43
+          ],
+          "quantification": [
+            26
+          ],
+          "recent": [
+            47
+          ],
+          "review": [
+            105,
+            132
+          ],
+          "routine": [
+            55
+          ],
+          "sequencing": [
+            51,
+            123
+          ],
+          "sets.": [
+            69
+          ],
+          "signalling": [
+            29,
+            59
+          ],
+          "single-cell": [
+            7,
+            67
+          ],
+          "studies": [
+            142
+          ],
+          "technologies": [
+            52
+          ],
+          "the": [
+            23,
+            82,
+            106,
+            136
+          ],
+          "their": [
+            86
+          ],
+          "this": [
+            90,
+            112
+          ],
+          "to": [
+            77
+          ],
+          "tools": [
+            109,
+            139
+          ],
+          "transcriptomic": [
+            102,
+            148
+          ],
+          "used": [
+            76,
+            110,
+            140
+          ],
+          "we": [
+            92
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Bioinformatics and Systems Biology Graduate Program, University of California, San Diego, La Jolla, CA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Department of Pediatrics, University of California, San Diego, La Jolla, CA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959",
+                  "https://openalex.org/I2802640032",
+                  "https://openalex.org/I4210106615"
+                ],
+                "raw_affiliation_string": "Novo Nordisk Foundation Center for Biosustainability at the University of California, San Diego, La Jolla, CA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Erick Armingol",
+              "id": "https://openalex.org/A5037368266",
+              "orcid": "https://orcid.org/0000-0002-1546-9165"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Foundation Center",
+                "id": "https://openalex.org/I2802640032",
+                "lineage": [
+                  "https://openalex.org/I2802640032"
+                ],
+                "ror": "https://ror.org/0377f6951",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California San Diego",
+                "id": "https://openalex.org/I36258959",
+                "lineage": [
+                  "https://openalex.org/I36258959"
+                ],
+                "ror": "https://ror.org/0168r3w48",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Novo Nordisk (United States)",
+                "id": "https://openalex.org/I4210106615",
+                "lineage": [
+                  "https://openalex.org/I189090001",
+                  "https://openalex.org/I2801134892",
+                  "https://openalex.org/I4210106615",
+                  "https://openalex.org/I4210159963"
+                ],
+                "ror": "https://ror.org/011y67d23",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Bioinformatics and Systems Biology Graduate Program, University of California, San Diego, La Jolla, CA, USA",
+              "Department of Pediatrics, University of California, San Diego, La Jolla, CA, USA",
+              "Novo Nordisk Foundation Center for Biosustainability at the University of California, San Diego, La Jolla, CA, USA"
+            ],
+            "raw_author_name": "Erick Armingol",
+            "raw_orcid": "https://orcid.org/0000-0002-1546-9165"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Bioinformatics and Systems Biology Graduate Program, University of California, San Diego, La Jolla, CA, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Division of Biomedical Informatics, University of California, San Diego, La Jolla, CA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Adam Officer",
+              "id": "https://openalex.org/A5033892584",
+              "orcid": "https://orcid.org/0000-0003-2913-6051"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of California San Diego",
+                "id": "https://openalex.org/I36258959",
+                "lineage": [
+                  "https://openalex.org/I36258959"
+                ],
+                "ror": "https://ror.org/0168r3w48",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Bioinformatics and Systems Biology Graduate Program, University of California, San Diego, La Jolla, CA, USA",
+              "Division of Biomedical Informatics, University of California, San Diego, La Jolla, CA, USA"
+            ],
+            "raw_author_name": "Adam Officer",
+            "raw_orcid": "https://orcid.org/0000-0003-2913-6051"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Division of Biomedical Informatics, University of California, San Diego, La Jolla, CA, USA. oharismendy@ucsd.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Moores Cancer Center, University of California, San Diego, La Jolla, CA, USA. oharismendy@ucsd.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Division of Biomedical Informatics, University of California, San Diego, La Jolla, CA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Olivier Harismendy",
+              "id": "https://openalex.org/A5036536597",
+              "orcid": "https://orcid.org/0000-0002-8098-9888"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "University of California San Diego",
+                "id": "https://openalex.org/I36258959",
+                "lineage": [
+                  "https://openalex.org/I36258959"
+                ],
+                "ror": "https://ror.org/0168r3w48",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Division of Biomedical Informatics, University of California, San Diego, La Jolla, CA, USA. oharismendy@ucsd.edu",
+              "Moores Cancer Center, University of California, San Diego, La Jolla, CA, USA. oharismendy@ucsd.edu",
+              "Division of Biomedical Informatics, University of California, San Diego, La Jolla, CA, USA"
+            ],
+            "raw_author_name": "Olivier Harismendy",
+            "raw_orcid": "https://orcid.org/0000-0002-8098-9888"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210133661"
+                ],
+                "raw_affiliation_string": "Department of Bioengineering, University of California, San Diego, La Jolla, CA, USA. nlewisres@ucsd.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959"
+                ],
+                "raw_affiliation_string": "Department of Pediatrics, University of California, San Diego, La Jolla, CA, USA. nlewisres@ucsd.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I2801134892"
+                ],
+                "raw_affiliation_string": "Novo Nordisk Foundation Center for Biosustainability at the University of California, San Diego, La Jolla, CA, USA. nlewisres@ucsd.edu"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I36258959",
+                  "https://openalex.org/I2802640032",
+                  "https://openalex.org/I4210106615"
+                ],
+                "raw_affiliation_string": "Novo Nordisk Foundation Center for Biosustainability at the University of California, San Diego, La Jolla, CA, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Nathan E. Lewis",
+              "id": "https://openalex.org/A5074538839",
+              "orcid": "https://orcid.org/0000-0001-7700-3654"
+            },
+            "author_position": "last",
+            "countries": [
+              "DK",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "DK",
+                "display_name": "Novo Nordisk Foundation",
+                "id": "https://openalex.org/I2801134892",
+                "lineage": [
+                  "https://openalex.org/I2801134892"
+                ],
+                "ror": "https://ror.org/04txyc737",
+                "type": "facility"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Foundation Center",
+                "id": "https://openalex.org/I2802640032",
+                "lineage": [
+                  "https://openalex.org/I2802640032"
+                ],
+                "ror": "https://ror.org/0377f6951",
+                "type": "nonprofit"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California San Diego",
+                "id": "https://openalex.org/I36258959",
+                "lineage": [
+                  "https://openalex.org/I36258959"
+                ],
+                "ror": "https://ror.org/0168r3w48",
+                "type": "education"
+              },
+              {
+                "country_code": "US",
+                "display_name": "Novo Nordisk (United States)",
+                "id": "https://openalex.org/I4210106615",
+                "lineage": [
+                  "https://openalex.org/I189090001",
+                  "https://openalex.org/I2801134892",
+                  "https://openalex.org/I4210106615",
+                  "https://openalex.org/I4210159963"
+                ],
+                "ror": "https://ror.org/011y67d23",
+                "type": "company"
+              },
+              {
+                "country_code": "US",
+                "display_name": "La Jolla Bioengineering Institute",
+                "id": "https://openalex.org/I4210133661",
+                "lineage": [
+                  "https://openalex.org/I4210133661"
+                ],
+                "ror": "https://ror.org/03sgbh608",
+                "type": "nonprofit"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Bioengineering, University of California, San Diego, La Jolla, CA, USA. nlewisres@ucsd.edu",
+              "Department of Pediatrics, University of California, San Diego, La Jolla, CA, USA. nlewisres@ucsd.edu",
+              "Novo Nordisk Foundation Center for Biosustainability at the University of California, San Diego, La Jolla, CA, USA. nlewisres@ucsd.edu",
+              "Novo Nordisk Foundation Center for Biosustainability at the University of California, San Diego, La Jolla, CA, USA"
+            ],
+            "raw_author_name": "Nathan E. Lewis",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/s41576-020-00292-x",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41576-020-00292-x",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://www.nature.com/articles/s41576-020-00292-x.pdf",
+          "raw_source_name": "Nature Reviews Genetics",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Reviews Genetics",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S8553189",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1471-0056",
+              "1471-0064"
+            ],
+            "issn_l": "1471-0056",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "71",
+          "issue": "2",
+          "last_page": "88",
+          "volume": "22"
+        },
+        "cited_by_count": 1325,
+        "display_name": "Deciphering cell–cell interactions and communication from gene expression",
+        "doi": "https://doi.org/10.1038/s41576-020-00292-x",
+        "id": "https://openalex.org/W3099810371",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s41576-020-00292-x",
+          "mag": "3099810371",
+          "openalex": "https://openalex.org/W3099810371",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/33168968"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://www.nature.com/articles/s41576-020-00292-x.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s41576-020-00292-x",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41576-020-00292-x",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://www.nature.com/articles/s41576-020-00292-x.pdf",
+          "raw_source_name": "Nature Reviews Genetics",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Reviews Genetics",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S8553189",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1471-0056",
+              "1471-0064"
+            ],
+            "issn_l": "1471-0056",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2020-11-09",
+        "publication_year": 2020,
+        "referenced_works": [
+          "https://openalex.org/W173761163",
+          "https://openalex.org/W206527157",
+          "https://openalex.org/W1016059894",
+          "https://openalex.org/W1560424863",
+          "https://openalex.org/W1753222877",
+          "https://openalex.org/W1813068103",
+          "https://openalex.org/W1965498876",
+          "https://openalex.org/W1971825415",
+          "https://openalex.org/W1976368356",
+          "https://openalex.org/W1990315216",
+          "https://openalex.org/W1994033703",
+          "https://openalex.org/W1996076856",
+          "https://openalex.org/W2003770963",
+          "https://openalex.org/W2004652899",
+          "https://openalex.org/W2005893121",
+          "https://openalex.org/W2012034410",
+          "https://openalex.org/W2014241085",
+          "https://openalex.org/W2017107299",
+          "https://openalex.org/W2021263701",
+          "https://openalex.org/W2025872333",
+          "https://openalex.org/W2035252561",
+          "https://openalex.org/W2036428241",
+          "https://openalex.org/W2038184529",
+          "https://openalex.org/W2039395562",
+          "https://openalex.org/W2051001559",
+          "https://openalex.org/W2060910588",
+          "https://openalex.org/W2065921821",
+          "https://openalex.org/W2069089843",
+          "https://openalex.org/W2070602352",
+          "https://openalex.org/W2086335524",
+          "https://openalex.org/W2103017472",
+          "https://openalex.org/W2104919659",
+          "https://openalex.org/W2112466127",
+          "https://openalex.org/W2117852776",
+          "https://openalex.org/W2118128448",
+          "https://openalex.org/W2118601386",
+          "https://openalex.org/W2124954099",
+          "https://openalex.org/W2137031570",
+          "https://openalex.org/W2138559546",
+          "https://openalex.org/W2142558537",
+          "https://openalex.org/W2149573463",
+          "https://openalex.org/W2152000177",
+          "https://openalex.org/W2154431984",
+          "https://openalex.org/W2155723007",
+          "https://openalex.org/W2159241859",
+          "https://openalex.org/W2159482845",
+          "https://openalex.org/W2162143298",
+          "https://openalex.org/W2162376722",
+          "https://openalex.org/W2163485494",
+          "https://openalex.org/W2164298117",
+          "https://openalex.org/W2236822143",
+          "https://openalex.org/W2318358210",
+          "https://openalex.org/W2340761255",
+          "https://openalex.org/W2401562335",
+          "https://openalex.org/W2461667174",
+          "https://openalex.org/W2471536144",
+          "https://openalex.org/W2489812534",
+          "https://openalex.org/W2517281749",
+          "https://openalex.org/W2517707190",
+          "https://openalex.org/W2530523491",
+          "https://openalex.org/W2566997155",
+          "https://openalex.org/W2586681801",
+          "https://openalex.org/W2594694689",
+          "https://openalex.org/W2604408404",
+          "https://openalex.org/W2626990934",
+          "https://openalex.org/W2739999456",
+          "https://openalex.org/W2743344672",
+          "https://openalex.org/W2751524454",
+          "https://openalex.org/W2761702546",
+          "https://openalex.org/W2766358903",
+          "https://openalex.org/W2771542157",
+          "https://openalex.org/W2773035279",
+          "https://openalex.org/W2780155440",
+          "https://openalex.org/W2783252067",
+          "https://openalex.org/W2785854718",
+          "https://openalex.org/W2788348358",
+          "https://openalex.org/W2794407684",
+          "https://openalex.org/W2803300167",
+          "https://openalex.org/W2803581084",
+          "https://openalex.org/W2804916645",
+          "https://openalex.org/W2805040392",
+          "https://openalex.org/W2807786681",
+          "https://openalex.org/W2814758512",
+          "https://openalex.org/W2824445991",
+          "https://openalex.org/W2885673883",
+          "https://openalex.org/W2888815520",
+          "https://openalex.org/W2891349406",
+          "https://openalex.org/W2891751973",
+          "https://openalex.org/W2892146033",
+          "https://openalex.org/W2892206041",
+          "https://openalex.org/W2896222795",
+          "https://openalex.org/W2896732826",
+          "https://openalex.org/W2898204371",
+          "https://openalex.org/W2898759023",
+          "https://openalex.org/W2900144939",
+          "https://openalex.org/W2900411771",
+          "https://openalex.org/W2900569176",
+          "https://openalex.org/W2902647266",
+          "https://openalex.org/W2904243413",
+          "https://openalex.org/W2904824676",
+          "https://openalex.org/W2908139053",
+          "https://openalex.org/W2909924790",
+          "https://openalex.org/W2911279170",
+          "https://openalex.org/W2911822431",
+          "https://openalex.org/W2912065541",
+          "https://openalex.org/W2912696928",
+          "https://openalex.org/W2913807162",
+          "https://openalex.org/W2915848182",
+          "https://openalex.org/W2919779091",
+          "https://openalex.org/W2920615695",
+          "https://openalex.org/W2943010636",
+          "https://openalex.org/W2943598479",
+          "https://openalex.org/W2947369257",
+          "https://openalex.org/W2947808148",
+          "https://openalex.org/W2949225171",
+          "https://openalex.org/W2949237386",
+          "https://openalex.org/W2949471597",
+          "https://openalex.org/W2950891712",
+          "https://openalex.org/W2955320019",
+          "https://openalex.org/W2962001321",
+          "https://openalex.org/W2963932607",
+          "https://openalex.org/W2968494487",
+          "https://openalex.org/W2968872536",
+          "https://openalex.org/W2968995168",
+          "https://openalex.org/W2970463661",
+          "https://openalex.org/W2971248808",
+          "https://openalex.org/W2972438906",
+          "https://openalex.org/W2972809401",
+          "https://openalex.org/W2972983657",
+          "https://openalex.org/W2975410916",
+          "https://openalex.org/W2975507539",
+          "https://openalex.org/W2975589949",
+          "https://openalex.org/W2976606306",
+          "https://openalex.org/W2977699650",
+          "https://openalex.org/W2978551960",
+          "https://openalex.org/W2978920735",
+          "https://openalex.org/W2979167769",
+          "https://openalex.org/W2980292232",
+          "https://openalex.org/W2981121538",
+          "https://openalex.org/W2982328611",
+          "https://openalex.org/W2982638381",
+          "https://openalex.org/W2989985381",
+          "https://openalex.org/W2992151131",
+          "https://openalex.org/W2993523018",
+          "https://openalex.org/W2995703197",
+          "https://openalex.org/W2999410311",
+          "https://openalex.org/W2999577865",
+          "https://openalex.org/W2999977864",
+          "https://openalex.org/W3003612153",
+          "https://openalex.org/W3004918653",
+          "https://openalex.org/W3005088442",
+          "https://openalex.org/W3005127469",
+          "https://openalex.org/W3007223272",
+          "https://openalex.org/W3007935255",
+          "https://openalex.org/W3008278692",
+          "https://openalex.org/W3009797991",
+          "https://openalex.org/W3010299674",
+          "https://openalex.org/W3011638747",
+          "https://openalex.org/W3011994656",
+          "https://openalex.org/W3012498554",
+          "https://openalex.org/W3014807564",
+          "https://openalex.org/W3017800419",
+          "https://openalex.org/W3018628622",
+          "https://openalex.org/W3020212197",
+          "https://openalex.org/W3021994240",
+          "https://openalex.org/W3022285953",
+          "https://openalex.org/W3022836409",
+          "https://openalex.org/W3026876979",
+          "https://openalex.org/W3030149588",
+          "https://openalex.org/W3033473768",
+          "https://openalex.org/W3035327867",
+          "https://openalex.org/W3037544553",
+          "https://openalex.org/W3038974679",
+          "https://openalex.org/W3044145717",
+          "https://openalex.org/W3044842300",
+          "https://openalex.org/W3045872289",
+          "https://openalex.org/W3048711673",
+          "https://openalex.org/W3052397347",
+          "https://openalex.org/W3081219157",
+          "https://openalex.org/W3083756487",
+          "https://openalex.org/W3105973851",
+          "https://openalex.org/W3132661792",
+          "https://openalex.org/W3174551568",
+          "https://openalex.org/W4294216483",
+          "https://openalex.org/W6689944646"
+        ],
+        "referenced_works_count": 185,
+        "title": "Deciphering cell–cell interactions and communication from gene expression",
+        "type": "review"
+      },
+      {
+        "abstract_inverted_index": null,
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1322597698",
+                  "https://openalex.org/I3018483916"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute, Royal Netherlands Academy of Arts and Sciences (KNAW) and University Medical Center Utrecht, Utrecht, The Netherlands"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210111138"
+                ],
+                "raw_affiliation_string": "Oncode Institute, Hubrecht Institute, Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Maarten H. Geurts",
+              "id": "https://openalex.org/A5068468767",
+              "orcid": "https://orcid.org/0009-0006-8832-3745"
+            },
+            "author_position": "first",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Royal Netherlands Academy of Arts and Sciences",
+                "id": "https://openalex.org/I1322597698",
+                "lineage": [
+                  "https://openalex.org/I1322597698"
+                ],
+                "ror": "https://ror.org/043c0p156",
+                "type": "government"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "University Medical Center Utrecht",
+                "id": "https://openalex.org/I3018483916",
+                "lineage": [
+                  "https://openalex.org/I3018483916"
+                ],
+                "ror": "https://ror.org/0575yy874",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Oncode Institute",
+                "id": "https://openalex.org/I4210111138",
+                "lineage": [
+                  "https://openalex.org/I4210111138"
+                ],
+                "ror": "https://ror.org/01n92vv28",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Hubrecht Institute, Royal Netherlands Academy of Arts and Sciences (KNAW) and University Medical Center Utrecht, Utrecht, The Netherlands",
+              "Oncode Institute, Hubrecht Institute, Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Maarten H. Geurts",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1322597698",
+                  "https://openalex.org/I3018483916"
+                ],
+                "raw_affiliation_string": "Hubrecht Institute, Royal Netherlands Academy of Arts and Sciences (KNAW) and University Medical Center Utrecht, Utrecht, The Netherlands"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210111138"
+                ],
+                "raw_affiliation_string": "Oncode Institute, Hubrecht Institute, Utrecht, The Netherlands"
+              }
+            ],
+            "author": {
+              "display_name": "Hans Clevers",
+              "id": "https://openalex.org/A5062248785",
+              "orcid": "https://orcid.org/0000-0002-3077-5582"
+            },
+            "author_position": "last",
+            "countries": [
+              "NL"
+            ],
+            "institutions": [
+              {
+                "country_code": "NL",
+                "display_name": "Royal Netherlands Academy of Arts and Sciences",
+                "id": "https://openalex.org/I1322597698",
+                "lineage": [
+                  "https://openalex.org/I1322597698"
+                ],
+                "ror": "https://ror.org/043c0p156",
+                "type": "government"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "University Medical Center Utrecht",
+                "id": "https://openalex.org/I3018483916",
+                "lineage": [
+                  "https://openalex.org/I3018483916"
+                ],
+                "ror": "https://ror.org/0575yy874",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "NL",
+                "display_name": "Oncode Institute",
+                "id": "https://openalex.org/I4210111138",
+                "lineage": [
+                  "https://openalex.org/I4210111138"
+                ],
+                "ror": "https://ror.org/01n92vv28",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Hubrecht Institute, Royal Netherlands Academy of Arts and Sciences (KNAW) and University Medical Center Utrecht, Utrecht, The Netherlands",
+              "Oncode Institute, Hubrecht Institute, Utrecht, The Netherlands"
+            ],
+            "raw_author_name": "Hans Clevers",
+            "raw_orcid": "https://orcid.org/0000-0002-3077-5582"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/s44222-022-00013-5",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s44222-022-00013-5",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://www.nature.com/articles/s44222-022-00013-5.pdf",
+          "raw_source_name": "Nature Reviews Bioengineering",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Reviews Bioengineering",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4387286573",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2731-6092"
+            ],
+            "issn_l": "2731-6092",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "32",
+          "issue": "1",
+          "last_page": "45",
+          "volume": "1"
+        },
+        "cited_by_count": 94,
+        "display_name": "CRISPR engineering in organoids for gene repair and disease modelling",
+        "doi": "https://doi.org/10.1038/s44222-022-00013-5",
+        "id": "https://openalex.org/W4317434039",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s44222-022-00013-5",
+          "openalex": "https://openalex.org/W4317434039"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://www.nature.com/articles/s44222-022-00013-5.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s44222-022-00013-5",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s44222-022-00013-5",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://www.nature.com/articles/s44222-022-00013-5.pdf",
+          "raw_source_name": "Nature Reviews Bioengineering",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Reviews Bioengineering",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4387286573",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2731-6092"
+            ],
+            "issn_l": "2731-6092",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2023-01-19",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W1574242730",
+          "https://openalex.org/W1933893097",
+          "https://openalex.org/W1934704664",
+          "https://openalex.org/W1944127002",
+          "https://openalex.org/W1965157206",
+          "https://openalex.org/W1970196890",
+          "https://openalex.org/W1970383854",
+          "https://openalex.org/W1973260880",
+          "https://openalex.org/W1974343902",
+          "https://openalex.org/W1976019826",
+          "https://openalex.org/W1986316308",
+          "https://openalex.org/W1988075836",
+          "https://openalex.org/W1990725675",
+          "https://openalex.org/W1995054229",
+          "https://openalex.org/W2000572318",
+          "https://openalex.org/W2001258296",
+          "https://openalex.org/W2002513358",
+          "https://openalex.org/W2003171404",
+          "https://openalex.org/W2003456064",
+          "https://openalex.org/W2003797386",
+          "https://openalex.org/W2005274657",
+          "https://openalex.org/W2008147758",
+          "https://openalex.org/W2008285918",
+          "https://openalex.org/W2010986636",
+          "https://openalex.org/W2045435533",
+          "https://openalex.org/W2046488302",
+          "https://openalex.org/W2050480410",
+          "https://openalex.org/W2051380427",
+          "https://openalex.org/W2056026468",
+          "https://openalex.org/W2058755882",
+          "https://openalex.org/W2064815984",
+          "https://openalex.org/W2077381938",
+          "https://openalex.org/W2080290623",
+          "https://openalex.org/W2082131511",
+          "https://openalex.org/W2085874330",
+          "https://openalex.org/W2088245621",
+          "https://openalex.org/W2093814864",
+          "https://openalex.org/W2097387056",
+          "https://openalex.org/W2097861808",
+          "https://openalex.org/W2099434983",
+          "https://openalex.org/W2141915435",
+          "https://openalex.org/W2142987997",
+          "https://openalex.org/W2143149122",
+          "https://openalex.org/W2151829259",
+          "https://openalex.org/W2152061559",
+          "https://openalex.org/W2160051211",
+          "https://openalex.org/W2163173465",
+          "https://openalex.org/W2163248265",
+          "https://openalex.org/W2163445749",
+          "https://openalex.org/W2165869860",
+          "https://openalex.org/W2169244146",
+          "https://openalex.org/W2173737475",
+          "https://openalex.org/W2224398381",
+          "https://openalex.org/W2238012416",
+          "https://openalex.org/W2271082097",
+          "https://openalex.org/W2279282310",
+          "https://openalex.org/W2294327742",
+          "https://openalex.org/W2336828812",
+          "https://openalex.org/W2441337908",
+          "https://openalex.org/W2465114161",
+          "https://openalex.org/W2480829753",
+          "https://openalex.org/W2582559254",
+          "https://openalex.org/W2587788572",
+          "https://openalex.org/W2592615538",
+          "https://openalex.org/W2601634034",
+          "https://openalex.org/W2607762218",
+          "https://openalex.org/W2611661371",
+          "https://openalex.org/W2621848900",
+          "https://openalex.org/W2725988230",
+          "https://openalex.org/W2727482182",
+          "https://openalex.org/W2732316774",
+          "https://openalex.org/W2751474071",
+          "https://openalex.org/W2755775794",
+          "https://openalex.org/W2766599608",
+          "https://openalex.org/W2783122422",
+          "https://openalex.org/W2792588868",
+          "https://openalex.org/W2793309516",
+          "https://openalex.org/W2795086358",
+          "https://openalex.org/W2799736418",
+          "https://openalex.org/W2805505209",
+          "https://openalex.org/W2810023485",
+          "https://openalex.org/W2883697525",
+          "https://openalex.org/W2886819502",
+          "https://openalex.org/W2889513238",
+          "https://openalex.org/W2891818439",
+          "https://openalex.org/W2897295193",
+          "https://openalex.org/W2903148550",
+          "https://openalex.org/W2911418673",
+          "https://openalex.org/W2913774804",
+          "https://openalex.org/W2916364858",
+          "https://openalex.org/W2917503791",
+          "https://openalex.org/W2917855738",
+          "https://openalex.org/W2919899673",
+          "https://openalex.org/W2946448736",
+          "https://openalex.org/W2951429562",
+          "https://openalex.org/W2965124325",
+          "https://openalex.org/W2968120913",
+          "https://openalex.org/W2979586447",
+          "https://openalex.org/W2979848380",
+          "https://openalex.org/W2981137429",
+          "https://openalex.org/W2990758262",
+          "https://openalex.org/W2996612201",
+          "https://openalex.org/W2999858469",
+          "https://openalex.org/W3000375097",
+          "https://openalex.org/W3004494456",
+          "https://openalex.org/W3007694991",
+          "https://openalex.org/W3009070575",
+          "https://openalex.org/W3009694030",
+          "https://openalex.org/W3012327875",
+          "https://openalex.org/W3013418488",
+          "https://openalex.org/W3013504322",
+          "https://openalex.org/W3015621743",
+          "https://openalex.org/W3019523164",
+          "https://openalex.org/W3020093160",
+          "https://openalex.org/W3020909574",
+          "https://openalex.org/W3024445339",
+          "https://openalex.org/W3035700080",
+          "https://openalex.org/W3035790625",
+          "https://openalex.org/W3040646360",
+          "https://openalex.org/W3043143974",
+          "https://openalex.org/W3047219457",
+          "https://openalex.org/W3093747153",
+          "https://openalex.org/W3097717913",
+          "https://openalex.org/W3112179900",
+          "https://openalex.org/W3119059732",
+          "https://openalex.org/W3129440616",
+          "https://openalex.org/W3132864675",
+          "https://openalex.org/W3133476978",
+          "https://openalex.org/W3135183303",
+          "https://openalex.org/W3135563251",
+          "https://openalex.org/W3136535512",
+          "https://openalex.org/W3138174578",
+          "https://openalex.org/W3145074783",
+          "https://openalex.org/W3155280715",
+          "https://openalex.org/W3155510140",
+          "https://openalex.org/W3156773862",
+          "https://openalex.org/W3174716159",
+          "https://openalex.org/W3177445623",
+          "https://openalex.org/W3188144652",
+          "https://openalex.org/W3194369044",
+          "https://openalex.org/W3199389718",
+          "https://openalex.org/W3202931255",
+          "https://openalex.org/W3203843972",
+          "https://openalex.org/W3206354438",
+          "https://openalex.org/W3206568807",
+          "https://openalex.org/W3208722004",
+          "https://openalex.org/W4200175773",
+          "https://openalex.org/W4200345742",
+          "https://openalex.org/W4210714775",
+          "https://openalex.org/W4210762403",
+          "https://openalex.org/W4211123163",
+          "https://openalex.org/W4214654555",
+          "https://openalex.org/W4214840711",
+          "https://openalex.org/W4220751749",
+          "https://openalex.org/W4226088025",
+          "https://openalex.org/W4310058387"
+        ],
+        "referenced_works_count": 156,
+        "title": "CRISPR engineering in organoids for gene repair and disease modelling",
+        "type": "article"
+      }
+    ]
+  },
+  "response_hash": "ed621712692e19df263514c2226a336786b349c269b5150d167c59c35db15d04",
+  "retrieved_at": "2026-07-14T13:48:36Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

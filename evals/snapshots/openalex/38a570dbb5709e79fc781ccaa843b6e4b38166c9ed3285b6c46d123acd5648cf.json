@@ -1,0 +1,140 @@
+{
+  "endpoint": "works/doi:10.1016/s0140-6736(10)62039-9",
+  "request_key": "38a570dbb5709e79fc781ccaa843b6e4b38166c9ed3285b6c46d123acd5648cf",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Baker Heart Research Institute"
+          }
+        ],
+        "author": {
+          "display_name": "‡",
+          "id": null,
+          "orcid": null
+        },
+        "author_position": "first",
+        "countries": [],
+        "institutions": [],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Baker Heart Research Institute"
+        ],
+        "raw_author_name": "‡",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "1903",
+      "issue": "9756",
+      "last_page": "1909",
+      "volume": "376"
+    },
+    "cited_by_count": 2242,
+    "display_name": "Renal sympathetic denervation in patients with treatment-resistant hypertension (The Symplicity HTN-2 Trial): a randomised controlled trial",
+    "doi": "https://doi.org/10.1016/s0140-6736(10)62039-9",
+    "id": "https://openalex.org/W1583834060",
+    "ids": {
+      "doi": "https://doi.org/10.1016/s0140-6736(10)62039-9",
+      "mag": "1583834060",
+      "openalex": "https://openalex.org/W1583834060",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/21093036"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/s0140-6736(10)62039-9",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/s0140-6736(10)62039-9",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "The Lancet",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "The Lancet",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S49861241",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0099-5355",
+          "0140-6736",
+          "1474-547X"
+        ],
+        "issn_l": "0099-5355",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2010-11-18",
+    "publication_year": 2010,
+    "referenced_works": [
+      "https://openalex.org/W133084136",
+      "https://openalex.org/W1830923172",
+      "https://openalex.org/W1964548443",
+      "https://openalex.org/W1973033464",
+      "https://openalex.org/W1973089615",
+      "https://openalex.org/W1990908213",
+      "https://openalex.org/W1993599355",
+      "https://openalex.org/W1994487234",
+      "https://openalex.org/W1995154411",
+      "https://openalex.org/W1995381509",
+      "https://openalex.org/W1997818070",
+      "https://openalex.org/W2034470232",
+      "https://openalex.org/W2049397775",
+      "https://openalex.org/W2049739776",
+      "https://openalex.org/W2055864845",
+      "https://openalex.org/W2063342008",
+      "https://openalex.org/W2071526303",
+      "https://openalex.org/W2079512972",
+      "https://openalex.org/W2101834875",
+      "https://openalex.org/W2115461708",
+      "https://openalex.org/W2129162046",
+      "https://openalex.org/W2129695314",
+      "https://openalex.org/W2131494018",
+      "https://openalex.org/W2133416234",
+      "https://openalex.org/W2143237504",
+      "https://openalex.org/W2143954917",
+      "https://openalex.org/W2155295697",
+      "https://openalex.org/W2156121263",
+      "https://openalex.org/W2303651371",
+      "https://openalex.org/W2410500821",
+      "https://openalex.org/W2614781785",
+      "https://openalex.org/W4205373146",
+      "https://openalex.org/W6605333277",
+      "https://openalex.org/W6638424207",
+      "https://openalex.org/W6647870500"
+    ],
+    "referenced_works_count": 35,
+    "title": "Renal sympathetic denervation in patients with treatment-resistant hypertension (The Symplicity HTN-2 Trial): a randomised controlled trial",
+    "type": "article"
+  },
+  "response_hash": "4508a7f159a223df76af977c7f63c27291595f31123a719a7216e4a098b2a4f8",
+  "retrieved_at": "2026-07-14T14:48:53Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

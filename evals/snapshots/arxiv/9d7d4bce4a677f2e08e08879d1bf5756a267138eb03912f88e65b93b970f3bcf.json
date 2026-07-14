@@ -1,0 +1,62 @@
+{
+  "endpoint": "query",
+  "request_key": "9d7d4bce4a677f2e08e08879d1bf5756a267138eb03912f88e65b93b970f3bcf",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Self-supervised representation learning from 12-lead ECG data\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Temesgen Mehari",
+          "Nils Strodthoff"
+        ],
+        "categories": [
+          "eess.SP",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "comment": "15 pages, 12 figures, matches published version, code available under https://github.com/hhi-aml/ecg-selfsupervised",
+        "doi": "10.1016/j.compbiomed.2021.105114",
+        "id": "http://arxiv.org/abs/2103.12676v2",
+        "journal_ref": "Comput. Biol. Med. 141 (2022) 105114",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2103.12676v2",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2103.12676v2",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          },
+          {
+            "href": "https://doi.org/10.1016/j.compbiomed.2021.105114",
+            "rel": "related",
+            "title": "doi",
+            "type": ""
+          }
+        ],
+        "primary_category": "eess.SP",
+        "published": "2021-03-23T16:50:39Z",
+        "summary": "Clinical 12-lead electrocardiography (ECG) is one of the most widely encountered kinds of biosignals. Despite the increased availability of public ECG datasets, label scarcity remains a central challenge in the field. Self-supervised learning represents a promising way to alleviate this issue. In this work, we put forward the first comprehensive assessment of self-supervised representation learning from clinical 12-lead ECG data. To this end, we adapt state-of-the-art self-supervised methods based on instance discrimination and latent forecasting to the ECG domain. In a first step, we learn contrastive representations and evaluate their quality based on linear evaluation performance on a recently established, comprehensive, clinical ECG classification task. In a second step, we analyze the impact of self-supervised pretraining on finetuned ECG classifiers as compared to purely supervised performance. For the best-performing method, an adaptation of contrastive predictive coding, we find a linear evaluation performance only 0.5% below supervised performance. For the finetuned models, we find improvements in downstream performance of roughly 1% compared to supervised performance, label efficiency, as well as robustness against physiological noise. This work clearly establishes the feasibility of extracting discriminative representations from ECG data via self-supervised learning and the numerous advantages when finetuning such representations on downstream tasks as compared to purely supervised training. As first comprehensive assessment of its kind in the ECG domain carried out exclusively on publicly available datasets, we hope to establish a first step towards reproducible progress in the rapidly evolving field of representation learning for biosignals.",
+        "title": "Self-supervised representation learning from 12-lead ECG data",
+        "updated": "2022-01-04T17:02:41Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "91f89341cce793131cbe8825dda815767e04d55bd43ad930bd51a2ab06ce2c55",
+  "retrieved_at": "2026-07-14T13:52:02Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

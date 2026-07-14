@@ -1,0 +1,78 @@
+{
+  "endpoint": "works/doi:10.7326/0003-4819-47-6-1287",
+  "request_key": "c26d9a06f02625cf5fcdc408ba9c830712518329a38fda6bc064e1f0eb3e42c7",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "1287",
+      "issue": "6",
+      "last_page": "1288",
+      "volume": "47"
+    },
+    "cited_by_count": 165,
+    "display_name": "Clinical Electrocardiography.",
+    "doi": "https://doi.org/10.7326/0003-4819-47-6-1287",
+    "id": "https://openalex.org/W4235430482",
+    "ids": {
+      "doi": "https://doi.org/10.7326/0003-4819-47-6-1287",
+      "openalex": "https://openalex.org/W4235430482"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.7326/0003-4819-47-6-1287",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.7326/0003-4819-47-6-1287",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Annals of Internal Medicine",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Annals of Internal Medicine",
+        "host_organization": "https://openalex.org/P4310316812",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310316812"
+        ],
+        "host_organization_lineage_names": [
+          "American College of Physicians"
+        ],
+        "host_organization_name": "American College of Physicians",
+        "id": "https://openalex.org/S119722071",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0003-4819",
+          "1539-3704"
+        ],
+        "issn_l": "0003-4819",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "1957-12-01",
+    "publication_year": 1957,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "title": "Clinical Electrocardiography.",
+    "type": "article"
+  },
+  "response_hash": "5dc26efb161a1b121977ddaba2fc596d1f050e958b6f784cda457b5aecdbdfb9",
+  "retrieved_at": "2026-07-14T13:49:32Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

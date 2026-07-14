@@ -1,0 +1,31 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "bf5f813795414a119c45604b07addf90a4646213a5b229babce90637e1a22ad4",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.1152/ajpheart.00561.2010[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "21037227"
+      ],
+      "querytranslation": "\"10 1152 ajpheart 00561 2010\"[Publisher ID]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": []
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "429d2ff0fb8751371ec260ad3c6cac77542273ba4b382a76493d76d8c3655395",
+  "retrieved_at": "2026-07-14T13:50:02Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

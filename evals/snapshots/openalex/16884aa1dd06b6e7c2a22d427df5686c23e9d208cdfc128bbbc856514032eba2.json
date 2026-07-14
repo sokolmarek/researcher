@@ -1,0 +1,62 @@
+{
+  "endpoint": "works",
+  "request_key": "16884aa1dd06b6e7c2a22d427df5686c23e9d208cdfc128bbbc856514032eba2",
+  "request_params": {
+    "per-page": 5,
+    "search": "DO Beatrixstraat 2-12 Zetten Vondsten van laat-middeleeuwse en nieuwetijdse dorpsbewoning",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 0,
+      "db_response_time_ms": 75,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (DO Beatrixstraat 2-12 Zetten Vondsten van laat-middeleeuwse en nieuwetijdse dorpsbewoning)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "DO Beatrixstraat 2-12 Zetten Vondsten van laat-middeleeuwse en nieuwetijdse dorpsbewoning"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:DO Beatrixstraat 2-12 Zetten Vondsten van laat-middeleeuwse en nieuwetijdse dorpsbewoning&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": []
+  },
+  "response_hash": "b7ff8ff544fb3197e14c45d4cec3a92c4805a79f7beb561f40b2f5c31491f55f",
+  "retrieved_at": "2026-07-14T13:48:37Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

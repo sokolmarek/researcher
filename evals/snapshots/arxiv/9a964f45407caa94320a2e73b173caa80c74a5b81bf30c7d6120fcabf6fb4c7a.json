@@ -1,0 +1,54 @@
+{
+  "endpoint": "query",
+  "request_key": "9a964f45407caa94320a2e73b173caa80c74a5b81bf30c7d6120fcabf6fb4c7a",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Deep Self-Supervised Representation Learning for Free-Hand Sketch\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Peng Xu",
+          "Zeyu Song",
+          "Qiyue Yin",
+          "Yi-Zhe Song",
+          "Liang Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "id": "http://arxiv.org/abs/2002.00867v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2002.00867v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2002.00867v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.CV",
+        "published": "2020-02-03T16:28:29Z",
+        "summary": "In this paper, we tackle for the first time, the problem of self-supervised representation learning for free-hand sketches. This importantly addresses a common problem faced by the sketch community -- that annotated supervisory data are difficult to obtain. This problem is very challenging in that sketches are highly abstract and subject to different drawing styles, making existing solutions tailored for photos unsuitable. Key for the success of our self-supervised learning paradigm lies with our sketch-specific designs: (i) we propose a set of pretext tasks specifically designed for sketches that mimic different drawing styles, and (ii) we further exploit the use of a textual convolution network (TCN) in a dual-branch architecture for sketch feature learning, as means to accommodate the sequential stroke nature of sketches. We demonstrate the superiority of our sketch-specific designs through two sketch-related applications (retrieval and recognition) on a million-scale sketch dataset, and show that the proposed approach outperforms the state-of-the-art unsupervised representation learning methods, and significantly narrows the performance gap between with supervised representation learning.",
+        "title": "Deep Self-Supervised Representation Learning for Free-Hand Sketch",
+        "updated": "2020-02-03T16:28:29Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "5573c3d0b6757f7e9519b6eef7f8ba66cd683772b6f75d21b754e383b50780bb",
+  "retrieved_at": "2026-07-14T14:04:19Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

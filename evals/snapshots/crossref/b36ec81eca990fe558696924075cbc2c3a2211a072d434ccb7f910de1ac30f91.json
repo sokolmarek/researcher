@@ -1,0 +1,2746 @@
+{
+  "endpoint": "works",
+  "request_key": "b36ec81eca990fe558696924075cbc2c3a2211a072d434ccb7f910de1ac30f91",
+  "request_params": {
+    "query.bibliographic": "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.3390/rs12111868",
+          "ISSN": [
+            "2072-4292"
+          ],
+          "URL": "https://doi.org/10.3390/rs12111868",
+          "abstract": "<jats:p>Traditional change detection (CD) methods operate in the simple image domain or hand-crafted features, which has less robustness to the inconsistencies (e.g., brightness and noise distribution, etc.) between bitemporal satellite images. Recently, deep learning techniques have reported compelling performance on robust feature learning. However, generating accurate semantic supervision that reveals real change information in satellite images still remains challenging, especially for manual annotation. To solve this problem, we propose a novel self-supervised representation learning method based on temporal prediction for remote sensing image CD. The main idea of our algorithm is to transform two satellite images into more consistent feature representations through a self-supervised mechanism without semantic supervision and any additional computations. Based on the transformed feature representations, a better difference image (DI) can be obtained, which reduces the propagated error of DI on the final detection result. In the self-supervised mechanism, the network is asked to identify different sample patches between two temporal images, namely, temporal prediction. By designing the network for the temporal prediction task to imitate the discriminator of generative adversarial networks, the distribution-aware feature representations are automatically captured and the result with powerful robustness can be acquired. Experimental results on real remote sensing data sets show the effectiveness and superiority of our method, improving the detection precision up to 0.94–35.49%.</jats:p>",
+          "alternative-id": [
+            "rs12111868"
+          ],
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+                }
+              ],
+              "family": "Dong",
+              "given": "Huihui",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+                }
+              ],
+              "family": "Ma",
+              "given": "Wenping",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-3459-5079",
+              "affiliation": [
+                {
+                  "name": "School of Computer Science and Technology, The Xi’an Key Laboratory of Big Data and Intelligent Vision, Xidian University, Xi’an 710071, China"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Wu",
+              "given": "Yue",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+                }
+              ],
+              "family": "Zhang",
+              "given": "Jun",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "School of Artificial Intelligence, The Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education, Xidian University, Xi’an 710071, China"
+                }
+              ],
+              "family": "Jiao",
+              "given": "Licheng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Remote Sensing"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                6,
+                9
+              ]
+            ],
+            "date-time": "2020-06-09T06:34:16Z",
+            "timestamp": 1591684456000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                11
+              ]
+            ],
+            "date-time": "2025-10-11T09:36:59Z",
+            "timestamp": 1760175419000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                29
+              ]
+            ],
+            "date-time": "2026-06-29T21:25:49Z",
+            "timestamp": 1782768349349,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 65,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2072-4292"
+            }
+          ],
+          "issue": "11",
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                6,
+                9
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "11",
+            "published-online": {
+              "date-parts": [
+                [
+                  2020,
+                  6
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    6,
+                    9
+                  ]
+                ],
+                "date-time": "2020-06-09T00:00:00Z",
+                "timestamp": 1591660800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.mdpi.com/2072-4292/12/11/1868/pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "1968",
+          "page": "1868",
+          "prefix": "10.3390",
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                6,
+                9
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2020,
+                6,
+                9
+              ]
+            ]
+          },
+          "publisher": "MDPI AG",
+          "reference": [
+            {
+              "DOI": "10.1080/01431168908903939",
+              "article-title": "Review Article Digital change detection techniques using remotely-sensed data",
+              "author": "Singh",
+              "doi-asserted-by": "crossref",
+              "first-page": "989",
+              "journal-title": "Int. J. Remote. Sens.",
+              "key": "ref_1",
+              "volume": "10",
+              "year": "1989"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2018.07.002",
+              "article-title": "Towards a polyalgorithm for land use change detection",
+              "author": "Saxena",
+              "doi-asserted-by": "crossref",
+              "first-page": "217",
+              "journal-title": "J. Photogramm. Remote Sens.",
+              "key": "ref_2",
+              "volume": "144",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2018.04.013",
+              "article-title": "A scale-invariant change detection method for land use/cover change research",
+              "author": "Xing",
+              "doi-asserted-by": "crossref",
+              "first-page": "252",
+              "journal-title": "J. Photogramm. Remote Sens.",
+              "key": "ref_3",
+              "volume": "141",
+              "year": "2018"
+            },
+            {
+              "article-title": "A review of multi-temporal remote sensing data change detection algorithms",
+              "author": "Gong",
+              "first-page": "308",
+              "journal-title": "Protein Expr. Purif.",
+              "key": "ref_4",
+              "volume": "82",
+              "year": "2011"
+            },
+            {
+              "DOI": "10.1109/36.843009",
+              "article-title": "Automatic analysis of the difference image for unsupervised change detection",
+              "author": "Bruzzone",
+              "doi-asserted-by": "crossref",
+              "first-page": "1171",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_5",
+              "volume": "38",
+              "year": "2000"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2014.09.023",
+              "article-title": "Combining where and what in change detection for unsupervised foreground learning in surveillance",
+              "author": "Huerta",
+              "doi-asserted-by": "crossref",
+              "first-page": "709",
+              "journal-title": "Pattern Recognit.",
+              "key": "ref_6",
+              "volume": "48",
+              "year": "2015"
+            },
+            {
+              "article-title": "Generalized minimum-error thresholding for unsupervised change detection from multilook polarimetric SAR data",
+              "author": "Ghanbari",
+              "first-page": "2972",
+              "journal-title": "IEEE Trans. Geosci. Remote. Sens.",
+              "key": "ref_7",
+              "volume": "44",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/TGRS.2017.2759663",
+              "article-title": "A Theoretical Framework for Change Detection Based on a Compound Multiclass Statistical Model of the Difference Image",
+              "author": "Zanetti",
+              "doi-asserted-by": "crossref",
+              "first-page": "1129",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_8",
+              "volume": "56",
+              "year": "2018"
+            },
+            {
+              "article-title": "InSAR Principles–Guidelines for SAR Interferometry Processing and Interpretation",
+              "author": "Ferretti",
+              "first-page": "156",
+              "journal-title": "J. Financ. Stab.",
+              "key": "ref_9",
+              "volume": "10",
+              "year": "2007"
+            },
+            {
+              "DOI": "10.1007/978-3-319-47037-5_2",
+              "doi-asserted-by": "crossref",
+              "key": "ref_10",
+              "unstructured": "Ban, Y., and Yousif, O. (2016). Change Detection Techniques: A Review, Springer International Publishing."
+            },
+            {
+              "DOI": "10.1016/j.rse.2015.01.006",
+              "article-title": "A critical synthesis of remotely sensed optical image change detection techniques",
+              "author": "Tewkesbury",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "journal-title": "Remote Sens. Environ.",
+              "key": "ref_11",
+              "volume": "160",
+              "year": "2015"
+            },
+            {
+              "key": "ref_12",
+              "unstructured": "Lunetta, R.S.E., and Christopher, D. (1998). Remote Sensing Change Detection: Environmental Monitoring Methods and Applications, CRC Press."
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2014.04.010",
+              "article-title": "SAR change detection based on intensity and texture changes",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "123",
+              "journal-title": "J. Photogramm. Remote Sens.",
+              "key": "ref_13",
+              "volume": "93",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1109/TGRS.2006.885408",
+              "article-title": "A theoretical framework for unsupervised change detection based on change vector analysis in the polar domain",
+              "author": "Bovolo",
+              "doi-asserted-by": "crossref",
+              "first-page": "218",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_14",
+              "volume": "45",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1109/LGRS.2009.2025059",
+              "article-title": "Unsupervised Change Detection in Satellite Images Using Principal Component Analysis and k-Means Clustering",
+              "author": "Celik",
+              "doi-asserted-by": "crossref",
+              "first-page": "772",
+              "journal-title": "IEEE GEoscience Remote Sens. Lett.",
+              "key": "ref_15",
+              "volume": "6",
+              "year": "2009"
+            },
+            {
+              "DOI": "10.1117/1.1631315",
+              "article-title": "Survey over image thresholding techniques and quantitative performance evaluation",
+              "author": "Sezgin",
+              "doi-asserted-by": "crossref",
+              "first-page": "146",
+              "journal-title": "J. Electron. Imaging",
+              "key": "ref_16",
+              "volume": "13",
+              "year": "2004"
+            },
+            {
+              "DOI": "10.1109/TIP.2011.2170702",
+              "article-title": "Change detection in synthetic aperture radar images based on image fusion and fuzzy clustering",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "2141",
+              "journal-title": "IEEE Trans. Image Process.",
+              "key": "ref_17",
+              "volume": "21",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1109/TGRS.2017.2739800",
+              "article-title": "Discriminative Feature Learning for Unsupervised Change Detection in Heterogeneous Images Based on a Coupled Neural Network",
+              "author": "Zhao",
+              "doi-asserted-by": "crossref",
+              "first-page": "7066",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_18",
+              "volume": "55",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/ICASSP.2011.5947611",
+              "doi-asserted-by": "crossref",
+              "key": "ref_19",
+              "unstructured": "Mikolov, T., Kombrink, S., Burget, L., Cernocky, J., and Khudanpur, S. (2011, January 22–27). Extensions of recurrent neural network language model. Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing, Prague, Czech Republic."
+            },
+            {
+              "key": "ref_20",
+              "unstructured": "Krizhevsky, A., Sutskever, I., and Hinton, G.E. (2012, January 3–6). ImageNet classification with deep convolutional neural networks. Proceedings of the Advances on Neural Information Processing Systems, Lake Tahoe, NV, USA."
+            },
+            {
+              "key": "ref_21",
+              "unstructured": "Dai, J., Li, Y., He, K., and Sun, J. (2016, January 5–10). R-FCN: Object Detection via Region-based Fully Convolutional Networks. Proceedings of the Advances on Neural Information Processing Systems, Barcelona, Spain."
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00937",
+              "doi-asserted-by": "crossref",
+              "key": "ref_22",
+              "unstructured": "Song, Y., Ma, C., Wu, X., Gong, L., Bao, L., Zuo, W., Shen, C., Lau, R.W., and Yang, M.H. (2018, January 18–23). Vital: Visual tracking via adversarial learning. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Salt Lake City, UT, USA."
+            },
+            {
+              "key": "ref_23",
+              "unstructured": "Radford, A., Metz, L., and Chintala, S. (2015). Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks. arXiv."
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.632",
+              "doi-asserted-by": "crossref",
+              "key": "ref_24",
+              "unstructured": "Isola, P., Zhu, J.Y., Zhou, T., and Efros, A.A. (2017, January 21–26). Image-to-image translation with conditional adversarial networks. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Honolulu, HI, USA."
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.606",
+              "doi-asserted-by": "crossref",
+              "key": "ref_25",
+              "unstructured": "Souly, N., Spampinato, C., and Shah, M. (2017, January 22–29). Semi supervised semantic segmentation using generative adversarial network. Proceedings of the IEEE International Conference on Computer Vision, Venice, Italy."
+            },
+            {
+              "key": "ref_26",
+              "unstructured": "Jing, L., and Tian, Y. (2019). Self-supervised visual feature learning with deep neural networks: A survey. arXiv."
+            },
+            {
+              "DOI": "10.1109/ICCV.2015.320",
+              "doi-asserted-by": "crossref",
+              "key": "ref_27",
+              "unstructured": "Wang, X., and Gupta, A. (2015, January 11–18). Unsupervised Learning of Visual Representations Using Videos. Proceedings of the IEEE International Conference on Computer Vision, Santiago, Chile."
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.607",
+              "doi-asserted-by": "crossref",
+              "key": "ref_28",
+              "unstructured": "Fernando, B., Bilen, H., Gavves, E., and Gould, S. (2017, January 21–26). Self-supervised video representation learning with odd-one-out networks. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Honolulu, HI, USA."
+            },
+            {
+              "DOI": "10.1109/ICCV.2015.167",
+              "doi-asserted-by": "crossref",
+              "key": "ref_29",
+              "unstructured": "Doersch, C., Gupta, A., and Efros, A.A. (2015, January 11–18). Unsupervised visual representation learning by context prediction. Proceedings of the IEEE International Conference on Computer Vision, Santiago, Chile."
+            },
+            {
+              "DOI": "10.1109/TNNLS.2016.2636227",
+              "article-title": "A deep convolutional coupling network for change detection based on heterogeneous optical and radar images",
+              "author": "Liu",
+              "doi-asserted-by": "crossref",
+              "first-page": "545",
+              "journal-title": "IEEE Trans. Neural Netw. Learn. Syst.",
+              "key": "ref_30",
+              "volume": "29",
+              "year": "2018"
+            },
+            {
+              "key": "ref_31",
+              "unstructured": "Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., and Bengio, Y. (2014, January 8–13). Generative adversarial nets. Proceedings of the Advances on Neural Information Processing Systems, Montreal, QC, Canada."
+            },
+            {
+              "DOI": "10.3390/rs10101592",
+              "doi-asserted-by": "crossref",
+              "key": "ref_32",
+              "unstructured": "Lang, F., Yang, J., Yan, S., and Qin, F. (2018). Superpixel Segmentation of Polarimetric Synthetic Aperture Radar (SAR) Images Based on Generalized Mean Shift. Remote Sens., 10."
+            },
+            {
+              "DOI": "10.1016/j.cviu.2017.03.007",
+              "article-title": "Superpixels: An Evaluation of the State-of-the-Art",
+              "author": "Stutz",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "journal-title": "Comput. Vis. Image Underst.",
+              "key": "ref_33",
+              "volume": "166",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1016/j.eswa.2017.04.018",
+              "article-title": "River channel segmentation in polarimetric SAR images: Watershed transform combined with average contrast maximisation",
+              "author": "Ciecholewski",
+              "doi-asserted-by": "crossref",
+              "first-page": "196",
+              "journal-title": "Expert Syst. Appl. Int. J.",
+              "key": "ref_34",
+              "volume": "82",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2009.71",
+              "article-title": "Watershed Cuts: Thinnings, Shortest Path Forests, and Topological Watersheds",
+              "author": "Cousty",
+              "doi-asserted-by": "crossref",
+              "first-page": "925",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+              "key": "ref_35",
+              "volume": "32",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1109/LGRS.2017.2702062",
+              "article-title": "A Median Regularized Level Set for Hierarchical Segmentation of SAR Images",
+              "author": "Braga",
+              "doi-asserted-by": "crossref",
+              "first-page": "1171",
+              "journal-title": "IEEE Geosci. Remote Sens. Lett.",
+              "key": "ref_36",
+              "volume": "14",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2017.2716620",
+              "article-title": "Level Set Segmentation Algorithm for High-Resolution Polarimetric SAR Images Based on a Heterogeneous Clutter Model",
+              "author": "Jin",
+              "doi-asserted-by": "crossref",
+              "first-page": "4565",
+              "journal-title": "IEEE J. Sel. Top. Appl. Earth Obs. Remote. Sens.",
+              "key": "ref_37",
+              "volume": "10",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/TNNLS.2015.2435783",
+              "article-title": "Change Detection in Synthetic Aperture Radar Images Based on Deep Neural Networks",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "125",
+              "journal-title": "IEEE Trans. Neural Netw. Learn. Syst.",
+              "key": "ref_38",
+              "volume": "27",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1109/TIP.2012.2219547",
+              "article-title": "Fuzzy C-means clustering with local information and kernel metric for image segmentation",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "573",
+              "journal-title": "IEEE Trans. Image Process.",
+              "key": "ref_39",
+              "volume": "22",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1109/TGRS.2015.2407953",
+              "article-title": "Change-Detection Map Learning Using Matching Pursuit",
+              "author": "Li",
+              "doi-asserted-by": "crossref",
+              "first-page": "4712",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_40",
+              "volume": "53",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1007/s11042-015-2960-3",
+              "article-title": "Change detection method for remote sensing images based on an improved Markov random field",
+              "author": "Gu",
+              "doi-asserted-by": "crossref",
+              "first-page": "1",
+              "journal-title": "Multimed. Tools Appl.",
+              "key": "ref_41",
+              "volume": "76",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/TIP.2012.2226048",
+              "article-title": "A robust fuzzy local information C-means clustering algorithm",
+              "author": "Turgay",
+              "doi-asserted-by": "crossref",
+              "first-page": "1258",
+              "journal-title": "IEEE Trans. Image Process.",
+              "key": "ref_42",
+              "volume": "22",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.1109/TFUZZ.2013.2249072",
+              "article-title": "Fuzzy Clustering With a Modified MRF Energy Function for Change Detection in Synthetic Aperture Radar Images",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "98",
+              "journal-title": "IEEE Trans. Fuzzy Syst.",
+              "key": "ref_43",
+              "volume": "22",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1080/01431161.2014.916054",
+              "article-title": "Detecting changes of the Yellow River Estuary via SAR images based on a local fit-search model and kernel-induced graph cuts",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "4009",
+              "journal-title": "Int. J. Remote Sens.",
+              "key": "ref_44",
+              "volume": "35",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1016/j.asoc.2015.05.003",
+              "article-title": "Change detection in synthetic aperture radar images based on unsupervised artificial immune systems",
+              "author": "Liu",
+              "doi-asserted-by": "crossref",
+              "first-page": "151",
+              "journal-title": "Appl. Soft Comput.",
+              "key": "ref_45",
+              "volume": "34",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2016.07.040",
+              "article-title": "Unsupervised saliency-guided SAR image change detection",
+              "author": "Zheng",
+              "doi-asserted-by": "crossref",
+              "first-page": "309",
+              "journal-title": "Pattern Recognit.",
+              "key": "ref_46",
+              "volume": "61",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/MGRS.2017.2762307",
+              "article-title": "Deep Learning in Remote Sensing: A Comprehensive Review and List of Resources",
+              "author": "Zhu",
+              "doi-asserted-by": "crossref",
+              "first-page": "8",
+              "journal-title": "IEEE Geosci. Remote Sens. Mag.",
+              "key": "ref_47",
+              "volume": "5",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/TGRS.2018.2863224",
+              "article-title": "Learning spectral-spatial-temporal features via a recurrent convolutional neural network for change detection in multispectral imagery",
+              "author": "Mou",
+              "doi-asserted-by": "crossref",
+              "first-page": "924",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_48",
+              "volume": "57",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/TGRS.2018.2849692",
+              "article-title": "GETNET: A General End-to-End 2-D CNN Framework for Hyperspectral Image Change Detection",
+              "author": "Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "3",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_49",
+              "volume": "57",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/TGRS.2017.2650198",
+              "article-title": "Superpixel-Based Difference Representation Learning for Change Detection in Multispectral Remote Sensing Images",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "2658",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_50",
+              "volume": "55",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2018.2889326",
+              "article-title": "Local Descriptor Learning for Change Detection in Synthetic Aperture Radar Images via Convolutional Neural Networks",
+              "author": "Dong",
+              "doi-asserted-by": "crossref",
+              "first-page": "15389",
+              "journal-title": "IEEE Access",
+              "key": "ref_51",
+              "volume": "7",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/LGRS.2019.2895656",
+              "article-title": "Sea Ice Change Detection in SAR Images Based on Convolutional-Wavelet Neural Networks",
+              "author": "Gao",
+              "doi-asserted-by": "crossref",
+              "first-page": "1240",
+              "journal-title": "IEEE Geosci. Remote. Sens. Lett.",
+              "key": "ref_52",
+              "volume": "16",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2018.09.002",
+              "article-title": "Iterative feature mapping network for detecting multiple changes in multi-source remote sensing images",
+              "author": "Zhan",
+              "doi-asserted-by": "crossref",
+              "first-page": "38",
+              "journal-title": "J. Photogramm. Remote Sens.",
+              "key": "ref_53",
+              "volume": "146",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/LGRS.2017.2762694",
+              "article-title": "Generative Adversarial Networks for Change Detection in Multispectral Imagery",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "2310",
+              "journal-title": "IEEE Geosci. Remote. Sens. Lett.",
+              "key": "ref_54",
+              "volume": "14",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1109/LGRS.2018.2868704",
+              "article-title": "A Conditional Adversarial Network for Change Detection in Heterogeneous Images",
+              "author": "Niu",
+              "doi-asserted-by": "crossref",
+              "first-page": "45",
+              "journal-title": "IEEE Geosci. Remote. Sens. Lett.",
+              "key": "ref_55",
+              "volume": "16",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2018.2887108",
+              "article-title": "A generative discriminatory classified network for change detection in multispectral imagery",
+              "author": "Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "321",
+              "journal-title": "IEEE J. Sel. Top. Appl. Earth Obs. Remote Sens.",
+              "key": "ref_56",
+              "volume": "12",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/TGRS.2019.2948659",
+              "article-title": "From W-Net to CDGAN: Bitemporal Change Detection via Deep Learning Techniques",
+              "author": "Hou",
+              "doi-asserted-by": "crossref",
+              "first-page": "1790",
+              "journal-title": "IEEE Trans. Geosci. Remote Sens.",
+              "key": "ref_57",
+              "volume": "58",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1007/978-3-030-01264-9_9",
+              "doi-asserted-by": "crossref",
+              "key": "ref_58",
+              "unstructured": "Caron, M., Bojanowski, P., Joulin, A., and Douze, M. (2018, January 8–14). Deep clustering for unsupervised learning of visual features. Proceedings of the European Conference on Computer Vision, Munich, Germany."
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2017.12.012",
+              "article-title": "A deep learning framework for remote sensing image registration",
+              "author": "Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "148",
+              "journal-title": "J. Photogramm. Remote Sens.",
+              "key": "ref_59",
+              "volume": "145",
+              "year": "2018"
+            },
+            {
+              "article-title": "Inland wetland change detection using aircraft MSS data",
+              "author": "Jensen",
+              "first-page": "521",
+              "journal-title": "Photogramm. Eng. Remote Sens.",
+              "key": "ref_60",
+              "volume": "53",
+              "year": "1987"
+            },
+            {
+              "DOI": "10.4236/ars.2012.13008",
+              "doi-asserted-by": "crossref",
+              "key": "ref_61",
+              "unstructured": "Mubea, K., and Menz, G. (2012). Monitoring Land-Use Change in Nakuru (Kenya) Using Multi-Sensor Satellite Data. Adv. Remote Sens., 1."
+            },
+            {
+              "article-title": "Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion",
+              "author": "Vincent",
+              "first-page": "3371",
+              "journal-title": "J. Mach. Learn. Res.",
+              "key": "ref_62",
+              "volume": "11",
+              "year": "2010"
+            },
+            {
+              "DOI": "10.1126/science.1127647",
+              "article-title": "Reducing the dimensionality of data with neural networks",
+              "author": "Hinton",
+              "doi-asserted-by": "crossref",
+              "first-page": "504",
+              "journal-title": "Science",
+              "key": "ref_63",
+              "volume": "313",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1007/978-3-642-33275-3_2",
+              "doi-asserted-by": "crossref",
+              "key": "ref_64",
+              "unstructured": "Fischer, A., and Igel, C. (2012). An Introduction to Restricted Boltzmann Machines. Iberoamerican Congress on Pattern Recognition, Springer."
+            },
+            {
+              "article-title": "A Practical Guide to Training Restricted Boltzmann Machines",
+              "author": "Hinton",
+              "first-page": "599",
+              "journal-title": "Momentum",
+              "key": "ref_65",
+              "volume": "9",
+              "year": "2012"
+            },
+            {
+              "DOI": "10.1162/neco.2006.18.7.1527",
+              "article-title": "A fast learning algorithm for deep belief nets",
+              "author": "Hinton",
+              "doi-asserted-by": "crossref",
+              "first-page": "1527",
+              "journal-title": "Neural Comput.",
+              "key": "ref_66",
+              "volume": "18",
+              "year": "2006"
+            },
+            {
+              "DOI": "10.1177/001316448104100307",
+              "article-title": "Coefficient Kappa: Some Uses, Misuses, and Alternatives",
+              "author": "Brennan",
+              "doi-asserted-by": "crossref",
+              "first-page": "687",
+              "journal-title": "Educ. Psychol. Meas.",
+              "key": "ref_67",
+              "volume": "41",
+              "year": "1981"
+            },
+            {
+              "DOI": "10.1016/S0167-8655(03)00060-6",
+              "article-title": "Evaluation of global image thresholding for change detection",
+              "author": "Rosin",
+              "doi-asserted-by": "crossref",
+              "first-page": "2345",
+              "journal-title": "Pattern Recognit. Lett.",
+              "key": "ref_68",
+              "volume": "24",
+              "year": "2003"
+            },
+            {
+              "DOI": "10.1109/IGARSS.2018.8518015",
+              "doi-asserted-by": "crossref",
+              "key": "ref_69",
+              "unstructured": "Daudt, R.C., Saux, B.L., Boulch, A., and Gousseau, Y. (2018, January 22–27). Urban Change Detection for Multispectral Earth Observation Using Convolutional Neural Networks. Proceedings of the International Geoscience and Remote Sensing Symposium, Valencia, Spain."
+            }
+          ],
+          "reference-count": 69,
+          "references-count": 69,
+          "resource": {
+            "primary": {
+              "URL": "https://www.mdpi.com/2072-4292/12/11/1868"
+            }
+          },
+          "score": 59.091732,
+          "short-container-title": [
+            "Remote Sensing"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+          "volume": "12"
+        },
+        {
+          "DOI": "10.1109/tgrs.2026.3660265",
+          "ISSN": [
+            "0196-2892",
+            "1558-0644"
+          ],
+          "URL": "https://doi.org/10.1109/tgrs.2026.3660265",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-0826-8311",
+              "affiliation": [
+                {
+                  "name": "Department of Civil and Environmental Engineering, Seoul National University, Seoul, South Korea"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Kwak",
+              "given": "Taehong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0008-1151-7845",
+              "affiliation": [
+                {
+                  "name": "Department of Civil and Environmental Engineering, Seoul National University, Seoul, South Korea"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Lee",
+              "given": "Yeseok",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-0541-8986",
+              "affiliation": [
+                {
+                  "name": "Department of Civil and Environmental Engineering, Seoul National University, Seoul, South Korea"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Kim",
+              "given": "Yongil",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "IEEE Transactions on Geoscience and Remote Sensing"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2026-02-03T20:54:52Z",
+            "timestamp": 1770152092000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                23
+              ]
+            ],
+            "date-time": "2026-02-23T20:47:54Z",
+            "timestamp": 1771879674000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100003725",
+              "award": [
+                "NRF-2023R1A2C2005548"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "NRF-2023R1A2C2005548"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100003725",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Research Foundation of Korea (NRF) through Korean Government, Ministry of Science and ICT"
+            },
+            {
+              "DOI": "10.13039/501100003725",
+              "award": [
+                "RS-2025-16071712"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "RS-2025-16071712"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100003725",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Research Foundation of Korea (NRF) through Korean Government, Ministry of Science and ICT"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                23
+              ]
+            ],
+            "date-time": "2026-02-23T21:23:59Z",
+            "timestamp": 1771881839664,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0196-2892"
+            },
+            {
+              "type": "electronic",
+              "value": "1558-0644"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    1,
+                    1
+                  ]
+                ],
+                "date-time": "2026-01-01T00:00:00Z",
+                "timestamp": 1767225600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    1,
+                    1
+                  ]
+                ],
+                "date-time": "2026-01-01T00:00:00Z",
+                "timestamp": 1767225600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    1,
+                    1
+                  ]
+                ],
+                "date-time": "2026-01-01T00:00:00Z",
+                "timestamp": 1767225600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/36/11333908/11371347.pdf?arnumber=11371347",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "1-22",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference": [
+            {
+              "DOI": "10.1080/0143116031000139863",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "DOI": "10.1109/ACCESS.2020.3008036",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "DOI": "10.3390/rs12101688",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "DOI": "10.1016/j.ecoinf.2021.101310",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1109/TKDE.2021.3090866",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00975",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "article-title": "Improved baselines with momentum contrastive learning",
+              "author": "Chen",
+              "journal-title": "arXiv:2003.04297",
+              "key": "ref7",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.5555/3524938.3525087",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1109/CVPR46437.2021.01549",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.5555/3495724.3497510",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.278",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46466-4_5",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "article-title": "Unsupervised representation learning by predicting image rotations",
+              "author": "Gidaris",
+              "journal-title": "arXiv:1803.07728",
+              "key": "ref13",
+              "year": "2018"
+            },
+            {
+              "article-title": "BEiT: BERT pre-training of image transformers",
+              "author": "Bao",
+              "journal-title": "arXiv:2106.08254",
+              "key": "ref14",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/CVPR52688.2022.01553",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "DOI": "10.1109/CVPR52688.2022.00943",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "DOI": "10.1016/j.inffus.2025.103257",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "article-title": "Self-supervised change detection in multi-view remote sensing images",
+              "author": "Chen",
+              "journal-title": "arXiv:2103.05969",
+              "key": "ref18",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3203897",
+              "doi-asserted-by": "publisher",
+              "key": "ref19"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3203769",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3228016",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3330494",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3238327",
+              "doi-asserted-by": "publisher",
+              "key": "ref23"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3489615",
+              "doi-asserted-by": "publisher",
+              "key": "ref24"
+            },
+            {
+              "DOI": "10.3390/land13070927",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2025.112394",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3271024",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3468008",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3519195",
+              "doi-asserted-by": "publisher",
+              "key": "ref29"
+            },
+            {
+              "DOI": "10.1109/TGRS.2025.3579416",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "DOI": "10.1109/TGRS.2019.2913095",
+              "doi-asserted-by": "publisher",
+              "key": "ref31"
+            },
+            {
+              "DOI": "10.1109/TGRS.2021.3073562",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3319961",
+              "doi-asserted-by": "publisher",
+              "key": "ref33"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2023.3237896",
+              "doi-asserted-by": "publisher",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.1109/LGRS.2024.3370548",
+              "doi-asserted-by": "publisher",
+              "key": "ref35"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3395135",
+              "doi-asserted-by": "publisher",
+              "key": "ref36"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3379431",
+              "doi-asserted-by": "publisher",
+              "key": "ref37"
+            },
+            {
+              "DOI": "10.1109/TGRS.2025.3539630",
+              "doi-asserted-by": "publisher",
+              "key": "ref38"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3523541",
+              "doi-asserted-by": "publisher",
+              "key": "ref39"
+            },
+            {
+              "DOI": "10.1080/10095020.2025.2480816",
+              "doi-asserted-by": "publisher",
+              "key": "ref40"
+            },
+            {
+              "article-title": "Change vector analysis: An approach for detecting forest changes with Landsat",
+              "author": "Malila",
+              "first-page": "385",
+              "key": "ref41",
+              "volume-title": "Proc. LARS Symposia"
+            },
+            {
+              "article-title": "Application of principal components analysis to change detection",
+              "author": "Fung",
+              "first-page": "1649",
+              "issue": "12",
+              "journal-title": "Photogrammetric Eng. Remote Sens.",
+              "key": "ref42",
+              "volume": "53",
+              "year": "1987"
+            },
+            {
+              "DOI": "10.1109/TGRS.1990.572980",
+              "doi-asserted-by": "publisher",
+              "key": "ref43"
+            },
+            {
+              "DOI": "10.1080/01431169608949118",
+              "doi-asserted-by": "publisher",
+              "key": "ref44"
+            },
+            {
+              "DOI": "10.1007/978-3-319-47037-5_2",
+              "doi-asserted-by": "publisher",
+              "key": "ref45"
+            },
+            {
+              "DOI": "10.1109/LGRS.2017.2738149",
+              "doi-asserted-by": "publisher",
+              "key": "ref46"
+            },
+            {
+              "DOI": "10.1007/978-3-030-11012-3_10",
+              "doi-asserted-by": "publisher",
+              "key": "ref47"
+            },
+            {
+              "article-title": "Change detection between multimodal remote sensing data using Siamese CNN",
+              "author": "Zhang",
+              "journal-title": "arXiv:1807.09562",
+              "key": "ref48",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/ICIP.2018.8451652",
+              "doi-asserted-by": "publisher",
+              "key": "ref49"
+            },
+            {
+              "DOI": "10.1109/LGRS.2021.3056416",
+              "doi-asserted-by": "publisher",
+              "key": "ref50"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3168331",
+              "doi-asserted-by": "publisher",
+              "key": "ref51"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3199502",
+              "doi-asserted-by": "publisher",
+              "key": "ref52"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2023.3310208",
+              "doi-asserted-by": "publisher",
+              "key": "ref53"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3277496",
+              "doi-asserted-by": "publisher",
+              "key": "ref54"
+            },
+            {
+              "DOI": "10.1007/s00521-022-08122-3",
+              "doi-asserted-by": "publisher",
+              "key": "ref55"
+            },
+            {
+              "DOI": "10.1109/TGRS.2021.3095166",
+              "doi-asserted-by": "publisher",
+              "key": "ref56"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3160007",
+              "doi-asserted-by": "publisher",
+              "key": "ref57"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2021.10.015",
+              "doi-asserted-by": "publisher",
+              "key": "ref58"
+            },
+            {
+              "DOI": "10.1109/IGARSS46834.2022.9883686",
+              "doi-asserted-by": "publisher",
+              "key": "ref59"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2012.120",
+              "doi-asserted-by": "publisher",
+              "key": "ref60"
+            },
+            {
+              "DOI": "10.3390/rs12101662",
+              "doi-asserted-by": "publisher",
+              "key": "ref61"
+            },
+            {
+              "DOI": "10.3390/rs13245094",
+              "doi-asserted-by": "publisher",
+              "key": "ref62"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2020.06.003",
+              "doi-asserted-by": "publisher",
+              "key": "ref63"
+            },
+            {
+              "DOI": "10.1109/WACV61041.2025.00123",
+              "doi-asserted-by": "publisher",
+              "key": "ref64"
+            },
+            {
+              "DOI": "10.1109/CVPR52734.2025.02236",
+              "doi-asserted-by": "publisher",
+              "key": "ref65"
+            }
+          ],
+          "reference-count": 65,
+          "references-count": 65,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/11371347/"
+            }
+          },
+          "score": 48.584553,
+          "short-container-title": [
+            "IEEE Trans. Geosci. Remote Sensing"
+          ],
+          "source": "Crossref",
+          "title": [
+            "DiPaSSCD: Difference-Paired Self-Supervised Learning With Object-Based Local Augmentation for Remote Sensing Image Change Detection"
+          ],
+          "type": "journal-article",
+          "volume": "64"
+        },
+        {
+          "DOI": "10.1109/jstars.2024.3483560",
+          "ISSN": [
+            "1939-1404",
+            "2151-1535"
+          ],
+          "URL": "https://doi.org/10.1109/jstars.2024.3483560",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-7236-2922",
+              "affiliation": [
+                {
+                  "name": "School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Jian",
+              "given": "Ping",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0004-5844-244X",
+              "affiliation": [
+                {
+                  "name": "School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Ou",
+              "given": "Yimin",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-0355-5274",
+              "affiliation": [
+                {
+                  "name": "Key Laboratory of Network Information System Technology, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Chen",
+              "given": "Keming",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                18
+              ]
+            ],
+            "date-time": "2024-10-18T13:30:34Z",
+            "timestamp": 1729258234000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                19
+              ]
+            ],
+            "date-time": "2026-02-19T20:58:59Z",
+            "timestamp": 1771534739000
+          },
+          "funder": [
+            {
+              "award": [
+                "614201001032203"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "614201001032203"
+                  ]
+                }
+              ],
+              "name": "Foundation Program of the Key Laboratory of Science and Technology on Complex Electronic System Simulation"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                6
+              ]
+            ],
+            "date-time": "2026-05-06T16:38:59Z",
+            "timestamp": 1778085539284,
+            "version": "3.51.4"
+          },
+          "is-referenced-by-count": 5,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1939-1404"
+            },
+            {
+              "type": "electronic",
+              "value": "2151-1535"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    1,
+                    1
+                  ]
+                ],
+                "date-time": "2025-01-01T00:00:00Z",
+                "timestamp": 1735689600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/4609443/10766875/10723090.pdf?arnumber=10723090",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "741-756",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference": [
+            {
+              "article-title": "A review of multi-temporal remote sensing data change detection algorithms",
+              "author": "Gong",
+              "first-page": "757",
+              "issue": "B7",
+              "journal-title": "Int. Arch. Photogrammetry, Remote Sens. Spatial Inf. Sci.",
+              "key": "ref1",
+              "volume": "37",
+              "year": "2008"
+            },
+            {
+              "DOI": "10.3390/rs12101688",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "DOI": "10.1109/MGRS.2019.2898520",
+              "doi-asserted-by": "publisher",
+              "key": "ref3"
+            },
+            {
+              "DOI": "10.1109/MGRS.2017.2762087",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2021.3088438",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1109/MGRS.2022.3145854",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2024.02.003",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2024.3362475",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1080/10095020.2022.2085633",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2019.04.015",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.1109/TGRS.2018.2849692",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2020.3037070",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "DOI": "10.1109/TGRS.2021.3095899",
+              "doi-asserted-by": "publisher",
+              "key": "ref13"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2024.04.002",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3212418",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "DOI": "10.1109/TGRS.2021.3135567",
+              "doi-asserted-by": "publisher",
+              "key": "ref16"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3286440",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3341893",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3363886",
+              "doi-asserted-by": "publisher",
+              "key": "ref19"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2023.3339238",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3176642",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "DOI": "10.1109/TGRS.2018.2863224",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3203075",
+              "doi-asserted-by": "publisher",
+              "key": "ref23"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3373820",
+              "doi-asserted-by": "publisher",
+              "key": "ref24"
+            },
+            {
+              "DOI": "10.1016/s0924-6509(08)x7007-2",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2020.04.007",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1080/2150704X.2016.1163744",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33013558",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "article-title": "HyperGCN: A new method for training graph convolutional networks on hypergraphs",
+              "author": "Yadati",
+              "first-page": "1509",
+              "key": "ref29",
+              "volume-title": "Proc. 32nd Adv. Neural Inf. Process. Syst.",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2020.107637",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "DOI": "10.24963/ijcai.2019/366",
+              "doi-asserted-by": "publisher",
+              "key": "ref31"
+            },
+            {
+              "DOI": "10.3390/rs15030694",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "DOI": "10.1109/LGRS.2015.2419713",
+              "doi-asserted-by": "publisher",
+              "key": "ref33"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2015.2443047",
+              "doi-asserted-by": "publisher",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.1109/TCYB.2018.2810806",
+              "doi-asserted-by": "publisher",
+              "key": "ref35"
+            },
+            {
+              "DOI": "10.1016/j.patrec.2016.07.011",
+              "doi-asserted-by": "publisher",
+              "key": "ref36"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2017.2700490",
+              "doi-asserted-by": "publisher",
+              "key": "ref37"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2018.2869210",
+              "doi-asserted-by": "publisher",
+              "key": "ref38"
+            },
+            {
+              "DOI": "10.1109/TIP.2023.3245324",
+              "doi-asserted-by": "publisher",
+              "key": "ref39"
+            },
+            {
+              "DOI": "10.1109/MGRS.2022.3198244",
+              "doi-asserted-by": "publisher",
+              "key": "ref40"
+            },
+            {
+              "DOI": "10.1109/TII.2018.2873492",
+              "doi-asserted-by": "publisher",
+              "key": "ref41"
+            },
+            {
+              "DOI": "10.1007/978-3-030-30508-6_50",
+              "doi-asserted-by": "publisher",
+              "key": "ref42"
+            },
+            {
+              "DOI": "10.1016/j.isprsjprs.2016.02.013",
+              "doi-asserted-by": "publisher",
+              "key": "ref43"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3190504",
+              "doi-asserted-by": "publisher",
+              "key": "ref44"
+            },
+            {
+              "DOI": "10.3390/rs12111868",
+              "doi-asserted-by": "publisher",
+              "key": "ref45"
+            },
+            {
+              "DOI": "10.1109/TKDE.2021.3090866",
+              "doi-asserted-by": "publisher",
+              "key": "ref46"
+            },
+            {
+              "DOI": "10.1109/TGRS.2021.3109957",
+              "doi-asserted-by": "publisher",
+              "key": "ref47"
+            },
+            {
+              "DOI": "10.3390/rs13234927",
+              "doi-asserted-by": "publisher",
+              "key": "ref48"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2022.3204541",
+              "doi-asserted-by": "publisher",
+              "key": "ref49"
+            },
+            {
+              "DOI": "10.1109/TGRS.2022.3218795",
+              "doi-asserted-by": "publisher",
+              "key": "ref50"
+            },
+            {
+              "DOI": "10.1109/LGRS.2023.3300308",
+              "doi-asserted-by": "publisher",
+              "key": "ref51"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3330494",
+              "doi-asserted-by": "publisher",
+              "key": "ref52"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3319961",
+              "doi-asserted-by": "publisher",
+              "key": "ref53"
+            },
+            {
+              "DOI": "10.1109/JSTARS.2023.3270498",
+              "doi-asserted-by": "publisher",
+              "key": "ref54"
+            },
+            {
+              "DOI": "10.1109/TGRS.2024.3379431",
+              "doi-asserted-by": "publisher",
+              "key": "ref55"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3348459",
+              "doi-asserted-by": "publisher",
+              "key": "ref56"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2012.120",
+              "doi-asserted-by": "publisher",
+              "key": "ref57"
+            },
+            {
+              "DOI": "10.1109/TGRS.2017.2650198",
+              "doi-asserted-by": "publisher",
+              "key": "ref58"
+            },
+            {
+              "DOI": "10.1609/aaai.v37i7.26019",
+              "doi-asserted-by": "publisher",
+              "key": "ref59"
+            },
+            {
+              "DOI": "10.1109/TKDE.2024.3380643",
+              "doi-asserted-by": "publisher",
+              "key": "ref60"
+            },
+            {
+              "DOI": "10.1109/TSMC.1979.4310076",
+              "doi-asserted-by": "publisher",
+              "key": "ref61"
+            },
+            {
+              "DOI": "10.1080/01431161.2018.1466079",
+              "doi-asserted-by": "publisher",
+              "key": "ref62"
+            },
+            {
+              "DOI": "10.1109/LGRS.2022.3179134",
+              "doi-asserted-by": "publisher",
+              "key": "ref63"
+            },
+            {
+              "DOI": "10.1109/TGRS.2023.3260969",
+              "doi-asserted-by": "publisher",
+              "key": "ref64"
+            },
+            {
+              "DOI": "10.2307/2346830",
+              "doi-asserted-by": "publisher",
+              "key": "ref65"
+            },
+            {
+              "DOI": "10.1016/0034-4257(91)90048-B",
+              "doi-asserted-by": "publisher",
+              "key": "ref66"
+            }
+          ],
+          "reference-count": 66,
+          "references-count": 66,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/10723090/"
+            }
+          },
+          "score": 48.127686,
+          "short-container-title": [
+            "IEEE J. Sel. Top. Appl. Earth Observations Remote Sensing"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Hypergraph Self-Supervised Learning-Based Joint Spectral-Spatial-Temporal Feature Representation for Hyperspectral Image Change Detection"
+          ],
+          "type": "journal-article",
+          "volume": "18"
+        },
+        {
+          "DOI": "10.1109/tgrs.2025.3527483/v3/review2",
+          "URL": "https://doi.org/10.1109/tgrs.2025.3527483/v3/review2",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T17:32:03Z",
+            "timestamp": 1779384723030,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                1,
+                1
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                1,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                1,
+                1
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1109/TGRS.2025.3527483",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.webofscience.com/api/gateway/wos/peer-review/10.1109/TGRS.2025.3527483"
+            }
+          },
+          "review": {
+            "revision-round": "3",
+            "running-number": "PR8V3",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 47.475807,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Meta-Learning-Based Semi-Supervised Change Detection in Remote Sensing Images\""
+          ],
+          "type": "peer-review"
+        },
+        {
+          "DOI": "10.1109/tgrs.2025.3527483/v2/review2",
+          "URL": "https://doi.org/10.1109/tgrs.2025.3527483/v2/review2",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T21:17:14Z",
+            "timestamp": 1779398234899,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                2
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                2
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                2
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1109/TGRS.2025.3527483",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.webofscience.com/api/gateway/wos/peer-review/10.1109/TGRS.2025.3527483"
+            }
+          },
+          "review": {
+            "revision-round": "2",
+            "running-number": "PR5V2",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 47.458508,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Meta-Learning-Based Semi-Supervised Change Detection in Remote Sensing Images\""
+          ],
+          "type": "peer-review"
+        },
+        {
+          "DOI": "10.1109/tgrs.2025.3527483/v2/review1",
+          "URL": "https://doi.org/10.1109/tgrs.2025.3527483/v2/review1",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T19:30:48Z",
+            "timestamp": 1779391848548,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                1
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                1
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1109/TGRS.2025.3527483",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.webofscience.com/api/gateway/wos/peer-review/10.1109/TGRS.2025.3527483"
+            }
+          },
+          "review": {
+            "revision-round": "2",
+            "running-number": "PR4V2",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 47.423176,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Meta-Learning-Based Semi-Supervised Change Detection in Remote Sensing Images\""
+          ],
+          "type": "peer-review"
+        },
+        {
+          "DOI": "10.1109/tgrs.2025.3527483/v1/review3",
+          "URL": "https://doi.org/10.1109/tgrs.2025.3527483/v1/review3",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:23Z",
+            "timestamp": 1761086963000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T20:28:07Z",
+            "timestamp": 1779395287659,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                2
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                2
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                2
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1109/TGRS.2025.3527483",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.webofscience.com/api/gateway/wos/peer-review/10.1109/TGRS.2025.3527483"
+            }
+          },
+          "review": {
+            "revision-round": "1",
+            "running-number": "PR3V1",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 47.40885,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Meta-Learning-Based Semi-Supervised Change Detection in Remote Sensing Images\""
+          ],
+          "type": "peer-review"
+        },
+        {
+          "DOI": "10.1109/tgrs.2025.3527483/v2/review3",
+          "URL": "https://doi.org/10.1109/tgrs.2025.3527483/v2/review3",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T19:25:29Z",
+            "timestamp": 1779391529934,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                14
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                14
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                14
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1109/TGRS.2025.3527483",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.webofscience.com/api/gateway/wos/peer-review/10.1109/TGRS.2025.3527483"
+            }
+          },
+          "review": {
+            "revision-round": "2",
+            "running-number": "PR6V2",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 47.366756,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Meta-Learning-Based Semi-Supervised Change Detection in Remote Sensing Images\""
+          ],
+          "type": "peer-review"
+        },
+        {
+          "DOI": "10.1109/tgrs.2025.3527483/v1/review1",
+          "URL": "https://doi.org/10.1109/tgrs.2025.3527483/v1/review1",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:23Z",
+            "timestamp": 1761086963000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T20:45:00Z",
+            "timestamp": 1779396300170,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                18
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                18
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                18
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1109/TGRS.2025.3527483",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.webofscience.com/api/gateway/wos/peer-review/10.1109/TGRS.2025.3527483"
+            }
+          },
+          "review": {
+            "revision-round": "1",
+            "running-number": "PR1V1",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 47.359978,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Meta-Learning-Based Semi-Supervised Change Detection in Remote Sensing Images\""
+          ],
+          "type": "peer-review"
+        },
+        {
+          "DOI": "10.1109/tgrs.2025.3527483/v3/review1",
+          "URL": "https://doi.org/10.1109/tgrs.2025.3527483/v3/review1",
+          "content-domain": {
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                21
+              ]
+            ],
+            "date-time": "2025-10-21T22:49:22Z",
+            "timestamp": 1761086962000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ],
+            "date-time": "2026-05-21T20:15:02Z",
+            "timestamp": 1779394502769,
+            "version": "3.53.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                3
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                3
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                3
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-review-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1109/TGRS.2025.3527483",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.webofscience.com/api/gateway/wos/peer-review/10.1109/TGRS.2025.3527483"
+            }
+          },
+          "review": {
+            "revision-round": "3",
+            "running-number": "PR7V3",
+            "stage": "pre-publication",
+            "type": "referee-report"
+          },
+          "score": 47.323517,
+          "source": "Crossref",
+          "title": [
+            "Review for \"Meta-Learning-Based Semi-Supervised Change Detection in Remote Sensing Images\""
+          ],
+          "type": "peer-review"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 1761671
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "cdb18666f97d0391e0df796127d483af16da9b3c281dc445fec9d6780b60bba0",
+  "retrieved_at": "2026-07-14T14:01:18Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

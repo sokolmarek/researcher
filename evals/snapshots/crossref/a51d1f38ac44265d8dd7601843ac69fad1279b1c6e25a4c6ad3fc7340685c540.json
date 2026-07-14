@@ -1,0 +1,2493 @@
+{
+  "endpoint": "works",
+  "request_key": "a51d1f38ac44265d8dd7601843ac69fad1279b1c6e25a4c6ad3fc7340685c540",
+  "request_params": {
+    "query.bibliographic": "Deep learning models for electrocardiograms are susceptible to adversarial attack",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1038/s41591-020-0791-x",
+          "ISSN": [
+            "1078-8956",
+            "1546-170X"
+          ],
+          "URL": "https://doi.org/10.1038/s41591-020-0791-x",
+          "alternative-id": [
+            "791"
+          ],
+          "assertion": [
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Received",
+              "name": "received",
+              "order": 1,
+              "value": "1 June 2019"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "Accepted",
+              "name": "accepted",
+              "order": 2,
+              "value": "5 February 2020"
+            },
+            {
+              "group": {
+                "label": "Article History",
+                "name": "ArticleHistory"
+              },
+              "label": "First Online",
+              "name": "first_online",
+              "order": 3,
+              "value": "9 March 2020"
+            },
+            {
+              "group": {
+                "label": "Competing interests",
+                "name": "EthicsHeading"
+              },
+              "name": "Ethics",
+              "order": 1,
+              "value": "The authors declare no competing interests."
+            }
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-1432-5095",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Han",
+              "given": "Xintian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Hu",
+              "given": "Yuxuan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Foschini",
+              "given": "Luca",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Chinitz",
+              "given": "Larry",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Jankelson",
+              "given": "Lior",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-2854-3376",
+              "affiliation": [],
+              "authenticated-orcid": false,
+              "family": "Ranganath",
+              "given": "Rajesh",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "Nature Medicine"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": [
+              "link.springer.com"
+            ]
+          },
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                3,
+                9
+              ]
+            ],
+            "date-time": "2020-03-09T17:03:07Z",
+            "timestamp": 1583773387000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                20
+              ]
+            ],
+            "date-time": "2023-05-20T22:02:07Z",
+            "timestamp": 1684620127000
+          },
+          "funder": [
+            {
+              "DOI": "10.13039/501100000850",
+              "award": [
+                "R01HL148248"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "R01HL148248"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100000850",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Heart and Lung Institute"
+            },
+            {
+              "DOI": "10.13039/501100000850",
+              "award": [
+                "R01HL148248"
+              ],
+              "award-info": [
+                {
+                  "award-number": [
+                    "R01HL148248"
+                  ]
+                }
+              ],
+              "doi-asserted-by": "publisher",
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "10.13039/501100000850",
+                  "id-type": "DOI"
+                }
+              ],
+              "name": "National Heart and Lung Institute"
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2026-07-03T17:02:35Z",
+            "timestamp": 1783098155214,
+            "version": "3.54.6"
+          },
+          "is-referenced-by-count": 117,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1078-8956"
+            },
+            {
+              "type": "electronic",
+              "value": "1546-170X"
+            }
+          ],
+          "issue": "3",
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                3
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "3",
+            "published-print": {
+              "date-parts": [
+                [
+                  2020,
+                  3
+                ]
+              ]
+            }
+          },
+          "language": "en",
+          "license": [
+            {
+              "URL": "http://www.springer.com/tdm",
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    3,
+                    1
+                  ]
+                ],
+                "date-time": "2020-03-01T00:00:00Z",
+                "timestamp": 1583020800000
+              }
+            },
+            {
+              "URL": "http://www.springer.com/tdm",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    3,
+                    1
+                  ]
+                ],
+                "date-time": "2020-03-01T00:00:00Z",
+                "timestamp": 1583020800000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://www.nature.com/articles/s41591-020-0791-x.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://www.nature.com/articles/s41591-020-0791-x",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "http://www.nature.com/articles/s41591-020-0791-x.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "page": "360-363",
+          "prefix": "10.1038",
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                3
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2020,
+                3,
+                9
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                3
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference": [
+            {
+              "author": "AY Hannun",
+              "first-page": "65–69",
+              "journal-title": "Nat. Med.",
+              "key": "791_CR1",
+              "unstructured": "Hannun, A. Y. et al. Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network. Nat. Med. 25, 65–69 (2019).",
+              "volume": "25",
+              "year": "2019"
+            },
+            {
+              "key": "791_CR2",
+              "unstructured": "Szegedy, C. et al. Intriguing properties of neural networks. In International Conference on Learning Representations (ICLR, 2014)."
+            },
+            {
+              "key": "791_CR3",
+              "unstructured": "Biggio, B. et al. Evasion attacks against machine learning at test time. In Machine Learning and Knowledge Discovery in Databases Vol. 8190 (eds Blockeel, H., Kersting, K., Nijssen, S. & Železný, F.) 387–402 (Springer, 2013)."
+            },
+            {
+              "DOI": "10.1126/science.aaw4399",
+              "author": "SG Finlayson",
+              "doi-asserted-by": "publisher",
+              "first-page": "1287",
+              "journal-title": "Science",
+              "key": "791_CR4",
+              "unstructured": "Finlayson, S. G. et al. Adversarial attacks on medical machine learning. Science 363, 1287–1289 (2019).",
+              "volume": "363",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1007/978-3-030-00928-1_56",
+              "doi-asserted-by": "crossref",
+              "key": "791_CR5",
+              "unstructured": "Paschali, M., Conjeti, S., Navarro, F. & Navab, N. Generalizability vs. robustness: investigating medical imaging networks using adversarial examples. In International Conference on Medical Image Computing and Computer-Assisted Intervention 493–501 (Springer, 2018)."
+            },
+            {
+              "DOI": "10.22489/CinC.2017.065-469",
+              "doi-asserted-by": "crossref",
+              "key": "791_CR6",
+              "unstructured": "Clifford, G. D. et al. AF Classification from a short single lead ECG recording: the PhysioNet/Computing in Cardiology Challenge 2017. In 2017 Computing in Cardiology (CinC) 1–4 (IEEE, 2017)."
+            },
+            {
+              "key": "791_CR7",
+              "unstructured": "Kelly, B. B. & Fuster, V. Promoting Cardiovascular Health in the Developing World: a Critical Challenge to Achieve Global Health (National Academies Press, 2010)."
+            },
+            {
+              "DOI": "10.1016/j.pcad.2013.08.005",
+              "author": "HL Kennedy",
+              "doi-asserted-by": "publisher",
+              "first-page": "127",
+              "journal-title": "Prog. Cardiovasc. Dis.",
+              "key": "791_CR8",
+              "unstructured": "Kennedy, H. L. The evolution of ambulatory ECG monitoring. Prog. Cardiovasc. Dis. 56, 127–132 (2013).",
+              "volume": "56",
+              "year": "2013"
+            },
+            {
+              "DOI": "10.22489/CinC.2017.178-245",
+              "doi-asserted-by": "crossref",
+              "key": "791_CR9",
+              "unstructured": "Hong, S. et al. ENCASE: an ENsemble ClASsifiEr for ECG classification using expert features and deep neural networks. In 2017 Computing in Cardiology (CinC) 1–4 (IEEE, 2017)."
+            },
+            {
+              "key": "791_CR10",
+              "unstructured": "Chen, H., Huang, C., Huang, Q. & Zhang, Q. ECGadv: generating adversarial electrocardiogram to misguide arrhythmia classification system. Preprint at arXiv https://arxiv.org/pdf/1901.03808.pdf (2019)."
+            },
+            {
+              "key": "791_CR11",
+              "unstructured": "Goodfellow, S. D. et al. Towards understanding ECG rhythm classification using convolutional neural networks and attention mappings. In Proceedings of the 3rd Machine Learning for Healthcare Conference 83–101 (PMLR, 2018)."
+            },
+            {
+              "key": "791_CR12",
+              "unstructured": "Madry, A., Makelov, A., Schmidt, L., Tsipras, D. & Vladu, A. Towards deep learning models resistant to adversarial attacks. In International Conference on Learning Representations (ICLR, 2018)."
+            },
+            {
+              "key": "791_CR13",
+              "unstructured": "Kurakin, A., Goodfellow, I. & Bengio, S. Adversarial machine learning at scale. In International Conference on Learning Representations (ICLR, 2017)."
+            },
+            {
+              "DOI": "10.4070/kcj.2018.0446",
+              "author": "J-m Kwon",
+              "doi-asserted-by": "publisher",
+              "first-page": "629",
+              "journal-title": "Korean Circ. J.",
+              "key": "791_CR14",
+              "unstructured": "Kwon, J.-m et al. Development and validation of deep-learning algorithm for electrocardiography-based heart failure identification. Korean Circ. J. 49, 629–639 (2019).",
+              "volume": "49",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1001/jamacardio.2019.0640",
+              "author": "CD Galloway",
+              "doi-asserted-by": "publisher",
+              "first-page": "428",
+              "journal-title": "JAMA Cardiol.",
+              "key": "791_CR15",
+              "unstructured": "Galloway, C. D. et al. Development and validation of a deep-learning model to screen for hyperkalemia from the electrocardiogram. JAMA Cardiol. 4, 428–436 (2019).",
+              "volume": "4",
+              "year": "2019"
+            },
+            {
+              "key": "791_CR16",
+              "unstructured": "Singh, G., Gehr, T., Mirman, M., Püschel, M. & Vechev, M. Fast and effective robustness certification. In Advances in Neural Information Processing Systems 10802–10813 (NIPS, 2018)."
+            },
+            {
+              "key": "791_CR17",
+              "unstructured": "Cohen, J., Rosenfeld, E. and Kolter, Z. Certified Adversarial Robustness via Randomized Smoothing. In International Conference on Machine Learning 1310–1320 (ICML, 2019)."
+            },
+            {
+              "DOI": "10.2514/1.G003724",
+              "author": "KD Julian",
+              "doi-asserted-by": "publisher",
+              "first-page": "598",
+              "journal-title": "J. Guid. Control Dyn.",
+              "key": "791_CR18",
+              "unstructured": "Julian, K. D., Kochenderfer, M. J. & Owen, M. P. Deep neural network compression for aircraft collision avoidance systems. J. Guid. Control Dyn. 42, 598–608 (2018).",
+              "volume": "42",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1038/s41598-018-33424-9",
+              "author": "MT Nguyen",
+              "doi-asserted-by": "publisher",
+              "journal-title": "Sci. Rep.",
+              "key": "791_CR19",
+              "unstructured": "Nguyen, M. T., Van Nguyen, B. & Kim, K. Deep feature learning for sudden cardiac arrest detection in automated external defibrillators. Sci. Rep. 8, 17196 (2018).",
+              "volume": "8",
+              "year": "2018"
+            },
+            {
+              "key": "791_CR20",
+              "unstructured": "Lyle, J. & Martin, A. Trusted Computing and Provenance: Better Together (Usenix, 2010)."
+            },
+            {
+              "key": "791_CR21",
+              "unstructured": "Uesato, J., O’Donoghue, B., Kohli, P. and Oord, A. Adversarial Risk and the Dangers of Evaluating Against Weak Attacks. In International Conference on Machine Learning 5025-5034 (ICML, 2018)."
+            },
+            {
+              "key": "791_CR22",
+              "unstructured": "Saria, S. & Subbaswamy, A. Tutorial: safe and reliable machine learning. Preprint at https://arxiv.org/pdf/1904.07204.pdf (2019)."
+            },
+            {
+              "key": "791_CR23",
+              "unstructured": "Goodfellow, I. J., Shlens, J. & Szegedy, C. Explaining and harnessing adversarial examples. In International Conference on Learning Representations (ICLR, 2015)."
+            },
+            {
+              "DOI": "10.1109/TBME.2003.808805",
+              "author": "PE McSharry",
+              "doi-asserted-by": "publisher",
+              "first-page": "289",
+              "journal-title": "IEEE Trans. Biomed. Eng.",
+              "key": "791_CR24",
+              "unstructured": "McSharry, P. E., Clifford, G. D., Tarassenko, L. & Smith, L. A. A dynamical model for generating synthetic electrocardiogram signals. IEEE Trans. Biomed. Eng. 50, 289–294 (2003).",
+              "volume": "50",
+              "year": "2003"
+            },
+            {
+              "DOI": "10.1109/5.726791",
+              "author": "Y LeCun",
+              "doi-asserted-by": "publisher",
+              "first-page": "2278",
+              "journal-title": "Proc. IEEE",
+              "key": "791_CR25",
+              "unstructured": "LeCun, Y., Bottou, L., Bengio, Y. & Haffner, P. Gradient-based learning applied to document recognition. Proc. IEEE 86, 2278–2324 (1998).",
+              "volume": "86",
+              "year": "1998"
+            },
+            {
+              "key": "791_CR26",
+              "unstructured": "Krizhevsky, A. & Hinton, G. Learning Multiple Layers of Features from Tiny Images (Citeseer, 2009)."
+            },
+            {
+              "key": "791_CR27",
+              "unstructured": "Schmidt, L., Santurkar, S., Tsipras, D., Talwar, K. & Madry, A. Adversarially robust generalization requires more data. In Advances in Neural Information Processing Systems 5014–5026 (NIPS, 2018)."
+            }
+          ],
+          "reference-count": 27,
+          "references-count": 27,
+          "resource": {
+            "primary": {
+              "URL": "https://www.nature.com/articles/s41591-020-0791-x"
+            }
+          },
+          "score": 48.730083,
+          "short-container-title": [
+            "Nat Med"
+          ],
+          "source": "Crossref",
+          "title": [
+            "Deep learning models for electrocardiograms are susceptible to adversarial attack"
+          ],
+          "type": "journal-article",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "volume": "26"
+        },
+        {
+          "DOI": "10.36227/techrxiv.22714999.v1",
+          "URL": "https://doi.org/10.36227/techrxiv.22714999.v1",
+          "abstract": "<jats:p>This research mainly focuses on adversarial attacks in multi-label\nlearning. We analyze the shortcomings of existing research in\noptimization objectives and solution methods. Then, we constructed a new\nmeasure for the optimization objects based on the Jaccrd index.\nFurthermore, we propose a novel approach to solving the optimization\nproblem.</jats:p>",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Applied Mathematics Center of Tianjin University"
+                }
+              ],
+              "family": "Su",
+              "given": "Fengguang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                29
+              ]
+            ],
+            "date-time": "2023-04-29T13:24:39Z",
+            "timestamp": 1682774679000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                3
+              ]
+            ],
+            "date-time": "2026-06-03T19:43:17Z",
+            "timestamp": 1780515797000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                3
+              ]
+            ],
+            "date-time": "2026-06-03T20:09:57Z",
+            "timestamp": 1780517397278,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                29
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    4,
+                    29
+                  ]
+                ],
+                "date-time": "2023-04-29T00:00:00Z",
+                "timestamp": 1682726400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.22714999.v1",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                29
+              ]
+            ]
+          },
+          "prefix": "10.36227",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                29
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.22714999.v1"
+            }
+          },
+          "score": 34.189495,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Delving Deep into Adversarial Attack for Multi-label Learning"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.2139/ssrn.5387355",
+          "URL": "https://doi.org/10.2139/ssrn.5387355",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Zhou",
+              "given": "Hanxun",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Zheng",
+              "given": "Yanzhe",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Hu",
+              "given": "Yufeng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Pan",
+              "given": "Hong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Pan",
+              "given": "Hong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Guo",
+              "given": "Wei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Feng",
+              "given": "Yong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Jia",
+              "given": "Dayu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                11
+              ]
+            ],
+            "date-time": "2025-08-11T17:42:00Z",
+            "timestamp": 1754934120000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                11
+              ]
+            ],
+            "date-time": "2025-08-11T17:46:40Z",
+            "timestamp": 1754934400000
+          },
+          "group-title": "SSRN",
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                15
+              ]
+            ],
+            "date-time": "2025-08-15T02:03:19Z",
+            "timestamp": 1755223399196,
+            "version": "3.43.0"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "member": "78",
+          "posted": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "article-title": "Computation-efficient deep learning for computer vision: A survey",
+              "author": "Y Wang",
+              "journal-title": "Cyb. Intell",
+              "key": "ref1",
+              "year": "2024"
+            },
+            {
+              "article-title": "Computer Vision and Deep Learning Transforming Image Recognition and Beyond",
+              "author": "Y Chen",
+              "first-page": "45",
+              "issue": "1",
+              "journal-title": "Int. J. Comput. Sci. Inf. Technol",
+              "key": "ref2",
+              "volume": "2",
+              "year": "2024"
+            },
+            {
+              "article-title": "A survey on multimodal bidirectional machine learning translation of image and natural language processing",
+              "author": "W Nam",
+              "journal-title": "Expert Syst. Appl",
+              "key": "ref3",
+              "volume": "235",
+              "year": "2024"
+            },
+            {
+              "article-title": "Application of deep learning-based natural language processing in multilingual sentiment analysis",
+              "author": "J Liu",
+              "first-page": "243",
+              "issue": "2",
+              "journal-title": "Mediterr. J. Basic Appl. Sci",
+              "key": "ref4",
+              "volume": "8",
+              "year": "2024"
+            },
+            {
+              "article-title": "Automatic speech recognition using advanced deep learning approaches: A survey",
+              "author": "H Kheddar",
+              "journal-title": "Inf. Fusion",
+              "key": "ref5",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1109/TWC.2023.3240969",
+              "article-title": "Deep learning enabled semantic communications with speech recognition and synthesis",
+              "author": "Z Weng",
+              "doi-asserted-by": "crossref",
+              "first-page": "6227",
+              "issue": "9",
+              "journal-title": "IEEE Trans. Wireless Commun",
+              "key": "ref6",
+              "volume": "22",
+              "year": "2023"
+            },
+            {
+              "article-title": "Adversarial attacks on deep neural network: developing robust models against evasion technique",
+              "author": "G S Nadella",
+              "issue": "4",
+              "journal-title": "Trans. Latest Trends Artif. Intell",
+              "key": "ref7",
+              "volume": "4",
+              "year": "2023"
+            },
+            {
+              "article-title": "Black-box sparse adversarial attack via multiobjective optimisation",
+              "author": "P N Williams",
+              "first-page": "12291",
+              "journal-title": "Proc. CVPR",
+              "key": "ref8",
+              "year": "2023"
+            },
+            {
+              "article-title": "Hard-label based small query black-box adversarial attack",
+              "author": "J Park",
+              "first-page": "3986",
+              "journal-title": "Proc. WACVW",
+              "key": "ref9",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1049/cit2.12028",
+              "article-title": "A survey on adversarial attacks and defences",
+              "author": "A Chakraborty",
+              "doi-asserted-by": "crossref",
+              "first-page": "25",
+              "issue": "1",
+              "journal-title": "CAAI Trans. Intell. Technol",
+              "key": "ref10",
+              "volume": "6",
+              "year": "2021"
+            },
+            {
+              "article-title": "CosPGD: an efficient white-box adversarial attack for pixel-wise prediction tasks",
+              "author": "S Agnihotri",
+              "journal-title": "Proc. ICML",
+              "key": "ref11",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1016/j.ins.2022.07.157",
+              "article-title": "Di-aa: An interpretable white-box attack for fooling deep neural networks",
+              "author": "Y Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "14",
+              "journal-title": "Inf. Sci",
+              "key": "ref12",
+              "volume": "610",
+              "year": "2022"
+            },
+            {
+              "author": "A Chakraborty",
+              "journal-title": "Adversarial attacks and defences: A survey",
+              "key": "ref13",
+              "year": "2018"
+            },
+            {
+              "article-title": "Adversarial attack and defense: A survey",
+              "author": "H Liang",
+              "issue": "8",
+              "journal-title": "Electron",
+              "key": "ref14",
+              "volume": "11",
+              "year": "2022"
+            },
+            {
+              "article-title": "Adversarial attacks and countermeasures on image classification-based deep learning models in autonomous driving systems: A systematic review",
+              "author": "B Badjie",
+              "journal-title": "ACM Comput. Surv",
+              "key": "ref15",
+              "year": "2024"
+            },
+            {
+              "article-title": "Towards Understanding and Improving Adversarial Robustness of Vision Transformers",
+              "author": "S Jain",
+              "journal-title": "Proc. CVPR",
+              "key": "ref16",
+              "year": "2024"
+            },
+            {
+              "author": "T Xiang",
+              "journal-title": "Local black-box adversarial attacks: A query efficient approach",
+              "key": "ref17",
+              "year": "2021"
+            },
+            {
+              "article-title": "Improving black-box adversarial attacks with a transfer-based prior",
+              "author": "S Cheng",
+              "journal-title": "Adv. Neural Inf. Process. Syst",
+              "key": "ref18",
+              "volume": "32",
+              "year": "2029"
+            },
+            {
+              "author": "S Bhambri",
+              "journal-title": "A survey of blackbox adversarial attacks on computer vision models",
+              "key": "ref19",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/TITS.2021.3054625",
+              "article-title": "Deep reinforcement learning for autonomous driving: A survey",
+              "author": "B R Kiran",
+              "doi-asserted-by": "crossref",
+              "first-page": "4909",
+              "issue": "6",
+              "journal-title": "IEEE Trans. Intell. Transp. Syst",
+              "key": "ref20",
+              "volume": "23",
+              "year": "2021"
+            },
+            {
+              "article-title": "Deep reinforcement learning for the control of robotic manipulation: a focussed mini-review",
+              "author": "R Liu",
+              "issue": "1",
+              "journal-title": "Rob",
+              "key": "ref21",
+              "volume": "10",
+              "year": "2021"
+            },
+            {
+              "article-title": "Adversarial attacks on graph neural networks via node injections: A hierarchical reinforcement learning approach",
+              "author": "Y Sun",
+              "journal-title": "Proc. The Web Conf",
+              "key": "ref22",
+              "year": "2020"
+            },
+            {
+              "author": "I Tsingenopoulos",
+              "first-page": "229",
+              "journal-title": "AutoAttacker: A reinforcement learning approach for black-box adversarial attacks",
+              "key": "ref23",
+              "year": "2019"
+            },
+            {
+              "author": "C Szegedy",
+              "journal-title": "Intriguing properties of neural networks",
+              "key": "ref24",
+              "year": "2013"
+            },
+            {
+              "article-title": "Advances in Neural Information Processing Systems",
+              "author": "Z Chen",
+              "journal-title": "Adv. Neural Inf. Process. Syst",
+              "key": "ref25",
+              "volume": "36",
+              "year": "2024"
+            },
+            {
+              "journal-title": "REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <",
+              "key": "ref26"
+            },
+            {
+              "article-title": "Mutual-modality adversarial attack with semantic perturbation",
+              "author": "J Ye",
+              "first-page": "6657",
+              "journal-title": "Proc. AAAI Conf. on Artif. Intell., USA, 2024",
+              "key": "ref27"
+            },
+            {
+              "article-title": "Enhancing the Transferability of Adversarial Attacks with Stealth Preservation",
+              "author": "X Zhang",
+              "first-page": "2915",
+              "journal-title": "Proc. CVPR, USA, 2024",
+              "key": "ref28"
+            },
+            {
+              "article-title": "Deepsec: A uniform platform for security analysis of deep learning model",
+              "author": "X Ling",
+              "first-page": "673",
+              "journal-title": "Proc. IEEE Symp. on Secur. and Privacy",
+              "key": "ref29",
+              "year": "2019"
+            },
+            {
+              "article-title": "How deep learning sees the world: A survey on adversarial attacks & defenses",
+              "author": "J C Costa",
+              "journal-title": "IEEE Access",
+              "key": "ref30",
+              "year": "2024"
+            },
+            {
+              "article-title": "Physical adversarial attack meets computer vision: A decade survey",
+              "author": "H Wei",
+              "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell",
+              "key": "ref31",
+              "year": "2024"
+            },
+            {
+              "article-title": "Gradient correction for white-box adversarial attacks",
+              "author": "H Liu",
+              "journal-title": "IEEE Trans. Neural Netw. Learn. Syst",
+              "key": "ref32",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1007/s11042-023-15405-x",
+              "article-title": "Untargeted white-box adversarial attack to break into deep learning based COVID-19 monitoring face mask detection system",
+              "author": "B U Sheikh",
+              "doi-asserted-by": "crossref",
+              "first-page": "23873",
+              "issue": "8",
+              "journal-title": "Multimed. Tools Appl",
+              "key": "ref33",
+              "volume": "83",
+              "year": "2024"
+            },
+            {
+              "article-title": "Smoothfool: An efficient framework for computing smooth adversarial perturbations",
+              "author": "A Dabouei",
+              "first-page": "2665",
+              "journal-title": "Proc. WACV",
+              "key": "ref34",
+              "year": "2020"
+            },
+            {
+              "author": "A Liu",
+              "journal-title": "Character-level white-box adversarial attacks against transformers via attachable subwords substitution",
+              "key": "ref35",
+              "year": "2022"
+            },
+            {
+              "author": "Z Cheng",
+              "journal-title": "BadPart: Unified Black-box Adversarial Patch Attacks against Pixel-wise Regression Tasks",
+              "key": "ref36",
+              "year": "2024"
+            },
+            {
+              "article-title": "DifAttack: Query-Efficient Black-Box Adversarial Attack via Disentangled Feature Space",
+              "author": "J Liu",
+              "first-page": "3666",
+              "journal-title": "Proc. AAAI Conf. on Artif. Intell., USA, 2024",
+              "key": "ref37"
+            },
+            {
+              "DOI": "10.1109/CVPRW59228.2023.00229",
+              "article-title": "Robustness with Query-efficient Adversarial Attack using Reinforcement Learning",
+              "author": "S Sarkar",
+              "doi-asserted-by": "crossref",
+              "first-page": "2330",
+              "journal-title": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+              "key": "ref38",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1109/MSP.2012.2211477",
+              "article-title": "The mnist database of handwritten digit images for machine learning research [best of the web]",
+              "author": "L Deng",
+              "doi-asserted-by": "crossref",
+              "first-page": "141",
+              "issue": "6",
+              "journal-title": "IEEE Signal Process. Mag",
+              "key": "ref39",
+              "volume": "29",
+              "year": "2012"
+            },
+            {
+              "author": "A Krizhevsky",
+              "journal-title": "Learning multiple layers of features from tiny images",
+              "key": "ref40",
+              "year": "2009"
+            },
+            {
+              "article-title": "Boosting black-box attack with partially transferred conditional adversarial distribution",
+              "author": "Y Feng",
+              "first-page": "15095",
+              "journal-title": "Proc. CVPR, USA",
+              "key": "ref41",
+              "year": "2024"
+            },
+            {
+              "author": "Z Huang",
+              "journal-title": "Black-box adversarial attack with transferable model-based embedding",
+              "key": "ref42",
+              "year": "2019"
+            },
+            {
+              "article-title": "Advflow: Inconspicuous black-box adversarial attacks using normalizing flows",
+              "author": "Mohaghegh Dolatabadi",
+              "first-page": "15871",
+              "journal-title": "NeurIPS",
+              "key": "ref43",
+              "year": "2020"
+            }
+          ],
+          "reference-count": 43,
+          "references-count": 43,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=5387355"
+            }
+          },
+          "score": 34.14916,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Adaptive Black-Box Adversarial Attack Based on Deep Reinforcement Learning Against Deep Learning Models"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.36227/techrxiv.22714999",
+          "URL": "https://doi.org/10.36227/techrxiv.22714999",
+          "abstract": "<jats:p>&lt;p&gt;This research mainly focuses on adversarial attacks in multi-label learning. We analyze the shortcomings of existing research in optimization objectives and solution methods. Then, we constructed a new measure for the optimization objects based on the Jaccrd index. Furthermore, we propose a novel approach to solving the optimization problem.&lt;/p&gt;</jats:p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Su",
+              "given": "Fengguang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                29
+              ]
+            ],
+            "date-time": "2023-04-29T17:24:39Z",
+            "timestamp": 1682789079000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ],
+            "date-time": "2023-05-03T13:44:43Z",
+            "timestamp": 1683121483000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                4
+              ]
+            ],
+            "date-time": "2023-05-04T04:37:41Z",
+            "timestamp": 1683175061480
+          },
+          "institution": [
+            {
+              "name": "TechRxiv"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    5,
+                    3
+                  ]
+                ],
+                "date-time": "2023-05-03T00:00:00Z",
+                "timestamp": 1683072000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://ndownloader.figshare.com/files/40366705",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "prefix": "10.36227",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.techrxiv.org/articles/preprint/Delving_Deep_into_Adversarial_Attack_for_Multi-label_Learning/22714999"
+            }
+          },
+          "score": 34.045895,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Delving Deep into Adversarial Attack for Multi-label Learning"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.36227/techrxiv.22714999.v2",
+          "URL": "https://doi.org/10.36227/techrxiv.22714999.v2",
+          "abstract": "<jats:p>This research mainly focuses on adversarial attacks in multi-label\nlearning. We analyze the shortcomings of existing research in\noptimization objectives and solution methods. Then, we constructed a new\nmeasure for the optimization objects based on the Jaccrd index.\nFurthermore, we propose a novel approach to solving the optimization\nproblem.</jats:p>",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Applied Mathematics Center of Tianjin University"
+                }
+              ],
+              "family": "Su",
+              "given": "Fengguang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ],
+            "date-time": "2023-05-03T09:44:42Z",
+            "timestamp": 1683107082000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                3
+              ]
+            ],
+            "date-time": "2026-06-03T19:44:28Z",
+            "timestamp": 1780515868000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                3
+              ]
+            ],
+            "date-time": "2026-06-03T20:12:06Z",
+            "timestamp": 1780517526428,
+            "version": "3.54.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    5,
+                    3
+                  ]
+                ],
+                "date-time": "2023-05-03T00:00:00Z",
+                "timestamp": 1683072000000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.22714999.v2",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "prefix": "10.36227",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                3
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.22714999.v2"
+            }
+          },
+          "score": 33.941223,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Delving Deep into Adversarial Attack for Multi-label Learning"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.21203/rs.3.rs-4178736/v1",
+          "URL": "https://doi.org/10.21203/rs.3.rs-4178736/v1",
+          "abstract": "<title>Abstract</title>\n        <p>Deep learning models are highly susceptible to adversarial perturbations. Among model attackers, the black-box assumption, where no prior knowledge of the victim model is available, is the most common and practical scenario. Substitute attack, as a mainstream black-box attack method, involves training a surrogate model and leveraging the transferability property of its generated adversarial examples to attack the target model. However, existing approaches typically require a large number of queries to the victim model, resulting in reduced attack efficiency and performance. In this work, we propose an effective side channel attack method to estimate the fine-grained structure of the victim model. We leverage the adjacent intermediate layer perturbation technique to enhance the performance of adversarial attacks. Specifically, we demonstrate that the model structure at the layer level can be analyzed and revealed through a power side channel attack. Our experimental results indicate that the structure information can be successfully restored with an average success rate of 94\\%, leading to a significant improvement in the attack success rate across multiple classic datasets.</p>",
+          "accepted": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                28
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Zhejiang University of Technology"
+                }
+              ],
+              "family": "Chen",
+              "given": "Zuohui",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Zhejiang University of Technology"
+                }
+              ],
+              "family": "Hu",
+              "given": "Jinxuan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Zhejiang University of Technology"
+                }
+              ],
+              "family": "Lu",
+              "given": "Yao",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Zhejiang University of Technology"
+                }
+              ],
+              "family": "Zhang",
+              "given": "Dan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Zhejiang University of Technology"
+                }
+              ],
+              "family": "Xiang",
+              "given": "Yun",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Zhejiang University of Technology"
+                }
+              ],
+              "family": "Xuan",
+              "given": "Qi",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2024-04-01T18:03:21Z",
+            "timestamp": 1711994601000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                9
+              ]
+            ],
+            "date-time": "2024-11-09T22:53:38Z",
+            "timestamp": 1731192818000
+          },
+          "group-title": "In Review",
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                9
+              ]
+            ],
+            "date-time": "2024-11-09T23:10:03Z",
+            "timestamp": 1731193803292,
+            "version": "3.28.0"
+          },
+          "institution": [
+            {
+              "name": "Research Square"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                1
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2024-04-01T00:00:00Z",
+                "timestamp": 1711929600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.researchsquare.com/article/rs-4178736/v1",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.researchsquare.com/article/rs-4178736/v1.html",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "posted": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                1
+              ]
+            ]
+          },
+          "prefix": "10.21203",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                1
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.researchsquare.com/article/rs-4178736/v1"
+            }
+          },
+          "score": 33.68713,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Side Channel Based Substitute Adversarial Attack on Deep Learning Models"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.54517/m.v4i1.2156",
+          "ISSN": [
+            "2810-9791"
+          ],
+          "URL": "https://doi.org/10.54517/m.v4i1.2156",
+          "abstract": "<jats:p>The advancement of hardware and computing power has enabled deep learning to be used in a variety of fields, particularly in AI medical applications in intelligent medicine and medical metaverse. Deep learning models are aiding in many clinical medical image analysis tasks, including fusion, registration, detection, classification and segmentation. In recent years, many deep learning-based approaches have been developed for medical image recognition, including classification and segmentation. However, these models are susceptible to adversarial samples, posing a threat to their real world application and making them unsuitable for clinical use. This paper provides an overview of adversarial attack strategies that have been proposed against medical image models and the defense methods used to protect them. We assessed the advantages and disadvantages of these strategies and compared their efficiency. We then examined the existing state and restrictions of research methods involving the adversarial attack and defense of deep learning models for medical image recognition. Additionally, several suggestions were given on how to enhance the robustness of medical image deep learning models in intelligent medicine and medical metaverse.</jats:p>",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Fang",
+              "given": "Meie",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "container-title": [
+            "Metaverse"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                17
+              ]
+            ],
+            "date-time": "2023-04-17T02:38:32Z",
+            "timestamp": 1681699112000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                17
+              ]
+            ],
+            "date-time": "2023-04-17T02:38:34Z",
+            "timestamp": 1681699114000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                9,
+                19
+              ]
+            ],
+            "date-time": "2025-09-19T11:05:08Z",
+            "timestamp": 1758279908083
+          },
+          "is-referenced-by-count": 3,
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2810-9791"
+            }
+          ],
+          "issue": "1",
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                17
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "1",
+            "published-online": {
+              "date-parts": [
+                [
+                  2023,
+                  2,
+                  10
+                ]
+              ]
+            }
+          },
+          "license": [
+            {
+              "URL": "http://creativecommons.org/licenses/by/4.0",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    4,
+                    17
+                  ]
+                ],
+                "date-time": "2023-04-17T00:00:00Z",
+                "timestamp": 1681689600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://aber.apacsci.com/index.php/met/article/viewFile/2156/2568",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://aber.apacsci.com/index.php/met/article/viewFile/2156/2568",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "32944",
+          "page": "17",
+          "prefix": "10.54517",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                17
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                17
+              ]
+            ]
+          },
+          "publisher": "Asia Pacific Academy of Science Pte. Ltd.",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://aber.apacsci.com/index.php/met/article/view/2156"
+            }
+          },
+          "score": 33.6474,
+          "short-container-title": [
+            "M"
+          ],
+          "source": "Crossref",
+          "title": [
+            "A survey on adversarial attack and defense of deep learning models for medical image recognition"
+          ],
+          "type": "journal-article",
+          "volume": "4"
+        },
+        {
+          "DOI": "10.70675/baaedc7fzdbaaz4337z89a4z5cb4d019c9f8",
+          "URL": "https://doi.org/10.70675/baaedc7fzdbaaz4337z89a4z5cb4d019c9f8",
+          "abstract": "<jats:title>Protéger les systèmes de deep learning face aux attaques : améliorer la robustesse adversaire et la détection</jats:title>\n                <jats:p xml:lang=\"fr\">Au cours de la dernière décennie, l'apprentissage profond a été à l'origine de percées dans de nombreux domaines différents, tels que le traitement du langage naturel, la vision par ordinateur et la reconnaissance vocale. Cependant, il est désormais connu que les modèles basés sur l'apprentissage profond sont extrêmement sensibles aux perturbations, en particulier lorsque la perturbation est bien conçue et générée par un agent malveillant. Cette faiblesse des réseaux neuronaux profonds tend à empêcher leur utilisation dans des applications critiques, où des informations sensibles sont disponibles, ou lorsque le système interagit directement avec la vie quotidienne des gens. Dans cette thèse, nous nous concentrons sur la protection des réseaux neuronaux profonds contre les agents malveillants de deux manières principales. La première méthode vise à protéger un modèle des attaques en augmentant sa robustesse, c'est-à-dire la capacité du modèle à prédire la bonne classe même en cas d'attaques. Nous observons que la sortie d'un réseau neuronal profond forme une variété statistique et que la décision est prise sur cette variété. Nous exploitons cette connaissance en utilisant la mesure de Fisher-Rao, qui calcule la distance géodésique entre deux distributions de probabilité sur la variété statistique auquel elles appartiennent. Nous utilisons la mesure de Fisher-Rao pour régulariser la fonction coût utilisée lors de l'apprentissage et augmenter la robustesse du modèle. Nous adaptons ensuite cette méthode à une autre application critique : les réseaux intelligents (Smart Grids), qui, en raison de divers besoins de la surveillance et de service, reposent sur des composants cybernétiques, tels qu'un estimateur d'état, ce qui les rend sensibles aux attaques. Nous construisons donc des estimateurs d'état robustes en utilisant des autoencodeurs variationnels et l'extension de notre méthode proposée au cas de la régression. La deuxième méthode sur laquelle nous nous concentrons et qui vise à protéger les modèles basés sur l'apprentissage profond est la détection d'échantillons adverses. En ajoutant un détecteur au modèle, il est possible d'augmenter la fiabilité des décisions prises par les réseaux neuronaux profonds. De multiples méthodes de détection sont disponibles aujourd'hui, mais elles reposent souvent sur un entraînement lourd et des heuristiques ad-hoc. Dans notre travail, nous utilisons des outils statistiques simples appelés les profondeurs de données (data-depth) pour construire des méthodes de détection efficaces supervisées (c'est-à-dire que les attaques sont fournies pendant l'entraînement du détecteur) et non supervisées (c'est-à-dire que l'entraînement ne peut s'appuyer que sur des échantillons propres).</jats:p>",
+          "alternative-id": [
+            "2023UPASG017"
+          ],
+          "approved": {
+            "date-parts": [
+              [
+                2023,
+                3,
+                7
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-6855-8284",
+              "affiliation": [
+                {
+                  "id": [
+                    {
+                      "asserted-by": "publisher",
+                      "id": "https://ror.org/03xjwb503",
+                      "id-type": "ROR"
+                    }
+                  ],
+                  "name": "université Paris-Saclay"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Picot",
+              "given": "Marine",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2026-04-07T14:33:02Z",
+            "timestamp": 1775572382000
+          },
+          "degree": [
+            "Doctorat ès Sciences des réseaux, de l'information et de la communication",
+            "PhD"
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2026-04-07T14:33:04Z",
+            "timestamp": 1775572384000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2026-04-07T15:14:39Z",
+            "timestamp": 1775574879396,
+            "version": "3.50.1"
+          },
+          "institution": [
+            {
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "https://ror.org/03xjwb503",
+                  "id-type": "ROR"
+                }
+              ],
+              "name": "université Paris-Saclay"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "51494",
+          "prefix": "10.70675",
+          "publisher": "Agence Bibliographique de l'Enseignement Supérieur",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://theses.fr/2023UPASG017"
+            }
+          },
+          "score": 33.585274,
+          "source": "Crossref",
+          "title": [
+            "Protecting Deep Learning Systems Against Attack : Enhancing Adversarial Robustness and Detection"
+          ],
+          "type": "dissertation"
+        },
+        {
+          "DOI": "10.31979/etd.49ee-sknc",
+          "URL": "https://doi.org/10.31979/etd.49ee-sknc",
+          "approved": {
+            "date-parts": [
+              [
+                2019,
+                5,
+                22
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "San Jose State University"
+                }
+              ],
+              "family": "Mani",
+              "given": "Nag",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2019,
+                5,
+                31
+              ]
+            ],
+            "date-time": "2019-05-31T22:44:50Z",
+            "timestamp": 1559342690000
+          },
+          "degree": [
+            "Master of Science (MS)"
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2019,
+                5,
+                31
+              ]
+            ],
+            "date-time": "2019-05-31T22:45:22Z",
+            "timestamp": 1559342722000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2022,
+                3,
+                28
+              ]
+            ],
+            "date-time": "2022-03-28T23:24:30Z",
+            "timestamp": 1648509870404
+          },
+          "institution": [
+            {
+              "acronym": [
+                "SJSU",
+                "SJSU"
+              ],
+              "department": [
+                "Computer Science"
+              ],
+              "name": "San Jose State University",
+              "place": [
+                "San Jose, CA, USA"
+              ]
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "link": [
+            {
+              "URL": "https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?article=1742&amp;context=etd_projects&amp;unstamped=1",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "16862",
+          "prefix": "10.31979",
+          "publisher": "San Jose State University Library",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://scholarworks.sjsu.edu/etd_projects/742"
+            }
+          },
+          "score": 32.191772,
+          "source": "Crossref",
+          "title": [
+            "On Adversarial Attacks on Deep Learning Models"
+          ],
+          "type": "dissertation"
+        },
+        {
+          "DOI": "10.1109/icmlc63072.2024.10935037",
+          "URL": "https://doi.org/10.1109/icmlc63072.2024.10935037",
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "University of Luxembourg,Luxembourg"
+                }
+              ],
+              "family": "Dyrmishi",
+              "given": "Salijona",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "University of Oxford,United Kingdom"
+                }
+              ],
+              "family": "Stoian",
+              "given": "Mihaela Cătălina",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "Imperial College London,United Kingdom"
+                }
+              ],
+              "family": "Giunchiglia",
+              "given": "Eleonora",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "name": "University of Luxembourg,Luxembourg"
+                }
+              ],
+              "family": "Cordy",
+              "given": "Maxime",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2024 International Conference on Machine Learning and Cybernetics (ICMLC)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                28
+              ]
+            ],
+            "date-time": "2025-03-28T02:39:19Z",
+            "timestamp": 1743129559000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                29
+              ]
+            ],
+            "date-time": "2025-03-29T02:07:33Z",
+            "timestamp": 1743214053000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2024,
+                  9,
+                  23
+                ]
+              ]
+            },
+            "location": "Miyazaki, Japan",
+            "name": "2024 International Conference on Machine Learning and Cybernetics (ICMLC)",
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  9,
+                  20
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2025-10-01T16:33:31Z",
+            "timestamp": 1759336411596,
+            "version": "3.40.3"
+          },
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                20
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    9,
+                    20
+                  ]
+                ],
+                "date-time": "2024-09-20T00:00:00Z",
+                "timestamp": 1726790400000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    9,
+                    20
+                  ]
+                ],
+                "date-time": "2024-09-20T00:00:00Z",
+                "timestamp": 1726790400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/10934982/10934998/10935037.pdf?arnumber=10935037",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "579-584",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                20
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                20
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1007/11538059_91",
+              "doi-asserted-by": "publisher",
+              "key": "ref1"
+            },
+            {
+              "article-title": "DECAF: generating fair synthetic data using causally-aware generative networks",
+              "author": "Van Breugel",
+              "key": "ref2",
+              "volume-title": "Proceedings of Neural Information Processing Systems",
+              "year": "2021"
+            },
+            {
+              "article-title": "Invertible tabular GANs: Killing two birds with one stone for tabu-lar data synthesis",
+              "author": "Lee",
+              "key": "ref3",
+              "volume-title": "Proceedings of Neural Information Processing Systems",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.24963/ijcai.2018/543",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "article-title": "How realistic is your synthetic data? constraining deep generative models for tabular data",
+              "author": "Stoian",
+              "key": "ref5",
+              "volume-title": "The Twelfth International Conference on Learning Representations",
+              "year": "2024"
+            },
+            {
+              "DOI": "10.1016/j.procs.2021.04.118",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.1109/IWCMC.2019.8766353",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "DOI": "10.1007/978-3-031-05981-0_7",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1007/978-981-19-8991-9_29",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "DOI": "10.14778/3231751.3231757",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "article-title": "Modeling tabular data using conditional GAN",
+              "author": "Xu",
+              "key": "ref11",
+              "volume-title": "Proceedings of Neural Information Processing Systems",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1145/3442381.3449999",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "author": "Xie",
+              "journal-title": "Dif-ferentially private generative adversarial network",
+              "key": "ref13",
+              "year": "2018"
+            },
+            {
+              "article-title": "PATE-GAN: generating synthetic data with differential privacy guar-antees",
+              "author": "Jordon",
+              "key": "ref14",
+              "volume-title": "Proceedings of International Conference on Learning Representations",
+              "year": "2019"
+            },
+            {
+              "article-title": "TabDDPM: Modelling Tabular Data with Diffusion Models",
+              "author": "Kotelnikov",
+              "key": "ref15",
+              "volume-title": "Proceedings of International Con-ference on Machine Learning",
+              "year": "2023"
+            },
+            {
+              "article-title": "STaSy: Score-based Tabular data Synthesis",
+              "author": "Kim",
+              "key": "ref16",
+              "volume-title": "Proceedings of International Conference on Learning Representations",
+              "year": "2023"
+            },
+            {
+              "article-title": "GOGGLE: Generative modelling for tabular data by learning relational structure",
+              "author": "Liu",
+              "key": "ref17",
+              "volume-title": "Proceedings of International Conference on Learning Representations",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1109/ICCVW.2019.00257",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "DOI": "10.1109/ICIP42928.2021.9506278",
+              "doi-asserted-by": "publisher",
+              "key": "ref19"
+            },
+            {
+              "DOI": "10.1109/ICCVW54120.2021.00021",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "article-title": "Constructing unrestricted adversarial examples with generative models",
+              "author": "Song",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref21",
+              "year": "2018"
+            },
+            {
+              "article-title": "Ex-ploiting t-norms for deep learning in autonomous driving",
+              "author": "Stoian",
+              "key": "ref22",
+              "volume-title": "Proceedings of the International Workshop on Neural-Symbolic Learning and Reasoning",
+              "year": "2023"
+            },
+            {
+              "author": "Simonetto",
+              "journal-title": "Constrained adaptive attacks: Realistic evaluation of adversarial examples and robust training of deep neural networks for tabular data",
+              "key": "ref23",
+              "year": "2023"
+            },
+            {
+              "article-title": "Wasserstein GAN",
+              "author": "Arjovsky",
+              "journal-title": "CoRR",
+              "key": "ref24",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.24963/ijcai.2022/183",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            }
+          ],
+          "reference-count": 25,
+          "references-count": 25,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/10935037/"
+            }
+          },
+          "score": 31.873074,
+          "source": "Crossref",
+          "title": [
+            "Deep Generative Models as an Adversarial Attack Strategy for Tabular Machine Learning"
+          ],
+          "type": "proceedings-article"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 4195686
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "29b85b6c556608d8afb3ebefc64fad662b106ddd85d6f3ee4638e154637fc8bc",
+  "retrieved_at": "2026-07-14T13:50:39Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

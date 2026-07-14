@@ -1,0 +1,169 @@
+{
+  "endpoint": "dois",
+  "request_key": "de6e4174eade1aca754aa3122ed68bacb1f4e10c865998d6b54358ec865694a7",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Revisiting Self-Supervised Visual Representation Learning"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 1,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-03-01T08:34:22Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Kolesnikov",
+              "givenName": "Alexander",
+              "name": "Kolesnikov, Alexander",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhai",
+              "givenName": "Xiaohua",
+              "name": "Zhai, Xiaohua",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Beyer",
+              "givenName": "Lucas",
+              "name": "Beyer, Lucas",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2019-01-25T18:08:31Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2019-01-28T01:19:03Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2019-01",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2019",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Unsupervised visual representation learning remains a largely unsolved problem in computer vision research. Among a big body of recently proposed approaches for unsupervised learning of visual representations, a class of self-supervised techniques achieves superior performance on many challenging benchmarks. A large number of the pretext tasks for self-supervised learning have been studied, but other important aspects, such as the choice of convolutional neural networks (CNN), has not received equal attention. Therefore, we revisit numerous previously proposed self-supervised models, conduct a thorough large scale study and, as a result, uncover multiple crucial insights. We challenge a number of common practices in selfsupervised visual representation learning and observe that standard recipes for CNN design do not always translate to self-supervised representation learning. As part of our study, we drastically boost the performance of previously proposed techniques and outperform previously published state-of-the-art results by a large margin.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "All three authors contributed equally. Code is available at https://github.com/google/revisiting-self-supervised",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.1901.09005",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "1901.09005",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2019,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-03-01T08:34:24Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Revisiting Self-Supervised Visual Representation Learning"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-03-01T08:34:24Z",
+          "url": "https://arxiv.org/abs/1901.09005",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.1901.09005",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Revisiting+Self-Supervised+Visual+Representation+Learning&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "9807ab20d5dea34fa2e47daaaffbc066787a3e6f03749b2b6968afc297dce9c7",
+  "retrieved_at": "2026-07-14T14:48:28Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

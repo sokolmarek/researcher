@@ -1,0 +1,1198 @@
+{
+  "endpoint": "works/10.1186/s12911-021-01521-x",
+  "request_key": "ede29db95437a287bd81d2cbb0153421061de527411f3c94828696ad3cc1345d",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1186/s12911-021-01521-x",
+      "ISSN": [
+        "1472-6947"
+      ],
+      "URL": "https://doi.org/10.1186/s12911-021-01521-x",
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Coronavirus disease 2019 (COVID-19) has become a pandemic since its first appearance in late 2019. Deaths caused by COVID-19 are still increasing day by day and early diagnosis has become crucial. Since current diagnostic methods have many disadvantages, new investigations are needed to improve the performance of diagnosis.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A novel method is proposed to automatically diagnose COVID-19 by using Electrocardiogram (ECG) data with deep learning for the first time. Moreover, a new and effective method called hexaxial feature mapping is proposed to represent 12-lead ECG to 2D colorful images. Gray-Level Co-Occurrence Matrix (GLCM) method is used to extract features and generate hexaxial mapping images. These generated images are then fed into a new Convolutional Neural Network (CNN) architecture to diagnose COVID-19.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>Two different classification scenarios are conducted on a publicly available paper-based ECG image dataset to reveal the diagnostic capability and performance of the proposed approach. In the first scenario, ECG data labeled as COVID-19 and No-Findings (normal) are classified to evaluate COVID-19 classification ability. According to results, the proposed approach provides encouraging COVID-19 detection performance with an accuracy of 96.20% and F1-Score of 96.30%. In the second scenario, ECG data labeled as Negative (normal, abnormal, and myocardial infarction) and Positive (COVID-19) are classified to evaluate COVID-19 diagnostic ability. The experimental results demonstrated that the proposed approach provides satisfactory COVID-19 prediction performance with an accuracy of 93.00% and F1-Score of 93.20%. Furthermore, different experimental studies are conducted to evaluate the robustness of the proposed approach.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>Automatic detection of cardiovascular changes caused by COVID-19 can be possible with a deep learning framework through ECG data. This not only proves the presence of cardiovascular changes caused by COVID-19 but also reveals that ECG can potentially be used in the diagnosis of COVID-19. We believe the proposed study may provide a crucial decision-making system for healthcare professionals.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Source code</jats:title>\n                    <jats:p>\n                      All source codes are made publicly available at:\n                      <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/mkfzdmr/COVID-19-ECG-Classification\">https://github.com/mkfzdmr/COVID-19-ECG-Classification</jats:ext-link>\n                    </jats:p>\n                  </jats:sec>",
+      "alternative-id": [
+        "1521"
+      ],
+      "article-number": "170",
+      "assertion": [
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Received",
+          "name": "received",
+          "order": 1,
+          "value": "6 February 2021"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "Accepted",
+          "name": "accepted",
+          "order": 2,
+          "value": "5 May 2021"
+        },
+        {
+          "group": {
+            "label": "Article History",
+            "name": "ArticleHistory"
+          },
+          "label": "First Online",
+          "name": "first_online",
+          "order": 3,
+          "value": "25 May 2021"
+        },
+        {
+          "group": {
+            "label": "Declarations",
+            "name": "EthicsHeading"
+          },
+          "name": "Ethics",
+          "order": 1
+        },
+        {
+          "group": {
+            "label": "Ethics approval and consent to participate",
+            "name": "EthicsHeading"
+          },
+          "name": "Ethics",
+          "order": 2,
+          "value": "The authors declare that the work described has been carried out in accordance with the Declaration of Helsinki of the World Medical Association revised in 2013 for experiments involving humans. The research related to human use complies with all the relevant national regulations and institutional policies. Human ECG data were obtained from [\n                      \n                      ] which compiles all relevant ethical processes as indicated in the paper."
+        },
+        {
+          "group": {
+            "label": "Consent for publication",
+            "name": "EthicsHeading"
+          },
+          "name": "Ethics",
+          "order": 3,
+          "value": "The authors declare that this report does not contain any personal information that could lead to the identification of the patient(s)."
+        },
+        {
+          "group": {
+            "label": "Competing interests",
+            "name": "EthicsHeading"
+          },
+          "name": "Ethics",
+          "order": 4,
+          "value": "The authors declare that they have no known competing financial or personal relationships that could be viewed as influencing the work reported in this paper."
+        }
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8758-113X",
+          "affiliation": [],
+          "authenticated-orcid": false,
+          "family": "Ozdemir",
+          "given": "Mehmet Akif",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "affiliation": [],
+          "family": "Ozdemir",
+          "given": "Gizem Dilara",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Guren",
+          "given": "Onan",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "BMC Medical Informatics and Decision Making"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": [
+          "link.springer.com"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            25
+          ]
+        ],
+        "date-time": "2021-05-25T10:03:02Z",
+        "timestamp": 1621936982000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            25
+          ]
+        ],
+        "date-time": "2021-05-25T10:04:50Z",
+        "timestamp": 1621937090000
+      },
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2026-05-07T15:35:42Z",
+        "timestamp": 1778168142662,
+        "version": "3.51.4"
+      },
+      "is-referenced-by-count": 71,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "1472-6947"
+        }
+      ],
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            25
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2021,
+              12
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0",
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                5,
+                25
+              ]
+            ],
+            "date-time": "2021-05-25T00:00:00Z",
+            "timestamp": 1621900800000
+          }
+        },
+        {
+          "URL": "https://creativecommons.org/licenses/by/4.0",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                5,
+                25
+              ]
+            ],
+            "date-time": "2021-05-25T00:00:00Z",
+            "timestamp": 1621900800000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1186/s12911-021-01521-x.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/article/10.1186/s12911-021-01521-x/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1186/s12911-021-01521-x.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "297",
+      "original-title": [],
+      "prefix": "10.1186",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            25
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            25
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC",
+      "reference": [
+        {
+          "DOI": "10.1186/s12911-020-01373-x",
+          "author": "MIU Haq",
+          "doi-asserted-by": "publisher",
+          "journal-title": "Res Biomed Eng",
+          "key": "1521_CR1",
+          "unstructured": "Haq MIU, Khuroo S, Raina A, Khajuria S, Javaid M, Haq MFU, Haleem A. 3d printing for development of medical equipment amidst coronavirus (covid-19) pandemic-review and advancements. Res Biomed Eng. 2020. https://doi.org/10.1186/s12911-020-01373-x.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.ajem.2020.04.022",
+          "author": "A Haleem",
+          "doi-asserted-by": "publisher",
+          "first-page": "1524",
+          "issue": "7",
+          "journal-title": "Am J Emerg Med",
+          "key": "1521_CR2",
+          "unstructured": "Haleem A, Javaid M, Vaishya R, Deshmukh SG. Areas of academic research with the impact of covid-19. Am J Emerg Med. 2020;38(7):1524–6. https://doi.org/10.1016/j.ajem.2020.04.022.",
+          "volume": "38",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.cmrp.2020.03.011",
+          "author": "A Haleem",
+          "doi-asserted-by": "publisher",
+          "first-page": "78",
+          "journal-title": "Curr Med Res Pract",
+          "key": "1521_CR3",
+          "unstructured": "Haleem A, Javaid M, Vaishya R. Effects of Covid 19 pandemic in daily life. Curr Med Res Pract. 2020;10:78–9. https://doi.org/10.1016/j.cmrp.2020.03.011.",
+          "volume": "10",
+          "year": "2020"
+        },
+        {
+          "key": "1521_CR4",
+          "unstructured": "World Health Organization, Coronavirus disease (COVID-19) pandemic. www.who.int/emergencies/diseases/novel-coronavirus-2019. Accessed 24 Mar 2021."
+        },
+        {
+          "DOI": "10.2807/1560-7917.ES.2020.25.3.2000045",
+          "author": "VM Corman",
+          "doi-asserted-by": "publisher",
+          "first-page": "2000045",
+          "issue": "3",
+          "journal-title": "Eurosurveillance",
+          "key": "1521_CR5",
+          "unstructured": "Corman VM, Landt O, Kaiser M, Molenkamp R, Meijer A, Chu DK, Bleicker T, Brünink S, Schneider J, Schmidt ML, et al. Detection of 2019 novel coronavirus (2019-ncov) by real-time rt-pcr. Eurosurveillance. 2020;25(3):2000045. https://doi.org/10.2807/1560-7917.ES.2020.25.3.2000045.",
+          "volume": "25",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1148/radiol.2020200343",
+          "author": "X Xie",
+          "doi-asserted-by": "publisher",
+          "first-page": "41",
+          "journal-title": "Radiology",
+          "key": "1521_CR6",
+          "unstructured": "Xie X, Zhong Z, Zhao W, Zheng C, Wang F, Liu J. Chest ct for typical 2019-ncov pneumonia: relationship to negative rt-pcr testing. Radiology. 2020;296:41–5. https://doi.org/10.1148/radiol.2020200343.",
+          "volume": "296",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/S0140-6736(20)30154-9",
+          "author": "JF-W Chan",
+          "doi-asserted-by": "publisher",
+          "first-page": "514",
+          "issue": "10223",
+          "journal-title": "The Lancet",
+          "key": "1521_CR7",
+          "unstructured": "Chan JF-W, Yuan S, Kok K-H, To KK-W, Chu H, Yang J, Xing F, Liu J, Yip CC-Y, Poon RW-S, et al. A familial cluster of pneumonia associated with the 2019 novel coronavirus indicating person-to-person transmission: a study of a family cluster. The Lancet. 2020;395(10223):514–23. https://doi.org/10.1016/S0140-6736(20)30154-9.",
+          "volume": "395",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.dsx.2020.04.041",
+          "author": "RP Singh",
+          "doi-asserted-by": "publisher",
+          "first-page": "521",
+          "issue": "4",
+          "journal-title": "Diabetes Metab Syndr Clin Res Rev",
+          "key": "1521_CR8",
+          "unstructured": "Singh RP, Javaid M, Haleem A, Suman R. Internet of things (iot) applications to fight against covid-19 pandemic. Diabetes Metab Syndr Clin Res Rev. 2020;14(4):521–4. https://doi.org/10.1016/j.dsx.2020.04.041.",
+          "volume": "14",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.jcot.2020.05.011",
+          "author": "R Pratap Singh",
+          "doi-asserted-by": "publisher",
+          "first-page": "713",
+          "issue": "4",
+          "journal-title": "J Clin Orthop Trauma",
+          "key": "1521_CR9",
+          "unstructured": "Pratap Singh R, Javaid M, Haleem A, Vaishya R, Ali S. Internet of medical things (iomt) for orthopaedic in covid-19 pandemic: roles, challenges, and applications. J Clin Orthop Trauma. 2020;11(4):713–7. https://doi.org/10.1016/j.jcot.2020.05.011.",
+          "volume": "11",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.dsx.2020.04.032",
+          "author": "M Javaid",
+          "doi-asserted-by": "publisher",
+          "first-page": "419",
+          "issue": "4",
+          "journal-title": "Diabetes Metab Syndr Clin Res Rev",
+          "key": "1521_CR10",
+          "unstructured": "Javaid M, Haleem A, Vaishya R, Bahl S, Suman R, Vaish A. Industry 4.0 technologies and their applications in fighting covid-19 pandemic. Diabetes Metab Syndr Clin Res Rev. 2020;14(4):419–22. https://doi.org/10.1016/j.dsx.2020.04.032.",
+          "volume": "14",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1142/S2424862220300045",
+          "author": "A Haleem",
+          "doi-asserted-by": "publisher",
+          "journal-title": "J Ind Integr Manag",
+          "key": "1521_CR11",
+          "unstructured": "Haleem A, Javaid M. Medical 4.0 and its role in healthcare during covid-19 pandemic: a review. J Ind Integr Manag. 2020. https://doi.org/10.1142/S2424862220300045.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1142/S2424862220500220",
+          "author": "M Javaid",
+          "doi-asserted-by": "publisher",
+          "journal-title": "J Ind Integr Manag",
+          "key": "1521_CR12",
+          "unstructured": "Javaid M, Haleem A, Singh RP, Haq MIU, Raina A, Suman R. Industry 5.0: potential applications in covid-19. J Ind Integr Manag. 2020. https://doi.org/10.1142/S2424862220500220.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.dsx.2020.05.011",
+          "author": "RP Singh",
+          "doi-asserted-by": "publisher",
+          "first-page": "661",
+          "issue": "4",
+          "journal-title": "Diabetes Metab Syndr Clin Res Rev",
+          "key": "1521_CR13",
+          "unstructured": "Singh RP, Javaid M, Kataria R, Tyagi M, Haleem A, Suman R. Significant applications of virtual reality for covid-19 pandemic. Diabetes Metab Syndr Clin Res Rev. 2020;14(4):661–4. https://doi.org/10.1016/j.dsx.2020.05.011.",
+          "volume": "14",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2020.103792",
+          "author": "T Ozturk",
+          "doi-asserted-by": "publisher",
+          "first-page": "103792",
+          "journal-title": "Comput Biol Med",
+          "key": "1521_CR14",
+          "unstructured": "Ozturk T, Talo M, Yildirim EA, Baloglu UB, Yildirim O, Acharya UR. Automated detection of covid-19 cases using deep neural networks with x-ray images. Comput Biol Med. 2020;121:103792. https://doi.org/10.1016/j.compbiomed.2020.103792.",
+          "volume": "121",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2020.103805",
+          "author": "M Toğaçar",
+          "doi-asserted-by": "publisher",
+          "first-page": "103805",
+          "journal-title": "Comput Biol Med",
+          "key": "1521_CR15",
+          "unstructured": "Toğaçar M, Ergen B, Cömert Z. Covid-19 detection using deep learning models to exploit social mimic optimization and structured chest x-ray images using fuzzy color and stacking approaches. Comput Biol Med. 2020;121:103805. https://doi.org/10.1016/j.compbiomed.2020.103805.",
+          "volume": "121",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2020.104181",
+          "author": "S Karakanis",
+          "doi-asserted-by": "publisher",
+          "first-page": "10418",
+          "journal-title": "Comput Biol Med",
+          "key": "1521_CR16",
+          "unstructured": "Karakanis S, Leontidis G. Lightweight deep learning models for detecting covid-19 from chest x-ray images. Comput Biol Med. 2020;130:10418. https://doi.org/10.1016/j.compbiomed.2020.104181.",
+          "volume": "130",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2020.104037",
+          "author": "A Amyar",
+          "doi-asserted-by": "publisher",
+          "first-page": "104037",
+          "journal-title": "Comput Biol Med",
+          "key": "1521_CR17",
+          "unstructured": "Amyar A, Modzelewski R, Li H, Ruan S. Multi-task deep learning based ct imaging analysis for covid-19 pneumonia: classification and segmentation. Comput Biol Med. 2020;126:104037. https://doi.org/10.1016/j.compbiomed.2020.104037.",
+          "volume": "126",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.nut.2018.11.028",
+          "author": "GD Ceniccola",
+          "doi-asserted-by": "publisher",
+          "first-page": "25",
+          "journal-title": "Nutrition",
+          "key": "1521_CR18",
+          "unstructured": "Ceniccola GD, Castro MG, Piovacari SMF, Horie LM, Corrêa FG, Barrere APN, Toledo DO. Current technologies in body composition assessment: advantages and disadvantages. Nutrition. 2019;62:25–31. https://doi.org/10.1016/j.nut.2018.11.028.",
+          "volume": "62",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1371/journal.pone.0246732",
+          "author": "M Zhou",
+          "doi-asserted-by": "publisher",
+          "first-page": "0246732",
+          "issue": "2",
+          "journal-title": "PLoS ONE",
+          "key": "1521_CR19",
+          "unstructured": "Zhou M, Wong C-K, Un K-C, Lau Y-M, Lee JC-Y, Tam FC-C, Lau Y-M, Lai W-H, Tam AR, Lam Y-Y, et al. Cardiovascular sequalae in uncomplicated covid-19 survivors. PLoS ONE. 2021;16(2):0246732. https://doi.org/10.1371/journal.pone.0246732.",
+          "volume": "16",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.24207/jca.v33i3.3403",
+          "author": "B Predabon",
+          "doi-asserted-by": "publisher",
+          "first-page": "133",
+          "issue": "3",
+          "journal-title": "J Card Arrhythm",
+          "key": "1521_CR20",
+          "unstructured": "Predabon B, Souza AZM, Bertoldi GHS, Sales RL, Luciano KS, de March Ronsoni R. The electrocardiogram in the differential diagnosis of cardiologic conditions related to the covid-19 pandemic. J Card Arrhythm. 2020;33(3):133–41. https://doi.org/10.24207/jca.v33i3.3403.",
+          "volume": "33",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.jaccas.2020.04.007",
+          "author": "M.I. Vidovich",
+          "doi-asserted-by": "publisher",
+          "first-page": "1245",
+          "issue": "9",
+          "journal-title": "JACC Case Rep",
+          "key": "1521_CR21",
+          "unstructured": "Vidovich M.I. Transient Brugada-like electrocardiographic pattern in a patient with covid-19. JACC Case Rep. 2020;2(9):1245–9. https://doi.org/10.1016/j.jaccas.2020.04.007.",
+          "volume": "2",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1093/ehjcr/ytaa230",
+          "author": "P Lugenbiel",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "issue": "FI1",
+          "journal-title": "Eur Heart J Case Rep",
+          "key": "1521_CR22",
+          "unstructured": "Lugenbiel P, Roth L, Seiz M, Zeier M, Katus HA, Merle U, Schweizer PA. The arrhythmogenic face of covid-19: Brugada ecg pattern during acute infection. Eur Heart J Case Rep. 2020;4(FI1):1–2. https://doi.org/10.1093/ehjcr/ytaa230.",
+          "volume": "4",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1161/circulationaha.120.047164",
+          "author": "JA Fried",
+          "doi-asserted-by": "publisher",
+          "first-page": "1930",
+          "journal-title": "Circulation",
+          "key": "1521_CR23",
+          "unstructured": "Fried JA, Ramasubbu K, Bhatt R, Topkara VK, Clerkin KJ, Horn E, Rabbani L, Brodie D, Jain SS, Kirtane A, et al. The variety of cardiovascular presentations of covid-19. Circulation. 2020;141:1930–6. https://doi.org/10.1161/circulationaha.120.047164.",
+          "volume": "141",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1186/s12911-020-01316-6",
+          "author": "A Abdulaal",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "issue": "1",
+          "journal-title": "BMC Med Inform Decis Mak",
+          "key": "1521_CR24",
+          "unstructured": "Abdulaal A, Patel A, Charani E, Denny S, Alqahtani SA, Davies GW, Mughal N, Moore LS. Comparison of deep learning with regression analysis in creating predictive models for sars-cov-2 outcomes. BMC Med Inform Decis Mak. 2020;20(1):1–11. https://doi.org/10.1186/s12911-020-01316-6.",
+          "volume": "20",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.jelectrocard.2020.08.007",
+          "author": "S Haseeb",
+          "doi-asserted-by": "publisher",
+          "first-page": "39",
+          "journal-title": "J Electrocardiol",
+          "key": "1521_CR25",
+          "unstructured": "Haseeb S, Gul EE, Çinier G, Bazoukis G, Alvarez-Garcia J, Garcia-Zamora S, Lee S, Yeung C, Liu T, Tse G, et al. Value of electrocardiography in coronavirus disease 2019 (covid-19). J Electrocardiol. 2020;62:39–45. https://doi.org/10.1016/j.jelectrocard.2020.08.007.",
+          "volume": "62",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.cjca.2020.03.028",
+          "author": "J He",
+          "doi-asserted-by": "publisher",
+          "first-page": "966",
+          "journal-title": "Can J Cardiol",
+          "key": "1521_CR26",
+          "unstructured": "He J, Wu B, Chen Y, Tang J, Liu Q, Zhou S, Chen C, Qin Q, Huang K, Lv J, et al. Characteristic ecg manifestations in patients with covid-19. Can J Cardiol. 2020;36:966–19664. https://doi.org/10.1016/j.cjca.2020.03.028.",
+          "volume": "36",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1161/CIRCIMAGING.120.011222",
+          "author": "C.W. Tsao",
+          "doi-asserted-by": "publisher",
+          "first-page": "011222",
+          "issue": "7",
+          "journal-title": "Circ Cardiovasc Imaging",
+          "key": "1521_CR27",
+          "unstructured": "Tsao C.W., Strom J.B., Chang J.D., Manning W.J. Covid-19—associated stress (takotsubo) cardiomyopathy. Circ Cardiovasc Imaging. 2020;13(7):011222. https://doi.org/10.1161/CIRCIMAGING.120.011222.",
+          "volume": "13",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1093/ehjcr/ytaa230",
+          "author": "A Hua",
+          "doi-asserted-by": "publisher",
+          "first-page": "2130",
+          "journal-title": "Eur Heart J",
+          "key": "1521_CR28",
+          "unstructured": "Hua A, O’Gallagher K, Sado D, Byrne J. Life-threatening cardiac tamponade complicating myo-pericarditis in covid-19. Eur Heart J. 2020;41:2130. https://doi.org/10.1093/ehjcr/ytaa230.",
+          "volume": "41",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.5694/mja2.50841",
+          "author": "K Lam",
+          "doi-asserted-by": "publisher",
+          "first-page": "476",
+          "issue": "10",
+          "journal-title": "Med J Aust",
+          "key": "1521_CR29",
+          "unstructured": "Lam K, McClelland S, Dallo MJ. Ecg: essential in care of patients with covid-19. Med J Aust. 2020;213(10):476–476. https://doi.org/10.5694/mja2.50841.",
+          "volume": "213",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1093/europace/euaa258",
+          "author": "M Bertini",
+          "doi-asserted-by": "publisher",
+          "first-page": "1848",
+          "issue": "12",
+          "journal-title": "EP Eur",
+          "key": "1521_CR30",
+          "unstructured": "Bertini M, Ferrari R, Guardigli G, Malagù M, Vitali F, Zucchetti O, D’Aniello E, Volta CA, Cimaglia P, Piovaccari G, et al. Electrocardiographic features of 431 consecutive, critically ill covid-19 patients: an insight into the mechanisms of cardiac involvement. EP Eur. 2020;22(12):1848–54. https://doi.org/10.1093/europace/euaa258.",
+          "volume": "22",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.jacep.2020.05.015",
+          "author": "CM Colon",
+          "doi-asserted-by": "publisher",
+          "first-page": "1189",
+          "issue": "9",
+          "journal-title": "Clin Electrophysiol",
+          "key": "1521_CR31",
+          "unstructured": "Colon CM, Barrios JG, Chiles JW, McElwee SK, Russell DW, Maddox WR, Kay GN. Atrial arrhythmias in covid-19 patients. Clin Electrophysiol. 2020;6(9):1189–90. https://doi.org/10.1016/j.jacep.2020.05.015.",
+          "volume": "6",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.hrthm.2020.06.009",
+          "author": "BB Pavri",
+          "doi-asserted-by": "publisher",
+          "first-page": "1434",
+          "journal-title": "Heart Rhythm",
+          "key": "1521_CR32",
+          "unstructured": "Pavri BB, Kloo J, Farzad D, Riley JM. Behavior of the pr interval with increasing heart rate in patients with covid-19. Heart Rhythm. 2020;17:1434–8. https://doi.org/10.1016/j.hrthm.2020.06.009.",
+          "volume": "17",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1111/anec.12806",
+          "author": "Y Wang",
+          "doi-asserted-by": "publisher",
+          "first-page": "12806",
+          "issue": "6",
+          "journal-title": "Ann Noninvasive Electrocardiol",
+          "key": "1521_CR33",
+          "unstructured": "Wang Y, Chen L, Wang J, He X, Huang F, Chen J, Yang X. Electrocardiogram analysis of patients with different types of covid-19. Ann Noninvasive Electrocardiol. 2020;25(6):12806. https://doi.org/10.1111/anec.12806.",
+          "volume": "25",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1093/cid/ciaa1578",
+          "author": "F Santoro",
+          "doi-asserted-by": "publisher",
+          "journal-title": "Clin Infect Dis",
+          "key": "1521_CR34",
+          "unstructured": "Santoro F, Monitillo F, Raimondo P, Lopizzo A, Brindicci G, Gilio M, Musaico F, Mazzola M, Vestito D, Di Benedetto R, et al. Qtc interval prolongation and life-threatening arrhythmias during hospitalization in patients with covid-19. Results from a multi-center prospective registry. Clin Infect Dis. 2020. https://doi.org/10.1093/cid/ciaa1578.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.hrthm.2020.04.047",
+          "author": "S Jain",
+          "doi-asserted-by": "publisher",
+          "first-page": "1417",
+          "journal-title": "Heart Rhythm",
+          "key": "1521_CR35",
+          "unstructured": "Jain S, Workman V, Ganeshan R, Obasare ER, Burr A, DeBiasi RM, Freeman JV, Akar J, Lampert R, Rosenfeld LE. Enhanced electrocardiographic monitoring of patients with coronavirus disease 2019. Heart Rhythm. 2020;17:1417–22. https://doi.org/10.1016/j.hrthm.2020.04.047.",
+          "volume": "17",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1080/13685538.2020.1769058",
+          "author": "F Öztürk",
+          "doi-asserted-by": "publisher",
+          "journal-title": "Aging Male",
+          "key": "1521_CR36",
+          "unstructured": "Öztürk F, Karaduman M, Çoldur R, İncecik Ş, Güneş Y, Tuncer M. Interpretation of arrhythmogenic effects of covid-19 disease through ecg. Aging Male. 2020. https://doi.org/10.1080/13685538.2020.1769058.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1007/s12471-020-01429-7",
+          "author": "M van den Broek",
+          "doi-asserted-by": "publisher",
+          "first-page": "406",
+          "journal-title": "Neth Heart J",
+          "key": "1521_CR37",
+          "unstructured": "van den Broek M, Möhlmann J, Abeln B, Liebregts M, van Dijk V, van de Garde E. Chloroquine-induced qtc prolongation in covid-19 patients. Neth Heart J. 2020;28:406–9. https://doi.org/10.1007/s12471-020-01429-7.",
+          "volume": "28",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.ejmp.2020.01.007",
+          "author": "E Butun",
+          "doi-asserted-by": "publisher",
+          "first-page": "39",
+          "journal-title": "Phys Med",
+          "key": "1521_CR38",
+          "unstructured": "Butun E, Yildirim O, Talo M, Tan R-S, Rajendra Acharya U. 1d-cadcapsnet: One dimensional deep capsule networks for coronary artery disease detection using ecg signals. Phys Med. 2020;70:39–48. https://doi.org/10.1016/j.ejmp.2020.01.007.",
+          "volume": "70",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2018.09.009",
+          "author": "Özal Yıldırım",
+          "doi-asserted-by": "publisher",
+          "first-page": "411",
+          "journal-title": "Comput Biol Med",
+          "key": "1521_CR39",
+          "unstructured": "Yıldırım Özal, Pławiak P., Tan R.-S., Acharya U.R. Arrhythmia detection using deep convolutional neural network with long duration ecg signals. Comput Biol Med. 2018;102:411–20. https://doi.org/10.1016/j.compbiomed.2018.09.009.",
+          "volume": "102",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.3390/rs12101685",
+          "author": "A Ullah",
+          "doi-asserted-by": "publisher",
+          "first-page": "1685",
+          "issue": "10",
+          "journal-title": "Remote Sens",
+          "key": "1521_CR40",
+          "unstructured": "Ullah A, Anwar SM, Bilal M, Mehmood RM. Classification of arrhythmia by using deep learning with 2-d ecg spectral image representation. Remote Sens. 2020;12(10):1685. https://doi.org/10.3390/rs12101685.",
+          "volume": "12",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1109/TIPTEKNO.2019.8895011",
+          "doi-asserted-by": "publisher",
+          "key": "1521_CR41",
+          "unstructured": "Izci E, Ozdemir MA, Degirmenci M, Akan A. Cardiac arrhythmia detection from 2d ecg images by using deep learning technique. In: 2019 medical technologies congress (TIPTEKNO). IEEE; 2019. p. 1–4. https://doi.org/10.1109/TIPTEKNO.2019.8895011."
+        },
+        {
+          "DOI": "10.1016/j.irbm.2021.04.002",
+          "author": "M Degirmenci",
+          "doi-asserted-by": "publisher",
+          "journal-title": "IRBM",
+          "key": "1521_CR42",
+          "unstructured": "Degirmenci M, Ozdemir MA, Izci E, Akan A. Arrhythmic heartbeat classification using 2d convolutional neural networks. IRBM. 2021. https://doi.org/10.1016/j.irbm.2021.04.002.",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1109/TIPTEKNO50054.2020.9299260",
+          "doi-asserted-by": "publisher",
+          "key": "1521_CR43",
+          "unstructured": "Ozdemir MA, Guren O, Cura OK, Akan A, Onan A. Abnormal ecg beat detection based on convolutional neural networks. In: 2020 medical technologies congress (TIPTEKNO). IEEE; 2020. p. 1–4. https://doi.org/10.1109/TIPTEKNO50054.2020.9299260."
+        },
+        {
+          "DOI": "10.1109/ACCESS.2019.2928017",
+          "author": "J Huang",
+          "doi-asserted-by": "publisher",
+          "first-page": "92871",
+          "journal-title": "IEEE Access",
+          "key": "1521_CR44",
+          "unstructured": "Huang J, Chen B, Yao B, He W. Ecg arrhythmia classification using stft-based spectrogram and convolutional neural network. IEEE Access. 2019;7:92871–80. https://doi.org/10.1109/ACCESS.2019.2928017.",
+          "volume": "7",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.3390/electronics9091452",
+          "author": "G Kłosowski",
+          "doi-asserted-by": "publisher",
+          "first-page": "1452",
+          "issue": "9",
+          "journal-title": "Electronics",
+          "key": "1521_CR45",
+          "unstructured": "Kłosowski G, Rymarczyk T, Wójcik D, Skowron S, Cieplak T, Adamkiewicz P. The use of time-frequency moments as inputs of lstm network for ecg signal classification. Electronics. 2020;9(9):1452. https://doi.org/10.3390/electronics9091452.",
+          "volume": "9",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.3389/fphys.2018.01206",
+          "author": "R He",
+          "doi-asserted-by": "publisher",
+          "first-page": "1206",
+          "journal-title": "Front Physiol",
+          "key": "1521_CR46",
+          "unstructured": "He R, Wang K, Zhao N, Liu Y, Yuan Y, Li Q, Zhang H. Automatic detection of atrial fibrillation based on continuous wavelet transform and 2d convolutional neural networks. Front Physiol. 2018;9:1206. https://doi.org/10.3389/fphys.2018.01206.",
+          "volume": "9",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.14311/NNW.2019.29.014",
+          "author": "H Alquran",
+          "doi-asserted-by": "publisher",
+          "first-page": "207",
+          "issue": "4",
+          "journal-title": "Neural Netw World",
+          "key": "1521_CR47",
+          "unstructured": "Alquran H, Alqudah A, Abu-Qasmieh I, Al-Badarneh A, Almashaqbeh S. Ecg classification using higher order spectral estimation and deep learning techniques. Neural Netw World. 2019;29(4):207–19. https://doi.org/10.14311/NNW.2019.29.014.",
+          "volume": "29",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/ACCESS.2018.2833841",
+          "author": "X Zhai",
+          "doi-asserted-by": "publisher",
+          "first-page": "27465",
+          "journal-title": "IEEE Access",
+          "key": "1521_CR48",
+          "unstructured": "Zhai X, Tin C. Automated ecg classification using dual heartbeat coupling based on convolutional neural network. IEEE Access. 2018;6:27465–72. https://doi.org/10.1109/ACCESS.2018.2833841.",
+          "volume": "6",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1186/s12911-019-0946-1",
+          "author": "K-S Lee",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "issue": "1",
+          "journal-title": "BMC Med Inform Decis Mak",
+          "key": "1521_CR49",
+          "unstructured": "Lee K-S, Jung S, Gil Y, Son HS. Atrial fibrillation classification based on convolutional neural networks. BMC Med Inform Decis Mak. 2019;19(1):1–6. https://doi.org/10.1186/s12911-019-0946-1.",
+          "volume": "19",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1016/j.ejim.2020.06.015",
+          "author": "F Angeli",
+          "doi-asserted-by": "publisher",
+          "first-page": "101",
+          "journal-title": "Eur J Intern Med",
+          "key": "1521_CR50",
+          "unstructured": "Angeli F, Spanevello A, De Ponti R, Visca D, Marazzato J, Palmiotto G, Feci D, Reboldi G, Fabbri LM, Verdecchia P. Electrocardiographic features of patients with covid-19 pneumonia. Eur J Intern Med. 2020;78:101–6. https://doi.org/10.1016/j.ejim.2020.06.015.",
+          "volume": "78",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1002/clc.23492",
+          "author": "L Li",
+          "doi-asserted-by": "publisher",
+          "first-page": "1624",
+          "issue": "12",
+          "journal-title": "Clin Cardiol",
+          "key": "1521_CR51",
+          "unstructured": "Li L, Zhang S, He B, Chen X, Wang S, Zhao Q. Risk factors and electrocardiogram characteristics for mortality in critical inpatients with covid-19. Clin Cardiol. 2020;43(12):1624–30. https://doi.org/10.1002/clc.23492.",
+          "volume": "43",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.cardfail.2020.06.005",
+          "author": "SA McCullough",
+          "doi-asserted-by": "publisher",
+          "first-page": "626",
+          "journal-title": "J Card Fail",
+          "key": "1521_CR52",
+          "unstructured": "McCullough SA, Goyal P, Krishnan U, Choi JJ, Safford MM, Okin PM. Electrocardiographic findings in covid-19: insights on mortality and underlying myocardial processes. J Card Fail. 2020;26:626–32. https://doi.org/10.1016/j.cardfail.2020.06.005.",
+          "volume": "26",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.22037/aaem.v9i1.957",
+          "author": "R Nemati",
+          "doi-asserted-by": "publisher",
+          "journal-title": "Arch Acad Emerg Med",
+          "key": "1521_CR53",
+          "unstructured": "Nemati R, Ganjoo M, Jadidi F, Tanha A, Baghbani R. Electrocardiography in early diagnosis of cardiovascular complications of covid-19; a systematic literature review. Arch Acad Emerg Med. 2021. https://doi.org/10.22037/aaem.v9i1.957.",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.dib.2021.106762",
+          "author": "AH Khan",
+          "doi-asserted-by": "publisher",
+          "first-page": "106762",
+          "journal-title": "Data Brief",
+          "key": "1521_CR54",
+          "unstructured": "Khan AH, Hussain M, Malik MK. Ecg images dataset of cardiac and covid-19 patients. Data Brief. 2021;34:106762. https://doi.org/10.1016/j.dib.2021.106762.",
+          "volume": "34",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2020.104077",
+          "author": "Y Li",
+          "doi-asserted-by": "publisher",
+          "first-page": "104077",
+          "journal-title": "Comput Biol Med",
+          "key": "1521_CR55",
+          "unstructured": "Li Y, Qu Q, Wang M, Yu L, Wang J, Shen L, He K. Deep learning for digitizing highly noisy paper-based ecg records. Comput Biol Med. 2020;127:104077. https://doi.org/10.1016/j.compbiomed.2020.104077.",
+          "volume": "127",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.jelectrocard.2017.09.007",
+          "author": "A Holkeri",
+          "doi-asserted-by": "publisher",
+          "first-page": "74",
+          "issue": "1",
+          "journal-title": "J Electrocardiol",
+          "key": "1521_CR56",
+          "unstructured": "Holkeri A, Eranti A, Kenttä TV, Noponen K, Haukilahti MAE, Seppänen T, Junttila MJ, Kerola T, Rissanen H, Heliövaara M, Knekt P, Aro AL, Huikuri HV. Experiences in digitizing and digitally measuring a paper-based ecg archive. J Electrocardiol. 2018;51(1):74–81. https://doi.org/10.1016/j.jelectrocard.2017.09.007.",
+          "volume": "51",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1109/JTEHM.2019.2949784",
+          "author": "M Baydoun",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "journal-title": "IEEE J Transl Eng Health Med",
+          "key": "1521_CR57",
+          "unstructured": "Baydoun M, Safatly L, Abou Hassan OK, Ghaziri H, El Hajj A, Isma’eel H. High precision digitization of paper-based ecg records: a step toward machine learning. IEEE J Transl Eng Health Med. 2019;7:1–8. https://doi.org/10.1109/JTEHM.2019.2949784.",
+          "volume": "7",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/TSMC.1973.4309314",
+          "author": "R.M. Haralick",
+          "doi-asserted-by": "publisher",
+          "first-page": "610",
+          "issue": "6",
+          "journal-title": "IEEE Trans Syst Man Cybern SMC",
+          "key": "1521_CR58",
+          "unstructured": "Haralick R.M., Shanmugam K., Dinstein I. Textural features for image classification. IEEE Trans Syst Man Cybern SMC. 1973;3(6):610–21. https://doi.org/10.1109/TSMC.1973.4309314.",
+          "volume": "3",
+          "year": "1973"
+        },
+        {
+          "DOI": "10.1109/IECBES.2010.5742264",
+          "doi-asserted-by": "publisher",
+          "key": "1521_CR59",
+          "unstructured": "Mustafa M, Taib MN, Murat ZH, Hayatee AHN. Glcm texture classification for eeg spectrogram image. In: 2010 IEEE EMBS conference on biomedical engineering and sciences (IECBES); 2010. p. 373–376. https://doi.org/10.1109/IECBES.2010.5742264"
+        },
+        {
+          "DOI": "10.1109/ACCESS.2019.2918361",
+          "author": "W Sun",
+          "doi-asserted-by": "publisher",
+          "first-page": "67123",
+          "journal-title": "IEEE Access",
+          "key": "1521_CR60",
+          "unstructured": "Sun W, Zeng N, He Y. Morphological arrhythmia automated diagnosis method using gray-level co-occurrence matrix enhanced convolutional neural network. IEEE Access. 2019;7:67123–9. https://doi.org/10.1109/ACCESS.2019.2918361.",
+          "volume": "7",
+          "year": "2019"
+        },
+        {
+          "key": "1521_CR61",
+          "unstructured": "Armi L, Fekri-Ershad S. Texture image analysis and texture classification methods-a review. 2019. arXiv preprint arXiv:1904.06554."
+        },
+        {
+          "author": "P Mohanaiah",
+          "first-page": "1",
+          "issue": "5",
+          "journal-title": "Int J Sci Res Publ",
+          "key": "1521_CR62",
+          "unstructured": "Mohanaiah P, Sathyanarayana P, GuruKumar L. Image texture feature extraction using glcm approach. Int J Sci Res Publ. 2013;3(5):1.",
+          "volume": "3",
+          "year": "2013"
+        },
+        {
+          "key": "1521_CR63",
+          "unstructured": "Gadkari D. Image quality analysis using glcm. Master’s thesis, University of Central Florida, The address of the publisher (2004). http://purl.fcla.edu/fcla/etd/CFE0000273."
+        },
+        {
+          "DOI": "10.1515/bmt-2019-0306",
+          "author": "MA Ozdemir",
+          "doi-asserted-by": "publisher",
+          "first-page": "43",
+          "issue": "1",
+          "journal-title": "Biomed Eng",
+          "key": "1521_CR64",
+          "unstructured": "Ozdemir MA, Degirmenci M, Izci E, Akan A. Eeg-based emotion recognition with deep convolutional neural networks. Biomed Eng. 2021;66(1):43–57. https://doi.org/10.1515/bmt-2019-0306.",
+          "volume": "66",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/S0022-0736(73)80022-6",
+          "author": "TY Lee",
+          "doi-asserted-by": "publisher",
+          "first-page": "31",
+          "issue": "1",
+          "journal-title": "J Electrocardiol",
+          "key": "1521_CR65",
+          "unstructured": "Lee TY, Smieee MS. Optimization of frontal-plane electrocardiographic lead data in the 30 hexaxial system. J Electrocardiol. 1973;6(1):31–43. https://doi.org/10.1016/S0022-0736(73)80022-6.",
+          "volume": "6",
+          "year": "1973"
+        },
+        {
+          "DOI": "10.1016/0022-0736(88)90090-8",
+          "author": "GE Dower",
+          "doi-asserted-by": "publisher",
+          "first-page": "182",
+          "journal-title": "J Electrocardiol",
+          "key": "1521_CR66",
+          "unstructured": "Dower GE, Yakush A, Nazzal SB, Jutzy RV, Ruiz CE. Deriving the 12-lead electrocardiogram from four (easi) electrodes. J Electrocardiol. 1988;21:182–7. https://doi.org/10.1016/0022-0736(88)90090-8.",
+          "volume": "21",
+          "year": "1988"
+        },
+        {
+          "author": "MK Park",
+          "key": "1521_CR67",
+          "unstructured": "Park MK, Guntheroth WG. How to read pediatric ECGs, vol. 847. Philadelphia: Elsevier Health Sciences; 2006.",
+          "volume-title": "How to read pediatric ECGs",
+          "year": "2006"
+        },
+        {
+          "DOI": "10.1016/S0925-7721(01)00048-7",
+          "author": "J-D Boissonnat",
+          "doi-asserted-by": "publisher",
+          "first-page": "185",
+          "issue": "1",
+          "journal-title": "Comput Geom",
+          "key": "1521_CR68",
+          "unstructured": "Boissonnat J-D, Cazals F. Smooth surface reconstruction via natural neighbour interpolation of distance functions. Comput Geom. 2002;22(1):185–203. https://doi.org/10.1016/S0925-7721(01)00048-7.",
+          "volume": "22",
+          "year": "2002"
+        },
+        {
+          "DOI": "10.1109/TCBB.2021.3065361",
+          "author": "Y Song",
+          "doi-asserted-by": "publisher",
+          "journal-title": "IEEE/ACM Trans Comput Biol Bioinform",
+          "key": "1521_CR69",
+          "unstructured": "Song Y, Zheng S, Li L, Zhang X, Zhang X, Huang Z, Chen J, Wang R, Zhao H, Zha Y, Shen J, Chong Y, Yang Y. Deep learning enables accurate diagnosis of novel coronavirus (covid-19) with ct images. IEEE/ACM Trans Comput Biol Bioinform. 2021. https://doi.org/10.1109/TCBB.2021.3065361.",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.eswa.2020.114054",
+          "author": "AM Ismael",
+          "doi-asserted-by": "publisher",
+          "first-page": "114054",
+          "journal-title": "Expert Syst Appl",
+          "key": "1521_CR70",
+          "unstructured": "Ismael AM, Şengür A. Deep learning approaches for covid-19 detection based on chest x-ray images. Expert Syst Appl. 2021;164:114054. https://doi.org/10.1016/j.eswa.2020.114054.",
+          "volume": "164",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.compbiomed.2020.103795",
+          "author": "AA Ardakani",
+          "doi-asserted-by": "publisher",
+          "first-page": "103795",
+          "journal-title": "Comput Biol Med",
+          "key": "1521_CR71",
+          "unstructured": "Ardakani AA, Kanafi AR, Acharya UR, Khadem N, Mohammadi A. Application of deep learning technique to manage covid-19 in routine clinical practice using ct images: results of 10 convolutional neural networks. Comput Biol Med. 2020;121:103795. https://doi.org/10.1016/j.compbiomed.2020.103795.",
+          "volume": "121",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1007/s00500-020-05424-3",
+          "author": "AS Al-Waisy",
+          "doi-asserted-by": "publisher",
+          "journal-title": "Soft Comput",
+          "key": "1521_CR72",
+          "unstructured": "Al-Waisy AS, Al-Fahdawi S, Mohammed MA, Abdulkareem KH, Mostafa SA, Maashi MS, Arif M, Garcia-Zapirain B. Covid-chexnet: hybrid deep learning framework for identifying covid-19 virus in chest x-rays images. Soft Comput. 2020. https://doi.org/10.1007/s00500-020-05424-3.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1145/3065386",
+          "author": "A Krizhevsky",
+          "doi-asserted-by": "publisher",
+          "first-page": "84",
+          "issue": "6",
+          "journal-title": "Commun ACM",
+          "key": "1521_CR73",
+          "unstructured": "Krizhevsky A, Sutskever I, Hinton GE. Imagenet classification with deep convolutional neural networks. Commun ACM. 2017;60(6):84–90. https://doi.org/10.1145/3065386.",
+          "volume": "60",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1007/s10489-020-01826-w",
+          "author": "S Ahuja",
+          "doi-asserted-by": "publisher",
+          "first-page": "571",
+          "issue": "1",
+          "journal-title": "Appl Intell",
+          "key": "1521_CR74",
+          "unstructured": "Ahuja S, Panigrahi BK, Dey N, Rajinikanth V, Gandhi TK. Deep transfer learning-based automated detection of covid-19 from lung ct scan slices. Appl Intell. 2021;51(1):571–85. https://doi.org/10.1007/s10489-020-01826-w.",
+          "volume": "51",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.procs.2017.11.238",
+          "author": "A Isin",
+          "doi-asserted-by": "publisher",
+          "first-page": "268",
+          "journal-title": "Procedia Comput Sci",
+          "key": "1521_CR75",
+          "unstructured": "Isin A, Ozdalili S. Cardiac arrhythmia detection using deep learning. Procedia Comput Sci. 2017;120:268–75. https://doi.org/10.1016/j.procs.2017.11.238.",
+          "volume": "120",
+          "year": "2017"
+        },
+        {
+          "key": "1521_CR76",
+          "unstructured": "Kingma DP, Ba J. Adam: a method for stochastic optimization. In: Bengio Y, LeCun Y, editors. 3rd international conference on learning representations, ICLR; 2015. p. 1–15. arXiv:1412.6980."
+        },
+        {
+          "DOI": "10.1142/S012906572150026X",
+          "doi-asserted-by": "publisher",
+          "key": "1521_CR77",
+          "unstructured": "Ozdemir MA, Karabiber Cura O, Akan A. Epileptic eeg classification by using time-frequency images for deep learning. Int J Neural Syst. 2021;2150026. https://doi.org/10.1142/S012906572150026X."
+        },
+        {
+          "DOI": "10.1186/s12911-020-01266-z",
+          "author": "WT Li",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "issue": "1",
+          "journal-title": "BMC Med Inform Decis Mak",
+          "key": "1521_CR78",
+          "unstructured": "Li WT, Ma J, Shende N, Castaneda G, Chakladar J, Tsai JC, Apostol L, Honda CO, Xu J, Wong LM, et al. Using machine learning of clinical data to diagnose covid-19: a systematic review and meta-analysis. BMC Med Inform Decis Mak. 2020;20(1):1–13. https://doi.org/10.1186/s12911-020-01266-z.",
+          "volume": "20",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1080/07391102.2021.1875049",
+          "author": "G Dhiman",
+          "doi-asserted-by": "publisher",
+          "journal-title": "J Biomol Struct Dyn",
+          "key": "1521_CR79",
+          "unstructured": "Dhiman G, Chang V, Singh KK, Shankar A. Adopt: automatic deep learning and optimization-based approach for detection of novel coronavirus covid-19 disease using x-ray images. J Biomol Struct Dyn. 2021. https://doi.org/10.1080/07391102.2021.1875049.",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1186/s12911-020-01373-x",
+          "author": "F Li",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "issue": "1",
+          "journal-title": "BMC Med Inform Decis Mak",
+          "key": "1521_CR80",
+          "unstructured": "Li F, Michelson AP, Foraker R, Zhan M, Payne PR. Computational analysis to repurpose drugs for covid-19 based on transcriptional response of host cells to sars-cov-2. BMC Med Inform Decis Mak. 2021;21(1):1–13. https://doi.org/10.1186/s12911-020-01373-x.",
+          "volume": "21",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1148/radiol.2020200463",
+          "author": "A Bernheim",
+          "doi-asserted-by": "publisher",
+          "first-page": "200463",
+          "issue": "3",
+          "journal-title": "Radiology",
+          "key": "1521_CR81",
+          "unstructured": "Bernheim A, Mei X, Huang M, Yang Y, Fayad ZA, Zhang N, Diao K, Lin B, Zhu X, Li K, Li S, Shan H, Jacobi A, Chung M. Chest CT findings in coronavirus disease-19 (COVID-19): relationship to duration of infection. Radiology. 2020;295(3):200463. https://doi.org/10.1148/radiol.2020200463.",
+          "volume": "295",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1016/j.irbm.2020.05.003",
+          "author": "Y Pathak",
+          "doi-asserted-by": "publisher",
+          "journal-title": "IRBM",
+          "key": "1521_CR82",
+          "unstructured": "Pathak Y, Shukla PK, Tiwari A, Stalin S, Singh S, Shukla PK. Deep transfer learning based classification model for covid-19 disease. IRBM. 2020. https://doi.org/10.1016/j.irbm.2020.05.003.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1101/2020.02.14.20023028",
+          "author": "S Wang",
+          "doi-asserted-by": "publisher",
+          "journal-title": "MedRxiv",
+          "key": "1521_CR83",
+          "unstructured": "Wang S, Kang B, Ma J, Zeng X, Xiao M, Guo J, Cai M, Yang J, Li Y, Meng X, et al. A deep learning algorithm using ct images to screen for corona virus disease (covid-19). MedRxiv. 2020. https://doi.org/10.1101/2020.02.14.20023028.",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.3390/s20143975",
+          "author": "TQ Le",
+          "doi-asserted-by": "publisher",
+          "journal-title": "Sensors",
+          "key": "1521_CR84",
+          "unstructured": "Le TQ, Chandra V, Afrin K, Srivatsa S, Bukkapatnam S. A dynamic systems approach for detecting and localizing of infarct-related artery in acute myocardial infarction using compressed paper-based electrocardiogram (ecg). Sensors. 2020. https://doi.org/10.3390/s20143975.",
+          "year": "2020"
+        }
+      ],
+      "reference-count": 84,
+      "references-count": 84,
+      "relation": {
+        "has-preprint": [
+          {
+            "asserted-by": "object",
+            "id": "10.21203/rs.3.rs-215033/v1",
+            "id-type": "doi"
+          }
+        ]
+      },
+      "resource": {
+        "primary": {
+          "URL": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-021-01521-x"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "BMC Med Inform Decis Mak"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Classification of COVID-19 electrocardiograms by using hexaxial feature mapping and deep learning"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "volume": "21"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "579dd34cb42dcba9ae859b976614971866c4ef2b1851ab78a2c5d4bc199c29a2",
+  "retrieved_at": "2026-07-14T14:48:21Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

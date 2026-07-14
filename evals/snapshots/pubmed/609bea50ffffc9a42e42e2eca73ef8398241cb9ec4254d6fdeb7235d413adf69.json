@@ -1,0 +1,53 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "609bea50ffffc9a42e42e2eca73ef8398241cb9ec4254d6fdeb7235d413adf69",
+  "request_params": {
+    "db": "pubmed",
+    "id": "21037227",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "Entropy estimation is useful but difficult in short time series. For example, automated detection of atrial fibrillation (AF) in very short heart beat interval time series would be useful in patients with cardiac implantable electronic devices that record only from the ventricle. Such devices require efficient algorithms, and the clinical situation demands accuracy. Toward these ends, we optimized the sample entropy measure, which reports the probability that short templates will match with others within the series. We developed general methods for the rational selection of the template length m and the tolerance matching r. The major innovation was to allow r to vary so that sufficient matches are found for confident entropy estimation, with conversion of the final probability to a density by dividing by the matching region volume, 2r(m). The optimized sample entropy estimate and the mean heart beat interval each contributed to accurate detection of AF in as few as 12 heartbeats. The final algorithm, called the coefficient of sample entropy (COSEn), was developed using the canonical MIT-BIH database and validated in a new and much larger set of consecutive Holter monitor recordings from the University of Virginia. In patients over the age of 40 yr old, COSEn has high degrees of accuracy in distinguishing AF from normal sinus rhythm in 12-beat calculations performed hourly. The most common errors are atrial or ventricular ectopy, which increase entropy despite sinus rhythm, and atrial flutter, which can have low or high entropy states depending on dynamics of atrioventricular conduction.",
+        "authors": [
+          {
+            "family": "Lake",
+            "given": "Douglas E"
+          },
+          {
+            "family": "Moorman",
+            "given": "J Randall"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1152/ajpheart.00561.2010",
+        "issn": [
+          "1522-1539"
+        ],
+        "issue": "1",
+        "journal": "American journal of physiology. Heart and circulatory physiology",
+        "journal_abbreviation": "Am J Physiol Heart Circ Physiol",
+        "keywords": [],
+        "language": "eng",
+        "month": 1,
+        "page": "H319-25",
+        "pmcid": "",
+        "pmid": "21037227",
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "record_type": "article",
+        "title": "Accurate estimation of entropy in very short physiological time series: the problem of atrial fibrillation detection in implanted ventricular devices.",
+        "volume": "300",
+        "year": 2011
+      }
+    ]
+  },
+  "response_hash": "a4cbef889d686b46d4fdcf9679a9b145d7ec11c927977b3363aeeca97d0b8a25",
+  "retrieved_at": "2026-07-14T13:50:02Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

@@ -1,0 +1,429 @@
+{
+  "endpoint": "works/doi:10.1007/s12630-016-0802-z",
+  "request_key": "d822243067a26e66ba5013bc9fac6873fa6d7fe27cb3d99bc5507d6ba8122930",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [],
+            "raw_affiliation_string": "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada. david.wong@uhn.ca"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2799337515",
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I185261750"
+            ],
+            "raw_affiliation_string": "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada"
+          }
+        ],
+        "author": {
+          "display_name": "David T. Wong",
+          "id": "https://openalex.org/A5100642098",
+          "orcid": "https://orcid.org/0000-0003-3582-319X"
+        },
+        "author_position": "first",
+        "countries": [
+          "CA"
+        ],
+        "institutions": [
+          {
+            "country_code": "CA",
+            "display_name": "University of Toronto",
+            "id": "https://openalex.org/I185261750",
+            "lineage": [
+              "https://openalex.org/I185261750"
+            ],
+            "ror": "https://ror.org/03dbr7087",
+            "type": "education"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "University Health Network",
+            "id": "https://openalex.org/I1325899441",
+            "lineage": [
+              "https://openalex.org/I1325899441"
+            ],
+            "ror": "https://ror.org/042xt5161",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "Toronto Western Hospital",
+            "id": "https://openalex.org/I2799337515",
+            "lineage": [
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I2799337515"
+            ],
+            "ror": "https://ror.org/03qv8yq19",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada. david.wong@uhn.ca",
+          "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada"
+        ],
+        "raw_author_name": "David T. Wong",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2799337515",
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I185261750"
+            ],
+            "raw_affiliation_string": "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I98251732"
+            ],
+            "raw_affiliation_string": "Department of Kinesiology, McMaster University, Hamilton, ON, Canada"
+          }
+        ],
+        "author": {
+          "display_name": "Amanda J. Yee",
+          "id": "https://openalex.org/A5077226574",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CA"
+        ],
+        "institutions": [
+          {
+            "country_code": "CA",
+            "display_name": "University of Toronto",
+            "id": "https://openalex.org/I185261750",
+            "lineage": [
+              "https://openalex.org/I185261750"
+            ],
+            "ror": "https://ror.org/03dbr7087",
+            "type": "education"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "Toronto Western Hospital",
+            "id": "https://openalex.org/I2799337515",
+            "lineage": [
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I2799337515"
+            ],
+            "ror": "https://ror.org/03qv8yq19",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "University Health Network",
+            "id": "https://openalex.org/I1325899441",
+            "lineage": [
+              "https://openalex.org/I1325899441"
+            ],
+            "ror": "https://ror.org/042xt5161",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "McMaster University",
+            "id": "https://openalex.org/I98251732",
+            "lineage": [
+              "https://openalex.org/I98251732"
+            ],
+            "ror": "https://ror.org/02fa3aq29",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada",
+          "Department of Kinesiology, McMaster University, Hamilton, ON, Canada"
+        ],
+        "raw_author_name": "Amanda J. Yee",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210150261"
+            ],
+            "raw_affiliation_string": "Department of Anesthesia, National University Health System, Singapore, Singapore"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I2799337515",
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I185261750"
+            ],
+            "raw_affiliation_string": "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada"
+          }
+        ],
+        "author": {
+          "display_name": "Siaw May Leong",
+          "id": "https://openalex.org/A5002155198",
+          "orcid": "https://orcid.org/0000-0003-0633-7088"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CA",
+          "SG"
+        ],
+        "institutions": [
+          {
+            "country_code": "CA",
+            "display_name": "Toronto Western Hospital",
+            "id": "https://openalex.org/I2799337515",
+            "lineage": [
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I2799337515"
+            ],
+            "ror": "https://ror.org/03qv8yq19",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "SG",
+            "display_name": "National University Health System",
+            "id": "https://openalex.org/I4210150261",
+            "lineage": [
+              "https://openalex.org/I4210150261"
+            ],
+            "ror": "https://ror.org/05tjjsh18",
+            "type": "education"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "University of Toronto",
+            "id": "https://openalex.org/I185261750",
+            "lineage": [
+              "https://openalex.org/I185261750"
+            ],
+            "ror": "https://ror.org/03dbr7087",
+            "type": "education"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "University Health Network",
+            "id": "https://openalex.org/I1325899441",
+            "lineage": [
+              "https://openalex.org/I1325899441"
+            ],
+            "ror": "https://ror.org/042xt5161",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Anesthesia, National University Health System, Singapore, Singapore",
+          "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada"
+        ],
+        "raw_author_name": "Siaw May Leong",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2799337515",
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I185261750"
+            ],
+            "raw_affiliation_string": "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada"
+          }
+        ],
+        "author": {
+          "display_name": "Frances Chung",
+          "id": "https://openalex.org/A5077550249",
+          "orcid": "https://orcid.org/0000-0001-9576-3606"
+        },
+        "author_position": "last",
+        "countries": [
+          "CA"
+        ],
+        "institutions": [
+          {
+            "country_code": "CA",
+            "display_name": "Toronto Western Hospital",
+            "id": "https://openalex.org/I2799337515",
+            "lineage": [
+              "https://openalex.org/I1325899441",
+              "https://openalex.org/I2799337515"
+            ],
+            "ror": "https://ror.org/03qv8yq19",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "University Health Network",
+            "id": "https://openalex.org/I1325899441",
+            "lineage": [
+              "https://openalex.org/I1325899441"
+            ],
+            "ror": "https://ror.org/042xt5161",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "CA",
+            "display_name": "University of Toronto",
+            "id": "https://openalex.org/I185261750",
+            "lineage": [
+              "https://openalex.org/I185261750"
+            ],
+            "ror": "https://ror.org/03dbr7087",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Anesthesia, Toronto Western Hospital, University Health Network, University of Toronto, MC2-405, 399 Bathurst Street, Toronto, ON, M5T 2S8, Canada"
+        ],
+        "raw_author_name": "Frances Chung",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1007/s12630-016-0802-z",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s12630-016-0802-z",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12630-016-0802-z.pdf",
+      "raw_source_name": "Canadian Journal of Anesthesia/Journal canadien d'anesthésie",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Canadian Journal of Anesthesia/Journal canadien d anesthésie",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S4210186964",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0832-610X",
+          "1496-8975"
+        ],
+        "issn_l": "0832-610X",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "biblio": {
+      "first_page": "416",
+      "issue": "4",
+      "last_page": "427",
+      "volume": "64"
+    },
+    "cited_by_count": 98,
+    "display_name": "The effectiveness of apneic oxygenation during tracheal intubation in various clinical settings: a narrative review",
+    "doi": "https://doi.org/10.1007/s12630-016-0802-z",
+    "id": "https://openalex.org/W2563460907",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s12630-016-0802-z",
+      "mag": "2563460907",
+      "openalex": "https://openalex.org/W2563460907",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/28050802"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": true,
+      "oa_status": "bronze",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s12630-016-0802-z.pdf"
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s12630-016-0802-z",
+      "is_accepted": true,
+      "is_oa": true,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s12630-016-0802-z",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12630-016-0802-z.pdf",
+      "raw_source_name": "Canadian Journal of Anesthesia/Journal canadien d'anesthésie",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Canadian Journal of Anesthesia/Journal canadien d anesthésie",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S4210186964",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0832-610X",
+          "1496-8975"
+        ],
+        "issn_l": "0832-610X",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2017-01-03",
+    "publication_year": 2017,
+    "referenced_works": [
+      "https://openalex.org/W170997490",
+      "https://openalex.org/W1931489128",
+      "https://openalex.org/W1981873276",
+      "https://openalex.org/W1987983791",
+      "https://openalex.org/W1988725370",
+      "https://openalex.org/W1989421140",
+      "https://openalex.org/W1989941075",
+      "https://openalex.org/W2009769606",
+      "https://openalex.org/W2015641706",
+      "https://openalex.org/W2024077210",
+      "https://openalex.org/W2041921583",
+      "https://openalex.org/W2059397611",
+      "https://openalex.org/W2063351101",
+      "https://openalex.org/W2071282156",
+      "https://openalex.org/W2072663675",
+      "https://openalex.org/W2112108807",
+      "https://openalex.org/W2112464900",
+      "https://openalex.org/W2113089111",
+      "https://openalex.org/W2124382442",
+      "https://openalex.org/W2131195375",
+      "https://openalex.org/W2146239820",
+      "https://openalex.org/W2146296233",
+      "https://openalex.org/W2155158289",
+      "https://openalex.org/W2157545661",
+      "https://openalex.org/W2165229141",
+      "https://openalex.org/W2183974602",
+      "https://openalex.org/W2201684280",
+      "https://openalex.org/W2313356342",
+      "https://openalex.org/W2342237808",
+      "https://openalex.org/W4242108196"
+    ],
+    "referenced_works_count": 30,
+    "title": "The effectiveness of apneic oxygenation during tracheal intubation in various clinical settings: a narrative review",
+    "type": "review"
+  },
+  "response_hash": "521e11325026b76de121ea60ea65cbc25255d8d409bd49047142d6c4afa7238f",
+  "retrieved_at": "2026-07-14T13:49:08Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

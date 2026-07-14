@@ -1,0 +1,580 @@
+# Axis (c) claim faithfulness gold set.
+#
+# Vocabulary (D16): supported | partial | contradicted | insufficient-passage
+# Size (D17): >= 100 claim-passage pairs, >= 20 per class. This file has 104, with
+# 26 supported / 26 partial / 26 contradicted / 26 insufficient-passage.
+#
+# HOW THIS WAS BUILT, and what it is honest about.
+#
+# Every passage here is REAL. Nothing was invented, paraphrased into existence, or written
+# from memory of what a paper probably says. Six open-access documents were fetched with
+# researcher_core.fulltext.extract(), indexed with researcher_core.passages.PassageIndex(),
+# and the resulting passages were read. Each claim was then written AGAINST a passage that
+# was actually in the index, and the pair is anchored on that passage's real ID, which is a
+# hash of the document content hash, the section path, the character offsets, and the parser
+# version (D21). If the parser version changes, these IDs change, and this file must be
+# rebuilt: that is the point of the scheme, not a defect in it.
+#
+# The six documents are HTML (arXiv HTML and PLOS), not PDF, and deliberately so: HTML
+# extraction runs on the stdlib html.parser, so this gold set replays on a BASE install of
+# core with no [fulltext] extra and no PyMuPDF. A PDF-sourced gold set would silently make
+# the M2 exit gate depend on an optional dependency.
+#
+# The four classes, and the rule each one was written to:
+#
+#   supported             The claim restates what the passage says. It reuses the passage's
+#                         technical terms, because a real claim about a paper does; it does
+#                         not copy the sentence.
+#   partial               The claim OVERSTATES or OVER-GENERALIZES the passage. Every one of
+#                         these is a claim a careless author would actually write: a result
+#                         from one dataset asserted for all datasets, a bounded proportion
+#                         asserted as a universal, a hedged finding asserted flatly.
+#   contradicted          The claim NEGATES or REVERSES the passage. Some are plain negations
+#                         and some are semantic reversals ("limited performance" written up as
+#                         "strong performance", a number flipped). The semantic reversals are
+#                         included ON PURPOSE: a lexical baseline cannot see them, and a gold
+#                         set that only contained contradictions the kernel can catch would be
+#                         measuring the gold set instead of the kernel.
+#   insufficient-passage  A claim about a REAL paper whose full text is not retrievable
+#                         (Unpaywall knows the DOI, no OA copy exists, and the work is not in
+#                         arXiv or PMC). There is no passage to anchor on, so there is no
+#                         passage_id, and abstention is the ONLY honest answer. These are not
+#                         padding: they are the axis (d) degradation path of D11, and they are
+#                         what the risk-coverage curve prices.
+#
+# The claims were written by reading the passages, not by running the classifier and keeping
+# what it got right. The measured numbers in evals/BENCHMARKS.md are what they are.
+
+axis: faithfulness
+vocabulary: [supported, partial, contradicted, insufficient-passage]
+abstention: insufficient-passage
+documents:
+  - id: "https://arxiv.org/html/2504.01840v1"
+    title: "LRAGE: Legal Retrieval Augmented Generation Evaluation Tool"
+    source: "arXiv HTML, open access"
+  - id: "https://arxiv.org/html/2606.23915v1"
+    title: "Auditing Retrieval-Augmented Generation Evaluation Across Datasets and Constructs"
+    source: "arXiv HTML, open access"
+  - id: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    title: "A deep learning framework for financial time series using stacked autoencoders and long-short term memory"
+    source: "PLOS ONE, CC BY"
+  - id: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    title: "An empirical survey of data augmentation for time series classification with neural networks"
+    source: "PLOS ONE, CC BY"
+  - id: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    title: "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews"
+    source: "PLOS Medicine, CC BY"
+  - id: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    title: "Learning brain dynamics for decoding and predicting individual differences"
+    source: "PLOS Computational Biology, CC BY"
+items:
+  # ==================== supported (26) ====================
+  - id: f001
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "5066f42fc80c58aa24b2b3ba8962d0f4e77bb37c0620b8715ea1b70eccd5678a"
+    expected: supported
+    claim: "Magesh et al. analyzed commercial RAG systems in the U.S. legal domain using 202 examples, and even the most competent system exhibited a 17% hallucination rate."
+  - id: f002
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "56ecbde5f17b151b6f1d027cb1217829c17113e9cddc8c11bb379663655b5b19"
+    expected: supported
+    claim: "LegalBench is a benchmark comprising 162 legal language understanding tasks organized according to six types of legal reasoning based on the IRAC framework."
+  - id: f003
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "1ed768740ef602b2a3fd71ab154b08d239fd626c207939da05da7ff597a02b59"
+    expected: supported
+    claim: "The Retriever module is implemented using pyserini, while the Reranker module utilizes rerankers."
+  - id: f004
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "5912bd379ca0f7606462b2e540fcc6518903246b914f5509ca0cb584e64c2a29"
+    expected: supported
+    claim: "RAGLAB provides six major RAG algorithms and incorporates ten QA benchmarks, using Wikipedia as the retrieval corpus."
+  - id: f005
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "584009205a8742d90cea6c38a57178e406cf8b97f36c2245847c7101dc4348cd"
+    expected: supported
+    claim: "Unless otherwise specified, the default setting for RAG experiments used Llama-3.1-8B, BM25, and the top 3 retrieved documents."
+  - id: f006
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "b49465a30b0fe36a55edc466f6acf78de3ade31bc092c02681f3518781ead335"
+    expected: supported
+    claim: "A naive NLI scorer is best on AttributedQA with an AUROC of 0.90 yet drops to 0.53 on LFQA, where BERTScore reaches 0.91."
+  - id: f007
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "620a1d44504b084bfbcf755684205edb1bc5d6a6517f54ef58aaff033842766a"
+    expected: supported
+    claim: "The semantic-only scorer reaches a top-1 provenance accuracy of 0.934 with a fooled rate of 0.066, while the lexical-only scorer reaches 0.775 with a fooled rate of 0.225."
+  - id: f008
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "2d62597d186dceeef66a789aef16a3ce3f6916be2560fff2ea33370f5c9922c9"
+    expected: supported
+    claim: "A naive best-on-average selection rule fails leave-one-dataset-out with a mean regret of 0.172, so metric choice must be validated on the target dataset."
+  - id: f009
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "60524950fffc73e84b306306b60f7236a224b86680f6cff7bfd78a74eca9a0ab"
+    expected: supported
+    claim: "A structured GRPO reward rewrites most of the output yet moves none of the deterministic answer-level metrics, QA-EM, ROUGE-L and citation count, at 3B or 7B."
+  - id: f010
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "c2af2f72f3498194dfdcb8498d5017a750c361f97cb1fed76b51b15f53af323b"
+    expected: supported
+    claim: "The combined relevance score weights lexical Jaccard at 0.40, sentence-transformer cosine at 0.45, the answer hint at 0.10, and the citation bonus at 0.05."
+  - id: f011
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "45a40eec051a29eb1511563433caa805a30286f68132fd6361609e4703362b40"
+    expected: supported
+    claim: "Six stock indices were selected to test the proposed model: CSI 300, Nifty 50, Hang Seng, Nikkei 225, S&P500 and DJIA."
+  - id: f012
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "531e3f1157eae8c6f5bf9ef05f116bd9f17519b0f23680d41e149cb261508501"
+    expected: supported
+    claim: "Three other models, WLSTM, LSTM and the conventional RNN, are introduced as comparisons against the proposed model."
+  - id: f013
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "19d1c92fc927089016ffddb4c27a00d7c7a8aa90cccd76866d4912cc3e5d0230"
+    expected: supported
+    claim: "Predictive accuracy is evaluated using three measurements: mean absolute percentage error, correlation coefficient and Theil's inequality coefficient."
+  - id: f014
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "2717c83dc88c0dde2547766424b1974e6d5195c6d35ce91577d5c9c13d796321"
+    expected: supported
+    claim: "For each stock index, three types of variables are used as model inputs: historical stock trading data, the technical indicators of stock trading, and macroeconomic variables."
+  - id: f015
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "1a1b71a23a432d6733c69ef863523d228ccc9dfb27e26f2cb57b5b5765dcb266"
+    expected: supported
+    claim: "The framework involves three stages: data preprocessing using the wavelet transform, application of the stacked autoencoders trained in an unsupervised manner, and the use of long-short term memory to generate the one-step-ahead output."
+  - id: f016
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "7e13412d326127adb0d52162a61a8a16e6562d1cee32e6006253b5784ad1b9da"
+    expected: supported
+    claim: "In the 2018 UCR Time Series Archive, out of 128 datasets only 12 have more than a thousand training patterns."
+  - id: f017
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "2465e62f00552e8b55817aa172f8af0a369040fdb8d3c81be2c35fed59d01b17"
+    expected: supported
+    claim: "Jittering is the act of adding noise to time series, and the standard deviation of the added Gaussian noise is a hyperparameter that needs to be pre-determined."
+  - id: f018
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "2f76b60f896edab753d6164869119aff6df5d3ea23978967e5e32b96635bfb44"
+    expected: supported
+    claim: "AlexNet, one of the first deep CNNs to set a record benchmark on the ImageNet Large Scale Visual Recognition Challenge dataset, used cropping, mirroring and color augmentation."
+  - id: f019
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "d369c57b02c50e9bbd96df5b4420cf9df06da34f5bb05e0c90e188936348c6e9"
+    expected: supported
+    claim: "Um et al. used jittering with ResNet for wearable sensor data for Parkinson's disease monitoring, and the effects of jittering seem to be detrimental in that work."
+  - id: f020
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "dca9d407137c7aa9f076c1cbc75b1d4dcd63d6f61fd8771e29077f811931f2a2"
+    expected: supported
+    claim: "The PRISMA 2020 statement replaces the 2009 statement and presents a 27-item checklist, an expanded checklist, the PRISMA 2020 abstract checklist, and revised flow diagrams for original and updated reviews."
+  - id: f021
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "1252db8027199813b9a7d3d30dac4df460863fff2732b463222acc386a2364c4"
+    expected: supported
+    claim: "The PRISMA 2009 statement comprised a checklist of 27 items and has been cited in over 60 000 reports according to Scopus in August 2020."
+  - id: f022
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "a18ce649c774302dc7e53259011b2680f8d56b8001fe25acb80d2191af59e172"
+    expected: supported
+    claim: "In April 2020, 22 systematic reviewers were invited to share their views on the layout and terminology of a preliminary version of the checklist, and feedback was received from 15 individuals."
+  - id: f023
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "948a3296a2f78d257d33ae27fab868c074ba66c6adcc689f06bde5f8e760b810"
+    expected: supported
+    claim: "PRISMA 2020 has been designed primarily for systematic reviews of studies that evaluate the effects of health interventions, irrespective of the design of the included studies."
+  - id: f024
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "bc90afc979bb5f2ebdd17fe766da5665c971369e49865a3a52dc286f30f50513"
+    expected: supported
+    claim: "The model learned spatiotemporal patterns that supported 15-way movie-clip classification at around 90% at the level of brain regions, and binary classification of experimental conditions at around 60% at the level of voxels."
+  - id: f025
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "40bf2bd9b9f6d58a98dfd10150134371b6eda0aa042d94563513cbf61ba38b09"
+    expected: supported
+    claim: "A key element of the model was a recurrent neural network based on Gated Recurrent Units sensitive to current and past inputs, and all reported results were obtained with data not used for training or tuning."
+  - id: f026
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "90dfae54aa66efa021073540d9b4c06cd59d616443dda83021c16a19e5b8b327"
+    expected: supported
+    claim: "In fMRI most decoding approaches are spatially constrained and consider voxels in a local neighborhood or across a few regions, and the vast majority of decoding methods are static."
+
+  # ==================== partial (26) ====================
+  # Every one of these OVERSTATES or OVER-GENERALIZES a real passage: the kind of claim a
+  # careless author actually writes when citing a paper from memory.
+  - id: f027
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "4f7d3d3720ddded1446c18122dbb568a4b07b9bd265b8a23a98bb7d19a6c0f9e"
+    expected: partial
+    claim: "All hallucinations in RAG systems originate from the failure in document retrieval steps."
+  - id: f028
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "56ecbde5f17b151b6f1d027cb1217829c17113e9cddc8c11bb379663655b5b19"
+    expected: partial
+    claim: "LegalBench comprises 162 legal language understanding tasks covering every major legal language, including Korean and Chinese."
+  - id: f029
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "ce9a103e393b284f13dc5221273476aaece912d2a52c24cfed213df17c3ae945"
+    expected: partial
+    claim: "BERGEN supports multilingual capability by providing Wikipedia indices in every language."
+  - id: f030
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "586d5b66dd9610acbf4954d7f8dc9eeb5d679eaa05ea24d0416d87999df1ce55"
+    expected: partial
+    claim: "LRAGE offers pre-configured settings for evaluating RAG systems in every expert domain, including the legal, medical and financial domains."
+  - id: f031
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "5066f42fc80c58aa24b2b3ba8962d0f4e77bb37c0620b8715ea1b70eccd5678a"
+    expected: partial
+    claim: "Commercial RAG systems in the legal domain exhibit a 17% hallucination rate across all tasks and all jurisdictions."
+  - id: f032
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "b49465a30b0fe36a55edc466f6acf78de3ade31bc092c02681f3518781ead335"
+    expected: partial
+    claim: "A naive NLI scorer reaches an AUROC of 0.90 and is the best attribution scorer on every dataset."
+  - id: f033
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "729533248e858c5eafdf50d2c9e93efcc93a87432816611a9ff74c45b220d372"
+    expected: partial
+    claim: "The purpose-built checker MiniCheck has the lowest mean leave-one-dataset-out regret among the automatic scorers tested, and therefore leaves no per-dataset regret at all."
+  - id: f034
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "620a1d44504b084bfbcf755684205edb1bc5d6a6517f54ef58aaff033842766a"
+    expected: partial
+    claim: "The semantic-only scorer reaches a top-1 provenance accuracy of 0.934 and is never fooled by confusable distractor passages."
+  - id: f035
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "1d889146fa64fc7a06c17986f05ce36a961da5b2c7cc2d43de10700a25a67ad4"
+    expected: partial
+    claim: "The combined provenance gap of +0.160 shows that provenance-sensitive scores measure human-judged groundedness."
+  - id: f036
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "60524950fffc73e84b306306b60f7236a224b86680f6cff7bfd78a74eca9a0ab"
+    expected: partial
+    claim: "A structured GRPO reward rewrites most of the output and therefore improves the grounding of retrieval-augmented answers at 3B and 7B."
+  - id: f037
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "3956b65a2d5b6ca88bfe82c0091e0da4a4259d9b3c9bc7c63b981a7c9cdb1bfa"
+    expected: partial
+    claim: "WSAEs-LSTM outperforms every published model in both predictability and profitability."
+  - id: f038
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "45a40eec051a29eb1511563433caa805a30286f68132fd6361609e4703362b40"
+    expected: partial
+    claim: "The proposed model was tested on every major stock index in the world, including the CSI 300, the Nifty 50 and the S&P500."
+  - id: f039
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "2717c83dc88c0dde2547766424b1974e6d5195c6d35ce91577d5c9c13d796321"
+    expected: partial
+    claim: "The addition of macroeconomic variables as model inputs is shown to improve the model performance on every stock index."
+  - id: f040
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "8f7ba7d939b2620ce10e2d8b8223e9589e9c0701a98be7e55df2fdfe124dfcec"
+    expected: partial
+    claim: "Stacked autoencoders learn the deep features of financial time series in an unsupervised manner and thereby remove all noise from the input series."
+  - id: f041
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "3956b65a2d5b6ca88bfe82c0091e0da4a4259d9b3c9bc7c63b981a7c9cdb1bfa"
+    expected: partial
+    claim: "The study collects around 8 years of data from Jul. 2008 to Sep. 2016 and demonstrates that the model is profitable in every market condition."
+  - id: f042
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "5d6100fae23644f3d2d576b1d560185eb8319eff7f035dbbd5c9dde4bcbb942d"
+    expected: partial
+    claim: "The survey empirically evaluates 12 time series data augmentation methods on 128 time series classification datasets and establishes which augmentation method is best."
+  - id: f043
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "b543d12fc9f041597264c4cb292f77f24debb3250fdd46dbdb27ee545156f396"
+    expected: partial
+    claim: "Rotation data augmentation always has a detrimental effect on time series classification with neural networks."
+  - id: f044
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "2465e62f00552e8b55817aa172f8af0a369040fdb8d3c81be2c35fed59d01b17"
+    expected: partial
+    claim: "Jittering increases the generalization of neural networks on every kind of time series data."
+  - id: f045
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "2f76b60f896edab753d6164869119aff6df5d3ea23978967e5e32b96635bfb44"
+    expected: partial
+    claim: "Every state-of-the-art convolutional neural network architecture uses cropping, mirroring and color augmentation."
+  - id: f046
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "948a3296a2f78d257d33ae27fab868c074ba66c6adcc689f06bde5f8e760b810"
+    expected: partial
+    claim: "PRISMA 2020 is designed for systematic reviews of studies that evaluate the effects of health interventions and is the appropriate reporting guideline for systematic review protocols."
+  - id: f047
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "1252db8027199813b9a7d3d30dac4df460863fff2732b463222acc386a2364c4"
+    expected: partial
+    claim: "The PRISMA 2009 statement has been endorsed by almost 200 journals and systematic review organisations, and its use guarantees complete reporting of systematic reviews."
+  - id: f048
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "0a54560b44c5de9ce036a53be846f0af28d2f370bdb29edb99877fb4f747b29f"
+    expected: partial
+    claim: "Possible modifications to the PRISMA 2009 statement were identified by reviewing 60 documents providing reporting guidance, which covered the entire methodological literature on systematic reviews."
+  - id: f049
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "bc90afc979bb5f2ebdd17fe766da5665c971369e49865a3a52dc286f30f50513"
+    expected: partial
+    claim: "The recurrent neural network model decodes brain dynamics at around 90% accuracy at both the level of brain regions and the level of voxels."
+  - id: f050
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "e735ed492cc25ac17a4434647cb13a6e5d3de74e3bb97d89cecea1f1abee1f00"
+    expected: partial
+    claim: "The model correctly classifies which clip a participant was watching, and it does so for every participant and every clip."
+  - id: f051
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "d2ac477ed65981e1fbc4522d4351bb7d2e6aba2b065789610b00f27e812c08d2"
+    expected: partial
+    claim: "Neuronal signals across populations of neurons can be well approximated by a projection onto a two-dimensional representation, for movements of any complexity."
+  - id: f052
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "bc90afc979bb5f2ebdd17fe766da5665c971369e49865a3a52dc286f30f50513"
+    expected: partial
+    claim: "The model learned individual differences in measures of fluid intelligence and verbal IQ at levels well above that of existing techniques."
+
+  # ==================== contradicted (26) ====================
+  # Negations and reversals. The semantic reversals (a hedged "limited" written up as "strong",
+  # a number flipped, a direction inverted) are here precisely because a lexical baseline
+  # cannot see them, and hiding them would flatter the kernel.
+  - id: f053
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "5066f42fc80c58aa24b2b3ba8962d0f4e77bb37c0620b8715ea1b70eccd5678a"
+    expected: contradicted
+    claim: "Magesh et al. analyzed commercial RAG systems in the U.S. legal domain using 202 examples and found that the most competent system did not exhibit any hallucination."
+  - id: f054
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "5066f42fc80c58aa24b2b3ba8962d0f4e77bb37c0620b8715ea1b70eccd5678a"
+    expected: contradicted
+    claim: "Zheng et al. show that BM25 and current dense retrievers exhibit strong performance in recognizing gold passages in the legal domain."
+  - id: f055
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "56ecbde5f17b151b6f1d027cb1217829c17113e9cddc8c11bb379663655b5b19"
+    expected: contradicted
+    claim: "LegalBench does not focus exclusively on English legal language understanding, and it comprises no tasks based on the IRAC framework."
+  - id: f056
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "1ed768740ef602b2a3fd71ab154b08d239fd626c207939da05da7ff597a02b59"
+    expected: contradicted
+    claim: "The Retriever module is not implemented using pyserini, and the Reranker module does not use rerankers."
+  - id: f057
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "5912bd379ca0f7606462b2e540fcc6518903246b914f5509ca0cb584e64c2a29"
+    expected: contradicted
+    claim: "RAGLAB provides sixteen major RAG algorithms and incorporates two QA benchmarks, and it does not use Wikipedia as the retrieval corpus."
+  - id: f058
+    doc: "https://arxiv.org/html/2504.01840v1"
+    passage_id: "584009205a8742d90cea6c38a57178e406cf8b97f36c2245847c7101dc4348cd"
+    expected: contradicted
+    claim: "The default setting for RAG experiments used GPT-4, dense retrieval, and the top 30 retrieved documents."
+  - id: f059
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "b49465a30b0fe36a55edc466f6acf78de3ade31bc092c02681f3518781ead335"
+    expected: contradicted
+    claim: "A naive NLI scorer is best on AttributedQA with an AUROC of 0.90 and does not drop on LFQA, where it also outperforms BERTScore."
+  - id: f060
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "620a1d44504b084bfbcf755684205edb1bc5d6a6517f54ef58aaff033842766a"
+    expected: contradicted
+    claim: "The lexical-only scorer reaches a top-1 provenance accuracy of 0.934 and the semantic-only scorer reaches 0.775, so lexical overlap is the stronger signal."
+  - id: f061
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "2d62597d186dceeef66a789aef16a3ce3f6916be2560fff2ea33370f5c9922c9"
+    expected: contradicted
+    claim: "A naive best-on-average selection rule succeeds under leave-one-dataset-out evaluation, so metric choice does not need to be validated on the target dataset."
+  - id: f062
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "60524950fffc73e84b306306b60f7236a224b86680f6cff7bfd78a74eca9a0ab"
+    expected: contradicted
+    claim: "A structured GRPO reward rewrites most of the output and moves QA-EM, ROUGE-L and citation count significantly at both 3B and 7B."
+  - id: f063
+    doc: "https://arxiv.org/html/2606.23915v1"
+    passage_id: "c2af2f72f3498194dfdcb8498d5017a750c361f97cb1fed76b51b15f53af323b"
+    expected: contradicted
+    claim: "The combined relevance score weights lexical Jaccard at 0.90 and sentence-transformer cosine at 0.05, so the score is not a semantic one."
+  - id: f064
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "3956b65a2d5b6ca88bfe82c0091e0da4a4259d9b3c9bc7c63b981a7c9cdb1bfa"
+    expected: contradicted
+    claim: "The results show that WSAEs-LSTM does not outperform the other three models in predictability or in profitability."
+  - id: f065
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "45a40eec051a29eb1511563433caa805a30286f68132fd6361609e4703362b40"
+    expected: contradicted
+    claim: "The prediction ability of the proposed model was tested on a single stock index rather than on six indices."
+  - id: f066
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "531e3f1157eae8c6f5bf9ef05f116bd9f17519b0f23680d41e149cb261508501"
+    expected: contradicted
+    claim: "No comparison models were introduced, so the predictive accuracy of the proposed model was never evaluated against WLSTM, LSTM or the conventional RNN."
+  - id: f067
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "1a1b71a23a432d6733c69ef863523d228ccc9dfb27e26f2cb57b5b5765dcb266"
+    expected: contradicted
+    claim: "The stacked autoencoders in the framework are trained in a supervised manner, and the wavelet transform is applied after the long-short term memory stage rather than before it."
+  - id: f068
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    passage_id: "19d1c92fc927089016ffddb4c27a00d7c7a8aa90cccd76866d4912cc3e5d0230"
+    expected: contradicted
+    claim: "Predictive accuracy is not evaluated using mean absolute percentage error, the correlation coefficient or Theil's inequality coefficient."
+  - id: f069
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "7e13412d326127adb0d52162a61a8a16e6562d1cee32e6006253b5784ad1b9da"
+    expected: contradicted
+    claim: "In the 2018 UCR Time Series Archive, out of 128 datasets 116 have more than a thousand training patterns, so time series data is not scarce."
+  - id: f070
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "b543d12fc9f041597264c4cb292f77f24debb3250fdd46dbdb27ee545156f396"
+    expected: contradicted
+    claim: "Rotation data augmentation is well suited to time series, because rotating a time series cannot change the class associated with the original sample."
+  - id: f071
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "d369c57b02c50e9bbd96df5b4420cf9df06da34f5bb05e0c90e188936348c6e9"
+    expected: contradicted
+    claim: "Um et al. used jittering with ResNet for wearable sensor data for Parkinson's disease monitoring, and the effects of jittering improved accuracy in that work."
+  - id: f072
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    passage_id: "2f76b60f896edab753d6164869119aff6df5d3ea23978967e5e32b96635bfb44"
+    expected: contradicted
+    claim: "Data augmentation is not an established practice for image recognition, and the original proposals of state-of-the-art CNN architectures did not use any form of data augmentation."
+  - id: f073
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "dca9d407137c7aa9f076c1cbc75b1d4dcd63d6f61fd8771e29077f811931f2a2"
+    expected: contradicted
+    claim: "The PRISMA 2020 statement supplements rather than replaces the 2009 statement, and it presents a 54-item checklist."
+  - id: f074
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "152974d2ac1948df3abd4dfc3a932b616dc5b3bd47b5df68815c9067b2e2d8b8"
+    expected: contradicted
+    claim: "PRISMA 2020 is intended to guide systematic review conduct and should be used to assess the methodological quality of systematic reviews."
+  - id: f075
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    passage_id: "a18ce649c774302dc7e53259011b2680f8d56b8001fe25acb80d2191af59e172"
+    expected: contradicted
+    claim: "In April 2020, 22 systematic reviewers were invited to share their views on the checklist, and no feedback was received from any of them."
+  - id: f076
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "bc90afc979bb5f2ebdd17fe766da5665c971369e49865a3a52dc286f30f50513"
+    expected: contradicted
+    claim: "The model was not able to learn individual differences in measures of fluid intelligence and verbal IQ."
+  - id: f077
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "90dfae54aa66efa021073540d9b4c06cd59d616443dda83021c16a19e5b8b327"
+    expected: contradicted
+    claim: "In fMRI the vast majority of decoding methods are dynamic rather than static, and few approaches are spatially constrained to a local neighborhood."
+  - id: f078
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    passage_id: "e735ed492cc25ac17a4434647cb13a6e5d3de74e3bb97d89cecea1f1abee1f00"
+    expected: contradicted
+    claim: "The model classified which clip a participant was watching using only that same participant's data, and it could not generalize across participants."
+
+  # ==================== insufficient-passage (26) ====================
+  # Real papers, real claims, NO retrievable full text: Unpaywall knows the DOI and reports no
+  # OA copy, and the work is in neither arXiv nor PMC. There is no passage to anchor on, so
+  # abstention is the only honest verdict and these items carry no passage_id. Under D11 a
+  # claim over one of these documents must NEVER be emitted clean.
+  - id: f079
+    doc: "10.1016/j.asoc.2019.105778"
+    expected: insufficient-passage
+    claim: "The hybrid CNN-ELM model improves electrocardiogram classification accuracy over a plain CNN."
+  - id: f080
+    doc: "10.1016/j.cmpb.2019.105001"
+    expected: insufficient-passage
+    claim: "Sleep apnea events are detected from single-lead electrocardiogram recordings with over 90% accuracy."
+  - id: f081
+    doc: "10.1111/jce.13889"
+    expected: insufficient-passage
+    claim: "The deep learning electrocardiogram algorithm was prospectively validated for detecting left ventricular systolic dysfunction."
+  - id: f082
+    doc: "10.1016/j.neucom.2020.04.076"
+    expected: insufficient-passage
+    claim: "Generative adversarial networks produce synthetic electrocardiogram signals that are indistinguishable from real recordings."
+  - id: f083
+    doc: "10.1109/tem.2021.3104751"
+    expected: insufficient-passage
+    claim: "The proposed method outperforms the baseline on every benchmark reported in the paper."
+  - id: f084
+    doc: "10.1016/j.artmed.2020.101919"
+    expected: insufficient-passage
+    claim: "The artificial intelligence system achieved cardiologist-level performance on the held-out test set."
+  - id: f085
+    doc: "10.1111/exsy.12864"
+    expected: insufficient-passage
+    claim: "The expert system reduced the false alarm rate by more than half compared with the previous approach."
+  - id: f086
+    doc: "10.1016/j.jelectrocard.2018.11.013"
+    expected: insufficient-passage
+    claim: "Automated electrocardiogram interpretation agreed with the cardiologist consensus in the majority of cases."
+  - id: f087
+    doc: "10.1007/s11263-023-01852-4"
+    expected: insufficient-passage
+    claim: "The proposed architecture sets a new state of the art on the benchmark used in the paper."
+  - id: f088
+    doc: "10.1109/cvpr.2019.01061"
+    expected: insufficient-passage
+    claim: "The method improves mean average precision over the previous best published result."
+  - id: f089
+    doc: "10.1109/cvpr.2019.00202"
+    expected: insufficient-passage
+    claim: "The ablation study shows that each proposed component contributes to the final accuracy."
+  - id: f090
+    doc: "10.1109/iccv48922.2021.00647"
+    expected: insufficient-passage
+    claim: "The model is trained end to end and requires no additional supervision."
+  - id: f091
+    doc: "10.1109/cvpr.2019.01118"
+    expected: insufficient-passage
+    claim: "The approach generalizes to unseen categories without fine-tuning."
+  - id: f092
+    doc: "10.1109/tii.2023.3280337"
+    expected: insufficient-passage
+    claim: "The industrial fault diagnosis method achieves higher accuracy than the compared baselines."
+  - id: f093
+    doc: "10.1109/iccv48922.2021.00937"
+    expected: insufficient-passage
+    claim: "The transformer variant outperforms the convolutional baseline at equal parameter count."
+  - id: f094
+    doc: "10.21437/interspeech.2022-143"
+    expected: insufficient-passage
+    claim: "The proposed speech model reduces word error rate relative to the baseline system."
+  - id: f095
+    doc: "10.1109/tcsvt.2020.3003048"
+    expected: insufficient-passage
+    claim: "The video coding method reduces bitrate at equivalent perceptual quality."
+  - id: f096
+    doc: "10.1145/3459637.3482389"
+    expected: insufficient-passage
+    claim: "The recommendation model improves ranking quality over the strongest baseline evaluated."
+  - id: f097
+    doc: "10.1038/s41591-018-0240-2"
+    expected: insufficient-passage
+    claim: "The artificial-intelligence-enabled electrocardiogram identifies patients with cardiac contractile dysfunction."
+  - id: f098
+    doc: "10.1016/j.asoc.2019.105778"
+    expected: insufficient-passage
+    claim: "The authors report that the model was trained on data from more than one hospital."
+  - id: f099
+    doc: "10.1016/j.cmpb.2019.105001"
+    expected: insufficient-passage
+    claim: "The paper reports a sensitivity above 0.85 for apnea event detection."
+  - id: f100
+    doc: "10.1111/jce.13889"
+    expected: insufficient-passage
+    claim: "The prospective validation cohort included more than one thousand patients."
+  - id: f101
+    doc: "10.1016/j.neucom.2020.04.076"
+    expected: insufficient-passage
+    claim: "The generated electrocardiogram signals were evaluated by expert cardiologists."
+  - id: f102
+    doc: "10.1109/cvpr.2019.01061"
+    expected: insufficient-passage
+    claim: "The authors release code and pretrained weights for the proposed method."
+  - id: f103
+    doc: "10.1016/j.artmed.2020.101919"
+    expected: insufficient-passage
+    claim: "The system was evaluated on an external validation set drawn from a different population."
+  - id: f104
+    doc: "10.1007/s11263-023-01852-4"
+    expected: insufficient-passage
+    claim: "The paper reports results averaged over multiple random seeds."

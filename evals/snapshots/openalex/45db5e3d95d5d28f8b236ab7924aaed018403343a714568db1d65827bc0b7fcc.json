@@ -1,0 +1,591 @@
+{
+  "endpoint": "works/doi:10.1038/nbt.3811",
+  "request_key": "45db5e3d95d5d28f8b236ab7924aaed018403343a714568db1d65827bc0b7fcc",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210124606",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210165038"
+            ],
+            "raw_affiliation_string": "University of Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yuan Zong",
+          "id": "https://openalex.org/A5048833569",
+          "orcid": "https://orcid.org/0000-0003-0576-6614"
+        },
+        "author_position": "first",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "id": "https://openalex.org/I4210124606",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ],
+            "ror": "https://ror.org/02aee5m12",
+            "type": "facility"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "University of Chinese Academy of Sciences",
+            "id": "https://openalex.org/I4210165038",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210165038"
+            ],
+            "ror": "https://ror.org/05qbk4x57",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China",
+          "University of Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Yuan Zong",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210124606",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210165038"
+            ],
+            "raw_affiliation_string": "University of Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yanpeng Wang",
+          "id": "https://openalex.org/A5100697795",
+          "orcid": "https://orcid.org/0000-0003-1577-6883"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "id": "https://openalex.org/I4210124606",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ],
+            "ror": "https://ror.org/02aee5m12",
+            "type": "facility"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "University of Chinese Academy of Sciences",
+            "id": "https://openalex.org/I4210165038",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210165038"
+            ],
+            "ror": "https://ror.org/05qbk4x57",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China",
+          "University of Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Yanpeng Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210124606",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210165038"
+            ],
+            "raw_affiliation_string": "University of Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Chao Li",
+          "id": "https://openalex.org/A5100323182",
+          "orcid": "https://orcid.org/0000-0002-2769-7616"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "id": "https://openalex.org/I4210124606",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ],
+            "ror": "https://ror.org/02aee5m12",
+            "type": "facility"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "University of Chinese Academy of Sciences",
+            "id": "https://openalex.org/I4210165038",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210165038"
+            ],
+            "ror": "https://ror.org/05qbk4x57",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China",
+          "University of Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Chao Li",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210124606",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Rui Zhang",
+          "id": "https://openalex.org/A5100422004",
+          "orcid": "https://orcid.org/0000-0002-1367-7593"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "id": "https://openalex.org/I4210124606",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ],
+            "ror": "https://ror.org/02aee5m12",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Rui Zhang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210124606",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Kunling Chen",
+          "id": "https://openalex.org/A5014007353",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "id": "https://openalex.org/I4210124606",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ],
+            "ror": "https://ror.org/02aee5m12",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Kunling Chen",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210127996"
+            ],
+            "raw_affiliation_string": "Genovo Biotechnology Co., Ltd, Tianjin, China"
+          }
+        ],
+        "author": {
+          "display_name": "Yidong Ran",
+          "id": "https://openalex.org/A5072568256",
+          "orcid": "https://orcid.org/0000-0002-4201-3964"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Sino Biological (China)",
+            "id": "https://openalex.org/I4210127996",
+            "lineage": [
+              "https://openalex.org/I4210127996"
+            ],
+            "ror": "https://ror.org/02tbjbv63",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Genovo Biotechnology Co., Ltd, Tianjin, China"
+        ],
+        "raw_author_name": "Yidong Ran",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210112230",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Genomics, Institute of Microbiology, Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Jin‐Long Qiu",
+          "id": "https://openalex.org/A5101750901",
+          "orcid": "https://orcid.org/0000-0001-8054-2552"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "State Key Laboratory of Plant Genomics",
+            "id": "https://openalex.org/I4210112230",
+            "lineage": [
+              "https://openalex.org/I4210112230"
+            ],
+            "ror": "https://ror.org/0205xz563",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Genomics, Institute of Microbiology, Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Jin-Long Qiu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210124606",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Daowen Wang",
+          "id": "https://openalex.org/A5115602062",
+          "orcid": "https://orcid.org/0000-0002-6230-8735"
+        },
+        "author_position": "middle",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "id": "https://openalex.org/I4210124606",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ],
+            "ror": "https://ror.org/02aee5m12",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Daowen Wang",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210124606",
+              "https://openalex.org/I19820366"
+            ],
+            "raw_affiliation_string": "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+          }
+        ],
+        "author": {
+          "display_name": "Caixia Gao",
+          "id": "https://openalex.org/A5077799932",
+          "orcid": "https://orcid.org/0000-0003-3169-8248"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Chinese Academy of Sciences",
+            "id": "https://openalex.org/I19820366",
+            "lineage": [
+              "https://openalex.org/I19820366"
+            ],
+            "ror": "https://ror.org/034t30j35",
+            "type": "government"
+          },
+          {
+            "country_code": "CN",
+            "display_name": "Institute of Genetics and Developmental Biology",
+            "id": "https://openalex.org/I4210124606",
+            "lineage": [
+              "https://openalex.org/I19820366",
+              "https://openalex.org/I4210124606"
+            ],
+            "ror": "https://ror.org/02aee5m12",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "State Key Laboratory of Plant Cell and Chromosome Engineering, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, Beijing, China"
+        ],
+        "raw_author_name": "Caixia Gao",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "438",
+      "issue": "5",
+      "last_page": "440",
+      "volume": "35"
+    },
+    "cited_by_count": 871,
+    "display_name": "Precise base editing in rice, wheat and maize with a Cas9-cytidine deaminase fusion",
+    "doi": "https://doi.org/10.1038/nbt.3811",
+    "id": "https://openalex.org/W2594683972",
+    "ids": {
+      "doi": "https://doi.org/10.1038/nbt.3811",
+      "mag": "2594683972",
+      "openalex": "https://openalex.org/W2594683972",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/28244994"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1038/nbt.3811",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1038/nbt.3811",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Nature Biotechnology",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Nature Biotechnology",
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Nature Portfolio",
+        "id": "https://openalex.org/S106963461",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1087-0156",
+          "1546-1696"
+        ],
+        "issn_l": "1087-0156",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2017-02-27",
+    "publication_year": 2017,
+    "referenced_works": [
+      "https://openalex.org/W1960318941",
+      "https://openalex.org/W1970951020",
+      "https://openalex.org/W1980201684",
+      "https://openalex.org/W2001845502",
+      "https://openalex.org/W2009077165",
+      "https://openalex.org/W2017586115",
+      "https://openalex.org/W2027404506",
+      "https://openalex.org/W2046639072",
+      "https://openalex.org/W2096261947",
+      "https://openalex.org/W2097893031",
+      "https://openalex.org/W2107986045",
+      "https://openalex.org/W2110364996",
+      "https://openalex.org/W2115603949",
+      "https://openalex.org/W2116041063",
+      "https://openalex.org/W2149058703",
+      "https://openalex.org/W2153269523",
+      "https://openalex.org/W2165016943",
+      "https://openalex.org/W2336828812",
+      "https://openalex.org/W2480829753",
+      "https://openalex.org/W2507138770",
+      "https://openalex.org/W2530994846",
+      "https://openalex.org/W2542621333",
+      "https://openalex.org/W2560199174",
+      "https://openalex.org/W2560407750",
+      "https://openalex.org/W2592572078"
+    ],
+    "referenced_works_count": 25,
+    "title": "Precise base editing in rice, wheat and maize with a Cas9-cytidine deaminase fusion",
+    "type": "article"
+  },
+  "response_hash": "9bff8445d0e8d4f98036fbd71ed1ec060f0f0aac8f0ab04b90b73a4cf0d8e773",
+  "retrieved_at": "2026-07-14T13:49:05Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

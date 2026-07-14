@@ -1,0 +1,1423 @@
+{
+  "endpoint": "works/10.1109/tkde.2022.3172903",
+  "request_key": "5ae30ada27556df466b7939d8ce361d4db611e67243753f12d4471c253d33ceb",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1109/tkde.2022.3172903",
+      "ISSN": [
+        "1041-4347",
+        "1558-2191",
+        "2326-3865"
+      ],
+      "URL": "https://doi.org/10.1109/tkde.2022.3172903",
+      "author": [
+        {
+          "affiliation": [
+            {
+              "name": "Department of Data Science and AI, Monash University, 2541 Clayton, Victoria, Australia"
+            }
+          ],
+          "family": "Liu",
+          "given": "Yixin",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Department of Data Science and AI, Monash University, 2541 Clayton, Victoria, Australia"
+            }
+          ],
+          "family": "Jin",
+          "given": "Ming",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Faculty of Information Technology, Monash University, 2541 Clayton, Victoria, Australia, 3800"
+            }
+          ],
+          "family": "Pan",
+          "given": "Shirui",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Academy of Mathematics and Systems Science, Chinese Academy of Sciences, 12381 Beijing, Beijing, China, 100864"
+            }
+          ],
+          "family": "Zhou",
+          "given": "Chuan",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Department of Computer Science and Information Technology, La Trobe University, 2080 Melbourne, Victoria, Australia"
+            }
+          ],
+          "family": "Zheng",
+          "given": "Yu",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "School of Engineering, IT and Physical Sciences, Federation University Australia, 1458 Ballarat, Victoria, Australia, 3353"
+            }
+          ],
+          "family": "Xia",
+          "given": "Feng",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Computer Science, University of Illinois at Chicago, 14681 Chicago, Illinois, United States, 60607-7101"
+            }
+          ],
+          "family": "Yu",
+          "given": "Philip",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Knowledge and Data Engineering"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": []
+      },
+      "created": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            6
+          ]
+        ],
+        "date-time": "2022-05-06T19:55:00Z",
+        "timestamp": 1651866900000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            2
+          ]
+        ],
+        "date-time": "2023-05-02T00:16:09Z",
+        "timestamp": 1682986569000
+      },
+      "funder": [
+        {
+          "DOI": "10.13039/501100000923",
+          "award": [
+            "FT210100097"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "FT210100097"
+              ]
+            }
+          ],
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/501100000923",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "Australian Research Council"
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "award": [
+            "III-1763325"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "III-1763325"
+              ]
+            }
+          ],
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/100000001",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "National Science Foundation"
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "award": [
+            "III-1909323"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "III-1909323"
+              ]
+            }
+          ],
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/100000001",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "National Science Foundation"
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "award": [
+            "III-2106758"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "III-2106758"
+              ]
+            }
+          ],
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/100000001",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "National Science Foundation"
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "award": [
+            "SaTC-1930941"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "SaTC-1930941"
+              ]
+            }
+          ],
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "asserted-by": "publisher",
+              "id": "10.13039/100000001",
+              "id-type": "DOI"
+            }
+          ],
+          "name": "National Science Foundation"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            11
+          ]
+        ],
+        "date-time": "2026-07-11T17:32:35Z",
+        "timestamp": 1783791155367,
+        "version": "3.55.0"
+      },
+      "is-referenced-by-count": 275,
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "1041-4347"
+        },
+        {
+          "type": "electronic",
+          "value": "1558-2191"
+        },
+        {
+          "type": "electronic",
+          "value": "2326-3865"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "license": [
+        {
+          "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          }
+        },
+        {
+          "URL": "https://doi.org/10.15223/policy-029",
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          }
+        },
+        {
+          "URL": "https://doi.org/10.15223/policy-037",
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2022-01-01T00:00:00Z",
+            "timestamp": 1640995200000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx7/69/4358933/09770382.pdf?arnumber=9770382",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "263",
+      "original-title": [],
+      "page": "1-1",
+      "prefix": "10.1109",
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "reference": [
+        {
+          "article-title": "Self-supervised graph representation learning via global context prediction",
+          "author": "peng",
+          "key": "ref57",
+          "year": "2020"
+        },
+        {
+          "article-title": "CAGNN: Cluster-aware graph neural networks for unsupervised graph representation learning",
+          "author": "zhu",
+          "key": "ref56",
+          "year": "2020"
+        },
+        {
+          "article-title": "Multilevel graph partitioning schemes",
+          "author": "karypis",
+          "first-page": "113",
+          "journal-title": "Proc Int Conf Parallel Process",
+          "key": "ref59",
+          "year": "1995"
+        },
+        {
+          "DOI": "10.1145/3437963.3441735",
+          "doi-asserted-by": "publisher",
+          "key": "ref58"
+        },
+        {
+          "article-title": "Stacked denoising autoencoders: Learning useful representations in a deep network with a local denoising criterion",
+          "author": "vincent",
+          "first-page": "3371",
+          "journal-title": "J Mach Learn Res",
+          "key": "ref53",
+          "volume": "11",
+          "year": "2010"
+        },
+        {
+          "DOI": "10.1016/0169-7439(87)80084-9",
+          "doi-asserted-by": "publisher",
+          "key": "ref52"
+        },
+        {
+          "article-title": "Generative adversarial nets",
+          "author": "goodfellow",
+          "first-page": "2672",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref55",
+          "year": "2014"
+        },
+        {
+          "article-title": "Auto-encoding variational bayes",
+          "author": "kingma",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref54",
+          "year": "2014"
+        },
+        {
+          "article-title": "Self-supervised training of graph convolutional networks",
+          "author": "zhu",
+          "key": "ref51",
+          "year": "2020"
+        },
+        {
+          "article-title": "Pre-training graph neural networks for generic structural feature extraction",
+          "author": "hu",
+          "key": "ref50",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/ICCV.2019.00662",
+          "doi-asserted-by": "publisher",
+          "key": "ref46"
+        },
+        {
+          "DOI": "10.1016/j.patrec.2021.04.021",
+          "doi-asserted-by": "publisher",
+          "key": "ref45"
+        },
+        {
+          "DOI": "10.24963/ijcai.2018/362",
+          "doi-asserted-by": "publisher",
+          "key": "ref48"
+        },
+        {
+          "article-title": "Semi-implicit graph variational auto-encoders",
+          "author": "hajiramezanali",
+          "first-page": "10 712",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref47",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1126/science.1127647",
+          "doi-asserted-by": "publisher",
+          "key": "ref42"
+        },
+        {
+          "DOI": "10.1145/3366423.3380112",
+          "doi-asserted-by": "publisher",
+          "key": "ref41"
+        },
+        {
+          "DOI": "10.1145/3132847.3132967",
+          "doi-asserted-by": "publisher",
+          "key": "ref44"
+        },
+        {
+          "article-title": "Self-supervised learning on graphs: Deep insights and new direction",
+          "author": "jin",
+          "first-page": "1",
+          "journal-title": "Proc Int World Wide Web Conf",
+          "key": "ref43",
+          "year": "2021"
+        },
+        {
+          "article-title": "How to find your friendly neighborhood: Graph attention design with self-supervision",
+          "author": "kim",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref49",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1109/TNNLS.2021.3070843",
+          "doi-asserted-by": "publisher",
+          "key": "ref8"
+        },
+        {
+          "article-title": "Constrained graph variational autoencoders for molecule design",
+          "author": "liu",
+          "first-page": "7806",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref7",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1145/3394486.3403237",
+          "doi-asserted-by": "publisher",
+          "key": "ref9"
+        },
+        {
+          "DOI": "10.1109/TNNLS.2020.2978386",
+          "doi-asserted-by": "publisher",
+          "key": "ref4"
+        },
+        {
+          "article-title": "How powerful are graph neural networks?",
+          "author": "xu",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref3",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.24963/ijcai.2019/264",
+          "doi-asserted-by": "publisher",
+          "key": "ref6"
+        },
+        {
+          "DOI": "10.1109/ICDE48307.2020.00149",
+          "doi-asserted-by": "publisher",
+          "key": "ref5"
+        },
+        {
+          "article-title": "Learning graph representation by aggregating subgraphs via mutual information maximization",
+          "author": "wang",
+          "key": "ref100",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1609/aaai.v35i18.17986",
+          "doi-asserted-by": "publisher",
+          "key": "ref101"
+        },
+        {
+          "DOI": "10.1609/aaai.v34i04.6048",
+          "doi-asserted-by": "publisher",
+          "key": "ref40"
+        },
+        {
+          "article-title": "A survey on contrastive self-supervised learning",
+          "author": "jaiswal",
+          "journal-title": "Technol",
+          "key": "ref35",
+          "volume": "9",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1109/TKDE.2021.3090866",
+          "doi-asserted-by": "publisher",
+          "key": "ref34"
+        },
+        {
+          "article-title": "Self-supervised on graphs: Contrastive, generative, or predictive",
+          "author": "wu",
+          "key": "ref37",
+          "year": "2021"
+        },
+        {
+          "article-title": "Self-supervised learning of graph neural networks: A unified review",
+          "author": "xie",
+          "key": "ref36",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1145/2939672.2939754",
+          "doi-asserted-by": "publisher",
+          "key": "ref31"
+        },
+        {
+          "DOI": "10.1371/journal.pone.0079568",
+          "doi-asserted-by": "publisher",
+          "key": "ref148"
+        },
+        {
+          "DOI": "10.1145/2623330.2623732",
+          "doi-asserted-by": "publisher",
+          "key": "ref30"
+        },
+        {
+          "DOI": "10.4155/fmc.11.4",
+          "doi-asserted-by": "publisher",
+          "key": "ref149"
+        },
+        {
+          "article-title": "Deep Graph Contrastive Representation Learning",
+          "author": "zhu",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Mach Learn Workshop",
+          "key": "ref33",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1021/acs.chemrestox.6b00135",
+          "doi-asserted-by": "publisher",
+          "key": "ref146"
+        },
+        {
+          "article-title": "Variational graph auto-encoders",
+          "author": "kipf",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Neural Inf Process Syst Workshop",
+          "key": "ref32",
+          "year": "2016"
+        },
+        {
+          "DOI": "10.1093/nar/gkv1075",
+          "doi-asserted-by": "publisher",
+          "key": "ref147"
+        },
+        {
+          "article-title": "Graph-Bert: Only attention is needed for learning graph representations",
+          "author": "zhang",
+          "key": "ref39",
+          "year": "2020"
+        },
+        {
+          "article-title": "Graph contrastive learning with augmentations",
+          "author": "you",
+          "first-page": "5812",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref38",
+          "year": "2020"
+        },
+        {
+          "article-title": "Self-supervised deep graph embedding with high-order information fusion for community discovery",
+          "author": "xu",
+          "key": "ref155",
+          "year": "2021"
+        },
+        {
+          "article-title": "Graph-based, self-supervised program repair from diagnostic feedback",
+          "author": "yasunaga",
+          "first-page": "10 799",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref156",
+          "year": "2020"
+        },
+        {
+          "article-title": "SLAPS: Self-supervision improves structure learning for graph neural networks",
+          "author": "fatemi",
+          "first-page": "22667",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref153",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1145/3474085.3475416",
+          "doi-asserted-by": "publisher",
+          "key": "ref154"
+        },
+        {
+          "DOI": "10.1021/acs.jcim.6b00290",
+          "doi-asserted-by": "publisher",
+          "key": "ref151"
+        },
+        {
+          "article-title": "COAD: Contrastive pre-training with adversarial fine-tuning for zero-shot expert linking",
+          "author": "chen",
+          "key": "ref152",
+          "year": "2020"
+        },
+        {
+          "article-title": "AIDS antiviral screen data",
+          "key": "ref150",
+          "year": "2017"
+        },
+        {
+          "article-title": "A simple framework for contrastive learning of visual representations",
+          "author": "chen",
+          "first-page": "1597",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref24",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1109/CVPR42600.2020.00975",
+          "doi-asserted-by": "publisher",
+          "key": "ref23"
+        },
+        {
+          "article-title": "Efficient estimation of word representations in vector space",
+          "author": "mikolov",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref26",
+          "year": "2013"
+        },
+        {
+          "article-title": "Bootstrap your own latent - a new approach to self-supervised learning",
+          "author": "grill",
+          "first-page": "21 271",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref25",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1109/CVPR.2016.278",
+          "doi-asserted-by": "publisher",
+          "key": "ref20"
+        },
+        {
+          "DOI": "10.1609/aaai.v35i6.16620",
+          "doi-asserted-by": "publisher",
+          "key": "ref159"
+        },
+        {
+          "DOI": "10.1007/978-3-319-46466-4_5",
+          "doi-asserted-by": "publisher",
+          "key": "ref22"
+        },
+        {
+          "article-title": "Contrastive learning of structured world models",
+          "author": "kipf",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref157",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1007/978-3-319-46487-9_40",
+          "doi-asserted-by": "publisher",
+          "key": "ref21"
+        },
+        {
+          "article-title": "Self-supervised edge features for improved graph neural network training",
+          "author": "sehanobish",
+          "key": "ref158",
+          "year": "2020"
+        },
+        {
+          "article-title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+          "author": "devlin",
+          "first-page": "4171",
+          "journal-title": "Proc Conf North Amer Chapter Assoc Comput Linguistics",
+          "key": "ref28",
+          "year": "2019"
+        },
+        {
+          "article-title": "Distributed representations of words and phrases and their compositionality",
+          "author": "mikolov",
+          "first-page": "3111",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref27",
+          "year": "2013"
+        },
+        {
+          "article-title": "XLNet: Generalized autoregressive pretraining for language understanding",
+          "author": "yang",
+          "first-page": "5753",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref29",
+          "year": "2019"
+        },
+        {
+          "article-title": "FedGL: Federated graph learning framework with global self-supervision",
+          "author": "chen",
+          "key": "ref162",
+          "year": "2021"
+        },
+        {
+          "article-title": "Fedproto: Federated prototype learning over heterogeneous devices",
+          "author": "tan",
+          "first-page": "1",
+          "journal-title": "Proc AAAI Conf Artif Intell",
+          "key": "ref160",
+          "year": "2022"
+        },
+        {
+          "article-title": "Communication-efficient learning of deep networks from decentralized data",
+          "author": "mcmahan",
+          "first-page": "1273",
+          "journal-title": "Proc 25th Int Conf Artif Intell Statist",
+          "key": "ref161",
+          "year": "2017"
+        },
+        {
+          "article-title": "Deep graph infomax",
+          "author": "veli?kovi?",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref13",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/ICDM50108.2020.00088",
+          "doi-asserted-by": "publisher",
+          "key": "ref12"
+        },
+        {
+          "DOI": "10.1145/3394486.3403168",
+          "doi-asserted-by": "publisher",
+          "key": "ref15"
+        },
+        {
+          "DOI": "10.3390/app11073239",
+          "doi-asserted-by": "publisher",
+          "key": "ref128"
+        },
+        {
+          "article-title": "Contrastive multi-view representation learning on graphs",
+          "author": "hassani",
+          "first-page": "4116",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref14",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1145/3442381.3449786",
+          "doi-asserted-by": "publisher",
+          "key": "ref129"
+        },
+        {
+          "article-title": "InfoGraph: Unsupervised and semi-supervised graph-level representation learning via mutual information maximization",
+          "author": "sun",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref97",
+          "year": "2020"
+        },
+        {
+          "article-title": "MolCLR: Molecular contrastive learning of representations via graph neural networks",
+          "author": "wang",
+          "key": "ref126",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1145/3442381.3450060",
+          "doi-asserted-by": "publisher",
+          "key": "ref96"
+        },
+        {
+          "article-title": "Knowledge-aware contrastive molecular graph learning",
+          "author": "fang",
+          "key": "ref127",
+          "year": "2021"
+        },
+        {
+          "article-title": "DropEdge: Towards deep graph convolutional networks on node classification",
+          "author": "rong",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref11",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1145/3437963.3441783",
+          "doi-asserted-by": "publisher",
+          "key": "ref99"
+        },
+        {
+          "DOI": "10.1109/TKDE.2021.3119326",
+          "doi-asserted-by": "publisher",
+          "key": "ref124"
+        },
+        {
+          "article-title": "Self-supervised graph transformer on large-scale molecular data",
+          "author": "rong",
+          "first-page": "12 559",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref10",
+          "year": "2020"
+        },
+        {
+          "article-title": "Contrastive learning with hard negative samples",
+          "author": "robinson",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref98",
+          "year": "2021"
+        },
+        {
+          "article-title": "Hop-count based self-supervised anomaly detection on attributed networks",
+          "author": "huang",
+          "key": "ref125",
+          "year": "2021"
+        },
+        {
+          "article-title": "When does self-supervision help graph convolutional networks?",
+          "author": "you",
+          "first-page": "10 871",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref17",
+          "year": "2020"
+        },
+        {
+          "article-title": "Strategies for pre-training graph neural networks",
+          "author": "hu",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref16",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1109/TPAMI.2020.2992393",
+          "doi-asserted-by": "publisher",
+          "key": "ref19"
+        },
+        {
+          "article-title": "Towards robust graph contrastive learning",
+          "author": "jovanovi?",
+          "first-page": "1",
+          "journal-title": "Proc Int World Wide Web Conf",
+          "key": "ref18",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1109/ICDE51399.2021.00084",
+          "doi-asserted-by": "publisher",
+          "key": "ref93"
+        },
+        {
+          "DOI": "10.1145/2783258.2783417",
+          "doi-asserted-by": "publisher",
+          "key": "ref133"
+        },
+        {
+          "article-title": "Heterogeneous deep graph infomax",
+          "author": "ren",
+          "first-page": "1",
+          "journal-title": "Proc Conf Assoc Advance Artif Intell Workshop",
+          "key": "ref92",
+          "year": "2020"
+        },
+        {
+          "article-title": "Pitfalls of graph neural network evaluation",
+          "author": "shchur",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Neural Inf Process Syst Workshop",
+          "key": "ref134",
+          "year": "2018"
+        },
+        {
+          "article-title": "Transfer learning of graph neural networks with ego-graph information maximization",
+          "author": "zhu",
+          "first-page": "1766",
+          "journal-title": "Proc Int World Wide Web Conf",
+          "key": "ref95",
+          "year": "2021"
+        },
+        {
+          "article-title": "Hierarchical graph representation learning with differentiable pooling",
+          "author": "ying",
+          "first-page": "4805",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref131",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1609/aaai.v34i04.5985",
+          "doi-asserted-by": "publisher",
+          "key": "ref94"
+        },
+        {
+          "article-title": "Haar graph pooling",
+          "author": "wang",
+          "first-page": "9952",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref132",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1109/TKDE.2021.3104155",
+          "doi-asserted-by": "publisher",
+          "key": "ref130"
+        },
+        {
+          "DOI": "10.1007/978-3-030-75762-5_43",
+          "doi-asserted-by": "publisher",
+          "key": "ref91"
+        },
+        {
+          "DOI": "10.1007/978-3-030-73194-6_10",
+          "doi-asserted-by": "publisher",
+          "key": "ref90"
+        },
+        {
+          "article-title": "Towards domain-agnostic contrastive learning",
+          "author": "verma",
+          "first-page": "10 530",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref89",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1093/bioinformatics/bti1007",
+          "doi-asserted-by": "publisher",
+          "key": "ref139"
+        },
+        {
+          "article-title": "Barlow twins: Self-supervised learning via redundancy reduction",
+          "author": "zbontar",
+          "first-page": "12310",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref86",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1093/bioinformatics/btx252",
+          "doi-asserted-by": "publisher",
+          "key": "ref137"
+        },
+        {
+          "article-title": "Self-supervised graph neural networks without explicit negative sampling",
+          "author": "kefato",
+          "first-page": "1",
+          "journal-title": "Proc Int World Wide Web Conf",
+          "key": "ref85",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1021/jm00106a046",
+          "doi-asserted-by": "publisher",
+          "key": "ref138"
+        },
+        {
+          "DOI": "10.1109/CVPR46437.2021.01549",
+          "doi-asserted-by": "publisher",
+          "key": "ref88"
+        },
+        {
+          "article-title": "Wiki-CS: A wikipedia-based benchmark for graph neural networks",
+          "author": "mernyei",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Mach Learn Workshop",
+          "key": "ref135",
+          "year": "2020"
+        },
+        {
+          "article-title": "Graph Barlow Twins: A self-supervised representation learning framework for graphs",
+          "author": "bielak",
+          "key": "ref87",
+          "year": "2021"
+        },
+        {
+          "article-title": "Open Graph Benchmark: Datasets for machine learning on graphs",
+          "author": "hu",
+          "first-page": "22 118",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref136",
+          "year": "2020"
+        },
+        {
+          "article-title": "Contrastive graph poisson networks: Semi-supervised learning with extremely limited labels",
+          "author": "wan",
+          "first-page": "6316",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref82",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1021/ci300124c",
+          "doi-asserted-by": "publisher",
+          "key": "ref144"
+        },
+        {
+          "article-title": "GraphCL: Contrastive self-supervised learning of graph representations",
+          "author": "hafidi",
+          "key": "ref81",
+          "year": "2020"
+        },
+        {
+          "article-title": "Tox21 data challenge 2014",
+          "key": "ref145",
+          "year": "2014"
+        },
+        {
+          "article-title": "Large-scale representation learning on graphs via bootstrapping",
+          "author": "thakoor",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref84",
+          "year": "2022"
+        },
+        {
+          "DOI": "10.1093/bioinformatics/17.1.107",
+          "doi-asserted-by": "publisher",
+          "key": "ref142"
+        },
+        {
+          "DOI": "10.1145/3447548.3467415",
+          "doi-asserted-by": "publisher",
+          "key": "ref83"
+        },
+        {
+          "DOI": "10.1007/s10115-007-0103-5",
+          "doi-asserted-by": "publisher",
+          "key": "ref143"
+        },
+        {
+          "DOI": "10.1016/S0022-2836(03)00628-4",
+          "doi-asserted-by": "publisher",
+          "key": "ref140"
+        },
+        {
+          "DOI": "10.1093/bioinformatics/btg130",
+          "doi-asserted-by": "publisher",
+          "key": "ref141"
+        },
+        {
+          "article-title": "Self-supervised auxiliary learning with meta-paths for heterogeneous graphs",
+          "author": "hwang",
+          "first-page": "10 294",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref80",
+          "year": "2020"
+        },
+        {
+          "DOI": "10.1145/2736277.2741093",
+          "doi-asserted-by": "publisher",
+          "key": "ref79"
+        },
+        {
+          "article-title": "Self-supervised graph-level representation learning with local and global structure",
+          "author": "xu",
+          "first-page": "11 548",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref108",
+          "year": "2021"
+        },
+        {
+          "article-title": "Inductive representation learning on large graphs",
+          "author": "hamilton",
+          "first-page": "1025",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref78",
+          "year": "2017"
+        },
+        {
+          "DOI": "10.1145/3442381.3449971",
+          "doi-asserted-by": "publisher",
+          "key": "ref109"
+        },
+        {
+          "DOI": "10.1609/aaai.v35i11.17206",
+          "doi-asserted-by": "publisher",
+          "key": "ref106"
+        },
+        {
+          "article-title": "Maximizing mutual information across feature and topology views for learning graph representations",
+          "author": "fan",
+          "key": "ref107",
+          "year": "2021"
+        },
+        {
+          "article-title": "Adversarial graph augmentation to improve graph contrastive learning",
+          "author": "suresh",
+          "first-page": "15920",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref75",
+          "year": "2021"
+        },
+        {
+          "article-title": "Representation learning with contrastive predictive coding",
+          "author": "oord",
+          "key": "ref104",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1609/aaai.v35i12.17293",
+          "doi-asserted-by": "publisher",
+          "key": "ref74"
+        },
+        {
+          "article-title": "Pre-training on dynamic graph neural networks",
+          "author": "zhang",
+          "key": "ref105",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1109/ICDM50108.2020.00031",
+          "doi-asserted-by": "publisher",
+          "key": "ref77"
+        },
+        {
+          "DOI": "10.1145/3442381.3449822",
+          "doi-asserted-by": "publisher",
+          "key": "ref102"
+        },
+        {
+          "article-title": "Diffusion improves graph learning",
+          "author": "klicpera",
+          "first-page": "13366",
+          "journal-title": "Proc Int Conf Neural Inf Process",
+          "key": "ref76",
+          "year": "2019"
+        },
+        {
+          "article-title": "On mutual information maximization for representation learning",
+          "author": "tschannen",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref103",
+          "year": "2020"
+        },
+        {
+          "article-title": "Graph attention networks",
+          "author": "veli?kovi?",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref2",
+          "year": "2018"
+        },
+        {
+          "article-title": "Semi-supervised classification with graph convolutional networks",
+          "author": "kipf",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref1",
+          "year": "2017"
+        },
+        {
+          "article-title": "Spatio-temporal deep graph infomax",
+          "author": "opolka",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations Workshop",
+          "key": "ref71",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1109/IJCNN52387.2021.9533715",
+          "doi-asserted-by": "publisher",
+          "key": "ref111"
+        },
+        {
+          "article-title": "Graph contrastive learning automated",
+          "author": "you",
+          "first-page": "12 121",
+          "journal-title": "Proc Int Conf Mach Learn",
+          "key": "ref70",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1016/j.neucom.2021.01.082",
+          "doi-asserted-by": "publisher",
+          "key": "ref112"
+        },
+        {
+          "article-title": "Iterative graph self-distillation",
+          "author": "zhang",
+          "first-page": "1",
+          "journal-title": "Proc Web Conf Workshop",
+          "key": "ref73",
+          "year": "2021"
+        },
+        {
+          "article-title": "HDGI: An unsupervised graph neural network for representation learning in heterogeneous graph",
+          "author": "ren",
+          "first-page": "1",
+          "journal-title": "Proc Conf Assoc Advance Artif Intell Workshop",
+          "key": "ref72",
+          "year": "2020"
+        },
+        {
+          "article-title": "Towards graph self-supervised learning with contrastive adjusted zooming",
+          "author": "zheng",
+          "key": "ref110",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.24963/ijcai.2021/204",
+          "doi-asserted-by": "publisher",
+          "key": "ref68"
+        },
+        {
+          "DOI": "10.1109/TNNLS.2021.3068344",
+          "doi-asserted-by": "publisher",
+          "key": "ref119"
+        },
+        {
+          "article-title": "Contrastive learning with stronger augmentations",
+          "author": "wang",
+          "key": "ref67",
+          "year": "2021"
+        },
+        {
+          "article-title": "Contrastive learning for recommender system",
+          "author": "liu",
+          "key": "ref117",
+          "year": "2021"
+        },
+        {
+          "DOI": "10.1145/3442381.3449802",
+          "doi-asserted-by": "publisher",
+          "key": "ref69"
+        },
+        {
+          "DOI": "10.1145/3474085.3475709",
+          "doi-asserted-by": "publisher",
+          "key": "ref118"
+        },
+        {
+          "DOI": "10.1137/S1064827595287997",
+          "doi-asserted-by": "publisher",
+          "key": "ref64"
+        },
+        {
+          "DOI": "10.1145/3442381.3449844",
+          "doi-asserted-by": "publisher",
+          "key": "ref115"
+        },
+        {
+          "DOI": "10.1016/j.cosrev.2007.05.001",
+          "doi-asserted-by": "publisher",
+          "key": "ref63"
+        },
+        {
+          "DOI": "10.1609/aaai.v35i5.16578",
+          "doi-asserted-by": "publisher",
+          "key": "ref116"
+        },
+        {
+          "DOI": "10.1007/978-3-030-58621-8_45",
+          "doi-asserted-by": "publisher",
+          "key": "ref66"
+        },
+        {
+          "article-title": "Collective classification in network data",
+          "author": "sen",
+          "first-page": "93",
+          "journal-title": "AI Mag",
+          "key": "ref113",
+          "volume": "29",
+          "year": "2008"
+        },
+        {
+          "article-title": "Learning deep representations by mutual information estimation and maximization",
+          "author": "hjelm",
+          "first-page": "1",
+          "journal-title": "Proc Int Conf Learn Representations",
+          "key": "ref65",
+          "year": "2019"
+        },
+        {
+          "DOI": "10.1145/3437963.3441738",
+          "doi-asserted-by": "publisher",
+          "key": "ref114"
+        },
+        {
+          "DOI": "10.1109/TKDE.2021.3101227",
+          "doi-asserted-by": "publisher",
+          "key": "ref60"
+        },
+        {
+          "DOI": "10.24963/ijcai.2020/179",
+          "doi-asserted-by": "publisher",
+          "key": "ref122"
+        },
+        {
+          "DOI": "10.1145/3459637.3482057",
+          "doi-asserted-by": "publisher",
+          "key": "ref123"
+        },
+        {
+          "DOI": "10.1109/TCYB.2021.3061660",
+          "doi-asserted-by": "publisher",
+          "key": "ref62"
+        },
+        {
+          "DOI": "10.1137/1.9781611975673.67",
+          "doi-asserted-by": "publisher",
+          "key": "ref120"
+        },
+        {
+          "DOI": "10.1007/978-3-030-01264-9_9",
+          "doi-asserted-by": "publisher",
+          "key": "ref61"
+        },
+        {
+          "DOI": "10.1145/3357384.3358074",
+          "doi-asserted-by": "publisher",
+          "key": "ref121"
+        }
+      ],
+      "reference-count": 162,
+      "references-count": 162,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://ieeexplore.ieee.org/document/9770382/"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "IEEE Trans. Knowl. Data Eng."
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Graph Self-Supervised Learning: A Survey"
+      ],
+      "type": "journal-article"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "dedd925163a2a06a6843ff2260effd38a8552a8ff4014eefaf95afd7188295d3",
+  "retrieved_at": "2026-07-14T13:49:34Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

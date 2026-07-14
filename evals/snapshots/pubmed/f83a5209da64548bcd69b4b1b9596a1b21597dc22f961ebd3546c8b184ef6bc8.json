@@ -1,0 +1,84 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "f83a5209da64548bcd69b4b1b9596a1b21597dc22f961ebd3546c8b184ef6bc8",
+  "request_params": {
+    "db": "pubmed",
+    "id": "30476648",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "BACKGROUND: Cardiologs® has developed the first electrocardiogram (ECG) algorithm that uses a deep neural network (DNN) for full 12‑lead ECG analysis, including rhythm, QRS and ST-T-U waves. We compared the accuracy of the first version of Cardiologs® DNN algorithm to the Mortara/Veritas® conventional algorithm in emergency department (ED) ECGs. METHODS: Individual ECG diagnoses were prospectively mapped to one of 16 pre-specified groups of ECG diagnoses, which were further classified as \"major\" ECG abnormality or not. Automated interpretations were compared to blinded experts'. The primary outcome was the performance of the algorithms in finding at least one \"major\" abnormality. The secondary outcome was the proportion of all ECGs for which all groups were identified, with no false negative or false positive groups (\"accurate ECG interpretation\"). Additionally, we measured sensitivity and positive predictive value (PPV) for any abnormal group. RESULTS: Cardiologs® vs. Veritas® accuracy for finding a major abnormality was 92.2% vs. 87.2% (p < 0.0001), with comparable sensitivity (88.7% vs. 92.0%, p = 0.086), improved specificity (94.0% vs. 84.7%, p < 0.0001) and improved positive predictive value (PPV 88.2% vs. 75.4%, p < 0.0001). Cardiologs® had accurate ECG interpretation for 72.0% (95% CI: 69.6-74.2) of ECGs vs. 59.8% (57.3-62.3) for Veritas® (P < 0.0001). Sensitivity for any abnormal group for Cardiologs® and Veritas®, respectively, was 69.6% (95CI 66.7-72.3) vs. 68.3% (95CI 65.3-71.1) (NS). Positive Predictive Value was 74.0% (71.1-76.7) for Cardiologs® vs. 56.5% (53.7-59.3) for Veritas® (P < 0.0001). CONCLUSION: Cardiologs' DNN was more accurate and specific in identifying ECGs with at least one major abnormal group. It had a significantly higher rate of accurate ECG interpretation, with similar sensitivity and higher PPV.",
+        "authors": [
+          {
+            "family": "Smith",
+            "given": "Stephen W"
+          },
+          {
+            "family": "Walsh",
+            "given": "Brooks"
+          },
+          {
+            "family": "Grauer",
+            "given": "Ken"
+          },
+          {
+            "family": "Wang",
+            "given": "Kyuhyun"
+          },
+          {
+            "family": "Rapin",
+            "given": "Jeremy"
+          },
+          {
+            "family": "Li",
+            "given": "Jia"
+          },
+          {
+            "family": "Fennell",
+            "given": "William"
+          },
+          {
+            "family": "Taboulet",
+            "given": "Pierre"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1016/j.jelectrocard.2018.11.013",
+        "issn": [
+          "1532-8430"
+        ],
+        "issue": "",
+        "journal": "Journal of electrocardiology",
+        "journal_abbreviation": "J Electrocardiol",
+        "keywords": [
+          "Artificial intelligence",
+          "Big data",
+          "Computer",
+          "Deep neural network",
+          "Electrocardiography"
+        ],
+        "language": "eng",
+        "month": null,
+        "page": "88-95",
+        "pmcid": "",
+        "pmid": "30476648",
+        "publication_types": [
+          "Comparative Study",
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "record_type": "article",
+        "title": "A deep neural network learning algorithm outperforms a conventional algorithm for emergency department electrocardiogram interpretation.",
+        "volume": "52",
+        "year": 2019
+      }
+    ]
+  },
+  "response_hash": "f03acb4042a61c3c024af6c51c32980e98a9470ead4501e85c6efba2a401a9ad",
+  "retrieved_at": "2026-07-14T14:15:54Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

@@ -1,0 +1,612 @@
+{
+  "endpoint": "dois",
+  "request_key": "311ca5472c46800eaf2ba8d3157afa1a03e583cc552ac140b5dbb872e7becab8",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Automatic Real Time Detection of Atrial Fibrillation"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2024-06-14T01:52:42Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Hu",
+              "givenName": "Qihan",
+              "name": "Hu, Qihan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Daomiao",
+              "name": "Wang, Daomiao",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wu",
+              "givenName": "Hong",
+              "name": "Wu, Hong",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Liu",
+              "givenName": "Jian",
+              "name": "Liu, Jian",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Yang",
+              "givenName": "Cuiwei",
+              "name": "Yang, Cuiwei",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2024-06-13T08:58:59Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2024-06-14T00:32:03Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2024-06",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2024",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "The progression of deep learning and the widespread adoption of sensors have facilitated automatic multi-view fusion (MVF) about the cardiovascular system (CVS) signals. However, prevalent MVF model architecture often amalgamates CVS signals from the same temporal step but different views into a unified representation, disregarding the asynchronous nature of cardiovascular events and the inherent heterogeneity across views, leading to catastrophic view confusion. Efficient training strategies specifically tailored for MVF models to attain comprehensive representations need simultaneous consideration. Crucially, real-world data frequently arrives with incomplete views, an aspect rarely noticed by researchers. Thus, the View-Centric Transformer (VCT) and Multitask Masked Autoencoder (M2AE) are specifically designed to emphasize the centrality of each view and harness unlabeled data to achieve superior fused representations. Additionally, we systematically define the missing-view problem for the first time and introduce prompt techniques to aid pretrained MVF models in flexibly adapting to various missing-view scenarios. Rigorous experiments involving atrial fibrillation detection, blood pressure estimation, and sleep staging-typical health monitoring tasks-demonstrate the remarkable advantage of our method in MVF compared to prevailing methodologies. Notably, the prompt technique requires finetuning less than 3% of the entire model's data, substantially fortifying the model's resilience to view missing while circumventing the need for complete retraining. The results demonstrate the effectiveness of our approaches, highlighting their potential for practical applications in cardiovascular health monitoring. Codes and models are released at URL.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "16 pages,12 figures",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2406.08930",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2406.08930",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2024,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2024-06-14T01:52:43Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Efficient Multi-View Fusion and Flexible Adaptation to View Missing in Cardiovascular System Signals"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2024-06-14T01:52:43Z",
+          "url": "https://arxiv.org/abs/2406.08930",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2406.08930",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-11T02:12:36Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Singh",
+              "givenName": "Prateek",
+              "name": "Singh, Prateek",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Sharma",
+              "givenName": "Ambalika",
+              "name": "Sharma, Ambalika",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Maiya",
+              "givenName": "Shreesha",
+              "name": "Maiya, Shreesha",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2022-01-26T21:45:48Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2022-02-11T01:20:59Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2022-02",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2022",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "The incidences of atrial fibrillation (AFib) are increasing at a daunting rate worldwide. For the early detection of the risk of AFib, we have developed an automatic detection system based on deep neural networks. For achieving better classification, it is mandatory to have good pre-processing of physiological signals. Keeping this in mind, we have proposed a two-fold study. First, an end-to-end model is proposed to denoise the electrocardiogram signals using denoising autoencoders (DAE). To achieve denoising, we have used three networks including, convolutional neural network (CNN), dense neural network (DNN), and recurrent neural networks (RNN). Compared the three models and CNN based DAE performance is found to be better than the other two. Therefore, the signals denoised by the CNN based DAE were used to train the deep neural networks for classification. Three neural networks' performance has been evaluated using accuracy, specificity, sensitivity, and signal to noise ratio (SNR) as the evaluation criteria. The proposed end-to-end deep learning model for detecting atrial fibrillation in this study has achieved an accuracy rate of 99.20%, a specificity of 99.50%, a sensitivity of 99.50%, and a true positive rate of 99.00%. The average accuracy of the algorithms we compared is 96.26%, and our algorithm's accuracy is 3.2% higher than this average of the other algorithms. The CNN classification network performed better as compared to the other two. Additionally, the model is computationally efficient for real-time applications, and it takes approx 1.3 seconds to process 24 hours ECG signal. The proposed model was also tested on unseen dataset with different proportions of arrhythmias to examine the model's robustness, which resulted in 99.10% of recall and 98.50% of precision.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2202.05177",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2202.05177",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2022,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-11T02:12:37Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Signal Processing (eess.SP)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Image and Video Processing (eess.IV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Automated Atrial Fibrillation Classification Based on Denoising Stacked Autoencoder and Optimized Deep Network"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-02-11T02:12:37Z",
+          "url": "https://arxiv.org/abs/2202.05177",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2202.05177",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [],
+              "contributorType": "RelatedPerson",
+              "familyName": "Cappello",
+              "givenName": "Angelo",
+              "name": "Cappello, Angelo",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "created": "2014-05-13T21:24:51Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "Di Marco, Luigi Yuri <1971>",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2012",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "The surface electrocardiogram (ECG) is an established diagnostic tool for the detection of abnormalities in the electrical activity of the heart. The interest of the ECG, however, extends beyond the diagnostic purpose. In recent years, studies in cognitive psychophysiology have related heart rate variability (HRV) to memory performance and mental workload.\r\nThe aim of this thesis was to analyze the variability of surface ECG derived rhythms, at two different time scales: the discrete-event time scale, typical of beat-related features (Objective I), and the “continuous” time scale of separated sources in the ECG (Objective II), in selected scenarios relevant to psychophysiological and clinical research, respectively.\r\nObjective I) Joint time-frequency and non-linear analysis of HRV was carried out, with the goal of assessing psychophysiological workload (PPW) in response to working memory engaging tasks. Results from fourteen healthy young subjects suggest the potential use of the proposed indices in discriminating PPW levels in response to varying memory-search task difficulty.\r\nObjective II) A novel source-cancellation method based on morphology clustering was proposed for the estimation of the atrial wavefront in atrial fibrillation (AF) from body surface potential maps. \r\nStrong direct correlation between spectral concentration (SC) of atrial wavefront and temporal variability of the spectral distribution was shown in persistent AF patients, suggesting that with higher SC, shorter observation time is required to collect spectral distribution, from which the fibrillatory rate is estimated. This could be time and cost effective in clinical decision-making. The results held for reduced leads sets, suggesting that a simplified setup could also be considered, further reducing the costs.\r\nIn designing the methods of this thesis, an online signal processing approach was kept, with the goal of contributing to real-world applicability. An algorithm for automatic assessment of ambulatory ECG quality, and an automatic ECG delineation algorithm were designed and validated.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.6092/unibo/amsdottorato/4392",
+          "downloadCount": 0,
+          "formats": [
+            "application/pdf"
+          ],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2012,
+          "published": null,
+          "publisher": "Alma Mater Studiorum - Università di Bologna",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2014-05-13T21:24:51Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-2.2",
+          "sizes": [],
+          "source": null,
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "ING-INF/06 Bioingegneria elettronica e informatica"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Variability analysis of discrete event series and wavefront patterns in surface electrocardiogram: contributions to psychophysiological and clinical research"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceType": "PDF Document",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2020-08-19T16:11:21Z",
+          "url": "http://amsdottorato.unibo.it/4392",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.6092/unibo/amsdottorato/4392",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "crui.unibo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2019-03-13T23:09:20Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Cirugeda-Roldán",
+              "givenName": "E.",
+              "name": "Cirugeda-Roldán, E.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Novak",
+              "givenName": "D.",
+              "name": "Novak, D.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Kremen",
+              "givenName": "V.",
+              "name": "Kremen, V.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Cuesta-Frau",
+              "givenName": "D.",
+              "name": "Cuesta-Frau, D.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Keller",
+              "givenName": "M.",
+              "name": "Keller, M.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Luik",
+              "givenName": "A.",
+              "name": "Luik, A.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Srutova",
+              "givenName": "M.",
+              "name": "Srutova, M.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2015",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Atrial fibrillation (AF) is the most commonly clinically-encountered arrhythmia. Catheter ablation of AF is mainly based on trigger elimination and modification of the AF substrate. Substrate mapping ablation of complex fractionated atrial electrograms (CFAEs) has emerged to be a promising technique. To improve substrate mapping based on CFAE analysis, automatic detection algorithms need to be developed in order to simplify and accelerate the ablation procedures. According to the latest studies, the level of fractionation has been shown to be promisingly well estimated from CFAE measured during radio frequency (RF) ablation of AF. The nature of CFAE is generally nonlinear and nonstationary, so the use of complexity measures is considered to be the appropriate technique for the analysis of AF records. This work proposes the use of sample entropy (SampEn), not only as a way to discern between non-fractionated and fractionated atrial electrograms (A-EGM), but also as a tool for characterizing the degree of A-EGM regularity, which is linked to changes in the AF substrate and to heart tissue damage. The use of SampEn combined with a blind parameter estimation optimization process enables the classification between CFAE and non-CFAE with statistical significance (p &lt; 0:001), 0.89 area under the ROC, 86% specificity and 77% sensitivity over a mixed database of A-EGM combined from two independent CFAE signal databases, recorded during RF ablation of AF in two EU countries (542 signals in total). On the basis of the results obtained in this study, it can be suggested that the use of SampEn is suitable for real-time support during navigation of RF ablation of AF, as only 1.5 seconds of signal segments need to be analyzed.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5445/ir/1000056933",
+          "downloadCount": 0,
+          "formats": [
+            "PDF"
+          ],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2015,
+          "published": null,
+          "publisher": "Karlsruhe",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2019-03-13T23:09:21Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Open Access",
+              "rightsUri": "info:eu-repo/semantics/openAccess"
+            },
+            {
+              "rights": "Creative Commons Namensnennung 4.0 International",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/deed.de"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "atrial fibrillation"
+            },
+            {
+              "subject": "catheter ablation"
+            },
+            {
+              "subject": "complex fractionated atrial electrograms"
+            },
+            {
+              "subject": "sample entropy"
+            },
+            {
+              "subject": "signal classification"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Characterization of complex fractionated atrial electrograms by sample entropy: An international multi-center study"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceType": "Journal Article",
+            "resourceTypeGeneral": "Text",
+            "ris": "JOUR",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2020-07-29T06:36:49Z",
+          "url": "https://publikationen.bibliothek.kit.edu/1000056933",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.5445/ir/1000056933",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "tib.kit",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Automatic+Real+Time+Detection+of+Atrial+Fibrillation&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 4,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "655be76df8d0906f040d965a8cb4c62be1bb9e9fa97e8f631a249b166afd10ba",
+  "retrieved_at": "2026-07-14T14:48:49Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

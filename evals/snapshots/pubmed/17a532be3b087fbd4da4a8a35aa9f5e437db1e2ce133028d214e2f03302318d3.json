@@ -1,0 +1,101 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "17a532be3b087fbd4da4a8a35aa9f5e437db1e2ce133028d214e2f03302318d3",
+  "request_params": {
+    "db": "pubmed",
+    "id": "30617318",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "Asymptomatic left ventricular dysfunction (ALVD) is present in 3-6% of the general population, is associated with reduced quality of life and longevity, and is treatable when found1-4. An inexpensive, noninvasive screening tool for ALVD in the doctor's office is not available. We tested the hypothesis that application of artificial intelligence (AI) to the electrocardiogram (ECG), a routine method of measuring the heart's electrical activity, could identify ALVD. Using paired 12-lead ECG and echocardiogram data, including the left ventricular ejection fraction (a measure of contractile function), from 44,959 patients at the Mayo Clinic, we trained a convolutional neural network to identify patients with ventricular dysfunction, defined as ejection fraction ≤35%, using the ECG data alone. When tested on an independent set of 52,870 patients, the network model yielded values for the area under the curve, sensitivity, specificity, and accuracy of 0.93, 86.3%, 85.7%, and 85.7%, respectively. In patients without ventricular dysfunction, those with a positive AI screen were at 4 times the risk (hazard ratio, 4.1; 95% confidence interval, 3.3 to 5.0) of developing future ventricular dysfunction compared with those with a negative screen. Application of AI to the ECG-a ubiquitous, low-cost test-permits the ECG to serve as a powerful screening tool in asymptomatic individuals to identify ALVD.",
+        "authors": [
+          {
+            "family": "Attia",
+            "given": "Zachi I"
+          },
+          {
+            "family": "Kapa",
+            "given": "Suraj"
+          },
+          {
+            "family": "Lopez-Jimenez",
+            "given": "Francisco"
+          },
+          {
+            "family": "McKie",
+            "given": "Paul M"
+          },
+          {
+            "family": "Ladewig",
+            "given": "Dorothy J"
+          },
+          {
+            "family": "Satam",
+            "given": "Gaurav"
+          },
+          {
+            "family": "Pellikka",
+            "given": "Patricia A"
+          },
+          {
+            "family": "Enriquez-Sarano",
+            "given": "Maurice"
+          },
+          {
+            "family": "Noseworthy",
+            "given": "Peter A"
+          },
+          {
+            "family": "Munger",
+            "given": "Thomas M"
+          },
+          {
+            "family": "Asirvatham",
+            "given": "Samuel J"
+          },
+          {
+            "family": "Scott",
+            "given": "Christopher G"
+          },
+          {
+            "family": "Carter",
+            "given": "Rickey E"
+          },
+          {
+            "family": "Friedman",
+            "given": "Paul A"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1038/s41591-018-0240-2",
+        "issn": [
+          "1546-170X"
+        ],
+        "issue": "1",
+        "journal": "Nature medicine",
+        "journal_abbreviation": "Nat Med",
+        "keywords": [],
+        "language": "eng",
+        "month": 1,
+        "page": "70-74",
+        "pmcid": "",
+        "pmid": "30617318",
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ],
+        "record_type": "article",
+        "title": "Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram.",
+        "volume": "25",
+        "year": 2019
+      }
+    ]
+  },
+  "response_hash": "12286176312623584361871ad0f99f221e94d96d0fb2c6d5773a829a60d96bbf",
+  "retrieved_at": "2026-07-14T14:15:59Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

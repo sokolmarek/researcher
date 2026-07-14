@@ -1,0 +1,211 @@
+{
+  "endpoint": "works/10.1609/aaai.v33i01.33018545",
+  "request_key": "1fc952db9a55e637c8fde1383e14283566ef0f6d043b9885f5591886b926abce",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1609/aaai.v33i01.33018545",
+      "ISSN": [
+        "2374-3468",
+        "2159-5399"
+      ],
+      "URL": "https://doi.org/10.1609/aaai.v33i01.33018545",
+      "abstract": "<jats:p>Self-supervised tasks such as colorization, inpainting and zigsaw puzzle have been utilized for visual representation learning for still images, when the number of labeled images is limited or absent at all. Recently, this worthwhile stream of study extends to video domain where the cost of human labeling is even more expensive. However, the most of existing methods are still based on 2D CNN architectures that can not directly capture spatio-temporal information for video applications. In this paper, we introduce a new self-supervised task called as Space-Time Cubic Puzzles to train 3D CNNs using large scale video dataset. This task requires a network to arrange permuted 3D spatio-temporal crops. By completing Space-Time Cubic Puzzles, the network learns both spatial appearance and temporal relation of video frames, which is our final goal. In experiments, we demonstrate that our learned 3D representation is well transferred to action recognition tasks, and outperforms state-of-the-art 2D CNN-based competitors on UCF101 and HMDB51 datasets.</jats:p>",
+      "author": [
+        {
+          "affiliation": [],
+          "family": "Kim",
+          "given": "Dahun",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "affiliation": [],
+          "family": "Cho",
+          "given": "Donghyeon",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [],
+          "family": "Kweon",
+          "given": "In So",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": []
+      },
+      "created": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            21
+          ]
+        ],
+        "date-time": "2019-08-21T07:32:56Z",
+        "timestamp": 1566372776000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            7
+          ]
+        ],
+        "date-time": "2022-11-07T06:41:24Z",
+        "timestamp": 1667803284000
+      },
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            4
+          ]
+        ],
+        "date-time": "2026-07-04T16:41:17Z",
+        "timestamp": 1783183277357,
+        "version": "3.54.6"
+      },
+      "is-referenced-by-count": 221,
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2374-3468"
+        },
+        {
+          "type": "print",
+          "value": "2159-5399"
+        }
+      ],
+      "issue": "01",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            17
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "01",
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              7,
+              23
+            ]
+          ]
+        }
+      },
+      "license": [
+        {
+          "URL": "https://www.aaai.org",
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                7,
+                17
+              ]
+            ],
+            "date-time": "2019-07-17T00:00:00Z",
+            "timestamp": 1563321600000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://ojs.aaai.org/index.php/AAAI/article/download/4873/4746",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://ojs.aaai.org/index.php/AAAI/article/download/4873/4746",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "9382",
+      "original-title": [],
+      "page": "8545-8552",
+      "prefix": "10.1609",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            17
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            17
+          ]
+        ]
+      },
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "reference-count": 0,
+      "references-count": 0,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://ojs.aaai.org/index.php/AAAI/article/view/4873"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "AAAI"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Self-Supervised Video Representation Learning with Space-Time Cubic Puzzles"
+      ],
+      "type": "journal-article",
+      "volume": "33"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "83c46f46be26ef6d8b6e57a56e791faf792a3c81e02fdc29760ea28e29b71d0a",
+  "retrieved_at": "2026-07-14T14:48:33Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

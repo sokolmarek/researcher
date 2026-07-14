@@ -1,0 +1,709 @@
+{
+  "endpoint": "works/doi:10.1038/s41591-018-0240-2",
+  "request_key": "b49363101cf54be3639e3db7d8ddbef7af1bff55c2398049d543888287c37a34",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Zachi I. Attia",
+          "id": "https://openalex.org/A5046460674",
+          "orcid": "https://orcid.org/0000-0002-9706-7900"
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Zachi I. Attia",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Suraj Kapa",
+          "id": "https://openalex.org/A5024752712",
+          "orcid": "https://orcid.org/0000-0003-2283-4340"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Suraj Kapa",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Francisco López-Jiménez",
+          "id": "https://openalex.org/A5001963115",
+          "orcid": "https://orcid.org/0000-0001-5788-9734"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Francisco Lopez-Jimenez",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Paul M. McKie",
+          "id": "https://openalex.org/A5091401831",
+          "orcid": "https://orcid.org/0000-0003-0019-4768"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Paul M. McKie",
+        "raw_orcid": "https://orcid.org/0000-0003-0019-4768"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I2802423016"
+            ],
+            "raw_affiliation_string": "Business Development, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Dorothy J. Ladewig",
+          "id": "https://openalex.org/A5069601684",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic",
+            "id": "https://openalex.org/I1330342723",
+            "lineage": [
+              "https://openalex.org/I1330342723"
+            ],
+            "ror": "https://ror.org/02qp3tb03",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "WinnMed",
+            "id": "https://openalex.org/I2802423016",
+            "lineage": [
+              "https://openalex.org/I2802423016"
+            ],
+            "ror": "https://ror.org/02s47w807",
+            "type": "nonprofit"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Business Development, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Dorothy J. Ladewig",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I2802423016"
+            ],
+            "raw_affiliation_string": "Business Development, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Gaurav Satam",
+          "id": "https://openalex.org/A5055124433",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic",
+            "id": "https://openalex.org/I1330342723",
+            "lineage": [
+              "https://openalex.org/I1330342723"
+            ],
+            "ror": "https://ror.org/02qp3tb03",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "WinnMed",
+            "id": "https://openalex.org/I2802423016",
+            "lineage": [
+              "https://openalex.org/I2802423016"
+            ],
+            "ror": "https://ror.org/02s47w807",
+            "type": "nonprofit"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Business Development, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Gaurav Satam",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Patricia A. Pellikka",
+          "id": "https://openalex.org/A5025811215",
+          "orcid": "https://orcid.org/0000-0001-6800-3521"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Patricia A. Pellikka",
+        "raw_orcid": "https://orcid.org/0000-0001-6800-3521"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Maurice Enriquez‐Sarano",
+          "id": "https://openalex.org/A5000497087",
+          "orcid": "https://orcid.org/0000-0003-0910-5450"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Maurice Enriquez-Sarano",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Peter A. Noseworthy",
+          "id": "https://openalex.org/A5043658621",
+          "orcid": "https://orcid.org/0000-0002-4308-0456"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Peter A. Noseworthy",
+        "raw_orcid": "https://orcid.org/0000-0002-4308-0456"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Thomas M. Munger",
+          "id": "https://openalex.org/A5073169719",
+          "orcid": "https://orcid.org/0000-0003-2271-4760"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Thomas M. Munger",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Samuel J. Asirvatham",
+          "id": "https://openalex.org/A5079546501",
+          "orcid": "https://orcid.org/0000-0001-9835-5536"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Samuel J. Asirvatham",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210146710"
+            ],
+            "raw_affiliation_string": "Health Sciences Research, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Christopher G. Scott",
+          "id": "https://openalex.org/A5085699345",
+          "orcid": "https://orcid.org/0000-0003-1340-0647"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Florida",
+            "id": "https://openalex.org/I4210146710",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210146710"
+            ],
+            "ror": "https://ror.org/03zzw1w08",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Health Sciences Research, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Christopher G. Scott",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210146710"
+            ],
+            "raw_affiliation_string": "Health Sciences Research, Mayo Clinic, Jacksonville, FL, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Rickey E. Carter",
+          "id": "https://openalex.org/A5023936819",
+          "orcid": "https://orcid.org/0000-0002-0818-273X"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Florida",
+            "id": "https://openalex.org/I4210146710",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210146710"
+            ],
+            "ror": "https://ror.org/03zzw1w08",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Health Sciences Research, Mayo Clinic, Jacksonville, FL, USA"
+        ],
+        "raw_author_name": "Rickey E. Carter",
+        "raw_orcid": "https://orcid.org/0000-0002-0818-273X"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099",
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210146710"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA. friedman.paul@mayo.edu"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210125099"
+            ],
+            "raw_affiliation_string": "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Paul A. Friedman",
+          "id": "https://openalex.org/A5020289692",
+          "orcid": "https://orcid.org/0000-0001-5052-2948"
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic",
+            "id": "https://openalex.org/I1330342723",
+            "lineage": [
+              "https://openalex.org/I1330342723"
+            ],
+            "ror": "https://ror.org/02qp3tb03",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Arizona",
+            "id": "https://openalex.org/I4210125099",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210125099"
+            ],
+            "ror": "https://ror.org/03jp40720",
+            "type": "healthcare"
+          },
+          {
+            "country_code": "US",
+            "display_name": "Mayo Clinic in Florida",
+            "id": "https://openalex.org/I4210146710",
+            "lineage": [
+              "https://openalex.org/I1330342723",
+              "https://openalex.org/I4210146710"
+            ],
+            "ror": "https://ror.org/03zzw1w08",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA. friedman.paul@mayo.edu",
+          "Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA"
+        ],
+        "raw_author_name": "Paul A. Friedman",
+        "raw_orcid": "https://orcid.org/0000-0001-5052-2948"
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "70",
+      "issue": "1",
+      "last_page": "74",
+      "volume": "25"
+    },
+    "cited_by_count": 1332,
+    "display_name": "Screening for cardiac contractile dysfunction using an artificial intelligence–enabled electrocardiogram",
+    "doi": "https://doi.org/10.1038/s41591-018-0240-2",
+    "id": "https://openalex.org/W2901226889",
+    "ids": {
+      "doi": "https://doi.org/10.1038/s41591-018-0240-2",
+      "mag": "2901226889",
+      "openalex": "https://openalex.org/W2901226889",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/30617318"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1038/s41591-018-0240-2",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1038/s41591-018-0240-2",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Nature Medicine",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Nature Medicine",
+        "host_organization": "https://openalex.org/P4310319908",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319908",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Nature Portfolio",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Nature Portfolio",
+        "id": "https://openalex.org/S203256638",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1078-8956",
+          "1546-170X",
+          "1744-7933"
+        ],
+        "issn_l": "1078-8956",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2018-11-14",
+    "publication_year": 2018,
+    "referenced_works": [
+      "https://openalex.org/W21478844",
+      "https://openalex.org/W1563088657",
+      "https://openalex.org/W1570828701",
+      "https://openalex.org/W1605740563",
+      "https://openalex.org/W1971560300",
+      "https://openalex.org/W2006565016",
+      "https://openalex.org/W2013975767",
+      "https://openalex.org/W2025014999",
+      "https://openalex.org/W2040616060",
+      "https://openalex.org/W2047549866",
+      "https://openalex.org/W2074772891",
+      "https://openalex.org/W2081284931",
+      "https://openalex.org/W2084717989",
+      "https://openalex.org/W2097087273",
+      "https://openalex.org/W2108790161",
+      "https://openalex.org/W2119340816",
+      "https://openalex.org/W2126617656",
+      "https://openalex.org/W2129927679",
+      "https://openalex.org/W2131604366",
+      "https://openalex.org/W2141890603",
+      "https://openalex.org/W2163605009",
+      "https://openalex.org/W2299832056",
+      "https://openalex.org/W2312388685",
+      "https://openalex.org/W2408628547",
+      "https://openalex.org/W2461146765",
+      "https://openalex.org/W2462346793",
+      "https://openalex.org/W2518951360",
+      "https://openalex.org/W2590000573",
+      "https://openalex.org/W2599761051",
+      "https://openalex.org/W2609605008",
+      "https://openalex.org/W2620689942",
+      "https://openalex.org/W2622250050",
+      "https://openalex.org/W2766742462",
+      "https://openalex.org/W2935430241",
+      "https://openalex.org/W2940793653",
+      "https://openalex.org/W2953256171",
+      "https://openalex.org/W4235922353",
+      "https://openalex.org/W4238559461",
+      "https://openalex.org/W4238907867",
+      "https://openalex.org/W4293084779",
+      "https://openalex.org/W6671812248",
+      "https://openalex.org/W7018844933"
+    ],
+    "referenced_works_count": 42,
+    "title": "Screening for cardiac contractile dysfunction using an artificial intelligence–enabled electrocardiogram",
+    "type": "article"
+  },
+  "response_hash": "ae78fe16aae6afb7974f85b2502b16d5bceeb5fcbfe4eaafa9557e9506a6ad03",
+  "retrieved_at": "2026-07-14T14:48:20Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

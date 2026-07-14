@@ -1,0 +1,57 @@
+{
+  "endpoint": "query",
+  "request_key": "e0559b841174bbf3a788291f306f87ee59436af8e994c1102c38fa1f267f5451",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Solving Inefficiency of Self-supervised Representation Learning\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Guangrun Wang",
+          "Keze Wang",
+          "Guangcong Wang",
+          "Philip H. S. Torr",
+          "Liang Lin"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "comment": "ICCV 2021 paper, oral presentation",
+        "id": "http://arxiv.org/abs/2104.08760v3",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2104.08760v3",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2104.08760v3",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.CV",
+        "published": "2021-04-18T07:47:10Z",
+        "summary": "Self-supervised learning (especially contrastive learning) has attracted great interest due to its huge potential in learning discriminative representations in an unsupervised manner. Despite the acknowledged successes, existing contrastive learning methods suffer from very low learning efficiency, e.g., taking about ten times more training epochs than supervised learning for comparable recognition accuracy. In this paper, we reveal two contradictory phenomena in contrastive learning that we call under-clustering and over-clustering problems, which are major obstacles to learning efficiency. Under-clustering means that the model cannot efficiently learn to discover the dissimilarity between inter-class samples when the negative sample pairs for contrastive learning are insufficient to differentiate all the actual object classes. Over-clustering implies that the model cannot efficiently learn features from excessive negative sample pairs, forcing the model to over-cluster samples of the same actual classes into different clusters. To simultaneously overcome these two problems, we propose a novel self-supervised learning framework using a truncated triplet loss. Precisely, we employ a triplet loss tending to maximize the relative distance between the positive pair and negative pairs to address the under-clustering problem; and we construct the negative pair by selecting a negative sample deputy from all negative samples to avoid the over-clustering problem, guaranteed by the Bernoulli Distribution model. We extensively evaluate our framework in several large-scale benchmarks (e.g., ImageNet, SYSU-30k, and COCO). The results demonstrate our model's superiority (e.g., the learning efficiency) over the latest state-of-the-art methods by a clear margin. Codes available at: https://github.com/wanggrun/triplet .",
+        "title": "Solving Inefficiency of Self-supervised Representation Learning",
+        "updated": "2021-10-21T10:19:10Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "06f8e573fc06bc68451e4977ed1d92706e9e47a443cfe47a4c657e972ab76f20",
+  "retrieved_at": "2026-07-14T13:56:17Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

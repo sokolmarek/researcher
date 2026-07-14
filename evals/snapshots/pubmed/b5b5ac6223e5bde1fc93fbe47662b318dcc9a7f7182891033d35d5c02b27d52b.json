@@ -1,0 +1,61 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "b5b5ac6223e5bde1fc93fbe47662b318dcc9a7f7182891033d35d5c02b27d52b",
+  "request_params": {
+    "db": "pubmed",
+    "id": "23708769",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "We introduce a novel method for the automatic detection of atrial fibrillation (AF) using time-varying coherence functions (TVCF). The TVCF is estimated by the multiplication of two time-varying transfer functions (TVTFs). The two TVTFs are obtained using two adjacent data segments with one data segment as the input signal and the other data segment as the output to produce the first TVTF; the second TVTF is produced by reversing the input and output signals. We found that the resultant TVCF between two adjacent normal sinus rhythm (NSR) segments shows high coherence values (near 1) throughout the entire frequency range. However, if either or both segments partially or fully contain AF, the resultant TVCF is significantly lower than 1. When TVCF was combined with Shannon entropy (SE), we obtained even more accurate AF detection rate of 97.9% for the MIT-BIH atrial fibrillation (AF) database (n = 23) with 128 beat segments. The detection algorithm was tested on four databases using 128 beat segments: the MIT-BIH AF database, the MIT-BIH NSR database ( n = 18), the MIT-BIH Arrhythmia database ( n = 48), and a clinical 24-h Holter AF database ( n = 25). Using the receiver operating characteristic curves from the combination of TVCF and SE, we obtained a sensitivity of 98.2% and specificity of 97.7% for the MIT-BIH AF database. For the MIT-BIH NSR database, we found a specificity of 99.7%. For the MIT-BIH Arrhythmia database, the sensitivity and specificity were 91.1% and 89.7%, respectively. For the clinical database (24-h Holter data), the sensitivity and specificity were 92.3% and 93.6%, respectively. We also found that a short segment (12 beats) also provided accurate AF detection for all databases: sensitivity of 94.7% and specificity of 90.4% for the MIT-BIH AF, specificity of 94.4% for the MIT-BIH-NSR, the sensitivity of 92.4% and specificity of 84.1% for the MIT-BIH arrhythmia, and sensitivity of 93.9% and specificity of 84.4% for the clinical database. The advantage of using a short segment is more accurate AF burden calculation as the timing of transitions between NSR and AF are more accurately detected.",
+        "authors": [
+          {
+            "family": "Lee",
+            "given": "Jinseok"
+          },
+          {
+            "family": "Nam",
+            "given": "Yunyoung"
+          },
+          {
+            "family": "McManus",
+            "given": "David D"
+          },
+          {
+            "family": "Chon",
+            "given": "Ki H"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1109/TBME.2013.2264721",
+        "issn": [
+          "1558-2531"
+        ],
+        "issue": "10",
+        "journal": "IEEE transactions on bio-medical engineering",
+        "journal_abbreviation": "IEEE Trans Biomed Eng",
+        "keywords": [],
+        "language": "eng",
+        "month": 10,
+        "page": "2783-93",
+        "pmcid": "",
+        "pmid": "23708769",
+        "publication_types": [
+          "Journal Article",
+          "Research Support, U.S. Gov't, Non-P.H.S."
+        ],
+        "record_type": "article",
+        "title": "Time-varying coherence function for atrial fibrillation detection.",
+        "volume": "60",
+        "year": 2013
+      }
+    ]
+  },
+  "response_hash": "2fbde6fc8463fc71a88339be7a67914fed293d0f2a192cb3a462e7ef0c9f7055",
+  "retrieved_at": "2026-07-14T13:50:10Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

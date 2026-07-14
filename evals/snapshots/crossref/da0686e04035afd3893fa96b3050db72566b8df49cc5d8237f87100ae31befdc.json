@@ -1,0 +1,304 @@
+{
+  "endpoint": "works/10.1152/ajpheart.00561.2010",
+  "request_key": "da0686e04035afd3893fa96b3050db72566b8df49cc5d8237f87100ae31befdc",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1152/ajpheart.00561.2010",
+      "ISSN": [
+        "0363-6135",
+        "1522-1539"
+      ],
+      "URL": "https://doi.org/10.1152/ajpheart.00561.2010",
+      "abstract": "<jats:p> Entropy estimation is useful but difficult in short time series. For example, automated detection of atrial fibrillation (AF) in very short heart beat interval time series would be useful in patients with cardiac implantable electronic devices that record only from the ventricle. Such devices require efficient algorithms, and the clinical situation demands accuracy. Toward these ends, we optimized the sample entropy measure, which reports the probability that short templates will match with others within the series. We developed general methods for the rational selection of the template length m and the tolerance matching r. The major innovation was to allow r to vary so that sufficient matches are found for confident entropy estimation, with conversion of the final probability to a density by dividing by the matching region volume, 2 r<jats:sup> m</jats:sup>. The optimized sample entropy estimate and the mean heart beat interval each contributed to accurate detection of AF in as few as 12 heartbeats. The final algorithm, called the coefficient of sample entropy (COSEn), was developed using the canonical MIT-BIH database and validated in a new and much larger set of consecutive Holter monitor recordings from the University of Virginia. In patients over the age of 40 yr old, COSEn has high degrees of accuracy in distinguishing AF from normal sinus rhythm in 12-beat calculations performed hourly. The most common errors are atrial or ventricular ectopy, which increase entropy despite sinus rhythm, and atrial flutter, which can have low or high entropy states depending on dynamics of atrioventricular conduction. </jats:p>",
+      "alternative-id": [
+        "10.1152/ajpheart.00561.2010"
+      ],
+      "author": [
+        {
+          "affiliation": [
+            {
+              "name": "Cardiovascular Division, Department of Internal Medicine, and Cardiovascular Research Center, University of Virginia Health System, Charlottesville, Virginia"
+            }
+          ],
+          "family": "Lake",
+          "given": "Douglas E.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Cardiovascular Division, Department of Internal Medicine, and Cardiovascular Research Center, University of Virginia Health System, Charlottesville, Virginia"
+            }
+          ],
+          "family": "Moorman",
+          "given": "J. Randall",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "American Journal of Physiology-Heart and Circulatory Physiology"
+      ],
+      "content-domain": {
+        "crossmark-restriction": false,
+        "domain": []
+      },
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            10,
+            31
+          ]
+        ],
+        "date-time": "2010-10-31T00:14:43Z",
+        "timestamp": 1288484083000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2019-09-08T21:00:00Z",
+        "timestamp": 1567976400000
+      },
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            18
+          ]
+        ],
+        "date-time": "2026-03-18T01:24:23Z",
+        "timestamp": 1773797063864,
+        "version": "3.50.1"
+      },
+      "is-referenced-by-count": 259,
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "0363-6135"
+        },
+        {
+          "type": "electronic",
+          "value": "1522-1539"
+        }
+      ],
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            1
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2011,
+              1
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.physiology.org/doi/pdf/10.1152/ajpheart.00561.2010",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "24",
+      "original-title": [],
+      "page": "H319-H325",
+      "prefix": "10.1152",
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            1
+          ]
+        ]
+      },
+      "publisher": "American Physiological Society",
+      "reference": [
+        {
+          "DOI": "10.1103/PhysRevE.71.021906",
+          "doi-asserted-by": "publisher",
+          "key": "B1"
+        },
+        {
+          "DOI": "10.1103/RevModPhys.57.617",
+          "doi-asserted-by": "publisher",
+          "key": "B2"
+        },
+        {
+          "DOI": "10.1001/jama.285.18.2370",
+          "doi-asserted-by": "publisher",
+          "key": "B3"
+        },
+        {
+          "DOI": "10.1103/PhysRevA.28.2591",
+          "doi-asserted-by": "publisher",
+          "key": "B4"
+        },
+        {
+          "DOI": "10.1542/peds.2004-2461",
+          "doi-asserted-by": "publisher",
+          "key": "B5"
+        },
+        {
+          "DOI": "10.1203/01.PDR.0000119366.21770.9E",
+          "doi-asserted-by": "publisher",
+          "key": "B6"
+        },
+        {
+          "DOI": "10.1203/01.PDR.0000064904.05313.D2",
+          "doi-asserted-by": "publisher",
+          "key": "B7"
+        },
+        {
+          "author": "Kolmogorov AN",
+          "first-page": "754",
+          "journal-title": "Doklady Rus Acad Sci",
+          "key": "B8",
+          "volume": "124",
+          "year": "1959"
+        },
+        {
+          "author": "Kolmogorov AN",
+          "first-page": "861",
+          "journal-title": "Doklady Rus Acad Sci",
+          "key": "B9",
+          "volume": "119",
+          "year": "1958"
+        },
+        {
+          "DOI": "10.1016/S0076-6879(09)67020-8",
+          "doi-asserted-by": "publisher",
+          "key": "B10"
+        },
+        {
+          "DOI": "10.1109/TBME.2005.859782",
+          "doi-asserted-by": "publisher",
+          "key": "B11"
+        },
+        {
+          "DOI": "10.1152/ajpregu.00069.2002",
+          "doi-asserted-by": "publisher",
+          "key": "B12"
+        },
+        {
+          "DOI": "10.1161/01.CIR.100.4.393",
+          "doi-asserted-by": "publisher",
+          "key": "B13"
+        },
+        {
+          "DOI": "10.1073/pnas.88.6.2297",
+          "doi-asserted-by": "publisher",
+          "key": "B14"
+        },
+        {
+          "DOI": "10.1152/ajpheart.1994.266.4.H1643",
+          "doi-asserted-by": "publisher",
+          "key": "B15"
+        },
+        {
+          "DOI": "10.1007/s004220050414",
+          "doi-asserted-by": "publisher",
+          "key": "B16"
+        },
+        {
+          "DOI": "10.1016/j.medengphy.2009.06.004",
+          "doi-asserted-by": "publisher",
+          "key": "B17"
+        },
+        {
+          "DOI": "10.1080/03610920601036481",
+          "doi-asserted-by": "publisher",
+          "key": "B18"
+        },
+        {
+          "DOI": "10.1016/S0076-6879(04)84011-4",
+          "doi-asserted-by": "publisher",
+          "key": "B19"
+        },
+        {
+          "DOI": "10.1152/ajpheart.2000.278.6.H2039",
+          "doi-asserted-by": "publisher",
+          "key": "B20"
+        },
+        {
+          "DOI": "10.1002/j.1538-7305.1948.tb01338.x",
+          "doi-asserted-by": "publisher",
+          "key": "B21"
+        },
+        {
+          "author": "Sinai YG",
+          "first-page": "768",
+          "journal-title": "Doklady Rus Acad Sci",
+          "key": "B22",
+          "volume": "124",
+          "year": "1959"
+        }
+      ],
+      "reference-count": 22,
+      "references-count": 22,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://www.physiology.org/doi/10.1152/ajpheart.00561.2010"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "American Journal of Physiology-Heart and Circulatory Physiology"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Accurate estimation of entropy in very short physiological time series: the problem of atrial fibrillation detection in implanted ventricular devices"
+      ],
+      "type": "journal-article",
+      "volume": "300"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "a19529397fda839eb3e87e295919ed8c2d8a184ebf89baabc4c0a6c1ce175b1c",
+  "retrieved_at": "2026-07-14T14:48:41Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

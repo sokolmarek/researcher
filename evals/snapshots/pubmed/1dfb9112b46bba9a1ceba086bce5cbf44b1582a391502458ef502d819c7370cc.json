@@ -1,0 +1,31 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "1dfb9112b46bba9a1ceba086bce5cbf44b1582a391502458ef502d819c7370cc",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.1016/j.artmed.2020.101919[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "32972654"
+      ],
+      "querytranslation": "\"10 1016 j artmed 2020 101919\"[Publisher ID]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": []
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "955f9e8533b9c6aa3c28bd7724aa290f7384e6c85bda15d44a2372f218a0e6d3",
+  "retrieved_at": "2026-07-14T14:15:52Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

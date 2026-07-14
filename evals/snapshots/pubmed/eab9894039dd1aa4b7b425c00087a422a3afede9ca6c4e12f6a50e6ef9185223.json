@@ -1,0 +1,31 @@
+{
+  "endpoint": "esearch.fcgi",
+  "request_key": "eab9894039dd1aa4b7b425c00087a422a3afede9ca6c4e12f6a50e6ef9185223",
+  "request_params": {
+    "db": "pubmed",
+    "retmax": 5,
+    "retmode": "json",
+    "sort": "relevance",
+    "term": "10.1016/j.jelectrocard.2009.06.006[AID]"
+  },
+  "response_body": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "19608194"
+      ],
+      "querytranslation": "\"10 1016 j jelectrocard 2009 06 006\"[Publisher ID]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": []
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "response_hash": "b2aa92f62a587361e5ece4e6424213957ea5d02aaeedc8dabc959ec0cc2b7c03",
+  "retrieved_at": "2026-07-14T13:50:00Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

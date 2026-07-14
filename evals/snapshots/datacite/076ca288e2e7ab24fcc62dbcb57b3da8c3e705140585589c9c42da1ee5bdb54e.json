@@ -1,0 +1,292 @@
+{
+  "endpoint": "dois/10.5281/zenodo.21358562",
+  "request_key": "076ca288e2e7ab24fcc62dbcb57b3da8c3e705140585589c9c42da1ee5bdb54e",
+  "request_params": {},
+  "response_body": {
+    "data": {
+      "attributes": {
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifier": "oai:zenodo.org:21358562",
+            "alternateIdentifierType": "oai"
+          }
+        ],
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "container": {},
+        "contentUrl": null,
+        "contributors": [],
+        "created": "2026-07-14T13:07:37.000Z",
+        "creators": [
+          {
+            "affiliation": [
+              "European Molecular Biology Laboratory"
+            ],
+            "familyName": "Candeli",
+            "givenName": "Noah",
+            "name": "Candeli, Noah",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0001-8087-1321",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "European Molecular Biology Laboratory",
+              "Hubrecht Institute for Developmental Biology and Stem Cell Research"
+            ],
+            "familyName": "Dayton",
+            "givenName": "Talya",
+            "name": "Dayton, Talya",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-7994-7963",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "European Molecular Biology Laboratory"
+            ],
+            "familyName": "Marco Giménez",
+            "givenName": "Andrés",
+            "name": "Marco Giménez, Andrés",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-9831-8433",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "European Molecular Biology Laboratory"
+            ],
+            "familyName": "José Antonio Sánchez Villicaña",
+            "name": "José Antonio Sánchez Villicaña",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0009-0006-7138-420X",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "University of Michigan"
+            ],
+            "familyName": "Miller",
+            "givenName": "Alyssa",
+            "name": "Miller, Alyssa",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-4069-1550",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "University of Michigan Medical School"
+            ],
+            "familyName": "Conchola",
+            "givenName": "Ansley",
+            "name": "Conchola, Ansley",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-2385-6712",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "University of Michigan"
+            ],
+            "familyName": "Spence",
+            "givenName": "Jason",
+            "name": "Spence, Jason",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0001-7869-3992",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Seoul National University of Science and Technology"
+            ],
+            "familyName": "Lee",
+            "givenName": "Woochang",
+            "name": "Lee, Woochang",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0009-0001-0082-8436",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Seoul National University Graduate School",
+              "Seoul National University",
+              "Seoul National University Hospital",
+              "Seoul National University College of Medicine"
+            ],
+            "familyName": "Kim",
+            "givenName": "Jong-Il",
+            "name": "Kim, Jong-Il",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-7240-3744",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2026-07-14",
+            "dateType": "Issued"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This Zenodo repository contains single-cell RNA sequencing (scRNA-seq) datasets associated with the publications listed below.\n\nNeuroendocrine-enriched fetal airway organoids (NEr-fAOs)\n\n“A robust human airway organoid platform enables scalable expansion and trajectory mapping of pulmonary neuroendocrine cells” (Candeli et al., 2026)\n\n\n\n\n\nSTARsolo.velocyto_NEr-fAOs.h5ad: Unprocessed AnnData (.h5ad) object used to run the analysis pipeline (https://github.com/daytonlab/NEr-fAOs_2026)\n\n\n\n\nNEr_fAOs_processed.zip: Processed gene expression matrices and corresponding metadata for reuse and downstream analyses.\n\n\n\nHuman fetal lung primary tissue\n\n“In vitro and in vivo development of the human airway at single-cell resolution” (Miller et al., 2020)\n\n\n\n\n\nConchola2023FetalEpithelium.zip: Processed gene expression matrices with updated metadata annotation (Conchola et al., 2023).\n\n\n\nBud tip lung organoids (BTOs)\n\n“Regionally distinct progenitor cells in the lower airway give rise to neuroendocrine and multiciliated cells in the developing human lung” (Conchola et al., 2023)\n\n\n\n\n\nConchola2023CellTagging.zip: Processed gene expression matrices and corresponding metadata.\n\n\n\nDistal airway organoids (dAOs/ALI)\n\n“A single-cell atlas of in vitro multiculture systems uncovers the in vivo lineage trajectory and cell state in the human lung” (Lee et al., 2023)\n\n\n\n\n\nLee2023invitroAtlas.zip: Processed gene expression matrices and corresponding metadata.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "doi": "10.5281/zenodo.21358562",
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "formats": [],
+        "fundingReferences": [],
+        "geoLocations": [],
+        "identifiers": [
+          {
+            "identifier": "oai:zenodo.org:21358562",
+            "identifierType": "oai"
+          }
+        ],
+        "isActive": true,
+        "language": null,
+        "metadataVersion": 1,
+        "partCount": 0,
+        "partOfCount": 0,
+        "prefix": "10.5281",
+        "publicationYear": 2026,
+        "published": "2026",
+        "publisher": "Zenodo",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2026-07-14T13:07:38.000Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.5281/zenodo.18433633",
+            "relatedIdentifierType": "DOI",
+            "relationType": "IsVersionOf"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [],
+        "source": "api",
+        "state": "findable",
+        "subjects": [],
+        "suffix": "zenodo.21358562",
+        "titles": [
+          {
+            "title": "A robust human airway organoid platform enables scalable expansion and trajectory mapping of pulmonary neuroendocrine cells"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceType": "",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2026-07-14T13:09:29.000Z",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21358562",
+        "version": null,
+        "versionCount": 0,
+        "versionOfCount": 1,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMjEzNTg1NjI8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkNhbmRlbGksIE5vYWg8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk5vYWg8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Q2FuZGVsaTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMS04MDg3LTEzMjE8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDEwamF4czg5IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+RXVyb3BlYW4gTW9sZWN1bGFyIEJpb2xvZ3kgTGFib3JhdG9yeTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+RGF5dG9uLCBUYWx5YTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VGFseWE8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+RGF5dG9uPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAyLTc5OTQtNzk2MzwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMTBqYXhzODkiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5FdXJvcGVhbiBNb2xlY3VsYXIgQmlvbG9neSBMYWJvcmF0b3J5PC9hZmZpbGlhdGlvbj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAyM3FjNGEwNyIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPkh1YnJlY2h0IEluc3RpdHV0ZSBmb3IgRGV2ZWxvcG1lbnRhbCBCaW9sb2d5IGFuZCBTdGVtIENlbGwgUmVzZWFyY2g8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk1hcmNvIEdpbcOpbmV6LCBBbmRyw6lzPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5BbmRyw6lzPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk1hcmNvIEdpbcOpbmV6PC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAyLTk4MzEtODQzMzwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMTBqYXhzODkiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5FdXJvcGVhbiBNb2xlY3VsYXIgQmlvbG9neSBMYWJvcmF0b3J5PC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Kb3PDqSBBbnRvbmlvIFPDoW5jaGV6IFZpbGxpY2HDsWE8L2NyZWF0b3JOYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Kb3PDqSBBbnRvbmlvIFPDoW5jaGV6IFZpbGxpY2HDsWE8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDA5LTAwMDYtNzEzOC00MjBYPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAxMGpheHM4OSIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPkV1cm9wZWFuIE1vbGVjdWxhciBCaW9sb2d5IExhYm9yYXRvcnk8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk1pbGxlciwgQWx5c3NhPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5BbHlzc2E8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWlsbGVyPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAyLTQwNjktMTU1MDwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9ImVkbW86MzY1NSIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJPVEhFUiI+VW5pdmVyc2l0eSBvZiBNaWNoaWdhbjwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+Q29uY2hvbGEsIEFuc2xleTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QW5zbGV5PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkNvbmNob2xhPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAyLTIzODUtNjcxMjwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbj5Vbml2ZXJzaXR5IG9mIE1pY2hpZ2FuIE1lZGljYWwgU2Nob29sPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TcGVuY2UsIEphc29uPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5KYXNvbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TcGVuY2U8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDEtNzg2OS0zOTkyPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iZWRtbzozNjU1IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9Ik9USEVSIj5Vbml2ZXJzaXR5IG9mIE1pY2hpZ2FuPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MZWUsIFdvb2NoYW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Xb29jaGFuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MZWU8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDA5LTAwMDEtMDA4Mi04NDM2PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAwY2hmamEwNyIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPlNlb3VsIE5hdGlvbmFsIFVuaXZlcnNpdHkgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+S2ltLCBKb25nLUlsPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Kb25nLUlsPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPktpbTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi03MjQwLTM3NDQ8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+U2VvdWwgTmF0aW9uYWwgVW5pdmVyc2l0eSBHcmFkdWF0ZSBTY2hvb2w8L2FmZmlsaWF0aW9uPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDRoOXBuNTQyIiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+U2VvdWwgTmF0aW9uYWwgVW5pdmVyc2l0eTwvYWZmaWxpYXRpb24+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMXo0bm50ODYiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5TZW91bCBOYXRpb25hbCBVbml2ZXJzaXR5IEhvc3BpdGFsPC9hZmZpbGlhdGlvbj4KICAgICAgPGFmZmlsaWF0aW9uPlNlb3VsIE5hdGlvbmFsIFVuaXZlcnNpdHkgQ29sbGVnZSBvZiBNZWRpY2luZTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkEgcm9idXN0IGh1bWFuIGFpcndheSBvcmdhbm9pZCBwbGF0Zm9ybSBlbmFibGVzIHNjYWxhYmxlIGV4cGFuc2lvbiBhbmQgdHJhamVjdG9yeSBtYXBwaW5nIG9mIHB1bG1vbmFyeSBuZXVyb2VuZG9jcmluZSBjZWxsczwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5aZW5vZG88L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiLz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iSXNzdWVkIj4yMDI2LTA3LTE0PC9kYXRlPgogIDwvZGF0ZXM+CiAgPGFsdGVybmF0ZUlkZW50aWZpZXJzPgogICAgPGFsdGVybmF0ZUlkZW50aWZpZXIgYWx0ZXJuYXRlSWRlbnRpZmllclR5cGU9Im9haSI+b2FpOnplbm9kby5vcmc6MjEzNTg1NjI8L2FsdGVybmF0ZUlkZW50aWZpZXI+CiAgPC9hbHRlcm5hdGVJZGVudGlmaWVycz4KICA8cmVsYXRlZElkZW50aWZpZXJzPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IklzVmVyc2lvbk9mIj4xMC41MjgxL3plbm9kby4xODQzMzYzMzwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CiAgPHNpemVzLz4KICA8Zm9ybWF0cy8+CiAgPHZlcnNpb24vPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvbGVnYWxjb2RlIiByaWdodHNJZGVudGlmaWVyPSJjYy1ieS00LjAiIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9InNwZHgiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGlzIFplbm9kbyByZXBvc2l0b3J5IGNvbnRhaW5zIHNpbmdsZS1jZWxsIFJOQSBzZXF1ZW5jaW5nIChzY1JOQS1zZXEpIGRhdGFzZXRzIGFzc29jaWF0ZWQgd2l0aCB0aGUgcHVibGljYXRpb25zIGxpc3RlZCBiZWxvdy4KCk5ldXJvZW5kb2NyaW5lLWVucmljaGVkIGZldGFsIGFpcndheSBvcmdhbm9pZHMgKE5Fci1mQU9zKQoK4oCcQSByb2J1c3QgaHVtYW4gYWlyd2F5IG9yZ2Fub2lkIHBsYXRmb3JtIGVuYWJsZXMgc2NhbGFibGUgZXhwYW5zaW9uIGFuZCB0cmFqZWN0b3J5IG1hcHBpbmcgb2YgcHVsbW9uYXJ5IG5ldXJvZW5kb2NyaW5lIGNlbGxz4oCdIChDYW5kZWxpIGV0IGFsLiwgMjAyNikKCgoKCgpTVEFSc29sby52ZWxvY3l0b19ORXItZkFPcy5oNWFkOiBVbnByb2Nlc3NlZCBBbm5EYXRhICguaDVhZCkgb2JqZWN0IHVzZWQgdG8gcnVuIHRoZSBhbmFseXNpcyBwaXBlbGluZSAoaHR0cHM6Ly9naXRodWIuY29tL2RheXRvbmxhYi9ORXItZkFPc18yMDI2KQoKCgoKTkVyX2ZBT3NfcHJvY2Vzc2VkLnppcDogUHJvY2Vzc2VkIGdlbmUgZXhwcmVzc2lvbiBtYXRyaWNlcyBhbmQgY29ycmVzcG9uZGluZyBtZXRhZGF0YSBmb3IgcmV1c2UgYW5kIGRvd25zdHJlYW0gYW5hbHlzZXMuCgoKCkh1bWFuIGZldGFsIGx1bmcgcHJpbWFyeSB0aXNzdWUKCuKAnEluIHZpdHJvIGFuZCBpbiB2aXZvIGRldmVsb3BtZW50IG9mIHRoZSBodW1hbiBhaXJ3YXkgYXQgc2luZ2xlLWNlbGwgcmVzb2x1dGlvbuKAnSAoTWlsbGVyIGV0IGFsLiwgMjAyMCkKCgoKCgpDb25jaG9sYTIwMjNGZXRhbEVwaXRoZWxpdW0uemlwOiBQcm9jZXNzZWQgZ2VuZSBleHByZXNzaW9uIG1hdHJpY2VzIHdpdGggdXBkYXRlZCBtZXRhZGF0YSBhbm5vdGF0aW9uIChDb25jaG9sYSBldCBhbC4sIDIwMjMpLgoKCgpCdWQgdGlwIGx1bmcgb3JnYW5vaWRzIChCVE9zKQoK4oCcUmVnaW9uYWxseSBkaXN0aW5jdCBwcm9nZW5pdG9yIGNlbGxzIGluIHRoZSBsb3dlciBhaXJ3YXkgZ2l2ZSByaXNlIHRvIG5ldXJvZW5kb2NyaW5lIGFuZCBtdWx0aWNpbGlhdGVkIGNlbGxzIGluIHRoZSBkZXZlbG9waW5nIGh1bWFuIGx1bmfigJ0gKENvbmNob2xhIGV0IGFsLiwgMjAyMykKCgoKCgpDb25jaG9sYTIwMjNDZWxsVGFnZ2luZy56aXA6IFByb2Nlc3NlZCBnZW5lIGV4cHJlc3Npb24gbWF0cmljZXMgYW5kIGNvcnJlc3BvbmRpbmcgbWV0YWRhdGEuCgoKCkRpc3RhbCBhaXJ3YXkgb3JnYW5vaWRzIChkQU9zL0FMSSkKCuKAnEEgc2luZ2xlLWNlbGwgYXRsYXMgb2YgaW4gdml0cm8gbXVsdGljdWx0dXJlIHN5c3RlbXMgdW5jb3ZlcnMgdGhlIGluIHZpdm8gbGluZWFnZSB0cmFqZWN0b3J5IGFuZCBjZWxsIHN0YXRlIGluIHRoZSBodW1hbiBsdW5n4oCdIChMZWUgZXQgYWwuLCAyMDIzKQoKCgoKCkxlZTIwMjNpbnZpdHJvQXRsYXMuemlwOiBQcm9jZXNzZWQgZ2VuZSBleHByZXNzaW9uIG1hdHJpY2VzIGFuZCBjb3JyZXNwb25kaW5nIG1ldGFkYXRhLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+      },
+      "id": "10.5281/zenodo.21358562",
+      "relationships": {
+        "citations": {
+          "data": []
+        },
+        "client": {
+          "data": {
+            "id": "cern.zenodo",
+            "type": "clients"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5281/zenodo.21358562",
+            "type": "media"
+          }
+        },
+        "partOf": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "provider": {
+          "data": {
+            "id": "cern",
+            "type": "providers"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "versionOf": {
+          "data": [
+            {
+              "id": "10.5281/zenodo.18433633",
+              "type": "dois"
+            }
+          ]
+        },
+        "versions": {
+          "data": []
+        }
+      },
+      "type": "dois"
+    }
+  },
+  "response_hash": "153b08074eb5491a9d0840851cbbc09d06b84956da3f4226a19cb9be4365c37f",
+  "retrieved_at": "2026-07-14T13:48:36Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

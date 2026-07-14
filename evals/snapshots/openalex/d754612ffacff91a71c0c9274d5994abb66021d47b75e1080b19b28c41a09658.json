@@ -1,0 +1,604 @@
+{
+  "endpoint": "works/doi:10.1109/cvpr.2019.00470",
+  "request_key": "d754612ffacff91a71c0c9274d5994abb66021d47b75e1080b19b28c41a09658",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "2012": [
+        74
+      ],
+      "2015.": [
+        76
+      ],
+      "At": [
+        100
+      ],
+      "CNN": [
+        37
+      ],
+      "EPE=4.26": [
+        107
+      ],
+      "KITTI": [
+        73
+      ],
+      "MPI": [
+        71
+      ],
+      "More": [
+        77
+      ],
+      "Our": [
+        9,
+        90
+      ],
+      "Sintel": [
+        110
+      ],
+      "Sintel,": [
+        72
+      ],
+      "These": [
+        49
+      ],
+      "We": [
+        0,
+        32
+      ],
+      "a": [
+        2,
+        35
+      ],
+      "achieve": [
+        93,
+        106
+      ],
+      "all": [
+        97,
+        113
+      ],
+      "an": [
+        54,
+        84
+      ],
+      "and": [
+        18,
+        75
+      ],
+      "approach": [
+        5,
+        55
+      ],
+      "as": [
+        22
+      ],
+      "benchmark,": [
+        111
+      ],
+      "benchmarks": [
+        69
+      ],
+      "best": [
+        59
+      ],
+      "better": [
+        46
+      ],
+      "challenging": [
+        68
+      ],
+      "datasets.": [
+        99
+      ],
+      "design": [
+        34
+      ],
+      "distills": [
+        11
+      ],
+      "estimation.": [
+        48
+      ],
+      "estimations": [
+        14
+      ],
+      "excellent": [
+        85
+      ],
+      "fine-tuned": [
+        91
+      ],
+      "fine-tuning.": [
+        89
+      ],
+      "flow": [
+        13,
+        28,
+        47,
+        64
+      ],
+      "flow.": [
+        8
+      ],
+      "for": [
+        6,
+        29,
+        45,
+        61,
+        87
+      ],
+      "frames": [
+        44
+      ],
+      "from": [
+        15,
+        42
+      ],
+      "further": [
+        33
+      ],
+      "ground": [
+        23
+      ],
+      "hallucinated": [
+        30
+      ],
+      "including": [
+        70
+      ],
+      "information": [
+        41
+      ],
+      "initialization": [
+        86
+      ],
+      "lead": [
+        52
+      ],
+      "learn": [
+        26
+      ],
+      "learning": [
+        4,
+        65
+      ],
+      "method": [
+        10
+      ],
+      "methods.": [
+        115
+      ],
+      "model": [
+        82
+      ],
+      "models": [
+        92
+      ],
+      "multiple": [
+        43
+      ],
+      "non-occluded": [
+        16
+      ],
+      "notably,": [
+        78
+      ],
+      "occlusions.": [
+        31
+      ],
+      "of": [
+        103
+      ],
+      "on": [
+        66,
+        96,
+        108
+      ],
+      "optical": [
+        7,
+        27,
+        63
+      ],
+      "our": [
+        79
+      ],
+      "outperforming": [
+        112
+      ],
+      "performance": [
+        60
+      ],
+      "pixels,": [
+        17
+      ],
+      "pre-trained": [
+        81
+      ],
+      "predictions": [
+        21
+      ],
+      "present": [
+        1
+      ],
+      "principles": [
+        51
+      ],
+      "provides": [
+        83
+      ],
+      "reliable": [
+        12
+      ],
+      "results": [
+        95
+      ],
+      "self-supervised": [
+        3,
+        80
+      ],
+      "simple": [
+        36
+      ],
+      "state-of-the-art": [
+        94
+      ],
+      "submitted": [
+        114
+      ],
+      "supervised": [
+        88
+      ],
+      "temporal": [
+        40
+      ],
+      "that": [
+        56
+      ],
+      "the": [
+        58,
+        67,
+        101,
+        109
+      ],
+      "these": [
+        20
+      ],
+      "three": [
+        98
+      ],
+      "time": [
+        102
+      ],
+      "to": [
+        25,
+        38,
+        53
+      ],
+      "truth": [
+        24
+      ],
+      "two": [
+        50
+      ],
+      "unsupervised": [
+        62
+      ],
+      "uses": [
+        19
+      ],
+      "utilize": [
+        39
+      ],
+      "we": [
+        105
+      ],
+      "writing,": [
+        104
+      ],
+      "yields": [
+        57
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I177725633"
+            ],
+            "raw_affiliation_string": "The Chinese Univ. of Hong Kong"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I177725633"
+            ],
+            "raw_affiliation_string": "Chinese University, Hong Kong"
+          }
+        ],
+        "author": {
+          "display_name": "Pengpeng Liu",
+          "id": "https://openalex.org/A5100624286",
+          "orcid": "https://orcid.org/0000-0002-2399-8016"
+        },
+        "author_position": "first",
+        "countries": [
+          "HK"
+        ],
+        "institutions": [
+          {
+            "country_code": "HK",
+            "display_name": "Chinese University of Hong Kong",
+            "id": "https://openalex.org/I177725633",
+            "lineage": [
+              "https://openalex.org/I177725633"
+            ],
+            "ror": "https://ror.org/00t33hh48",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "The Chinese Univ. of Hong Kong",
+          "Chinese University, Hong Kong"
+        ],
+        "raw_author_name": "Pengpeng Liu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I177725633"
+            ],
+            "raw_affiliation_string": "The Chinese Univ. of Hong Kong"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I177725633"
+            ],
+            "raw_affiliation_string": "Chinese University, Hong Kong"
+          }
+        ],
+        "author": {
+          "display_name": "Michael R. Lyu",
+          "id": "https://openalex.org/A5069596903",
+          "orcid": "https://orcid.org/0000-0002-3666-5798"
+        },
+        "author_position": "middle",
+        "countries": [
+          "HK"
+        ],
+        "institutions": [
+          {
+            "country_code": "HK",
+            "display_name": "Chinese University of Hong Kong",
+            "id": "https://openalex.org/I177725633",
+            "lineage": [
+              "https://openalex.org/I177725633"
+            ],
+            "ror": "https://ror.org/00t33hh48",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "The Chinese Univ. of Hong Kong",
+          "Chinese University, Hong Kong"
+        ],
+        "raw_author_name": "Michael Lyu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I177725633"
+            ],
+            "raw_affiliation_string": "The Chinese Univ. of Hong Kong"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I177725633"
+            ],
+            "raw_affiliation_string": "Chinese University, Hong Kong"
+          }
+        ],
+        "author": {
+          "display_name": "Irwin King",
+          "id": "https://openalex.org/A5042251906",
+          "orcid": "https://orcid.org/0000-0001-8106-6447"
+        },
+        "author_position": "middle",
+        "countries": [
+          "HK"
+        ],
+        "institutions": [
+          {
+            "country_code": "HK",
+            "display_name": "Chinese University of Hong Kong",
+            "id": "https://openalex.org/I177725633",
+            "lineage": [
+              "https://openalex.org/I177725633"
+            ],
+            "ror": "https://ror.org/00t33hh48",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "The Chinese Univ. of Hong Kong",
+          "Chinese University, Hong Kong"
+        ],
+        "raw_author_name": "Irwin King",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I2250653659"
+            ],
+            "raw_affiliation_string": "Tencent AI Lab"
+          }
+        ],
+        "author": {
+          "display_name": "Xu Jia",
+          "id": "https://openalex.org/A5069195306",
+          "orcid": "https://orcid.org/0000-0003-0679-9186"
+        },
+        "author_position": "last",
+        "countries": [
+          "CN"
+        ],
+        "institutions": [
+          {
+            "country_code": "CN",
+            "display_name": "Tencent (China)",
+            "id": "https://openalex.org/I2250653659",
+            "lineage": [
+              "https://openalex.org/I2250653659"
+            ],
+            "ror": "https://ror.org/00hhjss72",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Tencent AI Lab"
+        ],
+        "raw_author_name": "Jia Xu",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "4566",
+      "issue": null,
+      "last_page": "4575",
+      "volume": null
+    },
+    "cited_by_count": 335,
+    "display_name": "SelFlow: Self-Supervised Learning of Optical Flow",
+    "doi": "https://doi.org/10.1109/cvpr.2019.00470",
+    "id": "https://openalex.org/W2967043539",
+    "ids": {
+      "doi": "https://doi.org/10.1109/cvpr.2019.00470",
+      "mag": "2967043539",
+      "openalex": "https://openalex.org/W2967043539"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1109/cvpr.2019.00470",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1109/cvpr.2019.00470",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "raw_type": "proceedings-article",
+      "source": null,
+      "version": "publishedVersion"
+    },
+    "publication_date": "2019-06-01",
+    "publication_year": 2019,
+    "referenced_works": [
+      "https://openalex.org/W185671411",
+      "https://openalex.org/W603908379",
+      "https://openalex.org/W764651262",
+      "https://openalex.org/W988642845",
+      "https://openalex.org/W1513100184",
+      "https://openalex.org/W1522301498",
+      "https://openalex.org/W1530781137",
+      "https://openalex.org/W1578285471",
+      "https://openalex.org/W1674866864",
+      "https://openalex.org/W1861492603",
+      "https://openalex.org/W1867429401",
+      "https://openalex.org/W1921093919",
+      "https://openalex.org/W1951289974",
+      "https://openalex.org/W2040369854",
+      "https://openalex.org/W2088871573",
+      "https://openalex.org/W2113221323",
+      "https://openalex.org/W2118246710",
+      "https://openalex.org/W2131747574",
+      "https://openalex.org/W2145467074",
+      "https://openalex.org/W2150066425",
+      "https://openalex.org/W2154220963",
+      "https://openalex.org/W2156303437",
+      "https://openalex.org/W2157719643",
+      "https://openalex.org/W2259424905",
+      "https://openalex.org/W2321533354",
+      "https://openalex.org/W2342877626",
+      "https://openalex.org/W2416821539",
+      "https://openalex.org/W2507953016",
+      "https://openalex.org/W2548527721",
+      "https://openalex.org/W2560474170",
+      "https://openalex.org/W2575671312",
+      "https://openalex.org/W2599837529",
+      "https://openalex.org/W2604909019",
+      "https://openalex.org/W2609338489",
+      "https://openalex.org/W2611683220",
+      "https://openalex.org/W2737529999",
+      "https://openalex.org/W2751023760",
+      "https://openalex.org/W2798976292",
+      "https://openalex.org/W2894983388",
+      "https://openalex.org/W2904340070",
+      "https://openalex.org/W2949891561",
+      "https://openalex.org/W2951933753",
+      "https://openalex.org/W2962824366",
+      "https://openalex.org/W2962843773",
+      "https://openalex.org/W2962864875",
+      "https://openalex.org/W2962905430",
+      "https://openalex.org/W2962989121",
+      "https://openalex.org/W2963210183",
+      "https://openalex.org/W2963219046",
+      "https://openalex.org/W2963403249",
+      "https://openalex.org/W2963420272",
+      "https://openalex.org/W2963589407",
+      "https://openalex.org/W2963782415",
+      "https://openalex.org/W2963891416",
+      "https://openalex.org/W2964121744",
+      "https://openalex.org/W2964123261",
+      "https://openalex.org/W2964156315",
+      "https://openalex.org/W3023371261",
+      "https://openalex.org/W3100388886",
+      "https://openalex.org/W4285719527",
+      "https://openalex.org/W4289304943",
+      "https://openalex.org/W4295158995",
+      "https://openalex.org/W6618372016",
+      "https://openalex.org/W6630726011",
+      "https://openalex.org/W6631190155",
+      "https://openalex.org/W6631910717",
+      "https://openalex.org/W6637127756",
+      "https://openalex.org/W6639102338",
+      "https://openalex.org/W6639126518",
+      "https://openalex.org/W6682864246",
+      "https://openalex.org/W6682926128",
+      "https://openalex.org/W6700872662",
+      "https://openalex.org/W6716680025",
+      "https://openalex.org/W6750482691",
+      "https://openalex.org/W6752091691",
+      "https://openalex.org/W6753991734",
+      "https://openalex.org/W6755070853",
+      "https://openalex.org/W6755265427",
+      "https://openalex.org/W6758354414"
+    ],
+    "referenced_works_count": 79,
+    "title": "SelFlow: Self-Supervised Learning of Optical Flow",
+    "type": "article"
+  },
+  "response_hash": "d838f2e26262e7f09fa2602cc4fbffa64c68b1eec28f47845d3b6116cb817788",
+  "retrieved_at": "2026-07-14T13:49:38Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

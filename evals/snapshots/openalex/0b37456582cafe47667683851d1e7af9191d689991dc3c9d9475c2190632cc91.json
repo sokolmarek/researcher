@@ -1,0 +1,289 @@
+{
+  "endpoint": "works/doi:10.1007/s10439-009-9740-z",
+  "request_key": "0b37456582cafe47667683851d1e7af9191d689991dc3c9d9475c2190632cc91",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, NY 11794, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Sanghamitra Subhadarsini Dash",
+          "id": "https://openalex.org/A5074413494",
+          "orcid": "https://orcid.org/0009-0009-8841-4788"
+        },
+        "author_position": "first",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Stony Brook University",
+            "id": "https://openalex.org/I59553526",
+            "lineage": [
+              "https://openalex.org/I59553526"
+            ],
+            "ror": "https://ror.org/05qghxh33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, NY 11794, USA",
+          "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, USA"
+        ],
+        "raw_author_name": "S. Dash",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Biomedical Engineering, SUNY at Stony Brook, HSC T18, Rm. 030, Stony Brook, NY, 11794, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Ki H. Chon",
+          "id": "https://openalex.org/A5032573836",
+          "orcid": "https://orcid.org/0000-0002-4422-4837"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Stony Brook University",
+            "id": "https://openalex.org/I59553526",
+            "lineage": [
+              "https://openalex.org/I59553526"
+            ],
+            "ror": "https://ror.org/05qghxh33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Department of Biomedical Engineering, SUNY at Stony Brook, HSC T18, Rm. 030, Stony Brook, NY, 11794, USA",
+          "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, USA"
+        ],
+        "raw_author_name": "K. H. Chon",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Biomedical Engineering, SUNY at Stony Brook, HSC T18, Rm. 030, Stony Brook, NY, 11794, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Shangxin Lu",
+          "id": "https://openalex.org/A5101626636",
+          "orcid": "https://orcid.org/0000-0002-1189-0059"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Stony Brook University",
+            "id": "https://openalex.org/I59553526",
+            "lineage": [
+              "https://openalex.org/I59553526"
+            ],
+            "ror": "https://ror.org/05qghxh33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Biomedical Engineering, SUNY at Stony Brook, HSC T18, Rm. 030, Stony Brook, NY, 11794, USA",
+          "Department of Biomedical Engineering, SUNY at Stony Brook, Stony Brook, USA"
+        ],
+        "raw_author_name": "S. Lu",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Medicine, Division of Cardiology, SUNY at Stony Brook, Stony Brook, NY, USA"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I59553526"
+            ],
+            "raw_affiliation_string": "Department of Medicine, Division of Cardiology, SUNY at Stony Brook, Stony Brook, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Ernst A. Raeder",
+          "id": "https://openalex.org/A5068026825",
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Stony Brook University",
+            "id": "https://openalex.org/I59553526",
+            "lineage": [
+              "https://openalex.org/I59553526"
+            ],
+            "ror": "https://ror.org/05qghxh33",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Medicine, Division of Cardiology, SUNY at Stony Brook, Stony Brook, NY, USA",
+          "Department of Medicine, Division of Cardiology, SUNY at Stony Brook, Stony Brook, USA"
+        ],
+        "raw_author_name": "E. A. Raeder",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "1701",
+      "issue": "9",
+      "last_page": "1709",
+      "volume": "37"
+    },
+    "cited_by_count": 316,
+    "display_name": "Automatic Real Time Detection of Atrial Fibrillation",
+    "doi": "https://doi.org/10.1007/s10439-009-9740-z",
+    "id": "https://openalex.org/W2076151226",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s10439-009-9740-z",
+      "mag": "2076151226",
+      "openalex": "https://openalex.org/W2076151226",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/19533358"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s10439-009-9740-z",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s10439-009-9740-z",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Annals of Biomedical Engineering",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Annals of Biomedical Engineering",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S141152059",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0090-6964",
+          "0191-5649",
+          "1573-9686"
+        ],
+        "issn_l": "0090-6964",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2009-06-16",
+    "publication_year": 2009,
+    "referenced_works": [
+      "https://openalex.org/W309380348",
+      "https://openalex.org/W1965669844",
+      "https://openalex.org/W1969977872",
+      "https://openalex.org/W1972637263",
+      "https://openalex.org/W1983094580",
+      "https://openalex.org/W1985609762",
+      "https://openalex.org/W2001207354",
+      "https://openalex.org/W2010550566",
+      "https://openalex.org/W2028013985",
+      "https://openalex.org/W2049893530",
+      "https://openalex.org/W2061952123",
+      "https://openalex.org/W2063661815",
+      "https://openalex.org/W2068229127",
+      "https://openalex.org/W2082040596",
+      "https://openalex.org/W2090237537",
+      "https://openalex.org/W2106598802",
+      "https://openalex.org/W2109692256",
+      "https://openalex.org/W2114775432",
+      "https://openalex.org/W2116309353",
+      "https://openalex.org/W2125706068",
+      "https://openalex.org/W2127270213",
+      "https://openalex.org/W2137579391",
+      "https://openalex.org/W2140053170",
+      "https://openalex.org/W2148056560",
+      "https://openalex.org/W2151074096",
+      "https://openalex.org/W2155103273",
+      "https://openalex.org/W2162800060",
+      "https://openalex.org/W2416924863"
+    ],
+    "referenced_works_count": 28,
+    "title": "Automatic Real Time Detection of Atrial Fibrillation",
+    "type": "article"
+  },
+  "response_hash": "f5df6dd8378cf1a8501259f8ae34a544b85c38d382f22ca8097c4f5427234376",
+  "retrieved_at": "2026-07-14T14:48:49Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

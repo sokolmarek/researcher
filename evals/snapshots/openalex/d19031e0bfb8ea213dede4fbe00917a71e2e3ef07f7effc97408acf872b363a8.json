@@ -1,0 +1,758 @@
+{
+  "endpoint": "works/doi:10.1109/msp.2021.3134634",
+  "request_key": "d19031e0bfb8ea213dede4fbe00917a71e2e3ef07f7effc97408acf872b363a8",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "(SSRL)": [
+        3
+      ],
+      "Finally,": [
+        111
+      ],
+      "Self-supervised": [
+        0
+      ],
+      "These": [
+        37
+      ],
+      "This": [
+        69
+      ],
+      "We": [
+        99
+      ],
+      "a": [
+        57
+      ],
+      "across": [
+        56
+      ],
+      "advanced": [
+        40
+      ],
+      "aim": [
+        5
+      ],
+      "alleviating": [
+        21
+      ],
+      "alternatives": [
+        55
+      ],
+      "and": [
+        49,
+        67,
+        84,
+        88,
+        108
+      ],
+      "annotated": [
+        17
+      ],
+      "annotation": [
+        23
+      ],
+      "applied": [
+        93
+      ],
+      "approaches": [
+        83
+      ],
+      "approaching": [
+        48
+      ],
+      "are": [
+        92
+      ],
+      "area,": [
+        74
+      ],
+      "article": [
+        70
+      ],
+      "associated": [
+        85
+      ],
+      "barriers": [
+        28
+      ],
+      "bottleneck—one": [
+        24
+      ],
+      "challenges": [
+        116
+      ],
+      "computational": [
+        109
+      ],
+      "concepts,": [
+        77
+      ],
+      "considerations": [
+        103
+      ],
+      "cost.": [
+        110
+      ],
+      "data": [
+        18,
+        60
+      ],
+      "data.": [
+        98
+      ],
+      "deep": [
+        9,
+        34
+      ],
+      "deployment": [
+        32
+      ],
+      "discuss": [
+        101
+      ],
+      "diverse": [
+        95
+      ],
+      "efficacy": [
+        47
+      ],
+      "families": [
+        81
+      ],
+      "feature": [
+        10
+      ],
+      "fertile": [
+        122
+      ],
+      "field,": [
+        119
+      ],
+      "for": [
+        124
+      ],
+      "four": [
+        79
+      ],
+      "fully": [
+        52
+      ],
+      "further": [
+        100
+      ],
+      "future": [
+        125
+      ],
+      "graphs.": [
+        68
+      ],
+      "ground": [
+        123
+      ],
+      "have": [
+        39
+      ],
+      "how": [
+        89
+      ],
+      "image,": [
+        63
+      ],
+      "in": [
+        42,
+        117
+      ],
+      "including": [
+        62,
+        75,
+        104
+      ],
+      "introduces": [
+        71
+      ],
+      "key": [
+        76
+      ],
+      "large": [
+        16
+      ],
+      "learning": [
+        2,
+        11,
+        35
+      ],
+      "main": [
+        27,
+        80
+      ],
+      "major": [
+        114
+      ],
+      "methods": [
+        4,
+        91
+      ],
+      "modalities": [
+        96
+      ],
+      "modalities,": [
+        61
+      ],
+      "of": [
+        15,
+        25,
+        33,
+        59,
+        82,
+        97
+      ],
+      "open": [
+        115
+      ],
+      "powerful,": [
+        8
+      ],
+      "practical": [
+        31,
+        102
+      ],
+      "pretraining": [
+        54
+      ],
+      "provide": [
+        7,
+        121
+      ],
+      "rapidly": [
+        41
+      ],
+      "recent": [
+        43
+      ],
+      "representation": [
+        1,
+        106
+      ],
+      "requirement": [
+        14
+      ],
+      "self-supervised": [
+        90
+      ],
+      "sets,": [
+        19
+      ],
+      "sometimes": [
+        50
+      ],
+      "sound,": [
+        65
+      ],
+      "state-of-the-art": [
+        86
+      ],
+      "supervised": [
+        53
+      ],
+      "surpassing": [
+        51
+      ],
+      "survey": [
+        113
+      ],
+      "techniques": [
+        38
+      ],
+      "techniques,": [
+        87
+      ],
+      "text,": [
+        66
+      ],
+      "that": [
+        120
+      ],
+      "the": [
+        13,
+        22,
+        26,
+        30,
+        78,
+        118
+      ],
+      "their": [
+        46
+      ],
+      "this": [
+        72
+      ],
+      "thus": [
+        20
+      ],
+      "to": [
+        6,
+        29,
+        94
+      ],
+      "today.": [
+        36
+      ],
+      "transferability,": [
+        107
+      ],
+      "variety": [
+        58
+      ],
+      "vibrant": [
+        73
+      ],
+      "video,": [
+        64
+      ],
+      "we": [
+        112
+      ],
+      "with": [
+        45
+      ],
+      "without": [
+        12
+      ],
+      "work.": [
+        126
+      ],
+      "workflows,": [
+        105
+      ],
+      "years,": [
+        44
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98677209"
+            ],
+            "raw_affiliation_string": "MScR degree, University of Edinburgh, Edinburgh, U.K"
+          }
+        ],
+        "author": {
+          "display_name": "Linus Ericsson",
+          "id": "https://openalex.org/A5082476745",
+          "orcid": "https://orcid.org/0000-0002-0634-5072"
+        },
+        "author_position": "first",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "University of Edinburgh",
+            "id": "https://openalex.org/I98677209",
+            "lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "ror": "https://ror.org/01nrxwf90",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "MScR degree, University of Edinburgh, Edinburgh, U.K"
+        ],
+        "raw_author_name": "Linus Ericsson",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98677209"
+            ],
+            "raw_affiliation_string": "School of Informatics, University of Edinburgh, Edinburgh, U.K"
+          }
+        ],
+        "author": {
+          "display_name": "Henry Gouk",
+          "id": "https://openalex.org/A5039741908",
+          "orcid": "https://orcid.org/0000-0002-0924-2933"
+        },
+        "author_position": "middle",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "University of Edinburgh",
+            "id": "https://openalex.org/I98677209",
+            "lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "ror": "https://ror.org/01nrxwf90",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "School of Informatics, University of Edinburgh, Edinburgh, U.K"
+        ],
+        "raw_author_name": "Henry Gouk",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I172675005"
+            ],
+            "raw_affiliation_string": "Associate Professor, Nanyang Technological University, Singapore"
+          }
+        ],
+        "author": {
+          "display_name": "Chen Change Loy",
+          "id": "https://openalex.org/A5005626854",
+          "orcid": "https://orcid.org/0000-0001-5345-1591"
+        },
+        "author_position": "middle",
+        "countries": [
+          "SG"
+        ],
+        "institutions": [
+          {
+            "country_code": "SG",
+            "display_name": "Nanyang Technological University",
+            "id": "https://openalex.org/I172675005",
+            "lineage": [
+              "https://openalex.org/I172675005"
+            ],
+            "ror": "https://ror.org/02e7b5302",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Associate Professor, Nanyang Technological University, Singapore"
+        ],
+        "raw_author_name": "Chen Change Loy",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I98677209"
+            ],
+            "raw_affiliation_string": "Artificial Intelligence, University of Edinburgh, Edinburgh, U.K"
+          }
+        ],
+        "author": {
+          "display_name": "Timothy M. Hospedales",
+          "id": "https://openalex.org/A5087823932",
+          "orcid": "https://orcid.org/0000-0003-4867-7486"
+        },
+        "author_position": "last",
+        "countries": [
+          "GB"
+        ],
+        "institutions": [
+          {
+            "country_code": "GB",
+            "display_name": "University of Edinburgh",
+            "id": "https://openalex.org/I98677209",
+            "lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "ror": "https://ror.org/01nrxwf90",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Artificial Intelligence, University of Edinburgh, Edinburgh, U.K"
+        ],
+        "raw_author_name": "Timothy M. Hospedales",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": {
+      "id": "pmh:oai:arXiv.org:2110.09327",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2110.09327",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2110.09327",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+        "display_name": "arXiv (Cornell University)",
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "host_organization_name": "Cornell University",
+        "id": "https://openalex.org/S4306400194",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": true,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": "submittedVersion"
+    },
+    "biblio": {
+      "first_page": "42",
+      "issue": "3",
+      "last_page": "62",
+      "volume": "39"
+    },
+    "cited_by_count": 407,
+    "display_name": "Self-Supervised Representation Learning: Introduction, advances, and challenges",
+    "doi": "https://doi.org/10.1109/msp.2021.3134634",
+    "id": "https://openalex.org/W3207924272",
+    "ids": {
+      "doi": "https://doi.org/10.1109/msp.2021.3134634",
+      "mag": "3207924272",
+      "openalex": "https://openalex.org/W3207924272"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://arxiv.org/pdf/2110.09327"
+    },
+    "primary_location": {
+      "id": "doi:10.1109/msp.2021.3134634",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1109/msp.2021.3134634",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "IEEE Signal Processing Magazine",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "IEEE Signal Processing Magazine",
+        "host_organization": "https://openalex.org/P4310319808",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319808"
+        ],
+        "host_organization_lineage_names": [
+          "Institute of Electrical and Electronics Engineers"
+        ],
+        "host_organization_name": "Institute of Electrical and Electronics Engineers",
+        "id": "https://openalex.org/S120977877",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "1053-5888",
+          "1558-0792"
+        ],
+        "issn_l": "1053-5888",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2022-05-01",
+    "publication_year": 2022,
+    "referenced_works": [
+      "https://openalex.org/W1494198834",
+      "https://openalex.org/W1554944419",
+      "https://openalex.org/W2099438806",
+      "https://openalex.org/W2108598243",
+      "https://openalex.org/W2138621090",
+      "https://openalex.org/W2144796873",
+      "https://openalex.org/W2149159134",
+      "https://openalex.org/W2152790380",
+      "https://openalex.org/W2153579005",
+      "https://openalex.org/W2171033594",
+      "https://openalex.org/W2193413348",
+      "https://openalex.org/W2194775991",
+      "https://openalex.org/W2250384498",
+      "https://openalex.org/W2250653840",
+      "https://openalex.org/W2308529009",
+      "https://openalex.org/W2593116425",
+      "https://openalex.org/W2594183968",
+      "https://openalex.org/W2619947201",
+      "https://openalex.org/W2735272571",
+      "https://openalex.org/W2785325870",
+      "https://openalex.org/W2797977484",
+      "https://openalex.org/W2803674491",
+      "https://openalex.org/W2842511635",
+      "https://openalex.org/W2883725317",
+      "https://openalex.org/W2896457183",
+      "https://openalex.org/W2913939497",
+      "https://openalex.org/W2914120296",
+      "https://openalex.org/W2917551568",
+      "https://openalex.org/W2943552823",
+      "https://openalex.org/W2948242301",
+      "https://openalex.org/W2951585248",
+      "https://openalex.org/W2952205826",
+      "https://openalex.org/W2954540134",
+      "https://openalex.org/W2962739339",
+      "https://openalex.org/W2962756421",
+      "https://openalex.org/W2962767366",
+      "https://openalex.org/W2962843773",
+      "https://openalex.org/W2962960500",
+      "https://openalex.org/W2963341956",
+      "https://openalex.org/W2963403868",
+      "https://openalex.org/W2963420272",
+      "https://openalex.org/W2963494889",
+      "https://openalex.org/W2963703197",
+      "https://openalex.org/W2963773039",
+      "https://openalex.org/W2963782635",
+      "https://openalex.org/W2964015378",
+      "https://openalex.org/W2964700958",
+      "https://openalex.org/W2964744899",
+      "https://openalex.org/W2966715458",
+      "https://openalex.org/W2970049541",
+      "https://openalex.org/W2970608575",
+      "https://openalex.org/W2971121529",
+      "https://openalex.org/W2971196067",
+      "https://openalex.org/W2971840980",
+      "https://openalex.org/W2972943112",
+      "https://openalex.org/W2973157397",
+      "https://openalex.org/W2980927909",
+      "https://openalex.org/W2984008963",
+      "https://openalex.org/W2984353870",
+      "https://openalex.org/W2989929945",
+      "https://openalex.org/W2990408345",
+      "https://openalex.org/W2990704537",
+      "https://openalex.org/W2990873191",
+      "https://openalex.org/W2994710732",
+      "https://openalex.org/W2995181338",
+      "https://openalex.org/W2996604169",
+      "https://openalex.org/W2997907976",
+      "https://openalex.org/W3002709689",
+      "https://openalex.org/W3005552578",
+      "https://openalex.org/W3016181583",
+      "https://openalex.org/W3023371261",
+      "https://openalex.org/W3026092005",
+      "https://openalex.org/W3033333779",
+      "https://openalex.org/W3034445277",
+      "https://openalex.org/W3034576826",
+      "https://openalex.org/W3034999214",
+      "https://openalex.org/W3035003500",
+      "https://openalex.org/W3035060554",
+      "https://openalex.org/W3035524453",
+      "https://openalex.org/W3035534438",
+      "https://openalex.org/W3036224891",
+      "https://openalex.org/W3036601975",
+      "https://openalex.org/W3037208489",
+      "https://openalex.org/W3037309139",
+      "https://openalex.org/W3040854424",
+      "https://openalex.org/W3046208551",
+      "https://openalex.org/W3046882683",
+      "https://openalex.org/W3080997787",
+      "https://openalex.org/W3092185277",
+      "https://openalex.org/W3094454579",
+      "https://openalex.org/W3094502228",
+      "https://openalex.org/W3098903812",
+      "https://openalex.org/W3099782249",
+      "https://openalex.org/W3100177202",
+      "https://openalex.org/W3100622512",
+      "https://openalex.org/W3100859887",
+      "https://openalex.org/W3101537861",
+      "https://openalex.org/W3101767999",
+      "https://openalex.org/W3102363610",
+      "https://openalex.org/W3103215803",
+      "https://openalex.org/W3103455452",
+      "https://openalex.org/W3105422445",
+      "https://openalex.org/W3105724776",
+      "https://openalex.org/W3105761396",
+      "https://openalex.org/W3105966348",
+      "https://openalex.org/W3106428938",
+      "https://openalex.org/W3108655343",
+      "https://openalex.org/W3112898771",
+      "https://openalex.org/W3119786062",
+      "https://openalex.org/W3129943831",
+      "https://openalex.org/W3131755153",
+      "https://openalex.org/W3134652006",
+      "https://openalex.org/W3135367836",
+      "https://openalex.org/W3146927930",
+      "https://openalex.org/W3166396011",
+      "https://openalex.org/W3168921237",
+      "https://openalex.org/W3168984673",
+      "https://openalex.org/W3169717035",
+      "https://openalex.org/W3176276772",
+      "https://openalex.org/W3182707920",
+      "https://openalex.org/W3211536067",
+      "https://openalex.org/W3214897310",
+      "https://openalex.org/W4239072543",
+      "https://openalex.org/W4287866129",
+      "https://openalex.org/W4288275971",
+      "https://openalex.org/W4292779060",
+      "https://openalex.org/W4294170691",
+      "https://openalex.org/W4294558607",
+      "https://openalex.org/W4297571622",
+      "https://openalex.org/W4297808394",
+      "https://openalex.org/W4298422451",
+      "https://openalex.org/W4385245566",
+      "https://openalex.org/W6681255678",
+      "https://openalex.org/W6682691769",
+      "https://openalex.org/W6682948231",
+      "https://openalex.org/W6687566353",
+      "https://openalex.org/W6691892052",
+      "https://openalex.org/W6726873649",
+      "https://openalex.org/W6727099177",
+      "https://openalex.org/W6738964360",
+      "https://openalex.org/W6739901393",
+      "https://openalex.org/W6747899497",
+      "https://openalex.org/W6751866786",
+      "https://openalex.org/W6755207826",
+      "https://openalex.org/W6759891849",
+      "https://openalex.org/W6762392948",
+      "https://openalex.org/W6765696844",
+      "https://openalex.org/W6766156693",
+      "https://openalex.org/W6766904570",
+      "https://openalex.org/W6767737316",
+      "https://openalex.org/W6769725694",
+      "https://openalex.org/W6770805772",
+      "https://openalex.org/W6772452955",
+      "https://openalex.org/W6773071120",
+      "https://openalex.org/W6773730676",
+      "https://openalex.org/W6777179611",
+      "https://openalex.org/W6778672394",
+      "https://openalex.org/W6778883912",
+      "https://openalex.org/W6779101013",
+      "https://openalex.org/W6779326418",
+      "https://openalex.org/W6779879114",
+      "https://openalex.org/W6779977557",
+      "https://openalex.org/W6779997284",
+      "https://openalex.org/W6780191644",
+      "https://openalex.org/W6780218876",
+      "https://openalex.org/W6780294235",
+      "https://openalex.org/W6780576590",
+      "https://openalex.org/W6781476637",
+      "https://openalex.org/W6781732661",
+      "https://openalex.org/W6783792957",
+      "https://openalex.org/W6784333009",
+      "https://openalex.org/W6784660784",
+      "https://openalex.org/W6791353385",
+      "https://openalex.org/W6791742336",
+      "https://openalex.org/W6955071965"
+    ],
+    "referenced_works_count": 175,
+    "title": "Self-Supervised Representation Learning: Introduction, advances, and challenges",
+    "type": "article"
+  },
+  "response_hash": "7a0d900e7c34b466723a5df8e07b8e3e7576947e7a6f1aecaae8ab64a7d00b40",
+  "retrieved_at": "2026-07-14T14:48:27Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

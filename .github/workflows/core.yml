@@ -1,0 +1,265 @@
+name: Core
+
+# The evidence kernel (core/) and the evaluation suite (evals/).
+#
+# Two things this workflow refuses to do:
+#
+# 1. It never touches the network in a gating job. Every gating test and every benchmark
+#    replays from the content-addressed snapshots in core/tests/snapshots (D15), so a
+#    Crossref outage can never turn a merge red. RESEARCHER_SNAPSHOT_MODE=replay makes a
+#    missing snapshot fail loudly rather than silently going live.
+# 2. It never gates on drift. The live canary below re-runs the snapshot request set
+#    against the real APIs and diffs. The world moves while snapshots stand still: new
+#    retractions land, metadata gets fixed, indexes reorder results. That is information,
+#    and it is published as an artifact. It is not a build failure.
+#
+# Windows is a first-class target, not an afterthought (D5): the offline matrix runs on
+# windows-latest and ubuntu-latest, and the fallback job proves the plugin still works on
+# a machine with no uv and no core at all (D3).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # 05:17 UTC on Mondays. Off the hour: the top of the hour is when every cron on
+    # GitHub fires at once and jobs queue behind each other.
+    - cron: "17 5 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: core-${{ github.workflow }}-${{ github.ref }}
+  # Cancel superseded PR runs; never cancel a scheduled canary, whose whole job is to
+  # produce one drift report per run.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+defaults:
+  run:
+    # bash on Windows too (Git Bash ships on the runner), so one script is one script.
+    shell: bash
+
+env:
+  # Pinned toolchains. A floating `uv` or a `latest` Python makes a green run
+  # unreproducible and widens the supply-chain surface; validate.yml pins for the same
+  # reason. Bump these deliberately, never implicitly.
+  PYTHON_VERSION: "3.12"
+  UV_VERSION: "0.11.28"
+  # Tests and benchmarks replay from snapshots; nothing in a gating job calls an API.
+  # `replay` makes a missing snapshot raise instead of quietly going live.
+  RESEARCHER_CORE_SNAPSHOT_MODE: "replay"
+
+jobs:
+  lint-and-types:
+    name: ruff + mypy
+    runs-on: ubuntu-latest
+    if: github.event_name != 'schedule'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv (pinned)
+        run: python -m pip install --quiet "uv==${UV_VERSION}"
+
+      - name: Sync the core dev environment
+        # ruff and mypy are declared in core's dev group, so the lint gate is exactly the
+        # toolchain the README tells a contributor to install. No separate pip line here
+        # can drift away from it.
+        run: uv sync --project core
+
+      - name: ruff
+        run: uv run --project core ruff check core
+
+      - name: mypy
+        run: uv run --project core mypy core/researcher_core
+
+  offline-tests:
+    name: Tests (offline, snapshot replay)
+    runs-on: ${{ matrix.os }}
+    if: github.event_name != 'schedule'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv (pinned)
+        run: python -m pip install --quiet "uv==${UV_VERSION}"
+
+      - name: Sync the core dev environment
+        run: uv sync --project core
+
+      - name: Core tests (replay only; a missing snapshot fails loudly)
+        run: uv run --project core python -m pytest core/tests -q
+
+      - name: Script tests (wrappers, hooks, fallback)
+        # Run under core's dev environment on purpose: it carries jsonschema, so the
+        # fallback suite's contract check (the fake core's report validated against
+        # core/schemas/verification-report.schema.json) actually executes here instead of
+        # skipping. validate.yml already runs the same suite on a bare interpreter.
+        #
+        # The resolver is pointed at a core that does not exist, so no test can reach the
+        # real kernel and therefore no test can reach the network. The suite's "with core"
+        # cases inject a fake core through RESEARCHER_CORE_CMD, which overrides this.
+        env:
+          RESEARCHER_CORE_PROJECT: ${{ runner.temp }}/no-such-core
+        run: uv run --project core python -m pytest scripts/tests -q
+
+  no-core-fallback:
+    name: Plugin works with no uv and no core (D3)
+    runs-on: ${{ matrix.os }}
+    if: github.event_name != 'schedule'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install pytest only (deliberately no uv, no core)
+        run: python -m pip install --quiet pytest
+
+      - name: Script tests on a bare interpreter, core resolver pointed at nothing
+        # The plugin must never hard-fail without core. This job is the proof: no uv is
+        # installed, RESEARCHER_CORE_PROJECT names a directory that does not exist, and
+        # the hooks and the bib validator still have to pass their whole M1 suite.
+        env:
+          RESEARCHER_CORE_PROJECT: ${{ runner.temp }}/no-such-core
+        run: python -m pytest scripts/tests -q
+
+  benchmarks:
+    name: Benchmark gate (axes + triggers)
+    # GATING. The M2 exit gate is these benchmarks green at D17 sizes, so they run on
+    # every PR and a red benchmark blocks the merge. They replay from snapshots, so a red
+    # here means the kernel changed its mind, never that an API was down.
+    runs-on: ubuntu-latest
+    if: github.event_name != 'schedule'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv (pinned)
+        run: python -m pip install --quiet "uv==${UV_VERSION}"
+
+      - name: Sync the core dev environment
+        run: uv sync --project core
+
+      - name: Per-axis benchmarks (identity, status, faithfulness, accessibility, retrieval, dedup)
+        # Reports are captured by teeing stdout rather than by a --report flag, so this
+        # job depends on nothing but the runner's exit code and its printed report.
+        run: |
+          set -o pipefail
+          uv run --project core python evals/run_axes.py | tee axes-report.txt
+
+      - name: Pooled trigger eval
+        run: |
+          set -o pipefail
+          uv run --project core python evals/run_triggers.py | tee triggers-report.txt
+
+      - name: Upload benchmark reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-reports
+          path: |
+            axes-report.txt
+            triggers-report.txt
+          if-no-files-found: warn
+          retention-days: 30
+
+  live-canary:
+    name: Live canary (snapshot drift, NON-GATING)
+    # Scheduled and manual only, and it cannot fail the build: continue-on-error is set on
+    # the job, so a red canary is a yellow marker on a green run. Snapshot drift is news
+    # about the world (a paper was retracted last week, a publisher fixed a title), not a
+    # defect in this repository. It is read by a human, who then refreshes snapshots
+    # deliberately, which is exactly what stops gold-set rot from happening silently.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv (pinned)
+        run: python -m pip install --quiet "uv==${UV_VERSION}"
+
+      - name: Sync the core dev environment
+        run: uv sync --project core
+
+      - name: Re-run the snapshot request set live and diff it against the store
+        # Keyless by default: the polite-pool mailto values are the only thing configured,
+        # and a missing secret degrades to an anonymous call rather than failing the job.
+        env:
+          # live: call the APIs, and do NOT write over the stored snapshots. The store is
+          # refreshed by a human running `snapshot record` after reading the drift.
+          RESEARCHER_CORE_SNAPSHOT_MODE: live
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+          CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
+          UNPAYWALL_EMAIL: ${{ secrets.UNPAYWALL_EMAIL }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+        run: |
+          set -o pipefail
+          uv run --project core python -m researcher_core snapshot diff --all --json \
+            --store core/tests/snapshots \
+            | tee drift-report.json
+
+      - name: Summarize the drift
+        if: always()
+        run: |
+          {
+            echo "## Live canary: snapshot drift"
+            echo
+            if [ -s drift-report.json ]; then
+              echo '```json'
+              head -c 4000 drift-report.json
+              echo
+              echo '```'
+              echo
+              echo "Drift is information, not a failure. Refresh snapshots deliberately"
+              echo "(\`snapshot record\`) after reading what changed and why."
+            else
+              echo "No drift report was produced. The canary could not reach the APIs, or"
+              echo "the snapshot store is empty. Neither gates CI."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload the drift report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshot-drift-report
+          path: drift-report.json
+          if-no-files-found: warn
+          retention-days: 90

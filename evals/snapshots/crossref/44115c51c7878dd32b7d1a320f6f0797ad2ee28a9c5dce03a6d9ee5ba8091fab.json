@@ -1,0 +1,2324 @@
+{
+  "endpoint": "works",
+  "request_key": "44115c51c7878dd32b7d1a320f6f0797ad2ee28a9c5dce03a6d9ee5ba8091fab",
+  "request_params": {
+    "query.bibliographic": "Deep Self-Supervised Representation Learning for Free-Hand Sketch",
+    "rows": 10
+  },
+  "response_body": {
+    "message": {
+      "facets": {},
+      "items": [
+        {
+          "DOI": "10.1109/tcsvt.2020.3003048",
+          "ISSN": [
+            "1051-8215",
+            "1558-2205"
+          ],
+          "URL": "https://doi.org/10.1109/tcsvt.2020.3003048",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Xu",
+              "given": "Peng",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Song",
+              "given": "Zeyu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Yin",
+              "given": "Qiyue",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Song",
+              "given": "Yi-Zhe",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Liang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "IEEE Transactions on Circuits and Systems for Video Technology"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2020-06-17T22:38:36Z",
+            "timestamp": 1592433516000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                10
+              ]
+            ],
+            "date-time": "2022-05-10T14:50:21Z",
+            "timestamp": 1652194221000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                2
+              ]
+            ],
+            "date-time": "2026-05-02T10:28:07Z",
+            "timestamp": 1777717687706,
+            "version": "3.51.4"
+          },
+          "is-referenced-by-count": 42,
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1051-8215"
+            },
+            {
+              "type": "electronic",
+              "value": "1558-2205"
+            }
+          ],
+          "issue": "4",
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                4
+              ]
+            ]
+          },
+          "journal-issue": {
+            "issue": "4"
+          },
+          "license": [
+            {
+              "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2021-04-01T00:00:00Z",
+                "timestamp": 1617235200000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2021-04-01T00:00:00Z",
+                "timestamp": 1617235200000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2021,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2021-04-01T00:00:00Z",
+                "timestamp": 1617235200000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/76/9394821/09119480.pdf?arnumber=9119480",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "1503-1513",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                4
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                4
+              ]
+            ]
+          },
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference": [
+            {
+              "DOI": "10.1109/ICCV.2015.167",
+              "doi-asserted-by": "publisher",
+              "key": "ref39"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46487-9_40",
+              "doi-asserted-by": "publisher",
+              "key": "ref38"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00836",
+              "doi-asserted-by": "publisher",
+              "key": "ref33"
+            },
+            {
+              "DOI": "10.1145/2911996.2912067",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "DOI": "10.1145/2898351",
+              "doi-asserted-by": "publisher",
+              "key": "ref31"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00981",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "DOI": "10.1109/CVPR.2009.5206848",
+              "doi-asserted-by": "publisher",
+              "key": "ref37"
+            },
+            {
+              "article-title": "A neural representation of sketch drawings",
+              "author": "ha",
+              "first-page": "1",
+              "journal-title": "Proc ICLR",
+              "key": "ref36",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1145/2185520.2185540",
+              "doi-asserted-by": "publisher",
+              "key": "ref35"
+            },
+            {
+              "DOI": "10.1145/2897824.2925954",
+              "doi-asserted-by": "publisher",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00228",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "DOI": "10.1016/j.neucom.2017.05.099",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "DOI": "10.1145/2461912.2461964",
+              "doi-asserted-by": "publisher",
+              "key": "ref29"
+            },
+            {
+              "DOI": "10.18653/v1/P18-1046",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "article-title": "Parameter free large margin nearest neighbor for distance metric learning",
+              "author": "song",
+              "first-page": "1",
+              "journal-title": "Proc AAAI",
+              "key": "ref1",
+              "year": "2017"
+            },
+            {
+              "DOI": "10.1145/2661229.2661231",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "DOI": "10.1109/ICIP.2019.8803426",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "article-title": "Sketch-R2CNN: An attentive network for vector sketch recognition",
+              "author": "li",
+              "journal-title": "arXiv 1811 08170",
+              "key": "ref21",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00844",
+              "doi-asserted-by": "publisher",
+              "key": "ref24"
+            },
+            {
+              "article-title": "Multi-graph transformer for free-hand sketch recognition",
+              "author": "xu",
+              "journal-title": "arXiv 1912 11258",
+              "key": "ref23",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.592",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.247",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            },
+            {
+              "article-title": "A simple framework for contrastive learning of visual representations",
+              "author": "chen",
+              "journal-title": "arXiv 2002 05709",
+              "key": "ref50",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00973",
+              "doi-asserted-by": "publisher",
+              "key": "ref51"
+            },
+            {
+              "DOI": "10.1007/s11263-016-0932-3",
+              "doi-asserted-by": "publisher",
+              "key": "ref58"
+            },
+            {
+              "article-title": "Auto-encoding variational Bayes",
+              "author": "kingma",
+              "journal-title": "arXiv 1312 6114",
+              "key": "ref57",
+              "year": "2013"
+            },
+            {
+              "article-title": "PyTorch: An imperative style, high-performance deep learning library",
+              "author": "paszke",
+              "first-page": "8024",
+              "journal-title": "Proc NIPS",
+              "key": "ref56",
+              "year": "2019"
+            },
+            {
+              "article-title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+              "author": "ioffe",
+              "first-page": "1",
+              "journal-title": "Proc ICML",
+              "key": "ref55",
+              "year": "2015"
+            },
+            {
+              "DOI": "10.1007/3-540-40063-X_59",
+              "doi-asserted-by": "publisher",
+              "key": "ref54"
+            },
+            {
+              "DOI": "10.1109/WACV.2018.00092",
+              "doi-asserted-by": "publisher",
+              "key": "ref53"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00975",
+              "doi-asserted-by": "publisher",
+              "key": "ref52"
+            },
+            {
+              "DOI": "10.1145/3343031.3350998",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "article-title": "Learning for multi-model and multi-type fitting",
+              "author": "xu",
+              "journal-title": "arXiv 1901 10254",
+              "key": "ref11",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1007/978-3-319-46466-4_5",
+              "doi-asserted-by": "publisher",
+              "key": "ref40"
+            },
+            {
+              "DOI": "10.1109/TIP.2020.2973812",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "DOI": "10.1109/CVPR42600.2020.00185",
+              "doi-asserted-by": "publisher",
+              "key": "ref13"
+            },
+            {
+              "DOI": "10.1609/aaai.v34i05.6392",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "DOI": "10.1007/978-3-030-01264-9_9",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "article-title": "Unsupervised representation learning by predicting image rotations",
+              "author": "gidaris",
+              "first-page": "1",
+              "journal-title": "Proc ICLR",
+              "key": "ref16",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00202",
+              "doi-asserted-by": "publisher",
+              "key": "ref17"
+            },
+            {
+              "DOI": "10.1609/aaai.v33i01.33018545",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "article-title": "Deep learning for free-hand sketch: A survey and a toolbox",
+              "author": "xu",
+              "journal-title": "arXiv 2001 02600",
+              "key": "ref19",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1109/TIP.2018.2887029",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "article-title": "T-C3D: Temporal convolutional 3D network for real-time action recognition",
+              "author": "liu",
+              "first-page": "1",
+              "journal-title": "Proc AAAI",
+              "key": "ref3",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/ICME.2018.8486469",
+              "doi-asserted-by": "publisher",
+              "key": "ref6"
+            },
+            {
+              "DOI": "10.18653/v1/P18-1199",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1109/TMM.2019.2933334",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00384",
+              "doi-asserted-by": "publisher",
+              "key": "ref7"
+            },
+            {
+              "article-title": "Momentum contrast for unsupervised visual representation learning",
+              "author": "he",
+              "journal-title": "arXiv 1911 05722",
+              "key": "ref49",
+              "year": "2019"
+            },
+            {
+              "DOI": "10.1109/MLSP.2019.8918818",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "article-title": "Discriminative unsupervised feature learning with convolutional neural networks",
+              "author": "dosovitskiy",
+              "first-page": "766",
+              "journal-title": "Proc NIPS",
+              "key": "ref46",
+              "year": "2014"
+            },
+            {
+              "article-title": "Large scale adversarial representation learning",
+              "author": "donahue",
+              "first-page": "10541",
+              "journal-title": "Proc NIPS",
+              "key": "ref45",
+              "year": "2019"
+            },
+            {
+              "article-title": "Representation learning with contrastive predictive coding",
+              "author": "van den oord",
+              "journal-title": "arXiv 1807 03748",
+              "key": "ref48",
+              "year": "2018"
+            },
+            {
+              "article-title": "Learning deep parsimonious representations",
+              "author": "liao",
+              "first-page": "5076",
+              "journal-title": "Proc NIPS",
+              "key": "ref47",
+              "year": "2016"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.278",
+              "doi-asserted-by": "publisher",
+              "key": "ref42"
+            },
+            {
+              "DOI": "10.1145/2964284.2967220",
+              "doi-asserted-by": "publisher",
+              "key": "ref41"
+            },
+            {
+              "article-title": "Unsupervised representation learning with deep convolutional generative adversarial networks",
+              "author": "radford",
+              "journal-title": "arXiv 1511 06434",
+              "key": "ref44",
+              "year": "2015"
+            },
+            {
+              "article-title": "Adversarial feature learning",
+              "author": "donahue",
+              "journal-title": "arXiv 1605 09782",
+              "key": "ref43",
+              "year": "2016"
+            }
+          ],
+          "reference-count": 58,
+          "references-count": 58,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/9119480/"
+            }
+          },
+          "score": 44.37676,
+          "short-container-title": [
+            "IEEE Trans. Circuits Syst. Video Technol."
+          ],
+          "source": "Crossref",
+          "title": [
+            "Deep Self-Supervised Representation Learning for Free-Hand Sketch"
+          ],
+          "type": "journal-article",
+          "volume": "31"
+        },
+        {
+          "DOI": "10.1109/cvpr42600.2020.00679",
+          "URL": "https://doi.org/10.1109/cvpr42600.2020.00679",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Lin",
+              "given": "Hangyu",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Fu",
+              "given": "Yanwei",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Xue",
+              "given": "Xiangyang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Jiang",
+              "given": "Yu-Gang",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "container-title": [
+            "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                8,
+                5
+              ]
+            ],
+            "date-time": "2020-08-05T21:20:05Z",
+            "timestamp": 1596662405000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                6,
+                27
+              ]
+            ],
+            "date-time": "2022-06-27T15:38:50Z",
+            "timestamp": 1656344330000
+          },
+          "event": {
+            "end": {
+              "date-parts": [
+                [
+                  2020,
+                  6,
+                  19
+                ]
+              ]
+            },
+            "location": "Seattle, WA, USA",
+            "name": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "start": {
+              "date-parts": [
+                [
+                  2020,
+                  6,
+                  13
+                ]
+              ]
+            }
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                16
+              ]
+            ],
+            "date-time": "2026-06-16T05:22:41Z",
+            "timestamp": 1781587361699,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 57,
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                6
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2020-06-01T00:00:00Z",
+                "timestamp": 1590969600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2020-06-01T00:00:00Z",
+                "timestamp": 1590969600000
+              }
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    6,
+                    1
+                  ]
+                ],
+                "date-time": "2020-06-01T00:00:00Z",
+                "timestamp": 1590969600000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/9142308/9156271/09156845.pdf?arnumber=9156845",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "263",
+          "page": "6757-6766",
+          "prefix": "10.1109",
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                6
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                6
+              ]
+            ]
+          },
+          "publisher": "IEEE",
+          "reference": [
+            {
+              "DOI": "10.1109/ICCV.2017.244",
+              "doi-asserted-by": "publisher",
+              "key": "ref32"
+            },
+            {
+              "author": "zhou",
+              "journal-title": "Learning to sketch with deep q networks and demonstrated strokes",
+              "key": "ref31",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/TPAMI.2017.2695539",
+              "doi-asserted-by": "publisher",
+              "key": "ref30"
+            },
+            {
+              "DOI": "10.1016/j.cviu.2013.02.005",
+              "doi-asserted-by": "publisher",
+              "key": "ref10"
+            },
+            {
+              "DOI": "10.1109/ICIP.2011.6116513",
+              "doi-asserted-by": "publisher",
+              "key": "ref11"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.243",
+              "doi-asserted-by": "publisher",
+              "key": "ref12"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00880",
+              "doi-asserted-by": "publisher",
+              "key": "ref13"
+            },
+            {
+              "DOI": "10.1109/CVPR.2017.632",
+              "doi-asserted-by": "publisher",
+              "key": "ref14"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00202",
+              "doi-asserted-by": "publisher",
+              "key": "ref15"
+            },
+            {
+              "author": "lan",
+              "journal-title": "Albert A lite bert for self-supervised learning of language representations",
+              "key": "ref16",
+              "year": "2019"
+            },
+            {
+              "author": "li",
+              "journal-title": "Sketch-r2cnn An attentive network for vector sketch recognition",
+              "key": "ref17",
+              "year": "2018"
+            },
+            {
+              "DOI": "10.1109/CVPR.2019.00162",
+              "doi-asserted-by": "publisher",
+              "key": "ref18"
+            },
+            {
+              "DOI": "10.5244/C.27.35",
+              "doi-asserted-by": "publisher",
+              "key": "ref19"
+            },
+            {
+              "DOI": "10.1007/s11263-016-0932-3",
+              "doi-asserted-by": "publisher",
+              "key": "ref28"
+            },
+            {
+              "DOI": "10.1145/2185520.2185540",
+              "doi-asserted-by": "publisher",
+              "key": "ref4"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.93",
+              "doi-asserted-by": "publisher",
+              "key": "ref27"
+            },
+            {
+              "author": "devlin",
+              "journal-title": "BERT Pre-training of deep bidirectional transformers for language understanding",
+              "key": "ref3",
+              "year": "2018"
+            },
+            {
+              "article-title": "Unsupervised representation learning by predicting image rotations",
+              "author": "gidaris",
+              "journal-title": "ICLRE",
+              "key": "ref6",
+              "year": "0"
+            },
+            {
+              "article-title": "Colorful image colorization",
+              "author": "zhang",
+              "journal-title": "ECCV",
+              "key": "ref29",
+              "year": "0"
+            },
+            {
+              "DOI": "10.1109/TVCG.2010.266",
+              "doi-asserted-by": "publisher",
+              "key": "ref5"
+            },
+            {
+              "DOI": "10.1109/CVPR.2016.90",
+              "doi-asserted-by": "publisher",
+              "key": "ref8"
+            },
+            {
+              "article-title": "A neural representation of sketch drawings",
+              "author": "ha",
+              "journal-title": "ICLRE",
+              "key": "ref7",
+              "year": "0"
+            },
+            {
+              "DOI": "10.1007/1-4020-2081-3_4",
+              "doi-asserted-by": "publisher",
+              "key": "ref2"
+            },
+            {
+              "DOI": "10.1162/neco.1997.9.8.1735",
+              "doi-asserted-by": "publisher",
+              "key": "ref9"
+            },
+            {
+              "author": "chung",
+              "journal-title": "Empirical evaluation of gated recurrent neural networks on sequence modeling",
+              "key": "ref1",
+              "year": "2014"
+            },
+            {
+              "DOI": "10.1145/3343031.3350900",
+              "doi-asserted-by": "publisher",
+              "key": "ref20"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.592",
+              "doi-asserted-by": "publisher",
+              "key": "ref22"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00975",
+              "doi-asserted-by": "publisher",
+              "key": "ref21"
+            },
+            {
+              "author": "yang",
+              "journal-title": "XLNet Generalized Autoregressive Pretraining for Language Understanding",
+              "key": "ref24",
+              "year": "2019"
+            },
+            {
+              "article-title": "Attention is all you need",
+              "author": "vaswani",
+              "journal-title": "NeualPS",
+              "key": "ref23",
+              "year": "0"
+            },
+            {
+              "DOI": "10.1109/ICCV.2019.00457",
+              "doi-asserted-by": "publisher",
+              "key": "ref26"
+            },
+            {
+              "DOI": "10.1109/CVPR.2018.00577",
+              "doi-asserted-by": "publisher",
+              "key": "ref25"
+            }
+          ],
+          "reference-count": 32,
+          "references-count": 32,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/9156845/"
+            }
+          },
+          "score": 37.78531,
+          "source": "Crossref",
+          "title": [
+            "Sketch-BERT: Learning Sketch Bidirectional Encoder Representation From Transformers by Self-Supervised Learning of Sketch Gestalt"
+          ],
+          "type": "proceedings-article"
+        },
+        {
+          "DOI": "10.70675/66888a5fz3f81z42b4z840ez3be1235e6af0",
+          "URL": "https://doi.org/10.70675/66888a5fz3f81z42b4z840ez3be1235e6af0",
+          "abstract": "<jats:title>Apprentissage profond de représentations audio auto-supervisées pour l'étiquetage automatique de sons généraux et de musique</jats:title>\n                <jats:p xml:lang=\"fr\">L’objectif de cette thèse est de développer de nouvelles méthodes d’apprentissage profond pour construire des modèles fondamentaux pour l’audio capables d’apprendre des représentations pertinentes sans données annotées. Nous commençons par analyser de manière systématique des modèles fondamentaux autosupervisés et supervisés dans un protocole d’évaluation commun. En particulier, nous étudions leur comportement en phase d’inférence et mesurons leur robustesse face aux variations de la durée des segments d’entrée. Cette analyse fournit des recommandations pratiques pour le choix de plongements audio pré-entraînés, et met en évidence la capacité des modèles Audio Spectrogram Transformer à conserver de bonnes performances sur des segments audio plus courts.À partir de ces observations, nous proposons MATPAC, une méthode auto-supervisée fondée sur la prédiction masquée dans l’espace latent, combinée à un objectif de classification non supervisée. Cette combinaison pousse le modèle à apprendre à la fois des régularités prédictives et des structures sémantiques, ce qui conduit à des représentations surpassant les approches autosupervisées existantes, tout en étant compétitives avec les méthodes supervisées. Nous introduisons ensuite une version améliorée, MATPAC++, qui résout l’ambigüité inhérente à la prédiction de contenu masqué en générant plusieurs hypothèses et en s'électionnant la plus adaptée grâce à un algorithme de Multiple Choice Learning. Ce modèle atteint l’état de l’art dans de nombreuses tâches.Enfin, nous étudions les possibilités d’utilisation de ces modèles dans d’autres contextes que la classification et l’annotation d’audio. Nous montrons que leurs représentations peuvent être efficacement compressées dans des architectures beaucoup plus petites sans recours à des données annotées, et qu’elles peuvent servir de modules de conditionnement dans des systèmes multimodaux.Nous introduisons notamment TinyMU, un modèle compact de langage musical qui s’appuie sur MATPAC++ pour réaliser un raisonnement musical de haut niveau, tout en restant léger et facilement déployable.</jats:p>",
+          "alternative-id": [
+            "2026IPPAT003"
+          ],
+          "approved": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                13
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "id": [
+                    {
+                      "asserted-by": "publisher",
+                      "id": "https://ror.org/042tfbd02",
+                      "id-type": "ROR"
+                    }
+                  ],
+                  "name": "Institut polytechnique de Paris"
+                }
+              ],
+              "family": "Quélennec",
+              "given": "Aurian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "contributor": [
+            {
+              "affiliation": [],
+              "role": [
+                null
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                18
+              ]
+            ],
+            "date-time": "2026-06-18T10:12:07Z",
+            "timestamp": 1781777527000
+          },
+          "degree": [
+            "Doctorat ès Signal, Images, Automatique et robotique",
+            "PhD"
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                18
+              ]
+            ],
+            "date-time": "2026-06-18T10:12:09Z",
+            "timestamp": 1781777529000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                18
+              ]
+            ],
+            "date-time": "2026-06-18T10:52:30Z",
+            "timestamp": 1781779950873,
+            "version": "3.54.5"
+          },
+          "institution": [
+            {
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "https://ror.org/042tfbd02",
+                  "id-type": "ROR"
+                }
+              ],
+              "name": "Institut polytechnique de Paris"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "51494",
+          "prefix": "10.70675",
+          "publisher": "Agence Bibliographique de l'Enseignement Supérieur",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://theses.fr/2026IPPAT003"
+            }
+          },
+          "score": 37.005547,
+          "source": "Crossref",
+          "title": [
+            "Deep learning of self-supervised audio representation for general audio and music tagging"
+          ],
+          "type": "dissertation"
+        },
+        {
+          "DOI": "10.21203/rs.3.rs-4347681/v1",
+          "URL": "https://doi.org/10.21203/rs.3.rs-4347681/v1",
+          "abstract": "<title>Abstract</title>\n        <p>Humans are still indispensable on industrial assembly lines, but in the event of an error, they need support from intelligent systems. In addition to the objects to be observed, it is equally important to understand the fine-grained hand movements of a human to be able to track the entire process. However, these deep-learning-based hand action recognition methods are very label intensive, which cannot be offered by all industrial companies due to the associated costs. This work therefore presents a self-supervised learning approach for industrial assembly processes that allows a spatio-temporal transformer architecture to be pre-trained on a variety of information from real-world video footage of daily life. Subsequently, this deep learning model is adapted to the industrial assembly task at hand using only a few labels. Well-known real-world datasets best suited for representation learning of such hand actions in a regression tasks are outlined and to what extent they optimize the subsequent supervised trained classification task. This subsequent fine-tuning is supplemented by concept drift detection, which makes the resulting productively employed models more robust against concept drift and future changing assembly movements.</p>",
+          "accepted": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                30
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [
+                {
+                  "name": "Georg Simon Ohm University of Applied Sciences Nuremberg"
+                }
+              ],
+              "family": "Sturm",
+              "given": "Fabian",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                8
+              ]
+            ],
+            "date-time": "2024-05-08T19:44:08Z",
+            "timestamp": 1715197448000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                16
+              ]
+            ],
+            "date-time": "2024-12-16T16:05:53Z",
+            "timestamp": 1734365153000
+          },
+          "group-title": "In Review",
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                16
+              ]
+            ],
+            "date-time": "2024-12-16T16:40:04Z",
+            "timestamp": 1734367204381,
+            "version": "3.30.2"
+          },
+          "institution": [
+            {
+              "name": "Research Square"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                8
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    5,
+                    8
+                  ]
+                ],
+                "date-time": "2024-05-08T00:00:00Z",
+                "timestamp": 1715126400000
+              }
+            }
+          ],
+          "link": [
+            {
+              "URL": "https://www.researchsquare.com/article/rs-4347681/v1",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.researchsquare.com/article/rs-4347681/v1.html",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "297",
+          "posted": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                8
+              ]
+            ]
+          },
+          "prefix": "10.21203",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                8
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-preprint-of": [
+              {
+                "asserted-by": "subject",
+                "id": "10.1007/s00138-024-01638-9",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://www.researchsquare.com/article/rs-4347681/v1"
+            }
+          },
+          "score": 35.32514,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Self-Supervised Representation Learning for Robust Fine-Grained Human Hand Action Recognition in Industrial Assembly Lines"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.2139/ssrn.4567046",
+          "URL": "https://doi.org/10.2139/ssrn.4567046",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Liu",
+              "given": "Ruyue",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            },
+            {
+              "affiliation": [],
+              "family": "Yin",
+              "given": "Rong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Liu",
+              "given": "Yong",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [],
+              "family": "Wang",
+              "given": "Weiping",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                9
+              ]
+            ],
+            "date-time": "2023-09-09T18:18:52Z",
+            "timestamp": 1694283532000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                10
+              ]
+            ],
+            "date-time": "2023-09-10T00:03:26Z",
+            "timestamp": 1694304206000
+          },
+          "group-title": "SSRN",
+          "indexed": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                11
+              ]
+            ],
+            "date-time": "2023-09-11T21:26:21Z",
+            "timestamp": 1694467581169
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "member": "78",
+          "posted": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "prefix": "10.2139",
+          "published": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "DOI": "10.1016/j.patcog.2022.108601",
+              "article-title": "Incorporating global and local social networks for group recommendations",
+              "author": "Y Leng",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Pattern Recognition",
+              "key": "ref1",
+              "volume": "127",
+              "year": "2022"
+            },
+            {
+              "article-title": "Multi-scale multi-hierarchy attention convolutional neural network for fetal brain extraction",
+              "author": "L Sun",
+              "journal-title": "Pattern Recognition",
+              "key": "ref2",
+              "volume": "133",
+              "year": "2023"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2023.109670",
+              "article-title": "A decomposition dynamic graph convolutional recurrent network for traffic forecasting",
+              "author": "W Weng",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Pattern Recognition",
+              "key": "ref3",
+              "volume": "142",
+              "year": "2023"
+            },
+            {
+              "article-title": "Graph representation learning via graphical mutual information maximization",
+              "author": "Z Peng",
+              "first-page": "259",
+              "journal-title": "Proceedings of The Web Conference",
+              "key": "ref4",
+              "year": "2020"
+            },
+            {
+              "article-title": "Semi-supervised classification with graph convolutional networks",
+              "author": "T N Kipf",
+              "journal-title": "th International Conference on Learning Representations",
+              "key": "ref5",
+              "year": "2017"
+            },
+            {
+              "article-title": "Contrastive multi-view representation learning on graphs",
+              "author": "K Hassani",
+              "first-page": "4116",
+              "journal-title": "International conference on machine learning",
+              "key": "ref6",
+              "year": "2020"
+            },
+            {
+              "article-title": "Understanding contrastive representation learning through alignment and uniformity on the hypersphere",
+              "author": "T Wang",
+              "first-page": "9929",
+              "journal-title": "International Conference on Machine Learning",
+              "key": "ref7",
+              "year": "2020"
+            },
+            {
+              "article-title": "From canonical correlation analysis to self-supervised graph neural networks",
+              "author": "H Zhang",
+              "first-page": "76",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref8",
+              "volume": "34",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1145/3442381.3449952",
+              "article-title": "Graph structure estimation neural networks",
+              "author": "R Wang",
+              "doi-asserted-by": "crossref",
+              "first-page": "342",
+              "journal-title": "Proceedings of the Web Conference 2021",
+              "key": "ref9",
+              "year": "2021"
+            },
+            {
+              "article-title": "Uncovering the structural fairness in graph contrastive learning",
+              "author": "R Wang",
+              "first-page": "32465",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref10",
+              "volume": "35",
+              "year": "2022"
+            },
+            {
+              "article-title": "Dynamic graph structure learning for multivariate time series forecasting",
+              "author": "Z L Li",
+              "journal-title": "Pattern Recognition",
+              "key": "ref11",
+              "volume": "138",
+              "year": "2023"
+            },
+            {
+              "article-title": "Iterative deep graph learning for graph neural networks: Better and robust node embeddings",
+              "author": "Y Chen",
+              "first-page": "19314",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref12",
+              "volume": "33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Learning discrete structures for graph neural networks",
+              "author": "L Franceschi",
+              "first-page": "1972",
+              "journal-title": "International conference on machine learning",
+              "key": "ref13",
+              "year": "2019"
+            },
+            {
+              "article-title": "Slaps: Self-supervision improves structure learning for graph neural networks",
+              "author": "B Fatemi",
+              "first-page": "22667",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref14",
+              "volume": "34",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1145/3394486.3403049",
+              "article-title": "Graph structure learning for robust graph neural networks",
+              "author": "W Jin",
+              "doi-asserted-by": "crossref",
+              "first-page": "66",
+              "journal-title": "Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining",
+              "key": "ref15",
+              "year": "2020"
+            },
+            {
+              "DOI": "10.1609/aaai.v37i4.25547",
+              "article-title": "Model augmentation tricks for graph contrastive learning",
+              "author": "X Gong",
+              "doi-asserted-by": "crossref",
+              "first-page": "4284",
+              "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+              "key": "ref16",
+              "year": "2023"
+            },
+            {
+              "article-title": "Infograph: Unsupervised and semi-supervised graph-level representation learning via mutual information maximization",
+              "author": "F.-Y Sun",
+              "journal-title": "International Conference on Learning Representations",
+              "key": "ref17",
+              "year": "2019"
+            },
+            {
+              "author": "P Veli?kovi?",
+              "journal-title": "International Conference on Learning Representations",
+              "key": "ref18",
+              "year": "2018"
+            },
+            {
+              "author": "Y You",
+              "first-page": "5812",
+              "journal-title": "Graph contrastive learning with augmentations, Advances in neural information processing systems",
+              "key": "ref19",
+              "volume": "33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Semi-supervised and self-supervised classification with multi-view graph neural networks",
+              "author": "J Yuan",
+              "first-page": "2466",
+              "journal-title": "Proceedings of the 30th ACM international conference on information & knowledge management",
+              "key": "ref20",
+              "year": "2021"
+            },
+            {
+              "article-title": "Bootstrapped representation learning on graphs",
+              "author": "S Thakoor",
+              "journal-title": "ICLR 2021 Workshop on Geometrical and Topological Representation Learning",
+              "key": "ref21",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1145/3485447.3512183",
+              "article-title": "Adversarial graph contrastive learning with information regularization",
+              "author": "S Feng",
+              "doi-asserted-by": "crossref",
+              "first-page": "1362",
+              "journal-title": "Proceedings of the ACM Web Conference 2022",
+              "key": "ref22",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1145/3394486.3403168",
+              "article-title": "Gcc: Graph contrastive coding for graph neural network pre-training",
+              "author": "J Qiu",
+              "doi-asserted-by": "crossref",
+              "first-page": "1150",
+              "journal-title": "Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining",
+              "key": "ref23",
+              "year": "2020"
+            },
+            {
+              "article-title": "Understanding and extending subgraph gnns by rethinking their symmetries",
+              "author": "F Frasca",
+              "first-page": "31376",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref24",
+              "volume": "35",
+              "year": "2022"
+            },
+            {
+              "article-title": "On the substructure countability of graph neural networks",
+              "author": "W Xia",
+              "journal-title": "IEEE Transactions on Knowledge and Data Engineering",
+              "key": "ref25"
+            },
+            {
+              "article-title": "Graph contrastive learning with adaptive augmentation for recommendation",
+              "author": "M Jing",
+              "first-page": "590",
+              "journal-title": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
+              "key": "ref26",
+              "year": "2022"
+            },
+            {
+              "author": "Z Tong",
+              "first-page": "19580",
+              "journal-title": "Directed graph contrastive learning, Advances in neural information processing systems",
+              "key": "ref27",
+              "volume": "34",
+              "year": "2021"
+            },
+            {
+              "article-title": "Graph contrastive learning automated",
+              "author": "Y You",
+              "first-page": "12121",
+              "journal-title": "International Conference on Machine Learning",
+              "key": "ref28",
+              "year": "2021"
+            },
+            {
+              "article-title": "Infogcl: Information-aware graph contrastive learning",
+              "author": "D Xu",
+              "first-page": "30414",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref29",
+              "volume": "34",
+              "year": "2021"
+            },
+            {
+              "DOI": "10.1145/3534678.3539425",
+              "article-title": "Costa: covariance-preserving feature augmentation for graph contrastive learning",
+              "author": "Y Zhang",
+              "doi-asserted-by": "crossref",
+              "first-page": "2524",
+              "journal-title": "Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+              "key": "ref30",
+              "year": "2022"
+            },
+            {
+              "DOI": "10.1016/j.patcog.2023.109687",
+              "article-title": "Triplet teaching graph contrastive networks with self-evolving adaptive augmentation",
+              "author": "J Miao",
+              "doi-asserted-by": "crossref",
+              "journal-title": "Pattern Recognition",
+              "key": "ref31",
+              "volume": "142",
+              "year": "2023"
+            },
+            {
+              "article-title": "Adversarial graph augmentation to improve graph contrastive learning",
+              "author": "S Suresh",
+              "first-page": "15920",
+              "journal-title": "Advances in Neural Information Processing Systems",
+              "key": "ref32",
+              "volume": "34",
+              "year": "2021"
+            },
+            {
+              "article-title": "Open graph benchmark: Datasets for machine learning on graphs",
+              "author": "W Hu",
+              "first-page": "22118",
+              "journal-title": "Advances in neural information processing systems",
+              "key": "ref33",
+              "volume": "33",
+              "year": "2020"
+            },
+            {
+              "article-title": "Online learning of social representations",
+              "author": "B Perozzi",
+              "journal-title": "Proceedings of the 20th ACM",
+              "key": "ref34"
+            },
+            {
+              "DOI": "10.1145/2939672.2939754",
+              "article-title": "Node2vec: Scalable feature learning for networks",
+              "author": "A Grover",
+              "doi-asserted-by": "crossref",
+              "first-page": "855",
+              "journal-title": "Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining",
+              "key": "ref35",
+              "year": "2016"
+            },
+            {
+              "article-title": "Graph attention networks",
+              "author": "P Velickovic",
+              "first-page": "10",
+              "issue": "20",
+              "journal-title": "stat",
+              "key": "ref36",
+              "volume": "1050",
+              "year": "2017"
+            },
+            {
+              "author": "T N Kipf",
+              "journal-title": "Variational graph auto-encoders, NIPS Workshop on Bayesian Deep Learning",
+              "key": "ref37"
+            },
+            {
+              "article-title": "Deep neural networks for learning graph representations",
+              "author": "S Cao",
+              "first-page": "1145",
+              "journal-title": "Proceedings of the AAAI conference on artificial intelligence",
+              "key": "ref38",
+              "year": "2016"
+            },
+            {
+              "article-title": "Network representation learning with rich text information",
+              "author": "C Yang",
+              "first-page": "2111",
+              "journal-title": "Proceedings of the 24th International Conference on Artificial Intelligence",
+              "key": "ref39",
+              "year": "2015"
+            },
+            {
+              "article-title": "Graph clustering via variational graph embedding",
+              "author": "L Guo",
+              "journal-title": "Pattern Recognition",
+              "key": "ref40",
+              "volume": "122",
+              "year": "2022"
+            }
+          ],
+          "reference-count": 40,
+          "references-count": 40,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4567046"
+            }
+          },
+          "score": 34.80014,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Unbiased and Augmentation-Free Self-Supervised Graph Representation Learning"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.17760/d20621572",
+          "URL": "https://doi.org/10.17760/d20621572",
+          "approved": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Lu",
+              "given": "Zhenyuan",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                14
+              ]
+            ],
+            "date-time": "2024-05-14T19:55:40Z",
+            "timestamp": 1715716540000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                14
+              ]
+            ],
+            "date-time": "2024-05-14T20:02:54Z",
+            "timestamp": 1715716974000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                15
+              ]
+            ],
+            "date-time": "2024-05-15T00:33:27Z",
+            "timestamp": 1715733207507
+          },
+          "institution": [
+            {
+              "name": "Northeastern University"
+            }
+          ],
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "7402",
+          "prefix": "10.17760",
+          "publisher": "Northeastern University Library",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "http://hdl.handle.net/2047/D20621572"
+            }
+          },
+          "score": 34.122063,
+          "source": "Crossref",
+          "title": [
+            "Supervised and self-supervised representation learning applications for sensory signals"
+          ],
+          "type": "dissertation"
+        },
+        {
+          "DOI": "10.20944/preprints202602.0360.v1",
+          "URL": "https://doi.org/10.20944/preprints202602.0360.v1",
+          "abstract": "<jats:p>This study proposes a self-supervised representation learning-based risk prediction model to address the challenges of label scarcity, structural complexity, and high heterogeneity in Electronic Health Records (EHR) data for risk assessment tasks. The model combines masked reconstruction and context prediction to automatically learn temporal dependencies and latent semantic structures in EHR data under unlabeled conditions, thereby generating robust and generalizable patient health representations. The overall architecture includes a feature embedding layer, a temporal encoding module, an attention-based context aggregation module, and a risk decoding layer, which together capture long-term dependencies and achieve hierarchical feature modeling from multidimensional medical information. Multiple experiments were conducted on the MIMIC-III dataset, and comparisons with LSTM, BiLSTM, Transformer, GRU, and GAT models show that the proposed method achieves significant improvements in Accuracy, F1-Score, Precision, and AUC, verifying the effectiveness of the self-supervised mechanism for EHR representation and risk assessment. In addition, sensitivity analyses of key hyperparameters such as learning rate, hidden layer dimension, and noise interference level demonstrate that the model maintains stable performance under various training conditions, reflecting strong structural robustness and noise-resistant feature extraction ability. Overall, this study achieves the goal of learning high-quality health representations from unlabeled EHR data and provides an efficient and scalable technical framework for intelligent medical risk prediction.</jats:p>",
+          "accepted": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                4
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Xie",
+              "given": "Anzhuo",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                9
+              ]
+            ],
+            "date-time": "2026-02-09T00:12:46Z",
+            "timestamp": 1770595966000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                9
+              ]
+            ],
+            "date-time": "2026-02-09T00:13:01Z",
+            "timestamp": 1770595981000
+          },
+          "group-title": "Computer Science and Mathematics",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                9
+              ]
+            ],
+            "date-time": "2026-02-09T17:05:14Z",
+            "timestamp": 1770656714447,
+            "version": "3.49.0"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                5
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "http://creativecommons.org/licenses/by/4.0",
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "start": {
+                "date-parts": [
+                  [
+                    2026,
+                    2,
+                    5
+                  ]
+                ],
+                "date-time": "2026-02-05T00:00:00Z",
+                "timestamp": 1770249600000
+              }
+            }
+          ],
+          "member": "1968",
+          "posted": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                5
+              ]
+            ]
+          },
+          "prefix": "10.20944",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                5
+              ]
+            ]
+          },
+          "publisher": "MDPI AG",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://www.preprints.org/manuscript/202602.0360/v1"
+            }
+          },
+          "score": 33.797134,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Deep Representation Learning for Risk Prediction in Electronic Health Records Using Self-Supervised Methods"
+          ],
+          "type": "posted-content"
+        },
+        {
+          "DOI": "10.70675/dc53ad72z177fz4bb4z91fbzd00576ba3f2e",
+          "URL": "https://doi.org/10.70675/dc53ad72z177fz4bb4z91fbzd00576ba3f2e",
+          "abstract": "<jats:title>Apprentissage auto-supervisé informé de représentations du signal de parole</jats:title>\n                <jats:p xml:lang=\"fr\">L'apprentissage des caractéristiques a été un des principaux moteurs des progrès de l'apprentissage automatique. L'apprentissage auto-supervisé est apparu dans ce contexte, permettant le traitement de données non étiquetées en vue d'une meilleure performance sur des tâches faiblement étiquetées. La première partie de mon travail de doctorat vise à motiver les choix dans les pipelines d'apprentissage auto-supervisé de la parole qui apprennent les représentations non supervisées. Dans cette thèse, je montre d'abord comment une fonction basée sur l'indépendance conditionnelle peut être utilisée pour sélectionner efficacement et de manière optimale des tâches de pré-entraînement adaptées à la meilleure performance sur une tâche cible. La deuxième partie de mon travail de doctorat étudie l'évaluation et l'utilisation de représentations auto-supervisées pré-entraînées. J'y explore d'abord la robustesse des benchmarks actuels d'auto-supervision de la parole aux changements dans les choix de modélisation en aval. Je propose, ensuite, de nouvelles approches d'entraînement en aval favorisant l'efficacité et la généralisation.</jats:p>",
+          "alternative-id": [
+            "2024IPPAT009"
+          ],
+          "approved": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                25
+              ]
+            ]
+          },
+          "author": [
+            {
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "additional"
+            },
+            {
+              "affiliation": [
+                {
+                  "id": [
+                    {
+                      "asserted-by": "publisher",
+                      "id": "https://ror.org/042tfbd02",
+                      "id-type": "ROR"
+                    }
+                  ],
+                  "name": "Institut polytechnique de Paris"
+                }
+              ],
+              "family": "Zaiem",
+              "given": "Mohamed Salah",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                8
+              ]
+            ],
+            "date-time": "2026-04-08T15:06:45Z",
+            "timestamp": 1775660805000
+          },
+          "degree": [
+            "Doctorat ès Signal, images, automatique et robotique",
+            "PhD"
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                8
+              ]
+            ],
+            "date-time": "2026-04-08T15:06:46Z",
+            "timestamp": 1775660806000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                1
+              ]
+            ],
+            "date-time": "2026-05-01T17:43:50Z",
+            "timestamp": 1777657430168,
+            "version": "3.51.4"
+          },
+          "institution": [
+            {
+              "id": [
+                {
+                  "asserted-by": "publisher",
+                  "id": "https://ror.org/042tfbd02",
+                  "id-type": "ROR"
+                }
+              ],
+              "name": "Institut polytechnique de Paris"
+            }
+          ],
+          "is-referenced-by-count": 1,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "51494",
+          "prefix": "10.70675",
+          "publisher": "Agence Bibliographique de l'Enseignement Supérieur",
+          "reference-count": 0,
+          "references-count": 0,
+          "resource": {
+            "primary": {
+              "URL": "https://theses.fr/2024IPPAT009"
+            }
+          },
+          "score": 33.372894,
+          "source": "Crossref",
+          "title": [
+            "Informed Speech Self-supervised Representation Learning"
+          ],
+          "type": "dissertation"
+        },
+        {
+          "DOI": "10.1109/tpami.2023.3308189/mm1",
+          "URL": "https://doi.org/10.1109/tpami.2023.3308189/mm1",
+          "author": [
+            {
+              "affiliation": [],
+              "family": "Wu",
+              "given": "Min",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                8,
+                29
+              ]
+            ],
+            "date-time": "2023-08-29T13:46:04Z",
+            "timestamp": 1693316764000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                30
+              ]
+            ],
+            "date-time": "2026-01-30T15:10:13Z",
+            "timestamp": 1769785813000
+          },
+          "description": "The supplemental material contains material that is not included within the article itself.",
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                27
+              ]
+            ],
+            "date-time": "2026-02-27T02:36:29Z",
+            "timestamp": 1772159789538,
+            "version": "3.50.1"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                null
+              ]
+            ]
+          },
+          "member": "263",
+          "prefix": "10.1109",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "is-component-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.1109/TPAMI.2023.3308189",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/ielx7/34/10308548/10233092/supp1-3308189.pdf?arnumber=10233092"
+            }
+          },
+          "score": 32.77092,
+          "source": "Crossref",
+          "title": [
+            "Self-Supervised Contrastive Representation Learning for Semi-Supervised Time-Series Classification_supp1-3308189.pdf"
+          ],
+          "type": "component"
+        },
+        {
+          "DOI": "10.22541/au.167573772.22946655/v1",
+          "URL": "https://doi.org/10.22541/au.167573772.22946655/v1",
+          "abstract": "<jats:p>The true bottleneck of artificial intelligence (AI) is not access to the data, but rather labeling this data. We have tons of raw agriculture image data coming from various sources and manual labelling remains to be a crucial step to keep the data well organized which requires considerable amount of time, money, and labor. This process can be made more efficient if we can automatically label the raw data. We propose contrastive learning representations for agriculture images (AgCLR) model that uses self-supervised representation learning approach on unlabeled Encirca Notes data (customer generated field notes data), to learn the useful image feature representations from the real-world agriculture images. Contrastive learning is a self-supervised approach that enables model to learn attributes by contrasting samples against each other without the use of labels. AgCLR leverages the state-of-the-art SimCLRv2 framework to learn representations by maximizing the agreement between differently augmented views of same sample. We have incorporated critical enablers like mixed precision, multi-GPU distributed parallel computing, and use of Google Cloud's Tensor Processing Units (TPU) for optimizing the training process. We achieved 80.2% accuracy while classifying the test data. We further applied AgCLR to unrelated task to determine the alleys and rows in corn field videos for corn phenotyping and we observed two cluster formations for alleys and rows when plotted embeddings in a 3-dimensional space. We also developed a content-based image retrieval tool (pixel affinity) to identify similar images in our database and results were visually very promising.</jats:p>",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-5305-7797",
+              "affiliation": [
+                {
+                  "name": "Farming Solutions & Digital, Research & Development, Corteva Agriscience"
+                }
+              ],
+              "authenticated-orcid": false,
+              "family": "Sornapudi",
+              "given": "Sudhir",
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ],
+              "sequence": "first"
+            }
+          ],
+          "content-domain": {
+            "crossmark-restriction": false,
+            "domain": []
+          },
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                2,
+                6
+              ]
+            ],
+            "date-time": "2023-02-06T21:42:09Z",
+            "timestamp": 1675719729000
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2026-06-17T16:33:25Z",
+            "timestamp": 1781714005000
+          },
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                17
+              ]
+            ],
+            "date-time": "2026-06-17T17:05:14Z",
+            "timestamp": 1781715914052,
+            "version": "3.54.5"
+          },
+          "is-referenced-by-count": 0,
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                2,
+                7
+              ]
+            ]
+          },
+          "link": [
+            {
+              "URL": "https://essopenarchive.org/doi/pdf/10.22541/au.167573772.22946655/v1",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "member": "311",
+          "posted": {
+            "date-parts": [
+              [
+                2023,
+                2,
+                7
+              ]
+            ]
+          },
+          "prefix": "10.22541",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                2,
+                7
+              ]
+            ]
+          },
+          "publisher": "Wiley",
+          "reference-count": 0,
+          "references-count": 0,
+          "relation": {
+            "has-preprint": [
+              {
+                "asserted-by": "object",
+                "id": "10.22541/au.167573772.22946655/v1",
+                "id-type": "doi"
+              }
+            ],
+            "is-preprint-of": [
+              {
+                "asserted-by": "object",
+                "id": "10.22541/au.167573772.22946655/v1",
+                "id-type": "doi"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://essopenarchive.org/doi/full/10.22541/au.167573772.22946655/v1"
+            }
+          },
+          "score": 32.72637,
+          "source": "Crossref",
+          "subtype": "preprint",
+          "title": [
+            "Self-Supervised Representation Learning for Digital Agriculture"
+          ],
+          "type": "posted-content"
+        }
+      ],
+      "items-per-page": 10,
+      "query": {
+        "search-terms": null,
+        "start-index": 0
+      },
+      "total-results": 5449327
+    },
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "e6ad29ec511f7e0cb794e2def681d6c4cedf2d3b31ab79ed4db45adc9a19d6b2",
+  "retrieved_at": "2026-07-14T14:04:19Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}

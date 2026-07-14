@@ -1,0 +1,71 @@
+{
+  "endpoint": "efetch.fcgi",
+  "request_key": "4382d7f797a967332254b0f800218f931898573cfd9d58c7c0434884e9b369cf",
+  "request_params": {
+    "db": "pubmed",
+    "id": "31421606",
+    "retmode": "xml"
+  },
+  "response_body": {
+    "articles": [
+      {
+        "abstract": "BACKGROUND AND OBJECTIVE: This study demonstrates deep learning approaches with an aim to find the optimal method to automatically detect sleep apnea (SA) events from an electrocardiogram (ECG) signal. METHODS: Six deep learning approaches were designed and implemented for automatic detection of SA events including deep neural network (DNN), one-dimensional (1D) convolutional neural networks (CNN), two-dimensional (2D) CNN, recurrent neural networks (RNN), long short-term memory, and gated-recurrent unit (GRU). Designed deep learning models were analyzed and compared in the performances. The ECG signal was pre-processed, normalized, and segmented into 10 s intervals. Subsequently, the signal was converted into a 2D form for analysis in the 2D CNN model. A dataset collected from 86 patients with SA was used. The training set comprised data from 69 of the patients, while the test set contained data from the remaining 17 patients. RESULTS: The accuracy of the best-performing model was 99.0%, and the 1D CNN and GRU models had 99.0% recall rates. CONCLUSIONS: The designed deep learning approaches performed better than those developed and tested in previous studies in terms of detecting SA events, and they could distinguish between apnea and hypopnea events using an ECG signal. The deep learning approaches such as 1D CNN and GRU can be helpful tools to automatically detect SA in sleep apnea screening and related studies.",
+        "authors": [
+          {
+            "family": "Erdenebayar",
+            "given": "Urtnasan"
+          },
+          {
+            "family": "Kim",
+            "given": "Yoon Ji"
+          },
+          {
+            "family": "Park",
+            "given": "Jong-Uk"
+          },
+          {
+            "family": "Joo",
+            "given": "Eun Yeon"
+          },
+          {
+            "family": "Lee",
+            "given": "Kyoung-Joung"
+          }
+        ],
+        "date_raw": "",
+        "day": null,
+        "doi": "10.1016/j.cmpb.2019.105001",
+        "issn": [
+          "1872-7565"
+        ],
+        "issue": "",
+        "journal": "Computer methods and programs in biomedicine",
+        "journal_abbreviation": "Comput Methods Programs Biomed",
+        "keywords": [
+          "Convolutional neural network",
+          "Deep learning",
+          "Gated-recurrent unit",
+          "Long short-term memory",
+          "Recurrent neural network",
+          "Sleep apnea"
+        ],
+        "language": "eng",
+        "month": 10,
+        "page": "105001",
+        "pmcid": "",
+        "pmid": "31421606",
+        "publication_types": [
+          "Journal Article"
+        ],
+        "record_type": "article",
+        "title": "Deep learning approaches for automatic detection of sleep apnea events from an electrocardiogram.",
+        "volume": "180",
+        "year": 2019
+      }
+    ]
+  },
+  "response_hash": "f08f0129ffa3703ee9d38a0a16d469cc98ac3b560a7cf683dc0a5ba740a3ec8b",
+  "retrieved_at": "2026-07-14T14:15:48Z",
+  "schema_version": "1.0",
+  "source": "pubmed"
+}

@@ -1,0 +1,1735 @@
+{
+  "endpoint": "works",
+  "request_key": "e52e41e3aeff29ec546932cf44b81316c5b19a4e4b9eb0846ee1e9e55c81d609",
+  "request_params": {
+    "per-page": 10,
+    "search": "Electrocardiogram based arrhythmia classification using wavelet transform with deep learni",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 2,
+      "db_response_time_ms": 59,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 10,
+      "x_query": {
+        "oql": "works where full text has (Electrocardiogram based arrhythmia classification using wavelet transform with deep learni)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Electrocardiogram based arrhythmia classification using wavelet transform with deep learni"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 10,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Electrocardiogram based arrhythmia classification using wavelet transform with deep learni&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=10"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "4": [
+            107,
+            111,
+            115
+          ],
+          "9": [
+            91
+          ],
+          "A": [
+            180
+          ],
+          "Arrhythmia": [
+            0
+          ],
+          "ECG": [
+            3,
+            10,
+            19,
+            40,
+            80,
+            138,
+            146
+          ],
+          "ECGDL": [
+            148
+          ],
+          "Furthermore,": [
+            43,
+            161
+          ],
+          "However,": [
+            12
+          ],
+          "To": [
+            69
+          ],
+          "We": [
+            118
+          ],
+          "a": [
+            14,
+            46,
+            66,
+            95,
+            120,
+            129,
+            158,
+            164
+          ],
+          "address": [
+            70
+          ],
+          "along": [
+            123
+          ],
+          "also": [
+            187
+          ],
+          "although": [
+            13
+          ],
+          "an": [
+            5,
+            75
+          ],
+          "analysis": [
+            122
+          ],
+          "analysis.": [
+            11
+          ],
+          "and": [
+            78,
+            101,
+            114,
+            177,
+            194
+          ],
+          "approaches": [
+            171
+          ],
+          "architectures.": [
+            179
+          ],
+          "are": [
+            21
+          ],
+          "area": [
+            7
+          ],
+          "arrhythmia": [
+            92,
+            133
+          ],
+          "arrhythmias,": [
+            103
+          ],
+          "as": [
+            53,
+            55,
+            83,
+            104,
+            106,
+            139
+          ],
+          "available,": [
+            22
+          ],
+          "been": [
+            188
+          ],
+          "best-performing": [
+            168
+          ],
+          "both": [
+            99
+          ],
+          "by": [
+            156
+          ],
+          "class": [
+            151
+          ],
+          "classification": [
+            41,
+            81
+          ],
+          "classification,": [
+            134
+          ],
+          "codebase-ECGDL,": [
+            82
+          ],
+          "comparative": [
+            121
+          ],
+          "comparison": [
+            195
+          ],
+          "components": [
+            126
+          ],
+          "comprehensive": [
+            130
+          ],
+          "computational": [
+            9
+          ],
+          "configurable": [
+            79
+          ],
+          "could": [
+            62
+          ],
+          "covering": [
+            94
+          ],
+          "creating": [
+            157
+          ],
+          "cross-validation,": [
+            185
+          ],
+          "datasets": [
+            155
+          ],
+          "datasets,": [
+            28,
+            93
+          ],
+          "deep": [
+            108,
+            169
+          ],
+          "detection": [
+            1
+          ],
+          "dictionary.": [
+            160
+          ],
+          "difficult": [
+            31
+          ],
+          "efforts": [
+            88
+          ],
+          "estimate": [
+            33
+          ],
+          "evaluation": [
+            51,
+            116,
+            182,
+            193
+          ],
+          "fair": [
+            192
+          ],
+          "few": [
+            27
+          ],
+          "first": [
+            87
+          ],
+          "flexible": [
+            77
+          ],
+          "focusing": [
+            135
+          ],
+          "framework": [
+            125
+          ],
+          "from": [
+            2
+          ],
+          "generalizability": [
+            35
+          ],
+          "has": [
+            186
+          ],
+          "important": [
+            6
+          ],
+          "in": [
+            49,
+            65,
+            144,
+            154
+          ],
+          "includes": [
+            90,
+            163
+          ],
+          "information": [
+            152
+          ],
+          "insight": [
+            58
+          ],
+          "inter-patient": [
+            184
+          ],
+          "into": [
+            59,
+            132
+          ],
+          "is": [
+            4,
+            45
+          ],
+          "it": [
+            30,
+            162
+          ],
+          "label": [
+            159
+          ],
+          "lack": [
+            56
+          ],
+          "large": [
+            15,
+            47,
+            96
+          ],
+          "learning": [
+            170
+          ],
+          "making": [
+            29
+          ],
+          "methods.": [
+            42
+          ],
+          "monitoring.": [
+            147
+          ],
+          "morphological": [
+            100
+          ],
+          "most": [
+            23,
+            141
+          ],
+          "network": [
+            178
+          ],
+          "networks,": [
+            110
+          ],
+          "neural": [
+            109
+          ],
+          "novel": [
+            181
+          ],
+          "number": [
+            16,
+            97
+          ],
+          "of": [
+            8,
+            17,
+            36,
+            39,
+            57,
+            85,
+            98,
+            166,
+            196
+          ],
+          "on": [
+            136
+          ],
+          "one": [
+            84
+          ],
+          "only": [
+            26
+          ],
+          "open-source,": [
+            76
+          ],
+          "perform": [
+            64,
+            119,
+            191
+          ],
+          "perspective": [
+            131
+          ],
+          "plethora": [
+            38
+          ],
+          "problems,": [
+            72
+          ],
+          "procedures,": [
+            52
+          ],
+          "propose": [
+            74
+          ],
+          "proposed": [
+            189
+          ],
+          "provide": [
+            128
+          ],
+          "public": [
+            18
+          ],
+          "real-world": [
+            67
+          ],
+          "recent": [
+            142
+          ],
+          "recordings": [
+            20
+          ],
+          "representation": [
+            153
+          ],
+          "research": [
+            24
+          ],
+          "results.": [
+            197
+          ],
+          "rhythmic": [
+            102
+          ],
+          "scheme,": [
+            183
+          ],
+          "schemes.": [
+            117
+          ],
+          "segmentation": [
+            112,
+            175
+          ],
+          "set": [
+            165
+          ],
+          "setup.": [
+            68
+          ],
+          "signal": [
+            174
+          ],
+          "single-lead": [
+            137
+          ],
+          "successfully": [
+            63
+          ],
+          "techniques": [
+            113,
+            176
+          ],
+          "that": [
+            89
+          ],
+          "the": [
+            34,
+            37,
+            50,
+            86,
+            140,
+            150,
+            167
+          ],
+          "there": [
+            44
+          ],
+          "these": [
+            71,
+            124
+          ],
+          "they": [
+            61
+          ],
+          "to": [
+            32,
+            127,
+            190
+          ],
+          "trend": [
+            143
+          ],
+          "unifies": [
+            149
+          ],
+          "uses": [
+            25
+          ],
+          "variability": [
+            48
+          ],
+          "varying": [
+            173
+          ],
+          "we": [
+            73
+          ],
+          "well": [
+            54,
+            105
+          ],
+          "whether": [
+            60
+          ],
+          "wireless": [
+            145
+          ],
+          "with": [
+            172
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3006985408"
+                ],
+                "raw_affiliation_string": "Department of Communication Systems, Jožef Stefan Institute, 1000, Ljubljana, Slovenia"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210113529"
+                ],
+                "raw_affiliation_string": "Jožef Stefan International Postgraduate School, 1000, Ljubljana, Slovenia"
+              }
+            ],
+            "author": {
+              "display_name": "Elena Merdjanovska",
+              "id": "https://openalex.org/A5007507952",
+              "orcid": "https://orcid.org/0000-0003-0794-8438"
+            },
+            "author_position": "first",
+            "countries": [
+              "SI"
+            ],
+            "institutions": [
+              {
+                "country_code": "SI",
+                "display_name": "Jožef Stefan Institute",
+                "id": "https://openalex.org/I3006985408",
+                "lineage": [
+                  "https://openalex.org/I3006985408"
+                ],
+                "ror": "https://ror.org/05060sz93",
+                "type": "facility"
+              },
+              {
+                "country_code": "SI",
+                "display_name": "Jožef Stefan International Postgraduate School",
+                "id": "https://openalex.org/I4210113529",
+                "lineage": [
+                  "https://openalex.org/I4210113529"
+                ],
+                "ror": "https://ror.org/01hdkb925",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Communication Systems, Jožef Stefan Institute, 1000, Ljubljana, Slovenia",
+              "Jožef Stefan International Postgraduate School, 1000, Ljubljana, Slovenia"
+            ],
+            "raw_author_name": "Elena Merdjanovska",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3006985408"
+                ],
+                "raw_affiliation_string": "Department of Communication Systems, Jožef Stefan Institute, 1000, Ljubljana, Slovenia. aleksandra.rashkovska@ijs.si"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I3006985408"
+                ],
+                "raw_affiliation_string": "Department of Communication Systems, Jožef Stefan Institute, 1000, Ljubljana, Slovenia"
+              }
+            ],
+            "author": {
+              "display_name": "Aleksandra Rashkovska",
+              "id": "https://openalex.org/A5003112718",
+              "orcid": "https://orcid.org/0000-0002-2014-8630"
+            },
+            "author_position": "last",
+            "countries": [
+              "SI"
+            ],
+            "institutions": [
+              {
+                "country_code": "SI",
+                "display_name": "Jožef Stefan Institute",
+                "id": "https://openalex.org/I3006985408",
+                "lineage": [
+                  "https://openalex.org/I3006985408"
+                ],
+                "ror": "https://ror.org/05060sz93",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Communication Systems, Jožef Stefan Institute, 1000, Ljubljana, Slovenia. aleksandra.rashkovska@ijs.si",
+              "Department of Communication Systems, Jožef Stefan Institute, 1000, Ljubljana, Slovenia"
+            ],
+            "raw_author_name": "Aleksandra Rashkovska",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/s41598-023-38532-9",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41598-023-38532-9",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41598-023-38532-9.pdf",
+          "raw_source_name": "Scientific Reports",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Scientific Reports",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S196734849",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2045-2322"
+            ],
+            "issn_l": "2045-2322",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "11682",
+          "issue": "1",
+          "last_page": "11682",
+          "volume": "13"
+        },
+        "cited_by_count": 16,
+        "display_name": "A framework for comparative study of databases and computational methods for arrhythmia detection from single-lead ECG",
+        "doi": "https://doi.org/10.1038/s41598-023-38532-9",
+        "id": "https://openalex.org/W4384818051",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s41598-023-38532-9",
+          "openalex": "https://openalex.org/W4384818051",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/37468574"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.nature.com/articles/s41598-023-38532-9.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s41598-023-38532-9",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41598-023-38532-9",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41598-023-38532-9.pdf",
+          "raw_source_name": "Scientific Reports",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Scientific Reports",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S196734849",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2045-2322"
+            ],
+            "issn_l": "2045-2322",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2023-07-19",
+        "publication_year": 2023,
+        "referenced_works": [
+          "https://openalex.org/W1546401409",
+          "https://openalex.org/W1677182931",
+          "https://openalex.org/W1976131663",
+          "https://openalex.org/W2011301426",
+          "https://openalex.org/W2064675550",
+          "https://openalex.org/W2089800337",
+          "https://openalex.org/W2095409369",
+          "https://openalex.org/W2103308415",
+          "https://openalex.org/W2108974680",
+          "https://openalex.org/W2109127420",
+          "https://openalex.org/W2117624000",
+          "https://openalex.org/W2131774270",
+          "https://openalex.org/W2140920882",
+          "https://openalex.org/W2162800060",
+          "https://openalex.org/W2164749256",
+          "https://openalex.org/W2166378641",
+          "https://openalex.org/W2194775991",
+          "https://openalex.org/W2251133041",
+          "https://openalex.org/W2291961022",
+          "https://openalex.org/W2417192649",
+          "https://openalex.org/W2509795914",
+          "https://openalex.org/W2547585100",
+          "https://openalex.org/W2604272474",
+          "https://openalex.org/W2735213458",
+          "https://openalex.org/W2748902594",
+          "https://openalex.org/W2794550444",
+          "https://openalex.org/W2888456553",
+          "https://openalex.org/W2889838428",
+          "https://openalex.org/W2900614987",
+          "https://openalex.org/W2902644322",
+          "https://openalex.org/W2905877654",
+          "https://openalex.org/W2919115771",
+          "https://openalex.org/W2962949934",
+          "https://openalex.org/W2963733370",
+          "https://openalex.org/W2996959172",
+          "https://openalex.org/W3003257820",
+          "https://openalex.org/W3005487465",
+          "https://openalex.org/W3023605195",
+          "https://openalex.org/W3027572331",
+          "https://openalex.org/W3035965352",
+          "https://openalex.org/W3083983389",
+          "https://openalex.org/W3084949122",
+          "https://openalex.org/W3099878876",
+          "https://openalex.org/W3100777112",
+          "https://openalex.org/W3101926760",
+          "https://openalex.org/W3103145119",
+          "https://openalex.org/W3113322178",
+          "https://openalex.org/W3123413998",
+          "https://openalex.org/W3135891860",
+          "https://openalex.org/W3150635270",
+          "https://openalex.org/W3200369172",
+          "https://openalex.org/W3213869263",
+          "https://openalex.org/W4200347079",
+          "https://openalex.org/W4200604147",
+          "https://openalex.org/W4224993403",
+          "https://openalex.org/W4283653163",
+          "https://openalex.org/W4297734170",
+          "https://openalex.org/W6675354045",
+          "https://openalex.org/W6884848120",
+          "https://openalex.org/W6960197323"
+        ],
+        "referenced_works_count": 60,
+        "title": "A framework for comparative study of databases and computational methods for arrhythmia detection from single-lead ECG",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(AI)": [
+            34
+          ],
+          "5G": [
+            69
+          ],
+          "6G": [
+            71
+          ],
+          "AI": [
+            113,
+            167,
+            179,
+            187,
+            197
+          ],
+          "AI-assisted": [
+            87
+          ],
+          "Currently,": [
+            93
+          ],
+          "IoT": [
+            63
+          ],
+          "It": [
+            132
+          ],
+          "The": [
+            203
+          ],
+          "They": [
+            22
+          ],
+          "This": [
+            163
+          ],
+          "With": [
+            0,
+            59
+          ],
+          "a": [
+            37,
+            151,
+            211
+          ],
+          "ability": [
+            135
+          ],
+          "also": [
+            19
+          ],
+          "and": [
+            6,
+            42,
+            50,
+            57,
+            70,
+            74,
+            84,
+            96,
+            111,
+            118,
+            129,
+            149,
+            154,
+            161,
+            170,
+            192,
+            194,
+            207,
+            221,
+            225
+          ],
+          "application": [
+            85,
+            98,
+            185
+          ],
+          "applications": [
+            122
+          ],
+          "are": [
+            23,
+            108
+          ],
+          "arrival": [
+            66
+          ],
+          "artificial": [
+            32,
+            100,
+            208
+          ],
+          "assistance": [
+            107
+          ],
+          "attention": [
+            13
+          ],
+          "been": [
+            90
+          ],
+          "beginning": [
+            24
+          ],
+          "between": [
+            54
+          ],
+          "bridging": [
+            51
+          ],
+          "capabilities": [
+            79
+          ],
+          "challenges": [
+            195
+          ],
+          "changing": [
+            226
+          ],
+          "combination": [
+            204
+          ],
+          "communication": [
+            72
+          ],
+          "computing": [
+            78
+          ],
+          "conditions": [
+            5
+          ],
+          "continuously": [
+            20,
+            109
+          ],
+          "costs,": [
+            142
+          ],
+          "deepening": [
+            110
+          ],
+          "demand.": [
+            58
+          ],
+          "development": [
+            61,
+            83,
+            168,
+            171
+          ],
+          "economic": [
+            4,
+            116
+          ],
+          "efficiency,": [
+            139
+          ],
+          "elaborates": [
+            165
+          ],
+          "enhance": [
+            137
+          ],
+          "enhancement": [
+            76
+          ],
+          "environment": [
+            41
+          ],
+          "era,": [
+            73
+          ],
+          "expanding": [
+            47
+          ],
+          "expanding.": [
+            112
+          ],
+          "expecting": [
+            31
+          ],
+          "experience": [
+            157
+          ],
+          "field": [
+            104,
+            200
+          ],
+          "field,": [
+            176,
+            191
+          ],
+          "for": [
+            158
+          ],
+          "further": [
+            91
+          ],
+          "gap": [
+            53
+          ],
+          "greatly": [
+            46
+          ],
+          "has": [
+            119,
+            133,
+            210
+          ],
+          "have": [
+            89
+          ],
+          "health": [
+            17,
+            219
+          ],
+          "healthcare": [
+            88,
+            130,
+            141,
+            147,
+            159,
+            182,
+            206
+          ],
+          "history": [
+            169
+          ],
+          "holds": [
+            114
+          ],
+          "hopes": [
+            28
+          ],
+          "human": [
+            215,
+            218,
+            227
+          ],
+          "humanized": [
+            39,
+            155
+          ],
+          "immense": [
+            115
+          ],
+          "impact": [
+            213
+          ],
+          "improve": [
+            143
+          ],
+          "improvement": [
+            2
+          ],
+          "improving": [
+            217
+          ],
+          "in": [
+            9,
+            14,
+            80,
+            102,
+            123,
+            173,
+            181,
+            188,
+            198
+          ],
+          "increase": [
+            8
+          ],
+          "increasing.": [
+            21
+          ],
+          "informatics,": [
+            183
+          ],
+          "institutions,": [
+            127
+          ],
+          "intelligence": [
+            33,
+            101,
+            209
+          ],
+          "intelligent": [
+            153
+          ],
+          "is": [
+            18
+          ],
+          "levels": [
+            220
+          ],
+          "life": [
+            224
+          ],
+          "life,": [
+            216
+          ],
+          "lifestyles.": [
+            228
+          ],
+          "living": [
+            10
+          ],
+          "machines,": [
+            30
+          ],
+          "many": [
+            120
+          ],
+          "medical": [
+            40,
+            106,
+            126,
+            138,
+            175,
+            190
+          ],
+          "medicine.": [
+            202
+          ],
+          "more": [
+            38,
+            152
+          ],
+          "of": [
+            3,
+            62,
+            67,
+            77,
+            86,
+            99,
+            105,
+            146,
+            178,
+            186,
+            196,
+            201,
+            205,
+            223
+          ],
+          "on": [
+            29,
+            95,
+            166,
+            214
+          ],
+          "opportunities": [
+            193
+          ],
+          "particular,": [
+            81
+          ],
+          "patients,": [
+            128
+          ],
+          "patients.": [
+            162
+          ],
+          "people's": [
+            12
+          ],
+          "personalized": [
+            43
+          ],
+          "place": [
+            26
+          ],
+          "potential": [
+            121
+          ],
+          "professionals": [
+            160
+          ],
+          "professionals.": [
+            131
+          ],
+          "profound": [
+            212
+          ],
+          "promoted.": [
+            92
+          ],
+          "provide": [
+            36,
+            150
+          ],
+          "quality": [
+            145,
+            222
+          ],
+          "reduce": [
+            140
+          ],
+          "regard": [
+            15,
+            124
+          ],
+          "research": [
+            94
+          ],
+          "resource": [
+            55
+          ],
+          "service": [
+            156
+          ],
+          "services,": [
+            44,
+            148
+          ],
+          "standards,": [
+            11
+          ],
+          "study": [
+            164
+          ],
+          "supply": [
+            49,
+            56
+          ],
+          "technologies": [
+            180
+          ],
+          "technology,": [
+            64
+          ],
+          "the": [
+            1,
+            7,
+            48,
+            52,
+            60,
+            65,
+            68,
+            75,
+            82,
+            97,
+            103,
+            134,
+            144,
+            174,
+            184,
+            189,
+            199
+          ],
+          "their": [
+            27
+          ],
+          "thus": [
+            45
+          ],
+          "timelines": [
+            172
+          ],
+          "to": [
+            16,
+            25,
+            35,
+            125,
+            136
+          ],
+          "types": [
+            177
+          ],
+          "value": [
+            117
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I178232147"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Public Big Data, College of Computer Science and Technology, Guizhou University, Guiyang 550025, China"
+              }
+            ],
+            "author": {
+              "display_name": "Fangfang Gou",
+              "id": "https://openalex.org/A5027630663",
+              "orcid": "https://orcid.org/0000-0003-0453-8222"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Guizhou University",
+                "id": "https://openalex.org/I178232147",
+                "lineage": [
+                  "https://openalex.org/I178232147"
+                ],
+                "ror": "https://ror.org/02wmsc916",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "State Key Laboratory of Public Big Data, College of Computer Science and Technology, Guizhou University, Guiyang 550025, China"
+            ],
+            "raw_author_name": "Fangfang Gou",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I12393601"
+                ],
+                "raw_affiliation_string": "The Second People’s Hospital of Huaihua, Huaihua 418000, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I12393601"
+                ],
+                "raw_affiliation_string": "The Second People's Hospital of Huaihua, Huaihua 418000, China"
+              }
+            ],
+            "author": {
+              "display_name": "Jun Liu",
+              "id": "https://openalex.org/A5100361941",
+              "orcid": "https://orcid.org/0000-0002-7851-6782"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Huaihua University",
+                "id": "https://openalex.org/I12393601",
+                "lineage": [
+                  "https://openalex.org/I12393601"
+                ],
+                "ror": "https://ror.org/04zn6xq74",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "The Second People’s Hospital of Huaihua, Huaihua 418000, China",
+              "The Second People's Hospital of Huaihua, Huaihua 418000, China"
+            ],
+            "raw_author_name": "Jun Liu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I12393601"
+                ],
+                "raw_affiliation_string": "The Second People’s Hospital of Huaihua, Huaihua 418000, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I12393601"
+                ],
+                "raw_affiliation_string": "The Second People's Hospital of Huaihua, Huaihua 418000, China"
+              }
+            ],
+            "author": {
+              "display_name": "Chunwen Xiao",
+              "id": "https://openalex.org/A5111252027",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Huaihua University",
+                "id": "https://openalex.org/I12393601",
+                "lineage": [
+                  "https://openalex.org/I12393601"
+                ],
+                "ror": "https://ror.org/04zn6xq74",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "The Second People’s Hospital of Huaihua, Huaihua 418000, China",
+              "The Second People's Hospital of Huaihua, Huaihua 418000, China"
+            ],
+            "raw_author_name": "Chunwen Xiao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I56590836"
+                ],
+                "raw_affiliation_string": "Research Center for Artificial Intelligence, Monash University, Melbourne, Clayton, VIC 3800, Australia"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I178232147"
+                ],
+                "raw_affiliation_string": "State Key Laboratory of Public Big Data, College of Computer Science and Technology, Guizhou University, Guiyang 550025, China"
+              }
+            ],
+            "author": {
+              "display_name": "Jia Wu",
+              "id": "https://openalex.org/A5108047848",
+              "orcid": "https://orcid.org/0000-0001-9013-0818"
+            },
+            "author_position": "last",
+            "countries": [
+              "AU",
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Guizhou University",
+                "id": "https://openalex.org/I178232147",
+                "lineage": [
+                  "https://openalex.org/I178232147"
+                ],
+                "ror": "https://ror.org/02wmsc916",
+                "type": "education"
+              },
+              {
+                "country_code": "AU",
+                "display_name": "Monash University",
+                "id": "https://openalex.org/I56590836",
+                "lineage": [
+                  "https://openalex.org/I56590836"
+                ],
+                "ror": "https://ror.org/02bfwt286",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Research Center for Artificial Intelligence, Monash University, Melbourne, Clayton, VIC 3800, Australia",
+              "State Key Laboratory of Public Big Data, College of Computer Science and Technology, Guizhou University, Guiyang 550025, China"
+            ],
+            "raw_author_name": "Jia Wu",
+            "raw_orcid": "https://orcid.org/0000-0001-9013-0818"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.3390/diagnostics14141472",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/diagnostics14141472",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2075-4418/14/14/1472/pdf?version=1720524039",
+          "raw_source_name": "Diagnostics",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Diagnostics",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S4210172076",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2075-4418"
+            ],
+            "issn_l": "2075-4418",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "1472",
+          "issue": "14",
+          "last_page": "1472",
+          "volume": "14"
+        },
+        "cited_by_count": 101,
+        "display_name": "Research on Artificial-Intelligence-Assisted Medicine: A Survey on Medical Artificial Intelligence",
+        "doi": "https://doi.org/10.3390/diagnostics14141472",
+        "id": "https://openalex.org/W4400448047",
+        "ids": {
+          "doi": "https://doi.org/10.3390/diagnostics14141472",
+          "openalex": "https://openalex.org/W4400448047",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/39061610"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.mdpi.com/2075-4418/14/14/1472/pdf?version=1720524039"
+        },
+        "primary_location": {
+          "id": "doi:10.3390/diagnostics14141472",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3390/diagnostics14141472",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.mdpi.com/2075-4418/14/14/1472/pdf?version=1720524039",
+          "raw_source_name": "Diagnostics",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Diagnostics",
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "id": "https://openalex.org/S4210172076",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2075-4418"
+            ],
+            "issn_l": "2075-4418",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2024-07-09",
+        "publication_year": 2024,
+        "referenced_works": [
+          "https://openalex.org/W20283819",
+          "https://openalex.org/W2031579044",
+          "https://openalex.org/W2046801372",
+          "https://openalex.org/W2213877475",
+          "https://openalex.org/W2318145034",
+          "https://openalex.org/W2473790192",
+          "https://openalex.org/W2540540415",
+          "https://openalex.org/W2552540631",
+          "https://openalex.org/W2567653866",
+          "https://openalex.org/W2605952223",
+          "https://openalex.org/W2736750746",
+          "https://openalex.org/W2738984681",
+          "https://openalex.org/W2785947426",
+          "https://openalex.org/W2789029145",
+          "https://openalex.org/W2793956967",
+          "https://openalex.org/W2800755727",
+          "https://openalex.org/W2890210261",
+          "https://openalex.org/W2900088313",
+          "https://openalex.org/W2902067315",
+          "https://openalex.org/W2937068764",
+          "https://openalex.org/W2944538715",
+          "https://openalex.org/W2949744095",
+          "https://openalex.org/W2951133867",
+          "https://openalex.org/W2965845428",
+          "https://openalex.org/W2966349991",
+          "https://openalex.org/W2967597710",
+          "https://openalex.org/W2968760063",
+          "https://openalex.org/W2969259882",
+          "https://openalex.org/W2969803539",
+          "https://openalex.org/W2970812280",
+          "https://openalex.org/W2985492700",
+          "https://openalex.org/W2991486293",
+          "https://openalex.org/W2998240002",
+          "https://openalex.org/W3000423537",
+          "https://openalex.org/W3016451726",
+          "https://openalex.org/W3022411205",
+          "https://openalex.org/W3025166621",
+          "https://openalex.org/W3026701342",
+          "https://openalex.org/W3033750579",
+          "https://openalex.org/W3035640977",
+          "https://openalex.org/W3037355965",
+          "https://openalex.org/W3044588961",
+          "https://openalex.org/W3045605181",
+          "https://openalex.org/W3046815881",
+          "https://openalex.org/W3047142913",
+          "https://openalex.org/W3089168780",
+          "https://openalex.org/W3091131821",
+          "https://openalex.org/W3092614481",
+          "https://openalex.org/W3095202475",
+          "https://openalex.org/W3096399307",
+          "https://openalex.org/W3099958847",
+          "https://openalex.org/W3105221338",
+          "https://openalex.org/W3111166321",
+          "https://openalex.org/W3121913585",
+          "https://openalex.org/W3123817138",
+          "https://openalex.org/W3127376948",
+          "https://openalex.org/W3128179959",
+          "https://openalex.org/W3129137136",
+          "https://openalex.org/W3130894836",
+          "https://openalex.org/W3133650345",
+          "https://openalex.org/W3134171158",
+          "https://openalex.org/W3135383686",
+          "https://openalex.org/W3150582533",
+          "https://openalex.org/W3153668432",
+          "https://openalex.org/W3155300017",
+          "https://openalex.org/W3155737436",
+          "https://openalex.org/W3156038224",
+          "https://openalex.org/W3157631795",
+          "https://openalex.org/W3157678387",
+          "https://openalex.org/W3158868742",
+          "https://openalex.org/W3159102436",
+          "https://openalex.org/W3160359732",
+          "https://openalex.org/W3165291537",
+          "https://openalex.org/W3165576806",
+          "https://openalex.org/W3173688449",
+          "https://openalex.org/W3174823345",
+          "https://openalex.org/W3178036864",
+          "https://openalex.org/W3181787448",
+          "https://openalex.org/W3183992926",
+          "https://openalex.org/W3184365695",
+          "https://openalex.org/W3193211895",
+          "https://openalex.org/W3200866211",
+          "https://openalex.org/W3202166954",
+          "https://openalex.org/W3203934147",
+          "https://openalex.org/W3204013916",
+          "https://openalex.org/W3204163131",
+          "https://openalex.org/W3204326462",
+          "https://openalex.org/W3205247817",
+          "https://openalex.org/W3211044167",
+          "https://openalex.org/W3213952842",
+          "https://openalex.org/W3216948360",
+          "https://openalex.org/W3217263138",
+          "https://openalex.org/W4205273402",
+          "https://openalex.org/W4205484788",
+          "https://openalex.org/W4205807993",
+          "https://openalex.org/W4206255522",
+          "https://openalex.org/W4206273332",
+          "https://openalex.org/W4206562418",
+          "https://openalex.org/W4206683199",
+          "https://openalex.org/W4206983514",
+          "https://openalex.org/W4210617107",
+          "https://openalex.org/W4210667254",
+          "https://openalex.org/W4210918884",
+          "https://openalex.org/W4213450457",
+          "https://openalex.org/W4214653918",
+          "https://openalex.org/W4214811741",
+          "https://openalex.org/W4214913449",
+          "https://openalex.org/W4220663381",
+          "https://openalex.org/W4220771591",
+          "https://openalex.org/W4220808825",
+          "https://openalex.org/W4220945434",
+          "https://openalex.org/W4221068099",
+          "https://openalex.org/W4221098578",
+          "https://openalex.org/W4224139315",
+          "https://openalex.org/W4224275457",
+          "https://openalex.org/W4225386756",
+          "https://openalex.org/W4225910671",
+          "https://openalex.org/W4225948364",
+          "https://openalex.org/W4226144451",
+          "https://openalex.org/W4226183932",
+          "https://openalex.org/W4226209854",
+          "https://openalex.org/W4229016463",
+          "https://openalex.org/W4280578406",
+          "https://openalex.org/W4280621297",
+          "https://openalex.org/W4281954109",
+          "https://openalex.org/W4283024748",
+          "https://openalex.org/W4283071228",
+          "https://openalex.org/W4283274313",
+          "https://openalex.org/W4283762133",
+          "https://openalex.org/W4283827181",
+          "https://openalex.org/W4285815428",
+          "https://openalex.org/W4287834747",
+          "https://openalex.org/W4288903219",
+          "https://openalex.org/W4289667213",
+          "https://openalex.org/W4290037635",
+          "https://openalex.org/W4292079387",
+          "https://openalex.org/W4307286999",
+          "https://openalex.org/W4308123916",
+          "https://openalex.org/W4308945310",
+          "https://openalex.org/W4310914701",
+          "https://openalex.org/W4312193283",
+          "https://openalex.org/W4313335284",
+          "https://openalex.org/W4313452400",
+          "https://openalex.org/W4313461835",
+          "https://openalex.org/W4313826593",
+          "https://openalex.org/W4315648112",
+          "https://openalex.org/W4315880904",
+          "https://openalex.org/W4324010932",
+          "https://openalex.org/W4324091119",
+          "https://openalex.org/W4365143687",
+          "https://openalex.org/W4365479063",
+          "https://openalex.org/W4366351124",
+          "https://openalex.org/W4376611399",
+          "https://openalex.org/W4377103743",
+          "https://openalex.org/W4378191245",
+          "https://openalex.org/W4378804801",
+          "https://openalex.org/W4380290527",
+          "https://openalex.org/W4382789604",
+          "https://openalex.org/W4384561507",
+          "https://openalex.org/W4385211215",
+          "https://openalex.org/W4385283174",
+          "https://openalex.org/W4386919946",
+          "https://openalex.org/W4387034856",
+          "https://openalex.org/W4387498260",
+          "https://openalex.org/W4389360658",
+          "https://openalex.org/W4390143302",
+          "https://openalex.org/W4390618348",
+          "https://openalex.org/W4390706373",
+          "https://openalex.org/W4391755565",
+          "https://openalex.org/W4392372091",
+          "https://openalex.org/W4394717747",
+          "https://openalex.org/W4394747488",
+          "https://openalex.org/W4396746851",
+          "https://openalex.org/W4396905227",
+          "https://openalex.org/W4396951587",
+          "https://openalex.org/W4398240896",
+          "https://openalex.org/W4399047878",
+          "https://openalex.org/W4399056001",
+          "https://openalex.org/W4399300354",
+          "https://openalex.org/W4399788726",
+          "https://openalex.org/W4400409858",
+          "https://openalex.org/W6780854435",
+          "https://openalex.org/W6797290355",
+          "https://openalex.org/W6806395451",
+          "https://openalex.org/W6806739976",
+          "https://openalex.org/W6811302225",
+          "https://openalex.org/W6839314892",
+          "https://openalex.org/W6841133664",
+          "https://openalex.org/W6847195713",
+          "https://openalex.org/W6855244892",
+          "https://openalex.org/W6869301946"
+        ],
+        "referenced_works_count": 191,
+        "title": "Research on Artificial-Intelligence-Assisted Medicine: A Survey on Medical Artificial Intelligence",
+        "type": "review"
+      }
+    ]
+  },
+  "response_hash": "7259fb9feb05444bdb26ab0756d77580e87d36fb844ed86be1129d78f6d20c9a",
+  "retrieved_at": "2026-07-14T13:51:40Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

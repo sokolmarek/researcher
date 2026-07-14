@@ -1,0 +1,509 @@
+{
+  "endpoint": "works/doi:10.1007/s10661-022-10763-9",
+  "request_key": "a08d8f4756267276ff9942006ded15544545ade2027a7876b0a493a416dd73a2",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I8961855",
+              "https://openalex.org/I167724894"
+            ],
+            "raw_affiliation_string": "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+          }
+        ],
+        "author": {
+          "display_name": "Josefina Cortés‐Eslava",
+          "id": "https://openalex.org/A5051440782",
+          "orcid": "https://orcid.org/0000-0002-0065-5272"
+        },
+        "author_position": "first",
+        "countries": [
+          "MX"
+        ],
+        "institutions": [
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Autónoma de la Ciudad de México",
+            "id": "https://openalex.org/I167724894",
+            "lineage": [
+              "https://openalex.org/I167724894"
+            ],
+            "ror": "https://ror.org/04q0r6m34",
+            "type": "education"
+          },
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Nacional Autónoma de México",
+            "id": "https://openalex.org/I8961855",
+            "lineage": [
+              "https://openalex.org/I8961855"
+            ],
+            "ror": "https://ror.org/01tmp8f25",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+        ],
+        "raw_author_name": "Josefina Cortés-Eslava",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I8961855"
+            ],
+            "raw_affiliation_string": "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México. slga@atmosfera.unam.mx"
+          },
+          {
+            "institution_ids": [
+              "https://openalex.org/I8961855",
+              "https://openalex.org/I167724894"
+            ],
+            "raw_affiliation_string": "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+          }
+        ],
+        "author": {
+          "display_name": "Sandra Gómez‐Arroyo",
+          "id": "https://openalex.org/A5071479512",
+          "orcid": "https://orcid.org/0000-0002-8650-9697"
+        },
+        "author_position": "middle",
+        "countries": [
+          "MX"
+        ],
+        "institutions": [
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Autónoma de la Ciudad de México",
+            "id": "https://openalex.org/I167724894",
+            "lineage": [
+              "https://openalex.org/I167724894"
+            ],
+            "ror": "https://ror.org/04q0r6m34",
+            "type": "education"
+          },
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Nacional Autónoma de México",
+            "id": "https://openalex.org/I8961855",
+            "lineage": [
+              "https://openalex.org/I8961855"
+            ],
+            "ror": "https://ror.org/01tmp8f25",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": true,
+        "raw_affiliation_strings": [
+          "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México. slga@atmosfera.unam.mx",
+          "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+        ],
+        "raw_author_name": "Sandra Gómez-Arroyo",
+        "raw_orcid": "https://orcid.org/0000-0002-8650-9697"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I8961855",
+              "https://openalex.org/I167724894"
+            ],
+            "raw_affiliation_string": "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+          }
+        ],
+        "author": {
+          "display_name": "Pablo Antonio Mérida Cortés",
+          "id": "https://openalex.org/A5004773739",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "MX"
+        ],
+        "institutions": [
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Autónoma de la Ciudad de México",
+            "id": "https://openalex.org/I167724894",
+            "lineage": [
+              "https://openalex.org/I167724894"
+            ],
+            "ror": "https://ror.org/04q0r6m34",
+            "type": "education"
+          },
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Nacional Autónoma de México",
+            "id": "https://openalex.org/I8961855",
+            "lineage": [
+              "https://openalex.org/I8961855"
+            ],
+            "ror": "https://ror.org/01tmp8f25",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratorio de Genotoxicología y Mutagénesis Ambientales, Instituto de Ciencias de la Atmósfera y Cambio Climático, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+        ],
+        "raw_author_name": "Pablo Antonio Mérida Cortés",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I8961855",
+              "https://openalex.org/I167724894"
+            ],
+            "raw_affiliation_string": "Laboratorio de Microscopía Electrónica, Departamento de Biología Celular, Facultad de Ciencias, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+          }
+        ],
+        "author": {
+          "display_name": "Luis Felipe Jiménez‐García",
+          "id": "https://openalex.org/A5001805613",
+          "orcid": "https://orcid.org/0000-0003-2368-2975"
+        },
+        "author_position": "middle",
+        "countries": [
+          "MX"
+        ],
+        "institutions": [
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Autónoma de la Ciudad de México",
+            "id": "https://openalex.org/I167724894",
+            "lineage": [
+              "https://openalex.org/I167724894"
+            ],
+            "ror": "https://ror.org/04q0r6m34",
+            "type": "education"
+          },
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Nacional Autónoma de México",
+            "id": "https://openalex.org/I8961855",
+            "lineage": [
+              "https://openalex.org/I8961855"
+            ],
+            "ror": "https://ror.org/01tmp8f25",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratorio de Microscopía Electrónica, Departamento de Biología Celular, Facultad de Ciencias, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+        ],
+        "raw_author_name": "Luis Felipe Jiménez-García",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I8961855",
+              "https://openalex.org/I167724894"
+            ],
+            "raw_affiliation_string": "Laboratorio de Microscopía Electrónica, Departamento de Biología Celular, Facultad de Ciencias, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+          }
+        ],
+        "author": {
+          "display_name": "Reyna Lara‐Martínez",
+          "id": "https://openalex.org/A5090809433",
+          "orcid": "https://orcid.org/0000-0003-2708-573X"
+        },
+        "author_position": "middle",
+        "countries": [
+          "MX"
+        ],
+        "institutions": [
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Autónoma de la Ciudad de México",
+            "id": "https://openalex.org/I167724894",
+            "lineage": [
+              "https://openalex.org/I167724894"
+            ],
+            "ror": "https://ror.org/04q0r6m34",
+            "type": "education"
+          },
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Nacional Autónoma de México",
+            "id": "https://openalex.org/I8961855",
+            "lineage": [
+              "https://openalex.org/I8961855"
+            ],
+            "ror": "https://ror.org/01tmp8f25",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratorio de Microscopía Electrónica, Departamento de Biología Celular, Facultad de Ciencias, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+        ],
+        "raw_author_name": "Reyna Lara-Martínez",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210097267"
+            ],
+            "raw_affiliation_string": "Laboratorio de Investigación en Patología Experimental, Hospital Infantil de México Federico Gómez, Ciudad de Mexico, México"
+          }
+        ],
+        "author": {
+          "display_name": "Francisco Arenas-Huertero",
+          "id": "https://openalex.org/A5062469957",
+          "orcid": null
+        },
+        "author_position": "middle",
+        "countries": [
+          "MX"
+        ],
+        "institutions": [
+          {
+            "country_code": "MX",
+            "display_name": "Hospital Infantil de México Federico Gómez",
+            "id": "https://openalex.org/I4210097267",
+            "lineage": [
+              "https://openalex.org/I4210097267"
+            ],
+            "ror": "https://ror.org/00nzavp26",
+            "type": "healthcare"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratorio de Investigación en Patología Experimental, Hospital Infantil de México Federico Gómez, Ciudad de Mexico, México"
+        ],
+        "raw_author_name": "Francisco Arenas-Huertero",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I8961855"
+            ],
+            "raw_affiliation_string": "Laboratorio de Geomagnetismo y Exploración Geofísica, Instituto de Geofísica, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+          }
+        ],
+        "author": {
+          "display_name": "Ofelia Mortón-Bermea",
+          "id": "https://openalex.org/A5007494371",
+          "orcid": "https://orcid.org/0000-0002-1745-4450"
+        },
+        "author_position": "middle",
+        "countries": [
+          "MX"
+        ],
+        "institutions": [
+          {
+            "country_code": "MX",
+            "display_name": "Universidad Nacional Autónoma de México",
+            "id": "https://openalex.org/I8961855",
+            "lineage": [
+              "https://openalex.org/I8961855"
+            ],
+            "ror": "https://ror.org/01tmp8f25",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratorio de Geomagnetismo y Exploración Geofísica, Instituto de Geofísica, Universidad Nacional Autónoma de México, Ciudad Universitaria, Coyoacán, 04510, Ciudad de Mexico, México"
+        ],
+        "raw_author_name": "Ofelia Morton-Bermea",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I4210147680"
+            ],
+            "raw_affiliation_string": "Laboratory of Pollen Biotechnology of Crop Plants, Centro de Investigaciones Biológicas Margarita Salas (CIB), C.S.I.C, Ramiro de Maeztu, 9, 28040, Madrid, Spain"
+          }
+        ],
+        "author": {
+          "display_name": "Pilar S. Testillano",
+          "id": "https://openalex.org/A5016486302",
+          "orcid": "https://orcid.org/0000-0003-4509-7646"
+        },
+        "author_position": "last",
+        "countries": [
+          "ES"
+        ],
+        "institutions": [
+          {
+            "country_code": "ES",
+            "display_name": "Centro de Investigaciones Biológicas Margarita Salas",
+            "id": "https://openalex.org/I4210147680",
+            "lineage": [
+              "https://openalex.org/I134820265",
+              "https://openalex.org/I4210147680"
+            ],
+            "ror": "https://ror.org/04advdf21",
+            "type": "facility"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Laboratory of Pollen Biotechnology of Crop Plants, Centro de Investigaciones Biológicas Margarita Salas (CIB), C.S.I.C, Ramiro de Maeztu, 9, 28040, Madrid, Spain"
+        ],
+        "raw_author_name": "Pilar S. Testillano",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "195",
+      "issue": "1",
+      "last_page": "195",
+      "volume": "195"
+    },
+    "cited_by_count": 5,
+    "display_name": "The wild plant Gnaphalium lavandulifolium as a sentinel for biomonitoring the effects of environmental heavy metals in the metropolitan area of México Valley",
+    "doi": "https://doi.org/10.1007/s10661-022-10763-9",
+    "id": "https://openalex.org/W4311350216",
+    "ids": {
+      "doi": "https://doi.org/10.1007/s10661-022-10763-9",
+      "openalex": "https://openalex.org/W4311350216",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/36512105"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1007/s10661-022-10763-9",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1007/s10661-022-10763-9",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Environmental Monitoring and Assessment",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Environmental Monitoring and Assessment",
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "host_organization_name": "Springer Science+Business Media",
+        "id": "https://openalex.org/S11732831",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0167-6369",
+          "1573-2959"
+        ],
+        "issn_l": "0167-6369",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2022-12-13",
+    "publication_year": 2022,
+    "referenced_works": [
+      "https://openalex.org/W1499084166",
+      "https://openalex.org/W1499892287",
+      "https://openalex.org/W1583156869",
+      "https://openalex.org/W1587236112",
+      "https://openalex.org/W1880378434",
+      "https://openalex.org/W1992384747",
+      "https://openalex.org/W1993620220",
+      "https://openalex.org/W2001396309",
+      "https://openalex.org/W2006502396",
+      "https://openalex.org/W2028415401",
+      "https://openalex.org/W2029057326",
+      "https://openalex.org/W2042198408",
+      "https://openalex.org/W2063201007",
+      "https://openalex.org/W2073857400",
+      "https://openalex.org/W2075707649",
+      "https://openalex.org/W2085199433",
+      "https://openalex.org/W2087652708",
+      "https://openalex.org/W2102401454",
+      "https://openalex.org/W2126392233",
+      "https://openalex.org/W2127471616",
+      "https://openalex.org/W2129324607",
+      "https://openalex.org/W2132583664",
+      "https://openalex.org/W2140791476",
+      "https://openalex.org/W2150275815",
+      "https://openalex.org/W2156098102",
+      "https://openalex.org/W2171020239",
+      "https://openalex.org/W2195785268",
+      "https://openalex.org/W2287340021",
+      "https://openalex.org/W2471389034",
+      "https://openalex.org/W2527603195",
+      "https://openalex.org/W2593193375",
+      "https://openalex.org/W2622936221",
+      "https://openalex.org/W2741517392",
+      "https://openalex.org/W2773482941",
+      "https://openalex.org/W2774823489",
+      "https://openalex.org/W2785563160",
+      "https://openalex.org/W2796323820",
+      "https://openalex.org/W2802072984",
+      "https://openalex.org/W2807636707",
+      "https://openalex.org/W2873725226",
+      "https://openalex.org/W2897966359",
+      "https://openalex.org/W2909191297",
+      "https://openalex.org/W2913873507",
+      "https://openalex.org/W2921383847",
+      "https://openalex.org/W2923905989",
+      "https://openalex.org/W2929736067",
+      "https://openalex.org/W2930040264",
+      "https://openalex.org/W2937822580",
+      "https://openalex.org/W2965710924",
+      "https://openalex.org/W2967040315",
+      "https://openalex.org/W2982793594",
+      "https://openalex.org/W2990585882",
+      "https://openalex.org/W2998904830",
+      "https://openalex.org/W3000378805",
+      "https://openalex.org/W3014267893",
+      "https://openalex.org/W3018691369",
+      "https://openalex.org/W3020990116",
+      "https://openalex.org/W3033472678",
+      "https://openalex.org/W3097266416",
+      "https://openalex.org/W3097792808",
+      "https://openalex.org/W3112899944",
+      "https://openalex.org/W3121663578",
+      "https://openalex.org/W3129785219",
+      "https://openalex.org/W3134864930",
+      "https://openalex.org/W3135848321",
+      "https://openalex.org/W3156625421",
+      "https://openalex.org/W3194397781"
+    ],
+    "referenced_works_count": 67,
+    "title": "The wild plant Gnaphalium lavandulifolium as a sentinel for biomonitoring the effects of environmental heavy metals in the metropolitan area of México Valley",
+    "type": "article"
+  },
+  "response_hash": "e8b61f861b5c56e2d616d0fe8658cfe4aa804cce912b446c5b9b26286aab882d",
+  "retrieved_at": "2026-07-14T13:49:09Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

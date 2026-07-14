@@ -1,0 +1,793 @@
+{
+  "endpoint": "works/doi:10.1109/taslp.2021.3095662",
+  "request_key": "883aa555be9a68b35b91112fc6b556282317364d511c41ddf2d09076adbd3d60",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "Alteration.": [
+        16
+      ],
+      "Encoder": [
+        13
+      ],
+      "Encoders": [
+        48
+      ],
+      "Furthermore,": [
+        189
+      ],
+      "In": [
+        139
+      ],
+      "Recent": [
+        17
+      ],
+      "Representations": [
+        14
+      ],
+      "TERA": [
+        84,
+        99,
+        123
+      ],
+      "TERA,": [
+        8
+      ],
+      "The": [
+        56
+      ],
+      "Transformer": [
+        12,
+        47
+      ],
+      "Unlike": [
+        35
+      ],
+      "We": [
+        0,
+        97,
+        114,
+        160
+      ],
+      "a": [
+        2,
+        23,
+        50,
+        72,
+        116
+      ],
+      "achieves": [
+        124
+      ],
+      "acoustic": [
+        63
+      ],
+      "along": [
+        41,
+        77
+      ],
+      "alter": [
+        76
+      ],
+      "alteration": [
+        40,
+        149
+      ],
+      "altered": [
+        67
+      ],
+      "amount": [
+        52
+      ],
+      "analyze": [
+        161
+      ],
+      "and": [
+        82,
+        111,
+        135,
+        155,
+        165
+      ],
+      "applying": [
+        147
+      ],
+      "approaches": [
+        18
+      ],
+      "are": [
+        170,
+        180
+      ],
+      "autoregressive": [
+        30
+      ],
+      "auxiliary": [
+        25
+      ],
+      "axes": [
+        44
+      ],
+      "be": [
+        86
+      ],
+      "by": [
+        21,
+        130
+      ],
+      "called": [
+        7
+      ],
+      "can": [
+        85
+      ],
+      "classification,": [
+        106
+      ],
+      "comparison": [
+        118,
+        129
+      ],
+      "contrastive": [
+        28
+      ],
+      "counterpart,": [
+        68
+      ],
+      "data,": [
+        154
+      ],
+      "datasets": [
+        199
+      ],
+      "different": [
+        148,
+        162
+      ],
+      "dimensions:": [
+        79
+      ],
+      "downstream": [
+        95,
+        102,
+        184,
+        198
+      ],
+      "effect": [
+        145
+      ],
+      "effective": [
+        182
+      ],
+      "evaluate": [
+        98
+      ],
+      "experiments,": [
+        141
+      ],
+      "extraction": [
+        91
+      ],
+      "features": [
+        134
+      ],
+      "features.": [
+        159
+      ],
+      "find": [
+        166
+      ],
+      "fine-tuning": [
+        93,
+        185
+      ],
+      "for": [
+        11,
+        88,
+        183
+      ],
+      "frames": [
+        64
+      ],
+      "frequency,": [
+        81
+      ],
+      "from": [
+        15,
+        65
+      ],
+      "improving": [
+        131
+      ],
+      "in": [
+        127,
+        202
+      ],
+      "including": [
+        104
+      ],
+      "introduce": [
+        1
+      ],
+      "is": [
+        195
+      ],
+      "keyword": [
+        107
+      ],
+      "large": [
+        51
+      ],
+      "large-scale": [
+        117
+      ],
+      "larger": [
+        175,
+        178
+      ],
+      "learn": [
+        20
+      ],
+      "learners": [
+        173
+      ],
+      "learns": [
+        58
+      ],
+      "like": [
+        27
+      ],
+      "magnitude.": [
+        83
+      ],
+      "masked": [
+        33
+      ],
+      "method": [
+        6,
+        194
+      ],
+      "methods,": [
+        37
+      ],
+      "model": [
+        57,
+        163
+      ],
+      "models": [
+        169,
+        179
+      ],
+      "models,": [
+        176
+      ],
+      "models.": [
+        96,
+        122,
+        138,
+        188
+      ],
+      "more": [
+        153,
+        181
+      ],
+      "not": [
+        200
+      ],
+      "of": [
+        53,
+        62,
+        119,
+        146
+      ],
+      "often": [
+        19
+      ],
+      "on": [
+        49,
+        100,
+        152,
+        157
+      ],
+      "or": [
+        32,
+        92
+      ],
+      "orthogonal": [
+        43
+      ],
+      "our": [
+        140
+      ],
+      "outperforming": [
+        136
+      ],
+      "performance": [
+        126
+      ],
+      "phoneme": [
+        105
+      ],
+      "policy": [
+        74
+      ],
+      "pre-train": [
+        46
+      ],
+      "pre-training": [
+        5,
+        151,
+        156
+      ],
+      "pre-training.": [
+        203
+      ],
+      "prediction,": [
+        29,
+        31
+      ],
+      "present": [
+        115
+      ],
+      "previous": [
+        36,
+        137
+      ],
+      "proposed": [
+        193
+      ],
+      "recognition,": [
+        110
+      ],
+      "recognition.": [
+        113
+      ],
+      "reconstruction": [
+        61
+      ],
+      "reconstruction.": [
+        34
+      ],
+      "representation": [
+        172
+      ],
+      "representations": [
+        90
+      ],
+      "self-supervised": [
+        3,
+        121
+      ],
+      "several": [
+        101
+      ],
+      "show": [
+        191
+      ],
+      "single": [
+        24
+      ],
+      "sizes": [
+        164
+      ],
+      "smaller": [
+        168,
+        187
+      ],
+      "speaker": [
+        109
+      ],
+      "speech": [
+        4,
+        89,
+        112
+      ],
+      "speech.": [
+        55
+      ],
+      "spotting,": [
+        108
+      ],
+      "stands": [
+        10
+      ],
+      "stochastic": [
+        73
+      ],
+      "strong": [
+        125,
+        171
+      ],
+      "study": [
+        143
+      ],
+      "surface": [
+        133
+      ],
+      "task": [
+        26
+      ],
+      "tasks,": [
+        103
+      ],
+      "techniques,": [
+        150
+      ],
+      "than": [
+        174,
+        186
+      ],
+      "that": [
+        167
+      ],
+      "the": [
+        60,
+        128,
+        144,
+        192
+      ],
+      "their": [
+        66
+      ],
+      "three": [
+        42
+      ],
+      "through": [
+        59
+      ],
+      "time,": [
+        80
+      ],
+      "to": [
+        45,
+        75,
+        197
+      ],
+      "transferable": [
+        196
+      ],
+      "unlabeled": [
+        54
+      ],
+      "upon": [
+        132
+      ],
+      "use": [
+        39,
+        71
+      ],
+      "used": [
+        87,
+        201
+      ],
+      "using": [
+        22
+      ],
+      "various": [
+        78,
+        120,
+        158
+      ],
+      "we": [
+        38,
+        70,
+        142,
+        190
+      ],
+      "where": [
+        69
+      ],
+      "which": [
+        9
+      ],
+      "while": [
+        177
+      ],
+      "with": [
+        94
+      ]
+    },
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I16733864"
+            ],
+            "raw_affiliation_string": "Graduate Institute of Communication Engineering, College of Electrical Engineering and Computer Science, National Taiwan University, Taipei, Taiwan"
+          }
+        ],
+        "author": {
+          "display_name": "Andy T. Liu",
+          "id": "https://openalex.org/A5018050919",
+          "orcid": "https://orcid.org/0000-0002-2502-3992"
+        },
+        "author_position": "first",
+        "countries": [
+          "TW"
+        ],
+        "institutions": [
+          {
+            "country_code": "TW",
+            "display_name": "National Taiwan University",
+            "id": "https://openalex.org/I16733864",
+            "lineage": [
+              "https://openalex.org/I16733864"
+            ],
+            "ror": "https://ror.org/05bqach95",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Graduate Institute of Communication Engineering, College of Electrical Engineering and Computer Science, National Taiwan University, Taipei, Taiwan"
+        ],
+        "raw_author_name": "Andy T. Liu",
+        "raw_orcid": "https://orcid.org/0000-0002-2502-3992"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I1311688040"
+            ],
+            "raw_affiliation_string": "Amazon AI, New York, NY 10001, USA"
+          }
+        ],
+        "author": {
+          "display_name": "Shang-Wen Li",
+          "id": "https://openalex.org/A5029566548",
+          "orcid": "https://orcid.org/0000-0003-0656-9874"
+        },
+        "author_position": "middle",
+        "countries": [
+          "US"
+        ],
+        "institutions": [
+          {
+            "country_code": "US",
+            "display_name": "Amazon (United States)",
+            "id": "https://openalex.org/I1311688040",
+            "lineage": [
+              "https://openalex.org/I1311688040"
+            ],
+            "ror": "https://ror.org/04mv4n011",
+            "type": "company"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Amazon AI, New York, NY 10001, USA"
+        ],
+        "raw_author_name": "Shang-Wen Li",
+        "raw_orcid": "https://orcid.org/0000-0003-0656-9874"
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I16733864"
+            ],
+            "raw_affiliation_string": "Graduate Institute of Communication Engineering, College of Electrical Engineering and Computer Science, National Taiwan University, Taipei, Taiwan"
+          }
+        ],
+        "author": {
+          "display_name": "Hung-yi Lee",
+          "id": "https://openalex.org/A5040508737",
+          "orcid": "https://orcid.org/0000-0002-9654-5747"
+        },
+        "author_position": "last",
+        "countries": [
+          "TW"
+        ],
+        "institutions": [
+          {
+            "country_code": "TW",
+            "display_name": "National Taiwan University",
+            "id": "https://openalex.org/I16733864",
+            "lineage": [
+              "https://openalex.org/I16733864"
+            ],
+            "ror": "https://ror.org/05bqach95",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Graduate Institute of Communication Engineering, College of Electrical Engineering and Computer Science, National Taiwan University, Taipei, Taiwan"
+        ],
+        "raw_author_name": "Hung-yi Lee",
+        "raw_orcid": "https://orcid.org/0000-0002-9654-5747"
+      }
+    ],
+    "best_oa_location": {
+      "id": "pmh:oai:arXiv.org:2007.06028",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2007.06028",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2007.06028",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+        "display_name": "arXiv (Cornell University)",
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "host_organization_name": "Cornell University",
+        "id": "https://openalex.org/S4306400194",
+        "is_core": false,
+        "is_in_doaj": false,
+        "is_oa": true,
+        "issn": null,
+        "issn_l": null,
+        "type": "repository"
+      },
+      "version": "submittedVersion"
+    },
+    "biblio": {
+      "first_page": "2351",
+      "issue": null,
+      "last_page": "2366",
+      "volume": "29"
+    },
+    "cited_by_count": 315,
+    "display_name": "TERA: Self-Supervised Learning of Transformer Encoder Representation for Speech",
+    "doi": "https://doi.org/10.1109/taslp.2021.3095662",
+    "id": "https://openalex.org/W3041561163",
+    "ids": {
+      "doi": "https://doi.org/10.1109/taslp.2021.3095662",
+      "mag": "3041561163",
+      "openalex": "https://openalex.org/W3041561163"
+    },
+    "is_retracted": false,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": true,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://arxiv.org/pdf/2007.06028"
+    },
+    "primary_location": {
+      "id": "doi:10.1109/taslp.2021.3095662",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1109/taslp.2021.3095662",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+        "host_organization": "https://openalex.org/P4310319808",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319808"
+        ],
+        "host_organization_lineage_names": [
+          "Institute of Electrical and Electronics Engineers"
+        ],
+        "host_organization_name": "Institute of Electrical and Electronics Engineers",
+        "id": "https://openalex.org/S4210169297",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "2329-9290",
+          "2329-9304"
+        ],
+        "issn_l": "2329-9290",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2021-01-01",
+    "publication_year": 2021,
+    "referenced_works": [
+      "https://openalex.org/W179875071",
+      "https://openalex.org/W1494198834",
+      "https://openalex.org/W1522301498",
+      "https://openalex.org/W1524333225",
+      "https://openalex.org/W1608367484",
+      "https://openalex.org/W1614298861",
+      "https://openalex.org/W1635512741",
+      "https://openalex.org/W2002342963",
+      "https://openalex.org/W2077804127",
+      "https://openalex.org/W2125496931",
+      "https://openalex.org/W2127141656",
+      "https://openalex.org/W2794209590",
+      "https://openalex.org/W2842511635",
+      "https://openalex.org/W2908510526",
+      "https://openalex.org/W2927746189",
+      "https://openalex.org/W2936774411",
+      "https://openalex.org/W2943493972",
+      "https://openalex.org/W2947445680",
+      "https://openalex.org/W2947454875",
+      "https://openalex.org/W2949667497",
+      "https://openalex.org/W2950577311",
+      "https://openalex.org/W2950813464",
+      "https://openalex.org/W2962739339",
+      "https://openalex.org/W2962901777",
+      "https://openalex.org/W2963341956",
+      "https://openalex.org/W2963403868",
+      "https://openalex.org/W2964227577",
+      "https://openalex.org/W2964303116",
+      "https://openalex.org/W2965373594",
+      "https://openalex.org/W2970597249",
+      "https://openalex.org/W2972451902",
+      "https://openalex.org/W2972943112",
+      "https://openalex.org/W2973049979",
+      "https://openalex.org/W2973157397",
+      "https://openalex.org/W2979476256",
+      "https://openalex.org/W2980708516",
+      "https://openalex.org/W2981991061",
+      "https://openalex.org/W2982039329",
+      "https://openalex.org/W2982223350",
+      "https://openalex.org/W2988736778",
+      "https://openalex.org/W2995181338",
+      "https://openalex.org/W2996383576",
+      "https://openalex.org/W2996428491",
+      "https://openalex.org/W3003875258",
+      "https://openalex.org/W3015265920",
+      "https://openalex.org/W3015356564",
+      "https://openalex.org/W3015412285",
+      "https://openalex.org/W3015412890",
+      "https://openalex.org/W3015949486",
+      "https://openalex.org/W3016011332",
+      "https://openalex.org/W3016181583",
+      "https://openalex.org/W3024182269",
+      "https://openalex.org/W3026842484",
+      "https://openalex.org/W3026957705",
+      "https://openalex.org/W3030987249",
+      "https://openalex.org/W3033038061",
+      "https://openalex.org/W3035202887",
+      "https://openalex.org/W3036601975",
+      "https://openalex.org/W3095292526",
+      "https://openalex.org/W3096017728",
+      "https://openalex.org/W3096171739",
+      "https://openalex.org/W3096485810",
+      "https://openalex.org/W3096626135",
+      "https://openalex.org/W3097286738",
+      "https://openalex.org/W3099782249",
+      "https://openalex.org/W3100270690",
+      "https://openalex.org/W3102342027",
+      "https://openalex.org/W3104896896",
+      "https://openalex.org/W3125709657",
+      "https://openalex.org/W3148040514",
+      "https://openalex.org/W3160345865",
+      "https://openalex.org/W3198858531",
+      "https://openalex.org/W4288348042",
+      "https://openalex.org/W4297808394",
+      "https://openalex.org/W4385245566",
+      "https://openalex.org/W6607333740",
+      "https://openalex.org/W6631362777",
+      "https://openalex.org/W6739901393",
+      "https://openalex.org/W6757817989",
+      "https://openalex.org/W6763238093",
+      "https://openalex.org/W6763701032",
+      "https://openalex.org/W6768021236",
+      "https://openalex.org/W6769196770",
+      "https://openalex.org/W6773205534",
+      "https://openalex.org/W6777232839",
+      "https://openalex.org/W6777859476",
+      "https://openalex.org/W6778265221",
+      "https://openalex.org/W6784776607",
+      "https://openalex.org/W6840487619",
+      "https://openalex.org/W6844194202"
+    ],
+    "referenced_works_count": 90,
+    "title": "TERA: Self-Supervised Learning of Transformer Encoder Representation for Speech",
+    "type": "article"
+  },
+  "response_hash": "fd01156e2aefdd5cfe31c9ccfc0ba8968c4fa24de2cfa3252918a1c977a47c79",
+  "retrieved_at": "2026-07-14T14:48:35Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

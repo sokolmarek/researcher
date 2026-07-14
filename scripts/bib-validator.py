@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate .bib entries against the CrossRef DOI API.
+"""Validate .bib entries: multi-source via researcher-core, CrossRef-only without it.
 
 Usage:
     python bib-validator.py <path-to-library.bib>
@@ -8,20 +8,44 @@ Usage:
     python bib-validator.py library.bib --verbose
 
 Checks (all enabled by default; pass one or more --check-* flags to run a subset):
-    --check-doi         DOI presence, CrossRef resolution (404 vs network errors are
-                        reported differently), title similarity (difflib >= 0.70),
-                        first-author surname match, year match
-    --check-retracted   Retraction flags via CrossRef update-to metadata
+    --check-doi         DOI presence, index resolution (a 404 and a network error are
+                        reported differently), title similarity, first-author surname
+                        match, year match
+    --check-retracted   Retraction and other editorial notices
     --check-fields      Required fields per entry type
     --check-duplicates  Duplicate citation keys and duplicate DOIs
+
+TWO ENGINES, ONE CLI. The flags above mean the same thing either way:
+
+1. researcher-core (preferred). When `uv` and `core/` are both present, the network
+   checks run through `python -m researcher_core verify-bib <file> --json`: several
+   indexes (OpenAlex, Crossref, DataCite, ...) instead of CrossRef alone, the D9 axis
+   (a) identity verdict (verified / mismatch / unresolvable / inconclusive), and the
+   axis (b) publication status (current / corrected / retracted / expression-of-concern).
+2. stdlib fallback. When uv or core is missing, unrunnable, or too old to know the
+   command, the M1 CrossRef-only logic below runs unchanged. THE PLUGIN NEVER HARD-FAILS
+   WITHOUT CORE (D3): a user who installed the plugin but not uv gets exactly the M1
+   behavior, and every fallback path is exercised by scripts/tests/test_core_fallback.py.
+
+Engine selection is environment-only, so the flags stay identical across both:
+    RESEARCHER_CORE=off            force the stdlib fallback
+    RESEARCHER_CORE_PROJECT=<dir>  where core/ lives (default: ${CLAUDE_PLUGIN_ROOT}/core,
+                                   else the core/ next to this script). Naming a directory
+                                   with no pyproject.toml means "core is absent", and that
+                                   answer is final: no other core on the machine is used.
+    RESEARCHER_CORE_CMD=<argv>     run core through this command instead of uv (JSON list
+                                   or a shell-style string); the seam the tests use
+    RESEARCHER_CORE_TIMEOUT=<secs> per-call budget (default 120)
 
 Parsing: a brace-aware tokenizer, not a regex. Handles nested braces in values
 ({A {Nested} Title}), quoted values ("..."), bare numeric values, compact entries
 whose closing brace sits on the last field line (...}}), string concatenation
-with #, and skips @comment/@preamble/@string blocks.
+with #, and skips @comment/@preamble/@string blocks. This parser is also what the
+commit guard and the draft-integrity hook use, so all three agree on what an entry is.
 
-DOI resolution is tri-state and every entry gets a NAMED verdict, printed in the
-DOI VERDICTS block, so a pass is stated rather than inferred from silence:
+Verdicts are NAMED per entry, so a pass is stated rather than inferred from silence.
+
+Stdlib fallback (DOI VERDICTS block), tri-state resolution plus the two error states:
     confirmed          the DOI resolved against CrossRef
     no-doi             the entry carries no DOI, so nothing could be verified
     resolution-failed  the lookup could not complete (network error or timeout)
@@ -31,14 +55,28 @@ DOI VERDICTS block, so a pass is stated rather than inferred from silence:
 A failed resolution is never laundered into a pass: resolution-failed is its own
 verdict, distinct from confirmed.
 
+Core engine (EVIDENCE VERDICTS block), the D9/D16 axes:
+    axis (a) identity  verified | mismatch | unresolvable | inconclusive
+    axis (b) status    current | corrected | retracted | expression-of-concern
+Only `unresolvable` and `mismatch` are refusal-grade and count as errors; `inconclusive`
+is NEVER refusal-grade (a source that timed out is not evidence of fabrication) and is
+reported as a warning. A retracted entry is an error here, as it was in M1: this is a
+validator a human runs on purpose, not the commit gate, which reports retractions
+without blocking on them.
+
 Exit code 1 when errors are found, 0 otherwise. Network problems never count as
 entry errors; they are reported as warnings so offline runs stay useful.
 """
 
 import argparse
 import difflib
+import importlib.util
 import json
+import os
 import re
+import shlex
+import shutil
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -66,6 +104,162 @@ VERDICT_ORDER = [
     VERDICT_RETRACTED,
     VERDICT_NOT_CHECKED,
 ]
+
+# Axis (a) identity verdicts (D9). Only these two are refusal-grade.
+REFUSAL_GRADE = ("unresolvable", "mismatch")
+IDENTITY_ORDER = ["verified", "mismatch", "unresolvable", "inconclusive"]
+STATUS_ORDER = ["current", "corrected", "retracted", "expression-of-concern"]
+
+DEFAULT_CORE_TIMEOUT = 120.0
+
+
+# ---------------------------------------------------------------------------
+# The core bridge
+#
+# One resolver, one runner, shared by this script and by both hooks (they load it
+# from here, so there is a single definition of "is core available and what does it
+# say"). Every function here is total: it returns None rather than raising, because
+# a missing, broken, or slow core must degrade to the stdlib path, never take the
+# caller down with it (D3).
+# ---------------------------------------------------------------------------
+
+def core_disabled() -> bool:
+    return os.environ.get("RESEARCHER_CORE", "").strip().lower() in {"off", "0", "no", "false"}
+
+
+def core_project_dir() -> Path:
+    """Where core/ lives. The env var wins, then the plugin root, then this checkout."""
+    override = os.environ.get("RESEARCHER_CORE_PROJECT")
+    if override:
+        return Path(override)
+    plugin_root = os.environ.get("CLAUDE_PLUGIN_ROOT")
+    if plugin_root:
+        return Path(plugin_root) / "core"
+    return Path(__file__).resolve().parent.parent / "core"
+
+
+def core_project_is_explicit() -> bool:
+    return bool(os.environ.get("RESEARCHER_CORE_PROJECT"))
+
+
+def core_timeout() -> float:
+    try:
+        return float(os.environ.get("RESEARCHER_CORE_TIMEOUT", DEFAULT_CORE_TIMEOUT))
+    except ValueError:
+        return DEFAULT_CORE_TIMEOUT
+
+
+def core_command():
+    """Argv prefix that runs the researcher_core CLI, or None when core is unavailable.
+
+    Preference order: an explicit RESEARCHER_CORE_CMD, then `uv run --project <core>`
+    (the documented invocation, D3), then a researcher_core already importable by this
+    interpreter (the `pip install -e core/` path). None means "fall back", never "fail".
+    """
+    if core_disabled():
+        return None
+
+    explicit = os.environ.get("RESEARCHER_CORE_CMD")
+    if explicit:
+        try:
+            parsed = json.loads(explicit)
+        except (ValueError, TypeError):
+            parsed = shlex.split(explicit)
+        if isinstance(parsed, str):
+            parsed = shlex.split(parsed)
+        argv = [str(part) for part in parsed if str(part)]
+        return argv or None
+
+    project = core_project_dir()
+    has_project = (project / "pyproject.toml").is_file()
+    if has_project and shutil.which("uv"):
+        return ["uv", "run", "--project", str(project), "python", "-m", "researcher_core"]
+    if core_project_is_explicit() and not has_project:
+        # The caller named a core and it is not there. That answer is authoritative:
+        # do not quietly fall through to some other researcher_core on the machine.
+        return None
+
+    try:
+        if importlib.util.find_spec("researcher_core") is not None:
+            return [sys.executable, "-m", "researcher_core"]
+    except (ImportError, ValueError):
+        pass
+    return None
+
+
+def run_core(args, timeout=None):
+    """Run one core command with --json and return the parsed object, or None.
+
+    None covers every way core can fail to answer: uv absent, core absent, the
+    installed core too old to know the subcommand, a crash, a timeout, output that is
+    not JSON. The caller falls back; it never sees an exception.
+
+    The return code is deliberately NOT the gate: a verification CLI may exit non-zero
+    precisely BECAUSE it found refusal-grade entries, and that report is the answer we
+    came for. A parsed JSON object on stdout is the contract; anything else is a miss.
+    """
+    command = core_command()
+    if command is None:
+        return None
+    try:
+        proc = subprocess.run(
+            command + [str(a) for a in args],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=timeout or core_timeout(),
+        )
+    except (OSError, ValueError, subprocess.SubprocessError):
+        return None
+    try:
+        payload = json.loads(proc.stdout)
+    except (ValueError, TypeError):
+        return None
+    return payload if isinstance(payload, dict) else None
+
+
+def core_verify_bib(bib_path, timeout=None):
+    """The axis (a)/(b)/(d) report for a .bib file, or None when core cannot answer.
+
+    Shape: core/schemas/verification-report.schema.json. A payload without an `entries`
+    list is not that schema, so it is treated as a miss rather than trusted.
+    """
+    report = run_core(["verify-bib", str(bib_path), "--json"], timeout=timeout)
+    if not report or not isinstance(report.get("entries"), list):
+        return None
+    return report
+
+
+def core_findings(report):
+    """Flatten a verification report into one plain dict per entry.
+
+    Keys: key, doi, title, verdict (axis a), refusal_grade, reason, status (axis b),
+    status_checked, accessibility (axis d). Missing pieces degrade to safe defaults so a
+    caller never has to defend against a half-populated report.
+    """
+    findings = []
+    for entry in report.get("entries") or []:
+        if not isinstance(entry, dict):
+            continue
+        reference = entry.get("reference") or {}
+        status = entry.get("status") or {}
+        accessibility = entry.get("accessibility") or {}
+        verdict = entry.get("verdict") or "inconclusive"
+        findings.append({
+            "key": entry.get("key") or "?",
+            "doi": (reference.get("doi") or "") if isinstance(reference, dict) else "",
+            "title": (reference.get("title") or "") if isinstance(reference, dict) else "",
+            "verdict": verdict,
+            # Trust the flag when core sets it, but never let a missing flag turn a
+            # refusal-grade verdict into a soft one.
+            "refusal_grade": bool(entry.get("refusal_grade")) or verdict in REFUSAL_GRADE,
+            "reason": entry.get("reason") or "",
+            "status": status.get("verdict") or "current",
+            "status_checked": status.get("checked", True),
+            "accessibility": accessibility.get("verdict") or "",
+        })
+    return findings
 
 
 # ---------------------------------------------------------------------------
@@ -439,6 +633,116 @@ def validate(bib_path, check_doi=True, check_retracted=True, check_fields=True,
     return len(errors)
 
 
+def print_core_verdicts(findings):
+    """The per-entry axis (a) + axis (b) block. Every entry is listed, pass included."""
+    if not findings:
+        return
+    width = max(len(f["verdict"]) for f in findings)
+    print("EVIDENCE VERDICTS (per entry; axis (a) identity, axis (b) status; via researcher-core):")
+    for finding in findings:
+        suffix = f" {finding['doi']}" if finding["doi"] else ""
+        status = finding["status"]
+        if not finding["status_checked"]:
+            status = f"{status} (unchecked)"
+        print(f"  {finding['verdict'].ljust(width)}  [{finding['key']}]{suffix}  status={status}")
+    identity = Counter(f["verdict"] for f in findings)
+    status_tally = Counter(f["status"] for f in findings)
+    print("  identity: " + ", ".join(
+        f"{identity[name]} {name}" for name in IDENTITY_ORDER if identity.get(name)
+    ))
+    print("  status:   " + ", ".join(
+        f"{status_tally[name]} {name}" for name in STATUS_ORDER if status_tally.get(name)
+    ) + "\n")
+
+
+def validate_with_core(bib_path, check_doi=True, check_retracted=True, check_fields=True,
+                       check_duplicates=True, verbose=False):
+    """The core-backed run. Returns the error count, or None when core cannot answer.
+
+    None is the signal to fall back: the caller runs validate() instead, so a machine
+    without uv or without core still validates its bibliography.
+
+    The local checks (required fields, duplicate keys and DOIs) stay stdlib either way:
+    they need no index, and running them locally keeps the two engines' non-network
+    behavior identical.
+    """
+    entries = parse_bib(bib_path)
+    if not entries:
+        print(f"No entries found in {bib_path}")
+        return 1
+
+    need_network = check_doi or check_retracted
+    if not need_network:
+        return None  # nothing core would add; the stdlib path is the whole answer
+
+    if verbose:
+        print(f"  Querying researcher-core: {' '.join(core_command() or [])} verify-bib ...")
+    report = core_verify_bib(bib_path)
+    if report is None:
+        return None
+
+    findings = core_findings(report)
+    if not findings:
+        return None
+
+    print(f"Validating {len(entries)} entries in {bib_path} (engine: researcher-core)...\n")
+
+    errors, warnings = [], []
+
+    if check_duplicates:
+        for key, count in Counter(e["key"] for e in entries).items():
+            if count > 1:
+                errors.append(f"Duplicate citation key: {key} (appears {count} times)")
+        for doi, count in Counter(e["doi"] for e in entries if e.get("doi")).items():
+            if count > 1:
+                errors.append(f"Duplicate DOI: {doi} (appears {count} times)")
+
+    if check_fields:
+        for entry in entries:
+            warnings.extend(check_required_fields(entry))
+
+    for finding in findings:
+        key, verdict = finding["key"], finding["verdict"]
+        detail = f": {finding['reason']}" if finding["reason"] else ""
+        if check_doi:
+            if finding["refusal_grade"]:
+                errors.append(f"[{key}] {verdict.upper()} (axis a, refusal-grade){detail}")
+            elif verdict == "inconclusive":
+                # Thin or dirty evidence. NEVER refusal-grade: a downed index is not
+                # evidence of fabrication (D9).
+                warnings.append(f"[{key}] inconclusive (axis a, not refusal-grade){detail}")
+        if check_retracted:
+            status = finding["status"]
+            if status == "retracted":
+                errors.append(f"[{key}] RETRACTED (axis b): {finding['title'] or 'Unknown title'}")
+            elif status in ("corrected", "expression-of-concern"):
+                warnings.append(f"[{key}] {status} (axis b): {finding['title'] or 'Unknown title'}")
+            elif not finding["status_checked"]:
+                warnings.append(
+                    f"[{key}] publication status could not be checked; "
+                    "an unchecked status is not a clean 'current'"
+                )
+
+    if errors:
+        print("ERRORS:")
+        for e in errors:
+            print(f"  ERROR {e}")
+        print()
+    if warnings:
+        print("WARNINGS:")
+        for w in warnings:
+            print(f"  WARN  {w}")
+        print()
+
+    print_core_verdicts(findings)
+
+    if not errors and not warnings:
+        print("All entries valid.")
+    else:
+        print(f"Found {len(errors)} error(s) and {len(warnings)} warning(s).")
+    return len(errors)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Validate .bib entries against CrossRef")
     parser.add_argument("bib_file", help="Path to .bib file")
@@ -462,14 +766,19 @@ def main():
     any_flag = (
         args.check_doi or args.check_retracted or args.check_fields or args.check_duplicates
     )
-    error_count = validate(
-        args.bib_file,
-        check_doi=args.check_doi or not any_flag,
-        check_retracted=args.check_retracted or not any_flag,
-        check_fields=args.check_fields or not any_flag,
-        check_duplicates=args.check_duplicates or not any_flag,
-        verbose=args.verbose,
-    )
+    selected = {
+        "check_doi": args.check_doi or not any_flag,
+        "check_retracted": args.check_retracted or not any_flag,
+        "check_fields": args.check_fields or not any_flag,
+        "check_duplicates": args.check_duplicates or not any_flag,
+        "verbose": args.verbose,
+    }
+
+    # Prefer core; fall back on any miss. validate_with_core() returns None when core
+    # cannot answer, and that is the only branch that decides which engine ran.
+    error_count = validate_with_core(args.bib_file, **selected)
+    if error_count is None:
+        error_count = validate(args.bib_file, **selected)
     sys.exit(1 if error_count > 0 else 0)
 
 

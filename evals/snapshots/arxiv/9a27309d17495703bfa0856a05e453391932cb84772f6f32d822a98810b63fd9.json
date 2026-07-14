@@ -1,0 +1,54 @@
+{
+  "endpoint": "query",
+  "request_key": "9a27309d17495703bfa0856a05e453391932cb84772f6f32d822a98810b63fd9",
+  "request_params": {
+    "max_results": 10,
+    "search_query": "all:\"Interpretable deep learning for automatic diagnosis of 12-lead electrocardiogram\"",
+    "sortBy": "relevance",
+    "sortOrder": "descending",
+    "start": 0
+  },
+  "response_body": {
+    "entries": [
+      {
+        "authors": [
+          "Dongdong Zhang",
+          "Xiaohui Yuan",
+          "Ping Zhang"
+        ],
+        "categories": [
+          "cs.LG",
+          "eess.SP"
+        ],
+        "comment": "8 pages, 7 figures",
+        "id": "http://arxiv.org/abs/2010.10328v1",
+        "links": [
+          {
+            "href": "https://arxiv.org/abs/2010.10328v1",
+            "rel": "alternate",
+            "title": "",
+            "type": "text/html"
+          },
+          {
+            "href": "https://arxiv.org/pdf/2010.10328v1",
+            "rel": "related",
+            "title": "pdf",
+            "type": "application/pdf"
+          }
+        ],
+        "primary_category": "cs.LG",
+        "published": "2020-10-20T14:51:00Z",
+        "summary": "Electrocardiogram (ECG) is a widely used reliable, non-invasive approach for cardiovascular disease diagnosis. With the rapid growth of ECG examinations and the insufficiency of cardiologists, accurate and automatic diagnosis of ECG signals has become a hot research topic. Deep learning methods have demonstrated promising results in predictive healthcare tasks. In this paper, we developed a deep neural network for multi-label classification of cardiac arrhythmias in 12-lead ECG recordings. Experiments on a public 12-lead ECG dataset showed the effectiveness of our method. The proposed model achieved an average area under the receiver operating characteristic curve (AUC) of 0.970 and an average F1 score of 0.813. The deep model showed superior performance than 4 machine learning methods learned from extracted expert features. Besides, the deep models trained on single-lead ECGs produce lower performance than using all 12 leads simultaneously. The best-performing leads are lead I, aVR, and V5 among 12 leads. Finally, we employed the SHapley Additive exPlanations (SHAP) method to interpret the model's behavior at both patient level and population level. Our code is freely available at https://github.com/onlyzdd/ecg-diagnosis.",
+        "title": "Interpretable Deep Learning for Automatic Diagnosis of 12-lead Electrocardiogram",
+        "updated": "2020-10-20T14:51:00Z"
+      }
+    ],
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 1
+  },
+  "response_hash": "ab37866a1d3ddaf35673d30e4d8e206b723dbccf2256af6c383cc586fe36d1e9",
+  "retrieved_at": "2026-07-14T13:50:36Z",
+  "schema_version": "1.0",
+  "source": "arxiv"
+}

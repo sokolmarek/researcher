@@ -1,0 +1,235 @@
+{
+  "endpoint": "works/doi:10.1016/j.fuel.2017.11.147",
+  "request_key": "43ab4e39c529dbcca5f41a635b1047263f29ca5233f514a614d14f5c1cbc2713",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": null,
+    "authorships": [
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I101407740"
+            ],
+            "raw_affiliation_string": "Department of Mechnaical Engineering, Chandigarh Group of Colleges, Landran, Mohali, Punjab, India"
+          }
+        ],
+        "author": {
+          "display_name": "Santosh Kumar",
+          "id": "https://openalex.org/A5100648565",
+          "orcid": "https://orcid.org/0000-0003-4414-3305"
+        },
+        "author_position": "first",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Chandigarh University",
+            "id": "https://openalex.org/I101407740",
+            "lineage": [
+              "https://openalex.org/I101407740"
+            ],
+            "ror": "https://ror.org/05t4pvx35",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Mechnaical Engineering, Chandigarh Group of Colleges, Landran, Mohali, Punjab, India"
+        ],
+        "raw_author_name": "Santosh Kumar",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I101407740"
+            ],
+            "raw_affiliation_string": "Department of Mechnaical Engineering, Chandigarh Group of Colleges, Landran, Mohali, Punjab, India"
+          }
+        ],
+        "author": {
+          "display_name": "Rakesh Kumar",
+          "id": "https://openalex.org/A5021104327",
+          "orcid": "https://orcid.org/0000-0001-9926-6156"
+        },
+        "author_position": "middle",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Chandigarh University",
+            "id": "https://openalex.org/I101407740",
+            "lineage": [
+              "https://openalex.org/I101407740"
+            ],
+            "ror": "https://ror.org/05t4pvx35",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Mechnaical Engineering, Chandigarh Group of Colleges, Landran, Mohali, Punjab, India"
+        ],
+        "raw_author_name": "Rakesh Kumar",
+        "raw_orcid": null
+      },
+      {
+        "affiliations": [
+          {
+            "institution_ids": [
+              "https://openalex.org/I101407740"
+            ],
+            "raw_affiliation_string": "Department of Mechnaical Engineering, Chandigarh Group of Colleges, Landran, Mohali, Punjab, India"
+          }
+        ],
+        "author": {
+          "display_name": "Mukesh Kumar",
+          "id": "https://openalex.org/A5101914250",
+          "orcid": null
+        },
+        "author_position": "last",
+        "countries": [
+          "IN"
+        ],
+        "institutions": [
+          {
+            "country_code": "IN",
+            "display_name": "Chandigarh University",
+            "id": "https://openalex.org/I101407740",
+            "lineage": [
+              "https://openalex.org/I101407740"
+            ],
+            "ror": "https://ror.org/05t4pvx35",
+            "type": "education"
+          }
+        ],
+        "is_corresponding": false,
+        "raw_affiliation_strings": [
+          "Department of Mechnaical Engineering, Chandigarh Group of Colleges, Landran, Mohali, Punjab, India"
+        ],
+        "raw_author_name": "Mukesh Kumar",
+        "raw_orcid": null
+      }
+    ],
+    "best_oa_location": null,
+    "biblio": {
+      "first_page": "861",
+      "issue": null,
+      "last_page": "869",
+      "volume": "216"
+    },
+    "cited_by_count": 12,
+    "display_name": "RETRACTED: Experimental investigations of oxidation stability of biodiesel produced from Prunus armeniaca oil (apricot oil) and effect of various antioxidants on stability, engine performance and emissions",
+    "doi": "https://doi.org/10.1016/j.fuel.2017.11.147",
+    "id": "https://openalex.org/W2781634143",
+    "ids": {
+      "doi": "https://doi.org/10.1016/j.fuel.2017.11.147",
+      "mag": "2781634143",
+      "openalex": "https://openalex.org/W2781634143"
+    },
+    "is_retracted": true,
+    "language": "en",
+    "open_access": {
+      "any_repository_has_fulltext": false,
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null
+    },
+    "primary_location": {
+      "id": "doi:10.1016/j.fuel.2017.11.147",
+      "is_accepted": true,
+      "is_oa": false,
+      "is_published": true,
+      "landing_page_url": "https://doi.org/10.1016/j.fuel.2017.11.147",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": "Fuel",
+      "raw_type": "journal-article",
+      "source": {
+        "display_name": "Fuel",
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "host_organization_name": "Elsevier BV",
+        "id": "https://openalex.org/S164770093",
+        "is_core": true,
+        "is_in_doaj": false,
+        "is_oa": false,
+        "issn": [
+          "0016-2361",
+          "1873-7153"
+        ],
+        "issn_l": "0016-2361",
+        "type": "journal"
+      },
+      "version": "publishedVersion"
+    },
+    "publication_date": "2018-01-04",
+    "publication_year": 2018,
+    "referenced_works": [
+      "https://openalex.org/W1594122287",
+      "https://openalex.org/W1720397284",
+      "https://openalex.org/W1963937118",
+      "https://openalex.org/W2000338047",
+      "https://openalex.org/W2003802633",
+      "https://openalex.org/W2007484994",
+      "https://openalex.org/W2009920489",
+      "https://openalex.org/W2032175231",
+      "https://openalex.org/W2045734776",
+      "https://openalex.org/W2055318269",
+      "https://openalex.org/W2059986534",
+      "https://openalex.org/W2062425204",
+      "https://openalex.org/W2062814914",
+      "https://openalex.org/W2065293259",
+      "https://openalex.org/W2065805240",
+      "https://openalex.org/W2066493033",
+      "https://openalex.org/W2066880313",
+      "https://openalex.org/W2069894408",
+      "https://openalex.org/W2076726287",
+      "https://openalex.org/W2082727443",
+      "https://openalex.org/W2083133716",
+      "https://openalex.org/W2086508498",
+      "https://openalex.org/W2088906012",
+      "https://openalex.org/W2094621287",
+      "https://openalex.org/W2098738714",
+      "https://openalex.org/W2106137148",
+      "https://openalex.org/W2111846734",
+      "https://openalex.org/W2125721529",
+      "https://openalex.org/W2133483833",
+      "https://openalex.org/W2141291404",
+      "https://openalex.org/W2144407941",
+      "https://openalex.org/W2149872690",
+      "https://openalex.org/W2150891629",
+      "https://openalex.org/W2166161844",
+      "https://openalex.org/W2256973694",
+      "https://openalex.org/W2269686668",
+      "https://openalex.org/W2282285190",
+      "https://openalex.org/W4234945473",
+      "https://openalex.org/W6636026467",
+      "https://openalex.org/W6666384289",
+      "https://openalex.org/W6674159708",
+      "https://openalex.org/W6676657454",
+      "https://openalex.org/W6816293286"
+    ],
+    "referenced_works_count": 43,
+    "title": "RETRACTED: Experimental investigations of oxidation stability of biodiesel produced from Prunus armeniaca oil (apricot oil) and effect of various antioxidants on stability, engine performance and emissions",
+    "type": "article"
+  },
+  "response_hash": "a3035d3764d0914bf74b6a9e4051f31c76e7881be40fee13a62c1e517b318768",
+  "retrieved_at": "2026-07-14T13:48:48Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

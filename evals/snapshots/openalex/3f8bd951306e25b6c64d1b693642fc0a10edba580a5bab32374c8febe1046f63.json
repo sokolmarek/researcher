@@ -1,0 +1,62 @@
+{
+  "endpoint": "works",
+  "request_key": "3f8bd951306e25b6c64d1b693642fc0a10edba580a5bab32374c8febe1046f63",
+  "request_params": {
+    "per-page": 5,
+    "search": "New Horizons Multispectral Visible Imaging Camera (MVIC) Jupiter Encounter Raw Data, Versi",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 0,
+      "db_response_time_ms": 136,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 5,
+      "x_query": {
+        "oql": "works where full text has (New Horizons Multispectral Visible Imaging Camera MVIC Jupiter Encounter Raw Data Versi)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "New Horizons Multispectral Visible Imaging Camera (MVIC) Jupiter Encounter Raw Data, Versi"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 5,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:New Horizons Multispectral Visible Imaging Camera %28MVIC%29 Jupiter Encounter Raw Data, Versi&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=5"
+      }
+    },
+    "results": []
+  },
+  "response_hash": "edae3b1a433bc6662e16a6ce66f32c665567b1a6f9cdca1575da9ac44a82c26a",
+  "retrieved_at": "2026-07-14T13:48:29Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

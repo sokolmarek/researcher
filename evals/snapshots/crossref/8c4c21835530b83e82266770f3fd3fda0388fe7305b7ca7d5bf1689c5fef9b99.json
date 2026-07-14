@@ -1,0 +1,510 @@
+{
+  "endpoint": "works/10.1111/jce.13889",
+  "request_key": "8c4c21835530b83e82266770f3fd3fda0388fe7305b7ca7d5bf1689c5fef9b99",
+  "request_params": {},
+  "response_body": {
+    "message": {
+      "DOI": "10.1111/jce.13889",
+      "ISSN": [
+        "1045-3873",
+        "1540-8167"
+      ],
+      "URL": "https://doi.org/10.1111/jce.13889",
+      "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Objectives</jats:title><jats:p>We sought to validate a deep learning algorithm designed to predict an ejection fraction (EF) less than or equal to 35% based on the 12‐lead electrocardiogram (ECG) in a large prospective cohort.</jats:p></jats:sec><jats:sec><jats:title>Background</jats:title><jats:p>Patients undergoing routine ECG may have undetected left ventricular (LV) dysfunction that warrants further echocardiographic assessment. However, identification of these patients can be challenging.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>We applied the algorithm to all ECGs interpreted by the Mayo Clinic ECG laboratory in September 2018. The performance of the algorithm was tested among patients with recent echocardiographic assessments of LV function. We also applied the algorithm in patients with no recent echocardiographic assessments of LV function to determine the rate of new “positive screens.”</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>Among 16 056 adult patients who underwent routine ECG, 8600 (age 67.1 ± 15.2 years, 45.6% male), had a transthoracic echocardiogram (TTE) and 3874 patients had a TTE and ECG less than 1 month apart. Among these patients, the algorithm was able to detect an EF less than or equal to 35% with 86.8% specificity, 82.5% sensitivity, and 86.5% accuracy, (area under the curve, 0.918). Among 474 “false‐positives screens,” 189 (39.8%) had an EF of 36% to 50%. Among patients with no prior TTE, the algorithm identified 3.5% of the patients with suspected EF less than or equal to 35%. Exploratory analysis suggests false positives could be reduced by assessing NT‐pro‐BNP after the initial “positive screen.”</jats:p></jats:sec><jats:sec><jats:title>Conclusions</jats:title><jats:p>A deep learning algorithm detected depressed LV function with good accuracy in routine practice. Further studies are needed to validate the algorithm in patients with no prior echocardiogram and to assess the impact on echocardiography utilization, cost, and clinical outcomes.</jats:p></jats:sec>",
+      "alternative-id": [
+        "10.1111/jce.13889"
+      ],
+      "archive": [
+        "Portico"
+      ],
+      "assertion": [
+        {
+          "group": {
+            "label": "Publication History",
+            "name": "publication_history"
+          },
+          "label": "Received",
+          "name": "received",
+          "order": 0,
+          "value": "2018-12-31"
+        },
+        {
+          "group": {
+            "label": "Publication History",
+            "name": "publication_history"
+          },
+          "label": "Accepted",
+          "name": "accepted",
+          "order": 1,
+          "value": "2019-01-23"
+        },
+        {
+          "group": {
+            "label": "Publication History",
+            "name": "publication_history"
+          },
+          "label": "Published",
+          "name": "published",
+          "order": 2,
+          "value": "2019-03-10"
+        }
+      ],
+      "author": [
+        {
+          "affiliation": [
+            {
+              "name": "Department of Cardiovascular Medicine Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "family": "Attia",
+          "given": "Zachi I.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "first"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2283-4340",
+          "affiliation": [
+            {
+              "name": "Department of Cardiovascular Medicine Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "authenticated-orcid": false,
+          "family": "Kapa",
+          "given": "Suraj",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Department of Health Sciences Research, Division of Health Care Policy and Research Mayo Clinic Rochester Minnesota"
+            },
+            {
+              "name": "Robert D. and Patricia E. Kern Center for the Science of Health Care Delivery Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "family": "Yao",
+          "given": "Xiaoxi",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Department of Cardiovascular Medicine Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "family": "Lopez‐Jimenez",
+          "given": "Francisco",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Department of Cardiovascular Medicine Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "family": "Mohan",
+          "given": "Tarun L.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Department of Cardiovascular Medicine Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "family": "Pellikka",
+          "given": "Patricia A.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Division of Biomedical Statistics and Informatics, Health Sciences Research Mayo Clinic College of Medicine Jacksonville Florida"
+            }
+          ],
+          "family": "Carter",
+          "given": "Rickey E.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "affiliation": [
+            {
+              "name": "Department of Health Sciences Research, Division of Health Care Policy and Research Mayo Clinic Rochester Minnesota"
+            },
+            {
+              "name": "Robert D. and Patricia E. Kern Center for the Science of Health Care Delivery Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "family": "Shah",
+          "given": "Nilay D.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5052-2948",
+          "affiliation": [
+            {
+              "name": "Department of Cardiovascular Medicine Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "authenticated-orcid": false,
+          "family": "Friedman",
+          "given": "Paul A.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4308-0456",
+          "affiliation": [
+            {
+              "name": "Department of Cardiovascular Medicine Mayo Clinic Rochester Minnesota"
+            },
+            {
+              "name": "Robert D. and Patricia E. Kern Center for the Science of Health Care Delivery Mayo Clinic Rochester Minnesota"
+            }
+          ],
+          "authenticated-orcid": false,
+          "family": "Noseworthy",
+          "given": "Peter A.",
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ],
+          "sequence": "additional"
+        }
+      ],
+      "container-title": [
+        "Journal of Cardiovascular Electrophysiology"
+      ],
+      "content-domain": {
+        "crossmark-restriction": true,
+        "domain": [
+          "onlinelibrary.wiley.com"
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T03:37:07Z",
+        "timestamp": 1551411427000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            7
+          ]
+        ],
+        "date-time": "2023-09-07T05:47:49Z",
+        "timestamp": 1694065669000
+      },
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            2
+          ]
+        ],
+        "date-time": "2026-07-02T08:06:36Z",
+        "timestamp": 1782979596760,
+        "version": "3.54.5"
+      },
+      "is-referenced-by-count": 186,
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "1045-3873"
+        },
+        {
+          "type": "electronic",
+          "value": "1540-8167"
+        }
+      ],
+      "issue": "5",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            10
+          ]
+        ]
+      },
+      "journal-issue": {
+        "issue": "5",
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              5
+            ]
+          ]
+        }
+      },
+      "language": "en",
+      "license": [
+        {
+          "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                3,
+                10
+              ]
+            ],
+            "date-time": "2019-03-10T00:00:00Z",
+            "timestamp": 1552176000000
+          }
+        }
+      ],
+      "link": [
+        {
+          "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fjce.13889",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/jce.13889",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/jce.13889",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/jce.13889",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "member": "311",
+      "original-title": [],
+      "page": "668-674",
+      "prefix": "10.1111",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            10
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            5
+          ]
+        ]
+      },
+      "publisher": "Wiley",
+      "reference": [
+        {
+          "DOI": "10.1111/j.1751-7133.2008.tb00002.x",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_2_1"
+        },
+        {
+          "DOI": "10.1016/S0140-6736(00)04560-8",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_3_1"
+        },
+        {
+          "DOI": "10.1056/NEJM199209033271001",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_4_1"
+        },
+        {
+          "article-title": "2015 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death: The Task Force for the Management of Patients with Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death of the European Society of Cardiology (ESC). Endorsed by: Association for European Paediatric and Congenital Cardiology (AEPC)",
+          "author": "Priori SG",
+          "first-page": "2793",
+          "issue": "36",
+          "journal-title": "Eur Heart J",
+          "key": "e_1_2_5_1_5_1",
+          "volume": "2015"
+        },
+        {
+          "DOI": "10.1038/s41591-018-0240-2",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_6_1"
+        },
+        {
+          "DOI": "10.1016/j.echo.2014.10.003",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_7_1"
+        },
+        {
+          "author": "Rossum G",
+          "key": "e_1_2_5_1_8_1",
+          "volume-title": "Python Tutorial, Technical Report CS‐R9526",
+          "year": "1995"
+        },
+        {
+          "article-title": "Batch normalization: accelerating deep network training by reducing internal covariate shift International Conference on Machine Learning",
+          "author": "Ioffe S",
+          "first-page": "448",
+          "journal-title": "Proceedings of the 32nd International Conference on Machine Learning, PMLR, Lille France",
+          "key": "e_1_2_5_1_9_1",
+          "volume": "37",
+          "year": "2015"
+        },
+        {
+          "DOI": "10.1109/ICSIPA.2011.6144164",
+          "doi-asserted-by": "crossref",
+          "key": "e_1_2_5_1_10_1",
+          "unstructured": "NagiJ DucatelleF Di CaroGet al. Max‐pooling convolutional neural networks for vision‐based hand gesture recognition. 2011 IEEE International Conference on Signal and Image Processing Applications Kuala Lumpur Malaysia 2011:342‐347."
+        },
+        {
+          "author": "Cristianini N",
+          "key": "e_1_2_5_1_11_1",
+          "volume-title": "An Introduction to Support Vector Machines",
+          "year": "2000"
+        },
+        {
+          "article-title": "AHA/ACC/HRS Guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death: executive summary: a report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society",
+          "author": "Al‐Khatib SM",
+          "first-page": "e210",
+          "issue": "13",
+          "journal-title": "Circulation",
+          "key": "e_1_2_5_1_12_1",
+          "volume": "138",
+          "year": "2018"
+        },
+        {
+          "DOI": "10.1016/j.jacc.2013.05.019",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_13_1"
+        },
+        {
+          "DOI": "10.1161/01.CIR.0000130845.38133.8F",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_14_1"
+        },
+        {
+          "author": "Wilson JMG",
+          "key": "e_1_2_5_1_15_1",
+          "volume-title": "Principles and practice of screening for disease",
+          "year": "1968"
+        },
+        {
+          "DOI": "10.1016/j.jelectrocard.2017.06.008",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_16_1"
+        },
+        {
+          "DOI": "10.1161/JAHA.117.006023",
+          "doi-asserted-by": "publisher",
+          "key": "e_1_2_5_1_17_1"
+        }
+      ],
+      "reference-count": 16,
+      "references-count": 16,
+      "relation": {},
+      "resource": {
+        "primary": {
+          "URL": "https://onlinelibrary.wiley.com/doi/10.1111/jce.13889"
+        }
+      },
+      "score": 1,
+      "short-container-title": [
+        "Cardiovasc electrophysiol"
+      ],
+      "short-title": [],
+      "source": "Crossref",
+      "subject": [],
+      "subtitle": [],
+      "title": [
+        "Prospective validation of a deep learning electrocardiogram algorithm for the detection of left ventricular systolic dysfunction"
+      ],
+      "type": "journal-article",
+      "update-policy": "https://doi.org/10.1002/crossmark_policy",
+      "volume": "30"
+    },
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "status": "ok"
+  },
+  "response_hash": "ebd61b64aa7719bf75a024352e485f15b5f2edffedafb70e76481f99a8f5e00a",
+  "retrieved_at": "2026-07-14T14:48:18Z",
+  "schema_version": "1.0",
+  "source": "crossref"
+}
