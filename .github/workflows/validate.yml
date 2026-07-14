@@ -18,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install Claude Code CLI (pinned)
         run: npm install -g "@anthropic-ai/claude-code@${CLAUDE_CLI_VERSION}"
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: All tracked JSON files parse
         run: |
@@ -76,9 +76,13 @@ jobs:
         run: |
           # Installed plugin commands are namespaced (/researcher:<cmd>). A bare
           # /<cmd> in user-facing docs would not work when typed.
+          #
+          # .github/ is excluded: those files are contributor-facing, not user-facing,
+          # and the PR template has to quote the forbidden bare form in order to
+          # forbid it. Without this exclusion the guard fails on its own rulebook.
           cmds="new-manuscript|draft-section|review-paper|submit-ready|revise|brainstorm|find-journal|find-conference|fact-check|sota|design-experiment"
           matches=$(git ls-files '*.md' '*.mdx' \
-            | grep -vE '^(plans/|research/)' \
+            | grep -vE '^(plans/|research/|\.github/)' \
             | xargs grep -nE "(^|[^:a-zA-Z0-9_-])/($cmds)\b" 2>/dev/null || true)
           if [ -n "$matches" ]; then
             echo "$matches"
@@ -106,10 +110,10 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -139,12 +143,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install and test
         working-directory: templates/word
@@ -157,7 +161,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install tectonic (pinned release, checksum verified)
         run: |
@@ -186,7 +190,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install TeX Live
         # lmodern is listed explicitly: it is only a Recommends of the texlive
