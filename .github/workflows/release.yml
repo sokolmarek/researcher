@@ -12,8 +12,8 @@ on:
 
 permissions:
   contents: write
-  # id-token is for OIDC: Sigstore keyless signing in the release job and PyPI trusted
-  # publishing in the publish job. No stored keys, no stored tokens (D13/D14).
+  # id-token is for OIDC: Sigstore keyless signing in the release job. No stored keys,
+  # no stored tokens (D13/D14).
   id-token: write
 
 env:
@@ -270,38 +270,7 @@ jobs:
           draft: false
           prerelease: false
 
-  # Publish researcher-core to PyPI via OIDC trusted publishing (no stored token, D13). The
-  # package version comes from core/pyproject.toml, NOT from the tag, so a plugin tag whose core
-  # version is unchanged simply uploads nothing new rather than failing on a duplicate version.
-  pypi-publish:
-    needs: [validate, full-validation]
-    runs-on: ubuntu-latest
-    environment: pypi
-    steps:
-      - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-      - name: Setup Python
-        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      - name: Build the sdist and wheel
-        run: |
-          python -m pip install --upgrade build
-          python -m build core
-      - name: Skip if this core version is already on PyPI
-        id: check
-        run: |
-          VERSION="$(python -c "import tomllib;print(tomllib.load(open('core/pyproject.toml','rb'))['project']['version'])")"
-          # Exact-version lookup against the PyPI JSON API: an unanchored grep would let
-          # 1.0.0 match 1.0.0rc1, or 1.0.1 match 1.0.10.
-          if curl -fsS "https://pypi.org/pypi/researcher-core/${VERSION}/json" > /dev/null 2>&1; then
-            echo "researcher-core $VERSION is already published, skipping."
-            echo "publish=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "publish=true" >> "$GITHUB_OUTPUT"
-          fi
-      - name: Publish to PyPI (OIDC trusted publishing)
-        if: steps.check.outputs.publish == 'true'
-        uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # release/v1 branch head, 2026-07-16
-        with:
-          packages-dir: core/dist
+  # There is deliberately no PyPI publish job. The kernel ships inside the plugin and installs
+  # from the repo (`pip install -e core/`); distributing it on PyPI was built for 1.0.0 and
+  # dropped by decision before it ever ran, so the release surface stays exactly what this
+  # workflow signs: the archive and the SBOMs on the GitHub Release.

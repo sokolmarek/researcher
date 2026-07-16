@@ -107,7 +107,7 @@ The last milestone is everything a production tool owes its users, and it harden
 - **ORCID, ROR, and CRediT** support for author, institution, and contribution metadata: validated by checksum, pattern, and the 14-role taxonomy, optional, and never fabricated. An invalid identifier is rejected, not guessed.
 - **Accessibility.** Figure alt text describing data content is a required output of every visualization-family skill, shared across preset variants; the DOCX generator writes it into image properties, and the freshness eval checks its presence.
 - **SBOM and signed releases.** Every GitHub Release carries CycloneDX SBOMs and Sigstore keyless signatures (OIDC, no stored keys), verifiable with a documented `cosign verify-blob` command.
-- **A pip-installable package on PyPI plus a thin MCP server**, so the deterministic engine can be scripted in pipelines that have nothing to do with Claude, and non-Claude tools can call the same retrieval, gating, and provenance machinery through a standard interface. Verification should not be locked inside one assistant. If the checks are good, other tools should be able to use them.
+- **A pip-installable package plus a thin MCP server**, installed from the repo (deliberately not distributed on PyPI: the plugin is the distribution), so the deterministic engine can be scripted in pipelines that have nothing to do with Claude, and non-Claude tools can call the same retrieval, gating, and provenance machinery through a standard interface. Verification should not be locked inside one assistant. If the checks are good, other tools should be able to use them.
 - **Three-OS CI** (Linux, macOS, and Windows), with macOS added as a non-gating leg first and promoted once green.
 
 ## Deferred, deliberately

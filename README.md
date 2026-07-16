@@ -129,7 +129,7 @@ the same retrieval, verification, and provenance tools over a standard interface
 | **Prompt-injection defenses**: fetched content is sanitized and quoted only inside a labeled untrusted-content fence | **Works today (new in 1.0.0)**. `evals/run_injection.py` proves verdicts are unchanged versus the payload-free twin and no payload escapes the fence; certifies known payload classes, not general immunity |
 | **Bibliography export** in CSL-JSON, RIS, JATS `<ref-list>`, and BibTeX (`researcher-core export`) | **Works today (new in 1.0.0)**. Round-trip-tested with a published per-format loss table |
 | **ORCID / ROR / CRediT** author, affiliation, and contribution metadata | **Works today (new in 1.0.0)**. Validated (ORCID checksum, ROR pattern, CRediT 14-role taxonomy), optional, never fabricated; JATS `contrib-group` plus a linked ORCID iD in the IMRaD template |
-| **PyPI package + thin MCP server** (`pip install researcher-core`, `researcher-mcp`): search, get-paper, verify-citations, export-bibliography, download-oa | **Works today (new in 1.0.0)**, D13. Tool outputs inherit offline mode and the sanitizer |
+| **Thin MCP server** (`researcher-mcp`): search, get-paper, verify-citations, export-bibliography, download-oa | **Works today (new in 1.0.0)**, D13. Installs from the repo (`pip install -e "core/[mcp]"`; deliberately not on PyPI); tool outputs inherit offline mode and the sanitizer |
 | **Signed releases + SBOMs**: Sigstore keyless signatures and CycloneDX SBOMs on every GitHub Release | **Works today (new in 1.0.0)**. Verify with the documented `cosign verify-blob` command |
 | Bundled `.mcp.json` registering the local `researcher-mcp` stdio server | **Works today (new in 1.0.0)**. Scite and Zotero stay user-connected MCP servers |
 | Google Scholar / Mendeley APIs | Not planned (no stable free API); fallbacks documented in `connectors/` |
@@ -359,12 +359,13 @@ claude --plugin-dir researcher
 ### The evidence kernel and MCP server (optional, new in 1.0.0)
 
 The kernel ships inside the plugin, and skills invoke it through `uv` with no install step. To run it
-standalone, in a pipeline, or from a non-Claude MCP host, install it from PyPI:
+standalone, in a pipeline, or from a non-Claude MCP host, install it from the repo (it is deliberately
+not distributed on PyPI; the plugin is the distribution):
 
 ```bash
-pip install researcher-core              # base runtime: httpx, rapidfuzz, platformdirs
-pip install "researcher-core[fulltext]"  # adds open-access PDF extraction
-pip install "researcher-core[mcp]"       # adds the thin MCP server (fastmcp)
+pip install -e core/                     # base runtime: httpx, rapidfuzz, platformdirs
+pip install -e "core/[fulltext]"         # adds open-access PDF extraction
+pip install -e "core/[mcp]"              # adds the thin MCP server (fastmcp)
 
 researcher-core --help                   # the JSON-emitting CLI (search, verify-bib, compile, export, ...)
 researcher-mcp                           # the stdio MCP server: search_papers, get_paper,
@@ -400,9 +401,7 @@ cosign verify-blob \
 ```
 
 The same command verifies `core-sbom.cdx.json` and `word-sbom.cdx.json` against their own `.sig` and
-`.pem` files, all attached to the Release. `researcher-core` on
-PyPI is published through OIDC trusted publishing, so its provenance lives in the PyPI attestation rather
-than a stored token.
+`.pem` files, all attached to the Release.
 
 ### Recommended: full commit coverage for the citation guard
 
@@ -515,7 +514,7 @@ design for a later release.
 - **LaTeX compilation:** any TeX installation. `tectonic` is recommended (single binary, fetches packages on demand, reproducible builds) and is what CI uses, but TeX Live, MiKTeX, and MacTeX work out of the box: the compile scripts detect `latexmk` or a raw `pdflatex`/`xelatex`/`lualatex` and run the bibliography passes for you. Set `LATEX_ENGINE` (or pass `--engine`) to choose one explicitly. If no TeX is found, the scripts print install pointers.
 - **Word output:** `node` (the `docx` library; run `npm install` in `templates/word/`)
 - **Scripts and tests:** Python 3.10+ (standard library only; `pytest` to run the test suite)
-- **The evidence kernel (optional):** [`uv`](https://docs.astral.sh/uv/) is all you need; it provisions the environment from `core/pyproject.toml` on first use, and no install step is required. Without `uv`, `pip install -e core/` works (base runtime: `httpx`, `rapidfuzz`, `platformdirs`), and `pip install -e "core/[fulltext]"` adds OA PDF extraction. Since 1.0.0 it is also a published PyPI package (`pip install researcher-core`), with an `mcp` extra that adds the thin MCP server. **Without the kernel at all, the plugin still runs**: the scripts fall back to their standard-library behavior and nothing hard-fails.
+- **The evidence kernel (optional):** [`uv`](https://docs.astral.sh/uv/) is all you need; it provisions the environment from `core/pyproject.toml` on first use, and no install step is required. Without `uv`, `pip install -e core/` works (base runtime: `httpx`, `rapidfuzz`, `platformdirs`), `pip install -e "core/[fulltext]"` adds OA PDF extraction, and `pip install -e "core/[mcp]"` adds the thin MCP server. It is deliberately not distributed on PyPI: the plugin is the distribution. **Without the kernel at all, the plugin still runs**: the scripts fall back to their standard-library behavior and nothing hard-fails.
 
 ---
 

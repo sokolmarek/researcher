@@ -67,8 +67,11 @@ a restyle reuses one data description. `build-docx.js` writes that alt text into
 the DOCX, and the freshness eval checks alt-text presence on every example figure mechanically, leaving
 quality to the human review checkpoint.
 
-**PyPI packaging and a thin stable-core MCP server (D13).** `researcher-core` is now a PyPI package (MIT,
-D2) with a `researcher-mcp` console script and an `mcp` extra (`fastmcp`). The server
+**Python packaging and a thin stable-core MCP server (D13).** `researcher-core` is now a proper
+installable package (MIT, D2) with a `researcher-mcp` console script and an `mcp` extra (`fastmcp`),
+installed from the repo with `pip install -e core/`. It is deliberately not distributed on PyPI: a
+publish job was built for this release and dropped by decision before it ever ran, so the plugin
+remains the only distribution channel. The server
 (`core/researcher_core/mcp_server.py`) exposes exactly five tools, each a thin re-export of an existing
 core function so it moves with core versioning and adds no new logic: `search_papers`, `get_paper`,
 `verify_citations`, `export_bibliography`, and `download_oa`. Its outputs inherit offline mode and pass
@@ -76,11 +79,9 @@ through the sanitizer. `.mcp.json` registers the local stdio server so plugin us
 non-Claude host that speaks MCP can now call the same retrieval, verification, and provenance machinery.
 
 **SBOM and signed releases.** The release workflow generates a CycloneDX SBOM for the kernel and one for
-the Word toolchain, signs the release archive and the SBOMs with Sigstore keyless signing (OIDC, no
-stored keys), and publishes `researcher-core` to PyPI via OIDC trusted publishing. The package version
-comes from `pyproject.toml`, not the tag, so a plugin tag that leaves the core version unchanged uploads
-nothing new rather than failing on a duplicate. The README documents the `cosign verify-blob` command
-that checks the published signatures against the workflow's OIDC identity.
+the Word toolchain, and signs the release archive and the SBOMs with Sigstore keyless signing (OIDC, no
+stored keys). The README documents the `cosign verify-blob` command that checks the published signatures
+against the workflow's OIDC identity.
 
 **`CITATION.cff`, and a version-agreement guard that spans everything carrying a version.** The repo is
 now formally citable, and `cffconvert` validates the file in CI. The release guard checks that the tag,
