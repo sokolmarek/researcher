@@ -98,10 +98,22 @@ EVENT_TYPES: tuple[str, ...] = (
     "artifact_hash",
     "review",
     "gate",
+    # M4 (the systematic-review vertical) adds the protocol and screening lifecycle.
+    "protocol_locked",
+    "amendment",
+    "adjudication",
 )
 
 #: The event types M2 actually emits. The others exist for M3 and M4.
 M2_EVENT_TYPES: tuple[str, ...] = ("retrieval", "record_lineage", "dedup_decision")
+
+#: The event types M4 adds on top of what M2 and M3 emit.
+M4_EVENT_TYPES: tuple[str, ...] = (
+    "protocol_locked",
+    "amendment",
+    "screening_decision",
+    "adjudication",
+)
 
 _VERSION_RE = re.compile(r"^[0-9]+\.[0-9]+(\.[0-9]+)?([-+.][0-9A-Za-z.-]+)?$")
 _HASH_RE = re.compile(r"^(sha256:)?[0-9a-f]{64}$")

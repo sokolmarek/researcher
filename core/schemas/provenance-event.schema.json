@@ -64,7 +64,7 @@
   },
   "$defs": {
     "eventType": {
-      "description": "Closed event vocabulary per D10 and D19. M2 emits retrieval, record_lineage, and dedup_decision; M3 adds the compile-gate events (artifact_hash, gate, review); M4 adds screening_decision.",
+      "description": "Closed event vocabulary per D10 and D19. M2 emits retrieval, record_lineage, and dedup_decision; M3 adds the compile-gate events (artifact_hash, gate, review); M4 adds the protocol and screening lifecycle (protocol_locked, amendment, screening_decision, adjudication).",
       "type": "string",
       "enum": [
         "retrieval",
@@ -73,7 +73,10 @@
         "screening_decision",
         "artifact_hash",
         "review",
-        "gate"
+        "gate",
+        "protocol_locked",
+        "amendment",
+        "adjudication"
       ]
     },
     "contentHash": {
