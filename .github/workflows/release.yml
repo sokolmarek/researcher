@@ -185,10 +185,12 @@ jobs:
             fi
           done
 
-          # All 29 skills, not just some of them.
+          # Every skill in the source tree, not just some of them. The expected count is
+          # derived from the tree so it cannot go stale when skills are added.
+          expected=$(ls skills/*/SKILL.md | wc -l)
           skills=$(grep -cE '^skills/[^/]+/SKILL\.md$' entries.txt || true)
-          if [ "$skills" -ne 29 ]; then
-            echo "Expected 29 skills/*/SKILL.md in the package, found ${skills}."
+          if [ "$skills" -ne "$expected" ]; then
+            echo "Expected ${expected} skills/*/SKILL.md in the package, found ${skills}."
             bad=1
           fi
 
@@ -219,14 +221,20 @@ jobs:
 
       - name: Generate SBOMs (CycloneDX)
         # A CycloneDX SBOM for the Python kernel and one for the Word toolchain, so a consumer
-        # can see exactly what the release depends on. Pinned tools, no floating latest.
+        # can see exactly what the release depends on. Pinned tools, no floating latest. The
+        # kernel is installed into a throwaway venv first because `cyclonedx-py environment`
+        # reads an installed environment, not a source directory. Both steps fail loudly: an
+        # empty or missing SBOM must never be signed and shipped.
         run: |
+          set -e
+          python -m venv "$RUNNER_TEMP/core-env"
+          "$RUNNER_TEMP/core-env/bin/pip" install --quiet ./core
           pipx run --spec 'cyclonedx-bom==5.3.0' cyclonedx-py environment \
-            --output-format json --outfile core-sbom.cdx.json core || \
-            pipx run --spec 'cyclonedx-bom==5.3.0' cyclonedx-py requirements \
-            --output-format json --outfile core-sbom.cdx.json core/pyproject.toml
-          ( cd templates/word && npm sbom --sbom-format cyclonedx > ../../word-sbom.cdx.json ) || \
-            echo '{}' > word-sbom.cdx.json
+            "$RUNNER_TEMP/core-env/bin/python" \
+            --output-format json --outfile core-sbom.cdx.json
+          ( cd templates/word && npm ci --no-audit --no-fund && \
+            npm sbom --sbom-format cyclonedx > ../../word-sbom.cdx.json )
+          [ -s core-sbom.cdx.json ] && [ -s word-sbom.cdx.json ]
 
       - name: Sign the artifacts (Sigstore keyless)
         # OIDC keyless signing, no stored keys, consistent with the no-token posture (D13/D14).
@@ -257,6 +265,8 @@ jobs:
             core-sbom.cdx.json.sig
             core-sbom.cdx.json.pem
             word-sbom.cdx.json
+            word-sbom.cdx.json.sig
+            word-sbom.cdx.json.pem
           draft: false
           prerelease: false
 
@@ -282,7 +292,9 @@ jobs:
         id: check
         run: |
           VERSION="$(python -c "import tomllib;print(tomllib.load(open('core/pyproject.toml','rb'))['project']['version'])")"
-          if pip index versions researcher-core 2>/dev/null | grep -q "$VERSION"; then
+          # Exact-version lookup against the PyPI JSON API: an unanchored grep would let
+          # 1.0.0 match 1.0.0rc1, or 1.0.1 match 1.0.10.
+          if curl -fsS "https://pypi.org/pypi/researcher-core/${VERSION}/json" > /dev/null 2>&1; then
             echo "researcher-core $VERSION is already published, skipping."
             echo "publish=false" >> "$GITHUB_OUTPUT"
           else

@@ -9,7 +9,7 @@ scans, in priority order:
     $REPO_ROOT/.agents/skills    repo scope (shared with collaborators)
     $HOME/.agents/skills         user scope (all repos)
 
-so the 29 skills port directly. What does NOT port is the Claude-specific
+so all 35 skills port directly. What does NOT port is the Claude-specific
 plumbing, and this installer handles each piece:
 
   * plugin-relative paths (`references/...`, `templates/...`, `scripts/...`,

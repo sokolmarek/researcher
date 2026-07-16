@@ -266,8 +266,9 @@ jobs:
           set -e
           python scripts/install-codex-skills.py --repo "$RUNNER_TEMP/codex-check"
           count=$(ls "$RUNNER_TEMP/codex-check/.agents/skills" | wc -l)
-          echo "installed $count skills"
-          [ "$count" -eq 29 ] || { echo "expected 29 skills, got $count"; exit 1; }
+          expected=$(ls skills/*/SKILL.md | wc -l)
+          echo "installed $count skills (source tree has $expected)"
+          [ "$count" -eq "$expected" ] || { echo "expected $expected skills, got $count"; exit 1; }
           test -f "$RUNNER_TEMP/codex-check/.agents/researcher/references/integrity-constraints.md"
           test -f "$RUNNER_TEMP/codex-check/.agents/researcher/AGENTS.md"
           python scripts/install-codex-skills.py --repo "$RUNNER_TEMP/codex-check" --uninstall
