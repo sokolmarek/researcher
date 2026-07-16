@@ -86,6 +86,10 @@ COMMANDS: tuple[str, ...] = (
     "provenance",
     "compile",
     "passport",
+    "protocol",
+    "screen",
+    "prisma",
+    "monitor",
 )
 
 
@@ -1018,6 +1022,209 @@ def open_ledger(args: argparse.Namespace) -> ProvenanceLedger:
     return ProvenanceLedger(args.ledger) if args.ledger else ProvenanceLedger()
 
 
+# ---------------------------------------------------------------------------
+# M4: the systematic-review vertical (protocol, screen, prisma, monitor)
+# ---------------------------------------------------------------------------
+
+
+def _read_content(path: str) -> str:
+    p = Path(path)
+    if not p.is_file():
+        raise CLIError(f"{path} is not a readable file.")
+    return p.read_text(encoding="utf-8")
+
+
+def _with_json(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
+    """Add just the --json flag. The M4 review commands read the ledger and do not make live
+    calls, so they carry --json but not the --record snapshot flag (which would also collide
+    with a `screen decide --record <id>` positional-style option)."""
+    parser.add_argument(
+        "--json", action="store_true", help="Emit machine-readable JSON instead of a table."
+    )
+    return parser
+
+
+def cmd_protocol_lock(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from . import protocol as proto
+
+    ledger = open_ledger(args)
+    try:
+        event = proto.lock_protocol(
+            _read_content(args.file), ledger, args.run_id, args.ts
+        )
+    except proto.ProtocolError as exc:
+        raise CLIError(str(exc)) from exc
+    finally:
+        ledger.close()
+    if args.json:
+        emit_json(event.to_json_dict())
+    else:
+        emit(f"protocol locked for run {args.run_id} at version {event.protocol_version}")
+    return 0
+
+
+def cmd_protocol_amend(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from . import protocol as proto
+
+    ledger = open_ledger(args)
+    try:
+        event = proto.amend_protocol(
+            _read_content(args.file),
+            ledger,
+            args.run_id,
+            args.ts,
+            summary=args.summary,
+            rationale=args.rationale,
+        )
+    except proto.ProtocolError as exc:
+        raise CLIError(str(exc)) from exc
+    finally:
+        ledger.close()
+    if args.json:
+        emit_json(event.to_json_dict())
+    else:
+        emit(f"protocol amended to version {event.protocol_version}: {args.summary}")
+    return 0
+
+
+def cmd_protocol_check(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from . import protocol as proto
+
+    ledger = open_ledger(args)
+    try:
+        result = proto.check_protocol(_read_content(args.file), ledger, args.run_id)
+        trail = [step.to_json_dict() for step in proto.amendment_trail(ledger, args.run_id)]
+    finally:
+        ledger.close()
+    payload = {
+        "matches": result.matches,
+        "expected_hash": result.expected_hash,
+        "actual_hash": result.actual_hash,
+        "amendment_trail": trail,
+    }
+    if args.json:
+        emit_json(payload)
+    else:
+        emit("protocol MATCHES the locked version" if result.matches
+             else "protocol DIFFERS from the locked version without an amendment")
+        emit(f"  expected {result.expected_hash[:16]} / actual {result.actual_hash[:16]}")
+        emit(f"  {len(trail)} lifecycle event(s) in the trail")
+    return 0 if result.matches else 1
+
+
+def _run_context(ledger: ProvenanceLedger, run_id: str) -> Any:
+    from .protocol import run_context
+
+    return run_context(ledger, run_id)
+
+
+def cmd_screen_decide(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .screen import record_screening_decision
+
+    ledger = open_ledger(args)
+    try:
+        event = record_screening_decision(
+            ledger,
+            _run_context(ledger, args.run_id),
+            screener_id=args.screener,
+            record_id=args.record,
+            stage=args.stage,
+            decision=args.decision,
+            ts=args.ts,
+            reason=args.reason or "",
+        )
+    finally:
+        ledger.close()
+    if args.json:
+        emit_json(event.to_json_dict())
+    else:
+        emit(f"recorded {args.decision} for {args.record} by {args.screener} ({args.stage})")
+    return 0
+
+
+def cmd_screen_conflicts(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .screen import screen_conflicts
+
+    corpus = json.loads(_read_content(args.corpus)) if args.corpus else None
+    profile = json.loads(_read_content(args.profile)) if args.profile else None
+    ledger = open_ledger(args)
+    try:
+        conflicts = screen_conflicts(
+            ledger, args.run_id, args.stage, corpus=corpus, profile=profile
+        )
+    finally:
+        ledger.close()
+    # The adjudication prompt is blind by construction: it carries the record and the
+    # profile, never the votes, so the second opinion cannot be anchored by the first.
+    payload = [c.adjudication_prompt() for c in conflicts]
+    if args.json:
+        emit_json(payload)
+    else:
+        emit(f"{len(conflicts)} conflict(s) to adjudicate at stage {args.stage}")
+        for c in payload:
+            emit(f"  {c['record_id']} (blind: no votes shown)")
+    return 0
+
+
+def cmd_screen_kappa(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .screen import cohens_kappa
+
+    ledger = open_ledger(args)
+    try:
+        result = cohens_kappa(ledger, args.run_id, args.stage)
+    finally:
+        ledger.close()
+    emit_json(result.to_json_dict()) if args.json else emit(
+        f"Cohen's kappa ({args.stage}): {result.to_json_dict().get('kappa')}"
+    )
+    return 0
+
+
+def cmd_prisma_flow(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .sr_prisma import prisma_flow
+
+    ledger = open_ledger(args)
+    try:
+        flow = prisma_flow(ledger, args.run_id)
+    finally:
+        ledger.close()
+    payload = flow.to_json_dict()
+    if args.json:
+        emit_json(payload)
+    else:
+        emit(json.dumps(payload, indent=2, ensure_ascii=False))
+    emit("" if args.json else "counts are DERIVED by aggregating events, never stored (D10)")
+    return 0
+
+
+def cmd_prisma_checklist(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .sr_prisma import prisma_checklist
+
+    ledger = open_ledger(args)
+    try:
+        checklist = prisma_checklist(ledger, args.run_id)
+    finally:
+        ledger.close()
+    emit_json(checklist.to_json_dict()) if args.json else emit(
+        json.dumps(checklist.to_json_dict(), indent=2, ensure_ascii=False)
+    )
+    return 0
+
+
+def cmd_monitor_status(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .monitor import load_monitor_state
+
+    state = load_monitor_state(args.state)
+    payload = state.to_json_dict()
+    if args.json:
+        emit_json(payload)
+    else:
+        last_run = payload.get("last_run") or "never"
+        emit(f"monitor: {len(payload.get('strategies', []))} saved strateg(ies), "
+             f"{len(payload.get('seen_ids', []))} record(s) seen, last run {last_run}")
+    return 0
+
+
 def event_from_mapping(data: Mapping[str, Any]) -> ProvenanceEvent:
     """Build an event from a caller-supplied JSON object.
 
@@ -1678,6 +1885,92 @@ def build_parser() -> argparse.ArgumentParser:
     passport.add_argument("--name", help="The manuscript name for the crate root.")
     passport.add_argument("--out", help="Write to this path instead of stdout.")
     passport.set_defaults(func=cmd_passport, cmd_parser=passport)
+
+    # -- protocol (M4.1) ---------------------------------------------------
+    protocol = subparsers.add_parser(
+        "protocol", help="Lock, amend, and check a systematic-review protocol (D19)."
+    )
+    protocol_subs = protocol.add_subparsers(dest="protocol_command", metavar="SUBCOMMAND")
+    p_lock = _with_json(protocol_subs.add_parser("lock", help="Hash and lock a protocol."))
+    p_lock.add_argument("file", help="The protocol document to lock.")
+    p_lock.add_argument("--run-id", required=True, help="The review run id.")
+    p_lock.add_argument("--ts", required=True, help="Caller-supplied timestamp (D19).")
+    p_lock.add_argument("--ledger", help="Ledger path (default: the user cache dir).")
+    p_lock.set_defaults(func=cmd_protocol_lock, cmd_parser=p_lock)
+    p_amend = _with_json(protocol_subs.add_parser("amend", help="Amend a locked protocol."))
+    p_amend.add_argument("file", help="The complete amended protocol.")
+    p_amend.add_argument("--run-id", required=True)
+    p_amend.add_argument("--ts", required=True, help="Caller-supplied timestamp (D19).")
+    p_amend.add_argument("--summary", required=True, help="What changed.")
+    p_amend.add_argument("--rationale", required=True, help="Why it changed.")
+    p_amend.add_argument("--ledger")
+    p_amend.set_defaults(func=cmd_protocol_amend, cmd_parser=p_amend)
+    p_check = _with_json(
+        protocol_subs.add_parser("check", help="Check a protocol against its lock.")
+    )
+    p_check.add_argument("file", help="The current protocol document.")
+    p_check.add_argument("--run-id", required=True)
+    p_check.add_argument("--ledger")
+    p_check.set_defaults(func=cmd_protocol_check, cmd_parser=p_check)
+    protocol.set_defaults(func=_require_subcommand(protocol, "protocol"), cmd_parser=protocol)
+
+    # -- screen (M4.4) -----------------------------------------------------
+    screen = subparsers.add_parser(
+        "screen", help="Dual independent screening with blinded adjudication and kappa."
+    )
+    screen_subs = screen.add_subparsers(dest="screen_command", metavar="SUBCOMMAND")
+    s_decide = _with_json(screen_subs.add_parser("decide", help="Record one screening decision."))
+    s_decide.add_argument("--run-id", required=True)
+    s_decide.add_argument("--screener", required=True, help="The screener id.")
+    s_decide.add_argument("--record", required=True, help="The record id being screened.")
+    s_decide.add_argument("--stage", required=True, choices=("title-abstract", "full-text"))
+    s_decide.add_argument("--decision", required=True, choices=("include", "exclude"))
+    s_decide.add_argument("--reason", help="Reason drawn from the eligibility profile.")
+    s_decide.add_argument("--ts", required=True, help="Caller-supplied timestamp (D19).")
+    s_decide.add_argument("--ledger")
+    s_decide.set_defaults(func=cmd_screen_decide, cmd_parser=s_decide)
+    s_conf = _with_json(screen_subs.add_parser("conflicts", help="Surface conflicts, blind."))
+    s_conf.add_argument("--run-id", required=True)
+    s_conf.add_argument("--stage", required=True, choices=("title-abstract", "full-text"))
+    s_conf.add_argument("--corpus", help="JSON file of record metadata for the adjudicator.")
+    s_conf.add_argument("--profile", help="JSON file of the eligibility profile.")
+    s_conf.add_argument("--ledger")
+    s_conf.set_defaults(func=cmd_screen_conflicts, cmd_parser=s_conf)
+    s_kappa = _with_json(
+        screen_subs.add_parser("kappa", help="Derive Cohen's kappa between streams.")
+    )
+    s_kappa.add_argument("--run-id", required=True)
+    s_kappa.add_argument("--stage", required=True, choices=("title-abstract", "full-text"))
+    s_kappa.add_argument("--ledger")
+    s_kappa.set_defaults(func=cmd_screen_kappa, cmd_parser=s_kappa)
+    screen.set_defaults(func=_require_subcommand(screen, "screen"), cmd_parser=screen)
+
+    # -- prisma (M4.12) ----------------------------------------------------
+    prisma = subparsers.add_parser(
+        "prisma", help="Derive the PRISMA 2020 flow and checklist from the ledger (D10)."
+    )
+    prisma_subs = prisma.add_subparsers(dest="prisma_command", metavar="SUBCOMMAND")
+    pr_flow = _with_json(prisma_subs.add_parser("flow", help="The PRISMA 2020 flow, derived."))
+    pr_flow.add_argument("--run-id", help="Restrict to one run.")
+    pr_flow.add_argument("--ledger")
+    pr_flow.set_defaults(func=cmd_prisma_flow, cmd_parser=pr_flow)
+    pr_check = _with_json(
+        prisma_subs.add_parser("checklist", help="PRISMA 2020 checklist coverage.")
+    )
+    pr_check.add_argument("--run-id")
+    pr_check.add_argument("--ledger")
+    pr_check.set_defaults(func=cmd_prisma_checklist, cmd_parser=pr_check)
+    prisma.set_defaults(func=_require_subcommand(prisma, "prisma"), cmd_parser=prisma)
+
+    # -- monitor (M4.11) ---------------------------------------------------
+    monitor = subparsers.add_parser(
+        "monitor", help="Living-review saved-search state and diff-on-rerun."
+    )
+    monitor_subs = monitor.add_subparsers(dest="monitor_command", metavar="SUBCOMMAND")
+    m_status = _with_json(monitor_subs.add_parser("status", help="Show the saved monitor state."))
+    m_status.add_argument("--state", required=True, help="Path to monitoring.yaml.")
+    m_status.set_defaults(func=cmd_monitor_status, cmd_parser=m_status)
+    monitor.set_defaults(func=_require_subcommand(monitor, "monitor"), cmd_parser=monitor)
 
     return parser
 
