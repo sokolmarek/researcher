@@ -26,6 +26,10 @@ uv run --project core python evals/run_axes.py --axis retrieval --retrieval-sour
 
 # LIVE. Hits the real APIs and rewrites evals/snapshots/. Not deterministic, by definition.
 uv run --project core python evals/run_axes.py --record
+
+# the M4.7 extraction gate (a separate runner; same snapshot store, same offline rules)
+uv run --project core python evals/run_extraction.py
+uv run --project core python evals/run_extraction.py --json
 ```
 
 The runner exits 1 while any gold item is skipped, so a CI job cannot go green over a benchmark
@@ -320,6 +324,110 @@ costs a reader's attention rather than a study. `dedupe.py` requires DOI equalit
 normalized-title similarity and refuses to merge records whose DOIs conflict outright, which is
 the conservative direction. On 210 labeled pairs, including hard negatives (real papers on the
 same topic with similar titles that are NOT the same work), it made neither error.
+
+## Extraction (axis M4.7): a lexical anchoring baseline
+
+This section is the M4.7 gate for the `extraction-tables` skill (D18): the skill may claim only
+the accuracy measured here, and only for the layer it measures. It is NOT part of the M2 exit
+gate above; it is measured by a separate runner (`evals/run_extraction.py`) that shares this
+file's snapshot store, offline replay rule, and Wilson-interval convention. It added no
+snapshots: all 147 cells replay from the same committed store the axes above use (the six
+open-access full texts under `evals/snapshots/fulltext/`, and the two abstract-only papers'
+OpenAlex records that the identity axis already recorded).
+
+**Read this exactly as you read axis (c).** It is a LEXICAL baseline and it is weak in the same
+way, on purpose. A cell is a `(paper, column, expected value)` triple; every value was read off
+the paper's own text, and where a value is genuinely absent the cell is labeled `not reported`
+(a fabricated cell is worse than a missing one). Given a paper's indexed passages and an
+ANSWER-FREE probe, the runner asks only whether the labeled value is LOCATABLE and whether a
+genuinely-absent value is correctly ABSTAINED on. Reading the value out of the located passage,
+resolving which of two datasets a cell means, disambiguating a metric name from a description:
+that is Claude's judgment layer on top, not core's, and it is not measured here.
+
+The gold set is 147 cells, 119 with a value and 28 `not reported`, at least 20 per column type
+(population 23, method 23, dataset 23, metric_name 28, metric_value 26, sample_size 24). 125
+cells anchor at the FULL-TEXT layer (the six OA papers, indexed into passages) and 22 at the
+ABSTRACT layer (two paywalled papers with no OA full text, indexed from their OpenAlex abstract).
+An abstract-layer cell is never reported as full-text-verified (D11/D18); the runner asserts it.
+
+### Location accuracy: can the labeled value be found
+
+```
+overall (present cells)        109/119   0.916  95% Wilson [0.852, 0.954]
+  of which grounded on concept 114/119   0.958
+  value present in a passage   109/119   0.916
+```
+
+| column type | n (present) | location accuracy (95% Wilson) |
+|---|---|---|
+| population | 18 | 0.778 [0.548, 0.910] |
+| method | 21 | 0.952 [0.773, 0.992] |
+| dataset | 21 | 1.000 [0.845, 1.000] |
+| metric_name | 18 | 0.722 [0.491, 0.875] |
+| metric_value | 20 | 1.000 [0.839, 1.000] |
+| sample_size | 21 | 1.000 [0.845, 1.000] |
+
+**The spread across columns is the honest story, and it is the story of a lexical method.** The
+runner nails a column when the value is a distinctive string the probe's neighbourhood contains:
+a dataset name (`2018 UCR Time Series Archive`), a numeric result (`0.934`, `63.026%`), or an
+explicit count (`128 time series classification datasets`) all score 1.000, because once the
+concept passage is retrieved the value string is right there. It is weakest on `metric_name`
+(0.722): a metric name IS the concept, so an answer-free probe (`what threshold-free ranking
+metric is reported`) rarely shares a token with the sentence that names it (`AUROC`), and the
+lexical retriever cannot bridge that purpose-to-name gap. `population` (0.778) fails the same
+way when the population is a generic phrase (`time series classification`) that the probe
+describes without quoting. These are not bugs to be tuned away; they are exactly the semantic
+gap that D16 expects a lexical baseline to fall into, and the number M3's claim-anchoring and
+Claude's extraction layer have to beat.
+
+Per anchor layer, reported separately so the two are never blended:
+
+```
+full-text   90/100   0.900  95% Wilson [0.826, 0.945]
+abstract    19/19    1.000  95% Wilson [0.832, 1.000]
+```
+
+The abstract layer reads 1.000, but that number is EASIER and is not comparable to the full-text
+one: at the abstract layer the whole abstract is a single retrieved unit, so "locatable" collapses
+to "the value is stated somewhere in the abstract", with no passage retrieval to miss. It is
+reported to show the layer path works and stays labeled, not as evidence the extractor is better
+on abstracts.
+
+### Abstention: the "not reported" side
+
+```
+'not reported' precision   25/30   0.833  95% Wilson [0.664, 0.927]
+'not reported' detection   25/28   0.893  95% Wilson [0.728, 0.963]
+FABRICATION RISK            3/28    0.107  95% Wilson [0.037, 0.272]
+```
+
+Precision here is "of the cells the extractor called ABSENT, the fraction truly `not reported`".
+It is 0.833 rather than higher because a present cell the extractor failed to locate (a location
+miss) looks exactly like a wrong abstention and lands in the denominator: five of the location
+misses above are the drag. **Fabrication risk is the number that matters most**, and it is the
+extraction analog of axis (a)'s refusal-grade false positive: of the 28 genuinely-absent cells,
+3 (0.107) were wrongly claimed as located. All three are the same failure: the paper NAMES a
+concept it never gives a value for (a cited `ImageNet` in a financial paper's reference list, the
+word `accuracy` in a regression paper that reports only MAPE, `sensitivity analyses` in PRISMA),
+and the lexical extractor grounds on that token and reports a nearby unrelated number. That is
+the precise error the extraction-tables skill's anchoring-plus-layer design exists to catch, and
+0.107 on a weak baseline is the measurement that justifies the design rather than an assertion
+that it is safe.
+
+### What this n certifies, and what it does not
+
+- **Nothing below 0.10 at any per-column n.** Every per-column row is n <= 21, and a perfect
+  21/21 has a 95% Wilson interval reaching down only to 0.845 (implied error-rate upper bound
+  0.155, above 0.10), so not one column certifies an error rate below 0.10 even at 1.000. The
+  D17 gate size (>= 100 cells, >= 20 per column type) exists to make each column MEASURABLE, not
+  to license a bound. This is the same caveat that binds the small per-class rows in axis (a).
+- **The headline 0.916 is a baseline measurement, not a bar.** Like axis (c)'s 0.644, it is the
+  number a richer layer must beat, quoted with its interval so nobody reads it as a guarantee.
+- **The abstract-layer 1.000 certifies nothing about full text.** It is an easier task on a
+  different surface (n = 19), reported to prove the layer is labeled, not to be quoted alone.
+- **Determinism (D15).** Two consecutive `--json` runs are byte-identical (md5
+  `80b6b3c83c27b92cfc1446657a025564`); deleting one snapshot and re-running reports the affected
+  cells SKIPPED and exits non-zero, re-fetching nothing.
 
 ## What these n certify, and what they do not
 

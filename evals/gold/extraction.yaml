@@ -1,0 +1,971 @@
+# M4.7 extraction gold set: labeled extraction cells for the extraction-tables gate (D18).
+#
+# A cell is a (paper, column, expected value) triple. The gate (M4.7) asks for >= 100 labeled
+# cells, >= 20 per column TYPE, with cell-level location accuracy plus an abstention row
+# ("not reported" precision) and Wilson CIs (D17). This file has 140 cells across six column
+# types (population, method, dataset, metric_name, metric_value, sample_size), of which 27 are
+# "not reported" (the paper genuinely does not state that value) so the abstention side is
+# measurable.
+#
+# HOW THIS WAS BUILT, and what it is honest about.
+#
+# Every value here was read off the paper's OWN text. Nothing was invented, paraphrased into a
+# value, or written from memory of what a paper probably reports. A fabricated cell is worse
+# than a missing one, so where a value could not be verified from the real text it is labeled
+# "not reported" or omitted.
+#
+# The full-text cells (doc is a URL) are the six open-access documents the axis (c)
+# faithfulness gold set also uses: two arXiv HTML papers and four PLOS articles, all indexed
+# offline with researcher_core.fulltext.extract() + PassageIndex() from the SAME committed
+# snapshots (evals/snapshots/fulltext/...). They anchor at the FULL-TEXT layer. The
+# abstract-layer cells (doc is a bare DOI) are papers with no extractable open-access full
+# text; their OpenAlex abstract is the only text there is, so those cells anchor at the
+# ABSTRACT layer and are never presented as full-text-verified (D11/D18).
+#
+# Each cell carries:
+#   column    one of population | method | dataset | metric_name | metric_value | sample_size
+#   expected  the value as written in the paper, or "not reported"
+#   query     an ANSWER-FREE probe (what a user searching for this column would type). It never
+#             contains the answer, so the present/absent decision cannot cheat off the label.
+#   must      the concept token(s) a passage must contain to be "on topic" for this cell. For a
+#             present cell these name the concept, not the value; for a "not reported" cell they
+#             name the (absent, or present-but-valueless) concept the extractor would ground on.
+#
+# The runner (evals/run_extraction.py) retrieves the BM25-top passages for `query`, grounds on
+# `must`, and for a numeric column requires a digit in the grounded passage before it will say
+# a value is stated. A present cell scores right only when the labeled value is ALSO locatable
+# in a retrieved passage. Measured numbers live in evals/BENCHMARKS.md; they are what they are.
+
+axis: extraction
+column_types: [population, method, dataset, metric_name, metric_value, sample_size]
+abstention: not reported
+documents:
+  - id: "https://arxiv.org/html/2504.01840v1"
+    layer: full-text
+    title: "LRAGE: Legal Retrieval Augmented Generation Evaluation Tool"
+  - id: "https://arxiv.org/html/2606.23915v1"
+    layer: full-text
+    title: "Auditing Retrieval-Augmented Generation Evaluation Across Datasets and Constructs"
+  - id: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    layer: full-text
+    title: "A deep learning framework for financial time series using stacked autoencoders and long-short term memory"
+  - id: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    layer: full-text
+    title: "An empirical survey of data augmentation for time series classification with neural networks"
+  - id: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    layer: full-text
+    title: "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews"
+  - id: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    layer: full-text
+    title: "Learning brain dynamics for decoding and predicting individual differences"
+  - id: "10.1111/jce.13889"
+    layer: abstract
+    title: "Prospective validation of a deep learning electrocardiogram algorithm for the detection of left ventricular systolic dysfunction"
+  - id: "10.1109/tbme.2012.2208112"
+    layer: abstract
+    title: "Atrial Fibrillation Detection Using an iPhone 4S"
+items:
+  # ==================== population (20: 16 present, 4 not reported) ====================
+  - id: x001
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: population
+    expected: "six stock indices"
+    query: "which markets or indices are the study population"
+    must: [indices]
+  - id: x002
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: population
+    expected: "CSI 300, Nifty 50, Hang Seng index, Nikkei 225, S&P500 and DJIA index"
+    query: "list of the stock indices chosen for testing"
+    must: [csi]
+  - id: x003
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: population
+    expected: "developing markets"
+    query: "what market development conditions were compared"
+    must: [developing]
+  - id: x004
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: population
+    expected: "index futures"
+    query: "what financial instruments correspond to each index"
+    must: [futures]
+  - id: x005
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: population
+    expected: "time series classification"
+    query: "what task domain is surveyed"
+    must: [classification]
+  - id: x006
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: population
+    expected: "time series data augmentation"
+    query: "what technique family is the subject of the survey"
+    must: [augmentation]
+  - id: x007
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: population
+    expected: "systematic reviews of studies that evaluate the effects of health interventions"
+    query: "what kind of reviews is PRISMA 2020 designed for"
+    must: [interventions]
+  - id: x008
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: population
+    expected: "patients, healthcare providers, researchers, and policy makers"
+    query: "who are the users of systematic reviews"
+    must: [policy]
+  - id: x009
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: population
+    expected: "human fMRI data during movie-watching"
+    query: "what population and data modality were studied"
+    must: [fmri]
+  - id: x010
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: population
+    expected: "participants scanned while watching movie excerpts"
+    query: "who are the study participants"
+    must: [participants]
+  - id: x011
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: population
+    expected: "moving-circles"
+    query: "what continuous experimental paradigm besides movies was used"
+    must: [moving-circles]
+  - id: x012
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: population
+    expected: "commercial RAG systems"
+    query: "what systems in the legal domain were analyzed for hallucination"
+    must: [commercial]
+  - id: x013
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: population
+    expected: "domain experts"
+    query: "who is the evaluation tool intended for"
+    must: [experts]
+  - id: x014
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: population
+    expected: "U.S. legal domain"
+    query: "what professional domain does the study focus on"
+    must: [legal]
+  - id: x015
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: population
+    expected: "retrieval-augmented generation"
+    query: "what kind of system output is the audit about"
+    must: [retrieval-augmented]
+  - id: x016
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: population
+    expected: "automatic metrics for attribution"
+    query: "what is being audited across datasets"
+    must: [attribution]
+  - id: x017
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: population
+    expected: "not reported"
+    query: "how many human patients were enrolled in the study"
+    must: [patients]
+  - id: x018
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: population
+    expected: "not reported"
+    query: "how many human patients or subjects were recruited"
+    must: [patients]
+  - id: x019
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: population
+    expected: "not reported"
+    query: "how many human participants were recruited"
+    must: [participants]
+  - id: x020
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: population
+    expected: "not reported"
+    query: "what clinical patient cohort was audited"
+    must: [patients]
+
+  # ==================== method (20: 18 present, 2 not reported) ====================
+  - id: x021
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: method
+    expected: "WSAEs-LSTM"
+    query: "what is the proposed model called"
+    must: [model]
+  - id: x022
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: method
+    expected: "stacked autoencoders"
+    query: "what unsupervised feature learning method is used"
+    must: [autoencoders]
+  - id: x023
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: method
+    expected: "long-short term memory"
+    query: "what recurrent architecture forecasts the closing price"
+    must: [memory]
+  - id: x024
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: method
+    expected: "wavelet transform"
+    query: "what method denoises the input time series"
+    must: [wavelet]
+  - id: x025
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: method
+    expected: "WLSTM"
+    query: "what comparison model combines wavelet and lstm only"
+    must: [wlstm]
+  - id: x026
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: method
+    expected: "conventional RNN"
+    query: "what recurrent network is used as the performance benchmark"
+    must: [rnn]
+  - id: x027
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: method
+    expected: "jittering"
+    query: "what augmentation method adds noise to time series"
+    must: [jittering]
+  - id: x028
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: method
+    expected: "SPAWNER"
+    query: "what warped time series generator method is evaluated"
+    must: [spawner]
+  - id: x029
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: method
+    expected: "LSTM-FCN"
+    query: "what convolutional recurrent model is used in the evaluation"
+    must: [lstm-fcn]
+  - id: x030
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: method
+    expected: "ResNet"
+    query: "what residual network is used as a classifier"
+    must: [resnet]
+  - id: x031
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: method
+    expected: "pyserini"
+    query: "what library implements the retriever module"
+    must: [pyserini]
+  - id: x032
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: method
+    expected: "rerankers"
+    query: "what library implements the reranker module"
+    must: [rerankers]
+  - id: x033
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: method
+    expected: "Llama-3.1-8B"
+    query: "what default language model backbone was used"
+    must: [llama-3.1-8b]
+  - id: x034
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: method
+    expected: "lm-evaluation-harness"
+    query: "what evaluation harness is the tool built on"
+    must: [lm-evaluation-harness]
+  - id: x035
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: method
+    expected: "BERTScore"
+    query: "what embedding-based baseline scorer is audited"
+    must: [bertscore]
+  - id: x036
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: method
+    expected: "MiniCheck"
+    query: "what purpose-built checker model is audited"
+    must: [minicheck]
+  - id: x037
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: method
+    expected: "lexical Jaccard"
+    query: "what lexical overlap scorer is audited"
+    must: [jaccard]
+  - id: x038
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: method
+    expected: "Gated Recurrent Units"
+    query: "what recurrent unit type is the architecture based on"
+    must: [gru]
+  - id: x039
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: method
+    expected: "not reported"
+    query: "what machine learning classifier did the authors train"
+    must: [classifier]
+  - id: x040
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: method
+    expected: "not reported"
+    query: "what reinforcement learning algorithm was used"
+    must: [reinforcement]
+
+  # ==================== dataset (20: 18 present, 2 not reported) ====================
+  - id: x041
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: dataset
+    expected: "WIND database"
+    query: "what database provided the sample trading data"
+    must: [wind]
+  - id: x042
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: dataset
+    expected: "CSMAR database"
+    query: "what database besides WIND supplied the data"
+    must: [csmar]
+  - id: x043
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: dataset
+    expected: "Investing.com"
+    query: "what global financial portal provided data"
+    must: [investing.com]
+  - id: x044
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: dataset
+    expected: "2018 UCR Time Series Archive"
+    query: "what repository of datasets was used for evaluation"
+    must: [ucr]
+  - id: x045
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: dataset
+    expected: "OliveOil"
+    query: "which example dataset illustrates the transformations figure"
+    must: [oliveoil]
+  - id: x046
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: dataset
+    expected: "Adiac and Fish"
+    query: "which contour-based datasets are given as an example"
+    must: [adiac]
+  - id: x047
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: dataset
+    expected: "ImageNet"
+    query: "what image benchmark did AlexNet set a record on"
+    must: [imagenet]
+  - id: x048
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: dataset
+    expected: "Pile-of-Law"
+    query: "what legal corpus is preprocessed for retrieval"
+    must: [pile-of-law]
+  - id: x049
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: dataset
+    expected: "LegalBench"
+    query: "what English legal benchmark is supported"
+    must: [legalbench]
+  - id: x050
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: dataset
+    expected: "CAIL"
+    query: "what Chinese legal training set was converted into a retrieval corpus"
+    must: [cail]
+  - id: x051
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: dataset
+    expected: "LawBench"
+    query: "what Chinese legal benchmark is supported"
+    must: [lawbench]
+  - id: x052
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: dataset
+    expected: "AttributionBench"
+    query: "what generated-answer attribution benchmark is audited"
+    must: [attributionbench]
+  - id: x053
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: dataset
+    expected: "HAGRID"
+    query: "what independent long-form attribution set is used"
+    must: [hagrid]
+  - id: x054
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: dataset
+    expected: "MS MARCO"
+    query: "what passage ranking benchmark provides human labels"
+    must: [marco]
+  - id: x055
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: dataset
+    expected: "HotpotQA"
+    query: "what multi-hop provenance dataset is used"
+    must: [hotpotqa]
+  - id: x056
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: dataset
+    expected: "VitaminC"
+    query: "what fact-check entailment dataset is audited"
+    must: [vitaminc]
+  - id: x057
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: dataset
+    expected: "Human Connectome Project"
+    query: "what project provided the movie-watching fMRI data"
+    must: [connectome]
+  - id: x058
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: dataset
+    expected: "Schaefer-300"
+    query: "what cortical parcellation was used at the voxel level"
+    must: [schaefer]
+  - id: x059
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: dataset
+    expected: "not reported"
+    query: "what image classification benchmark was used"
+    must: [imagenet]
+  - id: x060
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: dataset
+    expected: "not reported"
+    query: "what image dataset such as ImageNet was used"
+    must: [imagenet]
+
+  # ==================== metric_name (22: 14 present, 8 not reported) ====================
+  - id: x061
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_name
+    expected: "MAPE"
+    query: "what error metric measures predictive accuracy"
+    must: [mape]
+  - id: x062
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_name
+    expected: "correlation coefficient"
+    query: "what linear-association metric is reported"
+    must: [correlation]
+  - id: x063
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_name
+    expected: "Theil"
+    query: "what inequality-coefficient metric is reported"
+    must: [theil]
+  - id: x064
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: metric_name
+    expected: "accuracy"
+    query: "what metric measures classification performance"
+    must: [accuracy]
+  - id: x065
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: metric_name
+    expected: "hallucination rate"
+    query: "what metric quantifies unfaithful generation"
+    must: [hallucination]
+  - id: x066
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: metric_name
+    expected: "F1"
+    query: "what harmonic-mean metric is reported in the results tables"
+    must: [f1]
+  - id: x067
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: metric_name
+    expected: "overall accuracy"
+    query: "what aggregate correctness metric does the tool track"
+    must: [accuracy]
+  - id: x068
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_name
+    expected: "AUROC"
+    query: "what threshold-free ranking metric is reported for attribution"
+    must: [auroc]
+  - id: x069
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_name
+    expected: "top-1 provenance accuracy"
+    query: "what metric is used in the confusable-evidence stress test"
+    must: [provenance]
+  - id: x070
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_name
+    expected: "fooled rate"
+    query: "what rate measures a distractor outranking co-provenant passages"
+    must: [fooled]
+  - id: x071
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_name
+    expected: "ROUGE-L"
+    query: "what deterministic answer-level overlap metric did not move"
+    must: [rouge-l]
+  - id: x072
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_name
+    expected: "Kendall"
+    query: "what rank correlation statistic shows the ranking inversion"
+    must: [kendall]
+  - id: x073
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_name
+    expected: "citation count"
+    query: "what answer-level count metric did the reward not move"
+    must: [citation]
+  - id: x074
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: metric_name
+    expected: "classification"
+    query: "what task performance is reported for movie clips"
+    must: [classification]
+  - id: x075
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_name
+    expected: "not reported"
+    query: "what AUROC metric is reported"
+    must: [auroc]
+  - id: x076
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_name
+    expected: "not reported"
+    query: "what F1 score metric is reported"
+    must: [f1]
+  - id: x077
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: metric_name
+    expected: "not reported"
+    query: "what AUROC metric is reported"
+    must: [auroc]
+  - id: x078
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: metric_name
+    expected: "not reported"
+    query: "what AUROC metric is reported for decoding"
+    must: [auroc]
+  - id: x079
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: metric_name
+    expected: "not reported"
+    query: "what F1 score metric is reported for decoding"
+    must: [f1]
+  - id: x080
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: metric_name
+    expected: "not reported"
+    query: "what AUROC metric is reported"
+    must: [auroc]
+  - id: x081
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: metric_name
+    expected: "not reported"
+    query: "what F1 score metric is reported"
+    must: [f1]
+  - id: x082
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_name
+    expected: "not reported"
+    query: "what specificity metric is reported"
+    must: [specificity]
+
+  # ==================== metric_value (22: 16 present, 6 not reported) ====================
+  - id: x083
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: metric_value
+    expected: "17% hallucination rate"
+    query: "what hallucination rate did the most competent legal RAG system exhibit"
+    must: [hallucination]
+  - id: x084
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: metric_value
+    expected: "40-50%"
+    query: "what fraction of hallucinations originate in retrieval failure"
+    must: [hallucinations]
+  - id: x085
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_value
+    expected: "AUROC 0.90"
+    query: "what AUROC does the NLI scorer reach on AttributedQA"
+    must: [attributedqa]
+  - id: x086
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_value
+    expected: "0.53"
+    query: "what AUROC does the NLI scorer collapse to on LFQA"
+    must: [lfqa]
+  - id: x087
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_value
+    expected: "0.91"
+    query: "what AUROC does BERTScore reach on LFQA"
+    must: [bertscore]
+  - id: x088
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_value
+    expected: "0.934"
+    query: "what top-1 provenance accuracy does the semantic-only scorer reach"
+    must: [semantic]
+  - id: x089
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_value
+    expected: "0.775"
+    query: "what top-1 provenance accuracy does the lexical-only scorer reach"
+    must: [lexical]
+  - id: x090
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_value
+    expected: "0.172"
+    query: "what mean leave-one-dataset-out regret does the naive selection rule incur"
+    must: [regret]
+  - id: x091
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: metric_value
+    expected: "0.044"
+    query: "what mean leave-one-dataset-out regret does MiniCheck leave"
+    must: [minicheck]
+  - id: x092
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_value
+    expected: "0.019"
+    query: "what average MAPE does the model reach on CSI 300"
+    must: [csi]
+  - id: x093
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_value
+    expected: "0.944"
+    query: "what average correlation coefficient R does the model reach on CSI 300"
+    must: [csi]
+  - id: x094
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_value
+    expected: "63.026%"
+    query: "what average annual earnings does the model reach in mainland China"
+    must: [china]
+  - id: x095
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_value
+    expected: "45.418%"
+    query: "what average annual earnings does the model reach in the India market"
+    must: [india]
+  - id: x096
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_value
+    expected: "0.011"
+    query: "what MAPE does the model reach predicting S&P 500 and DJIA"
+    must: [mape]
+  - id: x097
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: metric_value
+    expected: "90%"
+    query: "what accuracy does the model reach on 15-way movie-clip classification"
+    must: [classification]
+  - id: x098
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: metric_value
+    expected: "60%"
+    query: "what accuracy does the model reach on binary classification at the voxel level"
+    must: [binary]
+  - id: x099
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_value
+    expected: "not reported"
+    query: "what classification accuracy percentage did WSAEs-LSTM achieve"
+    must: [accuracy]
+  - id: x100
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: metric_value
+    expected: "not reported"
+    query: "what AUROC value did the model achieve"
+    must: [auroc]
+  - id: x101
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: metric_value
+    expected: "not reported"
+    query: "what F1 score value is reported"
+    must: [f1]
+  - id: x102
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: metric_value
+    expected: "not reported"
+    query: "what AUROC value is reported for decoding"
+    must: [auroc]
+  - id: x103
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: metric_value
+    expected: "not reported"
+    query: "what BLEU score did the generated answers achieve"
+    must: [bleu]
+  - id: x104
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: metric_value
+    expected: "not reported"
+    query: "what sensitivity value is reported"
+    must: [sensitivity]
+
+  # ==================== sample_size (21: 17 present, 4 not reported) ====================
+  - id: x105
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: sample_size
+    expected: "202 examples"
+    query: "how many examples did Magesh analyze in the U.S. legal domain"
+    must: [examples]
+  - id: x106
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: sample_size
+    expected: "162 legal language understanding tasks"
+    query: "how many tasks does LegalBench comprise"
+    must: [legalbench]
+  - id: x107
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: sample_size
+    expected: "20 Chinese legal tasks"
+    query: "how many tasks does LawBench comprise"
+    must: [lawbench]
+  - id: x108
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: sample_size
+    expected: "top 3 retrieved documents"
+    query: "how many retrieved documents are the default setting"
+    must: [retrieved]
+  - id: x109
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: sample_size
+    expected: "128 time series classification datasets"
+    query: "how many datasets were used for the evaluation"
+    must: [datasets]
+  - id: x110
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: sample_size
+    expected: "12 time series data augmentation methods"
+    query: "how many augmentation methods were empirically evaluated"
+    must: [methods]
+  - id: x111
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: sample_size
+    expected: "six different types of neural networks"
+    query: "how many neural network types were tested"
+    must: [networks]
+  - id: x112
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: sample_size
+    expected: "5000"
+    query: "how many training epochs were used"
+    must: [epochs]
+  - id: x113
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: sample_size
+    expected: "12 widely used technical indicators"
+    query: "how many technical indicators are inputs"
+    must: [indicators]
+  - id: x114
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944"
+    column: sample_size
+    expected: "80% training"
+    query: "what proportion of the data is the training set"
+    must: [training]
+  - id: x115
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: sample_size
+    expected: "27-item checklist"
+    query: "how many items does the PRISMA 2020 checklist contain"
+    must: [checklist]
+  - id: x116
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: sample_size
+    expected: "22 systematic reviewers"
+    query: "how many systematic reviewers were invited to give feedback"
+    must: [reviewers]
+  - id: x117
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: sample_size
+    expected: "60 documents"
+    query: "how many documents providing reporting guidance were reviewed"
+    must: [documents]
+  - id: x118
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pmed.1003583"
+    column: sample_size
+    expected: "110 of 220 invited responded"
+    query: "how many invited methodologists responded to the survey"
+    must: [invited]
+  - id: x119
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: sample_size
+    expected: "N = 176 participants"
+    query: "how many participants were used for the movie-watching analysis"
+    must: [participants]
+  - id: x120
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: sample_size
+    expected: "N = 122 participants"
+    query: "how many participants were used for the voxel-level analysis"
+    must: [voxel]
+  - id: x121
+    doc: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008943"
+    column: sample_size
+    expected: "32 units"
+    query: "how many units does the single GRU layer have"
+    must: [units]
+  - id: x122
+    doc: "https://arxiv.org/html/2504.01840v1"
+    column: sample_size
+    expected: "not reported"
+    query: "how many training epochs were used"
+    must: [epochs]
+  - id: x123
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: sample_size
+    expected: "not reported"
+    query: "what training batch size was used"
+    must: [batch]
+  - id: x124
+    doc: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841"
+    column: sample_size
+    expected: "not reported"
+    query: "how many training epochs were used"
+    must: [epochs]
+  - id: x125
+    doc: "https://arxiv.org/html/2606.23915v1"
+    column: sample_size
+    expected: "n=160"
+    query: "how many examples were in the cross-family LLM annotation probe"
+    must: [probe]
+
+  # ==================== abstract layer (22 cells) ====================
+  # These two papers have NO extractable open-access full text (paywalled / no OA copy), so the
+  # abstract is the only text there is: cells anchor at the ABSTRACT layer and are never reported
+  # as full-text-verified (D11/D18). At this layer the whole abstract is one retrieved unit, so
+  # "locatable" means "the value is stated in the abstract" rather than "retrievable from the
+  # right passage"; the runner reports the two layers separately so the numbers are not blended.
+
+  # ---- 10.1111/jce.13889 (Attia et al., deep-learning ECG for LV dysfunction) ----
+  - id: x126
+    doc: "10.1111/jce.13889"
+    column: population
+    expected: "Patients undergoing routine ECG"
+    query: "who is the target population of the screening algorithm"
+    must: [routine]
+  - id: x127
+    doc: "10.1111/jce.13889"
+    column: method
+    expected: "deep learning algorithm"
+    query: "what method predicts a low ejection fraction"
+    must: [algorithm]
+  - id: x128
+    doc: "10.1111/jce.13889"
+    column: dataset
+    expected: "Mayo Clinic ECG laboratory"
+    query: "where were the ECGs collected"
+    must: [mayo]
+  - id: x129
+    doc: "10.1111/jce.13889"
+    column: dataset
+    expected: "transthoracic echocardiogram"
+    query: "what reference standard assessed left ventricular function"
+    must: [transthoracic]
+  - id: x130
+    doc: "10.1111/jce.13889"
+    column: metric_name
+    expected: "sensitivity"
+    query: "what true positive rate metric is reported"
+    must: [sensitivity]
+  - id: x131
+    doc: "10.1111/jce.13889"
+    column: metric_name
+    expected: "specificity"
+    query: "what true negative rate metric is reported"
+    must: [specificity]
+  - id: x132
+    doc: "10.1111/jce.13889"
+    column: metric_name
+    expected: "area under the curve"
+    query: "what threshold-free discrimination metric is reported"
+    must: [curve]
+  - id: x133
+    doc: "10.1111/jce.13889"
+    column: metric_value
+    expected: "82.5% sensitivity"
+    query: "what sensitivity did the algorithm achieve"
+    must: [sensitivity]
+  - id: x134
+    doc: "10.1111/jce.13889"
+    column: metric_value
+    expected: "86.8% specificity"
+    query: "what specificity did the algorithm achieve"
+    must: [specificity]
+  - id: x135
+    doc: "10.1111/jce.13889"
+    column: metric_value
+    expected: "area under the curve, 0.918"
+    query: "what area under the curve did the algorithm achieve"
+    must: [curve]
+  - id: x136
+    doc: "10.1111/jce.13889"
+    column: sample_size
+    expected: "16 056 adult patients"
+    query: "how many adult patients underwent routine ECG"
+    must: [adult]
+  - id: x137
+    doc: "10.1111/jce.13889"
+    column: sample_size
+    expected: "3874 patients"
+    query: "how many patients had a TTE and ECG less than a month apart"
+    must: [apart]
+  - id: x138
+    doc: "10.1111/jce.13889"
+    column: metric_name
+    expected: "not reported"
+    query: "what F1 score metric is reported"
+    must: [f1]
+
+  # ---- 10.1109/tbme.2012.2208112 (AF detection using an iPhone 4S) ----
+  - id: x139
+    doc: "10.1109/tbme.2012.2208112"
+    column: population
+    expected: "25 prospectively recruited subjects with AF"
+    query: "who are the recruited subjects for the iPhone test"
+    must: [subjects]
+  - id: x140
+    doc: "10.1109/tbme.2012.2208112"
+    column: method
+    expected: "photoplethysmogram"
+    query: "what signal does the iPhone camera record from a fingertip"
+    must: [photoplethysmogram]
+  - id: x141
+    doc: "10.1109/tbme.2012.2208112"
+    column: method
+    expected: "sample entropy"
+    query: "what entropy statistic assesses atrial fibrillation"
+    must: [entropy]
+  - id: x142
+    doc: "10.1109/tbme.2012.2208112"
+    column: dataset
+    expected: "MIT-BIH"
+    query: "what public arrhythmia database derived the thresholds"
+    must: [mit-bih]
+  - id: x143
+    doc: "10.1109/tbme.2012.2208112"
+    column: metric_name
+    expected: "accuracy"
+    query: "what performance metric is reported for detection"
+    must: [accuracy]
+  - id: x144
+    doc: "10.1109/tbme.2012.2208112"
+    column: metric_value
+    expected: "accuracy of 100%"
+    query: "what accuracy was achieved for detecting the presence of AF"
+    must: [accuracy]
+  - id: x145
+    doc: "10.1109/tbme.2012.2208112"
+    column: sample_size
+    expected: "64-beat segments"
+    query: "what segment length was used from the MIT-BIH databases"
+    must: [segments]
+  - id: x146
+    doc: "10.1109/tbme.2012.2208112"
+    column: population
+    expected: "not reported"
+    query: "how many patients were enrolled in the study"
+    must: [patients]
+  - id: x147
+    doc: "10.1109/tbme.2012.2208112"
+    column: metric_name
+    expected: "not reported"
+    query: "what area under the curve is reported"
+    must: [auc]

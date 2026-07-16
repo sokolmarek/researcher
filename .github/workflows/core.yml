@@ -176,6 +176,11 @@ jobs:
           set -o pipefail
           uv run --project core python evals/run_axes.py | tee axes-report.txt
 
+      - name: Extraction benchmark (M4.7 gate)
+        run: |
+          set -o pipefail
+          uv run --project core python evals/run_extraction.py | tee extraction-report.txt
+
       - name: Pooled trigger eval
         run: |
           set -o pipefail
