@@ -69,13 +69,25 @@ jobs:
 
       - name: Em-dash guard (all tracked .md, .tex, .json)
         run: |
-          matches=$(git ls-files '*.md' '*.tex' '*.json' | xargs grep -ln $'—' 2>/dev/null || true)
+          # House style forbids em dashes in AUTHORED content. Recorded API
+          # snapshots are not authored content: they are verbatim upstream
+          # responses, content-addressed by the SHA-256 of the response body, and
+          # real paper titles and abstracts contain em dashes. Editing one to
+          # satisfy this guard would change its hash, break the snapshot key, and
+          # destroy the determinism the whole eval suite rests on. So the two
+          # snapshot stores are excluded, and nothing else is: core/schemas,
+          # core/*.md, and every eval runner are still scanned.
+          matches=$(git ls-files '*.md' '*.tex' '*.json' \
+            | grep -vE '^(core/tests/snapshots/|evals/snapshots/)' \
+            | xargs grep -ln $'—' 2>/dev/null || true)
           if [ -n "$matches" ]; then
             echo "$matches"
-            echo "Em dash found. House style forbids em dashes anywhere in tracked content."
+            echo "Em dash found. House style forbids em dashes in authored content."
+            echo "(Recorded snapshots under core/tests/snapshots/ and evals/snapshots/ are exempt:"
+            echo " they are verbatim upstream responses and editing one breaks its content hash.)"
             exit 1
           fi
-          echo "No em dashes in tracked content."
+          echo "No em dashes in authored content."
 
       - name: Placeholder guard
         run: |

@@ -85,9 +85,14 @@ jobs:
 
       - name: Package the plugin
         run: |
+          # core/ ships (it is the kernel), but its local tool caches never do. A fresh CI
+          # checkout has none of these, but excluding them keeps the package correct even if a
+          # future step runs `uv sync` before packaging.
           zip -r "researcher-${{ needs.validate.outputs.tag }}.zip" . \
             -x '.git/*' -x 'docs/*' -x 'assets/*' -x '.github/*' -x '*.zip' \
-            -x 'templates/word/node_modules/*'
+            -x 'templates/word/node_modules/*' \
+            -x 'core/.venv/*' -x 'core/.pytest_cache/*' -x 'core/.ruff_cache/*' \
+            -x 'core/.mypy_cache/*' -x '*/__pycache__/*' -x '*.pyc'
 
       - name: The package must contain a working plugin
         # A file-by-file check alone is not enough: an -x exclude pattern that
@@ -122,6 +127,7 @@ jobs:
             hooks/hooks.json \
             references/integrity-constraints.md \
             references/figure-styles.md \
+            references/core-cli.md \
             scripts/citation-check-hook.py \
             scripts/draft-integrity-hook.py \
             scripts/install-git-hooks.py \
@@ -129,7 +135,9 @@ jobs:
             scripts/latex-compile.py \
             scripts/latex_engine.py \
             evals/example-freshness.py \
-            templates/word/build-docx.js
+            templates/word/build-docx.js \
+            core/pyproject.toml \
+            core/researcher_core/cli.py
           do
             if ! grep -qxF "$path" entries.txt; then
               echo "Missing from the release package: $path"
@@ -137,7 +145,9 @@ jobs:
             fi
           done
 
-          # Every runtime directory must be present and non-empty.
+          # Every runtime directory must be present and non-empty. core/ is the evidence
+          # kernel, the whole point of 0.3.0: an exclude pattern that dropped it would ship
+          # a plugin that silently loses citation verification, so it is asserted here too.
           for dir in \
             .claude-plugin \
             skills \
@@ -149,7 +159,9 @@ jobs:
             scripts \
             hooks \
             evals \
-            examples
+            examples \
+            core \
+            core/researcher_core/connectors
           do
             n=$(grep -cE "^${dir}/.*[^/]$" entries.txt || true)
             if [ "$n" -eq 0 ]; then
@@ -164,6 +176,13 @@ jobs:
           skills=$(grep -cE '^skills/[^/]+/SKILL\.md$' entries.txt || true)
           if [ "$skills" -ne 29 ]; then
             echo "Expected 29 skills/*/SKILL.md in the package, found ${skills}."
+            bad=1
+          fi
+
+          # All 8 kernel connectors. A partial connector set is a silently degraded kernel.
+          conns=$(grep -cE '^core/researcher_core/connectors/[a-z_]+\.py$' entries.txt || true)
+          if [ "$conns" -lt 9 ]; then
+            echo "Expected the 8 connectors plus base.py under core/.../connectors/, found ${conns}."
             bad=1
           fi
 

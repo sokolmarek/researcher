@@ -637,3 +637,9 @@ items:
     expected: current
     title: "Self-supervised Graph Learning for Recommendation"
     openalex_is_retracted: false
+  # Added 2026-07-14 to restore the expression-of-concern class to the D17 floor of 20 after six
+  # items were correctly relabeled to retracted. Verified live: real paper title, an
+  # expression_of_concern in Crossref update-to, NO retraction notice, OpenAlex is_retracted false.
+  - doi: "10.1186/s12902-018-0248-0"
+    expected: expression-of-concern
+    title: "The effects of synbiotic supplementation on hormonal status, biomarkers"

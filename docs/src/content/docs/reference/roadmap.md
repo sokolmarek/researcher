@@ -6,7 +6,7 @@ sidebar:
   order: 4
 ---
 
-This page is an honest sketch of where Researcher is going, organized as versioned milestones. The first milestone is the current release; everything after it is **planned, not shipped**. Treat the later milestones as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
+This page is an honest sketch of where Researcher is going, organized as versioned milestones. Milestones 1 and 2 have **shipped**; everything after them is **planned, not shipped**. Treat the later milestones as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
 
 One thing that will not change: the **plugin stays the primary experience**. Everything on this page is about making the plugin more trustworthy and more portable, not about replacing it with some other product. You should still be able to type "review my paper" at 3 AM and get sensible help.
 
@@ -18,7 +18,7 @@ Today, a lot of discovery leans on general web search. That is flexible, but it 
 
 Just as important is what the direction is not: a larger skill count. The goal is a measured, trustworthy core. From Milestone 2 onward, every new capability lands with its own benchmark and ships only when that benchmark is green. A feature that cannot prove itself waits.
 
-## Milestone 1 (0.2.2, current): release correctness
+## Milestone 1 (0.2.0, shipped): release correctness
 
 The current release is not about new surface area. It is about making what already exists correct and honestly described:
 
@@ -32,32 +32,37 @@ The current release is not about new surface area. It is about making what alrea
 - **Figure style presets** (default, nature, ieee) in `references/figure-styles.md`, plus the new image-prompt-crafting skill, which brings the skill count to 29.
 - **Hardened CI.**
 
-## Milestone 2 (0.3.0): the evaluation-first evidence kernel
+## Milestone 2 (0.3.0, shipped): the evaluation-first evidence kernel
 
-This is where the deterministic core (`core/`) becomes real, and it is evaluation-first by construction: benchmarks land with the code, and nothing in this milestone ships until its benchmark is green.
+The deterministic core (`core/`) is real. It was built evaluation-first: the benchmarks landed with the code, and they are published in [`evals/BENCHMARKS.md`](https://github.com/sokolmarek/researcher/blob/main/evals/BENCHMARKS.md) with the weak axis and the red gate left in.
 
-The foundation is a retrieval engine that queries real scholarly infrastructure directly rather than scraping search-result pages, with **response snapshots** so every run can be replayed deterministically. The intended sources:
+Installing it is **optional**. Without it, the plugin behaves exactly as it did in 0.2.0. See [Installation](/researcher/start/installation/).
+
+The foundation is a retrieval engine that queries real scholarly infrastructure directly rather than scraping search-result pages, with **response snapshots** so every run replays deterministically. Eight sources ship:
 
 - **OpenAlex** for the works graph and metadata
-- **Crossref** for registered DOIs and publisher records
-- **DataCite** for datasets and other non-article research outputs
+- **Crossref** for registered DOIs, publisher records, and update notices
+- **DataCite** for datasets, software, and other non-article research outputs
 - **Semantic Scholar** for citation-graph data and TLDRs
 - **arXiv** for preprints
-- **PubMed / Europe PMC** for biomedical coverage
+- **PubMed** for biomedical coverage
 - **Unpaywall** for open-access full-text locations
+- **OpenCitations** for citation-graph edges
 
-The engine deduplicates across these sources (the same paper shows up in three of them under three slightly different titles) and returns a single deduplicated, canonical record per work. Deterministic in, deterministic out.
+The engine deduplicates across these sources (the same paper shows up in three of them under three slightly different titles) and returns a single canonical record per work. On 210 labeled pairs it made no merge or split errors.
 
-On top of retrieval sit **per-axis verification benchmarks**, one for each question worth answering about a citation:
+On top of retrieval sit **four independent verification axes**. They are reported side by side and never folded into one verdict, because a paper can be entirely real and also retracted:
 
-- **Reference identity**: does the reference resolve to a real record whose metadata matches? Rather than a binary yes/no, the plan is four honest states: **verified**, **mismatch** (a record exists, but authors, year, title, or venue disagree), **unresolvable** (no matching record in any source), and **inconclusive** (the sources disagree or coverage is too thin to decide).
-- **Publication status**: is the work retracted, corrected, or withdrawn? Retraction checks run against Retraction Watch data, so a citation to a withdrawn paper gets flagged before it reaches a reviewer instead of after.
-- **Claim faithfulness**: a paper can be real and still not support the sentence that cites it. This axis anchors each in-text claim against the open full text of its source, checking whether the cited passage actually backs the assertion. This is the difference between "this DOI is valid" and "this DOI supports what you wrote." Both matter. The second is harder.
-- **Accessibility**: can the cited source actually be reached, and at what access level? When the full text is not open, the tool says so plainly rather than pretending.
+- **Reference identity**: does the reference resolve to a real record whose metadata matches? Not a binary yes/no, but four honest states: **verified**, **mismatch** (a record exists, but the metadata disagrees), **unresolvable** (no matching record in any source), and **inconclusive** (a source errored, or coverage is too thin to decide).
+- **Publication status**: **current**, **corrected**, **retracted**, or **expression-of-concern**, derived from Crossref's `update-to` notices cross-checked against OpenAlex's retraction flag. Accuracy 121/121 on the gold set.
+- **Claim faithfulness**: a paper can be real and still not support the sentence that cites it. This axis anchors each claim against the open full text of its source. **It ships as a lexical baseline and it is weak** (see below). The honest version of this axis is the hardest thing on this page.
+- **Accessibility**: can the cited source be reached, and at what depth? When the full text is not open, the tool says so plainly rather than pretending.
 
-Two more pieces round out the kernel. **Lexical passage retrieval** locates the supporting span inside open full text, deliberately lexical first (the embedding layer is deferred, see below). And **hardened provenance** records every query, every source hit, and every gate decision in an append-only log where nothing is overwritten and corrections are new entries. If a reviewer asks "how did you find these 47 papers," the log is the answer.
+**The number that matters most is zero.** Only `unresolvable` and `mismatch` can accuse anyone of a bad citation; `inconclusive` never does. On 100 real references, the kernel accused **none** of them (95% Wilson [0.000, 0.037]), while still catching every one of the 25 invented references. That asymmetry is deliberate: telling an honest author that a paper they read and cited correctly does not exist is the worst thing this system can do, so thin or dirty evidence always falls to `inconclusive` rather than to a refusal.
 
-For contrast, what ships today: the citation commit guard, DOI validation and retraction flags via `scripts/bib-validator.py`, and LaTeX compile checks. Everything else in this milestone is planned.
+**Where it is weak, said plainly.** Claim faithfulness is BM25 plus overlap heuristics, and a lexical method cannot read: it scores 12 of 26 overstatements as fully supported, because an overstatement reuses nearly all the words of the passage it overstates. It answers 75% of claims and abstains correctly on every document with no open full text. That measured rate is precisely the trigger condition for the deferred semantic layer below. The retrieval axis is also short of its gate: a daily OpenAlex search budget ran out during snapshot recording, so 22 of 55 known-item queries are reported as skipped and the benchmark runner exits non-zero rather than going green over a half-measured set.
+
+Two more pieces round out the kernel. **Lexical passage retrieval** locates the supporting span inside open full text and gives every verdict a stable passage ID to point at. And **hardened provenance** records every query and every decision in an append-only ledger where nothing is overwritten, with PRISMA counts derived by aggregation rather than stored. If a reviewer asks "how did you find these 47 papers," the ledger is the answer.
 
 ## Milestone 3 (0.4.0): the evidence-lineage compiler
 
@@ -91,7 +96,7 @@ The last milestone before 1.0.0 is everything a production tool owes its users:
 
 Some things are genuinely hard and intentionally later than any numbered milestone:
 
-- **The semantic RAG layer.** Embeddings, a vector store, and reranking layered on top of Milestone 2's lexical passage index, so answers cite specific passages rather than gesturing at whole papers. This is the most ambitious item here and the least certain.
+- **The semantic RAG layer.** Embeddings, a vector store, and reranking layered on top of Milestone 2's lexical passage index, so answers cite specific passages rather than gesturing at whole papers. This is the most ambitious item here and the least certain. It is deliberately not in the kernel: what the kernel ships is the lexical floor, and this layer's start trigger is the measured faithfulness rate that floor produces, which is now a published number rather than a hunch.
 - **Multi-provider model routing.** Routing different subtasks to different models based on the job, extending today's agent-level model pinning (the code, visualization, and formatting agents run on Sonnet) into something configurable across providers.
 
 These are on the horizon, not around the corner. Listing them is a promise about direction, not a delivery date.

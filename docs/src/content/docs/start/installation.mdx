@@ -12,6 +12,7 @@ import { Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 - **Claude Code** or **Claude Cowork** on a paid plan.
 - **LaTeX compilation:** any TeX installation (see [LaTeX engine](#latex-engine) below).
 - **Word output:** `node` (for `templates/word/build-docx.js`, built on the `docx` library).
+- **The evidence kernel:** optional (see [The evidence kernel](#the-evidence-kernel-optional) below).
 
 ## LaTeX engine
 
@@ -96,6 +97,63 @@ python scripts/latex-compile.py --engine xelatex manuscript/main.tex
     ```
   </TabItem>
 </Tabs>
+
+## The evidence kernel (optional)
+
+Since 0.3.0 the plugin ships `core/`, a deterministic Python package that queries eight scholarly
+indexes directly and verifies references against them. It powers multi-index citation
+verification, retraction and correction checks, open-access resolution, and the provenance ledger.
+
+**You do not have to install it.** Without it, the plugin works exactly as it did in 0.2.0: the
+scripts fall back to their standard-library behavior, and nothing hard-fails. Install it when you
+want citation verification that consults more than one index.
+
+The recommended path is [`uv`](https://docs.astral.sh/uv/). There is no install step at all: `uv`
+provisions the environment from `core/pyproject.toml` the first time a skill calls the kernel.
+
+<Tabs syncKey="os">
+  <TabItem label="macOS">
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+  </TabItem>
+  <TabItem label="Linux">
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+  </TabItem>
+  <TabItem label="Windows">
+    ```powershell
+    winget install astral-sh.uv
+    ```
+  </TabItem>
+</Tabs>
+
+Without `uv`, install it with pip from a clone:
+
+```bash
+pip install -e core/                # base runtime: httpx, rapidfuzz, platformdirs
+pip install -e "core/[fulltext]"    # plus text extraction from open-access PDFs
+```
+
+Check it works:
+
+```bash
+uv run --project core python -m researcher_core --help
+```
+
+The kernel is keyless. Setting a contact address puts your requests in each API's polite pool,
+which raises your rate limits and costs nothing:
+
+```bash
+export OPENALEX_MAILTO="you@example.edu"
+export CROSSREF_MAILTO="you@example.edu"
+export UNPAYWALL_EMAIL="you@example.edu"
+```
+
+What it does not do: semantic search over paper contents (embeddings, vector stores, reranking).
+That layer is deliberately deferred. See the [Roadmap](/researcher/reference/roadmap/), and
+`evals/BENCHMARKS.md` in the repository for what the kernel measurably does and does not get right.
 
 ## Optional connectors
 

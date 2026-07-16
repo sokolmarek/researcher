@@ -1,8 +1,8 @@
 # M2 benchmarks: the measured evidence kernel
 
 This file records what the kernel actually does on the gold sets. It is the M2 exit gate (D16,
-D17): no M3 skill work begins until the lines in [Gate status](#gate-status) are green, and two
-of them are not.
+D17): no M3 skill work begins until the lines in [Gate status](#gate-status) are green, and they
+now all are.
 
 Everything here was MEASURED, on the date below, by the command below, offline from snapshots.
 Nothing here is a target, an estimate, or a number carried over from a smaller set. Where a
@@ -29,17 +29,18 @@ uv run --project core python evals/run_axes.py --record
 ```
 
 The runner exits 1 while any gold item is skipped, so a CI job cannot go green over a benchmark
-that quietly measured half its gold set. It exits 1 today: see [Gate status](#gate-status).
+that quietly measured half its gold set. It exits 0 today, with every gold set fully scored: see
+[Gate status](#gate-status).
 
 ## Provenance and determinism
 
 | | |
 |---|---|
 | core version | 0.1.0 |
-| Snapshots | `evals/snapshots/`, 1126 recorded responses (arxiv 55, crossref 341, datacite 224, fulltext 6, openalex 317, pubmed 78, unpaywall 105) |
+| Snapshots | `evals/snapshots/`, 1198 recorded responses (arxiv 55, crossref 342, datacite 272, fulltext 6, openalex 340, pubmed 78, unpaywall 105) |
 | Recorded | 2026-07-14, live, from the keyless public APIs, polite pool `mareksokol98@gmail.com` |
 | Replay | every number below was produced with zero network calls. Replay mode never awaits a fetcher. |
-| Determinism (D15) | two consecutive runs produced byte-identical reports: both `--json` and the human report hash to the same digest (`be6d058f6b3f300bbff6aeae276027f8` for the human report). |
+| Determinism (D15) | two consecutive `--json` runs produced byte-identical output (md5 `bbc01679ccabfcbd0a11fe6b088963f8`). A deletion test confirms replay is read-only: removing a stored snapshot and running with no flag reports that item skipped and re-fetches nothing. |
 
 Determinism is claimed only for replay from a fixed snapshot set, configuration, and parser
 version, which is exactly what D15 defines it to be. It is not claimed for `--record`.
@@ -51,7 +52,7 @@ often the kernel tells a researcher that a REAL reference of theirs looks fabric
 Only `unresolvable` and `mismatch` are refusal-grade; `inconclusive` never is.
 
 ```
-refusal-grade FALSE POSITIVE    3/99    0.030   95% Wilson [0.010, 0.085]
+refusal-grade FALSE POSITIVE    0/100   0.000   95% Wilson [0.000, 0.037]
 refusal-grade FALSE NEGATIVE    0/50    0.000   95% Wilson [0.000, 0.071]
 ```
 
@@ -62,52 +63,53 @@ on first contact, and the author has no way to defend against it except to distr
 false negative merely fails to catch a bad citation, which leaves the author exactly where they
 were without the tool: it is a missed catch, not an accusation. D9's precedence is built to trade
 in that direction (thin or dirty evidence falls to `inconclusive`, never to a refusal), and the
-measured 0/50 false negatives with 3/99 false positives shows the trade is real but not free.
+measured 0/50 false negatives alongside 0/100 false positives show the trade holds in both
+directions. It is not free: the cost is paid in `verified` recall, where nine real references fall
+to `inconclusive` (below), never in a refusal.
 
-### The three false positives, named
+### Zero false positives, and where the three that used to be here went
 
-Silence about which items failed would be the same as not measuring them.
-
-| Reference | Gold | Called | Why |
-|---|---|---|---|
-| `10.1109/taffc.2020.3014842` (Sarkar and Etemad, self-supervised ECG) | verified | **mismatch** | OpenAlex confirms it. Crossref resolves it with a year 2 off (IEEE early access versus issue year). DataCite, which does not mint this DOI, "resolves" it through the title-search fallback and reports `doi_mismatch`. Two resolving disagreements outvote one confirmation, and D9 rule 2 fires. |
-| `10.5281/zenodo.21358727` (a real Zenodo dataset) | inconclusive | **mismatch** | DataCite confirms it. OpenAlex and Crossref do not hold the DOI, find a similar record by title search, and each report `doi_mismatch`. Two indexes that do not hold the record manufacture the disagreement. |
-| `10.17026/ar/sraj8f` (a real DANS archaeology dataset) | inconclusive | **mismatch** | DataCite resolves the DOI, but the gold title is truncated at 88 characters and the real title is far longer, so similarity is 0.539, below the 0.70 bar. The truncation relaxation does not fire because the short title is under 40% of the long one. |
-
-Two of the three share one root cause: **the title-search fallback lets a source that does not
-hold a DOI produce a resolving disagreement.** An index that does not mint a DOI should return a
-clean negative for it, not a `doi_mismatch` against a paper it found by title. That is a defect
-in the identity layer, it is refusal-grade, and it is the single highest-value fix the M3
-citation audit depends on. It is filed below.
+Silence about which items failed would be the same as not measuring them, so this section names
+what happened rather than declaring victory. An earlier run of this same gold set measured
+**3/99** refusal-grade false positives on real references, and named all three. They are gone.
+Two shared a single root cause (a source that did not hold a DOI was allowed to manufacture a
+`doi_mismatch` against a paper it found by title); the third was a harsh title truncation the
+matcher could not read as truncation. A fourth reference that could not be scored at all, because
+a colon in its title made DataCite return zero hits, is now scored, which is why the negative set
+is 100 rather than 99. All of that is recorded in **Fixes this benchmark drove** below, and the
+colon fix in particular must not be reintroduced. The refusal-grade false positive rate is now
+0/100, and neither refusal-grade recall moved: every invented reference and every wrong-DOI entry
+is still caught.
 
 `core/CALIBRATION.md` measured 0/8 refusal-grade false positives on the 8 honest references of
-the calibration subset. At n = 99 the rate is not zero. Both numbers are correct; the small one
-simply could not see this.
+the calibration subset. At n = 100 the rate is still zero, and the interval is now tight enough
+to license a bound, which the calibration set at n = 8 could not (see the certification section
+below).
 
 ### Full confusion matrix
 
 ```
 gold \ predicted  verified  mismatch  unresolvable  inconclusive
-verified                65         1             0             8
+verified                66         0             0             9
 mismatch                 0        25             0             0
 unresolvable             0         0            25             0
-inconclusive             5         2             0            18
+inconclusive             5         0             0            20
 
-accuracy   133/149   0.893  95% Wilson [0.833, 0.933]
+accuracy   136/150   0.907  95% Wilson [0.849, 0.944]
 ```
 
 | class | n | recall (95% Wilson) | precision (95% Wilson) |
 |---|---|---|---|
-| verified | 74 | 0.878 [0.785, 0.935] | 0.929 [0.843, 0.969] |
-| mismatch | 25 | 1.000 [0.867, 1.000] | 0.893 [0.728, 0.963] |
+| verified | 75 | 0.880 [0.787, 0.936] | 0.930 [0.846, 0.970] |
+| mismatch | 25 | 1.000 [0.867, 1.000] | 1.000 [0.867, 1.000] |
 | unresolvable | 25 | 1.000 [0.867, 1.000] | 1.000 [0.867, 1.000] |
-| inconclusive | 25 | 0.720 [0.524, 0.857] | 0.692 [0.500, 0.835] |
+| inconclusive | 25 | 0.800 [0.609, 0.911] | 0.690 [0.508, 0.827] |
 
 Every one of the 25 invented references was caught, and no real reference was ever called
-`unresolvable`. The `unresolvable` column is clean top to bottom, which is the property the
-commit hook and the M3 compile gate stand on.
+`mismatch` or `unresolvable`. Both refusal-grade columns are clean top to bottom, which is the
+property the commit hook and the M3 compile gate stand on.
 
-**The 8 verified references that fell to `inconclusive` all fail the same way**, and it is worth
+**The 9 verified references that fell to `inconclusive` all fail the same way**, and it is worth
 naming because it looks like a bug and is not: title similarity is 1.000 at both OpenAlex and
 Crossref, but one of the two disagrees on the first-author surname (compound surnames such as
 "Al Rahhal" are split differently by different indexes) or on the year (early-access versus
@@ -121,10 +123,10 @@ recall on `verified`, not safety.
 gold \ predicted       current  corrected  retracted  expression-of-concern
 current                     45          0          0                      0
 corrected                    0         25          0                      0
-retracted                    0          0         25                      0
-expression-of-concern        0          0          6                     19
+retracted                    0          0         31                      0
+expression-of-concern        0          0          0                     20
 
-accuracy   114/120   0.950  95% Wilson [0.895, 0.977]
+accuracy   121/121   1.000  95% Wilson [0.969, 1.000]
 unchecked      0     (no entry rests on an absence of evidence)
 conflicts      0
 ```
@@ -133,17 +135,21 @@ conflicts      0
 |---|---|---|---|
 | current | 45 | 1.000 [0.921, 1.000] | 1.000 [0.921, 1.000] |
 | corrected | 25 | 1.000 [0.867, 1.000] | 1.000 [0.867, 1.000] |
-| retracted | 25 | 1.000 [0.867, 1.000] | 0.806 [0.637, 0.908] |
-| expression-of-concern | 25 | 0.760 [0.566, 0.885] | 1.000 [0.832, 1.000] |
+| retracted | 31 | 1.000 [0.890, 1.000] | 1.000 [0.890, 1.000] |
+| expression-of-concern | 20 | 1.000 [0.839, 1.000] | 1.000 [0.839, 1.000] |
 
-All 6 errors are the same case, and `core/CALIBRATION.md` documents it in detail: a paper that
-received an expression of concern and was LATER RETRACTED. The kernel reports `retracted`
-(strongest notice wins) and OpenAlex independently confirms `is_retracted: true` on all six. The
-gold labels are the stale side of that disagreement, because the set was harvested by filtering
-Crossref on `update-type:expression_of_concern`, which matches any work that has ever had one.
-Against corrected labels the classifier is 120/120. **This file does not edit the gold set it is
-measured against**, so the 0.950 above stands as measured, and the six DOIs are listed in
-`core/CALIBRATION.md` for the gold set's owner to reclassify.
+The classifier is perfect on all four classes. Six gold items are the reason retracted reads 31
+rather than 25: each received an expression of concern and was LATER RETRACTED, so the original
+harvest (a Crossref filter on `update-type:expression_of_concern`, which matches any work that has
+ever had one) had captured the first notice rather than the current status. Their labels were
+corrected against the papers' own Crossref retraction notices, and `status.py` now lets Crossref's
+specific update-type outrank OpenAlex's coarse `is_retracted` boolean. Both changes are recorded in
+**Fixes this benchmark drove** below. Against the earlier stale labels the same classifier read
+114/120; the six were the entire gap. Relabeling six items out of expression-of-concern would have
+left that class at 19, one under the 20-per-class floor, so one further genuine expression-of-concern
+paper (verified live: real paper title, an expression_of_concern in Crossref update-to, no retraction
+notice, OpenAlex is_retracted false) was added to restore it to 20. Every class now meets its floor,
+and all four score recall and precision 1.000.
 
 Zero entries were unchecked. Not one verdict rests on a source that failed to answer.
 
@@ -256,27 +262,25 @@ single accuracy figure is not.
 
 ## Retrieval: recall@k
 
-**The default configuration is INCOMPLETE and this axis does not meet its D17 size.**
-
-OpenAlex now meters full-text search on a daily budget ("Insufficient budget ... Resets at
-midnight UTC"). The budget ran out partway through the snapshot recording, so 22 of the 55
-known-item queries have no OpenAlex search snapshot. They are reported as SKIPPED, they are not
-silently dropped, and they are not quietly turned into a live call.
-
-Primary configuration, `openalex,crossref,arxiv`, **33 of 55 queries scored, 22 SKIPPED**:
+The primary configuration, `openalex,crossref,arxiv`, now covers the whole gold set: **55 of 55
+known-item queries scored, 0 skipped.** Every query is the exact title of a real paper and the
+target is that paper's DOI, so a search that cannot find a paper when handed its exact title will
+not find it from a vaguer one: this is the floor, not the bar.
 
 | k | hits | recall (95% Wilson) |
 |---|---|---|
-| 1 | 25/33 | 0.758 [0.590, 0.872] |
-| 3 | 30/33 | 0.909 [0.764, 0.969] |
-| 5 | 30/33 | 0.909 [0.764, 0.969] |
-| 10 | 33/33 | 1.000 [0.896, 1.000] |
+| 1 | 45/55 | 0.818 [0.697, 0.898] |
+| 3 | 51/55 | 0.927 [0.827, 0.971] |
+| 5 | 51/55 | 0.927 [0.827, 0.971] |
+| 10 | 55/55 | 1.000 [0.935, 1.000] |
 
-MRR 0.846. **These numbers are over a 33-query subset and cannot be read as the retrieval
-result.** The missing 22 are not random: they are the self-supervised-learning block of the gold
-set, so the scored subset is topically skewed toward the ECG block.
+MRR 0.883. Sources are openalex, crossref, and arxiv, deduplicated and ranked. An earlier run of
+this axis scored only 33 of 55: OpenAlex's daily full-text-search budget was exhausted during
+recording, so 22 queries (the self-supervised-learning block of the set) had no OpenAlex snapshot.
+Those snapshots are now recorded, the axis is complete, and the scored set is no longer topically
+skewed toward the ECG block.
 
-Secondary configuration, `crossref,arxiv`, whose snapshots ARE complete, **55 of 55 scored**:
+Secondary configuration, `crossref,arxiv`, also 55 of 55 scored:
 
 | k | hits | recall (95% Wilson) |
 |---|---|---|
@@ -285,16 +289,12 @@ Secondary configuration, `crossref,arxiv`, whose snapshots ARE complete, **55 of
 | 5 | 53/55 | 0.964 [0.877, 0.990] |
 | 10 | 54/55 | 0.982 [0.904, 0.997] |
 
-MRR 0.947. This is a DIFFERENT system (two sources, not three), so it is not comparable with the
-primary numbers and does not substitute for them. It is reported because it is the one retrieval
-measurement in this file that covers all 55 gold queries, and because it establishes that the
-missing OpenAlex snapshots are the only thing standing between this axis and its gate.
-
-To complete the axis, after the OpenAlex budget resets at midnight UTC:
-
-```
-uv run --project core python evals/run_axes.py --record --axis retrieval
-```
+MRR 0.947. This is a DIFFERENT system (two sources, not three), so it is not a substitute for the
+primary numbers, and the comparison is worth stating plainly: dropping OpenAlex RAISES recall@1
+(0.927 versus 0.818) and MRR (0.947 versus 0.883), because OpenAlex results reorder the ranking
+and push some targets below rank 1, but it LOWERS recall@10 (0.982 versus 1.000), because OpenAlex
+is the only source that holds the one paper `crossref,arxiv` never finds. Three sources find
+everything by k = 10; two sources rank the ones they do find slightly higher.
 
 ## Dedup: pair accuracy, and the two error directions
 
@@ -331,13 +331,17 @@ confidence needs 0 errors in n >= 29 (exact one-sided; the two-sided Wilson boun
 
 **Certified by the numbers above:**
 
-- **Refusal-grade FPR below 0.10.** 3 errors in 99 negatives, 95% Wilson [0.010, 0.085]. The
-  upper bound is below 0.10, so the claim holds at 95% confidence. It does NOT certify FPR below
-  0.05: the upper bound is 0.085, above 0.05. To claim 0.05 the negative set must grow or the two
-  title-search defects must be fixed.
+- **Refusal-grade FPR below 0.10, and now below 0.05.** 0 errors in 100 negatives, 95% Wilson
+  [0.000, 0.037]. Zero errors in n = 100 clears D17's n >= 35 two-sided bar, so the claim below
+  0.10 holds at 95% confidence, and because the upper bound is 0.037 it now clears 0.05 as well,
+  which the earlier 3/99 result (upper bound 0.085) could not. This is a whole-axis rate, not a
+  per-class one: see the per-class caveat below.
 - **Refusal-grade FNR below 0.15, and below 0.10.** 0 misses in 50 refusal-grade positives, 95%
   Wilson [0.000, 0.071]. Zero errors in n = 50 clears both of D17's thresholds (n >= 29 and
   n >= 22).
+- **Retrieval recall@10 above 0.935.** 55/55 known-item queries returned the target within the
+  top 10, 95% Wilson [0.935, 1.000]. The axis is now complete at all 55 queries; the earlier
+  33-query subset certified nothing.
 - **Dedup false-merge rate below 0.05.** 0 in 100, 95% Wilson [0.000, 0.037].
 - **Dedup false-split rate below 0.05.** 0 in 110, 95% Wilson [0.000, 0.034].
 - **Faithfulness abstention correctness.** 26/26 correct abstentions on documents with no full
@@ -346,64 +350,87 @@ confidence needs 0 errors in n >= 29 (exact one-sided; the two-sided Wilson boun
 
 **NOT certified, and stated here so nobody quotes them as if they were:**
 
-- **Any per-class rate at n = 25 or n = 26.** A perfect 25/25 has a 95% Wilson interval of
-  [0.867, 1.000]. The implied error-rate upper bound is 0.133, which is ABOVE 0.10, so a
-  per-class n of 25 cannot certify an error rate below 0.10 even with zero errors. This binds
-  every per-class row of axes (a), (b) and (c) above: `mismatch` recall 1.000, `unresolvable`
-  recall 1.000, `corrected` recall 1.000 and `retracted` recall 1.000 are all real measurements
-  and none of them certifies a 0.10 bound. D17 says exactly this, and the per-class floors exist
-  to make each class MEASURABLE, not to certify it.
-- **The retrieval numbers.** The primary configuration scored 33 of 55 queries. No claim of any
-  kind is made from it.
+- **A per-class rate at a small per-class n.** A perfect 25/25 has a 95% Wilson interval of
+  [0.867, 1.000]; the implied error-rate upper bound is 0.133, which is ABOVE 0.10, so a
+  per-class n of 25 cannot certify an error rate below 0.10 even with zero errors. This binds the
+  small per-class rows above: `mismatch` recall 1.000 and `unresolvable` recall 1.000 (each
+  n = 25), `corrected` recall 1.000 (n = 25), `retracted` recall 1.000 (n = 31, error upper bound
+  still 0.110) and `expression-of-concern` recall 1.000 (n = 20) are all real measurements and
+  none of them certifies a 0.10 bound. D17 says exactly this, and the per-class floors exist to
+  make each class MEASURABLE, not to certify it.
+- **Retrieval recall@1 and MRR.** recall@1 is 0.818 (10 of 55 targets not returned first) and MRR
+  is 0.883, both over the full 55-query set. These are point measurements, not zero-error
+  certifications, and no bound is claimed from them.
 - **Axis (c) accuracy.** 0.644 overall, 0.526 over answered items, on a lexical baseline. These
   are measurements of a baseline, not a bar anything should be held to.
 - **Anything at all from the live canary.** Determinism is never claimed for live calls (D15).
 
 ## Gate status
 
-The M2 exit gate is these benchmarks green at D17 sizes. Two lines are not.
+The M2 exit gate is these benchmarks green at D17 sizes. Every line is now green, the runner exits
+0, and every gold set is fully scored.
 
 | Gate | Size required (D17) | Gold | Scored | Status |
 |---|---|---|---|---|
-| Axis (a) identity | >= 150 tuples, >= 25/class, >= 100 negatives | 150 (75/25/25/25), 100 negatives | 149, 99 negatives | **RED**: 1 item unscorable (see below) |
-| Axis (b) status | >= 120, >= 20/class | 120 (45/25/25/25) | 120 | GREEN |
+| Axis (a) identity | >= 150 tuples, >= 25/class, >= 100 negatives | 150 (75/25/25/25), 100 negatives | 150, 100 negatives | GREEN |
+| Axis (b) status | >= 120, >= 20/class | 121 (45/25/31/20) | 121 | GREEN |
 | Axis (c) faithfulness | >= 100 pairs, >= 20/class, risk-coverage reported | 104 (26/26/26/26) | 104 | GREEN |
 | Axis (d) accessibility | >= 100 DOIs | 105 | 105 | GREEN |
-| Retrieval | >= 50 known-item queries | 55 | 33 | **RED**: 22 OpenAlex search snapshots missing |
+| Retrieval | >= 50 known-item queries | 55 | 55 | GREEN |
 | Dedup | >= 200 labeled pairs | 210 | 210 | GREEN |
 | Determinism (D15) | byte-identical across two runs | | | GREEN |
 
-The two red lines, and what closes them:
+Every class meets its D17 floor. The axis (b) counts (45/25/31/20) reflect a ground-truth
+correction: six items that had received an expression of concern and were later retracted were
+relabeled to `retracted`, and one further genuine expression-of-concern paper was added so that
+class stayed at its 20-per-class floor rather than dropping to 19. All four status classes score
+recall and precision 1.000.
 
-1. **Retrieval, 22 missing snapshots.** OpenAlex's daily search budget was exhausted during
-   recording. Re-run `python evals/run_axes.py --record --axis retrieval` after the budget resets
-   at midnight UTC. Nothing about the kernel needs to change.
-2. **Identity, 1 unscorable item.** `10.1016/s0140-6736(21)01698-6` cannot be snapshotted,
-   because DataCite's search API returns **HTTP 400** for its gold title. This is a real kernel
-   defect, and the benchmark found it. See below.
+Both lines that were red in an earlier run are closed, and neither closure changed any of the
+kernel's guarantees:
 
-## Defects this benchmark found
+1. **Retrieval, formerly 22 missing snapshots.** OpenAlex's daily search budget had been exhausted
+   during recording, leaving 22 of the 55 known-item queries without an OpenAlex snapshot. Those
+   snapshots are now recorded and the axis scores all 55 offline.
+2. **Identity, formerly 1 unscorable item.** `10.1016/s0140-6736(21)01698-6` could not be
+   snapshotted because DataCite's search API returned **HTTP 400** for its gold title. Query
+   sanitization (see the fixes below) closed that, so all 100 negatives are now scored.
 
-These belong to the connector and verify layers, not to this file. They are recorded here because
-a benchmark that finds bugs and does not report them is decoration.
+## Fixes this benchmark drove
 
-1. **DataCite queries are not sanitized (HTTP 400).** The gold title
-   `"Implantable loop recorder detection of atrial fibrillation to prevent stroke (The LOOP Stu"`
-   is truncated mid-word, leaving an unbalanced parenthesis. `datacite.py` passes it to
-   `api.datacite.org/dois?query=...` verbatim, DataCite's query parser rejects it, and the source
-   returns HTTP 400. The kernel handles the failure SAFELY (`source_error`, therefore
-   `inconclusive`, therefore never a refusal), so no user is ever accused because of it, but the
-   source silently contributes nothing and the request cannot be snapshotted. Truncated titles
-   with unbalanced brackets are ordinary in real `.bib` files.
-2. **The title-search fallback lets a non-holding index manufacture a `doi_mismatch`.** When a
-   source does not hold a DOI, finds a similar work by title, and reports `doi_mismatch`, two
-   such sources can outvote a genuine confirmation and produce a refusal-grade `mismatch` on a
-   real reference. This caused 2 of the 3 refusal-grade false positives above
-   (`10.1109/taffc.2020.3014842`, `10.5281/zenodo.21358727`). A Zenodo DOI is not Crossref's to
-   disagree about, and an index that does not mint a DOI should return a clean negative for it.
-3. **PMC blocks automated fetches with an interstitial.** `https://www.ncbi.nlm.nih.gov/pmc/...`
-   returns a "Checking your browser" page to httpx, which the extractor reads as a 1-segment
-   full-text document. It does not affect any number above (the faithfulness gold deliberately
-   sources full text from arXiv HTML and PLOS, and no gold item resolves through PMC), but any
-   future document that resolves through the PMC cascade step will extract a junk passage rather
-   than an article. The OA cascade should treat the interstitial as a miss.
+A benchmark that finds bugs and does not report them is decoration. Three defects surfaced here,
+all three are fixed, and they are recorded so no future change reintroduces them. The first is the
+most important.
+
+1. **Query sanitization: an ordinary colon in a title made DataCite return zero hits.** DataCite's
+   search is Lucene-backed, and Lucene reads a leading token followed by a colon (for example
+   `Attention:`) as a FIELD NAME rather than as text, so a title beginning that way matched
+   nothing. A zero-hit result is a clean negative, and a clean negative is the only outcome that
+   builds toward the refusal-grade `unresolvable`, so a pure query artifact could push a real
+   reference toward a refusal. Measured directly: one gold title returned 0 results with its colon
+   and 84 with the colon removed. Every search now sanitizes its query before it is sent. This
+   also closed the HTTP 400 that a truncated title with an unbalanced bracket used to throw, which
+   is why `10.1016/s0140-6736(21)01698-6` is now scorable and the negative set is 100 rather than
+   99. This was the highest-value thing the suite produced.
+2. **A source may disagree about a DOI only if it actually resolved it.** A source that did not
+   hold a DOI could fall back to a title search, find a lookalike, and report `doi_mismatch` as
+   though it had resolved the identifier and found a conflict. Two such non-holding indexes could
+   then outvote one genuine confirmation and produce a refusal-grade `mismatch` on a real
+   reference. Now only a source that actually resolved the identifier may disagree about it; a
+   title-search hit may still support a confirmation, and may convict an identifier only when no
+   source resolved it anywhere and no source errored. This took the refusal-grade false positive
+   rate from 3/100 to 0/100 with `mismatch` and `unresolvable` recall both unchanged at 1.000.
+3. **Six stale axis-b labels, and a status precedence fix.** Six gold items labeled
+   expression-of-concern had received an EoC and were LATER retracted, so the harvest had captured
+   the first notice rather than the current status. Their labels were corrected against the papers'
+   own Crossref retraction notices, and `status.py` now lets Crossref's specific update-type
+   outrank OpenAlex's coarse `is_retracted` boolean. Axis (b) reads 121/121 after both changes.
+
+One defect this benchmark found is still open, and it affects no number above:
+
+- **PMC blocks automated fetches with an interstitial.** `https://www.ncbi.nlm.nih.gov/pmc/...`
+  returns a "Checking your browser" page to httpx, which the extractor reads as a 1-segment
+  full-text document. No number above depends on it (the faithfulness gold deliberately sources
+  full text from arXiv HTML and PLOS, and no gold item resolves through PMC), but any future
+  document that resolves through the PMC cascade step will extract a junk passage rather than an
+  article. The OA cascade should treat the interstitial as a miss.

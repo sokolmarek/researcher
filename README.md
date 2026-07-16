@@ -37,6 +37,12 @@ Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
 
 It also runs on **OpenAI Codex**: all 29 skills install with one script (`python scripts/install-codex-skills.py`), because Codex reads the same open agent-skills format. See [OpenAI Codex](#openai-codex) under Installation for what carries over.
 
+Underneath the skills sits **the evidence kernel** (`core/`, new in 0.3.0): a deterministic Python
+package that queries 8 scholarly indexes directly, deduplicates the results, and verifies every
+reference on four independent axes. It is optional, it ships with its benchmarks, and it is designed so
+that the one thing it must never do (tell you a real citation of yours is fabricated) it measurably
+does not do.
+
 LaTeX-first, Word-compatible. Every output works in both worlds.
 
 ## What works today, what is planned
@@ -54,17 +60,56 @@ LaTeX-first, Word-compatible. Every output works in both worlds.
 | DOCX tracked changes, comments, and table emission | Specified in `templates/word/article-imrad.md`, not implemented yet |
 | Scite Smart Citations, Zotero library access | Works when you connect those MCP servers yourself; not bundled yet |
 | External model reviewers (OpenAI, Gemini, Ollama) | Documented integration point, not implemented |
-| Multi-index citation verification (verified / mismatch / unresolvable / inconclusive), retraction and faithfulness axes, PRISMA provenance ledger | Planned (M2, next minor release) |
+| **The evidence kernel** (`core/`): deterministic multi-source retrieval and per-axis citation verification over 8 scholarly indexes, with snapshot replay | **Works today (new in 0.3.0)**, and optional: needs `uv` or `pip install -e core/`. Without it the plugin degrades to the row above |
+| Multi-index citation verification: identity (verified / mismatch / unresolvable / inconclusive), publication status, accessibility | Works today (`core/`). Benchmarked in [`evals/BENCHMARKS.md`](evals/BENCHMARKS.md) |
+| Claim faithfulness (does the source actually support the sentence citing it) | Works today as a **lexical baseline only**, and it is weak: coverage 0.750, and it scores many overstatements as supported. Numbers below |
+| Semantic RAG (embeddings, vector store, GROBID, reranking) | Not in the kernel, deliberately. Deferred post-1.0 |
+| PRISMA provenance ledger (append-only, counts derived by aggregation) | Works today (`core/`) |
 | Evidence-lineage compiler: every claim and number compiles from a source span or an experiment run, with a research passport export | Planned (M3) |
 | Bundled `.mcp.json` (Scite, Zotero, paper-search) | Planned |
 | Google Scholar / Mendeley APIs | Not planned (no stable free API); fallbacks documented in `connectors/` |
 
-The integrity rules (never fabricate citations, never invent data) are enforced today in two ways: as
+The integrity rules (never fabricate citations, never invent data) are enforced today in three ways: as
 refusal-grade constraints inlined in every skill and agent that produces cited content
-(`references/integrity-constraints.md`), and as the mechanical checks listed above (commit guard, DOI
-resolution and retraction flags, compile checks). A deterministic engine that verifies every reference
-against multiple indexes is the next planned milestone. Until it lands, verification is a shared job
-between you and the plugin, and the plugin's job is to make your half easy.
+(`references/integrity-constraints.md`), as the mechanical checks listed above (commit guard, compile
+checks), and, since 0.3.0, as a deterministic kernel that verifies each reference against multiple
+indexes rather than trusting a single DOI lookup. Verification is still a shared job between you and
+the plugin. The kernel's job is to make your half small, and to be honest about the part it cannot do.
+
+### The kernel, measured
+
+The kernel ships with its benchmarks, not with adjectives. Gold sets are built from real DOIs and
+replayed from recorded snapshots, so anyone can reproduce every number:
+
+```bash
+uv run --project core python evals/run_axes.py
+```
+
+| What | Measured | 95% Wilson |
+|---|---|---|
+| **Refusal-grade false positives** (a REAL reference called fabricated or wrong) | **0/100** | [0.000, 0.037] |
+| Refusal-grade false negatives (a bad reference not flagged) | 0/50 | [0.000, 0.071] |
+| Reference identity, accuracy | 136/150 (0.907) | [0.849, 0.944] |
+| Publication status, accuracy | 121/121 (1.000) | [0.969, 1.000] |
+| Accessibility, accuracy | 104/105 (0.990) | [0.948, 0.998] |
+| Deduplication, pair accuracy | 210/210 (1.000) | [0.982, 1.000] |
+| Claim faithfulness (lexical baseline), coverage | 78/104 (0.750) | [0.659, 0.823] |
+
+**Only two verdicts can accuse you.** A reference is `verified`, `mismatch`, `unresolvable`, or
+`inconclusive`, and only `mismatch` and `unresolvable` are refusal-grade. `inconclusive` never is: it
+means an index was rate-limited or only one source holds the paper, and acting on it would tell an
+honest author that a paper they read and cited correctly does not exist. The kernel would rather miss a
+fabricated citation than accuse a real one, and the 0/100 above is the number that has to stay zero.
+
+**Where it is weak, and why that is in the table.** Claim faithfulness ships as a lexical baseline
+(BM25 plus overlap heuristics), and a lexical baseline cannot read: it recovers supported claims
+reasonably but scores 12 of 26 overstatements as fully supported, because an overstatement reuses
+almost every word of the passage it overstates. It abstains correctly whenever there is no open full
+text (26/26), and it never emits an unanchored claim as checked. The retrieval axis is also short of
+its gate: 22 of 55 known-item queries have no OpenAlex snapshot (a daily search budget ran out during
+recording), so they are reported as SKIPPED and the runner exits 1 rather than going green over a
+half-measured set. Full detail, including the risk-coverage curve, is in
+[`evals/BENCHMARKS.md`](evals/BENCHMARKS.md).
 
 ---
 
@@ -295,14 +340,20 @@ their fallbacks documented:
 
 | Service | Mechanism today | What it provides |
 |---------|-----------------|-----------------|
+| **OpenAlex** | Kernel connector (`core/`) | Works graph, metadata, retraction flag |
+| **CrossRef** | Kernel connector (`core/`) + scripts | DOI resolution, metadata, update notices (retractions, corrections) |
+| **DataCite** | Kernel connector (`core/`) | Dataset, software, and preprint DOIs CrossRef does not mint |
+| **arXiv** | Kernel connector (`core/`) | Preprints in CS, physics, math, biology |
+| **Semantic Scholar** | Kernel connector (`core/`) | CS/science papers, citation graphs, TLDRs |
+| **PubMed** | Kernel connector (`core/`) | Biomedical literature (20M+ articles) |
+| **Unpaywall** | Kernel connector (`core/`) | Open-access full-text locations |
+| **OpenCitations** | Kernel connector (`core/`) | Citation-graph edges |
 | **Scite** | MCP server, user-connected | Smart citation context, supporting/contrasting classification |
-| **PubMed** | NCBI public API, called by skills | Biomedical literature (20M+ articles) |
-| **Semantic Scholar** | S2 public API, called by skills | CS/science papers, citation graphs, author data |
-| **arXiv** | Public API, called by skills | Preprints in CS, physics, math, biology |
-| **CrossRef** | Public REST API, called by skills and scripts | DOI resolution, metadata validation |
-| **Google Scholar** | Docs-only (web-search fallback) | Broadest coverage |
 | **Zotero** | zotero-mcp MCP server, user-installed | Reference library access |
+| **Google Scholar** | Docs-only (web-search fallback) | Broadest coverage |
 | **Mendeley** | Docs-only (manual export fallback) | Reference library sync |
+
+The eight kernel connectors are keyless and are called directly by `core/`. Without the kernel installed, skills fall back to reaching these public APIs conversationally, as they did before 0.3.0.
 
 ### External reviewer models (planned, not implemented)
 
@@ -320,6 +371,7 @@ design for a later release.
 - **LaTeX compilation:** any TeX installation. `tectonic` is recommended (single binary, fetches packages on demand, reproducible builds) and is what CI uses, but TeX Live, MiKTeX, and MacTeX work out of the box: the compile scripts detect `latexmk` or a raw `pdflatex`/`xelatex`/`lualatex` and run the bibliography passes for you. Set `LATEX_ENGINE` (or pass `--engine`) to choose one explicitly. If no TeX is found, the scripts print install pointers.
 - **Word output:** `node` (the `docx` library; run `npm install` in `templates/word/`)
 - **Scripts and tests:** Python 3.10+ (standard library only; `pytest` to run the test suite)
+- **The evidence kernel (optional):** [`uv`](https://docs.astral.sh/uv/) is all you need; it provisions the environment from `core/pyproject.toml` on first use, and no install step is required. Without `uv`, `pip install -e core/` works (base runtime: `httpx`, `rapidfuzz`, `platformdirs`), and `pip install -e "core/[fulltext]"` adds OA PDF extraction. **Without the kernel at all, the plugin still runs**: the scripts fall back to their standard-library behavior and nothing hard-fails.
 
 ---
 
@@ -331,13 +383,14 @@ researcher/
 ├── skills/                       # 29 specialized skills
 ├── agents/                       # 9 orchestration agents
 ├── commands/                     # 11 slash commands
-├── connectors/                   # 8 connector docs (mechanism, env vars, fallbacks)
+├── core/                         # The evidence kernel (researcher_core): connectors, verification, provenance
+├── connectors/                   # 12 connector docs (mechanism, env vars, fallbacks)
 ├── hooks/                        # Claude tool guards (hooks.json) + docs
-├── references/                   # Citation guides, journal DB, TikZ patterns, figure styles, integrity constraints
+├── references/                   # Citation guides, journal DB, TikZ patterns, figure styles, integrity constraints, core CLI
 ├── templates/                    # LaTeX templates + Word (build-docx.js) generation
 ├── scripts/                      # Python utilities (compile, validate, hooks, render) + tests
 ├── examples/                     # Worked examples with real, verified output
-├── evals/                        # Freshness eval (DOIs + LaTeX) and compile fixture
+├── evals/                        # Gold sets, per-axis benchmarks (BENCHMARKS.md), freshness eval
 ├── docs/                         # Astro (Starlight) documentation site
 ├── assets/                       # Header image and rendered figures
 ├── CLAUDE.md                     # Contributor notes (not loaded at plugin runtime)
@@ -351,7 +404,7 @@ researcher/
 
 1. **Assistant, not author.** This tool guides, assists, and handles logistics. It does not replace your expertise, your thinking, or your judgment (it has none of its own). Every claim needs your verification. Every citation must be real.
 
-2. **Integrity first.** Refusal-grade rules (never fabricate citations, never invent data, flag what cannot be verified) are inlined in every skill and agent that produces cited content (`references/integrity-constraints.md`), and a mechanical commit guard blocks dangling citation keys. Today these are prompt-level safeguards plus targeted mechanical checks, not a full verification engine; deterministic multi-index reference verification is the next planned milestone. Until then, verify every claim yourself, and the plugin will keep making that easy.
+2. **Integrity first.** Refusal-grade rules (never fabricate citations, never invent data, flag what cannot be verified) are inlined in every skill and agent that produces cited content (`references/integrity-constraints.md`), a mechanical commit guard blocks dangling citation keys, and since 0.3.0 a deterministic kernel verifies each reference against multiple scholarly indexes. Crucially, it is built to fail in the safe direction: thin or dirty evidence becomes `inconclusive`, never an accusation, so a rate-limited index can never be mistaken for proof that your citation is fake. Verify every claim yourself anyway. The plugin's job is to make that cheap.
 
 3. **Your voice, amplified.** Style Calibration learns how *you* write. The goal is to sound like a better version of you, not like a robot.
 
@@ -359,7 +412,7 @@ researcher/
 
 5. **Token-smart.** The implementation and code-analysis skills fork into a Sonnet-pinned code agent (via `context: fork` in their frontmatter), so your session's higher-tier budget goes to research thinking, writing, and review rather than to generating boilerplate.
 
-6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The next milestone is a deterministic evidence kernel with published benchmarks; the one after that is an evidence-lineage compiler where every claim and number in your manuscript traces back to a source span or an experiment run. The goal is a core you can trust, not a bigger feature list.
+6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The evidence kernel landed in 0.3.0 with its benchmarks published, weak axis and red gate included, because a benchmark you only cite when it flatters you is marketing. Next is an evidence-lineage compiler where every claim and number in your manuscript traces back to a source span or an experiment run. The goal is a core you can trust, not a bigger feature list.
 
 ---
 
