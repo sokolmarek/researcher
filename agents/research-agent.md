@@ -7,6 +7,10 @@ skills:
   - citation-management
   - citation-audit
   - research-pipeline
+  - systematic-review
+  - extraction-tables
+  - contradiction-detection
+  - literature-monitoring
 ---
 
 # Research Agent
