@@ -40,7 +40,7 @@ that quietly measured half its gold set. It exits 0 today, with every gold set f
 
 | | |
 |---|---|
-| core version | 0.1.0 |
+| core version | 1.0.0 |
 | Snapshots | `evals/snapshots/`, 1198 recorded responses (arxiv 55, crossref 342, datacite 272, fulltext 6, openalex 340, pubmed 78, unpaywall 105) |
 | Recorded | 2026-07-14, live, from the keyless public APIs, polite pool `mareksokol98@gmail.com` |
 | Replay | every number below was produced with zero network calls. Replay mode never awaits a fetcher. |

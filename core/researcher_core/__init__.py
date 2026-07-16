@@ -16,7 +16,7 @@ Determinism is never claimed for live calls, because live indexes change.
 
 from __future__ import annotations
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 
 #: Version of the extraction and parsing rules. It participates in passage IDs (D21) and in
 #: provenance records (D19). Bumping it intentionally invalidates derived IDs, which is what
