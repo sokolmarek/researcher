@@ -132,7 +132,12 @@ class ResponseCache:
         self.path = Path(path) if path is not None else default_cache_path()
         self.enabled = enabled
         self.default_ttl = int(default_ttl)
-        self.ttl_by_source: dict[str, int] = dict(ttl_by_source or {})
+        # The content-class TTLs (M5.3) are constructor defaults, not a from_env privilege:
+        # a directly constructed cache enforces the same 30/90-day bounds, and an explicit
+        # ttl_by_source entry still wins over the class default.
+        merged = dict(CONTENT_CLASS_TTLS)
+        merged.update(ttl_by_source or {})
+        self.ttl_by_source: dict[str, int] = merged
         self._lock = threading.Lock()
         self._conn: sqlite3.Connection | None = None
 
@@ -154,10 +159,8 @@ class ResponseCache:
         ttl = int(ttl_raw) if ttl_raw.isdigit() else DEFAULT_TTL_SECONDS
         kwargs.setdefault("enabled", enabled)
         kwargs.setdefault("default_ttl", ttl)
-        # The content-class TTLs (M5.3) are defaults; an explicit ttl_by_source still wins.
-        merged = dict(CONTENT_CLASS_TTLS)
-        merged.update(kwargs.get("ttl_by_source") or {})
-        kwargs["ttl_by_source"] = merged
+        # The content-class TTLs (M5.3) are merged in the constructor itself, so from_env
+        # and a direct construction enforce the same per-class bounds.
         return cls(**kwargs)
 
     @classmethod

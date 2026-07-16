@@ -80,6 +80,18 @@ def test_default_ttl_is_seven_days(cache: ResponseCache):
     assert entry.is_expired(now + DEFAULT_TTL_SECONDS + 1)
 
 
+def test_content_class_ttls_apply_to_a_directly_constructed_cache(tmp_path: Path):
+    # The 30/90-day content-class bounds (M5.3) are constructor defaults, not a from_env
+    # privilege: a bare ResponseCache must not silently fall back to a flat 7-day TTL for
+    # the classes the licensing docs promise to bound.
+    from researcher_core.cache import CONTENT_CLASS_TTLS
+
+    with ResponseCache(tmp_path / "c.sqlite3") as cache:
+        assert cache.ttl_for("unpaywall") == CONTENT_CLASS_TTLS["unpaywall"] == 30 * 24 * 60 * 60
+        assert cache.ttl_for("fulltext") == CONTENT_CLASS_TTLS["fulltext"] == 90 * 24 * 60 * 60
+        assert cache.ttl_for("openalex") == DEFAULT_TTL_SECONDS
+
+
 def test_per_source_ttl_overrides_the_default(tmp_path: Path):
     with ResponseCache(
         tmp_path / "c.sqlite3", ttl_by_source={"unpaywall": 3600}
