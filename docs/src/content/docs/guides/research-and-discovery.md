@@ -1,12 +1,12 @@
 ---
 title: "Guide: Research & Discovery"
-description: The six skills that find, verify, and situate the literature.
+description: The eight skills that find, verify, and situate the literature.
 sidebar:
   label: Research & Discovery
   order: 1
 ---
 
-Six skills cover everything from "what has been done" to "where the gap is", and every one of them insists on real, resolvable citations.
+Eight skills cover everything from "what has been done" to "where the gap is", and every one of them insists on real, resolvable citations.
 
 ## literature-search
 
@@ -20,7 +20,7 @@ Not just finding papers, but converging on an argument. Three modes: Socratic (i
 
 ## fact-checking
 
-Verifies a claim against the literature and returns a verdict (Supported, Contested, Partially Supported, or Unsupported) with the evidence behind it. It will return **Unsupported** rather than invent a source.
+Verifies a claim against the literature and returns a verdict (Supported, Contested, Partially Supported, Contradicted, or Unsupported) with the evidence behind it. It will return **Unsupported** rather than invent a source.
 
 **Trigger it:** "`/researcher:fact-check <claim>`".
 
@@ -37,6 +37,18 @@ Systematically identifies methodological, empirical, and theoretical gaps, and r
 ## citation-context
 
 Classifies how a paper is cited (supporting, contrasting, or mentioning) and audits your manuscript for sources you may have misrepresented.
+
+## citation-audit
+
+The whole-manuscript integrity pass, added in 0.4.0. Runs a two-level check over every citation: an existence gate (does each reference resolve, and is it retracted) and a claim-faithfulness audit (does each cited passage actually support the claim). With the optional evidence kernel installed it verifies against multiple independent indexes with the four-state verdict; without it, it degrades to the single-index `bib-validator.py` check.
+
+**Trigger it:** "Audit my citations", "`/researcher:verify-citations`".
+
+## research-pipeline
+
+Drives a manuscript end to end as staged, checkpointed work, added in 0.4.0: Plan, Retrieve, Synthesize, Draft, Review, Compile, and Format, pausing for the author after every stage and refusing to format until the evidence-lineage compile gate passes.
+
+**Trigger it:** "`/researcher:research-pipeline <question>`".
 
 ## See it in action
 

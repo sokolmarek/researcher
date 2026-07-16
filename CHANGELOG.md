@@ -11,7 +11,8 @@ and installable outside Claude Code. M2 through M4 built the evidence kernel, th
 systematic-review vertical; 1.0.0 secures the edges around them. Three questions a production tool owes
 its users now have mechanical answers rather than reassurances: what leaves your machine (only the
 bibliographic lookups you ask for, and in offline mode not even those), whether fetched paper text can
-steer the assistant (it is quoted as data inside a labeled fence and provably cannot), and whether cached
+steer the assistant (it is quoted as data inside a labeled fence, and an eval proves the verdicts do not
+move for the known payload classes; general immunity is not claimed), and whether cached
 full text can end up somewhere it should not (it never leaves the user cache). None of this is a new
 skill. The observed counts are unchanged at 35 skills, 15 commands, and 9 agents, and that is the point:
 1.0.0 is the core made trustworthy at its boundary, not a longer feature list (D18).

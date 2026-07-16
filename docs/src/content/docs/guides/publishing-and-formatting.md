@@ -34,7 +34,7 @@ Produces a Microsoft Word DOCX for the co-authors and journals that live in Word
 
 ## citation-management
 
-Maintains your `library.bib` across its whole lifecycle: import, validate, convert, audit. It validates DOIs against the source, detects retractions and corrections before you cite something embarrassing, converts between citation formats, and syncs with Zotero and Mendeley. The one rule it will not bend: every entry originates from a real source, and an unresolvable DOI gets flagged rather than guessed into existence.
+Maintains your `library.bib` across its whole lifecycle: import, validate, convert, audit. It validates DOIs against the source, detects retractions and corrections before you cite something embarrassing, converts between citation formats, syncs with Zotero, and imports Mendeley exports (BibTeX or RIS; Mendeley has no live sync). The one rule it will not bend: every entry originates from a real source, and an unresolvable DOI gets flagged rather than guessed into existence.
 
 **Trigger it:** "Validate my bibliography", "Sync my Zotero library".
 

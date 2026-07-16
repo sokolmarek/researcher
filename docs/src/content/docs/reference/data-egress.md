@@ -85,5 +85,3 @@ Four connectors are not called by core, so nothing leaves through the plugin for
   what runs locally.
 - [Licensing and retention](/researcher/reference/licensing/): how long fetched content is cached, why cached
   full text is never redistributed, and each source's terms of use.
-</content>
-</invoke>

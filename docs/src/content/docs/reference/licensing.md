@@ -89,4 +89,3 @@ The reuse terms above are a moving target. Treat the 2026-07-14 date as a freshn
 guarantee: before each release, re-open each connector note's linked terms and confirm the summary
 still holds. This is the same discipline the examples follow for volatile facts (the D8 "verified as
 of" convention).
-</content>

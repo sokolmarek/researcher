@@ -1,13 +1,13 @@
 ---
 title: Use with Codex
-description: Install the 29 Researcher skills in Codex, and know exactly what carries over.
+description: Install the 35 Researcher skills in Codex, and know exactly what carries over.
 sidebar:
   order: 3
 ---
 
 ## Why it works
 
-Codex and Claude Code implement the same open agent-skills standard: a skill is a directory holding a `SKILL.md` whose frontmatter carries a `name` and a `description`. Nothing in that format is Claude-specific, so all 29 Researcher skills port straight across.
+Codex and Claude Code implement the same open agent-skills standard: a skill is a directory holding a `SKILL.md` whose frontmatter carries a `name` and a `description`. Nothing in that format is Claude-specific, so all 35 Researcher skills port straight across.
 
 Codex looks for skills in three places, in priority order:
 

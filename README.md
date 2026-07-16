@@ -61,8 +61,9 @@ screening event and the derived flow changes, which is the proof.
 
 And around all of it, **1.0.0 hardens the boundary** (the production-completeness milestone). Offline mode
 (`--offline`, `RESEARCHER_OFFLINE=1`) answers every command from snapshots and cache with no live call.
-Fetched paper text is quoted only inside a labeled untrusted-content fence and cannot steer the assistant
-(an injection eval proves the verdicts do not move and no payload escapes). Cached full text is never
+Fetched paper text is quoted only inside a labeled untrusted-content fence, and an injection eval proves
+the verdicts do not move and no payload escapes for the known payload classes (general immunity is not
+claimed; new payloads become new fixtures). Cached full text is never
 redistributed. Exports round-trip losslessly across CSL-JSON, RIS, JATS, and BibTeX. Releases are signed
 and carry SBOMs. And the kernel is now a pip-installable package with a thin MCP server, so the same
 verification machinery runs outside Claude Code entirely.
@@ -476,9 +477,9 @@ You: "Generate the response to reviewers document"
 ## Connectors
 
 Connector docs under [`connectors/`](connectors/) describe how each external service is reached today.
-Public APIs are called directly by skills at runtime. MCP servers work once you connect them yourself;
-the plugin does not bundle an `.mcp.json` yet (planned). Google Scholar and Mendeley are docs-only, with
-their fallbacks documented:
+Public APIs are called directly by skills at runtime. Since 1.0.0 the plugin bundles an `.mcp.json`
+registering the local `researcher-mcp` stdio server; Scite and Zotero remain MCP servers you connect
+yourself. Google Scholar and Mendeley are docs-only, with their fallbacks documented:
 
 | Service | Mechanism today | What it provides |
 |---------|-----------------|-----------------|

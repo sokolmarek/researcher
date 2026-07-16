@@ -23,7 +23,7 @@ Do a systematic literature search on self-supervised learning for ECG classifica
 /researcher:sota PTB-XL arrhythmia classification
 ```
 
-Every result carries a real, resolvable citation. The fact-check comes back with a verdict (Supported, Contested, Partially Supported, or Unsupported) and the evidence behind it.
+Every result carries a real, resolvable citation. The fact-check comes back with a verdict (Supported, Contested, Partially Supported, Contradicted, or Unsupported) and the evidence behind it.
 
 ## 3. Design and draft
 
@@ -42,7 +42,7 @@ Turn this results CSV into a booktabs table with the best result in bold.
 /researcher:submit-ready
 ```
 
-The review runs a five-persona panel with rubric scores. `/researcher:submit-ready` runs a reporting checklist (citations resolve, formatting, word counts, required sections) and reports pass or fail with fix instructions. It does not block anything yet; a compile gate that can refuse is planned.
+The review runs a five-persona panel with rubric scores. `/researcher:submit-ready` runs a reporting checklist (citations resolve, formatting, word counts, required sections) and reports pass or fail with fix instructions. With the optional evidence kernel installed, it is also gated on a passing evidence-lineage compile (shipped in 0.4.0): a refusal-grade defect, such as an orphan claim or an altered number, blocks the ready verdict until it is fixed.
 
 ## 5. Handle revisions
 

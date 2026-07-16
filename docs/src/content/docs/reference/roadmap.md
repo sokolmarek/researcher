@@ -20,7 +20,7 @@ Just as important is what the direction is not: a larger skill count. The goal i
 
 ## Milestone 1 (0.2.0, shipped): release correctness
 
-The current release is not about new surface area. It is about making what already exists correct and honestly described:
+Milestone 1 was not about new surface area. It was about making what already existed correct and honestly described:
 
 - **Namespaced commands.** Installed plugin commands always carry the plugin prefix: `/researcher:review-paper`, `/researcher:fact-check`, `/researcher:submit-ready`, and the rest. The bare forms are not valid for an installed plugin.
 - **Honest capability docs.** The documentation now says what actually runs. External model reviewers (OpenAI, Gemini, Ollama) in the peer-review skill are documented integration points with no dispatch code yet. The scholar scraper fetches metadata and abstracts from Semantic Scholar; full-text style metrics need files you provide locally.
