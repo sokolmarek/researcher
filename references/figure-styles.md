@@ -436,6 +436,39 @@ combined with `\subfloat[]{}` in LaTeX so IEEEtran places the (a)/(b) labels nat
 labeling in matplotlib, put the label in a `fig.text` below the axes, not as a top-left
 title.
 
+## Alt Text
+
+Alt text is a required output of every visualization-family skill (visualization, tikz-diagrams,
+plotneuralnet, latex-tables, figure-suggestions), alongside the figure or table itself. It is the
+short description a screen reader announces and a sighted reader falls back to when the image fails
+to load, so it must convey what the figure would tell someone who cannot see it.
+
+Alt text describes the DATA content, never the styling. Write what the figure shows (the variables,
+the comparison, the direction and size of the effect, the panels), not how it looks (fonts, colors,
+line weights, palette). "Colorblind-safe muted palette" is a styling fact and belongs in the caption
+or nowhere, not in alt text.
+
+Because presets restyle only and never change data (see the Integrity Note below), every preset
+variant of one figure shares ONE data description. Emit that single data sentence, then append at
+most one short style clause naming the preset. The data sentence is identical across variants; only
+the trailing clause changes:
+
+- default: `Label-efficiency line plot: self-supervised curves sit above the supervised baselines,
+  with the gap largest at the 1% labeled fraction.`
+- nature: the same sentence, plus `(Nature preset: 89 mm single column, sans-serif, muted palette).`
+- ieee: the same sentence, plus `(IEEE preset: single-column, serif, Wong palette).`
+
+Keep it to one or two sentences. Do not restate the caption verbatim, do not begin with "Image of"
+or "Figure showing", and do not put data values in alt text that are absent from the figure. For a
+data plot, name the axes and the trend; for a schematic or architecture diagram, name the stages and
+their order; for a table rendered as a figure, name the rows/columns compared and the headline result.
+
+Where the alt text travels: markdown examples carry it in the `![alt](path)` text (its presence is
+checked mechanically by `evals/example-freshness.py`); `templates/word/build-docx.js` writes it into
+the DOCX image accessibility properties; for LaTeX, document `\pdftooltip` (from the `pdfcomment`
+package) or a tagged-PDF workflow, without claiming full PDF/UA compliance. Quality stays a human
+checkpoint: the presence check cannot judge whether the description is faithful.
+
 ## Integrity Note
 
 Presets change appearance only. Restyling never alters:

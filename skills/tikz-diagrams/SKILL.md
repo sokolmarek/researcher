@@ -170,3 +170,14 @@ Generate an `\input{}` or `\includegraphics{}` reference for `main.tex`:
 7. Compile-check via `scripts/latex-compile.py` (uses tectonic if available, otherwise latexmk/pdflatex from TeX Live, MiKTeX, or MacTeX) and verify output
 8. Generate `\input{}` snippet for manuscript integration
 9. If Word output is needed, export the compiled figure to PDF and PNG and tell the user to place it in the document. Automated image embedding is planned, not implemented: `templates/word/build-docx.js` generates headings, paragraphs, and lists only, so do not claim a figure was written into their DOCX
+
+## Alt Text
+
+Alt text is a REQUIRED output of this skill, delivered with every diagram (and every preset variant).
+Write one or two sentences describing the DATA content: name the stages or components and the order
+in which they connect, not the visual styling (colors, fonts, line weights). Presets restyle only, so
+all variants of one diagram share ONE data description plus at most a one-clause style note (for
+example "(Nature preset: sans-serif, hairline strokes)"). Do not begin with "Image of". See the Alt
+Text section of `references/figure-styles.md`. For LaTeX inclusion, offer `\pdftooltip` (pdfcomment
+package) without claiming full PDF/UA compliance; when the figure is placed in Word,
+`templates/word/build-docx.js` carries the alt text into the DOCX image accessibility properties.

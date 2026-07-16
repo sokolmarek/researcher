@@ -162,3 +162,14 @@ Style: nature
 6. Save to `tables/table-<name>.tex`
 7. Validate compilation by running `scripts/latex-compile.py` (or `latex-compile.sh` on POSIX), which uses whichever TeX engine is installed (tectonic recommended, or latexmk/pdflatex from TeX Live, MiKTeX, or MacTeX)
 8. If Word output is requested, say that DOCX table emission is planned and not implemented (see "Word-Compatible Output" above), then deliver the LaTeX table plus the `docx`-library mapping for the user to apply by hand
+
+## Alt Text
+
+Alt text is a REQUIRED output of this skill, delivered with every table (and every preset variant).
+Write one or two sentences describing the DATA content: the rows and columns compared and the
+headline result (for example "Macro-AUROC for supervised vs self-supervised methods at 1%, 10%, and
+100% labeled fractions; self-supervised leads at every fraction"). Never describe styling (booktabs
+rules, fonts); presets restyle only, so all variants of one table share ONE data description plus at
+most a one-clause style note. Do not begin with "Image of". See the Alt Text section of
+`references/figure-styles.md`. This matters when the table is exported as an image; a native LaTeX or
+DOCX table is read directly by assistive tech and needs no separate alt text.

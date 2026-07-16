@@ -233,3 +233,14 @@ Consult `references/plotneuralnet-layers.md` for the complete TikZ layer macro d
 - **paper-drafting:** Architecture diagrams are typically placed in the Methods section
 - **journal-formatting:** Figure dimensions and DPI requirements applied before export
 - **figure-suggestions:** May recommend a neural network diagram for methods section
+
+## Alt Text
+
+Alt text is a REQUIRED output of this skill, delivered with every architecture diagram (and every
+preset variant). Write one or two sentences describing the DATA content: the layer sequence, the
+tensor shapes at each stage, and the output (for example "1D-CNN encoder: input 12x1000, three conv
+blocks with pooling, global average pooling, dense layer, 5-class softmax"). Do not describe styling
+(layer colors, fonts); presets restyle only, so all variants share ONE data description plus at most a
+one-clause style note. Do not begin with "Image of". See the Alt Text section of
+`references/figure-styles.md`. For LaTeX inclusion, offer `\pdftooltip` (pdfcomment package) without
+claiming full PDF/UA compliance.

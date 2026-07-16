@@ -10,6 +10,11 @@ Checks, per plans/06-examples-spec.md sections 5 and 6:
    (wrapped in a minimal harness document first), then compiled. The generated
    fixture at evals/fixtures/manuscript-min/main.tex is compiled as a real
    multi-file manuscript.
+3. Alt-text presence: every rendered example figure (an image under
+   assets/img/examples/ referenced from examples/, including both dual-variant
+   figures) carries non-empty alt text in its markdown ![alt](path). This is a
+   mechanical presence check; alt-text quality stays a human checkpoint. It runs
+   offline and is never skipped by --skip-doi or --skip-latex.
 
 Usage:
     python evals/example-freshness.py                     # everything
@@ -68,6 +73,12 @@ EXPECT_UNRESOLVABLE_RE = re.compile(r"<!--\s*freshness:\s*expect-unresolvable\s+
 NO_COMPILE_RE = re.compile(r"<!--\s*freshness:\s*no-compile\s*-->\s*$")
 INPUT_RE = re.compile(r"\\(?:input|include)\{([^}]+)\}")
 BIBLIOGRAPHY_RE = re.compile(r"\\bibliography\{([^}]+)\}")
+
+# Markdown image reference: ![alt](path). Alt text is group 1, target is group 2.
+MD_IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
+# Rendered example figures live here; only images pointing into this directory
+# are subject to the alt-text presence check (inline icons or badges are not).
+EXAMPLE_ASSET_DIR = "assets/img/examples"
 
 
 def http_get(url, timeout=20):
@@ -153,6 +164,43 @@ def check_dois(dois, arxiv_ids, expected_unresolvable):
             failures.append(f"arXiv check errored: {aid} ({err}) (in {origin})")
             print(f"  FAIL arXiv:{aid} -> {err} (in {origin})")
         time.sleep(0.2)
+    return failures
+
+
+def check_alt_text(md_files):
+    """Presence check: every example figure (an image under assets/img/examples/
+    referenced from examples/) carries non-empty alt text in its ![alt](path)
+    markdown, and the referenced image file exists. Enforces presence only;
+    alt-text quality is a human checkpoint in the review flow."""
+    failures = []
+    checked = 0
+    for md in md_files:
+        text = md.read_text(encoding="utf-8", errors="replace")
+        for match in MD_IMAGE_RE.finditer(text):
+            alt = match.group(1).strip()
+            target = match.group(2).strip()
+            norm = target.replace("\\", "/")
+            if EXAMPLE_ASSET_DIR not in norm:
+                continue
+            checked += 1
+            origin = md.relative_to(REPO_ROOT)
+            image_name = norm.rsplit("/", 1)[-1]
+            resolved = (md.parent / target).resolve()
+            if not resolved.exists():
+                failures.append(f"Example figure file missing: {image_name} (referenced in {origin})")
+                print(f"  FAIL {image_name} -> referenced file not found (in {origin})")
+                continue
+            if not alt:
+                failures.append(f"Example figure lacks alt text: {image_name} (in {origin})")
+                print(f"  FAIL {image_name} -> empty alt text (in {origin})")
+            else:
+                print(f"  ok   {image_name} (alt text present, {len(alt)} chars, in {origin})")
+    if checked == 0:
+        failures.append(
+            "No example figures found under assets/img/examples/; the alt-text "
+            "presence check verified nothing (expected rendered example figures)"
+        )
+        print("  FAIL no example figures referenced under assets/img/examples/")
     return failures
 
 
@@ -280,6 +328,13 @@ def main():
     )
 
     failures = []
+
+    # Alt-text presence runs offline and is never skipped: accessibility is a
+    # release gate, not a network-dependent check.
+    print("Alt-text presence (example figures under assets/img/examples/):")
+    failures += check_alt_text(md_files)
+    print()
+
     if args.skip_doi:
         print("DOI resolution: skipped (--skip-doi)")
     else:

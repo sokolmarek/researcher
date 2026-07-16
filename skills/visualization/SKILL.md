@@ -221,3 +221,14 @@ Generate figure captions following academic conventions:
 - **tikz-diagrams:** For schematic/conceptual figures use tikz-diagrams; for data-driven plots use visualization
 - **word-output:** PDF exports for LaTeX; PNG exports for Word, which the user places in the document by hand (automated image embedding is planned, not implemented: `templates/word/build-docx.js` generates headings, paragraphs, and lists only)
 - **implementation:** Visualization code may be part of experiment pipeline
+
+## Alt Text
+
+Alt text is a REQUIRED output of this skill, delivered with every plot (and every preset variant).
+Write one or two sentences describing the DATA content: name the axes, the series compared, and the
+direction and size of the trend. Never describe styling (colors, fonts, palette); presets restyle
+only, so all variants of one plot share ONE data description plus at most a one-clause style note
+(for example "(Nature preset: 89 mm single column)"). Do not begin with "Image of" or restate the
+caption verbatim. See the Alt Text section of `references/figure-styles.md`. When the plot is embedded
+in Word, `templates/word/build-docx.js` carries this text into the DOCX image accessibility
+properties; for LaTeX inclusion, offer `\pdftooltip` (pdfcomment package) without claiming PDF/UA.

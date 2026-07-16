@@ -136,3 +136,12 @@ Rank all suggestions by impact:
 - **paper-drafting**: consumes figure references and integrates placement into section drafts
 - **journal-formatting**: provides figure format requirements (DPI, file type, color mode, size limits)
 - **image-prompt-crafting**: hand off conceptual illustrations and graphical abstracts to this skill for prompt crafting. Boundary: it never produces data or results figures; those stay with visualization, tikz-diagrams, plotneuralnet, and latex-tables.
+
+## Alt Text
+
+Alt text is a REQUIRED output when this skill emits a figure recommendation: each recommendation
+carries a draft alt-text line describing the DATA content the figure will show (the variables and the
+comparison), so the downstream skill that renders it (visualization, tikz-diagrams, plotneuralnet, or
+latex-tables) inherits a data description rather than inventing one. Describe data, never styling;
+preset variants share ONE data description plus at most a one-clause style note. See the Alt Text
+section of `references/figure-styles.md`.
