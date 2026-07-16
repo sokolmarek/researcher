@@ -58,10 +58,10 @@ jobs:
     if: github.event_name != 'schedule'
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -83,11 +83,9 @@ jobs:
   offline-tests:
     name: Tests (offline, snapshot replay)
     runs-on: ${{ matrix.os }}
-    # macOS starts as a non-gating leg (M5.10, D5): platformdirs and pathlib were written
-    # for it from M2, so the expected work is toolchain pinning, not code. It is promoted to
-    # gating once it is green twice in a row. continue-on-error keeps a macOS-only hiccup from
-    # blocking a merge while it settles.
-    continue-on-error: ${{ matrix.os == 'macos-latest' }}
+    # All three operating systems gate (M5.10, D5). macOS entered as a non-gating leg and
+    # was promoted once green, which is what the 1.0.0 CHANGELOG records; a macOS-only
+    # regression now fails the run like any other.
     if: github.event_name != 'schedule'
     strategy:
       fail-fast: false
@@ -95,10 +93,10 @@ jobs:
         os: [windows-latest, ubuntu-latest, macos-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -127,7 +125,6 @@ jobs:
   no-core-fallback:
     name: Plugin works with no uv and no core (D3)
     runs-on: ${{ matrix.os }}
-    continue-on-error: ${{ matrix.os == 'macos-latest' }}
     if: github.event_name != 'schedule'
     strategy:
       fail-fast: false
@@ -135,10 +132,10 @@ jobs:
         os: [windows-latest, ubuntu-latest, macos-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -162,10 +159,10 @@ jobs:
     if: github.event_name != 'schedule'
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -207,7 +204,7 @@ jobs:
 
       - name: Upload benchmark reports
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: benchmark-reports
           path: |
@@ -231,10 +228,10 @@ jobs:
     continue-on-error: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -262,6 +259,14 @@ jobs:
             --store core/tests/snapshots \
             | tee drift-report.json
 
+      - name: Example DOI freshness, strict (drift canary)
+        # The PR gate tolerates network errors (a Crossref hiccup must not block a merge);
+        # this scheduled leg re-checks with --strict-network so persistent unreachability
+        # or a DOI that quietly broke still surfaces. LaTeX is skipped: no engine here,
+        # and the gating validate.yml jobs compile every block on every push.
+        if: always()
+        run: python3 evals/example-freshness.py --skip-latex --strict-network
+
       - name: Summarize the drift
         if: always()
         run: |
@@ -284,7 +289,7 @@ jobs:
 
       - name: Upload the drift report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: snapshot-drift-report
           path: drift-report.json

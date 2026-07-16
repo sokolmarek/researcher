@@ -114,7 +114,16 @@ def collect_targets(md_files):
 
 
 def check_dois(dois, arxiv_ids, expected_unresolvable):
+    """Returns (failures, network_warnings).
+
+    The distinction is verdict versus ignorance. A 404 on a real DOI is a verdict (the
+    citation is broken) and fails the gate. A timeout, a 5xx, or a rate limit says nothing
+    about the citation, so it is a warning: an upstream hiccup must not block a merge or a
+    release. The scheduled canary runs with --strict-network, where warnings fail too, so
+    persistent unreachability still surfaces without gating every PR on Crossref uptime.
+    """
     failures = []
+    warnings = []
     for index, (doi, files) in enumerate(sorted(dois.items()), start=1):
         url = "https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="")
         status = None
@@ -134,19 +143,24 @@ def check_dois(dois, arxiv_ids, expected_unresolvable):
             # Seeded fake: it must KEEP failing to resolve, or the example is broken.
             if status == 404:
                 print(f"  ok   DOI {doi} (seeded fake, correctly unresolvable)")
-            else:
+            elif status == 200:
                 failures.append(
                     f"Seeded fake DOI unexpectedly resolves (status {status}): {doi} (in {origin})"
                 )
                 print(f"  FAIL DOI {doi} -> seeded fake resolved with status {status} (in {origin})")
+            else:
+                warnings.append(
+                    f"Seeded fake DOI could not be checked (network/status {status}): {doi} (in {origin})"
+                )
+                print(f"  warn DOI {doi} -> network/status {status}, seeded fake unchecked (in {origin})")
         elif status == 200:
             print(f"  ok   DOI {doi}")
         elif status == 404:
             failures.append(f"DOI does not resolve: {doi} (in {origin})")
             print(f"  FAIL DOI {doi} -> 404 (in {origin})")
         else:
-            failures.append(f"DOI check errored (status {status}): {doi} (in {origin})")
-            print(f"  FAIL DOI {doi} -> network/status {status} (in {origin})")
+            warnings.append(f"DOI check errored (network/status {status}): {doi} (in {origin})")
+            print(f"  warn DOI {doi} -> network/status {status} (in {origin})")
         time.sleep(0.05)
 
     for aid, files in sorted(arxiv_ids.items()):
@@ -157,14 +171,18 @@ def check_dois(dois, arxiv_ids, expected_unresolvable):
             text = body.decode("utf-8", errors="replace")
             if status == 200 and "<entry>" in text and "Error" not in text[:2000]:
                 print(f"  ok   arXiv:{aid}")
-            else:
+            elif status == 200:
+                # arXiv answered and the ID is not there: that is a verdict, not an outage.
                 failures.append(f"arXiv ID does not resolve: {aid} (in {origin})")
                 print(f"  FAIL arXiv:{aid} (in {origin})")
+            else:
+                warnings.append(f"arXiv check errored (status {status}): {aid} (in {origin})")
+                print(f"  warn arXiv:{aid} -> status {status} (in {origin})")
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as err:
-            failures.append(f"arXiv check errored: {aid} ({err}) (in {origin})")
-            print(f"  FAIL arXiv:{aid} -> {err} (in {origin})")
+            warnings.append(f"arXiv check errored: {aid} ({err}) (in {origin})")
+            print(f"  warn arXiv:{aid} -> {err} (in {origin})")
         time.sleep(0.2)
-    return failures
+    return failures, warnings
 
 
 def check_alt_text(md_files):
@@ -307,6 +325,9 @@ def main():
     parser.add_argument("--fixture", default=str(REPO_ROOT / "evals" / "fixtures" / "manuscript-min" / "main.tex"))
     parser.add_argument("--skip-doi", action="store_true", help="skip DOI/arXiv resolution (offline)")
     parser.add_argument("--skip-latex", action="store_true", help="skip LaTeX compilation")
+    parser.add_argument("--strict-network", action="store_true",
+                        help="treat network errors as failures (scheduled canary mode); "
+                             "by default they are non-gating warnings")
     parser.add_argument("--engine", help="tectonic, latexmk, pdflatex, xelatex, lualatex, "
                                          "or a path to an engine binary (default: autodetect)")
     args = parser.parse_args()
@@ -335,11 +356,16 @@ def main():
     failures += check_alt_text(md_files)
     print()
 
+    network_warnings = []
     if args.skip_doi:
         print("DOI resolution: skipped (--skip-doi)")
     else:
         print("DOI and arXiv resolution:")
-        failures += check_dois(dois, arxiv_ids, expected_unresolvable)
+        doi_failures, network_warnings = check_dois(dois, arxiv_ids, expected_unresolvable)
+        failures += doi_failures
+        if args.strict_network:
+            failures += network_warnings
+            network_warnings = []
 
     if args.skip_latex:
         print("LaTeX freshness: skipped (--skip-latex)")
@@ -358,6 +384,12 @@ def main():
             failures += check_latex(blocks, Path(args.fixture) if args.fixture else None, engine)
 
     print()
+    if network_warnings:
+        print(f"WARNINGS (network, non-gating; the scheduled canary re-checks strictly): "
+              f"{len(network_warnings)}")
+        for warning in network_warnings:
+            print(f"- {warning}")
+        print()
     if failures:
         print(f"FAILED: {len(failures)} issue(s)")
         for failure in failures:

@@ -36,10 +36,10 @@ jobs:
       version: ${{ steps.ver.outputs.version }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -76,7 +76,7 @@ jobs:
           echo "Tag, plugin.json, marketplace.json, CHANGELOG, and CITATION.cff agree on $VERSION."
 
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
         with:
           node-version: 22
 
@@ -94,7 +94,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Package the plugin
         run: |
@@ -239,7 +239,7 @@ jobs:
       - name: Sign the artifacts (Sigstore keyless)
         # OIDC keyless signing, no stored keys, consistent with the no-token posture (D13/D14).
         # Each artifact gets a .sig and a .pem certificate; the README documents cosign verify-blob.
-        uses: sigstore/cosign-installer@v3
+        uses: sigstore/cosign-installer@398d4b0eeef1380460a10c8013a76f728fb906ac # v3
       - name: cosign sign-blob
         run: |
           set -e
@@ -252,7 +252,7 @@ jobs:
           done
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3
         with:
           tag_name: ${{ needs.validate.outputs.tag }}
           name: ${{ needs.validate.outputs.tag }}
@@ -279,9 +279,9 @@ jobs:
     environment: pypi
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Build the sdist and wheel
@@ -302,6 +302,6 @@ jobs:
           fi
       - name: Publish to PyPI (OIDC trusted publishing)
         if: steps.check.outputs.publish == 'true'
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # release/v1 branch head, 2026-07-16
         with:
           packages-dir: core/dist
