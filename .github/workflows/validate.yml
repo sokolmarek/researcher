@@ -230,6 +230,11 @@ jobs:
           print(f"All {len(agents)} agents declare skills that resolve.")
           PY
 
+      - name: CITATION.cff is valid
+        run: |
+          # Makes the repo citable and catches a malformed CFF before a release depends on it.
+          pipx run 'cffconvert==2.0.0' --validate
+
   unit-tests:
     name: Script unit tests
     runs-on: ${{ matrix.os }}

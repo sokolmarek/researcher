@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "researcher-core": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "${CLAUDE_PLUGIN_ROOT}/core",
+        "--extra",
+        "mcp",
+        "researcher-mcp"
+      ],
+      "env": {}
+    }
+  }
+}

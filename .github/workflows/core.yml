@@ -83,11 +83,16 @@ jobs:
   offline-tests:
     name: Tests (offline, snapshot replay)
     runs-on: ${{ matrix.os }}
+    # macOS starts as a non-gating leg (M5.10, D5): platformdirs and pathlib were written
+    # for it from M2, so the expected work is toolchain pinning, not code. It is promoted to
+    # gating once it is green twice in a row. continue-on-error keeps a macOS-only hiccup from
+    # blocking a merge while it settles.
+    continue-on-error: ${{ matrix.os == 'macos-latest' }}
     if: github.event_name != 'schedule'
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, ubuntu-latest]
+        os: [windows-latest, ubuntu-latest, macos-latest]
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -122,11 +127,12 @@ jobs:
   no-core-fallback:
     name: Plugin works with no uv and no core (D3)
     runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.os == 'macos-latest' }}
     if: github.event_name != 'schedule'
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, ubuntu-latest]
+        os: [windows-latest, ubuntu-latest, macos-latest]
     steps:
       - name: Checkout
         uses: actions/checkout@v7

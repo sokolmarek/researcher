@@ -12,6 +12,9 @@ on:
 
 permissions:
   contents: write
+  # id-token is for OIDC: Sigstore keyless signing in the release job and PyPI trusted
+  # publishing in the publish job. No stored keys, no stored tokens (D13/D14).
+  id-token: write
 
 env:
   CLAUDE_CLI_VERSION: "2.1.209"
@@ -60,7 +63,17 @@ jobs:
             echo "CHANGELOG.md has no '## [$VERSION]' section."
             exit 1
           fi
-          echo "Tag, manifest, and changelog agree on $VERSION."
+          CFF=$(python3 -c "import re,sys; m=re.search(r'^version:\s*(\S+)', open('CITATION.cff').read(), re.M); print(m.group(1).strip('\"') if m else '')")
+          if [ "$VERSION" != "$CFF" ]; then
+            echo "Tag version ($VERSION) does not match CITATION.cff ($CFF)."
+            exit 1
+          fi
+          MKT=$(python3 -c "import json;print(json.load(open('.claude-plugin/marketplace.json'))['plugins'][0]['version'])")
+          if [ "$VERSION" != "$MKT" ]; then
+            echo "Tag version ($VERSION) does not match marketplace.json ($MKT)."
+            exit 1
+          fi
+          echo "Tag, plugin.json, marketplace.json, CHANGELOG, and CITATION.cff agree on $VERSION."
 
       - name: Setup Node
         uses: actions/setup-node@v7
@@ -204,12 +217,79 @@ jobs:
             echo "Release ${{ needs.validate.outputs.tag }}." > RELEASE_NOTES.md
           fi
 
+      - name: Generate SBOMs (CycloneDX)
+        # A CycloneDX SBOM for the Python kernel and one for the Word toolchain, so a consumer
+        # can see exactly what the release depends on. Pinned tools, no floating latest.
+        run: |
+          pipx run --spec 'cyclonedx-bom==5.3.0' cyclonedx-py environment \
+            --output-format json --outfile core-sbom.cdx.json core || \
+            pipx run --spec 'cyclonedx-bom==5.3.0' cyclonedx-py requirements \
+            --output-format json --outfile core-sbom.cdx.json core/pyproject.toml
+          ( cd templates/word && npm sbom --sbom-format cyclonedx > ../../word-sbom.cdx.json ) || \
+            echo '{}' > word-sbom.cdx.json
+
+      - name: Sign the artifacts (Sigstore keyless)
+        # OIDC keyless signing, no stored keys, consistent with the no-token posture (D13/D14).
+        # Each artifact gets a .sig and a .pem certificate; the README documents cosign verify-blob.
+        uses: sigstore/cosign-installer@v3
+      - name: cosign sign-blob
+        run: |
+          set -e
+          for f in "researcher-${{ needs.validate.outputs.tag }}.zip" core-sbom.cdx.json word-sbom.cdx.json; do
+            [ -f "$f" ] || continue
+            cosign sign-blob --yes \
+              --output-signature "${f}.sig" \
+              --output-certificate "${f}.pem" \
+              "$f"
+          done
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ needs.validate.outputs.tag }}
           name: ${{ needs.validate.outputs.tag }}
           body_path: RELEASE_NOTES.md
-          files: researcher-${{ needs.validate.outputs.tag }}.zip
+          files: |
+            researcher-${{ needs.validate.outputs.tag }}.zip
+            researcher-${{ needs.validate.outputs.tag }}.zip.sig
+            researcher-${{ needs.validate.outputs.tag }}.zip.pem
+            core-sbom.cdx.json
+            core-sbom.cdx.json.sig
+            core-sbom.cdx.json.pem
+            word-sbom.cdx.json
           draft: false
           prerelease: false
+
+  # Publish researcher-core to PyPI via OIDC trusted publishing (no stored token, D13). The
+  # package version comes from core/pyproject.toml, NOT from the tag, so a plugin tag whose core
+  # version is unchanged simply uploads nothing new rather than failing on a duplicate version.
+  pypi-publish:
+    needs: [validate, full-validation]
+    runs-on: ubuntu-latest
+    environment: pypi
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Build the sdist and wheel
+        run: |
+          python -m pip install --upgrade build
+          python -m build core
+      - name: Skip if this core version is already on PyPI
+        id: check
+        run: |
+          VERSION="$(python -c "import tomllib;print(tomllib.load(open('core/pyproject.toml','rb'))['project']['version'])")"
+          if pip index versions researcher-core 2>/dev/null | grep -q "$VERSION"; then
+            echo "researcher-core $VERSION is already published, skipping."
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publish to PyPI (OIDC trusted publishing)
+        if: steps.check.outputs.publish == 'true'
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: core/dist
