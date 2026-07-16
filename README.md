@@ -26,7 +26,7 @@ Think of it as a very capable assistant that never sleeps, never forgets a citat
 
 ## What This Is
 
-A Claude Code / Cowork plugin with **31 specialized skills**, **9 agents**, and **13 slash commands** covering the full research pipeline:
+A Claude Code / Cowork plugin with **35 specialized skills**, **9 agents**, and **15 slash commands** covering the full research pipeline:
 
 ```
 Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
@@ -35,7 +35,7 @@ Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
     -> Journal Selection -> Formatting -> Submission
 ```
 
-It also runs on **OpenAI Codex**: all 31 skills install with one script (`python scripts/install-codex-skills.py`), because Codex reads the same open agent-skills format. See [OpenAI Codex](#openai-codex) under Installation for what carries over.
+It also runs on **OpenAI Codex**: all 35 skills install with one script (`python scripts/install-codex-skills.py`), because Codex reads the same open agent-skills format. See [OpenAI Codex](#openai-codex) under Installation for what carries over.
 
 Underneath the skills sits **the evidence kernel** (`core/`, new in 0.3.0): a deterministic Python
 package that queries 8 scholarly indexes directly, deduplicates the results, and verifies every
@@ -50,15 +50,24 @@ claims, altered numbers, stale evidence, qualifier mismatches, retractions, and 
 and `researcher passport` exports the whole lineage as an RO-Crate or W3C PROV record. A source that
 errors during a re-check is `inconclusive`, never a defect, so a downed index can never fail your build.
 
+On top of the lineage graph sits **the systematic-review vertical** (new in 0.5.0): a workflow you could
+defend to a methodologist. It locks a protocol before any screening starts (a post-lock edit without a
+recorded amendment is caught as a hash mismatch), runs dual independent screening with genuinely blinded
+adjudication (the adjudicator sees only the record and the eligibility profile, never the other
+screener's vote, and that blinding is verified end to end through the real CLI), organizes RoB 2 and
+GRADE appraisal worksheets that a human completes, and keeps reviews living as new records arrive. The
+whole PRISMA 2020 flow and checklist are DERIVED by aggregating the event ledger, not stored: delete one
+screening event and the derived flow changes, which is the proof.
+
 LaTeX-first, Word-compatible. Every output works in both worlds.
 
 ## What works today, what is planned
 
 | Capability | Status |
 |---|---|
-| 31 skills, 9 agents, 13 commands (prompt-driven workflows) | Works today |
+| 35 skills, 9 agents, 15 commands (prompt-driven workflows) | Works today |
 | Marketplace install (`/plugin install researcher@researcher-marketplace`) | Works today |
-| Codex support (31 skills via `scripts/install-codex-skills.py`) | Works today |
+| Codex support (35 skills via `scripts/install-codex-skills.py`) | Works today |
 | Citation commit guard (blocks a commit whose `\cite` keys have no bib entry, including bibliography-only deletions) | Works today; run `python scripts/install-git-hooks.py` once per repo to also cover terminal and IDE commits |
 | BibTeX validation: brace-aware parser, CrossRef DOI resolution, title and first-author matching, retraction flags (`scripts/bib-validator.py`) | Works today (network required) |
 | LaTeX compile checks with whatever TeX engine you have (`scripts/latex-compile.py` / `.sh`) | Works today (any TeX installation: tectonic, TeX Live, MiKTeX, or MacTeX; `scripts/latex_engine.py` autodetects, and `--engine` or `LATEX_ENGINE` picks one explicitly) |
@@ -74,6 +83,9 @@ LaTeX-first, Word-compatible. Every output works in both worlds.
 | PRISMA provenance ledger (append-only, counts derived by aggregation) | Works today (`core/`) |
 | **The evidence-lineage compiler** (`researcher compile`): every claim and number compiles from a qualified source span or an experiment run, or the gate fails. Detects orphan claims, altered numbers, stale evidence, qualifier mismatches, retractions, and artifact-code drift (C001-C006) | **Works today (new in 0.4.0)**, part of `core/`. A source error during a re-check is `inconclusive`, never a defect; only clean C001-C006 are refusal-grade |
 | Research passport (`researcher passport --format ro-crate\|prov-jsonld`): the full evidence lineage as an RO-Crate 1.1 or W3C PROV-JSON-LD export | Works today (new in 0.4.0, `core/`) |
+| **The systematic-review vertical**: protocol locking (`protocol lock`), dual independent screening with blinded adjudication (`screen conflicts`), Cohen's kappa, and living reviews (`monitor`) | **Works today (new in 0.5.0)**, `core/`. Blinding is verified end to end through the CLI |
+| PRISMA 2020 flow and checklist, and RoB 2 / GRADE appraisal worksheets | Works today (new in 0.5.0). PRISMA is DERIVED by aggregating the event ledger, never stored; RoB 2 and GRADE are human-completed with no automated scoring |
+| Structured extraction tables and a claim-by-source contradiction matrix | Works today (new in 0.5.0). Extraction anchors each cell to a passage with its verification layer and says "not reported" rather than invent a value; benchmarked in [`evals/BENCHMARKS.md`](evals/BENCHMARKS.md) |
 | Bundled `.mcp.json` (Scite, Zotero, paper-search) | Planned |
 | Google Scholar / Mendeley APIs | Not planned (no stable free API); fallbacks documented in `connectors/` |
 
@@ -135,6 +147,15 @@ half-measured set. Full detail, including the risk-coverage curve, is in
 | **Citation Context** | Classify citations as supporting, contrasting, or mentioning. Audit your manuscript for misrepresented sources. |
 | **Citation Audit** | The integrity workhorse (`/researcher:verify-citations`): an existence gate (`verify-bib` plus a status sweep) and a claim-faithfulness audit. Refuses a clean verdict on any refusal-grade finding, and states the layer each claim was verified against. |
 | **Research Pipeline** | A staged run (`/researcher:research-pipeline`) from Plan through Format: Plan, Retrieve, Synthesize, Draft, Review, Compile, Format, with a human checkpoint after every stage. Format is reachable only from a passing compile. |
+
+### Systematic Review
+
+| Skill | What it does |
+|-------|-------------|
+| **Systematic Review** | The end-to-end workflow (`/researcher:systematic-review`) over the event ledger: lock a protocol, run per-database strategies, dedup, dual screen with blinded adjudication, then hand off to extraction, appraisal, synthesis, and reporting. Refuses to screen before a protocol lock. Every included reference is verified on identity; an `inconclusive` result is flagged for human review, never dropped as fabricated. PRISMA 2020 is DERIVED from the ledger. |
+| **Extraction Tables** | Elicit-style structured extraction. Per-paper values anchored to full-text passages, with the verification layer stated on every cell, "not reported" instead of an invented value, and typed effect-size columns the meta-analysis consumes mechanically. |
+| **Contradiction Detection** | A claim-by-source contradiction matrix, each cell carrying its quote and verification layer, feeding GRADE's inconsistency domain with concrete cited disagreements. |
+| **Literature Monitoring** | Living reviews (`/researcher:watch-topic`): saved verbatim searches, a diff of new records against the seen list on rerun, feeding a fresh screening batch under the same locked protocol. |
 
 ### Planning & Design
 
@@ -207,6 +228,8 @@ Plugin commands are namespaced by the plugin name, so they never collide with an
 | `/researcher:design-experiment <question>` | Design an experiment for your research question |
 | `/researcher:research-pipeline` | Run the staged pipeline (Plan, Retrieve, Synthesize, Draft, Review, Compile, Format) with a human checkpoint after every stage |
 | `/researcher:verify-citations` | Audit a manuscript's citations: existence gate plus claim-faithfulness audit, refusing a clean verdict on any refusal-grade finding |
+| `/researcher:systematic-review` | Run the systematic-review workflow: lock a protocol, dual screen with blinded adjudication, and derive the PRISMA 2020 flow from the ledger |
+| `/researcher:watch-topic` | Set up a living review: save the search, diff new records on rerun, and feed them into the same locked protocol's screening |
 
 Commands take free-text arguments; Claude asks for anything it still needs.
 
@@ -250,7 +273,7 @@ Nine specialized agents orchestrate skills for complex workflows:
 Codex implements the same open agent-skills standard as Claude Code: a skill is a directory holding a
 `SKILL.md` with `name` and `description` frontmatter. Codex scans `$CWD/.agents/skills`,
 `$REPO_ROOT/.agents/skills`, and `$HOME/.agents/skills`, in that priority order. The installer copies all
-31 skills into one of those locations:
+35 skills into one of those locations:
 
 ```bash
 git clone https://github.com/sokolmarek/researcher.git
@@ -394,9 +417,9 @@ design for a later release.
 ```
 researcher/
 ├── .claude-plugin/               # Plugin manifest + marketplace catalog
-├── skills/                       # 31 specialized skills
+├── skills/                       # 35 specialized skills
 ├── agents/                       # 9 orchestration agents
-├── commands/                     # 13 slash commands
+├── commands/                     # 15 slash commands
 ├── core/                         # The evidence kernel (researcher_core): connectors, verification, lineage compiler, provenance
 ├── connectors/                   # 12 connector docs (mechanism, env vars, fallbacks)
 ├── hooks/                        # Claude tool guards (hooks.json) + docs
@@ -426,7 +449,7 @@ researcher/
 
 5. **Token-smart.** The implementation and code-analysis skills fork into a Sonnet-pinned code agent (via `context: fork` in their frontmatter), so your session's higher-tier budget goes to research thinking, writing, and review rather than to generating boilerplate.
 
-6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The evidence kernel landed in 0.3.0 with its benchmarks published, weak axis and red gate included, because a benchmark you only cite when it flatters you is marketing. The evidence-lineage compiler followed in 0.4.0: every claim and number in your manuscript traces back to a source span or an experiment run, or `researcher compile` fails the gate. Next is the systematic-review vertical. The goal is a core you can trust, not a bigger feature list.
+6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The evidence kernel landed in 0.3.0 with its benchmarks published, weak axis and red gate included, because a benchmark you only cite when it flatters you is marketing. The evidence-lineage compiler followed in 0.4.0: every claim and number in your manuscript traces back to a source span or an experiment run, or `researcher compile` fails the gate. The systematic-review vertical followed in 0.5.0: protocol locking, dual screening with blinded adjudication, and a PRISMA 2020 flow derived from the event ledger rather than stored. Next is M5, production completeness and the 1.0.0 release. The goal is a core you can trust, not a bigger feature list.
 
 ---
 

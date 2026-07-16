@@ -20,7 +20,7 @@ Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
     -> Journal Selection -> Formatting -> Submission
 ```
 
-It ships **31 skills**, **9 orchestration agents**, and **13 slash commands**, plus connectors to the major bibliographic sources. Output is LaTeX-first and Word-compatible.
+It ships **35 skills**, **9 orchestration agents**, and **15 slash commands**, plus connectors to the major bibliographic sources. Output is LaTeX-first and Word-compatible.
 
 ## What it refuses to do
 
@@ -32,7 +32,7 @@ It ships **31 skills**, **9 orchestration agents**, and **13 slash commands**, p
 ## Philosophy
 
 1. **Assistant, not author.** It guides, assists, and handles logistics. It does not replace your expertise or your judgment. Every claim needs your verification.
-2. **Integrity first.** What runs today: a citation commit guard that blocks commits with dangling `\cite` keys, DOI validation and retraction flags via `scripts/bib-validator.py`, LaTeX compile checks before delivery, and refusal-grade constraints inlined in every skill that produces cited content. Multi-index reference verification (the four-state gate) is the next planned milestone.
+2. **Integrity first.** What runs today: a citation commit guard that blocks commits with dangling `\cite` keys, DOI validation and retraction flags, LaTeX compile checks before delivery, and refusal-grade constraints inlined in every skill that produces cited content. Multi-index reference verification (the four-state identity gate) shipped in 0.3.0 and is measured in `evals/BENCHMARKS.md`; the evidence-lineage compiler (0.4.0) and the systematic-review vertical (0.5.0) are built on top of it.
 3. **Your voice, amplified.** Style calibration learns how *you* write, so drafts sound like a better-rested version of you, not a robot.
 4. **LaTeX-first, Word-compatible.** Because some of us chose suffering and some of us had it chosen for us by our collaborators.
 5. **Token-smart.** Code and formatting tasks route to a smaller model; research thinking and writing use the larger one. Your budget goes further.

@@ -51,7 +51,7 @@ Or just describe what you want and let Codex match the skill from its descriptio
 
 | Carries over to Codex | Claude-only |
 |---|---|
-| All 31 skills | The 9 subagents. Codex has none, so the two skills that fork into the Sonnet code-agent under Claude simply run in the main session, and the installed copies say so. |
+| All 35 skills | The 9 subagents. Codex has none, so the two skills that fork into the Sonnet code-agent under Claude simply run in the main session, and the installed copies say so. |
 | Every Python script (bib-validator, latex-compile, install-git-hooks). They are agent-agnostic and run standalone, with no agent at all. | The in-session tool guards in `hooks/hooks.json`. Codex has no hook system. |
 | The real git pre-commit citation guard | The namespaced slash commands. The installer rewrites each one to the skill it routed to, so `/researcher:draft-section` becomes `$researcher-paper-drafting`. |
 | LaTeX compile checks, with any TeX engine | |

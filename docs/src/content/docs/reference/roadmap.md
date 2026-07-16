@@ -6,7 +6,7 @@ sidebar:
   order: 4
 ---
 
-This page is an honest sketch of where Researcher is going, organized as versioned milestones. Milestones 1, 2, and 3 have **shipped**; everything after them is **planned, not shipped**. Treat the later milestones as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
+This page is an honest sketch of where Researcher is going, organized as versioned milestones. Milestones 1 through 4 have **shipped**; everything after them is **planned, not shipped**. Treat the later milestones as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
 
 One thing that will not change: the **plugin stays the primary experience**. Everything on this page is about making the plugin more trustworthy and more portable, not about replacing it with some other product. You should still be able to type "review my paper" at 3 AM and get sensible help.
 
@@ -81,9 +81,20 @@ The output is a **research passport**: a `researcher passport --format ro-crate|
 
 This milestone also brought six existing skills onto the deterministic backend (each shipped only because the benchmark gating it is green) and added two new ones: a citation-audit skill and a staged research pipeline that runs Plan through Format with a human checkpoint after every stage and Format reachable only from a passing compile. The observed counts are now **31 skills, 9 agents, and 13 commands** (up from 29 and 11), and the pooled trigger eval holds at 99.4% recall and a 6.5% false-trigger rate with the two new skills added. As always from Milestone 2 onward, those counts are reported after the fact, never targeted.
 
-## Milestone 4 (0.5.0): the systematic-review vertical
+## Milestone 4 (0.5.0, shipped): the systematic-review vertical
 
-With verified retrieval and evidence lineage in place, the first full vertical is systematic reviews: **protocol locking** before screening begins, **dual independent screening**, risk-of-bias assessment with **RoB 2**, certainty grading with **GRADE**, **meta-analysis**, and **living reviews** that update as new evidence arrives. **PRISMA 2020** is the reporting layer over all of it, so a review can export a defensible record of exactly which searches ran, what they returned, and why each item was included or excluded.
+With verified retrieval and evidence lineage in place, the first full vertical is systematic reviews: a workflow you could defend to a methodologist. The load-bearing decision is what **PRISMA 2020** is not. It is not the architecture. The architecture is the append-only event ledger from Milestone 2, and the PRISMA 2020 flow diagram and checklist are **derived** views over it, recomputed by aggregating events and never stored. The proof is blunt: delete one screening event and the derived flow changes. A stored count could not do that.
+
+Four core modules sit on the ledger:
+
+- **Protocol locking** (`protocol lock|amend|check`). Locking hashes the protocol (question, eligibility profile, per-database strategies, planned synthesis) and binds every later event to that hash. A deviation is never an edit: an amendment is its own event that bumps the protocol version, so the ledger keeps the locked original plus the full amendment trail. Editing the protocol file after lock without an amendment is caught as a hash mismatch, which is the check that makes "locked" mean something.
+- **Dual independent screening with blinded adjudication** (`screen decide|conflicts|kappa`). Two screening streams. When they disagree, the conflict goes to an adjudicator who sees only the record and the eligibility profile, never the two votes, so the second opinion is genuinely blind. That blinding is verified end to end through the real CLI, not asserted: an integration test inspects the adjudication payload and confirms no vote leaks into it. Cohen's kappa between streams is derived from the ledger, and an optional ranked queue reorders the remaining records without ever auto-excluding one.
+- **The PRISMA 2020 reporting layer** (`prisma flow|checklist`). The full flow (identified, deduplicated, screened, excluded with reasons, retrieved, assessed, included) and the checklist, derived purely by aggregating ledger events.
+- **Living reviews** (`monitor status`). Saved verbatim searches, a diff of new records against the seen list on rerun, feeding a fresh screening batch under the same locked protocol. That is what makes a review living rather than redone.
+
+Methodology comes from the Cochrane toolkit used alongside PRISMA 2020: **RoB 2** risk-of-bias worksheets per randomized study and **GRADE** certainty grading per outcome, both human-completed with no automated scoring, and both hashed into the ledger so the report can prove which appraisal version fed the conclusions. **Meta-analysis** binds every pooled number to a committed script and its inputs, so a hand-edited estimate fails the Milestone 3 compile gate.
+
+This milestone added four new skills, each gated before it shipped: `systematic-review`, `extraction-tables`, `contradiction-detection`, and `literature-monitoring`, plus two commands (`/researcher:systematic-review` and `/researcher:watch-topic`). The extraction skill is gated by a new benchmark of 147 real labeled cells across six column types: measured location accuracy is 109/119 (0.916, 95% Wilson [0.852, 0.954]), with the weak columns named (population 0.778, metric_name 0.722), a "not reported" precision of 25/30 (0.833), and a fabrication risk of 3/28 (0.107). The benchmark measures core's anchoring floor, not Claude's judgment, and it runs offline with byte-identical repeats. The observed counts are now **35 skills, 9 agents, and 15 commands** (up from 31 and 13), and the pooled trigger eval holds at 95.4% recall and a 5.7% false-trigger rate with all 35 skills. As always from Milestone 2 onward, those counts are reported after the fact, never targeted.
 
 ## Milestone 5 (1.0.0): production completeness
 

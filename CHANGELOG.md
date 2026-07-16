@@ -4,6 +4,124 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-07-14
+
+The systematic-review vertical. 0.4.0 made a single manuscript compile from its evidence; 0.5.0 builds the
+first full methodology on top of the kernel and the ledger: a systematic review you could defend to a
+methodologist. The load-bearing decision is what PRISMA 2020 is NOT. It is not the architecture. The
+architecture is the append-only event ledger from 0.3.0, and the PRISMA 2020 flow diagram and checklist
+are DERIVED views over it (D10), recomputed by aggregating events and never stored. The proof is blunt:
+delete one screening event and the derived flow changes. A stored count could not do that, which is
+exactly why most tools store one.
+
+Methodology comes from the Cochrane toolkit used alongside PRISMA 2020, not instead of it, and the human
+makes every judgment. Screening decisions, risk-of-bias appraisals, and certainty grades are the
+reviewer's; the plugin organizes the work and records it, and it says so in the report rather than
+laundering a default into a hidden automation. The same asymmetry the kernel lives by holds here: a
+reference that resolves on only one index, or whose lookup errored, is `inconclusive` and gets flagged
+for human review, never dropped as fabricated.
+
+### Added
+
+**Four new core modules in `researcher_core`, all writing to the ledger.**
+
+- **`protocol.py` (`protocol lock|amend|check`).** Locking hashes the protocol document (question,
+  eligibility profile, per-database strategies, planned synthesis) and emits a `protocol_locked` event
+  carrying that hash; every later event binds to it through `protocol_version`. A deviation is never an
+  edit: `protocol amend` emits an `amendment` event and bumps `protocol_version`, so the ledger keeps the
+  locked original plus the full amendment trail. Editing the protocol file after lock without an
+  amendment is caught as a hash mismatch, which is the check that makes "locked" mean something.
+- **`screen.py` (`screen decide|conflicts|kappa`).** Two independent screening streams. `screen
+  conflicts` surfaces the records where the streams disagree to an adjudicator who sees ONLY the record
+  and the eligibility profile, never the two votes, so the second opinion is genuinely blind. Cohen's
+  kappa between streams is derived from the ledger. An optional ranked queue reorders the remaining
+  records by lexical similarity to the included ones; it reorders ONLY, never auto-excludes, and the
+  report discloses that prioritized screening was used.
+- **`sr_prisma.py` (`prisma flow|checklist`).** The full PRISMA 2020 flow (identified, deduplicated,
+  screened, excluded with reasons, retrieved, assessed, included) and the checklist, derived purely by
+  aggregating ledger events (D10). Nothing is stored; deleting a screening event changes the derived
+  flow, which is the proof that it is derived and not stored.
+- **`monitor.py` (`monitor status`).** Living reviews. Saved verbatim search strategies, a diff of new
+  records against the seen list on rerun, feeding a fresh screening batch under the same locked protocol
+  (or an amendment when the criteria must change). That is what makes a review living rather than redone.
+
+**Three new ledger event types: `protocol_locked`, `amendment`, and `adjudication`,** alongside the
+`screening_decision` type reserved earlier. Every protocol lock, amendment, screening decision, and
+conflict resolution is an event, so the derived PRISMA layer above has real data to aggregate rather than
+a stored shape to trust.
+
+**Blinded adjudication, verified end to end rather than asserted.** The whole point of a second screener
+is a second opinion that has not seen the first, and it is easy to claim and easy to leak. So an
+end-to-end CLI test drives a small review through the real commands (protocol lock, dual screening,
+conflict adjudication, derived flow) and inspects the adjudication payload the CLI actually produces,
+confirming no vote reaches it. The blinding is a property of the shipped command, not of a sentence
+describing it.
+
+**Four new skills, each gated before it shipped (D18).**
+
+- **`systematic-review` (`/researcher:systematic-review`).** The end-to-end workflow over the ledger:
+  draft and lock the protocol, run the per-database strategies, dedup, dual screen with blinded
+  adjudication, then hand off to extraction, appraisal, synthesis, and reporting. It refuses to screen
+  before a protocol lock exists. Every reference entering the included set is verified on axis (a); an
+  `inconclusive` result is flagged for human review, never dropped as fabricated, because dropping a real
+  citation the indexes were merely slow about is the failure this whole project exists to avoid.
+- **`extraction-tables`.** Elicit-style structured extraction: per-paper values anchored to full-text
+  passages with the verification layer stated on every cell, "not reported" instead of an invented value,
+  and typed effect-size columns (estimate, CI or SE, n per arm, metric definition) that the meta-analysis
+  pipeline consumes mechanically.
+- **`contradiction-detection`.** A claim-by-source contradiction matrix, each cell carrying its quote and
+  its verification layer, feeding GRADE's inconsistency domain with concrete cited disagreements instead
+  of vibes. Gated by the axis (c) faithfulness benchmark, which is green.
+- **`literature-monitoring` (`/researcher:watch-topic`).** The skill face of `monitor.py`: saved
+  searches, diff-on-rerun, and new records fed into a living review's screening streams under the same
+  locked protocol.
+
+Two commands join the set: `/researcher:systematic-review` and `/researcher:watch-topic`.
+
+**RoB 2 and GRADE worksheets (`references/rob2-worksheet.md`, `references/grade-worksheet.md`),
+human-completed by design.** RoB 2's five domains per randomized study and GRADE's certainty assessment
+per outcome. There is no automated risk-of-bias scoring, and that is stated rather than implied: the
+reviewer makes every judgment, the skills prefill only mechanical fields, and the completed worksheets
+are hashed into the ledger so the report can prove which appraisal version fed the conclusions. The
+eligibility template (`templates/eligibility-profile.yaml`) supports PICO, PECO, and SPIDER, so a
+qualitative question maps onto SPIDER without faking PICO fields.
+
+**The meta-analysis handoff binds every pooled number to a committed script and its inputs.** Effect
+sizes flow from the typed extraction columns into analysis code generated through the statistical-analysis
+skill (routed to the Sonnet code agent). The script and its inputs are committed, so 0.4.0's compile gate
+can bind every pooled estimate, heterogeneity value, and forest-plot number to the script that produced
+it: a hand-edited estimate fails `researcher compile` as a C002 altered number. No pooled figure is
+hand-typed.
+
+**The review manuscript stub (`templates/systematic-review.tex`) inlines a ledger-derived PRISMA flow and
+compiles under latexmk,** so the derived flow and the manuscript are one artifact rather than a diagram
+pasted next to prose.
+
+**The extraction benchmark (`evals/gold/extraction.yaml`, `evals/run_extraction.py`), which gates
+`extraction-tables` (D18).** 147 real labeled cells across six column types (each with at least 20),
+including 28 genuinely-absent cells. Measured:
+
+```
+location accuracy               109/119   0.916   [0.852, 0.954]
+"not reported" precision         25/30    0.833
+fabrication risk                  3/28    0.107
+```
+
+It names where it is weak: population at 0.778 and metric_name at 0.722 are the two column types it
+anchors least reliably, printed rather than averaged away. What the benchmark measures is core's anchoring
+floor, not Claude's judgment about the numbers. It runs offline, two runs are byte-identical, and it is
+wired into `core.yml` alongside the other gates.
+
+### Changed
+
+**Observed counts.** 35 skills (was 31: systematic-review, extraction-tables, contradiction-detection,
+and literature-monitoring are new), 15 commands (was 13: systematic-review and watch-topic are new), 9
+agents unchanged. The pooled trigger eval holds at 95.4% recall and a 5.7% false-trigger rate with all 35
+skills. These are observed after the fact, never targeted (D18).
+
+**The Codex installer moved to 35 skills.** The two new commands joined the command-to-skill map, and the
+installer copies the four new skills into the shared asset directory like the rest.
+
 ## [0.4.0] - 2026-07-14
 
 The evidence-lineage compiler, and the position this whole project was built toward (D18). 0.3.0 could

@@ -1,6 +1,6 @@
 ---
 title: Slash Commands
-description: The 13 slash commands and what they route to.
+description: The 15 slash commands and what they route to.
 sidebar:
   label: Commands
   order: 1
@@ -25,5 +25,7 @@ Installed plugin commands are namespaced by the plugin name, so every command be
 | `/researcher:design-experiment <question>` | Design an experiment for a research question. |
 | `/researcher:research-pipeline <question>` | Run the staged pipeline (Plan through Format) with a compile gate and a checkpoint at every stage. |
 | `/researcher:verify-citations <bib>` | Audit every citation for existence and faithfulness, refusing a clean verdict on any refusal-grade finding. |
+| `/researcher:systematic-review <topic>` | Run the systematic-review workflow: lock a protocol, dual screen with blinded adjudication, and derive the PRISMA 2020 flow from the event ledger. |
+| `/researcher:watch-topic <topic>` | Set up a living review: save the search, diff new records on rerun, and feed them into the same locked protocol's screening. |
 
 You never *have* to use a command. Plain language works too: "review my paper" fires the same skill as `/researcher:review-paper`. Commands just save keystrokes at 3 AM.

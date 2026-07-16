@@ -1,16 +1,16 @@
 ---
 title: Skills
-description: The 31 skills, what each one does, and which category it belongs to.
+description: The 35 skills, what each one does, and which category it belongs to.
 sidebar:
   label: Skills
   order: 0
 ---
 
-Skills are the unit of work. Each one is a directory holding a `SKILL.md`: frontmatter with a name and a description full of trigger phrases, then the workflow the model follows. There are 29 of them, in seven categories.
+Skills are the unit of work. Each one is a directory holding a `SKILL.md`: frontmatter with a name and a description full of trigger phrases, then the workflow the model follows. There are 35 of them, in eight categories.
 
 You do not have to invoke a skill by name. The description is what the model matches your phrasing against, so "find recent papers on X" reaches `literature-search` on its own. The trigger column below is a hint, not a magic word.
 
-The same 31 skills install into OpenAI Codex as `researcher-<name>` (see [Codex](/researcher/start/codex/)), where you can also call one explicitly, for example `$researcher-literature-search`.
+The same 35 skills install into OpenAI Codex as `researcher-<name>` (see [Codex](/researcher/start/codex/)), where you can also call one explicitly, for example `$researcher-literature-search`.
 
 ## Research & Discovery (8)
 
@@ -26,6 +26,17 @@ The same 31 skills install into OpenAI Codex as `researcher-<name>` (see [Codex]
 | `research-pipeline` | Drives a manuscript through Plan, Retrieve, Synthesize, Draft, Review, Compile, and Format, with a checkpoint at every stage and a compile gate before formatting. | "Run the pipeline from question to draft" |
 
 Full walkthrough: [Research & Discovery guide](/researcher/guides/research-and-discovery/).
+
+## Systematic Review (4)
+
+| Skill | What it does | Typical trigger |
+|---|---|---|
+| `systematic-review` | The end-to-end workflow over the event ledger: lock a protocol, run per-database strategies, dedup, dual screen with blinded adjudication, then hand off to extraction, appraisal, synthesis, and reporting. Refuses to screen before a protocol lock. Verifies every included reference on identity and flags an `inconclusive` result for human review rather than dropping it. PRISMA 2020 is derived from the ledger, never stored. | `/researcher:systematic-review` |
+| `extraction-tables` | Elicit-style structured extraction: per-paper values anchored to full-text passages, with the verification layer stated on every cell, "not reported" instead of an invented value, and typed effect-size columns the meta-analysis consumes mechanically. | "Build an extraction table from these papers" |
+| `contradiction-detection` | A claim-by-source contradiction matrix, each cell carrying its quote and verification layer, feeding GRADE's inconsistency domain with concrete cited disagreements. | "Find evidence that contradicts this claim" |
+| `literature-monitoring` | Living reviews: saved verbatim searches, a diff of new records against the seen list on rerun, feeding a fresh screening batch under the same locked protocol. | `/researcher:watch-topic` |
+
+The systematic-review vertical is built on the event ledger, so the PRISMA 2020 flow and checklist are recomputed from events rather than stored, and protocol locking, dual screening, and appraisal (RoB 2, GRADE) all leave an auditable trail. New in 0.5.0.
 
 ## Planning & Design (4)
 
