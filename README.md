@@ -26,7 +26,7 @@ Think of it as a very capable assistant that never sleeps, never forgets a citat
 
 ## What This Is
 
-A Claude Code / Cowork plugin with **29 specialized skills**, **9 agents**, and **11 slash commands** covering the full research pipeline:
+A Claude Code / Cowork plugin with **31 specialized skills**, **9 agents**, and **13 slash commands** covering the full research pipeline:
 
 ```
 Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
@@ -35,7 +35,7 @@ Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
     -> Journal Selection -> Formatting -> Submission
 ```
 
-It also runs on **OpenAI Codex**: all 29 skills install with one script (`python scripts/install-codex-skills.py`), because Codex reads the same open agent-skills format. See [OpenAI Codex](#openai-codex) under Installation for what carries over.
+It also runs on **OpenAI Codex**: all 31 skills install with one script (`python scripts/install-codex-skills.py`), because Codex reads the same open agent-skills format. See [OpenAI Codex](#openai-codex) under Installation for what carries over.
 
 Underneath the skills sits **the evidence kernel** (`core/`, new in 0.3.0): a deterministic Python
 package that queries 8 scholarly indexes directly, deduplicates the results, and verifies every
@@ -43,15 +43,22 @@ reference on four independent axes. It is optional, it ships with its benchmarks
 that the one thing it must never do (tell you a real citation of yours is fabricated) it measurably
 does not do.
 
+On top of the kernel sits **the evidence-lineage compiler** (new in 0.4.0): every claim and every number
+in a draft traces to a qualified span in an external source or to an internal experiment run, and
+`researcher compile` fails the gate on anything that does not. It names six defect classes (orphan
+claims, altered numbers, stale evidence, qualifier mismatches, retractions, and artifact-code drift),
+and `researcher passport` exports the whole lineage as an RO-Crate or W3C PROV record. A source that
+errors during a re-check is `inconclusive`, never a defect, so a downed index can never fail your build.
+
 LaTeX-first, Word-compatible. Every output works in both worlds.
 
 ## What works today, what is planned
 
 | Capability | Status |
 |---|---|
-| 29 skills, 9 agents, 11 commands (prompt-driven workflows) | Works today |
+| 31 skills, 9 agents, 13 commands (prompt-driven workflows) | Works today |
 | Marketplace install (`/plugin install researcher@researcher-marketplace`) | Works today |
-| Codex support (29 skills via `scripts/install-codex-skills.py`) | Works today |
+| Codex support (31 skills via `scripts/install-codex-skills.py`) | Works today |
 | Citation commit guard (blocks a commit whose `\cite` keys have no bib entry, including bibliography-only deletions) | Works today; run `python scripts/install-git-hooks.py` once per repo to also cover terminal and IDE commits |
 | BibTeX validation: brace-aware parser, CrossRef DOI resolution, title and first-author matching, retraction flags (`scripts/bib-validator.py`) | Works today (network required) |
 | LaTeX compile checks with whatever TeX engine you have (`scripts/latex-compile.py` / `.sh`) | Works today (any TeX installation: tectonic, TeX Live, MiKTeX, or MacTeX; `scripts/latex_engine.py` autodetects, and `--engine` or `LATEX_ENGINE` picks one explicitly) |
@@ -65,7 +72,8 @@ LaTeX-first, Word-compatible. Every output works in both worlds.
 | Claim faithfulness (does the source actually support the sentence citing it) | Works today as a **lexical baseline only**, and it is weak: coverage 0.750, and it scores many overstatements as supported. Numbers below |
 | Semantic RAG (embeddings, vector store, GROBID, reranking) | Not in the kernel, deliberately. Deferred post-1.0 |
 | PRISMA provenance ledger (append-only, counts derived by aggregation) | Works today (`core/`) |
-| Evidence-lineage compiler: every claim and number compiles from a source span or an experiment run, with a research passport export | Planned (M3) |
+| **The evidence-lineage compiler** (`researcher compile`): every claim and number compiles from a qualified source span or an experiment run, or the gate fails. Detects orphan claims, altered numbers, stale evidence, qualifier mismatches, retractions, and artifact-code drift (C001-C006) | **Works today (new in 0.4.0)**, part of `core/`. A source error during a re-check is `inconclusive`, never a defect; only clean C001-C006 are refusal-grade |
+| Research passport (`researcher passport --format ro-crate\|prov-jsonld`): the full evidence lineage as an RO-Crate 1.1 or W3C PROV-JSON-LD export | Works today (new in 0.4.0, `core/`) |
 | Bundled `.mcp.json` (Scite, Zotero, paper-search) | Planned |
 | Google Scholar / Mendeley APIs | Not planned (no stable free API); fallbacks documented in `connectors/` |
 
@@ -125,6 +133,8 @@ half-measured set. Full detail, including the risk-coverage curve, is in
 | **SOTA Finder** | Track state-of-the-art results for any benchmark. Performance timelines, trend detection, comparison tables. |
 | **Research Gaps** | Systematically identify methodological, empirical, and theoretical gaps. Rank by impact potential. |
 | **Citation Context** | Classify citations as supporting, contrasting, or mentioning. Audit your manuscript for misrepresented sources. |
+| **Citation Audit** | The integrity workhorse (`/researcher:verify-citations`): an existence gate (`verify-bib` plus a status sweep) and a claim-faithfulness audit. Refuses a clean verdict on any refusal-grade finding, and states the layer each claim was verified against. |
+| **Research Pipeline** | A staged run (`/researcher:research-pipeline`) from Plan through Format: Plan, Retrieve, Synthesize, Draft, Review, Compile, Format, with a human checkpoint after every stage. Format is reachable only from a passing compile. |
 
 ### Planning & Design
 
@@ -195,6 +205,8 @@ Plugin commands are namespaced by the plugin name, so they never collide with an
 | `/researcher:fact-check <claim>` | Verify claims against scientific literature |
 | `/researcher:sota <benchmark>` | Find state-of-the-art results for a benchmark |
 | `/researcher:design-experiment <question>` | Design an experiment for your research question |
+| `/researcher:research-pipeline` | Run the staged pipeline (Plan, Retrieve, Synthesize, Draft, Review, Compile, Format) with a human checkpoint after every stage |
+| `/researcher:verify-citations` | Audit a manuscript's citations: existence gate plus claim-faithfulness audit, refusing a clean verdict on any refusal-grade finding |
 
 Commands take free-text arguments; Claude asks for anything it still needs.
 
@@ -238,7 +250,7 @@ Nine specialized agents orchestrate skills for complex workflows:
 Codex implements the same open agent-skills standard as Claude Code: a skill is a directory holding a
 `SKILL.md` with `name` and `description` frontmatter. Codex scans `$CWD/.agents/skills`,
 `$REPO_ROOT/.agents/skills`, and `$HOME/.agents/skills`, in that priority order. The installer copies all
-29 skills into one of those locations:
+31 skills into one of those locations:
 
 ```bash
 git clone https://github.com/sokolmarek/researcher.git
@@ -255,8 +267,10 @@ explicitly (`$researcher-literature-search`) or let Codex match it from the desc
 rewrites plugin-relative paths (`references/...`, `templates/...`, `scripts/...`, and the
 `CLAUDE_PLUGIN_ROOT` variable) to absolute paths under a shared asset directory (`~/.agents/researcher`),
 so an installed skill still resolves everything it points at; its test suite asserts every referenced file
-exists after install. It also writes an `AGENTS.md` template carrying the integrity rules into that shared
-directory, for you to copy into your project's `AGENTS.md`.
+exists after install. As of 0.4.0 it also copies `core/` into that shared directory (minus its virtualenv
+and caches), so the evidence kernel and the compile gate resolve under Codex too. It also writes an
+`AGENTS.md` template carrying the integrity rules into that shared directory, for you to copy into your
+project's `AGENTS.md`.
 
 What carries over: the skills, the Python scripts (bib validation, LaTeX compile, git hooks are
 agent-agnostic and run standalone), and the citation commit guard. What does not: the 9 subagents (Codex
@@ -380,10 +394,10 @@ design for a later release.
 ```
 researcher/
 ├── .claude-plugin/               # Plugin manifest + marketplace catalog
-├── skills/                       # 29 specialized skills
+├── skills/                       # 31 specialized skills
 ├── agents/                       # 9 orchestration agents
-├── commands/                     # 11 slash commands
-├── core/                         # The evidence kernel (researcher_core): connectors, verification, provenance
+├── commands/                     # 13 slash commands
+├── core/                         # The evidence kernel (researcher_core): connectors, verification, lineage compiler, provenance
 ├── connectors/                   # 12 connector docs (mechanism, env vars, fallbacks)
 ├── hooks/                        # Claude tool guards (hooks.json) + docs
 ├── references/                   # Citation guides, journal DB, TikZ patterns, figure styles, integrity constraints, core CLI
@@ -412,7 +426,7 @@ researcher/
 
 5. **Token-smart.** The implementation and code-analysis skills fork into a Sonnet-pinned code agent (via `context: fork` in their frontmatter), so your session's higher-tier budget goes to research thinking, writing, and review rather than to generating boilerplate.
 
-6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The evidence kernel landed in 0.3.0 with its benchmarks published, weak axis and red gate included, because a benchmark you only cite when it flatters you is marketing. Next is an evidence-lineage compiler where every claim and number in your manuscript traces back to a source span or an experiment run. The goal is a core you can trust, not a bigger feature list.
+6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The evidence kernel landed in 0.3.0 with its benchmarks published, weak axis and red gate included, because a benchmark you only cite when it flatters you is marketing. The evidence-lineage compiler followed in 0.4.0: every claim and number in your manuscript traces back to a source span or an experiment run, or `researcher compile` fails the gate. Next is the systematic-review vertical. The goal is a core you can trust, not a bigger feature list.
 
 ---
 

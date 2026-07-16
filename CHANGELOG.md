@@ -4,6 +4,95 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-07-14
+
+The evidence-lineage compiler, and the position this whole project was built toward (D18). 0.3.0 could
+verify a citation. 0.4.0 makes a manuscript COMPILE from its evidence: every claim and every number in a
+draft traces to one of exactly two origins, a qualified span in an external source or an internal
+experiment run, and `researcher compile` fails the gate on anything that does not. A results number with
+no run behind it, a generated figure whose value was hand-edited after the fact, a citation retracted
+since it was added: each becomes a named defect with a stable code, reported once per defect class,
+rather than a caveat lost in prose.
+
+The rule that governs the gate is the asymmetry the kernel already lived by, now enforced at compile
+time. A source that errors during a compile-time status re-check produces an `inconclusive` line item,
+NEVER a defect (D9). A claim with only abstract-level evidence is an open item, never a refusal (D11).
+Only `unresolvable`, `mismatch`, `retracted`, and `contradicted` on clean evidence are refusal-grade, so
+a rate-limited index can never fail your build and an honest author is never told they committed a defect
+they did not. That is the heart of the design, and it is tested end to end.
+
+### Added
+
+**The lineage data model (`researcher_core.lineage`): a claim-evidence-result graph.** A claim node is a
+span of manuscript text identified by hash(normalized text + file path + parser version), so trivial
+re-wrapping does not orphan its edges while a substantive rewrite produces a new node. An evidence edge
+ties a claim to either an external source passage (an M2 passage ID, carrying population, intervention,
+and outcome qualifiers plus the four axis verdicts current at edge creation) or an internal experiment
+run (identified by a manifest hash). An experiment manifest records the code commit, worktree
+cleanliness, data hashes, seed, and generated-artifact hashes. Three JSON schemas ship with it
+(`claim-node`, `evidence-edge`, `experiment-manifest`); the skill-facing description is
+`references/lineage-model.md`. Every graph write is a ledger event, so nothing about the graph is stored
+as a mutable aggregate.
+
+**`researcher compile`: the gate.** It walks the graph and reports one diagnostic per defect class:
+
+| Code | Defect |
+|---|---|
+| **C001** orphan claim | a claim node with no evidence edge |
+| **C002** altered number | a generated artifact's content hash no longer matches its manifest |
+| **C003** stale evidence | a source snapshot was superseded, or the status axis flipped, since the edge was created |
+| **C004** qualifier mismatch | the claim's population/intervention/outcome does not match the cited source's |
+| **C005** retraction | a cited source is now retracted or under an expression of concern |
+| **C006** artifact-code drift | a run's commit is not an ancestor of HEAD, or its worktree was dirty at run time |
+
+The gate is replayable per D15: two runs from the same worktree, snapshots, and parser version produce a
+byte-identical `--json` report. Only C001 through C006 on clean evidence are refusal-grade. A source
+error during the compile-time status re-check is `inconclusive`, never a C003 or C005, and an
+`insufficient-passage` claim is an open item; neither ever fails the gate.
+
+**The seeded-defect fixture (`evals/fixtures/lineage-defects/`).** A defects worktree carrying exactly
+one instance of each of the six classes, and a clean sibling. `researcher compile` fires all six codes
+on the defects worktree and passes the clean one with zero diagnostics, verified by an integration test.
+A gate that cannot demonstrate it catches each defect and clears a clean tree is decoration.
+
+**The research passport (`researcher passport --format ro-crate|prov-jsonld`).** The graph re-expressed
+as either RO-Crate 1.1 (a metadata descriptor that conformsTo the profile, plus a root dataset, with
+files, claims, and sources as scholarly-article entities, runs as CreateActions, and artifacts) or W3C
+PROV-JSON-LD (claims and sources as Entities, runs and the compile gate as Activities, edges as
+Derivation and Generation relations). Both are pure functions of the graph: the passport asserts only
+what the lineage already contains.
+
+**`/researcher:research-pipeline`: a staged pipeline.** Plan, Retrieve, Synthesize, Draft, Review,
+Compile, Format, with a human checkpoint after every stage and Format reachable only from a passing
+Compile. A failed compile routes back with its diagnostics rather than moving forward.
+
+**A new integrity skill, `/researcher:verify-citations` (citation-audit).** The integrity workhorse: an
+existence gate (`verify-bib` plus a status sweep) and a claim-faithfulness audit, refusing a clean
+verdict on any refusal-grade finding. It is also what the compile gate's C004 and C005 re-checks call
+into.
+
+### Changed
+
+**`/researcher:submit-ready` now refuses a "ready" verdict without a passing compile.** It reads the gate
+state DERIVED from the ledger's `gate` event stream, never a stored `compiled: true` flag, so the verdict
+cannot drift away from the events that produced it. Only refusal-grade diagnostics block; `inconclusive`
+and `insufficient-passage` items are surfaced but are never the reason for a refusal.
+
+**Six skills now route through the core CLI (Track B).** literature-search, fact-checking, sota-finder,
+citation-context, citation-management, and research-gaps each consume the four-state identity verdict
+rather than a boolean, so an `inconclusive` result is surfaced as an open item and never mistaken for a
+fabrication. Each shipped only because the M2 benchmark that gates it is green (D18); a skill whose gate
+was not green was held, not shipped.
+
+**The Codex installer now ships `core/` to the shared asset directory** (minus its virtualenv and
+caches), so the `uv run --project "${CLAUDE_PLUGIN_ROOT}/core"` invocation resolves under Codex too. The
+two new commands joined the command-to-skill map.
+
+**Observed counts.** 31 skills (was 29: research-pipeline and citation-audit are new), 13 commands (was
+11: research-pipeline and verify-citations are new), 9 agents unchanged. The pooled trigger eval holds at
+99.4% recall and a 6.5% false-trigger rate with the two new skills added. These are observed after the
+fact, never targeted (D18).
+
 ## [0.3.0] - 2026-07-14
 
 The evidence kernel. `core/` exists now, so the sentence "a deterministic retrieval core is planned"

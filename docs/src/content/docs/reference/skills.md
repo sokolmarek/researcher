@@ -1,6 +1,6 @@
 ---
 title: Skills
-description: The 29 skills, what each one does, and which category it belongs to.
+description: The 31 skills, what each one does, and which category it belongs to.
 sidebar:
   label: Skills
   order: 0
@@ -10,9 +10,9 @@ Skills are the unit of work. Each one is a directory holding a `SKILL.md`: front
 
 You do not have to invoke a skill by name. The description is what the model matches your phrasing against, so "find recent papers on X" reaches `literature-search` on its own. The trigger column below is a hint, not a magic word.
 
-The same 29 skills install into OpenAI Codex as `researcher-<name>` (see [Codex](/researcher/start/codex/)), where you can also call one explicitly, for example `$researcher-literature-search`.
+The same 31 skills install into OpenAI Codex as `researcher-<name>` (see [Codex](/researcher/start/codex/)), where you can also call one explicitly, for example `$researcher-literature-search`.
 
-## Research & Discovery (6)
+## Research & Discovery (8)
 
 | Skill | What it does | Typical trigger |
 |---|---|---|
@@ -22,6 +22,8 @@ The same 29 skills install into OpenAI Codex as `researcher-<name>` (see [Codex]
 | `sota-finder` | Finds state-of-the-art results for a benchmark, with performance timelines and comparison tables. Numbers are traced to the paper that reported them. | `/researcher:sota <benchmark>` |
 | `research-gaps` | Identifies methodological, empirical, and theoretical gaps in a body of literature, ranked by impact potential. | "What is missing in this literature?" |
 | `citation-context` | Classifies citations as supporting, contrasting, or mentioning, and audits a manuscript for sources it misrepresents. | "Check how I framed these citations" |
+| `citation-audit` | Audits every citation in a manuscript for existence (does it resolve, is it retracted) and faithfulness (does the source support the claim), refusing a clean verdict on any refusal-grade finding. | `/researcher:verify-citations` |
+| `research-pipeline` | Drives a manuscript through Plan, Retrieve, Synthesize, Draft, Review, Compile, and Format, with a checkpoint at every stage and a compile gate before formatting. | "Run the pipeline from question to draft" |
 
 Full walkthrough: [Research & Discovery guide](/researcher/guides/research-and-discovery/).
 

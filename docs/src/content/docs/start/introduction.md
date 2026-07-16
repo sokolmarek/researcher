@@ -20,7 +20,7 @@ Brainstorm -> Literature Search -> Research Gaps -> Experiment Design
     -> Journal Selection -> Formatting -> Submission
 ```
 
-It ships **29 skills**, **9 orchestration agents**, and **11 slash commands**, plus connectors to the major bibliographic sources. Output is LaTeX-first and Word-compatible.
+It ships **31 skills**, **9 orchestration agents**, and **13 slash commands**, plus connectors to the major bibliographic sources. Output is LaTeX-first and Word-compatible.
 
 ## What it refuses to do
 

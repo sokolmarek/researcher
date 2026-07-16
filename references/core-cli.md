@@ -49,6 +49,8 @@ All commands accept `--json` and `--record`. Default output is a compact human t
 | `faithfulness "<claim>" --doc <id> [--db PATH]` | axis (c) verdict, anchored on passage IDs |
 | `snapshot record\|replay\|diff` | capture live responses, replay a stored request set, report drift |
 | `provenance append <event-json> \| prisma \| export` | append an event, derive PRISMA counts, export JSONL |
+| `compile [--manuscript DIR] [--lineage PATH] [--recheck-status] [--ts TS]` | walk the lineage graph and gate the manuscript; exits 1 on a failing gate, appends a `gate` event when given `--ts` |
+| `passport --format ro-crate\|prov-jsonld [--manuscript DIR] [--out PATH]` | export the evidence lineage as an RO-Crate 1.1 or W3C PROV-JSON-LD research passport |
 
 ### Global flags
 
@@ -97,6 +99,39 @@ fabricating a real citation, which is the worst failure this system can have. Th
 
 An `insufficient-passage` on axis (c) is an abstention, not a pass. It is emitted with
 `clean: false` and no passage anchors, and it must be surfaced, never dropped.
+
+## The compile gate
+
+`researcher compile` walks the lineage graph (`researcher_core.lineage`: claim nodes hash-anchored
+to a manuscript span, evidence edges tying each claim to an external source passage or an internal
+experiment run, and experiment manifests) and reports one diagnostic per defect class. It exits `1`
+on a failing gate and `0` on a clean one. Given `--ts`, it appends a `gate` event to the provenance
+ledger carrying the pass/fail verdict and the diagnostic codes; the timestamp is caller-supplied
+(D19), so replays stay deterministic. `--recheck-status` re-runs the axis (b) status sweep over
+every cited source at compile time; `--lineage` points at the graph file, and `--manuscript` at the
+manuscript directory.
+
+| Code | Defect |
+|---|---|
+| `C001` orphan claim | a claim node with no evidence edge |
+| `C002` altered number | a generated artifact's content hash no longer matches its manifest |
+| `C003` stale evidence | a source snapshot was superseded, or the status axis flipped, since the edge was created |
+| `C004` qualifier mismatch | the claim's population/intervention/outcome does not match the cited source's |
+| `C005` retraction | a cited source is now retracted or under an expression of concern |
+| `C006` artifact-code drift | a run's commit is not an ancestor of HEAD, or its worktree was dirty at run time |
+
+Only C001 through C006 on clean evidence are refusal-grade. A source error during the compile-time
+status re-check yields an `inconclusive` line item, NEVER a C003 or C005 (D9), and a claim with only
+abstract-level evidence is `insufficient-passage`, an open item, never a refusal (D11). Neither ever
+fails the gate. Compile is replayable per D15: the same worktree bytes, snapshots, configuration,
+and parser version produce a byte-identical `--json` report.
+
+`researcher passport --format ro-crate|prov-jsonld` re-expresses the same graph as a research
+passport, a pure function of the lineage. `ro-crate` emits an RO-Crate 1.1 metadata descriptor (a
+descriptor that conformsTo the profile plus a root dataset, with files, claims, and sources as
+entities, runs as CreateActions, and artifacts); `prov-jsonld` emits W3C PROV-JSON-LD (claims and
+sources as Entities, runs and the compile gate as Activities, edges as Derivation and Generation
+relations). `--out` writes the passport to a path.
 
 ## JSON output shapes
 
@@ -215,6 +250,9 @@ The `1` cases, and what each one really means:
   the extra; install it or fall back to the abstract.
 - **The document is not in the passage index.** Run `passages index <doi>` first.
 - **A duplicate provenance event.** The ledger is append-only; nothing is ever overwritten.
+- **A failing compile gate.** `researcher compile` exits `1` when the gate fails on a refusal-grade
+  diagnostic (C001-C006 on clean evidence). This is a gate verdict, not an operational error: read
+  the `--json` report for the codes. `inconclusive` and `insufficient-passage` items never fail it.
 
 ## Integrity
 

@@ -1,6 +1,6 @@
 ---
 title: Slash Commands
-description: The 11 slash commands and what they route to.
+description: The 13 slash commands and what they route to.
 sidebar:
   label: Commands
   order: 1
@@ -15,7 +15,7 @@ Installed plugin commands are namespaced by the plugin name, so every command be
 | `/researcher:new-manuscript` | Create a new manuscript project with the full folder structure. |
 | `/researcher:draft-section <section>` | Draft a section (abstract, introduction, methods, results, discussion, conclusion). |
 | `/researcher:review-paper` | Run the simulated multi-persona peer review. |
-| `/researcher:submit-ready` | Pre-submission checklist: citations, formatting, word count, required sections. |
+| `/researcher:submit-ready` | Pre-submission checklist, gated on a passing evidence-lineage compile: citations, formatting, word count, required sections. |
 | `/researcher:revise <round>` | Handle a revision round (R1, R2, R3) with reviewer-comment parsing. |
 | `/researcher:brainstorm` | Socratic research-design refinement. |
 | `/researcher:find-journal` | Find best-fit journals for your paper. |
@@ -23,5 +23,7 @@ Installed plugin commands are namespaced by the plugin name, so every command be
 | `/researcher:fact-check <claim>` | Verify a claim against the scientific literature. |
 | `/researcher:sota <benchmark>` | Find state-of-the-art results for a benchmark. |
 | `/researcher:design-experiment <question>` | Design an experiment for a research question. |
+| `/researcher:research-pipeline <question>` | Run the staged pipeline (Plan through Format) with a compile gate and a checkpoint at every stage. |
+| `/researcher:verify-citations <bib>` | Audit every citation for existence and faithfulness, refusing a clean verdict on any refusal-grade finding. |
 
 You never *have* to use a command. Plain language works too: "review my paper" fires the same skill as `/researcher:review-paper`. Commands just save keystrokes at 3 AM.

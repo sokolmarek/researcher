@@ -6,7 +6,7 @@ sidebar:
   order: 4
 ---
 
-This page is an honest sketch of where Researcher is going, organized as versioned milestones. Milestones 1 and 2 have **shipped**; everything after them is **planned, not shipped**. Treat the later milestones as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
+This page is an honest sketch of where Researcher is going, organized as versioned milestones. Milestones 1, 2, and 3 have **shipped**; everything after them is **planned, not shipped**. Treat the later milestones as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
 
 One thing that will not change: the **plugin stays the primary experience**. Everything on this page is about making the plugin more trustworthy and more portable, not about replacing it with some other product. You should still be able to type "review my paper" at 3 AM and get sensible help.
 
@@ -64,17 +64,22 @@ On top of retrieval sit **four independent verification axes**. They are reporte
 
 Two more pieces round out the kernel. **Lexical passage retrieval** locates the supporting span inside open full text and gives every verdict a stable passage ID to point at. And **hardened provenance** records every query and every decision in an append-only ledger where nothing is overwritten, with PRISMA counts derived by aggregation rather than stored. If a reviewer asks "how did you find these 47 papers," the ledger is the answer.
 
-## Milestone 3 (0.4.0): the evidence-lineage compiler
+## Milestone 3 (0.4.0, shipped): the evidence-lineage compiler
 
-Once the kernel can verify evidence, the next step is to make manuscripts compile from it. In this milestone, every claim and every number in a draft traces to one of two origins: a span in an external source, or an internal experiment run. A **compile gate** then detects what does not trace:
+The kernel can verify evidence; this milestone makes manuscripts **compile** from it. Every claim and every number in a draft traces to one of two origins: a qualified span in an external source, or an internal experiment run. `researcher compile` walks that lineage graph and fails the gate on anything that does not trace, reporting one diagnostic per defect class:
 
-- **Orphan claims** with no evidence behind them
-- **Altered numbers** that no longer match their source or their run
-- **Stale evidence** that has been superseded since it was cited
-- **Retractions** of works the draft still relies on
-- **Artifact drift**, where the code or data behind a result has changed since the result was written down
+- **C001 orphan claim**: a claim with no evidence edge behind it
+- **C002 altered number**: a generated artifact whose content hash no longer matches its manifest
+- **C003 stale evidence**: a source snapshot superseded, or a publication status flipped, since the edge was created
+- **C004 qualifier mismatch**: the claim's population, intervention, or outcome does not match the cited source's
+- **C005 retraction**: a cited source now retracted or under an expression of concern
+- **C006 artifact-code drift**: the code or data behind a result has changed since the result was written down
 
-The output is a **research passport**: an RO-Crate / W3C PROV export of the full evidence lineage, so anyone can reconstruct how each conclusion was reached.
+The asymmetry that governs the kernel governs the gate too: a source that errors during a compile-time re-check is **inconclusive**, never a defect, and a claim with only abstract-level evidence is an open item, never a refusal. Only C001 through C006 on clean evidence are refusal-grade, so a downed index can never fail your build. The gate is replayable: two runs from the same worktree, snapshots, and parser version produce a byte-identical report. A seeded-defect fixture carrying exactly one instance of each of the six classes proves the gate fires all six codes and passes a clean sibling with zero diagnostics.
+
+The output is a **research passport**: a `researcher passport --format ro-crate|prov-jsonld` export of the full evidence lineage, as an RO-Crate 1.1 or W3C PROV-JSON-LD record, so anyone can reconstruct how each conclusion was reached.
+
+This milestone also brought six existing skills onto the deterministic backend (each shipped only because the benchmark gating it is green) and added two new ones: a citation-audit skill and a staged research pipeline that runs Plan through Format with a human checkpoint after every stage and Format reachable only from a passing compile. The observed counts are now **31 skills, 9 agents, and 13 commands** (up from 29 and 11), and the pooled trigger eval holds at 99.4% recall and a 6.5% false-trigger rate with the two new skills added. As always from Milestone 2 onward, those counts are reported after the fact, never targeted.
 
 ## Milestone 4 (0.5.0): the systematic-review vertical
 
