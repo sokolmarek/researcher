@@ -43,7 +43,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 PREFIX = "researcher-"
 
 # Shared assets a skill may reference. Copied once, not per skill.
-SHARED_DIRS = ("references", "templates", "scripts")
+SHARED_DIRS = ("references", "templates", "scripts", "core")
 
 # Claude-only frontmatter keys. Codex has no subagents to fork into.
 CLAUDE_ONLY_KEYS = ("context", "agent", "model", "allowed-tools", "disallowed-tools")
@@ -61,6 +61,8 @@ COMMAND_TO_SKILL = {
     "fact-check": "fact-checking",
     "sota": "sota-finder",
     "design-experiment": "experiment-design",
+    "research-pipeline": "research-pipeline",
+    "verify-citations": "citation-audit",
 }
 
 # A plugin-relative path, but not one that is part of a longer path such as
@@ -208,7 +210,13 @@ def install(repo=None):
             shutil.rmtree(destination)
         shutil.copytree(
             REPO_ROOT / name, destination,
-            ignore=shutil.ignore_patterns("tests", "__pycache__", "node_modules", "*.pyc"),
+            # Skip test suites and every local tool cache: core/ ships its runnable package
+            # and pyproject so `uv run --project <shared>/core` resolves on Codex, but its
+            # virtualenv and caches are machine-local and must not travel.
+            ignore=shutil.ignore_patterns(
+                "tests", "__pycache__", "node_modules", "*.pyc",
+                ".venv", ".pytest_cache", ".ruff_cache", ".mypy_cache",
+            ),
         )
 
     installed, dropped_any = [], set()

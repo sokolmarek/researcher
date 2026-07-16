@@ -28,7 +28,7 @@ def test_installs_every_skill(installed):
     installed_dirs = sorted(p.name for p in skills_root.iterdir() if p.is_dir())
     expected = sorted(f"researcher-{p.name}" for p in codex.skill_dirs())
     assert installed_dirs == expected
-    assert len(installed_dirs) == 29
+    assert len(installed_dirs) == 31
 
 
 def test_shared_assets_present(installed):
