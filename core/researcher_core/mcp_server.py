@@ -27,21 +27,18 @@ a one-line install hint (never a traceback) when it is missing, mirroring how
 
 Two boundary layers this server inherits rather than reimplements:
 
-* **Offline (M5.1).** Passing ``offline=True`` (or starting ``researcher-mcp --offline``)
-  propagates the flag to the shared offline layer: the ``RESEARCHER_OFFLINE`` environment
-  variable is set and, when :mod:`researcher_core.config` is present, its offline hook is
-  invoked. Sessions are then built from the environment exactly as the CLI builds them, so
-  the server honors offline through the same path every other entry point does. Nothing here
-  opens a second network door.
+* **Offline (M5.1).** Passing ``offline=True`` (or starting ``researcher-mcp --offline``,
+  which sets the ``RESEARCHER_OFFLINE`` variable) builds sessions through
+  :func:`researcher_core.config.build_session`, the same selector the CLI uses. An offline
+  session answers exclusively from snapshots and the response cache; a miss raises the typed
+  offline-miss error and the network fetcher is never invoked. Nothing here opens a second
+  network door.
 * **Sanitization (M5.2).** Every tool result is passed through
-  :mod:`researcher_core.sanitize` before it leaves this process, so fetched titles,
-  abstracts, and passages cannot smuggle control characters or prompt-shaped text into an
-  MCP client. When that sibling module is not installed, sanitization degrades to identity;
-  the tools still return their data, just unsanitized, and a real deployment installs the
-  module.
-
-Both sibling modules are imported defensively so this file drops into a tree that does not
-yet carry them.
+  :func:`researcher_core.sanitize.sanitize_json_strings` before it leaves this process, so
+  fetched titles, abstracts, and passages cannot smuggle control characters or prompt-shaped
+  text into an MCP client. The one deliberate exception is ``export_bibliography``'s
+  ``content`` field: an exported bibliography is a data artifact whose bytes must stay
+  lossless (D4), so the envelope around it is sanitized and the document itself is not.
 """
 
 from __future__ import annotations
@@ -54,8 +51,10 @@ from collections.abc import Callable, Mapping, Sequence
 from typing import Any
 
 from .bib import BibError, emit_bib, record_to_entry, records_from_bib  # noqa: F401
+from .config import OFFLINE_ENV, build_session
 from .fulltext import MISSING_EXTRA_MESSAGE, MissingExtraError, extract
 from .model import CSLRecord, is_valid_doi, normalize_doi
+from .sanitize import sanitize_json_strings
 from .search import DEFAULT_SEARCH_SOURCES, search_sync
 from .snapshots import SnapshotSession
 from .verify import DEFAULT_SOURCES as VERIFY_DEFAULT_SOURCES
@@ -103,71 +102,50 @@ MISSING_FASTMCP_MESSAGE = (
 # ---------------------------------------------------------------------------
 
 
-def _sanitize(payload: Any) -> Any:
-    """Pass ``payload`` through the M5.2 sanitizer, or return it unchanged if absent.
+def _sanitize(payload: Any, *, preserve: tuple[str, ...] = ()) -> Any:
+    """Pass ``payload`` through the M5.2 sanitizer before it leaves the process.
 
-    The sibling ``sanitize`` module is imported here, not at module top, so a tree without it
-    still imports this file. When it is present, the first recognized sanitizer callable is
-    used; when it is not, or when it raises, the payload is returned unchanged. Degrading to
-    identity is the honest fallback: it never fabricates a "sanitized" claim it cannot back.
+    Every string value is run through :func:`sanitize_json_strings`, so a fetched title,
+    abstract, or passage carrying control characters or prompt-shaped text reaches the MCP
+    client as inert text. ``preserve`` names top-level dict keys whose values pass through
+    verbatim; ``export_bibliography`` uses it for the exported document, a data artifact
+    whose bytes must stay lossless (D4) and would be mangled by tag stripping.
     """
-    import importlib
-
-    try:
-        sanitizer = importlib.import_module("researcher_core.sanitize")
-    except ImportError:
-        return payload
-    for name in ("sanitize_json", "sanitize_payload", "sanitize_output", "sanitize", "scrub"):
-        fn = getattr(sanitizer, name, None)
-        if callable(fn):
-            try:
-                return fn(payload)
-            except Exception:  # noqa: BLE001 - a sanitizer fault must not drop the answer
-                return payload
-    return payload
+    if preserve and isinstance(payload, dict):
+        return {
+            key: (value if key in preserve else sanitize_json_strings(value))
+            for key, value in payload.items()
+        }
+    return sanitize_json_strings(payload)
 
 
 def _resolve_session(
     session: SnapshotSession | None, offline: bool
-) -> SnapshotSession | None:
+) -> SnapshotSession:
     """Return the snapshot session a tool should use.
 
     An explicitly injected session (every test does this, and so may an embedding caller)
-    wins untouched. Otherwise the session is built from the environment exactly as the CLI
-    builds it, after the offline flag has been propagated to the shared M5.1 layer. Returning
-    ``None`` is also valid: the underlying kernel functions build a session from the
-    environment themselves when handed ``None``, so there is one behavior, not two.
+    wins untouched. Otherwise the session comes from :func:`researcher_core.config.build_session`,
+    the same selector the CLI uses: ``offline=True`` yields an offline session whose misses
+    are typed and whose network fetchers are never invoked, and ``offline=False`` leaves the
+    decision to the ``RESEARCHER_OFFLINE`` variable, so a server started with ``--offline``
+    (which sets that variable) keeps every tool offline without re-plumbing the flag.
     """
     if session is not None:
         return session
-    if offline:
-        _apply_offline()
-    return SnapshotSession.from_env()
+    return build_session(offline=True if offline else None)
 
 
 def _apply_offline() -> None:
-    """Propagate the offline flag to the shared M5.1 offline layer.
+    """Turn offline mode on for this process.
 
-    The flag is inherited, not reimplemented: this sets the ``RESEARCHER_OFFLINE`` variable
-    the offline layer reads, and, when :mod:`researcher_core.config` is installed, calls its
-    offline hook. Without that sibling, setting the variable is a no-op that the layer honors
-    once present; either way this server opens no second network path of its own.
+    :func:`researcher_core.config.is_offline` reads the ``RESEARCHER_OFFLINE`` variable
+    whenever a caller does not pass an explicit flag, so setting it here makes every
+    subsequent :func:`_resolve_session` build an offline session. The flag is inherited
+    through the shared M5.1 layer, never reimplemented; this server opens no second
+    network path of its own.
     """
-    import importlib
-
-    os.environ["RESEARCHER_OFFLINE"] = "1"
-    try:
-        core_config = importlib.import_module("researcher_core.config")
-    except ImportError:
-        return
-    for name in ("set_offline", "enable_offline", "configure_offline"):
-        fn = getattr(core_config, name, None)
-        if callable(fn):
-            try:
-                fn(True)
-            except Exception:  # noqa: BLE001 - config faults must not sink the request
-                return
-            return
+    os.environ[OFFLINE_ENV] = "1"
 
 
 # ---------------------------------------------------------------------------
@@ -431,15 +409,11 @@ def _export_emitter(fmt: str) -> Callable[[Sequence[CSLRecord]], str] | None:
         export = importlib.import_module("researcher_core.export")
     except ImportError:
         return None
-    candidates = {
-        "ris": ("emit_ris", "to_ris", "records_to_ris"),
-        "jats": ("emit_jats", "to_jats", "records_to_jats", "emit_ref_list"),
-    }.get(fmt, ())
-    for name in candidates:
-        fn = getattr(export, name, None)
-        if callable(fn):
-            return fn  # type: ignore[return-value]
-    return None
+    name = {"ris": "to_ris", "jats": "to_jats_reflist"}.get(fmt)
+    if name is None:
+        return None
+    fn = getattr(export, name, None)
+    return fn if callable(fn) else None  # type: ignore[return-value]
 
 
 def export_bibliography(
@@ -481,8 +455,12 @@ def export_bibliography(
             )
         content = emitter(collected)
 
+    # The envelope is sanitized; the document itself is not. An exported bibliography is a
+    # data artifact whose bytes must stay lossless (D4): tag stripping would gut JATS XML
+    # and whitespace folding would reflow BibTeX, which is fabricating a different file.
     return _sanitize(
-        {"format": fmt, "content": content, "record_count": len(collected)}
+        {"format": fmt, "content": content, "record_count": len(collected)},
+        preserve=("content",),
     )
 
 
@@ -541,7 +519,9 @@ def _load_fastmcp() -> Any:
     except ImportError:
         pass
     try:
-        from mcp.server.fastmcp import FastMCP  # type: ignore[import-not-found]
+        # The assignment ignore covers environments where fastmcp AND the official SDK are
+        # both installed: the two FastMCP classes are distinct types to mypy.
+        from mcp.server.fastmcp import FastMCP  # type: ignore[import-not-found,assignment]
 
         return FastMCP
     except ImportError:
