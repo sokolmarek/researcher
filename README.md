@@ -100,7 +100,7 @@ Licensed and interactive sources (Scite Smart Citations, your Zotero library) at
 connect yourself. Since 1.0.0 the core also ships its own thin MCP server, so non-Claude hosts can call
 the same retrieval, verification, and provenance tools over a standard interface.
 
-## What works today, what is planned
+## Capabilities
 
 | Capability | Status |
 |---|---|
@@ -113,7 +113,7 @@ the same retrieval, verification, and provenance tools over a standard interface
 | Figure style presets (default, Nature, IEEE) across the visualization skills | Works today (`references/figure-styles.md`) |
 | Word/DOCX output (`templates/word/build-docx.js`, built on the `docx` library): title page, numbered headings, paragraphs, lists | Works today (node required) |
 | DOCX tracked changes, comments, and table emission | Specified in `templates/word/article-imrad.md`, not implemented yet |
-| Scite Smart Citations, Zotero library access | Works when you connect those MCP servers yourself; not bundled yet |
+| Scite Smart Citations, Zotero library access | Works when you connect those MCP servers yourself; they are third-party services and stay user-connected |
 | External model reviewers (OpenAI, Gemini, Ollama) | Documented integration point, not implemented |
 | **The evidence kernel** (`core/`): deterministic multi-source retrieval and per-axis citation verification over 8 scholarly indexes, with snapshot replay | **Works today (new in 0.3.0)**, and optional: needs `uv` or `pip install -e core/`. Without it the plugin degrades to the row above |
 | Multi-index citation verification: identity (verified / mismatch / unresolvable / inconclusive), publication status, accessibility | Works today (`core/`). Benchmarked in [`evals/BENCHMARKS.md`](evals/BENCHMARKS.md) |
@@ -399,7 +399,8 @@ cosign verify-blob \
   researcher-v1.0.0.zip
 ```
 
-The same command verifies `core-sbom.cdx.json` against its own `.sig` and `.pem`. `researcher-core` on
+The same command verifies `core-sbom.cdx.json` and `word-sbom.cdx.json` against their own `.sig` and
+`.pem` files, all attached to the Release. `researcher-core` on
 PyPI is published through OIDC trusted publishing, so its provenance lives in the PyPI attestation rather
 than a stored token.
 
