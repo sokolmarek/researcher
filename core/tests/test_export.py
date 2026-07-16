@@ -23,8 +23,13 @@ import pytest
 
 from researcher_core.export import (
     COMPARABLE_FIELDS,
+    CREDIT_ROLES,
     FORMATS,
     LOSS_TABLE,
+    Affiliation,
+    Contributor,
+    MetadataError,
+    contributor_from_mapping,
     field_diff,
     from_csl_json,
     from_jats_reflist,
@@ -32,8 +37,12 @@ from researcher_core.export import (
     record_fields,
     roundtrip,
     to_csl_json,
+    to_jats_contrib_group,
     to_jats_reflist,
     to_ris,
+    validate_credit_role,
+    validate_orcid,
+    validate_ror,
 )
 from researcher_core.model import CSLName, CSLRecord
 
@@ -432,3 +441,274 @@ def test_ris_name_helper_handles_a_plain_person() -> None:
     restored = from_ris(text)[0]
     assert restored.author[0].family == "Plato"
     assert restored.author[0].literal == ""
+
+
+# ---------------------------------------------------------------------------
+# ORCID iD validation (ISO 7064 mod 11-2 checksum)  (M5.5)
+# ---------------------------------------------------------------------------
+
+# Real, checksum-valid ORCID iDs (the X check character is exercised too).
+VALID_ORCIDS = [
+    "0000-0002-1825-0097",  # the canonical ORCID example
+    "0000-0001-5109-3700",
+    "0000-0002-1694-233X",  # check character X (== 10)
+]
+
+
+@pytest.mark.parametrize("orcid", VALID_ORCIDS)
+def test_validate_orcid_accepts_and_canonicalizes(orcid: str) -> None:
+    assert validate_orcid(orcid) == f"https://orcid.org/{orcid}"
+
+
+def test_validate_orcid_accepts_url_and_compact_forms() -> None:
+    assert validate_orcid("https://orcid.org/0000-0002-1825-0097") == (
+        "https://orcid.org/0000-0002-1825-0097"
+    )
+    assert validate_orcid("orcid.org/0000-0002-1825-0097") == (
+        "https://orcid.org/0000-0002-1825-0097"
+    )
+    # Compact 16-character form, no hyphens.
+    assert validate_orcid("0000000218250097") == "https://orcid.org/0000-0002-1825-0097"
+
+
+def test_validate_orcid_rejects_a_bad_checksum() -> None:
+    # Last digit flipped from 7 to 8: valid shape, wrong ISO 7064 mod 11-2 check character.
+    with pytest.raises(MetadataError, match="checksum"):
+        validate_orcid("0000-0002-1825-0098")
+
+
+def test_validate_orcid_rejects_wrong_length_and_non_digits() -> None:
+    with pytest.raises(MetadataError, match="16 characters"):
+        validate_orcid("0000-0002-1825")
+    with pytest.raises(MetadataError, match="digits"):
+        validate_orcid("0000-0002-1825-00A7")
+
+
+def test_validate_orcid_is_a_value_error() -> None:
+    # MetadataError subclasses ValueError, so existing handlers still catch it.
+    assert issubclass(MetadataError, ValueError)
+    with pytest.raises(ValueError):
+        validate_orcid("not-an-orcid")
+
+
+# ---------------------------------------------------------------------------
+# ROR ID validation (published prefix/character pattern)  (M5.5)
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "ror",
+    [
+        "042nb2s44",  # MIT
+        "03vek6s52",  # Harvard
+        "https://ror.org/00f54p054",  # Stanford, full URL
+        "ror.org/013meh722",  # bare host prefix
+    ],
+)
+def test_validate_ror_accepts_and_canonicalizes(ror: str) -> None:
+    result = validate_ror(ror)
+    assert result.startswith("https://ror.org/0")
+    # Idempotent: validating the canonical form returns it unchanged.
+    assert validate_ror(result) == result
+
+
+def test_validate_ror_rejects_bad_patterns() -> None:
+    # Missing leading 0.
+    with pytest.raises(MetadataError, match="ROR"):
+        validate_ror("142nb2s44")
+    # Contains an excluded look-alike character (i, l, o, u are not in the alphabet).
+    with pytest.raises(MetadataError, match="ROR"):
+        validate_ror("0i2nb2s44")
+    # Wrong length.
+    with pytest.raises(MetadataError, match="ROR"):
+        validate_ror("042nb2s4")
+    # A raw grant/other string is not a ROR.
+    with pytest.raises(MetadataError, match="ROR"):
+        validate_ror("University of Nowhere")
+
+
+# ---------------------------------------------------------------------------
+# CRediT role validation (fixed 14-term taxonomy)  (M5.5)
+# ---------------------------------------------------------------------------
+
+
+def test_credit_taxonomy_has_the_14_terms() -> None:
+    assert len(CREDIT_ROLES) == 14
+    assert "conceptualization" in CREDIT_ROLES
+    assert "writing - original draft" in CREDIT_ROLES
+    assert "writing - review and editing" in CREDIT_ROLES
+
+
+@pytest.mark.parametrize("role", CREDIT_ROLES)
+def test_every_canonical_role_validates_to_itself(role: str) -> None:
+    assert validate_credit_role(role) == role
+
+
+def test_validate_credit_role_is_case_and_hyphen_tolerant() -> None:
+    assert validate_credit_role("Data Curation") == "data curation"
+    assert validate_credit_role("data-curation") == "data curation"
+    assert validate_credit_role("FORMAL ANALYSIS") == "formal analysis"
+    assert validate_credit_role("writing-original-draft") == "writing - original draft"
+
+
+def test_validate_credit_role_rejects_unknown_roles() -> None:
+    with pytest.raises(MetadataError, match="CRediT"):
+        validate_credit_role("proofreading")
+    with pytest.raises(MetadataError, match="CRediT"):
+        validate_credit_role("writing")
+
+
+def test_no_credit_role_uses_an_en_or_em_dash() -> None:
+    # The CI dash guard bans U+2013/U+2014; the taxonomy uses ordinary hyphen-minus only.
+    # The dash characters are written as escapes here so this file itself stays dash-free.
+    joined = " ".join(CREDIT_ROLES)
+    assert chr(0x2013) not in joined  # en dash
+    assert chr(0x2014) not in joined  # em dash
+
+
+# ---------------------------------------------------------------------------
+# Contributor construction from a config-style mapping  (M5.5)
+# ---------------------------------------------------------------------------
+
+
+def test_contributor_from_mapping_validates_everything() -> None:
+    contributor = contributor_from_mapping(
+        {
+            "name": "Jane Q. Doe",
+            "orcid": "0000-0002-1825-0097",
+            "affiliations": [
+                {"institution": "Massachusetts Institute of Technology", "ror": "042nb2s44"}
+            ],
+            "credit": ["Conceptualization", "writing-original-draft"],
+        }
+    )
+    assert contributor.name.family == "Doe"
+    assert contributor.orcid == "https://orcid.org/0000-0002-1825-0097"
+    assert contributor.affiliations[0].ror == "https://ror.org/042nb2s44"
+    assert contributor.credit_roles == ("conceptualization", "writing - original draft")
+
+
+def test_contributor_from_mapping_accepts_a_top_level_ror_shorthand() -> None:
+    contributor = contributor_from_mapping(
+        {"name": "Solo Author", "affiliation": "Some University", "ror": "042nb2s44"}
+    )
+    assert contributor.affiliations[0].institution == "Some University"
+    assert contributor.affiliations[0].ror == "https://ror.org/042nb2s44"
+
+
+def test_contributor_from_mapping_leaves_optional_metadata_empty() -> None:
+    contributor = contributor_from_mapping({"name": "Plain Author"})
+    assert contributor.orcid == ""
+    assert contributor.affiliations == ()
+    assert contributor.credit_roles == ()
+
+
+def test_contributor_from_mapping_rejects_invalid_metadata_never_guesses() -> None:
+    with pytest.raises(MetadataError):
+        contributor_from_mapping({"name": "X", "orcid": "0000-0002-1825-0098"})
+    with pytest.raises(MetadataError):
+        contributor_from_mapping({"name": "X", "affiliation": {"name": "U", "ror": "bogus"}})
+    with pytest.raises(MetadataError):
+        contributor_from_mapping({"name": "X", "credit": ["typing"]})
+    with pytest.raises(MetadataError):
+        contributor_from_mapping({"orcid": "0000-0002-1825-0097"})  # no name
+
+
+def test_contributor_from_mapping_reads_a_corporate_literal_name() -> None:
+    contributor = contributor_from_mapping({"literal": "World Health Organization"})
+    assert contributor.name.literal == "World Health Organization"
+
+
+# ---------------------------------------------------------------------------
+# JATS <contrib-group> emitter  (M5.5)
+# ---------------------------------------------------------------------------
+
+
+def _sample_contributors() -> list[Contributor]:
+    return [
+        contributor_from_mapping(
+            {
+                "name": "Antônio H. Ribeiro",
+                "orcid": "0000-0002-1825-0097",
+                "affiliations": [
+                    {"institution": "Massachusetts Institute of Technology", "ror": "042nb2s44"}
+                ],
+                "credit": ["conceptualization", "writing - original draft"],
+            }
+        ),
+        contributor_from_mapping(
+            {
+                "literal": "World Health Organization",
+                "contrib_type": "author",
+            }
+        ),
+    ]
+
+
+def test_contrib_group_is_well_formed_xml_with_the_ids() -> None:
+    xml = to_jats_contrib_group(_sample_contributors())
+    root = ET.fromstring(xml)  # raises on malformed XML
+    assert root.tag == "contrib-group"
+    contribs = root.findall("contrib")
+    assert len(contribs) == 2
+
+    first = contribs[0]
+    orcid = first.find("contrib-id")
+    assert orcid is not None
+    assert orcid.get("contrib-id-type") == "orcid"
+    assert orcid.text == "https://orcid.org/0000-0002-1825-0097"
+
+    name = first.find("name")
+    assert name is not None
+    assert name.findtext("surname") == "Ribeiro"
+    assert name.findtext("given-names") == "Antônio H."
+
+    aff = first.find("aff")
+    assert aff is not None
+    assert aff.findtext("institution") == "Massachusetts Institute of Technology"
+    inst_id = aff.find("institution-id")
+    assert inst_id is not None
+    assert inst_id.get("institution-id-type") == "ror"
+    assert inst_id.text == "https://ror.org/042nb2s44"
+
+
+def test_contrib_group_emits_credit_roles_with_niso_vocabulary() -> None:
+    xml = to_jats_contrib_group(_sample_contributors())
+    root = ET.fromstring(xml)
+    roles = root.find("contrib").findall("role")  # type: ignore[union-attr]
+    assert [r.text for r in roles] == ["Conceptualization", "Writing - original draft"]
+    for role in roles:
+        assert role.get("vocab") == "credit"
+        assert role.get("vocab-identifier") == "https://credit.niso.org/"
+        assert role.get("vocab-term-identifier", "").startswith(
+            "https://credit.niso.org/contributor-roles/"
+        )
+
+
+def test_contrib_group_emits_a_collab_for_an_organization() -> None:
+    xml = to_jats_contrib_group(_sample_contributors())
+    assert "<collab>World Health Organization</collab>" in xml
+
+
+def test_contrib_group_omits_absent_metadata() -> None:
+    xml = to_jats_contrib_group([contributor_from_mapping({"name": "Plain Author"})])
+    root = ET.fromstring(xml)
+    contrib = root.find("contrib")
+    assert contrib is not None
+    assert contrib.find("contrib-id") is None  # no ORCID
+    assert contrib.find("aff") is None  # no affiliation
+    assert contrib.find("role") is None  # no CRediT roles
+    assert contrib.findtext("name/surname") == "Author"
+
+
+def test_contrib_group_escapes_special_characters() -> None:
+    contributor = Contributor(
+        name=CSLName(literal="Ampersand & Angle <Co>"),
+        affiliations=(Affiliation(institution="R&D <Lab>"),),
+    )
+    xml = to_jats_contrib_group([contributor])
+    assert "&amp;" in xml
+    assert "&lt;Co&gt;" in xml
+    # Still parses, and the text round-trips through the parser verbatim.
+    root = ET.fromstring(xml)
+    assert root.findtext("contrib/collab") == "Ampersand & Angle <Co>"

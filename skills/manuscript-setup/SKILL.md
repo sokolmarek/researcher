@@ -92,6 +92,11 @@ authors:
     affiliation: "University"
     email: "author@university.edu"
     corresponding: true
+    orcid: "0000-0002-1825-0097"     # optional; validated, never fabricated
+    ror: "https://ror.org/042nb2s44" # optional institution ROR ID; validated
+    credit:                          # optional CRediT roles; each validated
+      - "conceptualization"
+      - "writing - original draft"
   - name: "Second Author"
     affiliation: "Institute"
 journal:
@@ -104,6 +109,33 @@ paper_type: "imrad"            # imrad | review | case-study | conference | theo
 created: "2026-04-09"
 status: "drafting"             # drafting | review | revision | final
 ```
+
+### Optional contributor metadata (ORCID, ROR, CRediT)
+
+Each author entry may carry three optional, machine-checkable fields. All three are validated
+and are NEVER fabricated: if a value is missing, leave it out; if a supplied value is malformed,
+it is rejected with an actionable message rather than guessed or "corrected" to a nearby valid one.
+
+- `orcid`: an ORCID iD (16 digits in four groups). The last character is an ISO 7064 mod 11-2
+  check digit, so a mistyped iD is caught rather than silently accepted. Bare (`0000-0002-1825-0097`),
+  compact, or full-URL forms are all accepted and normalized to `https://orcid.org/...`.
+- `ror`: a Research Organization Registry ID for the affiliation, matched against ROR's published
+  pattern (`https://ror.org/0` plus six base32 characters and two check digits) and normalized to
+  the canonical URL. Put it on the author for a single affiliation, or inside each affiliation entry
+  when an author has several.
+- `credit`: one or more roles from the CRediT taxonomy's fixed 14 terms (conceptualization,
+  data curation, formal analysis, funding acquisition, investigation, methodology, project
+  administration, resources, software, supervision, validation, visualization, writing - original
+  draft, writing - review and editing). Matching is case-insensitive and tolerant of hyphen-vs-space;
+  a role outside the taxonomy is rejected.
+
+The kernel validates these (`researcher_core.export.validate_orcid`, `validate_ror`,
+`validate_credit_role`) and can build a validated `Contributor` from a config entry
+(`contributor_from_mapping`) and emit a JATS `<contrib-group>` from contributors
+(`to_jats_contrib_group`) with `<contrib-id contrib-id-type="orcid">`, `<institution-id
+institution-id-type="ror">`, and CRediT `<role>` elements, for journals that ingest structured
+metadata. In LaTeX output, `templates/latex/article-imrad.tex` renders an author's ORCID next to
+their name when one is present, and omits it gracefully otherwise.
 
 ## Section File Initialization
 

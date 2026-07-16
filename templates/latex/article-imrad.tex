@@ -39,6 +39,15 @@
     urlcolor=blue
 }
 
+% --- ORCID marks ---
+% Dependency-free: a small linked "iD" marker after the author's name, drawn with hyperref
+% (already loaded), so the template compiles anywhere without an extra package. An author with
+% an ORCID gets \orcid{0000-0002-1825-0097}; an author without one simply omits it and nothing
+% is rendered. For the official green ORCID logo instead, add \usepackage{orcidlink} and use
+% \orcidlink{0000-0002-1825-0097} (fetched on demand by tectonic; shipped with recent TeX Live,
+% MiKTeX, and MacTeX).
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\textsuperscript{\scriptsize\,iD}}}
+
 % --- Algorithms (uncomment if needed) ---
 % \usepackage[ruled,vlined]{algorithm2e}
 % \usepackage{algorithmic}
@@ -54,7 +63,7 @@
 % --- Metadata ---
 \title{TITLE}
 \author{
-    First Author\textsuperscript{1,*} \and
+    First Author\orcid{0000-0002-1825-0097}\textsuperscript{1,*} \and
     Second Author\textsuperscript{2}
     \\[1em]
     \small\textsuperscript{1}Department, University, City, Country \\

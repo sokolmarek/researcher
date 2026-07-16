@@ -34,19 +34,24 @@ is deliberately shared so "lossless" means the same thing in every test and in t
 
 from __future__ import annotations
 
+import re
 import xml.etree.ElementTree as ET
-from collections.abc import Iterable, Sequence
+from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from typing import Any
 
 from .bib import emit_bib, parse_bib
-from .model import CSLDate, CSLName, CSLRecord, canonical_json, normalize_doi
+from .model import CSLDate, CSLName, CSLRecord, canonical_json, normalize_doi, parse_name
 
 __all__ = [
     "COMPARABLE_FIELDS",
+    "CREDIT_ROLES",
     "FORMATS",
     "LOSS_TABLE",
+    "Affiliation",
+    "Contributor",
     "FormatLoss",
+    "contributor_from_mapping",
     "field_diff",
     "from_bibtex",
     "from_csl_json",
@@ -56,8 +61,12 @@ __all__ = [
     "roundtrip",
     "to_bibtex",
     "to_csl_json",
+    "to_jats_contrib_group",
     "to_jats_reflist",
     "to_ris",
+    "validate_credit_role",
+    "validate_orcid",
+    "validate_ror",
 ]
 
 
@@ -795,3 +804,379 @@ def roundtrip(fmt: str, records: Iterable[CSLRecord]) -> list[CSLRecord]:
     if fmt not in _EMITTERS:
         raise ValueError(f"unknown export format {fmt!r}; known formats are {sorted(_EMITTERS)}")
     return _IMPORTERS[fmt](_EMITTERS[fmt](_as_records(records)))
+
+
+# ---------------------------------------------------------------------------
+# Contributor metadata: ORCID, ROR, CRediT (M5.5)
+# ---------------------------------------------------------------------------
+#
+# Three OPTIONAL identifiers/vocabularies attach to a contributor: an ORCID iD (the person),
+# a ROR ID (their institution), and one or more CRediT roles (what they did). All three are
+# NEVER fabricated. An unknown or malformed value is REJECTED here with an actionable message
+# so the caller can fix or drop it; the kernel never guesses a plausible-looking identifier.
+# ORCID is checksum-verified (ISO 7064 mod 11-2), ROR is verified against its published
+# character/prefix pattern, and a CRediT role must be one of the fixed 14-term taxonomy.
+
+
+class MetadataError(ValueError):
+    """A supplied contributor identifier or role is malformed or not in the taxonomy.
+
+    A subclass of :class:`ValueError`, so existing ``except ValueError`` handlers still catch
+    it, but distinct enough that a caller can single out "bad metadata the user supplied" from
+    other value errors when it wants to.
+    """
+
+
+# --- ORCID iD -------------------------------------------------------------
+
+_ORCID_PREFIXES = (
+    "https://orcid.org/",
+    "http://orcid.org/",
+    "orcid.org/",
+    "orcid:",
+)
+
+
+def _orcid_check_digit(first_15: str) -> str:
+    """The ISO 7064 mod 11-2 check character for the first 15 digits of an ORCID.
+
+    The last character of a valid ORCID is this digit, or ``X`` when it works out to 10.
+    """
+    total = 0
+    for char in first_15:
+        total = (total + int(char)) * 2
+    remainder = total % 11
+    result = (12 - remainder) % 11
+    return "X" if result == 10 else str(result)
+
+
+def validate_orcid(value: str) -> str:
+    """Validate an ORCID iD and return it in canonical ``https://orcid.org/XXXX-...`` form.
+
+    Accepts a bare ``0000-0002-1825-0097``, the compact 16-character form, or any
+    ``orcid.org`` URL. The 16 characters are 15 digits plus an ISO 7064 mod 11-2 check
+    character (a digit or ``X``); a value that fails the checksum is rejected, never
+    "corrected" to a nearby valid iD. Raises :class:`MetadataError` on any malformed input.
+    """
+    raw = str(value).strip()
+    lowered = raw.lower()
+    for prefix in _ORCID_PREFIXES:
+        if lowered.startswith(prefix):
+            raw = raw[len(prefix) :].strip()
+            break
+    compact = raw.replace("-", "").replace(" ", "").upper()
+    if len(compact) != 16:
+        raise MetadataError(
+            f"invalid ORCID {value!r}: an ORCID has 16 characters (got {len(compact)}), "
+            "written as four groups of four, for example 0000-0002-1825-0097"
+        )
+    body, check = compact[:15], compact[15]
+    if not body.isdigit():
+        raise MetadataError(
+            f"invalid ORCID {value!r}: the first 15 characters must all be digits"
+        )
+    if check not in "0123456789X":
+        raise MetadataError(
+            f"invalid ORCID {value!r}: the check character must be a digit or X, got {check!r}"
+        )
+    expected = _orcid_check_digit(body)
+    if check != expected:
+        raise MetadataError(
+            f"invalid ORCID {value!r}: fails the ISO 7064 mod 11-2 checksum "
+            f"(check character should be {expected!r}, not {check!r})"
+        )
+    formatted = "-".join(compact[i : i + 4] for i in range(0, 16, 4))
+    return f"https://orcid.org/{formatted}"
+
+
+# --- ROR ID ---------------------------------------------------------------
+
+_ROR_PREFIXES = (
+    "https://ror.org/",
+    "http://ror.org/",
+    "ror.org/",
+)
+
+# A ROR ID is the string that follows ror.org/: a leading 0, then six Crockford base32
+# characters (the alphabet 0-9 a-z with i, l, o, and u removed to avoid look-alikes), then a
+# two-digit checksum. This is ROR's published identifier pattern.
+_ROR_RE = re.compile(r"^0[0-9a-hj-km-np-tv-z]{6}[0-9]{2}$")
+
+
+def validate_ror(value: str) -> str:
+    """Validate a ROR ID and return it in canonical ``https://ror.org/0...`` form.
+
+    Accepts a bare ``042nb2s44`` or any ``ror.org`` URL. The identifier must match ROR's
+    published pattern (a leading ``0``, six base32 characters, two check digits); anything else
+    is rejected, never guessed. Raises :class:`MetadataError` on malformed input.
+    """
+    raw = str(value).strip()
+    lowered = raw.lower()
+    for prefix in _ROR_PREFIXES:
+        if lowered.startswith(prefix):
+            raw = raw[len(prefix) :]
+            break
+    ident = raw.strip("/").lower()
+    if not _ROR_RE.match(ident):
+        raise MetadataError(
+            f"invalid ROR ID {value!r}: expected https://ror.org/ followed by a 0, six base32 "
+            "characters, and two check digits, for example https://ror.org/042nb2s44"
+        )
+    return f"https://ror.org/{ident}"
+
+
+# --- CRediT roles ---------------------------------------------------------
+
+#: The CRediT (Contributor Roles Taxonomy) 14 terms, in the canonical spelling. Hyphens here
+#: are ordinary hyphen-minus characters, never en/em dashes.
+CREDIT_ROLES: tuple[str, ...] = (
+    "conceptualization",
+    "data curation",
+    "formal analysis",
+    "funding acquisition",
+    "investigation",
+    "methodology",
+    "project administration",
+    "resources",
+    "software",
+    "supervision",
+    "validation",
+    "visualization",
+    "writing - original draft",
+    "writing - review and editing",
+)
+
+#: canonical role -> (display term, NISO contributor-role slug). The slug builds the
+#: ``vocab-term-identifier`` URI (https://credit.niso.org/contributor-roles/<slug>/).
+_CREDIT_META: dict[str, tuple[str, str]] = {
+    "conceptualization": ("Conceptualization", "conceptualization"),
+    "data curation": ("Data curation", "data-curation"),
+    "formal analysis": ("Formal analysis", "formal-analysis"),
+    "funding acquisition": ("Funding acquisition", "funding-acquisition"),
+    "investigation": ("Investigation", "investigation"),
+    "methodology": ("Methodology", "methodology"),
+    "project administration": ("Project administration", "project-administration"),
+    "resources": ("Resources", "resources"),
+    "software": ("Software", "software"),
+    "supervision": ("Supervision", "supervision"),
+    "validation": ("Validation", "validation"),
+    "visualization": ("Visualization", "visualization"),
+    "writing - original draft": ("Writing - original draft", "writing-original-draft"),
+    "writing - review and editing": ("Writing - review and editing", "writing-review-editing"),
+}
+
+
+def _credit_key(value: str) -> str:
+    """Normalize a role string for matching: lowercase, hyphens to spaces, whitespace collapsed.
+
+    This makes ``"Data Curation"``, ``"data-curation"``, and ``"data curation"`` all match, so a
+    caller is not forced to reproduce the exact canonical spacing.
+    """
+    text = str(value).strip().lower().replace("-", " ")
+    return " ".join(text.split())
+
+
+#: normalized form -> canonical role. Includes the slug spellings so both
+#: ``"writing - original draft"`` and ``"writing-original-draft"`` resolve.
+_CREDIT_LOOKUP: dict[str, str] = {}
+for _canonical, (_display, _slug) in _CREDIT_META.items():
+    _CREDIT_LOOKUP[_credit_key(_canonical)] = _canonical
+    _CREDIT_LOOKUP[_credit_key(_slug)] = _canonical
+
+
+def validate_credit_role(value: str) -> str:
+    """Validate a CRediT role and return its canonical spelling (one of :data:`CREDIT_ROLES`).
+
+    Matching is case-insensitive and tolerant of hyphen-vs-space, so ``"Formal Analysis"`` and
+    ``"formal-analysis"`` both resolve to ``"formal analysis"``. A role outside the 14-term
+    taxonomy is rejected, never approximated. Raises :class:`MetadataError` on an unknown role.
+    """
+    canonical = _CREDIT_LOOKUP.get(_credit_key(value))
+    if canonical is None:
+        raise MetadataError(
+            f"unknown CRediT role {value!r}: not one of the 14 CRediT terms "
+            f"({', '.join(CREDIT_ROLES)})"
+        )
+    return canonical
+
+
+# --- Contributor model ----------------------------------------------------
+
+
+@dataclass(frozen=True)
+class Affiliation:
+    """A contributor's institutional affiliation, optionally carrying a validated ROR ID.
+
+    ``ror`` is either the empty string or a canonical ``https://ror.org/0...`` URI; the
+    constructors in this module never store an unvalidated one.
+    """
+
+    institution: str = ""
+    ror: str = ""
+
+
+@dataclass(frozen=True)
+class Contributor:
+    """An author (or other contributor) plus the optional ORCID/ROR/CRediT metadata.
+
+    ``orcid`` is either "" or a canonical ORCID URI, ``credit_roles`` holds canonical CRediT
+    terms, and each affiliation's ROR is canonical or empty. :func:`contributor_from_mapping`
+    is the validating constructor; building one directly assumes the values are already clean.
+    """
+
+    name: CSLName
+    contrib_type: str = "author"
+    orcid: str = ""
+    affiliations: tuple[Affiliation, ...] = ()
+    credit_roles: tuple[str, ...] = ()
+
+
+def _name_from_value(value: Any) -> CSLName:
+    if isinstance(value, CSLName):
+        return value
+    if isinstance(value, Mapping):
+        return CSLName.from_csl_json(value)
+    return parse_name(str(value or ""))
+
+
+def contributor_from_mapping(data: Mapping[str, Any]) -> Contributor:
+    """Build a validated :class:`Contributor` from a config-style mapping.
+
+    Recognized keys (all except the name are optional):
+
+    * ``name`` (a string like ``"Jane Q. Doe"``) or the CSL name parts ``family``/``given``/
+      ``literal``; ``contrib_type`` (defaults to ``"author"``);
+    * ``orcid`` (validated by :func:`validate_orcid`);
+    * ``affiliation``/``affiliations`` (a string, a mapping with ``institution``/``name`` and
+      ``ror``, or a list of those); a top-level ``ror`` shorthand attaches to a lone affiliation;
+    * ``credit``/``credit_roles``/``contributions``/``roles`` (a role string or a list of them,
+      each validated by :func:`validate_credit_role`).
+
+    Every identifier is validated and canonicalized; an invalid one raises
+    :class:`MetadataError` rather than being silently dropped or guessed.
+    """
+    if "name" in data:
+        name = _name_from_value(data.get("name"))
+    else:
+        name = CSLName.from_csl_json(data)
+    if name.is_empty():
+        raise MetadataError("a contributor needs a name (a 'name' string or CSL name parts)")
+
+    contrib_type = str(data.get("contrib_type") or data.get("contrib-type") or "author")
+
+    orcid_raw = data.get("orcid") or data.get("ORCID")
+    orcid = validate_orcid(str(orcid_raw)) if orcid_raw else ""
+
+    top_ror = data.get("ror") or data.get("ROR")
+    raw_affs = data.get("affiliations")
+    if raw_affs is None:
+        raw_affs = data.get("affiliation")
+    affiliations: list[Affiliation] = []
+    for entry in _as_sequence(raw_affs):
+        if isinstance(entry, Mapping):
+            institution = str(entry.get("institution") or entry.get("name") or "").strip()
+            ror_raw = entry.get("ror") or entry.get("ROR")
+        else:
+            institution = str(entry).strip()
+            ror_raw = None
+        ror = validate_ror(str(ror_raw)) if ror_raw else ""
+        if institution or ror:
+            affiliations.append(Affiliation(institution=institution, ror=ror))
+    if top_ror:
+        canonical_ror = validate_ror(str(top_ror))
+        if len(affiliations) == 1 and not affiliations[0].ror:
+            affiliations[0] = Affiliation(
+                institution=affiliations[0].institution, ror=canonical_ror
+            )
+        elif not affiliations:
+            affiliations.append(Affiliation(ror=canonical_ror))
+        else:
+            raise MetadataError(
+                "a top-level 'ror' is ambiguous with multiple affiliations; put the ror inside "
+                "the affiliation it belongs to"
+            )
+
+    roles_raw = (
+        data.get("credit_roles")
+        or data.get("credit-roles")
+        or data.get("credit")
+        or data.get("contributions")
+        or data.get("roles")
+    )
+    credit_roles = tuple(validate_credit_role(str(role)) for role in _as_sequence(roles_raw))
+
+    return Contributor(
+        name=name,
+        contrib_type=contrib_type,
+        orcid=orcid,
+        affiliations=tuple(affiliations),
+        credit_roles=credit_roles,
+    )
+
+
+def _as_sequence(value: Any) -> list[Any]:
+    """Coerce ``None``/scalar/list into a list, so single and multiple values are handled alike."""
+    if value is None:
+        return []
+    if isinstance(value, (str, Mapping)):
+        return [value]
+    if isinstance(value, Sequence):
+        return list(value)
+    return [value]
+
+
+# --- JATS <contrib-group> emitter -----------------------------------------
+
+
+def _credit_role_el(parent: ET.Element, canonical: str) -> None:
+    display, slug = _CREDIT_META[canonical]
+    role_el = _text_el(parent, "role", display)
+    role_el.set("vocab", "credit")
+    role_el.set("vocab-identifier", "https://credit.niso.org/")
+    role_el.set("vocab-term", display)
+    role_el.set("vocab-term-identifier", f"https://credit.niso.org/contributor-roles/{slug}/")
+
+
+def to_jats_contrib_group(contributors: Iterable[Contributor]) -> str:
+    """Emit contributors as a JATS 1.3 ``<contrib-group>``.
+
+    Each contributor becomes a ``<contrib>`` carrying, when present: a ``<contrib-id
+    contrib-id-type="orcid">`` with the ORCID URI, a ``<name>`` (or ``<collab>`` for an
+    organization), one CRediT ``<role>`` per role tagged with the NISO vocabulary attributes,
+    and an ``<aff>`` per affiliation whose ROR (when set) is written as ``<institution-id
+    institution-id-type="ror">``. The output is well-formed XML: :func:`to_jats_contrib_group`
+    escapes text and every element is closed, so ``xml.etree.ElementTree.fromstring`` reparses
+    it without error.
+    """
+    group = ET.Element("contrib-group")
+    for contributor in contributors:
+        contrib = ET.SubElement(group, "contrib")
+        contrib.set("contrib-type", contributor.contrib_type or "author")
+        if contributor.orcid:
+            contrib_id = _text_el(contrib, "contrib-id", contributor.orcid)
+            contrib_id.set("contrib-id-type", "orcid")
+        name = contributor.name
+        if name.literal and not name.family:
+            _text_el(contrib, "collab", name.literal)
+        else:
+            name_el = ET.SubElement(contrib, "name")
+            surname = " ".join(
+                part for part in (name.non_dropping_particle, name.family) if part
+            ).strip()
+            _text_el(name_el, "surname", surname)
+            given = " ".join(part for part in (name.dropping_particle, name.given) if part).strip()
+            if given:
+                _text_el(name_el, "given-names", given)
+            if name.suffix:
+                _text_el(name_el, "suffix", name.suffix)
+        for role in contributor.credit_roles:
+            _credit_role_el(contrib, role)
+        for aff in contributor.affiliations:
+            aff_el = ET.SubElement(contrib, "aff")
+            if aff.institution:
+                _text_el(aff_el, "institution", aff.institution)
+            if aff.ror:
+                institution_id = _text_el(aff_el, "institution-id", aff.ror)
+                institution_id.set("institution-id-type", "ror")
+    ET.indent(group, space="  ")
+    return ET.tostring(group, encoding="unicode") + "\n"
