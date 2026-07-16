@@ -85,6 +85,7 @@ COMMANDS: tuple[str, ...] = (
     "snapshot",
     "provenance",
     "compile",
+    "passport",
 )
 
 
@@ -1293,6 +1294,37 @@ def cmd_compile(args: argparse.Namespace, parser: argparse.ArgumentParser) -> in
     return 0 if report.passed else 1
 
 
+def cmd_passport(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .lineage.compile import compile_graph, default_artifact_hasher
+    from .lineage.graph import LineageGraph
+    from .lineage.passport import to_prov_jsonld, to_ro_crate
+    from .provenance import load_jsonl
+
+    manuscript = Path(args.manuscript)
+    lineage_path = Path(args.lineage) if args.lineage else manuscript / "lineage" / "graph.jsonl"
+    if not lineage_path.is_file():
+        raise CLIError(f"No lineage graph at {lineage_path}. Run the pipeline first.")
+    graph = LineageGraph.from_events(load_jsonl(lineage_path))
+
+    if args.format == "ro-crate":
+        payload = to_ro_crate(graph, name=args.name or manuscript.name)
+    else:
+        # the PROV passport carries the compile verdict, so it is derived alongside a compile
+        report = compile_graph(graph, artifact_hasher=default_artifact_hasher(manuscript))
+        payload = to_prov_jsonld(graph, report)
+
+    text = json.dumps(payload, indent=2, ensure_ascii=False)
+    if args.out:
+        target = Path(args.out)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with open(target, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(text + "\n")
+        emit(f"wrote {args.format} passport to {target}")
+        return 0
+    emit(text)
+    return 0
+
+
 # ---------------------------------------------------------------------------
 # The parser
 # ---------------------------------------------------------------------------
@@ -1625,6 +1657,27 @@ def build_parser() -> argparse.ArgumentParser:
     compile_cmd.add_argument("--run-id", help="Run id for the gate event.")
     compile_cmd.add_argument("--ledger", help="Ledger path (default: the user cache dir).")
     compile_cmd.set_defaults(func=cmd_compile, cmd_parser=compile_cmd)
+
+    # -- passport (M3.3) ---------------------------------------------------
+    passport = _common(
+        subparsers.add_parser(
+            "passport",
+            help="Export the lineage graph as an RO-Crate or W3C PROV research passport.",
+        )
+    )
+    passport.add_argument(
+        "--format",
+        choices=("ro-crate", "prov-jsonld"),
+        default="ro-crate",
+        help="ro-crate (RO-Crate 1.1) or prov-jsonld (W3C PROV-JSON-LD).",
+    )
+    passport.add_argument(
+        "--manuscript", default="manuscript", help="The manuscript folder (default: manuscript/)."
+    )
+    passport.add_argument("--lineage", help="Path to the lineage graph JSONL.")
+    passport.add_argument("--name", help="The manuscript name for the crate root.")
+    passport.add_argument("--out", help="Write to this path instead of stdout.")
+    passport.set_defaults(func=cmd_passport, cmd_parser=passport)
 
     return parser
 
