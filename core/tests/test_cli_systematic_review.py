@@ -34,7 +34,8 @@ def test_protocol_lock_then_detect_unamended_edit(tmp_path, capsys):
     assert code == 0
 
     # edit the protocol file without an amendment: detected as a mismatch, exit 1
-    protocol.write_text("question: does X work\neligibility: adults and children\n", encoding="utf-8")
+    protocol.write_text("question: does X work\neligibility: adults and children\n",
+        encoding="utf-8")
     code, out = run(
         ["protocol", "check", str(protocol), "--run-id", "sr", "--ledger", str(ledger), "--json"],
         capsys,
@@ -47,12 +48,14 @@ def test_amendment_is_allowed_and_trails(tmp_path, capsys):
     ledger = tmp_path / "l.sqlite3"
     protocol = tmp_path / "protocol.yaml"
     protocol.write_text("question: v1\n", encoding="utf-8")
-    run(["protocol", "lock", str(protocol), "--run-id", "sr", "--ts", TS, "--ledger", str(ledger)], capsys)
+    run(["protocol", "lock", str(protocol), "--run-id", "sr", "--ts", TS, "--ledger",
+        str(ledger)], capsys)
 
     protocol.write_text("question: v2\n", encoding="utf-8")
     code, _ = run(
         ["protocol", "amend", str(protocol), "--run-id", "sr", "--ts", TS,
-         "--summary", "widened population", "--rationale", "reviewer request", "--ledger", str(ledger)],
+         "--summary", "widened population", "--rationale", "reviewer request", "--ledger",
+             str(ledger)],
         capsys,
     )
     assert code == 0
@@ -70,12 +73,14 @@ def test_dual_screening_conflicts_are_blind_and_kappa_derives(tmp_path, capsys):
     profile = tmp_path / "profile.json"
     corpus = tmp_path / "corpus.json"
     profile.write_text(json.dumps({"population": "adults"}), encoding="utf-8")
-    corpus.write_text(json.dumps({"r2": {"title": "Disputed", "abstract": "..."}}), encoding="utf-8")
+    corpus.write_text(json.dumps({"r2": {"title": "Disputed", "abstract": "..."}}),
+        encoding="utf-8")
 
     def decide(screener, record, decision):
         run(
             ["screen", "decide", "--run-id", "sr", "--screener", screener, "--record", record,
-             "--stage", "title-abstract", "--decision", decision, "--ts", TS, "--ledger", str(ledger)],
+             "--stage", "title-abstract", "--decision", decision, "--ts", TS, "--ledger",
+                 str(ledger)],
             capsys,
         )
 
@@ -99,7 +104,8 @@ def test_dual_screening_conflicts_are_blind_and_kappa_derives(tmp_path, capsys):
         assert leak not in blob, f"blinding leak: {leak}"
 
     code, out = run(
-        ["screen", "kappa", "--run-id", "sr", "--stage", "title-abstract", "--ledger", str(ledger), "--json"],
+        ["screen", "kappa", "--run-id", "sr", "--stage", "title-abstract", "--ledger",
+            str(ledger), "--json"],
         capsys,
     )
     assert code == 0
@@ -112,7 +118,8 @@ def test_prisma_flow_is_derived_from_events(tmp_path, capsys):
     def decide(screener, record, decision):
         run(
             ["screen", "decide", "--run-id", "sr", "--screener", screener, "--record", record,
-             "--stage", "title-abstract", "--decision", decision, "--ts", TS, "--ledger", str(ledger)],
+             "--stage", "title-abstract", "--decision", decision, "--ts", TS, "--ledger",
+                 str(ledger)],
             capsys,
         )
 
