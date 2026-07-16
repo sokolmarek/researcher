@@ -14,3 +14,9 @@ citation-management
 
 **Fallback when absent**
 citation-management falls back to manual BibTeX entry and CrossRef API validation instead of pulling items directly from a Zotero library.
+
+**Data egress**
+Core makes no call to Zotero: nothing leaves through this plugin for it. The community zotero-mcp server that you install talks to the Zotero Web API (`api.zotero.org`) or your local Zotero using your `ZOTERO_API_KEY`; that traffic, and its retention, is governed by your Zotero account and Zotero's terms, applied through your MCP client, not by Researcher.
+
+**Terms of use**
+User-connected MCP, separately governed. Your use of Zotero is covered by Zotero's terms and privacy policy. See https://www.zotero.org/support/privacy . Verified as of 2026-07-14; re-verify at release.

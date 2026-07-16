@@ -14,3 +14,9 @@ fact-checking, literature-search, writing-style-analysis, sota-finder
 
 **Fallback when absent**
 Skills that would otherwise query Scholar directly run a general web search scoped to `site:scholar.google.com`, then treat results as unstructured leads to verify against primary sources (CrossRef, Semantic Scholar, or the publisher record) rather than as authoritative metadata.
+
+**Data egress**
+Core makes no call to Google Scholar: there is no sanctioned API, so the plugin integrates none. When Scholar coverage is wanted, a skill uses the AI assistant's built-in web search with a `site:scholar.google.com` query. That query travels through the assistant's web-search provider and Google, not through core, and it can carry manuscript-derived search terms. It is governed by the assistant provider's and Google's terms, not by Researcher.
+
+**Terms of use**
+Documentation-only. Google Scholar has no free, sanctioned API and discourages automated access, so Researcher does not integrate it programmatically; any traffic is the assistant's web search under Google's terms. See https://scholar.google.com/intl/en/scholar/about.html . Verified as of 2026-07-14; re-verify at release.

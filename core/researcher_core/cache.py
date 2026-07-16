@@ -32,6 +32,7 @@ from .model import canonical_json, sha256_hex
 
 __all__ = [
     "DEFAULT_TTL_SECONDS",
+    "CONTENT_CLASS_TTLS",
     "CacheEntry",
     "ResponseCache",
     "cache_key",
@@ -39,6 +40,17 @@ __all__ = [
 ]
 
 DEFAULT_TTL_SECONDS = 7 * 24 * 60 * 60  # 7 days
+
+#: Per-content-class runtime-cache TTLs (M5.3). Metadata uses the 7-day default (bibliographic
+#: records change slowly, and a retraction should be re-checked within a week). Open-access
+#: location answers go stale faster, so Unpaywall is capped at 30 days; extracted full text is
+#: expensive to refetch and rarely changes, so it holds for 90 days. These bound only the runtime
+#: cache in the user cache dir; the content-addressed eval snapshot store has no TTL and is what
+#: gates the benchmarks (D15). Overridable via ttl_by_source or RESEARCHER_CORE_CACHE_TTL.
+CONTENT_CLASS_TTLS: dict[str, int] = {
+    "unpaywall": 30 * 24 * 60 * 60,  # OA location answers, 30 days
+    "fulltext": 90 * 24 * 60 * 60,   # extracted full text, 90 days
+}
 
 APP_NAME = "researcher-core"
 APP_AUTHOR = "researcher"
@@ -142,6 +154,10 @@ class ResponseCache:
         ttl = int(ttl_raw) if ttl_raw.isdigit() else DEFAULT_TTL_SECONDS
         kwargs.setdefault("enabled", enabled)
         kwargs.setdefault("default_ttl", ttl)
+        # The content-class TTLs (M5.3) are defaults; an explicit ttl_by_source still wins.
+        merged = dict(CONTENT_CLASS_TTLS)
+        merged.update(kwargs.get("ttl_by_source") or {})
+        kwargs["ttl_by_source"] = merged
         return cls(**kwargs)
 
     @classmethod

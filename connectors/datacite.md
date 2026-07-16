@@ -14,3 +14,9 @@ fact-checking, citation-management, literature-search, implementation (software 
 
 **Fallback when absent**
 If the API is unreachable, the affected reference is reported as `inconclusive`, never as unresolvable. A timeout, a rate limit, or a 5xx raises a source error, which can never count as evidence that a citation was fabricated; only a clean negative (the query succeeded and DataCite genuinely holds no such DOI) does. A 404 from `/dois/<doi>` is exactly that clean negative, and it is the expected answer for any Crossref-registered DOI.
+
+**Data egress**
+Host: `api.datacite.org` (HTTPS). Sent: a DOI to resolve, or a free-text search query plus an optional resource-type filter, with an optional contact address from `DATACITE_MAILTO` or `RESEARCHER_CORE_MAILTO` in the User-Agent. Read access is keyless. A search query can carry manuscript-derived terms (a dataset or software title); a `resolve_doi` or `get_by_id` call carries only the DOI. No manuscript file or section prose is sent. Remote retention: governed by DataCite's privacy policy (linked below).
+
+**Terms of use**
+DataCite metadata is published under CC0 1.0, so it may be reused without restriction; read access is free and keyless (DataCite credentials only mint DOIs, and Researcher never uses them). Metadata terms: https://datacite.org/ . Privacy: https://datacite.org/privacy-policy/ . Verified as of 2026-07-14; re-verify at release.
