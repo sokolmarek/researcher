@@ -31,7 +31,9 @@ does without it. The plugin never hard-fails for want of core.
 
 ## Every command
 
-All commands accept `--json` and `--record`. Default output is a compact human table.
+All commands accept `--json`; the network-touching commands also accept `--record` and `--offline`
+(the ledger-only commands `export`, `protocol`, `screen`, `prisma`, and `monitor` take `--json`
+only, because they never make a live call). Default output is a compact human table.
 
 | Command | Does |
 |---|---|
@@ -51,6 +53,11 @@ All commands accept `--json` and `--record`. Default output is a compact human t
 | `provenance append <event-json> \| prisma \| export` | append an event, derive PRISMA counts, export JSONL |
 | `compile [--manuscript DIR] [--lineage PATH] [--recheck-status] [--ts TS]` | walk the lineage graph and gate the manuscript; exits 1 on a failing gate, appends a `gate` event when given `--ts` |
 | `passport --format ro-crate\|prov-jsonld [--manuscript DIR] [--out PATH]` | export the evidence lineage as an RO-Crate 1.1 or W3C PROV-JSON-LD research passport |
+| `export <library.bib> [--format csl-json\|ris\|jats\|bibtex] [--out PATH]` | emit the bibliography in the chosen format (CSL-JSON is canonical, D4; round-trips are lossless per format) |
+| `protocol lock\|amend\|check` | hash and lock a systematic-review protocol; a deviation is an amendment event, never an edit |
+| `screen decide\|conflicts\|kappa` | dual independent screening; conflicts surface blind to the adjudicator, and Cohen's kappa is derived from the ledger |
+| `prisma flow\|checklist` | the PRISMA 2020 flow and checklist, derived by aggregating ledger events, never stored |
+| `monitor status` | living-review saved-search state and diff-on-rerun |
 
 ### Global flags
 
@@ -58,6 +65,7 @@ All commands accept `--json` and `--record`. Default output is a compact human t
 |---|---|
 | `--json` | machine output, validated against `core/schemas/*.json` in the test suite |
 | `--record` | make live calls and capture every response as a content-addressed snapshot |
+| `--offline` | answer only from snapshots and the response cache; a miss is a typed `offline-miss` (exit 3), never a live call. Also settable with `RESEARCHER_OFFLINE=1` |
 | `--version` | core, parser, and protocol versions |
 
 ### Sources
@@ -185,6 +193,7 @@ Kernel behavior:
 
 | Variable | Purpose |
 |---|---|
+| `RESEARCHER_OFFLINE` | set to `1` to force offline/private mode for every command |
 | `RESEARCHER_CORE_SNAPSHOT_MODE` | `live` (default), `record`, or `replay` |
 | `RESEARCHER_CORE_SNAPSHOT_DIR` | override the snapshot store root |
 | `RESEARCHER_CORE_CACHE_DIR` | override the response-cache directory |
