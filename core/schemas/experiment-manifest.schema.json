@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://researcher.dev/schemas/experiment-manifest.schema.json",
+  "title": "Experiment manifest",
+  "description": "What produced a results number (M3.1): the code commit, worktree cleanliness, data hashes, environment lock, seed, metric definitions, and generated artifacts. The ts is caller-supplied per D19 so a manifest hashes identically on replay.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "run_id", "code_commit", "dirty_worktree", "ts"],
+  "properties": {
+    "manifest_version": { "type": "string" },
+    "run_id": { "type": "string", "description": "Groups every event of one logical run." },
+    "code_commit": { "type": "string", "description": "Git commit the run was made from." },
+    "dirty_worktree": {
+      "type": "boolean",
+      "description": "Whether the worktree had uncommitted changes at run time. True fails the C006 artifact-code-drift check."
+    },
+    "data_hashes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Content hashes of the input data files."
+    },
+    "environment_lockfile_hash": { "type": "string", "description": "Hash of the dependency lockfile." },
+    "seed": { "type": "integer", "description": "The RNG seed, if the run used one." },
+    "metric_definitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "formula_or_ref": { "type": "string" }
+        }
+      }
+    },
+    "artifact_hashes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "hash"],
+        "properties": {
+          "path": { "type": "string" },
+          "hash": { "type": "string" },
+          "produced_at": { "type": "string" }
+        }
+      },
+      "description": "The generated outputs and their content hashes. A hand edit to a generated number changes the artifact content without updating this, so the C002 mismatch is detectable."
+    },
+    "command_line": { "type": "string" },
+    "ts": {
+      "type": "string",
+      "description": "Caller-supplied timestamp (D19). Never self-generated, so replays stay deterministic."
+    }
+  }
+}

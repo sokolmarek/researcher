@@ -39,8 +39,8 @@ from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass, field
 from typing import Any
 
-from .provenance import ProvenanceEvent, ProvenanceLedger
-from .snapshots import Snapshot, SnapshotStore
+from ..provenance import ProvenanceEvent, ProvenanceLedger
+from ..snapshots import Snapshot, SnapshotStore
 
 __all__ = [
     "LineageEdge",

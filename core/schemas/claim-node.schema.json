@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://researcher.dev/schemas/claim-node.schema.json",
+  "title": "Claim node",
+  "description": "A hash-anchored span of manuscript text in the evidence-lineage graph (M3.1). The claim_id is hash(normalized_text + file + parser_version), stable to re-wrapping but not to a substantive rewrite.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim_id", "file", "span", "text_hash", "normalized_text", "kind"],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 hex of the canonical [normalized_text, file, parser_version]."
+    },
+    "file": {
+      "type": "string",
+      "description": "Manuscript-relative path the span was extracted from."
+    },
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "text_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 hex of the RAW span text, so any edit is visible even when the claim_id survives it."
+    },
+    "normalized_text": {
+      "type": "string",
+      "description": "NFC-normalized, whitespace-collapsed comparison form of the span."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["assertion", "number", "comparison"],
+      "description": "A number points at an experiment run; the others at external sources."
+    },
+    "parser_version": {
+      "type": "string",
+      "description": "The extractor version. Bumping it intentionally changes every claim_id."
+    }
+  }
+}

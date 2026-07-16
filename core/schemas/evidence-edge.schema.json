@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://researcher.dev/schemas/evidence-edge.schema.json",
+  "title": "Evidence edge",
+  "description": "A claim's support in the lineage graph (M3.1). An external edge points at an M2 passage id with qualifiers and axis verdicts; an internal edge points at an experiment manifest hash.",
+  "type": "object",
+  "required": ["claim_id", "target_kind"],
+  "oneOf": [
+    {
+      "additionalProperties": false,
+      "required": ["claim_id", "target_kind", "passage_id"],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "target_kind": { "const": "external" },
+        "passage_id": {
+          "type": "string",
+          "description": "An M2 passage id (D21): hash of doc content hash + section path + char offsets + parser version."
+        },
+        "qualifiers": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "population": { "type": "string" },
+            "intervention_or_exposure": { "type": "string" },
+            "outcome": { "type": "string" },
+            "source_version": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "snapshot_hash": { "type": "string" },
+                "retrieved_at": { "type": "string" }
+              }
+            },
+            "evidence_quality": {
+              "type": "string",
+              "enum": ["systematic-review", "RCT", "observational", "preprint", "abstract-only"],
+              "description": "A string enum from day one; M4 upgrades it to GRADE without changing the field type."
+            }
+          }
+        },
+        "axis_verdicts": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "The four D16 axis verdicts current at edge creation.",
+          "properties": {
+            "identity": { "type": "string", "enum": ["verified", "mismatch", "unresolvable", "inconclusive"] },
+            "status": { "type": "string", "enum": ["current", "corrected", "retracted", "expression-of-concern"] },
+            "faithfulness": { "type": "string", "enum": ["supported", "partial", "contradicted", "insufficient-passage"] },
+            "accessibility": { "type": "string", "enum": ["full-text", "abstract-only", "unavailable"] }
+          }
+        }
+      }
+    },
+    {
+      "additionalProperties": false,
+      "required": ["claim_id", "target_kind", "manifest_hash"],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "target_kind": { "const": "internal" },
+        "manifest_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "The content hash of the experiment manifest this claim's number came from."
+        }
+      }
+    }
+  ]
+}
