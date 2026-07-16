@@ -5,6 +5,8 @@ model: inherit
 skills:
   - literature-search
   - citation-management
+  - citation-audit
+  - research-pipeline
 ---
 
 # Research Agent

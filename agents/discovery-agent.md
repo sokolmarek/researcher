@@ -7,6 +7,7 @@ skills:
   - conference-finder
   - research-gaps
   - sota-finder
+  - citation-audit
 ---
 
 # Discovery Agent
