@@ -86,6 +86,7 @@ COMMANDS: tuple[str, ...] = (
     "provenance",
     "compile",
     "passport",
+    "export",
     "protocol",
     "screen",
     "prisma",
@@ -231,11 +232,27 @@ def build_session(args: argparse.Namespace) -> SnapshotSession:
     or an eval runner is the only thing that should ever be in it, and a stray ``--replay``
     flag on a user's command line would be an invitation to think the network was consulted
     when it was not.
+
+    ``--offline`` (or ``RESEARCHER_OFFLINE=1``) wins over everything: it answers exclusively
+    from snapshots and the cache, and a miss becomes a typed offline-miss (M5.1), never a
+    live call.
     """
+    from .config import build_session as build_configured_session
+
+    offline = getattr(args, "offline", None)
+    record = getattr(args, "record", False)
+    if offline or config_is_offline():
+        return build_configured_session(offline=True, record=record)
     session = SnapshotSession.from_env()
-    if getattr(args, "record", False):
+    if record:
         session.mode = SnapshotMode.RECORD
     return session
+
+
+def config_is_offline() -> bool:
+    from .config import is_offline
+
+    return is_offline()
 
 
 def snapshot_store(args: argparse.Namespace, session: SnapshotSession) -> SnapshotStore:
@@ -1501,6 +1518,28 @@ def cmd_compile(args: argparse.Namespace, parser: argparse.ArgumentParser) -> in
     return 0 if report.passed else 1
 
 
+def cmd_export(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from . import export as exp
+
+    records = read_bib_records(Path(args.bib))
+    emitters = {
+        "csl-json": lambda r: exp.to_csl_json(r, indent=2),
+        "ris": exp.to_ris,
+        "jats": exp.to_jats_reflist,
+        "bibtex": exp.to_bibtex,
+    }
+    text = emitters[args.format](records)
+    if args.out:
+        target = Path(args.out)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with open(target, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(text if text.endswith("\n") else text + "\n")
+        emit(f"exported {len(records)} record(s) to {target} as {args.format}")
+        return 0
+    emit(text)
+    return 0
+
+
 def cmd_passport(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
     from .lineage.compile import compile_graph, default_artifact_hasher
     from .lineage.graph import LineageGraph
@@ -1549,6 +1588,12 @@ def _common(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
         "--record",
         action="store_true",
         help="Make live calls and capture every response as a snapshot (D15).",
+    )
+    parser.add_argument(
+        "--offline",
+        action="store_true",
+        help="Answer only from snapshots and cache (M5.1). A miss is a typed offline-miss, "
+        "never a live call. Also settable with RESEARCHER_OFFLINE=1.",
     )
     return parser
 
@@ -1886,6 +1931,22 @@ def build_parser() -> argparse.ArgumentParser:
     passport.add_argument("--out", help="Write to this path instead of stdout.")
     passport.set_defaults(func=cmd_passport, cmd_parser=passport)
 
+    # -- export (M5.4) -----------------------------------------------------
+    export_cmd = _with_json(
+        subparsers.add_parser(
+            "export", help="Emit a bibliography as CSL-JSON, RIS, JATS ref-list, or BibTeX."
+        )
+    )
+    export_cmd.add_argument("bib", help="The .bib file to export.")
+    export_cmd.add_argument(
+        "--format",
+        choices=("csl-json", "ris", "jats", "bibtex"),
+        default="csl-json",
+        help="Output format (CSL-JSON is canonical, D4).",
+    )
+    export_cmd.add_argument("--out", help="Write to this path instead of stdout.")
+    export_cmd.set_defaults(func=cmd_export, cmd_parser=export_cmd)
+
     # -- protocol (M4.1) ---------------------------------------------------
     protocol = subparsers.add_parser(
         "protocol", help="Lock, amend, and check a systematic-review protocol (D19)."
@@ -2003,8 +2064,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     # `search` prints the usage line for `search`, not for the whole program.
     owner: argparse.ArgumentParser = getattr(args, "cmd_parser", parser)
 
+    from .config import OfflineMissError
+
     try:
         return int(args.func(args, owner))
+    except OfflineMissError as exc:
+        # Offline mode asked for something that is not in the snapshots or cache. This is a
+        # typed answer (M5.1), not a crash and not a live call: emit the offline-miss so a
+        # caller can tell "we are offline and do not have this" from a real error.
+        if getattr(args, "json", False):
+            emit_json(exc.miss.to_json_dict())
+        else:
+            sys.stderr.write(f"offline-miss: {exc.miss.message}\n")
+        return 3
     except SnapshotMissingError as exc:
         # Never degraded into a source error: a hole in the snapshot set is a defect in the
         # fixtures, not an outage, and replay never falls through to a live call.

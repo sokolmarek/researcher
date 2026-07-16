@@ -39,6 +39,7 @@ dependencies = [
 
 [project.scripts]
 researcher-core = "researcher_core.cli:main"
+researcher-mcp = "researcher_core.mcp_server:main"
 
 [project.optional-dependencies]
 dev = [
@@ -55,10 +56,15 @@ fulltext = [
 rerank = [
     "rank-bm25>=0.2.2",
 ]
+# The thin stable-core MCP server (M5.9). Optional so the base runtime stays minimal;
+# `researcher-mcp` exits with an install hint when this extra is not present.
+mcp = [
+    "fastmcp>=2.0",
+]
 
 [project.urls]
-Homepage = "https://github.com/marek-sokol/researcher"
-Repository = "https://github.com/marek-sokol/researcher"
+Homepage = "https://github.com/sokolmarek/researcher"
+Repository = "https://github.com/sokolmarek/researcher"
 
 # Mirrors [project.optional-dependencies].dev so that a plain `uv sync --project core`
 # provisions the test and lint toolchain. Contributors without uv get the same set from

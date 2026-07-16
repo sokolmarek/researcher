@@ -1,0 +1,139 @@
+[
+  {
+    "id": "diacritics-real",
+    "description": "Real journal article; a diacritic (o-circumflex) in an author name and a colon in the title exercise Unicode and punctuation across every format.",
+    "synthetic": false,
+    "record": {
+      "id": "10.1038/s41467-020-15432-4",
+      "type": "article-journal",
+      "title": "Automatic diagnosis of the 12-lead ECG using a deep neural network",
+      "author": [
+        {"family": "Ribeiro", "given": "Antônio H."},
+        {"family": "Ribeiro", "given": "Manoel Horta"},
+        {"family": "Paixão", "given": "Gabriela M. M."}
+      ],
+      "issued": {"date-parts": [[2020, 4, 9]]},
+      "container-title": "Nature Communications",
+      "volume": "11",
+      "issue": "1",
+      "page": "1760",
+      "DOI": "10.1038/s41467-020-15432-4",
+      "ISSN": ["2041-1723"],
+      "language": "en"
+    }
+  },
+  {
+    "id": "braces-and-markup",
+    "description": "Synthetic: literal brace characters and XML-special characters in the title. RIS, JATS, and CSL-JSON preserve the braces verbatim; BibTeX consumes them as capitalization grouping, which is the documented per-case loss.",
+    "synthetic": true,
+    "expected_extra_loss": {"bibtex": ["title", "abstract"]},
+    "record": {
+      "id": "braces-and-markup",
+      "type": "article-journal",
+      "title": "The {ECG} Benchmark & <Deep> Learning: a Möbius Review",
+      "author": [
+        {"family": "Muñoz", "given": "José"},
+        {"family": "Åström", "given": "Kaj"}
+      ],
+      "issued": {"date-parts": [[2022, 11]]},
+      "container-title": "Journal of Tésting & Review",
+      "volume": "7",
+      "issue": "3",
+      "page": "e0142",
+      "abstract": "An abstract containing <tags>, & ampersands, and {braces} to stress escaping.",
+      "note": "(synthetic, for demonstration)"
+    }
+  },
+  {
+    "id": "corporate-author",
+    "description": "Synthetic: an organization (literal) author with no comma. RIS carries it via the no-comma-multiword heuristic; JATS carries it as <collab>; BibTeX braces it.",
+    "synthetic": true,
+    "record": {
+      "id": "corporate-author",
+      "type": "report",
+      "title": "Global status report on noncommunicable diseases",
+      "author": [
+        {"literal": "World Health Organization"}
+      ],
+      "issued": {"date-parts": [[2021, 6, 1]]},
+      "publisher": "World Health Organization",
+      "DOI": "10.1234/who.report.ncd.2021",
+      "note": "(synthetic, for demonstration)"
+    }
+  },
+  {
+    "id": "no-doi",
+    "description": "Synthetic: an entry with no DOI at all, so the record identity comes from its own fields. RIS carries the caller-supplied id via the ID tag; JATS regenerates it (documented loss).",
+    "synthetic": true,
+    "record": {
+      "id": "no-doi",
+      "type": "paper-conference",
+      "title": "A No-DOI Conference Paper for the Round-Trip Suite",
+      "author": [
+        {"family": "Doe", "given": "Jane A."},
+        {"family": "Roe", "given": "Richard"}
+      ],
+      "issued": {"date-parts": [[2019]]},
+      "container-title": "Proceedings of the Test Workshop",
+      "page": "45-52",
+      "note": "(synthetic, for demonstration)"
+    }
+  },
+  {
+    "id": "kessler2021cmae",
+    "description": "The single sanctioned synthetic fake (D8), reused from the citation-audit example. Its DOI must KEEP failing to resolve; it is here so the round-trip suite exercises the expect-unresolvable marker path without any network resolution.",
+    "synthetic": true,
+    "expect_unresolvable": "10.1109/TBME.2021.3098765",
+    "record": {
+      "id": "kessler2021cmae",
+      "type": "article-journal",
+      "title": "Contrastive masked autoencoders for single-lead ECG anomaly detection",
+      "author": [
+        {"family": "Kessler", "given": "Marta"},
+        {"family": "Vaughan", "given": "Thomas"}
+      ],
+      "issued": {"date-parts": [[2021]]},
+      "container-title": "IEEE Transactions on Biomedical Engineering",
+      "volume": "68",
+      "issue": "9",
+      "page": "2811-2820",
+      "DOI": "10.1109/TBME.2021.3098765",
+      "note": "(synthetic, for demonstration); this reference does not exist"
+    }
+  },
+  {
+    "id": "datacite-dataset",
+    "description": "A real DataCite (Dryad) dataset DOI (D22). Type 'dataset' round-trips through RIS (DATA) and JATS (data); BibTeX collapses it to 'document' (documented loss). Non-DOI metadata is illustrative.",
+    "synthetic": true,
+    "record": {
+      "id": "10.5061/dryad.q447c",
+      "type": "dataset",
+      "title": "Data from: A round-trip dataset fixture",
+      "author": [
+        {"family": "Curator", "given": "Dana"}
+      ],
+      "issued": {"date-parts": [[2016, 3, 15]]},
+      "publisher": "Dryad",
+      "DOI": "10.5061/dryad.q447c",
+      "note": "(synthetic metadata on a real DataCite identifier, for demonstration)"
+    }
+  },
+  {
+    "id": "datacite-software",
+    "description": "A real DataCite (Zenodo) software DOI (D22) carrying a version string. Type 'software' and the version round-trip through JATS; RIS drops the version and BibTeX drops both the version and the type (documented losses). Non-DOI metadata is illustrative.",
+    "synthetic": true,
+    "record": {
+      "id": "10.5281/zenodo.3509134",
+      "type": "software",
+      "title": "A round-trip software fixture",
+      "author": [
+        {"family": "Maintainer", "given": "Morgan"}
+      ],
+      "issued": {"date-parts": [[2019, 10, 21]]},
+      "publisher": "Zenodo",
+      "version": "1.2.0",
+      "DOI": "10.5281/zenodo.3509134",
+      "note": "(synthetic metadata on a real DataCite identifier, for demonstration)"
+    }
+  }
+]

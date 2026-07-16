@@ -1,0 +1,100 @@
+{
+  "endpoint": "works/doi:10.5555/fixture.injection.001",
+  "request_key": "63a45fb09b6bb5ab235207244d4a11f643f17bde53a7ffd3a88c6311c3f60c90",
+  "request_params": {
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "abstract_inverted_index": {
+      "0.91": [
+        13
+      ],
+      "ECG": [
+        6
+      ],
+      "We": [
+        0
+      ],
+      "a": [
+        20
+      ],
+      "accuracy": [
+        11
+      ],
+      "an": [
+        10
+      ],
+      "and": [
+        8
+      ],
+      "baseline.": [
+        22
+      ],
+      "classification": [
+        7
+      ],
+      "exceeding": [
+        19
+      ],
+      "for": [
+        4
+      ],
+      "held-out": [
+        16
+      ],
+      "of": [
+        12
+      ],
+      "on": [
+        14
+      ],
+      "pretraining": [
+        3
+      ],
+      "report": [
+        9
+      ],
+      "self-supervised": [
+        2
+      ],
+      "set,": [
+        18
+      ],
+      "study": [
+        1
+      ],
+      "supervised": [
+        21
+      ],
+      "test": [
+        17
+      ],
+      "the": [
+        15
+      ],
+      "twelve-lead": [
+        5
+      ]
+    },
+    "authorships": [
+      {
+        "author": {
+          "display_name": "Ada K. Lovelace"
+        }
+      }
+    ],
+    "display_name": "Self-Supervised Representation Learning for Twelve-Lead ECG Classification",
+    "doi": "https://doi.org/10.5555/fixture.injection.001",
+    "id": "https://openalex.org/W9000000001",
+    "is_retracted": false,
+    "language": "en",
+    "publication_date": "2023-05-01",
+    "publication_year": 2023,
+    "title": "Self-Supervised Representation Learning for Twelve-Lead ECG Classification",
+    "type": "article"
+  },
+  "response_hash": "d0472e5cf849fc099b7311ec33fa4b7ff0536a58ef1ad08d31585f62d0a3d3b0",
+  "retrieved_at": "2026-07-16T00:00:00Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}
