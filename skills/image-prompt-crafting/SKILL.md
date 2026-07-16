@@ -57,6 +57,8 @@ Variant N: [short style label, e.g. "flat vector, cool palette"]
   Aspect:     16:9 graphical abstract | portrait cover (per journal spec)
   Palette:    <preset name from references/figure-styles.md>
   Post-work:  labels to overlay (TikZ/Inkscape), cropping, format conversion
+  Alt text:   <one line describing the concept the image depicts, shared
+               across style variants; see Alt Text below>
   Disclosure: "Illustration generated with <tool> on <date>; no experimental
                data are depicted."
 ```
@@ -140,6 +142,16 @@ These rules are refusal-grade: do not hand over a generated-image workflow witho
 - **figure-suggestions**: hands off conceptual-overview and graphical-abstract recommendations to this skill
 - **journal-formatting**: provides cover art and graphical abstract specs (dimensions, file type, color mode)
 - **visualization**, **tikz-diagrams**, **plotneuralnet**: the other side of the hard boundary; everything that carries data goes to them, never to an image generator
+
+## Alt Text
+
+Alt text is a REQUIRED output of every prompt package: each variant carries a draft alt-text line
+describing the CONCEPT the image depicts (the subject and the relationship it evokes), so the figure
+that eventually renders from the prompt inherits an accurate description rather than none. Because this
+skill emits prompts for conceptual imagery, not data figures, the alt text describes the concept
+depicted; it never claims data content the image does not carry. Style variants share ONE concept
+description plus at most a one-clause style note, following the Alt Text convention in
+`references/figure-styles.md`.
 
 ## Integrity Constraints
 
