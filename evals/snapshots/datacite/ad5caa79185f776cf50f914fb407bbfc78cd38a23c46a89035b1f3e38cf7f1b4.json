@@ -1,0 +1,806 @@
+{
+  "endpoint": "dois",
+  "request_key": "ad5caa79185f776cf50f914fb407bbfc78cd38a23c46a89035b1f3e38cf7f1b4",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self\\-supervised Learning\\: Generative or Contrastive"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [],
+              "contributorType": "DataManager",
+              "name": "McGill University",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "contributorType": "HostingInstitution",
+              "name": "McGill University",
+              "nameIdentifiers": []
+            },
+            {
+              "affiliation": [],
+              "contributorType": "Supervisor",
+              "name": "Armanfard, Narges",
+              "nameIdentifiers": []
+            }
+          ],
+          "created": "2026-06-19T03:03:17Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "Ho, Thi Kieu Khanh",
+              "nameIdentifiers": []
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-06-18",
+              "dateType": "Accepted"
+            },
+            {
+              "date": "2026",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Narges Armanfard (Supervisor)",
+              "descriptionType": "Other",
+              "lang": ""
+            },
+            {
+              "description": "Time-Series Anomaly Detection (TSAD), the task of identifying patterns that deviate from expected behavior, is critical in domains such as e-commerce, cybersecurity, predictive maintenance, and healthcare. Despite substantial progress, TSAD remains challenging due to the complexity of time-series signals, the diversity of anomaly types, and the scarcity of high-quality labeled data. This thesis addresses these challenges through three complementary contributions.First, the field lacks a systematic understanding of how emerging techniques such as graph modeling and self-supervised learning (SSL) can be leveraged for anomaly detection. Existing surveys often overlook the unique challenges of TSAD, leaving researchers without a roadmap to guide future work. To address this gap, we present the first comprehensive surveys on Graph-based TSAD (G-TSAD), a novel perspective on modeling time-series data using graph structures for the task of TSAD, and on Self-Supervised Learning for Anomaly Detection (SSL-AD), which demonstrates how proxy tasks can assist TSAD in obtaining robust representations from unlabeled data. These surveys highlight methodological advances and practical limitations, and provide an outlook on promising future directions for TSAD.Second, while graph-based approaches have recently been introduced to capture spatial relationships across sensors in multivariate sensory systems, they often overlook fine-grained local structures, such as sub-graphs, that can be critical for detecting anomalies. To address this, we propose EEG-CGS, a novel contrastive and generative SSL framework for anomaly detection in complex sensory systems. EEG-CGS incorporates local structural patterns into graph representations while requiring no anomaly labels during training. This design improves robustness in multivariate TSAD and demonstrates strong performance in detecting anomalous sensors and regions.Finally, a key challenge in unsupervised TSAD lies in the assumption that training data are purely normal, which is rarely valid in practice due to distribution shifts or labeling errors. Such contamination causes unsupervised methods to overfit and misclassify anomalies encountered during training. To address this, we introduce TSAD-C, a novel framework that incorporates graph representations and diffusion models, to capture both long-term temporal and spatial dependencies in time series, while explicitly handling contamination. Furthermore, unlike existing TSAD approaches benchmarked on small, curated datasets with simplistic anomalies, this thesis advances TSAD towards frameworks that generalize to complex, real-world scenarios and detect richer anomaly types, from local signal deviations to sensor- and region-level failures, with direct applications in clinical and industrial domains.",
+              "descriptionType": "Abstract",
+              "lang": "en"
+            },
+            {
+              "description": "La détection des anomalies dans les séries chronologiques (TSAD), qui consiste à identifier les modèles qui s'écartent du comportement attendu, est essentielle dans des domaines tels que le commerce électronique, la cybersécurité, la maintenance prédictive et les soins de santé. Malgré des progrès substantiels, la TSAD reste difficile en raison de la complexité des signaux chronologiques, de la diversité des types d'anomalies et de la rareté des données étiquetées de haute qualité. Cette thèse aborde ces défis à travers trois contributions complémentaires.Tout d'abord, le domaine manque d'une compréhension systématique de la manière dont les techniques émergentes telles que la modélisation par graphes et l'apprentissage auto-supervisé (SSL) peuvent être exploitées pour la détection d'anomalies. Les études existantes négligent souvent les défis uniques de la TSAD, laissant les chercheurs sans feuille de route pour guider leurs travaux futurs. Pour combler cette lacune, nous présentons les premières études exhaustives sur la TSAD basée sur les graphes (G-TSAD), une nouvelle perspective sur la modélisation des données de séries chronologiques à l'aide de structures graphiques pour la tâche de TSAD, et sur l'apprentissage auto-supervisé pour la détection des anomalies (SSL-AD), qui démontre comment les tâches proxy peuvent aider la TSAD à obtenir des représentations robustes à partir de données non étiquetées. Ces enquêtes mettent en évidence les avancées méthodologiques, les limites pratiques et fournissent une perspective sur les orientations futures prometteuses pour le TSAD.Deuxièmement, bien que des approches basées sur des graphes aient récemment été introduites pour capturer les relations spatiales entre les capteurs dans les systèmes sensoriels multivariés, elles négligent souvent les structures locales fines, telles que les sous-graphes, qui peuvent être essentielles pour détecter les anomalies. Pour remédier à cela, nous proposons EEG-CGS, un nouveau cadre SSL contrastif et génératif pour la détection d'anomalies dans les systèmes sensoriels complexes. EEG-CGS intègre des modèles structurels locaux dans des représentations graphiques sans nécessiter d'étiquettes d'anomalies pendant l'entraînement. Cette conception améliore la robustesse du TSAD multivarié et démontre de solides performances dans la détection des capteurs et des régions anormaux.Enfin, l'un des principaux défis du TSAD non supervisé réside dans l'hypothèse selon laquelle les données d'apprentissage sont purement normales, ce qui est rarement le cas dans la pratique en raison des changements de distribution ou des erreurs d'étiquetage. Une telle contamination entraîne un surajustement des méthodes non supervisées et une classification erronée des anomalies rencontrées pendant l'apprentissage. Pour remédier à cela, nous introduisons TSAD-C, un nouveau cadre qui intègre des représentations graphiques et des modèles de diffusion afin de capturer à la fois les dépendances temporelles et spatiales à long terme dans les séries chronologiques, tout en traitant explicitement la contamination. De plus, contrairement aux approches TSAD existantes qui s'appuient sur de petits ensembles de données sélectionnées avec des anomalies simplistes, cette thèse fait progresser le TSAD vers des cadres qui se généralisent à des scénarios complexes du monde réel et détectent des types d'anomalies plus riches, allant des écarts de signaux locaux aux défaillances au niveau des capteurs et des régions, avec des applications directes dans les domaines cliniques et industriels.",
+              "descriptionType": "Abstract",
+              "lang": "en"
+            }
+          ],
+          "doi": "10.82308/55928",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "https://hdl.handle.net/20.500.14905/141113",
+              "identifierType": "uri"
+            }
+          ],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 2,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "McGill University",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-06-21T03:06:12Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "All items in eScholarship@McGill are protected by copyright with all rights reserved unless otherwise indicated."
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "",
+              "subject": "Civil Engineering and Applied Mechanics"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Time-series anomaly detection with graphs"
+            }
+          ],
+          "types": {
+            "bibtex": "phdthesis",
+            "citeproc": "thesis",
+            "resourceType": "https://vocabularies.coar-repositories.org/resource_types/c_46ec/",
+            "resourceTypeGeneral": "Dissertation",
+            "ris": "THES",
+            "schemaOrg": "Thesis"
+          },
+          "updated": "2026-07-09T03:03:34Z",
+          "url": "https://mcgill.scholaris.ca/handle/20.500.14905/141113",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.82308/55928",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "iyfw.kddaax",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-07-02T01:51:20Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Xu",
+              "givenName": "Kele",
+              "name": "Xu, Kele",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Fang",
+              "givenName": "Yulu",
+              "name": "Fang, Yulu",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhou",
+              "givenName": "Boda",
+              "name": "Zhou, Boda",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Sun",
+              "givenName": "Yulin",
+              "name": "Sun, Yulin",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Xu",
+              "givenName": "Qisheng",
+              "name": "Xu, Qisheng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Song",
+              "givenName": "Qiya",
+              "name": "Song, Qiya",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhang",
+              "givenName": "Jin",
+              "name": "Zhang, Jin",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Yang",
+              "givenName": "Cheng",
+              "name": "Yang, Cheng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Huaimin",
+              "name": "Wang, Huaimin",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-01T03:32:08Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-07-02T00:20:23Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-07",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "This paper examines audio self-supervised learning (SSL) through the alignment between pretraining objectives, architectural inductive biases, and downstream applications. Rather than treating SSL methods as a chronological sequence of pretext tasks or model families, we ask how different supervisory signals shape the representations that models are expected to learn. The discussion is organized around five paradigms: auxiliary tasks, contrastive learning, generative reconstruction, discrete token prediction, and multimodal alignment. These objectives place different demands on the model, from local structural sensitivity and contrastive invariance to contextual inference, discrete semantic abstraction, and multimodal grounding. We relate these demands to the biases of CNNs, recurrent and State Space Models, Transformers, and hybrid architectures, showing how local acoustic compression, sequential state propagation, content-dependent global routing, and local--global integration support different forms of audio SSL. The same view is then used to interpret downstream applications in speech processing, environmental sound analysis, music information retrieval, medical and bioacoustic analysis, and multimodal audio understanding as practical tests of whether learned representations and architectural choices generalize across domains. We also review benchmark protocols and open challenges, including tokenization bottlenecks, long-context efficiency, robustness, and secure multimodal deployment, and discuss how codec-based tokenization and audio-language modeling extend this objective--architecture--application pipeline. The accompanying repository is released at https://github.com/colaudiolab/Awesome-Self-Supervised-Audio-Learning.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2607.00387",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2607.00387",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-02T01:51:21Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Audio and Speech Processing (eess.AS)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "From Objectives to Applications: Aligning Architectural Biases in Audio Self-Supervised Learning"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-07-02T01:51:21Z",
+          "url": "https://arxiv.org/abs/2607.00387",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2607.00387",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-05-26T03:04:24Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Wimalasiri",
+              "givenName": "Chathura",
+              "name": "Wimalasiri, Chathura",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Nandakishor",
+              "givenName": "Kishor",
+              "name": "Nandakishor, Kishor",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Palaniswami",
+              "givenName": "Marimuthu",
+              "name": "Palaniswami, Marimuthu",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-05-18T04:47:50Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-05-26T00:02:16Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-06-01T11:15:23Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-06-02T01:59:35Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-06-02T03:02:40Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-06-03T00:24:57Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-06-30T05:02:16Z",
+              "dateInformation": "v4",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-07-01T00:28:06Z",
+              "dateInformation": "v4",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-05",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Self-supervised learning (SSL) is increasingly used in medical image analysis to reduce dependence on costly expert annotations by learning transferable representations from unlabeled data. However, SSL performance depends not only on model architecture, but also on whether the pretext task preserves information required by the downstream clinical objective. This review presents a task-oriented synthesis of SSL methods for medical imaging, focusing on how pretext-task design interacts with imaging modality, label availability, and downstream performance. We analyze 75 studies published from 2017 to 2025 and organize them into four paradigms: contrastive learning, non-contrastive and predictive learning, generative and reconstruction-based learning, and hybrid learning. Rather than cataloging methods chronologically, we examine how these paradigms support classification, segmentation, detection, reconstruction, and regression. The evidence suggests that no SSL strategy is universally optimal. Contrastive objectives generally encourage global discriminative representations and are well aligned with classification, but may underrepresent subtle or localized pathology. Spatial prediction, masked modeling, and reconstruction-based objectives better preserve anatomical structure and are often more suitable for segmentation and dense prediction. Hybrid methods can provide balanced representations, although they increase training complexity. Across modalities, SSL is most beneficial in low-label and few-shot regimes, but its effectiveness depends on modality-aware augmentation, pathology-preserving corruption, and clinically meaningful evaluation. We conclude with practical design guidelines and identify open challenges, including pathology-aware pretext tasks, resource-efficient training for high-dimensional data, and standardized evaluation protocols.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "This manuscript is 29 pages with 4 tables and 2 figures",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2605.23995",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2605.23995",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 3,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-05-26T03:04:25Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
+              "rightsIdentifier": "cc-by-nc-nd-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "lang": "en",
+              "subject": "I.2.6; I.4.0; I.5.4; I.2.10",
+              "subjectScheme": "ACM"
+            },
+            {
+              "lang": "en",
+              "subject": "68T07, 68T45, 92C55, 68-02",
+              "subjectScheme": "MSC"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Task-Aligned Self-Supervised Learning for Medical Image Analysis: A Task-Oriented Review with Practical Design Guidelines"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-07-01T02:32:11Z",
+          "url": "https://arxiv.org/abs/2605.23995",
+          "version": "4",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2605.23995",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-03-31T00:55:53Z",
+          "creators": [
+            {
+              "affiliation": [
+                "My Weird Prompts"
+              ],
+              "familyName": "Rosehill",
+              "givenName": "Daniel",
+              "name": "Rosehill, Daniel",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Google DeepMind"
+              ],
+              "familyName": "Gemini 3.1 (Flash)",
+              "name": "Gemini 3.1 (Flash)",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [
+                "Resemble AI"
+              ],
+              "familyName": "Chatterbox TTS",
+              "name": "Chatterbox TTS",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-03-31",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Episode summary: In an era obsessed with the newest AI releases, we revisit the foundational architectures that built the modern AI landscape. This episode dives deep into BERT's revolutionary bidirectional understanding of language and CLIP's breakthrough in bridging the gap between text and images. We explore how these \"classic\" models work, why their engineering principles still power today's most advanced applications, and what their enduring legacy means for the future of AI.\n\nShow Notes\n\nIn the fast-paced world of artificial intelligence, it is easy to get swept up in the hype surrounding the latest large language models and multimodal generators. However, the true titans of the industry—the architectures that laid the groundwork for today's AI boom—are often overlooked in favor of newer, shinier objects. This discussion revisits two of the most pivotal models in AI history: BERT and CLIP. While they may seem like \"ancient history\" in AI years, their engineering principles remain the blueprints for modern machine intelligence.\n\n**The BERT Revolution: Reading Contextually**\n\nBefore BERT's release by Google in October 2018, natural language processing was dominated by Recurrent Neural Networks (RNNs) and LSTMs. These models processed text linearly, reading word by word like a ticker tape. This approach struggled with long-range dependencies; if a word at the end of a sentence changed the meaning of a word at the beginning, the model often lost the context.\n\nBERT, standing for Bidirectional Encoder Representations from Transformers, changed everything. Unlike its predecessors, BERT processes the entire sentence simultaneously. It looks at the whole context at once, allowing every word to relate to every other word in the sequence.\n\nThe magic behind BERT lies in its pre-training task: Masked Language Modeling (MLM). Researchers took massive text corpora and randomly hid about 15% of the words, effectively putting digital duct tape over them. The model's job was to predict these masked words based on the surrounding context. This forced BERT to develop a deep, bidirectional understanding of language. It wasn't just predicting the next word; it was reconstructing meaning from incomplete information.\n\nThis architecture also introduced the \"Self-Attention\" mechanism. Imagine a cocktail party where every word asks every other word, \"How relevant are you to me?\" The word \"bank\" might ask \"river\" and \"deposit\" for context, creating distinct mathematical representations—embeddings—for the same word based on its neighbors. This ability to handle polysemy made BERT incredibly powerful for tasks like search, sentiment analysis, and document classification.\n\n**CLIP: Bridging Vision and Language**\n\nWhile BERT mastered text, CLIP, released by OpenAI in 2021, bridged the gap between text and images. Before CLIP, computer vision models relied on supervised learning, requiring thousands of labeled images for specific categories. If a model hadn't seen a \"Golden Retriever playing in the snow,\" it might fail to identify it.\n\nCLIP took a different approach by leveraging the internet's vast collection of image-text pairs. Instead of predicting captions word-for-word, CLIP uses contrastive learning. It functions like a matching game: during training, it tries to make the mathematical representation of an image and its correct caption as similar as possible, while pushing them apart from mismatched pairs.\n\nThis process aligns two distinct universes—visual and linguistic—into a shared \"latent space.\" The result is zero-shot learning. CLIP can identify concepts it hasn't explicitly seen by comparing the \"vibe\" of an image's pixels to the \"vibe\" of text labels. This capability became the compass for generative models like DALL-E and Stable Diffusion, providing the feedback loop necessary to generate images that match textual prompts.\n\n**The Embedding Economy and Modern Applications**\n\nThe legacy of BERT and CLIP is most visible in the \"embedding economy,\" where sentences, images, and concepts are converted into high-dimensional vectors. This allows mathematical operations on meaning, such as subtracting \"maleness\" from \"King\" to get \"Queen.\"\n\nIn modern applications, these principles persist. Retrieval-Augmented Generation (RAG) systems, which allow chatbots to interact with private data, rely heavily on BERT-like models for retrieval. Instead of keyword matching, these systems turn queries into vectors to find the most semantically similar documents.\n\nWhile the original BERT and CLIP have evolved into variants like RoBERTa and DistilBERT, their core architectures remain relevant. They serve as a reminder that in AI, the foundational innovations often outlast the hype of the latest releases, continuing to power the intelligent systems we use today.\n\nListen online: https://myweirdprompts.com/episode/bert-clip-ai-foundations",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "My Weird Prompts is an AI-generated podcast. Episodes are produced using an automated pipeline: voice prompt → transcription → script generation → text-to-speech → audio assembly. Archived here for long-term preservation. AI CONTENT DISCLAIMER: This episode is entirely AI-generated. The script, dialogue, voices, and audio are produced by AI systems. While the pipeline includes fact-checking, content may contain errors or inaccuracies. Verify any claims independently.",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.5281/zenodo.19342223",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-03-31T00:55:53Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "https://myweirdprompts.com/episode/bert-clip-ai-foundations",
+              "relatedIdentifierType": "URL",
+              "relationType": "IsIdenticalTo"
+            },
+            {
+              "relatedIdentifier": "https://episodes.myweirdprompts.com/transcripts/bert-clip-ai-foundations.md",
+              "relatedIdentifierType": "URL",
+              "relationType": "IsSupplementTo"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.19342223",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "podcast"
+            },
+            {
+              "subject": "ai-generated"
+            },
+            {
+              "subject": "my weird prompts"
+            },
+            {
+              "subject": "transformers"
+            },
+            {
+              "subject": "ai-history"
+            },
+            {
+              "subject": "computer-vision"
+            }
+          ],
+          "titles": [
+            {
+              "title": "The Original AI Blueprints: BERT & CLIP"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "",
+            "resourceTypeGeneral": "Audiovisual",
+            "ris": "MPCT",
+            "schemaOrg": "MediaObject"
+          },
+          "updated": "2026-06-26T11:52:05Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.19342223",
+          "version": null,
+          "versionCount": 2,
+          "versionOfCount": 1,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.19342223",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [
+            {
+              "affiliation": [],
+              "contributorType": "DataManager",
+              "familyName": "Ayoub",
+              "givenName": "Olga",
+              "name": "Ayoub, Olga",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "contributorType": "HostingInstitution",
+              "familyName": "bin Zayed University of Artificial Intelligence",
+              "givenName": "Mohamed",
+              "name": "bin Zayed University of Artificial Intelligence, Mohamed",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "created": "2026-06-10T05:28:38Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Yan",
+              "name": "Li, Yan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-06-09",
+              "dateType": "Accepted"
+            },
+            {
+              "date": "2026-06-09",
+              "dateType": "Available"
+            },
+            {
+              "date": "2026",
+              "dateType": "Copyrighted"
+            },
+            {
+              "date": "2026-04-30",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Despite the impressive progress of multimodal large language models (MLLMs) in cross-modal understanding and generation, their training typically relies on jointly curated multimodal corpora in which all relevant modalities are aligned for each sample. Constructing such fully aligned multi-way datasets requires substantial human effort and domain-specific collection pipelines, which significantly limits scalability when extending MLLMs to new modalities and application domains. In practice, however, it is often much easier to collect data in the form of overlapping modality pairs, such as image--text, image--3D, or image--tactile pairs, rather than complete multimodal tuples. This observation raises a fundamental question: can MLLMs be trained or extended using only paired modalities as a surrogate for the full joint multimodal distribution? In this thesis, we study multimodal representation learning under pairwise supervision and explore how to extend pre-trained MLLMs without requiring fully jointly aligned multimodal data. We first provide a theoretical analysis of the conditions under which shared latent representations are identifiable when only pairwise modality observations are available. Our analysis shows that, under suitable assumptions on the underlying data-generating process and the connectivity structure among modalities, the shared latent subspace can be consistently recovered from overlapping modality pairs. This result provides a theoretical foundation for scalable multimodal learning from incomplete supervision. Motivated by this analysis, we propose a representation learning framework for aligning latent representations across modalities using only pairwise data. The framework consists of two stages: latent representation alignment and cross-modal recomposition. In the first stage, we learn a shared latent space across modalities through a combination of self-modal reconstruction and pairwise contrastive learning. The reconstruction objective preserves modality information and stabilizes learning, while the contrastive objective encourages semantically corresponding samples from different modalities to align in a unified latent space. To better reflect the structure of multimodal data, we further incorporate inductive biases into the alignment process, including partial alignment and minimal latent specification, so that only the modality-relevant shared factors are aligned across pairs. In the second stage, we perform cross-modal recomposition by integrating the encoders of newly introduced modalities with the decoders of pre-trained modalities. This design enables the newly added modalities to reuse the generative and reasoning capabilities of frozen pre-trained MLLMs, thereby supporting cross-modal transfer and generation without modifying the backbone model itself. As a result, our framework provides a parameter-efficient and scalable way to incorporate new sensory modalities into existing multimodal systems while preserving their original capabilities. We evaluate the proposed framework by introducing two new modalities, 3D point clouds and tactile signals, into pre-trained MLLMs using only three modality pairs. Experimental results show that learning an aligned latent representation space from pairwise supervision is sufficient to achieve strong cross-modal performance on both understanding and transfer tasks. These findings suggest that pairwise-supervised multimodal learning can serve as a practical alternative to fully aligned multimodal data collection and provide a promising direction for building more scalable multimodal foundation models.",
+              "descriptionType": "Abstract",
+              "lang": ""
+            }
+          ],
+          "doi": "10.82419/366",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "Li, Yan, \"Towards Usage of Causal Representation Learning: Multimodal LLMs under Pairwise Modalities,\" M.S. Thesis, Machine Learning, MBZUAI, 2026.",
+              "identifierType": "citation"
+            },
+            {
+              "identifier": "https://hdl.handle.net/20.500.14634/2650",
+              "identifierType": "uri"
+            }
+          ],
+          "isActive": true,
+          "language": "en",
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "MBZUAI",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-06-10T05:31:09Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "",
+              "subject": "Machine Learning"
+            }
+          ],
+          "titles": [
+            {
+              "lang": "",
+              "title": "Towards Usage of Causal Representation Learning: Multimodal LLMs under Pairwise Modalities"
+            }
+          ],
+          "types": {
+            "bibtex": "phdthesis",
+            "citeproc": "thesis",
+            "resourceType": "Thesis",
+            "resourceTypeGeneral": "Dissertation",
+            "ris": "THES",
+            "schemaOrg": "Thesis"
+          },
+          "updated": "2026-06-11T05:14:51Z",
+          "url": "https://irep.mbzuai.ac.ae/handle/20.500.14634/2650",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.82419/366",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "leon.mbzuai",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=5&query=Self%5C-supervised+Learning%5C%3A+Generative+or+Contrastive",
+      "self": "https://api.datacite.org/dois?query=Self%5C-supervised+Learning%5C%3A+Generative+or+Contrastive&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 98,
+      "totalPages": 20
+    }
+  },
+  "response_hash": "4c1f75b0db5d4c356f1ff0e0907bda850961e334167bdcc29d2e32b20b7781e0",
+  "retrieved_at": "2026-07-16T06:58:29Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

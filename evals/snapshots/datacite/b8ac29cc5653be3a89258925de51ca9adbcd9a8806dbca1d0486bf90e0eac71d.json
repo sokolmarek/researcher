@@ -1,0 +1,392 @@
+{
+  "endpoint": "dois",
+  "request_key": "b8ac29cc5653be3a89258925de51ca9adbcd9a8806dbca1d0486bf90e0eac71d",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self\\-Supervised ECG Representation Learning for Emotion Recognition"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-12-18T02:46:50Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Ghallab",
+              "givenName": "Youssef",
+              "name": "Ghallab, Youssef",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Iraqy",
+              "givenName": "Omar",
+              "name": "Iraqy, Omar",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Kandil",
+              "givenName": "Mohamed",
+              "name": "Kandil, Mohamed",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ashraf",
+              "givenName": "Mohamed",
+              "name": "Ashraf, Mohamed",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Eletter",
+              "givenName": "Saadeldine",
+              "name": "Eletter, Saadeldine",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ghazal",
+              "givenName": "Morougue",
+              "name": "Ghazal, Morougue",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Khalafallah",
+              "givenName": "Ayman",
+              "name": "Khalafallah, Ayman",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "El-Makky",
+              "givenName": "Nagwa",
+              "name": "El-Makky, Nagwa",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-12-17T09:49:06Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-12-18T01:33:32Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-12",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2025",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Physiological signals such as electrocardiograms (ECG) and electroencephalograms (EEG) provide complementary insights into human health and cognition, yet multi-modal integration is challenging due to limited multi-modal labeled data, and modality-specific differences . In this work, we adapt the CBraMod encoder for large-scale self-supervised ECG pretraining, introducing a dual-masking strategy to capture intra- and inter-lead dependencies. To overcome the above challenges, we utilize a pre-trained CBraMod encoder for EEG and pre-train a symmetric ECG encoder, equipping each modality with a rich foundational representation. These representations are then fused via simple embedding concatenation, allowing the classification head to learn cross-modal interactions, together enabling effective downstream learning despite limited multi-modal supervision. Evaluated on emotion recognition, our approach achieves near state-of-the-art performance, demonstrating that carefully designed physiological encoders, even with straightforward fusion, substantially improve downstream performance. These results highlight the potential of foundation-model approaches to harness the holistic nature of physiological signals, enabling scalable, label-efficient, and generalizable solutions for healthcare and affective computing.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Published at NeurIPS 2025 Workshop on Foundation Models for the Brain and Body",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2512.15250",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2512.15250",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-12-18T02:46:50Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Leveraging Foundational Models and Simple Fusion for Multi-modal Physiological Signal Analysis"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2025-12-18T02:46:50Z",
+          "url": "https://arxiv.org/abs/2512.15250",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2512.15250",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-26T08:34:33Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Sarkar",
+              "givenName": "Pritam",
+              "name": "Sarkar, Pritam",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Etemad",
+              "givenName": "Ali",
+              "name": "Etemad, Ali",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2020-02-04T17:15:37Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2020-02-11T05:28:52Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2020-08-10T07:09:41Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2020-08-11T00:24:38Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2020-02",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2020",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "We exploit a self-supervised deep multi-task learning framework for electrocardiogram (ECG) -based emotion recognition. The proposed solution consists of two stages of learning a) learning ECG representations and b) learning to classify emotions. ECG representations are learned by a signal transformation recognition network. The network learns high-level abstract representations from unlabeled ECG data. Six different signal transformations are applied to the ECG signals, and transformation recognition is performed as pretext tasks. Training the model on pretext tasks helps the network learn spatiotemporal representations that generalize well across different datasets and different emotion categories. We transfer the weights of the self-supervised network to an emotion recognition network, where the convolutional layers are kept frozen and the dense layers are trained with labelled ECG data. We show that the proposed solution considerably improves the performance compared to a network trained using fully-supervised learning. New state-of-the-art results are set in classification of arousal, valence, affective states, and stress for the four utilized datasets. Extensive experiments are performed, providing interesting insights into the impact of using a multi-task self-supervised structure instead of a single-task model, as well as the optimum level of difficulty required for the pretext self-supervised tasks.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted in IEEE Transactions of Affective Computing",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2002.03898",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2002.03898",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2020,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-26T08:34:34Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.1109/taffc.2020.3014842",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+              "rightsIdentifier": "cc-by-nc-sa-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Signal Processing (eess.SP)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (stat.ML)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Self-supervised ECG Representation Learning for Emotion Recognition"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2022-02-26T08:34:34Z",
+          "url": "https://arxiv.org/abs/2002.03898",
+          "version": "2",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2002.03898",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Self%5C-Supervised+ECG+Representation+Learning+for+Emotion+Recognition&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 2,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "6538ae43f49aaad7c0531427719cab33ae0240931c3571952e57cbd351e88085",
+  "retrieved_at": "2026-07-16T06:58:28Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

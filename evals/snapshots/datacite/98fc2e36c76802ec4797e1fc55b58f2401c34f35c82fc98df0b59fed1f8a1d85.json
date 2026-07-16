@@ -1,0 +1,321 @@
+{
+  "endpoint": "dois",
+  "request_key": "98fc2e36c76802ec4797e1fc55b58f2401c34f35c82fc98df0b59fed1f8a1d85",
+  "request_params": {
+    "page[size]": 5,
+    "query": "ConSERT\\: A Contrastive Framework for Self\\-Supervised Sentence Representation Transfer"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": [],
+          "contributors": [],
+          "created": "2021-12-20T17:21:22Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "name": "Association for Computational Linguistics 2021",
+              "nameIdentifiers": [],
+              "nameType": "Organizational"
+            },
+            {
+              "affiliation": [
+                "Beijing University of Post and Telecommunication"
+              ],
+              "familyName": "Yan",
+              "givenName": "Yuanmeng",
+              "name": "Yan, Yuanmeng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2021-08-01T14:00:00Z",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Learning high-quality sentence representations benefits a wide range of natural language processing tasks. Though BERT-based pre-trained language models achieve high performance on many downstream tasks, the native derived sentence representations are proved to be collapsed and thus produce a poor performance on the semantic textual similarity (STS) tasks. In this paper, we present ConSERT, a Contrastive Framework for Self-Supervised SEntence Representation Transfer, that adopts contrastive learning to fine-tune BERT in an unsupervised and effective way. By making use of unlabeled texts, ConSERT solves the collapse issue of BERT-derived sentence representations and make them more applicable for downstream tasks. Experiments on STS datasets demonstrate that ConSERT achieves an 8% relative improvement over the previous state-of-the-art, even comparable to the supervised SBERT-NLI. And when further incorporating NLI supervision, we achieve new state-of-the-art performance on STS tasks. Moreover, ConSERT obtains comparable results with only 1000 samples available, showing its robustness in data scarcity scenarios.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48448/eavw-4q60",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 1,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2021,
+          "published": null,
+          "publisher": "Underline Science Inc.",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2021-12-20T17:21:23Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "Neural Network"
+            },
+            {
+              "subject": "Electromagnetism"
+            },
+            {
+              "subject": "Computational Linguistics"
+            },
+            {
+              "subject": "Condensed Matter Physics"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Physical sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "Deep Learning"
+            },
+            {
+              "subject": "Semantics &amp; Meaning"
+            },
+            {
+              "subject": "Information and Knowledge Engineering"
+            }
+          ],
+          "titles": [
+            {
+              "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Conference talk",
+            "resourceTypeGeneral": "Audiovisual",
+            "ris": "MPCT",
+            "schemaOrg": "MediaObject"
+          },
+          "updated": "2026-02-18T13:02:00Z",
+          "url": "https://underline.io/lecture/25807-consert-a-contrastive-framework-for-self-supervised-sentence-representation-transfer",
+          "version": null,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48448/eavw-4q60",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "undsci.oopmau",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-22T03:57:09Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Yan",
+              "givenName": "Yuanmeng",
+              "name": "Yan, Yuanmeng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Rumei",
+              "name": "Li, Rumei",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Sirui",
+              "name": "Wang, Sirui",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhang",
+              "givenName": "Fuzheng",
+              "name": "Zhang, Fuzheng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wu",
+              "givenName": "Wei",
+              "name": "Wu, Wei",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Xu",
+              "givenName": "Weiran",
+              "name": "Xu, Weiran",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2021-05-25T08:15:01Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-05-26T00:12:41Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-05",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2021",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Learning high-quality sentence representations benefits a wide range of natural language processing tasks. Though BERT-based pre-trained language models achieve high performance on many downstream tasks, the native derived sentence representations are proved to be collapsed and thus produce a poor performance on the semantic textual similarity (STS) tasks. In this paper, we present ConSERT, a Contrastive Framework for Self-Supervised Sentence Representation Transfer, that adopts contrastive learning to fine-tune BERT in an unsupervised and effective way. By making use of unlabeled texts, ConSERT solves the collapse issue of BERT-derived sentence representations and make them more applicable for downstream tasks. Experiments on STS datasets demonstrate that ConSERT achieves an 8\\% relative improvement over the previous state-of-the-art, even comparable to the supervised SBERT-NLI. And when further incorporating NLI supervision, we achieve new state-of-the-art performance on STS tasks. Moreover, ConSERT obtains comparable results with only 1000 samples available, showing its robustness in data scarcity scenarios.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted by ACL2021, 10 pages, 7 figures, 4 tables",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2105.11741",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2105.11741",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2021,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-22T03:57:10Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computation and Language (cs.CL)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-02-22T03:57:10Z",
+          "url": "https://arxiv.org/abs/2105.11741",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2105.11741",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=ConSERT%5C%3A+A+Contrastive+Framework+for+Self%5C-Supervised+Sentence+Representation+Transfer&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 2,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "3de8e24f368b518d301d7e0e42d2419078d036132395295ceb1c7e8a682998fc",
+  "retrieved_at": "2026-07-16T06:58:27Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

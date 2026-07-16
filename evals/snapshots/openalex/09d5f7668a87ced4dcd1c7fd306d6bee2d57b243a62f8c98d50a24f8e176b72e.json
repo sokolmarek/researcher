@@ -1,0 +1,6658 @@
+{
+  "endpoint": "works",
+  "request_key": "09d5f7668a87ced4dcd1c7fd306d6bee2d57b243a62f8c98d50a24f8e176b72e",
+  "request_params": {
+    "per-page": 10,
+    "search": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 413,
+      "db_response_time_ms": 89,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 10,
+      "x_query": {
+        "oql": "works where full text has (ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 10,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=10"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(Volume": [
+            34
+          ],
+          "11th": [
+            26
+          ],
+          "1:": [
+            35
+          ],
+          "2021.": [
+            38
+          ],
+          "59th": [
+            15
+          ],
+          "Annual": [
+            16
+          ],
+          "Association": [
+            20
+          ],
+          "Computational": [
+            22
+          ],
+          "Conference": [
+            29
+          ],
+          "Fuzheng": [
+            6
+          ],
+          "International": [
+            27
+          ],
+          "Joint": [
+            28
+          ],
+          "Language": [
+            32
+          ],
+          "Li,": [
+            3
+          ],
+          "Linguistics": [
+            23
+          ],
+          "Long": [
+            36
+          ],
+          "Meeting": [
+            17
+          ],
+          "Natural": [
+            31
+          ],
+          "Papers).": [
+            37
+          ],
+          "Proceedings": [
+            12
+          ],
+          "Processing": [
+            33
+          ],
+          "Rumei": [
+            2
+          ],
+          "Sirui": [
+            4
+          ],
+          "Wang,": [
+            5
+          ],
+          "Wei": [
+            8
+          ],
+          "Weiran": [
+            10
+          ],
+          "Wu,": [
+            9
+          ],
+          "Xu.": [
+            11
+          ],
+          "Yan,": [
+            1
+          ],
+          "Yuanmeng": [
+            0
+          ],
+          "Zhang,": [
+            7
+          ],
+          "and": [
+            24
+          ],
+          "for": [
+            21
+          ],
+          "of": [
+            13,
+            18
+          ],
+          "on": [
+            30
+          ],
+          "the": [
+            14,
+            19,
+            25
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I139759216"
+                ],
+                "raw_affiliation_string": "Beijing University of Posts and Telecommunications, Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Yuanmeng Yan",
+              "id": "https://openalex.org/A5030878947",
+              "orcid": "https://orcid.org/0000-0002-0400-4522"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beijing University of Posts and Telecommunications",
+                "id": "https://openalex.org/I139759216",
+                "lineage": [
+                  "https://openalex.org/I139759216"
+                ],
+                "ror": "https://ror.org/04w9fbh59",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Beijing University of Posts and Telecommunications, Beijing, China"
+            ],
+            "raw_author_name": "Yuanmeng Yan",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Meituan Inc., Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Rumei Li",
+              "id": "https://openalex.org/A5114269634",
+              "orcid": "https://orcid.org/0009-0009-1264-5854"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meituan Inc., Beijing, China"
+            ],
+            "raw_author_name": "Rumei Li",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Meituan Inc., Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Sirui Wang",
+              "id": "https://openalex.org/A5100631506",
+              "orcid": "https://orcid.org/0000-0001-9519-5741"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meituan Inc., Beijing, China"
+            ],
+            "raw_author_name": "Sirui Wang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Meituan Inc., Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Fuzheng Zhang",
+              "id": "https://openalex.org/A5101586840",
+              "orcid": "https://orcid.org/0000-0002-6079-6392"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meituan Inc., Beijing, China"
+            ],
+            "raw_author_name": "Fuzheng Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Meituan Inc., Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Wei Wu",
+              "id": "https://openalex.org/A5101796417",
+              "orcid": "https://orcid.org/0000-0001-6572-8471"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meituan Inc., Beijing, China"
+            ],
+            "raw_author_name": "Wei Wu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I139759216"
+                ],
+                "raw_affiliation_string": "Beijing University of Posts and Telecommunications, Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Weiran Xu",
+              "id": "https://openalex.org/A5016651990",
+              "orcid": "https://orcid.org/0000-0002-9416-7666"
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beijing University of Posts and Telecommunications",
+                "id": "https://openalex.org/I139759216",
+                "lineage": [
+                  "https://openalex.org/I139759216"
+                ],
+                "ror": "https://ror.org/04w9fbh59",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Beijing University of Posts and Telecommunications, Beijing, China"
+            ],
+            "raw_author_name": "Weiran Xu",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.18653/v1/2021.acl-long.393",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2021.acl-long.393",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2021.acl-long.393.pdf",
+          "raw_source_name": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+          "raw_type": "proceedings-article",
+          "source": null,
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "5065",
+          "issue": null,
+          "last_page": "5075",
+          "volume": null
+        },
+        "cited_by_count": 486,
+        "display_name": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+        "doi": "https://doi.org/10.18653/v1/2021.acl-long.393",
+        "id": "https://openalex.org/W3175362188",
+        "ids": {
+          "doi": "https://doi.org/10.18653/v1/2021.acl-long.393",
+          "mag": "3175362188",
+          "openalex": "https://openalex.org/W3175362188"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": null,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://aclanthology.org/2021.acl-long.393.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.18653/v1/2021.acl-long.393",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2021.acl-long.393",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2021.acl-long.393.pdf",
+          "raw_source_name": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+          "raw_type": "proceedings-article",
+          "source": null,
+          "version": "publishedVersion"
+        },
+        "publication_date": "2021-01-01",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W1486649854",
+          "https://openalex.org/W1840435438",
+          "https://openalex.org/W1904365287",
+          "https://openalex.org/W1945616565",
+          "https://openalex.org/W2126400076",
+          "https://openalex.org/W2133458109",
+          "https://openalex.org/W2152180407",
+          "https://openalex.org/W2250790822",
+          "https://openalex.org/W2251861449",
+          "https://openalex.org/W2460937040",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2790235966",
+          "https://openalex.org/W2887997457",
+          "https://openalex.org/W2891177506",
+          "https://openalex.org/W2896457183",
+          "https://openalex.org/W2907252220",
+          "https://openalex.org/W2951873722",
+          "https://openalex.org/W2963098487",
+          "https://openalex.org/W2963207607",
+          "https://openalex.org/W2963341956",
+          "https://openalex.org/W2963804993",
+          "https://openalex.org/W2963846996",
+          "https://openalex.org/W2963918774",
+          "https://openalex.org/W2964165804",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2966610483",
+          "https://openalex.org/W2970641574",
+          "https://openalex.org/W2996657533",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3026732421",
+          "https://openalex.org/W3033406728",
+          "https://openalex.org/W3035524453",
+          "https://openalex.org/W3036982689",
+          "https://openalex.org/W3089659770",
+          "https://openalex.org/W3100652389",
+          "https://openalex.org/W3100859887",
+          "https://openalex.org/W3103188966",
+          "https://openalex.org/W3104033643",
+          "https://openalex.org/W3104417388",
+          "https://openalex.org/W3105816068",
+          "https://openalex.org/W3107668149",
+          "https://openalex.org/W3114537677",
+          "https://openalex.org/W3115295967",
+          "https://openalex.org/W3122838366",
+          "https://openalex.org/W3173783447",
+          "https://openalex.org/W4249573750",
+          "https://openalex.org/W4287592659",
+          "https://openalex.org/W4298443704",
+          "https://openalex.org/W4300511536",
+          "https://openalex.org/W4309086292",
+          "https://openalex.org/W4313908941"
+        ],
+        "referenced_works_count": 51,
+        "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+        "type": "conference-paper"
+      },
+      {
+        "abstract_inverted_index": {
+          "(STS)": [
+            46
+          ],
+          "1000": [
+            141
+          ],
+          "8\\%": [
+            107
+          ],
+          "And": [
+            120
+          ],
+          "BERT": [
+            68
+          ],
+          "BERT-based": [
+            14
+          ],
+          "BERT-derived": [
+            87
+          ],
+          "By": [
+            75
+          ],
+          "ConSERT": [
+            81,
+            104,
+            135
+          ],
+          "ConSERT,": [
+            53
+          ],
+          "Contrastive": [
+            55
+          ],
+          "Experiments": [
+            98
+          ],
+          "Framework": [
+            56
+          ],
+          "In": [
+            48
+          ],
+          "Learning": [
+            0
+          ],
+          "Moreover,": [
+            134
+          ],
+          "NLI": [
+            124
+          ],
+          "Representation": [
+            60
+          ],
+          "SBERT-NLI.": [
+            119
+          ],
+          "STS": [
+            100,
+            132
+          ],
+          "Self-Supervised": [
+            58
+          ],
+          "Sentence": [
+            59
+          ],
+          "Though": [
+            13
+          ],
+          "Transfer,": [
+            61
+          ],
+          "a": [
+            5,
+            38,
+            54
+          ],
+          "achieve": [
+            18,
+            127
+          ],
+          "achieves": [
+            105
+          ],
+          "adopts": [
+            63
+          ],
+          "an": [
+            70,
+            106
+          ],
+          "and": [
+            35,
+            72,
+            90
+          ],
+          "applicable": [
+            94
+          ],
+          "are": [
+            30
+          ],
+          "available,": [
+            143
+          ],
+          "be": [
+            33
+          ],
+          "benefits": [
+            4
+          ],
+          "collapse": [
+            84
+          ],
+          "collapsed": [
+            34
+          ],
+          "comparable": [
+            115,
+            137
+          ],
+          "contrastive": [
+            64
+          ],
+          "data": [
+            148
+          ],
+          "datasets": [
+            101
+          ],
+          "demonstrate": [
+            102
+          ],
+          "derived": [
+            27
+          ],
+          "downstream": [
+            23,
+            96
+          ],
+          "effective": [
+            73
+          ],
+          "even": [
+            114
+          ],
+          "fine-tune": [
+            67
+          ],
+          "for": [
+            57,
+            95
+          ],
+          "further": [
+            122
+          ],
+          "high": [
+            19
+          ],
+          "high-quality": [
+            1
+          ],
+          "improvement": [
+            109
+          ],
+          "in": [
+            69,
+            147
+          ],
+          "incorporating": [
+            123
+          ],
+          "issue": [
+            85
+          ],
+          "its": [
+            145
+          ],
+          "language": [
+            10,
+            16
+          ],
+          "learning": [
+            65
+          ],
+          "make": [
+            91
+          ],
+          "making": [
+            76
+          ],
+          "many": [
+            22
+          ],
+          "models": [
+            17
+          ],
+          "more": [
+            93
+          ],
+          "native": [
+            26
+          ],
+          "natural": [
+            9
+          ],
+          "new": [
+            128
+          ],
+          "obtains": [
+            136
+          ],
+          "of": [
+            8,
+            78,
+            86
+          ],
+          "on": [
+            21,
+            41,
+            99,
+            131
+          ],
+          "only": [
+            140
+          ],
+          "over": [
+            110
+          ],
+          "paper,": [
+            50
+          ],
+          "performance": [
+            20,
+            40,
+            130
+          ],
+          "poor": [
+            39
+          ],
+          "pre-trained": [
+            15
+          ],
+          "present": [
+            52
+          ],
+          "previous": [
+            112
+          ],
+          "processing": [
+            11
+          ],
+          "produce": [
+            37
+          ],
+          "proved": [
+            31
+          ],
+          "range": [
+            7
+          ],
+          "relative": [
+            108
+          ],
+          "representations": [
+            3,
+            29,
+            89
+          ],
+          "results": [
+            138
+          ],
+          "robustness": [
+            146
+          ],
+          "samples": [
+            142
+          ],
+          "scarcity": [
+            149
+          ],
+          "scenarios.": [
+            150
+          ],
+          "semantic": [
+            43
+          ],
+          "sentence": [
+            2,
+            28,
+            88
+          ],
+          "showing": [
+            144
+          ],
+          "similarity": [
+            45
+          ],
+          "solves": [
+            82
+          ],
+          "state-of-the-art": [
+            129
+          ],
+          "state-of-the-art,": [
+            113
+          ],
+          "supervised": [
+            118
+          ],
+          "supervision,": [
+            125
+          ],
+          "tasks,": [
+            24
+          ],
+          "tasks.": [
+            12,
+            47,
+            97,
+            133
+          ],
+          "texts,": [
+            80
+          ],
+          "textual": [
+            44
+          ],
+          "that": [
+            62,
+            103
+          ],
+          "the": [
+            25,
+            42,
+            83,
+            111,
+            117
+          ],
+          "them": [
+            92
+          ],
+          "this": [
+            49
+          ],
+          "thus": [
+            36
+          ],
+          "to": [
+            32,
+            66,
+            116
+          ],
+          "unlabeled": [
+            79
+          ],
+          "unsupervised": [
+            71
+          ],
+          "use": [
+            77
+          ],
+          "way.": [
+            74
+          ],
+          "we": [
+            51,
+            126
+          ],
+          "when": [
+            121
+          ],
+          "wide": [
+            6
+          ],
+          "with": [
+            139
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I139759216"
+                ],
+                "raw_affiliation_string": "Beijing University of Posts and Telecommunications,"
+              }
+            ],
+            "author": {
+              "display_name": "Yuanmeng Yan",
+              "id": "https://openalex.org/A5030878947",
+              "orcid": "https://orcid.org/0000-0002-0400-4522"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beijing University of Posts and Telecommunications",
+                "id": "https://openalex.org/I139759216",
+                "lineage": [
+                  "https://openalex.org/I139759216"
+                ],
+                "ror": "https://ror.org/04w9fbh59",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Beijing University of Posts and Telecommunications,"
+            ],
+            "raw_author_name": "Yan, Yuanmeng",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I139759216"
+                ],
+                "raw_affiliation_string": "Beijing University of Posts and Telecommunications,"
+              }
+            ],
+            "author": {
+              "display_name": "Rumei Li",
+              "id": "https://openalex.org/A5114269634",
+              "orcid": "https://orcid.org/0009-0009-1264-5854"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beijing University of Posts and Telecommunications",
+                "id": "https://openalex.org/I139759216",
+                "lineage": [
+                  "https://openalex.org/I139759216"
+                ],
+                "ror": "https://ror.org/04w9fbh59",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Beijing University of Posts and Telecommunications,"
+            ],
+            "raw_author_name": "Li, Rumei",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Sirui Wang",
+              "id": "https://openalex.org/A5100631506",
+              "orcid": "https://orcid.org/0000-0001-9519-5741"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Wang, Sirui",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Fuzheng Zhang",
+              "id": "https://openalex.org/A5101586840",
+              "orcid": "https://orcid.org/0000-0002-6079-6392"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Zhang, Fuzheng",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Wei Wu",
+              "id": "https://openalex.org/A5101796417",
+              "orcid": "https://orcid.org/0000-0001-6572-8471"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Wu, Wei",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Weiran Xu",
+              "id": "https://openalex.org/A5016651990",
+              "orcid": "https://orcid.org/0000-0002-9416-7666"
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Xu, Weiran",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2105.11741",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2105.11741",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2105.11741",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 47,
+        "display_name": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+        "doi": "https://doi.org/10.48550/arxiv.2105.11741",
+        "id": "https://openalex.org/W3164054899",
+        "ids": {
+          "doi": "https://doi.org/10.48550/arxiv.2105.11741",
+          "mag": "3164054899",
+          "openalex": "https://openalex.org/W3164054899"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2105.11741"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2105.11741",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2105.11741",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2105.11741",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2021-05-25",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W1486649854",
+          "https://openalex.org/W1840435438",
+          "https://openalex.org/W1904365287",
+          "https://openalex.org/W2126400076",
+          "https://openalex.org/W2133458109",
+          "https://openalex.org/W2152180407",
+          "https://openalex.org/W2251861449",
+          "https://openalex.org/W2460937040",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2891177506",
+          "https://openalex.org/W2951873722",
+          "https://openalex.org/W2963098487",
+          "https://openalex.org/W2963207607",
+          "https://openalex.org/W2963341956",
+          "https://openalex.org/W2963804993",
+          "https://openalex.org/W2963846996",
+          "https://openalex.org/W2963918774",
+          "https://openalex.org/W2964165804",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2966610483",
+          "https://openalex.org/W2996657533",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3026732421",
+          "https://openalex.org/W3033406728",
+          "https://openalex.org/W3035524453",
+          "https://openalex.org/W3036982689",
+          "https://openalex.org/W3089659770",
+          "https://openalex.org/W3100652389",
+          "https://openalex.org/W3103188966",
+          "https://openalex.org/W3104033643",
+          "https://openalex.org/W3104417388",
+          "https://openalex.org/W3105816068",
+          "https://openalex.org/W3107668149",
+          "https://openalex.org/W3114537677",
+          "https://openalex.org/W3115295967",
+          "https://openalex.org/W3122838366"
+        ],
+        "referenced_works_count": 36,
+        "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "\"contradiction\"": [
+            98
+          ],
+          "\"entailment\"": [
+            93
+          ],
+          "(STS)": [
+            111
+          ],
+          "1": [
+            171
+          ],
+          "2.2%": [
+            135
+          ],
+          "4.2%": [
+            133
+          ],
+          "76.3%": [
+            126
+          ],
+          "81.6%": [
+            128
+          ],
+          "BERT": [
+            120
+          ],
+          "SimCSE": [
+            105
+          ],
+          "SimCSE,": [
+            3
+          ],
+          "Spearman's": [
+            129
+          ],
+          "Then,": [
+            71
+          ],
+          "This": [
+            0,
+            41
+          ],
+          "We": [
+            16,
+            54,
+            103,
+            142
+          ],
+          "a": [
+            4,
+            31,
+            68,
+            74,
+            132
+          ],
+          "achieve": [
+            122
+          ],
+          "acts": [
+            58
+          ],
+          "advances": [
+            11
+          ],
+          "aligns": [
+            163
+          ],
+          "also": [
+            143
+          ],
+          "an": [
+            19,
+            24,
+            123
+          ],
+          "and": [
+            27,
+            63,
+            97,
+            113,
+            116,
+            127,
+            134,
+            146,
+            160
+          ],
+          "anisotropic": [
+            154
+          ],
+          "annotated": [
+            79
+          ],
+          "approach,": [
+            21,
+            76
+          ],
+          "are": [
+            169
+          ],
+          "as": [
+            39,
+            59,
+            95,
+            100
+          ],
+          "augmentation": [
+            62
+          ],
+          "available.": [
+            170
+          ],
+          "average": [
+            124
+          ],
+          "base": [
+            121
+          ],
+          "be": [
+            157
+          ],
+          "best": [
+            140
+          ],
+          "better": [
+            162
+          ],
+          "by": [
+            91
+          ],
+          "collapse.": [
+            70
+          ],
+          "compared": [
+            137
+          ],
+          "contrastive": [
+            6,
+            32,
+            88,
+            148
+          ],
+          "correlation": [
+            130
+          ],
+          "counterparts.": [
+            53
+          ],
+          "data": [
+            61
+          ],
+          "datasets": [
+            85
+          ],
+          "describe": [
+            18
+          ],
+          "dropout": [
+            37,
+            57
+          ],
+          "embeddings'": [
+            153
+          ],
+          "embeddings.": [
+            15
+          ],
+          "empirically-that": [
+            147
+          ],
+          "evaluate": [
+            104
+          ],
+          "find": [
+            55
+          ],
+          "first": [
+            17
+          ],
+          "framework": [
+            8
+          ],
+          "framework,": [
+            90
+          ],
+          "from": [
+            81
+          ],
+          "greatly": [
+            10
+          ],
+          "hard": [
+            101
+          ],
+          "improvement": [
+            136
+          ],
+          "in": [
+            30
+          ],
+          "incorporates": [
+            78
+          ],
+          "inference": [
+            84
+          ],
+          "input": [
+            25
+          ],
+          "into": [
+            86
+          ],
+          "it": [
+            65,
+            161
+          ],
+          "itself": [
+            29
+          ],
+          "language": [
+            83
+          ],
+          "leads": [
+            66
+          ],
+          "learning": [
+            7,
+            89,
+            149
+          ],
+          "method": [
+            43
+          ],
+          "minimal": [
+            60
+          ],
+          "models": [
+            118
+          ],
+          "more": [
+            158
+          ],
+          "natural": [
+            82
+          ],
+          "negatives.": [
+            102
+          ],
+          "noise.": [
+            40
+          ],
+          "objective": [
+            150
+          ],
+          "objective,": [
+            33
+          ],
+          "of": [
+            125
+          ],
+          "on": [
+            48,
+            106
+          ],
+          "only": [
+            35
+          ],
+          "our": [
+            87,
+            114
+          ],
+          "pairs": [
+            80,
+            94,
+            99,
+            165
+          ],
+          "paper": [
+            1
+          ],
+          "par": [
+            49
+          ],
+          "performing": [
+            47
+          ],
+          "positive": [
+            164
+          ],
+          "positives": [
+            96
+          ],
+          "pre-trained": [
+            152
+          ],
+          "predicts": [
+            28
+          ],
+          "presents": [
+            2
+          ],
+          "previous": [
+            51,
+            139
+          ],
+          "propose": [
+            73
+          ],
+          "regularizes": [
+            151
+          ],
+          "removing": [
+            64
+          ],
+          "representation": [
+            69
+          ],
+          "respectively,": [
+            131
+          ],
+          "results.": [
+            141
+          ],
+          "semantic": [
+            108
+          ],
+          "sentence": [
+            14,
+            26
+          ],
+          "show-both": [
+            144
+          ],
+          "signals": [
+            168
+          ],
+          "similarity": [
+            110
+          ],
+          "simple": [
+            5,
+            42
+          ],
+          "space": [
+            155
+          ],
+          "standard": [
+            36,
+            107
+          ],
+          "state-of-the-art": [
+            13
+          ],
+          "supervised": [
+            52,
+            75,
+            117,
+            167
+          ],
+          "surprisingly": [
+            45
+          ],
+          "takes": [
+            23
+          ],
+          "tasks,": [
+            112
+          ],
+          "textual": [
+            109
+          ],
+          "that": [
+            9,
+            56
+          ],
+          "the": [
+            12
+          ],
+          "theoretically": [
+            145
+          ],
+          "to": [
+            67,
+            138,
+            156
+          ],
+          "uniform,": [
+            159
+          ],
+          "unsupervised": [
+            20,
+            115
+          ],
+          "used": [
+            38
+          ],
+          "using": [
+            92,
+            119
+          ],
+          "we": [
+            72
+          ],
+          "well,": [
+            46
+          ],
+          "when": [
+            166
+          ],
+          "which": [
+            22,
+            77
+          ],
+          "with": [
+            34,
+            50
+          ],
+          "works": [
+            44
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I20089843"
+                ],
+                "raw_affiliation_string": "Department of Computer Science, Princeton University"
+              }
+            ],
+            "author": {
+              "display_name": "Tianyu Gao",
+              "id": "https://openalex.org/A5006863331",
+              "orcid": "https://orcid.org/0000-0002-5178-0866"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Princeton University",
+                "id": "https://openalex.org/I20089843",
+                "lineage": [
+                  "https://openalex.org/I20089843"
+                ],
+                "ror": "https://ror.org/00hx57361",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computer Science, Princeton University"
+            ],
+            "raw_author_name": "Tianyu Gao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I99065089"
+                ],
+                "raw_affiliation_string": "Institute for Interdisciplinary Information Sciences, Tsinghua University"
+              }
+            ],
+            "author": {
+              "display_name": "Xingcheng Yao",
+              "id": "https://openalex.org/A5065739587",
+              "orcid": "https://orcid.org/0000-0001-5065-3016"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Tsinghua University",
+                "id": "https://openalex.org/I99065089",
+                "lineage": [
+                  "https://openalex.org/I99065089"
+                ],
+                "ror": "https://ror.org/03cve4549",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute for Interdisciplinary Information Sciences, Tsinghua University"
+            ],
+            "raw_author_name": "Xingcheng Yao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I20089843"
+                ],
+                "raw_affiliation_string": "Department of Computer Science, Princeton University"
+              }
+            ],
+            "author": {
+              "display_name": "Danqi Chen",
+              "id": "https://openalex.org/A5051064208",
+              "orcid": "https://orcid.org/0000-0002-6226-6838"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Princeton University",
+                "id": "https://openalex.org/I20089843",
+                "lineage": [
+                  "https://openalex.org/I20089843"
+                ],
+                "ror": "https://ror.org/00hx57361",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computer Science, Princeton University"
+            ],
+            "raw_author_name": "Danqi Chen",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.18653/v1/2021.emnlp-main.552",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2021.emnlp-main.552",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2021.emnlp-main.552.pdf",
+          "raw_source_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608991",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "6894",
+          "issue": null,
+          "last_page": "6910",
+          "volume": null
+        },
+        "cited_by_count": 2555,
+        "display_name": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+        "doi": "https://doi.org/10.18653/v1/2021.emnlp-main.552",
+        "id": "https://openalex.org/W3156636935",
+        "ids": {
+          "doi": "https://doi.org/10.18653/v1/2021.emnlp-main.552",
+          "mag": "3156636935",
+          "openalex": "https://openalex.org/W3156636935"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://aclanthology.org/2021.emnlp-main.552.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.18653/v1/2021.emnlp-main.552",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2021.emnlp-main.552",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2021.emnlp-main.552.pdf",
+          "raw_source_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608991",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2021-01-01",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W131533222",
+          "https://openalex.org/W1486649854",
+          "https://openalex.org/W1840435438",
+          "https://openalex.org/W2014902591",
+          "https://openalex.org/W2028175314",
+          "https://openalex.org/W2037386840",
+          "https://openalex.org/W2095705004",
+          "https://openalex.org/W2114524997",
+          "https://openalex.org/W2126400076",
+          "https://openalex.org/W2133458109",
+          "https://openalex.org/W2138621090",
+          "https://openalex.org/W2148349024",
+          "https://openalex.org/W2152180407",
+          "https://openalex.org/W2153579005",
+          "https://openalex.org/W2160660844",
+          "https://openalex.org/W2163455955",
+          "https://openalex.org/W2185175083",
+          "https://openalex.org/W2250539671",
+          "https://openalex.org/W2250790822",
+          "https://openalex.org/W2251861449",
+          "https://openalex.org/W2251939518",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2572185161",
+          "https://openalex.org/W2605035112",
+          "https://openalex.org/W2611029872",
+          "https://openalex.org/W2640408555",
+          "https://openalex.org/W2752172973",
+          "https://openalex.org/W2786464815",
+          "https://openalex.org/W2790235966",
+          "https://openalex.org/W2891177506",
+          "https://openalex.org/W2907252220",
+          "https://openalex.org/W2949380545",
+          "https://openalex.org/W2952186591",
+          "https://openalex.org/W2963074118",
+          "https://openalex.org/W2963341956",
+          "https://openalex.org/W2963403868",
+          "https://openalex.org/W2963644595",
+          "https://openalex.org/W2963804993",
+          "https://openalex.org/W2963846996",
+          "https://openalex.org/W2963918774",
+          "https://openalex.org/W2964073004",
+          "https://openalex.org/W2964165804",
+          "https://openalex.org/W2964212550",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2966610483",
+          "https://openalex.org/W2970641574",
+          "https://openalex.org/W2979826702",
+          "https://openalex.org/W2987249037",
+          "https://openalex.org/W2988217457",
+          "https://openalex.org/W2996657533",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3034850762",
+          "https://openalex.org/W3034978746",
+          "https://openalex.org/W3098824823",
+          "https://openalex.org/W3099700870",
+          "https://openalex.org/W3100652389",
+          "https://openalex.org/W3103680885",
+          "https://openalex.org/W3104033643",
+          "https://openalex.org/W3105816068",
+          "https://openalex.org/W3115295967",
+          "https://openalex.org/W3118062200",
+          "https://openalex.org/W3122838366",
+          "https://openalex.org/W3131870090",
+          "https://openalex.org/W3139958517",
+          "https://openalex.org/W3154229486",
+          "https://openalex.org/W3173783447",
+          "https://openalex.org/W3175362188",
+          "https://openalex.org/W3176047188",
+          "https://openalex.org/W4294170691",
+          "https://openalex.org/W4385245566"
+        ],
+        "referenced_works_count": 70,
+        "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+        "type": "conference-paper"
+      },
+      {
+        "abstract_inverted_index": {
+          "2022": [
+            23
+          ],
+          "2022.": [
+            39
+          ],
+          "American": [
+            28
+          ],
+          "Association": [
+            32
+          ],
+          "Chang,": [
+            9
+          ],
+          "Chapter": [
+            29
+          ],
+          "Chuang,": [
+            1
+          ],
+          "Computational": [
+            34
+          ],
+          "Conference": [
+            24
+          ],
+          "Dangovski,": [
+            3
+          ],
+          "Glass.": [
+            19
+          ],
+          "Hongyin": [
+            4
+          ],
+          "Human": [
+            36
+          ],
+          "James": [
+            18
+          ],
+          "Kim,": [
+            17
+          ],
+          "Language": [
+            37
+          ],
+          "Li,": [
+            13
+          ],
+          "Linguistics:": [
+            35
+          ],
+          "Luo,": [
+            5
+          ],
+          "Marin": [
+            10
+          ],
+          "North": [
+            27
+          ],
+          "Proceedings": [
+            20
+          ],
+          "Rumen": [
+            2
+          ],
+          "Scott": [
+            14
+          ],
+          "Shang-Wen": [
+            12
+          ],
+          "Shiyu": [
+            8
+          ],
+          "Soljacic,": [
+            11
+          ],
+          "Technologies.": [
+            38
+          ],
+          "Yang": [
+            6
+          ],
+          "Yih,": [
+            15
+          ],
+          "Yoon": [
+            16
+          ],
+          "Yung-Sung": [
+            0
+          ],
+          "Zhang,": [
+            7
+          ],
+          "for": [
+            33
+          ],
+          "of": [
+            21,
+            25,
+            30
+          ],
+          "the": [
+            22,
+            26,
+            31
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "raw_affiliation_string": "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227",
+                  "https://openalex.org/I154570441"
+                ],
+                "raw_affiliation_string": "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+              }
+            ],
+            "author": {
+              "display_name": "Yung-Sung Chuang",
+              "id": "https://openalex.org/A5058729228",
+              "orcid": "https://orcid.org/0000-0002-1723-5063"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "IBM (United States)",
+                "id": "https://openalex.org/I1341412227",
+                "lineage": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "ror": "https://ror.org/05hh8d621",
+                "type": "company"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Santa Barbara",
+                "id": "https://openalex.org/I154570441",
+                "lineage": [
+                  "https://openalex.org/I154570441"
+                ],
+                "ror": "https://ror.org/02t274463",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara",
+              "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+            ],
+            "raw_author_name": "Yung-Sung Chuang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "raw_affiliation_string": "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227",
+                  "https://openalex.org/I154570441"
+                ],
+                "raw_affiliation_string": "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+              }
+            ],
+            "author": {
+              "display_name": "Rumen Dangovski",
+              "id": "https://openalex.org/A5058149560",
+              "orcid": "https://orcid.org/0000-0003-0814-8934"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "IBM (United States)",
+                "id": "https://openalex.org/I1341412227",
+                "lineage": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "ror": "https://ror.org/05hh8d621",
+                "type": "company"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Santa Barbara",
+                "id": "https://openalex.org/I154570441",
+                "lineage": [
+                  "https://openalex.org/I154570441"
+                ],
+                "ror": "https://ror.org/02t274463",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara",
+              "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+            ],
+            "raw_author_name": "Rumen Dangovski",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "raw_affiliation_string": "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227",
+                  "https://openalex.org/I154570441"
+                ],
+                "raw_affiliation_string": "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+              }
+            ],
+            "author": {
+              "display_name": "Hongyin Luo",
+              "id": "https://openalex.org/A5024338348",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "IBM (United States)",
+                "id": "https://openalex.org/I1341412227",
+                "lineage": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "ror": "https://ror.org/05hh8d621",
+                "type": "company"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Santa Barbara",
+                "id": "https://openalex.org/I154570441",
+                "lineage": [
+                  "https://openalex.org/I154570441"
+                ],
+                "ror": "https://ror.org/02t274463",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara",
+              "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+            ],
+            "raw_author_name": "Hongyin Luo",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I63966007"
+                ],
+                "raw_affiliation_string": "Massachusetts Institute of Technology"
+              }
+            ],
+            "author": {
+              "display_name": "Yang Zhang",
+              "id": "https://openalex.org/A5100680399",
+              "orcid": "https://orcid.org/0000-0003-4068-6636"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts Institute of Technology",
+                "id": "https://openalex.org/I63966007",
+                "lineage": [
+                  "https://openalex.org/I63966007"
+                ],
+                "ror": "https://ror.org/042nb2s44",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Massachusetts Institute of Technology"
+            ],
+            "raw_author_name": "Yang Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I63966007"
+                ],
+                "raw_affiliation_string": "Massachusetts Institute of Technology"
+              }
+            ],
+            "author": {
+              "display_name": "Shiyu Chang",
+              "id": "https://openalex.org/A5112248869",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts Institute of Technology",
+                "id": "https://openalex.org/I63966007",
+                "lineage": [
+                  "https://openalex.org/I63966007"
+                ],
+                "ror": "https://ror.org/042nb2s44",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Massachusetts Institute of Technology"
+            ],
+            "raw_author_name": "Shiyu Chang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227",
+                  "https://openalex.org/I154570441"
+                ],
+                "raw_affiliation_string": "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+              }
+            ],
+            "author": {
+              "display_name": "Marin Soljačić",
+              "id": "https://openalex.org/A5060426875",
+              "orcid": "https://orcid.org/0000-0002-7184-5831"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "IBM (United States)",
+                "id": "https://openalex.org/I1341412227",
+                "lineage": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "ror": "https://ror.org/05hh8d621",
+                "type": "company"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Santa Barbara",
+                "id": "https://openalex.org/I154570441",
+                "lineage": [
+                  "https://openalex.org/I154570441"
+                ],
+                "ror": "https://ror.org/02t274463",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+            ],
+            "raw_author_name": "Marin Soljacic",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I63966007"
+                ],
+                "raw_affiliation_string": "Massachusetts Institute of Technology"
+              }
+            ],
+            "author": {
+              "display_name": "Shang-Wen Li",
+              "id": "https://openalex.org/A5029566548",
+              "orcid": "https://orcid.org/0000-0003-0656-9874"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts Institute of Technology",
+                "id": "https://openalex.org/I63966007",
+                "lineage": [
+                  "https://openalex.org/I63966007"
+                ],
+                "ror": "https://ror.org/042nb2s44",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Massachusetts Institute of Technology"
+            ],
+            "raw_author_name": "Shang-Wen Li",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I63966007"
+                ],
+                "raw_affiliation_string": "Massachusetts Institute of Technology"
+              }
+            ],
+            "author": {
+              "display_name": "Scott Yih",
+              "id": "https://openalex.org/A5027596907",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Massachusetts Institute of Technology",
+                "id": "https://openalex.org/I63966007",
+                "lineage": [
+                  "https://openalex.org/I63966007"
+                ],
+                "ror": "https://ror.org/042nb2s44",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Massachusetts Institute of Technology"
+            ],
+            "raw_author_name": "Scott Yih",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "raw_affiliation_string": "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227",
+                  "https://openalex.org/I154570441"
+                ],
+                "raw_affiliation_string": "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+              }
+            ],
+            "author": {
+              "display_name": "Yoon Kim",
+              "id": "https://openalex.org/A5100693798",
+              "orcid": "https://orcid.org/0000-0002-4837-8411"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "IBM (United States)",
+                "id": "https://openalex.org/I1341412227",
+                "lineage": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "ror": "https://ror.org/05hh8d621",
+                "type": "company"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Santa Barbara",
+                "id": "https://openalex.org/I154570441",
+                "lineage": [
+                  "https://openalex.org/I154570441"
+                ],
+                "ror": "https://ror.org/02t274463",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara",
+              "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+            ],
+            "raw_author_name": "Yoon Kim",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "raw_affiliation_string": "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1341412227",
+                  "https://openalex.org/I154570441"
+                ],
+                "raw_affiliation_string": "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+              }
+            ],
+            "author": {
+              "display_name": "James Glass",
+              "id": "https://openalex.org/A5112758056",
+              "orcid": "https://orcid.org/0000-0002-3097-360X"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "IBM (United States)",
+                "id": "https://openalex.org/I1341412227",
+                "lineage": [
+                  "https://openalex.org/I1341412227"
+                ],
+                "ror": "https://ror.org/05hh8d621",
+                "type": "company"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of California, Santa Barbara",
+                "id": "https://openalex.org/I154570441",
+                "lineage": [
+                  "https://openalex.org/I154570441"
+                ],
+                "ror": "https://ror.org/02t274463",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Meta AI  MIT-IBM Watson AI Lab  UC Santa Barbara",
+              "Meta AI ⋄ MIT-IBM Watson AI Lab ‡ UC Santa Barbara"
+            ],
+            "raw_author_name": "James Glass",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.18653/v1/2022.naacl-main.311",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.naacl-main.311",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.naacl-main.311.pdf",
+          "raw_source_name": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608774",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "4207",
+          "issue": null,
+          "last_page": "4218",
+          "volume": null
+        },
+        "cited_by_count": 164,
+        "display_name": "DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings",
+        "doi": "https://doi.org/10.18653/v1/2022.naacl-main.311",
+        "id": "https://openalex.org/W4224313754",
+        "ids": {
+          "doi": "https://doi.org/10.18653/v1/2022.naacl-main.311",
+          "openalex": "https://openalex.org/W4224313754"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://aclanthology.org/2022.naacl-main.311.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.18653/v1/2022.naacl-main.311",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.naacl-main.311",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.naacl-main.311.pdf",
+          "raw_source_name": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608774",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2022-01-01",
+        "publication_year": 2022,
+        "referenced_works": [
+          "https://openalex.org/W131533222",
+          "https://openalex.org/W1836465849",
+          "https://openalex.org/W2014902591",
+          "https://openalex.org/W2028175314",
+          "https://openalex.org/W2160660844",
+          "https://openalex.org/W2250539671",
+          "https://openalex.org/W2250790822",
+          "https://openalex.org/W2251939518",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2786464815",
+          "https://openalex.org/W2790235966",
+          "https://openalex.org/W2891177506",
+          "https://openalex.org/W2896457183",
+          "https://openalex.org/W2949380545",
+          "https://openalex.org/W2952186591",
+          "https://openalex.org/W2963804993",
+          "https://openalex.org/W2963918774",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2970641574",
+          "https://openalex.org/W2975429091",
+          "https://openalex.org/W2978017171",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3035060554",
+          "https://openalex.org/W3104033643",
+          "https://openalex.org/W3105816068",
+          "https://openalex.org/W3118062200",
+          "https://openalex.org/W3122838366",
+          "https://openalex.org/W3131870090",
+          "https://openalex.org/W3154229486",
+          "https://openalex.org/W3156636935",
+          "https://openalex.org/W3173783447",
+          "https://openalex.org/W3175362188",
+          "https://openalex.org/W3176047188",
+          "https://openalex.org/W4286891192",
+          "https://openalex.org/W4287186533",
+          "https://openalex.org/W4287592659",
+          "https://openalex.org/W4287824654",
+          "https://openalex.org/W4298443704",
+          "https://openalex.org/W4309086292"
+        ],
+        "referenced_works_count": 39,
+        "title": "DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings",
+        "type": "conference-paper"
+      },
+      {
+        "abstract_inverted_index": {
+          "\"identity": [
+            118
+          ],
+          "(MLMs)": [
+            9
+          ],
+          "(QNLI)": [
+            150
+          ],
+          "(STS)": [
+            146
+          ],
+          "(e.g.,": [
+            79
+          ],
+          "(i.e.,": [
+            107
+          ],
+          "20-30": [
+            87
+          ],
+          "BERT": [
+            80
+          ],
+          "Finally,": [
+            173
+          ],
+          "In": [
+            36
+          ],
+          "Language": [
+            7
+          ],
+          "MLMs": [
+            47,
+            78,
+            126
+          ],
+          "MLMs,": [
+            182
+          ],
+          "Masked": [
+            6
+          ],
+          "Mirror-BERT": [
+            96,
+            128,
+            154,
+            191
+          ],
+          "Mirror-BERT,": [
+            75
+          ],
+          "Models": [
+            8
+          ],
+          "NLI,": [
+            26
+          ],
+          "Notably,": [
+            142
+          ],
+          "Previous": [
+            0
+          ],
+          "RoBERTa)": [
+            82
+          ],
+          "Sentence-BERT": [
+            162
+          ],
+          "We": [
+            63,
+            120
+          ],
+          "access": [
+            91
+          ],
+          "across": [
+            136
+          ],
+          "additional": [
+            57,
+            93
+          ],
+          "aims": [
+            112
+          ],
+          "an": [
+            65
+          ],
+          "and": [
+            16,
+            51,
+            69,
+            81,
+            100,
+            111,
+            132,
+            139,
+            147,
+            183,
+            199
+          ],
+          "annotated": [
+            33,
+            170
+          ],
+          "any": [
+            56
+          ],
+          "approach": [
+            193
+          ],
+          "are": [
+            10
+          ],
+          "as": [
+            13,
+            105
+          ],
+          "both": [
+            129
+          ],
+          "can": [
+            194
+          ],
+          "contrastive": [
+            71
+          ],
+          "converts": [
+            77
+          ],
+          "data,": [
+            58
+          ],
+          "data.": [
+            35,
+            172
+          ],
+          "deeper": [
+            176
+          ],
+          "delve": [
+            175
+          ],
+          "demonstrate": [
+            40
+          ],
+          "different": [
+            137,
+            140
+          ],
+          "domains": [
+            138
+          ],
+          "during": [
+            117
+          ],
+          "effective": [
+            12,
+            49,
+            70,
+            196
+          ],
+          "encoders": [
+            18,
+            53,
+            85
+          ],
+          "encoders.": [
+            201
+          ],
+          "entailment": [
+            149
+          ],
+          "even": [
+            54,
+            156
+          ],
+          "evidence": [
+            186
+          ],
+          "examples,": [
+            110
+          ],
+          "external": [
+            94
+          ],
+          "extremely": [
+            66
+          ],
+          "fast,": [
+            68
+          ],
+          "fine-tuning": [
+            24,
+            109,
+            192
+          ],
+          "fine-tuning\".": [
+            119
+          ],
+          "from": [
+            164
+          ],
+          "further": [
+            22
+          ],
+          "gains": [
+            123
+          ],
+          "has": [
+            2
+          ],
+          "huge": [
+            122
+          ],
+          "i.e.,": [
+            20
+          ],
+          "identical": [
+            99
+          ],
+          "in": [
+            86,
+            130,
+            133,
+            143
+          ],
+          "indicated": [
+            3
+          ],
+          "inner": [
+            179
+          ],
+          "into": [
+            48,
+            83,
+            177
+          ],
+          "is": [
+            43
+          ],
+          "it": [
+            42
+          ],
+          "knowledge.": [
+            95
+          ],
+          "languages.": [
+            141
+          ],
+          "learning": [
+            72
+          ],
+          "lexical": [
+            15,
+            50,
+            198
+          ],
+          "lexical-level": [
+            131
+          ],
+          "matches": [
+            157
+          ],
+          "maximise": [
+            114
+          ],
+          "model": [
+            155
+          ],
+          "models": [
+            163
+          ],
+          "modified": [
+            102
+          ],
+          "no": [
+            90
+          ],
+          "not": [
+            11
+          ],
+          "of": [
+            160,
+            181
+          ],
+          "off-the-shelf": [
+            125
+          ],
+          "off-the-shelf,": [
+            19
+          ],
+          "on": [
+            25,
+            61,
+            98,
+            169,
+            187
+          ],
+          "or": [
+            29
+          ],
+          "our": [
+            152
+          ],
+          "over": [
+            124
+          ],
+          "pairs": [
+            104
+          ],
+          "paraphrasing": [
+            30
+          ],
+          "performance": [
+            159
+          ],
+          "positive": [
+            106
+          ],
+          "possible": [
+            44
+          ],
+          "pretrained": [
+            5
+          ],
+          "prior": [
+            165
+          ],
+          "propose": [
+            64
+          ],
+          "question-answer": [
+            148
+          ],
+          "relies": [
+            97
+          ],
+          "rely": [
+            168
+          ],
+          "relying": [
+            59
+          ],
+          "report": [
+            121
+          ],
+          "seconds": [
+            88
+          ],
+          "self-supervised": [
+            153
+          ],
+          "self-supervision.": [
+            62
+          ],
+          "sentence": [
+            17,
+            27,
+            52,
+            144,
+            200
+          ],
+          "sentencelevel": [
+            134
+          ],
+          "similarity": [
+            116,
+            145
+          ],
+          "similarity,": [
+            28
+          ],
+          "simple": [
+            190
+          ],
+          "simple,": [
+            67
+          ],
+          "simply": [
+            60
+          ],
+          "slightly": [
+            101
+          ],
+          "some": [
+            185
+          ],
+          "string": [
+            103
+          ],
+          "such": [
+            84
+          ],
+          "suggest": [
+            184
+          ],
+          "synonymous)": [
+            108
+          ],
+          "task": [
+            34,
+            171
+          ],
+          "tasks": [
+            31
+          ],
+          "tasks,": [
+            135,
+            151
+          ],
+          "taskspecific": [
+            23
+          ],
+          "technique,": [
+            73
+          ],
+          "termed": [
+            74
+          ],
+          "that": [
+            4,
+            41
+          ],
+          "the": [
+            158,
+            161,
+            178
+          ],
+          "their": [
+            115
+          ],
+          "this": [
+            37,
+            189
+          ],
+          "to": [
+            45,
+            92,
+            113
+          ],
+          "turn": [
+            46
+          ],
+          "universal": [
+            14,
+            197
+          ],
+          "using": [
+            32
+          ],
+          "we": [
+            39,
+            174
+          ],
+          "which": [
+            76,
+            167
+          ],
+          "why": [
+            188
+          ],
+          "with": [
+            89,
+            127
+          ],
+          "without": [
+            21,
+            55
+          ],
+          "work": [
+            1,
+            166
+          ],
+          "work,": [
+            38
+          ],
+          "workings": [
+            180
+          ],
+          "yield": [
+            195
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210107233",
+                  "https://openalex.org/I241749"
+                ],
+                "raw_affiliation_string": "Language Technology Lab, TAL, University of Cambridge"
+              }
+            ],
+            "author": {
+              "display_name": "Fangyu Liu",
+              "id": "https://openalex.org/A5026154387",
+              "orcid": "https://orcid.org/0000-0001-7038-3623"
+            },
+            "author_position": "first",
+            "countries": [
+              "GB",
+              "KR"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "University of Cambridge",
+                "id": "https://openalex.org/I241749",
+                "lineage": [
+                  "https://openalex.org/I241749"
+                ],
+                "ror": "https://ror.org/013meh722",
+                "type": "education"
+              },
+              {
+                "country_code": "KR",
+                "display_name": "Language Science (South Korea)",
+                "id": "https://openalex.org/I4210107233",
+                "lineage": [
+                  "https://openalex.org/I4210107233"
+                ],
+                "ror": "https://ror.org/01h9v1373",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Language Technology Lab, TAL, University of Cambridge"
+            ],
+            "raw_author_name": "Fangyu Liu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210107233",
+                  "https://openalex.org/I241749"
+                ],
+                "raw_affiliation_string": "Language Technology Lab, TAL, University of Cambridge"
+              }
+            ],
+            "author": {
+              "display_name": "Ivan Vulić",
+              "id": "https://openalex.org/A5014866912",
+              "orcid": "https://orcid.org/0000-0002-5161-5422"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB",
+              "KR"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "University of Cambridge",
+                "id": "https://openalex.org/I241749",
+                "lineage": [
+                  "https://openalex.org/I241749"
+                ],
+                "ror": "https://ror.org/013meh722",
+                "type": "education"
+              },
+              {
+                "country_code": "KR",
+                "display_name": "Language Science (South Korea)",
+                "id": "https://openalex.org/I4210107233",
+                "lineage": [
+                  "https://openalex.org/I4210107233"
+                ],
+                "ror": "https://ror.org/01h9v1373",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Language Technology Lab, TAL, University of Cambridge"
+            ],
+            "raw_author_name": "Ivan Vulić",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210107233",
+                  "https://openalex.org/I241749"
+                ],
+                "raw_affiliation_string": "Language Technology Lab, TAL, University of Cambridge"
+              }
+            ],
+            "author": {
+              "display_name": "Anna Korhonen",
+              "id": "https://openalex.org/A5081393566",
+              "orcid": "https://orcid.org/0000-0002-3692-3144"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB",
+              "KR"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "University of Cambridge",
+                "id": "https://openalex.org/I241749",
+                "lineage": [
+                  "https://openalex.org/I241749"
+                ],
+                "ror": "https://ror.org/013meh722",
+                "type": "education"
+              },
+              {
+                "country_code": "KR",
+                "display_name": "Language Science (South Korea)",
+                "id": "https://openalex.org/I4210107233",
+                "lineage": [
+                  "https://openalex.org/I4210107233"
+                ],
+                "ror": "https://ror.org/01h9v1373",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Language Technology Lab, TAL, University of Cambridge"
+            ],
+            "raw_author_name": "Anna Korhonen",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210107233",
+                  "https://openalex.org/I241749"
+                ],
+                "raw_affiliation_string": "Language Technology Lab, TAL, University of Cambridge"
+              }
+            ],
+            "author": {
+              "display_name": "Nigel Collier",
+              "id": "https://openalex.org/A5073413742",
+              "orcid": "https://orcid.org/0000-0002-7230-4164"
+            },
+            "author_position": "last",
+            "countries": [
+              "GB",
+              "KR"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "University of Cambridge",
+                "id": "https://openalex.org/I241749",
+                "lineage": [
+                  "https://openalex.org/I241749"
+                ],
+                "ror": "https://ror.org/013meh722",
+                "type": "education"
+              },
+              {
+                "country_code": "KR",
+                "display_name": "Language Science (South Korea)",
+                "id": "https://openalex.org/I4210107233",
+                "lineage": [
+                  "https://openalex.org/I4210107233"
+                ],
+                "ror": "https://ror.org/01h9v1373",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Language Technology Lab, TAL, University of Cambridge"
+            ],
+            "raw_author_name": "Nigel Collier",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.18653/v1/2021.emnlp-main.109",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2021.emnlp-main.109",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2021.emnlp-main.109.pdf",
+          "raw_source_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608991",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "1442",
+          "issue": null,
+          "last_page": "1459",
+          "volume": null
+        },
+        "cited_by_count": 86,
+        "display_name": "Fast, Effective, and Self-Supervised: Transforming Masked Language Models into Universal Lexical and Sentence Encoders",
+        "doi": "https://doi.org/10.18653/v1/2021.emnlp-main.109",
+        "id": "https://openalex.org/W3213730158",
+        "ids": {
+          "doi": "https://doi.org/10.18653/v1/2021.emnlp-main.109",
+          "mag": "3213730158",
+          "openalex": "https://openalex.org/W3213730158"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://aclanthology.org/2021.emnlp-main.109.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.18653/v1/2021.emnlp-main.109",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2021.emnlp-main.109",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2021.emnlp-main.109.pdf",
+          "raw_source_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608991",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2021-01-01",
+        "publication_year": 2021,
+        "referenced_works": [
+          "https://openalex.org/W1486649854",
+          "https://openalex.org/W1521968289",
+          "https://openalex.org/W1614298861",
+          "https://openalex.org/W1840435438",
+          "https://openalex.org/W1854884267",
+          "https://openalex.org/W2095705004",
+          "https://openalex.org/W2126400076",
+          "https://openalex.org/W2133458109",
+          "https://openalex.org/W2152180407",
+          "https://openalex.org/W2153579005",
+          "https://openalex.org/W2159583324",
+          "https://openalex.org/W2169099542",
+          "https://openalex.org/W2250214110",
+          "https://openalex.org/W2250539671",
+          "https://openalex.org/W2250790822",
+          "https://openalex.org/W2251861449",
+          "https://openalex.org/W2251882135",
+          "https://openalex.org/W2346452181",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2509884321",
+          "https://openalex.org/W2518186251",
+          "https://openalex.org/W2786464815",
+          "https://openalex.org/W2842511635",
+          "https://openalex.org/W2882319491",
+          "https://openalex.org/W2891177506",
+          "https://openalex.org/W2908510526",
+          "https://openalex.org/W2923014074",
+          "https://openalex.org/W2943552823",
+          "https://openalex.org/W2946794439",
+          "https://openalex.org/W2948110372",
+          "https://openalex.org/W2950577311",
+          "https://openalex.org/W2952267213",
+          "https://openalex.org/W2954699761",
+          "https://openalex.org/W2962772361",
+          "https://openalex.org/W2963118869",
+          "https://openalex.org/W2963165489",
+          "https://openalex.org/W2963310665",
+          "https://openalex.org/W2963341956",
+          "https://openalex.org/W2963644595",
+          "https://openalex.org/W2963748441",
+          "https://openalex.org/W2963804993",
+          "https://openalex.org/W2963846996",
+          "https://openalex.org/W2964073004",
+          "https://openalex.org/W2964266061",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2970120757",
+          "https://openalex.org/W2970641574",
+          "https://openalex.org/W2988217457",
+          "https://openalex.org/W2990704537",
+          "https://openalex.org/W2994088087",
+          "https://openalex.org/W2994931756",
+          "https://openalex.org/W2995289474",
+          "https://openalex.org/W3046375318",
+          "https://openalex.org/W3094540663",
+          "https://openalex.org/W3098985395",
+          "https://openalex.org/W3099178230",
+          "https://openalex.org/W3100652389",
+          "https://openalex.org/W3104033643",
+          "https://openalex.org/W3105801792",
+          "https://openalex.org/W3105816068",
+          "https://openalex.org/W3115295967",
+          "https://openalex.org/W3118062200",
+          "https://openalex.org/W3118485687",
+          "https://openalex.org/W3122838366",
+          "https://openalex.org/W3125516434",
+          "https://openalex.org/W3131648208",
+          "https://openalex.org/W3131870090",
+          "https://openalex.org/W3144596436",
+          "https://openalex.org/W3152788712",
+          "https://openalex.org/W3154229486",
+          "https://openalex.org/W3155682407",
+          "https://openalex.org/W3156636935",
+          "https://openalex.org/W3164540570",
+          "https://openalex.org/W3172806051",
+          "https://openalex.org/W3173188814",
+          "https://openalex.org/W3173783447",
+          "https://openalex.org/W3175049034",
+          "https://openalex.org/W3175362188",
+          "https://openalex.org/W3175394187",
+          "https://openalex.org/W3176047188",
+          "https://openalex.org/W4294170691",
+          "https://openalex.org/W4294367149",
+          "https://openalex.org/W4294875919",
+          "https://openalex.org/W4297808394",
+          "https://openalex.org/W4299574851",
+          "https://openalex.org/W4299579390"
+        ],
+        "referenced_works_count": 86,
+        "title": "Fast, Effective, and Self-Supervised: Transforming Masked Language Models into Universal Lexical and Sentence Encoders",
+        "type": "conference-paper"
+      },
+      {
+        "abstract_inverted_index": {
+          "Accordingly,": [
+            107
+          ],
+          "Existing": [
+            22
+          ],
+          "However,": [
+            61
+          ],
+          "In": [
+            78
+          ],
+          "MixCSE,": [
+            113
+          ],
+          "Previous": [
+            37
+          ],
+          "Recently,": [
+            12
+          ],
+          "Semantic": [
+            145
+          ],
+          "SimCSE": [
+            119
+          ],
+          "Similarity": [
+            147
+          ],
+          "Textual": [
+            146
+          ],
+          "The": [
+            132
+          ],
+          "Transfer": [
+            150
+          ],
+          "Unsupervised": [
+            0
+          ],
+          "a": [
+            5,
+            110
+          ],
+          "achieve": [
+            52
+          ],
+          "and": [
+            55,
+            129,
+            149
+          ],
+          "apply": [
+            28
+          ],
+          "approach": [
+            138
+          ],
+          "are": [
+            86
+          ],
+          "based": [
+            25
+          ],
+          "be": [
+            76
+          ],
+          "better": [
+            56
+          ],
+          "both": [
+            127
+          ],
+          "by": [
+            120
+          ],
+          "computer": [
+            40
+          ],
+          "constrastive": [
+            23
+          ],
+          "constructing": [
+            122
+          ],
+          "continually": [
+            121
+          ],
+          "contrastive": [
+            13,
+            49,
+            68,
+            111
+          ],
+          "convergency": [
+            54
+          ],
+          "current": [
+            117
+          ],
+          "datasets": [
+            148
+          ],
+          "datasets.": [
+            152
+          ],
+          "demonstrated": [
+            140
+          ],
+          "empirical": [
+            142
+          ],
+          "essential": [
+            87
+          ],
+          "examples": [
+            34,
+            47,
+            101
+          ],
+          "explored.": [
+            77
+          ],
+          "extends": [
+            115
+          ],
+          "faster": [
+            53
+          ],
+          "features.": [
+            131
+          ],
+          "for": [
+            35,
+            58,
+            70,
+            88,
+            104
+          ],
+          "fundamental": [
+            6
+          ],
+          "gradient": [
+            91
+          ],
+          "great": [
+            17
+          ],
+          "hard": [
+            45,
+            65,
+            84,
+            123
+          ],
+          "has": [
+            15,
+            42
+          ],
+          "help": [
+            48
+          ],
+          "importance": [
+            63
+          ],
+          "in": [
+            8,
+            39,
+            67,
+            93
+          ],
+          "ineffective": [
+            103
+          ],
+          "is": [
+            4,
+            73,
+            102,
+            139
+          ],
+          "language": [
+            10
+          ],
+          "learning": [
+            3,
+            14,
+            24,
+            50,
+            69
+          ],
+          "learning.": [
+            60
+          ],
+          "made": [
+            16
+          ],
+          "maintaining": [
+            89
+          ],
+          "mixing": [
+            126
+          ],
+          "model,": [
+            112
+          ],
+          "models": [
+            26
+          ],
+          "natural": [
+            9
+          ],
+          "negative": [
+            33,
+            46,
+            100,
+            130
+          ],
+          "negatives": [
+            66,
+            85,
+            124
+          ],
+          "of": [
+            64,
+            135
+          ],
+          "on": [
+            19,
+            144
+          ],
+          "optimization": [
+            57
+          ],
+          "performance": [
+            134
+          ],
+          "positive": [
+            128
+          ],
+          "present": [
+            109
+          ],
+          "problem": [
+            7
+          ],
+          "process": [
+            96
+          ],
+          "processing.": [
+            11
+          ],
+          "proposed": [
+            137
+          ],
+          "prove": [
+            82
+          ],
+          "random": [
+            29,
+            98
+          ],
+          "representation": [
+            2,
+            59,
+            72
+          ],
+          "representation.": [
+            106
+          ],
+          "sampling": [
+            30,
+            99
+          ],
+          "select": [
+            32
+          ],
+          "sentence": [
+            1,
+            71,
+            105
+          ],
+          "shown": [
+            43
+          ],
+          "signals": [
+            92
+          ],
+          "state-of-the-art": [
+            118
+          ],
+          "strong": [
+            90
+          ],
+          "studies": [
+            143
+          ],
+          "study,": [
+            80
+          ],
+          "success": [
+            18
+          ],
+          "superior": [
+            133
+          ],
+          "task": [
+            151
+          ],
+          "task.": [
+            21
+          ],
+          "that": [
+            44,
+            83,
+            114
+          ],
+          "the": [
+            62,
+            94,
+            116,
+            136
+          ],
+          "this": [
+            20,
+            79
+          ],
+          "to": [
+            31,
+            51,
+            75
+          ],
+          "training": [
+            95
+          ],
+          "training.": [
+            36
+          ],
+          "usually": [
+            27
+          ],
+          "via": [
+            125,
+            141
+          ],
+          "vision": [
+            41
+          ],
+          "we": [
+            81,
+            108
+          ],
+          "while": [
+            97
+          ],
+          "work": [
+            38
+          ],
+          "yet": [
+            74
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82880672"
+                ],
+                "raw_affiliation_string": "Beihang University"
+              }
+            ],
+            "author": {
+              "display_name": "Yanzhao Zhang",
+              "id": "https://openalex.org/A5064857650",
+              "orcid": "https://orcid.org/0000-0002-2346-4022"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beihang University",
+                "id": "https://openalex.org/I82880672",
+                "lineage": [
+                  "https://openalex.org/I82880672"
+                ],
+                "ror": "https://ror.org/00wk2mp56",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Beihang University"
+            ],
+            "raw_author_name": "Yanzhao Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82880672"
+                ],
+                "raw_affiliation_string": "Beihang University"
+              }
+            ],
+            "author": {
+              "display_name": "Richong Zhang",
+              "id": "https://openalex.org/A5027015677",
+              "orcid": "https://orcid.org/0000-0002-1207-0300"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beihang University",
+                "id": "https://openalex.org/I82880672",
+                "lineage": [
+                  "https://openalex.org/I82880672"
+                ],
+                "ror": "https://ror.org/00wk2mp56",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Beihang University"
+            ],
+            "raw_author_name": "Richong Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I91136226"
+                ],
+                "raw_affiliation_string": "University of Sheffield"
+              }
+            ],
+            "author": {
+              "display_name": "Samuel Mensah",
+              "id": "https://openalex.org/A5089184655",
+              "orcid": "https://orcid.org/0000-0003-0779-5574"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "University of Sheffield",
+                "id": "https://openalex.org/I91136226",
+                "lineage": [
+                  "https://openalex.org/I91136226"
+                ],
+                "ror": "https://ror.org/05krs5044",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "University of Sheffield"
+            ],
+            "raw_author_name": "Samuel Mensah",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82880672"
+                ],
+                "raw_affiliation_string": "Beihang University"
+              }
+            ],
+            "author": {
+              "display_name": "Xudong Liu",
+              "id": "https://openalex.org/A5104561219",
+              "orcid": "https://orcid.org/0009-0007-8865-3055"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beihang University",
+                "id": "https://openalex.org/I82880672",
+                "lineage": [
+                  "https://openalex.org/I82880672"
+                ],
+                "ror": "https://ror.org/00wk2mp56",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Beihang University"
+            ],
+            "raw_author_name": "Xudong Liu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I153718931"
+                ],
+                "raw_affiliation_string": "University of Ottawa"
+              }
+            ],
+            "author": {
+              "display_name": "Yongyi Mao",
+              "id": "https://openalex.org/A5004793184",
+              "orcid": "https://orcid.org/0000-0001-5298-5778"
+            },
+            "author_position": "last",
+            "countries": [
+              "CA"
+            ],
+            "institutions": [
+              {
+                "country_code": "CA",
+                "display_name": "University of Ottawa",
+                "id": "https://openalex.org/I153718931",
+                "lineage": [
+                  "https://openalex.org/I153718931"
+                ],
+                "ror": "https://ror.org/03c4mmv16",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "University of Ottawa"
+            ],
+            "raw_author_name": "Yongyi Mao",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1609/aaai.v36i10.21428",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1609/aaai.v36i10.21428",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/21428/21177",
+          "raw_source_name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+            "host_organization": "https://openalex.org/P4310320058",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320058"
+            ],
+            "host_organization_lineage_names": [
+              "Association for the Advancement of Artificial Intelligence"
+            ],
+            "host_organization_name": "Association for the Advancement of Artificial Intelligence",
+            "id": "https://openalex.org/S4210191458",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "2159-5399",
+              "2374-3468"
+            ],
+            "issn_l": "2159-5399",
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "11730",
+          "issue": "10",
+          "last_page": "11738",
+          "volume": "36"
+        },
+        "cited_by_count": 53,
+        "display_name": "Unsupervised Sentence Representation via Contrastive Learning with Mixing Negatives",
+        "doi": "https://doi.org/10.1609/aaai.v36i10.21428",
+        "id": "https://openalex.org/W4283797513",
+        "ids": {
+          "doi": "https://doi.org/10.1609/aaai.v36i10.21428",
+          "openalex": "https://openalex.org/W4283797513"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://ojs.aaai.org/index.php/AAAI/article/download/21428/21177"
+        },
+        "primary_location": {
+          "id": "doi:10.1609/aaai.v36i10.21428",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1609/aaai.v36i10.21428",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/21428/21177",
+          "raw_source_name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+            "host_organization": "https://openalex.org/P4310320058",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320058"
+            ],
+            "host_organization_lineage_names": [
+              "Association for the Advancement of Artificial Intelligence"
+            ],
+            "host_organization_name": "Association for the Advancement of Artificial Intelligence",
+            "id": "https://openalex.org/S4210191458",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "2159-5399",
+              "2374-3468"
+            ],
+            "issn_l": "2159-5399",
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2022-06-28",
+        "publication_year": 2022,
+        "referenced_works": [
+          "https://openalex.org/W131533222",
+          "https://openalex.org/W1522301498",
+          "https://openalex.org/W1583912456",
+          "https://openalex.org/W2014902591",
+          "https://openalex.org/W2028175314",
+          "https://openalex.org/W2126400076",
+          "https://openalex.org/W2133458109",
+          "https://openalex.org/W2250790822",
+          "https://openalex.org/W2251861449",
+          "https://openalex.org/W2251939518",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2790235966",
+          "https://openalex.org/W2794557536",
+          "https://openalex.org/W2887005207",
+          "https://openalex.org/W2896457183",
+          "https://openalex.org/W2938224028",
+          "https://openalex.org/W2949380545",
+          "https://openalex.org/W2952186591",
+          "https://openalex.org/W2963918774",
+          "https://openalex.org/W2966610483",
+          "https://openalex.org/W2987283559",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3027758526",
+          "https://openalex.org/W3035524453",
+          "https://openalex.org/W3090114880",
+          "https://openalex.org/W3100652389",
+          "https://openalex.org/W3104033643",
+          "https://openalex.org/W3105816068",
+          "https://openalex.org/W3109894131",
+          "https://openalex.org/W3118062200",
+          "https://openalex.org/W3154229486",
+          "https://openalex.org/W3156636935",
+          "https://openalex.org/W3175362188",
+          "https://openalex.org/W3176047188",
+          "https://openalex.org/W4236188916",
+          "https://openalex.org/W4287552504",
+          "https://openalex.org/W4288235115",
+          "https://openalex.org/W4295312788",
+          "https://openalex.org/W4298443704",
+          "https://openalex.org/W4301372783",
+          "https://openalex.org/W4313908941",
+          "https://openalex.org/W6629028937",
+          "https://openalex.org/W6657534600",
+          "https://openalex.org/W6677561110",
+          "https://openalex.org/W6691695795",
+          "https://openalex.org/W6780710233",
+          "https://openalex.org/W6787584414"
+        ],
+        "referenced_works_count": 47,
+        "title": "Unsupervised Sentence Representation via Contrastive Learning with Mixing Negatives",
+        "type": "conference-paper"
+      },
+      {
+        "abstract_inverted_index": {
+          "2022": [
+            23
+          ],
+          "2022.": [
+            32
+          ],
+          "Conference": [
+            24
+          ],
+          "Deng,": [
+            17
+          ],
+          "Denvy": [
+            16
+          ],
+          "Deqing": [
+            8
+          ],
+          "Empirical": [
+            26
+          ],
+          "Furu": [
+            12
+          ],
+          "Fuzhen": [
+            10
+          ],
+          "Haizhen": [
+            14
+          ],
+          "Huang,": [
+            5,
+            15
+          ],
+          "Jian": [
+            2
+          ],
+          "Jiang,": [
+            1
+          ],
+          "Jiao,": [
+            3
+          ],
+          "Language": [
+            30
+          ],
+          "Methods": [
+            27
+          ],
+          "Natural": [
+            29
+          ],
+          "Proceedings": [
+            20
+          ],
+          "Processing.": [
+            31
+          ],
+          "Qi": [
+            18
+          ],
+          "Shaohan": [
+            4
+          ],
+          "Ting": [
+            0
+          ],
+          "Wang,": [
+            9
+          ],
+          "Wei,": [
+            13
+          ],
+          "Zhang,": [
+            7
+          ],
+          "Zhang.": [
+            19
+          ],
+          "Zhuang,": [
+            11
+          ],
+          "Zihan": [
+            6
+          ],
+          "in": [
+            28
+          ],
+          "of": [
+            21
+          ],
+          "on": [
+            25
+          ],
+          "the": [
+            22
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82880672"
+                ],
+                "raw_affiliation_string": "SKLSDE Lab, School of Computer, Beihang University, Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Ting Jiang",
+              "id": "https://openalex.org/A5090606731",
+              "orcid": "https://orcid.org/0000-0003-3598-3804"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beihang University",
+                "id": "https://openalex.org/I82880672",
+                "lineage": [
+                  "https://openalex.org/I82880672"
+                ],
+                "ror": "https://ror.org/00wk2mp56",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "SKLSDE Lab, School of Computer, Beihang University, Beijing, China"
+            ],
+            "raw_author_name": "Ting Jiang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft"
+              }
+            ],
+            "author": {
+              "display_name": "Jian Jiao",
+              "id": "https://openalex.org/A5047916298",
+              "orcid": "https://orcid.org/0000-0002-7988-9820"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft"
+            ],
+            "raw_author_name": "Jian Jiao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft"
+              }
+            ],
+            "author": {
+              "display_name": "Shaohan Huang",
+              "id": "https://openalex.org/A5061624006",
+              "orcid": "https://orcid.org/0000-0003-4324-6337"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft"
+            ],
+            "raw_author_name": "Shaohan Huang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft"
+              }
+            ],
+            "author": {
+              "display_name": "Zihan Zhang",
+              "id": "https://openalex.org/A5100410563",
+              "orcid": "https://orcid.org/0009-0004-8852-8156"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft"
+            ],
+            "raw_author_name": "Zihan Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Zhongguancun Laboratory, Beijing, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82880672"
+                ],
+                "raw_affiliation_string": "SKLSDE Lab, School of Computer, Beihang University, Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Deqing Wang",
+              "id": "https://openalex.org/A5100612161",
+              "orcid": "https://orcid.org/0000-0001-6441-4390"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Beihang University",
+                "id": "https://openalex.org/I82880672",
+                "lineage": [
+                  "https://openalex.org/I82880672"
+                ],
+                "ror": "https://ror.org/00wk2mp56",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Zhongguancun Laboratory, Beijing, China",
+              "SKLSDE Lab, School of Computer, Beihang University, Beijing, China"
+            ],
+            "raw_author_name": "Deqing Wang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82880672"
+                ],
+                "raw_affiliation_string": "SKLSDE Lab, School of Computer, Beihang University, Beijing, China"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I82880672"
+                ],
+                "raw_affiliation_string": "Institute of Artificial Intelligence, Beihang University, Beijing, China"
+              },
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Zhongguancun Laboratory, Beijing, China"
+              }
+            ],
+            "author": {
+              "display_name": "Fuzhen Zhuang",
+              "id": "https://openalex.org/A5041921496",
+              "orcid": "https://orcid.org/0000-0001-9170-7009"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Beihang University",
+                "id": "https://openalex.org/I82880672",
+                "lineage": [
+                  "https://openalex.org/I82880672"
+                ],
+                "ror": "https://ror.org/00wk2mp56",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft",
+              "SKLSDE Lab, School of Computer, Beihang University, Beijing, China",
+              "Institute of Artificial Intelligence, Beihang University, Beijing, China",
+              "Zhongguancun Laboratory, Beijing, China"
+            ],
+            "raw_author_name": "Fuzhen Zhuang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft"
+              }
+            ],
+            "author": {
+              "display_name": "Furu Wei",
+              "id": "https://openalex.org/A5014662947",
+              "orcid": "https://orcid.org/0000-0002-7810-5852"
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft"
+            ],
+            "raw_author_name": "Furu Wei",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Haizhen Huang",
+              "id": "https://openalex.org/A5014900195",
+              "orcid": "https://orcid.org/0009-0005-7145-2500"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Haizhen Huang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft"
+              }
+            ],
+            "author": {
+              "display_name": "Denvy Deng",
+              "id": "https://openalex.org/A5017295812",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft"
+            ],
+            "raw_author_name": "Denvy Deng",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210164937"
+                ],
+                "raw_affiliation_string": "Microsoft"
+              }
+            ],
+            "author": {
+              "display_name": "Qi Zhang",
+              "id": "https://openalex.org/A5100360338",
+              "orcid": "https://orcid.org/0000-0002-6524-1222"
+            },
+            "author_position": "last",
+            "countries": [
+              "GB"
+            ],
+            "institutions": [
+              {
+                "country_code": "GB",
+                "display_name": "Microsoft Research (United Kingdom)",
+                "id": "https://openalex.org/I4210164937",
+                "lineage": [
+                  "https://openalex.org/I1290206253",
+                  "https://openalex.org/I4210164937"
+                ],
+                "ror": "https://ror.org/05k87vq12",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Microsoft"
+            ],
+            "raw_author_name": "Qi Zhang",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.18653/v1/2022.emnlp-main.603",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.emnlp-main.603",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.emnlp-main.603.pdf",
+          "raw_source_name": "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+          "raw_type": "proceedings-article",
+          "source": null,
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "8826",
+          "issue": null,
+          "last_page": "8837",
+          "volume": null
+        },
+        "cited_by_count": 149,
+        "display_name": "PromptBERT: Improving BERT Sentence Embeddings with Prompts",
+        "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.603",
+        "id": "https://openalex.org/W4385573170",
+        "ids": {
+          "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.603",
+          "openalex": "https://openalex.org/W4385573170"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": null,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://aclanthology.org/2022.emnlp-main.603.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.18653/v1/2022.emnlp-main.603",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.emnlp-main.603",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.emnlp-main.603.pdf",
+          "raw_source_name": "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+          "raw_type": "proceedings-article",
+          "source": null,
+          "version": "publishedVersion"
+        },
+        "publication_date": "2022-01-01",
+        "publication_year": 2022,
+        "referenced_works": [
+          "https://openalex.org/W2126400076",
+          "https://openalex.org/W2133458109",
+          "https://openalex.org/W2152180407",
+          "https://openalex.org/W2250539671",
+          "https://openalex.org/W2250790822",
+          "https://openalex.org/W2251861449",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2525778437",
+          "https://openalex.org/W2752172973",
+          "https://openalex.org/W2790235966",
+          "https://openalex.org/W2891177506",
+          "https://openalex.org/W2896457183",
+          "https://openalex.org/W2923014074",
+          "https://openalex.org/W2963918774",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2966610483",
+          "https://openalex.org/W2970641574",
+          "https://openalex.org/W2988217457",
+          "https://openalex.org/W3154229486",
+          "https://openalex.org/W3156636935",
+          "https://openalex.org/W3166986030",
+          "https://openalex.org/W3173777717",
+          "https://openalex.org/W3175362188",
+          "https://openalex.org/W3176887776",
+          "https://openalex.org/W4292779060",
+          "https://openalex.org/W4298443704",
+          "https://openalex.org/W4313908941"
+        ],
+        "referenced_works_count": 27,
+        "title": "PromptBERT: Improving BERT Sentence Embeddings with Prompts",
+        "type": "conference-paper"
+      },
+      {
+        "abstract_inverted_index": {
+          "ArcCSE,": [
+            119
+          ],
+          "BERT-like": [
+            23
+          ],
+          "However,": [
+            64
+          ],
+          "Learning": [
+            0
+          ],
+          "NT-Xent,": [
+            87
+          ],
+          "Recently,": [
+            47
+          ],
+          "STS": [
+            157
+          ],
+          "SentEval.": [
+            159
+          ],
+          "So": [
+            110
+          ],
+          "Though": [
+            21
+          ],
+          "We": [
+            138
+          ],
+          "a": [
+            5,
+            15,
+            116
+          ],
+          "achieved": [
+            28
+          ],
+          "acquire": [
+            94
+          ],
+          "and": [
+            59,
+            74,
+            78,
+            98,
+            130,
+            158
+          ],
+          "approach": [
+            146
+          ],
+          "attention": [
+            81
+          ],
+          "been": [
+            53
+          ],
+          "benefit": [
+            14
+          ],
+          "between": [
+            108
+          ],
+          "conduct": [
+            139
+          ],
+          "constitution": [
+            71
+          ],
+          "contrastive": [
+            49
+          ],
+          "could": [
+            13
+          ],
+          "demonstrate": [
+            143
+          ],
+          "designed": [
+            123
+          ],
+          "directly": [
+            35
+          ],
+          "discriminating": [
+            96
+          ],
+          "discriminative": [
+            128
+          ],
+          "diverse": [
+            152
+          ],
+          "downstream": [
+            19
+          ],
+          "enhance": [
+            125
+          ],
+          "enough": [
+            92
+          ],
+          "entailment": [
+            133
+          ],
+          "experiments": [
+            141
+          ],
+          "extensive": [
+            140
+          ],
+          "focus": [
+            68
+          ],
+          "for": [
+            55
+          ],
+          "fundamental": [
+            6
+          ],
+          "great": [
+            29
+          ],
+          "have": [
+            27,
+            52,
+            60
+          ],
+          "high-quality": [
+            1
+          ],
+          "in": [
+            38,
+            111
+          ],
+          "including": [
+            156
+          ],
+          "is": [
+            4,
+            89,
+            99
+          ],
+          "language": [
+            10,
+            25
+          ],
+          "learning": [
+            50,
+            56
+          ],
+          "like": [
+            86
+          ],
+          "little": [
+            80
+          ],
+          "method": [
+            118
+          ],
+          "methods": [
+            51
+          ],
+          "model": [
+            102,
+            131
+          ],
+          "models": [
+            26
+          ],
+          "most": [
+            65
+          ],
+          "natural": [
+            9
+          ],
+          "negative": [
+            75
+          ],
+          "new": [
+            117
+          ],
+          "not": [
+            90
+          ],
+          "objective": [
+            85
+          ],
+          "objectives": [
+            122
+          ],
+          "of": [
+            8,
+            18,
+            66,
+            72,
+            106,
+            135
+          ],
+          "often": [
+            36
+          ],
+          "on": [
+            41,
+            69,
+            151
+          ],
+          "order": [
+            105
+          ],
+          "our": [
+            145
+          ],
+          "outperforms": [
+            147
+          ],
+          "pairs": [
+            77
+          ],
+          "pairwise": [
+            127
+          ],
+          "paper,": [
+            113
+          ],
+          "partial": [
+            104
+          ],
+          "pay": [
+            79
+          ],
+          "performance": [
+            40
+          ],
+          "poor": [
+            39
+          ],
+          "positive": [
+            73
+          ],
+          "power": [
+            97,
+            129
+          ],
+          "pretrained": [
+            24
+          ],
+          "previous": [
+            149
+          ],
+          "problem": [
+            7
+          ],
+          "processing": [
+            11
+          ],
+          "promising": [
+            62
+          ],
+          "propose": [
+            115
+          ],
+          "proposed": [
+            54
+          ],
+          "range": [
+            17
+          ],
+          "related": [
+            154
+          ],
+          "relation": [
+            134
+          ],
+          "representation": [
+            76
+          ],
+          "representations": [
+            3,
+            34,
+            58
+          ],
+          "results": [
+            37
+          ],
+          "results.": [
+            63
+          ],
+          "semantic": [
+            43
+          ],
+          "semantics": [
+            107
+          ],
+          "sentence": [
+            2,
+            33,
+            57,
+            153
+          ],
+          "sentences.": [
+            109,
+            137
+          ],
+          "several": [
+            48
+          ],
+          "shown": [
+            61
+          ],
+          "similarity": [
+            45
+          ],
+          "state-of-the-art": [
+            150
+          ],
+          "success,": [
+            30
+          ],
+          "sufficient": [
+            91
+          ],
+          "task.": [
+            46
+          ],
+          "tasks,": [
+            155
+          ],
+          "tasks.": [
+            20
+          ],
+          "textual": [
+            44
+          ],
+          "that": [
+            144
+          ],
+          "the": [
+            22,
+            42,
+            70,
+            83,
+            95,
+            103,
+            126,
+            132,
+            148
+          ],
+          "their": [
+            32
+          ],
+          "them": [
+            67
+          ],
+          "this": [
+            112
+          ],
+          "to": [
+            82,
+            93,
+            101,
+            124
+          ],
+          "training": [
+            84,
+            121
+          ],
+          "triplet": [
+            136
+          ],
+          "unable": [
+            100
+          ],
+          "using": [
+            31
+          ],
+          "we": [
+            114
+          ],
+          "which": [
+            12,
+            88,
+            142
+          ],
+          "wide": [
+            16
+          ],
+          "with": [
+            120
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I19820366"
+                ],
+                "raw_affiliation_string": "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+              }
+            ],
+            "author": {
+              "display_name": "Yuhao Zhang",
+              "id": "https://openalex.org/A5100349352",
+              "orcid": "https://orcid.org/0000-0002-9856-436X"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Chinese Academy of Sciences",
+                "id": "https://openalex.org/I19820366",
+                "lineage": [
+                  "https://openalex.org/I19820366"
+                ],
+                "ror": "https://ror.org/034t30j35",
+                "type": "government"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shandong Institute of Automation",
+                "id": "https://openalex.org/I4210094879",
+                "lineage": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I4210142748"
+                ],
+                "ror": "https://ror.org/00qdtba35",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+            ],
+            "raw_author_name": "Yuhao Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I19820366"
+                ],
+                "raw_affiliation_string": "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+              }
+            ],
+            "author": {
+              "display_name": "Hongji Zhu",
+              "id": null,
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Chinese Academy of Sciences",
+                "id": "https://openalex.org/I19820366",
+                "lineage": [
+                  "https://openalex.org/I19820366"
+                ],
+                "ror": "https://ror.org/034t30j35",
+                "type": "government"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shandong Institute of Automation",
+                "id": "https://openalex.org/I4210094879",
+                "lineage": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I4210142748"
+                ],
+                "ror": "https://ror.org/00qdtba35",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+            ],
+            "raw_author_name": "Hongji Zhu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I19820366"
+                ],
+                "raw_affiliation_string": "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+              }
+            ],
+            "author": {
+              "display_name": "Yongliang Wang",
+              "id": "https://openalex.org/A5100431047",
+              "orcid": "https://orcid.org/0000-0001-7263-9493"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Chinese Academy of Sciences",
+                "id": "https://openalex.org/I19820366",
+                "lineage": [
+                  "https://openalex.org/I19820366"
+                ],
+                "ror": "https://ror.org/034t30j35",
+                "type": "government"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shandong Institute of Automation",
+                "id": "https://openalex.org/I4210094879",
+                "lineage": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I4210142748"
+                ],
+                "ror": "https://ror.org/00qdtba35",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+            ],
+            "raw_author_name": "Yongliang Wang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I19820366"
+                ],
+                "raw_affiliation_string": "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+              }
+            ],
+            "author": {
+              "display_name": "Nan Xu",
+              "id": "https://openalex.org/A5025274226",
+              "orcid": "https://orcid.org/0000-0001-9737-396X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Chinese Academy of Sciences",
+                "id": "https://openalex.org/I19820366",
+                "lineage": [
+                  "https://openalex.org/I19820366"
+                ],
+                "ror": "https://ror.org/034t30j35",
+                "type": "government"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shandong Institute of Automation",
+                "id": "https://openalex.org/I4210094879",
+                "lineage": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I4210142748"
+                ],
+                "ror": "https://ror.org/00qdtba35",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+            ],
+            "raw_author_name": "Nan Xu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I19820366"
+                ],
+                "raw_affiliation_string": "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+              }
+            ],
+            "author": {
+              "display_name": "Xiaobo Li",
+              "id": "https://openalex.org/A5100318737",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Chinese Academy of Sciences",
+                "id": "https://openalex.org/I19820366",
+                "lineage": [
+                  "https://openalex.org/I19820366"
+                ],
+                "ror": "https://ror.org/034t30j35",
+                "type": "government"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shandong Institute of Automation",
+                "id": "https://openalex.org/I4210094879",
+                "lineage": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I4210142748"
+                ],
+                "ror": "https://ror.org/00qdtba35",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+            ],
+            "raw_author_name": "Xiaobo Li",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I19820366"
+                ],
+                "raw_affiliation_string": "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+              }
+            ],
+            "author": {
+              "display_name": "Binqiang Zhao",
+              "id": "https://openalex.org/A5012687475",
+              "orcid": "https://orcid.org/0009-0003-3990-6694"
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Chinese Academy of Sciences",
+                "id": "https://openalex.org/I19820366",
+                "lineage": [
+                  "https://openalex.org/I19820366"
+                ],
+                "ror": "https://ror.org/034t30j35",
+                "type": "government"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shandong Institute of Automation",
+                "id": "https://openalex.org/I4210094879",
+                "lineage": [
+                  "https://openalex.org/I4210094879",
+                  "https://openalex.org/I4210142748"
+                ],
+                "ror": "https://ror.org/00qdtba35",
+                "type": "facility"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Institute of Automation, Chinese Academy of Sciences {zyh277500,zhj283587,"
+            ],
+            "raw_author_name": "Binqiang Zhao",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.18653/v1/2022.acl-long.336",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.acl-long.336",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.acl-long.336.pdf",
+          "raw_source_name": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608652",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "4892",
+          "issue": null,
+          "last_page": "4903",
+          "volume": null
+        },
+        "cited_by_count": 62,
+        "display_name": "A Contrastive Framework for Learning Sentence Representations from Pairwise and Triple-wise Perspective in Angular Space",
+        "doi": "https://doi.org/10.18653/v1/2022.acl-long.336",
+        "id": "https://openalex.org/W4285296644",
+        "ids": {
+          "doi": "https://doi.org/10.18653/v1/2022.acl-long.336",
+          "openalex": "https://openalex.org/W4285296644"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://aclanthology.org/2022.acl-long.336.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.18653/v1/2022.acl-long.336",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.acl-long.336",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.acl-long.336.pdf",
+          "raw_source_name": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363608652",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2022-01-01",
+        "publication_year": 2022,
+        "referenced_works": [
+          "https://openalex.org/W131533222",
+          "https://openalex.org/W2014902591",
+          "https://openalex.org/W2028175314",
+          "https://openalex.org/W2114524997",
+          "https://openalex.org/W2126400076",
+          "https://openalex.org/W2133458109",
+          "https://openalex.org/W2152180407",
+          "https://openalex.org/W2157364932",
+          "https://openalex.org/W2160660844",
+          "https://openalex.org/W2163455955",
+          "https://openalex.org/W2250539671",
+          "https://openalex.org/W2250790822",
+          "https://openalex.org/W2251861449",
+          "https://openalex.org/W2251939518",
+          "https://openalex.org/W2462305634",
+          "https://openalex.org/W2520774990",
+          "https://openalex.org/W2555897561",
+          "https://openalex.org/W2605035112",
+          "https://openalex.org/W2786464815",
+          "https://openalex.org/W2790235966",
+          "https://openalex.org/W2962898354",
+          "https://openalex.org/W2963026686",
+          "https://openalex.org/W2963341956",
+          "https://openalex.org/W2963466847",
+          "https://openalex.org/W2963804993",
+          "https://openalex.org/W2965373594",
+          "https://openalex.org/W2969985801",
+          "https://openalex.org/W2970641574",
+          "https://openalex.org/W2979826702",
+          "https://openalex.org/W3005680577",
+          "https://openalex.org/W3037857491",
+          "https://openalex.org/W3100652389",
+          "https://openalex.org/W3104033643",
+          "https://openalex.org/W3105816068",
+          "https://openalex.org/W3118062200",
+          "https://openalex.org/W3122838366",
+          "https://openalex.org/W3154229486",
+          "https://openalex.org/W3156636935",
+          "https://openalex.org/W3173783447",
+          "https://openalex.org/W3174113198",
+          "https://openalex.org/W3175362188",
+          "https://openalex.org/W3176047188",
+          "https://openalex.org/W4287646898",
+          "https://openalex.org/W4288089799",
+          "https://openalex.org/W4292779060",
+          "https://openalex.org/W4294170691"
+        ],
+        "referenced_works_count": 46,
+        "title": "A Contrastive Framework for Learning Sentence Representations from Pairwise and Triple-wise Perspective in Angular Space",
+        "type": "conference-paper"
+      },
+      {
+        "abstract_inverted_index": {
+          "(STS)": [
+            46
+          ],
+          "1000": [
+            141
+          ],
+          "8%": [
+            107
+          ],
+          "And": [
+            120
+          ],
+          "BERT": [
+            68
+          ],
+          "BERT-based": [
+            14
+          ],
+          "BERT-derived": [
+            87
+          ],
+          "By": [
+            75
+          ],
+          "ConSERT": [
+            81,
+            104,
+            135
+          ],
+          "ConSERT,": [
+            53
+          ],
+          "Contrastive": [
+            55
+          ],
+          "Experiments": [
+            98
+          ],
+          "Framework": [
+            56
+          ],
+          "In": [
+            48
+          ],
+          "Learning": [
+            0
+          ],
+          "Moreover,": [
+            134
+          ],
+          "NLI": [
+            124
+          ],
+          "Representation": [
+            60
+          ],
+          "SBERT-NLI.": [
+            119
+          ],
+          "SEntence": [
+            59
+          ],
+          "STS": [
+            100,
+            132
+          ],
+          "Self-Supervised": [
+            58
+          ],
+          "Though": [
+            13
+          ],
+          "Transfer,": [
+            61
+          ],
+          "a": [
+            5,
+            38,
+            54
+          ],
+          "achieve": [
+            18,
+            127
+          ],
+          "achieves": [
+            105
+          ],
+          "adopts": [
+            63
+          ],
+          "an": [
+            70,
+            106
+          ],
+          "and": [
+            35,
+            72,
+            90
+          ],
+          "applicable": [
+            94
+          ],
+          "are": [
+            30
+          ],
+          "available,": [
+            143
+          ],
+          "be": [
+            33
+          ],
+          "benefits": [
+            4
+          ],
+          "collapse": [
+            84
+          ],
+          "collapsed": [
+            34
+          ],
+          "comparable": [
+            115,
+            137
+          ],
+          "contrastive": [
+            64
+          ],
+          "data": [
+            148
+          ],
+          "datasets": [
+            101
+          ],
+          "demonstrate": [
+            102
+          ],
+          "derived": [
+            27
+          ],
+          "downstream": [
+            23,
+            96
+          ],
+          "effective": [
+            73
+          ],
+          "even": [
+            114
+          ],
+          "fine-tune": [
+            67
+          ],
+          "for": [
+            57,
+            95
+          ],
+          "further": [
+            122
+          ],
+          "high": [
+            19
+          ],
+          "high-quality": [
+            1
+          ],
+          "improvement": [
+            109
+          ],
+          "in": [
+            69,
+            147
+          ],
+          "incorporating": [
+            123
+          ],
+          "issue": [
+            85
+          ],
+          "its": [
+            145
+          ],
+          "language": [
+            10,
+            16
+          ],
+          "learning": [
+            65
+          ],
+          "make": [
+            91
+          ],
+          "making": [
+            76
+          ],
+          "many": [
+            22
+          ],
+          "models": [
+            17
+          ],
+          "more": [
+            93
+          ],
+          "native": [
+            26
+          ],
+          "natural": [
+            9
+          ],
+          "new": [
+            128
+          ],
+          "obtains": [
+            136
+          ],
+          "of": [
+            8,
+            78,
+            86
+          ],
+          "on": [
+            21,
+            41,
+            99,
+            131
+          ],
+          "only": [
+            140
+          ],
+          "over": [
+            110
+          ],
+          "paper,": [
+            50
+          ],
+          "performance": [
+            20,
+            40,
+            130
+          ],
+          "poor": [
+            39
+          ],
+          "pre-trained": [
+            15
+          ],
+          "present": [
+            52
+          ],
+          "previous": [
+            112
+          ],
+          "processing": [
+            11
+          ],
+          "produce": [
+            37
+          ],
+          "proved": [
+            31
+          ],
+          "range": [
+            7
+          ],
+          "relative": [
+            108
+          ],
+          "representations": [
+            3,
+            29,
+            89
+          ],
+          "results": [
+            138
+          ],
+          "robustness": [
+            146
+          ],
+          "samples": [
+            142
+          ],
+          "scarcity": [
+            149
+          ],
+          "scenarios.": [
+            150
+          ],
+          "semantic": [
+            43
+          ],
+          "sentence": [
+            2,
+            28,
+            88
+          ],
+          "showing": [
+            144
+          ],
+          "similarity": [
+            45
+          ],
+          "solves": [
+            82
+          ],
+          "state-of-the-art": [
+            129
+          ],
+          "state-of-the-art,": [
+            113
+          ],
+          "supervised": [
+            118
+          ],
+          "supervision,": [
+            125
+          ],
+          "tasks,": [
+            24
+          ],
+          "tasks.": [
+            12,
+            47,
+            97,
+            133
+          ],
+          "texts,": [
+            80
+          ],
+          "textual": [
+            44
+          ],
+          "that": [
+            62,
+            103
+          ],
+          "the": [
+            25,
+            42,
+            83,
+            111,
+            117
+          ],
+          "them": [
+            92
+          ],
+          "this": [
+            49
+          ],
+          "thus": [
+            36
+          ],
+          "to": [
+            32,
+            66,
+            116
+          ],
+          "unlabeled": [
+            79
+          ],
+          "unsupervised": [
+            71
+          ],
+          "use": [
+            77
+          ],
+          "way.": [
+            74
+          ],
+          "we": [
+            51,
+            126
+          ],
+          "when": [
+            121
+          ],
+          "wide": [
+            6
+          ],
+          "with": [
+            139
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Association for Computational Linguistics 2021",
+              "id": "https://openalex.org/A5125700263",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Association for Computational Linguistics 2021",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Yuanmeng Yan",
+              "id": "https://openalex.org/A5030878947",
+              "orcid": "https://orcid.org/0000-0002-0400-4522"
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Yan, Yuanmeng",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": null,
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+        "doi": null,
+        "id": "https://openalex.org/W7130620773",
+        "ids": {
+          "openalex": "https://openalex.org/W7130620773"
+        },
+        "is_retracted": false,
+        "language": null,
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null
+        },
+        "primary_location": {
+          "id": "pmh:doi:10.48448/eavw-4q60",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": null,
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Conference talk",
+          "source": {
+            "display_name": "Open MIND",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4406922384",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2021-01-01",
+        "publication_year": 2021,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+        "type": "other"
+      },
+      {
+        "abstract_inverted_index": {
+          "(DSRE)": [
+            21
+          ],
+          "(HiCLRE)": [
+            54
+          ],
+          "Adversarial": [
+            120
+          ],
+          "Contrastive": [
+            46
+          ],
+          "DSRE": [
+            133
+          ],
+          "Distant": [
+            0
+          ],
+          "Distantly": [
+            50
+          ],
+          "Dynamic": [
+            118
+          ],
+          "Experiments": [
+            122
+          ],
+          "Extraction": [
+            53
+          ],
+          "Framework": [
+            48
+          ],
+          "Gradient": [
+            119
+          ],
+          "Hi-CLRE": [
+            125
+          ],
+          "Hierarchical": [
+            45
+          ],
+          "In": [
+            39
+          ],
+          "Learning": [
+            47
+          ],
+          "Meanwhile,": [
+            96
+          ],
+          "Multi-Granularity": [
+            94
+          ],
+          "Perturbation.": [
+            121
+          ],
+          "Previous": [
+            14
+          ],
+          "Recontextualization.": [
+            95
+          ],
+          "Relation": [
+            52
+          ],
+          "Specifically,": [
+            69
+          ],
+          "Supervised": [
+            51
+          ],
+          "a": [
+            44,
+            72,
+            111
+          ],
+          "adapting": [
+            88
+          ],
+          "also": [
+            101
+          ],
+          "and": [
+            65
+          ],
+          "any": [
+            4
+          ],
+          "are": [
+            100
+          ],
+          "assumes": [
+            2
+          ],
+          "augmentation": [
+            115
+          ],
+          "bag-level": [
+            28
+          ],
+          "baselines": [
+            129
+          ],
+          "containing": [
+            6
+          ],
+          "context-aware": [
+            85
+          ],
+          "contrastive": [
+            108
+          ],
+          "cross": [
+            37,
+            80
+          ],
+          "data": [
+            114
+          ],
+          "datasets.": [
+            134
+          ],
+          "de-noising": [
+            84
+          ],
+          "demonstrate": [
+            123
+          ],
+          "denoising": [
+            29
+          ],
+          "distantly": [
+            17
+          ],
+          "dynamic": [
+            112
+          ],
+          "entity": [
+            9
+          ],
+          "existing": [
+            90
+          ],
+          "explicit": [
+            34
+          ],
+          "extraction": [
+            20
+          ],
+          "fine-grained": [
+            67
+          ],
+          "focus": [
+            24
+          ],
+          "for": [
+            49,
+            107
+          ],
+          "framework": [
+            76
+          ],
+          "generally": [
+            23
+          ],
+          "generating": [
+            82
+          ],
+          "global": [
+            62
+          ],
+          "gradient-based": [
+            113
+          ],
+          "hierarchical": [
+            74
+          ],
+          "identical": [
+            12
+          ],
+          "in": [
+            103,
+            130
+          ],
+          "independently,": [
+            31
+          ],
+          "information": [
+            64
+          ],
+          "integrate": [
+            60
+          ],
+          "interact": [
+            78
+          ],
+          "interaction": [
+            35
+          ],
+          "interaction.": [
+            68
+          ],
+          "learning": [
+            75,
+            109
+          ],
+          "level": [
+            106
+          ],
+          "levels,": [
+            81
+          ],
+          "levels.": [
+            38
+          ],
+          "local": [
+            66
+          ],
+          "mainstream": [
+            132
+          ],
+          "multihead": [
+            91
+          ],
+          "named": [
+            93,
+            117
+          ],
+          "neglecting": [
+            32
+          ],
+          "noisy": [
+            57
+          ],
+          "of": [
+            16
+          ],
+          "on": [
+            25
+          ],
+          "or": [
+            27
+          ],
+          "outperforms": [
+            127
+          ],
+          "pairs": [
+            10
+          ],
+          "paper,": [
+            41
+          ],
+          "positive": [
+            98
+          ],
+          "propose": [
+            43,
+            71
+          ],
+          "provided": [
+            102
+          ],
+          "pseudo": [
+            97
+          ],
+          "reduce": [
+            56
+          ],
+          "reflects": [
+            11
+          ],
+          "relation": [
+            19
+          ],
+          "relationships.": [
+            13
+          ],
+          "representations": [
+            86
+          ],
+          "same": [
+            8
+          ],
+          "samples": [
+            99
+          ],
+          "self-attention,": [
+            92
+          ],
+          "sentence": [
+            5
+          ],
+          "sentence-level": [
+            26
+          ],
+          "sentences,": [
+            58
+          ],
+          "significantly": [
+            126
+          ],
+          "specific": [
+            105
+          ],
+          "strategy,": [
+            116
+          ],
+          "strong": [
+            128
+          ],
+          "structural": [
+            63
+          ],
+          "supervised": [
+            18
+          ],
+          "supervision": [
+            1
+          ],
+          "task": [
+            22
+          ],
+          "techniques": [
+            30
+          ],
+          "that": [
+            3,
+            124
+          ],
+          "the": [
+            7,
+            33,
+            61,
+            83,
+            89,
+            104
+          ],
+          "this": [
+            40
+          ],
+          "three-level": [
+            73
+          ],
+          "to": [
+            55,
+            77
+          ],
+          "various": [
+            131
+          ],
+          "via": [
+            87,
+            110
+          ],
+          "we": [
+            42,
+            70
+          ],
+          "which": [
+            59
+          ],
+          "with": [
+            36,
+            79
+          ],
+          "works": [
+            15
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I66867065"
+                ],
+                "raw_affiliation_string": "School of Computer Science and Technology, East China Normal University"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210139618"
+                ],
+                "raw_affiliation_string": "Shanghai Key Laboratory of Trsustworthy Computing"
+              }
+            ],
+            "author": {
+              "display_name": "Dongyang Li",
+              "id": "https://openalex.org/A5100459326",
+              "orcid": "https://orcid.org/0000-0003-0818-2526"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Shanghai Key Laboratory of Trustworthy Computing",
+                "id": "https://openalex.org/I4210139618",
+                "lineage": [
+                  "https://openalex.org/I4210139618"
+                ],
+                "ror": "https://ror.org/030qbr085",
+                "type": "facility"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "East China Normal University",
+                "id": "https://openalex.org/I66867065",
+                "lineage": [
+                  "https://openalex.org/I66867065"
+                ],
+                "ror": "https://ror.org/02n96ep67",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Computer Science and Technology, East China Normal University",
+              "Shanghai Key Laboratory of Trsustworthy Computing"
+            ],
+            "raw_author_name": "Dongyang Li",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210095624"
+                ],
+                "raw_affiliation_string": "Alibaba Group"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I66867065"
+                ],
+                "raw_affiliation_string": "School of Software Engineering, East China Normal University"
+              }
+            ],
+            "author": {
+              "display_name": "Taolin Zhang",
+              "id": "https://openalex.org/A5041581408",
+              "orcid": "https://orcid.org/0009-0006-2441-2861"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Alibaba Group (United States)",
+                "id": "https://openalex.org/I4210095624",
+                "lineage": [
+                  "https://openalex.org/I4210095624",
+                  "https://openalex.org/I45928872"
+                ],
+                "ror": "https://ror.org/00rn0m335",
+                "type": "company"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "East China Normal University",
+                "id": "https://openalex.org/I66867065",
+                "lineage": [
+                  "https://openalex.org/I66867065"
+                ],
+                "ror": "https://ror.org/02n96ep67",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Alibaba Group",
+              "School of Software Engineering, East China Normal University"
+            ],
+            "raw_author_name": "Taolin Zhang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I66867065"
+                ],
+                "raw_affiliation_string": "School of Computer Science and Technology, East China Normal University"
+              }
+            ],
+            "author": {
+              "display_name": "Nan Hu",
+              "id": "https://openalex.org/A5050830339",
+              "orcid": "https://orcid.org/0000-0003-0573-660X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "East China Normal University",
+                "id": "https://openalex.org/I66867065",
+                "lineage": [
+                  "https://openalex.org/I66867065"
+                ],
+                "ror": "https://ror.org/02n96ep67",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Computer Science and Technology, East China Normal University"
+            ],
+            "raw_author_name": "Nan Hu",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210095624"
+                ],
+                "raw_affiliation_string": "Alibaba Group"
+              }
+            ],
+            "author": {
+              "display_name": "Chengyu Wang",
+              "id": "https://openalex.org/A5100373451",
+              "orcid": "https://orcid.org/0000-0003-1010-9678"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "Alibaba Group (United States)",
+                "id": "https://openalex.org/I4210095624",
+                "lineage": [
+                  "https://openalex.org/I4210095624",
+                  "https://openalex.org/I45928872"
+                ],
+                "ror": "https://ror.org/00rn0m335",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Alibaba Group"
+            ],
+            "raw_author_name": "Chengyu Wang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I66867065"
+                ],
+                "raw_affiliation_string": "School of Computer Science and Technology, East China Normal University"
+              },
+              {
+                "institution_ids": [],
+                "raw_affiliation_string": "Shanghai Research Institute for Intelligent Autonomous Systems"
+              }
+            ],
+            "author": {
+              "display_name": "Xiaofeng He",
+              "id": "https://openalex.org/A5104093437",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "East China Normal University",
+                "id": "https://openalex.org/I66867065",
+                "lineage": [
+                  "https://openalex.org/I66867065"
+                ],
+                "ror": "https://ror.org/02n96ep67",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "School of Computer Science and Technology, East China Normal University",
+              "Shanghai Research Institute for Intelligent Autonomous Systems"
+            ],
+            "raw_author_name": "Xiaofeng He",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.18653/v1/2022.findings-acl.202",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.findings-acl.202",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.findings-acl.202.pdf",
+          "raw_source_name": "Findings of the Association for Computational Linguistics: ACL 2022",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Findings of the Association for Computational Linguistics: ACL 2022",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363605144",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "2567",
+          "issue": null,
+          "last_page": "2578",
+          "volume": null
+        },
+        "cited_by_count": 37,
+        "display_name": "HiCLRE: A Hierarchical Contrastive Learning Framework for Distantly Supervised Relation Extraction",
+        "doi": "https://doi.org/10.18653/v1/2022.findings-acl.202",
+        "id": "https://openalex.org/W4221150603",
+        "ids": {
+          "doi": "https://doi.org/10.18653/v1/2022.findings-acl.202",
+          "openalex": "https://openalex.org/W4221150603"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": false,
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://aclanthology.org/2022.findings-acl.202.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.18653/v1/2022.findings-acl.202",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/2022.findings-acl.202",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://aclanthology.org/2022.findings-acl.202.pdf",
+          "raw_source_name": "Findings of the Association for Computational Linguistics: ACL 2022",
+          "raw_type": "proceedings-article",
+          "source": {
+            "display_name": "Findings of the Association for Computational Linguistics: ACL 2022",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4363605144",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "conference"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2022-01-01",
+        "publication_year": 2022,
+        "referenced_works": [
+          "https://openalex.org/W115166160",
+          "https://openalex.org/W174427690",
+          "https://openalex.org/W1577668191",
+          "https://openalex.org/W1604644367",
+          "https://openalex.org/W2107598941",
+          "https://openalex.org/W2132679783",
+          "https://openalex.org/W2138621090",
+          "https://openalex.org/W2152790380",
+          "https://openalex.org/W2181629536",
+          "https://openalex.org/W2187089797",
+          "https://openalex.org/W2251135946",
+          "https://openalex.org/W2406945108",
+          "https://openalex.org/W2515462165",
+          "https://openalex.org/W2768282280",
+          "https://openalex.org/W2796801810",
+          "https://openalex.org/W2807789532",
+          "https://openalex.org/W2891417293",
+          "https://openalex.org/W2931010691",
+          "https://openalex.org/W2944917969",
+          "https://openalex.org/W2951903716",
+          "https://openalex.org/W2952402849",
+          "https://openalex.org/W2953044594",
+          "https://openalex.org/W2962995645",
+          "https://openalex.org/W2963341956",
+          "https://openalex.org/W2964022985",
+          "https://openalex.org/W2964317478",
+          "https://openalex.org/W2971296908",
+          "https://openalex.org/W2996837774",
+          "https://openalex.org/W3015001695",
+          "https://openalex.org/W3034397670",
+          "https://openalex.org/W3034617555",
+          "https://openalex.org/W3034758281",
+          "https://openalex.org/W3034760557",
+          "https://openalex.org/W3034862985",
+          "https://openalex.org/W3034987253",
+          "https://openalex.org/W3035309410",
+          "https://openalex.org/W3035736465",
+          "https://openalex.org/W3114632476",
+          "https://openalex.org/W3118062200",
+          "https://openalex.org/W3153655254",
+          "https://openalex.org/W3156636935",
+          "https://openalex.org/W3167044114",
+          "https://openalex.org/W3173169192",
+          "https://openalex.org/W3174244822",
+          "https://openalex.org/W3175032203",
+          "https://openalex.org/W3175362188",
+          "https://openalex.org/W3176148706",
+          "https://openalex.org/W4297808394",
+          "https://openalex.org/W4385245566"
+        ],
+        "referenced_works_count": 49,
+        "title": "HiCLRE: A Hierarchical Contrastive Learning Framework for Distantly Supervised Relation Extraction",
+        "type": "conference-paper"
+      }
+    ]
+  },
+  "response_hash": "9efb16a2559ac9a0c9875d374506770443d2ba54c5f78f9946546c0c869b4e89",
+  "retrieved_at": "2026-07-16T06:57:26Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

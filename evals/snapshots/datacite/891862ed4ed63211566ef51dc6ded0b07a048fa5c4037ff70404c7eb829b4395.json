@@ -1,0 +1,166 @@
+{
+  "endpoint": "dois",
+  "request_key": "891862ed4ed63211566ef51dc6ded0b07a048fa5c4037ff70404c7eb829b4395",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self\\-Supervised Representation Learning From Videos for Facial Action Unit Detection"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2024-03-07T02:25:16Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Yong",
+              "name": "Li, Yong",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Shan",
+              "givenName": "Shiguang",
+              "name": "Shan, Shiguang",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2024-03-06T01:49:28Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2024-03-07T01:11:07Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2024-03",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2024",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Facial action unit (AU) detection, aiming to classify AU present in the facial image, has long suffered from insufficient AU annotations. In this paper, we aim to mitigate this data scarcity issue by learning AU representations from a large number of unlabelled facial videos in a contrastive learning paradigm. We formulate the self-supervised AU representation learning signals in two-fold: (1) AU representation should be frame-wisely discriminative within a short video clip; (2) Facial frames sampled from different identities but show analogous facial AUs should have consistent AU representations. As to achieve these goals, we propose to contrastively learn the AU representation within a video clip and devise a cross-identity reconstruction mechanism to learn the person-independent representations. Specially, we adopt a margin-based temporal contrastive learning paradigm to perceive the temporal AU coherence and evolution characteristics within a clip that consists of consecutive input facial frames. Moreover, the cross-identity reconstruction mechanism facilitates pushing the faces from different identities but show analogous AUs close in the latent embedding space. Experimental results on three public AU datasets demonstrate that the learned AU representation is discriminative for AU detection. Our method outperforms other contrastive learning methods and significantly closes the performance gap between the self-supervised and supervised AU detection approaches.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2403.03400",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2403.03400",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2024,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2024-03-07T02:25:17Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.1109/tip.2023.3279978",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Contrastive Learning of Person-independent Representations for Facial Action Unit Detection"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2024-03-07T02:25:17Z",
+          "url": "https://arxiv.org/abs/2403.03400",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2403.03400",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Self%5C-Supervised+Representation+Learning+From+Videos+for+Facial+Action+Unit+Detection&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "9e9128a40fc1e54b4dbc6a96773c2cadc4a401719b216485c9656e806931e1e5",
+  "retrieved_at": "2026-07-16T06:58:26Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

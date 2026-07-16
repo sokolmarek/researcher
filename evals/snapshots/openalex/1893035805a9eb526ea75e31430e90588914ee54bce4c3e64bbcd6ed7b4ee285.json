@@ -1,0 +1,4576 @@
+{
+  "endpoint": "works",
+  "request_key": "1893035805a9eb526ea75e31430e90588914ee54bce4c3e64bbcd6ed7b4ee285",
+  "request_params": {
+    "per-page": 10,
+    "search": "Multitask joint strategies of self-supervised representation learning on biomedical networ",
+    "select": "id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index"
+  },
+  "response_body": {
+    "group_by": [],
+    "meta": {
+      "cost_usd": 0.001,
+      "count": 5,
+      "db_response_time_ms": 100,
+      "groups_count": null,
+      "page": 1,
+      "per_page": 10,
+      "x_query": {
+        "oql": "works where full text has (Multitask joint strategies of self-supervised representation learning on biomedical networ)",
+        "oqo": {
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "operator": "has",
+              "value": "Multitask joint strategies of self-supervised representation learning on biomedical networ"
+            }
+          ],
+          "get_rows": "works",
+          "per_page": 10,
+          "select": [
+            "id",
+            "doi",
+            "ids",
+            "title",
+            "display_name",
+            "publication_year",
+            "publication_date",
+            "type",
+            "language",
+            "authorships",
+            "primary_location",
+            "best_oa_location",
+            "open_access",
+            "biblio",
+            "cited_by_count",
+            "cited_by_api_url",
+            "referenced_works",
+            "referenced_works_count",
+            "is_retracted",
+            "abstract_inverted_index"
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Multitask joint strategies of self-supervised representation learning on biomedical networ&select=id,doi,ids,title,display_name,publication_year,publication_date,type,language,authorships,primary_location,best_oa_location,open_access,biblio,cited_by_count,cited_by_api_url,referenced_works,referenced_works_count,is_retracted,abstract_inverted_index&per_page=10"
+      }
+    },
+    "results": [
+      {
+        "abstract_inverted_index": {
+          "(AI),": [
+            40
+          ],
+          "(DL),": [
+            106
+          ],
+          "(FL),": [
+            109
+          ],
+          "(IoT),": [
+            45
+          ],
+          "(LLMs)": [
+            120
+          ],
+          "(NLP),": [
+            115
+          ],
+          "Artificial": [
+            38
+          ],
+          "Blockchain,": [
+            111,
+            176
+          ],
+          "DL,": [
+            173
+          ],
+          "Deep": [
+            104
+          ],
+          "FL,": [
+            174
+          ],
+          "Federated": [
+            107
+          ],
+          "ICT": [
+            123
+          ],
+          "In": [
+            31
+          ],
+          "Intelligence": [
+            39
+          ],
+          "Internet": [
+            42
+          ],
+          "IoT,": [
+            110,
+            175
+          ],
+          "LLMs": [
+            179
+          ],
+          "Language": [
+            113
+          ],
+          "Learning": [
+            105,
+            108
+          ],
+          "NLP,": [
+            177
+          ],
+          "Natural": [
+            112
+          ],
+          "Our": [
+            162
+          ],
+          "Processing": [
+            114
+          ],
+          "Smart": [
+            0
+          ],
+          "The": [
+            76
+          ],
+          "Things": [
+            44
+          ],
+          "This": [
+            95
+          ],
+          "We": [
+            128
+          ],
+          "a": [
+            84
+          ],
+          "advancement": [
+            147
+          ],
+          "aim": [
+            129
+          ],
+          "an": [
+            166
+          ],
+          "analytics,": [
+            48
+          ],
+          "and": [
+            28,
+            49,
+            51,
+            73,
+            101,
+            116,
+            146,
+            178,
+            184
+          ],
+          "applications": [
+            60,
+            102
+          ],
+          "areas": [
+            21
+          ],
+          "as": [
+            3,
+            34,
+            138
+          ],
+          "become": [
+            55
+          ],
+          "big": [
+            46
+          ],
+          "challenges": [
+            171
+          ],
+          "challenges,": [
+            64
+          ],
+          "cities": [
+            1
+          ],
+          "cities,": [
+            150
+          ],
+          "cities.": [
+            127
+          ],
+          "city": [
+            59
+          ],
+          "components": [
+            5
+          ],
+          "computing": [
+            53
+          ],
+          "confidential": [
+            72
+          ],
+          "contexts,": [
+            183
+          ],
+          "culminates": [
+            164
+          ],
+          "data": [
+            47
+          ],
+          "data.": [
+            75
+          ],
+          "development.": [
+            94
+          ],
+          "directions.": [
+            191
+          ],
+          "disclosure": [
+            70
+          ],
+          "discourse": [
+            163
+          ],
+          "driving": [
+            155
+          ],
+          "dynamic": [
+            90
+          ],
+          "edge": [
+            52
+          ],
+          "efficiently": [
+            23
+          ],
+          "elements": [
+            140
+          ],
+          "elevating": [
+            11
+          ],
+          "emerging": [
+            35,
+            80
+          ],
+          "expansion": [
+            18
+          ],
+          "exploration": [
+            167
+          ],
+          "explores": [
+            97
+          ],
+          "face": [
+            180
+          ],
+          "facilitating": [
+            15
+          ],
+          "fog": [
+            50
+          ],
+          "for": [
+            68
+          ],
+          "formidable": [
+            170
+          ],
+          "foundational": [
+            139
+          ],
+          "future": [
+            190
+          ],
+          "grapple": [
+            61
+          ],
+          "has": [
+            82
+          ],
+          "have": [
+            54
+          ],
+          "in": [
+            6,
+            87,
+            121,
+            154
+          ],
+          "including": [
+            65
+          ],
+          "increasingly": [
+            56
+          ],
+          "innovation": [
+            156
+          ],
+          "innovations.": [
+            30
+          ],
+          "insights": [
+            187
+          ],
+          "integration": [
+            78
+          ],
+          "into": [
+            188
+          ],
+          "language": [
+            118
+          ],
+          "large": [
+            117
+          ],
+          "like": [
+            37
+          ],
+          "living": [
+            13
+          ],
+          "managing": [
+            24
+          ],
+          "milieu.": [
+            161
+          ],
+          "models": [
+            119
+          ],
+          "of": [
+            10,
+            19,
+            43,
+            71,
+            79,
+            92,
+            103,
+            135,
+            148,
+            168
+          ],
+          "offer": [
+            186
+          ],
+          "ongoing": [
+            8
+          ],
+          "optimizing": [
+            122
+          ],
+          "pace": [
+            91
+          ],
+          "paper": [
+            96
+          ],
+          "pivotal": [
+            4
+          ],
+          "played": [
+            83
+          ],
+          "potential": [
+            67,
+            100,
+            134,
+            189
+          ],
+          "prevalent,": [
+            57
+          ],
+          "processes": [
+            124
+          ],
+          "pursuit": [
+            9
+          ],
+          "rapid": [
+            17
+          ],
+          "realization": [
+            145
+          ],
+          "regard,": [
+            33
+          ],
+          "resources": [
+            25
+          ],
+          "role": [
+            86
+          ],
+          "scalable": [
+            29
+          ],
+          "seamless": [
+            77
+          ],
+          "sensitive": [
+            74
+          ],
+          "significance": [
+            153
+          ],
+          "smart": [
+            58,
+            126,
+            149
+          ],
+          "spotlight": [
+            131
+          ],
+          "stand": [
+            2
+          ],
+          "standards,": [
+            14
+          ],
+          "strengthen": [
+            143
+          ],
+          "substantial": [
+            99
+          ],
+          "sustainable": [
+            27
+          ],
+          "sustaining": [
+            88
+          ],
+          "technically": [
+            142
+          ],
+          "technologies": [
+            36,
+            81,
+            137
+          ],
+          "that": [
+            141,
+            172
+          ],
+          "the": [
+            7,
+            16,
+            41,
+            66,
+            89,
+            98,
+            132,
+            144,
+            169
+          ],
+          "their": [
+            93,
+            152
+          ],
+          "these": [
+            136,
+            182
+          ],
+          "this": [
+            32,
+            158
+          ],
+          "through": [
+            26
+          ],
+          "to": [
+            130
+          ],
+          "transformative": [
+            159
+          ],
+          "unauthorized": [
+            69
+          ],
+          "underscoring": [
+            151
+          ],
+          "urban": [
+            12,
+            20,
+            160
+          ],
+          "various": [
+            63
+          ],
+          "vast": [
+            133
+          ],
+          "vital": [
+            85
+          ],
+          "we": [
+            185
+          ],
+          "while": [
+            22
+          ],
+          "with": [
+            62,
+            165
+          ],
+          "within": [
+            125,
+            157,
+            181
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Amin Ullah",
+              "id": "https://openalex.org/A5075042717",
+              "orcid": "https://orcid.org/0000-0001-7538-2689"
+            },
+            "author_position": "first",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Ullah, Amin",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Guilin Qi",
+              "id": "https://openalex.org/A5102803694",
+              "orcid": "https://orcid.org/0000-0002-1957-6961"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Qi, Guilin",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Saddam Hussain",
+              "id": "https://openalex.org/A5100698089",
+              "orcid": "https://orcid.org/0000-0003-1523-1330"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Hussain, Saddam",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Irfan Ullah",
+              "id": "https://openalex.org/A5043024828",
+              "orcid": "https://orcid.org/0000-0001-6992-6723"
+            },
+            "author_position": "middle",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Ullah, Irfan",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [],
+            "author": {
+              "display_name": "Ali, Zafar",
+              "id": null,
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [],
+            "institutions": [],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [],
+            "raw_author_name": "Ali, Zafar",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2402.14596",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2402.14596",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2402.14596",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 20,
+        "display_name": "The Role of LLMs in Sustainable Smart Cities: Applications, Challenges, and Future Directions",
+        "doi": "https://doi.org/10.48550/arxiv.2402.14596",
+        "id": "https://openalex.org/W4392120948",
+        "ids": {
+          "doi": "https://doi.org/10.48550/arxiv.2402.14596",
+          "openalex": "https://openalex.org/W4392120948"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2402.14596"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2402.14596",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://arxiv.org/abs/2402.14596",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://arxiv.org/pdf/2402.14596",
+          "raw_source_name": "",
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2024-02-07",
+        "publication_year": 2024,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "The Role of LLMs in Sustainable Smart Cities: Applications, Challenges, and Future Directions",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "(single-cell": [
+            28
+          ],
+          "ATAC-seq": [
+            87
+          ],
+          "CROP-seq.": [
+            89
+          ],
+          "Engineering": [
+            32
+          ],
+          "For": [
+            76
+          ],
+          "In": [
+            90,
+            134
+          ],
+          "Information-based": [
+            30
+          ],
+          "Moreover,": [
+            110
+          ],
+          "Mutual": [
+            29
+          ],
+          "Network": [
+            31
+          ],
+          "Portal,": [
+            139
+          ],
+          "Ranger),": [
+            33
+          ],
+          "SCENIC": [
+            94
+          ],
+          "Single-cell": [
+            0
+          ],
+          "T": [
+            103
+          ],
+          "To": [
+            21
+          ],
+          "Treg": [
+            107
+          ],
+          "accuracy": [
+            60
+          ],
+          "accuracy,": [
+            123
+          ],
+          "addition,": [
+            135
+          ],
+          "address": [
+            22
+          ],
+          "advantage": [
+            127
+          ],
+          "algorithms": [
+            67
+          ],
+          "an": [
+            34,
+            126,
+            140
+          ],
+          "analysis.": [
+            133
+          ],
+          "and": [
+            10,
+            16,
+            43,
+            48,
+            68,
+            88,
+            106,
+            119
+          ],
+          "as": [
+            84
+          ],
+          "both": [
+            13
+          ],
+          "by": [
+            86
+          ],
+          "cell": [
+            14,
+            17,
+            39,
+            62,
+            74,
+            104,
+            131
+          ],
+          "challenges": [
+            4
+          ],
+          "challenges,": [
+            24
+          ],
+          "closely": [
+            72
+          ],
+          "clustering": [
+            15
+          ],
+          "clustering,": [
+            40,
+            63
+          ],
+          "complicating": [
+            12
+          ],
+          "data": [
+            2,
+            132
+          ],
+          "data.": [
+            56
+          ],
+          "demonstrates": [
+            58
+          ],
+          "distinguishing": [
+            71
+          ],
+          "drivers": [
+            52,
+            100,
+            120
+          ],
+          "due": [
+            5
+          ],
+          "enables": [
+            112
+          ],
+          "establish": [
+            137
+          ],
+          "established": [
+            82
+          ],
+          "excelling": [
+            69
+          ],
+          "exhaustion": [
+            105
+          ],
+          "exploration": [
+            146
+          ],
+          "facilitate": [
+            145
+          ],
+          "factor": [
+            42,
+            99
+          ],
+          "five": [
+            65
+          ],
+          "for": [
+            37
+          ],
+          "framework": [
+            36
+          ],
+          "from": [
+            53
+          ],
+          "hidden": [
+            51
+          ],
+          "high": [
+            122
+          ],
+          "identification": [
+            49
+          ],
+          "in": [
+            61,
+            70,
+            95,
+            102,
+            128
+          ],
+          "inference": [
+            114
+          ],
+          "inference,": [
+            47,
+            78
+          ],
+          "inference.": [
+            20
+          ],
+          "inherent": [
+            8
+          ],
+          "integrative": [
+            35
+          ],
+          "interactive": [
+            141
+          ],
+          "introduce": [
+            26
+          ],
+          "involved": [
+            101
+          ],
+          "it": [
+            92
+          ],
+          "key": [
+            97
+          ],
+          "methods,": [
+            83
+          ],
+          "multimodal": [
+            129
+          ],
+          "network": [
+            19,
+            46,
+            77
+          ],
+          "networks": [
+            118
+          ],
+          "of": [
+            50,
+            115,
+            147
+          ],
+          "outperforming": [
+            64
+          ],
+          "outperforms": [
+            80
+          ],
+          "particular,": [
+            91
+          ],
+          "populations.": [
+            75
+          ],
+          "present": [
+            3
+          ],
+          "presents": [
+            125
+          ],
+          "protein": [
+            45,
+            117
+          ],
+          "related": [
+            73
+          ],
+          "results.": [
+            149
+          ],
+          "revealing": [
+            96
+          ],
+          "scMINER": [
+            27,
+            57,
+            79,
+            111,
+            138,
+            148
+          ],
+          "signaling": [
+            44,
+            116
+          ],
+          "single": [
+            130
+          ],
+          "single-cell": [
+            54
+          ],
+          "sparsity,": [
+            11
+          ],
+          "specification.": [
+            109
+          ],
+          "state-of-the-art": [
+            66
+          ],
+          "stochasticity": [
+            9
+          ],
+          "superior": [
+            59
+          ],
+          "surpasses": [
+            93
+          ],
+          "the": [
+            113
+          ],
+          "their": [
+            7
+          ],
+          "these": [
+            23
+          ],
+          "three": [
+            81
+          ],
+          "tissue": [
+            108
+          ],
+          "to": [
+            6,
+            144
+          ],
+          "tool": [
+            143
+          ],
+          "transcription": [
+            41,
+            98
+          ],
+          "transcriptomic": [
+            55
+          ],
+          "transcriptomics": [
+            1
+          ],
+          "type-specific": [
+            18
+          ],
+          "unsupervised": [
+            38
+          ],
+          "validated": [
+            85
+          ],
+          "visualization": [
+            142
+          ],
+          "we": [
+            25,
+            136
+          ],
+          "which": [
+            124
+          ],
+          "with": [
+            121
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Qingfei Pan",
+              "id": "https://openalex.org/A5013486666",
+              "orcid": "https://orcid.org/0000-0003-0243-6898"
+            },
+            "author_position": "first",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Qingfei Pan",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Liang Ding",
+              "id": "https://openalex.org/A5050394485",
+              "orcid": "https://orcid.org/0000-0002-1043-0923"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Liang Ding",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Siarhei Hladyshau",
+              "id": "https://openalex.org/A5026248632",
+              "orcid": "https://orcid.org/0000-0003-2906-8503"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Siarhei Hladyshau",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Xiangyu Yao",
+              "id": null,
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Xiangyu Yao",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Jiayu Zhou",
+              "id": null,
+              "orcid": "https://orcid.org/0009-0001-4297-9785"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Jiayu Zhou",
+            "raw_orcid": "https://orcid.org/0009-0001-4297-9785"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Lei Yan",
+              "id": "https://openalex.org/A5101763809",
+              "orcid": "https://orcid.org/0000-0003-1775-5533"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Lei Yan",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Yogesh Dhungana",
+              "id": "https://openalex.org/A5061657273",
+              "orcid": "https://orcid.org/0000-0002-4021-0075"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA",
+              "Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Yogesh Dhungana",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Immunology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Hao Shi",
+              "id": "https://openalex.org/A5079887522",
+              "orcid": "https://orcid.org/0000-0002-2796-629X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Immunology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Hao Shi",
+            "raw_orcid": "https://orcid.org/0000-0002-2796-629X"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Chenxi Qian",
+              "id": "https://openalex.org/A5070339370",
+              "orcid": "https://orcid.org/0000-0003-4815-5565"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Chenxi Qian",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210159329"
+                ],
+                "raw_affiliation_string": "Center for Molecular Medicine, Children's Hospital of Fudan University, Shanghai, 201102, P.R. China"
+              }
+            ],
+            "author": {
+              "display_name": "Xinran Dong",
+              "id": "https://openalex.org/A5000053269",
+              "orcid": "https://orcid.org/0000-0001-9868-8795"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Children's Hospital of Fudan University",
+                "id": "https://openalex.org/I4210159329",
+                "lineage": [
+                  "https://openalex.org/I4210159329"
+                ],
+                "ror": "https://ror.org/05n13be63",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Center for Molecular Medicine, Children's Hospital of Fudan University, Shanghai, 201102, P.R. China"
+            ],
+            "raw_author_name": "Xinran Dong",
+            "raw_orcid": "https://orcid.org/0000-0001-9868-8795"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Information Services, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Chad Burdyshaw",
+              "id": "https://openalex.org/A5022215907",
+              "orcid": "https://orcid.org/0000-0002-4730-1586"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Information Services, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Chad Burdyshaw",
+            "raw_orcid": "https://orcid.org/0000-0002-4730-1586"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Joao Pedro Veloso",
+              "id": "https://openalex.org/A5101194047",
+              "orcid": "https://orcid.org/0000-0002-8733-8308"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Joao Pedro Veloso",
+            "raw_orcid": "https://orcid.org/0000-0002-8733-8308"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Alireza Khatamian",
+              "id": "https://openalex.org/A5006431963",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Alireza Khatamian",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I160606119"
+                ],
+                "raw_affiliation_string": "Department of Physiology, University of Tennessee Health Science Center, Memphis, TN, 38163, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Zhen Xie",
+              "id": "https://openalex.org/A5014216586",
+              "orcid": "https://orcid.org/0000-0001-8798-9592"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "US",
+                "display_name": "University of Tennessee Health Science Center",
+                "id": "https://openalex.org/I160606119",
+                "lineage": [
+                  "https://openalex.org/I160606119"
+                ],
+                "ror": "https://ror.org/0011qv509",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA",
+              "Department of Physiology, University of Tennessee Health Science Center, Memphis, TN, 38163, USA"
+            ],
+            "raw_author_name": "Zhen Xie",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Immunology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Isabel Risch",
+              "id": "https://openalex.org/A5013437329",
+              "orcid": "https://orcid.org/0000-0003-3356-0349"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA",
+              "Department of Immunology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Isabel Risch",
+            "raw_orcid": "https://orcid.org/0000-0003-3356-0349"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Xu Yang",
+              "id": "https://openalex.org/A5101645969",
+              "orcid": "https://orcid.org/0000-0002-0398-1436"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Xu Yang",
+            "raw_orcid": "https://orcid.org/0000-0002-0398-1436"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Jiyuan Yang",
+              "id": "https://openalex.org/A5027667093",
+              "orcid": "https://orcid.org/0000-0003-0185-1133"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Jiyuan Yang",
+            "raw_orcid": "https://orcid.org/0000-0003-0185-1133"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I183067930",
+                  "https://openalex.org/I4210135742"
+                ],
+                "raw_affiliation_string": "Precision Research Center for Refractory Diseases, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, 201620, China"
+              }
+            ],
+            "author": {
+              "display_name": "Xin Huang",
+              "id": "https://openalex.org/A5083473331",
+              "orcid": "https://orcid.org/0000-0002-4252-6110"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN",
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shanghai Jiao Tong University",
+                "id": "https://openalex.org/I183067930",
+                "lineage": [
+                  "https://openalex.org/I183067930"
+                ],
+                "ror": "https://ror.org/0220qvk04",
+                "type": "education"
+              },
+              {
+                "country_code": "CN",
+                "display_name": "Shanghai First People's Hospital",
+                "id": "https://openalex.org/I4210135742",
+                "lineage": [
+                  "https://openalex.org/I4210135742"
+                ],
+                "ror": "https://ror.org/04a46mh28",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA",
+              "Precision Research Center for Refractory Diseases, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, 201620, China"
+            ],
+            "raw_author_name": "Xin Huang",
+            "raw_orcid": "https://orcid.org/0000-0002-4252-6110"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Jason Fang",
+              "id": "https://openalex.org/A5057439138",
+              "orcid": "https://orcid.org/0000-0003-3382-9539"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Jason Fang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Anuj K. Jain",
+              "id": "https://openalex.org/A5101638133",
+              "orcid": "https://orcid.org/0000-0002-3196-0747"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Anuj Jain",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Arihant Jain",
+              "id": "https://openalex.org/A5101945429",
+              "orcid": "https://orcid.org/0000-0001-9495-9789"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Arihant Jain",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Michael Rusch",
+              "id": "https://openalex.org/A5000805822",
+              "orcid": "https://orcid.org/0000-0002-5363-1848"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Michael Rusch",
+            "raw_orcid": "https://orcid.org/0000-0002-5363-1848"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Information Services, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Michael Brewer",
+              "id": "https://openalex.org/A5072161691",
+              "orcid": "https://orcid.org/0000-0002-1455-3162"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Information Services, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Michael Brewer",
+            "raw_orcid": "https://orcid.org/0000-0002-1455-3162"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Structural Biology and Developmental Neurobiology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Junmin Peng",
+              "id": "https://openalex.org/A5005061089",
+              "orcid": "https://orcid.org/0000-0003-0472-7648"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Structural Biology and Developmental Neurobiology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Junmin Peng",
+            "raw_orcid": "https://orcid.org/0000-0003-0472-7648"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Koon‐Kiu Yan",
+              "id": "https://openalex.org/A5041882348",
+              "orcid": "https://orcid.org/0000-0003-2337-485X"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Koon-Kiu Yan",
+            "raw_orcid": "https://orcid.org/0000-0003-2337-485X"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Immunology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+              }
+            ],
+            "author": {
+              "display_name": "Hongbo Chi",
+              "id": "https://openalex.org/A5084831413",
+              "orcid": "https://orcid.org/0000-0002-9997-2496"
+            },
+            "author_position": "middle",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Department of Immunology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA",
+              "Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA"
+            ],
+            "raw_author_name": "Hongbo Chi",
+            "raw_orcid": "https://orcid.org/0000-0002-9997-2496"
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA. Jiyang.Yu@STJUDE.ORG"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I1313298211"
+                ],
+                "raw_affiliation_string": "Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA. Jiyang.Yu@STJUDE.ORG"
+              }
+            ],
+            "author": {
+              "display_name": "Jiyang Yu",
+              "id": "https://openalex.org/A5101943051",
+              "orcid": "https://orcid.org/0000-0003-1244-4429"
+            },
+            "author_position": "last",
+            "countries": [
+              "US"
+            ],
+            "institutions": [
+              {
+                "country_code": "US",
+                "display_name": "St. Jude Children's Research Hospital",
+                "id": "https://openalex.org/I1313298211",
+                "lineage": [
+                  "https://openalex.org/I1313298211",
+                  "https://openalex.org/I2802152183"
+                ],
+                "ror": "https://ror.org/02r3e0967",
+                "type": "healthcare"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Department of Computational Biology, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA. Jiyang.Yu@STJUDE.ORG",
+              "Graduate School of Biomedical Sciences, St. Jude Children's Research Hospital, Memphis, TN, 38105, USA. Jiyang.Yu@STJUDE.ORG"
+            ],
+            "raw_author_name": "Jiyang Yu",
+            "raw_orcid": "https://orcid.org/0000-0003-1244-4429"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/s41467-025-59620-6",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41467-025-59620-6",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41467-025-59620-6.pdf",
+          "raw_source_name": "Nature Communications",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Communications",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S64187185",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2041-1723"
+            ],
+            "issn_l": "2041-1723",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "4305",
+          "issue": "1",
+          "last_page": "4305",
+          "volume": "16"
+        },
+        "cited_by_count": 13,
+        "display_name": "scMINER: a mutual information-based framework for clustering and hidden driver inference from single-cell transcriptomics data",
+        "doi": "https://doi.org/10.1038/s41467-025-59620-6",
+        "id": "https://openalex.org/W4410193659",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s41467-025-59620-6",
+          "openalex": "https://openalex.org/W4410193659",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/40341143"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.nature.com/articles/s41467-025-59620-6.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s41467-025-59620-6",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41467-025-59620-6",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.nature.com/articles/s41467-025-59620-6.pdf",
+          "raw_source_name": "Nature Communications",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature Communications",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S64187185",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2041-1723"
+            ],
+            "issn_l": "2041-1723",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2025-05-08",
+        "publication_year": 2025,
+        "referenced_works": [
+          "https://openalex.org/W1629621594",
+          "https://openalex.org/W1690266756",
+          "https://openalex.org/W1973094248",
+          "https://openalex.org/W1976785514",
+          "https://openalex.org/W2006617902",
+          "https://openalex.org/W2033457677",
+          "https://openalex.org/W2071128523",
+          "https://openalex.org/W2076477779",
+          "https://openalex.org/W2076513103",
+          "https://openalex.org/W2086785381",
+          "https://openalex.org/W2123480703",
+          "https://openalex.org/W2126345910",
+          "https://openalex.org/W2127048411",
+          "https://openalex.org/W2141432783",
+          "https://openalex.org/W2157009395",
+          "https://openalex.org/W2163296115",
+          "https://openalex.org/W2165558283",
+          "https://openalex.org/W2170962119",
+          "https://openalex.org/W2286142055",
+          "https://openalex.org/W2332016763",
+          "https://openalex.org/W2472255748",
+          "https://openalex.org/W2481066337",
+          "https://openalex.org/W2540833380",
+          "https://openalex.org/W2558217333",
+          "https://openalex.org/W2561884319",
+          "https://openalex.org/W2598326928",
+          "https://openalex.org/W2604240183",
+          "https://openalex.org/W2612519453",
+          "https://openalex.org/W2616922646",
+          "https://openalex.org/W2739492614",
+          "https://openalex.org/W2753232229",
+          "https://openalex.org/W2757021802",
+          "https://openalex.org/W2757234574",
+          "https://openalex.org/W2794480084",
+          "https://openalex.org/W2803394774",
+          "https://openalex.org/W2892366034",
+          "https://openalex.org/W2893493339",
+          "https://openalex.org/W2899028298",
+          "https://openalex.org/W2901292166",
+          "https://openalex.org/W2905426112",
+          "https://openalex.org/W2907783748",
+          "https://openalex.org/W2913558101",
+          "https://openalex.org/W2920901544",
+          "https://openalex.org/W2951158909",
+          "https://openalex.org/W2951506174",
+          "https://openalex.org/W2951850020",
+          "https://openalex.org/W2952535935",
+          "https://openalex.org/W2955707477",
+          "https://openalex.org/W2964315448",
+          "https://openalex.org/W2983968250",
+          "https://openalex.org/W2997831639",
+          "https://openalex.org/W3000221858",
+          "https://openalex.org/W3017924613",
+          "https://openalex.org/W3032727029",
+          "https://openalex.org/W3036077871",
+          "https://openalex.org/W3036206386",
+          "https://openalex.org/W3045872583",
+          "https://openalex.org/W3081092387",
+          "https://openalex.org/W3092767198",
+          "https://openalex.org/W3094603415",
+          "https://openalex.org/W3102641634",
+          "https://openalex.org/W3155546248",
+          "https://openalex.org/W3157806418",
+          "https://openalex.org/W3164692211",
+          "https://openalex.org/W3177020879",
+          "https://openalex.org/W3183617093",
+          "https://openalex.org/W3184143803",
+          "https://openalex.org/W3191949154",
+          "https://openalex.org/W4210840193",
+          "https://openalex.org/W4210881488",
+          "https://openalex.org/W4213108508",
+          "https://openalex.org/W4285798273",
+          "https://openalex.org/W4291201938",
+          "https://openalex.org/W4306174878",
+          "https://openalex.org/W4311114212",
+          "https://openalex.org/W4311125341",
+          "https://openalex.org/W4313585693",
+          "https://openalex.org/W4319069334",
+          "https://openalex.org/W4323319448",
+          "https://openalex.org/W4367676419",
+          "https://openalex.org/W4368364228",
+          "https://openalex.org/W4378530717",
+          "https://openalex.org/W4384198561",
+          "https://openalex.org/W4384346768",
+          "https://openalex.org/W4385975202",
+          "https://openalex.org/W4387579013",
+          "https://openalex.org/W4387880996",
+          "https://openalex.org/W4387966379",
+          "https://openalex.org/W4388541085",
+          "https://openalex.org/W4389799054",
+          "https://openalex.org/W4394582109",
+          "https://openalex.org/W4394764901",
+          "https://openalex.org/W4395670394",
+          "https://openalex.org/W6967607753"
+        ],
+        "referenced_works_count": 94,
+        "title": "scMINER: a mutual information-based framework for clustering and hidden driver inference from single-cell transcriptomics data",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "Finally,": [
+            176
+          ],
+          "Firstly,": [
+            98
+          ],
+          "However,": [
+            31
+          ],
+          "Image": [
+            0
+          ],
+          "Subsequently,": [
+            130
+          ],
+          "The": [
+            68,
+            114,
+            222
+          ],
+          "This": [
+            52,
+            149,
+            195
+          ],
+          "a": [
+            3,
+            55,
+            99,
+            131,
+            155,
+            188
+          ],
+          "ability": [
+            217
+          ],
+          "adaptive": [
+            73
+          ],
+          "adaptively": [
+            109
+          ],
+          "affected": [
+            94
+          ],
+          "an": [
+            72,
+            184
+          ],
+          "and": [
+            16,
+            28,
+            59,
+            84,
+            168,
+            204,
+            214,
+            238,
+            247,
+            257
+          ],
+          "applications": [
+            20
+          ],
+          "as": [
+            24,
+            243
+          ],
+          "based": [
+            102
+          ],
+          "been": [
+            193
+          ],
+          "by": [
+            45,
+            95,
+            140,
+            145
+          ],
+          "caused": [
+            44
+          ],
+          "clarity": [
+            58,
+            256
+          ],
+          "clearer": [
+            14
+          ],
+          "complex": [
+            66,
+            167
+          ],
+          "composite": [
+            189
+          ],
+          "conditions": [
+            48
+          ],
+          "datasets": [
+            237
+          ],
+          "deficiency": [
+            56
+          ],
+          "degradation": [
+            43,
+            171
+          ],
+          "degraded": [
+            96,
+            112,
+            128,
+            141,
+            240
+          ],
+          "deleterious": [
+            123
+          ],
+          "demonstrate": [
+            225
+          ],
+          "demonstrating": [
+            249
+          ],
+          "descriptions": [
+            143
+          ],
+          "detail": [
+            60,
+            215
+          ],
+          "devised.": [
+            194
+          ],
+          "discrimination": [
+            213
+          ],
+          "diverse": [
+            169
+          ],
+          "dynamically": [
+            156
+          ],
+          "effectively": [
+            7,
+            209
+          ],
+          "enabling": [
+            161
+          ],
+          "enhance": [
+            110,
+            180
+          ],
+          "environmental": [
+            25
+          ],
+          "environments.": [
+            67
+          ],
+          "establishment": [
+            153
+          ],
+          "even": [
+            185
+          ],
+          "execute": [
+            119
+          ],
+          "experimental": [
+            223
+          ],
+          "expert": [
+            134
+          ],
+          "extant": [
+            35
+          ],
+          "extent,": [
+            187
+          ],
+          "extreme": [
+            82
+          ],
+          "facilitates": [
+            151
+          ],
+          "fields": [
+            22
+          ],
+          "filtration": [
+            121
+          ],
+          "flexibility.": [
+            175
+          ],
+          "for": [
+            81
+          ],
+          "function": [
+            191,
+            196
+          ],
+          "fused": [
+            63,
+            220
+          ],
+          "fusion": [
+            1,
+            36,
+            76,
+            181
+          ],
+          "gate-based": [
+            132
+          ],
+          "generated": [
+            144
+          ],
+          "gradient": [
+            200
+          ],
+          "greater": [
+            174,
+            186
+          ],
+          "guided": [
+            139
+          ],
+          "has": [
+            18,
+            192
+          ],
+          "image": [
+            10,
+            42,
+            75,
+            255
+          ],
+          "image.": [
+            113,
+            129,
+            221
+          ],
+          "images": [
+            64
+          ],
+          "imaging": [
+            88
+          ],
+          "imaging,": [
+            15
+          ],
+          "improving": [
+            210
+          ],
+          "in": [
+            21,
+            49,
+            54,
+            65,
+            125,
+            177,
+            239,
+            252
+          ],
+          "inclement": [
+            46
+          ],
+          "incorporates": [
+            197
+          ],
+          "information": [
+            11,
+            172,
+            206
+          ],
+          "input": [
+            127,
+            170
+          ],
+          "integrates": [
+            8
+          ],
+          "interference": [
+            124
+          ],
+          "interference.": [
+            97
+          ],
+          "introduced,": [
+            138
+          ],
+          "is": [
+            2,
+            71,
+            79,
+            93,
+            106,
+            117
+          ],
+          "issue": [
+            40
+          ],
+          "it": [
+            17,
+            85
+          ],
+          "large": [
+            146
+          ],
+          "light,": [
+            246
+          ],
+          "loss": [
+            190,
+            203
+          ],
+          "loss,": [
+            199,
+            201,
+            207
+          ],
+          "low": [
+            245
+          ],
+          "mainstream": [
+            232
+          ],
+          "majority": [
+            33
+          ],
+          "manage": [
+            166
+          ],
+          "mechanism": [
+            136
+          ],
+          "method": [
+            70,
+            150,
+            229
+          ],
+          "methods": [
+            37,
+            233
+          ],
+          "metrics.": [
+            259
+          ],
+          "mixing": [
+            135
+          ],
+          "modal": [
+            212
+          ],
+          "model": [
+            164
+          ],
+          "models.": [
+            148
+          ],
+          "module": [
+            101
+          ],
+          "monitoring,": [
+            26
+          ],
+          "multimodal": [
+            9,
+            74
+          ],
+          "multiple": [
+            235
+          ],
+          "mutual": [
+            205
+          ],
+          "neglect": [
+            38
+          ],
+          "network": [
+            158
+          ],
+          "night": [
+            29
+          ],
+          "objective": [
+            116
+          ],
+          "obtain": [
+            13
+          ],
+          "of": [
+            34,
+            41,
+            57,
+            62,
+            122,
+            154,
+            218,
+            254
+          ],
+          "on": [
+            103,
+            234
+          ],
+          "order": [
+            178
+          ],
+          "outperforms": [
+            231
+          ],
+          "overall": [
+            163
+          ],
+          "overexposure,": [
+            248
+          ],
+          "parameters": [
+            105
+          ],
+          "performance": [
+            182,
+            251
+          ],
+          "physical": [
+            104
+          ],
+          "pivotal": [
+            4
+          ],
+          "pixel-level": [
+            198
+          ],
+          "pre-enhancement": [
+            100
+          ],
+          "preliminary": [
+            120
+          ],
+          "primary": [
+            115
+          ],
+          "problem": [
+            89
+          ],
+          "proposed": [
+            69,
+            228
+          ],
+          "public": [
+            236
+          ],
+          "quantitative": [
+            258
+          ],
+          "real-world": [
+            50
+          ],
+          "reconnaissance,": [
+            27
+          ],
+          "reconstruction": [
+            202
+          ],
+          "representation": [
+            61
+          ],
+          "results": [
+            53,
+            224
+          ],
+          "retention": [
+            216
+          ],
+          "scenarios": [
+            241
+          ],
+          "scenarios,": [
+            83
+          ],
+          "scenarios.": [
+            51
+          ],
+          "scene": [
+            92
+          ],
+          "significantly": [
+            230
+          ],
+          "smog,": [
+            244
+          ],
+          "solves": [
+            86
+          ],
+          "sparse": [
+            133,
+            157
+          ],
+          "structure,": [
+            159
+          ],
+          "such": [
+            23,
+            242
+          ],
+          "suitable": [
+            80
+          ],
+          "superior": [
+            250
+          ],
+          "technique": [
+            77
+          ],
+          "technology": [
+            5
+          ],
+          "terms": [
+            253
+          ],
+          "text": [
+            142
+          ],
+          "that": [
+            6,
+            78,
+            226
+          ],
+          "the": [
+            32,
+            39,
+            87,
+            91,
+            111,
+            126,
+            152,
+            162,
+            211,
+            219,
+            227
+          ],
+          "thereby": [
+            160,
+            208
+          ],
+          "to": [
+            12,
+            108,
+            118,
+            165,
+            179,
+            183
+          ],
+          "utilised": [
+            107
+          ],
+          "vision.": [
+            30
+          ],
+          "visual-language": [
+            147
+          ],
+          "was": [
+            137
+          ],
+          "weather": [
+            47
+          ],
+          "when": [
+            90
+          ],
+          "wide": [
+            19
+          ],
+          "with": [
+            173
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I162868743"
+                ],
+                "raw_affiliation_string": "Tianjin University, School of Electrical and Information Engineering, Tianjin, 300072, China"
+              }
+            ],
+            "author": {
+              "display_name": "Yi Li",
+              "id": "https://openalex.org/A5100421473",
+              "orcid": "https://orcid.org/0000-0002-2856-7290"
+            },
+            "author_position": "first",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Tianjin University",
+                "id": "https://openalex.org/I162868743",
+                "lineage": [
+                  "https://openalex.org/I162868743"
+                ],
+                "ror": "https://ror.org/012tb2g32",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Tianjin University, School of Electrical and Information Engineering, Tianjin, 300072, China"
+            ],
+            "raw_author_name": "Yi Li",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I162868743"
+                ],
+                "raw_affiliation_string": "Tianjin University, School of Electrical and Information Engineering, Tianjin, 300072, China"
+              }
+            ],
+            "author": {
+              "display_name": "Donghui Li",
+              "id": "https://openalex.org/A5100336701",
+              "orcid": "https://orcid.org/0000-0003-1848-9601"
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Tianjin University",
+                "id": "https://openalex.org/I162868743",
+                "lineage": [
+                  "https://openalex.org/I162868743"
+                ],
+                "ror": "https://ror.org/012tb2g32",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Tianjin University, School of Electrical and Information Engineering, Tianjin, 300072, China"
+            ],
+            "raw_author_name": "Donghui Li",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210163926"
+                ],
+                "raw_affiliation_string": "Zhejiang Chengshi Robot Co., Ltd., Post-Doctoral Research Center, Jiaxing, 314211, China"
+              }
+            ],
+            "author": {
+              "display_name": "Shu Fang",
+              "id": "https://openalex.org/A5103901738",
+              "orcid": null
+            },
+            "author_position": "middle",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Zhejiang Medicine (China)",
+                "id": "https://openalex.org/I4210163926",
+                "lineage": [
+                  "https://openalex.org/I4210163926"
+                ],
+                "ror": "https://ror.org/05h86nk22",
+                "type": "company"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Zhejiang Chengshi Robot Co., Ltd., Post-Doctoral Research Center, Jiaxing, 314211, China"
+            ],
+            "raw_author_name": "Shu Fang",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210135985"
+                ],
+                "raw_affiliation_string": "Shanghai University of Medicine & Health Sciences, College of Medical Instrumentation, Shanghai, 201318, China. yangge@sumhs.edu.cn"
+              },
+              {
+                "institution_ids": [
+                  "https://openalex.org/I4210135985"
+                ],
+                "raw_affiliation_string": "Shanghai University of Medicine & Health Sciences, College of Medical Instrumentation, Shanghai, 201318, China"
+              }
+            ],
+            "author": {
+              "display_name": "Geer Yang",
+              "id": "https://openalex.org/A5027415183",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "CN"
+            ],
+            "institutions": [
+              {
+                "country_code": "CN",
+                "display_name": "Shanghai University of Medicine and Health Sciences",
+                "id": "https://openalex.org/I4210135985",
+                "lineage": [
+                  "https://openalex.org/I4210135985"
+                ],
+                "ror": "https://ror.org/03ns6aq57",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Shanghai University of Medicine & Health Sciences, College of Medical Instrumentation, Shanghai, 201318, China. yangge@sumhs.edu.cn",
+              "Shanghai University of Medicine & Health Sciences, College of Medical Instrumentation, Shanghai, 201318, China"
+            ],
+            "raw_author_name": "Geer Yang",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.1038/s41598-025-24436-3",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41598-025-24436-3",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://www.nature.com/articles/s41598-025-24436-3.pdf",
+          "raw_source_name": "Scientific Reports",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Scientific Reports",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S196734849",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2045-2322"
+            ],
+            "issn_l": "2045-2322",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "40530",
+          "issue": "1",
+          "last_page": "40530",
+          "volume": "15"
+        },
+        "cited_by_count": 1,
+        "display_name": "Multimodal image fusion network with prior-guided dynamic degradation removal for extreme environment perception",
+        "doi": "https://doi.org/10.1038/s41598-025-24436-3",
+        "id": "https://openalex.org/W4416319205",
+        "ids": {
+          "doi": "https://doi.org/10.1038/s41598-025-24436-3",
+          "openalex": "https://openalex.org/W4416319205",
+          "pmid": "https://pubmed.ncbi.nlm.nih.gov/41254100"
+        },
+        "is_retracted": false,
+        "language": "en",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://www.nature.com/articles/s41598-025-24436-3.pdf"
+        },
+        "primary_location": {
+          "id": "doi:10.1038/s41598-025-24436-3",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/s41598-025-24436-3",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://www.nature.com/articles/s41598-025-24436-3.pdf",
+          "raw_source_name": "Scientific Reports",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Scientific Reports",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S196734849",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2045-2322"
+            ],
+            "issn_l": "2045-2322",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2025-11-18",
+        "publication_year": 2025,
+        "referenced_works": [
+          "https://openalex.org/W2266694576",
+          "https://openalex.org/W2559870345",
+          "https://openalex.org/W2912147220",
+          "https://openalex.org/W2912435603",
+          "https://openalex.org/W2998529071",
+          "https://openalex.org/W3011768656",
+          "https://openalex.org/W3046194589",
+          "https://openalex.org/W3133700567",
+          "https://openalex.org/W3173307371",
+          "https://openalex.org/W3194077607",
+          "https://openalex.org/W4206713196",
+          "https://openalex.org/W4281901479",
+          "https://openalex.org/W4283732315",
+          "https://openalex.org/W4312249431",
+          "https://openalex.org/W4312737473",
+          "https://openalex.org/W4313267411",
+          "https://openalex.org/W4313555022",
+          "https://openalex.org/W4361767739",
+          "https://openalex.org/W4379741379",
+          "https://openalex.org/W4381435789",
+          "https://openalex.org/W4385839827",
+          "https://openalex.org/W4386038403",
+          "https://openalex.org/W4386076504",
+          "https://openalex.org/W4387831688",
+          "https://openalex.org/W4390492615",
+          "https://openalex.org/W4394566708",
+          "https://openalex.org/W4401944810",
+          "https://openalex.org/W4402715923",
+          "https://openalex.org/W4402754189",
+          "https://openalex.org/W4402944010",
+          "https://openalex.org/W4403791267",
+          "https://openalex.org/W4406121246"
+        ],
+        "referenced_works_count": 32,
+        "title": "Multimodal image fusion network with prior-guided dynamic degradation removal for extreme environment perception",
+        "type": "article"
+      },
+      {
+        "abstract_inverted_index": {
+          "(SAR)": [
+            64
+          ],
+          "(a": [
+            147
+          ],
+          "(e.g.,": [
+            175
+          ],
+          "2-7x": [
+            152
+          ],
+          "Across": [
+            116
+          ],
+          "Analyzing": [
+            0
+          ],
+          "GNNs,": [
+            139
+          ],
+          "Generative": [
+            32
+          ],
+          "Overall,": [
+            160
+          ],
+          "PDE": [
+            17
+          ],
+          "SAR": [
+            122,
+            161
+          ],
+          "This": [
+            94
+          ],
+          "Transolver": [
+            146
+          ],
+          "We": [
+            60
+          ],
+          "a": [
+            79,
+            144,
+            163
+          ],
+          "access": [
+            6
+          ],
+          "accumulate": [
+            27
+          ],
+          "accuracy": [
+            131
+          ],
+          "accurate": [
+            169
+          ],
+          "accurate,": [
+            47
+          ],
+          "and": [
+            22,
+            43,
+            128,
+            168,
+            179
+          ],
+          "are": [
+            19,
+            48
+          ],
+          "at": [
+            102,
+            113
+          ],
+          "attains": [
+            123
+          ],
+          "avoid": [
+            34
+          ],
+          "based": [
+            136
+          ],
+          "benchmarks": [
+            118
+          ],
+          "but": [
+            41
+          ],
+          "by": [
+            37,
+            50,
+            85,
+            99
+          ],
+          "coarse": [
+            73
+          ],
+          "coarse-to-fine": [
+            95
+          ],
+          "coarser": [
+            92,
+            103
+          ],
+          "complexity,": [
+            121
+          ],
+          "compounding": [
+            35
+          ],
+          "computation": [
+            101
+          ],
+          "computationally": [
+            20
+          ],
+          "concentrating": [
+            100
+          ],
+          "conditioned": [
+            90
+          ],
+          "conventional": [
+            16
+          ],
+          "correlations)": [
+            181
+          ],
+          "cost": [
+            52
+          ],
+          "depending": [
+            156
+          ],
+          "diffusion": [
+            42,
+            134
+          ],
+          "distribution": [
+            10
+          ],
+          "distributional": [
+            126
+          ],
+          "efficiency": [
+            98
+          ],
+          "energy": [
+            178
+          ],
+          "entire": [
+            58
+          ],
+          "error": [
+            28,
+            36,
+            127
+          ],
+          "estimation": [
+            170
+          ],
+          "evaluations": [
+            55
+          ],
+          "factorization": [
+            96
+          ],
+          "fast": [
+            167
+          ],
+          "faster": [
+            153
+          ],
+          "fewer": [
+            111
+          ],
+          "field,": [
+            81
+          ],
+          "fine:": [
+            75
+          ],
+          "finer": [
+            114
+          ],
+          "first": [
+            77
+          ],
+          "flow": [
+            173
+          ],
+          "flow-matching": [
+            44,
+            145
+          ],
+          "flows": [
+            3,
+            67
+          ],
+          "fluid": [
+            2
+          ],
+          "for": [
+            65,
+            166
+          ],
+          "from": [
+            72
+          ],
+          "full": [
+            9
+          ],
+          "generates": [
+            78
+          ],
+          "greatest,": [
+            108
+          ],
+          "hierarchically": [
+            71
+          ],
+          "higher": [
+            88,
+            129
+          ],
+          "improves": [
+            97
+          ],
+          "in": [
+            182
+          ],
+          "independently,": [
+            40
+          ],
+          "introduce": [
+            61
+          ],
+          "is": [
+            107
+          ],
+          "it": [
+            76,
+            84
+          ],
+          "kinetic": [
+            177
+          ],
+          "learned": [
+            23
+          ],
+          "limited": [
+            49
+          ],
+          "linear-time": [
+            148
+          ],
+          "long": [
+            30
+          ],
+          "low-resolution": [
+            80
+          ],
+          "lower": [
+            125
+          ],
+          "many": [
+            54
+          ],
+          "matching": [
+            141
+          ],
+          "mesh.": [
+            59
+          ],
+          "meshes": [
+            70
+          ],
+          "methods,": [
+            45
+          ],
+          "modeling": [
+            63
+          ],
+          "models": [
+            33,
+            135
+          ],
+          "multi-scale": [
+            138
+          ],
+          "of": [
+            11,
+            53,
+            119,
+            171
+          ],
+          "often": [
+            4
+          ],
+          "on": [
+            68,
+            91,
+            137,
+            157
+          ],
+          "or": [
+            142
+          ],
+          "over": [
+            29,
+            56
+          ],
+          "per-sample": [
+            130
+          ],
+          "possible": [
+            12
+          ],
+          "practical": [
+            164
+          ],
+          "predictions.": [
+            93
+          ],
+          "progressively": [
+            86
+          ],
+          "prohibitive": [
+            21
+          ],
+          "provides": [
+            162
+          ],
+          "quantities": [
+            174
+          ],
+          "quickly": [
+            26
+          ],
+          "real-world": [
+            183
+          ],
+          "refines": [
+            83
+          ],
+          "requires": [
+            5
+          ],
+          "requiring": [
+            110
+          ],
+          "resolutions": [
+            89
+          ],
+          "rollouts.": [
+            31
+          ],
+          "running": [
+            151
+          ],
+          "sampling": [
+            38,
+            66,
+            87
+          ],
+          "scale-autoregressive": [
+            62
+          ],
+          "scales,": [
+            104
+          ],
+          "scales.": [
+            115
+          ],
+          "settings.": [
+            184
+          ],
+          "solvers": [
+            18
+          ],
+          "state-of-the-art": [
+            133
+          ],
+          "states": [
+            39
+          ],
+          "states,": [
+            14
+          ],
+          "statistical": [
+            172
+          ],
+          "steps": [
+            112
+          ],
+          "substantially": [
+            124
+          ],
+          "surpassing": [
+            143
+          ],
+          "surrogates": [
+            25
+          ],
+          "task.": [
+            159
+          ],
+          "temporal": [
+            13
+          ],
+          "than": [
+            132,
+            154
+          ],
+          "the": [
+            8,
+            51,
+            57,
+            158
+          ],
+          "then": [
+            82
+          ],
+          "this": [
+            155
+          ],
+          "time-stepping": [
+            24
+          ],
+          "to": [
+            7,
+            74
+          ],
+          "tool": [
+            165
+          ],
+          "transformer)": [
+            149
+          ],
+          "turbulent": [
+            176
+          ],
+          "two-point": [
+            180
+          ],
+          "uncertainty": [
+            106
+          ],
+          "unsteady": [
+            1
+          ],
+          "unsteady-flow": [
+            117
+          ],
+          "unstructured": [
+            69
+          ],
+          "varying": [
+            120
+          ],
+          "where": [
+            105
+          ],
+          "while": [
+            46,
+            109,
+            140
+          ],
+          "yet": [
+            15,
+            150
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich"
+              }
+            ],
+            "author": {
+              "display_name": "Mario Lino",
+              "id": "https://openalex.org/A5024813114",
+              "orcid": "https://orcid.org/0000-0002-0401-4747"
+            },
+            "author_position": "first",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich"
+            ],
+            "raw_author_name": "Lino, Mario",
+            "raw_orcid": null
+          },
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I62916508"
+                ],
+                "raw_affiliation_string": "Technical University of Munich"
+              }
+            ],
+            "author": {
+              "display_name": "Nils Thuerey",
+              "id": "https://openalex.org/A5133680119",
+              "orcid": null
+            },
+            "author_position": "last",
+            "countries": [
+              "DE"
+            ],
+            "institutions": [
+              {
+                "country_code": "DE",
+                "display_name": "Technical University of Munich",
+                "id": "https://openalex.org/I62916508",
+                "lineage": [
+                  "https://openalex.org/I62916508"
+                ],
+                "ror": "https://ror.org/02kkvpp62",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": false,
+            "raw_affiliation_strings": [
+              "Technical University of Munich"
+            ],
+            "raw_author_name": "Thuerey, Nils",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "pmh:oai:arXiv.org:2604.11403",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://arxiv.org/abs/2604.11403",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://arxiv.org/pdf/2604.11403",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "biblio": {
+          "first_page": null,
+          "issue": null,
+          "last_page": null,
+          "volume": null
+        },
+        "cited_by_count": 0,
+        "display_name": "One Scale at a Time: Scale-Autoregressive Modeling for Fluid Flow Distributions",
+        "doi": null,
+        "id": "https://openalex.org/W7154540116",
+        "ids": {
+          "openalex": "https://openalex.org/W7154540116"
+        },
+        "is_retracted": false,
+        "language": null,
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2604.11403"
+        },
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2604.11403",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://arxiv.org/abs/2604.11403",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://arxiv.org/pdf/2604.11403",
+          "raw_source_name": null,
+          "raw_type": "text",
+          "source": {
+            "display_name": "arXiv (Cornell University)",
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Cornell University",
+            "id": "https://openalex.org/S4306400194",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        "publication_date": "2026-04-13",
+        "publication_year": 2026,
+        "referenced_works": [],
+        "referenced_works_count": 0,
+        "title": "One Scale at a Time: Scale-Autoregressive Modeling for Fluid Flow Distributions",
+        "type": "preprint"
+      },
+      {
+        "abstract_inverted_index": {
+          "150": [
+            150
+          ],
+          "2023,": [
+            55
+          ],
+          "A": [
+            141
+          ],
+          "Además,": [
+            174
+          ],
+          "Antiguas,": [
+            64
+          ],
+          "Artificial": [
+            5,
+            72,
+            89,
+            182
+          ],
+          "Artificial,": [
+            42,
+            129
+          ],
+          "Artificial.": [
+            103,
+            173
+          ],
+          "Concepciones": [
+            63
+          ],
+          "El": [
+            0
+          ],
+          "Esta": [
+            33
+          ],
+          "Expansión": [
+            107
+          ],
+          "Expertos.": [
+            121
+          ],
+          "Inicios": [
+            85
+          ],
+          "Inteligencia": [
+            4,
+            41,
+            71,
+            88,
+            102,
+            128,
+            172,
+            181
+          ],
+          "La": [
+            60,
+            82,
+            104,
+            122
+          ],
+          "Los": [
+            21
+          ],
+          "Moderna,": [
+            90
+          ],
+          "Resurgimiento": [
+            125
+          ],
+          "Retrocesos,": [
+            109
+          ],
+          "Sistemas": [
+            120
+          ],
+          "a": [
+            28,
+            131
+          ],
+          "aborda": [
+            65
+          ],
+          "académico": [
+            18
+          ],
+          "algunas": [
+            178
+          ],
+          "análisis": [
+            145
+          ],
+          "aplicadas": [
+            183
+          ],
+          "aprendizaje": [
+            139
+          ],
+          "artículos": [
+            155
+          ],
+          "autómatas": [
+            80
+          ],
+          "avances": [
+            22,
+            94
+          ],
+          "campo,": [
+            135
+          ],
+          "científica": [
+            98
+          ],
+          "científicos,": [
+            156
+          ],
+          "clave": [
+            117
+          ],
+          "como": [
+            118
+          ],
+          "concepción": [
+            45
+          ],
+          "contribuciones": [
+            30
+          ],
+          "corresponde": [
+            130
+          ],
+          "cronológico": [
+            146
+          ],
+          "cuarta": [
+            123
+          ],
+          "cuatro": [
+            58
+          ],
+          "de": [
+            2,
+            11,
+            39,
+            54,
+            69,
+            86,
+            95,
+            100,
+            126,
+            143,
+            147,
+            149,
+            152,
+            167,
+            170,
+            180
+          ],
+          "del": [
+            31,
+            134
+          ],
+          "desarrollados.": [
+            81
+          ],
+          "desarrollo": [
+            1
+          ],
+          "desarrollos": [
+            38,
+            53
+          ],
+          "describe": [
+            177
+          ],
+          "desde": [
+            43
+          ],
+          "diversos": [
+            9,
+            37
+          ],
+          "documentos": [
+            159
+          ],
+          "el": [
+            15,
+            138,
+            175,
+            185
+          ],
+          "empresarial": [
+            187
+          ],
+          "empresarial,": [
+            17
+          ],
+          "en": [
+            46,
+            57,
+            73,
+            115,
+            184
+          ],
+          "esta": [
+            161
+          ],
+          "está": [
+            110
+          ],
+          "evolución": [
+            169
+          ],
+          "examina": [
+            91
+          ],
+          "expansión": [
+            114
+          ],
+          "explora": [
+            36
+          ],
+          "fase,": [
+            62,
+            84,
+            106,
+            124
+          ],
+          "fases.": [
+            59
+          ],
+          "formal": [
+            99
+          ],
+          "fuentes": [
+            151
+          ],
+          "gracias": [
+            27
+          ],
+          "griega": [
+            49,
+            76
+          ],
+          "gubernamental": [
+            189
+          ],
+          "gubernamental.": [
+            20
+          ],
+          "ha": [
+            6
+          ],
+          "han": [
+            24
+          ],
+          "hasta": [
+            50
+          ],
+          "histórica": [
+            35
+          ],
+          "históricos,": [
+            160
+          ],
+          "impactado": [
+            7
+          ],
+          "impulsada": [
+            136
+          ],
+          "incluyendo": [
+            14,
+            154
+          ],
+          "información,": [
+            153
+          ],
+          "integral": [
+            166
+          ],
+          "investigación": [
+            97
+          ],
+          "la": [
+            3,
+            12,
+            40,
+            47,
+            70,
+            74,
+            87,
+            96,
+            101,
+            127,
+            132,
+            168,
+            171
+          ],
+          "las": [
+            29,
+            66
+          ],
+          "libros": [
+            157
+          ],
+          "los": [
+            51,
+            78,
+            92,
+            119
+          ],
+          "marcada": [
+            111
+          ],
+          "mitología": [
+            48,
+            75
+          ],
+          "más": [
+            148
+          ],
+          "nociones": [
+            67
+          ],
+          "organizados": [
+            56
+          ],
+          "pasado.": [
+            32
+          ],
+          "peruano.": [
+            190
+          ],
+          "por": [
+            112,
+            137
+          ],
+          "posibles": [
+            26
+          ],
+          "primera": [
+            61
+          ],
+          "primeros": [
+            79,
+            93
+          ],
+          "profundo.": [
+            140
+          ],
+          "proporciona": [
+            163
+          ],
+          "recientes": [
+            23
+          ],
+          "revisión": [
+            34,
+            162
+          ],
+          "revitalización": [
+            133
+          ],
+          "sectores": [
+            10
+          ],
+          "segunda": [
+            83
+          ],
+          "sido": [
+            25
+          ],
+          "significativamente": [
+            8
+          ],
+          "sociedad,": [
+            13
+          ],
+          "soluciones": [
+            179
+          ],
+          "su": [
+            44
+          ],
+          "tempranas": [
+            68
+          ],
+          "tercera": [
+            105
+          ],
+          "trabajo": [
+            176
+          ],
+          "través": [
+            142
+          ],
+          "un": [
+            144
+          ],
+          "una": [
+            113,
+            164
+          ],
+          "visión": [
+            165
+          ],
+          "y": [
+            19,
+            77,
+            108,
+            158,
+            188
+          ],
+          "ámbito": [
+            16,
+            186
+          ],
+          "áreas": [
+            116
+          ],
+          "últimos": [
+            52
+          ]
+        },
+        "authorships": [
+          {
+            "affiliations": [
+              {
+                "institution_ids": [
+                  "https://openalex.org/I192513696"
+                ],
+                "raw_affiliation_string": "Universidad Nacional Mayor de San Marcos, Facultad de Ingeniería de Sistemas e Informática, Lima, Perú"
+              }
+            ],
+            "author": {
+              "display_name": "Zandor Yandari Sánchez Agreda",
+              "id": "https://openalex.org/A5115843986",
+              "orcid": null
+            },
+            "author_position": "first",
+            "countries": [
+              "PE"
+            ],
+            "institutions": [
+              {
+                "country_code": "PE",
+                "display_name": "National University of San Marcos",
+                "id": "https://openalex.org/I192513696",
+                "lineage": [
+                  "https://openalex.org/I192513696"
+                ],
+                "ror": "https://ror.org/006vs7897",
+                "type": "education"
+              }
+            ],
+            "is_corresponding": true,
+            "raw_affiliation_strings": [
+              "Universidad Nacional Mayor de San Marcos, Facultad de Ingeniería de Sistemas e Informática, Lima, Perú"
+            ],
+            "raw_author_name": "Zandor Yandari Sánchez Agreda",
+            "raw_orcid": null
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.15381/rpcs.v6i2.28857",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.15381/rpcs.v6i2.28857",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://revistasinvestigacion.unmsm.edu.pe/index.php/rpcsis/article/download/28857/21735",
+          "raw_source_name": "Revista peruana de computación y sistemas",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Revista peruana de computación y sistemas",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4210210000",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "2617-2003"
+            ],
+            "issn_l": "2617-2003",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "biblio": {
+          "first_page": "95",
+          "issue": "2",
+          "last_page": "110",
+          "volume": "6"
+        },
+        "cited_by_count": 0,
+        "display_name": "Inteligencia Artificial y sus subcampos de estudio: una revisión histórica",
+        "doi": "https://doi.org/10.15381/rpcs.v6i2.28857",
+        "id": "https://openalex.org/W4406272379",
+        "ids": {
+          "doi": "https://doi.org/10.15381/rpcs.v6i2.28857",
+          "openalex": "https://openalex.org/W4406272379"
+        },
+        "is_retracted": false,
+        "language": "es",
+        "open_access": {
+          "any_repository_has_fulltext": true,
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://revistasinvestigacion.unmsm.edu.pe/index.php/rpcsis/article/download/28857/21735"
+        },
+        "primary_location": {
+          "id": "doi:10.15381/rpcs.v6i2.28857",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.15381/rpcs.v6i2.28857",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://revistasinvestigacion.unmsm.edu.pe/index.php/rpcsis/article/download/28857/21735",
+          "raw_source_name": "Revista peruana de computación y sistemas",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Revista peruana de computación y sistemas",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4210210000",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "2617-2003"
+            ],
+            "issn_l": "2617-2003",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        "publication_date": "2024-12-30",
+        "publication_year": 2024,
+        "referenced_works": [
+          "https://openalex.org/W41554520",
+          "https://openalex.org/W57221986",
+          "https://openalex.org/W159821881",
+          "https://openalex.org/W160318044",
+          "https://openalex.org/W1481852206",
+          "https://openalex.org/W1505620647",
+          "https://openalex.org/W1505640990",
+          "https://openalex.org/W1505652865",
+          "https://openalex.org/W1543659671",
+          "https://openalex.org/W1544460116",
+          "https://openalex.org/W1639032689",
+          "https://openalex.org/W1813659000",
+          "https://openalex.org/W1873332500",
+          "https://openalex.org/W1968366046",
+          "https://openalex.org/W1969483458",
+          "https://openalex.org/W1970647289",
+          "https://openalex.org/W1990517717",
+          "https://openalex.org/W1995341919",
+          "https://openalex.org/W2009264029",
+          "https://openalex.org/W2030463632",
+          "https://openalex.org/W2040492000",
+          "https://openalex.org/W2044887587",
+          "https://openalex.org/W2054043069",
+          "https://openalex.org/W2086234597",
+          "https://openalex.org/W2091565802",
+          "https://openalex.org/W2108204313",
+          "https://openalex.org/W2110747758",
+          "https://openalex.org/W2112796928",
+          "https://openalex.org/W2128084896",
+          "https://openalex.org/W2152195021",
+          "https://openalex.org/W2160411185",
+          "https://openalex.org/W2163922914",
+          "https://openalex.org/W2166160300",
+          "https://openalex.org/W2167224731",
+          "https://openalex.org/W2167615167",
+          "https://openalex.org/W2171144767",
+          "https://openalex.org/W2194775991",
+          "https://openalex.org/W2257979135",
+          "https://openalex.org/W2260558829",
+          "https://openalex.org/W2270126349",
+          "https://openalex.org/W2316135739",
+          "https://openalex.org/W2399666893",
+          "https://openalex.org/W2608020507",
+          "https://openalex.org/W2618530766",
+          "https://openalex.org/W2735575534",
+          "https://openalex.org/W2766232596",
+          "https://openalex.org/W2791961641",
+          "https://openalex.org/W2816854051",
+          "https://openalex.org/W2883874844",
+          "https://openalex.org/W2901407627",
+          "https://openalex.org/W2908035133",
+          "https://openalex.org/W2911968204",
+          "https://openalex.org/W2919115771",
+          "https://openalex.org/W2943605356",
+          "https://openalex.org/W2949893440",
+          "https://openalex.org/W2962891824",
+          "https://openalex.org/W2964510579",
+          "https://openalex.org/W2977997684",
+          "https://openalex.org/W2979989546",
+          "https://openalex.org/W2984080647",
+          "https://openalex.org/W2997662364",
+          "https://openalex.org/W3000522337",
+          "https://openalex.org/W3005833946",
+          "https://openalex.org/W3018662283",
+          "https://openalex.org/W3019166713",
+          "https://openalex.org/W3022606336",
+          "https://openalex.org/W3022726897",
+          "https://openalex.org/W3034820610",
+          "https://openalex.org/W3036417819",
+          "https://openalex.org/W3037549045",
+          "https://openalex.org/W3046707770",
+          "https://openalex.org/W3046873241",
+          "https://openalex.org/W3091295346",
+          "https://openalex.org/W3098784686",
+          "https://openalex.org/W3100819663",
+          "https://openalex.org/W3110266995",
+          "https://openalex.org/W3126721752",
+          "https://openalex.org/W3129166376",
+          "https://openalex.org/W3139257819",
+          "https://openalex.org/W3143373178",
+          "https://openalex.org/W3157910549",
+          "https://openalex.org/W3168577360",
+          "https://openalex.org/W3173740276",
+          "https://openalex.org/W3174230884",
+          "https://openalex.org/W3203241482",
+          "https://openalex.org/W3207974842",
+          "https://openalex.org/W3209138746",
+          "https://openalex.org/W3211726140",
+          "https://openalex.org/W4206139609",
+          "https://openalex.org/W4206646319",
+          "https://openalex.org/W4210445430",
+          "https://openalex.org/W4211007335",
+          "https://openalex.org/W4226399820",
+          "https://openalex.org/W4230757065",
+          "https://openalex.org/W4234080245",
+          "https://openalex.org/W4236521339",
+          "https://openalex.org/W4239510810",
+          "https://openalex.org/W4288400169",
+          "https://openalex.org/W4312863453",
+          "https://openalex.org/W4313591595",
+          "https://openalex.org/W4319303001",
+          "https://openalex.org/W4328007675",
+          "https://openalex.org/W4367185264",
+          "https://openalex.org/W4381304672",
+          "https://openalex.org/W4382498938",
+          "https://openalex.org/W4382541884",
+          "https://openalex.org/W4385338412",
+          "https://openalex.org/W4385731956",
+          "https://openalex.org/W4386002917",
+          "https://openalex.org/W4386918931",
+          "https://openalex.org/W4387639021",
+          "https://openalex.org/W4413651880",
+          "https://openalex.org/W6601893370",
+          "https://openalex.org/W6607860017",
+          "https://openalex.org/W6628686333",
+          "https://openalex.org/W6629610141",
+          "https://openalex.org/W6635935089",
+          "https://openalex.org/W6637623960",
+          "https://openalex.org/W6677833281",
+          "https://openalex.org/W6678087030",
+          "https://openalex.org/W6682849425",
+          "https://openalex.org/W6767470347",
+          "https://openalex.org/W6778883912",
+          "https://openalex.org/W6785784373",
+          "https://openalex.org/W6790004341",
+          "https://openalex.org/W6794218226",
+          "https://openalex.org/W6884953737",
+          "https://openalex.org/W6997285053",
+          "https://openalex.org/W7063791938"
+        ],
+        "referenced_works_count": 129,
+        "title": "Inteligencia Artificial y sus subcampos de estudio: una revisión histórica",
+        "type": "article"
+      }
+    ]
+  },
+  "response_hash": "d1639d76734f2f1e4e67e6f0c92269eea29be267fa1219355677785b09944669",
+  "retrieved_at": "2026-07-16T06:57:31Z",
+  "schema_version": "1.0",
+  "source": "openalex"
+}

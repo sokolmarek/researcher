@@ -1,0 +1,378 @@
+{
+  "endpoint": "dois",
+  "request_key": "e1e96df1063d4794ebfb30aaf7d89884508e9a48f5278db30c1d57f6fda8aea6",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Graph Barlow Twins\\: A self\\-supervised representation learning framework for graphs"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-21T04:29:42Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Bielak",
+              "givenName": "Piotr",
+              "name": "Bielak, Piotr",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Kajdanowicz",
+              "givenName": "Tomasz",
+              "name": "Kajdanowicz, Tomasz",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Chawla",
+              "givenName": "Nitesh V.",
+              "name": "Chawla, Nitesh V.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2021-06-04T13:10:51Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-06-07T00:19:57Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2022-04-20T11:02:03Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2022-04-21T00:25:20Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2023-09-12T14:53:38Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2023-09-13T00:24:57Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-06",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2021",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "The self-supervised learning (SSL) paradigm is an essential exploration area, which tries to eliminate the need for expensive data labeling. Despite the great success of SSL methods in computer vision and natural language processing, most of them employ contrastive learning objectives that require negative samples, which are hard to define. This becomes even more challenging in the case of graphs and is a bottleneck for achieving robust representations. To overcome such limitations, we propose a framework for self-supervised graph representation learning - Graph Barlow Twins, which utilizes a cross-correlation-based loss function instead of negative samples. Moreover, it does not rely on non-symmetric neural network architectures - in contrast to state-of-the-art self-supervised graph representation learning method BGRL. We show that our method achieves as competitive results as the best self-supervised methods and fully supervised ones while requiring fewer hyperparameters and substantially shorter computation time (ca. 30 times faster than BGRL).",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2106.02466",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2106.02466",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 2,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2021,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-21T04:29:49Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.1016/j.knosys.2022.109631",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Graph Barlow Twins: A self-supervised representation learning framework for graphs"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2023-09-13T01:31:06Z",
+          "url": "https://arxiv.org/abs/2106.02466",
+          "version": "3",
+          "versionCount": 0,
+          "versionOfCount": 1,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2106.02466",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2023-01-30T01:46:45Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Zhao",
+              "givenName": "Xiangyu",
+              "name": "Zhao, Xiangyu",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Stärk",
+              "givenName": "Hannes",
+              "name": "Stärk, Hannes",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Beaini",
+              "givenName": "Dominique",
+              "name": "Beaini, Dominique",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhao",
+              "givenName": "Yiren",
+              "name": "Zhao, Yiren",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Liò",
+              "givenName": "Pietro",
+              "name": "Liò, Pietro",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2023-01-27T03:33:11Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2023-01-30T01:06:12Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2023-02-11T00:30:47Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2023-02-14T01:03:55Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2023-03-27T02:59:10Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2023-03-28T00:25:05Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2023-01",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2023",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "It has been increasingly demanding to develop reliable methods to evaluate the progress of Graph Neural Network (GNN) research for molecular representation learning. Existing GNN benchmarking methods for molecular representation learning focus on comparing the GNNs' performances on some node/graph classification/regression tasks on certain datasets. However, there lacks a principled, task-agnostic method to directly compare two GNNs. Additionally, most of the existing self-supervised learning works incorporate handcrafted augmentations to the data, which has several severe difficulties to be applied on graphs due to their unique characteristics. To address the aforementioned issues, we propose GraphAC (Graph Adversarial Collaboration) -- a conceptually novel, principled, task-agnostic, and stable framework for evaluating GNNs through contrastive self-supervision. We introduce a novel objective function: the Competitive Barlow Twins, that allow two GNNs to jointly update themselves from direct competitions against each other. GraphAC succeeds in distinguishing GNNs of different expressiveness across various aspects, and has demonstrated to be a principled and reliable GNN evaluation method, without necessitating any augmentations.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "11th International Conference on Learning Representations (ICLR 2023) Machine Learning for Drug Discovery (MLDD) Workshop. 17 pages, 6 figures, 4 tables",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2301.11517",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2301.11517",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 3,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2023,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2023-01-30T01:46:46Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Task-Agnostic Graph Neural Network Evaluation via Adversarial Collaboration"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2023-03-28T01:59:25Z",
+          "url": "https://arxiv.org/abs/2301.11517",
+          "version": "3",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2301.11517",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Graph+Barlow+Twins%5C%3A+A+self%5C-supervised+representation+learning+framework+for+graphs&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 2,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "5195217bb7768bed7e30988f64898ca1d476ef008211931ffd78b37314ff2db9",
+  "retrieved_at": "2026-07-16T06:58:26Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

@@ -1,0 +1,207 @@
+{
+  "endpoint": "dois",
+  "request_key": "e87cd3d4d68d0897d4fd8686473cbb46b4d7e079e6ad6165552eacc7f594fb06",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self\\-Supervised Video Representation Learning with Odd\\-One\\-Out Networks"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-03-06T03:36:42Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Fernando",
+              "givenName": "Basura",
+              "name": "Fernando, Basura",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Bilen",
+              "givenName": "Hakan",
+              "name": "Bilen, Hakan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Gavves",
+              "givenName": "Efstratios",
+              "name": "Gavves, Efstratios",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Gould",
+              "givenName": "Stephen",
+              "name": "Gould, Stephen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2016-11-21T04:35:45Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2016-11-22T01:08:41Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2017-03-31T00:05:09Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2017-04-03T00:02:38Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2017-04-03T03:51:05Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2017-04-04T00:10:14Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2017-04-05T05:52:00Z",
+              "dateInformation": "v4",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2017-04-06T00:03:06Z",
+              "dateInformation": "v4",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2016-11",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2016",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "We propose a new self-supervised CNN pre-training technique based on a novel auxiliary task called \"odd-one-out learning\". In this task, the machine is asked to identify the unrelated or odd element from a set of otherwise related elements. We apply this technique to self-supervised video representation learning where we sample subsequences from videos and ask the network to learn to predict the odd video subsequence. The odd video subsequence is sampled such that it has wrong temporal order of frames while the even ones have the correct temporal order. Therefore, to generate a odd-one-out question no manual annotation is required. Our learning machine is implemented as multi-stream convolutional neural network, which is learned end-to-end. Using odd-one-out networks, we learn temporal representations for videos that generalizes to other related tasks such as action recognition. On action classification, our method obtains 60.3\\% on the UCF101 dataset using only UCF101 data for training which is approximately 10% better than current state-of-the-art self-supervised learning methods. Similarly, on HMDB51 dataset we outperform self-supervised state-of-the art methods by 12.7% on action classification task.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted in In IEEE International Conference on Computer Vision and Pattern Recognition CVPR 2017",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.1611.06646",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "1611.06646",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2016,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-03-06T03:36:44Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Self-Supervised Video Representation Learning With Odd-One-Out Networks"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-03-06T03:36:44Z",
+          "url": "https://arxiv.org/abs/1611.06646",
+          "version": "4",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.1611.06646",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Self%5C-Supervised+Video+Representation+Learning+with+Odd%5C-One%5C-Out+Networks&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "3816b2aed7c9a3c89464bccdddb61cd7d18f3dc2c2eb730affc62811b4b75648",
+  "retrieved_at": "2026-07-16T06:58:27Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

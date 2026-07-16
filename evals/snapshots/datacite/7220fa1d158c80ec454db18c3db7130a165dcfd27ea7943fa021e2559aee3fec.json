@@ -1,0 +1,181 @@
+{
+  "endpoint": "dois",
+  "request_key": "7220fa1d158c80ec454db18c3db7130a165dcfd27ea7943fa021e2559aee3fec",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Deep Self\\-Supervised Representation Learning for Free\\-Hand Sketch"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-25T20:27:34Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Xu",
+              "givenName": "Peng",
+              "name": "Xu, Peng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Song",
+              "givenName": "Zeyu",
+              "name": "Song, Zeyu",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Yin",
+              "givenName": "Qiyue",
+              "name": "Yin, Qiyue",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Song",
+              "givenName": "Yi-Zhe",
+              "name": "Song, Yi-Zhe",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Liang",
+              "name": "Wang, Liang",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2020-02-03T16:28:29Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2020-02-04T01:29:04Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2020-02",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2020",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "In this paper, we tackle for the first time, the problem of self-supervised representation learning for free-hand sketches. This importantly addresses a common problem faced by the sketch community -- that annotated supervisory data are difficult to obtain. This problem is very challenging in that sketches are highly abstract and subject to different drawing styles, making existing solutions tailored for photos unsuitable. Key for the success of our self-supervised learning paradigm lies with our sketch-specific designs: (i) we propose a set of pretext tasks specifically designed for sketches that mimic different drawing styles, and (ii) we further exploit the use of a textual convolution network (TCN) in a dual-branch architecture for sketch feature learning, as means to accommodate the sequential stroke nature of sketches. We demonstrate the superiority of our sketch-specific designs through two sketch-related applications (retrieval and recognition) on a million-scale sketch dataset, and show that the proposed approach outperforms the state-of-the-art unsupervised representation learning methods, and significantly narrows the performance gap between with supervised representation learning.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.48550/arxiv.2002.00867",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2002.00867",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2020,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-25T20:27:35Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Deep Self-Supervised Representation Learning for Free-Hand Sketch"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2022-02-25T20:27:35Z",
+          "url": "https://arxiv.org/abs/2002.00867",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2002.00867",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=Deep+Self%5C-Supervised+Representation+Learning+for+Free%5C-Hand+Sketch&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "e650f442fc35b98947ab6cdbbb648d7570d673d7985a3c2d4346e9acc2017317",
+  "retrieved_at": "2026-07-16T06:58:29Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

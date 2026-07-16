@@ -1,0 +1,1037 @@
+{
+  "endpoint": "dois",
+  "request_key": "1739bd81dbeceb279fe7ba478ad93819b0364d89844713f7378eb1597c858b7a",
+  "request_params": {
+    "page[size]": 5,
+    "query": "Self\\-Supervised Representation Learning From Multi\\-Domain Data"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-10-07T16:57:00Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Rajani",
+              "givenName": "Hayat",
+              "name": "Rajani, Hayat",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Franchi",
+              "givenName": "Valerio",
+              "name": "Franchi, Valerio",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Valles",
+              "givenName": "Borja Martinez-Clavel",
+              "name": "Valles, Borja Martinez-Clavel",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ramos",
+              "givenName": "Raimon",
+              "name": "Ramos, Raimon",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Garcia",
+              "givenName": "Rafael",
+              "name": "Garcia, Rafael",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Gracias",
+              "givenName": "Nuno",
+              "name": "Gracias, Nuno",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-10-06T15:00:20Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-10-07T01:39:05Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-10-13T18:02:35Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-10-15T00:02:10Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-07-15T15:24:09Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-07-16T00:53:37Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-10",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Benthic habitat mapping is fundamental for understanding marine ecosystems, guiding conservation efforts, and supporting sustainable resource management. Yet, the scarcity of large, annotated datasets limits the development and benchmarking of machine learning models in this domain. This paper introduces a thorough multi-modal dataset, comprising about a million side-scan sonar (SSS) tiles collected along the coast of Catalonia (Spain), complemented by bathymetric maps and a set of co-registered optical images from targeted surveys using an autonomous underwater vehicle (AUV). Approximately 36000 of the SSS tiles have been manually annotated with segmentation masks to enable supervised fine-tuning of classification models. All the raw sensor data, together with mosaics, are also released to support further exploration and algorithm development. To address challenges in multi-sensor data fusion for AUVs, we spatially associate optical images with corresponding SSS tiles, facilitating self-supervised, cross-modal representation learning. Accompanying open-source preprocessing and annotation tools are provided to enhance accessibility and encourage research. This resource aims to establish a standardized benchmark for underwater habitat mapping, promoting advancements in autonomous seafloor classification and multi-sensor integration.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Article under review by Earth System Science Data (ESSD)",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2510.04876",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2510.04876",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 2,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-10-07T16:57:00Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+              "rightsIdentifier": "cc-by-nc-sa-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "lang": "en",
+              "subject": "I.2.6; I.4.6; I.5.1; I.5.4",
+              "subjectScheme": "ACM"
+            }
+          ],
+          "titles": [
+            {
+              "title": "BenthiCat: An opti-acoustic dataset for advancing benthic classification and habitat mapping"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-07-16T02:34:20Z",
+          "url": "https://arxiv.org/abs/2510.04876",
+          "version": "3",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2510.04876",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-12-10T03:31:28Z",
+          "creators": [
+            {
+              "affiliation": [
+                "UniBridgeAI"
+              ],
+              "familyName": "Liu",
+              "givenName": "Ran",
+              "name": "Liu, Ran",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-4133-320X",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-12-10",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "AI knowledge is commonly organized around model families, learning paradigms, objective functions, optimization procedures, evaluation protocols, and adaptation methods. These forms of description are valuable, yet they do not by themselves reveal how the corresponding choices participate in the temporal development of an AI system. Knowing how a Transformer differs from a convolutional network, or how self-supervised learning differs from supervised learning, does not show where these choices enter the broader process, which earlier decisions condition their effectiveness, or how their consequences propagate through training, evaluation, and subsequent adaptation. The absence of a stable structure makes AI knowledge difficult to accumulate and apply coherently. New methods are often encountered as separate technical advances: one changes how data are prepared, another restructures the model, another modifies the training objective or optimization procedure, and another improves evaluation, transfer, or continual adaptation. An individual method may be well understood in isolation, while its relationship to the wider system remains unclear. It may be difficult to determine which earlier design choices condition its effectiveness, whether it complements or replaces an existing approach, and how its effects propagate through later stages of development. The same structural gap complicates research planning and system diagnosis. A failure may be attributed to the model as a whole even when its source lies in data preparation, objective design, learning dynamics, evaluation conditions, or an inadequate adaptation strategy.\n\nThe Process-Based AI Backbone provides stable temporal coordinates for organizing these relationships. It identifies six recurring process responsibilities: Input Preprocessing; Model Architecture; Objectives & Regularization; Learning Dynamics; Evaluation; and Adaptation & Evolution, and connects them through three interacting loops: training, evaluation, and adaptation. The modules locate where major design commitments enter the system. The loops show how learning signals, empirical evidence, and feedback move among those commitments as capability is formed, assessed, revised, transferred, and maintained over time. This process structure remains meaningful across model families, technical approaches, and application contexts. A Transformer, diffusion model, robotic controller, scientific surrogate, foundation model, or future architecture may realize the modules differently, while still passing through recurring decisions about evidence, structure, objectives, learning, evaluation, and adaptation. A new technique can therefore be located according to the process responsibility it modifies and the loop through which its effects propagate. This persistent reference structure allows new developments to extend an existing understanding of AI without repeatedly reorganizing its higher-level foundations. That cross-context stability, combined with the ability to support progressively finer technical detail, is what makes it a \"backbone\".\n\nWithin the Cognitive Hologram of AI Knowledge (DOI: 10.5281/zenodo.17860776), the Process-Based AI Backbone provides the temporal view of the Foundational AI Backbone. Its complementary State-Based AI Backbone (DOI: 10.5281/zenodo.17885668) provides the spatial view by identifying the input, configuration, representation, objective, output, and stochastic spaces present within an AI system at a given point. The process-based view explains how the system changes over time; the state-based view identifies where its relevant states are organized and where intervention can occur. They establish the foundational coordinates through which the Cognitive Hologram connects technical detail, analytical perspective, and application context.\n\nThe Six Process Modules\n\nThe six modules distinguish the major process responsibilities through which learning-based AI capability is formed and revised. They define interacting areas of design, not an immutable sequence of stages.\n\n1. Input Preprocessing\n\nInput Preprocessing determines what information enters the learning process and in what form. Its decisions shape the evidence available to every downstream module.\n\nData Curation covers dataset construction, selection, cleaning, denoising, treatment of missing or sparse observations, class balancing, provenance, and scale normalization.\n\nData Embedding includes external or precomputed representations for text, images, audio, graphs, scientific measurements, and multimodal inputs before they enter the principal trainable architecture.\n\nData Augmentation expands or transforms the available evidence through deterministic transformations, stochastic perturbations, simulation, or synthetic generation.\n\nThe module carries substantive modeling commitments. Choices about inclusion, exclusion, representation, and transformation determine which regularities the model can learn and which biases or blind spots may be inherited from the data.\n\n2. Model Architecture\n\nModel Architecture specifies the parameterized structure through which inputs are transformed into internal representations and outputs. It determines which relations the system can express efficiently and which inductive biases are built into its computation.\n\nArchitectural Families include convolutional, Transformer-based, state-space, graph-based, mixture-of-experts, recurrent, and other structural families.\n\nArchitectural Patterns include encoder–decoder systems, U-Nets, residual and skip connections, hierarchical structures, multi-branch designs, memory components, and modular compositions.\n\nCapacity and Complexity concern depth, width, parameter count, bottlenecks, sparsity, parameter sharing, routing, and other choices that govern expressivity, efficiency, and computational demand.\n\nArchitecture provides the structural possibility space for learning. Its value depends on its alignment with the data structure, objective, training regime, and operating conditions.\n\n3. Objectives & Regularization\n\nObjectives & Regularization translate the desired behavior of the system into optimization signals and constraints. They specify what counts as improvement during learning and which forms of solution are preferred or discouraged.\n\nObjective Functions include classification, regression, reconstruction, contrastive, probabilistic, ranking, structured prediction, reinforcement-learning reward, and task-specific utility formulations.\n\nObjective Trade-offs govern systems with several goals, including accuracy, calibration, robustness, efficiency, fairness, interpretability, and safety. Weighting strategies, constrained formulations, and Pareto-based approaches determine how competing demands are negotiated.\n\nRegularization Mechanisms influence which solutions are favored within the available hypothesis space. These include norm penalties, dropout, data-based regularization, structural constraints, smoothness requirements, invariance, sparsity, and flatness-oriented methods.\n\nObjectives provide the operational definition of success. A mismatch at this stage can produce a system that learns effectively according to its training signal while failing to satisfy the actual task or deployment requirement.\n\n4. Learning Dynamics\n\nLearning Dynamics governs how the model changes in response to data and objective signals. It links the static design of the system to the temporal process through which capability emerges.\n\nLearning Paradigms include supervised, unsupervised, self-supervised, reinforcement, imitation, offline reinforcement, weakly supervised, and hybrid forms of learning.\n\nTraining Procedures include sampling policies, batch construction, learning-rate schedules, warm-up, curricula, staged training, alternating optimization, replay, and other controls over the sequence and distribution of learning experience.\n\nOptimization Algorithms include stochastic gradient methods, momentum-based and adaptive optimizers, approximate second-order approaches, min–max procedures, and adversarial optimization.\n\nLearning dynamics determine which parts of the model are updated, how quickly they change, which examples dominate the learning trajectory, and whether training converges toward a useful and stable solution.\n\n5. Evaluation\n\nEvaluation converts system behavior into evidence about capability, limitation, and readiness for further use. It extends beyond reporting a final performance score.\n\nPerformance Metrics quantify task-relevant behavior through measures such as accuracy, F1, intersection over union, negative log-likelihood, calibration, ranking quality, robustness, efficiency, and domain-specific scientific metrics.\n\nBenchmarks and Protocols determine the data splits, comparison conditions, validation procedures, baselines, and reporting conventions under which claims are assessed.\n\nGeneralization and Robustness Evaluation examines behavior under distribution shift, perturbation, adversarial conditions, rare cases, changing environments, and safety-relevant stress scenarios.\n\nEvaluation influences subsequent design. Its findings may support continuation, early stopping, model selection, objective revision, data recollection, architectural change, or broader adaptation.\n\n6. Adaptation & Evolution\n\nAdaptation & Evolution addresses how an existing AI capability is reused, specialized, preserved, or revised when tasks, domains, data distributions, or operating requirements change. It extends the process backbone beyond a single training run by covering transfer learning, domain and test-time adaptation, meta-learning, continual learning, and other mechanisms through which capability is carried across contexts and developed over time.\n\nThe Transfer Compass (DOI: 10.5281/zenodo.20458799) functions as a dedicated zoom-in module within Adaptation & Evolution. It expands this part of the backbone into a more detailed design space for determining what should be transferred, which form of change is required, how existing capability should be preserved, and which adaptation route best fits the relationship between the source and target contexts. The Process-Based AI Backbone establishes the stable higher-level location of adaptation within the AI lifecycle, while the Transfer Compass provides the finer strategic resolution needed to plan and compare specific transfer and adaptation routes. This relationship illustrates the extensibility of the backbone. Each process module can support specialized zoom-in frameworks that add conceptual and technical depth while remaining anchored to the same higher-level process structure.\n\nTransfer Learning includes pretraining and fine-tuning, feature reuse, parameter-efficient adaptation, adapters, low-rank adaptation, prompt and prefix tuning, instruction tuning, and knowledge distillation.\n\nAdaptation Mechanisms include domain adaptation, test-time adaptation, robust adaptation, meta-learning, and other methods that enable systems to respond to new conditions with limited retraining.\n\nContinual and Lifelong Learning addresses nonstationary streams of data and tasks, including online updating, experience accumulation, capability preservation, and mitigation of catastrophic forgetting.\n\nThis module connects model development to longer-term capability management. It makes explicit that deployment, transfer, and environmental change can initiate further cycles of learning and evaluation.\n\nThe Three Interacting Loops\n\nThe six modules define the stable process architecture. The three loops explain how the system moves through it over different timescales.\n\n1. Training Loop\n\nThe training loop forms capability within a specified task and data regime. Input Preprocessing supplies the training evidence. Model Architecture transforms that evidence using its current parameter state. Objectives & Regularization evaluate the resulting outputs and construct the signals that guide learning. Learning Dynamics uses those signals to update the model state.\n\nThe cycle can be summarized as: Input Preprocessing → Model Architecture → Objectives & Regularization → Learning Dynamics → updated model state\n\nRepeated passes through this loop alter the behavior of the model. The architecture defines the available computational structure, while learning dynamics determine how its parameters and internal representations develop within that structure. The loop also accommodates changes during training. Sampling policies may be revised, objective weights may shift, curricula may introduce new data, and evaluation findings may modify schedules or hyperparameters. Training is therefore a controlled process of capability formation, not simply repeated parameter updating.\n\n2. Evaluation Loop\n\nThe evaluation loop determines what the system has learned, where it remains unreliable, and whether the current development route should continue. At scheduled or condition-dependent points, the current model is examined under designated datasets, protocols, metrics, and stress conditions. The resulting evidence returns to the development process and informs a decision. Possible responses include:\n\n\n\ncontinuing the existing training route;\n\nchanging optimization schedules or procedures;\n\nrevising the objective or regularization;\n\nmodifying data selection or preprocessing;\n\naltering the architecture;\n\nselecting a model checkpoint;\n\nending the current training cycle.\n\n\nThe evaluation loop closes the gap between optimization signals and actual system requirements. A model may improve on its training objective while remaining poorly calibrated, fragile under distribution shift, or ineffective in the conditions that matter to the user. Evaluation makes such discrepancies visible and directs corrective action.\n\n3. Adaptation Loop\n\nThe adaptation loop operates across changes in task, domain, environment, or use context. A model that performs adequately under its original conditions may become insufficient when the data distribution changes, new classes or objectives appear, resources are reduced, deployment feedback reveals unanticipated behavior, or the capability must be transferred to another setting. Evaluation and external evidence expose this gap. Adaptation & Evolution determines how the system should respond. The chosen strategy may reuse representations, fine-tune parameters, introduce adapters, revise the objective, modify the data pipeline, update the architecture, employ meta-learning, or initiate continual learning.\n\nThe adapted system then re-enters training and evaluation under the new conditions. The process may involve several iterations as evidence accumulates. The adaptation loop can therefore modify multiple parts of the backbone: new context or evidence → adaptation strategy → reconfiguration of data, architecture, objectives, or learning → renewed training and evaluation\n\nDependency, Feedback, and Iteration\n\nThe visual flow of the backbone provides an organizing structure, while real AI development remains recurrent and interactive. Evaluation can send evidence back to Learning Dynamics, Objectives & Regularization, Model Architecture, or Input Preprocessing. Adaptation can initiate changes across the entire system. Deployment observations may create new data, revise the meaning of success, or reveal constraints that were absent during initial development. The loops also operate at different temporal scales:\n\n\n\nthe training loop updates capability within a current learning configuration;\n\nthe evaluation loop tests and redirects that configuration;\n\nthe adaptation loop revises the system across tasks, domains, and changing conditions.\n\n\nThese loops may be nested, interleaved, or repeatedly re-entered. Their separation clarifies the type of change occurring and the evidence required to justify it.\n\nHow to Use the Backbone\n\nLearning and Organizing AI Knowledge\n\nWhen encountering a new model, paper, or method, identify the process module in which its primary contribution occurs. A method may change the input evidence, architectural structure, objective, training dynamics, evaluation procedure, or adaptation mechanism. Mapping it to the backbone reveals how it relates to earlier knowledge and which downstream parts of the system it may affect. This practice helps new technical developments accumulate within a stable process structure instead of remaining as isolated labels.\n\nPlanning an AI System\n\nUse the six modules as a sequence of design commitments. Specify the evidence that will enter the system, the architecture that will process it, the behavior the objective will reward, the dynamics through which learning will occur, the evidence required for evaluation, and the conditions under which adaptation will become necessary. The backbone helps teams establish coherence across these choices before implementation becomes locked into a particular technical stack.\n\nDiagnosing Performance and Failure\n\nBegin by locating where the observed problem becomes visible. Poor performance may originate in inadequate data coverage, unsuitable representation, limited architectural capacity, an objective that rewards the wrong behavior, unstable learning dynamics, an evaluation protocol that fails to expose relevant weaknesses, or an adaptation strategy that cannot preserve capability under change. The process structure supports diagnosis across causal stages and reduces the tendency to attribute every failure to the model architecture alone.\n\nComparing Systems and Research Contributions\n\nDifferent systems can be compared according to their commitments in each module and the way their loops are organized. This makes it possible to distinguish systems that use different models to implement the same process strategy, as well as systems that use similar architectures within fundamentally different training, evaluation, or adaptation regimes.\n\nDesigning Iterative and Long-Term AI Workflows\n\nThe three loops help users determine which feedback should remain inside a training run, which evidence should trigger broader evaluation, and which changes justify a new adaptation cycle. This distinction is important for transfer learning, continual learning, deployed systems, foundation-model reuse, and agentic workflows that must evolve through repeated interaction with their environment.\n\nScope and Extensibility\n\nThe Process-Based AI Backbone is defined at a method-agnostic level. Its purpose is to preserve the recurring process logic shared by diverse learning-based AI systems. New architectures, objectives, optimizers, evaluation approaches, and adaptation techniques can be incorporated within the relevant module. Innovations that span several modules can be represented through their combined effects on the process architecture and feedback loops. The relatively stable backbone and faster-changing implementation layers evolve at different rates. This separation allows the framework to remain durable while continuing to accommodate technical development.\n\nConclusion\n\nThe Process-Based AI Backbone provides a temporal architecture for understanding how AI capability is formed, tested, revised, and extended across changing conditions. Its six modules identify the major process responsibilities of a learning-based AI system. Its three loops reveal how training, evaluation, and adaptation interact across different timescales. The framework provides a stable structure for accumulating AI knowledge, researchers a basis for comparing methods across the full development process, and system designers a practical architecture for planning, diagnosis, and long-term capability management. By locating rapidly changing techniques within persistent process commitments, it preserves coherence as AI systems and technical vocabularies continue to evolve.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5281/zenodo.17874215",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 3,
+          "partCount": 2,
+          "partOfCount": 2,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-12-10T03:31:28Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.5281/zenodo.17860776",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsPartOf",
+              "resourceTypeGeneral": "Image"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20458799",
+              "relatedIdentifierType": "DOI",
+              "relationType": "HasPart",
+              "resourceTypeGeneral": "Image"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.17874215",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "Artificial intelligence",
+              "subjectScheme": "EuroSciVoc"
+            },
+            {
+              "subject": "AI"
+            },
+            {
+              "subject": "Deep learning",
+              "subjectScheme": "EuroSciVoc"
+            },
+            {
+              "subject": "Process-based AI Backbone"
+            },
+            {
+              "subject": "AI process architecture"
+            },
+            {
+              "subject": "Temporal architecture of AI"
+            },
+            {
+              "subject": "AI knowledge organization"
+            },
+            {
+              "subject": "AI system lifecycle"
+            },
+            {
+              "subject": "Machine learning lifecycle"
+            },
+            {
+              "subject": "AI training"
+            },
+            {
+              "subject": "AI evaluation"
+            },
+            {
+              "subject": "AI adaptation"
+            },
+            {
+              "subject": "Transfer learning"
+            },
+            {
+              "subject": "Continual learning"
+            },
+            {
+              "subject": "AI system design"
+            },
+            {
+              "subject": "AI system diagnosis"
+            },
+            {
+              "subject": "AI research planning"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Process-Based AI Backbone: A Temporal Architecture for AI Training, Evaluation, and Adaptation"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "graphic",
+            "resourceType": "Figure",
+            "resourceTypeGeneral": "Image",
+            "ris": "FIGURE",
+            "schemaOrg": "ImageObject"
+          },
+          "updated": "2026-07-14T15:32:20Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.17874215",
+          "version": "v1.0",
+          "versionCount": 2,
+          "versionOfCount": 1,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.17874215",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-12-10T03:31:28Z",
+          "creators": [
+            {
+              "affiliation": [
+                "UniBridgeAI"
+              ],
+              "familyName": "Liu",
+              "givenName": "Ran",
+              "name": "Liu, Ran",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-4133-320X",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-12-10",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "AI knowledge is commonly organized around model families, learning paradigms, objective functions, optimization procedures, evaluation protocols, and adaptation methods. These forms of description are valuable, yet they do not by themselves reveal how the corresponding choices participate in the temporal development of an AI system. Knowing how a Transformer differs from a convolutional network, or how self-supervised learning differs from supervised learning, does not show where these choices enter the broader process, which earlier decisions condition their effectiveness, or how their consequences propagate through training, evaluation, and subsequent adaptation. The absence of a stable structure makes AI knowledge difficult to accumulate and apply coherently. New methods are often encountered as separate technical advances: one changes how data are prepared, another restructures the model, another modifies the training objective or optimization procedure, and another improves evaluation, transfer, or continual adaptation. An individual method may be well understood in isolation, while its relationship to the wider system remains unclear. It may be difficult to determine which earlier design choices condition its effectiveness, whether it complements or replaces an existing approach, and how its effects propagate through later stages of development. The same structural gap complicates research planning and system diagnosis. A failure may be attributed to the model as a whole even when its source lies in data preparation, objective design, learning dynamics, evaluation conditions, or an inadequate adaptation strategy.\n\nThe Process-Based AI Backbone provides stable temporal coordinates for organizing these relationships. It identifies six recurring process responsibilities: Input Preprocessing; Model Architecture; Objectives & Regularization; Learning Dynamics; Evaluation; and Adaptation & Evolution, and connects them through three interacting loops: training, evaluation, and adaptation. The modules locate where major design commitments enter the system. The loops show how learning signals, empirical evidence, and feedback move among those commitments as capability is formed, assessed, revised, transferred, and maintained over time. This process structure remains meaningful across model families, technical approaches, and application contexts. A Transformer, diffusion model, robotic controller, scientific surrogate, foundation model, or future architecture may realize the modules differently, while still passing through recurring decisions about evidence, structure, objectives, learning, evaluation, and adaptation. A new technique can therefore be located according to the process responsibility it modifies and the loop through which its effects propagate. This persistent reference structure allows new developments to extend an existing understanding of AI without repeatedly reorganizing its higher-level foundations. That cross-context stability, combined with the ability to support progressively finer technical detail, is what makes it a \"backbone\".\n\nWithin the Cognitive Hologram of AI Knowledge (DOI: 10.5281/zenodo.17860776), the Process-Based AI Backbone provides the temporal view of the Foundational AI Backbone. Its complementary State-Based AI Backbone (DOI: 10.5281/zenodo.17885668) provides the spatial view by identifying the input, configuration, representation, objective, output, and stochastic spaces present within an AI system at a given point. The process-based view explains how the system changes over time; the state-based view identifies where its relevant states are organized and where intervention can occur. They establish the foundational coordinates through which the Cognitive Hologram connects technical detail, analytical perspective, and application context.\n\nThe Six Process Modules\n\nThe six modules distinguish the major process responsibilities through which learning-based AI capability is formed and revised. They define interacting areas of design, not an immutable sequence of stages.\n\n1. Input Preprocessing\n\nInput Preprocessing determines what information enters the learning process and in what form. Its decisions shape the evidence available to every downstream module.\n\nData Curation covers dataset construction, selection, cleaning, denoising, treatment of missing or sparse observations, class balancing, provenance, and scale normalization.\n\nData Embedding includes external or precomputed representations for text, images, audio, graphs, scientific measurements, and multimodal inputs before they enter the principal trainable architecture.\n\nData Augmentation expands or transforms the available evidence through deterministic transformations, stochastic perturbations, simulation, or synthetic generation.\n\nThe module carries substantive modeling commitments. Choices about inclusion, exclusion, representation, and transformation determine which regularities the model can learn and which biases or blind spots may be inherited from the data.\n\n2. Model Architecture\n\nModel Architecture specifies the parameterized structure through which inputs are transformed into internal representations and outputs. It determines which relations the system can express efficiently and which inductive biases are built into its computation.\n\nArchitectural Families include convolutional, Transformer-based, state-space, graph-based, mixture-of-experts, recurrent, and other structural families.\n\nArchitectural Patterns include encoder–decoder systems, U-Nets, residual and skip connections, hierarchical structures, multi-branch designs, memory components, and modular compositions.\n\nCapacity and Complexity concern depth, width, parameter count, bottlenecks, sparsity, parameter sharing, routing, and other choices that govern expressivity, efficiency, and computational demand.\n\nArchitecture provides the structural possibility space for learning. Its value depends on its alignment with the data structure, objective, training regime, and operating conditions.\n\n3. Objectives & Regularization\n\nObjectives & Regularization translate the desired behavior of the system into optimization signals and constraints. They specify what counts as improvement during learning and which forms of solution are preferred or discouraged.\n\nObjective Functions include classification, regression, reconstruction, contrastive, probabilistic, ranking, structured prediction, reinforcement-learning reward, and task-specific utility formulations.\n\nObjective Trade-offs govern systems with several goals, including accuracy, calibration, robustness, efficiency, fairness, interpretability, and safety. Weighting strategies, constrained formulations, and Pareto-based approaches determine how competing demands are negotiated.\n\nRegularization Mechanisms influence which solutions are favored within the available hypothesis space. These include norm penalties, dropout, data-based regularization, structural constraints, smoothness requirements, invariance, sparsity, and flatness-oriented methods.\n\nObjectives provide the operational definition of success. A mismatch at this stage can produce a system that learns effectively according to its training signal while failing to satisfy the actual task or deployment requirement.\n\n4. Learning Dynamics\n\nLearning Dynamics governs how the model changes in response to data and objective signals. It links the static design of the system to the temporal process through which capability emerges.\n\nLearning Paradigms include supervised, unsupervised, self-supervised, reinforcement, imitation, offline reinforcement, weakly supervised, and hybrid forms of learning.\n\nTraining Procedures include sampling policies, batch construction, learning-rate schedules, warm-up, curricula, staged training, alternating optimization, replay, and other controls over the sequence and distribution of learning experience.\n\nOptimization Algorithms include stochastic gradient methods, momentum-based and adaptive optimizers, approximate second-order approaches, min–max procedures, and adversarial optimization.\n\nLearning dynamics determine which parts of the model are updated, how quickly they change, which examples dominate the learning trajectory, and whether training converges toward a useful and stable solution.\n\n5. Evaluation\n\nEvaluation converts system behavior into evidence about capability, limitation, and readiness for further use. It extends beyond reporting a final performance score.\n\nPerformance Metrics quantify task-relevant behavior through measures such as accuracy, F1, intersection over union, negative log-likelihood, calibration, ranking quality, robustness, efficiency, and domain-specific scientific metrics.\n\nBenchmarks and Protocols determine the data splits, comparison conditions, validation procedures, baselines, and reporting conventions under which claims are assessed.\n\nGeneralization and Robustness Evaluation examines behavior under distribution shift, perturbation, adversarial conditions, rare cases, changing environments, and safety-relevant stress scenarios.\n\nEvaluation influences subsequent design. Its findings may support continuation, early stopping, model selection, objective revision, data recollection, architectural change, or broader adaptation.\n\n6. Adaptation & Evolution\n\nAdaptation & Evolution addresses how an existing AI capability is reused, specialized, preserved, or revised when tasks, domains, data distributions, or operating requirements change. It extends the process backbone beyond a single training run by covering transfer learning, domain and test-time adaptation, meta-learning, continual learning, and other mechanisms through which capability is carried across contexts and developed over time.\n\nThe Transfer Compass (DOI: 10.5281/zenodo.20458799) functions as a dedicated zoom-in module within Adaptation & Evolution. It expands this part of the backbone into a more detailed design space for determining what should be transferred, which form of change is required, how existing capability should be preserved, and which adaptation route best fits the relationship between the source and target contexts. The Process-Based AI Backbone establishes the stable higher-level location of adaptation within the AI lifecycle, while the Transfer Compass provides the finer strategic resolution needed to plan and compare specific transfer and adaptation routes. This relationship illustrates the extensibility of the backbone. Each process module can support specialized zoom-in frameworks that add conceptual and technical depth while remaining anchored to the same higher-level process structure.\n\nTransfer Learning includes pretraining and fine-tuning, feature reuse, parameter-efficient adaptation, adapters, low-rank adaptation, prompt and prefix tuning, instruction tuning, and knowledge distillation.\n\nAdaptation Mechanisms include domain adaptation, test-time adaptation, robust adaptation, meta-learning, and other methods that enable systems to respond to new conditions with limited retraining.\n\nContinual and Lifelong Learning addresses nonstationary streams of data and tasks, including online updating, experience accumulation, capability preservation, and mitigation of catastrophic forgetting.\n\nThis module connects model development to longer-term capability management. It makes explicit that deployment, transfer, and environmental change can initiate further cycles of learning and evaluation.\n\nThe Three Interacting Loops\n\nThe six modules define the stable process architecture. The three loops explain how the system moves through it over different timescales.\n\n1. Training Loop\n\nThe training loop forms capability within a specified task and data regime. Input Preprocessing supplies the training evidence. Model Architecture transforms that evidence using its current parameter state. Objectives & Regularization evaluate the resulting outputs and construct the signals that guide learning. Learning Dynamics uses those signals to update the model state.\n\nThe cycle can be summarized as: Input Preprocessing → Model Architecture → Objectives & Regularization → Learning Dynamics → updated model state\n\nRepeated passes through this loop alter the behavior of the model. The architecture defines the available computational structure, while learning dynamics determine how its parameters and internal representations develop within that structure. The loop also accommodates changes during training. Sampling policies may be revised, objective weights may shift, curricula may introduce new data, and evaluation findings may modify schedules or hyperparameters. Training is therefore a controlled process of capability formation, not simply repeated parameter updating.\n\n2. Evaluation Loop\n\nThe evaluation loop determines what the system has learned, where it remains unreliable, and whether the current development route should continue. At scheduled or condition-dependent points, the current model is examined under designated datasets, protocols, metrics, and stress conditions. The resulting evidence returns to the development process and informs a decision. Possible responses include:\n\n\n\ncontinuing the existing training route;\n\nchanging optimization schedules or procedures;\n\nrevising the objective or regularization;\n\nmodifying data selection or preprocessing;\n\naltering the architecture;\n\nselecting a model checkpoint;\n\nending the current training cycle.\n\n\nThe evaluation loop closes the gap between optimization signals and actual system requirements. A model may improve on its training objective while remaining poorly calibrated, fragile under distribution shift, or ineffective in the conditions that matter to the user. Evaluation makes such discrepancies visible and directs corrective action.\n\n3. Adaptation Loop\n\nThe adaptation loop operates across changes in task, domain, environment, or use context. A model that performs adequately under its original conditions may become insufficient when the data distribution changes, new classes or objectives appear, resources are reduced, deployment feedback reveals unanticipated behavior, or the capability must be transferred to another setting. Evaluation and external evidence expose this gap. Adaptation & Evolution determines how the system should respond. The chosen strategy may reuse representations, fine-tune parameters, introduce adapters, revise the objective, modify the data pipeline, update the architecture, employ meta-learning, or initiate continual learning.\n\nThe adapted system then re-enters training and evaluation under the new conditions. The process may involve several iterations as evidence accumulates. The adaptation loop can therefore modify multiple parts of the backbone: new context or evidence → adaptation strategy → reconfiguration of data, architecture, objectives, or learning → renewed training and evaluation\n\nDependency, Feedback, and Iteration\n\nThe visual flow of the backbone provides an organizing structure, while real AI development remains recurrent and interactive. Evaluation can send evidence back to Learning Dynamics, Objectives & Regularization, Model Architecture, or Input Preprocessing. Adaptation can initiate changes across the entire system. Deployment observations may create new data, revise the meaning of success, or reveal constraints that were absent during initial development. The loops also operate at different temporal scales:\n\n\n\nthe training loop updates capability within a current learning configuration;\n\nthe evaluation loop tests and redirects that configuration;\n\nthe adaptation loop revises the system across tasks, domains, and changing conditions.\n\n\nThese loops may be nested, interleaved, or repeatedly re-entered. Their separation clarifies the type of change occurring and the evidence required to justify it.\n\nHow to Use the Backbone\n\nLearning and Organizing AI Knowledge\n\nWhen encountering a new model, paper, or method, identify the process module in which its primary contribution occurs. A method may change the input evidence, architectural structure, objective, training dynamics, evaluation procedure, or adaptation mechanism. Mapping it to the backbone reveals how it relates to earlier knowledge and which downstream parts of the system it may affect. This practice helps new technical developments accumulate within a stable process structure instead of remaining as isolated labels.\n\nPlanning an AI System\n\nUse the six modules as a sequence of design commitments. Specify the evidence that will enter the system, the architecture that will process it, the behavior the objective will reward, the dynamics through which learning will occur, the evidence required for evaluation, and the conditions under which adaptation will become necessary. The backbone helps teams establish coherence across these choices before implementation becomes locked into a particular technical stack.\n\nDiagnosing Performance and Failure\n\nBegin by locating where the observed problem becomes visible. Poor performance may originate in inadequate data coverage, unsuitable representation, limited architectural capacity, an objective that rewards the wrong behavior, unstable learning dynamics, an evaluation protocol that fails to expose relevant weaknesses, or an adaptation strategy that cannot preserve capability under change. The process structure supports diagnosis across causal stages and reduces the tendency to attribute every failure to the model architecture alone.\n\nComparing Systems and Research Contributions\n\nDifferent systems can be compared according to their commitments in each module and the way their loops are organized. This makes it possible to distinguish systems that use different models to implement the same process strategy, as well as systems that use similar architectures within fundamentally different training, evaluation, or adaptation regimes.\n\nDesigning Iterative and Long-Term AI Workflows\n\nThe three loops help users determine which feedback should remain inside a training run, which evidence should trigger broader evaluation, and which changes justify a new adaptation cycle. This distinction is important for transfer learning, continual learning, deployed systems, foundation-model reuse, and agentic workflows that must evolve through repeated interaction with their environment.\n\nScope and Extensibility\n\nThe Process-Based AI Backbone is defined at a method-agnostic level. Its purpose is to preserve the recurring process logic shared by diverse learning-based AI systems. New architectures, objectives, optimizers, evaluation approaches, and adaptation techniques can be incorporated within the relevant module. Innovations that span several modules can be represented through their combined effects on the process architecture and feedback loops. The relatively stable backbone and faster-changing implementation layers evolve at different rates. This separation allows the framework to remain durable while continuing to accommodate technical development.\n\nConclusion\n\nThe Process-Based AI Backbone provides a temporal architecture for understanding how AI capability is formed, tested, revised, and extended across changing conditions. Its six modules identify the major process responsibilities of a learning-based AI system. Its three loops reveal how training, evaluation, and adaptation interact across different timescales. The framework provides a stable structure for accumulating AI knowledge, researchers a basis for comparing methods across the full development process, and system designers a practical architecture for planning, diagnosis, and long-term capability management. By locating rapidly changing techniques within persistent process commitments, it preserves coherence as AI systems and technical vocabularies continue to evolve.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "doi": "10.5281/zenodo.17874216",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:17874216",
+              "identifierType": "oai"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 3,
+          "partCount": 1,
+          "partOfCount": 1,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "Zenodo",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-12-10T03:31:28Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.5281/zenodo.17860776",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsPartOf",
+              "resourceTypeGeneral": "Image"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.20458799",
+              "relatedIdentifierType": "DOI",
+              "relationType": "HasPart",
+              "resourceTypeGeneral": "Image"
+            },
+            {
+              "relatedIdentifier": "10.5281/zenodo.17874215",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "api",
+          "state": "findable",
+          "subjects": [
+            {
+              "subject": "Artificial intelligence",
+              "subjectScheme": "EuroSciVoc"
+            },
+            {
+              "subject": "AI"
+            },
+            {
+              "subject": "Deep learning",
+              "subjectScheme": "EuroSciVoc"
+            },
+            {
+              "subject": "Process-based AI Backbone"
+            },
+            {
+              "subject": "AI process architecture"
+            },
+            {
+              "subject": "Temporal architecture of AI"
+            },
+            {
+              "subject": "AI knowledge organization"
+            },
+            {
+              "subject": "AI system lifecycle"
+            },
+            {
+              "subject": "Machine learning lifecycle"
+            },
+            {
+              "subject": "AI training"
+            },
+            {
+              "subject": "AI evaluation"
+            },
+            {
+              "subject": "AI adaptation"
+            },
+            {
+              "subject": "Transfer learning"
+            },
+            {
+              "subject": "Continual learning"
+            },
+            {
+              "subject": "AI system design"
+            },
+            {
+              "subject": "AI system diagnosis"
+            },
+            {
+              "subject": "AI research planning"
+            }
+          ],
+          "titles": [
+            {
+              "title": "Process-Based AI Backbone: A Temporal Architecture for AI Training, Evaluation, and Adaptation"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "graphic",
+            "resourceType": "Figure",
+            "resourceTypeGeneral": "Image",
+            "ris": "FIGURE",
+            "schemaOrg": "ImageObject"
+          },
+          "updated": "2026-07-14T15:32:20Z",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.17874216",
+          "version": "v1.0",
+          "versionCount": 0,
+          "versionOfCount": 1,
+          "viewCount": 0
+        },
+        "id": "10.5281/zenodo.17874216",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2025-11-05T03:00:36Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Fan",
+              "givenName": "Shichao",
+              "name": "Fan, Shichao",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wu",
+              "givenName": "Kun",
+              "name": "Wu, Kun",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Che",
+              "givenName": "Zhengping",
+              "name": "Che, Zhengping",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wang",
+              "givenName": "Xinhua",
+              "name": "Wang, Xinhua",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wu",
+              "givenName": "Di",
+              "name": "Wu, Di",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Liao",
+              "givenName": "Fei",
+              "name": "Liao, Fei",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Liu",
+              "givenName": "Ning",
+              "name": "Liu, Ning",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhang",
+              "givenName": "Yixue",
+              "name": "Zhang, Yixue",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhao",
+              "givenName": "Zhen",
+              "name": "Zhao, Zhen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Xu",
+              "givenName": "Zhiyuan",
+              "name": "Xu, Zhiyuan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Meng",
+              "name": "Li, Meng",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Liu",
+              "givenName": "Qingjie",
+              "name": "Liu, Qingjie",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Zhang",
+              "givenName": "Shanghang",
+              "name": "Zhang, Shanghang",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wan",
+              "givenName": "Min",
+              "name": "Wan, Min",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Tang",
+              "givenName": "Jian",
+              "name": "Tang, Jian",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2025-11-04T17:59:12Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2025-11-05T02:00:22Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-05-14T09:17:17Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-05-15T00:44:01Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-07-12T06:20:43Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-07-14T00:43:27Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2025-11",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Recent progress in large-scale robotic datasets and vision-language models (VLMs) has advanced research on vision-language-action (VLA) models. However, existing VLA models still face two fundamental challenges: (i) producing precise low-level actions from high-dimensional observations, (ii) bridging domain gaps across heterogeneous data sources, including diverse robot embodiments and human demonstrations. Existing methods often encode latent variables from either visual dynamics or robotic actions to guide policy learning, but they fail to fully exploit the complementary multi-modal knowledge present in large-scale, heterogeneous datasets. In this work, we present X Robotic Model 1 (XR-1), a novel framework for versatile and scalable VLA learning across diverse robots, tasks, and environments. XR-1 introduces the \\emph{Unified Vision-Motion Codes (UVMC)}, a discrete latent representation learned via a dual-branch VQ-VAE that jointly encodes visual dynamics and robotic motion. UVMC addresses these challenges by (i) serving as an intermediate representation between the observations and actions, and (ii) aligning multimodal dynamic information from heterogeneous data sources to capture complementary knowledge. To effectively exploit UVMC, we propose a three-stage training paradigm: (i) self-supervised UVMC learning, (ii) UVMC-guided pretraining on large-scale cross-embodiment robotic datasets, and (iii) task-specific post-training. We validate XR-1 through extensive real-world experiments with more than 14,000 rollouts on six different robot embodiments, spanning over 120 diverse manipulation tasks. XR-1 consistently outperforms state-of-the-art baselines such as $π_{0.5}$, $π_0$, RDT, UniVLA, and GR00T-N1.5 while demonstrating strong generalization to novel objects, background variations, distractors, and illumination changes. Our project is at https://xr-1-vla.github.io/.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted to ICML2026 as Oral",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2511.02776",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2511.02776",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 2,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2025,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2025-11-05T03:00:37Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Robotics (cs.RO)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-07-14T03:58:43Z",
+          "url": "https://arxiv.org/abs/2511.02776",
+          "version": "3",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2511.02776",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      },
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2026-07-14T03:14:07Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Hassan",
+              "givenName": "Sheikh Salman",
+              "name": "Hassan, Sheikh Salman",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Meer",
+              "givenName": "Irshad A.",
+              "name": "Meer, Irshad A.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Saifaldawla",
+              "givenName": "Almoatssimbillah",
+              "name": "Saifaldawla, Almoatssimbillah",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Tun",
+              "givenName": "Yan Kyaw",
+              "name": "Tun, Yan Kyaw",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ozger",
+              "givenName": "Mustafa",
+              "name": "Ozger, Mustafa",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Alsenwi",
+              "givenName": "Madyan",
+              "name": "Alsenwi, Madyan",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Van Huynh",
+              "givenName": "Nguyen",
+              "name": "Van Huynh, Nguyen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Lee",
+              "givenName": "Woong-Hee",
+              "name": "Lee, Woong-Hee",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Stefanovic",
+              "givenName": "Cedomir",
+              "name": "Stefanovic, Cedomir",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Sellathurai",
+              "givenName": "Mathini",
+              "name": "Sellathurai, Mathini",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Wymeersch",
+              "givenName": "Henk",
+              "name": "Wymeersch, Henk",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Ratnarajah",
+              "givenName": "Tharmalingam",
+              "name": "Ratnarajah, Tharmalingam",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2026-07-09T14:10:09Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2026-07-14T00:02:26Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2026-07",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Sixth-generation (6G) networks are moving toward AI-native operation, where learning modules are embedded across the radio access network (RAN), edge, and core. This transition requires learning from limited labels, heterogeneous wireless and network data, partial observations, non-stationary propagation, and latency-constrained control loops. Joint-embedding predictive architecture (JEPA) is a promising self-supervised paradigm for this setting because it predicts missing or future representations in latent space instead of reconstructing raw measurements or using contrastive negative samples. This article presents a wireless-oriented tutorial on JEPA for 6G intelligence. We define the JEPA training mechanism, describe how CSI, beam measurements, KPIs, topology graphs, and sensing observations can be tokenized and masked, and position the learned encoder as a predictive representation layer for RAN, O-RAN, edge, and core functions, with task-specific heads or controllers producing final decisions. Then we present an illustrative, beam-management case study suggesting that a wireless-aware target, specifically an auxiliary future beam-energy target during self-supervised pretraining, can improve label efficiency and robustness across shifted deployment conditions relative to a supervised source domain. Finally, we outline open challenges in multi-timescale prediction, action-conditioned modeling, distributed training, trustworthiness, efficient deployment, benchmarking, and standardization.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "14 pages, 4 figures, 3 tables. Tutorial and review on Joint-Embedding Predictive Architecture (JEPA) for AI-native 6G. Submitted to IEEE Communications Magazine",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2607.09798",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2607.09798",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2026,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2026-07-14T03:14:08Z",
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Artificial Intelligence (cs.AI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Networking and Internet Architecture (cs.NI)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "JEPA for AI-Native 6G: Predictive Representations and Open Challenges"
+            }
+          ],
+          "types": {
+            "bibtex": "misc",
+            "citeproc": "article",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint",
+            "ris": "GEN",
+            "schemaOrg": "CreativeWork"
+          },
+          "updated": "2026-07-14T03:14:08Z",
+          "url": "https://arxiv.org/abs/2607.09798",
+          "version": "1",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2607.09798",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=5&query=Self%5C-Supervised+Representation+Learning+From+Multi%5C-Domain+Data",
+      "self": "https://api.datacite.org/dois?query=Self%5C-Supervised+Representation+Learning+From+Multi%5C-Domain+Data&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 116,
+      "totalPages": 24
+    }
+  },
+  "response_hash": "f81016c02e53b58b80ff593d91558750fc6631588f02839b436ec07c638d3b95",
+  "retrieved_at": "2026-07-16T06:58:30Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

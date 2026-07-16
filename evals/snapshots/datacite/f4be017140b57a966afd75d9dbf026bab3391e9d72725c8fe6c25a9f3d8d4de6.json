@@ -1,0 +1,214 @@
+{
+  "endpoint": "dois",
+  "request_key": "f4be017140b57a966afd75d9dbf026bab3391e9d72725c8fe6c25a9f3d8d4de6",
+  "request_params": {
+    "page[size]": 5,
+    "query": "TERA\\: Self\\-Supervised Learning of Transformer Encoder Representation for Speech"
+  },
+  "response_body": {
+    "data": [
+      {
+        "attributes": {
+          "citationCount": 0,
+          "container": {},
+          "contentUrl": null,
+          "contributors": [],
+          "created": "2022-02-25T09:53:26Z",
+          "creators": [
+            {
+              "affiliation": [],
+              "familyName": "Liu",
+              "givenName": "Andy T.",
+              "name": "Liu, Andy T.",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Li",
+              "givenName": "Shang-Wen",
+              "name": "Li, Shang-Wen",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            },
+            {
+              "affiliation": [],
+              "familyName": "Lee",
+              "givenName": "Hung-yi",
+              "name": "Lee, Hung-yi",
+              "nameIdentifiers": [],
+              "nameType": "Personal"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2020-07-12T16:19:00Z",
+              "dateInformation": "v1",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2020-07-14T00:17:25Z",
+              "dateInformation": "v1",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2020-07-29T17:30:54Z",
+              "dateInformation": "v2",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-08-03T00:23:29Z",
+              "dateInformation": "v2",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021-08-04T05:38:15Z",
+              "dateInformation": "v3",
+              "dateType": "Submitted"
+            },
+            {
+              "date": "2021-08-05T00:10:14Z",
+              "dateInformation": "v3",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2020-07",
+              "dateInformation": "v1",
+              "dateType": "Available"
+            },
+            {
+              "date": "2020",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "We introduce a self-supervised speech pre-training method called TERA, which stands for Transformer Encoder Representations from Alteration. Recent approaches often learn by using a single auxiliary task like contrastive prediction, autoregressive prediction, or masked reconstruction. Unlike previous methods, we use alteration along three orthogonal axes to pre-train Transformer Encoders on a large amount of unlabeled speech. The model learns through the reconstruction of acoustic frames from their altered counterpart, where we use a stochastic policy to alter along various dimensions: time, frequency, and magnitude. TERA can be used for speech representations extraction or fine-tuning with downstream models. We evaluate TERA on several downstream tasks, including phoneme classification, keyword spotting, speaker recognition, and speech recognition. We present a large-scale comparison of various self-supervised models. TERA achieves strong performance in the comparison by improving upon surface features and outperforming previous models. In our experiments, we study the effect of applying different alteration techniques, pre-training on more data, and pre-training on various features. We analyze different model sizes and find that smaller models are strong representation learners than larger models, while larger models are more effective for downstream fine-tuning than smaller models. Furthermore, we show the proposed method is transferable to downstream datasets not used in pre-training.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Published in IEEE/ACM TASLP, final published article available at https://ieeexplore.ieee.org/document/9478264",
+              "descriptionType": "Other"
+            }
+          ],
+          "doi": "10.48550/arxiv.2007.06028",
+          "downloadCount": 0,
+          "formats": [],
+          "fundingReferences": [],
+          "geoLocations": [],
+          "identifiers": [
+            {
+              "identifier": "2007.06028",
+              "identifierType": "arXiv"
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "metadataVersion": 0,
+          "partCount": 0,
+          "partOfCount": 0,
+          "publicationYear": 2020,
+          "published": null,
+          "publisher": "arXiv",
+          "reason": null,
+          "referenceCount": 0,
+          "registered": "2022-02-25T09:53:28Z",
+          "relatedIdentifiers": [
+            {
+              "relatedIdentifier": "10.1109/taslp.2021.3095662",
+              "relatedIdentifierType": "DOI",
+              "relationType": "IsVersionOf"
+            }
+          ],
+          "relatedItems": [],
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "sizes": [],
+          "source": "mds",
+          "state": "findable",
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Audio and Speech Processing (eess.AS)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Computation and Language (cs.CL)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Machine Learning (cs.LG)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Electrical engineering, electronic engineering, information engineering",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "titles": [
+            {
+              "title": "TERA: Self-Supervised Learning of Transformer Encoder Representation for Speech"
+            }
+          ],
+          "types": {
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Text",
+            "ris": "RPRT",
+            "schemaOrg": "ScholarlyArticle"
+          },
+          "updated": "2022-02-25T09:53:28Z",
+          "url": "https://arxiv.org/abs/2007.06028",
+          "version": "3",
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "viewCount": 0
+        },
+        "id": "10.48550/arxiv.2007.06028",
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          }
+        },
+        "type": "dois"
+      }
+    ],
+    "links": {
+      "self": "https://api.datacite.org/dois?query=TERA%5C%3A+Self%5C-Supervised+Learning+of+Transformer+Encoder+Representation+for+Speech&page%5Bsize%5D=5"
+    },
+    "meta": {
+      "page": 1,
+      "total": 1,
+      "totalPages": 1
+    }
+  },
+  "response_hash": "0a5a274c0a10635dcbebee0e96ffa7d77d82d70148d6a2e8b9c9d5248cc85303",
+  "retrieved_at": "2026-07-16T06:58:29Z",
+  "schema_version": "1.0",
+  "source": "datacite"
+}

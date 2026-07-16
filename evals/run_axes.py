@@ -530,14 +530,65 @@ class AxisResult:
         }
 
 
+class FillSession(SnapshotSession):
+    """Record ONLY the snapshots that are missing; replay every one already stored.
+
+    ``--record`` re-fetches the whole gold set, including the requests it already holds. That
+    was harmless when every index was free. It is not harmless now: **OpenAlex meters full-text
+    search on a daily spend budget** ($0.001 per search, "Resets at midnight UTC"), and 55
+    known-item queries do not fit in one day's free allowance. A plain ``--record`` therefore
+    spends the day's budget re-fetching the 33 queries it already had, hits the cap, and fails
+    on exactly the 22 it was run to capture. That is not a hypothetical: it is the measured
+    reason the retrieval axis has now failed to complete twice.
+
+    This session spends the budget only on what is actually absent, which is what makes the
+    remaining gap closable in a single day rather than never.
+
+    It is NOT a way to sneak a live call into an eval: it is reachable only from the explicit
+    ``--record-missing`` flag, and the default run stays pure replay, where the fetcher is
+    never even constructed.
+    """
+
+    def fetch(
+        self,
+        source: str,
+        endpoint: str,
+        params: Mapping[str, Any] | None,
+        fetcher: Any,
+    ) -> Any:
+        try:
+            return self.replay(source, endpoint, params)
+        except SnapshotMissingError:
+            body = fetcher()
+            self.record(source, endpoint, params, body)
+            return body
+
+    async def afetch(
+        self,
+        source: str,
+        endpoint: str,
+        params: Mapping[str, Any] | None,
+        fetcher: Any,
+    ) -> Any:
+        try:
+            return self.replay(source, endpoint, params)
+        except SnapshotMissingError:
+            body = await fetcher()
+            self.record(source, endpoint, params, body)
+            return body
+
+
 def session_for(mode: str, snapshot_dir: Path) -> SnapshotSession:
     """The one snapshot session every axis runs through.
 
     In ``replay`` (the default) nothing below this can reach the network: ``afetch`` never
     calls its fetcher. In ``record`` every response is written to the store, which is the only
-    way snapshots are ever created.
+    way snapshots are ever created. In ``fill`` only the MISSING responses are fetched, which
+    is the only mode that can finish an axis whose source meters its requests.
     """
     store = SnapshotStore(snapshot_dir)
+    if mode == "fill":
+        return FillSession(store, SnapshotMode.RECORD, cache=None)
     return SnapshotSession(store, SnapshotMode.parse(mode), cache=None)
 
 
@@ -1177,6 +1228,13 @@ async def run_axes(
     return results
 
 
+MODE_NOTE = {
+    "replay": "offline replay from snapshots; no network",
+    "record": "LIVE: this run hit the network and rewrote snapshots",
+    "fill": "LIVE for MISSING snapshots only; everything already stored was replayed",
+}
+
+
 def render(results: Sequence[AxisResult], mode: str) -> str:
     """The human report. No clock, no duration, no ordering by completion (D15)."""
     out: list[str] = [
@@ -1185,9 +1243,7 @@ def render(results: Sequence[AxisResult], mode: str) -> str:
         "=" * 78,
         "",
         f"core version    {CORE_VERSION}",
-        f"mode            {mode} (offline replay from snapshots; no network)"
-        if mode == "replay"
-        else f"mode            {mode} (LIVE: this run hit the network and rewrote snapshots)",
+        f"mode            {mode} ({MODE_NOTE[mode]})",
         "intervals       95% Wilson score intervals, never the normal approximation",
         "",
     ]
@@ -1249,6 +1305,15 @@ def main(argv: Sequence[str] | None = None) -> int:
         "definition. This is how evals/snapshots/ is created and refreshed.",
     )
     parser.add_argument(
+        "--record-missing",
+        action="store_true",
+        help="LIVE, but only for gold items whose snapshot is MISSING. Everything already "
+        "stored is replayed and never re-fetched. Use this instead of --record when a source "
+        "meters its requests (OpenAlex now bills full-text search against a daily budget that "
+        "does not cover a 55-query gold set), because --record spends that budget re-fetching "
+        "what it already has and then runs out before reaching the gap it was run to close.",
+    )
+    parser.add_argument(
         "--snapshot-dir",
         type=Path,
         default=DEFAULT_SNAPSHOT_DIR,
@@ -1268,9 +1333,17 @@ def main(argv: Sequence[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
+    if args.record and args.record_missing:
+        parser.error("--record and --record-missing are mutually exclusive")
+
     set_polite_env()
     axes = list(dict.fromkeys(args.axis)) if args.axis else list(AXES)
-    mode = "record" if args.record else "replay"
+    if args.record:
+        mode = "record"
+    elif args.record_missing:
+        mode = "fill"
+    else:
+        mode = "replay"
     session = session_for(mode, args.snapshot_dir)
 
     if mode == "replay" and not args.snapshot_dir.is_dir() and axes != ["dedup"]:
