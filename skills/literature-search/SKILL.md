@@ -14,16 +14,68 @@ Multi-source academic literature search with deduplication and ranking.
 
 1. **Parse research question** → extract key concepts, synonyms, MeSH terms
 2. **Construct queries** → adapt syntax per source (Boolean for PubMed, keywords for Semantic Scholar)
-3. **Dispatch searches** to available sources (in priority order):
-   - **Scite (PRIMARY when MCP connected)**: smart citation context, citation tallies, full-text snippets
-   - PubMed (via NCBI E-utilities): biomedical focus
-   - Semantic Scholar (via S2 API): broad CS/science coverage, citation graphs
-   - arXiv (via API): preprints, CS/physics/math
-   - Google Scholar (via web search): broadest coverage
-   - CrossRef (via API): DOI resolution, metadata
-4. **Deduplicate** results by DOI, then by title similarity (>0.9 Jaccard)
-5. **Rank** by: relevance to query > recency > citation count
-6. **Present** results in structured format
+3. **Dispatch the fan-out** through the `core/` kernel (see Deterministic backend below), which
+   queries the sources, isolates per-source errors, dedupes, and ranks in one call. When the
+   Scite MCP server is connected, it enriches the top results with citation context.
+4. **Read dedup and ranking from the kernel**: consume `dedup_decisions[]` and the ranked
+   `records[]` from its JSON rather than re-implementing either.
+5. **Present** results in structured format, naming which tier produced them (kernel, MCP, or web
+   search) and which sources were not reached.
+
+## Deterministic backend
+
+Retrieval, deduplication, and ranking route through the `core/` evidence kernel, not hand-built
+API calls. One fan-out call queries the sources, isolates per-source errors, dedupes, and ranks,
+returning CSL-JSON records with kernel metadata (source provenance, citation count, OA URL, rank
+score) under the `custom` extension.
+
+### Fan-out search
+
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core search "<query>" --sources openalex,crossref,arxiv --json
+```
+
+Consume from the JSON:
+- `records[]`: the deduped, ranked results, already in CSL-JSON.
+- `counts{retrieved, deduplicated, duplicates_removed}`: the tallies to report to the user.
+- `dedup_decisions[]`: which records collapsed into which, and why.
+- `warnings[]`: a source that timed out or was rate-limited lands here. One failing source never
+  fails the search; name the sources that were not reached and never read a downed index as
+  "no results".
+- `sources[]`: which sources actually answered.
+
+Add `--limit N` to cap results and `--since YEAR` to bound recency. Full command, flag, and JSON
+reference: `references/core-cli.md`.
+
+### Degradation path (never hard-fail, D3)
+
+The kernel is optional; state which tier produced the results:
+1. `core/` present: deterministic fan-out as above.
+2. No `uv` or `core/`: fall back to connected MCP servers (Scite for citation context, Zotero for
+   the user's library), and say the kernel was unavailable.
+3. Neither: web search, clearly labeled as non-deterministic and unverified.
+
+### Verdicts, never a boolean (D9)
+
+When a result is checked for identity (a known-item lookup, or a paper about to be added to the
+bibliography), consume the FOUR-STATE identity verdict from `verify-ref`
+(`verified` / `mismatch` / `unresolvable` / `inconclusive`), never a true/false. The kernel
+carries `refusal_grade` per entry so this rule is not re-derived:
+- Refusal-grade (withhold, or flag as fabricated or wrong): `unresolvable`, `mismatch`, plus
+  `retracted` on status (axis b) and `contradicted` on faithfulness (axis c).
+- NEVER refusal-grade (surface as an open item): `inconclusive` (a source errored, or only one
+  index holds the paper) and `insufficient-passage` (no OA full text to anchor a claim). Reading
+  either as fabrication accuses an honest author of inventing a real citation, the worst failure
+  this system can make.
+
+### The layer every verdict names
+
+Abstracts and "what does the research say" snippets are the ABSTRACT layer unless OA full text
+was retrieved and indexed as M2 passages. Faithfulness (axis c) anchors on those passages; when
+full text is unavailable the verdict is `insufficient-passage`, never clean or faithful, and each
+verdict names its layer (abstract vs full-text). Axis (c) is a LEXICAL baseline (BM25 plus
+token-overlap and polarity heuristics) that can miss overstatements, so a `supported` read off an
+abstract is weak evidence, not a fact-check.
 
 ## Result Format
 
@@ -36,6 +88,7 @@ For each paper found:
     Abstract: First 2-3 sentences of abstract...
     Source: Semantic Scholar
     Scite Tallies: 89 supporting | 12 contrasting | 41 mentioning  (when Scite available)
+    Identity: verified (2+ sources) | Layer: abstract  (when checked via core)
     [Add to bibliography]
 ```
 
@@ -46,10 +99,21 @@ Default mode. Searches all available sources, returns top 10-20 results.
 
 ### Systematic Review (PRISMA)
 Triggered by: "systematic review", "PRISMA", "comprehensive search"
-- Documents search strategy (databases, queries, date ranges)
-- Tracks: identified → screened → eligible → included
-- Generates PRISMA flow diagram data
-- Exports search log for reproducibility
+- Runs the fan-out `search` per protocol query. In systematic mode the kernel feeds the
+  append-only provenance ledger: a `retrieval` event per source query, a `record_lineage` event
+  per retained record, and a `dedup_decision` event per collapse (the `dedup_decisions[]` the
+  search output carries).
+- Reports PRISMA counts DERIVED from those events, never a stored total:
+
+  ```
+  uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core provenance prisma --json
+  ```
+
+  Read `identified`, `identified_by_source{}`, `duplicates_removed`, `deduplicated`, `screened`,
+  `included`, and `excluded` straight from the derived object; the PRISMA flow diagram is built
+  from these counts. Do not recompute, store, or cache a total.
+- Documents the search strategy (databases, queries, date ranges) and exports the search log for
+  reproducibility.
 
 ### Citation Chasing
 Triggered by: "papers that cite this", "references of this paper"
@@ -57,45 +121,27 @@ Triggered by: "papers that cite this", "references of this paper"
 - Backward reference search (what does this paper cite)
 - Uses Semantic Scholar citation graph
 
-## Connector Usage
+## Sources
 
-Check which connectors are available before searching. Use all available ones. If a connector is unavailable, skip it and note which sources were not searched.
-
-### PubMed API
-```
-Base URL: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
-esearch.fcgi?db=pubmed&term={query}&retmax=20&sort=relevance
-efetch.fcgi?db=pubmed&id={pmid_list}&rettype=xml
-```
-
-### Semantic Scholar API
-```
-Base URL: https://api.semanticscholar.org/graph/v1/
-paper/search?query={query}&limit=20&fields=title,authors,year,abstract,citationCount,externalIds
-```
-
-### arXiv API
-```
-Base URL: http://export.arxiv.org/api/
-query?search_query=all:{query}&max_results=20&sortBy=relevance
-```
-
-### CrossRef API
-```
-Base URL: https://api.crossref.org/works
-?query={query}&rows=20&sort=relevance
-```
+The kernel owns retrieval, so results stay deduped, ranked, and snapshot-reproducible; do not
+hand-build API calls here. The default fan-out covers OpenAlex, Crossref, and arXiv; add others
+with `--sources` (`semantic_scholar`, `pubmed`, `datacite`, `unpaywall`, `opencitations`). An
+unknown source name is an argument error, never a silent skip. Per-source mechanics, env vars,
+and fallbacks live in `references/core-cli.md` and `connectors/`.
 
 ## Deep Scite Integration
 
 > **When the Scite MCP server is connected, this skill gains citation context superpowers.**
 
-When the Scite MCP connector is available, it becomes the PRIMARY search source (not just supplementary). The following enhanced capabilities activate:
+When the Scite MCP connector is available, it enriches the kernel's top results with citation context (and serves as a degradation tier when the kernel is unavailable). The following capabilities activate:
 
-### Scite as Primary Search
-- Dispatch search queries to Scite FIRST, before other sources
-- Use Scite results as the baseline result set; supplement with other sources for coverage
-- Scite results carry richer metadata and are preferred when deduplicating
+### Scite enrichment of top results
+- After the kernel fan-out returns ranked `records[]`, enrich the TOP results with Scite: pull
+  citation context and tallies for the highest-ranked papers.
+- Scite is a citation-context layer over the kernel's results, not a replacement for the
+  deterministic fan-out; when the kernel is unavailable it also serves as a degradation tier.
+- Prefer Scite metadata when reconciling a paper's citation context, never when deciding identity
+  (that stays the kernel's four-state verdict).
 
 ### Citation Tallies
 For every paper found (from any source), retrieve Scite citation tallies when available:
@@ -135,9 +181,14 @@ When user selects papers, generate BibTeX entries and append to `manuscript/refe
 - DOI (if available)
 - Complete metadata (title, author, year, journal/booktitle)
 
+Before appending, run `verify-ref` on each entry and read its four-state identity verdict:
+withhold only refusal-grade entries (`unresolvable`, `mismatch`, `retracted`), and surface
+`inconclusive` or `insufficient-passage` as open items rather than dropping a real citation.
+
 ## References
 
-For advanced search strategies, read `references/search-strategies.md`.
+For advanced search strategies, read `references/search-strategies.md`. For the full core CLI
+(every command, flag, JSON shape, and the four verification axes), read `references/core-cli.md`.
 
 ## Integrity constraints
 

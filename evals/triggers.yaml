@@ -460,3 +460,33 @@ skills:
         route: paper-drafting
       - prompt: "Draw the model architecture diagram for the methods section"
         route: tikz-diagrams
+
+  - name: research-pipeline
+    positive:
+      - "Run the full research pipeline from my question to a submission-ready draft"
+      - "Take this project end to end, plan through review, with checkpoints"
+      - "Orchestrate the whole paper: retrieve, synthesize, draft, review, compile, format"
+      - "Drive this manuscript stage by stage and gate the format step on a passing compile"
+      - "Build the paper from the research question, stopping for me after every stage"
+    negative:
+      - prompt: "Just draft the introduction section for me now"
+        route: paper-drafting
+      - prompt: "Set up a new IMRaD manuscript folder for this project"
+        route: manuscript-setup
+      - prompt: "Design the experiment I should run to test this hypothesis"
+        route: experiment-design
+
+  - name: citation-audit
+    positive:
+      - "Audit every citation in my manuscript for existence and faithfulness"
+      - "Verify all my citations resolve and none are retracted before I submit"
+      - "Do a citation integrity check across the whole paper"
+      - "Check that each cited source actually supports the claim it is attached to"
+      - "Run a full citation audit and refuse to pass if anything is fabricated"
+    negative:
+      - prompt: "Clean the duplicate and dangling keys out of my library.bib file"
+        route: citation-management
+      - prompt: "Fact check this one claim about insulin sensitivity against the literature"
+        route: fact-checking
+      - prompt: "Show me how this paper has been cited, supporting or contrasting"
+        route: citation-context

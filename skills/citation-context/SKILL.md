@@ -34,7 +34,125 @@ The cited work provides a method, tool, dataset, or metric used in the current s
 - Signal phrases: "Following the approach of", "Using the method described in", "Evaluated on the benchmark of", "Implemented using"
 - Example: "We evaluate our model on the benchmark introduced by Smith et al. (2023)."
 
+## Deterministic backend
+
+Citation enumeration and every existence claim about a citing or cited paper route through the
+`researcher-core` evidence kernel. Claude keeps the interpretive work (deciding whether a
+citation is supporting, contrasting, mentioning, extending, or methodological); core does the
+reproducible work (enumerating who cites a paper, resolving four-state identity, and checking
+retraction status). Full command reference: `references/core-cli.md`.
+
+### Enumerate who cites a paper (citation graph)
+
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core citations <doi-or-id> --limit 50 --json
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core references <doi-or-id> --limit 50 --json
+```
+
+- `citations <id>` returns forward citations (works that cite this one); `references <id>`
+  returns backward references (works this one cites). Both return
+  `{seeds[], direction, depth, nodes[], edges[], warnings[], sources[], counts{}}`, and each
+  `nodes[]` element is a CSL-JSON record. Read `nodes[]` for the enumerated works and
+  `warnings[]` for any source that failed.
+- Default sources are `openalex,semantic_scholar,opencitations`. A source in `warnings[]` is a
+  coverage gap, not evidence a paper is uncited.
+
+### Verify any citing entry asserted as existing (axis a, four-state)
+
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core verify-ref "<doi-or-title>" --json
+```
+
+Read, per entry: `verdict` (`verified` / `mismatch` / `unresolvable` / `inconclusive`),
+`refusal_grade` (already computed, never re-derive it), `reason`, `source_outcomes[]`,
+`best_match`, and the `status` and `accessibility` blocks. Consume the four-state verdict,
+NEVER a boolean.
+
+- **Refusal-grade fires ONLY on `unresolvable` or `mismatch`** (plus `retracted` from axis b,
+  `contradicted` from axis c). A citing entry that is `unresolvable` or `mismatch` is FLAGGED as
+  unresolved, never listed as an established citing work.
+- **`inconclusive` is NEVER refusal-grade.** It means a source errored or only one index holds
+  the paper. Surface it as an open item ("could not confirm, one index only"), never as
+  fabrication. Accusing an honest author of inventing a real citation is the worst failure here.
+
+### Retraction annotations on citing papers (axis b)
+
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core status <doi-or-id> --json
+```
+
+Read `entries[].status` for `current` / `corrected` / `retracted` / `expression-of-concern`.
+Annotate any citing paper that is `retracted` or `expression-of-concern` inline: a retracted
+work still counts in the tally but must carry the notice. `status.checked: false` means axis (b)
+was never answered, which is absence of evidence, not a clean bill of health.
+
+### Framing faithfulness (axis c), and the layer it names
+
+When auditing whether the user's framing matches the cited paper's actual finding, anchor on M2
+passages:
+
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core passages index <doi-or-url> --json
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core faithfulness "<the user's claim>" --doc <doc-id> --json
+```
+
+- Every faithfulness verdict NAMES its layer: full-text when an OA copy was indexed,
+  abstract-only otherwise. When full text is unavailable the verdict is `insufficient-passage`,
+  never "clean" or "faithful"; surface it as an open item, never refusal-grade.
+- Axis (c) is a LEXICAL baseline (BM25 plus token-overlap and polarity heuristics). It can miss
+  overstatements: a framing it calls `supported` may still overreach. Treat `supported` as "no
+  lexical contradiction found at this layer", not proof the framing is accurate. Only
+  `contradicted` is refusal-grade on this axis.
+
+### Scite and Claude, side by side
+
+When the Scite MCP connector is connected, its tallies add quantitative supporting / contrasting
+/ mentioning counts across the whole literature. These COMPLEMENT, never replace, Claude's
+interpretive classification of the specific sentence in front of you. Report both: the Scite
+tally (where present) and Claude's role judgment for this manuscript's usage.
+
+### Degradation path (state it in the output when a fallback is used)
+
+1. **Core present** (`uv` + `core/`, or `pip install -e core/`): citation graph, four-state
+   identity, status, and faithfulness as above.
+2. **No `uv` / no core**: fall back to the **Scite MCP** (smart citations, tallies, editorial
+   notices) and **Zotero MCP** (library metadata) where connected.
+3. **No MCP either**: web search plus local `\cite` text analysis only. Say so, and never assert
+   a citing work exists or a paper is retracted without a retrieval behind it.
+
 ## Operations
+
+### Enumerate Citing Works
+Triggered by: "who cites this paper", "analyze citations of this paper", "citation audit" for a specific paper
+
+**Workflow:**
+1. Resolve the target paper (DOI, arXiv ID, or OpenAlex ID).
+2. Run core `citations <id> --json` to enumerate the works that cite it (and `references <id>`
+   for what it cites). Read `nodes[]`; note any source in `warnings[]` as a coverage gap.
+3. For each citing work you assert as existing, run `verify-ref` and consume the four-state
+   verdict. List `verified` and `inconclusive` works (the latter flagged "one index only"); FLAG
+   `unresolvable` / `mismatch` works as unresolved, never as established citations.
+4. Run `status` over the citing set; annotate any `retracted` or `expression-of-concern` paper.
+5. If Scite is connected, attach its supporting / contrasting / mentioning tallies. Claude
+   classifies the interpretive role of each citation's framing.
+
+**Output:**
+```
+Citing Works for Smith et al. (2023)  [DOI 10.xxxx/yyyy]
+========================================================
+Enumerated: 42 citing works (openalex 42, semantic_scholar 38, opencitations 40)
+Coverage note: none (all sources returned)
+
+Verified citing works:            39
+Inconclusive (one index, open):    2
+Unresolvable (flagged, NOT fact):  1
+
+Retraction notices:
+  jones2021: RETRACTED (axis b), still tallied, notice attached
+
+Scite tally (where available): supporting 12, contrasting 5, mentioning 25
+Claude role read (this manuscript's usage): 3 supporting, 1 contrasting
+```
 
 ### Analyze Citation Roles in Manuscript
 Triggered by: "analyze my citations", "citation roles", "how am I using my citations"
@@ -70,13 +188,17 @@ Detailed Analysis:
 Triggered by: "audit citations", "check citation framing", "are my citations accurate"
 
 **Workflow:**
-1. For each citation in the manuscript, identify the role (as above)
-2. If Scite MCP connector is available, retrieve smart citation data for the cited DOI
-3. Compare the user's framing against the actual relationship:
-   - Does the cited paper actually support the claim being made?
-   - Is a "supporting" citation actually a contrasting result?
-   - Is the cited paper's finding accurately represented?
-4. Flag mismatches and potentially misleading framings
+1. For each citation in the manuscript, identify the role (as above).
+2. Confirm the cited paper exists with core `verify-ref`; consume the four-state verdict and
+   attach any `status` retraction notice. Flag `unresolvable` / `mismatch` entries rather than
+   auditing framing against a paper that may not exist.
+3. Anchor the user's framing against the source with core `faithfulness` (see Deterministic
+   backend). Every verdict names its layer (abstract vs full-text); an `insufficient-passage`
+   verdict is an open item, not a mismatch. Axis (c) is a lexical baseline that can miss
+   overstatements, so a `supported` verdict is not proof the framing is accurate.
+4. If Scite MCP is connected, add its smart-citation tallies as corroboration.
+5. Flag genuine framing mismatches (a `contradicted` faithfulness verdict, or a Scite tally that
+   inverts the user's stated role); the interpretive call stays with Claude.
 
 **Output:**
 ```
@@ -99,11 +221,15 @@ WARNING: discussion.tex:45, \cite{jones2022} framed as Contrasting
 Triggered by: "how should I cite this", "frame this citation", "cite this as"
 
 **Workflow:**
-1. User provides a citation key and the claim they want to support
-2. Retrieve the cited paper's abstract and key findings (via Scite MCP or literature-search)
-3. Determine the actual relationship between the paper and the user's claim
-4. Suggest appropriate framing with example sentences
-5. Warn if the paper does not actually support the intended use
+1. User provides a citation key and the claim they want to support.
+2. Retrieve the cited paper via core `get` (abstract and metadata) or `fulltext` (OA full text
+   where available); fall back to Scite MCP or literature-search if core is absent.
+3. Determine the actual relationship with core `faithfulness`, naming the layer verified (abstract
+   vs full-text). Remember axis (c) is a lexical baseline and can miss overstatements.
+4. Suggest appropriate framing with example sentences.
+5. Warn if the paper does not actually support the intended use. When the verdict is
+   `insufficient-passage` (no OA full text), say the framing could not be checked at full-text
+   level, and surface it as an open item rather than endorsing the framing.
 
 **Output:**
 ```
@@ -150,16 +276,17 @@ Claim: "Training is more efficient than prior approaches"
 
 ## Scite MCP Integration
 
-When the Scite MCP connector is available, use it for enhanced citation context analysis:
-- Retrieve "smart citations": actual excerpts showing how papers cite each other
-- Access citation statement classifications (supporting, contrasting, mentioning)
-- Cross-reference citation contexts across the literature, not just the user's manuscript
-- Check editorial notices for retractions or corrections
+Scite complements the deterministic backend; it does not replace it. Core enumerates citing
+works and resolves identity and status deterministically (see Deterministic backend); Scite adds
+literature-wide quantitative tallies when connected:
+- "Smart citations": actual excerpts showing how papers cite each other
+- Citation statement classifications (supporting, contrasting, mentioning) as counts
+- Cross-references across the literature, not just the user's manuscript
+- Editorial notices for retractions or corrections (corroborating core's axis-b `status`)
 
-When Scite is unavailable, fall back to:
-- Local text analysis of the user's manuscript only
-- Signal phrase detection for role classification
-- Abstract-level comparison via literature-search results
+The interpretive role classification for a specific sentence always stays with Claude. When
+neither core nor Scite is available, fall back to local text analysis of the user's manuscript
+(signal-phrase role detection, abstract-level comparison via literature-search) and say so.
 
 ## Integration Points
 
@@ -175,5 +302,6 @@ When Scite is unavailable, fall back to:
 - Never fabricate citations: every reference must come from an actual retrieval (API, MCP, or user-provided source). If a citation cannot be verified, flag it; never invent a DOI, author list, venue, or year.
 - Never invent data: only user-provided or actually computed numbers may appear as results. Anything illustrative must be labeled "(synthetic, for demonstration)".
 - Refuse to present as valid output: a likely-fabricated or unresolvable citation, a data claim with no traceable source, or a retracted source (unless the user explicitly cites it as retracted).
+- Consume the four-state identity verdict, never a boolean. Refusal-grade behavior (flag as unresolved, withhold from the citing list) fires ONLY on `unresolvable` or `mismatch` on axis (a), `retracted` on axis (b), or `contradicted` on axis (c). `inconclusive` and `insufficient-passage` are NEVER refusal-grade: surface them as open items. Treating `inconclusive` as fabrication accuses an honest author of inventing a real citation.
 
 Canonical copy: `references/integrity-constraints.md`.

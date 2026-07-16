@@ -10,6 +10,57 @@ Maintains a validated, consistent bibliography in `library.bib` with full lifecy
 ## CRITICAL INTEGRITY RULE
 **NEVER fabricate or hallucinate bibliography entries.** Every BibTeX entry must originate from a real source: a user-provided reference, a DOI lookup, a Zotero/Mendeley import, or a literature-search result. If a DOI cannot be resolved, flag the entry rather than guessing metadata.
 
+## Deterministic backend
+
+Validation and any "clean" declaration route through the `researcher_core` evidence kernel, which resolves and verifies each entry deterministically instead of asking the model to judge whether a citation is real. Full command and JSON reference: `references/core-cli.md`.
+
+### verify-bib (axes a, b, d)
+
+Run before ANY bibliography is declared clean:
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core verify-bib manuscript/references/library.bib --json
+```
+Default sources: `openalex,crossref,datacite`. The report is `{schema_version, protocol_version, versions{}, input{}, thresholds{}, sources_queried[], entries[], summary{}}`. Consume, per `entries[]`:
+- `verdict` (axis a, identity): `verified` | `mismatch` | `unresolvable` | `inconclusive`
+- `refusal_grade` (bool): the kernel's own refusal decision. Trust it; never re-derive it.
+- `reason`, `source_outcomes[]` (each `confirmed` | `negative` | `source_error`), `tally`, `best_match`
+- `status{}` (axis b): `current` | `corrected` | `retracted` | `expression-of-concern`, or `checked: false`
+- `accessibility{}` (axis d): `full-text` | `abstract-only` | `unavailable`
+
+### status (axis b sweep)
+
+A focused publication-status sweep over the same library. verify-bib already carries a per-entry `status` block; run `status` when you want a standalone re-check (e.g. months after the last verify):
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core status manuscript/references/library.bib --json
+```
+Default sources: `crossref,openalex`. Report shape `{... entries[], summary{}}`, each entry carrying the axis (b) verdict above. `status.checked: false` is an absence of evidence, NOT a clean bill of health: do not read it as `current`.
+
+### Four-state verdict and the refusal-grade rule
+
+Consume the FOUR-STATE identity verdict, never a boolean. Refusal-grade behavior (withholding an entry, telling the user a citation looks fabricated or wrong) fires ONLY on:
+- axis (a) `unresolvable` or `mismatch`
+- axis (b) `retracted`
+- (in the integrity audit) axis (c) `contradicted`
+
+`inconclusive` is NEVER refusal-grade: it means a source errored or only one index holds the paper, so a clean negative could not be asserted. Acting on it would accuse an honest author of fabricating a real citation, the worst failure this skill can make. Surface it as an open item and move on. `insufficient-passage` (axis c) and `corrected` / `expression-of-concern` (axis b) are likewise surfaced for human review, never refusal-grade on their own.
+
+### Clean-declaration gate
+
+A bibliography is declared CLEAN only when `verify-bib` reports ZERO refusal-grade entries:
+- Zero `unresolvable`, zero `mismatch` (axis a), zero `retracted` (axis b).
+- `inconclusive` entries are LISTED for human review and do NOT block the clean declaration.
+- `corrected` and `expression-of-concern` are surfaced as mandatory checkpoints (a retraction or concern is a disclosure decision, never a silent drop) but do not, by themselves, block clean.
+
+State the count of each surfaced-but-non-blocking class in the report so nothing is hidden.
+
+### Degradation path (D3)
+
+Core is optional; the plugin never hard-fails without it. Prefer core, then degrade, and STATE in the output which backend produced the report:
+1. **core `verify-bib` / `status`** (above) when `uv` and `core/` are present, or via the `pip install -e core/` fallback (`researcher-core verify-bib ... --json`).
+2. **`scripts/bib-validator.py`** (the M1 stdlib validator) when core is absent: `python scripts/bib-validator.py manuscript/references/library.bib --check-doi --check-retracted --check-fields`. It resolves DOIs and checks retraction/fields without core, but returns coarser signals (no four-state axis verdicts); map its failures conservatively and never manufacture a refusal-grade verdict from a network error.
+3. **MCP servers** where relevant: Zotero for library import/sync, Scite for retraction and status context on flagged entries.
+4. **Web search / CrossRef title lookups** as the last resort (see Connector Usage).
+
 ## Workflow
 
 1. **Locate bibliography** at `manuscript/references/library.bib`. If it does not exist, create it with a header comment block.
@@ -99,18 +150,20 @@ Check journal name against known predatory journal indicators:
 - Missing ISSN or unresolvable ISSN
 - Flag with: `% WARNING: Potential predatory journal, verify manually`
 
-### Retraction Check
-For entries with DOIs:
-- Check against Retraction Watch database (via CrossRef metadata `update-to` field)
-- If retracted, flag prominently: `% RETRACTED: do not cite without disclosure`
-- Report retraction reason if available
+### Retraction Check (axis b status)
+Publication status is axis (b) of the Deterministic backend: core `verify-bib` carries a per-entry `status` block and `status` runs a focused sweep. Verdicts: `current`, `corrected`, `retracted`, `expression-of-concern`.
+- A `retracted` verdict is refusal-grade and blocks a clean declaration. Flag it prominently: `% RETRACTED: do not cite without disclosure`, and report the retraction reason when available.
+- `corrected` and `expression-of-concern` are surfaced as checkpoints (a disclosure decision), never silent drops, and do not block clean on their own.
+- Without core, fall back to CrossRef metadata `update-to` via `python scripts/bib-validator.py manuscript/references/library.bib --check-retracted`.
 
-### Batch Validation
-Invoke `scripts/bib-validator.py` for full-library validation:
+### Batch Validation and Clean Declaration
+Route full-library validation through the **Deterministic backend**: run core `verify-bib` (and, for a standalone status re-check, `status`) and read the per-entry `verdict`, `refusal_grade`, `status`, and `accessibility` fields. Apply the Clean-declaration gate: the library is clean only with ZERO refusal-grade entries (`unresolvable`, `mismatch`, `retracted`); `inconclusive`, `corrected`, and `expression-of-concern` entries are surfaced for human review and do NOT block a clean declaration.
+
+When core is unavailable, fall back to the M1 stdlib validator (same D3 degradation path) and say so in the output:
 ```
 python scripts/bib-validator.py manuscript/references/library.bib --check-doi --check-retracted --check-fields
 ```
-Parse output and present summary table of issues found.
+Present a summary table of issues, keeping refusal-grade blockers separate from surfaced-for-review items and stating the count of each class.
 
 ## Format Conversion
 
@@ -179,6 +232,20 @@ Potentially unsupported claims: 4
 Triggered by: "citation integrity", "verify citations", "check citation accuracy", "are my citations correct"
 
 Goes beyond checking whether citations exist: it verifies whether each citation is used honestly and accurately in the manuscript.
+
+### Verified layer and faithfulness (axis c)
+
+Claim-source alignment anchors on the Deterministic backend's M2 passages, not on the model's memory. Index the cited paper, then score the claim with core:
+```
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core passages index <doi> --json
+uv run --project "${CLAUDE_PLUGIN_ROOT}/core" python -m researcher_core faithfulness "<claim>" --doc <doc-id> --json
+```
+Axis (c) verdicts are `supported`, `partial`, `contradicted`, `insufficient-passage`. Rules:
+- Every verdict NAMES THE LAYER it was checked against: `full-text` or `abstract-only`. When OA full text is unavailable, the verdict is `insufficient-passage` (never "clean" or "faithful"): it is an abstention with `clean: false` and no passage anchors, surfaced as an open item, never refusal-grade.
+- `contradicted` is refusal-grade: flag the citation as a likely misrepresentation.
+- Axis (c) is a LEXICAL baseline (BM25 plus token-overlap and polarity heuristics). It is honest but weak: it can call an overstatement `supported` and miss subtle scope inflation. Present its verdicts as evidence for human review, not as proof, and defer to Scite context when connected.
+
+Degradation (D3): without core, use Scite MCP smart citations for claim context; without Scite, fall back to abstracts and metadata, and lower confidence accordingly.
 
 ### Verification Process
 
@@ -270,7 +337,8 @@ On request, sort `library.bib` entries by:
 - **manuscript-setup:** Initial `library.bib` is created by manuscript-setup; citation-management maintains it thereafter
 - **journal-formatting:** Citation style must match target journal; journal-formatting may trigger a format conversion
 - **pre-commit-citation-check hook:** Runs the Missing Citations and Unused Entries audits automatically before git commits
-- **scripts/bib-validator.py:** Batch validation backend; citation-management invokes it and interprets results
+- **researcher-core `verify-bib` / `status`:** the deterministic validation backend; citation-management routes clean declarations through it and reads the four-state verdicts (see Deterministic backend)
+- **scripts/bib-validator.py:** the M1 stdlib fallback when core is absent (D3); invoked and interpreted the same way
 
 ## Connector Usage
 
