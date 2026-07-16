@@ -4,7 +4,7 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2026-07-14
+## [1.0.0] - 2026-07-16
 
 Production completeness, and the release that hardens the boundary around the core and makes it citable
 and installable outside Claude Code. M2 through M4 built the evidence kernel, the compile gate, and the
@@ -105,7 +105,7 @@ scope.
 M5 added no skills by design: it is the boundary-hardening milestone, so the pooled trigger eval is
 unaffected. Reported as observed, never targeted (D18).
 
-## [0.5.0] - 2026-07-14
+## [0.5.0] - 2026-07-16
 
 The systematic-review vertical. 0.4.0 made a single manuscript compile from its evidence; 0.5.0 builds the
 first full methodology on top of the kernel and the ledger: a systematic review you could defend to a
@@ -223,7 +223,7 @@ skills. These are observed after the fact, never targeted (D18).
 **The Codex installer moved to 35 skills.** The two new commands joined the command-to-skill map, and the
 installer copies the four new skills into the shared asset directory like the rest.
 
-## [0.4.0] - 2026-07-14
+## [0.4.0] - 2026-07-16
 
 The evidence-lineage compiler, and the position this whole project was built toward (D18). 0.3.0 could
 verify a citation. 0.4.0 makes a manuscript COMPILE from its evidence: every claim and every number in a
@@ -312,7 +312,7 @@ two new commands joined the command-to-skill map.
 99.4% recall and a 6.5% false-trigger rate with the two new skills added. These are observed after the
 fact, never targeted (D18).
 
-## [0.3.0] - 2026-07-14
+## [0.3.0] - 2026-07-16
 
 The evidence kernel. `core/` exists now, so the sentence "a deterministic retrieval core is planned"
 is retired from this repository. Citation verification is no longer a promise backed by a DOI lookup:
