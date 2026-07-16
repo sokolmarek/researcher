@@ -1,0 +1,97 @@
+# RoB 2 worksheet skeleton (M4.9)
+# ================================
+# One worksheet per study PER OUTCOME. The systematic-review skill prefills the mechanical fields
+# (study_id, outcome, result, extraction_anchor); a HUMAN answers every signalling question and
+# makes every judgement. The plugin does NOT run the RoB 2 algorithm and does NOT derive any
+# judgement. Full instrument and routing: references/rob2-worksheet.md.
+#
+# Signalling-question responses: Y | PY | PN | N | NI | NA
+#   Y = yes, PY = probably yes, PN = probably no, N = no, NI = no information,
+#   NA = not applicable (a conditional question the routing skipped). Leave `null` until answered;
+#   an unanswerable question is NI, never a guessed Y or N.
+# Domain and overall judgements: Low | "Some concerns" | High   (the human applies RoB 2 logic)
+
+schema: rob2-worksheet/v1
+applies_to: parallel-group-rct   # RoB 2 base variant; cluster/crossover are out of scope (0.5.0)
+
+# --- Mechanical fields (prefilled by the skill; do not edit) ---
+study_id: ""            # the record id in the review ledger
+citation: ""            # short human-readable reference
+outcome: ""             # the specific outcome this worksheet assesses
+result: ""              # the specific numerical result (effect, timepoint) assessed
+extraction_anchor: ""   # link back to the M4.7 extraction cell / passage id
+appraiser_id: ""        # completed by (the human)
+
+domains:
+  d1_randomization:
+    signalling:
+      q1_1: null   # Was the allocation sequence random?
+      q1_2: null   # Was the allocation sequence concealed until enrolment and assignment?
+      q1_3: null   # Did baseline differences suggest a problem with the randomization process?
+    rationale: ""
+    judgement: null   # Low | "Some concerns" | High
+
+  d2_deviations:
+    # Select which effect the review targets, then complete ONLY that sub-block; mark the other's
+    # responses NA. See references/rob2-worksheet.md for the routing on each question.
+    deviations_variant: assignment   # assignment (intention-to-treat) | adherence (per-protocol)
+    assignment:   # effect of assignment to intervention
+      q2_1: null   # Were participants aware of their assigned intervention?
+      q2_2: null   # Were carers / deliverers aware of the assigned intervention?
+      q2_3: null   # [if Y/PY/NI to 2.1 or 2.2] Deviations arising from the trial context?
+      q2_4: null   # [if Y/PY to 2.3] Were these deviations likely to have affected the outcome?
+      q2_5: null   # [if Y/PY/NI to 2.4] Were the deviations balanced between groups?
+      q2_6: null   # Appropriate analysis to estimate the effect of assignment?
+      q2_7: null   # [if N/PN/NI to 2.6] Potential for substantial impact of the failure to analyse as randomized?
+    adherence:    # effect of adhering to intervention
+      q2_1: null   # Were participants aware of their assigned intervention?
+      q2_2: null   # Were carers / deliverers aware of the assigned intervention?
+      q2_3: null   # [if Y/PY/NI to 2.1 or 2.2] Non-protocol interventions balanced across groups?
+      q2_4: null   # Failures in implementing the intervention that could have affected the outcome?
+      q2_5: null   # Non-adherence to the assigned regimen that could have affected outcomes?
+      q2_6: null   # [if N/PN to 2.3, or Y/PY/NI to 2.4 or 2.5] Appropriate analysis to estimate the effect of adhering?
+    rationale: ""
+    judgement: null   # Low | "Some concerns" | High
+
+  d3_missing_data:
+    signalling:
+      q3_1: null   # Data available for all, or nearly all, randomized participants?
+      q3_2: null   # [if N/PN/NI to 3.1] Evidence the result was not biased by missing data?
+      q3_3: null   # [if N/PN to 3.2] Could missingness depend on the outcome's true value?
+      q3_4: null   # [if Y/PY/NI to 3.3] Likely that missingness depended on the true value?
+    rationale: ""
+    judgement: null   # Low | "Some concerns" | High
+
+  d4_measurement:
+    signalling:
+      q4_1: null   # Was the method of measuring the outcome inappropriate?
+      q4_2: null   # Could measurement/ascertainment have differed between groups?
+      q4_3: null   # [if N/PN/NI to 4.1 and 4.2] Were outcome assessors aware of the intervention received?
+      q4_4: null   # [if Y/PY/NI to 4.3] Could assessment have been influenced by that knowledge?
+      q4_5: null   # [if Y/PY/NI to 4.4] Likely that assessment was influenced by that knowledge?
+    rationale: ""
+    judgement: null   # Low | "Some concerns" | High
+
+  d5_selection:
+    signalling:
+      q5_1: null   # Analysed per a pre-specified plan finalized before unblinded outcome data?
+      q5_2: null   # Result likely selected from multiple eligible outcome measurements?
+      q5_3: null   # Result likely selected from multiple eligible analyses of the data?
+    rationale: ""
+    judgement: null   # Low | "Some concerns" | High
+
+# --- Overall (the human applies RoB 2 logic across the five domains) ---
+overall:
+  judgement: null           # Low | "Some concerns" | High
+  predicted_direction: null # optional: favours experimental | favours comparator | unpredictable | null
+  rationale: ""
+
+# --- Ledger binding (filled after completion; see references/rob2-worksheet.md) ---
+# The completed worksheet is hashed into an `artifact_hash` provenance event (D19). These fields
+# record what was written so the appraisal table and GRADE worksheet can cite it. Leave blank until
+# the event is appended.
+provenance:
+  run_id: ""
+  ts: ""              # caller-supplied ISO-8601 (D19)
+  artifact_hash: ""   # sha256:<64-hex> over the canonicalized completed worksheet
+  event_id: ""        # returned by `provenance append`

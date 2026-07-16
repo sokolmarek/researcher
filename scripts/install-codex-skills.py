@@ -63,6 +63,8 @@ COMMAND_TO_SKILL = {
     "design-experiment": "experiment-design",
     "research-pipeline": "research-pipeline",
     "verify-citations": "citation-audit",
+    "systematic-review": "systematic-review",
+    "watch-topic": "literature-monitoring",
 }
 
 # A plugin-relative path, but not one that is part of a longer path such as

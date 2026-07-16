@@ -1,0 +1,184 @@
+# Eligibility profile for a systematic review (M4.2)
+# ==================================================
+# Part of the locked protocol (M4.1). The systematic-review skill helps you draft this
+# conversationally, then locks it into the protocol document; from that point every screening
+# decision draws its reason from the `id`s below, and the review cannot change these criteria
+# without a protocol amendment (D19).
+#
+# The skill NEVER fills an element you left undecided. An empty include/exclude list is a real
+# state ("not yet decided"), not a prompt for the tool to guess criteria.
+#
+# Three framings are supported: PICO (intervention effectiveness), PECO (exposure / aetiology),
+# and SPIDER (qualitative and mixed-methods questions). Pick ONE. Set `framing`, keep that
+# framing's `elements` block, and DELETE the other two blocks below. Do not carry unused PICO
+# fields into a SPIDER review: a qualitative question has no intervention arm, and faking one
+# corrupts the shared qualifier vocabulary. The commented PECO and SPIDER blocks at the bottom
+# are alternatives to paste in, not extra sections to fill.
+#
+# Shared qualifier axes
+# ---------------------
+# Three axes are the bridge between screening and the M3 compile gate: `population`,
+# `intervention_or_exposure`, and `outcome`. These are exactly the qualifier axes the M3 evidence
+# edges carry (see references/lineage-model.md), so a screening reason and the compile-gate C004
+# qualifier check speak one vocabulary. Every element declares `maps_to` = one of those three axes,
+# or `null` when the element is a study-type axis (SPIDER Design and Research type) that does not
+# describe population, exposure, or outcome. `null` is honest; a forced mapping is not.
+
+schema: eligibility-profile/v1
+framing: pico              # one of: pico | peco | spider
+review_question: ""        # the full question, in one sentence
+
+# ---------------------------------------------------------------------------
+# ELEMENTS (PICO shown active; replace the example criteria with your own)
+# ---------------------------------------------------------------------------
+# Each criterion carries a stable `id`. That `id` is the token a screener passes to
+# `screen decide --reason <id>`, so reasons in the ledger point back to a locked criterion
+# rather than to free text. Keep ids short, lowercase, and stable once locked.
+
+elements:
+  population:
+    maps_to: population
+    label: "Population (P)"
+    include:
+      - id: pop-inc-1
+        criterion: "Adults (>= 18 years) with a confirmed diagnosis of the target condition"
+    exclude:
+      - id: pop-exc-1
+        criterion: "Paediatric samples, or mixed-age samples reporting no adult subgroup"
+
+  intervention:
+    maps_to: intervention_or_exposure
+    label: "Intervention (I)"
+    include:
+      - id: int-inc-1
+        criterion: "The target intervention delivered as the primary treatment"
+    exclude:
+      - id: int-exc-1
+        criterion: "The intervention delivered only as an adjunct to another active treatment"
+
+  comparator:
+    maps_to: intervention_or_exposure   # the comparator arm is a second intervention/exposure
+    label: "Comparator (C)"
+    include:
+      - id: cmp-inc-1
+        criterion: "Placebo, usual care, or an active comparator named in the protocol"
+    exclude:
+      - id: cmp-exc-1
+        criterion: "No comparator arm (single-arm studies)"
+
+  outcome:
+    maps_to: outcome
+    label: "Outcome (O)"
+    include:
+      - id: out-inc-1
+        criterion: "Reports the pre-specified primary outcome with a usable effect estimate"
+    exclude:
+      - id: out-exc-1
+        criterion: "Reports none of the review's pre-specified outcomes"
+
+# ---------------------------------------------------------------------------
+# FILTERS (cross-cutting; apply under every framing)
+# ---------------------------------------------------------------------------
+# Screening criteria that are not one of the three qualifier axes: study design, dates, language,
+# publication type, setting. Each still carries a reason `id` usable at `screen decide --reason`.
+# Leave a filter's lists empty if the review does not restrict on it.
+
+filters:
+  study_design:
+    include:
+      - id: des-inc-1
+        criterion: "Randomized controlled trials (required for RoB 2 appraisal, M4.9)"
+    exclude:
+      - id: des-exc-1
+        criterion: "Non-randomized designs, reviews, editorials, conference abstracts without full text"
+  date_range:
+    include:
+      - id: date-inc-1
+        criterion: "Published from the protocol's lower bound onward (state the year)"
+    exclude: []
+  language:
+    include: []
+    exclude:
+      - id: lang-exc-1
+        criterion: "Full text unavailable in a language the review team can appraise (state which)"
+  publication_type:
+    include: []
+    exclude: []
+  setting:
+    include: []
+    exclude: []
+
+# ---------------------------------------------------------------------------
+# ALTERNATIVE FRAMINGS (paste ONE into `elements:` above, then set `framing:`)
+# ---------------------------------------------------------------------------
+#
+# PECO: exposure / aetiology reviews. The exposure replaces the intervention; there is no
+# treatment arm, so there is no `comparator` unless the review genuinely contrasts two exposures.
+#
+# elements:
+#   population:
+#     maps_to: population
+#     label: "Population (P)"
+#     include: []
+#     exclude: []
+#   exposure:
+#     maps_to: intervention_or_exposure
+#     label: "Exposure (E)"
+#     include: []
+#     exclude: []
+#   comparator:
+#     maps_to: intervention_or_exposure   # unexposed or lower-exposure group; omit if not applicable
+#     label: "Comparator (C)"
+#     include: []
+#     exclude: []
+#   outcome:
+#     maps_to: outcome
+#     label: "Outcome (O)"
+#     include: []
+#     exclude: []
+#
+# SPIDER: qualitative and mixed-methods questions. Sample maps to population, Phenomenon of
+# Interest to the exposure axis, Evaluation to the outcome axis. Design and Research type are
+# study-type axes and map to `null`: they are honest filters, not population/exposure/outcome.
+# There are NO PICO fields here; do not add any.
+#
+# elements:
+#   sample:
+#     maps_to: population
+#     label: "Sample (S)"
+#     include: []
+#     exclude: []
+#   phenomenon_of_interest:
+#     maps_to: intervention_or_exposure
+#     label: "Phenomenon of Interest (PI)"
+#     include: []
+#     exclude: []
+#   design:
+#     maps_to: null            # e.g. interviews, focus groups, ethnography; a study-type axis
+#     label: "Design (D)"
+#     include: []
+#     exclude: []
+#   evaluation:
+#     maps_to: outcome
+#     label: "Evaluation (E)"   # the outcomes or constructs evaluated (experiences, views, themes)
+#     include: []
+#     exclude: []
+#   research_type:
+#     maps_to: null            # qualitative, quantitative, or mixed-methods
+#     label: "Research type (R)"
+#     include: []
+#     exclude: []
+
+# ---------------------------------------------------------------------------
+# HOW THIS PROFILE IS CONSUMED
+# ---------------------------------------------------------------------------
+# Screening (M4.4): the reason `id`s above are the closed reason vocabulary. A title-abstract or
+#   full-text exclusion records the `id` of the criterion it failed, so `screen conflicts` and the
+#   derived PRISMA "excluded, with reasons" counts (M4.12) aggregate over stable ids, not prose.
+# Compile gate (M3, D18): the `population`, `intervention_or_exposure`, and `outcome` axes are the
+#   qualifiers the C004 check compares between a manuscript claim and its cited source. Sharing this
+#   vocabulary is what lets an eligibility mismatch and an evidence-edge qualifier mismatch be the
+#   same finding.
+# Locking (M4.1): this file is part of the hashed protocol. After lock, changing any criterion is a
+#   `protocol amend` event with a new protocol_version, and the final report lists every amendment
+#   (PRISMA 2020 item 24b). Editing it in place without an amendment is detected as a hash mismatch.

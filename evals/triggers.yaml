@@ -490,3 +490,63 @@ skills:
         route: fact-checking
       - prompt: "Show me how this paper has been cited, supporting or contrasting"
         route: citation-context
+
+  - name: systematic-review
+    positive:
+      - "Run a systematic review of interventions for postoperative delirium"
+      - "Set up a PRISMA screening workflow with a locked protocol and dual screeners"
+      - "Screen these search results by title and abstract against my eligibility criteria"
+      - "Manage the whole systematic review, protocol through PRISMA flow diagram"
+      - "I need two independent screeners with blinded conflict adjudication"
+    negative:
+      - prompt: "Find recent papers on postoperative delirium so I can read them"
+        route: literature-search
+      - prompt: "Audit whether the citations in my finished review actually resolve"
+        route: citation-audit
+      - prompt: "Reconcile these five papers into one argument for my introduction"
+        route: research-convergence
+
+  - name: extraction-tables
+    positive:
+      - "Extract population, method, and effect size into a table across these 12 papers"
+      - "Build a structured data-extraction table for my systematic review"
+      - "Pull the sample size and primary outcome from each included study"
+      - "Make an evidence table with one row per paper and columns I define"
+      - "Extract the reported metrics from these studies into a comparison grid"
+    negative:
+      - prompt: "Format these numbers I already have into a nice LaTeX table"
+        route: latex-tables
+      - prompt: "Build a SOTA leaderboard table for this benchmark"
+        route: sota-finder
+      - prompt: "Visualize the extracted effect sizes as a forest plot"
+        route: visualization
+
+  - name: contradiction-detection
+    positive:
+      - "Find papers that contradict my claim that X improves outcomes"
+      - "Build a contradiction matrix for the claims in this discussion section"
+      - "Mine the literature for evidence against this finding"
+      - "Where does the evidence disagree with what this paper concludes?"
+      - "Surface contrasting studies for the inconsistency domain of my GRADE assessment"
+    negative:
+      - prompt: "Fact check this single claim about insulin sensitivity"
+        route: fact-checking
+      - prompt: "Classify how I framed the citations in this paragraph"
+        route: citation-context
+      - prompt: "Cross-check these three papers and build my thesis"
+        route: research-convergence
+
+  - name: literature-monitoring
+    positive:
+      - "Watch this topic and tell me when new papers appear"
+      - "Keep my systematic review living with a saved search I can rerun"
+      - "Set up literature monitoring for CRISPR base editing"
+      - "Alert me to new studies matching my review's search strategy"
+      - "Rerun my saved searches and show only the records I have not seen"
+    negative:
+      - prompt: "Do a one-time literature search on this topic right now"
+        route: literature-search
+      - prompt: "Screen the new batch of records against my eligibility criteria"
+        route: systematic-review
+      - prompt: "Find me a journal to submit this review to"
+        route: journal-finder

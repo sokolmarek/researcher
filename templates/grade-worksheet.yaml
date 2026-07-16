@@ -1,0 +1,85 @@
+# GRADE certainty worksheet skeleton (M4.9)
+# ==========================================
+# One worksheet per OUTCOME within a comparison. The systematic-review skill prefills the mechanical
+# fields (outcome, comparison, counts, links to the RoB 2 worksheet hashes and the meta-analysis
+# result); a HUMAN rates every domain and decides the final certainty. The plugin does NOT compute
+# certainty. Full instrument: references/grade-worksheet.md.
+#
+# Downgrade domain ratings: "not serious" | serious | "very serious"   (levels: 0 | -1 | -2)
+# Publication bias ratings:  "not detected" | suspected | "strongly suspected"   (0 | -1 | -2)
+# Upgrade factor levels:     0 | +1 | +2
+# Final certainty:           High | Moderate | Low | "Very low"
+
+schema: grade-worksheet/v1
+
+# --- Mechanical fields (prefilled by the skill; do not edit) ---
+outcome: ""              # the outcome this certainty rating covers
+comparison: ""           # intervention vs comparator this outcome belongs to
+importance: null         # critical | important | "not important" (set during protocol/synthesis)
+n_studies: null          # studies contributing to this outcome (from extraction, M4.7)
+n_participants: null     # participants contributing (from extraction, M4.7)
+rob2_worksheet_hashes: []   # artifact_hashes of the per-study RoB 2 worksheets feeding this outcome
+meta_analysis_ref: ""    # link/hash of the M4.10 pooled result (effect, CI, I^2, tau^2)
+appraiser_id: ""         # completed by (the human)
+
+# --- Starting certainty (from study design) ---
+study_design: null       # "randomized trials" -> starts High | "observational studies" -> starts Low
+starting_certainty: null # High | Low   (follows study_design; the human confirms it)
+
+# --- The five downgrading domains (human rates each, with a reason) ---
+downgrades:
+  risk_of_bias:
+    rating: null    # "not serious" | serious | "very serious"
+    levels: 0       # 0 | -1 | -2
+    reason: ""      # draw on the RoB 2 judgements of the contributing studies
+  inconsistency:
+    rating: null
+    levels: 0
+    reason: ""      # heterogeneity: point-estimate spread, CI overlap, I^2, tau^2; M4.8 disagreements
+  indirectness:
+    rating: null
+    levels: 0
+    reason: ""      # population / intervention_or_exposure / outcome differ from the review question
+  imprecision:
+    rating: null
+    levels: 0
+    reason: ""      # read CI width / threshold crossing / optimal information size from M4.10, not by eye
+  publication_bias:
+    rating: null    # "not detected" | suspected | "strongly suspected"
+    levels: 0       # 0 | -1 | -2
+    reason: ""      # funnel asymmetry (enough studies to read one), known unpublished trials, small-study effects
+
+# --- The three upgrading factors (mainly observational evidence with no serious downgrades) ---
+upgrades:
+  large_effect:
+    levels: 0       # 0 | +1 large | +2 very large
+    reason: ""
+  dose_response:
+    levels: 0       # 0 | +1
+    reason: ""
+  residual_confounding:
+    levels: 0       # 0 | +1 (plausible confounding would reduce a demonstrated, or explain a null, effect)
+    reason: ""
+
+# --- Final certainty (the human decides; not floor-below Very low, not above High) ---
+final:
+  certainty: null   # High | Moderate | Low | "Very low"
+  reason: ""        # one line naming the domains that drove the rating
+
+# --- Summary of Findings row (pooled numbers CARRIED from M4.10, never hand-typed) ---
+# These populate the GRADE SoF table. The relative and absolute effects must come from the committed
+# meta-analysis result so `researcher compile` can bind them (a hand-edited value is the C002 defect).
+summary_of_findings:
+  relative_effect: ""       # e.g. "RR 0.82 (95% CI 0.71 to 0.95)"; source: meta_analysis_ref
+  assumed_risk: ""          # comparator-group risk (absolute)
+  corresponding_risk: ""    # intervention-group risk (absolute), derived from relative effect + assumed risk
+  comments: ""              # footnoted reasons for each downgrade/upgrade
+
+# --- Ledger binding (filled after completion; see references/grade-worksheet.md) ---
+# The completed worksheet is hashed into an `artifact_hash` provenance event (D19). The SoF table
+# cites this. Leave blank until the event is appended.
+provenance:
+  run_id: ""
+  ts: ""              # caller-supplied ISO-8601 (D19)
+  artifact_hash: ""   # sha256:<64-hex> over the canonicalized completed worksheet
+  event_id: ""        # returned by `provenance append`
