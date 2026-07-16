@@ -84,6 +84,7 @@ COMMANDS: tuple[str, ...] = (
     "faithfulness",
     "snapshot",
     "provenance",
+    "compile",
 )
 
 
@@ -1159,6 +1160,140 @@ def cmd_provenance_export(args: argparse.Namespace, parser: argparse.ArgumentPar
 
 
 # ---------------------------------------------------------------------------
+# compile (M3.2): the evidence-lineage gate
+# ---------------------------------------------------------------------------
+
+
+def _git_ancestry_check(worktree: Path) -> Any:
+    """Return an ancestry check backed by real git, or None if this is not a git worktree.
+
+    The check answers "is `commit` an ancestor of, or equal to, the current HEAD". Any git
+    failure (an unknown commit, a detached state) is read as NOT an ancestor, because an
+    unverifiable commit is exactly the drift C006 exists to catch.
+    """
+    import subprocess
+
+    try:
+        inside = subprocess.run(
+            ["git", "-C", str(worktree), "rev-parse", "--is-inside-work-tree"],
+            capture_output=True,
+            text=True,
+        )
+    except (OSError, ValueError):
+        return None
+    if inside.returncode != 0 or inside.stdout.strip() != "true":
+        return None
+
+    def check(commit: str) -> bool:
+        if not commit:
+            return True  # an empty commit is "not recorded", not a drift
+        result = subprocess.run(
+            ["git", "-C", str(worktree), "merge-base", "--is-ancestor", commit, "HEAD"],
+            capture_output=True,
+            text=True,
+        )
+        return result.returncode == 0
+
+    return check
+
+
+def _status_checker_from_recheck(args: argparse.Namespace, dois: Sequence[str]) -> Any:
+    """Build a compile status checker by re-running axis (b) over the edge source DOIs.
+
+    Offline by default (replays snapshots via build_session); a DOI whose status could not be
+    checked (a source error) maps to a StatusCheck with source_error set, which the compiler
+    turns into an inconclusive line item, never a defect (D9).
+    """
+    from .lineage.compile import StatusCheck
+
+    if not dois:
+        return None
+    report = check_status(
+        list(dict.fromkeys(dois)),
+        sources=DEFAULT_STATUS_SOURCES,
+        snapshots=build_session(args),
+        input_kind="doi",
+    )
+    by_doi: dict[str, StatusCheck] = {}
+    for entry in report.get("entries", []):
+        doi = normalize_doi(entry.get("doi") or entry.get("id") or "")
+        if not doi:
+            continue
+        by_doi[doi] = StatusCheck(
+            verdict=entry.get("verdict") if entry.get("checked") else None,
+            source_error=not entry.get("checked", False),
+        )
+
+    def checker(doi: str) -> StatusCheck:
+        return by_doi.get(normalize_doi(doi), StatusCheck(source_error=True))
+
+    return checker
+
+
+def cmd_compile(args: argparse.Namespace, parser: argparse.ArgumentParser) -> int:
+    from .lineage.compile import (
+        compile_graph,
+        default_artifact_hasher,
+        gate_event_payload,
+    )
+    from .lineage.graph import LineageGraph
+    from .provenance import load_jsonl
+
+    manuscript = Path(args.manuscript)
+    if not manuscript.is_dir():
+        raise CLIError(
+            f"{manuscript} is not a directory. Point --manuscript at a manuscript folder."
+        )
+    lineage_path = Path(args.lineage) if args.lineage else manuscript / "lineage" / "graph.jsonl"
+    if not lineage_path.is_file():
+        raise CLIError(
+            f"No lineage graph at {lineage_path}. Record claim nodes and evidence edges first "
+            "(the graph is a stream of record_lineage events)."
+        )
+
+    events = load_jsonl(lineage_path)
+    graph = LineageGraph.from_events(events)
+
+    status_checker = None
+    if args.recheck_status:
+        dois = [e.source_doi for e in graph.edges if e.source_doi]
+        status_checker = _status_checker_from_recheck(args, dois)
+
+    report = compile_graph(
+        graph,
+        status_checker=status_checker,
+        artifact_hasher=default_artifact_hasher(manuscript),
+        ancestry_check=_git_ancestry_check(manuscript),
+        ts=args.ts or "",
+    )
+
+    # Append the gate event to the ledger so the derived gate state (D19) reflects this run.
+    # ts is caller-supplied; without one, the gate event is not written (a compile stays a pure
+    # read), which keeps a no-ts run replayable and side-effect-free.
+    if args.ts:
+        ledger = open_ledger(args)
+        try:
+            ledger.append(
+                ProvenanceEvent(
+                    run_id=args.run_id or "compile",
+                    type="gate",
+                    ts=args.ts,
+                    payload=gate_event_payload(report),
+                )
+            )
+        except ProvenanceError as exc:
+            raise CLIError(str(exc)) from exc
+        finally:
+            ledger.close()
+
+    if args.json:
+        emit_json(report.to_json_dict())
+    else:
+        emit(report.to_human())
+    return 0 if report.passed else 1
+
+
+# ---------------------------------------------------------------------------
 # The parser
 # ---------------------------------------------------------------------------
 
@@ -1458,6 +1593,38 @@ def build_parser() -> argparse.ArgumentParser:
     provenance.set_defaults(
         func=_require_subcommand(provenance, "provenance"), cmd_parser=provenance
     )
+
+    # -- compile (M3.2) ----------------------------------------------------
+    compile_cmd = _common(
+        subparsers.add_parser(
+            "compile",
+            help="The evidence-lineage gate: check every claim compiles from clean evidence.",
+        )
+    )
+    compile_cmd.add_argument(
+        "--manuscript",
+        default="manuscript",
+        help="The manuscript folder to compile (default: manuscript/).",
+    )
+    compile_cmd.add_argument(
+        "--lineage",
+        help="Path to the lineage graph (default: <manuscript>/lineage/graph.jsonl).",
+    )
+    compile_cmd.add_argument(
+        "--recheck-status",
+        action="store_true",
+        help="Re-run publication status over cited sources (offline via snapshots). A source "
+        "error becomes an inconclusive line item, never a defect (D9).",
+    )
+    compile_cmd.add_argument("--store", help="Snapshot store root for the status re-check.")
+    compile_cmd.add_argument(
+        "--ts",
+        help="Caller-supplied timestamp (D19). When given, a gate event is appended to the "
+        "ledger; without it, compile is a pure read.",
+    )
+    compile_cmd.add_argument("--run-id", help="Run id for the gate event.")
+    compile_cmd.add_argument("--ledger", help="Ledger path (default: the user cache dir).")
+    compile_cmd.set_defaults(func=cmd_compile, cmd_parser=compile_cmd)
 
     return parser
 
