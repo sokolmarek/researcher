@@ -21,12 +21,18 @@ model routing, none of which existed. That is the failure mode this project take
 git clone https://github.com/sokolmarek/researcher.git
 cd researcher
 claude --plugin-dir .                 # load the plugin from the working tree
-python -m pip install pytest          # for the test suite
+python -m pip install pytest          # for the scripts test suite
+uv sync --project core                # the evidence kernel and its tests
 cd templates/word && npm install      # for the DOCX generator
 ```
 
+The evidence kernel wants [`uv`](https://docs.astral.sh/uv/); without it `pip install -e "core/[fulltext]"`
+works, and without the kernel at all the plugin still runs on its standard-library fallbacks, so `uv` is
+only needed to touch `core/` or run its benchmarks.
+
 A LaTeX engine is needed for the compile checks: tectonic, TeX Live, MiKTeX, or MacTeX all work
-(see [`scripts/latex_engine.py`](scripts/latex_engine.py)).
+(see [`scripts/latex_engine.py`](scripts/latex_engine.py)). Node (with `npm install` in
+`templates/word/`) is needed for the DOCX generator.
 
 ## Before you open a pull request
 
@@ -44,6 +50,31 @@ CI runs all of these, plus guards that will fail the build on:
 - a bare `/command` form in user-facing docs (plugin commands are namespaced: `/researcher:sota`);
 - a `(select: ...)` or `(toggle: ...)` field in a command file (there is no typed form UI);
 - a leftover placeholder string.
+
+## Running the benchmarks
+
+The kernel ships with its benchmarks, and they replay offline from recorded snapshots (no network). Run
+them through the core project:
+
+```bash
+uv run --project core python evals/run_axes.py        # per-axis verification, Wilson CIs
+uv run --project core python evals/run_triggers.py    # pooled skill-trigger recall + false-trigger rate
+uv run --project core python evals/run_extraction.py  # extraction-table anchoring floor
+uv run --project core python evals/run_injection.py   # injection fixtures: verdicts unchanged, no fence escape
+uv run --project core python evals/run_roundtrip.py   # CSL-JSON / RIS / JATS / BibTeX round-trips + loss table
+```
+
+Each runner exits non-zero if any gold item is skipped, so a run cannot go green over a half-measured
+set. Refreshing snapshots is an explicit `--record` (or `--record-missing`); nothing else writes to the
+eval store. Measured results are published in [`evals/BENCHMARKS.md`](evals/BENCHMARKS.md).
+
+## Design decisions (the D-log)
+
+Design decisions are tagged `D<n>` (D1, D2, and so on) across the skills, docs, and code, so a change
+that turns on one can cite it. The tracked summary of those decisions and the runtime integrity
+constraints is [`CLAUDE.md`](CLAUDE.md), under Technical Decisions and Critical Constraints. When your
+change depends on a decision, reference the relevant `D<n>` in the PR so a reviewer can see the reasoning
+you are relying on.
 
 ## House conventions
 

@@ -6,7 +6,7 @@ sidebar:
   order: 4
 ---
 
-This page is an honest sketch of where Researcher is going, organized as versioned milestones. Milestones 1 through 4 have **shipped**; everything after them is **planned, not shipped**. Treat the later milestones as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
+This page is an honest sketch of where Researcher has gone and where it is headed, organized as versioned milestones. Milestones 1 through 5 have **shipped**, and the project is now at **1.0.0**. What is left is the **deferred** work below: post-1.0, carrying explicit start triggers rather than dates. Treat that section as a statement of intent you can hold us to, not a feature list you can rely on today. If a section makes you excited, good. If it makes you want to file an issue, even better.
 
 One thing that will not change: the **plugin stays the primary experience**. Everything on this page is about making the plugin more trustworthy and more portable, not about replacing it with some other product. You should still be able to type "review my paper" at 3 AM and get sensible help.
 
@@ -96,17 +96,19 @@ Methodology comes from the Cochrane toolkit used alongside PRISMA 2020: **RoB 2*
 
 This milestone added four new skills, each gated before it shipped: `systematic-review`, `extraction-tables`, `contradiction-detection`, and `literature-monitoring`, plus two commands (`/researcher:systematic-review` and `/researcher:watch-topic`). The extraction skill is gated by a new benchmark of 147 real labeled cells across six column types: measured location accuracy is 109/119 (0.916, 95% Wilson [0.852, 0.954]), with the weak columns named (population 0.778, metric_name 0.722), a "not reported" precision of 25/30 (0.833), and a fabrication risk of 3/28 (0.107). The benchmark measures core's anchoring floor, not Claude's judgment, and it runs offline with byte-identical repeats. The observed counts are now **35 skills, 9 agents, and 15 commands** (up from 31 and 13), and the pooled trigger eval holds at 95.4% recall and a 5.7% false-trigger rate with all 35 skills. As always from Milestone 2 onward, those counts are reported after the fact, never targeted.
 
-## Milestone 5 (1.0.0): production completeness
+## Milestone 5 (1.0.0, shipped): production completeness
 
-The last milestone before 1.0.0 is everything a production tool owes its users:
+The last milestone is everything a production tool owes its users, and it hardens the boundary around the core rather than growing it. No skills were added by design: the observed counts hold at **35 skills, 9 agents, and 15 commands**, and that is the point.
 
-- **Private mode** for work that must not leave the machine
-- **Prompt-injection defenses** for content fetched from the open web
-- **Round-trip format tests** so LaTeX and DOCX output survives editing cycles
-- **ORCID, ROR, and CRediT** support for author, institution, and contribution metadata
-- **SBOM and signed releases**
+- **Offline mode** for work that must not leave the machine. `--offline` (or `RESEARCHER_OFFLINE=1`) makes every network-touching command answer exclusively from snapshots and the response cache; a miss is a typed `offline-miss`, never a silent live call. It reuses the Milestone 2 snapshot layer rather than building a second store, so the mechanism that makes the benchmarks replayable makes private work airtight. The disclosure that pairs with it is exact: a per-connector data-egress section names every outbound host and identifier, and manuscript prose never leaves the machine through core.
+- **Prompt-injection defenses, verified rather than asserted.** Fetched paper text is untrusted input, so the core sanitizes it and every skill quotes it only inside a labeled untrusted-content fence whose one rule is that instructions inside the fence are data. An injection eval replays payload-carrying fake records through search, verification, and faithfulness and proves two things: the verdicts do not move versus the payload-free twin, and no payload escapes the fence. That certifies the known payload classes, not general immunity, and SECURITY.md invites the ones it does not yet model.
+- **Licensing and retention, with a no-redistribution invariant.** The cache expires content by class (open-access locations, extracted full text, and metadata each on their own clock), while the content-addressed eval snapshot store is exempt because it gates the benchmarks. Cached full text stays in the user cache: it never enters a manuscript and never enters a passport, which carries hashes and passage IDs, not article text.
+- **Round-trip format tests** so bibliographic output survives editing cycles. CSL-JSON is canonical; RIS, a JATS reference list, and BibTeX are emitters over it, and a round-trip eval publishes a per-format loss table so the gaps are named rather than discovered downstream.
+- **ORCID, ROR, and CRediT** support for author, institution, and contribution metadata: validated by checksum, pattern, and the 14-role taxonomy, optional, and never fabricated. An invalid identifier is rejected, not guessed.
+- **Accessibility.** Figure alt text describing data content is a required output of every visualization-family skill, shared across preset variants; the DOCX generator writes it into image properties, and the freshness eval checks its presence.
+- **SBOM and signed releases.** Every GitHub Release carries CycloneDX SBOMs and Sigstore keyless signatures (OIDC, no stored keys), verifiable with a documented `cosign verify-blob` command.
 - **A pip-installable package on PyPI plus a thin MCP server**, so the deterministic engine can be scripted in pipelines that have nothing to do with Claude, and non-Claude tools can call the same retrieval, gating, and provenance machinery through a standard interface. Verification should not be locked inside one assistant. If the checks are good, other tools should be able to use them.
-- **Three-OS CI** (Linux, macOS, Windows)
+- **Three-OS CI** (Linux, macOS, and Windows), with macOS added as a non-gating leg first and promoted once green.
 
 ## Deferred, deliberately
 

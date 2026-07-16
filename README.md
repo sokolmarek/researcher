@@ -59,7 +59,45 @@ GRADE appraisal worksheets that a human completes, and keeps reviews living as n
 whole PRISMA 2020 flow and checklist are DERIVED by aggregating the event ledger, not stored: delete one
 screening event and the derived flow changes, which is the proof.
 
+And around all of it, **1.0.0 hardens the boundary** (the production-completeness milestone). Offline mode
+(`--offline`, `RESEARCHER_OFFLINE=1`) answers every command from snapshots and cache with no live call.
+Fetched paper text is quoted only inside a labeled untrusted-content fence and cannot steer the assistant
+(an injection eval proves the verdicts do not move and no payload escapes). Cached full text is never
+redistributed. Exports round-trip losslessly across CSL-JSON, RIS, JATS, and BibTeX. Releases are signed
+and carry SBOMs. And the kernel is now a pip-installable package with a thin MCP server, so the same
+verification machinery runs outside Claude Code entirely.
+
 LaTeX-first, Word-compatible. Every output works in both worlds.
+
+### How it fits together
+
+Three layers, and the division of labor is deliberate: Claude does the judgment, the core does the
+reproducible work, and the scholarly APIs are the source of record.
+
+```text
+You
+ |  natural language / namespaced commands (/researcher:...)
+ v
+Claude Code + Researcher plugin        judgment, synthesis, writing, review
+ |-- skills / agents / commands        (refusal-grade integrity constraints inlined)
+ |-- hooks (citation commit guard, draft-integrity report)
+ |
+ |  uv run --project core   (deterministic per D15, offline-testable via snapshots)
+ v
+core/ researcher_core CLI              reproducible retrieval and verification
+ |-- search (fan-out, dedupe, rank)     |-- compile (claim -> evidence -> result gate)
+ |-- verify-bib / status / faithfulness |-- passport (RO-Crate, W3C PROV)
+ |-- oa-pdf + passages (BM25)           |-- export (CSL-JSON, RIS, JATS, BibTeX)
+ |-- provenance (append-only ledger; PRISMA derived, never stored)
+ |
+ |  HTTPS, keyless polite pool by default; every response snapshotted
+ v
+OpenAlex . Crossref . DataCite . Semantic Scholar . arXiv . PubMed . Unpaywall . OpenCitations
+```
+
+Licensed and interactive sources (Scite Smart Citations, your Zotero library) attach as MCP servers you
+connect yourself. Since 1.0.0 the core also ships its own thin MCP server, so non-Claude hosts can call
+the same retrieval, verification, and provenance tools over a standard interface.
 
 ## What works today, what is planned
 
@@ -86,7 +124,13 @@ LaTeX-first, Word-compatible. Every output works in both worlds.
 | **The systematic-review vertical**: protocol locking (`protocol lock`), dual independent screening with blinded adjudication (`screen conflicts`), Cohen's kappa, and living reviews (`monitor`) | **Works today (new in 0.5.0)**, `core/`. Blinding is verified end to end through the CLI |
 | PRISMA 2020 flow and checklist, and RoB 2 / GRADE appraisal worksheets | Works today (new in 0.5.0). PRISMA is DERIVED by aggregating the event ledger, never stored; RoB 2 and GRADE are human-completed with no automated scoring |
 | Structured extraction tables and a claim-by-source contradiction matrix | Works today (new in 0.5.0). Extraction anchors each cell to a passage with its verification layer and says "not reported" rather than invent a value; benchmarked in [`evals/BENCHMARKS.md`](evals/BENCHMARKS.md) |
-| Bundled `.mcp.json` (Scite, Zotero, paper-search) | Planned |
+| **Offline / private mode** (`--offline`, `RESEARCHER_OFFLINE=1`): every command answers from snapshots and cache; a miss is a typed `offline-miss`, never a live call | **Works today (new in 1.0.0)**, `core/`. Per-connector data-egress disclosure in `connectors/`; manuscript prose never leaves the machine through core |
+| **Prompt-injection defenses**: fetched content is sanitized and quoted only inside a labeled untrusted-content fence | **Works today (new in 1.0.0)**. `evals/run_injection.py` proves verdicts are unchanged versus the payload-free twin and no payload escapes the fence; certifies known payload classes, not general immunity |
+| **Bibliography export** in CSL-JSON, RIS, JATS `<ref-list>`, and BibTeX (`researcher-core export`) | **Works today (new in 1.0.0)**. Round-trip-tested with a published per-format loss table |
+| **ORCID / ROR / CRediT** author, affiliation, and contribution metadata | **Works today (new in 1.0.0)**. Validated (ORCID checksum, ROR pattern, CRediT 14-role taxonomy), optional, never fabricated; JATS `contrib-group` plus a linked ORCID iD in the IMRaD template |
+| **PyPI package + thin MCP server** (`pip install researcher-core`, `researcher-mcp`): search, get-paper, verify-citations, export-bibliography, download-oa | **Works today (new in 1.0.0)**, D13. Tool outputs inherit offline mode and the sanitizer |
+| **Signed releases + SBOMs**: Sigstore keyless signatures and CycloneDX SBOMs on every GitHub Release | **Works today (new in 1.0.0)**. Verify with the documented `cosign verify-blob` command |
+| Bundled `.mcp.json` registering the local `researcher-mcp` stdio server | **Works today (new in 1.0.0)**. Scite and Zotero stay user-connected MCP servers |
 | Google Scholar / Mendeley APIs | Not planned (no stable free API); fallbacks documented in `connectors/` |
 
 The integrity rules (never fabricate citations, never invent data) are enforced today in three ways: as
@@ -311,6 +355,53 @@ git clone https://github.com/sokolmarek/researcher.git
 claude --plugin-dir researcher
 ```
 
+### The evidence kernel and MCP server (optional, new in 1.0.0)
+
+The kernel ships inside the plugin, and skills invoke it through `uv` with no install step. To run it
+standalone, in a pipeline, or from a non-Claude MCP host, install it from PyPI:
+
+```bash
+pip install researcher-core              # base runtime: httpx, rapidfuzz, platformdirs
+pip install "researcher-core[fulltext]"  # adds open-access PDF extraction
+pip install "researcher-core[mcp]"       # adds the thin MCP server (fastmcp)
+
+researcher-core --help                   # the JSON-emitting CLI (search, verify-bib, compile, export, ...)
+researcher-mcp                           # the stdio MCP server: search_papers, get_paper,
+                                         # verify_citations, export_bibliography, download_oa
+```
+
+The eight scholarly APIs are keyless and work out of the box. The polite-pool contact variables are
+optional and buy more reliable rate limits at no cost:
+
+```bash
+export OPENALEX_MAILTO="you@example.edu"
+export CROSSREF_MAILTO="you@example.edu"
+export UNPAYWALL_EMAIL="you@example.edu"
+```
+
+These addresses are politeness parameters only: they never change a response, and they are excluded from
+the snapshot and cache keys so recordings replay on any machine. Set `RESEARCHER_OFFLINE=1` (or pass
+`--offline`) to answer every command from local snapshots and cache with no network call at all.
+
+### Verifying a release
+
+Every GitHub Release carries the plugin archive, a CycloneDX SBOM for the kernel and one for the Word
+toolchain, and Sigstore keyless signatures (a `.sig` and a `.pem` certificate per signed artifact, no
+stored keys). Verify the archive before trusting it:
+
+```bash
+cosign verify-blob \
+  --signature researcher-v1.0.0.zip.sig \
+  --certificate researcher-v1.0.0.zip.pem \
+  --certificate-identity-regexp 'https://github.com/sokolmarek/researcher/.*' \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+  researcher-v1.0.0.zip
+```
+
+The same command verifies `core-sbom.cdx.json` against its own `.sig` and `.pem`. `researcher-core` on
+PyPI is published through OIDC trusted publishing, so its provenance lives in the PyPI attestation rather
+than a stored token.
+
 ### Recommended: full commit coverage for the citation guard
 
 The plugin's built-in guard only sees commits that Claude itself runs. To also block dangling
@@ -351,6 +442,20 @@ You: "Create a system architecture diagram"
 You: "Generate a results comparison table from this CSV data"
 You: "Now give me that figure in Nature single-column style"
 ```
+
+### Close the evidence loop before submission
+
+The compile loop is what keeps a finished draft honest. Every claim and every number has to trace back
+to a source span or an experiment run, or the gate fails:
+```
+You: "/researcher:verify-citations"    # existence gate + claim-faithfulness audit over the bibliography
+You: "/researcher:research-pipeline"   # Plan, Retrieve, Synthesize, Draft, Review, Compile, Format
+You: "/researcher:submit-ready"        # refuses a "ready" verdict without a passing compile
+```
+Under the hood `/researcher:submit-ready` reads the compile gate, which names any defect once: an orphan
+claim, an altered number, stale evidence, a qualifier mismatch, a retraction, or artifact-code drift. A
+downed or rate-limited index is reported as `inconclusive`, never a defect, so a slow API can never fail
+your build and an honest citation is never called fabricated.
 
 ### Review before submission
 ```
@@ -408,7 +513,7 @@ design for a later release.
 - **LaTeX compilation:** any TeX installation. `tectonic` is recommended (single binary, fetches packages on demand, reproducible builds) and is what CI uses, but TeX Live, MiKTeX, and MacTeX work out of the box: the compile scripts detect `latexmk` or a raw `pdflatex`/`xelatex`/`lualatex` and run the bibliography passes for you. Set `LATEX_ENGINE` (or pass `--engine`) to choose one explicitly. If no TeX is found, the scripts print install pointers.
 - **Word output:** `node` (the `docx` library; run `npm install` in `templates/word/`)
 - **Scripts and tests:** Python 3.10+ (standard library only; `pytest` to run the test suite)
-- **The evidence kernel (optional):** [`uv`](https://docs.astral.sh/uv/) is all you need; it provisions the environment from `core/pyproject.toml` on first use, and no install step is required. Without `uv`, `pip install -e core/` works (base runtime: `httpx`, `rapidfuzz`, `platformdirs`), and `pip install -e "core/[fulltext]"` adds OA PDF extraction. **Without the kernel at all, the plugin still runs**: the scripts fall back to their standard-library behavior and nothing hard-fails.
+- **The evidence kernel (optional):** [`uv`](https://docs.astral.sh/uv/) is all you need; it provisions the environment from `core/pyproject.toml` on first use, and no install step is required. Without `uv`, `pip install -e core/` works (base runtime: `httpx`, `rapidfuzz`, `platformdirs`), and `pip install -e "core/[fulltext]"` adds OA PDF extraction. Since 1.0.0 it is also a published PyPI package (`pip install researcher-core`), with an `mcp` extra that adds the thin MCP server. **Without the kernel at all, the plugin still runs**: the scripts fall back to their standard-library behavior and nothing hard-fails.
 
 ---
 
@@ -449,7 +554,7 @@ researcher/
 
 5. **Token-smart.** The implementation and code-analysis skills fork into a Sonnet-pinned code agent (via `context: fork` in their frontmatter), so your session's higher-tier budget goes to research thinking, writing, and review rather than to generating boilerplate.
 
-6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The evidence kernel landed in 0.3.0 with its benchmarks published, weak axis and red gate included, because a benchmark you only cite when it flatters you is marketing. The evidence-lineage compiler followed in 0.4.0: every claim and number in your manuscript traces back to a source span or an experiment run, or `researcher compile` fails the gate. The systematic-review vertical followed in 0.5.0: protocol locking, dual screening with blinded adjudication, and a PRISMA 2020 flow derived from the event ledger rather than stored. Next is M5, production completeness and the 1.0.0 release. The goal is a core you can trust, not a bigger feature list.
+6. **Measured, not advertised.** Capabilities ship when they can be demonstrated, and the works-today table above is kept honest on purpose. The evidence kernel landed in 0.3.0 with its benchmarks published, weak axis and red gate included, because a benchmark you only cite when it flatters you is marketing. The evidence-lineage compiler followed in 0.4.0: every claim and number in your manuscript traces back to a source span or an experiment run, or `researcher compile` fails the gate. The systematic-review vertical followed in 0.5.0: protocol locking, dual screening with blinded adjudication, and a PRISMA 2020 flow derived from the event ledger rather than stored. M5 completed the set in 1.0.0, hardening the boundary rather than growing it: offline mode, prompt-injection defenses proven by an eval, lossless exports, ORCID/ROR/CRediT, signed releases with SBOMs, and a pip-installable core with a thin MCP server so the verification machinery runs outside Claude Code too. The goal is a core you can trust, not a bigger feature list.
 
 ---
 
@@ -478,22 +583,34 @@ That is a failure of the thing this project exists for, and it gets triaged firs
 
 Researcher stands on the shoulders of the open academic-tooling community. It was inspired by, and re-implements ideas from, several excellent projects. No code was copied; ideas are credited here and in [`CREDITS.md`](CREDITS.md).
 
-- [academic-research-skills](https://github.com/Imbad0202/academic-research-skills), the prompt-driven skill suite that showed the shape of an integrity-first research assistant.
-- [PaperQA2](https://github.com/Future-House/paper-qa), verified retrieval-augmented answering over scientific PDFs.
+- [academic-research-skills](https://github.com/Imbad0202/academic-research-skills), the prompt-driven skill suite that showed the shape of an integrity-first research assistant. Its verification-gate and material-passport ideas are re-implemented here, as original code, in the compile gate and the research passport.
+- [PaperQA2](https://github.com/Future-House/paper-qa), verified retrieval-augmented answering over scientific PDFs, the reference design for the kernel's deterministic multi-source retrieval patterns.
 - [STORM / Co-STORM](https://github.com/stanford-oval/storm), multi-perspective grounded long-form synthesis.
-- [Elicit](https://elicit.com), [Consensus](https://consensus.app), and [Scite](https://scite.ai), for structured extraction, evidence synthesis, and Smart Citations.
+- [Elicit](https://elicit.com), [Consensus](https://consensus.app), and [Scite](https://scite.ai), for structured evidence extraction, synthesis, and Smart Citations.
 - [FutureHouse](https://www.futurehouse.org), multi-agent research over real scientific databases.
 
 Documentation is built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build). See [`CREDITS.md`](CREDITS.md) for the full list.
 
 ---
 
-## Privacy and security
+## Privacy and data egress
 
 Researcher collects nothing: no telemetry, no analytics, no accounts. Your manuscript, bibliography,
-and data stay on your machine. The only outbound requests are the scholarly lookups you ask for (a DOI
-to CrossRef, a query to PubMed, and so on). See [`PRIVACY.md`](PRIVACY.md) for exactly what is sent
-and where, and [`SECURITY.md`](SECURITY.md) for what the hooks and scripts execute locally.
+and data stay on your machine, and **manuscript prose never leaves the machine through core**. The only
+outbound requests are the scholarly lookups you ask for (a DOI to CrossRef, a query to PubMed, and so
+on), and every one is documented host by host on the
+[data-egress reference page](https://sokolmarek.github.io/researcher/reference/data-egress/). Set
+`RESEARCHER_OFFLINE=1` (or pass `--offline`) and even those stop: every command answers from local
+snapshots and cache, and a miss is a typed `offline-miss`, never a live call.
+
+Fetched paper text is untrusted input. The core sanitizes it, and every skill quotes it only inside a
+labeled untrusted-content fence, so an instruction hidden in an abstract is treated as data, not a
+directive (`evals/run_injection.py` proves this for the known payload classes). Cached full text is kept
+locally under each source's terms and is never redistributed; the per-source reuse terms, retention
+windows, and verification dates are on the
+[licensing and retention page](https://sokolmarek.github.io/researcher/reference/licensing/). See
+[`PRIVACY.md`](PRIVACY.md) for the plain-language summary and [`SECURITY.md`](SECURITY.md) for what the
+hooks and scripts execute locally, and for how to report a prompt-injection payload we do not yet model.
 
 ## License
 
