@@ -1,6 +1,6 @@
 ---
 name: revision-management
-description: "Handle paper revisions from reviewer comments. Triggers: revise paper, address comments, reviewer asked, revision round, tracked changes. Generates tracked changes in LaTeX (changes package or latexdiff); Word tracked changes are planned, not implemented."
+description: "Plan and carry out the manuscript edits a review round demands, and track them across sections. Triggers: revise paper, address comments, reviewer asked, revision round, tracked changes, manage revisions across sections, plan the revision work, latexdiff between the submitted and revised manuscript. It changes the paper itself; the reply document that answers each reviewer is response-to-reviewers. Generates tracked changes in LaTeX (changes package or latexdiff); Word tracked changes are planned, not implemented."
 ---
 
 # Revision Management

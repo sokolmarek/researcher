@@ -1,6 +1,6 @@
 ---
 name: peer-review
-description: "Multi-perspective academic peer review with scoring rubrics. Triggers when user says: 'review this paper', 'peer review', 'critique manuscript', 'assess quality', 'evaluate paper', 'quick assessment', 'check methodology', 'is this paper ready'. Runs 5 expert reviewer personas within Claude; integration of ChatGPT/Gemini/Ollama as additional reviewers is planned but not yet implemented. Use this skill whenever the user wants feedback on academic writing quality."
+description: "Multi-perspective academic peer review of a manuscript, with scoring rubrics. Triggers when user says: 'review this paper', 'peer review', 'critique manuscript', 'assess quality', 'evaluate paper', 'quick assessment', 'check methodology', 'is this paper ready', 'what reviewer comments would this manuscript receive', 'score this manuscript against a rubric'. Runs 5 expert reviewer personas within Claude; integration of ChatGPT/Gemini/Ollama as additional reviewers is planned but not yet implemented. Use this skill whenever the user wants a reviewer verdict on a manuscript, as opposed to a verdict on source code, which is code-analysis."
 ---
 
 # Peer Review

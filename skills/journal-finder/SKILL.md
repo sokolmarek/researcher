@@ -1,6 +1,6 @@
 ---
 name: journal-finder
-description: "Recommend suitable journals for manuscript submission based on topic, scope, and user preferences. Triggers: find journal, recommend journal, where to publish, which journal, journal suggestion, best journal for, submit where, target journal, journal match."
+description: "Recommend which journal to submit a finished manuscript to, weighing topic fit, scope, impact factor, APC, and review turnaround. Triggers: find journal, recommend journal, where to publish, where should I submit this paper, which journal, journal suggestion, best journal for, submit where, target journal, journal match, journal impact factor, fast review turnaround. Chooses the venue only: typesetting the paper into a publisher house style is journal-formatting, and conference or workshop venues are conference-finder."
 ---
 
 # Journal Finder

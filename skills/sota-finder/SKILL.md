@@ -1,6 +1,6 @@
 ---
 name: sota-finder
-description: "Find and track state-of-the-art results for research tasks and benchmarks. Triggers: state of the art, SOTA, best results, current best, benchmark results, leaderboard, top performing, leading methods, what beats, performance comparison."
+description: "Find and track state-of-the-art results for research tasks and benchmarks, and assemble the SOTA comparison table from what has actually been reported. Triggers: state of the art, SOTA, best results, current best, benchmark results, leaderboard, top performing, leading methods, what beats, performance comparison, build a SOTA comparison table, best reported results on this benchmark. It sources the numbers from papers and leaderboards; typesetting numbers you already have is latex-tables."
 ---
 
 # SOTA Finder

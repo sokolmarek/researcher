@@ -1,6 +1,6 @@
 ---
 name: tikz-diagrams
-description: "Generate TikZ/PGF diagrams for academic papers. Triggers: create diagram, draw architecture, tikz figure, system diagram, flowchart, pipeline diagram, neural network diagram."
+description: "Generate TikZ/PGF schematics for academic papers: pipelines, system architectures, flowcharts, block diagrams, and process figures drawn as vector LaTeX. Triggers: create diagram, draw architecture, tikz figure, system diagram, flowchart, pipeline diagram, block diagram, draw the experimental pipeline, schematic for the methods section. It draws schematics from your description; a layer-by-layer neural network architecture is plotneuralnet, and plotting measured data is visualization."
 ---
 
 # TikZ Diagrams

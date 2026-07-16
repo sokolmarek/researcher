@@ -1,6 +1,6 @@
 ---
 name: cover-letter
-description: "Write journal submission cover letters. Triggers: write cover letter, submission letter, cover letter for journal, letter to editor."
+description: "Write the cover letter that accompanies a manuscript submission to a journal editor. Triggers: write cover letter, submission letter, cover letter for journal, letter to editor, letter explaining why the paper fits the scope, cover letter for the resubmission. It writes the letter that introduces a submission; answering reviewer comments after a decision is response-to-reviewers."
 ---
 
 # Cover Letter

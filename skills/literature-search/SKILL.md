@@ -1,6 +1,6 @@
 ---
 name: literature-search
-description: "Search academic literature across multiple databases. Triggers when user says: 'search literature', 'find papers', 'literature review', 'what does research say about', 'find related work', 'search PubMed', 'search arXiv', 'find citations', 'related papers', 'prior work on'. Searches PubMed, Semantic Scholar, arXiv, Scite, Google Scholar, and CrossRef. Use this skill whenever the user needs to find, discover, or explore academic papers on any topic."
+description: "Search academic literature across multiple databases. Triggers when user says: 'search literature', 'find papers', 'literature review', 'what does research say about', 'find related work', 'search PubMed', 'search arXiv', 'find citations', 'related papers', 'prior work on', 'explore this topic in the literature', 'give me the key papers on this topic'. Searches PubMed, Semantic Scholar, arXiv, Scite, Google Scholar, and CrossRef. Use this skill whenever the user needs to find, discover, or explore academic papers on any topic."
 ---
 
 # Literature Search

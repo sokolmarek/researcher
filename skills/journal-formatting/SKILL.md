@@ -1,6 +1,6 @@
 ---
 name: journal-formatting
-description: "Apply journal-specific formatting requirements. Triggers: format for journal, journal requirements, submission format, style guide. Local database covers 16 publisher and journal profiles; other journals are looked up via web search."
+description: "Reformat a manuscript that already exists to a target journal or conference template: the publisher LaTeX class file (elsarticle, IEEEtran, acmart, svjour3), two-column layout, section order, length limits, and the reference and citation style the venue requires. Triggers: format for journal, format this manuscript for the target journal, journal template, apply the journal LaTeX class, convert this draft to the publisher class, restructure my manuscript to the article template, apply the IEEE two-column style guide, journal requirements, submission format, reformat my reference list to the journal citation style. Use it once a venue is chosen: picking the venue is journal-finder. Local database covers 16 publisher and journal profiles (Elsevier, Springer, Nature, IEEE, ACM, Wiley, PLOS and more); other journals are looked up via web search."
 ---
 
 # Journal Formatting

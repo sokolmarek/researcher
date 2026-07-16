@@ -1,6 +1,6 @@
 ---
 name: writing-style-analysis
-description: "Analyze and emulate academic writing style. Triggers: analyze my writing style, match my style, emulate writing, learn my voice, writing profile, style analysis. Reads past papers from local folder; can pull publication metadata and abstracts from a scholar profile."
+description: "Analyze and emulate academic writing style: build a reusable style profile from prose that already exists, covering tone, voice, register, sentence length, hedging, and consistency across sections. Triggers: analyze my writing style, check the draft writing style, match my style, emulate writing, learn my voice, writing profile, style analysis, is the tone consistent, keep the register consistent across sections, rewrite this paragraph in my usual style. It measures how the prose is written, not whether the science is sound, and it does not compose new sections from scratch: that is paper-drafting. Reads past papers from local folder; can pull publication metadata and abstracts from a scholar profile."
 ---
 
 # Writing Style Analysis

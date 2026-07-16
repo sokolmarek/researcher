@@ -1,6 +1,6 @@
 ---
 name: brainstorming
-description: "Socratic research design refinement through guided questioning. Triggers when user says: 'brainstorm', 'research idea', 'refine my question', 'help me think through', 'explore this topic', 'what should I study', 'narrow my focus', 'devil's advocate', 'challenge my idea'. Guides users from vague research ideas to refined questions, hypotheses, and methodology through structured Socratic dialogue. Use this skill whenever the user needs help developing or sharpening a research concept."
+description: "Socratic research design refinement through guided questioning. Triggers when user says: 'brainstorm', 'brainstorm research directions', 'research idea', 'ideas for a follow-up study', 'refine my question', 'help me think through', 'explore this topic', 'what should I study', 'narrow my focus', 'devil's advocate', 'challenge my idea'. Guides users from vague research ideas to refined questions, hypotheses, and methodology through structured Socratic dialogue. Use this skill whenever the user needs help generating or sharpening a research concept, before any sources are gathered."
 ---
 
 # Brainstorming

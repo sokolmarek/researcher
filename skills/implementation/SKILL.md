@@ -1,6 +1,6 @@
 ---
 name: implementation
-description: "Code implementation for research projects. Triggers: implement this, write the code, code this algorithm, run experiment. Runs in the code-agent subagent (Sonnet)."
+description: "Write and run the actual code for a research project: baseline models, data loaders, training loops, evaluation scripts, and experiment runs with logged metrics. Triggers: implement this, write the code, code this algorithm, implement the baseline model from this paper, implement the data loader, implement this architecture in PyTorch, build the training loop, run experiment, run the benchmark suite, run the training with these hyperparameters. It produces new working code from a specification or a paper; reading code that already exists in order to describe it is code-analysis. Runs in the code-agent subagent (Sonnet)."
 context: fork
 agent: code-agent
 ---

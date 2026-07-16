@@ -1,6 +1,6 @@
 ---
 name: manuscript-setup
-description: "Create a new academic manuscript project with organized folder structure. Triggers when user says: 'new manuscript', 'start a paper', 'create manuscript', 'new research project', 'set up paper', 'begin writing paper', 'initialize manuscript'. Creates LaTeX or Word project structure with individual files per section, bibliography, figures folder, and config. Always use this skill when the user wants to start a new academic writing project, even if they don't use the exact word 'manuscript'."
+description: "Create a new academic manuscript project with an organized folder structure. Triggers when user says: 'new manuscript', 'start a paper', 'create manuscript', 'new research project', 'set up paper', 'begin writing paper', 'initialize manuscript', 'scaffold the paper project', 'turn this draft into a manuscript project'. Creates the LaTeX or Word project skeleton with one file per section, a bibliography folder, a figures folder, and a config file, including when an existing draft is about to be moved into it. Always use this skill when the user wants to start a new academic writing project, even without the word manuscript."
 ---
 
 # Manuscript Setup

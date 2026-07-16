@@ -1,6 +1,6 @@
 ---
 name: plotneuralnet
-description: "Generate publication-quality neural network architecture diagrams using PlotNeuralNet-style TikZ. Triggers: neural network diagram, plot neural net, architecture diagram, CNN diagram, U-Net diagram, network architecture, layer diagram, deep learning figure."
+description: "Generate publication-quality neural network architecture diagrams using PlotNeuralNet-style TikZ, drawn layer by layer with conv, pooling, and feature-map blocks. Triggers: neural network diagram, plot neural net, architecture diagram, draw the CNN architecture, CNN diagram, U-Net diagram, encoder-decoder diagram, network architecture, layer diagram, deep learning figure. It draws the layer stack of a model; diagrams that are not layer stacks are tikz-diagrams."
 ---
 
 # PlotNeuralNet

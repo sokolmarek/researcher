@@ -1,6 +1,6 @@
 ---
 name: visualization
-description: "Generate publication-quality data visualizations with matplotlib, seaborn, ggplot2, pgfplots. Triggers: plot data, create chart, visualize results, make figure, bar chart, scatter plot, heatmap, publication plot, statistical plot, data visualization."
+description: "Generate publication-quality data visualizations with matplotlib, seaborn, ggplot2, pgfplots. Triggers: plot data, create chart, visualize results, make figure, bar chart, scatter plot, heatmap, line plot, plot the accuracy curve, plot the loss curve over training epochs, publication plot, statistical plot, data visualization. It writes the plotting code and renders the figure from data you already have; choosing which figure a section needs is figure-suggestions."
 ---
 
 # Visualization

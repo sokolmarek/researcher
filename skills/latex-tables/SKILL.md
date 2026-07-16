@@ -1,6 +1,6 @@
 ---
 name: latex-tables
-description: "Create publication-quality LaTeX tables. Triggers: create table, format table, results table, comparison table, booktabs table. Supports multicolumn, significance markers, bold best results."
+description: "Typeset numbers you already have as a publication-quality LaTeX table. Triggers: create table, format table, results table, comparison table, booktabs table, turn these numbers into a table, bold the best result in each column, multicolumn table from this CSV. Supports multicolumn, significance markers, bold best results. It produces the table code from numbers you supply; finding what those numbers are in the literature is sota-finder."
 ---
 
 # LaTeX Tables

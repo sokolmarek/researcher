@@ -1,6 +1,6 @@
 ---
 name: word-output
-description: "Generate Microsoft Word DOCX output from a manuscript folder. Triggers: word format, docx output, Microsoft Word, not latex, convert to word, build docx, submit as .docx. Ships a title page, numbered headings, paragraphs, and bullet lists via templates/word/build-docx.js; tables, figures, tracked changes, and comments are planned, not implemented."
+description: "Generate Microsoft Word DOCX output from a manuscript folder. Triggers: word format, docx output, Microsoft Word, not latex, convert to word, build docx, submit as .docx, give me a DOCX version of the draft, the journal wants docx. It converts manuscript sources into DOCX in that one direction only. Ships a title page, numbered headings, paragraphs, and bullet lists via templates/word/build-docx.js; tables, figures, tracked changes, and comments are planned, not implemented."
 ---
 
 # Word Output

@@ -1,6 +1,6 @@
 ---
 name: research-convergence
-description: "Deep research that converges on arguments and thesis construction. Triggers: converge on argument, build thesis, research argument, socratic mode, deep research, flash search, argument map, refine thesis, research direction, challenge my argument."
+description: "Deep multi-source research that converges on a defensible thesis or position. Triggers: converge on argument, build thesis, research argument, socratic mode, deep research, flash search, argument map, refine thesis, challenge my argument, cross-check these papers against each other, where do these sources agree and disagree, synthesize a position from many sources. It reconciles a body of sources into one position and maps their agreements and contradictions; establishing whether a single stated claim is true against the evidence is fact-checking."
 ---
 
 # Research Convergence

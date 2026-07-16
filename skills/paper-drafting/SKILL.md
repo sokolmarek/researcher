@@ -1,6 +1,6 @@
 ---
 name: paper-drafting
-description: "Draft academic paper outlines and sections. Triggers: draft outline, write section, draft paper, outline paper, write introduction, write methods, write results, write discussion, write abstract, write conclusion."
+description: "Draft new academic prose: paper outlines and the text of individual sections. Triggers: draft outline, write section, draft paper, outline paper, write introduction, write methods, write results, write discussion, write abstract, write conclusion, write the caption for this figure, suggest wording for this paragraph."
 ---
 
 # Paper Drafting

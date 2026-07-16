@@ -1,6 +1,6 @@
 ---
 name: research-gaps
-description: "Systematically identify research gaps from literature analysis. Triggers: find research gaps, identify gaps, what is missing in the literature, unexplored areas, open problems, gap analysis, where is the gap, research opportunities, what hasn't been studied."
+description: "Systematically identify research gaps from an analysis of the literature that exists. Triggers: find research gaps, identify gaps, what is missing in the literature, unexplored areas, find an underexplored angle, open problems in this field, gap analysis over these papers, where is the gap, research opportunities, what hasn't been studied yet. It derives gaps from papers already collected; inventing candidate ideas without a corpus is brainstorming."
 ---
 
 # Research Gaps

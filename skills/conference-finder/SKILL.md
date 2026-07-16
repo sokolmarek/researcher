@@ -1,6 +1,6 @@
 ---
 name: conference-finder
-description: "Find relevant academic conferences and workshops for paper submission. Triggers: find conference, conference deadline, where to present, CFP, call for papers, upcoming conferences, submit to conference, conference recommendation, workshop deadline."
+description: "Find relevant academic conferences and workshops for paper submission. Triggers: find conference, conference deadline, where to present, CFP, call for papers, upcoming conferences, submit to conference, conference recommendation, workshop deadline, which venue has a submission window still open. Venue discovery only: it finds where the work could be presented and does not write, schedule, or typeset anything."
 ---
 
 # Conference Finder

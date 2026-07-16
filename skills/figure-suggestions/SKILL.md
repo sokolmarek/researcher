@@ -1,6 +1,6 @@
 ---
 name: figure-suggestions
-description: "Suggest appropriate figures and visualizations for manuscript content. Triggers: suggest figures, what figures should I include, visualize results, what charts, figure ideas."
+description: "Recommend which figures a manuscript needs and where they go: chart type choice, figure versus table decisions, panel layout, placement, and a caption plan for each section. Triggers: suggest figures, what figures should I include, what charts, what chart type, figure ideas, which figure would best show this, table or figure, how many panels, suggest a visualization for this dataset, figure plan for the results section. It is advisory: it decides what to plot and hands off, and producing the actual plot from your data is visualization."
 ---
 
 # Figure Suggestions

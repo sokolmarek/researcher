@@ -1,6 +1,6 @@
 ---
 name: fact-checking
-description: "Verify scientific claims against published literature. Triggers when user says: 'fact check', 'verify claim', 'is this true', 'check this statement', 'verify citations', 'evidence for', 'is this supported', 'check my claims', 'validate findings', 'source check'. Searches literature to find evidence supporting or contradicting claims, classifies evidence strength, and produces structured fact-check reports. Use this skill whenever the user needs to verify the accuracy of a scientific statement or check claims in a manuscript."
+description: "Verify scientific claims against published literature. Triggers when user says: 'fact check', 'verify claim', 'is this true', 'check this statement', 'verify citations', 'evidence for', 'is this supported', 'check my claims', 'validate findings', 'source check'. Searches literature to find evidence supporting or contradicting a specific claim, classifies evidence strength, and produces structured fact-check reports. Use this skill whenever the user needs to verify the accuracy of a scientific statement or check claims in a manuscript; reconciling many sources into one thesis is research-convergence."
 ---
 
 # Fact-Checking

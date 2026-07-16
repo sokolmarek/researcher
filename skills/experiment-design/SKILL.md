@@ -1,6 +1,6 @@
 ---
 name: experiment-design
-description: "Design experiments and studies from research questions. Triggers when user says: 'design experiment', 'study design', 'experimental setup', 'how should I test this', 'plan my study', 'ablation study', 'baseline comparison', 'research protocol', 'pilot study', 'sample size'. Generates comprehensive experiment designs including variables, sample sizing, protocols, and reproducibility checklists. Use this skill whenever the user needs to plan how to test a hypothesis or evaluate a method."
+description: "Design experiments and studies from research questions. Triggers when user says: 'design experiment', 'study design', 'experimental setup', 'how should I test this', 'plan my study', 'ablation study', 'baseline comparison', 'research protocol', 'pilot study', 'sample size', 'how many participants do I need'. Generates comprehensive experiment designs including variables, sample sizing, protocols, and reproducibility checklists. Use this skill to plan how a hypothesis will be tested before any data is collected; choosing a test for data you have already collected is statistical-analysis."
 ---
 
 # Experiment Design

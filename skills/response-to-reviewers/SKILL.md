@@ -1,6 +1,6 @@
 ---
 name: response-to-reviewers
-description: "Create point-by-point response to reviewer comments. Triggers: response to reviewers, write rebuttal, reviewer response, point by point response."
+description: "Write the formal point-by-point response document that answers each reviewer and editor comment after a decision. Triggers: response to reviewers, write rebuttal, reviewer response, point by point response, reply to the reviewer comments, address every reviewer comment, reply to the editor decision letter, answer each reviewer comment one by one, rebuttal letter for reviewer 2. It produces the reply document only. Reworking the paper itself is revision-management; the letter that introduces a first submission is cover-letter."
 ---
 
 # Response To Reviewers

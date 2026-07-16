@@ -1,6 +1,6 @@
 ---
 name: code-analysis
-description: "Analyze source code to generate methods section. Triggers: analyze codebase, describe implementation, methods from code, document algorithm. Runs in the code-agent subagent (Sonnet)."
+description: "Analyze a source-code repository that already exists and turn it into publication text. Triggers: analyze codebase, describe implementation, methods from code, write the methods section from my source code, document algorithm as pseudocode, review this codebase for reproducibility, check whether the code is reproducible, check the code matches the described method. It reads existing code and writes about it; writing new code is implementation, and judging a manuscript is peer-review. Runs in the code-agent subagent (Sonnet)."
 context: fork
 agent: code-agent
 ---
